@@ -43,6 +43,7 @@ import blogAustinInventoryLevelsDowntown from "@/assets/blog/austin-inventory-le
 import blogAustinMortgageRateImpact from "@/assets/blog/austin-mortgage-rate-impact.jpg.asset.json";
 import blogAustinMixedUseDevelopment from "@/assets/blog/austin-mixed-use-development.avif.asset.json";
 import blogDataCenterDevelopmentTexas from "@/assets/blog/data-center-development-texas.webp.asset.json";
+import blogAustinCommercialLandDevelopment from "@/assets/blog/austin-commercial-land-development.jpg.asset.json";
 
 
 
@@ -72,6 +73,176 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "navigate-commercial-land-development-austin",
+    title: "How to Navigate Commercial Land Development in Austin: A Step-by-Step Guide",
+    metaTitle: "Commercial Land Development Austin: Step-by-Step Guide | Echelon Property Group",
+    excerpt: "Commercial land development in Austin requires navigating layered zoning codes, shifting land values, and a complex entitlement process that rewards local expertise and thorough preparation. This step-by-step guide walks landowners, investors, and developers through the full development framework, from initial site evaluation to construction readiness, across Austin's diverse corridors and surrounding growth markets.",
+    author: "Taylor Sherwood",
+    date: "2026-06-26",
+    readTime: "16 MIN READ",
+    category: "INVESTMENT",
+    image: blogAustinCommercialLandDevelopment.url,
+    heroImage: blogAustinCommercialLandDevelopment.url,
+    imageAlt: "High-rise commercial tower under construction in Austin with cranes and scaffolding, illustrating active commercial land development",
+    imageCaption: "Active commercial construction in Austin reflects the layered entitlement, infrastructure, and capital decisions behind every successful land development project.",
+    content: `
+
+Austin's commercial land development landscape is more complex than most markets, and that complexity is by design. The city has layered zoning codes, active neighborhood associations, a growing backlog at the Development Services Department, and land values that shift significantly from one corridor to the next.
+
+Whether you're evaluating a raw tract in East Austin, repositioning an underutilized parcel near the Domain, or pursuing an entitlement play in a suburban growth corridor like Pflugerville or Kyle, the process follows a consistent framework. This guide walks through that framework in sequence, from initial site evaluation through construction readiness. For broader context on how we frame these decisions for clients, see our [Austin commercial real estate](/austin-commercial-real-estate) practice and our [investment advisory](/invest) overview.
+
+It's written for landowners, investors, and developers who want a clear map of the process, not a generic overview.
+
+Austin's entitlement environment rewards preparation and local knowledge. Deals that stall typically do so because a buyer underestimated the complexity of the city's zoning and permitting systems, misjudged infrastructure costs, or failed to engage the right consultants early. The steps below are structured to help you avoid those mistakes. Our deeper coverage of [Austin land development opportunities](/austin-land-development-opportunities) tracks how that preparation translates into active deal flow.
+
+Each step addresses what to do, why it matters in the Austin context specifically, and what a successful outcome looks like before moving forward.
+
+## Step 1: Define Your Development Strategy Before You Buy
+
+The most common mistake in commercial land development is selecting a site based on price per acre before confirming whether that site can actually support the intended use. In Austin, that error is especially costly because zoning compatibility, infrastructure availability, and submarket absorption all vary dramatically within short distances.
+
+Start by clarifying the use type. Retail, office, multifamily, industrial, mixed-use, and build-to-rent each carry different site requirements, zoning compatibility profiles, and financing structures. A site that works well for a flex industrial building near the SH-130 corridor is almost certainly wrong for a mixed-use retail project. Getting this wrong early cascades through every subsequent step. Our breakdown of [highest and best use analysis](/blog/highest-and-best-use-property-austin) is a useful framework for matching use type to parcel before you commit.
+
+Once you've defined the use type, research which Austin submarkets are actively absorbing that product. Industrial and logistics demand has concentrated along SH-130 through Pflugerville, Hutto, and Manor, driven by proximity to major distribution infrastructure. Multifamily absorption remains strong near the University of Texas and the Domain. Retail infill is active in East Austin, though land costs in that corridor have risen considerably as the neighborhood has matured. Suburban growth corridors in Kyle, Buda, and Dripping Springs continue to attract residential and neighborhood retail development as population pressure pushes south and southwest. Our [Austin multifamily report](/austin-multifamily-report-2026) covers absorption and rent trends across these corridors in detail.
+
+Before committing to a site, build a preliminary pro forma. It doesn't need to be refined at this stage, but it should include realistic assumptions for land cost, entitlement timeline, hard and soft construction costs, and projected returns. The entitlement timeline assumption is where most first-time Austin developers underestimate. A project requiring rezoning or a variance can easily add six to twelve months before a shovel touches the ground.
+
+**Why this step matters:** Strategy alignment before site selection prevents you from spending due diligence dollars on parcels that can't support your intended use. It also sharpens your evaluation criteria so you can move quickly when the right opportunity appears, including off-market situations where speed matters. Our [off-market real estate](/off-market-real-estate-austin) channel is built for exactly those moments.
+
+**Success indicator:** You have a defined use type, a target submarket with confirmed absorption trends, and a preliminary pro forma before you begin site-specific due diligence.
+
+## Step 2: Conduct Site-Level Due Diligence on Zoning, Entitlements, and Constraints
+
+Once you've identified a candidate site, the next step is a thorough review of what that parcel actually allows and what constraints it carries. In Austin, this is not a simple task. The city's Land Development Code is among the more complex municipal codes in Texas, and a site's development potential depends on far more than its base zoning designation.
+
+Start by pulling the current zoning designation from Austin's Development Services Department and cross-referencing it with the LDC to understand permitted uses, setbacks, height limits, and impervious cover allowances. Then check whether the site falls within any overlay districts. The University Neighborhood Overlay, East Austin Overlay, and Waterfront Overlay each add layers of restrictions that can significantly constrain what's buildable by right. A site that appears straightforward under base zoning may carry substantial additional requirements under an applicable overlay. Our [Austin infill development](/blog/austin-infill-development) coverage walks through several of these overlay-driven scenarios.
+
+Environmental constraints deserve equal attention. Check FEMA floodplain maps and confirm whether any portion of the site is within a regulated floodplain or floodway. For properties south or west of the city, determine whether the parcel falls within the Edwards Aquifer Contributing Zone or the more restrictive Barton Springs Zone, both of which impose strict impervious cover limits that can fundamentally alter development density.
+
+Austin's heritage tree ordinance is one of the most restrictive in Texas and regularly affects site layout and grading plans on infill parcels. Trees meeting the protected diameter thresholds require permits for removal and can trigger mitigation requirements that add cost and constrain site design. Identify all protected trees on the parcel before committing to a layout or purchase price.
+
+Review existing easements, deed restrictions, and utility infrastructure availability. Easements for drainage, utilities, or access can eliminate portions of the site from development consideration. Deed restrictions from prior subdivisions may limit use types in ways that aren't immediately visible in the zoning record. For larger acreage situations, our [land and ranch](/land-ranch) practice handles many of these constraint-heavy evaluations.
+
+Order a Phase I Environmental Site Assessment for any commercial acquisition. This is standard practice and often required by lenders, but it also protects you from inheriting liability for prior contamination.
+
+A note on code uncertainty: Austin's Land Development Code has been subject to ongoing revision and legal challenge. Confirm with your land use attorney whether any pending code changes could affect your site's development potential before closing.
+
+**Success indicator:** A clear picture of what can be built by right versus what requires a variance, rezoning, or special permit, documented before you close on the property.
+
+## Step 3: Assemble Your Austin Development Team Early
+
+The quality of your advisory team determines how smoothly you navigate Austin's Development Services Department. This is not a process where you can substitute general real estate experience for local technical expertise. DSD's review process is sequential and iterative, and submitting incomplete or noncompliant applications restarts review clocks and adds months to your timeline.
+
+Your civil engineer is the most critical early hire. Engage a firm with direct experience submitting to Austin's DSD, not just general Texas municipal experience. Austin has specific submission requirements, formatting standards, and review workflows that a locally experienced engineer will navigate more efficiently. They'll also have working relationships with DSD reviewers that can facilitate communication when questions arise mid-review.
+
+If your project requires rezoning, a variance, or a Board of Adjustment hearing, retain a land use attorney before you engage with DSD at all. Land use law in Austin is specialized, and an attorney who understands the Planning Commission's current priorities and the political dynamics around specific corridors can meaningfully affect your outcome. This is especially true in contested cases near politically active neighborhoods.
+
+Engage a traffic engineer early if your project is likely to exceed the thresholds that trigger a Transportation Impact Analysis. TIA requirements are common for larger commercial projects, and the study itself takes time. Starting that process late compresses your overall timeline.
+
+For sites in politically sensitive areas, consider whether a neighborhood liaison or political consultant adds value. Projects near Hyde Park, the South Congress corridor, or Bouldin Creek often encounter organized neighborhood opposition. Early outreach, done correctly, can convert potential opponents into informed stakeholders. Done poorly or too late, it can harden opposition at exactly the wrong moment in the entitlement process.
+
+Your architect or site planner should be involved before you submit any Pre-Application Conference request. The PAC is your first formal interaction with DSD, and arriving with a coherent site concept demonstrates seriousness and generates more useful feedback. Working with [Austin real estate investment](/austin-real-estate-investment) advisors who understand local market dynamics at this stage can make a measurable difference in how efficiently your application moves through review.
+
+**Success indicator:** A coordinated team with clear roles and responsibilities in place before your first formal interaction with DSD.
+
+## Step 4: Navigate Austin's Entitlement and Permitting Process
+
+Austin's entitlement process has multiple tracks, and understanding which track your project falls into determines your timeline, your approval pathway, and your exposure to public opposition.
+
+Begin with a Pre-Application Conference with DSD. The PAC is strongly recommended for most commercial projects and required for others. It's your opportunity to present your concept to city staff, identify all applicable codes and required studies, and surface potential obstacles before you've invested in a full submission package. The feedback you receive at a PAC is informal but valuable. Come prepared with a site plan concept, a clear description of the proposed use, and specific questions about constraints identified during due diligence.
+
+Determine whether your project requires a Site Plan, a Subdivision Plat, or both. Site plans govern how a specific parcel is developed. Subdivision plats govern how land is divided into lots. Many commercial development projects require both, and they often run on parallel tracks through DSD with separate review teams.
+
+Understand the difference between administrative and discretionary approval. Administrative approvals are handled at the staff level and are faster. Discretionary approvals require action by the Planning Commission or City Council, which introduces public notice requirements, hearing schedules, and the possibility of opposition. Rezoning cases in Austin typically take six to twelve months from application to City Council vote. Contested cases involving neighborhood opposition or complex code questions can run longer.
+
+Track your case actively through Austin's permit portal. Maintain regular contact with your assigned case manager. Review cycles generate comment letters that require written responses and revised submissions. First-cycle approvals are uncommon for complex commercial projects. Budget time and consultant fees for multiple rounds of comments.
+
+Neighborhood associations in Austin hold significant informal influence over discretionary approvals. They are not part of the formal approval process, but Planning Commissioners and Council Members pay attention to organized neighborhood input. Early, transparent outreach to relevant neighborhood associations can accelerate your project. Ignoring them until they show up at a public hearing is a common and avoidable mistake. Our coverage of [Austin redevelopment opportunities](/blog/austin-redevelopment-opportunities) and [Austin mixed-use development](/blog/austin-mixed-use-development) highlights several recent cases where neighborhood dynamics shaped the entitlement outcome.
+
+**Success indicator:** An approved site plan or plat with all conditions of approval documented, understood, and assigned to the appropriate team member for resolution.
+
+## Step 5: Secure Financing and Structure the Deal Correctly
+
+Commercial land financing is more restrictive than improved property financing, and the structure of your capital stack needs to match the project's stage and risk profile. Lenders treat raw or entitled land differently, and the transition from land acquisition to construction financing involves a separate underwriting process.
+
+Commercial land loans typically require substantially more equity than improved property loans and carry shorter terms. This means your land carry costs are real and time-sensitive. Every month of entitlement delay costs money, which is another reason why preparation in steps one through four directly affects your financial outcome.
+
+Construction financing is separate from land acquisition financing and generally requires a completed entitlement package before a lender will commit. This sequencing matters for your timeline. If you're counting on construction financing to close out your land loan, you need entitlements in hand before that land loan matures. Misaligning these timelines is a common source of distress in development projects.
+
+Understand the distinction between acquisition loans, acquisition and development loans, and construction loans. A&D loans cover both the purchase and the cost of installing infrastructure such as roads, utilities, and grading. Construction loans fund vertical building costs. Some lenders offer combined products, but the underwriting criteria and draw structures differ.
+
+For projects where the capital requirements are substantial or the entitlement risk is high, explore whether a ground lease structure, joint venture, or preferred equity arrangement better fits the situation. These structures can reduce your upfront equity requirement or bring in a capital partner with development experience. Investors building a longer-term position in Austin commercial real estate often use these structures, and our guide to [building a luxury real estate portfolio in Austin](/blog/luxury-real-estate-portfolio-austin-strategy) walks through how to layer them across multiple projects. Investors planning to recycle proceeds from appreciated land into new development should also review our walkthrough of the [1031 exchange for Texas investors](/blog/1031-exchange-texas-investors).
+
+Larger projects should evaluate whether the site qualifies for city incentive programs, tax increment financing, or Opportunity Zone benefits. Several Austin corridors have active TIF districts, including parts of East Riverside, Ben White, and East Austin, where TIF proceeds can materially affect project feasibility. Opportunity Zones in parts of East Austin have attracted institutional capital and can provide tax deferral benefits for qualifying investments.
+
+**Success indicator:** A committed capital stack with clear terms, matching timelines, and lender commitments in place before you begin infrastructure work.
+
+:::cta
+eyebrow: Commercial Land & Development
+heading: Evaluating a Commercial Site in Austin?
+subheading: Echelon Property Group advises on commercial land acquisition, entitlement strategy, and investment positioning across Austin and surrounding submarkets.
+button: Discuss Your Site or Strategy
+href: /contact
+:::
+
+## Step 6: Manage Infrastructure, Utility Extensions, and Construction Readiness
+
+Entitlement approval does not mean your project is ready to build. The gap between an approved site plan and a shovel in the ground is filled with infrastructure coordination, utility confirmations, and permit issuance. In Austin, this phase deserves as much attention as the entitlement process itself.
+
+Confirm water and wastewater capacity with Austin Water early in the process, not after entitlement. Capacity constraints are a documented issue in certain growth corridors, particularly in areas where development pressure has outpaced infrastructure investment. A project that assumes utility connections are available can face significant delays if capacity must be reserved, upgraded, or extended. Start this conversation during due diligence, not after your site plan is approved.
+
+Identify whether public infrastructure improvements are required as conditions of your entitlement approval. Road dedications, water main extensions, lift station upgrades, and drainage improvements are common conditions on commercial projects in Austin. These costs need to be in your pro forma from the beginning. Discovering a required road dedication or water line extension after closing is a budget problem that preparation would have prevented.
+
+If your project requires extending infrastructure that will benefit adjacent parcels, understand the cost-sharing and reimbursement mechanisms available through the city. Austin has frameworks for recapture agreements that allow developers who oversize infrastructure to recover a portion of those costs from future users. These agreements require negotiation and documentation, but they can meaningfully improve the economics of projects in growth areas. Our [data center development in Texas](/blog/data-center-development-texas) analysis covers how similar infrastructure dynamics are reshaping land values in the corridors surrounding Austin, and our [market intelligence](/market-intelligence) dashboard helps assess whether a given growth corridor justifies the upfront infrastructure investment.
+
+Coordinate with Austin Energy for power service, particularly for large commercial or multifamily projects with significant electrical load requirements. Service planning for large loads requires lead time, and Austin Energy's capacity planning process has its own timeline that doesn't automatically align with your construction schedule.
+
+Obtain all construction permits through DSD before mobilizing, including grading permits, utility permits, and building permits. Heritage tree removal or impact permits require separate review and can affect site layout and grading plans if they weren't fully resolved during site plan approval.
+
+**Success indicator:** All permits issued, utility service confirmed with written commitments, and a contractor mobilization plan that accounts for sequencing requirements.
+
+## Putting It All Together: What Separates Successful Austin Land Deals
+
+Most timeline and cost overruns in Austin commercial development trace back to the first three steps, not construction. The projects that struggle are almost always ones where the development strategy was unclear at acquisition, due diligence missed a material constraint, or the advisory team was assembled too late to shape the entitlement approach.
+
+Here's a concise checklist of the framework:
+
+1. **Define your strategy first.** Use type, target submarket, and preliminary pro forma before site selection.
+2. **Complete thorough due diligence.** Zoning, overlays, environmental constraints, heritage trees, easements, and infrastructure availability before closing.
+3. **Assemble your team early.** Civil engineer, land use attorney, traffic engineer, and architect in place before your first DSD interaction.
+4. **Navigate entitlements with a clear process map.** PAC first, then site plan and/or plat, with realistic timelines for administrative versus discretionary approvals.
+5. **Structure your capital stack to match the timeline.** Land, A&D, and construction financing in sequence, with entitlements in hand before construction financing closes.
+6. **Confirm infrastructure before mobilizing.** Utility capacity, permit issuance, and contractor sequencing all resolved before breaking ground.
+
+Off-market land opportunities in Austin often carry cleaner entitlement histories and fewer competing bidders. If you're actively looking for commercial land in the Austin metro, cultivating relationships with advisors who have access to [off-market real estate](/off-market-real-estate-austin) and broader [Austin land development opportunities](/austin-land-development-opportunities) is worth prioritizing.
+
+Echelon Property Group advises on commercial land acquisition, entitlement strategy, and investment positioning across Austin and surrounding submarkets through our [Austin commercial real estate](/austin-commercial-real-estate) and [investment advisory](/invest) practices. If you're evaluating a site or working through any stage of this process, [connect with Echelon Property Group](/contact) for a market-specific conversation before you commit.
+
+:::faq
+Q: How long does the commercial entitlement process take in Austin?
+A: Administrative site plan approvals on by-right projects typically run several months once a complete application is in. Rezoning cases or discretionary approvals requiring Planning Commission or City Council action generally take six to twelve months from application to vote, and contested cases can run longer. Plan the entitlement timeline into your land carry costs from day one.
+
+Q: What is the single most expensive mistake first-time Austin developers make?
+A: Selecting a site based on price per acre before confirming that zoning, overlays, environmental constraints, and infrastructure capacity actually support the intended use. A "cheap" parcel that cannot be entitled for your use within a reasonable timeline is almost always more expensive than a higher-priced parcel that is development-ready.
+
+Q: Do I need a Pre-Application Conference with DSD?
+A: A PAC is strongly recommended for most commercial projects and required for several categories. It is the cheapest, fastest way to surface code requirements, applicable overlays, and required studies before you commit to a full submission package. Treat it as a free diagnostic, not a formality.
+
+Q: How should I think about neighborhood associations in Austin?
+A: Neighborhood associations are not part of the formal approval process, but Planning Commissioners and Council Members pay attention to organized neighborhood input on discretionary cases. Early, transparent outreach is far cheaper than fighting opposition at a public hearing. Treat neighborhood engagement as a workstream, not an afterthought.
+
+Q: What is the difference between an A&D loan and a construction loan?
+A: An A&D (acquisition and development) loan funds the land purchase plus the cost of installing infrastructure such as roads, utilities, and grading. A construction loan funds vertical building costs and typically requires a completed entitlement package before a lender will commit. Sequencing these loans to match your entitlement and construction timeline is critical to avoiding distress.
+
+Q: Are off-market commercial land opportunities really better than listed sites?
+A: Often yes. Off-market parcels usually have cleaner entitlement histories, fewer competing bidders, and more flexible negotiation dynamics. The trade-off is access. Cultivating relationships with advisors who source off-market deals is a meaningful long-term advantage for any commercial buyer in Austin.
+:::
+
+*This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin's Land Development Code, entitlement timelines, and infrastructure conditions are subject to change. Confirm current requirements with appropriate professional advisors before making commercial real estate decisions.*
+
+`,
+  },
   {
     id: "data-center-development-texas",
     title: "Data Center Development in Texas: What It Means for Real Estate, Land, and the Austin Economy",

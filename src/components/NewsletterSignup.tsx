@@ -237,7 +237,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                   }}
                 >
                   <span aria-hidden="true" style={{ width: "28px", height: "1px", background: GOLD, display: "inline-block" }} />
-                  GAIN ACCESS
+                  GAINING ACCESS
                 </div>
 
                 <h2

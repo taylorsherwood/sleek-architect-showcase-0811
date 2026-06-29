@@ -300,7 +300,23 @@ const About = () => {
                 <div className="mt-8 border-t border-border/50 pt-6">
                   <h4 className="text-minimal text-muted-foreground/50 mb-3">PROFESSIONAL DESIGNATIONS</h4>
                   <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground/70">Certified Luxury Home Marketing Specialist (CLHMS)</p>
+                    <p className="text-sm text-muted-foreground/70">
+                      <a
+                        href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
+                            "_blank",
+                            "width=700,height=470,left=100,top=100,scrollbars=1"
+                          );
+                        }}
+                        className="underline decoration-[hsl(var(--gold)/0.4)] underline-offset-4 hover:text-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300"
+                        aria-label="Verify Certified Luxury Home Marketing Specialist credential"
+                      >
+                        Certified Luxury Home Marketing Specialist (CLHMS)
+                      </a>
+                    </p>
                     <p className="text-sm text-muted-foreground/70">Accredited Buyer's Representative (ABR)</p>
                     <p className="text-sm text-muted-foreground/70">Graduate Realtor Institute (GRI)</p>
                     <p className="text-sm text-muted-foreground/70">Member, eXp Luxury Division</p>

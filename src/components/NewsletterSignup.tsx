@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { submitLeadToZapier } from "@/lib/formUtils";
-import editorialImage from "@/assets/barton-creek-estate-new.webp";
+import editorialImage from "@/assets/newsletter-austin-skyline.jpg.asset.json";
 
 
 interface NewsletterSignupProps {
@@ -220,27 +220,6 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
           <div className="echelon-insider-grid grid items-stretch" style={{ gridTemplateColumns: "minmax(0, 1fr)", gap: "clamp(2.5rem, 5vw, 4.5rem)" }}>
             {/* LEFT COLUMN */}
             <div className="relative" style={{ paddingRight: "clamp(0rem, 2vw, 2rem)" }}>
-              {/* Oversized E watermark behind copy only */}
-              <div
-                aria-hidden="true"
-                style={{
-                  position: "absolute",
-                  top: "-2rem",
-                  left: "-1.5rem",
-                  pointerEvents: "none",
-                  userSelect: "none",
-                  fontFamily: '"Cinzel", serif',
-                  fontWeight: 400,
-                  fontSize: "clamp(20rem, 32vw, 36rem)",
-                  lineHeight: 1,
-                  color: NAVY,
-                  opacity: 0.02,
-                  letterSpacing: "0.02em",
-                  zIndex: 0,
-                }}
-              >
-                E
-              </div>
 
               <div className="relative" style={{ zIndex: 1 }}>
                 <div
@@ -451,7 +430,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
               }}
             >
               <img
-                src={editorialImage}
+                src={editorialImage.url}
                 alt=""
                 loading="lazy"
                 decoding="async"

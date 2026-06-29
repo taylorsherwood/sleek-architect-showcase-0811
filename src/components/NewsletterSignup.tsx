@@ -193,251 +193,278 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
     );
   }
 
-  const benefits = ["Market Intelligence", "Private Opportunities", "Luxury Listings", "Local Insights"];
+  const benefits = ["Market Intelligence", "Private Opportunities", "Luxury Listings", "Development Trends"];
 
   return (
     <section
       className={`relative ${className}`}
       style={{
-        background: IVORY,
-        paddingTop: "clamp(5rem, 10vw, 8rem)",
-        paddingBottom: "clamp(7rem, 12vw, 10rem)",
+        background: "#FAFAF8",
+        paddingTop: "clamp(6rem, 12vw, 10rem)",
+        paddingBottom: "clamp(8rem, 14vw, 12rem)",
       }}
     >
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+      <div className="max-w-[1320px] mx-auto px-6 md:px-10">
         <div
-          className="relative mx-auto overflow-hidden"
+          className="grid items-stretch"
           style={{
-            maxWidth: "1040px",
-            background: "#FAFAF8",
-            border: `1px solid ${GOLD}40`,
-            boxShadow: "0 1px 2px rgba(12,15,36,0.04), 0 24px 60px -30px rgba(12,15,36,0.18)",
-            padding: "clamp(2.5rem, 6vw, 5.5rem) clamp(1.75rem, 5vw, 5rem)",
+            gridTemplateColumns: "minmax(0, 1fr)",
+            gap: "clamp(2.5rem, 5vw, 4.5rem)",
           }}
         >
-          {/* Watermark monogram */}
-          <div
-            aria-hidden="true"
-            style={{
-              position: "absolute",
-              inset: 0,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              pointerEvents: "none",
-              userSelect: "none",
-              fontFamily: '"Cinzel", serif',
-              fontWeight: 400,
-              fontSize: "clamp(18rem, 38vw, 32rem)",
-              lineHeight: 1,
-              color: NAVY,
-              opacity: 0.03,
-              letterSpacing: "0.02em",
-            }}
-          >
-            E
-          </div>
+          <style>{`
+            @media (min-width: 900px) {
+              .echelon-insider-grid { grid-template-columns: 55fr 45fr !important; }
+            }
+          `}</style>
+          <div className="echelon-insider-grid grid items-stretch" style={{ gridTemplateColumns: "minmax(0, 1fr)", gap: "clamp(2.5rem, 5vw, 4.5rem)" }}>
+            {/* LEFT COLUMN */}
+            <div className="relative" style={{ paddingRight: "clamp(0rem, 2vw, 2rem)" }}>
+              {/* Oversized E watermark behind copy only */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  top: "-2rem",
+                  left: "-1.5rem",
+                  pointerEvents: "none",
+                  userSelect: "none",
+                  fontFamily: '"Cinzel", serif',
+                  fontWeight: 400,
+                  fontSize: "clamp(20rem, 32vw, 36rem)",
+                  lineHeight: 1,
+                  color: NAVY,
+                  opacity: 0.02,
+                  letterSpacing: "0.02em",
+                  zIndex: 0,
+                }}
+              >
+                E
+              </div>
 
-          <div className="relative" style={{ textAlign: "center" }}>
-            <div
-              style={{
-                fontFamily: '"Jost", sans-serif',
-                fontSize: "0.6875rem",
-                letterSpacing: "0.32em",
-                textTransform: "uppercase",
-                color: GOLD,
-                fontWeight: 500,
-                marginBottom: "1.5rem",
-              }}
-            >
-              Private Market Intelligence
+              <div className="relative" style={{ zIndex: 1 }}>
+                <div
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.34em",
+                    textTransform: "uppercase",
+                    color: GOLD,
+                    fontWeight: 500,
+                    marginBottom: "1.75rem",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.875rem",
+                  }}
+                >
+                  <span aria-hidden="true" style={{ width: "28px", height: "1px", background: GOLD, display: "inline-block" }} />
+                  Private Market Intelligence
+                </div>
+
+                <h2
+                  style={{
+                    fontFamily: '"Cinzel", serif',
+                    fontSize: "clamp(2rem, 4vw, 3.25rem)",
+                    fontWeight: 400,
+                    letterSpacing: "0.015em",
+                    lineHeight: 1.1,
+                    color: NAVY,
+                    marginBottom: "1.75rem",
+                  }}
+                >
+                  {title}
+                </h2>
+
+                <p
+                  style={{
+                    fontFamily: '"Jost", sans-serif',
+                    fontSize: "clamp(0.9375rem, 1.15vw, 1.0625rem)",
+                    fontWeight: 300,
+                    lineHeight: 1.75,
+                    color: `${NAVY}B3`,
+                    maxWidth: "520px",
+                    margin: "0 0 2.5rem",
+                  }}
+                >
+                  {description}
+                </p>
+
+                <ul
+                  style={{
+                    listStyle: "none",
+                    padding: 0,
+                    margin: "0 0 2.75rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.875rem",
+                  }}
+                >
+                  {benefits.map((b) => (
+                    <li
+                      key={b}
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.8125rem",
+                        letterSpacing: "0.22em",
+                        textTransform: "uppercase",
+                        color: NAVY,
+                        fontWeight: 400,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "1rem",
+                      }}
+                    >
+                      <span
+                        aria-hidden="true"
+                        style={{ width: "22px", height: "1px", background: GOLD, display: "inline-block", flexShrink: 0 }}
+                      />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+
+                {status === "success" ? (
+                  <div
+                    role="status"
+                    aria-live="polite"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "0.9375rem",
+                      fontWeight: 300,
+                      lineHeight: 1.75,
+                      color: NAVY,
+                      borderTop: `1px solid ${GOLD}`,
+                      borderBottom: `1px solid ${GOLD}`,
+                      padding: "1.5rem 0",
+                      maxWidth: "480px",
+                    }}
+                  >
+                    Welcome to The Echelon Insider. You will receive periodic Austin
+                    market intelligence, private opportunities, luxury listings,
+                    development trends, and notable local insights.
+                  </div>
+                ) : (
+                  <form
+                    onSubmit={handleSubmit}
+                    noValidate
+                    style={{
+                      maxWidth: "480px",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "0.875rem",
+                    }}
+                  >
+                    <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+                    <input
+                      id="newsletter-email"
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="name@email.com"
+                      autoComplete="email"
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "1rem",
+                        fontWeight: 300,
+                        color: NAVY,
+                        background: "transparent",
+                        border: `1px solid ${NAVY}26`,
+                        padding: "0 1.25rem",
+                        height: "58px",
+                        outline: "none",
+                        width: "100%",
+                        borderRadius: 0,
+                        boxSizing: "border-box",
+                        transition: "border-color 200ms ease, box-shadow 200ms ease",
+                      }}
+                      onFocus={(e) => {
+                        e.currentTarget.style.borderColor = GOLD;
+                        e.currentTarget.style.boxShadow = `0 0 0 1px ${GOLD}`;
+                      }}
+                      onBlur={(e) => {
+                        e.currentTarget.style.borderColor = `${NAVY}26`;
+                        e.currentTarget.style.boxShadow = "none";
+                      }}
+                    />
+                    <button
+                      type="submit"
+                      disabled={status === "submitting"}
+                      style={{
+                        fontFamily: '"Jost", sans-serif',
+                        fontSize: "0.75rem",
+                        letterSpacing: "0.26em",
+                        textTransform: "uppercase",
+                        fontWeight: 500,
+                        color: IVORY,
+                        background: NAVY,
+                        border: `1px solid ${NAVY}`,
+                        height: "58px",
+                        padding: "0 1.75rem",
+                        width: "100%",
+                        cursor: status === "submitting" ? "wait" : "pointer",
+                        transition: "background-color 200ms ease, color 200ms ease, border-color 200ms ease",
+                        boxSizing: "border-box",
+                      }}
+                      onMouseEnter={(e) => {
+                        if (status === "submitting") return;
+                        e.currentTarget.style.background = "transparent";
+                        e.currentTarget.style.borderColor = GOLD;
+                        e.currentTarget.style.color = NAVY;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = NAVY;
+                        e.currentTarget.style.borderColor = NAVY;
+                        e.currentTarget.style.color = IVORY;
+                      }}
+                    >
+                      {status === "submitting" ? "Joining…" : "Join The Echelon Insider"}
+                    </button>
+                    {status === "error" && (
+                      <p
+                        role="alert"
+                        style={{
+                          fontFamily: '"Jost", sans-serif',
+                          fontSize: "0.8125rem",
+                          fontWeight: 300,
+                          color: NAVY,
+                          margin: "0.5rem 0 0",
+                        }}
+                      >
+                        We couldn't process your request at this time. Please try again or
+                        contact Echelon Property Group directly.
+                      </p>
+                    )}
+                  </form>
+                )}
+              </div>
             </div>
 
-            <h2
-              style={{
-                fontFamily: '"Cinzel", serif',
-                fontSize: "clamp(1.875rem, 4.2vw, 3rem)",
-                fontWeight: 400,
-                letterSpacing: "0.02em",
-                lineHeight: 1.1,
-                color: NAVY,
-                marginBottom: "1.5rem",
-              }}
-            >
-              {title}
-            </h2>
-
+            {/* RIGHT COLUMN — editorial image */}
             <div
               aria-hidden="true"
               style={{
-                width: "44px",
-                height: "1px",
-                background: GOLD,
-                margin: "0 auto 1.75rem",
-              }}
-            />
-
-            <p
-              style={{
-                fontFamily: '"Jost", sans-serif',
-                fontSize: "clamp(0.9375rem, 1.2vw, 1.0625rem)",
-                fontWeight: 300,
-                lineHeight: 1.75,
-                color: `${NAVY}B3`,
-                maxWidth: "620px",
-                margin: "0 auto 2.5rem",
+                position: "relative",
+                minHeight: "clamp(360px, 56vw, 640px)",
+                borderRadius: "4px",
+                overflow: "hidden",
               }}
             >
-              {description}
-            </p>
-
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: "0 auto 3rem",
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-                gap: "0.75rem 2.25rem",
-                maxWidth: "720px",
-              }}
-            >
-              {benefits.map((b) => (
-                <li
-                  key={b}
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "0.75rem",
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                    color: NAVY,
-                    fontWeight: 400,
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.625rem",
-                  }}
-                >
-                  <span aria-hidden="true" style={{ width: "5px", height: "5px", background: GOLD, display: "inline-block", transform: "rotate(45deg)" }} />
-                  {b}
-                </li>
-              ))}
-            </ul>
-
-            {status === "success" ? (
-              <div
-                role="status"
-                aria-live="polite"
+              <img
+                src={editorialImage}
+                alt=""
+                loading="lazy"
+                decoding="async"
                 style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.9375rem",
-                  fontWeight: 300,
-                  lineHeight: 1.75,
-                  color: NAVY,
-                  background: IVORY,
-                  border: `1px solid ${GOLD}`,
-                  padding: "1.5rem 1.75rem",
-                  maxWidth: "560px",
-                  margin: "0 auto",
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
                 }}
-              >
-                Welcome to The Echelon Insider. You will receive periodic Austin market
-                intelligence, private opportunities, luxury listings, development trends,
-                and notable local insights.
-              </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                noValidate
-                className="flex flex-col sm:flex-row"
-                style={{
-                  maxWidth: "560px",
-                  margin: "0 auto",
-                  gap: "0.875rem",
-                  alignItems: "stretch",
-                }}
-              >
-                <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-                <input
-                  id="newsletter-email"
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="name@email.com"
-                  autoComplete="email"
-                  style={{
-                    flex: 1,
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "1rem",
-                    fontWeight: 300,
-                    color: NAVY,
-                    background: "transparent",
-                    border: `1px solid ${NAVY}26`,
-                    padding: "1rem 1.25rem",
-                    outline: "none",
-                    borderRadius: 0,
-                    transition: "border-color 200ms ease, box-shadow 200ms ease",
-                  }}
-                  onFocus={(e) => {
-                    e.currentTarget.style.borderColor = GOLD;
-                    e.currentTarget.style.boxShadow = `0 0 0 1px ${GOLD}`;
-                  }}
-                  onBlur={(e) => {
-                    e.currentTarget.style.borderColor = `${NAVY}26`;
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
-                />
-                <button
-                  type="submit"
-                  disabled={status === "submitting"}
-                  style={{
-                    fontFamily: '"Jost", sans-serif',
-                    fontSize: "0.75rem",
-                    letterSpacing: "0.24em",
-                    textTransform: "uppercase",
-                    fontWeight: 500,
-                    color: IVORY,
-                    background: NAVY,
-                    border: `1px solid ${NAVY}`,
-                    padding: "1rem 1.75rem",
-                    cursor: status === "submitting" ? "wait" : "pointer",
-                    transition: "background-color 200ms ease, color 200ms ease, border-color 200ms ease",
-                    whiteSpace: "nowrap",
-                  }}
-                  onMouseEnter={(e) => {
-                    if (status === "submitting") return;
-                    e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.borderColor = GOLD;
-                    e.currentTarget.style.color = NAVY;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = NAVY;
-                    e.currentTarget.style.borderColor = NAVY;
-                    e.currentTarget.style.color = IVORY;
-                  }}
-                >
-                  {status === "submitting" ? "Joining…" : "Join The Echelon Insider"}
-                </button>
-              </form>
-            )}
-
-            {status === "error" && (
-              <p
-                role="alert"
-                style={{
-                  fontFamily: '"Jost", sans-serif',
-                  fontSize: "0.8125rem",
-                  fontWeight: 300,
-                  color: NAVY,
-                  margin: "1rem auto 0",
-                  maxWidth: "560px",
-                }}
-              >
-                We couldn't process your request at this time. Please try again or
-                contact Echelon Property Group directly.
-              </p>
-            )}
+              />
+            </div>
           </div>
         </div>
       </div>

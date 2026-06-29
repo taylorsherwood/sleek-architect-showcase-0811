@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "756eb392-365b-4f28-aa52-603742b8def0",
+  "asset_id": "fce1b09a-85cf-4b62-82b6-ecefed7ab736",
   "project_id": "ef43843e-5c14-440e-9ced-c7d1c988ede5",
-  "url": "/__l5e/assets-v1/756eb392-365b-4f28-aa52-603742b8def0/taylor-about-headshot.jpg",
-  "r2_key": "a/v1/ef43843e-5c14-440e-9ced-c7d1c988ede5/756eb392-365b-4f28-aa52-603742b8def0/taylor-about-headshot.jpg",
-  "original_filename": "taylor-about-headshot.jpg",
-  "size": 213152,
-  "content_type": "image/jpeg",
-  "created_at": "2026-06-18T21:41:53Z"
+  "url": "/__l5e/assets-v1/fce1b09a-85cf-4b62-82b6-ecefed7ab736/taylor-about-headshot.png",
+  "r2_key": "a/v1/ef43843e-5c14-440e-9ced-c7d1c988ede5/fce1b09a-85cf-4b62-82b6-ecefed7ab736/taylor-about-headshot.png",
+  "original_filename": "taylor-about-headshot.png",
+  "size": 1167108,
+  "content_type": "image/png",
+  "created_at": "2026-06-29T22:56:33Z"
 }

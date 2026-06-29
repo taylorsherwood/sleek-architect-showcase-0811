@@ -75,7 +75,7 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "austin-luxury-market-trends",
+    id: "austin-luxury-market-trends-2026",
     title: "Austin Luxury Market Trends: What's Actually Driving the High-End Market Right Now",
     metaTitle: "Austin Luxury Market Trends 2026 | Echelon Property Group",
     excerpt: "Austin luxury market trends have shifted from pandemic-era frenzy to a more sophisticated, stratified environment where pricing strategy and neighborhood expertise matter more than ever. Relocating professionals and strong economic fundamentals continue driving demand, but sellers anchored to 2021 comps and buyers moving too slowly on well-priced properties in areas like Tarrytown and West Lake Hills are finding today's high-end market far less forgiving.",

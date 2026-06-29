@@ -61,7 +61,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   };
 
   return (
-    <section className={`bg-secondary ${className}`}>
+    <section className={`bg-secondary pb-20 md:pb-28 ${className}`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="max-w-2xl mx-auto text-center">
           <h2

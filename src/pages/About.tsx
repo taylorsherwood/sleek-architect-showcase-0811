@@ -286,9 +286,9 @@ const About = () => {
                   width={800}
                   height={1000}
                   priority
-                  className="w-full max-h-[520px] md:max-h-[580px] object-cover object-[30%_center]"
+                  className="w-full max-h-[680px] md:max-h-[760px] object-cover object-[30%_top]"
                 />
-                <div className="mt-6 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
+                <div className="mt-10 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
                   <OptimizedImage src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" width={400} height={160} className="w-full mix-blend-multiply" />
                 </div>
               </div>

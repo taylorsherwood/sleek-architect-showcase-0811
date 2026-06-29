@@ -215,6 +215,9 @@ What has changed is the level of precision required to succeed. Sellers need acc
 
 Learn more about our [services](/about) and [connect with our team](/contact) for a candid, strategy-focused discussion about your specific situation.
 
+
+*This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin luxury market conditions vary by submarket and change continuously. Confirm current conditions with appropriate professional advisors before making real estate decisions.*\u00a0
+
 :::faq
 
 Q: What price range qualifies as luxury in Austin in 2026?
@@ -236,7 +239,6 @@ Q: What are luxury buyers prioritizing in 2026?
 A: Quality of construction over raw square footage, privacy and functional outdoor space, and dedicated home office infrastructure are the dominant priorities at the $3M to $5M level and above.
 :::
 
-*This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin luxury market conditions vary by submarket and change continuously. Confirm current conditions with appropriate professional advisors before making real estate decisions.*
 
 `,
   },

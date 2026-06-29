@@ -202,7 +202,6 @@ The land and ranch market deserves specific attention as an extension of the lux
 
 The overall picture for Austin's luxury market through the rest of 2026 is one of stability with nuance. This is not a distressed market. It is a more discerning one. Buyers who are prepared, connected, and working with advisors who understand the off-market landscape will find real opportunity. Sellers who price accurately and present their properties with intention will transact. Those who approach the market without that preparation will find it less accommodating than they expected.
 
-:::intel-gauge-austin-metro
 
 ## Putting It All Together
 

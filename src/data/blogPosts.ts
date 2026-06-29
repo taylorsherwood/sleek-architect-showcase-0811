@@ -98,6 +98,7 @@ Sellers who anchor on 2021 or 2022 comps are watching their listings accumulate 
 Understanding the Austin luxury market trends that are actually driving outcomes right now requires moving past broad characterizations. This article breaks down the structural forces shaping the high-end segment: where the price thresholds sit today, which neighborhoods are defining demand, who is buying and why, how inventory constraints are reshaping the transaction landscape, and what the rest of 2026 is likely to bring. For a continuously updated read on conditions, our [Austin luxury market report](/austin-luxury-market-report) and [market intelligence](/market-intelligence) dashboard track these forces in real time.
 
 :::intel-gauge-coa-sfr-2m
+:::
 
 
 

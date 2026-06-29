@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { submitLeadToZapier } from "@/lib/formUtils";
+import editorialImage from "@/assets/barton-creek-estate-new.webp";
+
 
 interface NewsletterSignupProps {
   title?: string;

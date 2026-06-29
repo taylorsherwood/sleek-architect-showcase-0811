@@ -387,9 +387,9 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
                       }}
                       onMouseEnter={(e) => {
                         if (status === "submitting") return;
-                        e.currentTarget.style.background = "transparent";
+                        e.currentTarget.style.background = GOLD;
                         e.currentTarget.style.borderColor = GOLD;
-                        e.currentTarget.style.color = NAVY;
+                        e.currentTarget.style.color = "#FFFFFF";
                       }}
                       onMouseLeave={(e) => {
                         e.currentTarget.style.background = NAVY;

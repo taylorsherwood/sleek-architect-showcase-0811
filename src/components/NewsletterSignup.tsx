@@ -430,7 +430,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
               }}
             >
               <img
-                src={editorialImage}
+                src={editorialImage.url}
                 alt=""
                 loading="lazy"
                 decoding="async"

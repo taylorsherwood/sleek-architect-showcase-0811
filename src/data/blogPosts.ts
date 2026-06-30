@@ -112,7 +112,7 @@ The foundation of this submarket is Eanes ISD, which consistently earns top acco
 
 Inventory here is persistently tight. Many transactions happen [off-market](/off-market-real-estate-austin), facilitated through advisor relationships rather than MLS listings. Custom builds and significant lot sizes are the norm, and pricing reflects it. This is among the higher-priced suburban markets in the entire Austin metro, but it has historically held value better than most. Our [Tarrytown vs. Westlake](/blog/tarrytown-vs-westlake-austin) breakdown goes deeper on how this corridor compares to its closest urban analogue.
 
-For high-net-worth buyers, Westlake and Rollingwood represent a combination of lifestyle, school quality, and capital preservation that few other Austin submarkets can match. See our [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) coverage for current high-end dynamics.
+For high-net-worth buyers, Westlake and Rollingwood represent a combination of lifestyle, school quality, and capital preservation that few other Austin submarkets can match. See our [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) coverage for current high-end dynamics.\u00a0
 
 :::intel-gauge-westlake-rollingwood
 :::

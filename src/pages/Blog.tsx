@@ -307,7 +307,7 @@ const Blog = () => {
                             {post.category}
                           </p>
                           <h2
-                            className={`font-display font-normal leading-[1.2] text-architectural mb-3 group-hover:text-foreground/75 transition-colors duration-500 line-clamp-4 ${
+                            className={`font-display font-normal leading-[1.2] text-architectural mb-3 group-hover:text-foreground/75 transition-colors duration-500 line-clamp-4 whitespace-pre-line ${
                               wide
                                 ? "text-2xl md:text-3xl lg:text-[2rem]"
                                 : "text-xl lg:text-[1.4rem] md:min-h-[6.72rem]"

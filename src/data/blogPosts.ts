@@ -78,8 +78,8 @@ const LINK = "text-foreground underline hover:text-muted-foreground";
 export const blogPosts: BlogPost[] = [
   {
     id: "best-austin-suburbs-2026",
-    title: "8 Best Austin Suburbs to Buy Real Estate in 2026",
-    metaTitle: "8 Best Austin Suburbs to Buy Real Estate in 2026 | Echelon Property Group",
+    title: "8 of the Best Austin Suburbs\u00a0\nto Buy Real Estate in 2026",
+    metaTitle: "8 of the Best Austin Suburbs to Buy Real Estate in 2026 | Echelon Property Group",
     excerpt: "This strategic guide profiles the best Austin suburbs for 2026, matching each community to specific buyer types, from families prioritizing elite school districts to investors targeting high-growth corridors with strong land appreciation potential. Whether you're relocating, purchasing investment properties, or seeking more land without losing urban access, these suburb profiles go beyond rankings to help you identify which Austin market aligns with your goals.",
     author: "Taylor Sherwood",
     date: "2026-06-30",

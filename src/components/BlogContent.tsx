@@ -188,7 +188,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator";
+  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator";
   body: string;
 }
 
@@ -207,7 +207,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-rates|intel-luxury-snapshot|mortgage-calculator)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta-anchor|cta|faq|stat-block|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-rates|intel-luxury-snapshot|mortgage-calculator)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -627,6 +627,9 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
   );
   let midOneAfter = -1;
   let midTwoAfter = -1;
+  // Author-placed positional anchor for the first mid CTA. When present,
+  // it pins midOneAfter to that block and lets the second CTA fall naturally.
+  const anchorIdx = blocks.findIndex((b) => b.type === "cta-anchor");
   if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 2) {
     const eligibleSorted = Array.from(eligibleIdx).sort((a, b) => a - b);
     let cumulative = 0;
@@ -644,10 +647,14 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
           if (!best || d < best.d) return { i, d };
           return best;
         }, null);
-    const first = closestTo(0.33, -1);
-    if (first) midOneAfter = first.i;
+    if (anchorIdx >= 0) {
+      midOneAfter = anchorIdx;
+    } else {
+      const first = closestTo(0.33, -1);
+      if (first) midOneAfter = first.i;
+    }
     const second = closestTo(0.7, midOneAfter);
-    if (second && Math.abs(pctAt[second.i] - pctAt[midOneAfter]) > 0.15)
+    if (second && second.i > midOneAfter && Math.abs(pctAt[second.i] - pctAt[midOneAfter]) > 0.15)
       midTwoAfter = second.i;
     // Never insert at the very last block — ContinueExploring sits there.
     const lastEligible = eligibleSorted[eligibleSorted.length - 1];
@@ -683,6 +690,8 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             return <MicroCTA key={idx} body={block.body} />;
           case "cta":
             return <SoftCTA key={idx} body={block.body} />;
+          case "cta-anchor":
+            return null;
           case "stat-block":
             return <StatBlock key={idx} body={block.body} />;
           case "faq":

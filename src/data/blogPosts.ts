@@ -46,6 +46,7 @@ import blogDataCenterDevelopmentTexas from "@/assets/blog/data-center-developmen
 import blogAustinCommercialLandDevelopment from "@/assets/blog/austin-commercial-land-development.jpg.asset.json";
 import blogAustinLuxuryMarketTrends from "@/assets/blog/austin-luxury-market-trends.jpg.asset.json";
 import blogAustinRelocationGuide from "@/assets/blog/austin-relocation-guide.png.asset.json";
+import blogBestAustinSuburbs2026 from "@/assets/blog/best-austin-suburbs-2026.jpg.asset.json";
 
 
 

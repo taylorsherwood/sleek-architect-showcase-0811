@@ -54,6 +54,14 @@ export const privateSales: PrivateSaleItem[] = [
     label: "REPRESENTED BUYER",
   },
   {
+    image: southeastDevImage,
+    price: "$4,750,000",
+    address: "Address Withheld",
+    area: "SOUTHEAST AUSTIN",
+    descriptor: "Development Land · 9 Acres",
+    label: "REPRESENTED BUYER",
+  },
+  {
     image: westlakeHillsPrivateImage,
     price: "$5,950,000",
     address: "Address Withheld",

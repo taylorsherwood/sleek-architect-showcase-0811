@@ -802,6 +802,96 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-westlake-rollingwood":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Westlake Hills & Rollingwood · All Price Points"
+                  marketName="Westlake Hills"
+                  fallbackMarketName="West Austin"
+                  eyebrow={"WESTLAKE HILLS & ROLLINGWOOD · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-lakeway-bee-cave":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Lakeway & Bee Cave · All Price Points"
+                  marketName="Lakeway"
+                  fallbackMarketName="Lake Travis"
+                  eyebrow={"LAKEWAY & BEE CAVE · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-cedar-park-leander":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Cedar Park & Leander · All Price Points"
+                  marketName="Cedar Park"
+                  fallbackMarketName="Leander"
+                  eyebrow={"CEDAR PARK & LEANDER · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-round-rock":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Round Rock · All Price Points"
+                  marketName="Round Rock"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"ROUND ROCK · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-dripping-springs":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Dripping Springs · All Price Points"
+                  marketName="Dripping Springs"
+                  fallbackMarketName="Hays County"
+                  eyebrow={"DRIPPING SPRINGS · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-kyle-buda":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Kyle & Buda · All Price Points"
+                  marketName="Kyle"
+                  fallbackMarketName="Buda"
+                  eyebrow={"KYLE & BUDA · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-pflugerville-hutto":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Pflugerville & Hutto · All Price Points"
+                  marketName="Pflugerville"
+                  fallbackMarketName="Hutto"
+                  eyebrow={"PFLUGERVILLE & HUTTO · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-georgetown":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Georgetown · All Price Points"
+                  marketName="Georgetown"
+                  fallbackMarketName="Williamson County"
+                  eyebrow={"GEORGETOWN · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+
+
 
 
 

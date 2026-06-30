@@ -105,7 +105,7 @@ export const privateSales: PrivateSaleItem[] = [
     image: highRoadImage,
     price: "$1,495,000",
     address: "Address Withheld",
-    area: "WESTLAKE HILLS",
+    area: "WEST LAKE HILLS",
     descriptor: "",
     label: "REPRESENTED BUYER",
   },

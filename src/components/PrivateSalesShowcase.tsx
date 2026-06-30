@@ -12,7 +12,7 @@ import tarrytownAsset from "@/assets/tarrytown-private-sale.jpg.asset.json";
 const tarrytownImage = tarrytownAsset.url;
 import westlakeHillsPrivate from "@/assets/westlake-hills-private-sold.avif.asset.json";
 const westlakeHillsPrivateImage = westlakeHillsPrivate.url;
-import southeastDevAsset from "@/assets/southeast-austin-development-land.png.asset.json";
+import southeastDevAsset from "@/assets/southeast-austin-9-acres-map.png.asset.json";
 const southeastDevImage = southeastDevAsset.url;
 
 /* ------------------------------------------------------------------ */

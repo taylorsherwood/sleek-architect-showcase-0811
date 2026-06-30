@@ -82,7 +82,7 @@ export const privateSales: PrivateSaleItem[] = [
     price: "$4,500,000",
     address: "Address Withheld",
     area: "LAKE TRAVIS AREA",
-    descriptor: "Commercial Property",
+    descriptor: "Land Development",
     label: "REPRESENTED BUYER",
   },
   {

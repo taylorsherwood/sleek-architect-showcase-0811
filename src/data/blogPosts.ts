@@ -158,6 +158,9 @@ For [investors](/invest), properties in this corridor tend to attract long-term 
 
 The Lake Travis corridor rewards buyers who understand the difference between waterfront, water-adjacent, and water-view properties. Each carries a different price tier and a different set of considerations. Be precise about what you're actually buying before making an offer.
 
+:::cta-anchor
+:::
+
 ## 3. Cedar Park and Leander
 
 ### The Challenge It Solves

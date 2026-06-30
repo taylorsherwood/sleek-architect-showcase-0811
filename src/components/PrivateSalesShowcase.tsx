@@ -146,7 +146,7 @@ function PrivateSaleCard({ sale, index }: { sale: PrivateSaleItem; index: number
           />
           {/* Label */}
           {sale.label && (
-            <span className="absolute top-4 left-4 text-[10px] tracking-[0.18em] uppercase font-medium text-foreground/70 bg-background/80 backdrop-blur-sm px-3 py-1.5">
+            <span className="absolute top-4 left-4 text-[10px] tracking-[0.18em] uppercase font-medium text-white bg-gold px-3 py-1.5">
               {sale.label}
             </span>
           )}

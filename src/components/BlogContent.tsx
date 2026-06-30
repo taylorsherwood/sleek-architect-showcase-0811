@@ -627,6 +627,9 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
   );
   let midOneAfter = -1;
   let midTwoAfter = -1;
+  // Author-placed positional anchor for the first mid CTA. When present,
+  // it pins midOneAfter to that block and lets the second CTA fall naturally.
+  const anchorIdx = blocks.findIndex((b) => b.type === "cta-anchor");
   if (!authorPlacedCTA && totalLen >= 3500 && eligibleIdx.size >= 2) {
     const eligibleSorted = Array.from(eligibleIdx).sort((a, b) => a - b);
     let cumulative = 0;
@@ -644,10 +647,14 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
           if (!best || d < best.d) return { i, d };
           return best;
         }, null);
-    const first = closestTo(0.33, -1);
-    if (first) midOneAfter = first.i;
+    if (anchorIdx >= 0) {
+      midOneAfter = anchorIdx;
+    } else {
+      const first = closestTo(0.33, -1);
+      if (first) midOneAfter = first.i;
+    }
     const second = closestTo(0.7, midOneAfter);
-    if (second && Math.abs(pctAt[second.i] - pctAt[midOneAfter]) > 0.15)
+    if (second && second.i > midOneAfter && Math.abs(pctAt[second.i] - pctAt[midOneAfter]) > 0.15)
       midTwoAfter = second.i;
     // Never insert at the very last block — ContinueExploring sits there.
     const lastEligible = eligibleSorted[eligibleSorted.length - 1];

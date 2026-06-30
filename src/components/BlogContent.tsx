@@ -690,6 +690,8 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             return <MicroCTA key={idx} body={block.body} />;
           case "cta":
             return <SoftCTA key={idx} body={block.body} />;
+          case "cta-anchor":
+            return null;
           case "stat-block":
             return <StatBlock key={idx} body={block.body} />;
           case "faq":

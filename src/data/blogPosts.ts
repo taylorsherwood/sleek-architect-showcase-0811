@@ -144,8 +144,7 @@ The political tension underlying all of this reform is real and ongoing. Neighbo
 
 Neither side has fully prevailed. The result is a regulatory environment that is genuinely in transition, where the rules that applied five years ago are not the rules that apply today, and the rules today may not be the rules that apply in three years. That fluidity creates both opportunity and risk depending on how well-informed a property owner or investor is. Understanding the broader [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) and our latest [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) analysis is essential context for evaluating how these reforms play out across different price points and property types.
 
-:::intel-gauge-austin-metro
-:::
+
 
 ## What HOME and Increased Density Mean on the Ground
 

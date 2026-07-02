@@ -48,6 +48,7 @@ import blogAustinLuxuryMarketTrends from "@/assets/blog/austin-luxury-market-tre
 import blogAustinRelocationGuide from "@/assets/blog/austin-relocation-guide.png.asset.json";
 import blogBestAustinSuburbs2026 from "@/assets/blog/best-austin-suburbs-2026.jpg.asset.json";
 import blogHNWBuyingTips from "@/assets/blog/high-net-worth-home-buying-tips-austin.png.asset.json";
+import blogAustinZoningChanges from "@/assets/blog/austin-zoning-changes.png.asset.json";
 
 
 
@@ -77,6 +78,170 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "austin-zoning-changes-explained",
+    title: "Austin Zoning Changes Explained: What Property Owners and Investors Need to Know",
+    metaTitle: "Austin Zoning Changes Explained (2026) | Echelon Property Group",
+    excerpt: "Austin zoning changes are reshaping property values and development potential across the metro, as the city loosens single-family restrictions, rewrites its Land Development Code, and navigates state-level preemptions of local land use controls. Property owners, investors, and buyers need to understand these regulatory shifts to accurately assess what can be built, how density may increase, and how land values stand to change in affected neighborhoods.",
+    author: "Taylor Sherwood",
+    date: "2026-07-01",
+    readTime: "15 MIN READ",
+    category: "INVESTMENT",
+    image: blogAustinZoningChanges.url,
+    heroImage: blogAustinZoningChanges.url,
+    imageAlt: "Detailed urban planning map on an architect's desk showing color-coded zoning districts across an Austin neighborhood, with rolled blueprints and drafting tools",
+    imageCaption: "Austin's evolving zoning framework is redrawing what can be built, where density concentrates, and how land values move across the metro.",
+    content: `
+
+Austin's land use rules are changing faster than at any point in the city's modern history. Most property owners, investors, and even experienced buyers haven't fully caught up with what that means for their assets.
+
+This isn't abstract policy. Zoning changes determine what you can build on a lot, how many units a property can support, what your neighbors can construct next door, and ultimately what the land is worth. When the rules shift, values shift with them. Sometimes dramatically.
+
+Austin is in the middle of a genuine regulatory transition. The city has loosened single-family zoning restrictions, the state legislature has preempted certain local land use controls, and a long-running effort to rewrite the Land Development Code continues to reshape the regulatory environment. For anyone buying, selling, investing, or holding property in the Austin metro, understanding these changes isn't optional. It's a core part of making informed decisions.
+
+This article breaks down how Austin's zoning system works, what's driving the current wave of reform, and what the practical implications are for property owners and investors across the metro. For broader context on how we advise clients through this shift, see our [Austin real estate investment](/austin-real-estate-investment) overview and our [Austin commercial real estate](/austin-commercial-real-estate) practice.
+
+:::callout
+label: Key takeaways
+- Austin's Land Development Code is in genuine transition. HOME Phase 1 and Phase 2 allow more units by right on most single-family lots, but impervious cover, utilities, and compatibility standards still bind.
+- State-level preemption has removed some local land use controls. The rules that applied five years ago are no longer reliable.
+- East Austin, South Congress, North Loop, and Hyde Park are among the most directly affected submarkets. Westside neighborhoods retain more protections but face increasing scrutiny.
+- Upzoning premium is real: land that can support more intensive use is worth more. Reactive zoning research surfaces constraints; proactive review surfaces opportunity.
+- Zoning verification letters and overlay review are non-negotiable due diligence for serious investors.
+:::
+
+## How Austin's Zoning System Actually Works
+
+Austin's zoning framework is administered by the City of Austin Development Services Department through the Land Development Code, or LDC. The LDC establishes the rules for how land can be used, what can be built, and how dense development can be across the city.
+
+The foundation of the system is base zoning districts. Residential districts range from SF-1 (the most restrictive single-family category, typically applied to large-lot suburban areas) through SF-6 (which allows small-lot and townhome-style development). Multifamily districts include MF-1 through MF-6, with increasing density allowances at each level. Commercial, industrial, and mixed-use districts layer on top of these residential categories, each with their own permitted use tables and development standards.
+
+Beyond base zoning, Austin applies overlays and compatibility standards that can modify what base zoning allows. Neighborhood plan combining districts, historic district overlays, and waterfront overlay zones are examples of regulations that sit on top of base zoning and can restrict or modify permitted uses, building heights, and design standards. Our [Austin infill development](/blog/austin-infill-development) coverage walks through several overlay-driven scenarios in detail.
+
+What zoning actually controls is worth understanding precisely. The key variables include:
+
+**Permitted uses:** What activities are allowed on the property. Residential, retail, office, restaurant, short-term rental, and other uses each require specific zoning authorization.
+
+**Building height and setbacks:** How tall a structure can be and how far it must sit from property lines. These controls directly affect what can be built and at what scale.
+
+**Impervious cover limits:** The percentage of a lot that can be covered by hard surfaces, including roofs, driveways, and patios. This is a frequently misunderstood constraint that can limit development even when zoning otherwise permits it.
+
+**Density:** The number of units or floor-area ratio allowed on a given lot. This is often the most financially significant variable for investors and developers.
+
+The concept of entitlement sits at the center of zoning's financial implications. Entitlement refers to the gap between what a property is currently zoned for and what it could potentially be rezoned to allow. A single-family lot in East Austin that is currently zoned SF-3 but sits in a transitional corridor where commercial or multifamily zoning is plausible represents a different investment proposition than the same lot in a fully built-out residential neighborhood with no realistic path to upzoning. That gap, whether it represents opportunity or risk, is what sophisticated buyers and sellers are actually evaluating when they analyze Austin properties. Our guide to [highest and best use analysis](/blog/highest-and-best-use-property-austin) breaks down how to model that gap on a specific parcel.
+
+## The Forces Driving Austin's Land Use Reforms
+
+Austin's population growth over the past two decades created a housing supply problem that the existing zoning framework was structurally unable to solve. Single-family zoning covered the vast majority of the city's residential land, restricting density in areas with strong demand and contributing to rising housing costs across the metro.
+
+The political response has been significant. At the city level, Austin has made multiple attempts to rewrite its Land Development Code. Earlier comprehensive rewrite efforts were challenged in court and ultimately failed to take effect. The city has since pursued targeted reforms rather than a single comprehensive overhaul, most notably through the HOME initiative.
+
+The HOME initiative, which stands for Home Options for Middle-income Empowerment, passed in two phases. HOME Phase 1, approved by Austin City Council in December 2023, allows up to three residential units on most single-family zoned lots citywide by right. This was a significant departure from Austin's historically restrictive single-family framework. HOME Phase 2 addressed additional provisions including reductions in minimum lot size requirements. Writers and readers should verify the current implementation status of both phases, as legal challenges and regulatory clarifications were ongoing as of mid-2026.
+
+At the state level, the Texas Legislature has passed legislation in recent sessions that has preempted certain local zoning authority. Bills from the 88th and 89th legislative sessions addressed housing density, short-term rental regulations, and annexation rules, among other areas. The practical effect is that some local restrictions Austin previously enforced are no longer legally defensible, and the city's ability to restrict certain types of development has been curtailed. Readers should verify the current status of relevant state legislation as of the 2026 session.
+
+The political tension underlying all of this reform is real and ongoing. Neighborhood preservation advocates, particularly in established inner-city areas, have pushed back against density increases that they argue will alter neighborhood character and strain infrastructure. Pro-density reformers, including housing advocates and development interests, argue that restrictive zoning has made Austin unaffordable and that liberalizing land use rules is essential to addressing the supply shortfall.
+
+Neither side has fully prevailed. The result is a regulatory environment that is genuinely in transition, where the rules that applied five years ago are not the rules that apply today, and the rules today may not be the rules that apply in three years. That fluidity creates both opportunity and risk depending on how well-informed a property owner or investor is. Understanding the broader [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) and our latest [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) analysis is essential context for evaluating how these reforms play out across different price points and property types.
+
+:::intel-gauge-austin-metro
+:::
+
+## What HOME and Increased Density Mean on the Ground
+
+The practical implications of HOME are more nuanced than the headline suggests. Allowing three units on a single-family lot by right is a meaningful policy change, but it doesn't mean every SF-3 lot in Austin is suddenly a triplex development opportunity.
+
+Several constraints still apply even under liberalized zoning. Impervious cover limits remain in effect and can be a binding constraint on smaller lots or lots with existing structures that already consume a significant portion of the allowable coverage. Utility capacity, particularly water and wastewater service, can limit the number of units a site can support regardless of what zoning permits. Parking requirements, though they have been modified in various contexts, still apply in many situations. And neighborhood compatibility standards, which limit building heights and setbacks near existing single-family homes, can restrict the physical form of what gets built even when the use is permitted.
+
+For existing homeowners, HOME creates options that didn't previously exist. Adding an accessory dwelling unit or a second unit on a lot was already possible in many cases, but the ability to add a third unit by right expands the range of strategies available for generating rental income, accommodating multigenerational households, or repositioning a property for sale to a developer or investor.
+
+For investors, the calculus depends heavily on location. The lots where increased by-right density is most actionable tend to share a few characteristics: they are large enough to accommodate additional units after accounting for impervious cover and setback requirements, they are located in areas with strong rental demand, and they have utility infrastructure that can support additional connections without prohibitive cost.
+
+Inner East Austin, South Austin between the river and Slaughter Lane, and North Austin corridors near major employment centers tend to score well on these criteria. Smaller lots in areas with aging infrastructure may be technically eligible for additional units under HOME but face practical constraints that make development economically marginal. Our [Austin redevelopment opportunities](/blog/austin-redevelopment-opportunities) and [Austin mixed-use development](/blog/austin-mixed-use-development) coverage tracks where these constraints are actually being solved in practice.
+
+The investment angle is most compelling for buyers who can identify properties where the current use doesn't reflect the land's full potential under current or likely future zoning. A single-family house on a 7,500-square-foot lot in a transitional East Austin neighborhood represents a different opportunity than the same structure on a 4,000-square-foot lot in a mature residential area where impervious cover limits leave little room for additional development. Investors focused on [building a luxury real estate portfolio in Austin](/blog/luxury-real-estate-portfolio-austin-strategy) should factor these density dynamics into their acquisition criteria from the outset.
+
+## Austin Neighborhoods and Submarkets Most Affected
+
+Zoning reform doesn't affect all Austin neighborhoods equally. The properties where changes have the most direct financial impact tend to be in areas where existing zoning was most restrictive relative to surrounding land values and demand.
+
+East Austin has seen significant redevelopment activity for over a decade, and zoning reform accelerates that trajectory. Many East Austin lots are large by inner-city standards, single-family zoned, and located in areas where multifamily and commercial development is already occurring on adjacent parcels. The combination of by-right density increases under HOME and existing transitional zoning patterns makes East Austin one of the most active submarkets for redevelopment plays.
+
+The South Congress corridor and surrounding areas, including Bouldin Creek and Travis Heights, are experiencing similar pressure. These are established inner south Austin neighborhoods with strong demand, high land values, and increasing development activity on commercial arterials. Compatibility standards have historically protected interior residential blocks, but ongoing reforms are modifying those protections in ways that expand development potential on lots near major corridors.
+
+North Loop and Hyde Park represent the urban core single-family market where density reform has the most direct implications for individual homeowners. These neighborhoods have high land values, strong rental demand, and proximity to the University of Texas and central employment. The ability to add units by right changes the economics of holding versus selling for many owners in these areas.
+
+Tarrytown, Pemberton Heights, and similar established westside neighborhoods have been more insulated from zoning pressure due to compatibility standards and, in some cases, historic district protections. These protections haven't disappeared, but they are under more scrutiny than at any previous point. Buyers paying premium prices in these areas should understand exactly what protections remain in place and how durable they are. A detailed comparison of [Tarrytown versus Westlake](/blog/tarrytown-vs-westlake) illustrates how differently these westside submarkets are positioned relative to zoning pressure and long-term value trajectories.
+
+Outside the city limits, the regulatory picture shifts significantly. Properties in Austin's extraterritorial jurisdiction, or in unincorporated Travis, Hays, or Williamson counties, operate under different and generally less restrictive land use frameworks. Areas like Dripping Springs, Bee Cave, and Lakeway have their own municipal regulations. Truly unincorporated land may have minimal land use restrictions at the county level, which creates different opportunities and risks than urban Austin properties. Recent state legislation has also modified ETJ rules in ways that affect how Austin can regulate land on its periphery. Anyone evaluating Hill Country or suburban fringe properties through our [land and ranch](/land-ranch) practice should confirm the applicable regulatory framework before drawing conclusions about development potential.
+
+:::cta
+eyebrow: Zoning & Development Strategy
+heading: Evaluating a Specific Property or Corridor?
+subheading: Echelon Property Group advises owners and investors on how Austin's evolving zoning environment affects specific parcels, submarkets, and long-term positioning.
+button: Discuss Your Property or Strategy
+href: /contact
+:::
+
+## How Zoning Changes Affect Property Values and Investment Strategy
+
+The relationship between zoning and land value is foundational to real estate economics. When a property's zoning is changed to allow more intensive use, its value typically increases because the pool of potential buyers expands and the range of uses the land can support grows. This upzoning premium is not a speculative concept. It reflects the basic economic reality that land capable of supporting a six-unit apartment building is worth more than land restricted to a single house, assuming comparable locations and market conditions.
+
+For Austin investors, this principle has direct strategic implications. Properties that are currently zoned for less intensive use than their location and market context would support represent potential upzoning opportunities. Buying ahead of rezoning, or identifying properties that already benefit from recent zoning liberalization but haven't yet been repriced to reflect that, is a legitimate strategy that informed buyers actively pursue. Our [off-market real estate](/off-market-real-estate-austin) channel is often where these situations surface first, before they show up on public listings.
+
+The reverse is also true. Downzoning, historic district designations, compatibility overlays, and restrictive deed conditions can cap a property's upside and reduce its value relative to comparable unrestricted land. A lot that is technically zoned for commercial use but encumbered by a historic overlay that severely restricts what can be built may not command the premium its base zoning would suggest. Understanding the full regulatory picture, not just the base zoning designation, is essential before drawing conclusions about a property's development potential.
+
+Due diligence on zoning is non-negotiable for investors. The City of Austin's GIS portal provides publicly accessible zoning maps that allow property-level zoning lookups. For formal transactions, a zoning verification letter from the Development Services Department provides official confirmation of a property's zoning classification and applicable overlays. This is a standard step in commercial and investment property due diligence that should not be skipped or delegated entirely to assumptions based on neighboring properties. Our [navigating commercial land development in Austin](/blog/navigate-commercial-land-development-austin) guide covers the full sequence of due diligence work these situations require.
+
+Reading a zoning verification letter requires some familiarity with the LDC's district classifications and overlay system. The base zoning district tells you the permitted uses and density allowances. Overlays tell you what additional restrictions or modifications apply. Compatibility standards, which may not appear explicitly on a zoning map but are triggered by proximity to single-family uses, can further limit what's actually buildable. An experienced real estate advisor or land use attorney can help translate these documents into a clear picture of what a property can and cannot support.
+
+For sellers, understanding a property's zoning position is equally important. A seller who doesn't recognize that their lot qualifies for additional units under HOME, or that their property sits in a transitional corridor where rezoning is plausible, may price their property based on its current use rather than its full potential. That's a real cost, and it's avoidable with the right preparation. Sellers navigating this environment should review our current [Austin home selling strategies](/sell) and our [luxury real estate advisory](/luxury-real-estate-austin) approach to ensure they're capturing full market value.
+
+## How Informed Property Owners Position Themselves
+
+The property owners and investors who benefit most from Austin's shifting zoning environment are the ones who understand their current regulatory position before they need to make a decision. Reactive zoning research, done only when a transaction is already in motion, tends to surface constraints rather than opportunities.
+
+Proactive zoning review means understanding what your property is currently entitled to, what rezoning pathways might be available, and how pending or likely regulatory changes could affect that picture. For a homeowner in East Austin, that might mean understanding whether their lot qualifies for additional units under HOME and what the practical constraints on development actually are. For an investor evaluating a transitional corridor property, it means understanding the full overlay picture and the realistic timeline and cost of any rezoning that would be needed to execute a development plan. Our [Austin land development opportunities](/austin-land-development-opportunities) coverage tracks corridors where this kind of work is most likely to be rewarded.
+
+Knowing when to engage a land use attorney or zoning consultant is also important. A real estate advisor can help you understand the market implications of zoning and identify properties where the regulatory picture creates opportunity. But navigating a formal rezoning application, responding to a compatibility challenge, or evaluating a historic district designation requires specialized legal expertise. These roles are complementary. Using one doesn't replace the other.
+
+The broader opportunity in Austin's current environment is real. A regulatory landscape in genuine transition creates asymmetric upside for buyers and sellers who understand the rules better than the other side of the transaction does. That edge is available to anyone willing to do the work, or to work with advisors who already have. Our [market intelligence](/market-intelligence) dashboard and [Austin luxury real estate market report](/austin-luxury-real-estate-market-report) are useful starting points for that preparation.
+
+## The Bottom Line for Austin Property Owners and Investors
+
+Austin's zoning changes are not background noise. They are actively reshaping which properties appreciate, which corridors redevelop, and where the next wave of investment activity concentrates. The HOME initiative, ongoing LDC reform, and state-level preemption of certain local restrictions have collectively created a regulatory environment where the rules from five years ago are no longer reliable guides to what's possible today.
+
+For buyers, that means zoning research is a front-end requirement, not a closing-day formality. For sellers, it means understanding your property's full regulatory potential before setting a price or evaluating offers. For investors, it means the properties with the most upside are often the ones where current use doesn't reflect current or likely future entitlements.
+
+Echelon Property Group tracks Austin's land use environment closely across residential, investment, and commercial property types. If you want to understand how current and pending zoning changes affect a specific property or target area, learn more about our [advisory services](/about) and [connect with our team](/contact) for a straightforward, informed conversation about your position in this market.
+
+:::faq
+Q: What is the HOME initiative in Austin?
+A: HOME (Home Options for Middle-income Empowerment) is an Austin City Council initiative that liberalized single-family zoning. Phase 1, approved in December 2023, allows up to three residential units by right on most single-family zoned lots citywide. Phase 2 reduced minimum lot size requirements. Both phases are subject to ongoing legal and regulatory clarification, so confirm current implementation status before making decisions.
+
+Q: Can I really build three units on any single-family lot in Austin?
+A: HOME Phase 1 permits three units by right on most single-family zoned lots, but impervious cover limits, utility capacity, compatibility standards, and setback requirements still apply. On small lots, aging infrastructure areas, or lots with existing structures that consume most of the allowable coverage, the practical unit count may be lower than what zoning technically allows.
+
+Q: Which Austin neighborhoods are most affected by zoning reform?
+A: East Austin, the South Congress corridor, Bouldin Creek, Travis Heights, North Loop, and Hyde Park are among the most directly affected because their existing zoning was most restrictive relative to demand. Established westside neighborhoods like Tarrytown and Pemberton Heights retain more protections through compatibility standards and historic overlays, though those protections are under increasing scrutiny.
+
+Q: How do state-level preemptions affect Austin zoning?
+A: The Texas Legislature has passed legislation in recent sessions preempting certain local land use controls, including provisions affecting housing density, short-term rentals, and annexation. The practical effect is that some restrictions Austin previously enforced are no longer legally defensible. Confirm the current status of applicable state legislation before relying on older regulatory assumptions.
+
+Q: What is a zoning verification letter and do I need one?
+A: A zoning verification letter is an official document from Austin's Development Services Department confirming a property's base zoning, applicable overlays, and permitted uses. It is a standard due diligence item for commercial and investment property transactions. Buyers relying on assumptions from neighboring properties or online maps alone are exposed to significant risk.
+
+Q: How does zoning affect property value in practical terms?
+A: Land capable of supporting more intensive use is worth more than restricted land, assuming comparable locations. Upzoning increases value by expanding the pool of potential buyers and permitted uses. Downzoning, historic overlays, and compatibility restrictions cap upside. Sophisticated buyers and sellers evaluate the gap between current use and full regulatory potential, not just base zoning.
+
+Q: What should I do if I own land in Austin's ETJ or an unincorporated county?
+A: Properties outside Austin's city limits operate under different rules. ETJ areas, unincorporated Travis, Hays, and Williamson County parcels, and neighboring municipalities like Dripping Springs, Bee Cave, and Lakeway each have their own frameworks. Recent state legislation has also modified ETJ rules. Confirm the applicable regulatory framework with a local advisor before drawing conclusions about development potential.
+:::
+
+*This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin's Land Development Code, HOME implementation status, and applicable state legislation are subject to change. Confirm current requirements with appropriate professional advisors before making property decisions.*
+
+`,
+  },
   {
     id: "high-net-worth-home-buying-tips-austin",
     title: "8 High Net Worth Home Buying Tips That Protect Your Capital and Your Privacy",

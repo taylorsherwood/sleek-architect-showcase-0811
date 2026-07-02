@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-07-01",
     readTime: "15 MIN READ",
-    category: "INVESTMENT",
+    category: "URBAN PLANNING",
     image: blogAustinZoningChanges.url,
     heroImage: blogAustinZoningChanges.url,
     imageAlt: "Detailed urban planning map on an architect's desk showing color-coded zoning districts across an Austin neighborhood, with rolled blueprints and drafting tools",

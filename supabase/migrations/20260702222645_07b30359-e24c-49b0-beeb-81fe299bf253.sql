@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Anon can read published rows for teaser view" ON public.communities;

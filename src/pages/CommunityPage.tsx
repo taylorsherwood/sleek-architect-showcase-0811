@@ -436,10 +436,22 @@ const CommunityPage = () => {
       <article>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
+            {override && (
+              <section className="mb-12">
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                  {override.introHeading}
+                </h2>
+                {override.introCopy.split("\n\n").map((para, i) => (
+                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">
+                    {para}
+                  </p>
+                ))}
+              </section>
+            )}
             {/* Overview */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                {community.name} Neighborhood Overview
+                {override ? `About ${community.name}` : `${community.name} Neighborhood Overview`}
               </h2>
               <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>

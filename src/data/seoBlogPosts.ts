@@ -5481,7 +5481,7 @@ Yes, but the yield is inconsistent. You can mine Travis County probate filings, 
   {
     id: "best-luxury-neighborhoods-austin-texas",
     title: "Best Luxury Neighborhoods in Austin Texas",
-    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
+    metaTitle: "Austin TX Luxury Neighborhoods Guide",
     excerpt: "Discover the top luxury neighborhoods in Austin, Texas. From West lake Hills to Barton Creek, explore where Austin's finest homes and estates are located.",
     content: `## Why Austin Is a Top Luxury Real Estate Market
 

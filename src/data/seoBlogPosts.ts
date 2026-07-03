@@ -4926,7 +4926,7 @@ A: Beyond what is available, ask how a specific property will hold up over the n
   {
     id: "selling-a-luxury-home-in-austin",
     title: "Selling a Luxury Home in Austin",
-    metaTitle: "Selling a Luxury Home in Austin | Echelon Property Group",
+    metaTitle: "How to Sell a Luxury Home in Austin",
     excerpt: "How to sell a luxury home in Austin the right way, from market positioning and pricing strategy to private launches, presentation, and representation that protects premium outcomes.",
     content: `A luxury home that lingers sends a message, whether a seller intends it to or not. In the upper tier of the market, days on market are not just a metric. They become part of the asset's story. That is why [selling a luxury home in Austin](/sell) requires more than listing it beautifully and waiting for the right buyer to appear.
 

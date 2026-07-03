@@ -286,7 +286,7 @@ const CommunityPage = () => {
 
   // Redirect alias slugs to canonical URL
   if (canonicalSlug) {
-    return <Navigate to={`/communities/${canonicalSlug}`} replace />;
+    return <AliasRedirect to={`/communities/${canonicalSlug}`} />;
   }
 
   const slug = rawSlug;

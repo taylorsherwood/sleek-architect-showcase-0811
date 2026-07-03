@@ -6321,7 +6321,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
   {
     id: "why-billionaires-are-moving-to-austin",
     title: "Why Billionaires Are Moving to Austin",
-    metaTitle: "Why Billionaires Move to Austin | Echelon Property Group",
+    metaTitle: "Why Billionaires Choose Austin",
     excerpt: "From Elon Musk to Travis Kalanick, discover why the world's wealthiest individuals are relocating to Austin, and what it means for the luxury real estate market.",
     content: "",
     author: "Taylor Sherwood",

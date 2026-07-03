@@ -5,7 +5,8 @@ import CommunityBoundaryMap from "@/components/CommunityBoundaryMap";
 import InlineCommunityReport from "@/components/community-report/InlineCommunityReport";
 import LockedReportPreview from "@/components/community-report/LockedReportPreview";
 import MidPageCTABand from "@/components/community-report/MidPageCTABand";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import AliasRedirect from "@/components/AliasRedirect";
 import Navigation from "@/components/Navigation";
 
 // Slugs whose old LiveBy CommunityGuideCTA is replaced inline by the new
@@ -285,7 +286,7 @@ const CommunityPage = () => {
 
   // Redirect alias slugs to canonical URL
   if (canonicalSlug) {
-    return <Navigate to={`/communities/${canonicalSlug}`} replace />;
+    return <AliasRedirect to={`/communities/${canonicalSlug}`} />;
   }
 
   const slug = rawSlug;

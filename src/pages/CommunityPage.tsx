@@ -350,8 +350,12 @@ const CommunityPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
-        description={`${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`}
+        title={override?.metaTitle || community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
+        description={
+          override?.metaDescription ||
+          community.metaDescription ||
+          `${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`
+        }
         canonical={`/communities/${rawSlug}`}
       />
       {heroImageSrc && (
@@ -366,7 +370,7 @@ const CommunityPage = () => {
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },
-        { name: community.name, url: `${SITE_URL}/communities/${rawSlug}` },
+        { name: override?.displayName || community.name, url: `${SITE_URL}/communities/${rawSlug}` },
       ])} />
       <Navigation />
 
@@ -379,7 +383,7 @@ const CommunityPage = () => {
             </Link>
             <p className="text-minimal text-gold mb-3">{community.priceRange}</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
-              {community.heroTitle || `Homes for Sale in ${community.name}`}
+              {override?.heroTitle || community.heroTitle || `Homes for Sale in ${community.name}`}
             </h1>
           </div>
         </div>

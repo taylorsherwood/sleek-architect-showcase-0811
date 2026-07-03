@@ -1064,8 +1064,8 @@ Properties with golf course frontage, exceptional views, or unique architecture 
     slug: "cat-mountain",
     name: "Cat Mountain & Northwest Hills",
     heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills",
-    metaTitle: "Cat Mountain & NW Hills Homes | Echelon Property Group",
-    metaDescription: "Discover homes for sale in Cat Mountain and Northwest Hills, two of Austin's most scenic hillside neighborhoods offering canyon views and proximity to downtown.",
+    metaTitle: "Cat Mountain Austin Homes for Sale | Echelon Property Group",
+    metaDescription: "Discover Cat Mountain homes for sale in Austin. Elevated hillside estates with canyon views, mature oaks, and quick access to downtown and the Domain.",
     priceRange: "$900K – $4M+",
     image: catMountainImg,
     overview: `Cat Mountain and Northwest Hills are two of Austin's most established hillside neighborhoods. Known for sweeping canyon views, mature oak trees, and peaceful residential character, they offer natural beauty with central convenience.

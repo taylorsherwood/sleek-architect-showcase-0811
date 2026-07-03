@@ -62,7 +62,11 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType
     <Helmet prioritizeSeoTags>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
-      {noindex && <meta name="robots" content="noindex, follow" />}
+      {noindex ? (
+        <meta name="robots" content="noindex, follow" />
+      ) : indexFollow ? (
+        <meta name="robots" content="index, follow" />
+      ) : null}
 
       <meta property="og:title" content={openGraphTitle} />
       <meta property="og:description" content={openGraphDescription} />

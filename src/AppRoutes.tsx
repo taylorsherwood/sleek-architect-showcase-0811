@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Route, Routes } from "react-router-dom";
+import AliasRedirect from "@/components/AliasRedirect";
 import { ScrollToTop } from "@/components/ScrollToTop";
 const FloatingContact = lazy(() => import("@/components/FloatingContact"));
 const ExitIntentModal = lazy(() => import("@/components/ExitIntentModal"));

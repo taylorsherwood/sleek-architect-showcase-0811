@@ -2063,7 +2063,7 @@ href: /contact
   {
     id: "selling-luxury-home-austin-strategies",
     title: "7 Proven Strategies for Selling a Luxury Home in Austin Without Leaving Money on the Table",
-    metaTitle: "Selling a Luxury Home in Austin | Echelon",
+    metaTitle: "Sell Austin Luxury Home: 7 Proven Strategies",
     excerpt: "Selling a luxury home in Austin requires a fundamentally different strategy than a conventional listing. Seven proven approaches to pricing, positioning, off-market exposure, negotiation, and representation in Austin's upper-tier market.",
     author: "Taylor Sherwood",
     date: "2026-05-27",

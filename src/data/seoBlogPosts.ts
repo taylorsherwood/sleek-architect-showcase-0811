@@ -2063,7 +2063,7 @@ href: /contact
   {
     id: "selling-luxury-home-austin-strategies",
     title: "7 Proven Strategies for Selling a Luxury Home in Austin Without Leaving Money on the Table",
-    metaTitle: "Selling a Luxury Home in Austin | Echelon",
+    metaTitle: "Sell Austin Luxury Home: 7 Proven Strategies",
     excerpt: "Selling a luxury home in Austin requires a fundamentally different strategy than a conventional listing. Seven proven approaches to pricing, positioning, off-market exposure, negotiation, and representation in Austin's upper-tier market.",
     author: "Taylor Sherwood",
     date: "2026-05-27",
@@ -4926,7 +4926,7 @@ A: Beyond what is available, ask how a specific property will hold up over the n
   {
     id: "selling-a-luxury-home-in-austin",
     title: "Selling a Luxury Home in Austin",
-    metaTitle: "Selling a Luxury Home in Austin | Echelon Property Group",
+    metaTitle: "How to Sell a Luxury Home in Austin",
     excerpt: "How to sell a luxury home in Austin the right way, from market positioning and pricing strategy to private launches, presentation, and representation that protects premium outcomes.",
     content: `A luxury home that lingers sends a message, whether a seller intends it to or not. In the upper tier of the market, days on market are not just a metric. They become part of the asset's story. That is why [selling a luxury home in Austin](/sell) requires more than listing it beautifully and waiting for the right buyer to appear.
 
@@ -5040,7 +5040,7 @@ A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and
   {
     id: "best-austin-neighborhoods-for-luxury-homes",
     title: "Best Austin Neighborhoods for Luxury Homes",
-    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
+    metaTitle: "Best Austin Neighborhoods for Luxury Homes",
     excerpt: "A precise look at the best Austin neighborhoods for luxury homes, from West lake Hills and Tarrytown to Barton Creek, Pemberton Heights, Rollingwood, Lake Austin, Spanish Oaks, Zilker, and Barton Hills, and how serious buyers narrow the field.",
     content: `A luxury home search in Austin usually narrows quickly once priorities become clear. The best Austin neighborhoods for luxury homes are not interchangeable. Some trade on land and privacy, some on walkability and architectural pedigree, and some on long-term scarcity that keeps demand durable even when the broader market shifts.
 
@@ -5481,7 +5481,7 @@ Yes, but the yield is inconsistent. You can mine Travis County probate filings, 
   {
     id: "best-luxury-neighborhoods-austin-texas",
     title: "Best Luxury Neighborhoods in Austin Texas",
-    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
+    metaTitle: "Austin TX Luxury Neighborhoods Guide",
     excerpt: "Discover the top luxury neighborhoods in Austin, Texas. From West lake Hills to Barton Creek, explore where Austin's finest homes and estates are located.",
     content: `## Why Austin Is a Top Luxury Real Estate Market
 
@@ -6321,7 +6321,7 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
   {
     id: "why-billionaires-are-moving-to-austin",
     title: "Why Billionaires Are Moving to Austin",
-    metaTitle: "Why Billionaires Move to Austin | Echelon Property Group",
+    metaTitle: "Why Billionaires Choose Austin",
     excerpt: "From Elon Musk to Travis Kalanick, discover why the world's wealthiest individuals are relocating to Austin, and what it means for the luxury real estate market.",
     content: "",
     author: "Taylor Sherwood",

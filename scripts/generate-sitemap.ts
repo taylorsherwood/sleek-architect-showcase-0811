@@ -78,7 +78,12 @@ const privateDistributionSlugs = [
   "78746-may-2026",
 ];
 
-const communityEntries: SitemapEntry[] = communitySlugs.map((slug) => ({
+const communityEntries: SitemapEntry[] = [
+  ...communitySlugs,
+  // Aliased slug that shares editorial data with cat-mountain but ships
+  // as its own indexable page with distinct title/description/intro.
+  "northwest-hills",
+].map((slug) => ({
   path: `/communities/${slug}`,
   changefreq: "weekly",
   priority: "0.7",

@@ -253,6 +253,32 @@ const dataSlugAliases: Record<string, string> = {
   "northwest-hills": "cat-mountain",
 };
 
+// Per-alias SEO + display overrides so pages that share editorial data
+// still ship unique title/description/H1/intro copy.
+const aliasOverrides: Record<
+  string,
+  {
+    metaTitle: string;
+    metaDescription: string;
+    displayName: string;
+    heroTitle: string;
+    introHeading: string;
+    introCopy: string;
+  }
+> = {
+  "northwest-hills": {
+    metaTitle: "Northwest Hills Austin Homes for Sale | Echelon Property Group",
+    metaDescription:
+      "Explore Northwest Hills homes for sale in Austin TX. Established northwest neighborhood with mid-century homes, cul-de-sac streets, and Austin ISD schools.",
+    displayName: "Northwest Hills",
+    heroTitle: "Homes for Sale in Northwest Hills",
+    introHeading: "Northwest Hills Neighborhood Overview",
+    introCopy: `Northwest Hills is one of Austin's most established residential enclaves, developed primarily in the 1960s and 1970s and now valued for its mature landscaping, generous lot sizes, and quiet residential streets. Unlike the more dramatic hillside terrain immediately to the west in Cat Mountain, Northwest Hills sits on gently rolling ground between Loop 360 and MoPac, making it a favorite of buyers who want central Austin convenience without the traffic and density of the urban core.
+
+Housing stock in Northwest Hills leans toward one and two-story mid-century homes on cul-de-sacs and looping side streets, with steady renovation activity bringing many properties into a modern luxury tier. Buyers are typically drawn by the walkable connections to Bull Creek District Park, proximity to Anderson High School and the Austin ISD schools that serve the area, and quick access to the Domain, Arboretum, and downtown employers via MoPac. Compared with newer master-planned communities, Northwest Hills offers something increasingly rare in Austin, established trees, deep lots, and a settled neighborhood identity.`,
+  },
+};
+
 const CommunityPage = () => {
   const { slug: rawSlug } = useParams<{ slug: string }>();
   const canonicalSlug = rawSlug ? slugAliases[rawSlug] : undefined;
@@ -264,6 +290,7 @@ const CommunityPage = () => {
 
   const slug = rawSlug;
   const dataSlug = (rawSlug && dataSlugAliases[rawSlug]) || rawSlug;
+  const override = rawSlug ? aliasOverrides[rawSlug] : undefined;
 
   const community = communityPages.find((c) => c.slug === dataSlug);
 
@@ -323,8 +350,12 @@ const CommunityPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
-        description={`${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`}
+        title={override?.metaTitle || community.metaTitle || `${community.name} Homes for Sale | Echelon Property Group`}
+        description={
+          override?.metaDescription ||
+          community.metaDescription ||
+          `${community.name} homes for sale in Austin TX. Browse listings, pricing trends, and neighborhood insights from Echelon Property Group.`
+        }
         canonical={`/communities/${rawSlug}`}
       />
       {heroImageSrc && (
@@ -339,7 +370,7 @@ const CommunityPage = () => {
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: `${SITE_URL}/` },
         { name: "Communities", url: `${SITE_URL}/communities` },
-        { name: community.name, url: `${SITE_URL}/communities/${rawSlug}` },
+        { name: override?.displayName || community.name, url: `${SITE_URL}/communities/${rawSlug}` },
       ])} />
       <Navigation />
 
@@ -352,7 +383,7 @@ const CommunityPage = () => {
             </Link>
             <p className="text-minimal text-gold mb-3">{community.priceRange}</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
-              {community.heroTitle || `Homes for Sale in ${community.name}`}
+              {override?.heroTitle || community.heroTitle || `Homes for Sale in ${community.name}`}
             </h1>
           </div>
         </div>
@@ -405,10 +436,22 @@ const CommunityPage = () => {
       <article>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
+            {override && (
+              <section className="mb-12">
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
+                  {override.introHeading}
+                </h2>
+                {override.introCopy.split("\n\n").map((para, i) => (
+                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">
+                    {para}
+                  </p>
+                ))}
+              </section>
+            )}
             {/* Overview */}
             <section>
               <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-6">
-                {community.name} Neighborhood Overview
+                {override ? `About ${community.name}` : `${community.name} Neighborhood Overview`}
               </h2>
               <ContentBlock text={community.overview} currentSlug={community.slug} />
             </section>

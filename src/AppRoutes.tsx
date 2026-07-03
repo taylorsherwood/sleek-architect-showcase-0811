@@ -106,31 +106,31 @@ const AppRoutes = () => {
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/lander" element={<Navigate to="/" replace />} />
+          <Route path="/lander" element={<AliasRedirect to="/" />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/sell" element={<Sell />} />
-          <Route path="/buyers" element={<Navigate to="/buy" replace />} />
-          <Route path="/sellers" element={<Navigate to="/sell" replace />} />
+          <Route path="/buyers" element={<AliasRedirect to="/buy" />} />
+          <Route path="/sellers" element={<AliasRedirect to="/sell" />} />
           <Route path="/communities" element={<Communities />} />
           <Route path="/communities/:slug" element={<CommunityPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/moving-to-austin-texas" element={<MovingToAustin />} />
-          <Route path="/moving-to-austin" element={<Navigate to="/moving-to-austin-texas" replace />} />
+          <Route path="/moving-to-austin" element={<AliasRedirect to="/moving-to-austin-texas" />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
-          <Route path="/best-luxury-neighborhoods-in-austin" element={<><Helmet><link rel="canonical" href="https://www.echelonpropertygroup.com/best-luxury-neighborhoods-austin" /><meta name="robots" content="noindex, follow" /></Helmet><Navigate to="/best-luxury-neighborhoods-austin" replace /></>} />
+          <Route path="/best-luxury-neighborhoods-in-austin" element={<AliasRedirect to="/best-luxury-neighborhoods-austin" />} />
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />
-          <Route path="/off-market-luxury-homes-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
+          <Route path="/off-market-luxury-homes-austin" element={<AliasRedirect to="/off-market-real-estate-austin" />} />
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />
           <Route path="/austin-commercial-real-estate" element={<AustinCommercialRealEstate />} />
           <Route path="/home-value-austin" element={<HomeValueAustin />} />
           <Route path="/luxury-real-estate-austin" element={<LuxuryRealEstateAustin />} />
-          <Route path="/buy-homes-austin" element={<Navigate to="/buy" replace />} />
-          <Route path="/sell-home-austin" element={<Navigate to="/sell" replace />} />
+          <Route path="/buy-homes-austin" element={<AliasRedirect to="/buy" />} />
+          <Route path="/sell-home-austin" element={<AliasRedirect to="/sell" />} />
           <Route path="/austin-real-estate-investment" element={<AustinRealEstateInvestment />} />
           <Route path="/land-for-sale-austin" element={<LandForSaleAustin />} />
           <Route path="/search" element={<SearchPage />} />
@@ -142,55 +142,55 @@ const AppRoutes = () => {
           <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />
           <Route path="/austin-multifamily-report-2026" element={<AustinMultifamilyReport2026 />} />
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />
-          <Route path="/luxury-homes-austin" element={<Navigate to="/austin-luxury-homes-for-sale" replace />} />
+          <Route path="/luxury-homes-austin" element={<AliasRedirect to="/austin-luxury-homes-for-sale" />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
-          <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<Navigate to="/blog/find-off-market-homes-austin" replace />} />
+          <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<AliasRedirect to="/blog/find-off-market-homes-austin" />} />
           {/* 301 redirects for stale/duplicate blog slugs (consolidated into the canonical post) */}
-          <Route path="/blog/what-is-a-private-listing" element={<Navigate to="/blog/what-is-private-listing-in-real-estate" replace />} />
-          <Route path="/blog/selling-luxury-home-austin" element={<Navigate to="/blog/selling-luxury-home-austin-strategies" replace />} />
-          <Route path="/blog/beyond-zillow-luxury-home-valuation-austin" element={<Navigate to="/blog/beyond-zillow-luxury-buyers-austin" replace />} />
-          <Route path="/blog/buyers-never-see-best-homes" element={<Navigate to="/blog/why-most-buyers-never-see-austins-best-homes" replace />} />
-          <Route path="/blog/why-buyers-never-see-the-best-austin-homes" element={<Navigate to="/blog/why-most-buyers-never-see-austins-best-homes" replace />} />
-          <Route path="/blog/buying-luxury-real-estate-out-of-state" element={<Navigate to="/blog/buying-luxury-home-from-out-of-state" replace />} />
-          <Route path="/blog/new-construction-austin" element={<Navigate to="/blog/new-construction-austin-what-wins" replace />} />
-          <Route path="/blog/new-construction-luxury-homes-austin" element={<Navigate to="/blog/new-construction-austin-what-wins" replace />} />
-          <Route path="/blog/lake-austin-waterfront-value" element={<Navigate to="/blog/lake-austin-waterfront-homes-what-drives-value" replace />} />
-          <Route path="/blog/off-market-real-estate-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
-          <Route path="/blog/exclusive-properties-austin-texas" element={<Navigate to="/blog/off-market-luxury-homes-austin" replace />} />
-          <Route path="/blog/best-austin-neighborhoods-for-real-estate-investment" element={<Navigate to="/blog/top-investment-neighborhoods-austin" replace />} />
+          <Route path="/blog/what-is-a-private-listing" element={<AliasRedirect to="/blog/what-is-private-listing-in-real-estate" />} />
+          <Route path="/blog/selling-luxury-home-austin" element={<AliasRedirect to="/blog/selling-luxury-home-austin-strategies" />} />
+          <Route path="/blog/beyond-zillow-luxury-home-valuation-austin" element={<AliasRedirect to="/blog/beyond-zillow-luxury-buyers-austin" />} />
+          <Route path="/blog/buyers-never-see-best-homes" element={<AliasRedirect to="/blog/why-most-buyers-never-see-austins-best-homes" />} />
+          <Route path="/blog/why-buyers-never-see-the-best-austin-homes" element={<AliasRedirect to="/blog/why-most-buyers-never-see-austins-best-homes" />} />
+          <Route path="/blog/buying-luxury-real-estate-out-of-state" element={<AliasRedirect to="/blog/buying-luxury-home-from-out-of-state" />} />
+          <Route path="/blog/new-construction-austin" element={<AliasRedirect to="/blog/new-construction-austin-what-wins" />} />
+          <Route path="/blog/new-construction-luxury-homes-austin" element={<AliasRedirect to="/blog/new-construction-austin-what-wins" />} />
+          <Route path="/blog/lake-austin-waterfront-value" element={<AliasRedirect to="/blog/lake-austin-waterfront-homes-what-drives-value" />} />
+          <Route path="/blog/off-market-real-estate-austin" element={<AliasRedirect to="/off-market-real-estate-austin" />} />
+          <Route path="/blog/exclusive-properties-austin-texas" element={<AliasRedirect to="/blog/off-market-luxury-homes-austin" />} />
+          <Route path="/blog/best-austin-neighborhoods-for-real-estate-investment" element={<AliasRedirect to="/blog/top-investment-neighborhoods-austin" />} />
           {/* 301 redirects for alternate community slugs that point at the same neighborhood */}
-          <Route path="/communities/westlake" element={<Navigate to="/communities/westlake-hills" replace />} />
-          <Route path="/communities/west-lake-hills" element={<Navigate to="/communities/westlake-hills" replace />} />
+          <Route path="/communities/westlake" element={<AliasRedirect to="/communities/westlake-hills" />} />
+          <Route path="/communities/west-lake-hills" element={<AliasRedirect to="/communities/westlake-hills" />} />
           <Route path="/blog/austin-luxury-market-trends" element={<AustinLuxuryMarketTrends />} />
           <Route path="/invest" element={<Invest />} />
-          <Route path="/private" element={<Navigate to="/off-market-real-estate-austin" replace />} />
+          <Route path="/private" element={<AliasRedirect to="/off-market-real-estate-austin" />} />
           <Route path="/off-market-real-estate-austin" element={<OffMarketRealEstateAustin />} />
           <Route path="/austin-land-development-opportunities" element={<AustinLandDevelopmentOpportunities />} />
           <Route path="/land-development" element={<LandDevelopment />} />
           <Route path="/austin-luxury-real-estate-market-report" element={<AustinLuxuryRealEstateMarketReport />} />
-          <Route path="/westlake-hills-homes-for-sale" element={<Navigate to="/communities/westlake-hills" replace />} />
-          <Route path="/tarrytown-homes-for-sale" element={<Navigate to="/communities/tarrytown" replace />} />
-          <Route path="/rollingwood-homes-for-sale" element={<Navigate to="/communities/rollingwood" replace />} />
-          <Route path="/clarksville-homes-for-sale" element={<Navigate to="/communities/clarksville" replace />} />
-          <Route path="/barton-creek-homes-for-sale" element={<Navigate to="/communities/barton-creek" replace />} />
-          <Route path="/lake-austin-waterfront-homes-for-sale" element={<Navigate to="/communities/lake-austin" replace />} />
-          <Route path="/lake-travis-waterfront-homes-for-sale" element={<Navigate to="/communities/lake-travis" replace />} />
-          <Route path="/mueller-homes-for-sale" element={<Navigate to="/communities/mueller" replace />} />
-          <Route path="/zilker-homes-for-sale" element={<Navigate to="/communities/zilker-austin" replace />} />
-          <Route path="/hyde-park-homes-for-sale" element={<Navigate to="/communities/hyde-park" replace />} />
-          <Route path="/pemberton-heights-homes-for-sale" element={<Navigate to="/communities/pemberton-heights" replace />} />
-          <Route path="/dripping-springs-homes-for-sale" element={<Navigate to="/communities/dripping-springs" replace />} />
-          <Route path="/bee-cave-homes-for-sale" element={<Navigate to="/communities/bee-cave" replace />} />
-          <Route path="/great-hills-homes-for-sale" element={<Navigate to="/communities/great-hills" replace />} />
-          <Route path="/balcones-park-homes-for-sale" element={<Navigate to="/communities/balcones-park" replace />} />
-          <Route path="/rob-roy-homes-for-sale" element={<Navigate to="/communities/rob-roy" replace />} />
-          <Route path="/steiner-ranch-homes-for-sale" element={<Navigate to="/communities/steiner-ranch" replace />} />
-          <Route path="/bryker-woods-homes-for-sale" element={<Navigate to="/communities/bryker-woods" replace />} />
-          <Route path="/east-austin-homes-for-sale" element={<Navigate to="/communities/east-austin" replace />} />
-          <Route path="/old-enfield-homes-for-sale" element={<Navigate to="/communities/old-enfield" replace />} />
-          <Route path="/davenport-ranch-homes-for-sale" element={<Navigate to="/communities/davenport-ranch" replace />} />
-          <Route path="/lakeway-homes-for-sale" element={<Navigate to="/communities/lakeway" replace />} />
-          <Route path="/sitemap" element={<><Helmet><meta name="robots" content="noindex, follow" /></Helmet><Navigate to="/sitemap.xml" replace /></>} />
+          <Route path="/westlake-hills-homes-for-sale" element={<AliasRedirect to="/communities/westlake-hills" />} />
+          <Route path="/tarrytown-homes-for-sale" element={<AliasRedirect to="/communities/tarrytown" />} />
+          <Route path="/rollingwood-homes-for-sale" element={<AliasRedirect to="/communities/rollingwood" />} />
+          <Route path="/clarksville-homes-for-sale" element={<AliasRedirect to="/communities/clarksville" />} />
+          <Route path="/barton-creek-homes-for-sale" element={<AliasRedirect to="/communities/barton-creek" />} />
+          <Route path="/lake-austin-waterfront-homes-for-sale" element={<AliasRedirect to="/communities/lake-austin" />} />
+          <Route path="/lake-travis-waterfront-homes-for-sale" element={<AliasRedirect to="/communities/lake-travis" />} />
+          <Route path="/mueller-homes-for-sale" element={<AliasRedirect to="/communities/mueller" />} />
+          <Route path="/zilker-homes-for-sale" element={<AliasRedirect to="/communities/zilker-austin" />} />
+          <Route path="/hyde-park-homes-for-sale" element={<AliasRedirect to="/communities/hyde-park" />} />
+          <Route path="/pemberton-heights-homes-for-sale" element={<AliasRedirect to="/communities/pemberton-heights" />} />
+          <Route path="/dripping-springs-homes-for-sale" element={<AliasRedirect to="/communities/dripping-springs" />} />
+          <Route path="/bee-cave-homes-for-sale" element={<AliasRedirect to="/communities/bee-cave" />} />
+          <Route path="/great-hills-homes-for-sale" element={<AliasRedirect to="/communities/great-hills" />} />
+          <Route path="/balcones-park-homes-for-sale" element={<AliasRedirect to="/communities/balcones-park" />} />
+          <Route path="/rob-roy-homes-for-sale" element={<AliasRedirect to="/communities/rob-roy" />} />
+          <Route path="/steiner-ranch-homes-for-sale" element={<AliasRedirect to="/communities/steiner-ranch" />} />
+          <Route path="/bryker-woods-homes-for-sale" element={<AliasRedirect to="/communities/bryker-woods" />} />
+          <Route path="/east-austin-homes-for-sale" element={<AliasRedirect to="/communities/east-austin" />} />
+          <Route path="/old-enfield-homes-for-sale" element={<AliasRedirect to="/communities/old-enfield" />} />
+          <Route path="/davenport-ranch-homes-for-sale" element={<AliasRedirect to="/communities/davenport-ranch" />} />
+          <Route path="/lakeway-homes-for-sale" element={<AliasRedirect to="/communities/lakeway" />} />
+          <Route path="/sitemap" element={<AliasRedirect to="/sitemap.xml" />} />
           <Route path="/about-austin-real-estate-advisory" element={<AboutAustinRealEstateAdvisory />} />
           <Route path="/sell-private" element={<SellPrivate />} />
           <Route path="/sell-private/thank-you" element={<SellPrivateThankYou />} />

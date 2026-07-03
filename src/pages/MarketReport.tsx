@@ -19,8 +19,9 @@ const MarketReport = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="\n"
+        title="Austin Luxury Market Report"
         description="Expert analysis of Austin's luxury real estate market. Current trends, price data, neighborhood forecasts, and investment outlook from Echelon Property Group."
+        canonical="/austin-luxury-market-report"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createFAQSchema(faqs)} />

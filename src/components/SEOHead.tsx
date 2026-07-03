@@ -48,7 +48,7 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${path === "/" ? "/" : path}`;
 };
 
-const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false, indexFollow = false }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
   const seoTitle = pageTitle ? `${pageTitle} | ${BRAND_NAME}` : HOMEPAGE_TITLE;

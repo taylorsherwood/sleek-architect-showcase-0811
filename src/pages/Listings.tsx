@@ -116,8 +116,9 @@ const Listings = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Listings | Echelon Property Group"
+        title="Austin Real Estate Listings"
         description="Browse active Austin real estate listings, luxury homes, condos, land, and investment properties. Updated daily by Echelon Property Group."
+        canonical="/listings"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([

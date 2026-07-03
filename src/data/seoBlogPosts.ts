@@ -5040,7 +5040,7 @@ A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and
   {
     id: "best-austin-neighborhoods-for-luxury-homes",
     title: "Best Austin Neighborhoods for Luxury Homes",
-    metaTitle: "Best Austin Luxury Neighborhoods | Echelon Property Group",
+    metaTitle: "Best Austin Neighborhoods for Luxury Homes",
     excerpt: "A precise look at the best Austin neighborhoods for luxury homes, from West lake Hills and Tarrytown to Barton Creek, Pemberton Heights, Rollingwood, Lake Austin, Spanish Oaks, Zilker, and Barton Hills, and how serious buyers narrow the field.",
     content: `A luxury home search in Austin usually narrows quickly once priorities become clear. The best Austin neighborhoods for luxury homes are not interchangeable. Some trade on land and privacy, some on walkability and architectural pedigree, and some on long-term scarcity that keeps demand durable even when the broader market shifts.
 

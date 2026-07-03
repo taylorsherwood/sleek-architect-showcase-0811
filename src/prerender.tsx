@@ -32,6 +32,7 @@ const staticRoutes = [
   "/invest",
   "/moving-to-austin-texas",
   "/best-luxury-neighborhoods-austin",
+  "/best-luxury-neighborhoods-in-austin",
   "/best-neighborhoods-in-austin-texas",
   "/austin-luxury-market-report",
   "/off-market-real-estate-austin",

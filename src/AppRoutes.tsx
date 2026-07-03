@@ -122,7 +122,7 @@ const AppRoutes = () => {
           <Route path="/moving-to-austin-texas" element={<MovingToAustin />} />
           <Route path="/moving-to-austin" element={<Navigate to="/moving-to-austin-texas" replace />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
-          <Route path="/best-luxury-neighborhoods-in-austin" element={<Navigate to="/best-luxury-neighborhoods-austin" replace />} />
+          <Route path="/best-luxury-neighborhoods-in-austin" element={<><Helmet><link rel="canonical" href="https://www.echelonpropertygroup.com/best-luxury-neighborhoods-austin" /><meta name="robots" content="noindex, follow" /></Helmet><Navigate to="/best-luxury-neighborhoods-austin" replace /></>} />
           <Route path="/austin-luxury-market-report" element={<MarketReport />} />
           <Route path="/off-market-luxury-homes-austin" element={<Navigate to="/off-market-real-estate-austin" replace />} />
           <Route path="/austin-luxury-homes-for-sale" element={<AustinLuxuryHomes />} />

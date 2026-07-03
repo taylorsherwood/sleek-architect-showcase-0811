@@ -189,7 +189,7 @@ const AppRoutes = () => {
           <Route path="/old-enfield-homes-for-sale" element={<Navigate to="/communities/old-enfield" replace />} />
           <Route path="/davenport-ranch-homes-for-sale" element={<Navigate to="/communities/davenport-ranch" replace />} />
           <Route path="/lakeway-homes-for-sale" element={<Navigate to="/communities/lakeway" replace />} />
-          <Route path="/sitemap" element={<Navigate to="/sitemap.xml" replace />} />
+          <Route path="/sitemap" element={<><Helmet><meta name="robots" content="noindex, follow" /></Helmet><Navigate to="/sitemap.xml" replace /></>} />
           <Route path="/about-austin-real-estate-advisory" element={<AboutAustinRealEstateAdvisory />} />
           <Route path="/sell-private" element={<SellPrivate />} />
           <Route path="/sell-private/thank-you" element={<SellPrivateThankYou />} />

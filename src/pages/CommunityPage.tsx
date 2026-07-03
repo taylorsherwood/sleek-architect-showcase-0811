@@ -250,9 +250,7 @@ const slugAliases: Record<string, string> = {
 // Distinct neighborhoods that share a single editorial record.
 // Both URLs render the same data but each declares a SELF-referencing
 // canonical so Google indexes them as their own pages (no merged slug).
-const dataSlugAliases: Record<string, string> = {
-  "northwest-hills": "cat-mountain",
-};
+const dataSlugAliases: Record<string, string> = {};
 
 // Per-alias SEO + display overrides so pages that share editorial data
 // still ship unique title/description/H1/intro copy.
@@ -266,19 +264,7 @@ const aliasOverrides: Record<
     introHeading: string;
     introCopy: string;
   }
-> = {
-  "northwest-hills": {
-    metaTitle: "Northwest Hills Austin Homes for Sale | Echelon Property Group",
-    metaDescription:
-      "Explore Northwest Hills homes for sale in Austin TX. Established northwest neighborhood with mid-century homes, cul-de-sac streets, and Austin ISD schools.",
-    displayName: "Northwest Hills",
-    heroTitle: "Homes for Sale in Northwest Hills",
-    introHeading: "Northwest Hills Neighborhood Overview",
-    introCopy: `Northwest Hills is one of Austin's most established residential enclaves, developed primarily in the 1960s and 1970s and now valued for its mature landscaping, generous lot sizes, and quiet residential streets. Unlike the more dramatic hillside terrain immediately to the west in Cat Mountain, Northwest Hills sits on gently rolling ground between Loop 360 and MoPac, making it a favorite of buyers who want central Austin convenience without the traffic and density of the urban core.
-
-Housing stock in Northwest Hills leans toward one and two-story mid-century homes on cul-de-sacs and looping side streets, with steady renovation activity bringing many properties into a modern luxury tier. Buyers are typically drawn by the walkable connections to Bull Creek District Park, proximity to Anderson High School and the Austin ISD schools that serve the area, and quick access to the Domain, Arboretum, and downtown employers via MoPac. Compared with newer master-planned communities, Northwest Hills offers something increasingly rare in Austin, established trees, deep lots, and a settled neighborhood identity.`,
-  },
-};
+> = {};
 
 const CommunityPage = () => {
   const { slug: rawSlug } = useParams<{ slug: string }>();

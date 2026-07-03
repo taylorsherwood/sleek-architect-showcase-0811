@@ -1149,6 +1149,88 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
     ]
   },
   {
+    slug: "northwest-hills",
+    name: "Northwest Hills",
+    heroTitle: "Homes for Sale in Northwest Hills",
+    metaTitle: "Northwest Hills Austin Homes for Sale | Echelon Property Group",
+    metaDescription: "Northwest Hills homes for sale in Austin TX. Established 1960s-70s neighborhood between MoPac and Loop 360 with mid-century architecture, Austin ISD schools, and quick Domain access.",
+    priceRange: "$800K – $3M",
+    image: catMountainImg,
+    overview: `Northwest Hills is a settled residential district developed primarily between 1965 and 1978, sitting on gently rolling terrain between MoPac Expressway and Loop 360. Unlike the dramatic canyon topography of neighboring Cat Mountain to the west, Northwest Hills reads more as a mature suburban enclave, defined by curving side streets, deep front lawns, and an unusually high canopy of live oak, cedar elm, and pecan.
+
+### A Mid-Century Character
+
+The neighborhood is one of the largest concentrations of 1960s and 1970s architecture in Austin. Ranch homes, split-levels, and understated mid-century modern residences make up the bulk of the housing stock. A steady stream of renovations has pushed a meaningful share of these homes into the luxury tier while preserving the streetscape's original scale and setback rhythm.
+
+### Who Lives Here
+
+Buyers are typically longtime Austin families, physicians and academics tied to nearby medical and research institutions, and relocating tech professionals who want central Austin convenience without the density of Tarrytown or the price ceiling of Westlake Hills.`,
+    lifestyle: `### Everyday Life
+
+Northwest Hills feels quieter and more residential than nearby Great Hills or the Domain corridor. Streets like Mesa Drive, Greystone, Hart Lane, and Far West Boulevard carry most of the local traffic; interior streets are largely pass-through free.
+
+### Parks & Trails
+
+- Bull Creek District Park, one of Austin's most popular swimming holes, sits on the western edge
+- The Northwest Hills Greenbelt provides shaded neighborhood trail access
+- Doss Recreation Center and pool serve the local elementary community
+
+### Dining & Retail
+
+Far West Boulevard anchors the neighborhood's small commercial spine, home to Chez Zee, Russell's Bakery, and long-standing local favorites. The Arboretum and Domain are five to ten minutes north for upscale shopping and dining.`,
+    marketInsights: `### Pricing
+
+Northwest Hills homes generally trade between $800,000 and $3 million. The floor is set by unrenovated original-condition homes on standard lots; the ceiling is defined by studs-out remodels and larger properties along the Bull Creek greenbelt.
+
+### Market Behavior
+
+Days on market run tighter here than Austin's broader luxury average. Renovated homes priced correctly typically transact inside 30 days. Original-condition properties draw investor and end-user interest, often with multiple offers when priced to reflect renovation scope.
+
+### What Drives Value
+
+- Proximity to Anderson High School attendance zone
+- Lot size and grade, with flatter lots commanding a premium over steep hillsides
+- Depth of renovation and roofline integrity
+- Distance from MoPac noise buffer`,
+    amenitiesAndSchools: `### Austin ISD Schools
+
+Northwest Hills is served by Austin Independent School District, with strong neighborhood elementary and middle school assignments:
+
+- Doss Elementary School, walkable for much of the neighborhood
+- Hill Elementary and Highland Park Elementary serve portions on the eastern edge
+- Murchison Middle School
+- Anderson High School, one of AISD's top-ranked comprehensive high schools
+
+### Private School Access
+
+St. Theresa's Catholic School and Hyde Park Baptist are located within the neighborhood. St. Andrew's Episcopal, St. Michael's, and Regents are a short drive south.
+
+### Medical & Employment
+
+The neighborhood sits minutes from the Seton Northwest and St. David's North Austin hospital campuses, and roughly 15 minutes from the Domain, Apple's north campus, and downtown Austin via MoPac.`,
+    investmentPotential: `### A Renovation Market
+
+Northwest Hills is one of the few central Austin neighborhoods where meaningful value-add renovation is still a repeatable strategy. Original-condition mid-century homes on interior streets frequently trade below replacement cost of a comparable finished home two doors down.
+
+### Appreciation Profile
+
+The neighborhood has appreciated in step with Austin's broader central-north corridor, with the strongest gains concentrated in fully renovated homes zoned to Doss Elementary and Anderson High School.
+
+### Rental Dynamics
+
+Long-term rental demand is steady, driven by relocating families completing home searches and medical residents tied to the nearby hospital systems. Northwest Hills is not a strong short-term rental market; deed restrictions and neighborhood character discourage transient use.`,
+    relatedCommunities: ["cat-mountain", "tarrytown", "great-hills", "balcones-park"],
+    faqs: [
+      { question: "Where is Northwest Hills located?", answer: "Northwest Hills sits in north-central Austin between MoPac Expressway (Loop 1) on the east and Loop 360 on the west, roughly bounded by Spicewood Springs Road to the north and Hart Lane to the south. Downtown Austin is approximately 15 minutes south via MoPac." },
+      { question: "How does Northwest Hills differ from Cat Mountain?", answer: "Northwest Hills sits on gently rolling terrain and is characterized by 1960s and 1970s mid-century and ranch homes on interior residential streets. Cat Mountain, immediately to the west, occupies steeper hillside topography with more dramatic elevation changes and a higher concentration of newer contemporary hillside estates." },
+      { question: "What do Northwest Hills homes cost?", answer: "Homes generally range from approximately $800,000 for original-condition properties to $3 million for studs-out renovations and larger lots along the Bull Creek greenbelt. Fully renovated homes zoned to Anderson High School consistently trade at the upper end of that range." },
+      { question: "What schools serve Northwest Hills?", answer: "Northwest Hills is served by Austin ISD. The primary attendance pattern is Doss Elementary, Murchison Middle School, and Anderson High School. Portions of the eastern edge feed into Hill Elementary or Highland Park Elementary." },
+      { question: "Are homes in Northwest Hills good renovation candidates?", answer: "Yes. Northwest Hills is one of the few central Austin neighborhoods where a meaningful share of the housing stock remains in original 1960s or 1970s condition, making it one of the region's more active markets for whole-home renovations and value-add investment strategies." },
+      { question: "What is the walkability like in Northwest Hills?", answer: "Walkability is neighborhood-scale rather than urban. Residents can typically walk to Doss Elementary, the Northwest Hills Greenbelt, and small pockets of Far West Boulevard retail. Errands, dining, and commuting still generally require a car." },
+      { question: "Is Northwest Hills a good place to relocate to?", answer: "Northwest Hills is a common landing point for families relocating to Austin who want established schools, a mature tree canopy, and quick access to both the Domain tech corridor and downtown Austin. Inventory turns quickly, so relocating buyers benefit from pre-market and off-market access." }
+    ]
+  },
+  {
     slug: "lake-austin",
     name: "Lake Austin",
     heroTitle: "Lake Austin Real Estate",

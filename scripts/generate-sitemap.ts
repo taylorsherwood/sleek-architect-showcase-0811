@@ -107,7 +107,6 @@ for (const e of [
   ...staticEntries,
   ...communityEntries,
   ...blogEntries,
-  ...privateDistributionEntries,
 ]) {
   seen.set(e.path, e);
 }

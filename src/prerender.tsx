@@ -63,6 +63,8 @@ const allPrerenderRoutes = Array.from(
   new Set([
     ...staticRoutes,
     ...communityPages.map((community) => `/communities/${community.slug}`),
+    // Aliased community slug rendered as its own indexable page.
+    "/communities/northwest-hills",
     ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
     ...privateDistributionSlugs.map((slug) => `/private-distribution/${slug}`),
   ])

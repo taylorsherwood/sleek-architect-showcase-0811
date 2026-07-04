@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { communityPages } from "../../../data/communityData";
+import communityPages from "../data/communities.json" with { type: "json" };
 
 export default defineTool({
   name: "list_communities",

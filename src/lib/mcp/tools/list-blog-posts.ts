@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { seoBlogPosts } from "../../../data/seoBlogPosts";
+import seoBlogPosts from "../data/blog-posts.json" with { type: "json" };
 
 export default defineTool({
   name: "list_blog_posts",

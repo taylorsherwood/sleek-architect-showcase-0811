@@ -22,14 +22,15 @@
           "openWorldHint": false
         },
         "inputSchema": {
-          "$schema": "http://json-schema.org/draft-07/schema#",
           "type": "object",
           "properties": {
             "query": {
-              "description": "Optional case-insensitive substring to filter by community name or slug.",
-              "type": "string"
+              "type": "string",
+              "description": "Optional case-insensitive substring to filter by community name or slug."
             }
-          }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
         },
         "outputSchema": null
       },
@@ -43,7 +44,6 @@
           "openWorldHint": false
         },
         "inputSchema": {
-          "$schema": "http://json-schema.org/draft-07/schema#",
           "type": "object",
           "properties": {
             "slug": {
@@ -54,7 +54,9 @@
           },
           "required": [
             "slug"
-          ]
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
         },
         "outputSchema": null
       },
@@ -68,20 +70,21 @@
           "openWorldHint": false
         },
         "inputSchema": {
-          "$schema": "http://json-schema.org/draft-07/schema#",
           "type": "object",
           "properties": {
             "query": {
-              "description": "Optional case-insensitive substring to filter by title or slug/id.",
-              "type": "string"
+              "type": "string",
+              "description": "Optional case-insensitive substring to filter by title or slug/id."
             },
             "limit": {
-              "description": "Maximum number of posts to return (default 25).",
               "type": "integer",
               "exclusiveMinimum": 0,
-              "maximum": 100
+              "maximum": 100,
+              "description": "Maximum number of posts to return (default 25)."
             }
-          }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
         },
         "outputSchema": null
       }

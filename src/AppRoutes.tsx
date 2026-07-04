@@ -50,6 +50,7 @@ const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAust
 const AustinMultifamilyReport2026 = lazy(() => import("@/pages/AustinMultifamilyReport2026"));
 const connectImport = () => import("@/pages/Connect");
 const Connect = lazy(connectImport);
+const AgentIntegrations = lazy(() => import("@/pages/AgentIntegrations"));
 const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
 const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
 const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
@@ -139,6 +140,7 @@ const AppRoutes = () => {
           <Route path="/land-ranch/:slug" element={<LandRanchMarket />} />
           <Route path="/past-transactions" element={<PastTransactions />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/agent-integrations" element={<AgentIntegrations />} />
           <Route path="/best-neighborhoods-in-austin-texas" element={<BestNeighborhoodsAustin />} />
           <Route path="/austin-multifamily-report-2026" element={<AustinMultifamilyReport2026 />} />
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />

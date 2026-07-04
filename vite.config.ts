@@ -5,6 +5,7 @@ import fs from "fs";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { vitePrerenderPlugin } from "vite-prerender-plugin";
+import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/supabase/vite";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 const DATA_DIR = path.resolve(__dirname, "src/data");
@@ -292,6 +293,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
+    mcpPlugin(),
     sitemapPlugin(),
     vitePrerenderPlugin({
       renderTarget: "#root",

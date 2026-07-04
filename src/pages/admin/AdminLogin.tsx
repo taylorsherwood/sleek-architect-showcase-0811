@@ -1,11 +1,21 @@
 import { useState, FormEvent, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import Navigation from "@/components/Navigation";
 
+// Only allow same-origin relative paths through `next`. Rejects protocol-relative
+// URLs (`//evil.com`) and absolute URLs — critical for the OAuth consent flow.
+const safeNext = (raw: string | null): string | null => {
+  if (!raw) return null;
+  if (!raw.startsWith("/") || raw.startsWith("//")) return null;
+  return raw;
+};
+
 const AdminLogin = () => {
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const next = safeNext(params.get("next"));
   const { user, isAdmin, loading } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,8 +23,16 @@ const AdminLogin = () => {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    if (!loading && user && isAdmin) navigate("/admin", { replace: true });
-  }, [user, isAdmin, loading, navigate]);
+    if (!loading && user) {
+      // If arriving from the OAuth consent flow, return there regardless of
+      // admin role — the consent route decides what the user can approve.
+      if (next) {
+        window.location.replace(next);
+        return;
+      }
+      if (isAdmin) navigate("/admin", { replace: true });
+    }
+  }, [user, isAdmin, loading, navigate, next]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();

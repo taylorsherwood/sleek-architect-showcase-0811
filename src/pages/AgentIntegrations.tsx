@@ -150,10 +150,35 @@ const AgentIntegrations = () => {
       <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
           <p className="text-minimal text-gold mb-4">WHAT YOUR ASSISTANT CAN DO</p>
-          <p className="text-muted-foreground leading-relaxed text-[1.02rem] max-w-2xl">
-            Once connected, your assistant can browse Echelon's Austin community guides, look up a
-            specific neighborhood by name, and surface recent editorial articles from the Echelon
-            journal. All content is public and read only.
+          <p className="text-muted-foreground leading-relaxed text-[1.02rem] max-w-2xl mb-8">
+            Echelon exposes two tiers of tools. The tier depends on whether you sign in when
+            connecting.
+          </p>
+
+          <div className="space-y-8">
+            <div>
+              <p className="text-minimal text-foreground tracking-[0.2em] mb-2">PUBLIC · NO SIGN IN</p>
+              <p className="text-muted-foreground leading-relaxed text-[1.02rem] max-w-2xl">
+                Anyone who connects can browse Austin community guides, look up a specific
+                neighborhood by name, and surface recent editorial articles. All content is public
+                and read only.
+              </p>
+            </div>
+            <div>
+              <p className="text-minimal text-foreground tracking-[0.2em] mb-2">ADMIN · SIGN IN REQUIRED</p>
+              <p className="text-muted-foreground leading-relaxed text-[1.02rem] max-w-2xl">
+                When you approve the connection while signed in to your Echelon admin account, your
+                assistant gains access to admin tools: review recent lead submissions and update
+                community editorial content directly. These tools are restricted to administrator
+                accounts. Any other signed-in account is rejected with an authorization error.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-10 text-sm text-muted-foreground/80 leading-relaxed max-w-2xl">
+            ChatGPT and Claude will open Echelon's authorization page during setup. Sign in with
+            your admin credentials there, approve the connection, and the assistant will hold a
+            scoped token for that session only.
           </p>
         </div>
       </section>

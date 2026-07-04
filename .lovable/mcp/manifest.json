@@ -3,12 +3,16 @@
   "sdk_version": "0.20.0",
   "path": "/functions/v1/mcp",
   "auth": {
-    "type": "none"
+    "type": "oauth",
+    "issuer": "https://ouerzfsimnfqkrmtired.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
   },
   "mcp": {
     "server": {
       "name": "echelon-property-group-mcp",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Echelon Property Group"
     },
     "tools": [
@@ -83,6 +87,94 @@
               "description": "Maximum number of posts to return (default 25)."
             }
           },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_leads",
+        "title": "List recent leads (admin)",
+        "description": "Admin-only. List the most recent leads submitted through Echelon Property Group forms, including name, email, phone, message, source, and timestamp. Requires an Echelon administrator OAuth session.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "limit": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 100,
+              "description": "Maximum number of leads to return (default 25, max 100)."
+            },
+            "source": {
+              "type": "string",
+              "description": "Optional case-insensitive filter on the `source` field."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "update_community",
+        "title": "Update community editorial (admin)",
+        "description": "Admin-only. Update editorial fields on a community record by slug — name, overview, price range, meta title/description, or published status. Only the fields you pass are changed. Requires an Echelon administrator OAuth session.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "description": "Community slug, e.g. `westlake-hills`."
+            },
+            "updates": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "overview": {
+                  "type": "string",
+                  "maxLength": 20000
+                },
+                "price_range": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "meta_title": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "meta_description": {
+                  "type": "string",
+                  "maxLength": 500
+                },
+                "published": {
+                  "type": "boolean"
+                }
+              },
+              "additionalProperties": false,
+              "description": "Fields to update. Only whitelisted editorial fields are accepted."
+            }
+          },
+          "required": [
+            "slug",
+            "updates"
+          ],
           "additionalProperties": false,
           "$schema": "http://json-schema.org/draft-07/schema#"
         },

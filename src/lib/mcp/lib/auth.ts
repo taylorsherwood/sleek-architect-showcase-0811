@@ -1,6 +1,10 @@
 import { createClient } from "@supabase/supabase-js";
 import type { ToolContext } from "@lovable.dev/mcp-js";
 
+// `process.env` is provided at runtime by Deno (the emitted MCP edge function
+// bundle) but TypeScript in the Vite app doesn't have node types loaded.
+declare const process: { env: Record<string, string | undefined> };
+
 // Service-role client for admin-role verification via has_role().
 // Only ever used server-side inside admin-gated tool handlers.
 export function serviceClient() {

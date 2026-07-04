@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { auth, defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
 
 // src/lib/mcp/tools/list-communities.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.0";
@@ -601,13 +601,162 @@ var list_blog_posts_default = defineTool3({
   }
 });
 
+// src/lib/mcp/tools/list-leads.ts
+import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { z as z4 } from "npm:zod@^3.23.8";
+
+// src/lib/mcp/lib/auth.ts
+import { createClient } from "npm:@supabase/supabase-js@^2.108.2";
+function serviceClient() {
+  return createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY,
+    { auth: { persistSession: false, autoRefreshToken: false } }
+  );
+}
+async function requireAdmin(ctx) {
+  if (!ctx.isAuthenticated()) {
+    return {
+      content: [{ type: "text", text: "Not authenticated. Sign in to continue." }],
+      isError: true
+    };
+  }
+  const userId = ctx.getUserId();
+  if (!userId) {
+    return {
+      content: [{ type: "text", text: "No user id on token." }],
+      isError: true
+    };
+  }
+  const svc = serviceClient();
+  const { data, error } = await svc.rpc("has_role", { _user_id: userId, _role: "admin" });
+  if (error) {
+    return {
+      content: [{ type: "text", text: `Authorization check failed: ${error.message}` }],
+      isError: true
+    };
+  }
+  if (!data) {
+    return {
+      content: [
+        {
+          type: "text",
+          text: "This tool is restricted to Echelon administrators. Your account does not have admin access."
+        }
+      ],
+      isError: true
+    };
+  }
+  return null;
+}
+
+// src/lib/mcp/tools/list-leads.ts
+var list_leads_default = defineTool4({
+  name: "list_leads",
+  title: "List recent leads (admin)",
+  description: "Admin-only. List the most recent leads submitted through Echelon Property Group forms, including name, email, phone, message, source, and timestamp. Requires an Echelon administrator OAuth session.",
+  inputSchema: {
+    limit: z4.number().int().positive().max(100).optional().describe("Maximum number of leads to return (default 25, max 100)."),
+    source: z4.string().optional().describe("Optional case-insensitive filter on the `source` field.")
+  },
+  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+  handler: async ({ limit, source }, ctx) => {
+    const denied = await requireAdmin(ctx);
+    if (denied) return denied;
+    const svc = serviceClient();
+    let query = svc.from("leads").select("id, created_at, name, email, phone, message, source, page_url, utm_source, utm_campaign, zapier_status").order("created_at", { ascending: false }).limit(limit ?? 25);
+    if (source) query = query.ilike("source", `%${source}%`);
+    const { data, error } = await query;
+    if (error) {
+      return {
+        content: [{ type: "text", text: `Failed to load leads: ${error.message}` }],
+        isError: true
+      };
+    }
+    return {
+      content: [{ type: "text", text: JSON.stringify(data, null, 2) }],
+      structuredContent: { count: data?.length ?? 0, items: data ?? [] }
+    };
+  }
+});
+
+// src/lib/mcp/tools/update-community.ts
+import { defineTool as defineTool5 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { z as z5 } from "npm:zod@^3.23.8";
+var editableFields = z5.object({
+  name: z5.string().min(1).max(200).optional(),
+  overview: z5.string().max(2e4).optional(),
+  price_range: z5.string().max(200).optional(),
+  meta_title: z5.string().max(200).optional(),
+  meta_description: z5.string().max(500).optional(),
+  published: z5.boolean().optional()
+});
+var update_community_default = defineTool5({
+  name: "update_community",
+  title: "Update community editorial (admin)",
+  description: "Admin-only. Update editorial fields on a community record by slug \u2014 name, overview, price range, meta title/description, or published status. Only the fields you pass are changed. Requires an Echelon administrator OAuth session.",
+  inputSchema: {
+    slug: z5.string().min(1).max(200).describe("Community slug, e.g. `westlake-hills`."),
+    updates: editableFields.describe("Fields to update. Only whitelisted editorial fields are accepted.")
+  },
+  annotations: {
+    readOnlyHint: false,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: false
+  },
+  handler: async ({ slug, updates }, ctx) => {
+    const denied = await requireAdmin(ctx);
+    if (denied) return denied;
+    const patch = {};
+    for (const [k, v] of Object.entries(updates)) {
+      if (v !== void 0) patch[k] = v;
+    }
+    if (Object.keys(patch).length === 0) {
+      return {
+        content: [{ type: "text", text: "No fields provided to update." }],
+        isError: true
+      };
+    }
+    const svc = serviceClient();
+    const { data, error } = await svc.from("communities").update(patch).eq("slug", slug).select("id, slug, name, published, updated_at").maybeSingle();
+    if (error) {
+      return {
+        content: [{ type: "text", text: `Update failed: ${error.message}` }],
+        isError: true
+      };
+    }
+    if (!data) {
+      return {
+        content: [{ type: "text", text: `No community found for slug "${slug}".` }],
+        isError: true
+      };
+    }
+    return {
+      content: [{ type: "text", text: `Updated community "${slug}". ${JSON.stringify(data)}` }],
+      structuredContent: { updated: data, fields: Object.keys(patch) }
+    };
+  }
+});
+
 // src/lib/mcp/index.ts
+var projectRef = "ouerzfsimnfqkrmtired";
 var mcp_default = defineMcp({
   name: "echelon-property-group-mcp",
   title: "Echelon Property Group",
-  version: "0.1.0",
-  instructions: "Read-only tools for Echelon Property Group, a luxury Austin, TX real estate advisory. Use `list_communities` to browse covered neighborhoods, `get_community` for an editorial guide to a specific community, and `list_blog_posts` to surface recent Austin luxury real estate editorial content. All content is public.",
-  tools: [list_communities_default, get_community_default, list_blog_posts_default]
+  version: "0.2.0",
+  instructions: "Tools for Echelon Property Group, a luxury Austin, TX real estate advisory. Public read-only tools: `list_communities`, `get_community`, `list_blog_posts`. Admin-only tools (require an Echelon administrator OAuth session): `list_leads` to review recent lead submissions, and `update_community` to edit community editorial content. Admin tools return an authorization error for non-admin sessions.",
+  auth: auth.oauth.issuer({
+    issuer: `https://${projectRef}.supabase.co/auth/v1`,
+    acceptedAudiences: "authenticated"
+  }),
+  tools: [
+    list_communities_default,
+    get_community_default,
+    list_blog_posts_default,
+    list_leads_default,
+    update_community_default
+  ]
 });
 
 // lovable-mcp-supabase-entry.ts

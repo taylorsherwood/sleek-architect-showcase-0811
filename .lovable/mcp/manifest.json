@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "echelon-property-group-mcp",
+      "version": "0.1.0",
+      "title": "Echelon Property Group"
+    },
+    "tools": [
+      {
+        "name": "list_communities",
+        "title": "List Austin communities",
+        "description": "List luxury Austin-area communities/neighborhoods covered by Echelon Property Group, with slug, name, and price range.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "Optional case-insensitive substring to filter by community name or slug.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_community",
+        "title": "Get Austin community guide",
+        "description": "Return the editorial overview, price range, and canonical URL for a specific Austin community by slug (e.g. westlake-hills, tarrytown).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Community slug, e.g. `westlake-hills`."
+            }
+          },
+          "required": [
+            "slug"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_blog_posts",
+        "title": "List Echelon blog posts",
+        "description": "List published Austin luxury real estate editorial articles from Echelon Property Group, with id, title, date, and canonical URL.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "Optional case-insensitive substring to filter by title or slug/id.",
+              "type": "string"
+            },
+            "limit": {
+              "description": "Maximum number of posts to return (default 25).",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

@@ -66,10 +66,128 @@ const blogLuxuryPortfolioAustin = blogLuxuryPortfolioAustinAsset.url;
 import blogBuyerMarketAustin2026Asset from "@/assets/blog/buyer-market-austin-2026.png.asset.json";
 const blogBuyerMarketAustin2026 = blogBuyerMarketAustin2026Asset.url;
 
+import blogAustinStrRegulationsAsset from "@/assets/blog/austin-str-regulations-investor-desk.png.asset.json";
+const blogAustinStrRegulations = blogAustinStrRegulationsAsset.url;
+
 import { BlogPost } from "./blogPosts";
 
 // Build marker: ensure new posts ship in bundle (v7)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-short-term-rental-regulations",
+    title: "Austin Short-Term Rental Regulations: What Property Owners and Investors Need to Know",
+    metaTitle: "Austin Short-Term Rental Regulations: Investor Guide | Echelon Property Group",
+    excerpt: "Austin short-term rental regulations classify properties by owner-occupancy status and location, with rules that significantly impact investment viability. This guide breaks down licensing, zoning, tax obligations, and the compliance framework property owners and investors need before acquiring or listing a short-term rental in Austin.",
+    author: "Taylor Sherwood",
+    date: "2026-07-05",
+    readTime: "15 min read",
+    category: "INVESTOR STRATEGY",
+    image: blogAustinStrRegulations,
+    heroImage: blogAustinStrRegulations,
+    imageAlt: "Investor's home office desk with laptop showing Austin luxury short-term rental listings, a notebook, financial charts, and calculator, representing the due diligence required to evaluate Austin short-term rental regulations before acquiring a property",
+    imageCaption: "Austin's STR framework rewards preparation. Zoning, licensing, and HOA layers all get resolved before an offer, not after.",
+    content: `Austin short-term rental regulations classify properties by owner-occupancy status and location, with rules that significantly impact investment viability in one of Texas's most active STR markets. This guide breaks down the licensing requirements, zoning restrictions, and compliance framework that property owners and investors need to evaluate before acquiring or listing a short-term rental in Austin. For a broader view of how Austin fits into a portfolio strategy, our [Austin real estate investment overview](/austin-real-estate-investment) and [invest with Echelon](/invest) page are useful companion reads.
+
+Austin is one of the most visited cities in the country. SXSW, ACL Music Festival, Formula 1 at Circuit of the Americas, and a steady stream of business travelers generate consistent short-term rental demand year-round. That demand is real, and so is the appeal of STR investing here.
+
+But Austin is also one of the more regulated STR markets in Texas. The city has spent years tightening its ordinance, and the rules that apply to your property depend heavily on how it's classified, where it's located, and how you intend to use it. Getting those details wrong before you buy can turn a promising investment into a compliance problem.
+
+This article is designed to give property owners and investors a clear, practical understanding of how Austin's short-term rental regulations work. Not a surface-level overview, but the kind of framework you need before making an acquisition decision or listing a property. The regulatory environment here rewards preparation and penalizes assumptions. For context on the underlying market, see the current [Austin luxury market report](/austin-luxury-market-report) and our [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) analysis.
+
+## The Two-Type Classification System
+
+Austin's STR framework begins with a fundamental distinction: the city divides short-term rentals into two categories, and almost everything else flows from that classification.
+
+**Type 1 STRs** are owner-occupied properties. The host lives on-site, whether in the primary residence or an accessory dwelling unit on the same lot. Because the owner is present, Type 1 STRs are treated more permissively under the ordinance.
+
+**Type 2 STRs** are non-owner-occupied investment properties. The owner does not live on the premises. This is the category that applies to most investors purchasing a property specifically for short-term rental income, and it's the category that faces the most significant regulatory scrutiny.
+
+The practical implications of this distinction are substantial. Type 2 STRs are subject to restrictions that don't apply to Type 1, including prohibition in certain residential zoning districts. An investor who purchases a single-family home in a restricted zone expecting to operate it as a Type 2 STR may find that the city will not issue a license for that use at all.
+
+This is not a technicality. It's a foundational due diligence question that should be answered before any offer is made on a property intended for STR use. The classification determines whether a license is even available, which directly affects how you should underwrite the investment. Our [high-end home valuation](/blog/high-end-home-valuation-problems) piece explains why baseline underwriting assumptions matter more than list-price comparables.
+
+It's also worth noting that the Type 1 versus Type 2 distinction isn't always straightforward in practice. Owners who rent a portion of their primary residence while living there, versus those who occasionally stay at a property they otherwise rent out, may face different interpretations. When in doubt, verification with the City of Austin Development Services Department is the right move before assuming a classification applies.
+
+## Licensing Requirements and the Permit Process
+
+Operating an STR in Austin without a license is a code violation. The city requires all short-term rentals, both Type 1 and Type 2, to hold a current license issued through the Development Services Department. That license must be renewed annually.
+
+The application process is more involved than many first-time STR operators expect. Requirements include registration for Hotel Occupancy Tax collection, proof of adequate property insurance, and compliance with life-safety codes covering items like smoke detectors, carbon monoxide detectors, and fire extinguishers. Some applications also involve neighborhood notification requirements, depending on property type and location.
+
+This is not a simple online form with instant approval. Owners should plan for a processing timeline and ensure their property meets all code requirements before applying. Attempting to list before a license is issued creates legal exposure.
+
+One of the most consequential features of Austin's licensing system is that **licenses are non-transferable**. When a property sells, the STR license does not convey to the buyer. The new owner must apply for a fresh license, go through the full process, and meet all current requirements, which may differ from what the previous owner faced if regulations have changed.
+
+This has direct implications for buyers evaluating properties marketed as active STR investments. The revenue history of a licensed STR tells you something about market demand, but it does not guarantee that you will be able to obtain a license for the same use after closing. Zoning, ordinance changes, and HOA rules could all affect your ability to re-license the property. Buyers relocating from stricter STR jurisdictions can find useful framing in our [moving from New York to Austin](/blog/moving-from-new-york-to-austin) guide.
+
+Underwriting STR income into a purchase price without confirming licensability is a meaningful risk. It's the kind of assumption that can significantly affect the return profile of an investment if it turns out to be wrong. Understanding [highest and best use analysis](/blog/highest-and-best-use-property-austin) for a given property is essential before committing to any STR-dependent acquisition strategy.
+
+## Zoning Restrictions and Where STRs Are and Are Not Permitted
+
+Zoning is where Austin's STR regulations become most consequential for investors, and where the most misunderstandings occur.
+
+Current regulations restrict or prohibit Type 2 STRs in single-family residential zoning districts, which in Austin's framework spans SF-1 through SF-6. These zoning categories cover a substantial portion of the city's residential land area. If a property sits in one of these districts and you intend to operate it as a non-owner-occupied STR, you may find that a Type 2 license is simply not available.
+
+The City Council has taken an increasingly restrictive stance on Type 2 STRs in single-family zones over recent years, reflecting neighborhood concerns about the character and density of short-term rental activity in residential areas. Investors should verify the current status of these restrictions directly with the Development Services Department, as the regulatory posture has continued to evolve. Our [Austin zoning changes explained](/blog/austin-zoning-changes-explained) coverage tracks how these shifts are landing across the city.
+
+Areas with more permissive STR environments tend to be those with mixed-use or commercial zoning designations. Corridors near downtown Austin, South Congress, [East Austin](/east-austin-homes-for-sale), and the Rainey Street area have historically offered more flexibility for non-owner-occupied STRs because their zoning reflects a broader mix of uses. Understanding which [Austin neighborhoods](/best-neighborhoods-in-austin-texas) offer the right zoning conditions for your investment strategy is a critical early step, and our [best Austin neighborhoods for luxury homes](/blog/best-austin-neighborhoods-for-luxury-homes) piece maps the tradeoffs.
+
+The verification process should happen before purchase, not after. A property's zoning designation is public record and accessible through the City of Austin's online mapping tools. But reading zoning correctly, particularly when overlay districts are involved, requires some familiarity with how Austin's land use code works. Investors unfamiliar with the system would benefit from having an [advisor](/about-austin-real-estate-advisory) or land use professional review the zoning picture before committing to an acquisition. For larger-scale plays, our [Austin land development opportunities](/austin-land-development-opportunities) and [land development](/land-development) coverage explores adjacent use cases.
+
+It's also worth understanding that zoning is not static. Austin is in an ongoing conversation about land use reform, and regulatory changes can affect STR viability in ways that weren't anticipated at the time of purchase. That's not a reason to avoid the market, but it is a reason to build regulatory risk into your investment analysis.
+
+## Tax Obligations Every STR Owner Must Understand
+
+Short-term rental income in Austin carries tax obligations at multiple levels, and misunderstanding them is one of the most common compliance failures in this market.
+
+At the state level, Texas imposes a Hotel Occupancy Tax on short-term rental stays. The state HOT rate is currently 6%, collected on the rental price paid by guests. At the local level, the City of Austin also levies its own Hotel Occupancy Tax. Owners should verify the current local rate directly with the City of Austin Finance Department, as these rates are subject to change.
+
+Platforms like Airbnb and Vrbo have tax collection agreements with many jurisdictions and may remit some portion of HOT on behalf of hosts automatically. This creates a false sense of security for some operators. The legal obligation for ensuring full and accurate tax remittance rests with the property owner, not the platform. If a platform remits incorrectly, or if you receive bookings through channels outside the platform's tax collection agreement, you remain responsible.
+
+Registering for HOT collection is a requirement of the licensing process itself. Failure to register, or failure to remit taxes accurately, can result in penalties, back taxes owed to both the city and state, and ultimately license revocation. These are not theoretical risks. They represent some of the more common compliance issues that Austin STR operators encounter.
+
+Beyond HOT, STR income is taxable at the federal level as ordinary income. The tax treatment of short-term rental income differs from long-term rental income in several important ways, particularly around deductions, depreciation, and passive activity rules. Investors coordinating exits or reinvestment should also review our [1031 exchange guide for Texas investors](/blog/1031-exchange-texas-investors). Property owners who are new to STR investing should work with a tax professional familiar with short-term rental taxation before their first filing season, not after.
+
+There's also a potential property tax dimension. How a property is used can affect its classification and valuation for property tax purposes. Owners should understand how STR use may interact with [homestead exemptions](/blog/texas-homestead-exemption-travis-county) and overall assessed value, particularly if the property is also a primary residence. Reviewing the broader [Austin real estate market outlook](/austin-luxury-market-report) can help investors contextualize how tax and regulatory shifts are affecting property values across different asset classes.
+
+## Operational Rules, Enforcement, and HOA Considerations
+
+Obtaining a license is the beginning of compliance, not the end. Austin's STR ordinance includes a set of operational requirements that apply on an ongoing basis, and violations can trigger complaints that put the license at risk.
+
+Key operational requirements include occupancy limits tied to the number of bedrooms, noise restrictions, parking requirements, and a mandatory local contact person. The local contact requirement is specific: the designated person must be reachable 24 hours a day, seven days a week, and must be able to respond to complaints or issues at the property within one hour. This is not a formality. It's an enforceable condition of the license.
+
+Austin's enforcement system is primarily complaint-driven. The City's code compliance division responds to neighbor complaints, and documented violations create a record that can affect license renewal. Repeat violations, or a pattern of complaints, can result in the city declining to renew a license when it comes up for its annual review.
+
+Understanding this dynamic helps owners manage risk proactively. Properties in dense residential neighborhoods, particularly those adjacent to long-term residents who have concerns about STR activity, carry higher complaint risk than properties in more mixed-use or commercially active areas. That's a qualitative factor worth considering during site selection. Our [best Austin suburbs for 2026](/blog/best-austin-suburbs-2026) coverage and [Austin luxury neighborhood review](/blog/austin-luxury-neighborhood-review) explore how these neighborhood dynamics vary across the metro.
+
+Separate from city code, HOA rules and deed restrictions represent a parallel layer of regulation that can be more restrictive than the city's ordinance. Many Austin communities, particularly planned developments, master-planned neighborhoods, and newer [luxury communities](/communities), include deed restrictions that prohibit short-term rentals entirely. These restrictions are private agreements, not city regulations, and the city's STR license does not override them.
+
+An HOA-governed property with a deed restriction against STRs cannot be legally operated as a short-term rental regardless of whether it could otherwise obtain a city license. This is a due diligence point that buyers sometimes overlook, particularly when purchasing in newer Austin subdivisions and developments where HOA documents may not be top of mind during the transaction. Communities like [Steiner Ranch](/steiner-ranch-homes-for-sale), [Barton Creek](/barton-creek-homes-for-sale), and [Rob Roy](/rob-roy-homes-for-sale) each carry their own restrictions worth reviewing before an STR-driven purchase.
+
+## What This Means for Investors Evaluating Austin STR Properties
+
+Taken together, Austin's regulatory framework has meaningfully narrowed the pool of properties that are genuinely viable for non-owner-occupied short-term rental investment. That's not a reason to dismiss the market, but it is a reason to approach it with more precision than many investors initially bring.
+
+Properties marketed as active STR investments deserve careful scrutiny. The fact that a property is currently operating as an STR, generating revenue, and holding a license does not mean it will remain licensable after a sale. The non-transferability of permits, combined with potential zoning restrictions and HOA limitations, means that a buyer needs to independently verify that they can obtain a license for the intended use under current rules. This is one reason experienced investors often prefer [off-market](/off-market-real-estate-austin) and [private opportunities](/private-opportunities) where regulatory diligence can be run more thoroughly before the property becomes publicly competitive.
+
+Pricing discipline matters here. STR-marketed properties sometimes carry a premium that reflects projected nightly rate income. If that income projection depends on licensing assumptions that don't hold up, the investment economics change substantially. Buyers should underwrite based on confirmed licensability, not optimistic projections. Our piece on [high-net-worth home buying tips in Austin](/blog/high-net-worth-home-buying-tips-austin) covers the discipline required at higher price points.
+
+For investors specifically seeking short-term rental income, the Hill Country communities west and southwest of Austin deserve attention. [Dripping Springs](/dripping-springs-homes-for-sale), Wimberley, Fredericksburg, and Marble Falls operate under different county or municipal frameworks and have generally maintained more permissive STR environments. These markets benefit from proximity to Austin's visitor base while operating under less restrictive regulatory conditions. Investors exploring this region should review the [Austin Hill Country land](/land) and [land for sale in Austin](/land-for-sale-austin) landscape to understand the range of acquisition options available outside city limits.
+
+East Austin and areas near South Congress and downtown Austin remain the most viable zones within the city for Type 2 STR consideration, given their mixed-use zoning characteristics. But even in these areas, individual properties require verification. Zoning overlays, deed restrictions, and the specifics of a given parcel can make two properties on the same street operate under different rules. Reviewing current [Austin luxury homes for sale](/austin-luxury-homes-for-sale) with an advisor who understands STR licensing is the fastest way to filter viable properties from cosmetic matches.
+
+The investors who navigate this environment well tend to be those who treat regulatory due diligence as a core part of their acquisition process, not a post-contract checklist item. Confirming zoning, reviewing HOA documents, understanding the licensing pathway, and modeling the tax obligations before making an offer is the standard that this market requires.
+
+## Approaching Austin STRs with the Right Framework
+
+Austin's short-term rental regulations are not designed to be simple, and they haven't gotten simpler over time. The two-type classification system, the zoning restrictions on non-owner-occupied rentals, the non-transferability of licenses, the layered tax obligations, and the HOA dimension all require attention before a purchase decision is made.
+
+None of this makes Austin an impossible STR market. Demand is genuine, certain zones remain viable, and the Hill Country communities nearby offer real alternatives for investors prioritizing STR income. But the regulatory complexity means that what works in one neighborhood, or one property type, may not work in another.
+
+The investors and property owners who succeed in this environment are those who do the work upfront: verifying zoning, reviewing HOA documents, confirming licensing eligibility, and understanding the tax structure before committing capital. That preparation is what separates a sound STR investment from an expensive compliance problem.
+
+Working with advisors who understand both the regulatory landscape and the local market conditions makes a material difference in this process. If you're evaluating an Austin-area property for short-term rental use, or trying to understand your options as a current owner, [learn more about Echelon Property Group](/about-austin-real-estate-advisory) and [get in touch](/contact) to navigate this market with clarity.`,
+  },
   {
     id: "how-to-buy-home-austin-buyers-market-2026",
     title: "8 Strategies to Buy a Home in Austin's Buyer's Market (Mid-2026 Edition)",

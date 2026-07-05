@@ -101,6 +101,13 @@ const AustinRealEstateInvestment = () => {
                     <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-gold transition-colors">Land along Austin's growth corridors</Link>, including I-35, Highway 290 West, and the <Link to="/communities/dripping-springs" className="text-foreground underline hover:text-gold transition-colors">Dripping Springs</Link> corridor, presents significant appreciation potential for investors with medium- to long-term horizons. Our <Link to="/austin-land-development-opportunities" className="text-foreground underline hover:text-gold transition-colors">land development advisory</Link> covers site selection, entitlement analysis, and highest-and-best-use evaluation.
                   </p>
                 </div>
+                <div>
+                  <h3 className="text-xl font-display font-medium mb-3">Short-Term Rental Properties</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Austin's steady flow of SXSW, ACL, and F1 visitors makes short-term rentals a real category, but the city's ordinance meaningfully narrows the pool of properties that are actually viable for Type 2 (non-owner-occupied) use. Our guide to <Link to="/blog/austin-short-term-rental-regulations" className="text-foreground underline hover:text-gold transition-colors">Austin short-term rental regulations</Link> covers licensing, zoning, HOA restrictions, and the tax framework investors need to confirm before underwriting STR income into a purchase.
+                  </p>
+                </div>
+
               </div>
             </section>
 

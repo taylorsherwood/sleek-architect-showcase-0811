@@ -47,7 +47,7 @@ const ScrollingCredibilityStrip = () => {
           color: "hsl(var(--muted-foreground) / 0.55)",
         }}
       >
-        FEATURED SYNDICATION
+        FEATURED SYNDICATIONS
       </p>
 
       <div className="relative mx-auto" style={{ maxWidth: "1100px" }}>

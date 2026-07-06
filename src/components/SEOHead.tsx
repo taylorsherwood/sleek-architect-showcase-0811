@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 const BRAND_NAME = "Echelon Property Group";
-const HOMEPAGE_TITLE = `${BRAND_NAME} | Austin Luxury Real Estate`;
+const HOMEPAGE_TITLE = `${BRAND_NAME} | Taylor Sherwood, Austin Luxury Realtor`;
 const BRAND_SUFFIX_PATTERN = /\s*\|\s*Echelon(?:\s+Property\s+Group)?(?:\s+Austin)?\s*$/i;
 
 interface SEOHeadProps {
@@ -12,11 +12,17 @@ interface SEOHeadProps {
   canonical?: string;
   ogTitle?: string;
   ogDescription?: string;
-  ogType?: "website" | "article";
+  ogType?: "website" | "article" | "profile";
   /** When true, emits <meta name="robots" content="noindex, follow" /> */
   noindex?: boolean;
   /** When true, emits explicit <meta name="robots" content="index, follow" /> */
   indexFollow?: boolean;
+  /** Optional <meta name="author"> value. */
+  author?: string;
+  /** When set, uses this exact string as <title> instead of appending brand. */
+  fullTitle?: string;
+  /** Override og:image with an absolute URL (e.g. Taylor headshot on Person pages). */
+  ogImage?: string;
 }
 
 const normalizePageTitle = (rawTitle?: string | null) => {

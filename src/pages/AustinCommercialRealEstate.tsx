@@ -71,8 +71,9 @@ const AustinCommercialRealEstate = () => {
               Austin Commercial Real Estate
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              From tenant representation and investment acquisitions to development land and retail opportunities, 
-              Echelon Property Group delivers strategic commercial real estate advisory across Austin and Central Texas.
+              From tenant representation and investment acquisitions to development land and retail opportunities,
+              Echelon Property Group delivers strategic commercial real estate advisory across Austin and Central Texas, led by founder{" "}
+              <Link to="/taylor-sherwood" className="text-foreground underline hover:text-muted-foreground">Taylor Sherwood</Link>.
             </p>
           </div>
         </div>

@@ -246,9 +246,9 @@ export function createArticleSchema(title: string, description: string, datePubl
     "dateModified": datePublished,
     "author": {
       "@type": "Person",
-      "@id": `${SITE}/#taylor`,
-      "name": author,
-      "url": `${SITE}/about`,
+      "@id": `${SITE}/taylor-sherwood#person`,
+      "name": "Taylor Sherwood",
+      "url": `${SITE}/taylor-sherwood`,
     },
     "publisher": {
       "@type": "Organization",

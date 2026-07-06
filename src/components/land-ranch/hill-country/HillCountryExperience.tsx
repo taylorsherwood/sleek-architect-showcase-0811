@@ -40,7 +40,7 @@ const label: React.CSSProperties = {
 // 1 · CINEMATIC HERO
 // ─────────────────────────────────────────────────────────────
 const Hero = () => (
-  <section className="relative w-full h-[88vh] min-h-[560px] max-h-[860px] overflow-hidden bg-primary">
+  <section className="relative w-full h-[88vh] min-h-[560px] max-h-[860px] overflow-hidden bg-[#2F3A2C]">
     <img
       src={heroImage}
       alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"
@@ -55,13 +55,13 @@ const Hero = () => (
       className="absolute inset-0"
       style={{
         background:
-          "linear-gradient(180deg, rgba(12,15,36,0.45) 0%, rgba(12,15,36,0.20) 40%, rgba(12,15,36,0.65) 100%)",
+          "linear-gradient(180deg, rgba(47,58,44,0.45) 0%, rgba(47,58,44,0.20) 40%, rgba(47,58,44,0.65) 100%)",
       }}
     />
     <div className="relative z-10 h-full flex items-center pt-20 md:pt-24">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl">
-          <p className="text-[#b9a06c] mb-5 md:mb-7" style={label}>
+          <p className="text-[#8A7450] mb-5 md:mb-7" style={label}>
             HILL COUNTRY · LAND ADVISORY
           </p>
           <h1
@@ -77,17 +77,17 @@ const Hero = () => (
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-              style={{ ...label, background: "#B9A06C", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.borderColor = "#B9A06C"; }}
+              style={{ ...label, background: "#8A7450", color: "#FFFFFF", border: "1px solid #8A7450", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#2F3A2C"; e.currentTarget.style.borderColor = "#2F3A2C"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#8A7450"; e.currentTarget.style.borderColor = "#8A7450"; }}
             >
               Begin a Private Conversation →
             </Link>
             <Link
               to="/off-market-real-estate-austin"
               className="inline-flex items-center justify-center px-8 py-4 transition-colors duration-300 rounded-sm"
-              style={{ ...label, background: "transparent", color: "#FFFFFF", border: "1px solid #B9A06C", fontWeight: 600 }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#B9A06C"; }}
+              style={{ ...label, background: "transparent", color: "#FFFFFF", border: "1px solid #8A7450", fontWeight: 600 }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#8A7450"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
             >
               Request Private Access →
@@ -103,7 +103,7 @@ const Hero = () => (
 // 2 · ADVISOR ANCHOR
 // ─────────────────────────────────────────────────────────────
 const AdvisorAnchor = () => (
-  <section className="relative bg-background py-20 md:py-32">
+  <section className="relative bg-[#F3EEE4] py-20 md:py-32">
     <div className="container mx-auto px-6 md:px-12">
       <div className="grid md:grid-cols-12 gap-12 md:gap-20 items-center max-w-6xl mx-auto">
         <div className="md:col-span-5 md:col-start-1">
@@ -118,7 +118,7 @@ const AdvisorAnchor = () => (
           </div>
         </div>
         <div className="md:col-span-6 md:col-start-7">
-          <p className="text-[#b9a06c] mb-6" style={label}>
+          <p className="text-[#8A7450] mb-6" style={label}>
             YOUR ADVISOR
           </p>
           <h2
@@ -135,11 +135,11 @@ const AdvisorAnchor = () => (
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 text-architectural hover:text-[#b9a06c] transition-colors duration-300"
+            className="inline-flex items-center gap-3 text-architectural hover:text-[#8A7450] transition-colors duration-300"
             style={label}
           >
             Begin a private conversation
-            <span aria-hidden="true" className="inline-block h-px w-10 bg-[#b9a06c]" />
+            <span aria-hidden="true" className="inline-block h-px w-10 bg-[#8A7450]" />
           </Link>
         </div>
       </div>
@@ -191,10 +191,10 @@ const opportunities: Opportunity[] = [
 ];
 
 const OpportunityReel = () => (
-  <section className="relative text-white py-20 md:py-28" style={{ background: "#0C0F24" }}>
+  <section className="relative text-white py-20 md:py-28" style={{ background: "#2F3A2C" }}>
     <div className="container mx-auto px-6 md:px-12 mb-12 md:mb-16">
       <div className="max-w-3xl">
-        <p className="text-[#b9a06c] mb-5" style={label}>
+        <p className="text-[#8A7450] mb-5" style={label}>
           THE OPPORTUNITY SET
         </p>
         <h2
@@ -229,11 +229,11 @@ const OpportunityReel = () => (
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "linear-gradient(to top, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.18) 55%, rgba(12,15,36,0) 100%)",
+                "linear-gradient(to top, rgba(47,58,44,0.78) 0%, rgba(47,58,44,0.18) 55%, rgba(47,58,44,0) 100%)",
             }}
           />
           <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
-            <p className="text-[#b9a06c] mb-3" style={{ ...label, fontSize: "0.55rem" }}>
+            <p className="text-[#8A7450] mb-3" style={{ ...label, fontSize: "0.55rem" }}>
               {o.eyebrow}
             </p>
             <h3 className="font-display text-[1.4rem] md:text-[1.6rem] leading-[1.15] text-white">
@@ -241,7 +241,7 @@ const OpportunityReel = () => (
             </h3>
             <span
               aria-hidden="true"
-              className="block h-px bg-[#b9a06c] mt-4 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"
+              className="block h-px bg-[#8A7450] mt-4 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"
               style={{ width: "60px" }}
             />
           </div>
@@ -298,7 +298,7 @@ const SixLenses = () => {
     <>
       {/* ── DESKTOP / TABLET: static editorial grid ───────────── */}
       <section
-        className="relative bg-[#FAFAF8] py-20 md:py-28 hidden md:block"
+        className="relative bg-[#F3EEE4] py-20 md:py-28 hidden md:block"
         aria-label="The Six Lenses framework"
       >
         <div className="container mx-auto px-6 md:px-12">
@@ -306,7 +306,7 @@ const SixLenses = () => {
             {/* Left column — intro */}
             <aside className="md:col-span-5">
               <div className="md:sticky md:top-28">
-                <p className="text-[#b9a06c] mb-6" style={label}>
+                <p className="text-[#8A7450] mb-6" style={label}>
                   SIGNATURE FRAMEWORK
                 </p>
                 <h2
@@ -322,7 +322,7 @@ const SixLenses = () => {
                   be asked to do.
                 </p>
                 <div className="mt-8 flex items-center gap-4">
-                  <span aria-hidden="true" className="h-px w-12 bg-[#b9a06c]" />
+                  <span aria-hidden="true" className="h-px w-12 bg-[#8A7450]" />
                   <span
                     className="text-architectural tabular-nums"
                     style={{ ...label, fontSize: "0.6rem" }}
@@ -339,11 +339,11 @@ const SixLenses = () => {
                 {lenses.map((l) => (
                   <li
                     key={l.number}
-                    className="border-t border-[rgba(12,15,36,0.14)] pt-5"
+                    className="border-t border-[rgba(47,58,44,0.14)] pt-5"
                   >
                     <div className="flex items-baseline gap-4 mb-3">
                       <span
-                        className="font-display text-[#b9a06c] leading-none"
+                        className="font-display text-[#8A7450] leading-none"
                         style={{ fontSize: "1.85rem" }}
                       >
                         {l.number}
@@ -367,9 +367,9 @@ const SixLenses = () => {
       </section>
 
       {/* ── MOBILE: horizontal swipe carousel ─────────────────── */}
-      <section className="relative bg-[#FAFAF8] py-20 md:hidden">
+      <section className="relative bg-[#F3EEE4] py-20 md:hidden">
         <div className="container mx-auto px-6 mb-8">
-          <p className="text-[#b9a06c] mb-5" style={label}>
+          <p className="text-[#8A7450] mb-5" style={label}>
             SIGNATURE FRAMEWORK
           </p>
           <h2
@@ -383,7 +383,7 @@ const SixLenses = () => {
             acquisition.
           </p>
           <div
-            className="flex items-center gap-2 text-[#b9a06c] animate-fade-in"
+            className="flex items-center gap-2 text-[#8A7450] animate-fade-in"
             style={{ ...label, fontSize: "0.6rem" }}
           >
             <span>Swipe to explore</span>
@@ -400,19 +400,19 @@ const SixLenses = () => {
           {lenses.map((l) => (
             <article
               key={l.number}
-              className="flex-shrink-0 snap-start w-[82%] bg-background py-8 px-6"
+              className="flex-shrink-0 snap-start w-[82%] bg-[#F3EEE4] py-8 px-6"
               style={{ minHeight: "300px" }}
             >
               <div className="flex items-baseline gap-4 mb-5">
                 <span
-                  className="font-display text-[#b9a06c] leading-none"
+                  className="font-display text-[#8A7450] leading-none"
                   style={{ fontSize: "3rem" }}
                 >
                   {l.number}
                 </span>
                 <span
                   aria-hidden="true"
-                  className="h-px bg-[#b9a06c]"
+                  className="h-px bg-[#8A7450]"
                   style={{ width: "60px" }}
                 />
               </div>
@@ -444,10 +444,10 @@ const SixLenses = () => {
 // 5 · REGIONAL MAP (single short caption)
 // ─────────────────────────────────────────────────────────────
 const RegionalMap = () => (
-  <section className="bg-background py-20 md:py-28">
+  <section className="bg-[#F3EEE4] py-20 md:py-28">
     <div className="container mx-auto px-6 md:px-12">
       <div className="max-w-2xl mb-10 md:mb-14">
-        <p className="text-[#b9a06c] mb-5" style={label}>
+        <p className="text-[#8A7450] mb-5" style={label}>
           WHERE WE OPERATE
         </p>
         <h2
@@ -470,11 +470,11 @@ const RegionalMap = () => (
 // 6 · QUIET LIFESTYLE FRAME (image + Cinzel pull quote)
 // ─────────────────────────────────────────────────────────────
 const LifestyleQuote = () => (
-  <section className="relative bg-[#FAFAF8] py-24 md:py-32 overflow-hidden">
+  <section className="relative bg-[#F3EEE4] py-24 md:py-32 overflow-hidden">
     <div className="container mx-auto px-6 md:px-12">
       <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
         <div className="md:col-span-7 order-2 md:order-1">
-          <div className="h-px w-12 bg-[#b9a06c] mb-8" aria-hidden="true" />
+          <div className="h-px w-12 bg-[#8A7450] mb-8" aria-hidden="true" />
           <blockquote
             className="text-architectural leading-[1.35]"
             style={{
@@ -488,7 +488,7 @@ const LifestyleQuote = () => (
             rewards the things that have always made a ranch worth owning.
           </blockquote>
           <p
-            className="text-[#b9a06c] mt-8"
+            className="text-[#8A7450] mt-8"
             style={{ ...label, fontSize: "0.55rem" }}
           >
             ECHELON PROPERTY GROUP · LAND ADVISORY
@@ -514,11 +514,11 @@ const LifestyleQuote = () => (
 // 7 · OFF-MARKET BAND
 // ─────────────────────────────────────────────────────────────
 const OffMarketBand = () => (
-  <section className="relative text-white py-24 md:py-32" style={{ background: "#0C0F24" }}>
+  <section className="relative text-white py-24 md:py-32" style={{ background: "#2F3A2C" }}>
     <div className="container mx-auto px-6 md:px-12">
       <div className="max-w-2xl">
-        <span aria-hidden="true" className="block h-px w-16 bg-[#b9a06c] mb-8" />
-        <p className="text-[#b9a06c] mb-5" style={label}>
+        <span aria-hidden="true" className="block h-px w-16 bg-[#8A7450] mb-8" />
+        <p className="text-[#8A7450] mb-5" style={label}>
           PRIVATE ACCESS
         </p>
         <h2
@@ -534,11 +534,11 @@ const OffMarketBand = () => (
         </p>
         <Link
           to="/off-market-real-estate-austin"
-          className="inline-flex items-center gap-3 text-white hover:text-[#b9a06c] transition-colors duration-300"
+          className="inline-flex items-center gap-3 text-white hover:text-[#8A7450] transition-colors duration-300"
           style={label}
         >
           Request private access
-          <span aria-hidden="true" className="inline-block h-px w-10 bg-[#b9a06c]" />
+          <span aria-hidden="true" className="inline-block h-px w-10 bg-[#8A7450]" />
         </Link>
       </div>
     </div>
@@ -554,10 +554,10 @@ const AdjacentMarkets = () => {
     .slice(0, 4);
 
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section className="bg-[#F3EEE4] py-20 md:py-28">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-2xl mb-12 md:mb-14">
-          <p className="text-[#b9a06c] mb-5" style={label}>
+          <p className="text-[#8A7450] mb-5" style={label}>
             ADJACENT MARKETS
           </p>
           <h2
@@ -584,7 +584,7 @@ const AdjacentMarkets = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
                 />
               </div>
-              <h3 className="font-display text-architectural text-lg leading-tight mb-1 transition-colors duration-300 group-hover:text-[#b9a06c]">
+              <h3 className="font-display text-architectural text-lg leading-tight mb-1 transition-colors duration-300 group-hover:text-[#8A7450]">
                 {m.name}
               </h3>
               <p className="text-muted-foreground text-[0.85rem] leading-relaxed">
@@ -605,13 +605,13 @@ const MeetAdvisor = () => (
   <section
     className="relative overflow-hidden"
     style={{
-      background: "#F5F3EF",
+      background: "#F3EEE4",
       paddingTop: "clamp(80px, 10vw, 120px)",
       paddingBottom: "clamp(80px, 10vw, 120px)",
     }}
   >
-    <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
-    <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(12,15,36,0.08)" }} />
+    <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px" style={{ background: "rgba(47,58,44,0.08)" }} />
+    <div aria-hidden="true" className="absolute bottom-0 inset-x-0 h-px" style={{ background: "rgba(47,58,44,0.08)" }} />
 
     <div className="container mx-auto px-6 relative">
       <div className="grid md:grid-cols-12 gap-10 md:gap-16 lg:gap-20 items-center max-w-[1280px] mx-auto">
@@ -621,7 +621,7 @@ const MeetAdvisor = () => (
             style={{
               borderRadius: "24px",
               boxShadow:
-                "0 30px 60px -25px rgba(12,15,36,0.28), 0 12px 30px -15px rgba(12,15,36,0.18)",
+                "0 30px 60px -25px rgba(47,58,44,0.28), 0 12px 30px -15px rgba(47,58,44,0.18)",
               transform: "translateY(-3.5rem)",
             }}
           >
@@ -642,28 +642,28 @@ const MeetAdvisor = () => (
               href="https://www.instagram.com/theinvestorbroker/"
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#b9a06c] group/ig"
+              className="inline-flex items-center gap-2 text-[#8A7450] group/ig"
               style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
               aria-label="Follow Taylor Sherwood on Instagram"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
               <span className="relative leading-none font-semibold">
                 @THEINVESTORBROKER
-                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#b9a06c] scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
+                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#8A7450] scale-x-0 group-hover/ig:scale-x-100 transition-transform duration-500 origin-center" />
               </span>
             </a>
             <a
               href="https://www.linkedin.com/in/taylorsherwood/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="inline-flex items-center gap-2 text-[#b9a06c] group/li"
+              className="inline-flex items-center gap-2 text-[#8A7450] group/li"
               style={{ fontFamily: '"Jost", sans-serif', fontSize: "9.5px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 300 }}
               aria-label="View Taylor Sherwood on LinkedIn"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" className="flex-shrink-0"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               <span className="relative leading-none font-semibold">
                 TAYLOR SHERWOOD
-                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#b9a06c] scale-x-0 group-hover/li:scale-x-100 transition-transform duration-500 origin-center" />
+                <span className="absolute left-0 -bottom-0.5 w-full h-px bg-[#8A7450] scale-x-0 group-hover/li:scale-x-100 transition-transform duration-500 origin-center" />
               </span>
             </a>
           </div>
@@ -687,7 +687,7 @@ const MeetAdvisor = () => (
             }}
           />
           <div className="relative">
-            <p className="text-[#b9a06c] mb-5" style={label}>
+            <p className="text-[#8A7450] mb-5" style={label}>
               MEET YOUR LAND & RANCH ADVISOR
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-normal text-architectural leading-[1.15] mb-5">
@@ -738,15 +738,15 @@ const MeetAdvisor = () => (
                     <span
                       aria-hidden="true"
                       className="hidden sm:inline-block"
-                      style={{ width: "20px", height: "1px", background: "#b9a06c" }}
+                      style={{ width: "20px", height: "1px", background: "#8A7450" }}
                     />
                   )}
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 pt-10" style={{ borderTop: "1px solid rgba(12,15,36,0.12)" }}>
-              <p className="text-[#b9a06c] mb-4" style={{ ...label, fontSize: "0.55rem" }}>
+            <div className="mt-12 pt-10" style={{ borderTop: "1px solid rgba(47,58,44,0.12)" }}>
+              <p className="text-[#8A7450] mb-4" style={{ ...label, fontSize: "0.55rem" }}>
                 LAND OWNERS
               </p>
               <h3 className="font-display text-2xl md:text-[1.75rem] font-normal text-architectural leading-tight mb-4">
@@ -762,9 +762,9 @@ const MeetAdvisor = () => (
               <Link
                 to="/sell"
                 className="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-[1.1rem] transition-colors duration-300 rounded-sm"
-                style={{ ...label, background: "#0C0F24", color: "#F5F3EF", border: "1px solid #B9A06C" }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#B9A06C"; e.currentTarget.style.color = "#FFFFFF"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.color = "#F5F3EF"; }}
+                style={{ ...label, background: "#2F3A2C", color: "#F3EEE4", border: "1px solid #8A7450" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#8A7450"; e.currentTarget.style.color = "#FFFFFF"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#2F3A2C"; e.currentTarget.style.color = "#F3EEE4"; }}
               >
                 Request a Land Evaluation →
               </Link>
@@ -783,7 +783,7 @@ const HillCountryExperience = () => {
   const canonical = `/land-ranch/${SLUG}`;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="land-ranch-theme min-h-screen" style={{ background: "#F3EEE4" }}>
       <SEOHead
         title="Texas Hill Country Ranches for Sale | Echelon Property Group"
         description="Hill Country ranches, live water tracts, hunting properties, and legacy acreage across Central Texas. Echelon Property Group advises buyers on Hill Country land."

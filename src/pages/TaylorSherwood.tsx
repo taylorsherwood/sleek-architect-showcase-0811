@@ -413,6 +413,12 @@ const TaylorSherwood = () => {
         </div>
       </section>
 
+      <Suspense fallback={null}>
+        <Testimonials />
+      </Suspense>
+
+
+
       {/* Professional Affiliations */}
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-6">

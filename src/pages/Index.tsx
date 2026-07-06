@@ -334,7 +334,6 @@ const Index = () => (
     />
 
     <SchemaMarkup schema={localBusinessSchema} />
-    <SchemaMarkup schema={taylorSherwoodSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />
 
     <Navigation />

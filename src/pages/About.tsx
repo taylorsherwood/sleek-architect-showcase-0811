@@ -5,7 +5,7 @@ import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpg.asset.json";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";
 import { Link } from "react-router-dom";
-import SchemaMarkup, { taylorSherwoodSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import SEOHead from "@/components/SEOHead";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -171,7 +171,6 @@ const About = () => {
       />
 
       
-      <SchemaMarkup schema={taylorSherwoodSchema} />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "About", url: "https://www.echelonpropertygroup.com/about" }

@@ -851,6 +851,10 @@ const HillCountryExperience = () => {
       <LifestyleQuote />
       <OffMarketBand />
       <AdjacentMarkets />
+      <BarbedWireDivider />
+      <div aria-hidden="true" className="bg-[#F3EEE4] h-16 md:h-28" />
+
+
 
       <Suspense fallback={null}>
         <Footer />

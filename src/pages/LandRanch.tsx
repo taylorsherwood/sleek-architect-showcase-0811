@@ -383,18 +383,22 @@ const LandRanch = () => {
         />
         <div className="absolute inset-0 sm:hidden" style={{ background: "linear-gradient(to bottom, rgba(47,58,44,0.68) 0%, rgba(47,58,44,0.52) 46%, rgba(47,58,44,0.24) 100%)" }} />
 
+        <h1 className="sr-only">Austin Area Land & Ranch Opportunities</h1>
+
+
         <div className="relative z-10 flex h-full items-start px-6 pt-24 md:hidden">
           <div className="w-full max-w-[390px]">
             <p className="mb-3" style={{ ...labelStyle, color: "#F3EEE4", textShadow: "0 1px 2px rgba(0,0,0,0.45)" }}>
               LAND & RANCH
             </p>
 
-            <h1
+            <p
+              aria-hidden="true"
               className="font-display font-normal text-white leading-[1.06] mb-4"
               style={{ fontSize: "1.78rem", textShadow: "0 2px 18px rgba(0,0,0,0.40), 0 1px 2px rgba(0,0,0,0.45)" }}
             >
               Austin Area<br />Land & Ranch Opportunities
-            </h1>
+            </p>
             <p
               className="text-white/90 leading-relaxed mb-5 text-[0.88rem]"
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}
@@ -429,12 +433,13 @@ const LandRanch = () => {
                 LAND & RANCH
               </p>
 
-              <h1
+              <p
+                aria-hidden="true"
                 className="font-display font-normal text-white leading-[1.08] tracking-tight mb-4 md:mb-7"
                 style={{ fontSize: "clamp(1.6rem, 4.4vw, 3.4rem)", textShadow: "0 2px 22px rgba(0,0,0,0.38), 0 1px 2px rgba(0,0,0,0.45)" }}
               >
                 Austin Area<br />Land & Ranch Opportunities
-              </h1>
+              </p>
               <p
                 className="text-white/85 leading-relaxed mb-7 md:mb-10 max-w-xl text-[0.95rem] md:text-base lg:text-lg"
                 style={{ textShadow: "0 1px 2px rgba(0,0,0,0.35)" }}

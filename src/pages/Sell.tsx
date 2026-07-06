@@ -166,7 +166,8 @@ const stats = [
 ];
 
 function useCountUp(target: number, duration = 3500, from = 0) {
-  const [count, setCount] = useState(from);
+  // Initialize to final value so SSR/prerender HTML shows the target.
+  const [count, setCount] = useState(target);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);

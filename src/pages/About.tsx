@@ -165,8 +165,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Taylor Sherwood"
-        description="Meet Taylor Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
+        fullTitle="About Echelon Property Group | Austin Luxury Real Estate"
+        description="Echelon Property Group is an Austin luxury and investment real estate practice serving buyers, sellers, and investors across Central Texas. Founded by Taylor Sherwood."
+        canonical="/about"
       />
 
       

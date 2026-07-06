@@ -39,9 +39,10 @@ const AustinLuxuryHomes = () => {
               Austin Luxury Homes for Sale
             </h1>
             <p className="text-base sm:text-xl text-muted-foreground leading-relaxed">
-              Discover Austin's finest luxury properties, from lakefront estates and hilltop mansions 
-              to gated golf communities and Hill Country ranches. Echelon Property Group is your 
-              trusted guide to Austin luxury real estate.
+              Discover Austin's finest luxury properties, from lakefront estates and hilltop mansions
+              to gated golf communities and Hill Country ranches. Echelon Property Group, founded by{" "}
+              <Link to="/taylor-sherwood" className="text-foreground underline hover:text-muted-foreground">Austin luxury Realtor Taylor Sherwood</Link>,
+              is your trusted guide to Austin luxury real estate.
             </p>
           </div>
         </div>

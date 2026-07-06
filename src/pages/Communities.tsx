@@ -55,7 +55,10 @@ const Communities = () => {
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               A curated guide to the communities that define how Austin actually lives,
-              told by the advisors who work and live in them every day.
+              told by the advisors who work and live in them every day. Written and maintained by Austin luxury Realtor{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-[hsl(var(--gold)/0.4)] underline-offset-4 hover:text-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300">
+                Taylor Sherwood
+              </Link>.
             </p>
           </div>
         </div>

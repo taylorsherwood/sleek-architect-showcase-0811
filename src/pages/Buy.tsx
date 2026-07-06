@@ -268,7 +268,10 @@ const Buy = () => {
               Austin
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
-              Expert representation for luxury homes, investment properties, and off-market opportunities across Austin's most coveted neighborhoods.
+              Expert representation for luxury homes, investment properties, and off-market opportunities across Austin's most coveted neighborhoods. Work directly with founder{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-[hsl(var(--gold)/0.5)] underline-offset-4 hover:text-primary-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300">
+                Taylor Sherwood
+              </Link>.
             </p>
             <a
               href="#buyer-consultation"

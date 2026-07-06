@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSchema, createBlogPostingSchema, organizationSchema, taylorSherwoodSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createArticleSchema, createFAQSchema, createBreadcrumbSchema, createBlogPostingSchema, organizationSchema } from "@/components/SchemaMarkup";
 import { blogPosts } from "@/data/blogPosts";
 import { seoBlogPosts } from "@/data/seoBlogPosts";
 import AuthorBio from "@/components/AuthorBio";
@@ -82,7 +82,6 @@ const BlogPost = () => {
 
   const schemas: Record<string, unknown>[] = [
     organizationSchema,
-    taylorSherwoodSchema,
     createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl),
     ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl })]),
     createBreadcrumbSchema([

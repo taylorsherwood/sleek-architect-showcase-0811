@@ -5,7 +5,6 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   localBusinessSchema,
-  taylorSherwoodSchema,
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
 
@@ -334,7 +333,6 @@ const Index = () => (
     />
 
     <SchemaMarkup schema={localBusinessSchema} />
-    <SchemaMarkup schema={taylorSherwoodSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />
 
     <Navigation />

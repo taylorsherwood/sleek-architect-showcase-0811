@@ -23,8 +23,8 @@ const HEADSHOT_URL = `${SITE}/lovable-uploads/taylor-headshot-widget.jpg`;
 
 const meetTaylor = [
   "Some agents pick a lane. Taylor Sherwood built a practice on refusing to.",
-  "For more than a decade, Sherwood has worked the Austin market from every side of the table: luxury residences in Barton Creek and Westlake, multifamily and commercial assets, raw land and ranch acreage, and development deals most residential agents would not know how to underwrite. That range is not a marketing claim. It is the product of more than eleven years and over $125 million in closed transactions across nearly every property type Central Texas offers.",
-  "The through line is an investor's discipline. Sherwood built his reputation, and the Investor Broker identity that follows him across platforms, on the idea that every property is an asset first. A homestead in Tarrytown and a twenty four unit multifamily deal deserve the same rigor: real comparables, honest underwriting, and a clear-eyed read on where the market is going rather than where it has been. Clients hire him for advice that survives contact with a spreadsheet.",
+  "For more than a decade, Taylor has worked the Austin market from every side of the table: luxury residences in Barton Creek and Westlake, multifamily and commercial assets, raw land and ranch acreage, and development deals most residential agents would not know how to underwrite. That range is not a marketing claim. It is the product of more than eleven years and over $125 million in closed transactions across nearly every property type Central Texas offers.",
+  "The through line is an investor's discipline. Taylor built his reputation, and the Investor Broker identity that follows him across platforms, on the idea that every property is an asset first. A homestead in Tarrytown and a twenty four unit multifamily deal deserve the same rigor: real comparables, honest underwriting, and a clear-eyed read on where the market is going rather than where it has been. Clients hire him for advice that survives contact with a spreadsheet.",
   "That discipline shows up most in the work fewest people see. A meaningful share of Taylor's business happens off market: private sales for owners who value discretion, quiet acquisitions for buyers who cannot find what they want on the MLS, and land assemblages that only come together through relationships. Austin's most interesting real estate rarely gets a yard sign.",
   "Echelon Property Group grew out of that practice. Founded by Taylor Sherwood and brokered by eXp Realty, the firm was built to deliver institutional grade analysis with boutique level attention, whether the assignment is positioning a three million dollar residence, marketing a development tract, or advising an investor on a first acquisition. The philosophy is simple and unfashionable: tell clients the truth, put the numbers on the table, and protect their position like it is his own.",
 ];
@@ -41,7 +41,7 @@ const expertise: Array<{ title: string; body: string; to: string }> = [
 const philosophy = [
   "Most of the industry is optimized for transactions. Taylor Sherwood optimizes for outcomes, and the difference shows up in the first conversation. Clients get candor over comfort: a real pricing discussion backed by data, net proceeds math before a signature, and an honest read on timing even when the honest read is wait.",
   "Every engagement starts with strategy. A listing gets a preparation plan, a positioning thesis, and a negotiation posture before it gets a sign. An acquisition gets underwriting, not enthusiasm. The goal is never to win the listing or force the deal. The goal is to be right, because clients remember who was right.",
-  "The relationships run on a long horizon. Sherwood's clients work with him across market cycles, asset classes, and stages of life, from a first home to a portfolio. They get discretion when it matters, straight answers when it counts, and direct access to Taylor rather than a hand off to a team member they have never met.",
+  "The relationships run on a long horizon. Taylor's clients work with him across market cycles, asset classes, and stages of life, from a first home to a portfolio. They get discretion when it matters, straight answers when it counts, and direct access to Taylor rather than a hand off to a team member they have never met.",
 ];
 
 const affiliations = ["eXp Realty", "eXp Luxury", "CLHMS", "ALN", "TAN", "Commission Clubhouse"];
@@ -67,14 +67,17 @@ const personSchema = {
   "@type": "Person",
   "@id": `${PAGE_URL}#person`,
   name: "Taylor Sherwood",
-  alternateName: "Taylor Nash Sherwood",
+  givenName: "Taylor",
+  familyName: "Sherwood",
   jobTitle: "Founder and REALTOR",
   description: "Taylor Sherwood is an Austin, Texas REALTOR and the founder of Echelon Property Group, specializing in luxury homes, commercial real estate, land and ranch, development, investment properties, and off market representation.",
   url: PAGE_URL,
+  mainEntityOfPage: PAGE_URL,
   image: HEADSHOT_URL,
   telephone: "+1-512-661-3843",
   email: "mailto:taylor@echelonpropertygroup.com",
   worksFor: { "@id": `${SITE}/#organization` },
+  founder: { "@id": `${SITE}/#organization` },
   address: {
     "@type": "PostalAddress",
     streetAddress: "2105 East MLK Jr Blvd Ste 227",

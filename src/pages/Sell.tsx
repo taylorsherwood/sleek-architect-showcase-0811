@@ -166,7 +166,8 @@ const stats = [
 ];
 
 function useCountUp(target: number, duration = 3500, from = 0) {
-  const [count, setCount] = useState(from);
+  // Initialize to final value so SSR/prerender HTML shows the target.
+  const [count, setCount] = useState(target);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);
@@ -434,7 +435,10 @@ const Sell = () => {
               className="text-primary-foreground/80 text-base sm:text-lg max-w-lg mb-8 reveal-delayed"
               style={{ textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}
             >
-              Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market.
+              Strategic marketing and expert representation designed to maximize your property's value in Austin's competitive luxury market. Every listing is led personally by founder{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-[hsl(var(--gold)/0.5)] underline-offset-4 hover:text-primary-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300">
+                Taylor Sherwood
+              </Link>.
             </p>
             <a
               href="#home-valuation"

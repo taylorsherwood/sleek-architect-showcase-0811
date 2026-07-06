@@ -245,7 +245,11 @@ const AdvisorSection = () => (
    ───────────────────────────────────────────── */
 
 const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
-  const [count, setCount] = useState(from);
+  // Initialize to the FINAL value so server-rendered/prerendered HTML always
+  // contains the target number. Animation still runs on the client via
+  // IntersectionObserver; it just resets to `from` immediately before
+  // stepping back up to `target`.
+  const [count, setCount] = useState(target);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const animId = useRef(0);

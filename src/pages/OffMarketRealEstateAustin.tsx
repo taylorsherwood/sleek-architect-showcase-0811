@@ -352,7 +352,10 @@ const OffMarketRealEstateAustin = () => {
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
             <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl">
-              Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see.
+              Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see. Sourced by{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white transition-colors duration-300">
+                Austin luxury Realtor Taylor Sherwood
+              </Link>.
             </p>
             <button
               onClick={() => setModalOpen(true)}

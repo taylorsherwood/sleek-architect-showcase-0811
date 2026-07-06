@@ -165,8 +165,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Taylor Sherwood"
-        description="Meet Taylor Sherwood and the Echelon Property Group team. Austin luxury real estate advisors specializing in homes, land, and investment properties."
+        fullTitle="About Echelon Property Group | Austin Luxury Real Estate"
+        description="Echelon Property Group is an Austin luxury and investment real estate practice serving buyers, sellers, and investors across Central Texas. Founded by Taylor Sherwood."
+        canonical="/about"
       />
 
       
@@ -293,34 +294,20 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Meet Taylor "nash" Sherwood</h2>
-                <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-4">REALTOR®, CLHMS, ABR, GRI</p>
-                <p className="text-lg text-muted-foreground leading-[1.7] whitespace-pre-line">{"Taylor Sherwood is a top-performing Austin real estate advisor specializing in commercial, luxury, and land development opportunities. With a background in economics and a reputation for precision deal-making, Taylor helps investors, developers, and high-net-worth clients identify, structure, and execute winning real estate strategies across Central Texas.\nFriends have called him “Nash” since high school, a nickname that's stuck for years and reflects the personal relationships and long-term trust he brings to every client interaction.\u00a0\n\n\nKnown for his sharp market insight and hands-on approach, Taylor advises on everything from off-market commercial acquisitions and land assemblages to luxury residential and development projects. His experience spans investment underwriting, land development strategy, value-add positioning, and high-end residential sales, giving clients a full-spectrum advantage.\n\nTaylor's clients value his ability to cut through noise, uncover hidden opportunities, and negotiate aggressively on their behalf. Whether it's sourcing development sites, positioning a luxury asset for maximum exposure, or structuring complex commercial transactions, Taylor brings clarity, confidence, and results.\n\nA proud Austinite, Taylor spends much of his time studying (often over an ice cold margarita) the forces shaping Central Texas, from emerging development corridors and infrastructure projects to the neighborhoods and communities driving the region's next chapter.\n\nIn a city growing and evolving as rapidly as Austin, Taylor believes the best opportunities are rarely obvious, but they can often be found by those paying close attention."}</p>
+                <p className="text-minimal text-gold mb-3 tracking-[0.25em]">FOUNDER</p>
+                <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Taylor Sherwood</h2>
+                <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6">REALTOR®, CLHMS, ABR, GRI</p>
+                <p className="text-lg text-muted-foreground leading-[1.7]">
+                  Echelon Property Group was founded by Taylor Sherwood to bring institutional grade analysis and boutique level attention to Austin luxury and investment real estate. With more than a decade of experience and over $125 million in career sales across residential, commercial, land, and off market transactions, Taylor leads every engagement personally.
+                </p>
 
-                <div className="mt-8 border-t border-border/50 pt-6">
-                  <h4 className="text-minimal text-muted-foreground/50 mb-3">PROFESSIONAL DESIGNATIONS</h4>
-                  <div className="space-y-1">
-                    <p className="text-sm text-muted-foreground/70">
-                      <a
-                        href="https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            "https://www.luxuryhomemarketing.com/clhms/mini-verified.html?m=47b7631918fd737ab569ce1c45792b4b",
-                            "_blank",
-                            "width=700,height=470,left=100,top=100,scrollbars=1"
-                          );
-                        }}
-                        className="underline decoration-[hsl(var(--gold)/0.4)] underline-offset-4 hover:text-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300"
-                        aria-label="Verify Certified Luxury Home Marketing Specialist credential"
-                      >
-                        Certified Luxury Home Marketing Specialist (CLHMS)
-                      </a>
-                    </p>
-                    <p className="text-sm text-muted-foreground/70">Accredited Buyer's Representative (ABR)</p>
-                    <p className="text-sm text-muted-foreground/70">Graduate Realtor Institute (GRI)</p>
-                    <p className="text-sm text-muted-foreground/70">Member, eXp Luxury Division</p>
-                  </div>
+                <div className="mt-8">
+                  <Link
+                    to="/taylor-sherwood"
+                    className="gold-metallic-text gold-underline-hover inline-block text-[0.7rem] tracking-[0.22em] uppercase"
+                  >
+                    Meet Taylor Sherwood →
+                  </Link>
                 </div>
 
                 <div className="mt-10 text-center">

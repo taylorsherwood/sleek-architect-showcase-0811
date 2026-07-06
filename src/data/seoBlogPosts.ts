@@ -69,6 +69,9 @@ const blogBuyerMarketAustin2026 = blogBuyerMarketAustin2026Asset.url;
 import blogAustinStrRegulationsAsset from "@/assets/blog/austin-str-regulations-investor-desk.png.asset.json";
 const blogAustinStrRegulations = blogAustinStrRegulationsAsset.url;
 
+import blogDownsizingEstateHomeAsset from "@/assets/blog/downsizing-estate-home-austin.jpg.asset.json";
+const blogDownsizingEstateHome = blogDownsizingEstateHomeAsset.url;
+
 import { BlogPost } from "./blogPosts";
 
 // Build marker: ensure new posts ship in bundle (v7)

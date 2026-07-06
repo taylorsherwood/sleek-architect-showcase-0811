@@ -16,21 +16,19 @@ const articleSchema = {
     "Why founders and billionaires are relocating to Austin and how it's impacting Lake Austin, Westlake, and luxury real estate.",
   author: {
     "@type": "Person",
+    "@id": "https://www.echelonpropertygroup.com/taylor-sherwood#person",
     name: "Taylor Sherwood",
-    jobTitle: "Austin Real Estate Advisor",
-    worksFor: {
-      "@type": "Organization",
-      name: "Echelon Property Group",
-    },
+    url: "https://www.echelonpropertygroup.com/taylor-sherwood",
   },
   publisher: {
     "@type": "Organization",
+    "@id": "https://www.echelonpropertygroup.com/#organization",
     name: "Echelon Property Group",
-    url: "https://echelonpropertygroup.com",
+    url: "https://www.echelonpropertygroup.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://echelonpropertygroup.com/why-billionaires-are-moving-to-austin",
+    "@id": "https://www.echelonpropertygroup.com/why-billionaires-are-moving-to-austin",
   },
 };
 

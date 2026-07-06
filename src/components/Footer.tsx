@@ -77,6 +77,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
               <div>
                 {[
                   { to: "/about", label: "About" },
+                  { to: "/taylor-sherwood", label: "Meet Taylor Sherwood" },
                   { to: "/buy", label: "Buy" },
                   { to: "/sell", label: "Sell" },
                   { to: "/listings", label: "Listings" },

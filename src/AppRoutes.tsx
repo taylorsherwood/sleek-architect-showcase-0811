@@ -209,6 +209,7 @@ const AppRoutes = () => {
           <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
           <Route path="/market-intelligence" element={<MarketIntelligence />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/taylor-sherwood" element={<TaylorSherwood />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

@@ -360,7 +360,10 @@ const Invest = () => {
               Redevelopment &amp; Opportunities
             </h1>
             <p className="text-primary-foreground/95 text-base md:text-lg leading-relaxed max-w-xl mb-9" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)" }}>
-              From redevelopment sites and value-add acquisitions to off-market opportunities and strategic land plays, Echelon Property Group helps investors identify where future value is being created.
+              From redevelopment sites and value-add acquisitions to off-market opportunities and strategic land plays, Echelon Property Group helps investors identify where future value is being created. Meet founder{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-[hsl(var(--gold)/0.5)] underline-offset-4 hover:text-primary-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300">
+                Taylor Sherwood
+              </Link>.
             </p>
             <Link
               to="#lead-form"

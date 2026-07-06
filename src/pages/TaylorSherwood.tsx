@@ -15,6 +15,7 @@ import { communityPages } from "@/data/communityData";
 import { taylorStats, taylorFeaturedMedia } from "@/config/taylorStats";
 
 const Footer = lazy(() => import("@/components/Footer"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
 
 const SITE = "https://www.echelonpropertygroup.com";
 const PAGE_URL = `${SITE}/taylor-sherwood`;
@@ -411,6 +412,12 @@ const TaylorSherwood = () => {
           </div>
         </div>
       </section>
+
+      <Suspense fallback={null}>
+        <Testimonials />
+      </Suspense>
+
+
 
       {/* Professional Affiliations */}
       <section className="py-16 md:py-20 bg-background">

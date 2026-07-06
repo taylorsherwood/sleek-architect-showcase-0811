@@ -356,9 +356,9 @@ export function createBlogPostingSchema(post: { title: string; description: stri
     "dateModified": "2026-03-27",
     "author": {
       "@type": "Person",
-      "@id": `${SITE}/#taylor`,
-      "name": post.author,
-      "url": `${SITE}/about`,
+      "@id": `${SITE}/taylor-sherwood#person`,
+      "name": "Taylor Sherwood",
+      "url": `${SITE}/taylor-sherwood`,
     },
     "publisher": {
       "@type": "Organization",

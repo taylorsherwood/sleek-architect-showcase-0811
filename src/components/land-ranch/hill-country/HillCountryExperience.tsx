@@ -783,7 +783,7 @@ const HillCountryExperience = () => {
   const canonical = `/land-ranch/${SLUG}`;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="land-ranch-theme min-h-screen" style={{ background: "#F3EEE4" }}>
       <SEOHead
         title="Texas Hill Country Ranches for Sale | Echelon Property Group"
         description="Hill Country ranches, live water tracts, hunting properties, and legacy acreage across Central Texas. Echelon Property Group advises buyers on Hill Country land."

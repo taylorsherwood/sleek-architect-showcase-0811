@@ -5,7 +5,6 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   localBusinessSchema,
-  taylorSherwoodSchema,
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
 

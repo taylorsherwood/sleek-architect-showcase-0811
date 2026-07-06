@@ -327,9 +327,10 @@ const Index = () => (
   <div className="min-h-screen bg-background">
     <SEOHead
       title=""
-      description="Strategic Austin real estate advisory across residential, ranch, land, redevelopment, and investment property. Off-market access and disciplined execution."
-      ogTitle="Strategic Austin Real Estate Advisory | Echelon Property Group"
-      ogDescription="Private representation for Austin's most valuable real estate. Residential, ranch, land, redevelopment, and investment, with off-market access."
+      description="Echelon Property Group is the Austin luxury and investment real estate practice of founder Taylor Sherwood, serving buyers, sellers, and investors across Central Texas."
+      author="Taylor Sherwood"
+      ogTitle="Echelon Property Group | Taylor Sherwood, Austin Luxury Realtor"
+      ogDescription="Echelon Property Group is the Austin luxury and investment real estate practice of founder Taylor Sherwood, serving buyers, sellers, and investors across Central Texas."
     />
 
     <SchemaMarkup schema={localBusinessSchema} />

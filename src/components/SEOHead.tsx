@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 const BRAND_NAME = "Echelon Property Group";
-const HOMEPAGE_TITLE = `${BRAND_NAME} | Austin Luxury Real Estate`;
+const HOMEPAGE_TITLE = `${BRAND_NAME} | Taylor Sherwood, Austin Luxury Realtor`;
 const BRAND_SUFFIX_PATTERN = /\s*\|\s*Echelon(?:\s+Property\s+Group)?(?:\s+Austin)?\s*$/i;
 
 interface SEOHeadProps {
@@ -12,11 +12,17 @@ interface SEOHeadProps {
   canonical?: string;
   ogTitle?: string;
   ogDescription?: string;
-  ogType?: "website" | "article";
+  ogType?: "website" | "article" | "profile";
   /** When true, emits <meta name="robots" content="noindex, follow" /> */
   noindex?: boolean;
   /** When true, emits explicit <meta name="robots" content="index, follow" /> */
   indexFollow?: boolean;
+  /** Optional <meta name="author"> value. */
+  author?: string;
+  /** When set, uses this exact string as <title> instead of appending brand. */
+  fullTitle?: string;
+  /** Override og:image with an absolute URL (e.g. Taylor headshot on Person pages). */
+  ogImage?: string;
 }
 
 const normalizePageTitle = (rawTitle?: string | null) => {
@@ -48,20 +54,22 @@ const resolveCanonicalUrl = (pathname: string, canonical?: string) => {
   return `${SITE_URL}${path === "/" ? "/" : path}`;
 };
 
-const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false, indexFollow = false }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType = "website", noindex = false, indexFollow = false, author, fullTitle, ogImage }: SEOHeadProps) => {
   const { pathname } = useLocation();
   const pageTitle = normalizePageTitle(title);
-  const seoTitle = pageTitle ? `${pageTitle} | ${BRAND_NAME}` : HOMEPAGE_TITLE;
+  const seoTitle = fullTitle || (pageTitle ? `${pageTitle} | ${BRAND_NAME}` : HOMEPAGE_TITLE);
   const descriptionSubject = pageTitle || "Austin luxury real estate";
   const seoDescription = description || `Explore ${descriptionSubject} with ${BRAND_NAME}. View homes, market insights, and real estate opportunities in Austin Texas.`;
   const canonicalUrl = resolveCanonicalUrl(pathname, canonical);
   const openGraphTitle = ogTitle || seoTitle;
   const openGraphDescription = ogDescription || seoDescription;
+  const socialImage = ogImage || `${SITE_URL}/og-image.png`;
 
   return (
     <Helmet prioritizeSeoTags>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
+      {author ? <meta name="author" content={author} /> : null}
       {noindex ? (
         <meta name="robots" content="noindex, follow" />
       ) : indexFollow ? (
@@ -73,13 +81,13 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={BRAND_NAME} />
-      <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
+      <meta property="og:image" content={socialImage} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={openGraphTitle} />
       <meta name="twitter:description" content={openGraphDescription} />
       <meta name="twitter:url" content={canonicalUrl} />
-      <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
+      <meta name="twitter:image" content={socialImage} />
 
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>

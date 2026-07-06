@@ -18,6 +18,7 @@ type HeadTag = {
 
 const staticRoutes = [
   "/",
+  "/taylor-sherwood",
   "/about",
   "/buy",
   "/sell",

@@ -171,7 +171,7 @@ const BlogPost = () => {
                     <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>
-                    <span>By {post.author}</span>
+                    <span>By <Link to="/taylor-sherwood" className="underline hover:text-foreground transition-colors">{post.author}</Link></span>
                   </div>
 
 

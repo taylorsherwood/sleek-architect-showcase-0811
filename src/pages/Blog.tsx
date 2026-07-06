@@ -127,7 +127,10 @@ const Blog = () => {
               Intelligence
             </h1>
             <p className="text-primary-foreground/70 text-lg max-w-lg mb-8 reveal-delayed">
-              Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities.
+              Hyperlocal analysis, off-market strategy, and neighborhood expertise across Austin's most desirable communities. Written by founder{" "}
+              <Link to="/taylor-sherwood" className="underline decoration-[hsl(var(--gold)/0.5)] underline-offset-4 hover:text-primary-foreground hover:decoration-[hsl(var(--gold))] transition-colors duration-300">
+                Taylor Sherwood
+              </Link>.
             </p>
             <div className="flex flex-wrap items-center gap-6 reveal-delayed-2">
               <a

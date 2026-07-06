@@ -300,7 +300,8 @@ const CountUp = ({
   duration?: number;
 }) => {
   const ref = useRef<HTMLSpanElement>(null);
-  const [value, setValue] = useState(from);
+  // Initialize to final value so SSR/prerender HTML shows the target.
+  const [value, setValue] = useState(to);
   const rafRef = useRef<number | null>(null);
   const wasVisibleRef = useRef(false);
 

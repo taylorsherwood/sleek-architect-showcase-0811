@@ -803,7 +803,9 @@ const HillCountryExperience = () => {
 
       <Hero />
       <MeetAdvisor />
+      <BarbedWireDivider />
       <OpportunityReel />
+
       <SixLenses />
       <RegionalMap />
       <LifestyleQuote />

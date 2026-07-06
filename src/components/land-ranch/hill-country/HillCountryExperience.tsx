@@ -40,7 +40,7 @@ const label: React.CSSProperties = {
 // 1 · CINEMATIC HERO
 // ─────────────────────────────────────────────────────────────
 const Hero = () => (
-  <section className="relative w-full h-[88vh] min-h-[560px] max-h-[860px] overflow-hidden bg-primary">
+  <section className="relative w-full h-[88vh] min-h-[560px] max-h-[860px] overflow-hidden bg-[#2F3A2C]">
     <img
       src={heroImage}
       alt="Texas Hill Country ranch land with rolling terrain, live oaks, a creek, and a private drive leading to a modern ranch home"
@@ -103,7 +103,7 @@ const Hero = () => (
 // 2 · ADVISOR ANCHOR
 // ─────────────────────────────────────────────────────────────
 const AdvisorAnchor = () => (
-  <section className="relative bg-background py-20 md:py-32">
+  <section className="relative bg-[#F3EEE4] py-20 md:py-32">
     <div className="container mx-auto px-6 md:px-12">
       <div className="grid md:grid-cols-12 gap-12 md:gap-20 items-center max-w-6xl mx-auto">
         <div className="md:col-span-5 md:col-start-1">
@@ -400,7 +400,7 @@ const SixLenses = () => {
           {lenses.map((l) => (
             <article
               key={l.number}
-              className="flex-shrink-0 snap-start w-[82%] bg-background py-8 px-6"
+              className="flex-shrink-0 snap-start w-[82%] bg-[#F3EEE4] py-8 px-6"
               style={{ minHeight: "300px" }}
             >
               <div className="flex items-baseline gap-4 mb-5">
@@ -444,7 +444,7 @@ const SixLenses = () => {
 // 5 · REGIONAL MAP (single short caption)
 // ─────────────────────────────────────────────────────────────
 const RegionalMap = () => (
-  <section className="bg-background py-20 md:py-28">
+  <section className="bg-[#F3EEE4] py-20 md:py-28">
     <div className="container mx-auto px-6 md:px-12">
       <div className="max-w-2xl mb-10 md:mb-14">
         <p className="text-[#8A7450] mb-5" style={label}>
@@ -554,7 +554,7 @@ const AdjacentMarkets = () => {
     .slice(0, 4);
 
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section className="bg-[#F3EEE4] py-20 md:py-28">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-2xl mb-12 md:mb-14">
           <p className="text-[#8A7450] mb-5" style={label}>

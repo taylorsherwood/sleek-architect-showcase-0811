@@ -74,7 +74,8 @@ const blogDownsizingEstateHome = blogDownsizingEstateHomeAsset.url;
 
 import { BlogPost } from "./blogPosts";
 
-import blogAustinCapRates from "@/assets/blog/austin-cap-rates-2026.jpg";
+import blogAustinCapRatesAsset from "@/assets/blog/austin-cap-rates-hero.png.asset.json";
+const blogAustinCapRates = blogAustinCapRatesAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v7)
 export const seoBlogPosts: BlogPost[] = [

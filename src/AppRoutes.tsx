@@ -148,6 +148,7 @@ const AppRoutes = () => {
           <Route path="/private-opportunities" element={<PrivateOpportunitiesPage />} />
           <Route path="/luxury-homes-austin" element={<AliasRedirect to="/austin-luxury-homes-for-sale" />} />
           <Route path="/why-billionaires-are-moving-to-austin" element={<BillionaireMigration />} />
+          <Route path="/austin-cap-rates" element={<AliasRedirect to="/blog/austin-cap-rates" />} />
           <Route path="/blog/how-to-find-off-market-real-estate-deals-austin-2026" element={<AliasRedirect to="/blog/find-off-market-homes-austin" />} />
           {/* 301 redirects for stale/duplicate blog slugs (consolidated into the canonical post) */}
           <Route path="/blog/what-is-a-private-listing" element={<AliasRedirect to="/blog/what-is-private-listing-in-real-estate" />} />

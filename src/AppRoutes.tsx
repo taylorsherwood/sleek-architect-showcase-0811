@@ -77,7 +77,6 @@ const OAuthConsent = lazy(() => import("@/pages/OAuthConsent"));
 const PrivateDistribution = lazy(() => import("@/pages/PrivateDistribution"));
 const Reviews = lazy(() => import("@/pages/Reviews"));
 const TaylorSherwood = lazy(() => import("@/pages/TaylorSherwood"));
-const DevelopmentMarketing = lazy(() => import("@/pages/DevelopmentMarketing"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {
@@ -212,7 +211,6 @@ const AppRoutes = () => {
           <Route path="/market-intelligence" element={<MarketIntelligence />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/taylor-sherwood" element={<TaylorSherwood />} />
-          <Route path="/development-marketing" element={<DevelopmentMarketing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

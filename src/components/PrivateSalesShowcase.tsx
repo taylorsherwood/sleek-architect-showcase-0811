@@ -55,7 +55,7 @@ export const privateSales: PrivateSaleItem[] = [
   },
   {
     image: southeastDevImage,
-    price: "$4,750,000",
+    price: "$4,995,000",
     address: "Address Withheld",
     area: "SOUTHEAST AUSTIN",
     descriptor: "Development Land · 9 Acres",

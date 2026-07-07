@@ -28,6 +28,9 @@ export interface PrivateSaleItem {
   label?: string;
 }
 
+const parsePrice = (price: string): number =>
+  Number(price.replace(/[^0-9.]/g, "")) || 0;
+
 export const privateSales: PrivateSaleItem[] = [
   {
     image: multifamilySAImage,
@@ -54,20 +57,20 @@ export const privateSales: PrivateSaleItem[] = [
     label: "REPRESENTED BUYER",
   },
   {
-    image: southeastDevImage,
-    price: "$4,995,000",
-    address: "Address Withheld",
-    area: "SOUTHEAST AUSTIN",
-    descriptor: "Development Land · 9 Acres",
-    label: "REPRESENTED BUYER",
-  },
-  {
     image: westlakeHillsPrivateImage,
     price: "$5,950,000",
     address: "Address Withheld",
     area: "WEST LAKE HILLS",
     descriptor: "",
     label: "REPRESENTED SELLER",
+  },
+  {
+    image: southeastDevImage,
+    price: "$4,995,000",
+    address: "Address Withheld",
+    area: "SOUTHEAST AUSTIN",
+    descriptor: "Development Land · 9 Acres",
+    label: "REPRESENTED BUYER",
   },
   {
     image: tarrytownImage,
@@ -125,7 +128,7 @@ export const privateSales: PrivateSaleItem[] = [
     descriptor: "",
     label: "REPRESENTED BUYER",
   },
-];
+].sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
 
 /* ------------------------------------------------------------------ */
 /*  CARD                                                               */

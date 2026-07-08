@@ -207,7 +207,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                   <Link key={link.to} to={link.to} className={linkHoverClass} style={linkStyle}>{link.label}</Link>
                 ))}
                 <Link to="/sell-private" className={linkHoverClass} style={linkStyle}>Private Sale Strategy</Link>
-                <Link to="/private-distribution" className={linkHoverClass} style={linkStyle}>Private Distribution</Link>
+                
                 <Link to="/agent-integrations" className={linkHoverClass} style={linkStyle}>Agent Integrations</Link>
               </div>
             </div>

@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
-import heroAsset from "@/assets/developments/developments-mueller-residence-hero.jpg.asset.json";
+import heroAsset from "@/assets/developments/developments-residences-hero.png.asset.json";
 import brochureAsset from "@/assets/developments/arbors-brochure.jpg.asset.json";
 import salesCenterAsset from "@/assets/developments/arbors-sales-center.jpg.asset.json";
 import signageAsset from "@/assets/developments/arbors-signage.jpg.asset.json";
@@ -193,11 +193,11 @@ const Developments = () => {
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden" style={{ background: "#0C0F24" }}>
           <img
             src={heroAsset.url}
-            alt="Mueller residence streetscape in Austin, Texas"
+            alt="New residences at The Arbors in West Austin"
             className="h-auto w-auto object-contain"
-            style={{ maxWidth: "min(100%, 800px)", maxHeight: "533px" }}
-            width={800}
-            height={533}
+            style={{ maxWidth: "min(100%, 1200px)", maxHeight: "800px" }}
+            width={1536}
+            height={1024}
           />
         </div>
         {/* Soft dark wash from the left — fades into the image rather than sitting on top */}

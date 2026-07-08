@@ -1092,7 +1092,7 @@ The result is that much of the most compelling luxury inventory in Austin never 
 
 At the $3M and above tier, many sellers actively prefer to transact quietly. Privacy is a genuine concern. So is the perception risk of a property sitting publicly on the market for an extended period. A home that accumulates 90 days on MLS carries a stigma that can be difficult to overcome, regardless of the underlying quality. Sellers who have the option to avoid that exposure often choose to do so. Our [confidential property transactions](/blog/confidential-property-transactions) guide covers how these deals are structured.
 
-For buyers, this creates a real information asymmetry. If you are working exclusively through public listing searches, you are seeing only a portion of what is actually available. The buyers who are seeing the full picture are those whose advisors have genuine relationships with other luxury agents, developers, and homeowners who are considering a sale but haven't formally listed. Echelon's [private opportunities](/private-opportunities) channel and [private distribution](/private-distribution) editions exist specifically to close that gap.
+For buyers, this creates a real information asymmetry. If you are working exclusively through public listing searches, you are seeing only a portion of what is actually available. The buyers who are seeing the full picture are those whose advisors have genuine relationships with other luxury agents, developers, and homeowners who are considering a sale but haven't formally listed. Echelon Property Group's [private opportunities](/private-opportunities) channel exists specifically to close that gap.
 
 ## Pricing, Days on Market, and Negotiation at the High End
 

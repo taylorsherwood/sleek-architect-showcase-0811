@@ -9,9 +9,8 @@ import { trackEvent } from "@/lib/analytics";
  * three editorial actions on a navy bar with a thin gold hairline. No
  * popups, no animations beyond a calm fade/translate.
  *
- * Hidden on /connect (the bar's third action targets it), on the
- * private-distribution edition gate routes, on admin routes, and once
- * the footer is in view (so the bar never overlaps the legal area).
+ * Hidden on /connect (the bar's third action targets it), on admin routes,
+ * and once the footer is in view (so the bar never overlaps the legal area).
  *
  * Analytics:
  *  - mobile_sticky_impression  once per route, when the bar first reveals
@@ -32,8 +31,7 @@ const MobileStickyActionBar = () => {
   const firedImpressionRef = useRef(false);
 
   const suppressedRoute =
-    SUPPRESSED_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`)) ||
-    pathname.startsWith("/private-distribution/");
+    SUPPRESSED_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
 
   // Reset reveal state + impression flag on every route change.
   useEffect(() => {

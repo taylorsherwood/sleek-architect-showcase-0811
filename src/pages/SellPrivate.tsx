@@ -8,7 +8,7 @@ import heroVideoWebm from "@/assets/video/sell-private-hero.webm";
 import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
-import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
+
 
 const SITE = "https://www.echelonpropertygroup.com";
 
@@ -628,12 +628,6 @@ const SellPrivate = () => {
         </div>
       </section>
 
-      <PrivateDistributionStrip
-        eyebrow="Private Distribution"
-        headline="A private brief for sellers considering their options."
-        body="Recurring market intelligence on Austin's most guarded zip codes. Recent off-market closings, current private inventory, and the posture of buyers active above the public market."
-        ctaLabel="Read the Current Edition"
-      />
 
       {/* ─────────── Quiet footer ─────────── */}
       <footer className="py-9" style={{ backgroundColor: NAVY }}>

@@ -287,8 +287,7 @@ const MarketIntelligence = () => {
                   Upper-tier metrics drawn from active and recently closed luxury inventory. For private
                   inventory not represented here, see our{" "}
                   <Link to="/off-market-real-estate-austin" className={link}>off-market real estate</Link>{" "}
-                  desk and{" "}
-                  <Link to="/private-distribution" className={link}>private distribution</Link> editions.
+                  desk.
                 </>
               }
               interpretation={
@@ -348,7 +347,7 @@ const MarketIntelligence = () => {
                   { to: "/austin-luxury-real-estate-market-report", label: "Austin Luxury Market Report" },
                   { to: "/austin-luxury-market-trends", label: "Austin Luxury Market Trends" },
                   { to: "/off-market-real-estate-austin", label: "Off-Market Real Estate" },
-                  { to: "/private-distribution", label: "Private Distribution Editions" },
+                  
                   { to: "/austin-real-estate-investment", label: "Investment Advisory" },
                   { to: "/sell-private", label: "Private Sale Representation" },
                 ]}

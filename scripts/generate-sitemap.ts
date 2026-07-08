@@ -74,11 +74,6 @@ const staticEntries: SitemapEntry[] = [
   { path: "/blog/austin-luxury-market-trends", changefreq: "monthly", priority: "0.6" },
 ];
 
-// Indexable Private Distribution editions (slugs intended to be public).
-const privateDistributionSlugs = [
-  "78703-may-2026",
-  "78746-may-2026",
-];
 
 const communityEntries: SitemapEntry[] = [
   ...communitySlugs,
@@ -97,11 +92,6 @@ const blogEntries: SitemapEntry[] = blogIds.map((id) => ({
   priority: "0.6",
 }));
 
-const privateDistributionEntries: SitemapEntry[] = privateDistributionSlugs.map((slug) => ({
-  path: `/private-distribution/${slug}`,
-  changefreq: "monthly",
-  priority: "0.5",
-}));
 
 // Dedupe by path (last wins).
 const seen = new Map<string, SitemapEntry>();

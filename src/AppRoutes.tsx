@@ -72,9 +72,7 @@ const CommunityReportPage = lazy(() => import("@/pages/CommunityReportPage"));
 const AdminLogin = lazy(() => import("@/pages/admin/AdminLogin"));
 const AdminDashboard = lazy(() => import("@/pages/admin/AdminDashboard"));
 const AdminCommunityEditor = lazy(() => import("@/pages/admin/AdminCommunityEditor"));
-const AdminPrivateDistribution = lazy(() => import("@/pages/admin/AdminPrivateDistribution"));
 const OAuthConsent = lazy(() => import("@/pages/OAuthConsent"));
-const PrivateDistribution = lazy(() => import("@/pages/PrivateDistribution"));
 const Reviews = lazy(() => import("@/pages/Reviews"));
 const TaylorSherwood = lazy(() => import("@/pages/TaylorSherwood"));
 const Developments = lazy(() => import("@/pages/Developments"));
@@ -205,11 +203,7 @@ const AppRoutes = () => {
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/communities/:slug" element={<AdminCommunityEditor />} />
-          <Route path="/admin/private-distribution" element={<AdminPrivateDistribution />} />
-          <Route path="/admin/private-distribution/:slug" element={<AdminPrivateDistribution />} />
           <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
-          <Route path="/private-distribution" element={<PrivateDistribution />} />
-          <Route path="/private-distribution/:slug" element={<PrivateDistribution />} />
           <Route path="/market-intelligence" element={<MarketIntelligence />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/taylor-sherwood" element={<TaylorSherwood />} />

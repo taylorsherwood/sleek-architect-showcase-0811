@@ -108,11 +108,6 @@ const staticRoutes = [
   "/lakeway-homes-for-sale",
 ];
 
-const privateDistributionSlugs = [
-  "78703-may-2026",
-  "78746-may-2026",
-];
-
 const allPrerenderRoutes = Array.from(
   new Set([
     ...staticRoutes,
@@ -120,7 +115,6 @@ const allPrerenderRoutes = Array.from(
     // Aliased community slug rendered as its own indexable page.
     "/communities/northwest-hills",
     ...[...seoBlogPosts, ...blogPosts].map((post) => `/blog/${post.id}`),
-    ...privateDistributionSlugs.map((slug) => `/private-distribution/${slug}`),
   ])
 );
 

@@ -57,7 +57,6 @@ const Navigation = () => {
       children: [
         { href: "/blog", label: "Blog & Press" },
         { href: "/market-intelligence", label: "Market Intelligence" },
-        { href: "/private-distribution", label: "Private Market Intelligence" },
       ],
     },
     { href: "/developments", label: "Developments" },

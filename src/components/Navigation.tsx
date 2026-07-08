@@ -104,7 +104,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 -ml-16 xl:-ml-14">
+        <div className="hidden lg:flex items-center space-x-5 xl:space-x-7 -ml-10 xl:-ml-8">
           {links.map((link) =>
             link.children ? (
               <div
@@ -199,7 +199,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden lg:flex items-center shrink-0 ml-auto mr-6 xl:mr-10">
+        <div className="hidden lg:flex items-center shrink-0 ml-auto mr-3 xl:mr-5">
           <a
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"

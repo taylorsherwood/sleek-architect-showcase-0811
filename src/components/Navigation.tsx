@@ -5,18 +5,28 @@ import { Button } from "@/components/ui/button";
 const logo = "/images/echelon-logo.webp";
 const logoMobile = "/images/echelon-logo-mobile.png";
 
+const BRONZE = "#b9a06c";
+const IVORY = "#FAF7F1";
+const CHARCOAL = "#0C0F24";
+
+interface NavChild {
+  href: string;
+  label: string;
+  external?: boolean;
+}
+
 interface NavLink {
   href: string;
   label: string;
   external?: boolean;
-  children?: { href: string; label: string; external?: boolean }[];
+  children?: NavChild[];
 }
 
+const DESKTOP_BP = "min-[1280px]";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -27,40 +37,54 @@ const Navigation = () => {
   const links: NavLink[] = [
     {
       href: "/search",
-      label: "SEARCH PROPERTIES",
+      label: "Search",
       children: [
-        { href: "/austin-luxury-homes-for-sale", label: "AUSTIN LUXURY HOMES" },
-        { href: "/listings/commercial-investment-austin", label: "COMMERCIAL & INVESTMENT" },
-        { href: "/land-ranch", label: "LAND & RANCH" },
-        { href: "/land-development", label: "LAND DEVELOPMENT" },
-        { href: "/past-transactions", label: "PAST TRANSACTIONS" },
-        { href: "/search", label: "SEARCH ALL LISTINGS" },
+        { href: "/austin-luxury-homes-for-sale", label: "Austin Luxury Homes" },
+        { href: "/listings/commercial-investment-austin", label: "Commercial & Investment" },
+        { href: "/land-ranch", label: "Land & Ranch" },
+        { href: "/land-development", label: "Land Development" },
+        { href: "/past-transactions", label: "Past Transactions" },
+        { href: "/search", label: "Search All Listings" },
       ],
     },
-    { href: "/buy", label: "BUY" },
-    { href: "/sell", label: "SELL" },
-    { href: "/invest", label: "INVEST" },
-    { href: "/communities", label: "COMMUNITIES" },
+    { href: "/buy", label: "Buy" },
+    { href: "/sell", label: "Sell" },
+    { href: "/invest", label: "Invest" },
+    { href: "/communities", label: "Communities" },
     {
       href: "/blog",
-      label: "INSIGHTS",
+      label: "Insights",
       children: [
-        { href: "/blog", label: "BLOG & PRESS" },
-        { href: "/market-intelligence", label: "MARKET INTELLIGENCE" },
-        { href: "/private-distribution", label: "PRIVATE MARKET INTELLIGENCE" },
+        { href: "/blog", label: "Blog & Press" },
+        { href: "/market-intelligence", label: "Market Intelligence" },
+        { href: "/private-distribution", label: "Private Market Intelligence" },
       ],
     },
-    { href: "/developments", label: "DEVELOPMENTS" },
-    { href: "/off-market-real-estate-austin", label: "PRIVATE ACCESS" },
-
-    { href: "/about", label: "ABOUT" },
+    { href: "/developments", label: "Developments" },
+    { href: "/off-market-real-estate-austin", label: "Private Access" },
+    { href: "/about", label: "About" },
   ];
 
   const isActive = (link: NavLink) =>
     location.pathname === link.href ||
     link.children?.some((c) => location.pathname === c.href);
 
-  const navLinkStyle: React.CSSProperties = {
+  // Desktop nav item typography
+  const desktopLinkStyle: React.CSSProperties = {
+    fontFamily: '"Jost", sans-serif',
+    fontSize: "13px",
+    letterSpacing: "0.04em",
+    fontWeight: 500,
+    lineHeight: 1,
+    color: CHARCOAL,
+    whiteSpace: "nowrap",
+    textTransform: "none",
+    display: "inline-flex",
+    alignItems: "center",
+  };
+
+  // Mobile keeps prior uppercase styling
+  const mobileLinkStyle: React.CSSProperties = {
     fontFamily: '"Jost", sans-serif',
     fontSize: "10px",
     letterSpacing: "0.11em",
@@ -68,47 +92,51 @@ const Navigation = () => {
     fontWeight: 400,
     whiteSpace: "nowrap",
     lineHeight: 1,
-    padding: 0,
-    margin: 0,
-    border: 0,
-    background: "transparent",
-    WebkitAppearance: "none",
-    appearance: "none",
-    boxSizing: "border-box",
   };
 
-  const navItemClasses = "relative inline-flex items-center h-4 leading-none align-middle transition-colors duration-300 group cursor-pointer";
-  const underlineClasses = "absolute -bottom-1 left-0 h-px w-full transition-all duration-300 origin-left";
-  const arrowClasses = "ml-1.5 text-[7px] opacity-30 leading-none inline-block align-middle";
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 h-32 md:h-28 lg:h-[6.5rem]" style={{ overflow: "visible", borderBottom: "1px solid rgba(12, 15, 36, 0.06)", transition: "background 0.4s ease, border-color 0.4s ease", WebkitBackdropFilter: "blur(6px)", backdropFilter: "blur(6px)" }}>
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 h-32 md:h-28 lg:h-[6.5rem]"
+      style={{
+        overflow: "visible",
+        borderBottom: "1px solid rgba(12, 15, 36, 0.06)",
+        WebkitBackdropFilter: "blur(6px)",
+        backdropFilter: "blur(6px)",
+      }}
+    >
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "#FCFBF9" }} />
+
       <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: "#FCFBF9" }}
-      />
-      <div className="relative w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-10 h-full flex items-center justify-center min-[1400px]:justify-start pb-3 min-[1400px]:pb-0" style={{ overflow: "visible" }}>
-        <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>
-          {/* Mobile/Tablet logo (below lg) */}
+        className={`relative w-full h-full flex items-center px-4 md:px-6 min-[1280px]:px-8 justify-center min-[1280px]:justify-start pb-3 min-[1280px]:pb-0`}
+        style={{ overflow: "visible" }}
+      >
+        {/* Logo */}
+        <Link
+          to="/"
+          onClick={() => {
+            if (location.pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="flex items-center shrink-0"
+          style={{ height: "100%" }}
+        >
           <img
             src={logoMobile}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className="block min-[1400px]:hidden w-auto max-w-[450px] border-0 shrink-0 object-contain"
-            style={{ height: 'auto', maxHeight: '128%' }}
+            className={`block min-[1280px]:hidden w-auto max-w-[450px] shrink-0 object-contain`}
+            style={{ height: "auto", maxHeight: "128%" }}
             loading="eager"
             decoding="async"
             fetchPriority="high"
             width={400}
             height={218}
           />
-          {/* Desktop logo (lg and up) */}
           <img
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className="hidden min-[1400px]:block w-auto max-w-none border-0 shrink-0 object-contain"
-            style={{ height: '140%', maxHeight: '140%', aspectRatio: '200 / 80' }}
+            className={`hidden min-[1280px]:block w-auto max-w-none shrink-0 object-contain`}
+            style={{ height: "140%", maxHeight: "140%", aspectRatio: "200 / 80" }}
             loading="eager"
             decoding="async"
             width={200}
@@ -116,10 +144,10 @@ const Navigation = () => {
           />
         </Link>
 
-        {/* Desktop nav links */}
+        {/* Desktop nav (starts close to logo, Client Portal pushed to far right) */}
         <ul
-          className="hidden min-[1400px]:flex items-center gap-x-3 xl:gap-x-5 2xl:gap-x-7 ml-4 xl:ml-8 flex-nowrap list-none p-0 m-0"
-          style={{ overflow: "visible" }}
+          className={`hidden min-[1280px]:flex items-center list-none p-0 m-0 flex-nowrap`}
+          style={{ overflow: "visible", marginLeft: "20px", columnGap: "clamp(22px, 2vw, 36px)" }}
         >
           {links.map((link) => (
             <li
@@ -129,100 +157,33 @@ const Navigation = () => {
               onMouseEnter={link.children ? () => setOpenDropdown(link.href) : undefined}
               onMouseLeave={link.children ? () => setOpenDropdown(null) : undefined}
             >
-              {link.external ? (
-                <a
-                  href={link.href}
-                  rel="noopener"
-                  className={`${navItemClasses} text-foreground/85 hover:text-foreground`}
-                  style={navLinkStyle}
-                >
-                  {link.label}
-                  {link.children && <span className={arrowClasses}>▼</span>}
-                  <span
-                    className={`${underlineClasses} ${isActive(link) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
-                    style={{ background: "hsl(38 39% 61%)" }}
-                  />
-                </a>
-              ) : (
-                <Link
-                  to={link.href}
-                  onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className={`${navItemClasses} ${isActive(link) ? "text-foreground" : "text-foreground/85 hover:text-foreground"}`}
-                  style={navLinkStyle}
-                >
-                  {link.label}
-                  {link.children && <span className={arrowClasses}>▼</span>}
-                  <span
-                    className={`${underlineClasses} ${isActive(link) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
-                    style={{ background: "hsl(38 39% 61%)" }}
-                  />
-                </Link>
-              )}
-
+              <DesktopNavAnchor link={link} active={!!isActive(link)} style={desktopLinkStyle} />
               {link.children && openDropdown === link.href && (
                 <DesktopDropdown>
-                  <div style={{ background: "hsl(var(--background))", border: "1px solid rgba(255,255,255,0.08)" }} className="shadow-elegant">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        to={child.href}
-                        className="block px-7 py-4 transition-colors duration-300"
-                        style={{
-                          ...navLinkStyle,
-                          fontSize: "10px",
-                          whiteSpace: "nowrap",
-                          color: location.pathname === child.href
-                            ? "hsl(var(--foreground))"
-                            : "hsl(var(--foreground) / 0.7)",
-                        }}
-                        onMouseEnter={(e) => { e.currentTarget.style.color = "#b9a06c"; }}
-                        onMouseLeave={(e) => {
-                          if (location.pathname !== child.href) {
-                            e.currentTarget.style.color = "hsl(var(--foreground) / 0.7)";
-                          }
-                        }}
-                      >
-                        <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[1px] after:bg-gold after:scale-x-0 after:origin-left after:transition-[transform] after:duration-500 after:ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:after:scale-x-100">
-                          {child.label}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
+                  {link.children.map((child) => (
+                    <DropdownItem
+                      key={child.href}
+                      href={child.href}
+                      label={child.label}
+                      active={location.pathname === child.href}
+                    />
+                  ))}
                 </DesktopDropdown>
               )}
             </li>
           ))}
         </ul>
 
-        {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden min-[1400px]:flex items-center shrink-0 ml-6 xl:ml-8">
-          <a
-            href="https://portal.echelonpropertygroup.com/login"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="inline-flex items-center whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
-            style={{
-              ...navLinkStyle,
-              fontSize: "10px",
-              border: "1px solid hsl(38 39% 61%)",
-              color: "hsl(38 39% 61%)",
-              background: "rgba(255, 255, 255, 0.25)",
-              WebkitBackdropFilter: "blur(12px)",
-              backdropFilter: "blur(12px)",
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#ffffff"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.25)"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
-          >
-            CLIENT PORTAL
-          </a>
+        {/* Client Portal, far right */}
+        <div className={`hidden min-[1280px]:flex items-center shrink-0 ml-auto pl-6`}>
+          <ClientPortalButton />
         </div>
-
 
         {/* Mobile toggle */}
         <Button
           variant="ghost"
           size="sm"
-          className="min-[1400px]:hidden absolute right-2 md:right-6"
+          className={`min-[1280px]:hidden absolute right-2 md:right-6`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
@@ -231,11 +192,11 @@ const Navigation = () => {
         </Button>
       </div>
 
-      {/* Mobile menu, Safari-safe overlay panel */}
+      {/* Mobile menu */}
       {isMenuOpen && (
         <div
-          className="min-[1400px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto"
-          style={{ backgroundColor: "#0C0F24", minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
+          className={`min-[1280px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto`}
+          style={{ backgroundColor: CHARCOAL, minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
         >
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
@@ -244,7 +205,7 @@ const Navigation = () => {
                   <button
                     onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
                     className="block transition-colors duration-300 text-white/80 hover:text-gold"
-                    style={navLinkStyle}
+                    style={mobileLinkStyle}
                   >
                     {link.label}
                     <span className="ml-1.5 text-[7px] opacity-30">
@@ -259,7 +220,7 @@ const Navigation = () => {
                           to={child.href}
                           onClick={() => setIsMenuOpen(false)}
                           className="block text-white/50 hover:text-gold transition-colors duration-300"
-                          style={{ ...navLinkStyle, fontSize: "10px" }}
+                          style={mobileLinkStyle}
                         >
                           {child.label}
                         </Link>
@@ -272,9 +233,9 @@ const Navigation = () => {
                   key={link.href}
                   href={link.href}
                   rel="noopener"
-                  onClick={() => { setIsMenuOpen(false); }}
+                  onClick={() => setIsMenuOpen(false)}
                   className="block text-white/80 hover:text-gold transition-colors duration-300"
-                  style={navLinkStyle}
+                  style={mobileLinkStyle}
                 >
                   {link.label}
                 </a>
@@ -282,14 +243,13 @@ const Navigation = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => { setIsMenuOpen(false); }}
+                  onClick={() => setIsMenuOpen(false)}
                   className="block text-white/80 hover:text-gold transition-colors duration-300"
-                  style={navLinkStyle}
+                  style={mobileLinkStyle}
                 >
                   {link.label}
                 </Link>
               )
-
             )}
             <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
               <a
@@ -298,13 +258,12 @@ const Navigation = () => {
                 rel="noopener noreferrer nofollow"
                 className="inline-block px-6 py-3 transition-all duration-300"
                 style={{
-                  ...navLinkStyle,
-                  fontSize: "10px",
-                  border: "1px solid hsl(38 39% 61%)",
-                  color: "hsl(38 39% 61%)",
+                  ...mobileLinkStyle,
+                  border: `1px solid ${BRONZE}`,
+                  color: BRONZE,
                 }}
               >
-                CLIENT PORTAL
+                Client Portal
               </a>
             </div>
           </div>
@@ -314,12 +273,142 @@ const Navigation = () => {
   );
 };
 
-/**
- * Desktop dropdown wrapper.
- * Positioned absolutely at top:100% / left:0 relative to its parent <li>.
- * After mount, measures its bounding box and shifts left with translateX
- * if it would overflow the viewport's right/left edges.
- */
+/* --------------------------------------------------------------------------
+ * Desktop nav anchor (renders Link or <a>, with text-width active underline)
+ * ------------------------------------------------------------------------ */
+const DesktopNavAnchor = ({
+  link,
+  active,
+  style,
+}: {
+  link: NavLink;
+  active: boolean;
+  style: React.CSSProperties;
+}) => {
+  const location = useLocation();
+  const inner = (
+    <>
+      <span
+        className="relative inline-block"
+        style={{
+          paddingBottom: "6px",
+        }}
+      >
+        {link.label}
+        <span
+          aria-hidden
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: "1.5px",
+            background: BRONZE,
+            transformOrigin: "center",
+            transform: active ? "scaleX(1)" : "scaleX(0)",
+            transition: "transform 220ms ease",
+          }}
+          className="nav-underline"
+        />
+      </span>
+      {link.children && (
+        <span
+          style={{
+            marginLeft: "6px",
+            fontSize: "8px",
+            opacity: 0.4,
+            lineHeight: 1,
+          }}
+        >
+          ▼
+        </span>
+      )}
+    </>
+  );
+
+  const commonClass = "group cursor-pointer";
+  const onHover = (e: React.MouseEvent<HTMLElement>, hovered: boolean) => {
+    const el = e.currentTarget.querySelector<HTMLElement>(".nav-underline");
+    if (el && !active) el.style.transform = hovered ? "scaleX(1)" : "scaleX(0)";
+    (e.currentTarget as HTMLElement).style.color = hovered ? BRONZE : CHARCOAL;
+  };
+
+  if (link.external) {
+    return (
+      <a
+        href={link.href}
+        rel="noopener"
+        className={commonClass}
+        style={style}
+        onMouseEnter={(e) => onHover(e, true)}
+        onMouseLeave={(e) => onHover(e, false)}
+      >
+        {inner}
+      </a>
+    );
+  }
+  return (
+    <Link
+      to={link.href}
+      onClick={() => {
+        if (link.href === "/" && location.pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+      className={commonClass}
+      style={style}
+      onMouseEnter={(e) => onHover(e, true)}
+      onMouseLeave={(e) => onHover(e, false)}
+    >
+      {inner}
+    </Link>
+  );
+};
+
+/* --------------------------------------------------------------------------
+ * Shared dropdown item
+ * ------------------------------------------------------------------------ */
+const DropdownItem = ({
+  href,
+  label,
+  active,
+}: {
+  href: string;
+  label: string;
+  active: boolean;
+}) => (
+  <Link
+    to={href}
+    className="block transition-colors"
+    style={{
+      fontFamily: '"Jost", sans-serif',
+      fontSize: "15px",
+      fontWeight: 500,
+      letterSpacing: "0.04em",
+      lineHeight: 1.7,
+      color: active ? BRONZE : CHARCOAL,
+      padding: "6px 12px",
+      borderRadius: "8px",
+      marginBottom: "2px",
+      whiteSpace: "nowrap",
+      textTransform: "none",
+      transitionDuration: "180ms",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.background = IVORY;
+      e.currentTarget.style.color = BRONZE;
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.background = "transparent";
+      e.currentTarget.style.color = active ? BRONZE : CHARCOAL;
+    }}
+  >
+    {label}
+  </Link>
+);
+
+/* --------------------------------------------------------------------------
+ * Shared desktop dropdown card
+ * Centered under parent; shifts inward on viewport collision only.
+ * ------------------------------------------------------------------------ */
 const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [shift, setShift] = useState(0);
@@ -328,16 +417,13 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     const el = ref.current;
     if (!el) return;
     const adjust = () => {
-      el.style.transform = "translateX(0)";
+      el.style.transform = "translateX(-50%)";
       const rect = el.getBoundingClientRect();
       const vw = window.innerWidth;
-      const margin = 12;
+      const margin = 16;
       let delta = 0;
-      if (rect.right > vw - margin) {
-        delta = vw - margin - rect.right;
-      } else if (rect.left < margin) {
-        delta = margin - rect.left;
-      }
+      if (rect.right > vw - margin) delta = vw - margin - rect.right;
+      else if (rect.left < margin) delta = margin - rect.left;
       setShift(delta);
     };
     adjust();
@@ -347,19 +433,73 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      ref={ref}
-      className="absolute left-0 pt-4"
+      className="absolute"
       style={{
         top: "100%",
+        left: "50%",
+        paddingTop: "14px",
+        transform: `translateX(calc(-50% + ${shift}px))`,
         zIndex: 100,
-        minWidth: 260,
-        whiteSpace: "nowrap",
-        transform: `translateX(${shift}px)`,
       }}
     >
-      {children}
+      <div
+        ref={ref}
+        style={{
+          background: "#ffffff",
+          borderRadius: "12px",
+          padding: "18px 22px",
+          boxShadow:
+            "0 1px 2px rgba(12,15,36,0.04), 0 12px 40px -8px rgba(12,15,36,0.18), 0 2px 8px rgba(12,15,36,0.06)",
+          border: "1px solid rgba(12,15,36,0.04)",
+          minWidth: "260px",
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 };
+
+/* --------------------------------------------------------------------------
+ * Client Portal CTA
+ * ------------------------------------------------------------------------ */
+const ClientPortalButton = () => (
+  <a
+    href="https://portal.echelonpropertygroup.com/login"
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    className="inline-flex items-center justify-center"
+    style={{
+      height: "40px",
+      padding: "0 18px",
+      borderRadius: "8px",
+      border: `1px solid ${BRONZE}`,
+      background: IVORY,
+      color: CHARCOAL,
+      fontFamily: '"Jost", sans-serif',
+      fontSize: "13px",
+      fontWeight: 500,
+      letterSpacing: "0.04em",
+      lineHeight: 1,
+      whiteSpace: "nowrap",
+      textTransform: "none",
+      transition:
+        "background 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease",
+      boxShadow: "0 1px 2px rgba(12,15,36,0.04)",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.background = BRONZE;
+      e.currentTarget.style.color = "#ffffff";
+      e.currentTarget.style.boxShadow = "0 6px 18px -6px rgba(185,160,108,0.55)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.background = IVORY;
+      e.currentTarget.style.color = CHARCOAL;
+      e.currentTarget.style.boxShadow = "0 1px 2px rgba(12,15,36,0.04)";
+    }}
+  >
+    Client Portal
+  </a>
+);
 
 export default Navigation;

@@ -147,7 +147,7 @@ const Navigation = () => {
         {/* Desktop nav (starts close to logo, Client Portal pushed to far right) */}
         <ul
           className={`hidden min-[1280px]:flex items-center list-none p-0 m-0 flex-nowrap`}
-          style={{ overflow: "visible", marginLeft: "24px", columnGap: "32px" }}
+          style={{ overflow: "visible", marginLeft: "20px", columnGap: "clamp(22px, 2vw, 36px)" }}
         >
           {links.map((link) => (
             <li

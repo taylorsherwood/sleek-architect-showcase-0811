@@ -190,12 +190,12 @@ const Developments = () => {
 
       {/* Hero — editorial architectural journal opening */}
       <section className="relative h-[92vh] min-h-[720px] w-full overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden" style={{ background: "#0C0F24" }}>
           <img
             src={heroAsset.url}
             alt="Mueller residence streetscape in Austin, Texas"
-            className="h-full w-full object-cover"
-            style={{ objectPosition: "center" }}
+            className="h-auto w-auto object-contain"
+            style={{ maxWidth: "min(100%, 800px)", maxHeight: "533px" }}
             width={800}
             height={533}
           />

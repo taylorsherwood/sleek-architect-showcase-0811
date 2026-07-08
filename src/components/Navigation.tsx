@@ -67,7 +67,16 @@ const Navigation = () => {
     textTransform: "uppercase",
     fontWeight: 400,
     whiteSpace: "nowrap",
+    lineHeight: 1,
   };
+
+  const navItemClasses = "relative inline-flex items-center h-4 transition-colors duration-300 group cursor-pointer";
+  const underlineSpan = (
+    <span
+      className="absolute -bottom-1 left-0 h-px w-full transition-all duration-300 origin-left"
+      style={{ background: "hsl(38 39% 61%)" }}
+    />
+  );
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-32 md:h-28 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.06)", transition: "background 0.4s ease, border-color 0.4s ease", WebkitBackdropFilter: "blur(6px)", backdropFilter: "blur(6px)" }}>

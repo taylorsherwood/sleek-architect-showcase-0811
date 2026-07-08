@@ -110,6 +110,7 @@ const AppRoutes = () => {
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/developments" element={<Developments />} />
           <Route path="/lander" element={<AliasRedirect to="/" />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />

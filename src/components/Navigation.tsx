@@ -122,16 +122,16 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
+                  className={`${navItemClasses} bg-transparent border-none ${
                     isActive(link) ? "text-foreground" : "text-foreground/85 hover:text-foreground"
                   }`}
                   style={navLinkStyle}
                 >
                   {link.label}
-                  <span className="ml-1.5 text-[7px] align-middle opacity-30">▼</span>
+                  <span className={arrowClasses}>▼</span>
                   <span
-                    className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
-                      isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                    className={`${underlineClasses} ${
+                      isActive(link) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                     }`}
                     style={{ background: "hsl(38 39% 61%)" }}
                   />

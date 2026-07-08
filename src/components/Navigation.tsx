@@ -314,4 +314,52 @@ const Navigation = () => {
   );
 };
 
+/**
+ * Desktop dropdown wrapper.
+ * Positioned absolutely at top:100% / left:0 relative to its parent <li>.
+ * After mount, measures its bounding box and shifts left with translateX
+ * if it would overflow the viewport's right/left edges.
+ */
+const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [shift, setShift] = useState(0);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const adjust = () => {
+      el.style.transform = "translateX(0)";
+      const rect = el.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const margin = 12;
+      let delta = 0;
+      if (rect.right > vw - margin) {
+        delta = vw - margin - rect.right;
+      } else if (rect.left < margin) {
+        delta = margin - rect.left;
+      }
+      setShift(delta);
+    };
+    adjust();
+    window.addEventListener("resize", adjust);
+    return () => window.removeEventListener("resize", adjust);
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className="absolute left-0 pt-4"
+      style={{
+        top: "100%",
+        zIndex: 100,
+        minWidth: 260,
+        whiteSpace: "nowrap",
+        transform: `translateX(${shift}px)`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
 export default Navigation;

@@ -161,6 +161,20 @@ const Navigation = () => {
                   </div>
                 )}
               </div>
+            ) : link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                rel="noopener"
+                className="relative transition-colors duration-300 group text-foreground/85 hover:text-foreground"
+                style={navLinkStyle}
+              >
+                {link.label}
+                <span
+                  className="absolute -bottom-1 left-0 h-px w-full scale-x-0 group-hover:scale-x-100 transition-all duration-300 origin-left"
+                  style={{ background: "hsl(38 39% 61%)" }}
+                />
+              </a>
             ) : (
               <Link
                 key={link.href}
@@ -180,6 +194,7 @@ const Navigation = () => {
                 />
               </Link>
             )
+
           )}
         </div>
 

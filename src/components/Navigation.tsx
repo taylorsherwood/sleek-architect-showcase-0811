@@ -75,7 +75,7 @@ const Navigation = () => {
         className="absolute inset-0"
         style={{ background: "#FCFBF9" }}
       />
-      <div className="relative container mx-auto px-2 md:px-6 h-full flex items-center justify-center lg:justify-start pb-3 lg:pb-0">
+      <div className="relative w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-10 h-full flex items-center justify-center lg:justify-start pb-3 lg:pb-0">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>
           {/* Mobile/Tablet logo (below lg) */}
           <img

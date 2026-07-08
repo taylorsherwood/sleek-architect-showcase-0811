@@ -496,7 +496,16 @@ const OffMarketRealEstateAustin = () => {
 
 
 
+      <DevelopmentAdvisoryCTA
+        variant="transparent"
+        eyebrow="ADJACENT ADVISORY"
+        heading="Private development opportunities"
+        intro="Land, infill, mixed-use, and residential development positions are shared through our dedicated"
+        anchorText="Austin development advisory platform"
+      />
+
       {/* ── Footer (minimal) ────────────────────────── */}
+
       <footer className="py-8 bg-primary">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>

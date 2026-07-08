@@ -70,6 +70,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/austin-multifamily-report-2026", changefreq: "monthly", priority: "0.7" },
   { path: "/why-billionaires-are-moving-to-austin", changefreq: "monthly", priority: "0.6" },
   { path: "/austin-land-development-opportunities", changefreq: "monthly", priority: "0.7" },
+  { path: "/developments", changefreq: "weekly", priority: "0.8" },
   { path: "/blog/austin-luxury-market-trends", changefreq: "monthly", priority: "0.6" },
 ];
 

@@ -50,7 +50,7 @@ const Navigation = () => {
         { href: "/private-distribution", label: "PRIVATE MARKET INTELLIGENCE" },
       ],
     },
-    { href: "https://developments.echelonpropertygroup.com", label: "DEVELOPMENTS", external: true },
+    { href: "/developments", label: "DEVELOPMENTS" },
     { href: "/off-market-real-estate-austin", label: "PRIVATE ACCESS" },
 
     { href: "/about", label: "ABOUT" },

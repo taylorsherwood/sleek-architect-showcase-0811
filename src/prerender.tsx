@@ -48,6 +48,7 @@ const staticRoutes = [
   "/why-billionaires-are-moving-to-austin",
   "/austin-land-development-opportunities",
   "/land-development",
+  "/developments",
   "/about-austin-real-estate-advisory",
   "/sell-private",
   "/private-opportunities",

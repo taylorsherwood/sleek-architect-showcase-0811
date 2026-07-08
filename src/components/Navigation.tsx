@@ -67,7 +67,12 @@ const Navigation = () => {
     textTransform: "uppercase",
     fontWeight: 400,
     whiteSpace: "nowrap",
+    lineHeight: 1,
   };
+
+  const navItemClasses = "relative inline-flex items-center h-4 px-0 py-0 transition-colors duration-300 group cursor-pointer";
+  const underlineClasses = "absolute -bottom-1 left-0 h-px w-full transition-all duration-300 origin-left";
+  const arrowClasses = "ml-1.5 text-[7px] opacity-30 leading-none";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 overflow-visible h-32 md:h-28 lg:h-[6.5rem]" style={{ borderBottom: "1px solid rgba(12, 15, 36, 0.06)", transition: "background 0.4s ease, border-color 0.4s ease", WebkitBackdropFilter: "blur(6px)", backdropFilter: "blur(6px)" }}>
@@ -117,16 +122,16 @@ const Navigation = () => {
               >
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                  className={`relative transition-colors duration-300 group cursor-pointer bg-transparent border-none ${
+                  className={`${navItemClasses} bg-transparent border-none ${
                     isActive(link) ? "text-foreground" : "text-foreground/85 hover:text-foreground"
                   }`}
                   style={navLinkStyle}
                 >
                   {link.label}
-                  <span className="ml-1.5 text-[7px] align-middle opacity-30">▼</span>
+                  <span className={arrowClasses}>▼</span>
                   <span
-                    className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
-                      isActive(link) ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                    className={`${underlineClasses} ${
+                      isActive(link) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                     }`}
                     style={{ background: "hsl(38 39% 61%)" }}
                   />
@@ -167,12 +172,12 @@ const Navigation = () => {
                 key={link.href}
                 href={link.href}
                 rel="noopener"
-                className="relative transition-colors duration-300 group text-foreground/85 hover:text-foreground"
+                className={`${navItemClasses} text-foreground/85 hover:text-foreground`}
                 style={navLinkStyle}
               >
                 {link.label}
                 <span
-                  className="absolute -bottom-1 left-0 h-px w-full scale-x-0 group-hover:scale-x-100 transition-all duration-300 origin-left"
+                  className={`${underlineClasses} scale-x-0 group-hover:scale-x-100`}
                   style={{ background: "hsl(38 39% 61%)" }}
                 />
               </a>
@@ -181,15 +186,15 @@ const Navigation = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`relative transition-colors duration-300 group ${
+                className={`${navItemClasses} ${
                   location.pathname === link.href ? "text-foreground" : "text-foreground/85 hover:text-foreground"
                 }`}
                 style={navLinkStyle}
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
-                    location.pathname === link.href ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                  className={`${underlineClasses} ${
+                    location.pathname === link.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                   }`}
                   style={{ background: "hsl(38 39% 61%)" }}
                 />
@@ -205,10 +210,10 @@ const Navigation = () => {
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
+            className="inline-flex items-center whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
             style={{
               ...navLinkStyle,
-              fontSize: "9.5px",
+              fontSize: "10px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
               background: "rgba(255, 255, 255, 0.25)",

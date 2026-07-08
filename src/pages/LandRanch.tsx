@@ -1920,6 +1920,16 @@ const LandRanch = () => {
         </div>
       </section>
 
+      <DevelopmentAdvisoryCTA
+        variant="ivory"
+        eyebrow="ADJACENT ADVISORY"
+        heading="Development & path-of-growth opportunities"
+        intro="For entitled tracts, infill assemblages, and mixed-use sites alongside our ranch and land practice, visit our dedicated"
+        anchorText="Austin development opportunities"
+      />
+
+
+
       <Suspense fallback={null}>
         <Footer />
       </Suspense>

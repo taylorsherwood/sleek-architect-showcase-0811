@@ -106,10 +106,10 @@ const Navigation = () => {
       <div className="absolute inset-0 pointer-events-none" style={{ background: "#FCFBF9" }} />
 
       <div
-        className={`relative w-full h-full flex items-center px-4 md:px-6 min-[1280px]:px-8 justify-center min-[1280px]:justify-start pb-3 min-[1280px]:pb-0`}
+        className={`relative w-full h-full flex items-center px-4 md:px-6 min-[1280px]:px-5 justify-center min-[1280px]:justify-between pb-3 min-[1280px]:pb-0 min-[1280px]:max-w-[1288px] min-[1280px]:mx-auto`}
         style={{ overflow: "visible" }}
       >
-        {/* Logo */}
+        {/* Logo - LEFT */}
         <Link
           to="/"
           onClick={() => {
@@ -135,7 +135,7 @@ const Navigation = () => {
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
             className={`hidden min-[1280px]:block w-auto max-w-none shrink-0 object-contain`}
-            style={{ height: "140%", maxHeight: "140%", aspectRatio: "200 / 80" }}
+            style={{ height: "140%", maxHeight: "140%", maxWidth: "310px", aspectRatio: "200 / 80" }}
             loading="eager"
             decoding="async"
             width={200}
@@ -143,19 +143,14 @@ const Navigation = () => {
           />
         </Link>
 
-        {/* Desktop nav group: logo-adjacent, Client Portal as final item */}
+        {/* Desktop nav - CENTER */}
         <div
-          className="hidden min-[1280px]:flex items-center flex-nowrap"
-          style={{
-            overflow: "visible",
-            marginLeft: "20px",
-            gap: "12px",
-            transform: "translateX(-80px)",
-          }}
+          className="hidden min-[1280px]:flex items-center"
+          style={{ overflow: "visible", gap: "36px" }}
         >
           <ul
-            className="flex items-center list-none p-0 m-0 flex-nowrap"
-            style={{ overflow: "visible", columnGap: "clamp(22px, 2vw, 36px)" }}
+            className="flex items-center list-none p-0 m-0"
+            style={{ overflow: "visible", gap: "36px" }}
           >
             {links.map((link) => (
               <li
@@ -181,10 +176,14 @@ const Navigation = () => {
               </li>
             ))}
           </ul>
+        </div>
 
-          <div className="flex items-center shrink-0" style={{ overflow: "visible" }}>
-            <ClientPortalButton />
-          </div>
+        {/* Client Portal - RIGHT */}
+        <div
+          className="hidden min-[1280px]:flex items-center shrink-0"
+          style={{ overflow: "visible" }}
+        >
+          <ClientPortalButton />
         </div>
 
         {/* Mobile toggle */}

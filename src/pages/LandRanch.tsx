@@ -49,6 +49,8 @@ import ConfidentialOMGate from "@/components/land-ranch/ConfidentialOMGate";
 
 
 const Footer = lazy(() => import("@/components/Footer"));
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
 
 const SITE = "https://www.echelonpropertygroup.com";

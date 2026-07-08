@@ -973,6 +973,16 @@ const Invest = () => {
         intro="Many of our investor clients move beyond single-family into ranch acquisitions, strategic acreage, and path-of-growth development sites across Central Texas."
       />
 
+      <DevelopmentAdvisoryCTA
+        variant="solid"
+        eyebrow="DEVELOPMENT ADVISORY"
+        heading="Explore active development opportunities"
+        intro="For entitled tracts, infill assemblages, mixed-use, and residential development positions, browse our dedicated"
+        anchorText="Austin development advisory platform"
+        cta="View Development Opportunities"
+      />
+
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>
 

@@ -32,8 +32,7 @@ const MobileStickyActionBar = () => {
   const firedImpressionRef = useRef(false);
 
   const suppressedRoute =
-    SUPPRESSED_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`)) ||
-    pathname.startsWith("/private-distribution/");
+    SUPPRESSED_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
 
   // Reset reveal state + impression flag on every route change.
   useEffect(() => {

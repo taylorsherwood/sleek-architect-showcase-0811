@@ -102,6 +102,7 @@ Understanding Austin population growth isn't about celebrating a headline number
 Whether you're evaluating a home purchase in [Westlake Hills](/communities/westlake-hills), considering land in the Hill Country, or building a real estate portfolio across multiple Austin submarkets, the demographic forces at work here are directly relevant to your decision. This article breaks down what's driving Austin's growth, who's actually arriving, and what it means across residential, land, and commercial real estate. For a broader relocation frame, our [moving to Austin guide](/moving-to-austin-texas) covers the practical side.
 
 :::intel-gauge-austin-metro
+:::
 
 ## The Numbers Behind Austin's Growth, and Why They Hold Up
 

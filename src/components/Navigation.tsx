@@ -172,12 +172,12 @@ const Navigation = () => {
                 key={link.href}
                 href={link.href}
                 rel="noopener"
-                className="relative transition-colors duration-300 group text-foreground/85 hover:text-foreground"
+                className={`${navItemClasses} text-foreground/85 hover:text-foreground`}
                 style={navLinkStyle}
               >
                 {link.label}
                 <span
-                  className="absolute -bottom-1 left-0 h-px w-full scale-x-0 group-hover:scale-x-100 transition-all duration-300 origin-left"
+                  className={`${underlineClasses} scale-x-0 group-hover:scale-x-100`}
                   style={{ background: "hsl(38 39% 61%)" }}
                 />
               </a>
@@ -186,15 +186,15 @@ const Navigation = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`relative transition-colors duration-300 group ${
+                className={`${navItemClasses} ${
                   location.pathname === link.href ? "text-foreground" : "text-foreground/85 hover:text-foreground"
                 }`}
                 style={navLinkStyle}
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-px transition-all duration-300 origin-left ${
-                    location.pathname === link.href ? "w-full scale-x-100" : "w-full scale-x-0 group-hover:scale-x-100"
+                  className={`${underlineClasses} ${
+                    location.pathname === link.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                   }`}
                   style={{ background: "hsl(38 39% 61%)" }}
                 />

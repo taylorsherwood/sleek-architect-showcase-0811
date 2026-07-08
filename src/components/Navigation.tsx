@@ -27,12 +27,33 @@ const DESKTOP_BP = "min-[1280px]";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const closeTimer = useRef<number | null>(null);
   const location = useLocation();
 
+  const cancelClose = () => {
+    if (closeTimer.current !== null) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+  const openNow = (key: string) => {
+    cancelClose();
+    setOpenDropdown(key);
+  };
+  const scheduleClose = () => {
+    cancelClose();
+    closeTimer.current = window.setTimeout(() => {
+      setOpenDropdown(null);
+      closeTimer.current = null;
+    }, 200);
+  };
+
   useEffect(() => {
+    cancelClose();
     setOpenDropdown(null);
     setIsMenuOpen(false);
   }, [location.pathname]);
+
 
   const links: NavLink[] = [
     {
@@ -157,12 +178,15 @@ const Navigation = () => {
                 key={link.href}
                 className="relative flex items-center"
                 style={{ overflow: "visible" }}
-                onMouseEnter={link.children ? () => setOpenDropdown(link.href) : undefined}
-                onMouseLeave={link.children ? () => setOpenDropdown(null) : undefined}
+                onMouseEnter={link.children ? () => openNow(link.href) : undefined}
+                onMouseLeave={link.children ? () => scheduleClose() : undefined}
               >
                 <DesktopNavAnchor link={link} active={!!isActive(link)} style={desktopLinkStyle} />
                 {link.children && openDropdown === link.href && (
-                  <DesktopDropdown>
+                  <DesktopDropdown
+                    onMouseEnter={() => openNow(link.href)}
+                    onMouseLeave={() => scheduleClose()}
+                  >
                     {link.children.map((child) => (
                       <DropdownItem
                         key={child.href}
@@ -175,6 +199,7 @@ const Navigation = () => {
                 )}
               </li>
             ))}
+
           </ul>
         </div>
 
@@ -416,7 +441,15 @@ const DropdownItem = ({
  * Shared desktop dropdown card
  * Centered under parent; shifts inward on viewport collision only.
  * ------------------------------------------------------------------------ */
-const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
+const DesktopDropdown = ({
+  children,
+  onMouseEnter,
+  onMouseLeave,
+}: {
+  children: React.ReactNode;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [shift, setShift] = useState(0);
 
@@ -442,11 +475,14 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     <div
       className="absolute"
       style={{
-        top: "calc(100% + 14px)",
+        top: "100%",
         left: 0,
+        paddingTop: "14px",
         transform: `translateX(${shift}px)`,
         zIndex: 100,
       }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <div
         ref={ref}
@@ -465,6 +501,7 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
+
 
 /* --------------------------------------------------------------------------
  * Client Portal CTA

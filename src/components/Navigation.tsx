@@ -270,6 +270,17 @@ const Navigation = () => {
                     </div>
                   )}
                 </div>
+              ) : link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  rel="noopener"
+                  onClick={() => { setIsMenuOpen(false); }}
+                  className="block text-white/80 hover:text-gold transition-colors duration-300"
+                  style={navLinkStyle}
+                >
+                  {link.label}
+                </a>
               ) : (
                 <Link
                   key={link.href}
@@ -281,6 +292,7 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               )
+
             )}
             <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
               <a

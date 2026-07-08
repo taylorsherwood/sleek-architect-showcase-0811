@@ -289,14 +289,6 @@ const Developments = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div
-          className="group absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors duration-500"
-          style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.2em" }}
-        >
-          <span>Scroll to Explore</span>
-          <span className="block w-px h-7 bg-white/30 group-hover:bg-white/50 transition-colors duration-500" />
-        </div>
       </section>
 
 

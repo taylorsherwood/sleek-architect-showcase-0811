@@ -197,7 +197,7 @@ const Developments = () => {
             className="h-full w-full object-cover"
             style={{
               objectPosition: "center",
-              filter: "brightness(0.92) contrast(1.16) saturate(1.08) sepia(0.05)",
+              filter: "brightness(0.95) contrast(1.08) saturate(1.05)",
             }}
             width={1920}
             height={1280}

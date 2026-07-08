@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
-import heroAsset from "@/assets/developments/developments-austin-growth-hero.png.asset.json";
+import heroAsset from "@/assets/developments/developments-mueller-residence-hero.jpg.asset.json";
 import brochureAsset from "@/assets/developments/arbors-brochure.jpg.asset.json";
 import salesCenterAsset from "@/assets/developments/arbors-sales-center.jpg.asset.json";
 import signageAsset from "@/assets/developments/arbors-signage.jpg.asset.json";

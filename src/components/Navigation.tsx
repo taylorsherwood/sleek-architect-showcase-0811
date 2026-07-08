@@ -78,6 +78,7 @@ const Navigation = () => {
     lineHeight: 1,
     color: CHARCOAL,
     whiteSpace: "nowrap",
+    textTransform: "none",
     display: "inline-flex",
     alignItems: "center",
   };

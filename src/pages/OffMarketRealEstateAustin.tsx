@@ -12,6 +12,8 @@ import CinematicSections from "@/components/off-market/CinematicSections";
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 // Eagerly preload all hero & funnel media so it's ready before scroll
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";

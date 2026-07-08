@@ -406,7 +406,7 @@ const Developments = () => {
                 Explore the full community presentation, site plan, residence collection, and current opportunities
                 within our dedicated development platform.
               </p>
-              <PrimaryButton href={ARBORS_URL} variant="solid">
+              <PrimaryButton href={DEV_URL} variant="solid">
                 View The Arbors
               </PrimaryButton>
             </div>

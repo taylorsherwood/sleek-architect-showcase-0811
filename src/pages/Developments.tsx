@@ -316,15 +316,7 @@ const Developments = () => {
         </div>
       </section>
 
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Concept Showcase — editorial note */}
       <section className="py-14 md:py-20 bg-background border-t border-border/60">

@@ -190,19 +190,25 @@ const Developments = () => {
 
       {/* Hero — editorial architectural journal opening */}
       <section className="relative h-[92vh] min-h-[720px] w-full overflow-hidden">
-        <img
-          src={heroAsset.url}
-          alt="Mueller residence streetscape in Austin, Texas"
-          className="absolute inset-0 h-full w-full object-cover"
-          width={1920}
-          height={1280}
-        />
-        {/* Dark wash from the left — keeps the residential scene bright on the right */}
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            src={heroAsset.url}
+            alt="Mueller residence streetscape in Austin, Texas"
+            className="h-full w-full object-cover scale-[1.42]"
+            style={{
+              objectPosition: "0% center",
+              filter: "brightness(0.92) contrast(1.16) saturate(1.08) sepia(0.05)",
+            }}
+            width={1920}
+            height={1280}
+          />
+        </div>
+        {/* Soft dark wash from the left — fades into the image rather than sitting on top */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.52) 26%, rgba(12,15,36,0.22) 46%, rgba(12,15,36,0) 60%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.24) 28%, rgba(12,15,36,0.08) 50%, rgba(12,15,36,0) 66%)",
           }}
         />
         {/* Top scrim for navigation readability over bright sky */}
@@ -210,7 +216,7 @@ const Developments = () => {
           className="absolute inset-x-0 top-0 h-48 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.32) 0%, rgba(12,15,36,0) 100%)",
           }}
         />
         {/* Bottom vignette for depth */}
@@ -223,36 +229,37 @@ const Developments = () => {
         />
 
         <div className="relative z-10 h-full">
-          <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
-            <div className="flex h-full items-start pt-32 md:pt-36 lg:pt-40">
-              <div className="max-w-[480px]">
-                <p className="mb-8 md:mb-10" style={{ ...eyebrowStyle, color: GOLD }}>
+          <div className="container mx-auto h-full px-6 md:px-10 lg:px-14 relative">
+            <div className="flex h-full items-center pt-24 md:pt-28 lg:pt-32">
+              <div className="max-w-[600px]">
+                <p className="mb-10 md:mb-12" style={{ ...eyebrowStyle, color: GOLD }}>
                   Echelon Developments
                 </p>
 
-                <h1 className="font-display font-normal text-white text-[1.35rem] sm:text-[1.55rem] lg:text-[1.8rem] xl:text-[2rem] leading-[1.28] tracking-[0.015em] mb-9 md:mb-11">
-                  A Platform for Austin's Next Chapter
+                <h1 className="font-display font-normal text-white text-[1.2rem] sm:text-[1.35rem] lg:text-[1.5rem] xl:text-[1.65rem] leading-[1.22] tracking-[0.012em] mb-10 md:mb-14">
+                  Building Austin's Next Great Communities
                 </h1>
 
-                <p className="text-white/92 text-[1rem] md:text-[1.05rem] leading-[1.75] font-light max-w-[420px] mb-12 md:mb-14">
-                  A dedicated division of Echelon Property Group for landowners, developers, and investors shaping the future of Central Texas.
+                <p className="text-white/[0.96] text-[1rem] md:text-[1.0625rem] leading-[1.72] font-light max-w-[500px] mb-14 md:mb-18">
+                  A dedicated platform for developers, builders, investors, and landowners shaping exceptional communities across Central Texas.
                 </p>
 
-                <div className="flex flex-col items-start gap-5 mb-14 md:mb-16">
-                  <PrimaryButton href={DEV_URL} variant="solid">
-                    Explore Echelon Developments
+                <div className="flex flex-col items-start gap-4">
+                  <PrimaryButton href={DEV_URL} variant="solid" className="px-11 py-4">
+                    Explore Developments
                   </PrimaryButton>
                   <a
                     href={DEV_URL}
                     rel="noopener"
-                    className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-300"
+                    className="group inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
                     style={{ ...buttonBaseStyle, fontSize: "0.7rem", letterSpacing: "0.22em" }}
                   >
-                    <span
-                      className="pb-0.5 border-b"
-                      style={{ borderColor: "rgba(185,160,108,0.45)" }}
-                    >
-                      View Concept Communities
+                    <span className="relative pb-1">
+                      <span>View Concept Communities</span>
+                      <span
+                        className="absolute bottom-0 left-0 h-px w-0 bg-[#b9a06c] transition-all duration-500 ease-out group-hover:w-full"
+                        aria-hidden="true"
+                      />
                     </span>
                     <span
                       aria-hidden="true"
@@ -263,32 +270,32 @@ const Developments = () => {
                     </span>
                   </a>
                 </div>
-
-                {/* Editorial information strip */}
-                <div
-                  className="flex flex-wrap items-center gap-x-3 gap-y-2 text-white/60"
-                  style={{ ...eyebrowStyle, fontSize: "0.65rem", letterSpacing: "0.18em" }}
-                >
-                  <span>Residential Communities</span>
-                  <span style={{ color: GOLD }}>•</span>
-                  <span>Mixed-Use</span>
-                  <span style={{ color: GOLD }}>•</span>
-                  <span>Land Acquisition</span>
-                  <span style={{ color: GOLD }}>•</span>
-                  <span>Builder Opportunities</span>
-                </div>
               </div>
+            </div>
+
+            {/* Editorial information strip */}
+            <div
+              className="absolute bottom-10 md:bottom-12 left-6 md:left-10 lg:left-14 right-6 md:right-10 lg:right-14 flex flex-nowrap items-baseline gap-x-3 text-white/75"
+              style={{ ...eyebrowStyle, fontWeight: 600, fontSize: "0.7rem", letterSpacing: "0.12em" }}
+            >
+              <span>Residential Communities</span>
+              <span style={{ color: "rgba(139,111,71,0.45)" }} aria-hidden="true">|</span>
+              <span>Mixed-Use</span>
+              <span style={{ color: "rgba(139,111,71,0.45)" }} aria-hidden="true">|</span>
+              <span>Land Acquisition</span>
+              <span style={{ color: "rgba(139,111,71,0.45)" }} aria-hidden="true">|</span>
+              <span>Builder Opportunities</span>
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
         <div
-          className="absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/45"
+          className="group absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors duration-500"
           style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.2em" }}
         >
           <span>Scroll to Explore</span>
-          <span className="block w-px h-7 bg-white/25" />
+          <span className="block w-px h-7 bg-white/30 group-hover:bg-white/50 transition-colors duration-500" />
         </div>
       </section>
 

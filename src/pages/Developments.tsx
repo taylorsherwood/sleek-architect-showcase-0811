@@ -194,9 +194,9 @@ const Developments = () => {
           <img
             src={heroAsset.url}
             alt="Mueller residence streetscape in Austin, Texas"
-            className="h-full w-full object-cover scale-[1.42]"
+            className="h-full w-full object-cover"
             style={{
-              objectPosition: "0% center",
+              objectPosition: "center",
               filter: "brightness(0.92) contrast(1.16) saturate(1.08) sepia(0.05)",
             }}
             width={1920}

@@ -34,6 +34,8 @@ const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-
 
 const Footer = lazy(() => import("@/components/Footer"));
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 /* ─────────────────────────────────────────────
    SECTION 2, MICRO-TRUST STRIP

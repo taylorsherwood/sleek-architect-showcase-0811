@@ -96,7 +96,7 @@ const PrimaryButton = ({
   };
 
   return external ? (
-    <a href={href} rel="noopener" {...commonProps}>
+    <a href={href} target="_blank" rel="noopener noreferrer" {...commonProps}>
       {children}
       <span aria-hidden="true" className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1">
         →
@@ -247,7 +247,8 @@ const Developments = () => {
                   </PrimaryButton>
                   <a
                     href={DEV_URL}
-                    rel="noopener"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
                     style={{ ...buttonBaseStyle, fontSize: "0.7rem", letterSpacing: "0.22em" }}
                   >
@@ -428,7 +429,8 @@ const Developments = () => {
               <a
                 key={c.label}
                 href={c.href}
-                rel="noopener"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-background p-10 md:p-12 flex flex-col justify-between min-h-[280px] transition-colors duration-300 hover:bg-secondary/30"
               >
                 <div>

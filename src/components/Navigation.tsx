@@ -389,6 +389,7 @@ const DropdownItem = ({
       borderRadius: "8px",
       marginBottom: "2px",
       whiteSpace: "nowrap",
+      textTransform: "none",
       transitionDuration: "180ms",
     }}
     onMouseEnter={(e) => {

@@ -196,8 +196,8 @@ const Developments = () => {
             alt="Mueller residence streetscape in Austin, Texas"
             className="h-full w-full object-cover"
             style={{ objectPosition: "center" }}
-            width={960}
-            height={640}
+            width={800}
+            height={533}
           />
         </div>
         {/* Soft dark wash from the left — fades into the image rather than sitting on top */}

@@ -203,7 +203,7 @@ const Developments = () => {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.76) 0%, rgba(12,15,36,0.42) 28%, rgba(12,15,36,0.14) 48%, rgba(12,15,36,0) 62%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.5) 25%, rgba(12,15,36,0.22) 42%, rgba(12,15,36,0) 58%)",
           }}
         />
         {/* Top scrim for navigation readability */}

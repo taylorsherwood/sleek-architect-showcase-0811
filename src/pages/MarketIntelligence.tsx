@@ -287,8 +287,7 @@ const MarketIntelligence = () => {
                   Upper-tier metrics drawn from active and recently closed luxury inventory. For private
                   inventory not represented here, see our{" "}
                   <Link to="/off-market-real-estate-austin" className={link}>off-market real estate</Link>{" "}
-                  desk and{" "}
-                  <Link to="/private-distribution" className={link}>private distribution</Link> editions.
+                  desk.
                 </>
               }
               interpretation={

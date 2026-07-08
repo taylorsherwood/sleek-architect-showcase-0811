@@ -74,11 +74,6 @@ const staticEntries: SitemapEntry[] = [
   { path: "/blog/austin-luxury-market-trends", changefreq: "monthly", priority: "0.6" },
 ];
 
-// Indexable Private Distribution editions (slugs intended to be public).
-const privateDistributionSlugs = [
-  "78703-may-2026",
-  "78746-may-2026",
-];
 
 const communityEntries: SitemapEntry[] = [
   ...communitySlugs,

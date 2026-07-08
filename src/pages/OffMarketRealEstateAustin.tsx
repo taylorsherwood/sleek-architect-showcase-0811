@@ -9,7 +9,7 @@ import echelonMark from "@/assets/echelon-mark-gold.png";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
 import CinematicSections from "@/components/off-market/CinematicSections";
-import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
+
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";

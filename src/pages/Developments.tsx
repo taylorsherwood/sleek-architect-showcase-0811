@@ -231,7 +231,7 @@ const Developments = () => {
                   Echelon Developments
                 </p>
 
-                <h1 className="font-display font-normal text-white text-[1.65rem] sm:text-[2rem] lg:text-[2.35rem] xl:text-[2.6rem] leading-[1.22] tracking-[0.015em] mb-10 md:mb-12">
+                <h1 className="font-display font-normal text-white text-[1.45rem] sm:text-[1.7rem] lg:text-[1.95rem] xl:text-[2.15rem] leading-[1.25] tracking-[0.015em] mb-10 md:mb-12">
                   Building Austin's<br />Next Great Communities
                 </h1>
 

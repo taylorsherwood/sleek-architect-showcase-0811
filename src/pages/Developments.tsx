@@ -296,19 +296,6 @@ const Developments = () => {
 
 
 
-      {/* Concept Portfolio — editorial note */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container mx-auto px-6 md:px-10 lg:px-14">
-          <div className="max-w-6xl">
-            <p className="mb-4" style={{ ...eyebrowStyle, color: "#8B6F47" }}>
-              Concept Portfolio
-            </p>
-            <p className="text-[#8B857A] text-xs md:text-[0.8125rem] leading-[1.9]">
-              The communities, renderings, branding systems, and marketing materials featured throughout this page are conceptual portfolio examples created to demonstrate Echelon Developments' vision, design direction, and development marketing capabilities. Unless otherwise noted, they do not represent active communities or projects currently offered for sale.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Showcase intro */}
       <section className="py-24 md:py-32 bg-background">

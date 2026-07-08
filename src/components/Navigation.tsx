@@ -167,7 +167,7 @@ const Navigation = () => {
         {/* Desktop nav - CENTER */}
         <div
           className="hidden min-[1280px]:flex items-center"
-          style={{ overflow: "visible", gap: "36px", marginLeft: "-20px" }}
+          style={{ overflow: "visible", gap: "36px", marginLeft: "-60px" }}
         >
           <ul
             className="flex items-center list-none p-0 m-0"

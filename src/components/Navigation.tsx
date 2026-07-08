@@ -106,7 +106,7 @@ const Navigation = () => {
       <div className="absolute inset-0 pointer-events-none" style={{ background: "#FCFBF9" }} />
 
       <div
-        className={`relative w-full h-full flex items-center px-4 md:px-6 ${DESKTOP_BP}:px-8 justify-center ${DESKTOP_BP}:justify-start pb-3 ${DESKTOP_BP}:pb-0`}
+        className={`relative w-full h-full flex items-center px-4 md:px-6 min-[1280px]:px-8 justify-center min-[1280px]:justify-start pb-3 min-[1280px]:pb-0`}
         style={{ overflow: "visible" }}
       >
         {/* Logo */}
@@ -122,7 +122,7 @@ const Navigation = () => {
             src={logoMobile}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className={`block ${DESKTOP_BP}:hidden w-auto max-w-[450px] shrink-0 object-contain`}
+            className={`block min-[1280px]:hidden w-auto max-w-[450px] shrink-0 object-contain`}
             style={{ height: "auto", maxHeight: "128%" }}
             loading="eager"
             decoding="async"
@@ -134,7 +134,7 @@ const Navigation = () => {
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className={`hidden ${DESKTOP_BP}:block w-auto max-w-none shrink-0 object-contain`}
+            className={`hidden min-[1280px]:block w-auto max-w-none shrink-0 object-contain`}
             style={{ height: "140%", maxHeight: "140%", aspectRatio: "200 / 80" }}
             loading="eager"
             decoding="async"
@@ -145,7 +145,7 @@ const Navigation = () => {
 
         {/* Desktop nav (starts close to logo, Client Portal pushed to far right) */}
         <ul
-          className={`hidden ${DESKTOP_BP}:flex items-center list-none p-0 m-0 flex-nowrap`}
+          className={`hidden min-[1280px]:flex items-center list-none p-0 m-0 flex-nowrap`}
           style={{ overflow: "visible", marginLeft: "24px", columnGap: "32px" }}
         >
           {links.map((link) => (
@@ -174,7 +174,7 @@ const Navigation = () => {
         </ul>
 
         {/* Client Portal, far right */}
-        <div className={`hidden ${DESKTOP_BP}:flex items-center shrink-0 ml-auto`}>
+        <div className={`hidden min-[1280px]:flex items-center shrink-0 ml-auto`}>
           <ClientPortalButton />
         </div>
 
@@ -182,7 +182,7 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className={`${DESKTOP_BP}:hidden absolute right-2 md:right-6`}
+          className={`min-[1280px]:hidden absolute right-2 md:right-6`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
@@ -194,7 +194,7 @@ const Navigation = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div
-          className={`${DESKTOP_BP}:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto`}
+          className={`min-[1280px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto`}
           style={{ backgroundColor: CHARCOAL, minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
         >
           <div className="container mx-auto px-6 py-12 space-y-7">

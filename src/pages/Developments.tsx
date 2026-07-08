@@ -56,6 +56,7 @@ const PrimaryButton = ({
     style.background = GOLD;
     style.color = "#ffffff";
     style.border = `1px solid ${GOLD}`;
+    style.boxShadow = "0 4px 18px rgba(0,0,0,0.28)";
   } else if (variant === "outline") {
     style.background = "transparent";
     style.color = GOLD;

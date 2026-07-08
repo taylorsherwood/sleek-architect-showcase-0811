@@ -318,6 +318,20 @@ const Developments = () => {
         </div>
       </section>
 
+      {/* Concept Showcase — editorial note */}
+      <section className="py-14 md:py-20 bg-background border-t border-border/60">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl">
+            <h3 className="font-display text-sm md:text-[0.95rem] text-foreground/80 font-normal mb-3 tracking-wide">
+              Concept Showcase
+            </h3>
+            <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.8] max-w-2xl">
+              The featured communities, branding materials, and marketing collateral shown throughout this section have been created as conceptual examples to illustrate the level of development branding, placemaking, and marketing strategy Echelon Developments is capable of delivering. Unless otherwise noted, these materials do not represent active developments or communities currently offered for sale.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Showcase intro */}
       <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">

@@ -75,14 +75,14 @@ const Navigation = () => {
         className="absolute inset-0"
         style={{ background: "#FCFBF9" }}
       />
-      <div className="relative w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-10 h-full flex items-center justify-center lg:justify-start pb-3 lg:pb-0">
+      <div className="relative w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-10 h-full flex items-center justify-center min-[1400px]:justify-start pb-3 min-[1400px]:pb-0">
         <Link to="/" onClick={() => { if (location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center shrink-0 overflow-visible ml-0" style={{ height: '100%' }}>
           {/* Mobile/Tablet logo (below lg) */}
           <img
             src={logoMobile}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className="block lg:hidden w-auto max-w-[450px] border-0 shrink-0 object-contain"
+            className="block min-[1400px]:hidden w-auto max-w-[450px] border-0 shrink-0 object-contain"
             style={{ height: 'auto', maxHeight: '128%' }}
             loading="eager"
             decoding="async"
@@ -95,7 +95,7 @@ const Navigation = () => {
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className="hidden lg:block w-auto max-w-none border-0 shrink-0 object-contain"
+            className="hidden min-[1400px]:block w-auto max-w-none border-0 shrink-0 object-contain"
             style={{ height: '140%', maxHeight: '140%', aspectRatio: '200 / 80' }}
             loading="eager"
             decoding="async"
@@ -105,7 +105,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center gap-x-3 xl:gap-x-5 2xl:gap-x-7 ml-4 xl:ml-8 flex-nowrap">
+        <div className="hidden min-[1400px]:flex items-center gap-x-3 xl:gap-x-5 2xl:gap-x-7 ml-4 xl:ml-8 flex-nowrap">
           {links.map((link) =>
             link.children ? (
               <div
@@ -200,7 +200,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden lg:flex items-center shrink-0 ml-auto pl-4">
+        <div className="hidden min-[1400px]:flex items-center shrink-0 ml-auto pl-4">
           <a
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"
@@ -226,7 +226,7 @@ const Navigation = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="lg:hidden absolute right-2 md:right-6"
+          className="min-[1400px]:hidden absolute right-2 md:right-6"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
@@ -238,7 +238,7 @@ const Navigation = () => {
       {/* Mobile menu, Safari-safe overlay panel */}
       {isMenuOpen && (
         <div
-          className="lg:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto"
+          className="min-[1400px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto"
           style={{ backgroundColor: "#0C0F24", minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
         >
           <div className="container mx-auto px-6 py-12 space-y-7">

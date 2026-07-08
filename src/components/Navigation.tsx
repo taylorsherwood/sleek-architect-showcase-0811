@@ -178,12 +178,15 @@ const Navigation = () => {
                 key={link.href}
                 className="relative flex items-center"
                 style={{ overflow: "visible" }}
-                onMouseEnter={link.children ? () => setOpenDropdown(link.href) : undefined}
-                onMouseLeave={link.children ? () => setOpenDropdown(null) : undefined}
+                onMouseEnter={link.children ? () => openNow(link.href) : undefined}
+                onMouseLeave={link.children ? () => scheduleClose() : undefined}
               >
                 <DesktopNavAnchor link={link} active={!!isActive(link)} style={desktopLinkStyle} />
                 {link.children && openDropdown === link.href && (
-                  <DesktopDropdown>
+                  <DesktopDropdown
+                    onMouseEnter={() => openNow(link.href)}
+                    onMouseLeave={() => scheduleClose()}
+                  >
                     {link.children.map((child) => (
                       <DropdownItem
                         key={child.href}
@@ -196,6 +199,7 @@ const Navigation = () => {
                 )}
               </li>
             ))}
+
           </ul>
         </div>
 

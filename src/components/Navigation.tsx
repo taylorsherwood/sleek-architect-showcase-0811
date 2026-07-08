@@ -210,10 +210,10 @@ const Navigation = () => {
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
+            className="inline-flex items-center whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
             style={{
               ...navLinkStyle,
-              fontSize: "9.5px",
+              fontSize: "10px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
               background: "rgba(255, 255, 255, 0.25)",

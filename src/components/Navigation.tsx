@@ -441,7 +441,15 @@ const DropdownItem = ({
  * Shared desktop dropdown card
  * Centered under parent; shifts inward on viewport collision only.
  * ------------------------------------------------------------------------ */
-const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
+const DesktopDropdown = ({
+  children,
+  onMouseEnter,
+  onMouseLeave,
+}: {
+  children: React.ReactNode;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [shift, setShift] = useState(0);
 
@@ -467,11 +475,14 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     <div
       className="absolute"
       style={{
-        top: "calc(100% + 14px)",
+        top: "100%",
         left: 0,
+        paddingTop: "14px",
         transform: `translateX(${shift}px)`,
         zIndex: 100,
       }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <div
         ref={ref}
@@ -490,6 +501,7 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
+
 
 /* --------------------------------------------------------------------------
  * Client Portal CTA

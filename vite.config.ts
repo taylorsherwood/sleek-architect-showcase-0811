@@ -50,7 +50,7 @@ const prerenderRoutes = [
   "/land-development",
   "/sell-private",
   "/sell-private/thank-you",
-  "/private-distribution",
+  
 ];
 
 // ── Curated sitemap routes (high-value, canonical, 200-status pages only) ──

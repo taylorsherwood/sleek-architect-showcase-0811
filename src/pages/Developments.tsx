@@ -235,7 +235,7 @@ const Developments = () => {
                   Building Austin's<br />Next Great Communities
                 </h1>
 
-                <p className="text-white/80 text-[1.05rem] md:text-[1.125rem] leading-[1.75] font-light max-w-[500px] mb-12 md:mb-14">
+                <p className="text-white/90 text-[1.05rem] md:text-[1.125rem] leading-[1.75] font-light max-w-[500px] mb-12 md:mb-14">
                   A dedicated platform for landowners, developers, and investors shaping the future of Central Texas.
                 </p>
 

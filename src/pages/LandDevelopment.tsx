@@ -1481,6 +1481,17 @@ const LandDevelopment = () => {
         </div>
       </section>
 
+      <DevelopmentAdvisoryCTA
+        variant="ivory"
+        eyebrow="ACTIVE OPPORTUNITIES"
+        heading="Browse live development opportunities"
+        intro="See current entitled tracts, path-of-growth acreage, mixed-use, and residential development positions on our dedicated"
+        anchorText="Austin development advisory platform"
+        cta="View Development Opportunities"
+      />
+
+
+
       <Suspense fallback={null}>
         <Footer />
       </Suspense>

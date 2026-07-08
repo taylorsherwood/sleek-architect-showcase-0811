@@ -189,7 +189,16 @@ const PrivateOpportunitiesPage = () => {
         intro="Private ranches, acreage estates, and development tracts are often shared discreetly with landowners, builders, and investors before they reach the public market."
       />
 
+      <DevelopmentAdvisoryCTA
+        variant="solid"
+        eyebrow="DEVELOPMENT ADVISORY"
+        heading="A private platform for development opportunities"
+        intro="For entitled acreage, infill assemblages, and mixed-use positions across Austin and Central Texas, visit our dedicated"
+        anchorText="development advisory platform"
+      />
+
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
+
 
     </div>
   );

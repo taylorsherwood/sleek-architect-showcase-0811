@@ -377,7 +377,7 @@ const SearchPage = () => {
                 <div className="relative overflow-hidden">
                   <OptimizedImage src={bremserAve} alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
                   <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">RENTAL PORTFOLIO</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$210,000</span>
+                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$199,900</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-lg font-light text-foreground mb-1 ">709/711/713 Bremser Ave</h3>

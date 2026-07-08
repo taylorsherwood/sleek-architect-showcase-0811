@@ -149,8 +149,8 @@ const Navigation = () => {
           style={{
             overflow: "visible",
             marginLeft: "20px",
-            gap: "20px",
-            transform: "translateX(-90px)",
+            gap: "12px",
+            transform: "translateX(-80px)",
           }}
         >
           <ul

@@ -512,6 +512,8 @@ const OffMarketRealEstateAustin = () => {
           <div className="flex gap-5">
             <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
             <Link to="/off-market-real-estate-austin" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
+            <a href="https://developments.echelonpropertygroup.com" rel="noopener" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Developments</a>
+
             <Link to="/contact" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
           </div>
         </div>

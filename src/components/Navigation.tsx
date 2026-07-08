@@ -27,12 +27,33 @@ const DESKTOP_BP = "min-[1280px]";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const closeTimer = useRef<number | null>(null);
   const location = useLocation();
 
+  const cancelClose = () => {
+    if (closeTimer.current !== null) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+  const openNow = (key: string) => {
+    cancelClose();
+    setOpenDropdown(key);
+  };
+  const scheduleClose = () => {
+    cancelClose();
+    closeTimer.current = window.setTimeout(() => {
+      setOpenDropdown(null);
+      closeTimer.current = null;
+    }, 200);
+  };
+
   useEffect(() => {
+    cancelClose();
     setOpenDropdown(null);
     setIsMenuOpen(false);
   }, [location.pathname]);
+
 
   const links: NavLink[] = [
     {

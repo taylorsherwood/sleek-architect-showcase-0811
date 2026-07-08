@@ -297,15 +297,15 @@ const Developments = () => {
 
 
 
-      {/* Concept Showcase — editorial note */}
-      <section className="py-14 md:py-20 bg-background border-t border-border/60">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <h3 className="font-display text-sm md:text-[0.95rem] text-foreground/80 font-normal mb-3 tracking-wide">
-              Concept Showcase
-            </h3>
-            <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.8] max-w-2xl">
-              The featured communities, branding materials, and marketing collateral shown throughout this section have been created as conceptual examples to illustrate the level of development branding, placemaking, and marketing strategy Echelon Developments is capable of delivering. Unless otherwise noted, these materials do not represent active developments or communities currently offered for sale.
+      {/* Concept Portfolio — editorial note */}
+      <section className="py-20 md:py-28 bg-background">
+        <div className="container mx-auto px-6 md:px-10 lg:px-14">
+          <div className="max-w-4xl">
+            <p className="mb-4" style={{ ...eyebrowStyle, color: "#8B6F47" }}>
+              Concept Portfolio
+            </p>
+            <p className="text-[#8B857A] text-xs md:text-[0.8125rem] leading-[1.9]">
+              The communities, renderings, branding systems, and marketing materials featured throughout this page are conceptual portfolio examples created to demonstrate Echelon Developments' vision, design direction, and development marketing capabilities. Unless otherwise noted, they do not represent active communities or projects currently offered for sale.
             </p>
           </div>
         </div>
@@ -326,40 +326,6 @@ const Developments = () => {
               designed to help projects launch with the same level of refinement expected by today's buyers and
               investors.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Conceptual Development Portfolio — museum exhibit note */}
-      <section className="py-10 md:py-14 bg-background">
-        <div className="container mx-auto px-6">
-          <div
-            className="max-w-[900px] mx-auto rounded-lg p-8 md:p-12"
-            style={{
-              background: "#FAFAF8",
-              border: "1px solid rgba(185, 160, 108, 0.45)",
-              boxShadow: "0 4px 30px rgba(12, 15, 36, 0.04)",
-            }}
-          >
-            <div className="flex items-start gap-4">
-              <span className="mt-1 shrink-0" style={{ color: "#b9a06c" }}>
-                <Info size={18} strokeWidth={1.5} />
-              </span>
-              <div>
-                <h3 className="font-display text-sm md:text-base text-foreground/90 font-normal mb-3 tracking-wide">
-                  Conceptual Development Portfolio
-                </h3>
-                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85] mb-4">
-                  The community identities, architectural renderings, branding systems, marketing collateral, and sales materials featured throughout this page have been created as conceptual portfolio examples demonstrating Echelon Developments' vision, design direction, and development marketing capabilities.
-                </p>
-                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85] mb-4">
-                  Unless expressly identified otherwise, these communities are not active developments, available properties, investment offerings, or projects currently represented by Echelon Property Group or Echelon Developments.
-                </p>
-                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85]">
-                  Their inclusion is intended solely to showcase the quality, creativity, and level of presentation our team is capable of delivering for future development projects.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

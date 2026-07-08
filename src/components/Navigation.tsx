@@ -51,6 +51,8 @@ const Navigation = () => {
     { href: "/sell", label: "Sell" },
     { href: "/invest", label: "Invest" },
     { href: "/communities", label: "Communities" },
+    { href: "/developments", label: "Developments" },
+    { href: "/off-market-real-estate-austin", label: "Private Access" },
     {
       href: "/blog",
       label: "Insights",
@@ -59,8 +61,6 @@ const Navigation = () => {
         { href: "/market-intelligence", label: "Market Intelligence" },
       ],
     },
-    { href: "/developments", label: "Developments" },
-    { href: "/off-market-real-estate-austin", label: "Private Access" },
     { href: "/about", label: "About" },
   ];
 

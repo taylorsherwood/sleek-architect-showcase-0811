@@ -62,10 +62,11 @@ const Navigation = () => {
 
   const navLinkStyle: React.CSSProperties = {
     fontFamily: '"Jost", sans-serif',
-    fontSize: "11px",
-    letterSpacing: "0.16em",
+    fontSize: "10.5px",
+    letterSpacing: "0.14em",
     textTransform: "uppercase",
     fontWeight: 400,
+    whiteSpace: "nowrap",
   };
 
   return (
@@ -104,7 +105,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center space-x-5 xl:space-x-7 -ml-10 xl:-ml-8">
+        <div className="hidden lg:flex items-center gap-x-4 xl:gap-x-6 2xl:gap-x-7 ml-6 xl:ml-8 flex-nowrap">
           {links.map((link) =>
             link.children ? (
               <div
@@ -199,7 +200,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden lg:flex items-center shrink-0 ml-auto mr-3 xl:mr-5">
+        <div className="hidden lg:flex items-center shrink-0 ml-auto pl-4">
           <a
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"

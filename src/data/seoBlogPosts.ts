@@ -156,9 +156,17 @@ Land scarcity in premium locations becomes more acute as the population grows. L
 
 New supply delivery faces its own friction. Permitting timelines in Austin have historically been longer than in many comparable metros, though the city has worked to address this. Construction cost pressures and labor market tightness in the trades have also slowed the pace at which new inventory can respond to demand signals. When supply can't move quickly, price discovery happens through competition among buyers rather than through new inventory entering the market. Our [Austin inventory levels](/blog/austin-inventory-levels-downtown) coverage tracks that dynamic downtown.
 
-For investors evaluating yield versus appreciation, the supply constraint question is central. High-supply suburban markets may offer better initial yields but more price competition from new construction. Supply-constrained close-in markets typically offer lower initial yields but stronger long-term appreciation and lower vacancy risk. Our [Austin cap rates in 2026](/blog/austin-cap-rates) breakdown covers the underwriting side in depth.
+  For investors evaluating yield versus appreciation, the supply constraint question is central. High-supply suburban markets may offer better initial yields but more price competition from new construction. Supply-constrained close-in markets typically offer lower initial yields but stronger long-term appreciation and lower vacancy risk. Our [Austin cap rates in 2026](/blog/austin-cap-rates) breakdown covers the underwriting side in depth.
 
-## Investment Implications Across Property Types
+  :::cta
+  eyebrow: Echelon Property Group
+  heading: A Quieter Way to Move in Austin Real Estate
+  subheading: Whether you are buying, selling, or simply tracking the market, Echelon Property Group operates as a private advisory rather than a transactional brokerage.
+  button: Begin a Conversation
+  href: /connect
+  :::
+
+  ## Investment Implications Across Property Types
 
 Population growth creates investment opportunity across multiple asset classes, but the nature of the opportunity differs significantly by property type and submarket. Our [Austin real estate investment](/austin-real-estate-investment) overview and the [invest with Echelon Property Group](/invest) service page frame how we approach each of these categories with clients.
 

@@ -351,6 +351,40 @@ const Developments = () => {
         </div>
       </section>
 
+      {/* Conceptual Development Portfolio — museum exhibit note */}
+      <section className="py-10 md:py-14 bg-background">
+        <div className="container mx-auto px-6">
+          <div
+            className="max-w-[900px] mx-auto rounded-lg p-8 md:p-12"
+            style={{
+              background: "#FAFAF8",
+              border: "1px solid rgba(185, 160, 108, 0.45)",
+              boxShadow: "0 4px 30px rgba(12, 15, 36, 0.04)",
+            }}
+          >
+            <div className="flex items-start gap-4">
+              <span className="mt-1 shrink-0" style={{ color: "#b9a06c" }}>
+                <Info size={18} strokeWidth={1.5} />
+              </span>
+              <div>
+                <h3 className="font-display text-sm md:text-base text-foreground/90 font-normal mb-3 tracking-wide">
+                  Conceptual Development Portfolio
+                </h3>
+                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85] mb-4">
+                  The community identities, architectural renderings, branding systems, marketing collateral, and sales materials featured throughout this page have been created as conceptual portfolio examples demonstrating Echelon Developments' vision, design direction, and development marketing capabilities.
+                </p>
+                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85] mb-4">
+                  Unless expressly identified otherwise, these communities are not active developments, available properties, investment offerings, or projects currently represented by Echelon Property Group or Echelon Developments.
+                </p>
+                <p className="text-muted-foreground text-xs md:text-[0.8125rem] leading-[1.85]">
+                  Their inclusion is intended solely to showcase the quality, creativity, and level of presentation our team is capable of delivering for future development projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Editorial gallery */}
       <section className="pb-24 md:pb-32 bg-background">
         <div className="container mx-auto px-6">

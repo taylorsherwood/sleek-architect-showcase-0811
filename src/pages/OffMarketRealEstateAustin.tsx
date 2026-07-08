@@ -424,13 +424,6 @@ const OffMarketRealEstateAustin = () => {
 
       <CinematicSections formNode={formContent} />
 
-      <PrivateDistributionStrip
-        variant="navy"
-        eyebrow="Private Distribution"
-        headline="Monthly market intelligence for qualified buyers and sellers."
-        body="A confidential brief covering Austin's most guarded zip codes, off-market trades, properties whispered before listing, and the strategic posture of principals currently active in the field.&nbsp;"
-        ctaLabel="Access the Current Edition"
-      />
 
       {/* ── Off-market categories: cross-links to land & development ── */}
       <section className="py-16 md:py-24 bg-primary border-t border-white/[0.04]">

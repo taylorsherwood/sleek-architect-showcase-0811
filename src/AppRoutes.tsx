@@ -77,6 +77,7 @@ const OAuthConsent = lazy(() => import("@/pages/OAuthConsent"));
 const PrivateDistribution = lazy(() => import("@/pages/PrivateDistribution"));
 const Reviews = lazy(() => import("@/pages/Reviews"));
 const TaylorSherwood = lazy(() => import("@/pages/TaylorSherwood"));
+const Developments = lazy(() => import("@/pages/Developments"));
 
 // Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {

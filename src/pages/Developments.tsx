@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
-import heroAsset from "@/assets/developments/developments-hero.jpg.asset.json";
+import heroAsset from "@/assets/developments/developments-austin-skyline.jpg.asset.json";
 import brochureAsset from "@/assets/developments/arbors-brochure.jpg.asset.json";
 import salesCenterAsset from "@/assets/developments/arbors-sales-center.jpg.asset.json";
 import signageAsset from "@/assets/developments/arbors-signage.jpg.asset.json";
@@ -190,50 +190,56 @@ const Developments = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative h-[90vh] min-h-[680px] w-full overflow-hidden">
+      <section className="relative h-[88vh] min-h-[640px] w-full overflow-hidden">
         <img
           src={heroAsset.url}
-          alt="Central Texas Hill Country landscape at golden hour"
+          alt="Downtown Austin skyline at dusk from Zilker Park"
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
-          height={1088}
+          height={1280}
         />
-        {/* Subtle left-edge gradient only — image breathes on the right */}
+        {/* Cinematic dark wash — deeper on the left where copy sits */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.45) 28%, rgba(12,15,36,0.15) 50%, rgba(12,15,36,0) 70%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.82) 0%, rgba(12,15,36,0.55) 35%, rgba(12,15,36,0.25) 60%, rgba(12,15,36,0.15) 100%)",
           }}
         />
-        {/* Very light bottom vignette for legibility on the panel */}
+        {/* Top scrim so the nav breathes over the skyline */}
         <div
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-x-0 top-0 h-40 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.35) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0) 100%)",
+          }}
+        />
+        {/* Bottom vignette */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-56 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%)",
           }}
         />
 
         <div className="relative z-10 h-full">
           <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
-            <div className="flex h-full items-center">
-              <div className="grid w-full grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end lg:items-center pb-16 md:pb-24 lg:pb-28">
-                {/* Left — editorial text block (~40% width) */}
-                <div className="lg:col-span-5 text-white">
-                  <p className="mb-8" style={{ ...eyebrowStyle, color: GOLD }}>
+            <div className="flex h-full items-center pb-16 md:pb-24 lg:pb-32">
+              <div className="grid w-full grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                {/* Left — editorial text block */}
+                <div className="lg:col-span-7 text-white">
+                  <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
                     Echelon Developments
                   </p>
-                  <h1 className="font-display font-normal mb-8 text-[2.5rem] sm:text-5xl lg:text-[3.5rem] xl:text-[3.85rem] leading-[1.06] tracking-[-0.01em]">
-                    Building Austin's
-                    <br />
-                    Next Great Communities
+                  <h1 className="font-display font-normal mb-7 text-[2rem] sm:text-[2.5rem] lg:text-[3rem] xl:text-[3.35rem] leading-[1.08] tracking-[-0.015em] max-w-[18ch]">
+                    Building Austin's next great communities
                   </h1>
-                  <p className="text-white/80 text-base md:text-[1.075rem] leading-[1.75] font-light max-w-md mb-14">
+                  <p className="text-white/75 text-base md:text-[1.05rem] leading-[1.7] font-light max-w-[46ch] mb-10">
                     A dedicated platform for landowners, developers, builders, and investors seeking
                     development opportunities across Central Texas.
                   </p>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
                     <PrimaryButton href={DEV_URL} variant="solid">
                       Explore Echelon Developments
                     </PrimaryButton>
@@ -260,56 +266,48 @@ const Developments = () => {
                   </div>
                 </div>
 
-                {/* Right — floating limestone/glass panel */}
-                <div className="lg:col-span-5 lg:col-start-8 hidden md:block">
-                  <div
-                    className="relative w-full max-w-md ml-auto p-8 lg:p-10 backdrop-blur-md"
-                    style={{
-                      background: "rgba(245, 243, 239, 0.08)",
-                      border: "1px solid rgba(245, 243, 239, 0.18)",
-                      boxShadow: "0 30px 80px -30px rgba(0,0,0,0.6)",
-                    }}
-                  >
+                {/* Right — restrained stat rail (not a heavy card) */}
+                <div className="lg:col-span-4 lg:col-start-9 hidden lg:block">
+                  <div className="ml-auto max-w-xs">
                     <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
                       Central Texas · 2026
                     </p>
-
-                    <div className="pb-7 mb-7 border-b border-white/15">
+                    <div
+                      className="pl-6 border-l"
+                      style={{ borderColor: "rgba(185,160,108,0.35)" }}
+                    >
                       <p
-                        className="text-white/60 mb-3"
-                        style={{ ...eyebrowStyle, fontSize: "0.62rem", letterSpacing: "0.22em" }}
+                        className="text-white/55 mb-2"
+                        style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.22em" }}
                       >
                         Austin MSA Population
                       </p>
-                      <p className="font-display text-white text-5xl lg:text-[3.25rem] leading-none font-normal tracking-[-0.01em]">
+                      <p className="font-display text-white text-[2.75rem] leading-none font-normal tracking-[-0.02em]">
                         2.6M+
                       </p>
-                      <p className="text-white/65 text-[0.85rem] mt-3 font-light">
+                      <p className="text-white/60 text-[0.8rem] mt-2 font-light">
                         Top U.S. migration market
                       </p>
                     </div>
 
-                    <p
-                      className="text-white/60 mb-4"
-                      style={{ ...eyebrowStyle, fontSize: "0.62rem", letterSpacing: "0.22em" }}
-                    >
-                      Platform Focus
-                    </p>
-                    <ul className="grid grid-cols-2 gap-y-3 gap-x-6">
-                      {["Residential", "Mixed-Use", "Land", "Investment"].map((label) => (
-                        <li
-                          key={label}
-                          className="flex items-center gap-3 text-white/90 text-[0.92rem] font-light"
-                        >
-                          <span
-                            aria-hidden="true"
-                            className="inline-block h-px w-4"
-                            style={{ background: GOLD }}
-                          />
-                          {label}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="mt-8">
+                      <p
+                        className="text-white/55 mb-4"
+                        style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.22em" }}
+                      >
+                        Platform Focus
+                      </p>
+                      <ul className="grid grid-cols-2 gap-y-2.5 gap-x-4">
+                        {["Residential", "Mixed-Use", "Land", "Investment"].map((label) => (
+                          <li
+                            key={label}
+                            className="text-white/85 text-[0.82rem] font-light tracking-wide"
+                          >
+                            {label}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -317,6 +315,8 @@ const Developments = () => {
           </div>
         </div>
       </section>
+
+
 
       {/* Concept Showcase — editorial note */}
       <section className="py-14 md:py-20 bg-background border-t border-border/60">

@@ -189,7 +189,7 @@ const Developments = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden">
+      <section className="relative h-[90vh] min-h-[680px] w-full overflow-hidden">
         <img
           src={heroAsset.url}
           alt="Central Texas Hill Country landscape at golden hour"
@@ -197,23 +197,121 @@ const Developments = () => {
           width={1920}
           height={1088}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/70" />
-        <div className="relative z-10 flex h-full items-center pb-16 md:pb-24 lg:pb-32">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl text-white">
-              <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
-                Echelon Developments
-              </p>
-              <h1 className="font-display text-4xl md:text-6xl lg:text-[4.25rem] leading-[1.05] font-normal mb-7">
-                Development Opportunities Across Central Texas
-              </h1>
-              <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-2xl mb-10 font-light">
-                Land acquisition, residential communities, mixed-use projects, builder opportunities, and
-                development advisory for investors, developers, and landowners.
-              </p>
-              <PrimaryButton href={DEV_URL} variant="solid">
-                Explore Echelon Developments
-              </PrimaryButton>
+        {/* Subtle left-edge gradient only — image breathes on the right */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.45) 28%, rgba(12,15,36,0.15) 50%, rgba(12,15,36,0) 70%)",
+          }}
+        />
+        {/* Very light bottom vignette for legibility on the panel */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.35) 100%)",
+          }}
+        />
+
+        <div className="relative z-10 h-full">
+          <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
+            <div className="flex h-full items-center">
+              <div className="grid w-full grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end lg:items-center pb-16 md:pb-24 lg:pb-28">
+                {/* Left — editorial text block (~40% width) */}
+                <div className="lg:col-span-5 text-white">
+                  <p className="mb-8" style={{ ...eyebrowStyle, color: GOLD }}>
+                    Echelon Developments
+                  </p>
+                  <h1 className="font-display font-normal mb-8 text-[2.5rem] sm:text-5xl lg:text-[3.5rem] xl:text-[3.85rem] leading-[1.06] tracking-[-0.01em]">
+                    Building Austin's
+                    <br />
+                    Next Great Communities
+                  </h1>
+                  <p className="text-white/80 text-base md:text-[1.075rem] leading-[1.75] font-light max-w-md mb-14">
+                    A dedicated platform for landowners, developers, builders, and investors seeking
+                    development opportunities across Central Texas.
+                  </p>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+                    <PrimaryButton href={DEV_URL} variant="solid">
+                      Explore Echelon Developments
+                    </PrimaryButton>
+                    <a
+                      href={DEV_URL}
+                      rel="noopener"
+                      className="group inline-flex items-center gap-3 text-white/90 hover:text-white transition-colors"
+                      style={buttonBaseStyle}
+                    >
+                      <span
+                        className="pb-1 border-b"
+                        style={{ borderColor: "rgba(185,160,108,0.55)" }}
+                      >
+                        View Featured Communities
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1"
+                        style={{ color: GOLD }}
+                      >
+                        →
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right — floating limestone/glass panel */}
+                <div className="lg:col-span-5 lg:col-start-8 hidden md:block">
+                  <div
+                    className="relative w-full max-w-md ml-auto p-8 lg:p-10 backdrop-blur-md"
+                    style={{
+                      background: "rgba(245, 243, 239, 0.08)",
+                      border: "1px solid rgba(245, 243, 239, 0.18)",
+                      boxShadow: "0 30px 80px -30px rgba(0,0,0,0.6)",
+                    }}
+                  >
+                    <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
+                      Central Texas · 2026
+                    </p>
+
+                    <div className="pb-7 mb-7 border-b border-white/15">
+                      <p
+                        className="text-white/60 mb-3"
+                        style={{ ...eyebrowStyle, fontSize: "0.62rem", letterSpacing: "0.22em" }}
+                      >
+                        Austin MSA Population
+                      </p>
+                      <p className="font-display text-white text-5xl lg:text-[3.25rem] leading-none font-normal tracking-[-0.01em]">
+                        2.6M+
+                      </p>
+                      <p className="text-white/65 text-[0.85rem] mt-3 font-light">
+                        Top U.S. migration market
+                      </p>
+                    </div>
+
+                    <p
+                      className="text-white/60 mb-4"
+                      style={{ ...eyebrowStyle, fontSize: "0.62rem", letterSpacing: "0.22em" }}
+                    >
+                      Platform Focus
+                    </p>
+                    <ul className="grid grid-cols-2 gap-y-3 gap-x-6">
+                      {["Residential", "Mixed-Use", "Land", "Investment"].map((label) => (
+                        <li
+                          key={label}
+                          className="flex items-center gap-3 text-white/90 text-[0.92rem] font-light"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="inline-block h-px w-4"
+                            style={{ background: GOLD }}
+                          />
+                          {label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

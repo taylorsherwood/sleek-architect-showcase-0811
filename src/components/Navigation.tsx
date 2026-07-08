@@ -175,7 +175,7 @@ const Navigation = () => {
         </ul>
 
         {/* Client Portal, far right */}
-        <div className={`hidden min-[1280px]:flex items-center shrink-0 ml-auto`}>
+        <div className={`hidden min-[1280px]:flex items-center shrink-0 ml-auto pl-8`}>
           <ClientPortalButton />
         </div>
 

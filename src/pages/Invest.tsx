@@ -13,6 +13,8 @@ const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
 const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";

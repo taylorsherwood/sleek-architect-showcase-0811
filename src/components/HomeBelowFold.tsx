@@ -1588,7 +1588,10 @@ const HomeBelowFold = () => (
     <FeaturedProperties />
     <LandRanchHomeIntro />
 
+    <DevelopmentAdvisoryCTA variant="ivory" />
+
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
 
 
     <TestimonialsSection />

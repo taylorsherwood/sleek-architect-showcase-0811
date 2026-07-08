@@ -13,6 +13,8 @@ const ScrollReveal = lazy(() => import("@/components/ScrollReveal"));
 const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider"));
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 import kitchenBefore from "@/assets/kitchen-before.jpg";
 import kitchenAfter from "@/assets/kitchen-after.jpeg";
@@ -972,6 +974,16 @@ const Invest = () => {
         heading="Land, Ranch & Development Opportunities"
         intro="Many of our investor clients move beyond single-family into ranch acquisitions, strategic acreage, and path-of-growth development sites across Central Texas."
       />
+
+      <DevelopmentAdvisoryCTA
+        variant="solid"
+        eyebrow="DEVELOPMENT ADVISORY"
+        heading="Explore active development opportunities"
+        intro="For entitled tracts, infill assemblages, mixed-use, and residential development positions, browse our dedicated"
+        anchorText="Austin development advisory platform"
+        cta="View Development Opportunities"
+      />
+
 
       <Suspense fallback={<div className="min-h-[100px]" />}><Footer /></Suspense>
     </div>

@@ -49,6 +49,8 @@ import ConfidentialOMGate from "@/components/land-ranch/ConfidentialOMGate";
 
 
 const Footer = lazy(() => import("@/components/Footer"));
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 const LandRanchMap = lazy(() => import("@/components/LandRanchMap"));
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -1917,6 +1919,16 @@ const LandRanch = () => {
           </div>
         </div>
       </section>
+
+      <DevelopmentAdvisoryCTA
+        variant="ivory"
+        eyebrow="ADJACENT ADVISORY"
+        heading="Development & path-of-growth opportunities"
+        intro="For entitled tracts, infill assemblages, and mixed-use sites alongside our ranch and land practice, visit our dedicated"
+        anchorText="Austin development opportunities"
+      />
+
+
 
       <Suspense fallback={null}>
         <Footer />

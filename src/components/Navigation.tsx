@@ -8,8 +8,10 @@ const logoMobile = "/images/echelon-logo-mobile.png";
 interface NavLink {
   href: string;
   label: string;
-  children?: { href: string; label: string }[];
+  external?: boolean;
+  children?: { href: string; label: string; external?: boolean }[];
 }
+
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +50,9 @@ const Navigation = () => {
         { href: "/private-distribution", label: "PRIVATE MARKET INTELLIGENCE" },
       ],
     },
+    { href: "https://developments.echelonpropertygroup.com", label: "DEVELOPMENTS", external: true },
     { href: "/off-market-real-estate-austin", label: "PRIVATE ACCESS" },
+
     { href: "/about", label: "ABOUT" },
   ];
 
@@ -157,6 +161,20 @@ const Navigation = () => {
                   </div>
                 )}
               </div>
+            ) : link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                rel="noopener"
+                className="relative transition-colors duration-300 group text-foreground/85 hover:text-foreground"
+                style={navLinkStyle}
+              >
+                {link.label}
+                <span
+                  className="absolute -bottom-1 left-0 h-px w-full scale-x-0 group-hover:scale-x-100 transition-all duration-300 origin-left"
+                  style={{ background: "hsl(38 39% 61%)" }}
+                />
+              </a>
             ) : (
               <Link
                 key={link.href}
@@ -176,6 +194,7 @@ const Navigation = () => {
                 />
               </Link>
             )
+
           )}
         </div>
 
@@ -251,6 +270,17 @@ const Navigation = () => {
                     </div>
                   )}
                 </div>
+              ) : link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  rel="noopener"
+                  onClick={() => { setIsMenuOpen(false); }}
+                  className="block text-white/80 hover:text-gold transition-colors duration-300"
+                  style={navLinkStyle}
+                >
+                  {link.label}
+                </a>
               ) : (
                 <Link
                   key={link.href}
@@ -262,6 +292,7 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               )
+
             )}
             <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
               <a

@@ -12,6 +12,8 @@ import CinematicSections from "@/components/off-market/CinematicSections";
 import PrivateDistributionStrip from "@/components/private-distribution/PrivateDistributionStrip";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 // Eagerly preload all hero & funnel media so it's ready before scroll
 import privateInventoryHero from "@/assets/hero-luxury-austin.webp";
@@ -494,13 +496,24 @@ const OffMarketRealEstateAustin = () => {
 
 
 
+      <DevelopmentAdvisoryCTA
+        variant="transparent"
+        eyebrow="ADJACENT ADVISORY"
+        heading="Private development opportunities"
+        intro="Land, infill, mixed-use, and residential development positions are shared through our dedicated"
+        anchorText="Austin development advisory platform"
+      />
+
       {/* ── Footer (minimal) ────────────────────────── */}
+
       <footer className="py-8 bg-primary">
         <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
           <div className="flex gap-5">
             <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
             <Link to="/off-market-real-estate-austin" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
+            <a href="https://developments.echelonpropertygroup.com" rel="noopener" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Developments</a>
+
             <Link to="/contact" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
           </div>
         </div>

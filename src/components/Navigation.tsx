@@ -217,67 +217,6 @@ const Navigation = () => {
           </a>
         </div>
 
-                )}
-              </div>
-            ) : link.external ? (
-              <a
-                key={link.href}
-                href={link.href}
-                rel="noopener"
-                className={`${navItemClasses} text-foreground/85 hover:text-foreground`}
-                style={navLinkStyle}
-              >
-                {link.label}
-                <span
-                  className={`${underlineClasses} scale-x-0 group-hover:scale-x-100`}
-                  style={{ background: "hsl(38 39% 61%)" }}
-                />
-              </a>
-            ) : (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => { if (link.href === '/' && location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className={`${navItemClasses} ${
-                  location.pathname === link.href ? "text-foreground" : "text-foreground/85 hover:text-foreground"
-                }`}
-                style={navLinkStyle}
-              >
-                {link.label}
-                <span
-                  className={`${underlineClasses} ${
-                    location.pathname === link.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-                  }`}
-                  style={{ background: "hsl(38 39% 61%)" }}
-                />
-              </Link>
-            )
-
-          )}
-        </div>
-
-        {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden min-[1400px]:flex items-center shrink-0 ml-6 xl:ml-8">
-          <a
-            href="https://portal.echelonpropertygroup.com/login"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="inline-flex items-center whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
-            style={{
-              ...navLinkStyle,
-              fontSize: "10px",
-              border: "1px solid hsl(38 39% 61%)",
-              color: "hsl(38 39% 61%)",
-              background: "rgba(255, 255, 255, 0.25)",
-              WebkitBackdropFilter: "blur(12px)",
-              backdropFilter: "blur(12px)",
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "hsl(38 39% 61%)"; e.currentTarget.style.color = "#ffffff"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255, 255, 255, 0.25)"; e.currentTarget.style.color = "hsl(38 39% 61%)"; }}
-          >
-            CLIENT PORTAL
-          </a>
-        </div>
 
         {/* Mobile toggle */}
         <Button

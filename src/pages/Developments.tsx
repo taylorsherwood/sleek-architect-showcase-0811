@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 
-import heroAsset from "@/assets/developments/developments-residences-hero.png.asset.json";
+import heroAsset from "@/assets/developments/developments-residences-hero-corrected.png.asset.json";
 import brochureAsset from "@/assets/developments/arbors-brochure.jpg.asset.json";
 import salesCenterAsset from "@/assets/developments/arbors-sales-center.jpg.asset.json";
 import signageAsset from "@/assets/developments/arbors-signage.jpg.asset.json";
@@ -194,9 +194,9 @@ const Developments = () => {
           <img
             src={heroAsset.url}
             alt="New residences at The Arbors in West Austin"
-            className="h-auto w-auto object-contain"
-            style={{ maxWidth: "min(100%, 1200px)", maxHeight: "800px" }}
-            width={1536}
+            className="h-full w-full object-cover"
+            style={{ objectPosition: "center" }}
+            width={1535}
             height={1024}
           />
         </div>

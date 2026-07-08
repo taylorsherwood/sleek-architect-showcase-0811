@@ -192,53 +192,53 @@ const Developments = () => {
       <section className="relative h-[92vh] min-h-[720px] w-full overflow-hidden">
         <img
           src={heroAsset.url}
-          alt="Downtown Austin skyline at dusk from Zilker Park"
+          alt="Austin skyline with population growth trajectory, 2010 to 2040"
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
           height={1280}
         />
-        {/* Subtle dark wash from the left only — the skyline stays bright */}
+        {/* Dark wash from the right — the infographic on the left stays legible */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.5) 25%, rgba(12,15,36,0.22) 42%, rgba(12,15,36,0) 58%)",
+              "linear-gradient(270deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.42) 28%, rgba(12,15,36,0.15) 48%, rgba(12,15,36,0) 62%)",
           }}
         />
         {/* Top scrim for navigation readability */}
         <div
-          className="absolute inset-x-0 top-0 h-40 pointer-events-none"
+          className="absolute inset-x-0 top-0 h-44 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.38) 0%, rgba(12,15,36,0) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.42) 0%, rgba(12,15,36,0) 100%)",
           }}
         />
         {/* Bottom vignette for depth */}
         <div
-          className="absolute inset-x-0 bottom-0 h-48 pointer-events-none"
+          className="absolute inset-x-0 bottom-0 h-56 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.28) 100%)",
+              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.32) 100%)",
           }}
         />
 
         <div className="relative z-10 h-full">
           <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
-            <div className="flex h-full items-end pb-20 md:pb-28 lg:pb-32">
-              <div className="max-w-[540px]">
+            <div className="flex h-full items-start pt-32 md:pt-36 lg:pt-40">
+              <div className="ml-auto max-w-[480px] text-right">
                 <p className="mb-8 md:mb-10" style={{ ...eyebrowStyle, color: GOLD }}>
                   Echelon Developments
                 </p>
 
-                <h1 className="font-display font-normal text-white text-[1.45rem] sm:text-[1.7rem] lg:text-[1.95rem] xl:text-[2.25rem] leading-[1.25] tracking-[0.015em] mb-10 md:mb-12">
-                  Building Austin's<br />Next Great Communities
+                <h1 className="font-display font-normal text-white text-[1.35rem] sm:text-[1.55rem] lg:text-[1.8rem] xl:text-[2rem] leading-[1.28] tracking-[0.015em] mb-9 md:mb-11">
+                  A Platform for Austin's Next Chapter
                 </h1>
 
-                <p className="text-white/90 text-[1.05rem] md:text-[1.125rem] leading-[1.75] font-light max-w-[500px] mb-12 md:mb-14">
-                  A dedicated platform for landowners, developers, and investors shaping the future of Central Texas.
+                <p className="text-white/88 text-[1rem] md:text-[1.05rem] leading-[1.75] font-light max-w-[420px] ml-auto mb-12 md:mb-14">
+                  A dedicated division of Echelon Property Group for landowners, developers, and investors shaping the future of Central Texas.
                 </p>
 
-                <div className="flex flex-col items-start gap-5 mb-14 md:mb-16">
+                <div className="flex flex-col items-end gap-5 mb-14 md:mb-16">
                   <PrimaryButton href={DEV_URL} variant="solid">
                     Explore Echelon Developments
                   </PrimaryButton>
@@ -266,7 +266,7 @@ const Developments = () => {
 
                 {/* Editorial information strip */}
                 <div
-                  className="flex flex-wrap items-center gap-x-3 gap-y-2 text-white/55"
+                  className="flex flex-wrap justify-end items-center gap-x-3 gap-y-2 text-white/55"
                   style={{ ...eyebrowStyle, fontSize: "0.65rem", letterSpacing: "0.18em" }}
                 >
                   <span>Residential Communities</span>

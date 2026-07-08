@@ -62,8 +62,8 @@ const Navigation = () => {
 
   const navLinkStyle: React.CSSProperties = {
     fontFamily: '"Jost", sans-serif',
-    fontSize: "10.5px",
-    letterSpacing: "0.14em",
+    fontSize: "10px",
+    letterSpacing: "0.11em",
     textTransform: "uppercase",
     fontWeight: 400,
     whiteSpace: "nowrap",
@@ -105,7 +105,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center gap-x-4 xl:gap-x-6 2xl:gap-x-7 ml-6 xl:ml-8 flex-nowrap">
+        <div className="hidden lg:flex items-center gap-x-3 xl:gap-x-5 2xl:gap-x-7 ml-4 xl:ml-8 flex-nowrap">
           {links.map((link) =>
             link.children ? (
               <div
@@ -205,10 +205,10 @@ const Navigation = () => {
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="whitespace-nowrap transition-all duration-300 px-5 py-2 backdrop-blur-md"
+            className="whitespace-nowrap transition-all duration-300 px-4 py-1.5 backdrop-blur-md"
             style={{
               ...navLinkStyle,
-              fontSize: "10px",
+              fontSize: "9.5px",
               border: "1px solid hsl(38 39% 61%)",
               color: "hsl(38 39% 61%)",
               background: "rgba(255, 255, 255, 0.25)",

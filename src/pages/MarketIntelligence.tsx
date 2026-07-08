@@ -347,7 +347,7 @@ const MarketIntelligence = () => {
                   { to: "/austin-luxury-real-estate-market-report", label: "Austin Luxury Market Report" },
                   { to: "/austin-luxury-market-trends", label: "Austin Luxury Market Trends" },
                   { to: "/off-market-real-estate-austin", label: "Off-Market Real Estate" },
-                  { to: "/private-distribution", label: "Private Distribution Editions" },
+                  
                   { to: "/austin-real-estate-investment", label: "Investment Advisory" },
                   { to: "/sell-private", label: "Private Sale Representation" },
                 ]}

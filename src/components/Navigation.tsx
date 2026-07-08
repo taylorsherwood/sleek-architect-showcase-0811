@@ -206,7 +206,7 @@ const Navigation = () => {
         {/* Client Portal - RIGHT */}
         <div
           className="hidden min-[1280px]:flex items-center shrink-0"
-          style={{ overflow: "visible", transform: "translateX(10px)" }}
+          style={{ overflow: "visible", transform: "translateX(10px) translateY(-2px)" }}
         >
           <ClientPortalButton />
         </div>

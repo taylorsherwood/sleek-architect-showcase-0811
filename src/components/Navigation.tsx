@@ -481,6 +481,7 @@ const ClientPortalButton = () => (
       letterSpacing: "0.04em",
       lineHeight: 1,
       whiteSpace: "nowrap",
+      textTransform: "none",
       transition:
         "background 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease",
       boxShadow: "0 1px 2px rgba(12,15,36,0.04)",

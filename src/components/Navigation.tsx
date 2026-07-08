@@ -51,6 +51,8 @@ const Navigation = () => {
     { href: "/sell", label: "Sell" },
     { href: "/invest", label: "Invest" },
     { href: "/communities", label: "Communities" },
+    { href: "/developments", label: "Developments" },
+    { href: "/off-market-real-estate-austin", label: "Private Access" },
     {
       href: "/blog",
       label: "Insights",
@@ -59,8 +61,6 @@ const Navigation = () => {
         { href: "/market-intelligence", label: "Market Intelligence" },
       ],
     },
-    { href: "/developments", label: "Developments" },
-    { href: "/off-market-real-estate-austin", label: "Private Access" },
     { href: "/about", label: "About" },
   ];
 
@@ -143,39 +143,48 @@ const Navigation = () => {
           />
         </Link>
 
-        {/* Desktop nav (starts close to logo, Client Portal pushed to far right) */}
-        <ul
-          className={`hidden min-[1280px]:flex items-center list-none p-0 m-0 flex-nowrap`}
-          style={{ overflow: "visible", marginLeft: "20px", columnGap: "clamp(22px, 2vw, 36px)" }}
+        {/* Desktop nav group: logo-adjacent, Client Portal as final item */}
+        <div
+          className="hidden min-[1280px]:flex items-center flex-nowrap"
+          style={{
+            overflow: "visible",
+            marginLeft: "20px",
+            gap: "12px",
+            transform: "translateX(-80px)",
+          }}
         >
-          {links.map((link) => (
-            <li
-              key={link.href}
-              className="relative flex items-center"
-              style={{ overflow: "visible" }}
-              onMouseEnter={link.children ? () => setOpenDropdown(link.href) : undefined}
-              onMouseLeave={link.children ? () => setOpenDropdown(null) : undefined}
-            >
-              <DesktopNavAnchor link={link} active={!!isActive(link)} style={desktopLinkStyle} />
-              {link.children && openDropdown === link.href && (
-                <DesktopDropdown>
-                  {link.children.map((child) => (
-                    <DropdownItem
-                      key={child.href}
-                      href={child.href}
-                      label={child.label}
-                      active={location.pathname === child.href}
-                    />
-                  ))}
-                </DesktopDropdown>
-              )}
-            </li>
-          ))}
-        </ul>
+          <ul
+            className="flex items-center list-none p-0 m-0 flex-nowrap"
+            style={{ overflow: "visible", columnGap: "clamp(22px, 2vw, 36px)" }}
+          >
+            {links.map((link) => (
+              <li
+                key={link.href}
+                className="relative flex items-center"
+                style={{ overflow: "visible" }}
+                onMouseEnter={link.children ? () => setOpenDropdown(link.href) : undefined}
+                onMouseLeave={link.children ? () => setOpenDropdown(null) : undefined}
+              >
+                <DesktopNavAnchor link={link} active={!!isActive(link)} style={desktopLinkStyle} />
+                {link.children && openDropdown === link.href && (
+                  <DesktopDropdown>
+                    {link.children.map((child) => (
+                      <DropdownItem
+                        key={child.href}
+                        href={child.href}
+                        label={child.label}
+                        active={location.pathname === child.href}
+                      />
+                    ))}
+                  </DesktopDropdown>
+                )}
+              </li>
+            ))}
+          </ul>
 
-        {/* Client Portal, far right */}
-        <div className={`hidden min-[1280px]:flex items-center shrink-0 ml-auto pl-6`}>
-          <ClientPortalButton />
+          <div className="flex items-center shrink-0" style={{ overflow: "visible" }}>
+            <ClientPortalButton />
+          </div>
         </div>
 
         {/* Mobile toggle */}

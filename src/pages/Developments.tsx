@@ -189,8 +189,8 @@ const Developments = () => {
       <SchemaMarkup schema={breadcrumbSchema} />
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative h-[88vh] min-h-[640px] w-full overflow-hidden">
+      {/* Hero — editorial architectural journal opening */}
+      <section className="relative h-[92vh] min-h-[720px] w-full overflow-hidden">
         <img
           src={heroAsset.url}
           alt="Downtown Austin skyline at dusk from Zilker Park"
@@ -198,123 +198,102 @@ const Developments = () => {
           width={1920}
           height={1280}
         />
-        {/* Cinematic dark wash — deeper on the left where copy sits */}
+        {/* Subtle dark wash from the left only — the skyline stays bright */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.82) 0%, rgba(12,15,36,0.55) 35%, rgba(12,15,36,0.25) 60%, rgba(12,15,36,0.15) 100%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.76) 0%, rgba(12,15,36,0.42) 28%, rgba(12,15,36,0.14) 48%, rgba(12,15,36,0) 62%)",
           }}
         />
-        {/* Top scrim so the nav breathes over the skyline */}
+        {/* Top scrim for navigation readability */}
         <div
           className="absolute inset-x-0 top-0 h-40 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.55) 0%, rgba(12,15,36,0) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.38) 0%, rgba(12,15,36,0) 100%)",
           }}
         />
-        {/* Bottom vignette */}
+        {/* Bottom vignette for depth */}
         <div
-          className="absolute inset-x-0 bottom-0 h-56 pointer-events-none"
+          className="absolute inset-x-0 bottom-0 h-48 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%)",
+              "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.28) 100%)",
           }}
         />
 
         <div className="relative z-10 h-full">
           <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
-            <div className="flex h-full items-center pb-16 md:pb-24 lg:pb-32">
-              <div className="grid w-full grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                {/* Left — editorial text block */}
-                <div className="lg:col-span-7 text-white">
-                  <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
-                    Echelon Developments
-                  </p>
-                  <h1 className="font-display font-normal mb-7 text-[2rem] sm:text-[2.5rem] lg:text-[3rem] xl:text-[3.35rem] leading-[1.08] tracking-[-0.015em] max-w-[18ch]">
-                    Building Austin's next great communities
-                  </h1>
-                  <p className="text-white/75 text-base md:text-[1.05rem] leading-[1.7] font-light max-w-[46ch] mb-10">
-                    A dedicated platform for landowners, developers, builders, and investors seeking
-                    development opportunities across Central Texas.
-                  </p>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
-                    <PrimaryButton href={DEV_URL} variant="solid">
-                      Explore Echelon Developments
-                    </PrimaryButton>
-                    <a
-                      href={DEV_URL}
-                      rel="noopener"
-                      className="group inline-flex items-center gap-3 text-white/90 hover:text-white transition-colors"
-                      style={buttonBaseStyle}
+            <div className="flex h-full items-end pb-20 md:pb-28 lg:pb-32">
+              <div className="max-w-[540px]">
+                <p className="mb-8 md:mb-10" style={{ ...eyebrowStyle, color: GOLD }}>
+                  Echelon Developments
+                </p>
+
+                <h1 className="font-display font-normal text-white text-[1.65rem] sm:text-[2rem] lg:text-[2.35rem] xl:text-[2.6rem] leading-[1.22] tracking-[0.015em] mb-10 md:mb-12">
+                  Building Austin's<br />Next Great Communities
+                </h1>
+
+                <p className="text-white/80 text-[1.05rem] md:text-[1.125rem] leading-[1.75] font-light max-w-[500px] mb-12 md:mb-14">
+                  A dedicated platform for landowners, developers, and investors shaping the future of Central Texas.
+                </p>
+
+                <div className="flex flex-col items-start gap-5 mb-14 md:mb-16">
+                  <PrimaryButton href={DEV_URL} variant="solid">
+                    Explore Echelon Developments
+                  </PrimaryButton>
+                  <a
+                    href={DEV_URL}
+                    rel="noopener"
+                    className="group inline-flex items-center gap-2 text-white/65 hover:text-white transition-colors duration-300"
+                    style={{ ...buttonBaseStyle, fontSize: "0.7rem", letterSpacing: "0.22em" }}
+                  >
+                    <span
+                      className="pb-0.5 border-b"
+                      style={{ borderColor: "rgba(185,160,108,0.45)" }}
                     >
-                      <span
-                        className="pb-1 border-b"
-                        style={{ borderColor: "rgba(185,160,108,0.55)" }}
-                      >
-                        View Featured Communities
-                      </span>
-                      <span
-                        aria-hidden="true"
-                        className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1"
-                        style={{ color: GOLD }}
-                      >
-                        →
-                      </span>
-                    </a>
-                  </div>
+                      View Concept Communities
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="inline-block transition-transform duration-500 ease-out group-hover:translate-x-1"
+                      style={{ color: GOLD }}
+                    >
+                      →
+                    </span>
+                  </a>
                 </div>
 
-                {/* Right — restrained stat rail (not a heavy card) */}
-                <div className="lg:col-span-4 lg:col-start-9 hidden lg:block">
-                  <div className="ml-auto max-w-xs">
-                    <p className="mb-6" style={{ ...eyebrowStyle, color: GOLD }}>
-                      Central Texas · 2026
-                    </p>
-                    <div
-                      className="pl-6 border-l"
-                      style={{ borderColor: "rgba(185,160,108,0.35)" }}
-                    >
-                      <p
-                        className="text-white/55 mb-2"
-                        style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.22em" }}
-                      >
-                        Austin MSA Population
-                      </p>
-                      <p className="font-display text-white text-[2.75rem] leading-none font-normal tracking-[-0.02em]">
-                        2.6M+
-                      </p>
-                      <p className="text-white/60 text-[0.8rem] mt-2 font-light">
-                        Top U.S. migration market
-                      </p>
-                    </div>
-
-                    <div className="mt-8">
-                      <p
-                        className="text-white/55 mb-4"
-                        style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.22em" }}
-                      >
-                        Platform Focus
-                      </p>
-                      <ul className="grid grid-cols-2 gap-y-2.5 gap-x-4">
-                        {["Residential", "Mixed-Use", "Land", "Investment"].map((label) => (
-                          <li
-                            key={label}
-                            className="text-white/85 text-[0.82rem] font-light tracking-wide"
-                          >
-                            {label}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                {/* Editorial information strip */}
+                <div
+                  className="flex flex-wrap items-center gap-x-3 gap-y-2 text-white/55"
+                  style={{ ...eyebrowStyle, fontSize: "0.65rem", letterSpacing: "0.18em" }}
+                >
+                  <span>Residential Communities</span>
+                  <span style={{ color: GOLD }}>•</span>
+                  <span>Mixed-Use</span>
+                  <span style={{ color: GOLD }}>•</span>
+                  <span>Land Acquisition</span>
+                  <span style={{ color: GOLD }}>•</span>
+                  <span>Builder Opportunities</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Scroll indicator */}
+        <div
+          className="absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/45"
+          style={{ ...eyebrowStyle, fontSize: "0.6rem", letterSpacing: "0.2em" }}
+        >
+          <span>Scroll to Explore</span>
+          <span className="block w-px h-7 bg-white/25" />
+        </div>
       </section>
+
+
 
 
 

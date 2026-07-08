@@ -8,8 +8,10 @@ const logoMobile = "/images/echelon-logo-mobile.png";
 interface NavLink {
   href: string;
   label: string;
-  children?: { href: string; label: string }[];
+  external?: boolean;
+  children?: { href: string; label: string; external?: boolean }[];
 }
+
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

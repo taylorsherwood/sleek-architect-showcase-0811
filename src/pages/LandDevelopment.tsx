@@ -25,6 +25,8 @@ import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 
 const Footer = lazy(() => import("@/components/Footer"));
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
+
 
 const SITE = "https://www.echelonpropertygroup.com";
 const GOLD = "#b9a06c";

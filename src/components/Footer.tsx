@@ -91,14 +91,9 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                     {link.label}
                   </Link>
                 ))}
-                <a
-                  href="https://developments.echelonpropertygroup.com"
-                  rel="noopener"
-                  className={linkHoverClass}
-                  style={linkStyle}
-                >
+                <Link to="/developments" className={linkHoverClass} style={linkStyle}>
                   Developments
-                </a>
+                </Link>
               </div>
 
             </div>

@@ -417,7 +417,7 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     const el = ref.current;
     if (!el) return;
     const adjust = () => {
-      el.style.transform = "translateX(-50%)";
+      el.style.transform = "translateX(0)";
       const rect = el.getBoundingClientRect();
       const vw = window.innerWidth;
       const margin = 16;
@@ -435,10 +435,9 @@ const DesktopDropdown = ({ children }: { children: React.ReactNode }) => {
     <div
       className="absolute"
       style={{
-        top: "100%",
-        left: "50%",
-        paddingTop: "14px",
-        transform: `translateX(calc(-50% + ${shift}px))`,
+        top: "calc(100% + 14px)",
+        left: 0,
+        transform: `translateX(${shift}px)`,
         zIndex: 100,
       }}
     >

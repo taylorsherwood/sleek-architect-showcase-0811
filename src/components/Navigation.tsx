@@ -200,7 +200,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Client Portal, ghost gold button */}
-        <div className="hidden min-[1400px]:flex items-center shrink-0 ml-auto pl-4">
+        <div className="hidden min-[1400px]:flex items-center shrink-0 ml-6 xl:ml-8">
           <a
             href="https://portal.echelonpropertygroup.com/login"
             target="_blank"

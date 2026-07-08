@@ -56,6 +56,7 @@ const PrimaryButton = ({
     style.background = GOLD;
     style.color = "#ffffff";
     style.border = `1px solid ${GOLD}`;
+    style.boxShadow = "0 4px 18px rgba(0,0,0,0.28)";
   } else if (variant === "outline") {
     style.background = "transparent";
     style.color = GOLD;
@@ -200,12 +201,12 @@ const Developments = () => {
             height={1024}
           />
         </div>
-        {/* Soft dark wash from the left — fades into the image rather than sitting on top */}
+        {/* Stronger localized dark wash from the left — confined to the darker portion of the frame */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0.24) 28%, rgba(12,15,36,0.08) 50%, rgba(12,15,36,0) 66%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.62) 0%, rgba(12,15,36,0.32) 30%, rgba(12,15,36,0.10) 48%, rgba(12,15,36,0) 56%)",
           }}
         />
         {/* Top scrim for navigation readability over bright sky */}
@@ -228,20 +229,34 @@ const Developments = () => {
         <div className="relative z-10 h-full">
           <div className="container mx-auto h-full px-6 md:px-10 lg:px-14 relative">
             <div className="flex h-full items-center pt-24 md:pt-28 lg:pt-32">
-              <div className="max-w-[600px]">
-                <p className="mb-10 md:mb-12" style={{ ...eyebrowStyle, color: GOLD }}>
+              <div className="relative max-w-[600px]">
+                {/* Subtle radial contrast directly behind the text block */}
+                <div
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] pointer-events-none"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, rgba(12,15,36,0.52) 0%, rgba(12,15,36,0.24) 48%, rgba(12,15,36,0) 72%)",
+                  }}
+                />
+                <p className="relative mb-10 md:mb-12" style={{ ...eyebrowStyle, color: "#c9b078" }}>
                   Echelon Developments
                 </p>
 
-                <h1 className="font-display font-normal text-white text-[1.2rem] sm:text-[1.35rem] lg:text-[1.5rem] xl:text-[1.65rem] leading-[1.22] tracking-[0.012em] mb-10 md:mb-14">
+                <h1
+                  className="relative font-display font-normal text-[1.2rem] sm:text-[1.35rem] lg:text-[1.5rem] xl:text-[1.65rem] leading-[1.22] tracking-[0.012em] mb-10 md:mb-14"
+                  style={{ color: "#FFFFFF", textShadow: "0 2px 10px rgba(0,0,0,0.22)" }}
+                >
                   Building Austin's Next Great Communities
                 </h1>
 
-                <p className="text-white/[0.96] text-[1rem] md:text-[1.0625rem] leading-[1.72] font-light max-w-[500px] mb-14 md:mb-18">
+                <p
+                  className="relative text-[1rem] md:text-[1.0625rem] max-w-[500px] mb-14 md:mb-18"
+                  style={{ color: "rgba(255,255,255,0.94)", fontWeight: 500, lineHeight: 1.78 }}
+                >
                   A dedicated platform for developers, builders, investors, and landowners shaping exceptional communities across Central Texas.
                 </p>
 
-                <div className="flex flex-col items-start gap-4">
+                <div className="relative flex flex-col items-start gap-4">
                   <PrimaryButton href={DEV_URL} variant="solid" className="px-11 py-4">
                     Explore Developments
                   </PrimaryButton>
@@ -249,7 +264,7 @@ const Developments = () => {
                     href={DEV_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
+                    className="group inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors duration-300"
                     style={{ ...buttonBaseStyle, fontSize: "0.7rem", letterSpacing: "0.22em" }}
                   >
                     <span className="relative pb-1">

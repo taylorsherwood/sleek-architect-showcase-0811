@@ -53,7 +53,8 @@ const DevelopmentAdvisoryCTA = ({
             {intro}{" "}
             <a
               href={DEV_URL}
-              rel="noopener"
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline decoration-gold/40 underline-offset-4 hover:decoration-gold hover:text-foreground transition-colors"
             >
               {anchorText}
@@ -62,7 +63,8 @@ const DevelopmentAdvisoryCTA = ({
           </p>
           <a
             href={DEV_URL}
-            rel="noopener"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 px-8 py-3.5 transition-colors duration-300"
             style={{
               ...LABEL_STYLE,

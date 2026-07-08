@@ -192,25 +192,25 @@ const Developments = () => {
       <section className="relative h-[92vh] min-h-[720px] w-full overflow-hidden">
         <img
           src={heroAsset.url}
-          alt="Austin skyline with population growth trajectory, 2010 to 2040"
+          alt="Mueller residence streetscape in Austin, Texas"
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
           height={1280}
         />
-        {/* Dark wash from the right — the infographic on the left stays legible */}
+        {/* Dark wash from the left — keeps the residential scene bright on the right */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(270deg, rgba(12,15,36,0.72) 0%, rgba(12,15,36,0.42) 28%, rgba(12,15,36,0.15) 48%, rgba(12,15,36,0) 62%)",
+              "linear-gradient(90deg, rgba(12,15,36,0.78) 0%, rgba(12,15,36,0.52) 26%, rgba(12,15,36,0.22) 46%, rgba(12,15,36,0) 60%)",
           }}
         />
-        {/* Top scrim for navigation readability */}
+        {/* Top scrim for navigation readability over bright sky */}
         <div
-          className="absolute inset-x-0 top-0 h-44 pointer-events-none"
+          className="absolute inset-x-0 top-0 h-48 pointer-events-none"
           style={{
             background:
-              "linear-gradient(180deg, rgba(12,15,36,0.42) 0%, rgba(12,15,36,0) 100%)",
+              "linear-gradient(180deg, rgba(12,15,36,0.48) 0%, rgba(12,15,36,0) 100%)",
           }}
         />
         {/* Bottom vignette for depth */}
@@ -225,7 +225,7 @@ const Developments = () => {
         <div className="relative z-10 h-full">
           <div className="container mx-auto h-full px-6 md:px-10 lg:px-14">
             <div className="flex h-full items-start pt-32 md:pt-36 lg:pt-40">
-              <div className="ml-auto max-w-[480px] text-right">
+              <div className="max-w-[480px]">
                 <p className="mb-8 md:mb-10" style={{ ...eyebrowStyle, color: GOLD }}>
                   Echelon Developments
                 </p>
@@ -234,18 +234,18 @@ const Developments = () => {
                   A Platform for Austin's Next Chapter
                 </h1>
 
-                <p className="text-white/88 text-[1rem] md:text-[1.05rem] leading-[1.75] font-light max-w-[420px] ml-auto mb-12 md:mb-14">
+                <p className="text-white/92 text-[1rem] md:text-[1.05rem] leading-[1.75] font-light max-w-[420px] mb-12 md:mb-14">
                   A dedicated division of Echelon Property Group for landowners, developers, and investors shaping the future of Central Texas.
                 </p>
 
-                <div className="flex flex-col items-end gap-5 mb-14 md:mb-16">
+                <div className="flex flex-col items-start gap-5 mb-14 md:mb-16">
                   <PrimaryButton href={DEV_URL} variant="solid">
                     Explore Echelon Developments
                   </PrimaryButton>
                   <a
                     href={DEV_URL}
                     rel="noopener"
-                    className="group inline-flex items-center gap-2 text-white/65 hover:text-white transition-colors duration-300"
+                    className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-300"
                     style={{ ...buttonBaseStyle, fontSize: "0.7rem", letterSpacing: "0.22em" }}
                   >
                     <span
@@ -266,7 +266,7 @@ const Developments = () => {
 
                 {/* Editorial information strip */}
                 <div
-                  className="flex flex-wrap justify-end items-center gap-x-3 gap-y-2 text-white/55"
+                  className="flex flex-wrap items-center gap-x-3 gap-y-2 text-white/60"
                   style={{ ...eyebrowStyle, fontSize: "0.65rem", letterSpacing: "0.18em" }}
                 >
                   <span>Residential Communities</span>

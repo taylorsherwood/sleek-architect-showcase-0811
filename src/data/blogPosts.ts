@@ -50,6 +50,7 @@ import blogBestAustinSuburbs2026 from "@/assets/blog/best-austin-suburbs-2026.jp
 import blogHNWBuyingTips from "@/assets/blog/high-net-worth-home-buying-tips-austin.png.asset.json";
 import blogAustinZoningChanges from "@/assets/blog/austin-zoning-changes.png.asset.json";
 import blogAustinIsdVsEanesIsd from "@/assets/blog/austin-isd-vs-eanes-isd.png.asset.json";
+import blogAustinInfillModernFraming from "@/assets/blog/austin-infill-development-modern-framing.png.asset.json";
 
 
 
@@ -79,6 +80,164 @@ export interface BlogPost {
 const LINK = "text-foreground underline hover:text-muted-foreground";
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: "austin-infill-development-guide",
+    title: "Austin Infill Development: What It Is, Why It's Accelerating, and What It Means for Property Owners",
+    metaTitle: "Austin Infill Development: What It Is and Why It's Accelerating | Echelon Property Group",
+    excerpt: "Austin infill development is reshaping established neighborhoods as vacant lots, aging duplexes, and underutilized parcels are converted into new housing within the city's existing footprint. Here is what homeowners, investors, and buyers need to know.",
+    author: "Taylor Sherwood",
+    date: "2026-07-09",
+    readTime: "13 MIN READ",
+    category: "INVESTMENT",
+    image: blogAustinInfillModernFraming.url,
+    heroImage: blogAustinInfillModernFraming.url,
+    imageAlt: "Aerial view of an Austin infill development in progress, showing a new multi-story wood-framed home under construction on a small urban lot between two finished modern homes in an established central Austin neighborhood",
+    imageCaption: "A framed infill build tucked between two finished modern homes, the current face of Austin's inward-turning growth.",
+    content: `
+
+Austin infill development is reshaping established neighborhoods across the city as vacant lots, aging duplexes, and underutilized parcels are converted into new housing and mixed-use projects within Austin's existing urban footprint. Whether you're a homeowner, investor, or developer, understanding this accelerating trend is essential for making informed real estate decisions in today's market.
+
+Austin's most established neighborhoods are quietly being rebuilt from within. Lots that sat vacant for decades, aging duplexes on oversized parcels, and underutilized commercial corners are being converted into new housing, mixed-use projects, and investment properties. This isn't happening on the suburban fringe. It's happening on streets that have existed for fifty years.
+
+This process has a name: infill development. And understanding it has become essential for anyone making real estate decisions in Austin right now.
+
+Infill development refers to construction on vacant, underutilized, or previously developed land within an already-urbanized area. It's the opposite of the greenfield suburban expansion that defined Austin's growth for decades. Instead of pushing outward into Cedar Park or Pflugerville, infill turns inward, finding new capacity within the city's existing footprint.
+
+The reasons this topic matters depend on who you are. If you're a homeowner in [East Austin](/communities/east-austin) or Allandale, infill explains why a teardown crew showed up next door. If you're an investor evaluating land opportunities, it shapes where the most compelling deals are forming. If you're a buyer trying to understand why certain blocks feel like they're in transition, infill is often the answer. And if you're a seller sitting on an older home on a larger lot, infill economics may be the most important market force affecting your property's true value, a dynamic we cover in depth in our practitioner-level guide to <a href="/blog/austin-infill-development" class="${LINK}">how to evaluate, plan, and execute an Austin infill project</a>.
+
+Austin's infill story is also being accelerated by significant regulatory change. The city has made deliberate policy moves to enable more density within existing neighborhoods, which means the pace of change is likely to continue regardless of broader market cycles. Our detailed breakdown of <a href="/blog/austin-zoning-changes" class="${LINK}">Austin zoning changes and the HOME initiative</a> unpacks exactly what shifted and where it applies.
+
+This article breaks down what Austin infill development actually is, where it's most active, how city policy is shaping it, what it means for investors and homeowners, and how to read infill activity as a signal of where a neighborhood is heading.
+
+## Building Where Austin Already Exists
+
+The clearest way to understand infill development is to contrast it with how Austin grew for most of its history. For decades, the city expanded outward. Developers acquired raw land at the suburban fringe, built master-planned communities, extended infrastructure, and sold homes to buyers willing to trade urban proximity for affordability and square footage. Communities like Round Rock, Leander, and Pflugerville grew rapidly through this greenfield model. Our [best Austin suburbs for 2026](/blog/best-austin-suburbs-2026) coverage tracks how those outward-growth submarkets are performing today.
+
+Infill development works differently. It finds unused or underused capacity within the city's existing boundaries and builds there instead.
+
+That capacity comes in several forms. A vacant lot that was never developed. An aging single-family home on a parcel large enough to support two or three units. A commercial strip center that no longer pencils as retail but sits on a transit corridor with strong residential demand. An old duplex on a 10,000-square-foot lot in a neighborhood where land values have climbed substantially.
+
+In Austin, the most common infill formats include:
+
+**Single-family teardowns and rebuilds:** An older home is demolished and replaced with a new construction home, often larger and more valuable. Common in established central neighborhoods where the land has appreciated faster than the structure. This is the pattern actively reshaping <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a> and <a href="/communities/pemberton-heights" class="${LINK}">Pemberton Heights</a>.
+
+**Accessory dwelling units (ADUs):** Secondary structures built on existing residential lots, either detached or attached. Austin has progressively relaxed ADU regulations, making these more accessible to individual homeowners as a rental income strategy.
+
+**Small-lot subdivisions:** A single large parcel is divided into two or more buildable lots, each capable of supporting an independent structure. This increases housing supply without requiring large-scale development.
+
+**Missing middle housing:** A planning term for housing types that fall between single-family homes and large apartment buildings. Duplexes, triplexes, fourplexes, courtyard apartments, and small mixed-use buildings all fall into this category. Austin's recent zoning changes were explicitly designed to enable more of this type of infill.
+
+**Mixed-use commercial-residential projects:** Ground-floor commercial or retail space combined with residential units above, typically along established corridors with pedestrian infrastructure. Our <a href="/blog/austin-mixed-use-development" class="${LINK}">Austin mixed-use development</a> analysis covers where these projects are penciling and how the corridor economics work.
+
+Each of these formats serves a different market and carries different economics. But they share a common logic: using land that already exists within the city rather than extending the urban boundary further outward. For Austin, where infrastructure costs are real and traffic congestion is a persistent concern, infill offers a path to growth that doesn't require building new roads, utilities, and services from scratch.
+
+## Where Infill Is Actively Reshaping Austin Neighborhoods
+
+Infill activity is not evenly distributed across Austin. Certain corridors and submarkets are seeing concentrated development, driven by a combination of land economics, proximity to employment, infrastructure quality, and buyer demand.
+
+<a href="/communities/east-austin" class="${LINK}">East Austin</a>, particularly the 78702 and 78721 zip codes, has been the most visible infill market for over a decade. The area's proximity to downtown, walkable street grid, and relatively lower historic land costs made it an early target for boutique developers and owner-builders. That wave has matured significantly. Land values in 78702 have risen to the point where the infill economics now require premium product to work, and the neighborhood's character has shifted substantially as a result.
+
+The South Congress and South Lamar corridors continue to attract mixed-use infill, particularly commercial-residential projects that benefit from high foot traffic and strong retail fundamentals. These corridors are well-served by transit infrastructure and have the walkability profile that supports ground-floor commercial uses. Both <a href="/communities/bouldin-creek" class="${LINK}">Bouldin Creek</a> and <a href="/communities/travis-heights" class="${LINK}">Travis Heights</a> sit at the residential edge of that corridor activity.
+
+North Loop has emerged as a more recent infill submarket, attracting smaller-scale residential infill and ADU development as buyers and investors price into the neighborhood's improving trajectory. It sits at a price point that still makes infill economics more accessible than the fully matured East Austin market.
+
+The Rundberg corridor along North Lamar represents a different kind of infill story: active redevelopment of a historically underinvested area, with city resources and private capital beginning to move in tandem. This is a longer-horizon play, but permit activity in the area reflects growing developer interest. We cover this class of opportunity in more depth in our <a href="/blog/austin-redevelopment-opportunities" class="${LINK}">Austin redevelopment opportunities</a> breakdown.
+
+The North Burnet and Domain-adjacent area has attracted more commercial and mixed-use infill, driven by employment density from tech employers and the retail and hospitality ecosystem around the Domain. Our <a href="/austin-commercial-real-estate" class="${LINK}">Austin commercial real estate</a> practice tracks the underwriting behind those larger-format projects.
+
+What makes a neighborhood ripe for infill? Several factors tend to cluster together: proximity to major employment centers, access to transit or walkable infrastructure, aging housing stock that has not kept pace with land value appreciation, and land costs that are relatively lower than surrounding submarkets but trending upward.
+
+Established neighborhoods are not immune. <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/bouldin-creek" class="${LINK}">Bouldin Creek</a>, Allandale, and <a href="/communities/hyde-park" class="${LINK}">Hyde Park</a> are all seeing teardown activity. In these areas, the dynamic is different. Land values are already high, and in some cases the value of the underlying lot has outpaced the value of the structure sitting on it. That creates a specific set of economic pressures for homeowners and buyers alike, which we'll address directly in a later section. For a deeper look at how these established Austin neighborhoods compare in terms of character and investment profile, see our side-by-side of <a href="/blog/tarrytown-vs-westlake" class="${LINK}">Tarrytown vs Westlake</a> and our broader <a href="/best-neighborhoods-in-austin-texas" class="${LINK}">best neighborhoods in Austin</a> guide.
+
+## Austin's Regulatory Shift: How City Policy Is Fueling Infill
+
+Policy is not a passive backdrop to Austin's infill story. It is an active driver. The city has made deliberate regulatory changes over the past several years that have meaningfully lowered barriers to infill development, and the most significant of those changes is the HOME Initiative. Our full <a href="/blog/austin-zoning-changes" class="${LINK}">Austin zoning changes</a> guide walks through the code-level detail.
+
+Austin City Council passed the HOME (Home Options for Middle-income Empowerment) initiative in phases beginning in 2023 and 2024. Phase 1 was the structural change: it allowed up to three units on any single-family lot citywide. This effectively eliminated single-family-only zoning across large portions of the city. A homeowner with a standard residential lot can now, in principle, build a primary residence plus two additional units without requiring a zoning variance or special permit.
+
+Phase 2 addressed lot subdivision rules, making it easier to divide existing parcels into smaller, independently buildable lots. Together, these two phases represent one of the most significant zoning shifts in Austin's modern history.
+
+The HOME Initiative didn't emerge in isolation. It built on years of incremental ADU-friendly policy changes: reduced setback requirements, removal of owner-occupancy requirements that previously limited ADU rentals, and expanded size allowances. These changes made infill more accessible not just to professional developers but to individual homeowners looking to add rental income on their existing property.
+
+Austin has also reduced parking minimums in certain areas, which matters more than it might seem. Parking requirements have historically been a significant constraint on infill projects, particularly on smaller lots where dedicating space to parking can make a project financially unworkable. Reducing those requirements opens more parcels to viable development.
+
+It's worth noting the tension that exists alongside these policy changes. Some established neighborhoods have pushed back on density increases, citing concerns about neighborhood character, parking, and infrastructure capacity. This is a legitimate and ongoing conversation in Austin's political environment.
+
+There is also an important legal distinction that buyers and investors need to understand: the difference between zoning and deed restrictions. Zoning is a public regulatory framework set by the city. Deed restrictions are private agreements that run with the land and can impose limitations that are more restrictive than city zoning. Some established Austin neighborhoods have deed restrictions that prohibit subdivision or additional units, even if current zoning would permit them under HOME.
+
+This means that not every lot that appears to qualify for infill development under city code actually does. Due diligence on deed restrictions is not optional. It's a fundamental step in evaluating any infill opportunity in Austin's established neighborhoods, and it is the kind of work our <a href="/invest" class="${LINK}">Austin investment advisory</a> handles as a matter of course on every acquisition.
+
+## Investment Angles: Who Is Buying and Building on Infill Lots
+
+Austin's infill market attracts a range of investor profiles, and understanding who is active in this space helps clarify how deals get done and where opportunities tend to surface.
+
+Local boutique developers have been the most visible players in the infill market for years. These are typically smaller firms or individual operators with deep knowledge of Austin's permit process, contractor relationships, and neighborhood-level demand. They move quickly, often work off-market, and have the local expertise to underwrite deals that larger institutional players might overlook.
+
+Out-of-state capital has become increasingly present in Austin infill. Investors from higher-cost markets, particularly California and the Pacific Northwest, have been drawn to Austin's relative yield and growth trajectory. This capital tends to target larger infill projects or portfolio acquisitions, and it has contributed to rising land values in active infill submarkets.
+
+Owner-builder individuals represent a meaningful segment of ADU-driven infill. These are homeowners who add a detached ADU to their existing property as a rental income strategy. Austin's regulatory changes have made this more financially accessible, and the model has become more common as homeowners look for ways to generate income from their existing land.
+
+Institutional build-to-rent operators are a newer entrant to the infill conversation. This model, which involves building homes specifically for the rental market rather than for sale, has been active in Austin's suburbs and is beginning to appear in infill-adjacent contexts. It's a longer-horizon strategy that requires scale, but it signals growing institutional confidence in Austin's rental demand fundamentals.
+
+How does infill lot acquisition actually work in practice? The process typically begins with identifying undervalued parcels, which requires understanding current zoning, what the HOME Initiative now permits, and whether any deed restrictions limit development options. Entitlement risk is real: not every parcel that looks buildable on paper will move through Austin's Development Services Department without complications or delays. Our <a href="/austin-land-development-opportunities" class="${LINK}">Austin land development opportunities</a> desk tracks these dynamics parcel by parcel.
+
+Permit timelines in Austin have been a persistent challenge for infill developers. The city has made efforts to improve processing times, but complex projects can still face significant delays, which affects project economics and holding costs.
+
+The off-market dimension of infill land deals is significant and often underappreciated. Many of the most attractive infill parcels never reach public listing platforms. They trade through direct relationships between owners and developers, or through advisors who are actively tracking which properties are approaching a development decision point. For investors looking to access infill opportunities before they become widely visible, local market relationships are not a nice-to-have. They are a competitive advantage, which is exactly why our <a href="/off-market-real-estate-austin" class="${LINK}">off-market real estate</a> and <a href="/private-opportunities" class="${LINK}">private opportunities</a> channels exist.
+
+## What Infill Means for Existing Homeowners and Buyers
+
+Infill development affects people who are not developers. If you own a home in an active infill submarket, or if you're considering buying in one, understanding the dynamics is part of making an informed decision.
+
+The effects on existing homeowners can run in both directions. On the positive side, sustained infill activity in a neighborhood typically reflects rising land values and growing buyer demand. New construction raises the quality of the housing stock, improves walkability as new retail and mixed-use projects come online, and can lift comparable sales values across the submarket. Neighborhoods that have gone through a successful infill cycle often emerge with stronger fundamentals than they had before.
+
+On the other side, significant density increases can create real friction. Parking pressure, construction noise during active development phases, and aesthetic changes to block character are legitimate concerns that longtime residents raise. The degree to which these issues materialize depends heavily on the scale and quality of the infill being built, and on how quickly it happens.
+
+For buyers doing due diligence, infill awareness is a practical research task. Austin's Development Services Department publishes permit data publicly, including demolition permits, new construction permits on small lots, and ADU filings. Reviewing permit activity on and around a property you're considering can reveal what's already in the pipeline for adjacent parcels. A vacant lot next door is not necessarily a neutral feature. Under current Austin code, it could support up to three units.
+
+Checking adjacent lot zoning and any pending applications is a standard part of thorough due diligence. Your agent or a local real estate attorney can help you understand what the current code permits on neighboring parcels and whether any applications have been filed. A seasoned <a href="/buy" class="${LINK}">Austin buyer's advisor</a> should be running this check on every offer in an active infill submarket.
+
+The teardown scenario deserves specific attention. In neighborhoods where land values have risen substantially, an older home can reach a point where the land beneath it is worth more than the structure. This is not a theoretical condition. It's a real market dynamic in parts of <a href="/communities/tarrytown" class="${LINK}">Tarrytown</a>, <a href="/communities/bouldin-creek" class="${LINK}">Bouldin Creek</a>, Allandale, and other established central Austin neighborhoods. Understanding <a href="/blog/highest-and-best-use-property-austin" class="${LINK}">highest and best use analysis</a> is essential for any owner or buyer navigating this dynamic.
+
+When that condition exists, selling to a developer often produces a higher return than selling to an owner-occupant. But recognizing that your property has reached that threshold requires honest local market analysis, not just a standard residential appraisal. Sellers in this position benefit from working with advisors who understand both the residential and development dimensions of the transaction, and it's where our <a href="/sell" class="${LINK}">Austin sellers advisory</a> spends the most time.
+
+Buyers purchasing older homes in these neighborhoods should also be aware that a seller who understands their land's development value will price accordingly. And a home that appears underpriced relative to its neighbors may reflect deferred maintenance that makes it a teardown candidate, not a bargain.
+
+## Reading Infill Activity as a Market Signal
+
+Beyond its direct effects on specific properties, infill development activity functions as a leading indicator of neighborhood trajectory. Learning to read it gives buyers and investors a more accurate picture of where a submarket is heading than looking at closed sales data alone.
+
+Sustained infill activity in a neighborhood typically signals several things at once: land values are rising, buyer demand in the submarket is strong enough to support new construction economics, and infrastructure investment is improving or expected to improve. Developers don't build in areas where they don't expect to sell or lease successfully. Active infill is a form of market confidence made visible.
+
+Different types of infill carry different signals. Luxury teardowns, where an older home is demolished and replaced with a premium new construction product, signal that land values are high and buyer demand at the upper price points is active. This is the pattern you see in Tarrytown and Bouldin Creek. ADU additions at scale signal that existing homeowners have confidence in rental income, which reflects strong rental demand fundamentals in the submarket. Mixed-use commercial-residential infill along a corridor signals that the area has reached sufficient pedestrian traffic and residential density to support ground-floor retail, a significant maturation milestone for any urban corridor.
+
+A practical framework for tracking infill activity as a market signal includes several components. First, monitor permit activity through Austin's Development Services Department. Elevated demolition permit filings in a submarket are an early signal of teardown activity. New construction permits on small lots indicate infill housing development. ADU permit filings indicate owner-level confidence in rental demand.
+
+Second, track teardown sales. When a property sells at or near land value with a subsequent demolition permit, that transaction reveals what developers believe the land is worth and what they believe they can build profitably. A cluster of these transactions in a submarket is a meaningful data point. Tracking <a href="/blog/austin-luxury-market-trends" class="${LINK}">Austin's broader real estate market trends</a> alongside permit data gives investors a more complete picture of where capital is flowing.
+
+Third, pay attention to which builders are active in a given area. Experienced local developers tend to move into submarkets ahead of the broader market. When you see a builder with a track record of successful infill projects beginning to acquire lots in a neighborhood, it's worth understanding why.
+
+Fourth, watch for land assemblages: situations where a developer acquires multiple adjacent parcels to enable a larger project. Assemblage activity often precedes significant development and can signal a step-change in a corridor's trajectory. Our <a href="/blog/austin-commercial-land-development" class="${LINK}">Austin commercial land development</a> coverage tracks these assemblages on the corridor scale.
+
+None of these signals is definitive on its own. But together, they paint a picture of where sophisticated capital is flowing and where neighborhood change is likely to accelerate.
+
+## Putting It All Together
+
+Austin infill development is not a niche topic for planning professionals. It is a central feature of how the city is growing, and it has direct implications for homeowners, buyers, sellers, and investors across a wide range of property types and price points.
+
+Understanding infill helps buyers make smarter location decisions. A neighborhood in an active infill cycle is likely to look and feel different in five years than it does today, and knowing whether that change is likely to be positive or disruptive is a meaningful input into any purchase decision.
+
+For sellers, infill awareness helps you recognize when your property's land value has become the primary driver of its worth. That recognition changes how you should price, market, and negotiate a sale. It also determines who the right buyer actually is. Our guides on <a href="/blog/how-to-sell-luxury-home-austin" class="${LINK}">how to sell a luxury home in Austin</a> and <a href="/blog/high-end-home-valuation-austin-luxury" class="${LINK}">high-end home valuation</a> pair naturally with this thinking.
+
+For investors, the infill market in Austin offers genuine opportunity, but it requires local knowledge to navigate well. Entitlement risk, permit timelines, deed restriction complexity, and off-market deal flow all favor advisors and operators with deep submarket expertise. The <a href="/blog/austin-infill-development" class="${LINK}">practitioner-level infill framework</a> we publish alongside this article is the natural next read for anyone underwriting a specific parcel.
+
+The regulatory environment has shifted in ways that make infill more viable across more of the city than was true even a few years ago. That shift is not going to reverse. The question is how individual property owners and investors position themselves relative to it.
+
+If you want to understand how infill activity affects a specific neighborhood or property, the most useful next step is a direct conversation with someone who tracks Austin's submarkets closely. <a href="/about" class="${LINK}">Learn more about our services</a> and how <a href="/contact" class="${LINK}">Echelon Property Group</a> can help you evaluate what infill development means for your specific situation.
+
+*This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin market conditions, zoning rules, deed restrictions, and permitting practices change over time and vary by submarket. Confirm current conditions with appropriate professional advisors before making real estate decisions.*
+`
+  },
   {
     id: "austin-isd-vs-eanes-isd",
     title: "Austin ISD vs Eanes ISD: 7 Key Factors to Evaluate Before You Buy",
@@ -4964,7 +5123,7 @@ Austin redevelopment opportunities are reshaping how landowners, investors, and 
 
 This guide is written for landowners, investors, and developers who want to understand how redevelopment opportunities are identified, evaluated, and executed in Austin's current market. Whether you own an aging home on a large lot in <a href="/communities/barton-hills" class="${LINK}">Barton Hills</a>, a commercial strip on South Lamar, or a single-family property in East Austin that feels out of place with its surroundings, this guide will help you think through the analysis the way an experienced <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisor</a> would.
 
-We cover highest and best use analysis, zoning and entitlement considerations, how investors evaluate sites, common mistakes property owners make, and how to determine whether to hold, sell, or develop. Austin-specific neighborhood context is woven throughout.
+We cover highest and best use analysis, zoning and entitlement considerations, how investors evaluate sites, common mistakes property owners make, and how to determine whether to hold, sell, or develop. Austin-specific neighborhood context is woven throughout. For the broader market context on why infill has become the dominant reshaping force in central Austin, our companion overview of <a href="/blog/austin-infill-development-guide" class="${LINK}">what Austin infill development is and why it's accelerating</a> is the natural starting point.
 
 The goal is not to push you toward any particular outcome. It is to give you the analytical framework to make a well-informed decision about one of your most significant assets.
 
@@ -5243,7 +5402,7 @@ Whether you own a single-family lot in <a href="/communities/tarrytown" class="$
 
 Highest and best use analysis is the foundational framework appraisers, developers, and sophisticated <a href="/austin-real-estate-investment" class="${LINK}">investors</a> use to answer that question. It is not a speculative exercise. It is a structured, evidence-based process that examines what a property is legally allowed to become, what it is physically capable of supporting, what the market will actually absorb, and what configuration generates the most value.
 
-In Austin, where zoning is actively evolving, where neighborhood character is shifting, and where development pressure is reshaping corridors from East 6th Street to FM 620, the gap between as-is value and highest and best use value can be substantial. A property sitting on a transitional corridor, encumbered by outdated improvements, or underutilized relative to its legal entitlements may be worth materially more than its current use suggests.
+In Austin, where zoning is actively evolving, where neighborhood character is shifting, and where development pressure is reshaping corridors from East 6th Street to FM 620, the gap between as-is value and highest and best use value can be substantial. A property sitting on a transitional corridor, encumbered by outdated improvements, or underutilized relative to its legal entitlements may be worth materially more than its current use suggests. Our overview of <a href="/blog/austin-infill-development-guide" class="${LINK}">Austin infill development and what it means for property owners</a> is essential reading for anyone whose land value has begun to outpace their improvement value.
 
 This guide walks through the process step by step, with specific references to Austin's regulatory landscape, market dynamics, and development patterns. It is written for property owners, landowners, investors, builders, and anyone making a significant decision about Austin real estate. The goal is to help you think clearly about what you actually own before you sell, develop, or acquire. If you are evaluating raw land specifically, our <a href="/austin-land-development-opportunities" class="${LINK}">Austin land development opportunities</a> and <a href="/land-for-sale-austin" class="${LINK}">land for sale in Austin</a> resources offer additional context on what is currently moving in the market.
 
@@ -9756,7 +9915,7 @@ Drive down South Congress today and it looks nothing like it did ten years ago. 
 
 The term "mixed-use development" gets used loosely, sometimes to describe any building with a coffee shop on the ground floor. But in practice, it refers to a deliberate planning and development strategy with real implications for zoning, financing, investment returns, and how people actually experience urban life. Understanding what it means in Austin's specific context is increasingly important, whether you are buying a condo, evaluating an investment, or simply trying to make sense of what is being built in your neighborhood.
 
-This article breaks down what mixed-use development actually means, how Austin's regulatory environment shapes it, where it is most active, what it means for investors and residents, and what to watch over the next several years as Project Connect and broader land use reforms continue to drive change across the metro.
+This article breaks down what mixed-use development actually means, how Austin's regulatory environment shapes it, where it is most active, what it means for investors and residents, and what to watch over the next several years as Project Connect and broader land use reforms continue to drive change across the metro. For the residential counterpart to this corridor story, our overview of [Austin infill development](/blog/austin-infill-development-guide) explains why the same forces are reshaping single-family blocks a few streets away.
 
 ## Defining the Model: Vertical, Horizontal, and Everything in Between
 

@@ -534,9 +534,8 @@ const TaylorSherwood = () => {
             </p>
             <div className="flex flex-col items-center justify-center gap-y-4 mb-10">
               <a href="tel:+15126613843" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
-                512-661-3843
+                512-661-3843&nbsp;
               </a>
-              <span className="text-border">·</span>
               <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
                 taylor@echelonpropertygroup.com
               </a>

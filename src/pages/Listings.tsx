@@ -54,7 +54,7 @@ const commercialListings = [
     badge: "MULTIFAMILY",
     name: "4314 Gillis Street",
     location: "Austin, TX 78745",
-    price: "$2,500,000",
+    price: "$2,375,000",
     assetType: "Value-Add Multifamily",
     units: "24",
     description: "24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.",

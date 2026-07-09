@@ -17,7 +17,7 @@ const properties = [
     image: gillisStreet,
     address: "4314 Gillis Street",
     location: "Austin, TX 78745",
-    price: "$2,495,000",
+    price: "$2,375,000",
     beds: 24, baths: 0, sqft: "24-unit",
     link: "https://www.4314gillis.com",
     badge: "COMMERCIAL LISTING",

@@ -786,7 +786,7 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="max-w-[800px] mx-auto text-center relative">
-            <div style={{ minHeight: "clamp(280px, 42vw, 340px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ minHeight: "clamp(220px, 34vw, 300px)", display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
               <p key={active} className="mb-6" style={{
                 fontFamily: '"Jost", sans-serif', fontWeight: 300,
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",

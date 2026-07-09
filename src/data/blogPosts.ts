@@ -50,6 +50,7 @@ import blogBestAustinSuburbs2026 from "@/assets/blog/best-austin-suburbs-2026.jp
 import blogHNWBuyingTips from "@/assets/blog/high-net-worth-home-buying-tips-austin.png.asset.json";
 import blogAustinZoningChanges from "@/assets/blog/austin-zoning-changes.png.asset.json";
 import blogAustinIsdVsEanesIsd from "@/assets/blog/austin-isd-vs-eanes-isd.png.asset.json";
+import blogAustinInfillModernFraming from "@/assets/blog/austin-infill-development-modern-framing.png.asset.json";
 
 
 

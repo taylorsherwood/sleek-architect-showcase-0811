@@ -538,7 +538,7 @@ const TaylorSherwood = () => {
               </a>
               <span className="hidden sm:inline text-border">·</span>
               <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
-                taylor@echelonpropertygroup.com
+                taylor@echelonpropertygroup.com&nbsp; &nbsp; @TheInvestorbroker
               </a>
               <span className="hidden sm:inline text-border">·</span>
               <a 

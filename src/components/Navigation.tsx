@@ -462,19 +462,22 @@ const DesktopDropdown = ({
     const el = ref.current;
     if (!el) return;
     const adjust = () => {
-      el.style.transform = "translateX(0)";
       const rect = el.getBoundingClientRect();
       const vw = window.innerWidth;
       const margin = 16;
-      let delta = 0;
-      if (rect.right > vw - margin) delta = vw - margin - rect.right;
-      else if (rect.left < margin) delta = margin - rect.left;
-      setShift(delta);
+      // rect already includes current shift; compute correction relative to it.
+      setShift((prev) => {
+        let delta = 0;
+        if (rect.right > vw - margin) delta = vw - margin - rect.right;
+        else if (rect.left < margin) delta = margin - rect.left;
+        return prev + delta;
+      });
     };
     adjust();
     window.addEventListener("resize", adjust);
     return () => window.removeEventListener("resize", adjust);
   }, []);
+
 
   return (
     <div

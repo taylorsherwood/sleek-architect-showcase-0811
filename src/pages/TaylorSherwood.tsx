@@ -344,6 +344,25 @@ const TaylorSherwood = () => {
         </section>
       )}
 
+      {/* Professional Affiliations */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
+            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
+              Professional Affiliations
+            </h2>
+            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
+              {affiliations.map((a) => (
+                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
+                  {a}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Media */}
       {taylorFeaturedMedia.length > 0 && (
         <section className="py-20 md:py-28 bg-background">
@@ -392,24 +411,6 @@ const TaylorSherwood = () => {
 
 
 
-      {/* Professional Affiliations */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
-            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
-              Professional Affiliations
-            </h2>
-            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
-              {affiliations.map((a) => (
-                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
-                  {a}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Latest Market Intelligence */}
       <section className="py-20 md:py-28 bg-secondary">

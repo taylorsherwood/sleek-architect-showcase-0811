@@ -237,18 +237,19 @@ const TaylorSherwood = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
                 Founder of Echelon Property Group, specializing in Austin luxury homes, commercial real estate, land and ranch properties, development opportunities, and private off market representation.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-5 bg-foreground text-background text-[0.7rem] tracking-[0.2em] uppercase font-medium hover:bg-gold transition-colors duration-300"
+                  className="group inline-flex items-center justify-center px-7 py-3 bg-foreground text-background text-[0.65rem] tracking-[0.25em] uppercase font-medium hover:bg-gold transition-colors duration-300"
                 >
                   Schedule a Consultation
                 </Link>
                 <Link
                   to="/communities"
-                  className="inline-flex items-center justify-center px-8 py-5 bg-background border border-foreground/20 text-foreground text-[0.7rem] tracking-[0.2em] uppercase font-medium hover:border-gold hover:text-gold transition-colors duration-300"
+                  className="group inline-flex items-center gap-2 text-[0.65rem] tracking-[0.25em] uppercase font-medium text-foreground hover:text-gold transition-colors duration-300"
                 >
                   Explore Austin Communities
+                  <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
               </div>
             </div>

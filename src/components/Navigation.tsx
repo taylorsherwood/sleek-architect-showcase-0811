@@ -409,30 +409,35 @@ const DropdownItem = ({
 }) => (
   <Link
     to={href}
-    className="block transition-colors"
+    className="block relative echelon-dropdown-item"
     style={{
       fontFamily: '"Jost", sans-serif',
-      fontSize: "15px",
+      fontSize: "13.5px",
       fontWeight: 500,
-      letterSpacing: "0.04em",
-      lineHeight: 1.7,
+      letterSpacing: "0.015em",
+      lineHeight: 1.35,
       color: active ? BRONZE : CHARCOAL,
-      padding: "6px 12px",
-      borderRadius: "8px",
-      marginBottom: "2px",
+      padding: "8px 22px",
+      borderRadius: 0,
       whiteSpace: "nowrap",
       textTransform: "none",
-      transitionDuration: "180ms",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.background = IVORY;
-      e.currentTarget.style.color = BRONZE;
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.background = "transparent";
-      e.currentTarget.style.color = active ? BRONZE : CHARCOAL;
+      transition: "background-color 180ms ease, color 180ms ease",
     }}
   >
+    <span
+      aria-hidden
+      className="echelon-dropdown-bar"
+      style={{
+        position: "absolute",
+        left: 0,
+        top: 0,
+        bottom: 0,
+        width: "2px",
+        background: BRONZE,
+        opacity: active ? 1 : 0,
+        transition: "opacity 180ms ease",
+      }}
+    />
     {label}
   </Link>
 );
@@ -457,7 +462,7 @@ const DesktopDropdown = ({
     const el = ref.current;
     if (!el) return;
     const adjust = () => {
-      el.style.transform = "translateX(0)";
+      el.style.transform = "translateX(-50%)";
       const rect = el.getBoundingClientRect();
       const vw = window.innerWidth;
       const margin = 16;
@@ -476,9 +481,14 @@ const DesktopDropdown = ({
       className="absolute"
       style={{
         top: "100%",
-        left: 0,
-        paddingTop: "14px",
-        transform: `translateX(${shift}px)`,
+        left: "50%",
+        paddingTop: "6px",
+        // Invisible hover bridge on the sides so diagonal cursor moves keep the menu open.
+        paddingLeft: "24px",
+        paddingRight: "24px",
+        marginLeft: "-24px",
+        marginRight: "-24px",
+        transform: `translateX(calc(-50% + ${shift}px))`,
         zIndex: 100,
       }}
       onMouseEnter={onMouseEnter}
@@ -487,17 +497,18 @@ const DesktopDropdown = ({
       <div
         ref={ref}
         style={{
-          background: "#ffffff",
-          borderRadius: "12px",
-          padding: "18px 22px",
-          boxShadow:
-            "0 1px 2px rgba(12,15,36,0.04), 0 12px 40px -8px rgba(12,15,36,0.18), 0 2px 8px rgba(12,15,36,0.06)",
-          border: "1px solid rgba(12,15,36,0.04)",
-          minWidth: "260px",
+          background: "#FAFAF8",
+          borderRadius: "10px",
+          padding: "8px 0",
+          boxShadow: "0 1px 2px rgba(12,15,36,0.03), 0 4px 14px -6px rgba(12,15,36,0.06)",
+          border: "1px solid #E8E4DB",
+          minWidth: "220px",
+          animation: "echelon-dropdown-card-in 200ms ease-out both",
         }}
       >
         {children}
       </div>
+
     </div>
   );
 };

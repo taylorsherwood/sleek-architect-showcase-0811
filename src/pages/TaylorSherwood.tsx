@@ -31,10 +31,10 @@ const meetTaylor = [
 
 const expertise: Array<{ title: string; body: string; to: string }> = [
   { title: "Luxury Homes", body: "Strategic pricing, positioning, and discreet marketing for Austin's finest residences.", to: "/austin-luxury-homes-for-sale" },
-  { title: "Commercial Real Estate", body: "Multifamily, retail, and owner user assets, underwritten like an investor because your broker is one.", to: "/austin-commercial-real-estate" },
+  { title: "Commercial Real Estate", body: "Multifamily, retail, and owner user assets, underwritten like an investor because your broker is one.", to: "/listings/commercial-investment-austin" },
   { title: "Land & Ranch", body: "Acreage, ranches, and rural holdings across Central Texas, from feasibility to closing.", to: "/land-ranch" },
   { title: "Development", body: "Site selection, entitlement strategy, and disposition for builders and developers.", to: "/austin-land-development-opportunities" },
-  { title: "Investment Properties", body: "Acquisitions and dispositions built on real underwriting, not listing photos.", to: "/austin-real-estate-investment" },
+  { title: "Investment Properties", body: "Acquisitions and dispositions built on real underwriting, not listing photos.", to: "/invest" },
   { title: "Off Market Representation", body: "Private sales and quiet acquisitions for clients who value discretion.", to: "/off-market-real-estate-austin" },
 ];
 
@@ -237,18 +237,18 @@ const TaylorSherwood = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
                 Founder of Echelon Property Group, specializing in Austin luxury homes, commercial real estate, land and ranch properties, development opportunities, and private off market representation.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-foreground text-background text-minimal tracking-[0.2em] hover:bg-gold transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-7 py-3 bg-foreground text-background text-[0.65rem] tracking-[0.25em] uppercase font-medium hover:bg-gold transition-colors duration-300"
                 >
-                  SCHEDULE A CONSULTATION
+                  Schedule a Consultation
                 </Link>
                 <Link
                   to="/communities"
-                  className="inline-flex items-center justify-center px-8 py-4 border border-foreground/30 text-foreground text-minimal tracking-[0.2em] hover:border-gold hover:text-gold transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-7 py-3 border border-foreground/25 text-foreground text-[0.65rem] tracking-[0.25em] uppercase font-medium hover:border-gold hover:text-gold transition-colors duration-300"
                 >
-                  EXPLORE AUSTIN COMMUNITIES
+                  Explore Austin Communities
                 </Link>
               </div>
             </div>

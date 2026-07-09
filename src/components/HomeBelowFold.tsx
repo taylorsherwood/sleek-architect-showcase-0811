@@ -594,9 +594,9 @@ const TestimonialsSection = () => {
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
                   whiteSpace: "pre-wrap",
-                  minHeight: "clamp(280px, 32vh, 360px)",
+                  minHeight: "clamp(220px, 26vh, 300px)",
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "flex-start",
                 }}
               >
                 <span

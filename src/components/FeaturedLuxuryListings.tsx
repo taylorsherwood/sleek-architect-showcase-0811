@@ -175,7 +175,7 @@ const FeaturedLuxuryListings = () => {
               fontFamily: '"Jost", sans-serif',
             }}
           >
-            LAST UPDATED: MAY 2026{"\n\n\n\n"}
+            LAST UPDATED: JULY 2026{"\n\n\n\n"}
           </p>
 
           {/* PRIMARY ROW: Hero (70%) + 2 stacked (30%) */}

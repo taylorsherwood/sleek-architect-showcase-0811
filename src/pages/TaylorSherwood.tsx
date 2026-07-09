@@ -532,13 +532,22 @@ const TaylorSherwood = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
               Whether you are selling a luxury home, sourcing an investment, or exploring an off market opportunity, the first conversation is simple and confidential.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4 mb-10 flex-wrap">
               <a href="tel:+15126613843" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
                 512-661-3843
               </a>
               <span className="hidden sm:inline text-border">·</span>
               <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
                 taylor@echelonpropertygroup.com
+              </a>
+              <span className="hidden sm:inline text-border">·</span>
+              <a 
+                href="https://www.instagram.com/theinvestorbroker/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg"
+              >
+                @TheInvestorbroker
               </a>
             </div>
             <Link

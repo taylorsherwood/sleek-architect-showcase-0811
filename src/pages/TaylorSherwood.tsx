@@ -44,7 +44,7 @@ const philosophy = [
   "The relationships run on a long horizon. Taylor's clients work with him across market cycles, asset classes, and stages of life, from a first home to a portfolio. They get discretion when it matters, straight answers when it counts, and direct access to Taylor rather than a hand off to a team member they have never met.",
 ];
 
-const affiliations = ["eXp Realty", "eXp Luxury", "CLHMS", "ALN", "TAN", "Commission Clubhouse"];
+const affiliations = ["EXP COMMERCIAL", "eXp Luxury", "CLHMS", "ALN", "TAN", "Commission Clubhouse"];
 
 const faqs = [
   { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is an Austin, Texas REALTOR and the founder of Echelon Property Group, a luxury and investment real estate practice brokered by eXp Realty. He has more than a decade of experience and over $125 million in career sales across luxury residential, commercial, land, and investment transactions." },

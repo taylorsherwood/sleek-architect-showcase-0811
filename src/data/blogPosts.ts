@@ -9915,7 +9915,7 @@ Drive down South Congress today and it looks nothing like it did ten years ago. 
 
 The term "mixed-use development" gets used loosely, sometimes to describe any building with a coffee shop on the ground floor. But in practice, it refers to a deliberate planning and development strategy with real implications for zoning, financing, investment returns, and how people actually experience urban life. Understanding what it means in Austin's specific context is increasingly important, whether you are buying a condo, evaluating an investment, or simply trying to make sense of what is being built in your neighborhood.
 
-This article breaks down what mixed-use development actually means, how Austin's regulatory environment shapes it, where it is most active, what it means for investors and residents, and what to watch over the next several years as Project Connect and broader land use reforms continue to drive change across the metro.
+This article breaks down what mixed-use development actually means, how Austin's regulatory environment shapes it, where it is most active, what it means for investors and residents, and what to watch over the next several years as Project Connect and broader land use reforms continue to drive change across the metro. For the residential counterpart to this corridor story, our overview of [Austin infill development](/blog/austin-infill-development-guide) explains why the same forces are reshaping single-family blocks a few streets away.
 
 ## Defining the Model: Vertical, Horizontal, and Everything in Between
 

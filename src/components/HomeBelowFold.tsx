@@ -534,8 +534,8 @@ const TestimonialsSection = () => {
           className="tsplit-section relative w-full h-screen bg-secondary overflow-hidden"
           aria-label="Client experiences"
         >
-        <div className="absolute inset-0 z-0 flex items-center justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
-          <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(240px, 34vh, 380px)" }}>
+        <div className="absolute inset-0 z-0 flex items-start justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
+          <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(140px, 22vh, 260px)" }}>
             {/* Eyebrow with gold hairline rule, magazine masthead treatment */}
             <div
               className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"
@@ -594,9 +594,9 @@ const TestimonialsSection = () => {
                   color: "hsl(var(--foreground) / 0.92)",
                   zIndex: 1,
                   whiteSpace: "pre-wrap",
-                  minHeight: "clamp(280px, 32vh, 360px)",
+                  minHeight: "clamp(220px, 26vh, 300px)",
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "flex-start",
                 }}
               >
                 <span
@@ -786,7 +786,7 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="max-w-[800px] mx-auto text-center relative">
-            <div style={{ minHeight: "clamp(280px, 42vw, 340px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ minHeight: "clamp(220px, 34vw, 300px)", display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
               <p key={active} className="mb-6" style={{
                 fontFamily: '"Jost", sans-serif', fontWeight: 300,
                 fontSize: "clamp(15px, 1.8vw, 20px)", lineHeight: 1.85, letterSpacing: "0.01em",

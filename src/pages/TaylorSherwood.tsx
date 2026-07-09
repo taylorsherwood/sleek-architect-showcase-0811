@@ -26,7 +26,7 @@ const meetTaylor = [
   "For more than a decade, Taylor has worked the Austin market from every side of the table: luxury residences in Barton Creek and Westlake, multifamily and commercial assets, raw land and ranch acreage, and development deals most residential agents would not know how to underwrite. That range is not a marketing claim. It is the product of more than eleven years and over $125 million in closed transactions across nearly every property type Central Texas offers.",
   "The through line is an investor's discipline. Taylor built his reputation, and the Investor Broker identity that follows him across platforms, on the idea that every property is an asset first. A homestead in Tarrytown and a forty unit multifamily deal deserve the same rigor: real comparables, honest underwriting, and a clear-eyed read on where the market is going rather than where it has been. Clients hire him for advice that survives contact with a spreadsheet.",
   "That discipline shows up most in the work fewest people see. A meaningful share of Taylor's business happens off market: private sales for owners who value discretion, quiet acquisitions for buyers who cannot find what they want on the MLS, and land assemblages that only come together through relationships. Austin's most interesting real estate rarely gets a yard sign.",
-  "Echelon Property Group grew out of that practice. Founded by Taylor Sherwood and brokered by eXp Realty, the team was built to deliver institutional grade analysis with boutique level attention, whether the assignment is positioning a three million dollar residence, marketing a development tract, or advising an investor on a first acquisition. The philosophy is simple and unfashionable: tell clients the truth, put the numbers on the table, and protect their position like it is his own.",
+  "Echelon Property Group grew out of that practice. Founded by Taylor Sherwood and brokered by EXP COMMERCIAL, the team was built to deliver institutional grade analysis with boutique level attention, whether the assignment is positioning a three million dollar residence, marketing a development tract, or advising an investor on a first acquisition. The philosophy is simple and unfashionable: tell clients the truth, put the numbers on the table, and protect their position like it is his own.",
 ];
 
 const expertise: Array<{ title: string; body: string; to: string }> = [
@@ -44,13 +44,13 @@ const philosophy = [
   "The relationships run on a long horizon. Taylor's clients work with him across market cycles, asset classes, and stages of life, from a first home to a portfolio. They get discretion when it matters, straight answers when it counts, and direct access to Taylor rather than a hand off to a team member they have never met.",
 ];
 
-const affiliations = ["eXp Realty", "eXp Luxury", "CLHMS", "ALN", "TAN", "Commission Clubhouse"];
+const affiliations = ["EXP COMMERCIAL", "eXp Luxury", "CLHMS", "ALN", "TAN", "Commission Clubhouse"];
 
 const faqs = [
-  { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is an Austin, Texas REALTOR and the founder of Echelon Property Group, a luxury and investment real estate practice brokered by eXp Realty. He has more than a decade of experience and over $125 million in career sales across luxury residential, commercial, land, and investment transactions." },
+  { question: "Who is Taylor Sherwood?", answer: "Taylor Sherwood is an Austin, Texas REALTOR and the founder of Echelon Property Group, a luxury and investment real estate practice brokered by EXP COMMERCIAL. He has more than a decade of experience and over $125 million in career sales across luxury residential, commercial, land, and investment transactions." },
   { question: "What areas does Taylor Sherwood serve?", answer: "Taylor serves the greater Austin area with a primary focus on Travis County, including Barton Creek, Westlake, Tarrytown, and central Austin, along with Williamson and Hays Counties, the Lake Travis corridor, Bee Cave, Lakeway, Dripping Springs, and Horseshoe Bay." },
   { question: "What types of real estate does Taylor Sherwood specialize in?", answer: "Taylor works across luxury homes, commercial real estate, land and ranch properties, development opportunities, and investment properties, along with private off market representation for both buyers and sellers." },
-  { question: "Is Taylor Sherwood a licensed REALTOR in Texas?", answer: "Yes. Taylor holds an active Texas real estate license, TREC #734520, and practices under the eXp Realty brokerage as founder of Echelon Property Group." },
+  { question: "Is Taylor Sherwood a licensed REALTOR in Texas?", answer: "Yes. Taylor holds an active Texas real estate license, TREC #734520, and practices under the EXP COMMERCIAL brokerage as founder of Echelon Property Group." },
   { question: "What is Echelon Property Group?", answer: "Echelon Property Group is an Austin based luxury and investment real estate practice founded by Taylor Sherwood. The firm represents buyers, sellers, investors, and developers across residential, commercial, and land transactions in Central Texas." },
   { question: "How does Taylor Sherwood price a luxury home in Austin?", answer: "Pricing starts with data: closed and competing comparables, absorption in the specific submarket, and a net proceeds analysis so sellers see the actual outcome of each pricing scenario. Positioning and preparation are set before the property ever reaches the market." },
   { question: "Does Taylor Sherwood handle commercial real estate?", answer: "Yes. Taylor represents buyers and sellers of multifamily, retail, flex, and owner user commercial assets, with full underwriting including rent rolls, operating statements, and stabilized return analysis." },
@@ -94,7 +94,7 @@ const personSchema = {
     recognizedBy: { "@type": "Organization", name: "Texas Real Estate Commission" },
   },
   memberOf: [
-    { "@type": "Organization", name: "eXp Realty" },
+    { "@type": "Organization", name: "EXP COMMERCIAL" },
     { "@type": "Organization", name: "eXp Luxury" },
     { "@type": "Organization", name: "Institute for Luxury Home Marketing, CLHMS" },
     { "@type": "Organization", name: "ALN" },

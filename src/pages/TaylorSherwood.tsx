@@ -334,9 +334,7 @@ const TaylorSherwood = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
                 {visibleStats.map((s) => (
                   <div key={s.label} className="text-center border-t border-border/40 pt-6">
-                    <div className="text-4xl md:text-5xl font-display font-normal text-architectural mb-2">
-                      {formatStat(s)}
-                    </div>
+                    <CountUpStat stat={s} />
                     <p className="text-minimal text-muted-foreground tracking-[0.2em]">{s.label}</p>
                   </div>
                 ))}

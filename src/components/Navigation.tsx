@@ -412,16 +412,16 @@ const DropdownItem = ({
     className="block relative echelon-dropdown-item"
     style={{
       fontFamily: '"Jost", sans-serif',
-      fontSize: "13.5px",
+      fontSize: "12.5px",
       fontWeight: 500,
-      letterSpacing: "0.015em",
-      lineHeight: 1.35,
+      letterSpacing: "0.01em",
+      lineHeight: 1.2,
       color: active ? BRONZE : CHARCOAL,
-      padding: "8px 22px",
+      padding: "11px 20px",
       borderRadius: 0,
       whiteSpace: "nowrap",
       textTransform: "none",
-      transition: "background-color 180ms ease, color 180ms ease",
+      transition: "background-color 160ms ease, color 160ms ease",
     }}
   >
     <span
@@ -435,7 +435,7 @@ const DropdownItem = ({
         width: "2px",
         background: BRONZE,
         opacity: active ? 1 : 0,
-        transition: "opacity 180ms ease",
+        transition: "opacity 160ms ease",
       }}
     />
     {label}
@@ -444,7 +444,7 @@ const DropdownItem = ({
 
 /* --------------------------------------------------------------------------
  * Shared desktop dropdown card
- * Centered under parent; shifts inward on viewport collision only.
+ * Left-aligned to parent nav item; shifts inward on viewport collision only.
  * ------------------------------------------------------------------------ */
 const DesktopDropdown = ({
   children,
@@ -462,33 +462,36 @@ const DesktopDropdown = ({
     const el = ref.current;
     if (!el) return;
     const adjust = () => {
-      el.style.transform = "translateX(-50%)";
       const rect = el.getBoundingClientRect();
       const vw = window.innerWidth;
       const margin = 16;
-      let delta = 0;
-      if (rect.right > vw - margin) delta = vw - margin - rect.right;
-      else if (rect.left < margin) delta = margin - rect.left;
-      setShift(delta);
+      // rect already includes current shift; compute correction relative to it.
+      setShift((prev) => {
+        let delta = 0;
+        if (rect.right > vw - margin) delta = vw - margin - rect.right;
+        else if (rect.left < margin) delta = margin - rect.left;
+        return prev + delta;
+      });
     };
     adjust();
     window.addEventListener("resize", adjust);
     return () => window.removeEventListener("resize", adjust);
   }, []);
 
+
   return (
     <div
       className="absolute"
       style={{
         top: "100%",
-        left: "50%",
-        paddingTop: "6px",
-        // Invisible hover bridge on the sides so diagonal cursor moves keep the menu open.
-        paddingLeft: "24px",
-        paddingRight: "24px",
-        marginLeft: "-24px",
-        marginRight: "-24px",
-        transform: `translateX(calc(-50% + ${shift}px))`,
+        left: 0,
+        paddingTop: "3px",
+        // Invisible hover bridge so diagonal cursor moves keep the menu open.
+        paddingLeft: "16px",
+        paddingRight: "16px",
+        marginLeft: "-16px",
+        marginRight: "-16px",
+        transform: `translateX(${shift}px)`,
         zIndex: 100,
       }}
       onMouseEnter={onMouseEnter}
@@ -498,12 +501,13 @@ const DesktopDropdown = ({
         ref={ref}
         style={{
           background: "#FAFAF8",
-          borderRadius: "10px",
-          padding: "8px 0",
-          boxShadow: "0 1px 2px rgba(12,15,36,0.03), 0 4px 14px -6px rgba(12,15,36,0.06)",
-          border: "1px solid #E8E4DB",
+          borderRadius: "8px",
+          padding: "6px 0",
+          boxShadow: "0 1px 2px rgba(12,15,36,0.02), 0 2px 8px -4px rgba(12,15,36,0.04)",
+          border: "1px solid #ECE8DF",
           minWidth: "220px",
-          animation: "echelon-dropdown-card-in 200ms ease-out both",
+          maxWidth: "300px",
+          animation: "echelon-dropdown-card-in 180ms ease-out both",
         }}
       >
         {children}
@@ -512,6 +516,7 @@ const DesktopDropdown = ({
     </div>
   );
 };
+
 
 
 /* --------------------------------------------------------------------------

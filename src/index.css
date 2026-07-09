@@ -1448,14 +1448,15 @@ body.hcs-immersive nav.fixed {
 
 /* -- Desktop navigation dropdown ---------------------------------------- */
 @keyframes echelon-dropdown-card-in {
-  0%   { opacity: 0; transform: translateY(-6px); }
+  0%   { opacity: 0; transform: translateY(-4px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 .echelon-dropdown-item:hover {
-  background-color: rgba(12, 15, 36, 0.035);
+  background-color: rgba(185, 160, 108, 0.06);
   color: #0C0F24 !important;
 }
 .echelon-dropdown-item:hover .echelon-dropdown-bar {
   opacity: 1 !important;
 }
+

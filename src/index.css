@@ -1447,9 +1447,9 @@ body.hcs-immersive nav.fixed {
 }
 
 /* -- Desktop navigation dropdown ---------------------------------------- */
-@keyframes echelon-dropdown-in {
-  0%   { opacity: 0; transform: translateX(calc(-50% + var(--dd-shift, 0px))) translateY(-6px); }
-  100% { opacity: 1; transform: translateX(calc(-50% + var(--dd-shift, 0px))) translateY(0); }
+@keyframes echelon-dropdown-card-in {
+  0%   { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .echelon-dropdown-item:hover {

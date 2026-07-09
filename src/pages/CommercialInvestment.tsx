@@ -257,7 +257,7 @@ const CommercialInvestment = () => {
                 alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily"
                 title="4314 Gillis Street, 24-unit multifamily investment, Austin TX"
                 badge="MULTIFAMILY"
-                price="$2,495,000"
+                price="$2,375,000"
                 name="4314 Gillis Street"
                 location="Austin, TX 78745"
                 meta={[

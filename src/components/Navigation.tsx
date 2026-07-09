@@ -490,7 +490,6 @@ const DesktopDropdown = ({
         marginRight: "-24px",
         transform: `translateX(calc(-50% + ${shift}px))`,
         zIndex: 100,
-        animation: "echelon-dropdown-in 200ms ease-out both",
       }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -504,6 +503,7 @@ const DesktopDropdown = ({
           boxShadow: "0 1px 2px rgba(12,15,36,0.03), 0 4px 14px -6px rgba(12,15,36,0.06)",
           border: "1px solid #E8E4DB",
           minWidth: "220px",
+          animation: "echelon-dropdown-card-in 200ms ease-out both",
         }}
       >
         {children}

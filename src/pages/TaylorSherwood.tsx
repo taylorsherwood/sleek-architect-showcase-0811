@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -148,6 +148,56 @@ const orgWithFounder = {
 const formatStat = (s: (typeof taylorStats)[number]) =>
   `${s.prefix ?? ""}${s.value}${s.suffix ?? ""}`;
 
+const CountUpStat = ({ stat }: { stat: (typeof taylorStats)[number] }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [display, setDisplay] = useState<number>(1);
+  const rafRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const target = stat.value;
+    const duration = 1600;
+
+    const animate = () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      const start = performance.now();
+      const from = 1;
+      const step = (now: number) => {
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const value = Math.round(from + (target - from) * eased);
+        setDisplay(value);
+        if (t < 1) rafRef.current = requestAnimationFrame(step);
+      };
+      rafRef.current = requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setDisplay(1);
+            animate();
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [stat.value]);
+
+  return (
+    <div ref={ref} className="text-4xl md:text-5xl font-display font-normal text-architectural mb-2">
+      {stat.prefix ?? ""}{display}{stat.suffix ?? ""}
+    </div>
+  );
+};
+
 const latestPosts = [...blogPosts]
   .filter((p) => p.date)
   .sort((a, b) => (b.date > a.date ? 1 : -1))
@@ -284,9 +334,7 @@ const TaylorSherwood = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
                 {visibleStats.map((s) => (
                   <div key={s.label} className="text-center border-t border-border/40 pt-6">
-                    <div className="text-4xl md:text-5xl font-display font-normal text-architectural mb-2">
-                      {formatStat(s)}
-                    </div>
+                    <CountUpStat stat={s} />
                     <p className="text-minimal text-muted-foreground tracking-[0.2em]">{s.label}</p>
                   </div>
                 ))}
@@ -295,6 +343,25 @@ const TaylorSherwood = () => {
           </div>
         </section>
       )}
+
+      {/* Professional Affiliations */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
+            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
+              Professional Affiliations
+            </h2>
+            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
+              {affiliations.map((a) => (
+                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
+                  {a}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Media */}
       {taylorFeaturedMedia.length > 0 && (
@@ -344,24 +411,6 @@ const TaylorSherwood = () => {
 
 
 
-      {/* Professional Affiliations */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
-            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
-              Professional Affiliations
-            </h2>
-            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
-              {affiliations.map((a) => (
-                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
-                  {a}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Latest Market Intelligence */}
       <section className="py-20 md:py-28 bg-secondary">

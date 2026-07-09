@@ -94,7 +94,7 @@ const personSchema = {
     recognizedBy: { "@type": "Organization", name: "Texas Real Estate Commission" },
   },
   memberOf: [
-    { "@type": "Organization", name: "eXp Realty" },
+    { "@type": "Organization", name: "EXP COMMERCIAL" },
     { "@type": "Organization", name: "eXp Luxury" },
     { "@type": "Organization", name: "Institute for Luxury Home Marketing, CLHMS" },
     { "@type": "Organization", name: "ALN" },

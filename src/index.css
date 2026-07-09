@@ -1445,3 +1445,17 @@ body.hcs-immersive nav.fixed {
 .commercial-theme .cm-hero-glow {
   text-shadow: 0 1px 20px rgba(27,30,36,0.55), 0 1px 3px rgba(27,30,36,0.35);
 }
+
+/* -- Desktop navigation dropdown ---------------------------------------- */
+@keyframes echelon-dropdown-in {
+  0%   { opacity: 0; transform: translateX(calc(-50% + var(--dd-shift, 0px))) translateY(-6px); }
+  100% { opacity: 1; transform: translateX(calc(-50% + var(--dd-shift, 0px))) translateY(0); }
+}
+
+.echelon-dropdown-item:hover {
+  background-color: rgba(12, 15, 36, 0.035);
+  color: #0C0F24 !important;
+}
+.echelon-dropdown-item:hover .echelon-dropdown-bar {
+  opacity: 1 !important;
+}

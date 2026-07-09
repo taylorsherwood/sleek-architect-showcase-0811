@@ -319,6 +319,50 @@ const TaylorSherwood = () => {
         </section>
       )}
 
+      {/* Client Philosophy */}
+      <section className="py-20 md:py-28 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <ScrollReveal>
+              <p className="text-minimal text-gold mb-4 tracking-[0.25em]">APPROACH</p>
+              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural leading-[1.1] mb-10">
+                Client Philosophy
+              </h2>
+            </ScrollReveal>
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              {philosophy.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Suspense fallback={null}>
+        <Testimonials />
+      </Suspense>
+
+
+
+      {/* Professional Affiliations */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
+            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
+              Professional Affiliations
+            </h2>
+            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
+              {affiliations.map((a) => (
+                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
+                  {a}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Market Intelligence */}
       <section className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-6">
@@ -397,49 +441,7 @@ const TaylorSherwood = () => {
         </div>
       </section>
 
-      {/* Client Philosophy */}
-      <section className="py-20 md:py-28 bg-secondary">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <ScrollReveal>
-              <p className="text-minimal text-gold mb-4 tracking-[0.25em]">APPROACH</p>
-              <h2 className="text-3xl md:text-5xl font-display font-normal text-architectural leading-[1.1] mb-10">
-                Client Philosophy
-              </h2>
-            </ScrollReveal>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              {philosophy.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <Suspense fallback={null}>
-        <Testimonials />
-      </Suspense>
-
-
-
-      {/* Professional Affiliations */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <p className="text-minimal text-gold mb-4 tracking-[0.25em]">AFFILIATIONS</p>
-            <h2 className="text-2xl md:text-3xl font-display font-normal text-architectural mb-10">
-              Professional Affiliations
-            </h2>
-            <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
-              {affiliations.map((a) => (
-                <span key={a} className="text-minimal text-foreground/70 tracking-[0.2em]">
-                  {a}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="py-20 md:py-28 bg-secondary">

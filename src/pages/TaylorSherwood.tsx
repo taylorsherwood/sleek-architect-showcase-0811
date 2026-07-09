@@ -539,14 +539,13 @@ const TaylorSherwood = () => {
               <a href="mailto:taylor@echelonpropertygroup.com" className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg">
                 taylor@echelonpropertygroup.com
               </a>
-              <span className="text-border">·</span>
               <a 
                 href="https://www.instagram.com/theinvestorbroker/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-foreground hover:text-gold transition-colors duration-300 font-display text-lg"
               >
-                @TheInvestorbroker
+                ·@TheInvestorbroker
               </a>
             </div>
             <Link

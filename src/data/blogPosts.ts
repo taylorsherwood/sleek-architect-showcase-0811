@@ -5123,7 +5123,7 @@ Austin redevelopment opportunities are reshaping how landowners, investors, and 
 
 This guide is written for landowners, investors, and developers who want to understand how redevelopment opportunities are identified, evaluated, and executed in Austin's current market. Whether you own an aging home on a large lot in <a href="/communities/barton-hills" class="${LINK}">Barton Hills</a>, a commercial strip on South Lamar, or a single-family property in East Austin that feels out of place with its surroundings, this guide will help you think through the analysis the way an experienced <a href="/about-austin-real-estate-advisory" class="${LINK}">Austin real estate advisor</a> would.
 
-We cover highest and best use analysis, zoning and entitlement considerations, how investors evaluate sites, common mistakes property owners make, and how to determine whether to hold, sell, or develop. Austin-specific neighborhood context is woven throughout.
+We cover highest and best use analysis, zoning and entitlement considerations, how investors evaluate sites, common mistakes property owners make, and how to determine whether to hold, sell, or develop. Austin-specific neighborhood context is woven throughout. For the broader market context on why infill has become the dominant reshaping force in central Austin, our companion overview of <a href="/blog/austin-infill-development-guide" class="${LINK}">what Austin infill development is and why it's accelerating</a> is the natural starting point.
 
 The goal is not to push you toward any particular outcome. It is to give you the analytical framework to make a well-informed decision about one of your most significant assets.
 

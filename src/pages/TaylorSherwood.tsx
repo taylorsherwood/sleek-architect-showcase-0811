@@ -31,10 +31,10 @@ const meetTaylor = [
 
 const expertise: Array<{ title: string; body: string; to: string }> = [
   { title: "Luxury Homes", body: "Strategic pricing, positioning, and discreet marketing for Austin's finest residences.", to: "/austin-luxury-homes-for-sale" },
-  { title: "Commercial Real Estate", body: "Multifamily, retail, and owner user assets, underwritten like an investor because your broker is one.", to: "/austin-commercial-real-estate" },
+  { title: "Commercial Real Estate", body: "Multifamily, retail, and owner user assets, underwritten like an investor because your broker is one.", to: "/listings/commercial-investment-austin" },
   { title: "Land & Ranch", body: "Acreage, ranches, and rural holdings across Central Texas, from feasibility to closing.", to: "/land-ranch" },
   { title: "Development", body: "Site selection, entitlement strategy, and disposition for builders and developers.", to: "/austin-land-development-opportunities" },
-  { title: "Investment Properties", body: "Acquisitions and dispositions built on real underwriting, not listing photos.", to: "/austin-real-estate-investment" },
+  { title: "Investment Properties", body: "Acquisitions and dispositions built on real underwriting, not listing photos.", to: "/invest" },
   { title: "Off Market Representation", body: "Private sales and quiet acquisitions for clients who value discretion.", to: "/off-market-real-estate-austin" },
 ];
 

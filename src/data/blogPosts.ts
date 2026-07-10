@@ -100,6 +100,9 @@ Executives relocating to Austin in 2026 are entering a luxury market that has ma
 
 This step-by-step guide walks through the decisions that matter: how to frame priorities before you tour, how to read Austin's luxury submarkets, how to secure representation that actually gives you full-market access, and how to close efficiently from out of state. It reflects how an experienced local advisor works with relocating tech executives, corporate leaders, and international buyers moving into the Austin metro today. For broader context on the trajectory of the segment, our [Austin luxury market trends](/blog/austin-luxury-market-trends-2026) and [Austin luxury market report](/austin-luxury-market-report) work is a useful companion.
 
+:::intel-gauge
+:::
+
 ## Step 1: Define Your Priorities Before You Look at a Single Property
 
 The most common mistake executives make on a relocation purchase is letting a short scouting trip drive a decision that should have been framed before they ever boarded the plane. Two days of showings can override a clear-headed analysis if you haven't done the thinking first.

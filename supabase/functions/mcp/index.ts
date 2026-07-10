@@ -247,6 +247,12 @@ import { z as z3 } from "npm:zod@^3.23.8";
 // src/lib/mcp/data/blog-posts.json
 var blog_posts_default = [
   {
+    id: "austin-luxury-home-buying-guide-relocating-executives-2026",
+    title: "Austin Luxury Home Buying Guide for Relocating Executives (2026)",
+    date: "2026-07-10",
+    excerpt: "A 2026 step-by-step guide for executives buying luxury homes in Austin, submarkets, off-market access, due diligence, and closing strategy."
+  },
+  {
     id: "how-to-buy-home-austin-buyers-market-2026",
     title: "8 Strategies to Buy a Home in Austin's Buyer's Market (Mid-2026 Edition)",
     date: "2026-06-21",

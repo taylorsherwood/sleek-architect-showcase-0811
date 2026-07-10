@@ -250,7 +250,7 @@ var blog_posts_default = [
     id: "austin-luxury-home-buying-guide-relocating-executives-2026",
     title: "Austin Luxury Home Buying Guide for Relocating Executives (2026)",
     date: "2026-07-10",
-    excerpt: "A 2026 step-by-step guide for executives buying luxury homes in Austin, submarkets, off-market access, due diligence, and closing strategy."
+    excerpt: "A 2026 step-by-step guide for executives buying luxury homes in Austin, submarkets, off-market access, due diligence, and closing strategy.\xA0"
   },
   {
     id: "how-to-buy-home-austin-buyers-market-2026",

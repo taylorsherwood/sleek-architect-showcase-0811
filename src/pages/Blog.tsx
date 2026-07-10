@@ -367,37 +367,81 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* ── About Our Insights (SEO content preserved) ── */}
-      <section className="py-24 md:py-32 bg-secondary">
+      {/* ── About The Echelon Journal (full editorial content, magazine-style) ── */}
+      <section className="py-28 md:py-40 bg-secondary">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-5">
-              About Our Insights
-            </p>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-10 leading-[1.15]">
-              Austin Luxury Real Estate, Understood Deeply
+          <div className="max-w-[800px] mx-auto">
+            {/* Subtle divider */}
+            <div className="flex items-center gap-6 mb-16 md:mb-20">
+              <span className="h-px flex-1 bg-foreground/10" />
+              <p className="text-[10px] tracking-[0.35em] uppercase text-[#b9a06c]">
+                The Editorial
+              </p>
+              <span className="h-px flex-1 bg-foreground/10" />
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl md:text-[3rem] font-display font-normal text-architectural leading-[1.12] tracking-[-0.01em] mb-12 md:mb-16">
+              About The Echelon Journal
             </h2>
-            <div className="space-y-6 text-muted-foreground leading-[1.85] text-[15px] md:text-base">
+
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
               <p>
                 The Echelon Property Group journal is a trusted source for expert analysis of Austin's luxury real estate market. Whether you're a seasoned investor evaluating your next acquisition, a first-time luxury home buyer exploring Austin's premier neighborhoods, or a homeowner considering a strategic sale, our articles provide the data-driven insights and local expertise you need to make informed decisions.
               </p>
               <p>
-                Austin has emerged as one of the most dynamic luxury real estate markets in the United States. Fueled by a thriving technology economy anchored by Apple, Tesla, Google, Meta, and Oracle, the city attracts high-net-worth individuals and families from across the country. Texas's absence of state income tax amplifies purchasing power, and Austin's unique blend of natural beauty, cultural richness, and economic opportunity creates a market unlike any other.
+                Read alongside our ongoing <Link to="/austin-luxury-market-report" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin luxury market report</Link>, the Journal is designed to give buyers, sellers, and investors an honest picture of the market they are actually operating in.
               </p>
+            </div>
 
-              <h3 className="text-xl md:text-2xl font-display font-normal text-architectural pt-6">
-                What We Cover
-              </h3>
+            <h2 className="mt-20 md:mt-24 mb-10 md:mb-12 text-2xl sm:text-3xl md:text-[2rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em]">
+              What We Cover
+            </h2>
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
               <p>
-                Our editorial team publishes in-depth articles across topics relevant to Austin luxury real estate. Market reports analyze pricing trends, inventory levels, and demand drivers across neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Barton Creek</Link>, <Link to="/communities/lake-austin" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Tarrytown</Link>, and <Link to="/communities/rollingwood" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Rollingwood</Link>. Neighborhood guides explore the lifestyle, amenities, schools, and investment potential of Austin's most sought-after communities.
+                We organize coverage into a small set of durable categories so readers can navigate by intent, not by publish date. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Market Insights</a> tracks pricing, absorption, and inventory across Austin's luxury corridors. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Neighborhoods</a> and <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Luxury Living</a> go deep on individual communities, school districts, waterfront submarkets, and estate enclaves.
+              </p>
+              <p>
+                <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Buyer Strategy</a> and <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Seller Strategy</a> address the mechanics of high-end transactions, from representation agreements to negotiation posture and pre-market preparation. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Off-Market</a> covers the private inventory that shapes so much of the top end.
+              </p>
+              <p>
+                <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Investment</a> examines 1031 planning, commercial and multifamily positioning, and land banking. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Relocation</a> is written for buyers moving in from California, New York, and other high-tax states. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Land &amp; Ranch</a> extends the coverage into the Hill Country, waterfront acreage, and exotic wildlife properties beyond the city core.
+              </p>
+              <p>
+                Market reports analyze pricing trends, inventory levels, and demand drivers across neighborhoods like <Link to="/communities/westlake-hills" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Westlake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Barton Creek</Link>, <Link to="/communities/lake-austin" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Lake Austin</Link>, <Link to="/communities/tarrytown" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Tarrytown</Link>, and <Link to="/communities/rollingwood" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Rollingwood</Link>. Neighborhood guides explore the lifestyle, amenities, schools, and investment potential of Austin's most sought-after communities.
               </p>
               <p>
                 Investment-focused content examines <Link to="/invest" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">commercial real estate opportunities</Link>, land acquisition strategies, 1031 exchange considerations, and portfolio diversification through Austin property. Our <Link to="/blog/moving-to-austin-texas-from-california" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">relocation guides</Link> help out-of-state buyers navigate Austin's neighborhoods, school districts, and lifestyle offerings with confidence.
               </p>
+            </div>
 
-              <h3 className="text-xl md:text-2xl font-display font-normal text-architectural pt-6">
-                Why Trust Echelon Property Group
-              </h3>
+            <h2 className="mt-20 md:mt-24 mb-10 md:mb-12 text-2xl sm:text-3xl md:text-[2rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em]">
+              Why Austin Luxury Real Estate Requires Different Analysis
+            </h2>
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
+              <p>
+                Austin has emerged as one of the most dynamic luxury real estate markets in the United States. Fueled by a thriving technology economy anchored by Apple, Tesla, Google, Meta, and Oracle, the city attracts high-net-worth individuals and families from across the country. Texas's absence of state income tax amplifies purchasing power, and Austin's unique blend of natural beauty, cultural richness, and economic opportunity creates a market unlike any other.
+              </p>
+            </div>
+
+            <h2 className="mt-20 md:mt-24 mb-10 md:mb-12 text-2xl sm:text-3xl md:text-[2rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em]">
+              Recommended Reading
+            </h2>
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
+              <p>
+                If you are new here, a good starting point is our long-form view on <Link to="/blog/austin-luxury-real-estate-market-outlook" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">the Austin luxury real estate market outlook</Link>, our field guide to <Link to="/blog/off-market-luxury-homes-austin" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">off-market luxury homes in Austin</Link>, and our reference on <Link to="/blog/lake-austin-luxury-real-estate-2026" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Lake Austin luxury real estate</Link>.
+              </p>
+              <p>
+                For buyers weighing school districts before neighborhood, our comparison of <Link to="/blog/austin-isd-vs-eanes-isd" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin ISD and Eanes ISD</Link> is the most requested piece in that category, and our <Link to="/blog/moving-to-austin-texas-from-california" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">California to Austin relocation guide</Link> and <Link to="/blog/1031-exchange-texas-investors" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">1031 exchange primer for Texas investors</Link> cover the two most common cross-state situations we handle.
+              </p>
+            </div>
+
+            <h2 className="mt-20 md:mt-24 mb-10 md:mb-12 text-2xl sm:text-3xl md:text-[2rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em]">
+              Our Editorial Philosophy
+            </h2>
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
+              <p>
+                The Journal is deliberately not a feed. We publish when we have something substantive to say, and every piece is intended to hold up months and years after it goes live. If you would rather have that intelligence delivered directly, our newsletter, <Link to="/connect" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">The Echelon Insider</Link>, sends the same reporting to a private list. To speak with us about a specific property, submarket, or scenario, <Link to="/contact" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">reach the team here</Link>.
+              </p>
               <p>
                 Every article is written or reviewed by <Link to="/about" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Taylor Sherwood</Link>, a Certified Luxury Home Marketing Specialist and founder of Echelon Property Group. With deep experience across residential, commercial, land, and investment real estate in Austin, Taylor brings a practitioner's perspective that goes beyond surface-level commentary. Our insights are grounded in real transaction experience and hyperlocal market knowledge.
               </p>
@@ -405,6 +449,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
 
       {/* Newsletter is rendered globally in the Footer to avoid duplicate CTAs */}
 

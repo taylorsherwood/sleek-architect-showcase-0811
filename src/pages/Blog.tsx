@@ -166,36 +166,38 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* ── Editorial Introduction (unique on-page copy for indexation) ── */}
-      <section className="pt-20 md:pt-28 pb-4 md:pb-8">
+      {/* ── Editorial Introduction (abbreviated; full editorial section lives below the article grid) ── */}
+      <section className="pt-20 md:pt-28 pb-6 md:pb-10">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-5">
+          <div className="max-w-[780px] mx-auto">
+            <p className="text-[10px] tracking-[0.3em] uppercase text-[#b9a06c] mb-6">
               The Echelon Journal
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural leading-[1.2] mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-[2.5rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em] mb-10">
               Austin luxury real estate, reported from the inside
             </h2>
-            <div className="space-y-6 text-muted-foreground leading-[1.85] text-[15px] md:text-base">
+            <div className="space-y-8 text-muted-foreground leading-[1.75] text-[16px] md:text-[17px]">
               <p>
                 The Echelon Journal is our editorial record of Austin's high-end residential, land, and investment market. Every article is written by, or reviewed against, live transaction experience across <Link to="/communities/westlake-hills" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Westlake Hills</Link>, <Link to="/communities/tarrytown" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Tarrytown</Link>, <Link to="/communities/barton-creek" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Barton Creek</Link>, <Link to="/communities/rollingwood" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Rollingwood</Link>, <Link to="/communities/lake-austin" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Lake Austin</Link>, and the Hill Country. We publish what we would want to read if we were spending seven, eight, or nine figures in Central Texas, and nothing we would not.
               </p>
               <p>
-                Austin's luxury tier behaves differently than the broader MLS. Inventory in the top brackets is thinner than most national commentary suggests, pricing power is concentrated in a handful of submarkets, and a meaningful share of the strongest opportunities never touch a public portal. Our reporting focuses on where value is actually moving, block by block, rather than on citywide averages that mask what is happening inside <Link to="/communities" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin's most desirable communities</Link>. Read alongside our ongoing <Link to="/austin-luxury-market-report" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin luxury market report</Link>, the Journal is designed to give buyers, sellers, and investors an honest picture of the market they are actually operating in.
+                Austin's luxury tier behaves differently than the broader MLS. Inventory in the top brackets is thinner than most national commentary suggests, pricing power is concentrated in a handful of submarkets, and a meaningful share of the strongest opportunities never touch a public portal. Our reporting focuses on where value is actually moving, block by block, rather than on citywide averages that mask what is happening inside <Link to="/communities" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin's most desirable communities</Link>.
               </p>
-              <p>
-                We organize coverage into a small set of durable categories so readers can navigate by intent, not by publish date. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Market Insights</a> tracks pricing, absorption, and inventory across Austin's luxury corridors. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Neighborhoods</a> and <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Luxury Living</a> go deep on individual communities, school districts, waterfront submarkets, and estate enclaves. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Buyer Strategy</a> and <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Seller Strategy</a> address the mechanics of high-end transactions, from representation agreements to negotiation posture and pre-market preparation. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Off-Market</a> covers the private inventory that shapes so much of the top end. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Investment</a> examines 1031 planning, commercial and multifamily positioning, and land banking. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Relocation</a> is written for buyers moving in from California, New York, and other high-tax states. <a href="#articles" onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }} className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Land &amp; Ranch</a> extends the coverage into the Hill Country, waterfront acreage, and exotic wildlife properties beyond the city core.
-              </p>
-              <p>
-                If you are new here, a good starting point is our long-form view on <Link to="/blog/austin-luxury-real-estate-market-outlook" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">the Austin luxury real estate market outlook</Link>, our field guide to <Link to="/blog/off-market-luxury-homes-austin" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">off-market luxury homes in Austin</Link>, and our reference on <Link to="/blog/lake-austin-luxury-real-estate-2026" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Lake Austin luxury real estate</Link>. For buyers weighing school districts before neighborhood, our comparison of <Link to="/blog/austin-isd-vs-eanes-isd" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin ISD and Eanes ISD</Link> is the most requested piece in that category, and our <Link to="/blog/moving-to-austin-texas-from-california" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">California to Austin relocation guide</Link> and <Link to="/blog/1031-exchange-texas-investors" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">1031 exchange primer for Texas investors</Link> cover the two most common cross-state situations we handle.
-              </p>
-              <p>
-                The Journal is deliberately not a feed. We publish when we have something substantive to say, and every piece is intended to hold up months and years after it goes live. If you would rather have that intelligence delivered directly, our newsletter, <Link to="/connect" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">The Echelon Insider</Link>, sends the same reporting to a private list. To speak with us about a specific property, submarket, or scenario, <Link to="/contact" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">reach the team here</Link>.
-              </p>
+            </div>
+            <div className="mt-10">
+              <a
+                href="#articles"
+                onClick={(e) => { e.preventDefault(); smoothScrollTo("articles"); }}
+                className="inline-flex items-center text-[11px] tracking-[0.25em] uppercase text-foreground pb-1.5 border-b border-[#b9a06c] hover:text-[#b9a06c] transition-colors duration-500"
+              >
+                Browse the Journal
+                <span className="ml-3 transition-transform duration-500 group-hover:translate-x-1">↓</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* ── Featured Insight, placed below hero with breathing room ── */}
       {featured && (

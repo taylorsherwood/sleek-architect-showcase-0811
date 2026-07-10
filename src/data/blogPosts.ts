@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     id: "austin-luxury-home-buying-guide-relocating-executives-2026",
     title: "Austin Luxury Home Buying Guide for Relocating Executives (2026)",
     metaTitle: "Austin Luxury Home Buying Guide for Relocating Executives (2026) | Echelon Property Group",
-    excerpt: "A 2026 step-by-step guide for executives buying luxury homes in Austin, submarkets, off-market access, due diligence, and closing strategy.",
+    excerpt: "A 2026 step-by-step guide for executives buying luxury homes in Austin, submarkets, off-market access, due diligence, and closing strategy.\u00a0",
     author: "Taylor Sherwood",
     date: "2026-07-10",
     readTime: "16 MIN READ",

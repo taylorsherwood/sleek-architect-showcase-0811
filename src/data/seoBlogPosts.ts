@@ -143,7 +143,7 @@ Waterfront gated property carries its own underwriting layer. Water levels, dock
 
 West of the city off Hamilton Pool Road, **Belvedere** represents the gated Hill Country acreage category: larger lots, a 75-acre nature preserve, trails, and a community that feels more ranch than resort. It's the right fit for buyers who want gated security and land without committing to a full [ranch property](/blog/austin-ranch-land-for-sale). Nearby, gated communities continue to emerge along the Hamilton Pool and Fitzhugh corridors as the area matures, a dynamic we track in our [market intelligence](/market-intelligence) briefings.
 :::compare-table
- | Barton Creek enclaves | Spanish Oaks | Rob Roy | Costa Bella | The Hills of Lakeway | Belvedere
+ | BARTON CREEK | Spanish Oaks | Rob Roy | Costa Bella | THE HILLS  | Belvedere
 Gate Type | 24/7 patrol, gated sections | Two staffed gatehouses, 24/7 | Staffed gate (main section) | Electronic gate, lakefront | Staffed gate, golf | Electronic gate, acreage
 Typical Pricing | $2M to $6M+ | $2M to $7M+ | $2.5M to $6M+ | $2M to $8M+ | $700K to $2.5M | $1.5M to $4M
 Schools | Eanes ISD | Lake Travis ISD | Eanes ISD | Lake Travis ISD | Lake Travis ISD | Lake Travis ISD

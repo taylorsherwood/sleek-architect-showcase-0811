@@ -745,6 +745,14 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                 />
               </IntelInsert>
             );
+          case "intel-gauge-gated-austin":
+            return (
+              <IntelInsert key={idx} tight>
+                <Suspense fallback={null}>
+                  <GatedCommunityGauge />
+                </Suspense>
+              </IntelInsert>
+            );
           case "mortgage-calculator":
             return (
               <IntelInsert key={idx}>

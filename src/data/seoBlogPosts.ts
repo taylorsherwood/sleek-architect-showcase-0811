@@ -94,36 +94,42 @@ export const seoBlogPosts: BlogPost[] = [
     image: blogAccessExclusivePropertyNetworks,
     heroImage: blogAccessExclusivePropertyNetworks,
     imageAlt: "Elegant gated entrance to an Austin luxury private estate with stone pillars and wrought-iron gates",
-    imageCaption: "In Austin's upper tier, the gate is rarely the point — privacy, land, architecture, and how a property trades are.",
+    imageCaption: "In Austin's upper tier, the gate is rarely the point. Privacy, land, architecture, and how a property trades are.",
     content: `Ask ten Austin buyers what they mean by "gated community" and you'll get ten different answers. Some picture a staffed gatehouse with 24/7 security professionals checking every vehicle. Others mean a keypad gate at the end of a cul-de-sac. The distinction matters, because in Austin's upper tier, the gate is rarely the point. Privacy, land, architecture, and how a property trades are the point. The gate is simply the visible signal.
 
 This guide covers Austin's gated communities the way I walk clients through them: by security tier, lifestyle, and market behavior, not by marketing copy. For the broader landscape beyond gates, see our guide to the [best luxury neighborhoods in Austin](/blog/best-luxury-neighborhoods-austin-texas).
 
+:::intel-gauge-gated-austin
+:::
+
+A note on current conditions. As of mid-2026, Austin's gated submarkets are not moving in unison. Bee Cave and Spanish Oaks remain tight, with roughly two months of inventory keeping sellers in control. The Westlake and Rob Roy corridor is balanced, with well-priced homes still moving in days while ambitious pricing sits. And the Spicewood corridor around Belvedere carries more than eleven months of supply, which is genuine leverage for acreage buyers. Same gates, very different negotiating tables.
+
+
 ## The Three Tiers of "Gated" in Austin
 
-**Guard-gated, 24/7 staffed.** The highest tier: a physical gatehouse staffed around the clock. In Austin this is a short list — Spanish Oaks, sections of Rob Roy, and the gated enclaves of Barton Creek operating under community patrol. Staffed gates change daily life in small ways (guests are announced, deliveries are managed) and change security posture in large ways.
+**Guard-gated, 24/7 staffed.** The highest tier: a physical gatehouse staffed around the clock. In Austin this is a short list: Spanish Oaks, sections of Rob Roy, and the gated enclaves of Barton Creek operating under community patrol. Staffed gates change daily life in small ways (guests are announced, deliveries are managed) and change security posture in large ways.
 
-**Electronically gated communities.** Keypad or transponder entry without staff. This is the most common arrangement — communities like Costa Bella, Belvedere, and The Ridge at Alta Vista operate this way. You get controlled access and reduced through-traffic without the cost structure of a 24-hour gatehouse.
+**Electronically gated communities.** Keypad or transponder entry without staff. This is the most common arrangement. Communities like Costa Bella, Belvedere, and The Ridge at Alta Vista operate this way. You get controlled access and reduced through-traffic without the cost structure of a 24-hour gatehouse.
 
 **Gated estates within open neighborhoods.** In Westlake Hills, Tarrytown, and Old Enfield, the neighborhood is open but individual properties are walled and gated. For many of my clients this is the preferred configuration: total control of your own perimeter, no HOA gate politics, and addresses in [Eanes ISD](/communities/westlake-hills) or central Austin. Our piece on [Austin's best enclaves for privacy](/blog/best-austin-enclaves-for-privacy) covers this approach in depth.
 
 ## Barton Creek: Austin's Deepest Bench of Gated Enclaves
 
-[Barton Creek](/communities/barton-creek) is not one gated community — it's a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
+[Barton Creek](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
 
-The newer, view-driven sections — Amarra, Verano, Escala, Mirador — are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
+The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
 
-Two practical notes I give every Barton Creek buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA — underwrite the specific street, not the brand. Second, a significant share of Barton Creek's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
+Two practical notes I give every Barton Creek buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA. Underwrite the specific street, not the brand. Second, a significant share of Barton Creek's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
 
 ## Spanish Oaks: The Guard-Gated Golf Standard
 
 [Spanish Oaks](/communities/spanish-oaks) in Bee Cave is what most people picture when they say "guard-gated golf community": two gatehouses staffed 24/7, a private golf club whose course consistently ranks among the best in Texas, a swim club, fish camp, and trail system, all composed in limestone-and-oak Hill Country vernacular.
 
-Spanish Oaks is a true club-life community. Homes generally start well above $2M and run past $7M for estate sections, and the buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin — this is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
+Spanish Oaks is a true club-life community. Homes generally start well above $2M and run past $7M for estate sections, and the buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin. This is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
 
 ## Rob Roy: Old-Guard Estates Behind the Gate
 
-[Rob Roy](/blog/rob-roy-austin-gated-luxury) is one of Austin's original prestige gated addresses: winding streets on the western edge of the city, acre-plus lots, and Lake Austin and Hill Country views that newer communities simply can't replicate. Part of the community sits behind a 24/7 staffed gate, with other sections on keypad gates — another reason to underwrite the specific section rather than the name.
+[Rob Roy](/blog/rob-roy-austin-gated-luxury) is one of Austin's original prestige gated addresses: winding streets on the western edge of the city, acre-plus lots, and Lake Austin and Hill Country views that newer communities simply can't replicate. Part of the community sits behind a 24/7 staffed gate, with other sections on keypad gates, another reason to underwrite the specific section rather than the name.
 
 Rob Roy homes are largely custom builds from the '80s and '90s on exceptional lots, which creates a specific opportunity: buy the land and views, then renovate or rebuild to current standards. In Eanes ISD with quick access to Loop 360, it's a favorite for buyers who want establishment credentials rather than new-community polish.
 
@@ -131,29 +137,29 @@ Rob Roy homes are largely custom builds from the '80s and '90s on exceptional lo
 
 For buyers whose non-negotiable is water, the gated conversation moves to Lake Travis. **Costa Bella** is the flagship: a gated lakefront community with deep-water access, a private marina, and Mediterranean-scale estates. **The Hills of Lakeway** offers guard-gated golf living around the Hills Country Club, while **The Ridge at Alta Vista** provides gated Lakeway living at a more accessible price point. For how lake life differs across the two lakes, read [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis).
 
-Waterfront gated property carries its own underwriting layer — water levels, dock permits, and marina rights matter as much as the gate. Our guide to [buying waterfront luxury homes in Austin](/blog/buying-waterfront-luxury-homes-austin) covers the details.
+Waterfront gated property carries its own underwriting layer. Water levels, dock permits, and marina rights matter as much as the gate. Our guide to [buying waterfront luxury homes in Austin](/blog/buying-waterfront-luxury-homes-austin) covers the details.
 
 ## Hill Country Acreage: Belvedere and the Gated-Land Category
 
-West of the city off Hamilton Pool Road, **Belvedere** represents the gated Hill Country acreage category: larger lots, a 75-acre nature preserve, trails, and a community that feels more ranch than resort. It's the right fit for buyers who want gated security and land without committing to a full [ranch property](/blog/austin-ranch-land-for-sale). Nearby, gated communities continue to emerge along the Hamilton Pool and Fitzhugh corridors as the area matures — a dynamic we track in our [market intelligence](/market-intelligence) briefings.
+West of the city off Hamilton Pool Road, **Belvedere** represents the gated Hill Country acreage category: larger lots, a 75-acre nature preserve, trails, and a community that feels more ranch than resort. It's the right fit for buyers who want gated security and land without committing to a full [ranch property](/blog/austin-ranch-land-for-sale). Nearby, gated communities continue to emerge along the Hamilton Pool and Fitzhugh corridors as the area matures, a dynamic we track in our [market intelligence](/market-intelligence) briefings.
 
 ## What Gated Actually Costs
 
-Expect three cost layers. HOA dues range from a few hundred dollars annually in electronically gated communities to $500–$1,500+ per month in full-service golf communities like Barton Creek and Spanish Oaks. Club memberships are typically separate — golf initiation fees at the top clubs are a five-to-six-figure line item and often have waitlists. And architectural review, while not a fee, is a real cost in time: gated communities protect values by controlling what gets built, which cuts both ways when you're the one building.
+Expect three cost layers. HOA dues range from a few hundred dollars annually in electronically gated communities to $500–$1,500+ per month in full-service golf communities like Barton Creek and Spanish Oaks. Club memberships are typically separate. Golf initiation fees at the top clubs are a five-to-six-figure line item and often have waitlists. And architectural review, while not a fee, is a real cost in time: gated communities protect values by controlling what gets built, which cuts both ways when you're the one building.
 
-What do you get for it? Beyond security and amenities, gated communities in Austin have historically shown strong value retention — controlled supply, consistent architecture, and self-selecting buyer pools tend to compress downside in soft markets. That said, I'd caution against buying the gate as an investment thesis by itself. Buy the lot, the school district, the view, and the community's supply discipline. The gate is the wrapper.
+What do you get for it? Beyond security and amenities, gated communities in Austin have historically shown strong value retention. Controlled supply, consistent architecture, and self-selecting buyer pools tend to compress downside in soft markets. That said, I'd caution against buying the gate as an investment thesis by itself. Buy the lot, the school district, the view, and the community's supply discipline. The gate is the wrapper.
 
 ## How Gated Properties Actually Trade
 
-Here's the part most guides skip: gated communities are disproportionately private-market communities. Owners behind gates tend to value discretion, and a meaningful share of transactions in Rob Roy, Barton Creek's enclaves, and Spanish Oaks happen quietly — agent to agent, before a sign ever goes up (if one ever does). In my own practice, the overwhelming majority of sales never touch MLS or Zillow.
+Here's the part most guides skip: gated communities are disproportionately private-market communities. Owners behind gates tend to value discretion, and a meaningful share of transactions in Rob Roy, Barton Creek's enclaves, and Spanish Oaks happen quietly, agent to agent, before a sign ever goes up (if one ever does). In my own practice, the overwhelming majority of sales never touch MLS or Zillow.
 
-Practically, that means two things. If you're buying, portal-watching shows you the leftovers; the best lots and the cleanest houses are often spoken for early. If you're selling, you may not need public exposure at all — a [private sale strategy](/sell-private) can protect your privacy and still command full value. Either way, [what a private listing actually is](/blog/what-is-private-listing-in-real-estate) is worth understanding before you engage this market.
+Practically, that means two things. If you're buying, portal-watching shows you the leftovers; the best lots and the cleanest houses are often spoken for early. If you're selling, you may not need public exposure at all. A [private sale strategy](/sell-private) can protect your privacy and still command full value. Either way, [what a private listing actually is](/blog/what-is-private-listing-in-real-estate) is worth understanding before you engage this market.
 
 ## Choosing Your Gate: A Quick Framework
 
 Prioritize schools and proximity: Barton Creek or Rob Roy (Eanes ISD, 15 minutes to downtown). Prioritize golf and club life: Spanish Oaks or The Hills. Prioritize water: Costa Bella or gated Lake Austin pockets. Prioritize land and quiet: Belvedere and the Hamilton Pool corridor. Prioritize maximum privacy with central access: a gated estate in Westlake Hills or Old Enfield rather than a gated community at all.
 
-Every one of these markets is thin, relationship-driven, and moves before the public sees it. If you're evaluating a gated purchase or considering a quiet exit from one, [book a 15-minute advisory call](/contact) and I'll walk you through what's actually available — including what isn't publicly available.`,
+Every one of these markets is thin, relationship-driven, and moves before the public sees it. If you're evaluating a gated purchase or considering a quiet exit from one, [book a 15-minute advisory call](/contact) and I'll walk you through what's actually available, including what isn't publicly available.`,
   },
   {
     id: "austin-population-growth",

@@ -115,7 +115,7 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 
 ## BARTON CREEK: Austin's Deepest Bench of Gated Enclaves
 
-[Barton Creek](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
+[BARTON CREEK](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
 
 The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
 

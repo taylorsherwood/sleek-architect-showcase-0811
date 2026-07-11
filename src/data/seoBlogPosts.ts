@@ -133,7 +133,7 @@ Spanish Oaks is a true club-life community. Homes generally start well above $2M
 
 Rob Roy homes are largely custom builds from the '80s and '90s on exceptional lots, which creates a specific opportunity: buy the land and views, then renovate or rebuild to current standards. In Eanes ISD with quick access to Loop 360, it's a favorite for buyers who want establishment credentials rather than new-community polish.
 
-## Lake Travis: Costa Bella, The Hills, and the Waterfront Gates
+## Lake Travis: Costa Bella, THE HILLS , and the Waterfront Gates
 
 For buyers whose non-negotiable is water, the gated conversation moves to Lake Travis. **Costa Bella** is the flagship: a gated lakefront community with deep-water access, a private marina, and Mediterranean-scale estates. **The Hills of Lakeway** offers guard-gated golf living around the Hills Country Club, while **The Ridge at Alta Vista** provides gated Lakeway living at a more accessible price point. For how lake life differs across the two lakes, read [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis).
 

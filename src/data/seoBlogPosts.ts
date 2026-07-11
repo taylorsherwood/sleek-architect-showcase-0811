@@ -86,7 +86,7 @@ export const seoBlogPosts: BlogPost[] = [
     id: "gated-communities-austin",
     title: "Gated Communities in Austin: The Complete 2026 Guide",
     metaTitle: "Best Gated Communities in Austin TX (2026 Guide)",
-    excerpt: "An advisor-level guide to Austin's gated communities: Barton Creek's enclaves, Spanish Oaks, Rob Roy, Lake Travis waterfront, and Hill Country acreage, plus security tiers, HOA costs, design review, current market conditions, and how gated properties trade privately.",
+    excerpt: "An advisor-level guide to Austin's gated communities: BARTON CREEK, Spanish Oaks, Rob Roy, Lake Travis waterfront, and Hill Country acreage, plus security tiers, HOA costs, design review, current market conditions, and how gated properties trade privately.",
     author: "Taylor Sherwood",
     date: "2026-07-11",
     readTime: "15 min read",

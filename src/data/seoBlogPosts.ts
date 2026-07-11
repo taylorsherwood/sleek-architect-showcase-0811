@@ -202,7 +202,7 @@ Yes. Belvedere off Hamilton Pool Road is the established example, and the corrid
 
 ## Choosing Your Gate: A Quick Framework
 
-Prioritize schools and proximity: Barton Creek or Rob Roy (Eanes ISD, 15 minutes to downtown). Prioritize golf and club life: Spanish Oaks or The Hills. Prioritize water: Costa Bella or gated Lake Austin pockets. Prioritize land and quiet: Belvedere and the Hamilton Pool corridor. Prioritize maximum privacy with central access: a gated estate in Westlake Hills or Old Enfield rather than a gated community at all.
+Prioritize schools and proximity: BARTON CREEK or Rob Roy (Eanes ISD, 15 minutes to downtown). Prioritize golf and club life: Spanish Oaks or THE HILLS . Prioritize water: Costa Bella or gated Lake Austin pockets. Prioritize land and quiet: Belvedere and the Hamilton Pool corridor. Prioritize maximum privacy with central access: a gated estate in Westlake Hills or Old Enfield rather than a gated community at all.
 
 Every one of these markets is thin, relationship-driven, and moves before the public sees it. If you're evaluating a gated purchase or considering a quiet exit from one, [book a 15-minute advisory call](/contact) and I'll walk you through what's actually available, including what isn't publicly available.`,
   },

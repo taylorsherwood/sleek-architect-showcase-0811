@@ -19,6 +19,9 @@ const BlogMarketSnapshot = lazy(
 const MortgageCalculator = lazy(
   () => import("@/components/MortgageCalculator"),
 );
+const GatedCommunityGauge = lazy(
+  () => import("@/components/market-intel/GatedCommunityGauge"),
+);
 
 interface BlogContentProps {
   content: string;

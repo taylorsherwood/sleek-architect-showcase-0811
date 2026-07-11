@@ -184,7 +184,7 @@ Here's the part most guides skip: gated communities are disproportionately priva
 Practically, that means two things. If you're buying, portal-watching shows you the leftovers; the best lots and the cleanest houses are often spoken for early. If you're selling, you may not need public exposure at all. A [private sale strategy](/sell-private) can protect your privacy and still command full value. Either way, [what a private listing actually is](/blog/what-is-private-listing-in-real-estate) is worth understanding before you engage this market.
 :::faq
 ### Which Austin communities have 24/7 staffed guard gates?
-The consistently staffed gates are Spanish Oaks (two gatehouses), the main section of Rob Roy, and The Hills of Lakeway, with Barton Creek's enclaves operating gated entries backed by community patrol. Most other gated communities in the area, including Costa Bella and Belvedere, use electronic access control.
+The consistently staffed gates are Spanish Oaks (two gatehouses), the main section of Rob Roy, and THE HILLS , with BARTON CREEK operating gated entries backed by community patrol. Most other gated communities in the area, including Costa Bella and Belvedere, use electronic access control.
 
 ### Do gated community homes appreciate faster in Austin?
 They tend to hold value with less volatility rather than appreciate on a different curve. Controlled supply, architectural consistency, and self-selecting buyer pools compress the downside in soft markets. Buy the lot, the schools, and the supply discipline; treat the gate as the wrapper.

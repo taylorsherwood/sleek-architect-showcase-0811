@@ -113,7 +113,7 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 
 **Gated estates within open neighborhoods.** In Westlake Hills, Tarrytown, and Old Enfield, the neighborhood is open but individual properties are walled and gated. For many of my clients this is the preferred configuration: total control of your own perimeter, no HOA gate politics, and addresses in [Eanes ISD](/communities/westlake-hills) or central Austin. Our piece on [Austin's best enclaves for privacy](/blog/best-austin-enclaves-for-privacy) covers this approach in depth.
 
-## Barton Creek: Austin's Deepest Bench of Gated Enclaves
+## BARTON CREEK: Austin's Deepest Bench of Gated Enclaves
 
 [Barton Creek](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
 

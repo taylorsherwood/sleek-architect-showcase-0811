@@ -190,7 +190,7 @@ The consistently staffed gates are Spanish Oaks (two gatehouses), the main secti
 They tend to hold value with less volatility rather than appreciate on a different curve. Controlled supply, architectural consistency, and self-selecting buyer pools compress the downside in soft markets. Buy the lot, the schools, and the supply discipline; treat the gate as the wrapper.
 
 ### What do HOA fees run in Austin's gated communities?
-Electronically gated communities often run a few hundred dollars per month or less. Full-service guard-gated golf communities like Barton Creek and Spanish Oaks commonly run $500 to $1,500+ per month across their association layers, with club memberships priced separately.
+Electronically gated communities often run a few hundred dollars per month or less. Full-service guard-gated golf communities like BARTON CREEK and Spanish Oaks commonly run $500 to $1,500+ per month across their association layers, with club memberships priced separately.
 
 ### Can I see homes in a gated community without an agent?
 Practically, no. Access requires resident sponsorship or an agent with gate arrangements, and much of the best inventory is never publicly marketed at all. This is one market where representation is the price of admission.

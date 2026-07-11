@@ -119,7 +119,7 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 
 The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
 
-Two practical notes I give every Barton Creek buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA. Underwrite the specific street, not the brand. Second, a significant share of Barton Creek's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
+Two practical notes I give every BARTON CREEK buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA. Underwrite the specific street, not the brand. Second, a significant share of BARTON CREEK's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
 
 ## Spanish Oaks: The Guard-Gated Golf Standard
 

@@ -179,7 +179,7 @@ What do you get for it? Beyond security and amenities, gated communities in Aust
 
 ## How Gated Properties Actually Trade
 
-Here's the part most guides skip: gated communities are disproportionately private-market communities. Owners behind gates tend to value discretion, and a meaningful share of transactions in Rob Roy, Barton Creek's enclaves, and Spanish Oaks happen quietly, agent to agent, before a sign ever goes up (if one ever does). In my own practice, the overwhelming majority of sales never touch MLS or Zillow.
+Here's the part most guides skip: gated communities are disproportionately private-market communities. Owners behind gates tend to value discretion, and a meaningful share of transactions in Rob Roy, BARTON CREEK, and Spanish Oaks happen quietly, agent to agent, before a sign ever goes up (if one ever does). In my own practice, the overwhelming majority of sales never touch MLS or Zillow.
 
 Practically, that means two things. If you're buying, portal-watching shows you the leftovers; the best lots and the cleanest houses are often spoken for early. If you're selling, you may not need public exposure at all. A [private sale strategy](/sell-private) can protect your privacy and still command full value. Either way, [what a private listing actually is](/blog/what-is-private-listing-in-real-estate) is worth understanding before you engage this market.
 :::faq

@@ -300,14 +300,20 @@ const CompareTable = ({ body }: { body: string }) => {
   const [header, ...data] = rows;
   return (
     <div className="my-12 -mx-6 md:mx-0">
-      <table className="w-full hidden md:table border-collapse">
+      <table className="w-full hidden md:table border-collapse table-fixed">
+        <colgroup>
+          <col style={{ width: "15%" }} />
+          {header.slice(1).map((_, i) => (
+            <col key={i} style={{ width: `${85 / (header.length - 1)}%` }} />
+          ))}
+        </colgroup>
         <thead>
           <tr className="border-b border-foreground/20">
             {header.map((h, i) => (
               <th
                 key={i}
                 scope="col"
-                className={`text-left py-4 px-4 text-minimal uppercase tracking-[0.15em] text-xs ${i === 0 ? "" : ""}`}
+                className="text-left align-bottom py-4 px-2 text-minimal uppercase tracking-[0.12em] text-[11px] leading-[1.35]"
                 style={{ color: i === 0 ? undefined : "#b9a06c" }}
               >
                 {h}
@@ -320,12 +326,12 @@ const CompareTable = ({ body }: { body: string }) => {
             <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
               <th
                 scope="row"
-                className="text-left align-top py-5 px-4 text-minimal text-foreground uppercase tracking-[0.15em] text-xs font-normal w-[28%] whitespace-pre-line"
+                className="text-left align-top py-5 px-2 text-minimal text-foreground uppercase tracking-[0.12em] text-[11px] font-normal whitespace-pre-line leading-[1.4]"
               >
                 {row[0]}
               </th>
               {row.slice(1).map((cell, cIdx) => (
-                <td key={cIdx} className="align-top py-5 px-4 text-[15px] leading-[1.65] text-muted-foreground">
+                <td key={cIdx} className="align-top py-5 px-2 text-[14px] leading-[1.6] text-muted-foreground">
                   {cell}
                 </td>
               ))}
@@ -333,6 +339,7 @@ const CompareTable = ({ body }: { body: string }) => {
           ))}
         </tbody>
       </table>
+
 
       {/* Mobile: stacked per-row */}
       <div className="md:hidden px-6 space-y-8">

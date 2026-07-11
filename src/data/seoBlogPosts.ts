@@ -135,7 +135,7 @@ Rob Roy homes are largely custom builds from the '80s and '90s on exceptional lo
 
 ## Lake Travis: Costa Bella, THE HILLS , and the Waterfront Gates
 
-For buyers whose non-negotiable is water, the gated conversation moves to Lake Travis. **Costa Bella** is the flagship: a gated lakefront community with deep-water access, a private marina, and Mediterranean-scale estates. **The Hills of Lakeway** offers guard-gated golf living around the Hills Country Club, while **The Ridge at Alta Vista** provides gated Lakeway living at a more accessible price point. For how lake life differs across the two lakes, read [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis).
+For buyers whose non-negotiable is water, the gated conversation moves to Lake Travis. **Costa Bella** is the flagship: a gated lakefront community with deep-water access, a private marina, and Mediterranean-scale estates. **THE HILLS ** offers guard-gated golf living around the Hills Country Club, while **The Ridge at Alta Vista** provides gated Lakeway living at a more accessible price point. For how lake life differs across the two lakes, read [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis).
 
 Waterfront gated property carries its own underwriting layer. Water levels, dock permits, and marina rights matter as much as the gate. Our guide to [buying waterfront luxury homes in Austin](/blog/buying-waterfront-luxury-homes-austin) covers the details.
 

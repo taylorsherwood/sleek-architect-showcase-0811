@@ -80,7 +80,8 @@ const blogAustinCapRates = blogAustinCapRatesAsset.url;
 import blogAustinPopulationGrowthAsset from "@/assets/blog/austin-population-growth.png.asset.json";
 const blogAustinPopulationGrowth = blogAustinPopulationGrowthAsset.url;
 
-import blogHillCountryRanchMarket from "@/assets/blog/texas-hill-country-ranch-market.jpg";
+import blogHillCountryRanchMarketAsset from "@/assets/blog/texas-hill-country-ranch-market.jpg.asset.json";
+const blogHillCountryRanchMarket = blogHillCountryRanchMarketAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [

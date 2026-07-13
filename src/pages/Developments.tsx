@@ -511,9 +511,9 @@ const Developments = () => {
       </section>
 
       {/* Strategic Media & Marketing Reach */}
-      <section className="py-24 md:py-32 bg-background border-t border-border/40">
+      <section className="py-28 md:py-40 bg-background border-t border-border/40">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
+          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-14">
             <p className="mb-5 text-gold" style={eyebrowStyle}>
               Media & Distribution
             </p>
@@ -529,22 +529,22 @@ const Developments = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-10 md:gap-x-12 gap-y-14 items-center justify-items-center">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 md:gap-x-16 gap-y-16 md:gap-y-20 items-center justify-items-center">
               {[
-                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, maxH: 22 },
-                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, maxH: 30 },
-                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, maxH: 20 },
-                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, maxH: 26 },
-                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, maxH: 30 },
+                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, h: 60, w: 260 },
+                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 300 },
+                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, h: 52, w: 220 },
+                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, h: 68, w: 300 },
+                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, h: 78, w: 280 },
                 { name: "Austin Monthly", wordmark: true },
               ].map((p) => (
                 <li
                   key={p.name}
-                  className="flex items-center justify-center w-full h-10 transition-opacity duration-500 ease-out opacity-55 hover:opacity-100"
+                  className="flex items-center justify-center w-full h-20 md:h-24 transition-opacity duration-500 ease-out opacity-60 hover:opacity-100"
                   style={{ filter: "grayscale(1) brightness(0)" }}
                 >
                   {p.wordmark ? (
-                    <span className="font-display text-[0.95rem] md:text-[1rem] tracking-[0.04em] text-foreground whitespace-nowrap">
+                    <span className="font-display text-[2rem] md:text-[2.35rem] tracking-[0.02em] text-foreground whitespace-nowrap leading-none">
                       Austin Monthly
                     </span>
                   ) : (
@@ -554,14 +554,14 @@ const Developments = () => {
                       loading="lazy"
                       decoding="async"
                       className="w-auto object-contain"
-                      style={{ maxHeight: `${p.maxH}px`, maxWidth: "140px" }}
+                      style={{ maxHeight: `${p.h}px`, maxWidth: `${p.w}px` }}
                     />
                   )}
                 </li>
               ))}
             </ul>
 
-            <div className="mt-20 md:mt-24 border-t border-border/50" />
+            <div className="mt-16 md:mt-20 border-t border-border/50" />
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 pt-16 md:pt-20">
               {[

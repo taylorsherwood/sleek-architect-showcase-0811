@@ -529,7 +529,7 @@ const Developments = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 md:gap-x-20 gap-y-20 md:gap-y-24 items-center justify-items-center">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 md:gap-x-20 gap-y-8 md:gap-y-12 items-center justify-items-center">
               {[
                 { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, h: 68, w: 240 },
                 { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 240 },

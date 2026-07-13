@@ -510,6 +510,94 @@ const Developments = () => {
         </div>
       </section>
 
+      {/* Strategic Media & Marketing Reach */}
+      <section className="py-24 md:py-32 bg-background border-t border-border/40">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
+            <p className="mb-5 text-gold" style={eyebrowStyle}>
+              Media & Distribution
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-normal text-architectural mb-6">
+              Strategic Media & Marketing Reach
+            </h2>
+            <p className="text-muted-foreground text-[1.0625rem] leading-relaxed font-light">
+              Every development receives a tailored marketing strategy designed to reach qualified buyers,
+              investors, brokers, and relocation audiences throughout Central Texas. Through a combination of
+              premium publications, digital platforms, and targeted campaigns, we position each opportunity in
+              front of the audiences that matter most.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-12 md:gap-y-16 items-center">
+              {[
+                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href },
+                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href },
+                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href },
+                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href },
+                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href },
+                { name: "Austin Monthly", wordmark: true },
+              ].map((p) => (
+                <li
+                  key={p.name}
+                  className="flex items-center justify-center h-12 md:h-14 transition-all duration-500 ease-out opacity-55 hover:opacity-100 hover:-translate-y-[2px]"
+                  style={{ filter: "grayscale(1) brightness(0)" }}
+                >
+                  {p.wordmark ? (
+                    <span
+                      className="font-display text-[1.35rem] md:text-[1.5rem] tracking-[0.02em] text-foreground whitespace-nowrap"
+                    >
+                      Austin Monthly
+                    </span>
+                  ) : (
+                    <img
+                      src={p.src}
+                      alt={p.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="max-h-full w-auto max-w-[160px] object-contain"
+                    />
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-20 md:mt-24 border-t border-border/50" />
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 pt-16 md:pt-20">
+              {[
+                { label: "Premium Regional Publications", value: "6+" },
+                { label: "Combined Monthly Audience", value: "Millions" },
+                { label: "Targeted Luxury Campaigns", value: "Custom Built" },
+                { label: "Regional Broker Network", value: "Extensive" },
+              ].map((m) => (
+                <div key={m.label} className="text-center">
+                  <p className="font-display text-3xl md:text-4xl text-architectural font-normal mb-3 leading-none">
+                    {m.value}
+                  </p>
+                  <p
+                    className="text-muted-foreground"
+                    style={{
+                      fontFamily: '"Jost", sans-serif',
+                      fontSize: "10.5px",
+                      letterSpacing: "0.22em",
+                      textTransform: "uppercase",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {m.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-16 text-center text-xs md:text-[13px] text-muted-foreground/70 font-light leading-relaxed max-w-2xl mx-auto">
+              Media placements vary by property, target audience, project scope, and marketing strategy.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Closing */}
       <section className="relative py-28 md:py-40 overflow-hidden" style={{ background: "#0C0F24" }}>
         <img

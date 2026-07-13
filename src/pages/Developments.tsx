@@ -528,25 +528,23 @@ const Developments = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto">
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-12 md:gap-y-16 items-center">
+          <div className="max-w-6xl mx-auto">
+            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-10 md:gap-x-12 gap-y-14 items-center justify-items-center">
               {[
-                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href },
-                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href },
-                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href },
-                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href },
-                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href },
+                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, maxH: 22 },
+                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, maxH: 30 },
+                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, maxH: 20 },
+                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, maxH: 26 },
+                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, maxH: 30 },
                 { name: "Austin Monthly", wordmark: true },
               ].map((p) => (
                 <li
                   key={p.name}
-                  className="flex items-center justify-center h-12 md:h-14 transition-all duration-500 ease-out opacity-55 hover:opacity-100 hover:-translate-y-[2px]"
+                  className="flex items-center justify-center w-full h-10 transition-opacity duration-500 ease-out opacity-55 hover:opacity-100"
                   style={{ filter: "grayscale(1) brightness(0)" }}
                 >
                   {p.wordmark ? (
-                    <span
-                      className="font-display text-[1.35rem] md:text-[1.5rem] tracking-[0.02em] text-foreground whitespace-nowrap"
-                    >
+                    <span className="font-display text-[0.95rem] md:text-[1rem] tracking-[0.04em] text-foreground whitespace-nowrap">
                       Austin Monthly
                     </span>
                   ) : (
@@ -555,7 +553,8 @@ const Developments = () => {
                       alt={p.name}
                       loading="lazy"
                       decoding="async"
-                      className="max-h-full w-auto max-w-[160px] object-contain"
+                      className="w-auto object-contain"
+                      style={{ maxHeight: `${p.maxH}px`, maxWidth: "140px" }}
                     />
                   )}
                 </li>
@@ -571,18 +570,19 @@ const Developments = () => {
                 { label: "Targeted Luxury Campaigns", value: "Custom Built" },
                 { label: "Regional Broker Network", value: "Extensive" },
               ].map((m) => (
-                <div key={m.label} className="text-center">
-                  <p className="font-display text-3xl md:text-4xl text-architectural font-normal mb-3 leading-none">
+                <div key={m.label} className="text-center flex flex-col items-center">
+                  <p className="font-display text-[1.75rem] md:text-[2rem] text-architectural font-normal mb-4 leading-none whitespace-nowrap">
                     {m.value}
                   </p>
                   <p
-                    className="text-muted-foreground"
+                    className="text-muted-foreground max-w-[180px]"
                     style={{
                       fontFamily: '"Jost", sans-serif',
                       fontSize: "10.5px",
                       letterSpacing: "0.22em",
                       textTransform: "uppercase",
                       fontWeight: 500,
+                      lineHeight: 1.6,
                     }}
                   >
                     {m.label}

@@ -400,7 +400,7 @@ const Developments = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-5">
                 A Hill Country community designed around preserved landscape, considered architecture, and a
-                deliberate sense of place — minutes from Austin.
+                deliberate sense of place, minutes from Austin.
               </p>
               <p className="text-muted-foreground leading-relaxed text-[1.0625rem] mb-9">
                 Explore the full community presentation, site plan, residence collection, and current opportunities

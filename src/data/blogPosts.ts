@@ -52,6 +52,7 @@ import blogAustinZoningChanges from "@/assets/blog/austin-zoning-changes.png.ass
 import blogAustinIsdVsEanesIsd from "@/assets/blog/austin-isd-vs-eanes-isd.png.asset.json";
 import blogAustinInfillModernFraming from "@/assets/blog/austin-infill-development-modern-framing.png.asset.json";
 import blogAustinLuxuryExecRelocation from "@/assets/blog/austin-luxury-executive-relocation-hero.png.asset.json";
+import blogCommercialLandDevelopment2026 from "@/assets/blog/austin-commercial-land-development-2026.jpg.asset.json";
 
 
 

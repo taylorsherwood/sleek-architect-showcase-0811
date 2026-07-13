@@ -529,22 +529,22 @@ const Developments = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 md:gap-x-16 gap-y-16 md:gap-y-20 items-center justify-items-center">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 md:gap-x-20 gap-y-20 md:gap-y-24 items-center justify-items-center">
               {[
-                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, h: 60, w: 260 },
-                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 300 },
-                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, h: 52, w: 220 },
-                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, h: 68, w: 300 },
-                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, h: 78, w: 280 },
+                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, h: 68, w: 240 },
+                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 240 },
+                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, h: 78, w: 260 },
+                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, h: 96, w: 280 },
+                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, h: 118, w: 240 },
                 { name: "Austin Monthly", wordmark: true },
               ].map((p) => (
                 <li
                   key={p.name}
-                  className="flex items-center justify-center w-full h-20 md:h-24 transition-opacity duration-500 ease-out opacity-60 hover:opacity-100"
+                  className="flex items-center justify-center w-full h-28 md:h-32 transition-opacity duration-500 ease-out opacity-60 hover:opacity-100"
                   style={{ filter: "grayscale(1) brightness(0)" }}
                 >
                   {p.wordmark ? (
-                    <span className="font-display text-[2rem] md:text-[2.35rem] tracking-[0.02em] text-foreground whitespace-nowrap leading-none">
+                    <span className="font-display text-[1.65rem] md:text-[1.9rem] tracking-[0.02em] text-foreground whitespace-nowrap leading-none">
                       Austin Monthly
                     </span>
                   ) : (
@@ -560,6 +560,7 @@ const Developments = () => {
                 </li>
               ))}
             </ul>
+
 
             <div className="mt-16 md:mt-20 border-t border-border/50" />
 

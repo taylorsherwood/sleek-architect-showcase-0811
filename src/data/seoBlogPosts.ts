@@ -106,8 +106,8 @@ export const seoBlogPosts: BlogPost[] = [
 ## Key takeaways
 
 - **First green shoot on price:** the MSA median hit $450-000 in June, up 1.1% from June 2025, even as the year-to-date median ($425-000) still sits 2.4% below last year. The monthly data is turning before the annual data, which is exactly how bottoms form.
-- **Supply is tightening fast:** 13-245 active listings is nearly 15% fewer than a year ago, and every core county saw inventory shrink.
-- **Demand is stirring:** 2-994 pending sales (+13.2%) is the strongest forward-looking signal in the report. Pendings are July's and August's closings.
+- **Supply is tightening fast:** 13,245 active listings is nearly 15% fewer than a year ago, and every core county saw inventory shrink.
+- **Demand is stirring:** 2,994 pending sales (+13.2%) is the strongest forward-looking signal in the report. Pendings are July's and August's closings.
 - **The correction cooled in slow motion:** AgentIntel's trailing-12-month appreciation for the Austin metro improved from -4.6% (year ending June 2024) to -2.6% (2025) to -2.0% (2026). That two-year deceleration set up June's positive print.
 - **It's still a negotiator's market:** homes averaged 62 days on market and closed at 93.9% of list price. Balance, not frenzy.
 
@@ -119,11 +119,11 @@ export const seoBlogPosts: BlogPost[] = [
 :::compare-table
 Metric | Value | vs. June 2025
 Median sales price | $450-000 | +1.1%
-Closed sales | 2-961 | up slightly (<1%)
+Closed sales | 2,961 | up slightly (<1%)
 Sales dollar volume | $1.81 billion | +5.9%
-Pending sales | 2-994 | +13.2%
-Active listings | 13-245 | -14.8%
-New listings | 4-712 | +1.8%
+Pending sales | 2,994 | +13.2%
+Active listings | 13,245 | -14.8%
+New listings | 4,712 | +1.8%
 Months of inventory | 4.4 months | -1.0 month
 Average close-to-list ratio | 93.9% | vs. 93.7%
 :::
@@ -163,7 +163,7 @@ Your leverage is real but no longer unlimited. With ~4.4 months of supply, 62 av
 
 ## What This Means If You're Selling in Austin
 
-The headline tailwind is back, but this market still punishes mispricing. Over the past 12 months, more than 31-000 Central Texas listings took at least one price cut, and only about 65% of listings that left the market actually closed. The rest expired or were withdrawn. The sellers winning right now price at the market on day one, prep and stage seriously, and capture the buyer surge the first two weekends. Homes that do are closing measurably faster than the 62-day average. Homes that don't become the price-drop statistic that funds someone else's negotiation. With pendings up double digits and inventory down 15%, listing into strengthening demand beats listing into last year's glut, but the margin for error on price hasn't returned yet. If you're weighing a sale, a proper [comparative market analysis](/home-value-austin) is where this conversation should start.
+The headline tailwind is back, but this market still punishes mispricing. Over the past 12 months, more than 31,000 Central Texas listings took at least one price cut, and only about 65% of listings that left the market actually closed. The rest expired or were withdrawn. The sellers winning right now price at the market on day one, prep and stage seriously, and capture the buyer surge the first two weekends. Homes that do are closing measurably faster than the 62-day average. Homes that don't become the price-drop statistic that funds someone else's negotiation. With pendings up double digits and inventory down 15%, listing into strengthening demand beats listing into last year's glut, but the margin for error on price hasn't returned yet. If you're weighing a sale, a proper [comparative market analysis](/home-value-austin) is where this conversation should start.
 
 :::faq
 ### Is the Austin housing market recovering in 2026?

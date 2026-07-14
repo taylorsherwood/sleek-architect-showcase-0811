@@ -280,7 +280,7 @@ export const AgentIntelMarketSnapshot = ({
               {formatValue(heroMetric, hero.latest, hero.latest_formatted)}
             </span>
             <span className="text-[0.65rem] tracking-[0.24em] uppercase text-muted-foreground">
-              {prettyLabel(heroMetric)} · {periodLabel}
+              {prettyLabel(heroMetric)} · Latest reporting period
             </span>
           </div>
         )}

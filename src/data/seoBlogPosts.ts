@@ -167,19 +167,19 @@ The headline tailwind is back, but this market still punishes mispricing. Over t
 
 :::faq
 Q: Is the Austin housing market recovering in 2026?
-A: The June 2026 data points to a bottoming process: the metro median rose 1.1% year over year to $450-000, active inventory fell 14.8%, and pending sales rose 13.2%. Year-to-date prices are still slightly negative (-2.4%), so it's early-stage stabilization rather than a full recovery.
+A: The June 2026 data points to a bottoming process: the metro median rose 1.1% year over year to $450,000, active inventory fell 14.8%, and pending sales rose 13.2%. Year-to-date prices are still slightly negative (-2.4%), so it's early-stage stabilization rather than a full recovery.
 
 Q: What is the median home price in Austin in 2026?
-A: As of June 2026, the median sales price is $605-000 inside the City of Austin and $450-000 across the five-county Austin, Round Rock, San Marcos metro. County medians range from $260-495 in Caldwell County to $542-000 in [Travis County](/communities).
+A: As of June 2026, the median sales price is $605,000 inside the City of Austin and $450,000 across the five-county Austin, Round Rock, San Marcos metro. County medians range from $260,495 in Caldwell County to $542,000 in [Travis County](/communities).
 
 Q: Is now a good time to buy a house in Austin?
-A: June 2026 offers an unusual combination: near-bottom pricing with balanced negotiating conditions (4.4 months of inventory, ~94% close-to-list). Buyers who purchase before the annual numbers turn positive keep leverage that typically disappears once a recovery is obvious. The right answer still depends on your finances, timeline, and neighborhood, that's a conversation, not a headline.
+A: June 2026 offers an unusual combination: near-bottom pricing with balanced negotiating conditions (4.4 months of inventory, ~94% close-to-list). Buyers who purchase before the annual numbers turn positive keep leverage that typically disappears once a recovery is obvious. The right answer still depends on your finances, timeline, and neighborhood; that's a conversation, not a headline.
 
 Q: How long does it take to sell a house in Austin?
-A: In June 2026, the average listing went under contract in 62 days metro-wide: 48 days inside the City of Austin, 53 in Travis County, 69 in Williamson, and 85 in Bastrop. Accurately priced, well-prepared homes are moving much faster than those averages.
+A: In June 2026, the average listing went under contract in 62 days metro-wide - 48 days inside the City of Austin, 53 in Travis County, 69 in Williamson, and 85 in Bastrop. Accurately priced, well-prepared homes are moving much faster than those averages.
 
 Q: Which Austin-area county is most affordable in 2026?
-A: Caldwell County, at a $260-495 median, about 42% below the metro median, followed by Bastrop County at $344-900. Both still favor buyers, with 5.6 and 6.6 months of inventory respectively.
+A: Caldwell County, at a $260,495 median - about 42% below the metro median - followed by Bastrop County at $344,900. Both still favor buyers, with 5.6 and 6.6 months of inventory respectively.
 :::
 
 :::cta-anchor

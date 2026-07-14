@@ -10548,8 +10548,8 @@ Echelon Property Group advises on commercial land acquisition, entitlement strat
     date: "2026-07-14",
     readTime: "15 MIN READ",
     category: "BUYER STRATEGY",
-    image: blogBuyingLakeTravisWaterfront,
-    heroImage: blogBuyingLakeTravisWaterfront,
+    image: blogBuyingLakeTravisWaterfront.url,
+    heroImage: blogBuyingLakeTravisWaterfront.url,
     imageAlt: "Aerial view of a Lake Travis waterfront estate at golden hour, with a private dock extending into a deep protected cove, limestone cliffs, and Texas Hill Country in the distance",
     imageCaption: "A private cove on Lake Travis at golden hour, where dock rights, water depth, and shoreline orientation quietly separate a resilient waterfront acquisition from a costly one.",
     content: `

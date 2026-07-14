@@ -10571,6 +10571,9 @@ But buying on Lake Travis is not like buying a conventional luxury home. Water l
 
 This guide is for serious buyers who want to approach Lake Travis waterfront with the same discipline they apply to any major asset decision. Each strategy addresses a specific challenge that comes up repeatedly in this market, from navigating off-market inventory to understanding how water depth affects long-term value. Whether you are relocating from out of state, diversifying a real estate portfolio, or transitioning from a [Lake Austin property](/blog/lake-austin-vs-lake-travis-waterfront-homes), these strategies will help you move with clarity and confidence.
 
+:::intel-gauge-lake-travis
+:::
+
 ## 1. Understand How LCRA Water Levels Shape Property Value
 
 ### The Challenge It Solves

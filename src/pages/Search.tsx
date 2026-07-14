@@ -6,7 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link, useSearchParams } from "react-router-dom";
-import heroSearchImgAsset from "@/assets/hero-search-austin.jpg.asset.json";
+import heroSearchImgAsset from "@/assets/hero-search-austin.png.asset.json";
 const heroSearchImg = heroSearchImgAsset.url;
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
@@ -99,7 +99,7 @@ const SearchPage = () => {
         <div className="absolute inset-0">
           <img
             src={heroSearchImg}
-            alt="Modern Austin luxury living room with curved sofa, sheer drapery, and warm wood accents"
+            alt="Lake Austin waterfront great room with floor-to-ceiling glass, limestone fireplace, and panoramic water views"
             title="Search Austin homes for sale"
             className="w-full h-full object-cover"
             loading="eager"

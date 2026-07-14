@@ -10618,6 +10618,9 @@ Understanding [confidential property transactions](/blog/confidential-property-t
 
 If a property is listed as "waterfront" but lacks a dock permit, ask whether one can be obtained and under what conditions. In some cases, the answer is yes. In others, environmental or regulatory factors make new dock permitting difficult or impossible. That single factor can significantly affect what the property is actually worth to you as a buyer.
 
+:::cta-anchor
+:::
+
 ## 3. Map the Submarkets Before You Start Touring
 
 ### The Challenge It Solves

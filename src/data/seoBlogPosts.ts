@@ -165,9 +165,6 @@ Your leverage is real but no longer unlimited. With ~4.4 months of supply, 62 av
 
 The headline tailwind is back, but this market still punishes mispricing. Over the past 12 months, more than 31,000 Central Texas listings took at least one price cut, and only about 65% of listings that left the market actually closed. The rest expired or were withdrawn. The sellers winning right now price at the market on day one, prep and stage seriously, and capture the buyer surge the first two weekends. Homes that do are closing measurably faster than the 62-day average. Homes that don't become the price-drop statistic that funds someone else's negotiation. With pendings up double digits and inventory down 15%, listing into strengthening demand beats listing into last year's glut, but the margin for error on price hasn't returned yet. If you're weighing a sale, a proper [comparative market analysis](/home-value-austin) is where this conversation should start.
 
-:::cta-anchor
-:::
-
 :::faq
 ### Is the Austin housing market recovering in 2026?
 The June 2026 data points to a bottoming process: the metro median rose 1.1% year over year to $450-000, active inventory fell 14.8%, and pending sales rose 13.2%. Year-to-date prices are still slightly negative (-2.4%), so it's early-stage stabilization rather than a full recovery.

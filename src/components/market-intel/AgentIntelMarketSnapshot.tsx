@@ -280,7 +280,7 @@ export const AgentIntelMarketSnapshot = ({
               {formatValue(heroMetric, hero.latest, hero.latest_formatted)}
             </span>
             <span className="text-[0.65rem] tracking-[0.24em] uppercase text-muted-foreground">
-              {prettyLabel(heroMetric)} · Latest reporting period
+              {prettyLabel(heroMetric)} · UPDATED TODAY
             </span>
           </div>
         )}
@@ -335,7 +335,7 @@ export const AgentIntelMarketSnapshot = ({
           </h2>
           {!loading && !error && (
             <p className="mt-4 md:mt-6 text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] md:tracking-[0.4em] uppercase text-muted-foreground/75">
-              Advisory Brief · Latest reporting period
+              ADVISORY BRIEF · UPDATED TODAY
             </p>
           )}
           {dataNote && !loading && !error && (
@@ -390,7 +390,7 @@ export const AgentIntelMarketSnapshot = ({
                 <Sparkline points={hero.points} />
                 <div className="mt-3 flex justify-between text-[0.5rem] md:text-[0.55rem] tracking-[0.22em] md:tracking-[0.3em] uppercase text-muted-foreground/60">
                   <span>Trailing 12 Months</span>
-                  <span>Latest reporting period</span>
+                  <span>UPDATED TODAY</span>
                 </div>
               </div>
             </div>

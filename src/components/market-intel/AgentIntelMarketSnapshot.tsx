@@ -390,7 +390,7 @@ export const AgentIntelMarketSnapshot = ({
                 <Sparkline points={hero.points} />
                 <div className="mt-3 flex justify-between text-[0.5rem] md:text-[0.55rem] tracking-[0.22em] md:tracking-[0.3em] uppercase text-muted-foreground/60">
                   <span>Trailing 12 Months</span>
-                  <span>{periodLabel}</span>
+                  <span>Through {periodLabel}</span>
                 </div>
               </div>
             </div>

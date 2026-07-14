@@ -100,12 +100,12 @@ export const seoBlogPosts: BlogPost[] = [
     image: blogAustinHousingJune2026,
     heroImage: blogAustinHousingJune2026,
     imageAlt: "Aerial view of the Austin, Texas downtown skyline at sunset with Lady Bird Lake reflecting the city",
-    imageCaption: "June 2026 Austin: the metro median rose 1.1% year over year to $450-000 as inventory tightened and pendings jumped double digits.",
-    content: `**The short answer:** Austin's housing correction is losing its grip. In June 2026, the median sales price across the five-county Austin, Round Rock, San Marcos MSA rose 1.1% year over year to $450-000, while active listings fell 14.8%, pending sales jumped 13.2%, and months of inventory dropped a full month to 4.4. One month doesn't make a boom, but after three years in which every trailing-12-month price comparison came in negative, the direction of travel has changed.
+    imageCaption: "June 2026 Austin: the metro median rose 1.1% year over year to $450,000 as inventory tightened and pendings jumped double digits.",
+    content: `**The short answer:** Austin's housing correction is losing its grip. In June 2026, the median sales price across the five-county Austin, Round Rock, San Marcos MSA rose 1.1% year over year to $450,000, while active listings fell 14.8%, pending sales jumped 13.2%, and months of inventory dropped a full month to 4.4. One month doesn't make a boom, but after three years in which every trailing-12-month price comparison came in negative, the direction of travel has changed.
 
 ## Key takeaways
 
-- **First green shoot on price:** the MSA median hit $450-000 in June, up 1.1% from June 2025, even as the year-to-date median ($425-000) still sits 2.4% below last year. The monthly data is turning before the annual data, which is exactly how bottoms form.
+- **First green shoot on price:** the MSA median hit $450,000 in June, up 1.1% from June 2025, even as the year-to-date median ($425,000) still sits 2.4% below last year. The monthly data is turning before the annual data, which is exactly how bottoms form.
 - **Supply is tightening fast:** 13,245 active listings is nearly 15% fewer than a year ago, and every core county saw inventory shrink.
 - **Demand is stirring:** 2,994 pending sales (+13.2%) is the strongest forward-looking signal in the report. Pendings are July's and August's closings.
 - **The correction cooled in slow motion:** AgentIntel's trailing-12-month appreciation for the Austin metro improved from -4.6% (year ending June 2024) to -2.6% (2025) to -2.0% (2026). That two-year deceleration set up June's positive print.
@@ -118,7 +118,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 :::compare-table
 Metric | Value | vs. June 2025
-Median sales price | $450-000 | +1.1%
+Median sales price | $450,000 | +1.1%
 Closed sales | 2,961 | up slightly (<1%)
 Sales dollar volume | $1.81 billion | +5.9%
 Pending sales | 2,994 | +13.2%
@@ -142,20 +142,20 @@ The honest caveat: at 4.4 months of inventory, we're in balanced territory, not 
 
 :::compare-table
 Market | Median price | YoY | Months of inventory | Avg. days on market
-Austin,Round Rock,San Marcos MSA | $450-000 | +1.1% | 4.4 (-1.0) | 62 (no change)
-City of Austin | $605-000 | +3.6% | 4.3 (-1.7) | 48 (-4)
-Travis County | $542-000 | +4.0% | 4.7 (-1.4) | 53 (-2)
-Williamson County | $426-800 | +<1% | 3.7 (-1.2) | 69 (+7)
-Hays County | $400-000 | +9.0% | 4.8 (+0.5) | 65 (-8)
-Bastrop County | $344-900 | -6.8% | 6.6 (+0.2) | 85 (+3)
-Caldwell County | $260-495 | -10.2% | 5.6 (+0.9) | 62 (-1)
+Austin,Round Rock,San Marcos MSA | $450,000 | +1.1% | 4.4 (-1.0) | 62 (no change)
+City of Austin | $605,000 | +3.6% | 4.3 (-1.7) | 48 (-4)
+Travis County | $542,000 | +4.0% | 4.7 (-1.4) | 53 (-2)
+Williamson County | $426,800 | +<1% | 3.7 (-1.2) | 69 (+7)
+Hays County | $400,000 | +9.0% | 4.8 (+0.5) | 65 (-8)
+Bastrop County | $344,900 | -6.8% | 6.6 (+0.2) | 85 (+3)
+Caldwell County | $260,495 | -10.2% | 5.6 (+0.9) | 62 (-1)
 :::
 
 Median sales price, June 2026, year-over-year. Source: Unlock MLS.
 
-The closer to the urban core, the stronger the rebound. The City of Austin led at $605-000 (+3.6%) with homes moving in 48 days and inventory down 22%, the tightest submarket in the region. Travis County followed at $542-000 (+4.0%) with dollar volume up 13.1%. Williamson County was steady at $426-800 with the metro's leanest inventory (3.7 months), though homes took a week longer to sell than last June.
+The closer to the urban core, the stronger the rebound. The City of Austin led at $605,000 (+3.6%) with homes moving in 48 days and inventory down 22%, the tightest submarket in the region. Travis County followed at $542,000 (+4.0%) with dollar volume up 13.1%. Williamson County was steady at $426,800 with the metro's leanest inventory (3.7 months), though homes took a week longer to sell than last June.
 
-Hays County's +9.0% median jump deserves an asterisk: closed sales fell 22.8%, so a thinner, pricier mix of homes likely drove that number more than broad appreciation did. Bastrop (-6.8%) and Caldwell (-10.2%) are still correcting. They carry the metro's highest inventory at 6.6 and 5.6 months, which is why the region's best affordability plays are out east and south, with Caldwell's median at just $260-495.
+Hays County's +9.0% median jump deserves an asterisk: closed sales fell 22.8%, so a thinner, pricier mix of homes likely drove that number more than broad appreciation did. Bastrop (-6.8%) and Caldwell (-10.2%) are still correcting. They carry the metro's highest inventory at 6.6 and 5.6 months, which is why the region's best affordability plays are out east and south, with Caldwell's median at just $260,495.
 
 ## What This Means If You're Buying in Austin
 

@@ -335,7 +335,7 @@ export const AgentIntelMarketSnapshot = ({
           </h2>
           {periodLabel && !loading && !error && (
             <p className="mt-4 md:mt-6 text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] md:tracking-[0.4em] uppercase text-muted-foreground/75">
-              Advisory Brief · {periodLabel}
+              Advisory Brief · Reporting through {periodLabel}
             </p>
           )}
           {dataNote && !loading && !error && (
@@ -390,7 +390,7 @@ export const AgentIntelMarketSnapshot = ({
                 <Sparkline points={hero.points} />
                 <div className="mt-3 flex justify-between text-[0.5rem] md:text-[0.55rem] tracking-[0.22em] md:tracking-[0.3em] uppercase text-muted-foreground/60">
                   <span>Trailing 12 Months</span>
-                  <span>{periodLabel}</span>
+                  <span>Through {periodLabel}</span>
                 </div>
               </div>
             </div>

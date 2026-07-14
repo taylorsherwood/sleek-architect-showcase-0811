@@ -333,9 +333,9 @@ export const AgentIntelMarketSnapshot = ({
           >
             {displayTitle}
           </h2>
-          {periodLabel && !loading && !error && (
+          {!loading && !error && (
             <p className="mt-4 md:mt-6 text-[0.55rem] md:text-[0.6rem] tracking-[0.28em] md:tracking-[0.4em] uppercase text-muted-foreground/75">
-              Advisory Brief · Reporting through {periodLabel}
+              Advisory Brief · Latest reporting period
             </p>
           )}
           {dataNote && !loading && !error && (

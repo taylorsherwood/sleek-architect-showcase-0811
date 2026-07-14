@@ -247,6 +247,12 @@ import { z as z3 } from "npm:zod@^3.23.8";
 // src/lib/mcp/data/blog-posts.json
 var blog_posts_default = [
   {
+    id: "austin-housing-market-update-june-2026",
+    title: "Austin Housing Market Update, June 2026: The Turn Is Finally Here",
+    date: "2026-07-14",
+    excerpt: "Austin's median home price rose 1.1% in June 2026 as inventory fell 15%. County-by-county data and what the turn means for buyers and sellers."
+  },
+  {
     id: "austin-luxury-home-buying-guide-relocating-executives-2026",
     title: "Austin Luxury Home Buying Guide for Relocating Executives (2026)",
     date: "2026-07-10",

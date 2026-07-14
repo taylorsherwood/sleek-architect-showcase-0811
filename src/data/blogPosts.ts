@@ -10541,8 +10541,8 @@ Echelon Property Group advises on commercial land acquisition, entitlement strat
   },
   {
     id: "buying-lake-travis-waterfront-property",
-    title: "Buying Lake Travis Waterfront Property: 7 Proven Strategies",
-    metaTitle: "Buying Lake Travis Waterfront Property: 7 Proven Strategies",
+    title: "Buying Lake Travis Waterfront Property: 7 proven Strategies",
+    metaTitle: "Buying Lake Travis Waterfront Property: 7 proven Strategies",
     excerpt: "How to buy luxury waterfront property on Lake Travis: LCRA dock permits, water levels, off-market access, and 7 strategies from Echelon Property Group.",
     author: "Taylor Sherwood",
     date: "2026-07-14",

@@ -53,7 +53,7 @@ import blogAustinIsdVsEanesIsd from "@/assets/blog/austin-isd-vs-eanes-isd.png.a
 import blogAustinInfillModernFraming from "@/assets/blog/austin-infill-development-modern-framing.png.asset.json";
 import blogAustinLuxuryExecRelocation from "@/assets/blog/austin-luxury-executive-relocation-hero.png.asset.json";
 import blogCommercialLandDevelopment2026 from "@/assets/blog/austin-commercial-land-development-2026.jpg.asset.json";
-import blogBuyingLakeTravisWaterfront from "@/assets/blog/buying-lake-travis-waterfront-property.jpg";
+import blogBuyingLakeTravisWaterfront from "@/assets/blog/buying-lake-travis-waterfront-property.jpg.asset.json";
 
 
 

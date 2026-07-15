@@ -196,6 +196,131 @@ Taylor Sherwood is a REALTOR® and the founder of Echelon Property Group (broker
   },
 
   {
+    id: "why-didnt-my-house-sell-austin",
+    title: "Why Your Austin Home Didn't Sell: What the Data Says and What to Do Next",
+    metaTitle: "Why Your Austin Home Didn't Sell: 2026 Data and Relist Plan",
+    excerpt: "Roughly 4 in 10 Austin listings now fail to sell. The data behind expired and withdrawn listings, the five reasons homes stall, and the playbook for what to do next.",
+    author: "Taylor Sherwood",
+    date: "2026-07-15",
+    readTime: "11 min read",
+    category: "SELLERS",
+    image: blogWhyHomeDidntSell,
+    heroImage: blogWhyHomeDidntSell,
+    imageAlt: "Austin luxury home at dusk with an empty for-sale post in the front yard",
+    imageCaption: "About 4 in 10 Austin listings fail to sell. A failed listing is a strategy problem, not a verdict on the home.",
+    content: `Your listing expired, or you pulled it down before it could. Either way, the sign came out of the yard and the house is still yours. Before anyone starts assigning blame, it helps to look at the scoreboard, because this outcome is now one of the most common in Austin real estate.
+
+Over the trailing 12 months, only about 60% of Austin listings actually closed. The rest expired or were withdrawn. A failed listing in this market is not an anomaly and it is not a verdict on your home. It is usually a strategy problem, and strategy problems are fixable. This guide covers what the current data says, the five reasons listings stall, and exactly what to do in the 30 days after yours comes off the market.
+
+:::callout
+label: Quick answer
+Roughly 4 in 10 Austin listings now fail to sell. Over the 12 months ending June 30, 2026, 2,624 Austin listings expired and another 4,719 were withdrawn, while the homes that did sell took a median 47 days and closed about 4.2% below their original asking price. Most failed listings trace back to one of five causes: a price set for a market that no longer exists, presentation that was not ready for today's buyers, a rigid stance on concessions, marketing that stopped at the MLS, or a strategy that never adjusted to feedback. The fix is a forensic review of the first attempt, a true repricing rather than a token cut, a presentation reset, a concession plan built in from day one, and in some cases a private sale instead of a public relist.
+:::
+
+## The numbers behind Austin's failed listings
+
+Unlock MLS market data for the City of Austin, trailing 12 months through June 30, 2026:
+
+- **60.5% listing success rate.** Of the listings that came off the market, about six in ten closed. Four in ten did not. Two years ago the success rate was 63.6%.
+- **7,343 listings failed.** 2,624 expired and 4,719 were withdrawn. Expirations are up roughly 47% versus two years ago.
+- **10,700 price reductions against 10,677 closed sales.** Austin logged roughly one price cut for every closing. Half the market is publicly negotiating against itself.
+- **47 days median time on market** for the homes that sold. The average is 81 days, dragged upward by listings that sat.
+- **5.1 months of inventory.** Buyers have options, and they know it.
+- **Sellers who closed accepted about 4.2% below original asking price.** On the median Austin sale of $570,715, that gap is roughly $25,000.
+
+One more detail worth noticing: withdrawn listings outnumber expired listings nearly two to one. Most sellers do not wait for the clock to run out. They read the room and pull the listing. If that was you, you are in the majority of the minority.
+
+## The five reasons Austin listings fail
+
+### 1. The price was set for a market that no longer exists
+
+This is the big one, and it is rarely about greed. It is about anchoring. Sellers anchor to what a neighbor got in 2022, to a Zestimate, or to what they need to net. The market anchors to exactly none of those things.
+
+The current data is blunt: homes that close are selling about 3.2% below their final asking price and 4.2% below their original one, and the market produced 10,700 price reductions in a year. A listing priced even 5% above the evidence does not get lowball offers in this environment. It gets silence. Buyers and their agents simply tour the better priced comparable, and your listing becomes the one that makes the other house look like a deal.
+
+The expensive part is the chase. A home that starts high and cuts every three weeks follows the market down, accumulates days on market, and signals negotiability. Starting at the number the evidence supports almost always nets more than arriving there by installments.
+
+### 2. The home was not ready for the buyers who are left
+
+At 5.1 months of inventory, every buyer tours your home with four or five alternatives open in another tab. With 30 year mortgage rates holding in the mid 6% range, a buyer of a median priced Austin home is signing up for a payment near $3,000 a month before taxes and insurance. At that cost, buyers are not imagining potential. They are subtracting for every flaw they can see.
+
+Dated photography, deferred maintenance, dark rooms, and clutter did not stop sales in 2021. They stop them now. If the listing photos were taken on a phone, if the first image was not the best image, or if the home showed as lived in rather than staged to sell, the market priced that in for you, usually at a multiple of what fixing it would have cost.
+
+### 3. Concessions were treated as an insult instead of a tool
+
+Recent national data shows nearly half of sellers now offer at least one concession, roughly double the share from a year earlier. Concessions moved from edge case to standard equipment, and sellers who refuse to engage with them are competing with one hand tied.
+
+Here is why they matter more than a price cut in a rate sensitive market. Take a $570,000 sale with 20% down at today's rates. Cutting the price by $15,000 lowers the buyer's monthly payment by about $75. Applying that same $15,000 toward a permanent rate buydown can lower it by roughly $200 to $235 a month, depending on lender pricing. Same money out of your pocket, about three times the impact on the number the buyer actually feels. Concessions can also resolve the question of [who pays the buyer's agent in Texas](/blog/buyer-agent-commission-texas), which since the commission rule changes is negotiated deal by deal. A well structured credit solves a specific buyer's problem without repricing your home for every future buyer. For the mechanics, see our guide to seller concessions in Texas.
+
+<!-- TODO: Link "seller concessions in Texas" to /blog/seller-concessions-texas once that post is published. -->
+
+### 4. The marketing stopped at the MLS
+
+Entering a listing into the MLS and letting it syndicate to the portals is not marketing. It is data entry. In a market clearing 60% of its listings, distribution is the entry fee and positioning is the game: which buyer profile the home is for, what story the photography tells, how the listing is presented to the agents most likely to have that buyer, and whether it reaches qualified people who are not refreshing Zillow at all.
+
+That last group is real. A meaningful share of Austin's upper market transacts privately, and Echelon Property Group maintains a [private buyer network](/off-market-real-estate-austin) built for exactly that reason. If your previous listing's marketing plan was a portal syndication list, your home was visible but never actually sold to anyone.
+
+### 5. The strategy never changed after the market gave feedback
+
+The market talks constantly. Fifteen showings and no offers is feedback about price. Strong online traffic but few showings is feedback about photos or the first impression. No traffic at all is feedback about price and positioning together. The homes that sold in a median of 47 days were mostly the ones whose sellers listened early.
+
+A listing that ran 90 or 180 days on the same price and the same photos was not patient. It was unmanaged. If every check-in with your previous agent ended with some version of "let's give it more time," that was not a strategy. That was a countdown.
+
+## The relist playbook: what to do in the first 30 days
+
+Run a forensic review before anything else. Pull the showing count, the feedback, the online traffic, the days spent at each price point, and how each compares to the listings that sold against yours. The failed attempt is not a sunk cost. It is the best market research you will ever get for free, and any agent you interview should want to see it.
+
+Reprice from zero, not from your last number. The relevant question is not "how much should we come down." It is "what would we price this at today if it had never been listed." Anchor on what has closed in the last 60 to 90 days, adjusted for the roughly 4% gap between asking and closing that the current market is enforcing.
+
+Fix the presentation before the relaunch date. New photography is non negotiable. Complete the small repairs buyers flagged. If the home is vacant or shows heavy, stage it. None of this is cosmetic vanity. It changes the payment a buyer is willing to sign up for.
+
+Decide your concession posture in advance. Know before the first offer arrives whether you will fund a rate buydown, contribute to closing costs, or credit for repairs, and how much. Sellers who improvise concessions under deadline pressure give away more than sellers who planned them.
+
+Relaunch with real changes or do not relaunch. Buyer's agents can pull your property's full listing history regardless of how the days on market counter displays, so a quick relist with the same price and photos fools no one and reads as fatigue. A relaunch earns a second first impression only when something material is different.
+
+Set decision checkpoints. Agree in writing on what happens at day 14 and day 30 if the market response falls short: the specific price move, the marketing adjustment, or the pivot. A plan with predefined triggers is what separates managed listings from parked ones.
+
+## The third option: selling without relisting publicly
+
+For some sellers, especially after a visible failed attempt, the right move is not a second public launch at all. A private sale places the home directly in front of qualified buyers through agent networks and buyer databases, without portal exposure, without a public price history, and without a days on market counter ticking against you.
+
+This route fits sellers who value discretion, homes with a public history that would color a relaunch, unique properties that portals flatten, and situations where testing a price point quietly beats broadcasting it. The honest tradeoff is a smaller audience, which is why it only works when the network behind it is real. Most of the transactions Echelon Property Group advises never touch a search portal, and our [private buyer network](/off-market-real-estate-austin) exists to match homes like yours with buyers who never see the public market. You can read how our [private sale strategy](/sell-private) works, or start with a [complimentary valuation](/home-value-austin) to see what the current market actually supports.
+
+:::faq
+Q: How long should I wait before relisting my Austin home?
+A: There is no magic waiting period, because buyer's agents can see your property's full listing history either way. The right trigger is not time, it is change: a true repricing, new photography, completed repairs, or a different strategy. Relist when something material is different. On seasonality, Austin's spring market is strongest, but correctly priced homes sell in every month of the year, so waiting for a season rarely beats fixing the strategy now.
+
+Q: Should I relist with the same agent?
+A: Judge it on evidence, not loyalty or frustration. Ask for the full performance data from the first attempt and ask what they would do differently. If the entire answer is "lower the price" with no changes to presentation, marketing, or concession strategy, keep interviewing. A failed listing is sometimes the market's fault. An unchanged plan for round two never is.
+
+Q: Should I cut the price or offer concessions?
+A: Both cost you money, but they buy different things. A price cut repositions the home for every buyer and can pull it into new search brackets. A concession, like a rate buydown or closing cost credit, solves one specific buyer's payment problem, and in a rate sensitive market it often delivers roughly three times the monthly impact per dollar. Let the feedback decide: broad silence points to price, while buyers who tour but hesitate on payment point to concessions.
+
+Q: Does a failed listing hurt my home's value?
+A: Not intrinsically. The house is worth what the market will pay regardless of its listing history. What a failed attempt does create is a negotiating headwind: accumulated market time invites buyers to open lower and push harder. The cure is a relaunch that resets the conversation with a defensible price and visibly improved presentation, or a private sale that sidesteps the public history entirely.
+
+Q: Can I sell my Austin home without putting it back on the MLS?
+A: Yes. Private and off market sales are common in Austin, particularly in the mid and upper price ranges. The home is presented directly to qualified buyers through agent relationships and buyer networks rather than public portals. It trades reach for discretion and control, and it works best with a brokerage that maintains an active private buyer network rather than one improvising it for your listing.
+
+Q: Why are so many Austin listings expiring right now?
+A: Supply and financing. Austin is carrying just over five months of inventory, mortgage rates are holding in the mid 6% range, and the median sale price is slightly below where it stood a year ago. Buyers have choices and time, so listings priced or presented for a hotter market simply get skipped. Expirations are up about 47% compared with two years ago, which is why a failed listing today says more about strategy than about your home.
+:::
+
+:::cta-anchor
+:::
+
+## Get a straight answer on your next move
+
+If your home just came off the market, the most valuable thing you can do this week is find out why, with data instead of theories. Echelon Property Group will run the forensic review, show you what the market is actually paying right now, and give you an honest read on whether your best path is a repriced relaunch or a private sale. Start with a [complimentary valuation](/home-value-austin), and we will take it from there.
+
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $125M in career sales across 200+ transactions.
+
+*Market statistics: Unlock MLS, City of Austin residential, trailing 12 months through June 30, 2026. Mortgage rates: Freddie Mac Primary Mortgage Market Survey, July 9, 2026. National concession data: industry reporting on 2025 to 2026 seller concession share.*`,
+  },
+
+
+
+  {
     id: "texas-hill-country-ranch-market-guide",
     title: "Texas Hill Country Ranch Market: What Buyers and Investors Need to Know",
     metaTitle: "Texas Hill Country Ranch Market Guide (2026)",

@@ -86,6 +86,9 @@ const blogHillCountryRanchMarket = blogHillCountryRanchMarketAsset.url;
 import blogAustinHousingJune2026Asset from "@/assets/blog/austin-skyline-june-2026.jpg.asset.json";
 const blogAustinHousingJune2026 = blogAustinHousingJune2026Asset.url;
 
+import blogWhyHomeDidntSellAsset from "@/assets/blog/austin-home-didnt-sell.png.asset.json";
+const blogWhyHomeDidntSell = blogWhyHomeDidntSellAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {

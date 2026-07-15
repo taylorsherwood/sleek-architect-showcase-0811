@@ -230,6 +230,9 @@ Unlock MLS market data for the City of Austin, trailing 12 months through June 3
 
 One more detail worth noticing: withdrawn listings outnumber expired listings nearly two to one. Most sellers do not wait for the clock to run out. They read the room and pull the listing. If that was you, you are in the majority of the minority.
 
+:::intel-gauge-austin-metro
+:::
+
 ## The five reasons Austin listings fail
 
 ### 1. The price was set for a market that no longer exists

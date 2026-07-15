@@ -266,6 +266,14 @@ The market talks constantly. Fifteen showings and no offers is feedback about pr
 
 A listing that ran 90 or 180 days on the same price and the same photos was not patient. It was unmanaged. If every check-in with your previous agent ended with some version of "let's give it more time," that was not a strategy. That was a countdown.
 
+## The most expensive mistake: relisting at the price that already failed
+
+The default move after a listing dies is remarkably consistent: interview a few agents, hire the one who sounds most confident, and go back on the market at the same price with a fresh sign in the yard. The problem is that the market already voted on that number. Silence was the vote.
+
+There is also an arithmetic problem hiding inside the sentimental one. Austin's median sale price sits slightly below last year's level, which means a price that was 5% too high six months ago is further from the market today, not closer. Relisting at the old number is not holding firm. In a softening market, it is functionally a price increase.
+
+Be careful in the agent interviews, too. An agent who agrees to relaunch at the number that already failed is not more confident than the last one. They are usually just buying the listing, and planning to let the market deliver the bad news for them a few weeks at a time. That path is how Austin produced 10,700 price reductions in a single year. A real relaunch starts with the question in the playbook below, not with a pep talk.
+
 ## The relist playbook: what to do in the first 30 days
 
 Run a forensic review before anything else. Pull the showing count, the feedback, the online traffic, the days spent at each price point, and how each compares to the listings that sold against yours. The failed attempt is not a sunk cost. It is the best market research you will ever get for free, and any agent you interview should want to see it.

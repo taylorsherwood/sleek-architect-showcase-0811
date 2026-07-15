@@ -247,6 +247,12 @@ import { z as z3 } from "npm:zod@^3.23.8";
 // src/lib/mcp/data/blog-posts.json
 var blog_posts_default = [
   {
+    id: "why-didnt-my-house-sell-austin",
+    title: "Why Your Austin Home Didn't Sell: What the Data Says and What to Do Next",
+    date: "2026-07-15",
+    excerpt: "Roughly 4 in 10 Austin listings now fail to sell. The data behind expired and withdrawn listings, the five reasons homes stall, and the playbook for what to do next."
+  },
+  {
     id: "austin-housing-market-update-june-2026",
     title: "Austin Housing Market Update, June 2026: The Turn Is Finally Here",
     date: "2026-07-14",

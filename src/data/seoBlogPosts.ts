@@ -89,6 +89,9 @@ const blogAustinHousingJune2026 = blogAustinHousingJune2026Asset.url;
 import blogWhyHomeDidntSellAsset from "@/assets/blog/austin-home-didnt-sell.png.asset.json";
 const blogWhyHomeDidntSell = blogWhyHomeDidntSellAsset.url;
 
+import blogHowLongToSellHouseAustinAsset from "@/assets/blog/austin-home-dining-lake-view.jpg.asset.json";
+const blogHowLongToSellHouseAustin = blogHowLongToSellHouseAustinAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {

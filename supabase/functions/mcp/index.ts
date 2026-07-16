@@ -247,6 +247,12 @@ import { z as z3 } from "npm:zod@^3.23.8";
 // src/lib/mcp/data/blog-posts.json
 var blog_posts_default = [
   {
+    id: "how-long-to-sell-house-austin",
+    title: "How Long Does It Take to Sell a House in Austin? The 2026 Answer, By the Numbers",
+    date: "2026-07-16",
+    excerpt: "How long it takes to sell a house in Austin in 2026: real days-on-market data by price tier, why published DOM numbers conflict, and how to sell faster."
+  },
+  {
     id: "why-didnt-my-house-sell-austin",
     title: "Why Your Austin Home Didn't Sell: What the Data Says and What to Do Next",
     date: "2026-07-15",

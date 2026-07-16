@@ -332,6 +332,122 @@ Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and i
 *Market statistics: Unlock MLS, City of Austin residential, trailing 12 months through June 30, 2026. Mortgage rates: Freddie Mac Primary Mortgage Market Survey, July 9, 2026. National concession data: industry reporting on 2025 to 2026 seller concession share.*`,
   },
 
+  {
+    id: "how-long-to-sell-house-austin",
+    title: "How Long Does It Take to Sell a House in Austin? The 2026 Answer, By the Numbers",
+    metaTitle: "How Long Does It Take to Sell a House in Austin? [2026]",
+    excerpt: "How long it takes to sell a house in Austin in 2026: real days-on-market data by price tier, why published DOM numbers conflict, and how to sell faster.",
+    author: "Taylor Sherwood",
+    date: "2026-07-16",
+    readTime: "11 min read",
+    category: "SELLERS",
+    image: blogHowLongToSellHouseAustin,
+    heroImage: blogHowLongToSellHouseAustin,
+    imageAlt: "Modern Austin dining room with lake and hill country view through floor-to-ceiling windows",
+    imageCaption: "A well-priced Austin home goes under contract in 3 to 5 weeks. The averages hide the real story.",
+    content: `In mid-2026, a well-priced Austin home typically goes under contract in 3 to 5 weeks and closes 30 to 45 days after that, a total of roughly 60 to 80 days from listing to keys. But the averages hide the real story: correctly priced homes are selling in under a month, while overpriced listings sit 90+ days and increasingly don't sell at all. Roughly 4 in 10 Austin listings now expire or withdraw without closing.
+
+That's the short answer. The longer answer is more useful, because "days on market" is one of the most manipulated, misunderstood, and inconsistently measured statistics in residential real estate, and if you're planning a sale, the difference between the marketing number and the real number can cost you months and six figures.
+
+## Why every source gives you a different number
+
+Search this question and you'll find answers ranging from 24 days to 90. None of them are lying. They're measuring different things:
+
+**Median vs. average.** Austin's median time to sell in June 2026 came in around the mid-20s for single-family homes that actually closed, but the average runs 50 to 85 days depending on the data set. The gap exists because a fast-moving, well-priced core of the market drags the median down, while a long tail of stale, mispriced listings drags the average up. Both numbers are "true." Neither describes your house.
+
+**Sold DOM vs. active DOM.** Most published figures only count homes that sold. That's survivorship bias. The listings that sat for 150 days and quietly expired never enter the statistic. In a market where roughly 40% of listings fail to close, sold-only DOM understates the real timeline dramatically. (We broke down the expired-listing data in [Why Your Austin Home Didn't Sell](/blog/why-didnt-my-house-sell-austin).)
+
+**The relist reset.** When a listing is withdrawn and relisted, sometimes with a new agent, sometimes just a new MLS number, the clock often resets to zero. A home that has genuinely been for sale for eight months can show 12 days on market. Buyers' agents see through this. Public statistics don't.
+
+**Contract vs. close.** "Days on market" usually stops at contract execution, not closing. Add 30 to 45 days of option period, financing, appraisal, and title work before money actually moves. If your question is "when will I have my proceeds," add a month and a half to any DOM figure you read.
+
+When someone quotes you a single number without telling you which of these definitions they're using, they're not informing you, they're marketing to you.
+
+:::intel-gauge-austin-metro
+:::
+
+## Austin days on market in 2026: what the data actually shows
+
+Pulling together Unlock MLS/ABoR reporting, Redfin, and RPR data as of June 2026:
+
+| Segment | Typical time to contract | Notes |
+| --- | --- | --- |
+| Well-priced single-family, under $600K | 20 to 35 days | Fastest segment; correctly priced homes still draw multiple offers |
+| $600K to $1M | 35 to 60 days | Most buyer resistance is concentrated here; YoY sales down 6 to 10% in the $700K to $999K band |
+| $1M to $2.5M | 45 to 90 days | Thinner buyer pool; pricing precision matters more than marketing spend |
+| $2.5M+ luxury | 90 to 180+ days | A different market entirely; a meaningful share trades off-market before DOM ever starts |
+| Condos | ~52 days median (June 2026) | Nearly half of active condo listings carry a price reduction |
+
+A few realities behind the table:
+
+**The market bifurcated, and the middle is where sellers get hurt.** Homes priced accurately against the last 90 days of comps, not against a 2022 memory or a Zestimate, are moving in three to five weeks across most of Travis, Williamson, and Hays counties. Homes priced at "what we need to get" are the ones generating the 85-day averages and the expired-listing statistics.
+
+**Price reductions don't reset the damage.** June condo data showed sellers who cut their price gave up an average of $35,000 before buyer negotiations even began, and the final negotiated discount came on top of that. In our own transaction work, the pattern is identical for single-family: the total concession on a reduced listing almost always exceeds what accurate day-one pricing would have cost. We covered the mechanics in [How to Price a Luxury Home in Austin](/blog/how-to-price-a-luxury-home-in-austin).
+
+**The first 14 days decide the outcome.** Showing activity peaks in week one and decays fast. A home that doesn't generate serious activity in its first two weeks isn't unlucky, it's mispriced or mispositioned, and the market is telling you so. Every week you wait to respond, the listing accumulates the stigma buyers' agents read directly off the DOM counter.
+
+**Inventory context cuts both ways.** Metro inventory tightened meaningfully year-over-year through mid-2026, months of supply fell from over 6 to roughly 4.5, which is quietly restoring seller leverage in the correctly priced segment. (Full county-by-county breakdown in our [June 2026 market update](/blog/austin-housing-market-update-june-2026) and our guide to [reading Austin inventory levels](/blog/austin-inventory-levels-explained).) But that leverage does not extend to overpriced homes. There is no inventory level low enough to bail out a listing priced 8% above the market.
+
+## The full timeline: listing to closing
+
+For planning purposes, here is the realistic end-to-end sequence for a well-executed Austin sale in 2026:
+
+1. **Pre-market preparation: 2 to 4 weeks.** Repairs, staging decisions, photography, pricing analysis, and, for higher-end properties, private network exposure before the public launch. This phase is where the outcome is largely determined.
+2. **Active marketing to executed contract: 3 to 5 weeks** for a correctly priced home. Luxury properties run longer; see the tier table above.
+3. **Option period: 7 to 10 days.** Inspection, negotiation of repairs or credits. The highest-risk window for renegotiation.
+4. **Contract to close: 30 to 45 days** with financing (appraisal and underwriting drive the timeline). Cash closes in 10 to 20 days.
+
+Total: roughly 10 to 14 weeks from decision to proceeds for a typical financed sale, assuming the pricing is right on day one. Get the price wrong and the honest answer becomes "six months, maybe never": that's not rhetoric, it's what a ~40% failure rate means.
+
+## How to sell faster without leaving money on the table
+
+Speed and price are not opposites in this market, they're correlated. The same discipline produces both:
+
+**Price to the last 90 days, not the last cycle.** The comps that matter are recent, closed, and genuinely comparable. Aspirational pricing "to leave room for negotiation" is the single largest cause of extended market time in Austin right now.
+
+**Front-load the presentation.** Professional photography, honest condition, and complete disclosures before day one. In a market where buyers have choices, homes that require imagination lose to homes that don't.
+
+**Respond to the market in week two, not month three.** If the first 14 days produce showings but no offers, the market is quoting you a price. Listen early, while the listing is still fresh.
+
+**Consider the private channel first.** For distinctive or higher-end properties, quiet exposure to qualified buyers before the public clock starts protects both timeline and negotiating position, the DOM counter never runs on a home that sells before it lists. This is central to [how we handle luxury sales at Echelon](/blog/how-to-sell-a-luxury-home-in-austin).
+
+**Match the strategy to the tier.** A $450K home in Round Rock and a $4M home in Barton Creek are not the same product with different price tags, they have different buyer pools, different marketing sequences, and different realistic timelines. Applying volume-market tactics to a luxury asset (or vice versa) extends time on market in both directions. For a deeper read on the top of the market, see our [Austin luxury real estate market analysis](/blog/austin-luxury-real-estate-market-analysis).
+
+:::faq
+Q: How long does it take to sell a house in Austin in 2026?
+A: A correctly priced Austin home typically goes under contract in 3 to 5 weeks and closes 30 to 45 days later, about 60 to 80 days total. Overpriced homes average 85+ days and face a roughly 40% chance of not selling at all.
+
+Q: Why do different websites show different days-on-market numbers for Austin?
+A: Because they measure differently: median vs. average, sold listings only vs. all listings, and whether relisted homes reset the clock. Sold-only medians run in the 20s; averages including stale listings run 50 to 90 days. Both are accurate measurements of different things.
+
+Q: What is a normal number of days on market in Austin right now?
+A: For single-family homes, 20 to 35 days to contract is typical for well-priced listings under $600K, 35 to 60 days between $600K and $1M, and 90+ days above $2.5M. Condos are running around 52 days median.
+
+Q: Is it a bad sign if my Austin home has been listed for 60 days?
+A: At 60 days with no offers, the market has rendered a verdict on your price or presentation. It's recoverable, but the correction should be decisive, not incremental. Serial small reductions signal distress without restoring buyer interest.
+
+Q: How long after accepting an offer do I actually get paid?
+A: Plan on 30 to 45 days from executed contract to closing with a financed buyer (appraisal and underwriting set the pace), or 10 to 20 days for cash. Proceeds typically fund the day of closing or the next business day.
+
+Q: Does the time of year matter for selling in Austin?
+A: Yes, but less than pricing does. Spring (March through June) brings the deepest buyer pool; late November through early January is thinnest. A correctly priced home sells in any season; an overpriced home fails in the best one.
+:::
+
+:::cta-anchor
+:::
+
+## Get a realistic timeline for your property
+
+Thinking about selling and want a realistic timeline for your specific property and price tier? Request a [private valuation](/home-value-austin) or [talk to us about strategy](/sell) before you list. The decisions that determine your days on market all happen before day one.
+
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $125M in career sales across 200+ transactions.
+
+*Data sources: Unlock MLS/ABoR June 2026 market reports, Redfin Data Center, RPR market statistics, and Echelon Property Group transaction data. All figures as reported July 2026.*`,
+  },
+
+
+
+
 
 
   {

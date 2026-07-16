@@ -211,7 +211,7 @@ Taylor Sherwood is a REALTOR® and the founder of Echelon Property Group (broker
     heroImage: blogWhyHomeDidntSell,
     imageAlt: "Austin luxury home at dusk with an empty for-sale post in the front yard",
     imageCaption: "About 4 in 10 Austin listings fail to sell. A failed listing is a strategy problem, not a verdict on the home.",
-    content: `Your listing expired, or you pulled it down before it could. Either way, the sign came out of the yard and the house is still yours. Before anyone starts assigning blame, it helps to look at the scoreboard, because this outcome is now one of the most common in Austin real estate.
+    content: `Your listing expired, or you pulled it down before it could. Either way, the sign came out of the yard and the house is still yours. Before anyone starts assigning blame, it helps to look at the scoreboard, because this outcome is now one of the most common in Austin real estate, and it helps to know [how long a sale should take](/blog/how-long-to-sell-house-austin) in this market before deciding what to do next.
 
 Over the trailing 12 months, only about 60% of Austin listings actually closed. The rest expired or were withdrawn. A failed listing in this market is not an anomaly and it is not a verdict on your home. It is usually a strategy problem, and strategy problems are fixable. This guide covers what the current data says, the five reasons listings stall, and exactly what to do in the 30 days after yours comes off the market.
 

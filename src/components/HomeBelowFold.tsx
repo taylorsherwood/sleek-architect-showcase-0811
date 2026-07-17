@@ -406,6 +406,11 @@ const testimonials = [
     name: "Priya Shah",
     context: "Purchased in Tarrytown",
   },
+  {
+    quote: "Taylor was a pleasure to work with. He was professional, responsive, and always had our best interests in mind throughout the entire process. His communication, honesty, and dedication made the transaction smooth from start to finish. I highly recommend him and look forward to working together again.",
+    name: "Shahar Keinan",
+    context: "Austin, TX",
+  },
 ];
 
 const TestimonialsSection = () => {

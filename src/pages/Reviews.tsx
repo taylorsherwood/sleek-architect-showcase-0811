@@ -141,6 +141,16 @@ const reviews: Review[] = [
     quote:
       "Taylor's attention to detail and marketing approach are truly exceptional. From staging to photography to negotiation, every step reflected true professionalism and commitment. Highly recommend! Will absolutely use him for future endeavors no question about it.",
   },
+  {
+    name: "Shahar Keinan",
+    source: "Verified Client",
+    date: "2026",
+    category: "Communication",
+    transaction: "Austin, TX",
+    rating: 5,
+    quote:
+      "Taylor was a pleasure to work with. He was professional, responsive, and always had our best interests in mind throughout the entire process. His communication, honesty, and dedication made the transaction smooth from start to finish. I highly recommend him and look forward to working together again.",
+  },
 ];
 
 

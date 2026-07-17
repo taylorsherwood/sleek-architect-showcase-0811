@@ -327,7 +327,7 @@ A: Supply and financing. Austin is carrying just over five months of inventory, 
 
 If your home just came off the market, the most valuable thing you can do this week is find out why, with data instead of theories. Echelon Property Group will run the forensic review, show you what the market is actually paying right now, and give you an honest read on whether your best path is a repriced relaunch or a private sale. Start with a [complimentary valuation](/home-value-austin), and we will take it from there.
 
-Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $125M in career sales across 200+ transactions.
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $150M in career sales across 200+ transactions.
 
 *Market statistics: Unlock MLS, City of Austin residential, trailing 12 months through June 30, 2026. Mortgage rates: Freddie Mac Primary Mortgage Market Survey, July 9, 2026. National concession data: industry reporting on 2025 to 2026 seller concession share.*`,
   },
@@ -440,7 +440,7 @@ A: Yes, but less than pricing does. Spring (March through June) brings the deepe
 
 Thinking about selling and want a realistic timeline for your specific property and price tier? Request a [private valuation](/home-value-austin) or [talk to us about strategy](/sell) before you list. The decisions that determine your days on market all happen before day one.
 
-Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $125M in career sales across 200+ transactions.
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $150M in career sales across 200+ transactions.
 
 *Data sources: Unlock MLS/ABoR June 2026 market reports, Redfin Data Center, RPR market statistics, and Echelon Property Group transaction data. All figures as reported July 2026.*`,
   },

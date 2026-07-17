@@ -297,7 +297,7 @@ const About = () => {
                 <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-2">Taylor Sherwood</h2>
                 <p className="text-xs tracking-[0.1em] uppercase text-muted-foreground/60 mb-6">REALTOR®, CLHMS, ABR, GRI</p>
                 <p className="text-lg text-muted-foreground leading-[1.7]">
-                  Echelon Property Group was founded by Taylor Sherwood to bring institutional grade analysis and boutique level attention to Austin luxury and investment real estate. With more than a decade of experience and over $125 million in career sales across residential, commercial, land, and off market transactions, Taylor leads every engagement personally.
+                  Echelon Property Group was founded by Taylor Sherwood to bring institutional grade analysis and boutique level attention to Austin luxury and investment real estate. With more than a decade of experience and over $150 million in career sales across residential, commercial, land, and off market transactions, Taylor leads every engagement personally.
                 </p>
 
                 <div className="mt-8">

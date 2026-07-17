@@ -19,7 +19,7 @@ const CredibilityStrip = () => {
             className="text-[11px] uppercase font-medium text-center"
             style={{ letterSpacing: "0.16em" }}
           >
-            $125M+ Career Sales Volume
+            $150M+ Career Sales Volume
           </span>
         </div>
       </div>

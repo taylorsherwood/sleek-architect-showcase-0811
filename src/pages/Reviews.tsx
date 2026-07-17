@@ -167,8 +167,8 @@ const proofMetrics: {
 }[] = [
   {
     label: "Career Sales Volume",
-    value: "$125M+",
-    animate: { from: 1, to: 125, decimals: 0, prefix: "$", suffix: "M+" },
+    value: "$150M+",
+    animate: { from: 1, to: 150, decimals: 0, prefix: "$", suffix: "M+" },
   },
   {
     label: "Last 12 Months",

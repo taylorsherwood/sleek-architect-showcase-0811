@@ -42,7 +42,7 @@ import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
    ───────────────────────────────────────────── */
 
 const TrustStrip = () => {
-  const items = ["RESIDENTIAL · RANCH · LAND", "ACQUISITION & DISPOSITION ADVISORY", "$125M+ CAREER SALES VOLUME"];
+  const items = ["RESIDENTIAL · RANCH · LAND", "ACQUISITION & DISPOSITION ADVISORY", "$150M+ CAREER SALES VOLUME"];
   return (
     <section className="hidden lg:block bg-background">
       <div className="container mx-auto px-6">
@@ -290,7 +290,7 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
 };
 
 const stats = [
-  { value: 125, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
+  { value: 150, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
   { value: 200, suffix: "+", prefix: "", label: "Transactions Closed", from: 100 },
   { value: 11, suffix: "+", prefix: "", label: "Years of Experience", from: 1 },
   { value: 1.6, suffix: "B+", prefix: "$", label: "Off-Market Access", from: 0.5, decimals: 1 },

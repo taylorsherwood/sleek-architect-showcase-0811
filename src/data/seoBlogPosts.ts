@@ -45,6 +45,9 @@ import blogAustinTopZipUp from "@/assets/blog-austin-top-zip-code-up.jpg";
 import blogHowToBuyLuxuryHomeAustinAsset from "@/assets/blog/how-to-buy-luxury-home-austin.avif.asset.json";
 const blogHowToBuyLuxuryHomeAustin = blogHowToBuyLuxuryHomeAustinAsset.url;
 
+import blogHowToBuyALuxuryHomeInAustinAsset from "@/assets/blog/how-to-buy-luxury-home-austin.jpg.asset.json";
+const blogHowToBuyALuxuryHomeInAustin = blogHowToBuyALuxuryHomeInAustinAsset.url;
+
 import blogEstateHomeSalesAustinAsset from "@/assets/blog/estate-home-sales-austin.jpg.asset.json";
 const blogEstateHomeSalesAustin = blogEstateHomeSalesAustinAsset.url;
 

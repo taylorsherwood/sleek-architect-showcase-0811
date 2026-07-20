@@ -95,7 +95,7 @@ const blogAustinHousingJune2026 = blogAustinHousingJune2026Asset.url;
 import blogWhyHomeDidntSellAsset from "@/assets/blog/austin-home-didnt-sell.png.asset.json";
 const blogWhyHomeDidntSell = blogWhyHomeDidntSellAsset.url;
 
-import blogHowLongToSellHouseAustinAsset from "@/assets/blog/austin-home-dining-lake-view.jpg.asset.json";
+import blogHowLongToSellHouseAustinAsset from "@/assets/how-long-sell-austin-hero.png.asset.json";
 const blogHowLongToSellHouseAustin = blogHowLongToSellHouseAustinAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v8)
@@ -349,7 +349,7 @@ Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and i
     category: "SELLERS",
     image: blogHowLongToSellHouseAustin,
     heroImage: blogHowLongToSellHouseAustin,
-    imageAlt: "Modern Austin dining room with lake and hill country view through floor-to-ceiling windows",
+    imageAlt: "Modern Austin estate home at dusk with stone facade and landscaped entry",
     imageCaption: "A well-priced Austin home goes under contract in 3 to 5 weeks. The averages hide the real story.",
     content: `In mid-2026, a well-priced Austin home typically goes under contract in 3 to 5 weeks and closes 30 to 45 days after that, a total of roughly 60 to 80 days from listing to keys. But the averages hide the real story: correctly priced homes are selling in under a month, while overpriced listings sit 90+ days and increasingly don't sell at all. Roughly 4 in 10 Austin listings now expire or withdraw without closing.
 

@@ -342,7 +342,7 @@ Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and i
     id: "how-long-to-sell-house-austin",
     title: "How Long Does It Take to Sell a House in Austin? The 2026 Answer, By the Numbers",
     metaTitle: "How Long Does It Take to Sell a House in Austin? [2026]",
-    excerpt: "How long it takes to sell a house in Austin in 2026: real days-on-market data by price tier, why published DOM numbers conflict, and how to sell faster.",
+    excerpt: "How long it takes to sell a house in Austin in 2026: real days-on-market data by price tier, why published DOM numbers conflict, and how to sell faster.\u00a0",
     author: "Taylor Sherwood",
     date: "2026-07-16",
     readTime: "11 min read",

@@ -305,9 +305,9 @@ const CompareTable = ({ body }: { body: string }) => {
     <div className="my-12 -mx-6 md:mx-0">
       <table className="w-full hidden md:table border-collapse table-fixed">
         <colgroup>
-          <col style={{ width: "15%" }} />
+          <col style={{ width: header.length === 2 ? "50%" : "15%" }} />
           {header.slice(1).map((_, i) => (
-            <col key={i} style={{ width: `${85 / (header.length - 1)}%` }} />
+            <col key={i} style={{ width: `${(header.length === 2 ? 50 : 85) / (header.length - 1)}%` }} />
           ))}
         </colgroup>
         <thead>

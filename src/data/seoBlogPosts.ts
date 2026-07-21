@@ -225,7 +225,7 @@ Taylor Sherwood is a REALTOR® and the founder of Echelon Property Group (broker
     category: "SELLER STRATEGY",
     image: blogWhyHomeDidntSell,
     heroImage: blogWhyHomeDidntSell,
-    imageAlt: "Austin luxury home at dusk with an empty for-sale post in the front yard",
+    imageAlt: "Austin luxury home with multiple for-sale signs marked Listed & Expired in the front yard",
     imageCaption: "About 4 in 10 Austin listings fail to sell. A failed listing is a strategy problem, not a verdict on the home.",
     content: `Your listing expired, or you pulled it down before it could. Either way, the sign came out of the yard and the house is still yours. Before anyone starts assigning blame, it helps to look at the scoreboard, because this outcome is now one of the most common in Austin real estate, and it helps to know [how long a sale should take](/blog/how-long-to-sell-house-austin) in this market before deciding what to do next.
 

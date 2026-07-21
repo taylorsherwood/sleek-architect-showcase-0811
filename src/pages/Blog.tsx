@@ -51,6 +51,7 @@ const Blog = () => {
   const categories = [
     "ALL",
     "LUXURY LIVING",
+    "WATERFRONT",
     "NEIGHBORHOODS",
     "RELOCATION",
     "MARKET INSIGHTS",

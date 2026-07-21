@@ -9332,7 +9332,7 @@ before: ${blogStagingBefore}
 after: ${blogStagingAfter}
 beforeLabel: Vacant
 afterLabel: Staged
-caption: Same Hill Country living room, same sunset. Staging transforms an empty shell into a room a buyer can move into on a Tuesday.
+caption: SAME BEAUTIFUL LIVING ROOM, SAME SUNSET. STAGING TRANSFORMS AN EMPTY SHELL INTO A ROOM A BUYER CAN MOVE INTO ON A TUESDAY.
 :::
 
 ## What You Are Actually Paying For

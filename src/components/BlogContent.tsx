@@ -22,6 +22,9 @@ const MortgageCalculator = lazy(
 const GatedCommunityGauge = lazy(
   () => import("@/components/market-intel/GatedCommunityGauge"),
 );
+const BeforeAfterSlider = lazy(
+  () => import("@/components/BeforeAfterSlider"),
+);
 
 interface BlogContentProps {
   content: string;

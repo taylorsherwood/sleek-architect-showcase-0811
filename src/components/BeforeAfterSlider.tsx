@@ -118,7 +118,7 @@ const BeforeAfterSlider = ({
       >
         <div
           className="h-full"
-          style={{ width: "0.5px", backgroundColor: "hsl(var(--gold-light) / 0.3)" }}
+          style={{ width: "1px", backgroundColor: "hsl(var(--gold-light) / 0.45)" }}
         />
       </div>
 
@@ -133,25 +133,25 @@ const BeforeAfterSlider = ({
         <div
           className="flex items-center justify-center rounded-full"
           style={{
-            width: 22,
-            height: 22,
-            backgroundColor: "rgba(255,255,255,0.82)",
-            border: "0.5px solid hsl(var(--gold-light) / 0.4)",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
+            width: 36,
+            height: 36,
+            backgroundColor: "rgba(255,255,255,0.92)",
+            border: "1px solid hsl(var(--gold-light) / 0.55)",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
           }}
         >
-          <svg width="8" height="8" viewBox="0 0 14 14" fill="none">
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
             <path
               d="M4.5 3L2 7L4.5 11"
-              stroke="hsl(var(--gold) / 0.7)"
-              strokeWidth="1"
+              stroke="hsl(var(--gold) / 0.85)"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M9.5 3L12 7L9.5 11"
-              stroke="hsl(var(--gold) / 0.7)"
-              strokeWidth="1"
+              stroke="hsl(var(--gold) / 0.85)"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             />

@@ -9327,6 +9327,14 @@ In Austin specifically, the aesthetic expectations of the $2M+ market have becom
 
 There is also a reputational dimension. A poorly staged luxury listing signals that either the seller does not understand the market or the property is not being handled with care. In a segment where perception shapes price, that signal has real consequences.
 
+:::before-after
+before: ${blogStagingBefore}
+after: ${blogStagingAfter}
+beforeLabel: Vacant
+afterLabel: Staged
+caption: Same Hill Country living room, same sunset. Staging transforms an empty shell into a room a buyer can move into on a Tuesday.
+:::
+
 ## What You Are Actually Paying For
 
 Luxury staging costs are a bundle of distinct services, each with its own pricing logic.

@@ -9450,6 +9450,9 @@ Trophy compounds (acreage, extensive frontage, multiple slips) | $25M to $35M+
 
 Value on Lake Austin is measured in feet of shoreline as much as square feet of house. Frontage, lot topography, orientation, and dock status frequently matter more to price than the improvements sitting on the land.
 
+:::intel-gauge-lake-austin
+:::
+
 ## What Lake Austin Actually Is
 
 Lake Austin is a 22-mile stretch of the Colorado River between Mansfield Dam and Tom Miller Dam, the last lake in the Highland Lakes chain before the river reaches downtown. It is long, narrow, and lined with limestone cliffs, mature bald cypress, and live oaks growing right to the water's edge.

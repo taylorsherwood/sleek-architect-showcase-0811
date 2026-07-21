@@ -9335,7 +9335,7 @@ before: ${blogStagingBefore}
 after: ${blogStagingAfter}
 beforeLabel: Vacant
 afterLabel: Staged
-caption: SAME BEAUTIFUL LIVING ROOM, SAME SUNSET. STAGING TRANSFORMS AN EMPTY SHELL INTO A ROOM A BUYER CAN MOVE INTO ON A TUESDAY.
+caption: 
 :::
 
 ## What You Are Actually Paying For

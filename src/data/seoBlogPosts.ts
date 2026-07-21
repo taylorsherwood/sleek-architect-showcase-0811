@@ -98,8 +98,12 @@ const blogWhyHomeDidntSell = blogWhyHomeDidntSellAsset.url;
 import blogHowLongToSellHouseAustinAsset from "@/assets/how-long-sell-austin-hero.png.asset.json";
 const blogHowLongToSellHouseAustin = blogHowLongToSellHouseAustinAsset.url;
 
-import blogLuxuryHomeStagingAustinAsset from "@/assets/blog/luxury-home-staging-austin.png.asset.json";
+import blogLuxuryHomeStagingAustinAsset from "@/assets/blog/luxury-home-staging-austin-hero.png.asset.json";
 const blogLuxuryHomeStagingAustin = blogLuxuryHomeStagingAustinAsset.url;
+import blogStagingBeforeAsset from "@/assets/blog/austin-staging-before.jpg.asset.json";
+const blogStagingBefore = blogStagingBeforeAsset.url;
+import blogStagingAfterAsset from "@/assets/blog/austin-staging-after.jpg.asset.json";
+const blogStagingAfter = blogStagingAfterAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
@@ -9322,6 +9326,14 @@ But square footage alone does not explain the premium. Presentation standards ar
 In Austin specifically, the aesthetic expectations of the $2M+ market have become sharply defined. Hill Country modern and transitional contemporary dominate [Barton Creek](/communities/barton-creek), [Westlake Hills](/communities/westlake-hills), and [Spanish Oaks](/communities/spanish-oaks). Buyers in these submarkets respond to natural materials, clean lines, and spaces that feel both elevated and livable. Staging that misses this aesthetic creates a disconnect between the property's architecture and its presentation, even when it is technically competent.
 
 There is also a reputational dimension. A poorly staged luxury listing signals that either the seller does not understand the market or the property is not being handled with care. In a segment where perception shapes price, that signal has real consequences.
+
+:::before-after
+before: ${blogStagingBefore}
+after: ${blogStagingAfter}
+beforeLabel: Vacant
+afterLabel: Staged
+caption: Same Hill Country living room, same sunset. Staging transforms an empty shell into a room a buyer can move into on a Tuesday.
+:::
 
 ## What You Are Actually Paying For
 

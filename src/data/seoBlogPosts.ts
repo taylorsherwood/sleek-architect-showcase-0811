@@ -9331,8 +9331,8 @@ In Austin specifically, the aesthetic expectations of the $2M+ market have becom
 There is also a reputational dimension. A poorly staged luxury listing signals that either the seller does not understand the market or the property is not being handled with care. In a segment where perception shapes price, that signal has real consequences.
 
 :::before-after
-before: \${blogStagingBefore}
-after: \${blogStagingAfter}
+before: ${blogStagingBefore}
+after: ${blogStagingAfter}
 beforeLabel: Vacant
 afterLabel: Staged
 caption: SAME BEAUTIFUL LIVING ROOM, SAME SUNSET. STAGING TRANSFORMS AN EMPTY SHELL INTO A ROOM A BUYER CAN MOVE INTO ON A TUESDAY.

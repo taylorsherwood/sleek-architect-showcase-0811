@@ -714,6 +714,31 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             return <StatBlock key={idx} body={block.body} />;
           case "faq":
             return <FAQBlock key={idx} body={block.body} />;
+          case "before-after": {
+            const kv: Record<string, string> = {};
+            block.body.split("\n").forEach((ln) => {
+              const m = ln.match(/^\s*([a-zA-Z]+)\s*:\s*(.+)\s*$/);
+              if (m) kv[m[1].toLowerCase()] = m[2].trim();
+            });
+            if (!kv.before || !kv.after) return null;
+            return (
+              <figure key={idx} className="my-12 md:my-16 -mx-6 md:mx-0">
+                <Suspense fallback={<div className="w-full aspect-[3/2] bg-secondary animate-pulse" />}>
+                  <BeforeAfterSlider
+                    beforeImage={kv.before}
+                    afterImage={kv.after}
+                    beforeLabel={kv.beforelabel || "Before"}
+                    afterLabel={kv.afterlabel || "After"}
+                  />
+                </Suspense>
+                {kv.caption && (
+                  <figcaption className="mt-4 md:mt-5 px-6 md:px-0 text-[0.7rem] tracking-[0.22em] uppercase text-muted-foreground font-light">
+                    {kv.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          }
           case "intel-pulse":
             return (
               <IntelInsert key={idx}>

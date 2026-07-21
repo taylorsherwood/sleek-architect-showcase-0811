@@ -105,6 +105,9 @@ const blogStagingBefore = blogStagingBeforeAsset.url;
 import blogStagingAfterAsset from "@/assets/blog/austin-staging-after.jpg.asset.json";
 const blogStagingAfter = blogStagingAfterAsset.url;
 
+import blogLivingOnLakeAustinAsset from "@/assets/blog/living-on-lake-austin-hero.jpg.asset.json";
+const blogLivingOnLakeAustin = blogLivingOnLakeAustinAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {

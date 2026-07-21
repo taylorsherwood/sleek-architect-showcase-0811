@@ -9318,7 +9318,7 @@ $6M and above | 6,000+ sq ft | $12,000 to $20,000+ | $24,000 to $60,000+
 
 Two line items apply across every tier. A design consultation and staging plan runs $300 to $1,500 depending on property complexity, and some stagers waive it when you sign. Partial or occupied staging, where the stager supplements your existing furniture rather than furnishing from scratch, runs $2,500 to $8,000 for luxury properties.
 
-As a reference point: full staging on a $3.35M [Barton Creek](/communities/barton-creek) home, including outdoor spaces and the entire second floor, runs about $9,000 per month at the quality tier that market expects. Measure every proposal against these ranges. A quote well below them usually signals inventory that will not photograph at your price point. A quote well above them deserves an itemized explanation.
+As a reference point: full staging on a $3.35M [Barton Creek](/communities/barton-creek) home, including outdoor spaces and the entire second floor, runs about $9,000-10,000 per month at the quality tier that market expects. Measure every proposal against these ranges. A quote well below them usually signals inventory that will not photograph at your price point. A quote well above them deserves an itemized explanation.
 
 ## Why Staging Costs More at the Top of the Market
 

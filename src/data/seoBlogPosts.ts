@@ -98,8 +98,12 @@ const blogWhyHomeDidntSell = blogWhyHomeDidntSellAsset.url;
 import blogHowLongToSellHouseAustinAsset from "@/assets/how-long-sell-austin-hero.png.asset.json";
 const blogHowLongToSellHouseAustin = blogHowLongToSellHouseAustinAsset.url;
 
-import blogLuxuryHomeStagingAustinAsset from "@/assets/blog/luxury-home-staging-austin.png.asset.json";
+import blogLuxuryHomeStagingAustinAsset from "@/assets/blog/luxury-home-staging-austin-hero.png.asset.json";
 const blogLuxuryHomeStagingAustin = blogLuxuryHomeStagingAustinAsset.url;
+import blogStagingBeforeAsset from "@/assets/blog/austin-staging-before.jpg.asset.json";
+const blogStagingBefore = blogStagingBeforeAsset.url;
+import blogStagingAfterAsset from "@/assets/blog/austin-staging-after.jpg.asset.json";
+const blogStagingAfter = blogStagingAfterAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [

@@ -194,7 +194,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator";
+  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "before-after" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator";
   body: string;
 }
 

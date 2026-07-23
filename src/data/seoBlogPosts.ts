@@ -108,8 +108,139 @@ const blogStagingAfter = blogStagingAfterAsset.url;
 import blogLivingOnLakeAustinAsset from "@/assets/blog/living-on-lake-austin-hero.jpg.asset.json";
 const blogLivingOnLakeAustin = blogLivingOnLakeAustinAsset.url;
 
+import blogMostExpensiveNeighborhoodsAsset from "@/assets/blog/rollingwood-modern-austin.jpg.asset.json";
+const blogMostExpensiveNeighborhoods = blogMostExpensiveNeighborhoodsAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "most-expensive-neighborhoods-in-austin",
+    title: "The 10 Most Expensive Neighborhoods in Austin (2026 Guide)",
+    metaTitle: "10 Most Expensive Neighborhoods in Austin [2026 Guide]",
+    excerpt: "The richest neighborhoods in Austin ranked for 2026, from Rollingwood to Lake Austin waterfront. Median prices, school districts, and why the biggest sales never hit the MLS.",
+    author: "Taylor Sherwood",
+    date: "2026-07-23",
+    readTime: "12 min read",
+    category: "MARKET INSIGHTS",
+    image: blogMostExpensiveNeighborhoods,
+    heroImage: blogMostExpensiveNeighborhoods,
+    imageAlt: "Modern Rollingwood, Austin luxury home with standing-seam metal roof, floor-to-ceiling glass, and infinity pool overlooking the Hill Country",
+    content: `Austin is running two housing markets at once. Citywide, the median price has been drifting down for over a year and now sits in the mid $500Ks. West of MoPac, the luxury corridor never got the memo. Westlake area medians are up year over year, Eanes ISD neighborhoods keep absorbing inventory, and the top of the market keeps printing eight figure sales that most buyers never see listed anywhere.
+
+That last part matters more than any ranking. After 11 years and more than $150 million in closed volume, every transaction over $2 million I have personally closed traded entirely off the MLS. So when you read published medians for the neighborhoods below, understand that they are a floor, not a ceiling. The most significant sales in these markets often happen privately, between represented parties, before a sign ever goes in the yard.
+
+Here is where Austin's wealth actually lives in 2026, what it costs to join, and how the real market works behind the published numbers.
+
+:::callout
+label: Quick answer
+The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hills, Barton Creek, Spanish Oaks, Pemberton Heights, Tarrytown, Rob Roy, Davenport Ranch, Old Enfield and Windsor Road, and the Lake Austin waterfront. Published medians range from roughly $1.5 million to more than $2.5 million, and estate and waterfront properties regularly trade between $3 million and $10 million or more, frequently in private transactions.
+:::
+
+## Austin's Most Expensive Neighborhoods at a Glance
+
+:::compare-table
+Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait
+Rollingwood | West Austin (own city) | Eanes ISD | $2.2M+ | Small city inside the city
+West Lake Hills | West Austin (own city) | Eanes ISD | $2.2M+ | Hillside estates, canyon views
+Barton Creek | Southwest Austin | Eanes/Austin ISD | $2.3M+, list near $2.6M | Gated golf and resort living
+Spanish Oaks | Bee Cave | Lake Travis ISD | $2.5M+ | Private club, new construction
+Pemberton Heights | Central Austin | Austin ISD | $2M+ | Historic estates, old money
+Tarrytown | Central Austin | Austin ISD | $1.9M+ | Legacy central, lake access
+Rob Roy | West Austin | Eanes ISD | $2M+ | Gated acreage, skyline views
+Davenport Ranch | West Austin | Eanes ISD | $1.8M+ | Country club, hilltop views
+Old Enfield / Windsor Road | Central Austin | Austin ISD | $1.5M to $2M+ | Historic district prestige
+Lake Austin Waterfront | Along the lake | Varies | $3M to $10M+ | Scarce, deeded waterfront
+:::
+
+Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by source, comp window, and boundary definition, and they exclude the private sales discussed below.
+
+## 1. Rollingwood
+
+Rollingwood is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
+
+## 2. West Lake Hills
+
+The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. Medians sit above $2.2 million, with view estates trading well beyond that, often before they are ever publicly marketed.
+
+## 3. Barton Creek
+
+[Barton Creek](/communities/barton-creek) is southwest Austin's gated estate market, built around the Barton Creek Country Club and the Omni Barton Creek Resort. Communities behind the gates offer acreage, Hill Country panoramas, and custom architecture at a scale central Austin cannot physically deliver. Published medians run around $2.3 million with list prices near $2.6 million, and the top of this market is one of the most private in the city. Estate sellers here value discretion, which is exactly why so much Barton Creek volume trades through broker networks rather than the open MLS.
+
+## 4. Spanish Oaks
+
+Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the newest money on this list. A private golf club, a guarded gate, and a run of architecturally serious new construction have pushed it into the same price band as Westlake, with medians above $2.5 million and signature properties far beyond. It attracts buyers who want new systems, new finishes, and resort amenities without a remodel, plus Lake Travis ISD. If Barton Creek is establishment luxury, Spanish Oaks is its ambitious younger sibling.
+
+## 5. Pemberton Heights
+
+Pemberton Heights is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
+
+## 6. Tarrytown
+
+[Tarrytown](/communities/tarrytown) stretches from Enfield toward Lake Austin and is the largest of the central legacy neighborhoods. It offers walkability, Casis Elementary, mature streets, and a mix of original cottages, full renovations, and new builds, which gives it a wider price range than its neighbors. Medians run around $1.9 million and climb quickly toward the water. Together with the Westlake corridor, Tarrytown has posted year over year gains through 2026 while the broader city declined. Read more on the waterfront side of this market in our guide to [living on Lake Austin](/blog/living-on-lake-austin).
+
+## 7. Rob Roy
+
+[Rob Roy](/communities/rob-roy) is gated acreage off Loop 360 with some of the best skyline and Hill Country views in the city, all inside Eanes ISD. Lots of an acre or more, winding private streets, and a limited number of homes make it a low turnover market where the best properties change hands through relationships. Medians run above $2 million, and view estates on the bluff command significant premiums when they trade at all.
+
+## 8. Davenport Ranch
+
+[Davenport Ranch](/communities/davenport-ranch) sits on the hills above Loop 360 near the Pennybacker Bridge, anchored by the Austin Country Club. It offers Eanes ISD, quick access to both downtown and the lake, and a range that runs from lock and leave garden homes to hilltop estates, with list medians around $1.8 million. For buyers who want the Westlake school zone with country club infrastructure and slightly more attainable entry points, Davenport is often the answer.
+
+## 9. Old Enfield and Windsor Road
+
+The Old West Austin historic district holds two of the city's most prestigious addresses. Old Enfield offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
+
+## 10. Lake Austin Waterfront
+
+Deeded [Lake Austin waterfront](/communities/lake-austin) is the scarcest asset in Central Texas residential real estate. It crosses several neighborhoods, from Tarrytown's lake streets through Westlake coves and up the 360 corridor, and it behaves as its own market. Entry starts around $3 million, trophy compounds trade from $10 million up, and a meaningful share of waterfront volume never touches the MLS. We covered the lifestyle, the constraints, and the pricing logic in detail in [Living on Lake Austin](/blog/living-on-lake-austin).
+
+## Why the Published Numbers Undersell These Neighborhoods
+
+Every figure above comes from data that requires a sale to be publicly recorded in the MLS or a home value index. At the top of the Austin market, that is an incomplete picture. Sellers of significant properties often prefer no photography, no showings calendar, and no public price history. Buyers at that level often prefer to see opportunities before the market does. The result is a private layer of transactions running through broker networks, and in my own practice, every closing above $2 million has come from that layer rather than the open market.
+
+Two practical consequences. First, if you are shopping these neighborhoods from portals alone, you are seeing a fraction of the real inventory. Second, if you are selling in one of them, the highest and best outcome may not involve a public listing at all. We wrote a full breakdown of how that world works in our guide to [off market homes in Austin](/blog/off-market-homes-austin).
+
+## Which Neighborhood Fits Which Buyer
+
+- **Top ranked public schools drive the decision:** [West Lake Hills](/communities/westlake-hills), Rollingwood, [Rob Roy](/communities/rob-roy), [Davenport Ranch](/communities/davenport-ranch), all in Eanes ISD.
+- **Gated privacy and acreage:** [Barton Creek](/communities/barton-creek), Rob Roy, [Spanish Oaks](/communities/spanish-oaks).
+- **New construction and club amenities:** Spanish Oaks, Barton Creek.
+- **Historic pedigree minutes from downtown:** Pemberton Heights, Old Enfield, Windsor Road.
+- **Walkable central with lake proximity:** [Tarrytown](/communities/tarrytown).
+- **Waterfront, full stop:** [Lake Austin](/blog/living-on-lake-austin).
+
+## How to Actually Buy in These Markets
+
+Winning in Austin's most expensive neighborhoods is a relationship exercise as much as a financial one. The best properties surface through agent networks, club connections, and direct owner outreach, and the buyers who win are the ones whose representation is already inside those conversations. Start with our guide on [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin), and if you are on the other side of the table, [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin) covers positioning, and our [staging cost guide](/blog/luxury-home-staging-cost-austin) covers preparation.
+
+Echelon Property Group specializes in exactly this layer of the market. If you are considering a purchase or a sale in any of the neighborhoods above, including opportunities that will never be publicly listed, [reach out directly](/contact).
+
+Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonpropertygroup.com
+
+:::faq
+Q: What is the most expensive neighborhood in Austin?
+A: By published medians, Rollingwood, West Lake Hills, Barton Creek, and Spanish Oaks all sit above $2.2 million in 2026, with Barton Creek list prices running near $2.6 million. By actual transaction values, Lake Austin waterfront is the most expensive segment, with trophy properties trading from $10 million up, often privately.
+
+Q: What is the richest zip code in Austin?
+A: 78746, covering West Lake Hills, Rollingwood, and surrounding Eanes ISD neighborhoods, is consistently Austin's strongest luxury zip code by median price and value retention. 78703, covering Tarrytown, Pemberton Heights, and Old Enfield, is the central Austin counterpart.
+
+Q: How much does a home in Westlake cost in 2026?
+A: Median prices in the Westlake area run above $2.2 million in mid 2026, up year over year even as the citywide Austin median declined. Hillside view estates and anything near the water trade well beyond the median.
+
+Q: Why do the biggest Austin sales not show up on Zillow?
+A: Many high end Austin transactions close off the MLS through private broker networks, so they never enter the public data that portals and home value indexes rely on. Texas is also a non disclosure state, meaning sale prices are not public record. Published medians for luxury neighborhoods are therefore best read as a floor.
+
+Q: Is Austin's luxury market declining in 2026?
+A: No. The citywide median has softened for over a year, but the western luxury corridor, led by Westlake and Tarrytown, posted year over year gains in 2026. Scarce land, Eanes ISD demand, and constrained inventory have kept the top of the market on its own trajectory.
+
+Q: Do I need an agent to buy in these neighborhoods?
+A: Practically, yes. A significant share of the best inventory in these markets trades through agent relationships before public listing, so unrepresented buyers are competing for a fraction of the actual opportunities.
+:::
+
+:::cta-anchor
+:::
+    `,
+  },
   {
     id: "austin-housing-market-update-june-2026",
     title: "Austin Housing Market Update, June 2026: The Turn Is Finally Here",

@@ -156,7 +156,7 @@ Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by
 
 ## 1. Rollingwood
 
-Rollingwood is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
+[Rollingwood](/communities/rollingwood) is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
 
 ## 2. West Lake Hills
 
@@ -172,7 +172,7 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 5. Pemberton Heights
 
-Pemberton Heights is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
+[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
 
 ## 6. Tarrytown
 
@@ -188,7 +188,7 @@ Pemberton Heights is central Austin's blue chip historic neighborhood, with earl
 
 ## 9. Old Enfield and Windsor Road
 
-The Old West Austin historic district holds two of the city's most prestigious addresses. Old Enfield offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
+The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
 
 ## 10. Lake Austin Waterfront
 

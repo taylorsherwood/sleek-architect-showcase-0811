@@ -188,7 +188,7 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 9. Old Enfield and Windsor Road
 
-The Old West Austin historic district holds two of the city's most prestigious addresses. Old Enfield offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
+The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
 
 ## 10. Lake Austin Waterfront
 

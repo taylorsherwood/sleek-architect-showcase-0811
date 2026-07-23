@@ -172,7 +172,7 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 5. Pemberton Heights
 
-Pemberton Heights is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
+[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
 
 ## 6. Tarrytown
 

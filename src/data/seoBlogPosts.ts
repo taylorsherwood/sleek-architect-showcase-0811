@@ -156,7 +156,7 @@ Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by
 
 ## 1. Rollingwood
 
-Rollingwood is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
+[Rollingwood](/communities/rollingwood) is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
 
 ## 2. West Lake Hills
 

@@ -353,11 +353,12 @@ const OffMarketRealEstateAustin = () => {
             <p className="text-white/75 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 md:mb-4 max-w-xl">
               These properties are not available on Zillow, Realtor.com, or the MLS.
             </p>
-            <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl">
+            <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl whitespace-pre-line">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see. Sourced by{" "}
               <Link to="/taylor-sherwood" className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white transition-colors duration-300">
                 Austin luxury Realtor Taylor Sherwood
-              </Link>. There is no public portal of off-market homes. Access comes through our private network and relationships—not through a searchable website.
+              </Link>.&nbsp;{"\n\n\n"}
+              There is no public portal of off-market homes. Access comes through our private network and relationships, not through a searchable website.
             </p>
             <button
               onClick={() => setModalOpen(true)}

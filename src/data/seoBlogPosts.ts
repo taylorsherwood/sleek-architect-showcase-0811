@@ -111,8 +111,142 @@ const blogLivingOnLakeAustin = blogLivingOnLakeAustinAsset.url;
 import blogMostExpensiveNeighborhoodsAsset from "@/assets/blog/rollingwood-modern-austin.jpg.asset.json";
 const blogMostExpensiveNeighborhoods = blogMostExpensiveNeighborhoodsAsset.url;
 
+import blogCapitalGainsTexasAsset from "@/assets/blog/capital-gains-tax-texas-hero.jpg.asset.json";
+const blogCapitalGainsTexas = blogCapitalGainsTexasAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "capital-gains-tax-home-sale-texas",
+    title: "Capital Gains Tax When Selling a House in Texas: The 2026 Guide",
+    metaTitle: "Capital Gains Tax When Selling a House in Texas: 2026 Guide",
+    excerpt: "Texas charges no state capital gains tax on home sales. Here is how the federal $250K/$500K exclusion, 2026 rates, and NIIT actually work, with a worked Austin example.",
+    author: "Taylor Sherwood",
+    date: "2026-07-26",
+    readTime: "10 min read",
+    category: "OWNERSHIP",
+    image: blogCapitalGainsTexas,
+    heroImage: blogCapitalGainsTexas,
+    imageAlt: "Luxury Austin home at dusk representing capital gains tax planning when selling a house in Texas",
+    content: `Every week I sit across from a seller who is about to make a six or seven figure decision based on a tax rule they half remember from 1997. Texas is one of the best states in the country to sell real estate in, and most sellers here will owe nothing at all. But the ones who do owe are often the ones least prepared for it, especially at the top of the Austin market, where a decade of appreciation can blow past the federal exclusion without anyone noticing. Here is how the tax actually works in 2026, what Texas does and does not charge you, and the legitimate ways to shrink the bill.
+
+:::callout
+label: Quick answer
+Texas has no state income tax, which means Texas charges zero state capital gains tax when you sell a house. You may still owe federal capital gains tax. If the home was your primary residence for at least two of the last five years, the IRS lets you exclude up to $250,000 of profit if you file single, or $500,000 if you file jointly. Profit above the exclusion is taxed at the federal long-term rates of 0%, 15%, or 20%, plus a possible 3.8% net investment income tax for higher earners.
+:::
+
+## Does Texas tax capital gains on a home sale?
+
+No. Texas has no state income tax, so there is no state-level capital gains tax on real estate, period. This is one of the quiet advantages Texas sellers enjoy over almost every other major market. A California seller with a $700,000 taxable gain can owe the state north of $90,000 on top of the federal bill. The same seller in Austin owes California nothing and Texas nothing. It is a major reason relocating buyers keep [moving to Austin from California](/blog/moving-to-austin-texas-from-california), and it is worth remembering that Texas takes its cut a different way, through property taxes. I cover that side of the ledger in my guide to [Austin property taxes](/blog/austin-property-taxes-explained).
+
+So for a Texas seller, the entire capital gains question is a federal question.
+
+## The federal home sale exclusion: the $250,000 and $500,000 rule
+
+Section 121 of the tax code is the single most valuable tax break most homeowners will ever use. If you owned the home and lived in it as your primary residence for at least two of the five years before the sale, you can exclude up to $250,000 of gain from federal tax as a single filer, or up to $500,000 filing jointly.
+
+Three details matter more than people realize:
+
+**The two years do not need to be consecutive.** Any 24 months of ownership and use within the five-year window ending on the sale date will qualify you.
+
+**You can use it repeatedly.** The exclusion is available once every two years, for life. There is no age limit, no one-time rule, and no requirement to buy a replacement home. Both of those ideas come from rules Congress repealed in 1997, and they refuse to die.
+
+**It excludes gain, not sale price.** A $900,000 sale with a $400,000 gain is fully covered for a married couple. A $900,000 sale with a $600,000 gain is not.
+
+Owners who have been claiming the [Texas homestead exemption](/blog/texas-homestead-exemption-travis-county) on the property usually have clean documentation of primary residence status, which makes the two-of-five test easy to substantiate.
+
+## How your taxable gain is actually calculated
+
+The tax is never on what you sold for. It is on your gain, and your gain is almost always smaller than sellers assume, because two things reduce it before any exclusion applies.
+
+### Your cost basis
+
+This is what you paid, plus qualifying capital improvements over the years. A new roof, a kitchen remodel, an addition, a pool. Repairs do not count, but improvements do, and over a long ownership they add up. This is why I tell every client to keep a permanent file of improvement receipts. In an audit, receipts are the difference between a documented basis and an argument.
+
+### Your selling costs
+
+Brokerage compensation, title policy fees, legal fees, and transfer costs all reduce the amount realized. On a luxury sale these routinely run into six figures, and they come off the top before gain is even measured. Staging and pre-sale preparation can factor in as well, which I break down in my guide to [staging costs for Austin luxury homes](/blog/luxury-home-staging-cost-austin).
+
+The formula: sale price, minus selling costs, minus cost basis, equals gain. Then subtract the exclusion. Whatever remains is taxable.
+
+## 2026 federal capital gains rates
+
+For a home owned more than one year, the gain above your exclusion is a long-term capital gain. The 2026 brackets, set by IRS Revenue Procedure 2025-32, apply based on your total taxable income in the year of sale:
+
+:::compare-table
+Rate | Single filer (taxable income) | Married filing jointly
+0% | Up to $49,450 | Up to $98,900
+15% | $49,451 to $545,500 | $98,901 to $613,700
+20% | Above $545,500 | Above $613,700
+:::
+
+Two overlays to know. First, the gain itself stacks on top of your other income, so a large sale can push part of the gain into a higher bracket in the year you sell. Second, the net investment income tax adds 3.8% on investment income, including non-excluded home sale gain, once modified adjusted gross income passes $200,000 single or $250,000 joint. Stacked together, a high earner's real federal top rate on the gain is 23.8%. If you sold within one year of buying, none of the preferential rates apply and the gain is taxed as ordinary income, which is one of several reasons quick flips get underwritten differently.
+
+## The Austin problem: when your gain clears $500,000
+
+Here is the part of this conversation that has changed the most in my 11 years selling Austin real estate. The $250,000 and $500,000 exclusion amounts were set in 1997 and have never been adjusted for inflation. In 1997 they covered essentially every homeowner in America. In 2026, in [Austin's most expensive neighborhoods](/blog/most-expensive-neighborhoods-in-austin), they cover almost no long-term owner.
+
+A realistic example from the west Austin market:
+
+:::callout
+label: Worked example
+A married couple bought a Westlake home in 2012 for $1,100,000 and put $200,000 of documented improvements into it. They sell in 2026 for $2,600,000 with $156,000 in total selling costs. Amount realized: $2,444,000. Basis: $1,300,000. Gain: $1,144,000. After the $500,000 exclusion, $644,000 is taxable. At the 20% rate plus the 3.8% net investment income tax, the federal bill is roughly $153,000. The Texas state bill is zero.
+:::
+
+That is a real number, and it is exactly the kind of number that should be on the table during listing strategy, not discovered at tax time. When I take on a listing at this level, the net sheet includes the tax picture from day one, because it changes decisions about timing, pricing, and sometimes whether to sell publicly at all. Some of my sellers with large embedded gains prefer the discretion and negotiating control of a private, [off-market sale](/blog/off-market-homes-austin), and the tax conversation is often what starts that discussion. The full public-market playbook is in [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+
+## Legitimate ways to reduce the tax
+
+**Document every improvement.** The cheapest tax planning available is a folder of receipts. Every dollar of documented improvement is a dollar of gain that never existed.
+
+**Mind the calendar.** The two-of-five-year window is unforgiving. Sellers who moved out and leased the home sometimes drift past the three-year mark and forfeit the entire exclusion. If you have been leasing your former residence, check the dates before you list, not after.
+
+**Time the sale against your income.** Because the brackets key off taxable income, selling in a lower-income year, such as the year after a retirement or a business sale, can move six figures of gain from 20% down to 15%.
+
+**Use a 1031 exchange for investment property.** The exclusion covers primary residences. For rentals and investment property, the deferral tool is a like-kind exchange, which I cover in detail in my [1031 exchange guide for Texas investors](/blog/1031-exchange-texas-investors). The two rules can even be combined on a property that has served both roles, though the post-2008 non-qualified use rules make that math genuinely technical, and it is CPA territory.
+
+**Know the inherited property rule.** Heirs generally receive a stepped-up basis equal to the property's value at the owner's death. Decades of appreciation can vanish from the tax calculation entirely, which is why inherited homes are often better sold than gifted during life.
+
+None of this replaces professional advice. It ensures you walk into your CPA's office asking the right questions.
+
+## Will Congress eliminate this tax?
+
+Maybe eventually, not yet. As of mid-2026 there are several live bills in Washington aimed at this exact issue, including proposals to remove the exclusion caps entirely for primary residences and a bipartisan bill to double the caps and index them to inflation. The White House has publicly flirted with the idea. But none of it has passed, and the exclusion amounts today are the same ones set in 1997. Plan your sale on current law. If Congress acts, it will be a windfall, not a plan.
+
+## Frequently asked questions
+
+:::faq
+Q: Does Texas have a capital gains tax on home sales?
+A: No. Texas has no state income tax, so it charges no state capital gains tax on the sale of a home or any other real estate. Texas sellers only face federal capital gains tax, and only on gain above the federal exclusion of $250,000 for single filers or $500,000 for married couples on a primary residence.
+
+Q: How much is capital gains tax on a $1,000,000 home sale in Texas?
+A: Often zero. The tax applies to your profit, not the sale price. If a married couple's gain after selling costs is under $500,000 and they meet the two-of-five-year residency test, they owe nothing. If the gain exceeds the exclusion, the excess is taxed federally at 0%, 15%, or 20% depending on income, plus a possible 3.8% net investment income tax. Texas adds nothing.
+
+Q: Do I have to buy another house to avoid capital gains tax?
+A: No. The rollover requirement was repealed in 1997. Today's exclusion has no reinvestment condition. You can sell, take the full exclusion, and rent, downsize, or leave the state. The same 1997 law also eliminated the old one-time exclusion for sellers over 55, so there is no special age-based exemption either. The two-of-five-year residency test is the only gate.
+
+Q: How do I avoid capital gains tax when selling my house in Texas?
+A: For a primary residence, qualify for the federal exclusion by living in the home at least two of the last five years, then reduce any remaining gain by documenting capital improvements and deducting selling costs. For investment property, a 1031 exchange defers the tax by rolling proceeds into a like-kind property. Timing the sale into a lower-income year can also lower the rate that applies.
+
+Q: What is the capital gains tax rate on real estate in Texas in 2026?
+A: The state rate is 0%. The federal long-term rate on gain above the exclusion is 0%, 15%, or 20% based on taxable income. For 2026, the 15% rate applies up to $545,500 of taxable income for single filers and $613,700 for joint filers, with 20% above that. High earners may also owe the 3.8% net investment income tax, bringing the effective federal top rate to 23.8%.
+
+Q: Do I pay capital gains tax on an inherited house in Texas?
+A: Usually very little. Inherited property receives a stepped-up basis equal to its fair market value at the owner's death, so tax applies only to appreciation after that date. An heir who sells relatively soon after inheriting often has minimal or no taxable gain, and Texas imposes no state tax of its own.
+:::
+
+*This article is general education on federal tax law, not tax or legal advice. Rules change and individual situations vary. Consult a CPA or tax attorney before acting on any strategy described here.*
+
+## The bottom line
+
+Texas gives you the friendliest possible state tax treatment on a home sale. The federal side rewards preparation: know your basis, know your dates, and know your number before you list. If you are weighing a sale anywhere in the Austin market, I build the full net sheet, including the tax picture, as part of every listing strategy. Start with a [confidential valuation of your property](/home-value-austin), or [contact Echelon Property Group](/contact) directly and we will run the numbers together.
+
+Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonpropertygroup.com
+
+:::cta-anchor
+:::
+    `,
+  },
   {
     id: "most-expensive-neighborhoods-in-austin",
     title: "The 10 Most Expensive Neighborhoods in Austin (2026 Guide)",

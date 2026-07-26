@@ -434,6 +434,9 @@ const Blog = () => {
               <p>
                 For buyers weighing school districts before neighborhood, our comparison of <Link to="/blog/austin-isd-vs-eanes-isd" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin ISD and Eanes ISD</Link> is the most requested piece in that category, and our <Link to="/blog/moving-to-austin-texas-from-california" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">California to Austin relocation guide</Link> and <Link to="/blog/1031-exchange-texas-investors" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">1031 exchange primer for Texas investors</Link> cover the two most common cross-state situations we handle.
               </p>
+              <p>
+                On the tax and ownership side, start with the <Link to="/blog/texas-homestead-exemption-travis-county" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Texas homestead exemption guide for Travis County</Link>, our primer on <Link to="/blog/austin-property-taxes-explained" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">Austin property taxes explained</Link>, and our 2026 reference on <Link to="/blog/capital-gains-tax-home-sale-texas" className="text-foreground hover:text-[#b9a06c] transition-colors underline underline-offset-4 decoration-border">capital gains tax when selling a house in Texas</Link>.
+              </p>
             </div>
 
             <h2 className="mt-20 md:mt-24 mb-10 md:mb-12 text-2xl sm:text-3xl md:text-[2rem] font-display font-normal text-architectural leading-[1.18] tracking-[-0.005em]">

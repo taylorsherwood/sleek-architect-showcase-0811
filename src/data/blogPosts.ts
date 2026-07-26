@@ -2361,6 +2361,8 @@ Q: How do I choose a luxury real estate agent in Austin?
 A: Look for a genuine luxury track record, real marketing production, network and reach beyond Austin, discretion, strong negotiation, and specific knowledge of your neighborhood's buyer pool. Do not choose on commission alone, since the difference between agents at this level shows up directly in your final sale price.
 :::
 
+Before you set a list price, run the tax math too. Our guide to [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas) covers the federal exclusion, 2026 rates, and a worked Westlake example.
+
 *This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional about your specific situation.*
 
 `,
@@ -2523,7 +2525,7 @@ Q: Does Texas have its own 1031 rules?
 A: Texas has no state income tax, so there is no separate state-level capital gains tax to defer at the state level. The 1031 exchange operates under federal law, and the federal rules described here apply to Texas investors the same way they apply nationwide. That said, every situation is different, so coordinate with a tax professional.
 :::
 
-If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy.
+If you are weighing a 1031 exchange on an Austin or Central Texas investment property, the timing has to be planned before you sell, not after. [Reach out to Echelon Property Group](/contact) and we will help you map the move, line up the right qualified intermediary, and identify replacement properties that fit your strategy. If the property is your primary residence rather than an investment, the rules are different: see our guide to [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).
 
 *This article is for educational purposes only and does not constitute tax, legal, or investment advice. Consult a qualified tax professional and intermediary about your specific situation.*\u00a0
 
@@ -2810,6 +2812,8 @@ A: In 2025, the average Travis County homestead exemption saved $3,663. On highe
 :::
 
 *This guide is general information, not tax or legal advice. Exemption amounts and local rates change, so confirm current figures with the Travis Central Appraisal District and the Texas Comptroller before you file.*
+
+When you eventually sell, the residency history behind your exemption also drives the [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).
 
 *Sources: Texas Comptroller of Public Accounts (comptroller.texas.gov); Travis Central Appraisal District (traviscad.org); Travis County FY2026 Taxpayer Impact Statement (traviscountytx.gov).*
 `

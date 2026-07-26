@@ -357,7 +357,7 @@ const OffMarketRealEstateAustin = () => {
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see. Sourced by{" "}
               <Link to="/taylor-sherwood" className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white transition-colors duration-300">
                 Austin luxury Realtor Taylor Sherwood
-              </Link>.
+              </Link>. There is no public portal of off-market homes. Access comes through our private network and relationships—not through a searchable website.
             </p>
             <button
               onClick={() => setModalOpen(true)}

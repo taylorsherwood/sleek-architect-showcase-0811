@@ -7324,7 +7324,9 @@ File a homestead exemption on your primary residence, protest your assessed valu
 Property taxes are a factor in affordability calculations, but Austin's strong appreciation and no-income-tax advantage have historically offset property tax considerations for most luxury buyers.
 
 ### Is it worth protesting property taxes in Austin?
-Yes. Successful protests can reduce assessed values by 5-15% or more, resulting in meaningful annual savings. For luxury properties valued above $2 million, even modest percentage reductions translate to thousands of dollars in savings.`,
+Yes. Successful protests can reduce assessed values by 5-15% or more, resulting in meaningful annual savings. For luxury properties valued above $2 million, even modest percentage reductions translate to thousands of dollars in savings.
+
+When it comes time to sell, the other half of the tax picture is the [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).`,
     author: "Taylor Sherwood",
     date: "2025-02-10",
     readTime: "13 min read",

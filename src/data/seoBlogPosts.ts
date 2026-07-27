@@ -205,8 +205,9 @@ Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonproperty
 :::
     `,
   },
-
+  {
     id: "capital-gains-tax-home-sale-texas",
+
     title: "Capital Gains Tax When Selling a House in Texas: The 2026 Guide",
     metaTitle: "Capital Gains Tax When Selling a House in Texas: 2026 Guide",
     excerpt: "Texas charges no state capital gains tax on home sales. Here is how the federal $250K/$500K exclusion, 2026 rates, and NIIT actually work, with a worked Austin example.",

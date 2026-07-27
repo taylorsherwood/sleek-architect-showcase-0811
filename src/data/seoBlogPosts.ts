@@ -114,9 +114,98 @@ const blogMostExpensiveNeighborhoods = blogMostExpensiveNeighborhoodsAsset.url;
 import blogCapitalGainsTexasAsset from "@/assets/blog/capital-gains-tax-texas-hero.jpg.asset.json";
 const blogCapitalGainsTexas = blogCapitalGainsTexasAsset.url;
 
+import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-state-hero.jpg.asset.json";
+const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "texas-non-disclosure-state",
+    title: "Texas Is a Non-Disclosure State. Here's What That Actually Means.",
+    metaTitle: "Texas Is a Non-Disclosure State: What It Means for Buyers & Sellers (2026)",
+    excerpt: "Texas home sale prices never become public record. What non-disclosure means for pricing, privacy, property taxes, and why Zillow gets Austin wrong.",
+    author: "Taylor Sherwood",
+    date: "2026-07-27",
+    readTime: "8 min read",
+    category: "MARKET INSIGHTS",
+    image: blogTexasNonDisclosure,
+    heroImage: blogTexasNonDisclosure,
+    imageAlt: "Aerial view of a large Texas luxury estate on acreage, where the sale price never becomes public record",
+    content: `Texas is a non-disclosure state, which means the price a home sells for is never filed with the county or published in any public record. When a property changes hands in Austin, the deed transfer is recorded, but the amount paid is not. Only about a dozen states work this way, and it quietly shapes everything about how homes are priced, marketed, taxed, and negotiated here. If you have ever wondered why Zillow seems confused about Austin, or how your neighbor's sale price stayed a mystery, this is why.
+
+## What "non-disclosure" actually means
+
+When a home sells in most states, the sale price becomes public record and anyone can look it up. In Texas, it does not. The county records that a transfer happened and who the new owner is, but the price stays between the parties. One partial exception: if the buyer financed the purchase, the loan amount on the deed of trust is public, which offers a clue. A clue is not a comp. A buyer who put 40% down looks, on paper, like they paid far less than they did.
+
+The result is a market where accurate sold data lives in exactly one place: the MLS, accessible to licensed agents and appraisers, not the general public, and not fully to the algorithms that power consumer real estate sites.
+
+## Why Zillow gets Austin wrong
+
+Automated valuation models are only as good as the sold prices they are fed. In disclosure states, they eat well. In Texas, they are guessing, leaning on tax assessments, list prices, and modeled estimates instead of verified closed prices. That is why a Zestimate in Austin can miss by a margin that would be shocking in Phoenix or Denver, and why the gap tends to widen at the top of the market, where homes are unique and private sales are common. It is especially pronounced across [Austin's luxury neighborhoods](/blog/most-expensive-neighborhoods-in-austin), where a single custom home may have no true comparable at all.
+
+Practical takeaway: in Texas, the person with MLS access and local closing experience holds the real pricing data. An online estimate is a starting point for a conversation, not a number to negotiate from.
+
+## What non-disclosure means when you are selling
+
+For sellers, non-disclosure is mostly a gift, especially at the higher end.
+
+**Privacy.** Your final sale price will not show up on a website, in a neighbor's search, or in a news roundup. For executives, public figures, and anyone who simply prefers discretion, that matters.
+
+**Negotiating position on your next purchase.** Buyers and agents on your next deal cannot look up what you just walked away with.
+
+**A natural fit with off-market sales.** Non-disclosure is one reason private sales thrive in Texas. If price privacy appeals to you, a quiet off-market process may too. Here is [how off-market home sales work in Austin](/blog/off-market-homes-austin).
+
+One caveat: privacy cuts both ways. Pricing your home correctly requires real closed comps, which is where an agent's MLS data and firsthand deal knowledge replace guesswork. Get that wrong and the market tells you slowly, since [overpricing is the #1 reason Austin listings expire](/blog/why-didnt-my-house-sell-austin).
+
+## What it means when you are buying
+
+Buyers in Texas negotiate with less public information than buyers almost anywhere else. You cannot verify what the seller paid, and you cannot pull true sold comps on your own. Without representation, you are pricing an offer off list prices and estimates, both of which can be wrong in either direction. With representation, you are pricing it off verified MLS closings and, in many Austin submarkets, private sale data that never touched a public feed at all.
+
+## The property tax twist
+
+Here is the part most people get wrong: non-disclosure does not mean the appraisal district does not value your home. Travis, Williamson, and Hays county appraisal districts are required to appraise every property at market value each year. They just have to do it without a mandatory record of what anything sold for. They rely on mass appraisal models, market data, and the sales survey letter many buyers receive after closing.
+
+That survey is voluntary. You are not required to tell the appraisal district what you paid. Some buyers choose to disclose strategically. If you paid less than the district's appraised value, showing your closing statement can be the fastest way to win a protest and lower your assessment. If you paid more, you are under no obligation to volunteer it. On the sell side, it is worth understanding [what taxes actually apply when you sell in Texas](/blog/capital-gains-tax-home-sale-texas).
+
+## Why representation matters more in a non-disclosure state
+
+In a disclosure state, information is a commodity. In Texas, it is an advantage, and it accrues to people who close deals, hold MLS access, and maintain the relationships where private opportunities circulate. It is one reason a significant share of Austin's best properties, particularly in the luxury market, trade privately: when prices are not public anyway, there is less reason to run a public process. The full playbook is in my guide to [selling a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+
+At Echelon Property Group, the overwhelming majority of our transaction volume has come through private opportunities and relationship-driven sourcing, including every deal we have closed above $2 million. In a state where the data is private, experience is the dataset.
+
+## Frequently asked questions
+
+:::faq
+Q: Is Texas a non-disclosure state?
+A: Yes. Texas is one of roughly a dozen non-disclosure states, meaning home sale prices are not part of the public record and are never filed with the county when a property sells.
+
+Q: Can you find out what a house sold for in Texas?
+A: Not from public records. Sale prices are only recorded in the MLS, which licensed agents and appraisers can access. The loan amount on a deed of trust is public and offers a rough clue, but it doesn't reveal the actual price.
+
+Q: Do I have to tell the appraisal district what I paid for my home?
+A: No. The sales survey appraisal districts send after closing is voluntary. Some buyers disclose strategically when it helps a protest; there is no requirement to respond.
+
+Q: Why is my Zestimate so inaccurate in Austin?
+A: Because automated valuation models depend on public sold prices, which don't exist in Texas. Estimates here are built from assessments and list prices, so they're less reliable than in disclosure states, especially for luxury and unique properties.
+
+Q: Does non-disclosure mean lower property taxes?
+A: Not automatically. Appraisal districts still value every property annually using market models. But because your exact price isn't reported, you retain more control in the protest process, including choosing whether disclosing your price helps your case.
+
+Q: Are off-market sales more common because Texas is non-disclosure?
+A: They're closely related. Since prices stay private either way, many Austin sellers, particularly in the luxury market, opt for a discreet private sale rather than a public listing.
+:::
+
+## The bottom line
+
+Non-disclosure is not a loophole. It is the operating system of the Texas market, and it rewards whoever has real data and real relationships. If you are buying or selling in Austin and want to see what the numbers actually look like behind the public estimates, request a [confidential valuation of your property](/home-value-austin) or [contact Echelon Property Group](/contact) directly.
+
+Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonpropertygroup.com
+
+:::cta-anchor
+:::
+    `,
+  },
+
     id: "capital-gains-tax-home-sale-texas",
     title: "Capital Gains Tax When Selling a House in Texas: The 2026 Guide",
     metaTitle: "Capital Gains Tax When Selling a House in Texas: 2026 Guide",

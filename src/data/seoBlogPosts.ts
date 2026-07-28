@@ -265,7 +265,7 @@ A: About 56% of Texas mortgages carry rates below 4%, which discourages listing;
 
 :::cta-anchor
 :::
-    \`,
+    `,
   },
   {
     id: "should-i-sell-my-house-now-or-wait-austin",

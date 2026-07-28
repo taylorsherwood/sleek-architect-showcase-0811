@@ -120,10 +120,153 @@ import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas
 const blogInheritedHouse = blogInheritedHouseAsset.url;
 import blogSellNowOrWaitAsset from "@/assets/blog/should-i-sell-now-or-wait-austin.jpg.asset.json";
 const blogSellNowOrWait = blogSellNowOrWaitAsset.url;
+import blogWhereAustinMovingAsset from "@/assets/blog/where-austin-homeowners-are-moving.png.asset.json";
+const blogWhereAustinMoving = blogWhereAustinMovingAsset.url;
 
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "where-austin-homeowners-are-moving",
+    title: "Where Austin Homeowners Are Actually Moving in 2026, and How Investors Should Trade It",
+    metaTitle: "Where Are Austin Homeowners Moving? 2026 Migration Data for Investors",
+    excerpt: "Travis County just posted its first population decline in over 20 years. County-by-county migration data, the $992/month carrying-cost arbitrage, and four investment theses.",
+    author: "Taylor Sherwood",
+    date: "2026-07-28",
+    readTime: "11 min read",
+    category: "INVESTMENT",
+    image: blogWhereAustinMoving,
+    heroImage: blogWhereAustinMoving,
+    imageAlt: "Real estate investor at a desk reviewing performance charts while looking out at new multifamily construction beside an older single-family home",
+    content: `Here is a sentence that would have sounded absurd in 2021: Travis County is shrinking.
+
+Population fell 1.0% from 2023 to 2024, the county's first decline in more than two decades, per the U.S. Census Bureau's Vintage 2024 estimates. The turn started earlier: Travis County recorded its first net domestic out-migration since 2002 in 2022 to 2023, and the trend accelerated the following year.
+
+Unlock MLS Research and the Austin Board of REALTORS just published the 2026 Central Texas Homeowner Affordability Index, and buried inside the policy discussion is one of the cleanest demand-migration datasets an investor could ask for. People are not leaving the region. They are repricing themselves within it, and a smaller but growing share is leaking to Dallas-Fort Worth and Houston entirely.
+
+If you invest in Central Texas, this is the map. Here is how Taylor reads it.
+
+## The Migration Table
+
+:::compare-table
+County | Population Change, 2023 to 2024 | Baseline Monthly Carrying Cost | Monthly Spread vs. Travis
+Travis | -1.0% | $2,516 | baseline
+Williamson | +3.7% | $2,156 | -$360
+Hays | +3.7% | $2,117 | -$399
+Bastrop | +3.4% | $1,723 | -$793
+Caldwell | +1.9% | $1,524 | -$992
+:::
+
+Two things jump out. First, the growth rates in the collar counties are enormous, and 83% to 88% of that suburban growth is migration, not births. These are moving trucks, not maternity wards. Second, the carrying-cost column explains the population column almost by itself. A household relocating from Travis to Caldwell County cuts its baseline monthly ownership cost by $992, nearly $11,900 per year. Bastrop saves $793 per month. That is not a lifestyle preference. That is a raise.
+
+Note what "carrying cost" means here: the all-in monthly bill for a long-tenured owner of a median-value home, covering mortgage principal and interest, property tax, insurance, and utilities. Households have figured out what many listing agents still price around: the sticker is not the cost. The monthly is the cost.
+
+## Why the Monthly Is Running the Market Now
+
+Every non-mortgage line in the ownership stack is on its own escalator, and none of it responds to local sentiment:
+
+**Insurance:** Texas premiums rose 60% from 2019 to 2024, twice the national rate and the steepest trajectory in the country, per the Federal Reserve Bank of Dallas.
+
+**Property taxes:** Statewide levies rose roughly 22% from 2021 to 2025 (Texas Comptroller). In Travis County, 187,000 owners protested appraisals in 2024, which is 39% of all parcels, the highest rate of any major Texas county. Appraisal disputes stay murky in part because [Texas is a non-disclosure state](/blog/texas-non-disclosure-state).
+
+**Utilities:** Austin Energy, Austin Water, and Texas Gas Service are mid-stream in approved multi-year rate increases.
+
+The report's core sensitivity metric: every additional $100 per month in carrying cost pushes roughly 9,800 Central Texas owner households past the HUD 30% cost-burden threshold. The county-level detail matters for underwriting demand:
+
+:::compare-table
+County | Households Crossing 30% Burden per +$100/mo | Share of Owner Households
+Travis | 4,500 | 1.5%
+Williamson | 3,000 | 1.8%
+Hays | 1,400 | 2.3%
+Bastrop | 600 | 2.3%
+Caldwell | 300 | 2.8%
+:::
+
+Read that last column carefully. The cheapest counties are also the most fragile per dollar of cost increase. That cuts two ways for an investor: it means a deep, durable pool of renters-by-necessity in the outlying counties (households priced out of buying stay renters longer), and it means rent growth assumptions there need a ceiling, because the tenant base has the least slack.
+
+## The School District Tell
+
+If you want a leading indicator of where family households are actually forming, watch enrollment, because state funding follows the child and districts count heads obsessively.
+
+Austin ISD has fallen from roughly 84,000 students in 2014 to roughly 72,000 in 2024, a 14.5% decline, and now projects a $181 million deficit for FY2026-27. Meanwhile the surrounding districts (Round Rock, Leander, Hays CISD) are each adding on the order of 1,000 students per year.
+
+Families with kids are the marginal buyer of starter homes and the anchor tenant of single-family rentals. The enrollment data says they have already voted, and they voted for the collar districts. For SFR and build-to-rent underwriting, suburban enrollment growth is a cleaner demand signal than any listing-portal heat map.
+
+## The Workforce Gap Is a Rental Map
+
+The people being priced out of the urban core are not leaving the labor market. They are commuting back into it:
+
+Roughly 70% of Austin EMS Association members live outside Austin city limits. About 22.1% of Austin-metro workers commute 50 miles or more, the highest super-commuter share of any major Texas metro, per the Texas A&M Transportation Institute. The report names where the priced-out workforce is landing: Pflugerville, Manor, Del Valle, and unincorporated parts of the region.
+
+Two-earner public-servant households illustrate the squeeze precisely. Two EMS field medics earn a combined $113,437 and sit at 26.6% of income against the Travis baseline; a $400 monthly cost increase pushes them to 30.9%, past the burden line. Two AISD teachers cross at the same increment. These households need housing near the eastern and southeastern job-access corridors, at monthly numbers Travis County increasingly cannot produce. That is a durable, wage-backed tenant base with essentially recession-proof employers.
+
+## The Number That Caps Everything
+
+One stat in the report should temper every aggressive pro forma: Dallas-Fort Worth now draws 13.4% of its new arrivals from the Austin metro, and Houston draws 14.4%. Most out-migration is still intra-regional, which redistributes demand to the collar counties. But the share leaving Central Texas entirely is a leak in the boat. It caps long-run rent growth and exit-price assumptions, and it is exactly why the Dallas Fed's affordability figure matters to investors: the share of Texas-metro homes affordable to a median-income household fell from roughly 60% pre-pandemic to 32% by late 2023. Your exit buyer is inside that shrinking number.
+
+## What This Does to Underwriting
+
+If your operating assumptions predate 2023, they are wrong. The adjustments:
+
+:::compare-table
+Line Item | Legacy Assumption | 2026 Reality
+Insurance growth | 2% to 3% per year | Texas premiums +60% in five years; underwrite high single digits annually and re-quote at LOI, not at close
+Property tax | Trailing assessed value | Reassessment on transaction plus levy growth of ~22% statewide over four years; model to your purchase price
+Utilities (owner-paid) | Flat to CPI | Multi-year approved rate cases at Austin Energy and Austin Water; escalate on the published schedules
+Rent growth (outlying counties) | Metro average | Cap it; the tenant base crosses the 30% burden line at 2.3% to 2.8% of households per $100
+Exit cap rate | Compressed to comps | Widen for the shrinking affordable-buyer pool and the DFW/Houston leakage
+:::
+
+The lock-in effect deserves its own line: roughly 56% of Texas mortgages carry rates below 4%, and the FHFA estimates lock-in suppressed about 1.72 million sales nationally while inflating prices roughly 7%. For acquisitions, that is the entire case for [off-market sourcing](/blog/off-market-homes-austin). The best inventory is mathematically discouraged from ever hitting the MLS, and the owners most exposed to carrying-cost creep (equity-rich, cash-poor, often long-tenured) are precisely the sellers who transact through relationships rather than listings.
+
+## Four Trades
+
+**1. Workforce rental corridors, east and southeast.** Manor, Del Valle, Pflugerville, Bastrop, and the Caldwell County line (Lockhart) combine the lowest carrying-cost baselines in the region with documented workforce absorption and suburban enrollment growth. Taylor's own conviction here is not theoretical; Echelon Property Group recently assembled and closed a 9-acre mixed-use development site in the Goodnight Ranch and Easton Park corridor, squarely inside this thesis.
+
+**2. Missing-middle infill in the core.** The City of Austin's HOME Initiative, missing-middle zoning districts, and Site Plan Lite improvements are a genuine entitlement tailwind for small-scale infill (duplexes, triplexes, cottage courts) in a jurisdiction that spent decades blocking exactly that product. Land basis plus by-right density is the play; the report explicitly endorses these reforms as the region's primary supply lever.
+
+**3. Buy the monthly, not the sticker.** The spread between a seller's price expectation and a property's true carrying cost is where 2026 deals pencil or die. Walk into negotiations with the real insurance quote, the post-sale tax reassessment, and the utility rate schedule, and price from there. Most counterparties still have not done this math, which is a large part of [why houses in Austin do not sell](/blog/why-didnt-my-house-sell-austin).
+
+**4. Underwrite the exit like a skeptic.** With the affordable-buyer pool at 32% of median-income households and two rival metros importing Austin's out-migrants, hold-period assumptions should carry the weight, not terminal-value heroics.
+
+## The Bottom Line
+
+Travis County going negative is not the end of the Austin story. It is a redistribution, and redistributions are where positioning gets rewarded. The demand did not disappear; it moved 20 to 40 miles, dropped its monthly nut by $400 to $1,000, and enrolled its kids in Hays CISD.
+
+The overwhelming majority of Echelon Property Group's transaction volume has come from off-market and relationship-driven deals, which is where this market's real inventory lives. If you want deal flow aligned with the migration data instead of against it, reach Taylor Sherwood at [512.661.3843](tel:5126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+*Data throughout from the 2026 Central Texas Homeowner Affordability Index (Unlock MLS Research and the Austin Board of REALTORS), citing the U.S. Census Bureau, Federal Reserve Bank of Dallas, Texas Comptroller, Texas A&M Transportation Institute, Texas Real Estate Research Center, Cotality, and FHFA.*
+
+:::faq
+Q: Is Austin losing population?
+A: Travis County lost 1.0% of its population from 2023 to 2024, its first decline in over 20 years, but the metro area is still growing. Williamson and Hays Counties each grew 3.7%, Bastrop 3.4%, and Caldwell 1.9%, with 83% to 88% of that suburban growth coming from migration.
+
+Q: Where are people moving when they leave Austin?
+A: Mostly to the surrounding counties: Williamson, Hays, Bastrop, and Caldwell, plus specific workforce landing spots like Pflugerville, Manor, and Del Valle. A meaningful share leaves the region entirely: the Austin metro now supplies 13.4% of Dallas-Fort Worth's new arrivals and 14.4% of Houston's.
+
+Q: What is the cheapest county to own a home near Austin?
+A: Caldwell County, at an estimated baseline of $1,524 per month in total carrying costs, versus $2,516 in Travis County. That $992 monthly spread, nearly $11,900 per year, is the core economic driver of the region's migration pattern.
+
+Q: Is Austin still a good market for real estate investors in 2026?
+A: Yes, but the opportunity has moved. Demand is redistributing to lower-cost collar counties, workforce rental demand is strengthening east and southeast of the core, and infill zoning reform (the HOME Initiative) has opened missing-middle development in the city. Underwriting has to reflect 2026 cost realities, especially insurance and property taxes.
+
+Q: How should investors underwrite insurance and property taxes in Central Texas?
+A: Aggressively. Texas homeowners insurance rose 60% from 2019 to 2024, the steepest in the country, and statewide property tax levies rose about 22% from 2021 to 2025. Re-quote insurance at LOI, model taxes on post-sale reassessment at your purchase price, and escalate utilities on the published multi-year rate schedules.
+
+Q: Why does school enrollment matter for real estate investors?
+A: Enrollment is a leading indicator of family household formation. Austin ISD has lost 14.5% of its students in a decade while Round Rock, Leander, and Hays CISD each add roughly 1,000 students per year, mapping exactly where starter-home buyers and single-family-rental tenants are concentrating.
+
+Q: What is the HOME Initiative in Austin?
+A: A City of Austin land-use reform allowing more homes per lot and enabling missing-middle housing (duplexes, triplexes, smaller-lot products) in areas previously restricted to single-family zoning. Paired with Site Plan Lite and infill subdivision improvements, it lowers the entitlement barrier for small-scale infill development.
+
+Q: Why is off-market sourcing so important in this market?
+A: About 56% of Texas mortgages carry rates below 4%, which discourages listing; the FHFA estimates lock-in suppressed roughly 1.72 million sales nationally. Much of the best inventory will never reach the MLS, so acquisition in 2026 runs through relationships and direct outreach.
+:::
+
+:::cta-anchor
+:::
+    \`,
+  },
   {
     id: "should-i-sell-my-house-now-or-wait-austin",
     title: "Should I Sell My House Now or Wait? The 2026 Austin Math Most Homeowners Have Not Run",

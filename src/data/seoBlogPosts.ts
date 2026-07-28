@@ -136,6 +136,7 @@ export const seoBlogPosts: BlogPost[] = [
     imageAlt: "Adult children sorting family photographs and heirlooms into moving boxes while settling an inherited estate home",
     content: `:::callout
 **Quick answer:** You cannot close on an inherited Texas home until county records show you have legal authority to sell it. Texas offers four main paths: independent administration (about 4 to 8 weeks to Letters Testamentary), muniment of title (often 30 to 90 days, sometimes faster), an affidavit of heirship (no court, but title company acceptance varies), or no probate at all if the home was in a trust or covered by a transfer on death deed. On the tax side, Texas has no inheritance tax and no state capital gains tax, and the federal stepped-up basis usually erases most or all of the taxable gain if you sell reasonably soon after death.
+**This is not tax or legal advice**
 :::
 
 I have spent 11 plus years selling Austin real estate, and estate situations come across my desk constantly. Inherited homes are one of the most common sources of the off-market inventory I work with, because families settling an estate usually want three things a public listing does not offer: privacy, an as-is sale, and a closing that bends around a court timeline instead of fighting it. This guide walks through the legal authority question first, then the tax math, then the practical selling decisions, with Travis County specifics throughout.

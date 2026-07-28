@@ -116,6 +116,9 @@ const blogCapitalGainsTexas = blogCapitalGainsTexasAsset.url;
 
 import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-state-hero.jpg.asset.json";
 const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
+import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas.jpg.asset.json";
+const blogInheritedHouse = blogInheritedHouseAsset.url;
+
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [

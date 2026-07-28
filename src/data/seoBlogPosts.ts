@@ -135,7 +135,7 @@ export const seoBlogPosts: BlogPost[] = [
     heroImage: blogInheritedHouse,
     imageAlt: "Adult children sorting family photographs and heirlooms into moving boxes while settling an inherited estate home",
     content: `:::callout
-**Quick answer:** You cannot close on an inherited Texas home until county records show you have legal authority to sell it. Texas offers four main paths: independent administration (about 4 to 8 weeks to Letters Testamentary), muniment of title (often 30 to 90 days, sometimes faster), an affidavit of heirship (no court, but title company acceptance varies), or no probate at all if the home was in a trust or covered by a transfer on death deed. On the tax side, Texas has no inheritance tax and no state capital gains tax, and the federal stepped-up basis usually erases most or all of the taxable gain if you sell reasonably soon after death.
+**Quick answer:** You cannot close on an inherited Texas home until county records show you have legal authority to sell it. Texas offers four main paths: independent administration (about 4 to 8 weeks to Letters Testamentary), muniment of title (often 30 to 90 days, sometimes faster), an affidavit of heirship (no court, but title company acceptance varies), or no probate at all if the home was in a trust or covered by a transfer on death deed. On the tax side, Texas has no inheritance tax and no state capital gains tax, and the federal stepped-up basis usually erases most or all of the taxable gain if you sell reasonably soon after death.&nbsp;
 **This is not tax or legal advice**
 :::
 

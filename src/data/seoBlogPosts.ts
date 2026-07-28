@@ -262,7 +262,7 @@ Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group i
 
 :::cta-anchor
 :::
-    \`,
+    `,
   },
   {
 

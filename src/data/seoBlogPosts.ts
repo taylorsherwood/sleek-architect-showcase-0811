@@ -118,10 +118,144 @@ import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-stat
 const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
 import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas.jpg.asset.json";
 const blogInheritedHouse = blogInheritedHouseAsset.url;
+import blogSellNowOrWaitAsset from "@/assets/blog/should-i-sell-now-or-wait-austin.jpg.asset.json";
+const blogSellNowOrWait = blogSellNowOrWaitAsset.url;
 
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "should-i-sell-my-house-now-or-wait-austin",
+    title: "Should I Sell My House Now or Wait? The 2026 Austin Math Most Homeowners Have Not Run",
+    metaTitle: "Should I Sell My House Now or Wait? 2026 Austin Data",
+    excerpt: "New Unlock MLS data puts Austin's true monthly cost of ownership at $2,516 and climbing. Here is the real math on waiting to sell, with tables and a worked 24-month example.",
+    author: "Taylor Sherwood",
+    date: "2026-07-28",
+    readTime: "10 min read",
+    category: "SELLER STRATEGY",
+    image: blogSellNowOrWait,
+    heroImage: blogSellNowOrWait,
+    imageAlt: "Austin homeowner looking out a floor-to-ceiling window at a Hill Country sunset on one side and a storm on the other",
+    content: `Austin homeowners have never been wealthier on paper. Nationally, 44.6% of mortgaged homes are now equity-rich, meaning the owner owes 50% or less of what the home is worth, and median home equity jumped roughly 45% between 2019 and 2022, according to the ATTOM 2025 U.S. Home Equity and Underwater Report. If you bought in Austin before 2020, you are almost certainly in that group.
+
+So why does the monthly budget feel tighter than it did in 2019?
+
+Because paper wealth does not pay an insurance premium. Unlock MLS Research and the Austin Board of REALTORS just published the 2026 Central Texas Homeowner Affordability Index, and it puts hard numbers on something Taylor hears from sellers every week: the cost of staying in your home is climbing faster than your income, and none of it shows up in a Zestimate.
+
+If you are sitting on a pile of equity and telling yourself you will sell "when rates come down," this post is the math you should run first.
+
+## What It Actually Costs to Own the Median Austin Home in 2026
+
+The report's baseline: a long-tenured Travis County owner of a median-value home ($493,449 market value in 2026) carries about $2,516 per month, all in. Here is the breakdown.
+
+:::compare-table
+Monthly Line Item | Travis County Baseline | Notes
+Mortgage principal and interest | $1,128 | Modeled on a pre-run-up purchase (2010 to 2020 median prices, 20% down)
+Property tax | $656 | $384,747 median taxable value at a combined rate near 2.05%
+Homeowners insurance | $358 | Roughly $8.70 per $1,000 of coverage locally
+Utilities | $374 | Austin Energy, Austin Water, drainage, Resource Recovery, plus gas
+Total | $2,516 | 
+:::
+
+Notice what that table is telling you. The mortgage, the thing everyone obsesses over, is only 45% of the bill. The other $1,388 per month is taxes, insurance, and utilities, and every one of those lines is on its own escalator:
+
+**Insurance:** Texas homeowners premiums rose 60% from 2019 to 2024, twice the national rate and the steepest climb in the country, per the Federal Reserve Bank of Dallas. The trajectory through 2025 pushed the cumulative increase closer to 68%.
+
+**Property taxes:** Statewide levies rose roughly 22% from 2021 to 2025, per the Texas Comptroller. In Travis County, 187,000 owners protested their appraisals in 2024. That is 39% of all parcels, the highest protest rate of any major Texas county. When four in ten of your neighbors are formally fighting their tax bill, this is not a niche problem. Part of why those numbers stay contested: [Texas is a non-disclosure state](/blog/texas-non-disclosure-state), so nobody outside the transaction sees the sale prices driving your appraisal.
+
+**Utilities:** Austin Energy, Austin Water, and Texas Gas Service are all mid-stream in multi-year rate increases. This line keeps climbing on a schedule that has already been approved.
+
+**Bonds:** Every $1 billion in voter-approved City of Austin bonds adds roughly $9.04 per month to the median homesteaded tax bill, about $2,710 over the 25-year life of the debt. Multiple jurisdictions (city, county, AISD, ACC) can each stack their own.
+
+Each of these four components has outpaced median household income growth since 2019. Your protections, the sub-4% mortgage and the homestead appraisal cap, do not touch three of the four lines.
+
+## The $100 Rule
+
+Here is the single most useful number in the report: every additional $100 per month in carrying costs pushes roughly 9,800 Central Texas households, about 1.7% of all homeowners, past the HUD threshold where housing eats more than 30% of gross income.
+
+:::compare-table
+County | Baseline Monthly Carrying Cost | Households Pushed Over 30% per +$100/mo | Share of Owner Households
+Travis | $2,516 | 4,500 | 1.5%
+Williamson | $2,156 | 3,000 | 1.8%
+Hays | $2,117 | 1,400 | 2.3%
+Bastrop | $1,723 | 600 | 2.3%
+Caldwell | $1,524 | 300 | 2.8%
+:::
+
+This is not an abstraction. The report models it against real Travis County paychecks. A two-medic Austin-Travis County EMS household earning $113,437 sits at 26.6% of income at today's baseline. At baseline plus $400 per month, they cross 30.9%. Two AISD teachers earning $116,138 cross the line at the same increment. These are the exact increases that insurance renewals, utility rate cases, and one or two bond elections can deliver in a couple of years.
+
+Why should you, a seller, care about EMS medics and teachers? Because they are your buyer pool. Every $100 of regional cost creep removes another 9,800 local households from comfortable buying power. Per the Dallas Fed, the share of Texas-metro homes a median-income household can afford has already collapsed from roughly 60% before the pandemic to 32% by late 2023.
+
+Your house did not get worse. The pool of people who can comfortably afford it got smaller. And it shrinks a little more with every rate case and renewal notice.
+
+## The Real Cost of Waiting: A 24-Month Worked Example
+
+Say you own that median Travis County home and you are waiting two more years for a better market. Here is the honest ledger.
+
+:::compare-table
+Cost of Waiting, 24 Months | Estimate | Basis
+Carrying costs paid at current baseline | $60,384 | $2,516 x 24
+Carrying-cost drift (insurance renewals, utility rate steps, levy growth) | $1,800 to $3,600 | Conservative $75 to $150 per month average drift, consistent with 2019 to 2025 escalation curves
+Deferred maintenance discount at your future inspection | $5,000 to $15,000 | Roughly 60% of U.S. owners are delaying repairs, cost being the top reason, per Harvard's Joint Center for Housing Studies. Deferred items resurface as inspection concessions, typically 1% to 3% of price
+Total cash and concession exposure | $67,000 to $79,000 | 
+:::
+
+Against that, you are betting on appreciation strong enough to beat roughly $70,000 in carrying and concession drag, in a market where the affordable-buyer pool is shrinking and prices have been flat since the 2022 peak.
+
+One more thing to price in: the lock-in effect that has been propping up values is not permanent. About 56% of Texas mortgages carry rates below 4%, and the Federal Housing Finance Agency estimates rate lock-in prevented about 1.72 million home sales nationally from mid-2022 through mid-2024 while inflating prices by roughly 7%. Translation: a meaningful chunk of today's pricing is supported by inventory that is being withheld. When rates ease and that inventory unlocks, you will not be the only seller with this idea. The sellers who transact ahead of the unlock face less competition than the ones who wait for it.
+
+## "But My Listing Already Expired"
+
+If you listed in the last couple of years and withdrew or expired, the data above should actually be encouraging, because it reframes [why your house did not sell](/blog/why-didnt-my-house-sell-austin). In most cases the market did not reject your house. The monthly math rejected your price.
+
+Today's buyers do not shop a sticker price. They shop a payment: principal, interest, a tax bill that 39% of the county is protesting, an insurance premium that has grown 60% in five years, and a utility bill with pre-approved increases baked in. A list price that ignores the full monthly stack will sit, accumulate days on market, and expire, even on a great house.
+
+The fix is not always a price cut. Sometimes it is [repositioning quietly](/blog/off-market-homes-austin) around the monthly: rate buydowns, pre-listing inspection and repair strategy to neutralize the deferred-maintenance discount, insurance re-shopping documentation for the buyer's underwriter, and honest comp selection. Presentation carries part of that load too, which is why [staging economics](/blog/luxury-home-staging-cost-austin) belong in the same conversation. That is a strategy conversation, not a Zestimate.
+
+## The Bottom Line
+
+The median Travis County owner carries $2,516 per month, and the non-mortgage 55% of that bill is rising on schedules you do not control.
+
+Every $100 of regional cost creep removes about 9,800 local households from comfortable buying power. Waiting shrinks your buyer pool.
+
+A 24-month wait costs roughly $67,000 to $79,000 in carrying costs, drift, and deferred-maintenance exposure before you see a dollar of hoped-for appreciation. Run that against your net proceeds after [capital gains treatment on a Texas sale](/blog/capital-gains-tax-home-sale-texas), and the waiting case gets harder to defend.
+
+56% of Texas mortgages are under 4%. The inventory wave everyone is waiting out will arrive with the rate relief everyone is waiting for. Timing matters, and so does [how long a sale actually takes in Austin](/blog/how-long-to-sell-house-austin).
+
+Equity you cannot access is a screenshot, not a strategy. If you want to know what your actual number looks like, Taylor Sherwood and Echelon Property Group build carrying-cost audits and repositioning plans for Austin homeowners, including homes that did not sell the first time. Call or text [512.661.3843](tel:+15126613843) or email [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+*Data throughout from the 2026 Central Texas Homeowner Affordability Index (Unlock MLS Research and the Austin Board of REALTORS), citing the Federal Reserve Bank of Dallas, Texas Comptroller, U.S. Census Bureau, ATTOM, Cotality, FHFA, and Harvard Joint Center for Housing Studies.*
+
+:::faq
+Q: Is now a good time to sell a house in Austin?
+A: For equity-rich owners, 2026 favors sellers who move before conditions shift. Prices have been stable since the 2022 peak, but carrying costs (taxes, insurance, utilities) are rising on approved schedules, the affordable-buyer pool is shrinking, and 56% of Texas mortgages sit below 4%, meaning a wave of withheld inventory will hit the market when rates ease. Selling ahead of that unlock means less competition.
+
+Q: What does it cost per month to own a home in Austin in 2026?
+A: About $2,516 per month for a long-tenured owner of a median-value Travis County home, per Unlock MLS Research: roughly $1,128 in mortgage principal and interest, $656 in property tax, $358 in insurance, and $374 in utilities. Recent buyers at today's prices and rates pay substantially more.
+
+Q: Why is homeowners insurance so expensive in Texas?
+A: Texas premiums rose 60% from 2019 to 2024, twice the national rate and the steepest increase in the country, per the Federal Reserve Bank of Dallas. Catastrophe exposure (hail, wind, wildfire) plus national reinsurance repricing are the drivers, and neither is controlled by local policy.
+
+Q: What does "equity-rich, cash-poor" mean?
+A: It describes an owner whose home value has appreciated far beyond the mortgage balance (nationally, 44.6% of mortgaged homes have a loan-to-value of 50% or less) but whose monthly income has not kept pace with taxes, insurance, and utilities. The wealth is real but illiquid, and it does not pay the monthly bills.
+
+Q: Will waiting for lower mortgage rates get me a higher price?
+A: Not necessarily. The FHFA estimates rate lock-in withheld about 1.72 million sales nationally and inflated prices by roughly 7%. Lower rates release that withheld inventory, which means more competing listings at exactly the moment you would list. Waiting also costs the median Travis County owner roughly $30,000 per year in carrying costs.
+
+Q: My Austin listing expired. Does that mean my house is overpriced?
+A: Usually it means the full monthly payment, not just the list price, exceeded what your buyer pool could absorb. Buyers underwrite taxes, insurance, and utilities alongside the mortgage. Repositioning options include rate buydowns, pre-listing repairs to eliminate inspection concessions, and payment-based pricing strategy.
+
+Q: How much do bond elections add to my Austin property taxes?
+A: Roughly $9.04 per month, about $108 per year, for every $1 billion in City of Austin voter-approved general obligation bonds, based on the median taxable homestead value of $384,747. Overlapping jurisdictions (city, county, school district, community college) can each add their own layer.
+
+Q: What is the 30% cost-burden rule?
+A: HUD defines a household as cost-burdened when housing consumes more than 30% of gross income. In Central Texas, every additional $100 per month in carrying costs pushes about 9,800 owner households, 1.7% of all homeowners, past that threshold.
+:::
+
+:::cta-anchor
+:::
+    `,
+  },
   {
     id: "selling-inherited-house-texas",
     title: "Selling an Inherited House in Texas: Probate, Taxes, and Timeline (2026)",

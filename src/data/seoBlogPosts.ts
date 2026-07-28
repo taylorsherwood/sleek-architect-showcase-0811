@@ -287,6 +287,9 @@ Because paper wealth does not pay an insurance premium. Unlock MLS Research and 
 
 If you are sitting on a pile of equity and telling yourself you will sell "when rates come down," this post is the math you should run first.
 
+:::intel-gauge-austin-metro
+:::
+
 ## What It Actually Costs to Own the Median Austin Home in 2026
 
 The report's baseline: a long-tenured Travis County owner of a median-value home ($493,449 market value in 2026) carries about $2,516 per month, all in. Here is the breakdown.

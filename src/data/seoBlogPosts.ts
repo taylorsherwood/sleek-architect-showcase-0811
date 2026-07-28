@@ -111,7 +111,7 @@ const blogLivingOnLakeAustin = blogLivingOnLakeAustinAsset.url;
 import blogMostExpensiveNeighborhoodsAsset from "@/assets/blog/rollingwood-modern-austin.jpg.asset.json";
 const blogMostExpensiveNeighborhoods = blogMostExpensiveNeighborhoodsAsset.url;
 
-import blogCapitalGainsTexasAsset from "@/assets/blog/capital-gains-tax-texas-hero.jpg.asset.json";
+import blogCapitalGainsTexasAsset from "@/assets/blog/capital-gains-texas-hero.jpg.asset.json";
 const blogCapitalGainsTexas = blogCapitalGainsTexasAsset.url;
 
 import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-state-hero.jpg.asset.json";
@@ -689,7 +689,7 @@ Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonproperty
     category: "OWNERSHIP",
     image: blogCapitalGainsTexas,
     heroImage: blogCapitalGainsTexas,
-    imageAlt: "Luxury Austin home at dusk representing capital gains tax planning when selling a house in Texas",
+    imageAlt: "Modern Hill Country estate home set on green acreage, representing tax planning for selling real estate in Texas",
     content: `Every week I sit across from a seller who is about to make a six or seven figure decision based on a tax rule they half remember from 1997. Texas is one of the best states in the country to sell real estate in, and most sellers here will owe nothing at all. But the ones who do owe are often the ones least prepared for it, especially at the top of the Austin market, where a decade of appreciation can blow past the federal exclusion without anyone noticing. Here is how the tax actually works in 2026, what Texas does and does not charge you, and the legitimate ways to shrink the bill.
 
 :::callout

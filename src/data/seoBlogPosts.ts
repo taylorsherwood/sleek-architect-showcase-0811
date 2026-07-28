@@ -116,10 +116,156 @@ const blogCapitalGainsTexas = blogCapitalGainsTexasAsset.url;
 
 import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-state-hero.jpg.asset.json";
 const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
+import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas.jpg.asset.json";
+const blogInheritedHouse = blogInheritedHouseAsset.url;
+
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "selling-inherited-house-texas",
+    title: "Selling an Inherited House in Texas: Probate, Taxes, and Timeline (2026)",
+    metaTitle: "Selling an Inherited House in Texas: Probate, Taxes, Timeline (2026)",
+    excerpt: "How to sell an inherited house in Texas in 2026: the four probate paths, stepped-up basis tax math, Travis County specifics, timelines, and mistakes to avoid.",
+    author: "Taylor Sherwood",
+    date: "2026-07-28",
+    readTime: "11 min read",
+    category: "SELLER STRATEGY",
+    image: blogInheritedHouse,
+    heroImage: blogInheritedHouse,
+    imageAlt: "Adult children sorting family photographs and heirlooms into moving boxes while settling an inherited estate home",
+    content: `:::callout
+**Quick answer:** You cannot close on an inherited Texas home until county records show you have legal authority to sell it. Texas offers four main paths: independent administration (about 4 to 8 weeks to Letters Testamentary), muniment of title (often 30 to 90 days, sometimes faster), an affidavit of heirship (no court, but title company acceptance varies), or no probate at all if the home was in a trust or covered by a transfer on death deed. On the tax side, Texas has no inheritance tax and no state capital gains tax, and the federal stepped-up basis usually erases most or all of the taxable gain if you sell reasonably soon after death.
+:::
+
+I have spent 11 plus years selling Austin real estate, and estate situations come across my desk constantly. Inherited homes are one of the most common sources of the off-market inventory I work with, because families settling an estate usually want three things a public listing does not offer: privacy, an as-is sale, and a closing that bends around a court timeline instead of fighting it. This guide walks through the legal authority question first, then the tax math, then the practical selling decisions, with Travis County specifics throughout.
+
+## Step 1: Establish Your Legal Authority to Sell
+
+Ownership of a Texas home passes to heirs at the moment of death, but that is not the same as being able to convey title. A title company will not insure a sale, and no serious buyer will close, until the chain of title shows who has authority to sign the deed. Texas gives you several lanes, and picking the right one is the single biggest driver of your timeline.
+
+:::compare-table
+Path | When it applies | Typical timeline | Court involved
+Independent administration | Valid will naming an executor with independent powers (most well-drafted wills do this) | Roughly 4 to 8 weeks from filing to Letters Testamentary; the sale can proceed once Letters are issued | Yes, but minimal ongoing supervision
+Muniment of title | Valid will, no unpaid debts other than those secured by real estate | Often 30 to 90 days, and straightforward cases can move in as little as 2 to 4 weeks | Yes, single proceeding, no executor appointed
+Affidavit of heirship | No will, heirs are known and in agreement | 1 to 2 weeks to prepare and record, but title company acceptance is the real gate | No
+Dependent administration | Disputes, minor heirs, or court supervision otherwise required | Adds 30 to 90 or more days, and each sale needs its own court order | Yes, heavy supervision
+:::
+
+A few notes that matter in practice.
+
+**Independent administration is the workhorse.** Once the court issues Letters Testamentary, the independent executor can list, negotiate, and close the sale without going back to the judge for permission. If you inherited through a properly drafted will, this is probably your path, and it is faster than most people fear.
+
+**Muniment of title is a Texas specialty** that most out-of-state heirs have never heard of. The court admits the will to record, and the will itself becomes the instrument that transfers title. No executor, no inventory, no creditor claim process. The catch is the debt requirement: it only works when the estate has no unpaid debts other than loans secured by the real estate itself.
+
+**Affidavit of heirship is the no-will workaround.** Two disinterested witnesses who knew the deceased sign an affidavit laying out the family history, and it gets recorded in the county deed records. The problem is that the affidavit is evidence of ownership, not a court order, so the title company decides whether it is enough. Some will insure a sale right away, some want all heirs signing the deed together, and some want years of seasoning on the record before they will insure. Get a title company's read before you count on this route.
+
+Two deadlines worth knowing. Texas generally requires a will to be admitted to probate within four years of death. Miss that window and your options narrow considerably, usually to a muniment proceeding with an extra showing, or an heirship determination. And a small estate affidavit, the other shortcut people ask about, only covers intestate estates with limited personal property and, for real estate, only the homestead, so it rarely solves an inherited house sale on its own.
+
+### Travis County specifics
+
+If the deceased lived in Austin, West Lake Hills, Lakeway, Bee Cave, Pflugerville, or elsewhere in Travis County, the estate is filed with the Travis County probate system. The county runs two statutory probate courts: Probate Court No. 1, created in 1991, on the second floor at 200 W. 8th St., and Probate Court No. 2, created in 2023, on the fourth floor of the same building. Filings go through eFileTexas.gov, the original will is deposited with the County Clerk's Probate Division, and as a practical matter Texas courts require executors to be represented by an attorney, since the executor is acting for beneficiaries and creditors, not just themselves. Budget for that legal fee as an estate expense, not a personal one.
+
+## Step 2: Understand the Tax Picture (It Is Better Than You Think)
+
+Heirs consistently overestimate the tax bill on an inherited Texas home. Here is the actual 2026 landscape.
+
+**Texas has no inheritance tax and no estate tax.** Nothing is owed to the state for receiving the property, and Texas has no state income tax, so there is no state capital gains tax on the sale either.
+
+**Federal estate tax touches almost no one.** The One Big Beautiful Bill Act, signed July 4, 2025, permanently set the federal estate tax exemption at $15 million per person and $30 million per married couple starting January 1, 2026, indexed for inflation going forward. Unless the total estate clears those numbers, the federal estate tax is a non-issue.
+
+**The stepped-up basis is the whole ballgame.** Under IRC Section 1014, your cost basis in inherited property resets to its fair market value on the date of death. Every dollar of appreciation during the deceased's lifetime is wiped off the income tax books. On top of that, IRC Section 1223 treats every inherited asset as long-term automatically, so even a sale weeks after death gets the preferential 0, 15, or 20 percent long-term capital gains rates instead of ordinary income rates. For 2026, the 0 percent bracket runs up to $49,450 of taxable income for single filers and $98,900 for married couples filing jointly, and a 3.8 percent net investment income tax can stack on top for higher earners.
+
+**Texas community property gives married couples a bonus.** In a community property state like Texas, when one spouse dies, the surviving spouse generally gets a full step-up on the entire community property home, both halves, not just the deceased spouse's half. In common-law states, joint tenancy typically only steps up 50 percent. This is a genuine Texas advantage that surviving spouses should confirm with their CPA before selling.
+
+### Worked example: an Allandale inheritance
+
+Say your parents bought a home in Allandale in 1994 for $180,000. Your mother passes in March 2026, and a date-of-death appraisal pegs fair market value at $950,000. You sell in July 2026 for $975,000 with $63,375 in total selling costs (about 6.5 percent).
+
+:::compare-table
+Line item | With stepped-up basis | Without step-up (old basis)
+Sale price | $975,000 | $975,000
+Selling costs | ($63,375) | ($63,375)
+Amount realized | $911,625 | $911,625
+Cost basis | $950,000 | $180,000
+Taxable gain / (loss) | ($38,375) | $731,625
+Federal tax at 15% | $0 | $109,744
+:::
+
+With the step-up, this sale produces no federal capital gains tax at all. In fact it produces a paper loss, which may even be deductible if the property was held for investment rather than personal use after death. Without the step-up, the same sale would have generated a six-figure federal tax bill, and more for a high earner facing the 20 percent bracket plus the 3.8 percent surtax. The step-up on a single appreciated Austin home routinely erases $100,000 to $170,000 or more in federal tax. I cover the broader rules, including the Section 121 primary residence exclusion, in my guide to [capital gains tax when selling a Texas home](/blog/capital-gains-tax-home-sale-texas).
+
+### Three tax traps to avoid
+
+**Skipping the date-of-death appraisal.** Your entire tax outcome hinges on documenting fair market value at death, and Texas makes this harder than most states because sold prices are not public record. As I explained in [why Texas is a non-disclosure state](/blog/texas-non-disclosure-state), you cannot just pull a closed price from a public database years later. Order a professional retrospective appraisal within a few months of death. A few hundred dollars now is the cheapest insurance you will ever buy against a five- or six-figure IRS dispute later.
+
+**Renting before selling.** Every year you rent the inherited home, depreciation quietly lowers your basis, and that depreciation gets recaptured at up to 25 percent when you sell. Heirs who rent for a few years and then sell are often surprised that a chunk of their gain is taxed at a higher rate than they expected. If the long-term plan is to sell, selling sooner is usually cleaner.
+
+**Assuming the Section 121 exclusion applies.** The $250,000 or $500,000 primary residence exclusion belongs to owner-occupants. It does not transfer with the house. You only earn it if you make the inherited home your own primary residence for two of the five years before you sell.
+
+## Step 3: The Property Tax Clock Starts Immediately
+
+Texas property taxes do not pause for probate, and the exemptions that kept the bill low do not automatically survive the owner.
+
+The homestead exemption and any over-65 tax ceiling belonged to the deceased. A surviving spouse who is 55 or older can generally keep the ceiling, but adult children cannot. If an heir moves in and makes the home their primary residence, Texas law lets heir property owners apply for the homestead exemption with a supporting affidavit even before formal probate wraps up. If nobody occupies it, the home loses homestead status, and the taxable value can reset to full market value the following January 1, which on an appreciated Central Austin property can mean a dramatically larger tax bill landing mid-probate. The estate needs to keep paying the taxes and the insurance either way, and on insurance, check the vacancy clause: many homeowner policies restrict or void coverage after 30 to 60 days of vacancy, and a vacant estate home with lapsed coverage is a genuinely dangerous combination.
+
+## Step 4: Decide How to Sell It
+
+Once authority and taxes are handled, the sale itself comes down to three questions.
+
+**As-is or prepared?** Most inherited homes have deferred maintenance, dated finishes, and decades of belongings. Full preparation can add real money on the right house, and I break down what that investment looks like in my [Austin staging cost guide](/blog/luxury-home-staging-cost-austin). But estates are often better served by a lighter touch: clean-out, minor repairs, honest pricing. Pouring renovation money into a home you are about to sell, using estate funds that belong to multiple heirs, is a decision that needs everyone's signature.
+
+**Multiple heirs.** All owners, or the executor with proper authority, must sign. When heirs disagree, the options are a buyout at appraised value, a mediated agreement, or in the worst case a partition lawsuit that forces a sale and burns months and legal fees. The best defense is a written agreement early: who fronts carrying costs, how proceeds split, who has signing authority. If the home already failed on the market once during the family's deliberations, my post on [why Austin homes fail to sell](/blog/why-didnt-my-house-sell-austin) covers how to reposition a stale listing.
+
+**Public listing or private sale?** This is where inherited property differs most from a standard sale. Estates frequently prefer a quiet transaction: no sign in the yard, no strangers walking through a parent's home, no photos of the family's belongings online, and a buyer who accepts as-is condition and a probate-driven closing date. That is exactly the transaction profile of the [off-market sales I do in Austin](/blog/off-market-homes-austin), and it is why estate homes make up a meaningful share of my private inventory. For larger estates, the privacy case gets even stronger, which I cover in my [luxury seller's guide](/blog/how-to-sell-a-luxury-home-in-austin). The tradeoff is real: a private sale trades maximum exposure for privacy, speed, and certainty. The right answer depends on the property, the family, and the timeline, and a good agent should be able to run both plays and tell you honestly which one fits.
+
+## The Full Timeline: Death to Closing
+
+:::compare-table
+Phase | Typical duration
+Locate will, hire probate attorney, file | 1 to 4 weeks
+Court grants authority (independent administration) | 4 to 8 weeks after filing
+Court grants authority (muniment of title) | 2 to 12 weeks after filing
+Date-of-death appraisal, clean-out, sale prep | 2 to 6 weeks, can overlap with probate
+Private off-market sale, contract to close | 2 to 4 weeks
+Traditional listed sale, list to close | 8 to 16 weeks
+:::
+
+A smooth Texas estate typically runs 4 to 10 months from death to funds distributed, and a well-run one where the family moves quickly and sells privately can land near the bottom of that range. Contested wills, missing heirs, or dependent administration can stretch it well past a year.
+
+:::faq
+Q: Do I have to go through probate to sell an inherited house in Texas?
+A: Usually yes, but Texas probate is faster and cheaper than most states, and it is not always full probate. A valid will can often move through muniment of title in 30 to 90 days, and estates without a will can sometimes use an affidavit of heirship with no court involvement at all if the title company will accept it. Homes held in a living trust or covered by a transfer on death deed skip probate entirely.
+
+Q: How long does Texas probate take before I can sell?
+A: With independent administration, expect roughly 4 to 8 weeks from filing to Letters Testamentary, and the executor can put the home under contract once Letters are issued. Muniment of title often wraps in 30 to 90 days, sometimes as little as 2 to 4 weeks in clean cases. Dependent administration adds 30 to 90 or more days and requires a court order for the sale itself.
+
+Q: What taxes do I pay when selling an inherited house in Texas?
+A: Texas charges no inheritance tax, no estate tax, and no state capital gains tax. Federally, your basis steps up to fair market value at death, the gain is automatically long-term, and 2026 rates are 0, 15, or 20 percent depending on income. Most heirs who sell within months of death owe little or no federal capital gains tax. The federal estate tax only applies to estates above $15 million per person in 2026.
+
+Q: What is a stepped-up basis and how do I document it?
+A: Under IRC Section 1014, your cost basis in inherited property resets to its fair market value on the date of death, erasing all appreciation during the deceased's lifetime for income tax purposes. Document it with a professional retrospective appraisal effective as of the date of death, ordered as soon as possible. Because Texas is a non-disclosure state, you cannot rely on public sold data to reconstruct value later.
+
+Q: Can I sell the house before probate is complete?
+A: You can market it and even sign a contract, but you cannot close until legal authority exists: Letters Testamentary, a muniment order, or a recorded and title-company-accepted affidavit of heirship. Experienced buyers, especially in private sales, will structure the closing date around the probate timeline.
+
+Q: What if there are multiple heirs and one does not want to sell?
+A: All owners must sign, or the executor must have authority to sell. The practical solutions are a buyout at appraised value or a negotiated agreement. The legal backstop is a partition action, where a court can force a sale, but it is slow and expensive and usually leaves everyone with less. A written family agreement covering costs, proceeds, and signing authority early in the process prevents most of these fights.
+
+Q: Does the homestead exemption transfer to heirs?
+A: Not automatically. The deceased's homestead exemption and any over-65 tax ceiling generally end at death, though a surviving spouse 55 or older can retain the ceiling. An heir who occupies the home as a primary residence can apply for the exemption as an heir property owner, even before probate is finished. If no one occupies it, the property loses homestead status and the taxable value can reset to full market value the next January 1.
+
+Q: Should I sell an inherited house off market?
+A: It fits more often than not. Estates typically value privacy, as-is terms, and a flexible closing over squeezing out the last dollar of exposure, and inherited homes are one of the largest sources of legitimate off-market inventory in Austin. The honest tradeoff is exposure versus certainty. Get a real valuation first, then decide with full information rather than defaulting to either path.
+:::
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with more than $150 million in career sales across 200 plus transactions. The majority of his transaction volume has come through private and off-market channels, including estate and inherited property sales. This article is general information, not legal or tax advice. Consult a Texas probate attorney and a CPA about your specific situation.
+
+:::cta-anchor
+:::
+    `,
+  },
+  {
+
     id: "texas-non-disclosure-state",
     title: "Texas Is a Non-Disclosure State. Here's What That Actually Means for Your Money.",
     metaTitle: "Texas Is a Non-Disclosure State: What It Means for Buyers & Sellers (2026)",

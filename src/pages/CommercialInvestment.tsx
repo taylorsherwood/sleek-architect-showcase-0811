@@ -321,7 +321,7 @@ const CommercialInvestment = () => {
                 image={bremserAve}
                 alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes"
                 title="709/711/713 Bremser Ave, rental homes, Killeen TX"
-                badge="RENTAL PORTFOLIO"
+                badge="SALE PENDING"
                 price="$199,900"
                 name="709/711/713 Bremser Ave"
                 location="Killeen, TX"

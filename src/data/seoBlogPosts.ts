@@ -122,11 +122,186 @@ import blogSellNowOrWaitAsset from "@/assets/blog/should-i-sell-now-or-wait-aust
 const blogSellNowOrWait = blogSellNowOrWaitAsset.url;
 import blogWhereAustinMovingAsset from "@/assets/blog/where-austin-homeowners-are-moving.png.asset.json";
 const blogWhereAustinMoving = blogWhereAustinMovingAsset.url;
+import blogHillCountryLandAsset from "@/assets/blog/buying-land-texas-hill-country.jpg.asset.json";
+const blogHillCountryLand = blogHillCountryLandAsset.url;
 
 
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "buying-land-texas-hill-country",
+    title: "Buying Land in the Texas Hill Country: The 2026 Guide to Wells, Septic, Ag Exemptions, and Everything the Per-Acre Price Hides",
+    metaTitle: "Buying Land in the Texas Hill Country: 2026 Cost Guide",
+    excerpt: "What Hill Country acreage really costs in 2026: per-acre prices, well drilling, septic, power, ag exemptions, and the rollback tax rules most buyers get wrong.",
+    author: "Taylor Sherwood",
+    date: "2026-07-30",
+    readTime: "12 min read",
+    category: "LAND & RANCH",
+    image: blogHillCountryLand,
+    heroImage: blogHillCountryLand,
+    imageAlt: "Caliche ranch road winding through bluebonnets toward a Texas Hill Country mesa",
+    content: `The per-acre price is the first number every land buyer asks about and the least useful number on the entire deal. I have watched buyers celebrate "winning" a tract at a great price per acre, then spend the next eighteen months discovering that the water, the wastewater, the power, and the property tax status were where the real negotiation should have happened.
+
+I closed a nine-acre development assemblage in Southeast Austin that took nine months of due diligence: attorneys, water board meetings, city zoning and planning sessions, soil testing, multiple parcels stitched together from multiple sellers. None of the questions that made or broke that deal appeared on a listing sheet. The same is true for a 12-acre homesite outside Wimberley. The dirt is the easy part. This guide covers the hard parts, with 2026 numbers.
+
+## What Hill Country Land Actually Costs in 2026
+
+Start with the benchmark. The Texas Real Estate Research Center at Texas A&M tracks rural land sales across seven regions, and the Austin, Waco, and Hill Country region set another record in the first quarter of 2026.
+
+:::compare-table
+Market | Price per acre (Q1 2026) | Year-over-year change
+Austin, Waco, Hill Country (Region 7) | $8,028 | +8.27%
+Texas statewide | $5,246 | +6.02%
+:::
+
+Two things about that $8,028 figure before you anchor on it.
+
+First, it is a large-tract number. The typical Region 7 sale in that data set runs about 201 acres. The 10-to-25-acre tracts most buyers actually want, within an hour of Austin, trade at a steep premium to the regional average. In Blanco County, tracts with Hill Country views and water access commonly run in the $8,500 to $14,000 per acre range, and small unrestricted tracts in the Dripping Springs and Wimberley corridors regularly clear $40,000 to $80,000 per acre or more depending on frontage, trees, and restrictions. Scarcity is doing the pricing, not the soil.
+
+Second, prices rose in every size segment year over year. This is not a market waiting for you to time it. Sales activity in the region also climbed to its highest level in roughly two and a half years, which tells you buyer demand recovered before prices ever paused. The same pressure shows up in the residential market, where [Austin homeowners are relocating into the collar counties](/blog/where-austin-homeowners-are-moving) that ring the Hill Country.
+
+So the per-acre number tells you what the dirt costs. The next four sections tell you what the property costs. Those are different numbers, sometimes by six figures.
+
+## Water: The Most Expensive Question in the Hill Country
+
+If the tract is not on a public water system, you are drilling a well, and the Hill Country is the most expensive routine drilling environment in Texas. The Trinity and Edwards aquifers sit under some of the hardest carbonate limestone in the state. That rock wears drill bits four to six times faster than sand formations, and in the fractured karst geology out here, drilling is partly probabilistic: you can go 600 feet and miss the producing fracture entirely.
+
+:::compare-table
+Area | Typical well depth | Complete system cost (2026)
+West Austin metro (Bee Cave, Lakeway, west Leander) | 300 to 600 ft | $12,000 to $25,000
+Dripping Springs corridor | 300 to 550 ft | $12,000 to $25,000
+Deep Trinity sites (parts of Hays, Blanco, Comal) | 400 to 700 ft | $20,000 to $45,000
+Texas statewide average (for contrast) | 225 ft | roughly $8,550
+:::
+
+Complete system means drilling, casing, pump, pressure tank, electrical hookup, and water testing. The Hill Country premium is structural, not seasonal: hard rock, deep water, and the fact that an estimated 15 to 30 percent of wells in this geology need hydrofracking or a second attempt to reach adequate yield.
+
+Yield is the number nobody puts in the listing. One property produces 15 to 20 gallons per minute. The neighboring tract pulls 3 to 5 GPM from the same aquifer. Before your option period ends, pull the drilling logs on neighboring wells through the Texas Water Development Board's well report database, and talk to a driller who works that specific area. Their local records are worth more than any appraisal.
+
+One more layer: Groundwater Conservation Districts. Much of the Hill Country sits inside a GCD, and that changes your permitting timeline and cost. The Hays Trinity GCD, the Barton Springs/Edwards Aquifer Conservation District in Travis and Hays counties, the Hill Country Underground Water Conservation District covering Blanco, Kendall, Kerr, and Bandera, and the Edwards Aquifer Authority all regulate drilling in their territories. Outside a district, the old rule of capture applies and a domestic well needs no state permit at all, just a licensed driller meeting state construction standards. Check the Texas Water Development Board's GCD index for the county before you write the offer. It materially changes both budget and calendar.
+
+## Septic: Your Soil Decides, Not You
+
+No sewer line means an on-site septic system, and in the Hill Country you frequently do not get to choose the cheap one. Shallow limestone bedrock and thin soils fail the percolation standards that conventional gravity systems require, and TCEQ rules push you into an aerobic treatment unit.
+
+:::compare-table
+Item | Conventional system | Aerobic system
+Installed cost (Texas, 2026) | $6,300 to $10,000 | $10,000 to $20,000
+Site evaluation, permits, engineering | $1,500 to $5,000 | $1,500 to $5,000
+Rocky-terrain excavation premium | Common in Hill Country | Adds $1,500 to $4,500
+Required maintenance | Pumping every 3 to 5 years | TCEQ-mandated service contract, $300 to $500 per year, plus $100 to $300 per year in electricity
+20-year total maintenance | $5,000 to $12,000 | $14,000 to $30,000
+:::
+
+TCEQ generally requires an aerobic system when soil percolation falls outside the 5 to 60 minutes per inch window, when there is less than 24 inches of soil above bedrock, when the lot is under half an acre, or when the property sits over a protected zone like the Edwards Aquifer recharge area. Central Texas and Hill Country installations also run roughly 15 to 20 percent above Houston and Dallas pricing because the geology demands engineered systems.
+
+The move here is simple: make a licensed site evaluation and soil analysis a condition of your feasibility period. A $500 evaluation can reveal a $15,000 difference in your build budget.
+
+## Power and Legal Access: The Quiet Deal-Killers
+
+Raw land with power at the road is a different asset than raw land with power a half mile away. Line extension in Texas typically runs $5 to $15 per foot overhead and $10 to $25 per foot underground, with rural poles costing $1,200 to $5,600 each and spaced roughly every 300 feet. Cooperatives like Pedernales Electric often credit you a free footage allowance, commonly a few hundred feet, and bill the rest as a contribution in aid of construction. A real-world 2,500-foot extension with a transformer and meter can land north of $20,000. Get a written estimate from the utility during feasibility, not after closing.
+
+Legal access is even less forgiving. If the tract does not touch a public road, you need a recorded easement, not a handshake with the neighbor and not a two-track that has "always been there." Title companies exclude access disputes all the time. Confirm insurable, recorded access in the commitment before you release your earnest money, and if power must cross someone else's land, remember that easement has to be purchased too, at whatever price that neighbor feels like naming.
+
+## The Ag Exemption: Where the Hill Country Pays You Back
+
+Here is the part that turns Hill Country land from an expense into a tax strategy. Texas open-space valuation, the 1-d-1 appraisal everyone calls the ag exemption, taxes qualifying land on its agricultural productivity value instead of its market value. The gap between those two numbers in a high-growth county is enormous, routinely a 90-percent-plus reduction. One documented Hays County case: a 7-acre tract went from roughly $19,000 per year in property taxes to about $300 per year after qualifying through beekeeping.
+
+The rules that matter:
+
+**The 5-of-7 rule.** Land must have been in qualifying agricultural use for five of the preceding seven years. Critically, that history runs with the land. Buy a tract that already carries the valuation, keep the qualifying use going without interruption, and the benefit transfers. Buy raw land with no history and you are building a five-year track record before the savings start. This single fact should change which tract you buy.
+
+**County intensity standards.** There is no statewide acreage minimum. Each county appraisal district sets its own degree-of-intensity requirements. Common patterns across Central Texas:
+
+:::compare-table
+Qualifying path | Typical practical minimum | Typical intensity standard
+Livestock grazing | Often 10 to 20+ acres | Minimum animal units set by the county
+Hay production | Usually 10 to 15 acres | Consistent production at typical local yields
+Beekeeping | 5 to 20 acres by statute | Commonly 6 hives for the first 5 acres, plus additional hives per added acreage
+Wildlife management | Converts from existing ag valuation | Written plan meeting 3 of 7 approved practices
+:::
+
+Beekeeping is the small-tract buyer's best friend because the statute specifically opens the door at 5 acres. Wildlife management is the lifestyle buyer's best friend: identical tax treatment to a working cattle operation, no livestock required, earned through habitat work like supplemental water, predator control, and native cover that most Hill Country owners want to do anyway. The catch is sequencing. Land must already qualify for ag valuation before you can convert it to wildlife use.
+
+**File on time.** The application is due to the county appraisal district by April 30 of the tax year. Late filing is sometimes possible with a penalty. Do not rely on it.
+
+## The Rollback Tax: Smaller Than You Heard, Still Real Money
+
+Every land conversation eventually gets to rollback taxes, and most of what buyers have heard is outdated. Two legislative changes rewrote this: House Bill 1743 in 2019 cut the rollback period from five years to three and the interest from 7 percent to 5, and House Bill 3833 in 2021 eliminated the interest entirely for changes of use on or after June 15, 2021. Current law: change qualifying land to a non-agricultural use and you owe the difference between market-value taxes and ag-value taxes for the three preceding years. No interest.
+
+Here is what that looks like on a real Hill Country tract:
+
+:::compare-table
+Rollback worked example: 12 acres near Wimberley | Amount
+Market value ($80,000 per acre) | $960,000
+Ag productivity value ($150 per acre) | $1,800
+Combined tax rate (approx.) | 1.6%
+Annual taxes at market value | $15,360
+Annual taxes at ag value | $29
+Annual difference | $15,331
+Rollback owed on change of use (3 years, no interest) | roughly $45,993
+:::
+
+Under the pre-2019 rules that same conversion would have cost five years of difference plus 7 percent compounding interest, well north of $80,000. The penalty shrank by nearly half, which is exactly why more developers are willing to buy ag land now. But note who pays: the rollback lands on whoever changes the use. Negotiate it explicitly in the contract, because a seller who quietly stopped running cattle two years ago can hand you a triggered rollback you did not price. If you later sell the tract, the federal side matters too: see our guide to [capital gains tax when selling Texas property](/blog/capital-gains-tax-home-sale-texas).
+
+## The Full Cost Stack: A 15-Acre Example
+
+Put it all together on a hypothetical 15-acre unrestricted tract in the Wimberley and Driftwood corridor, no existing well, no septic, power 1,200 feet away:
+
+:::compare-table
+Line item | Low | High
+Land ($45,000 per acre) | $675,000 | $675,000
+Well (deep Trinity, complete system) | $18,000 | $35,000
+Septic (aerobic, engineered, permits) | $13,000 | $25,000
+Power extension (1,200 ft, net of allowance) | $9,000 | $22,000
+Survey, site evaluation, feasibility studies | $3,000 | $8,000
+All-in before a slab is poured | $718,000 | $765,000
+:::
+
+That is a 6 to 13 percent premium over the sticker price, before a driveway, a gate, or a foundation. On tracts with worse water or longer power runs, I have seen the infrastructure stack exceed 20 percent of the land price. This is why two tracts at the identical price per acre can be $100,000 apart in true cost, and why the feasibility period, not the negotiation, is where good land deals are actually won.
+
+Meanwhile, an active ag valuation on that same tract could hold annual carrying taxes to a few hundred dollars instead of $15,000+. Over a ten-year hold, the tax status alone is worth more than the well, the septic, and the power extension combined.
+
+## The Part Nobody Puts in a Guide: The Best Tracts Never Hit the Market
+
+Here is what eleven years and $150 million in closed volume have taught me about Central Texas land: the MLS shows you the inventory that has to advertise. Legacy tracts, assemblage opportunities, and the properties with the water, the access, and the ag history already solved tend to trade quietly, seller to buyer, through relationships. The overwhelming majority of my career volume has come through [off-market and private channels](/blog/off-market-homes-austin), and land is the most off-market asset class of all. Nobody puts a sign on the family ranch. The same dynamic governs the residential side, where [Austin's most expensive neighborhoods](/blog/most-expensive-neighborhoods-in-austin) trade quietly at the top end.
+
+That Southeast Austin assemblage I mentioned did not exist as a listing. We created the deal parcel by parcel, seller by seller, through the broker network, then spent nine months in due diligence proving out water, zoning, and soils. That is the actual job. If you are serious about Hill Country acreage, whether it is a 10-acre homesite with a wildlife plan or a development-scale assemblage, the search should start before the inventory goes public.
+
+Echelon Property Group works land, luxury, and investment deals across Travis, Hays, and Williamson counties and into the Hill Country. If you want a feasibility-first approach to a specific tract, or access to what is trading quietly, reach out: [512.661.3843](tel:+15126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+:::faq
+Q: How much is an acre of land in the Texas Hill Country in 2026?
+A: The Texas Real Estate Research Center reported the Austin, Waco, and Hill Country region at $8,028 per acre in Q1 2026, up 8.27% year over year and a record high. That average reflects large tracts, typically around 200 acres. Small tracts of 10 to 25 acres within an hour of Austin routinely trade from $40,000 to $80,000+ per acre depending on water, restrictions, and frontage.
+
+Q: How much does it cost to drill a well in the Hill Country?
+A: A complete residential well system typically costs $12,000 to $25,000, and deep Trinity Aquifer sites can run $20,000 to $45,000. Wells commonly reach 300 to 700 feet through hard limestone, and roughly 15 to 30 percent of wells in this karst geology need hydrofracking or a re-drill to hit adequate yield.
+
+Q: What does a septic system cost on Hill Country land?
+A: Conventional systems run $6,300 to $10,000 installed and aerobic systems run $10,000 to $20,000, plus $1,500 to $5,000 for site evaluation, permits, and engineering. Thin soils and shallow limestone mean TCEQ rules frequently require the aerobic option, which also carries a mandatory service contract of $300 to $500 per year.
+
+Q: How many acres do you need for an ag exemption in Texas?
+A: There is no statewide minimum. Each county appraisal district sets intensity standards. Grazing and hay typically need 10 to 20 acres as a practical matter, while beekeeping qualifies tracts between 5 and 20 acres, commonly with 6 hives on the first 5 acres. Wildlife management carries no separate acreage minimum but requires the land to already hold an ag valuation before converting.
+
+Q: What is the rollback tax when land loses its ag exemption?
+A: Under current law, changing qualified open-space land to a non-agricultural use triggers a rollback equal to the difference between market-value taxes and ag-value taxes for the three preceding years, with no interest. The 2019 and 2021 legislative changes cut this from the old five years plus 7 percent interest, roughly halving the typical penalty.
+
+Q: Can I keep the previous owner's ag exemption when I buy land?
+A: Yes. The qualifying use history runs with the land, not the owner. If the tract has been in qualifying agricultural use for five of the last seven years and you continue that use without interruption, the valuation carries forward. You must still file your own application with the county appraisal district by April 30.
+
+Q: Do I need a permit to drill a well on my property?
+A: It depends on whether the land sits inside a Groundwater Conservation District. Districts like the Hays Trinity GCD, the Barton Springs/Edwards Aquifer Conservation District, and the Hill Country UWCD require permits and can affect timelines and cost. Outside a district, Texas applies the rule of capture and a domestic well requires no state permit, only a licensed driller meeting state construction standards.
+
+Q: Why do the best Hill Country tracts never hit the MLS?
+A: Legacy land tends to trade through relationships before it is ever advertised. Sellers of family ranches and well-positioned acreage value discretion, and buyers with broker networks reach them first. The tracts with water, legal access, and ag history already solved are precisely the ones that rarely need public marketing.
+:::
+
+:::cta-anchor
+:::
+    `,
+  },
+  {
+
     id: "where-austin-homeowners-are-moving",
     title: "Where Austin Homeowners Are Actually Moving in 2026, and How Investors Should Trade It",
     metaTitle: "Where Are Austin Homeowners Moving? 2026 Migration Data for Investors",

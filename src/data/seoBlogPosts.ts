@@ -298,7 +298,7 @@ A: Legacy land tends to trade through relationships before it is ever advertised
 
 :::cta-anchor
 :::
-    \`,
+    `,
   },
   {
 

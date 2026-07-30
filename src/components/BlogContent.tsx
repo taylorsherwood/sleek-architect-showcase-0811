@@ -303,13 +303,19 @@ const CompareTable = ({ body }: { body: string }) => {
   const [header, ...data] = rows;
   return (
     <div className="my-12 -mx-6 md:mx-0">
+      {(() => {
+        const cols = header.length;
+        const firstWidth = cols === 2 ? 50 : cols === 3 ? 30 : cols === 4 ? 25 : 22;
+        const restWidth = (100 - firstWidth) / (cols - 1);
+        return (
       <table className="w-full hidden md:table border-collapse table-fixed">
         <colgroup>
-          <col style={{ width: header.length === 2 ? "50%" : "15%" }} />
+          <col style={{ width: `${firstWidth}%` }} />
           {header.slice(1).map((_, i) => (
-            <col key={i} style={{ width: `${(header.length === 2 ? 50 : 85) / (header.length - 1)}%` }} />
+            <col key={i} style={{ width: `${restWidth}%` }} />
           ))}
         </colgroup>
+
         <thead>
           <tr className="border-b border-foreground/20">
             {header.map((h, i) => (

@@ -348,6 +348,10 @@ const CompareTable = ({ body }: { body: string }) => {
           ))}
         </tbody>
       </table>
+        );
+      })()}
+
+
 
 
       {/* Mobile: stacked per-row */}

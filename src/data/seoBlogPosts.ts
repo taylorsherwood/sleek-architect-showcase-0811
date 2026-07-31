@@ -126,8 +126,194 @@ import blogHillCountryLandAsset from "@/assets/blog/buying-land-texas-hill-count
 const blogHillCountryLand = blogHillCountryLandAsset.url;
 
 
+import blogAustinStrPoolAsset from "@/assets/blog/austin-str-backyard-pool.avif.asset.json";
+const blogAustinStrPool = blogAustinStrPoolAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-short-term-rental-rules-2026",
+    title: "Austin Short-Term Rental Rules in 2026: The Investor's Guide to the New Ordinance, the License Math, and the Shakeout Ahead",
+    metaTitle: "Austin Short-Term Rental Rules 2026: Investor Guide",
+    excerpt: "Austin rewrote its STR ordinance. License costs, the July 1 platform crackdown, real revenue data from four sources, and a full worked underwrite for investors.",
+    author: "Taylor Sherwood",
+    date: "2026-07-31",
+    readTime: "14 min read",
+    category: "INVESTMENT",
+    image: blogAustinStrPool,
+    heroImage: blogAustinStrPool,
+    imageAlt: "Backyard pool and shaded lounge at an Austin short-term rental property",
+    content: `On July 1, 2026, the last piece of Austin's rewritten short-term rental ordinance went live, and it was the piece with teeth. Airbnb, Vrbo, and every other booking platform must now require a city license number on every Austin listing, must delist a property within 10 days of a city notice, and cannot collect a booking fee on an unlicensed rental. The city's own enforcement software has been scanning listings since January.
+
+Here is the number that should get an investor's attention. As of spring 2026, Austin counted roughly 2,750 active STR licenses and had identified roughly 2,785 unlicensed addresses. About half of the operating market has no license. That half is now on a countdown clock.
+
+Most coverage frames this as a crackdown story. It is more useful to read it as a repricing story. The 2025 rewrite quietly did something the headlines missed: it made dedicated investor short-term rentals clearly legal in Austin residential neighborhoods for the first time in a decade, while building the machinery to remove everyone who will not register. Supply is about to get filtered. Filtered supply changes returns. This guide covers the rules as written, the enforcement timeline as the city has actually published it, what the property actually earns according to four competing data sources, and a full worked underwrite so you can see whether the asset class deserves your capital at all.
+
+## Austin did not ban short-term rentals. It stopped losing in court and changed the game.
+
+To understand why the new rules will likely stick, you need the ten-year backstory.
+
+Austin's 2016 ordinance tried to regulate STRs through zoning. It created three license types tied to land use, capped non-owner-occupied "Type 2" rentals at 3 percent of single-family homes per census tract, required 1,000 feet between Type 2 properties, and scheduled Type 2 licenses to be phased out of residential neighborhoods entirely. Then it spent a decade losing. In 2019, the Texas Third Court of Appeals struck down the Type 2 phase-out in Zaatari v. City of Austin. In August 2023, a further ruling held the owner-occupancy requirement unconstitutional. The practical result was a city with rules on the books it could not enforce, and by the city's own estimate the vast majority of Austin STRs simply operated without licenses.
+
+The 2025 rewrite abandoned the losing strategy. Ordinance No. 20250227-039 repealed the old zoning-based framework, including the Type 1, 2, and 3 definitions, the 3 percent census-tract caps, and the blanket 1,000-foot separation, effective October 1, 2025. Ordinance No. 20250911-012, adopted 10 to 0 on September 11, 2025, then rebuilt STR regulation as a licensing regime under Title 4 of the city code rather than a land-use restriction. A proposal to add geographic density caps back in failed 8 to 3, with the council majority citing exactly the legal history above.
+
+The strategic read for investors: the question in Austin is no longer where an STR is allowed. Licensed short-term rentals are now an accessory use across residential zoning. The question is how many one operator can hold, and whether the operator is licensed at all.
+
+## The rules that matter, in one table
+
+:::compare-table
+Item | The rule in 2026
+License requirement | Every STR, one license per unit, issued by <a href="https://www.austintexas.gov/department/short-term-rental-licenses" target="_blank" rel="noopener noreferrer">Austin Development Services</a>
+New license cost | $836.30 total ($789 license fee plus $47.30 neighbor notification fee)
+Renewal cost | $385.30
+Term | Up to 2 years, non-transferable, does not convey when the property sells
+Small sites (3 or fewer units) | Only individuals (including trusts and LLCs made up of natural persons) may operate, up to 2 STRs per site
+Same-operator spacing | One person's STRs on different sites must be at least 1,000 feet apart, and the rule looks through LLCs and trusts to the people behind them
+Multifamily, 4+ units, residential only | A person may operate the greater of 1 unit or 10 percent of the units they own or lease
+Mixed-use buildings with commercial space | 25 percent cap
+Local contact | Required within the five-county Austin metro, able to respond within 2 hours
+Application items | Self-certified safety checklist, certification of no outstanding code violations, list of platforms used; neighbors within 100 feet are notified
+What is no longer required | Certificate of occupancy, proof of insurance, routine inspections (a third-party inspection can be required only if the unit had violations in the prior 24 months)
+Hotel occupancy tax | 17 percent total on the nightly rate: 11 percent City of Austin (9 percent occupancy plus 2 percent venue) plus 6 percent State of Texas
+Penalties | Up to $500 per offense, and each day is a separate offense; no intent required; a property declared a nuisance faces a 12-month license ban
+Tenants | May hold an STR license with written landlord authorization
+:::
+
+Two details in that table do more work than the rest. First, the 1,000-foot rule is a same-operator spacing rule, not a general density cap. Your STR does not care how close your neighbor's STR is. It cares how close your other STR is, and retitling into a new LLC does not reset the measurement. Second, the license does not transfer with the property. More on why that matters for buyers below.
+
+## The timeline that got us here
+
+:::compare-table
+Date | What happened
+April 1, 2025 | Platforms began collecting and remitting Austin's 11 percent hotel occupancy tax on operators' behalf (Ordinance No. 20250227-041)
+October 1, 2025 | Operator rules took effect; the old Type 1, 2, and 3 zoning framework was repealed
+January 7, 2026 | City enforcement software went live, scraping listings and matching addresses
+April 1, 2026 | City reported 2,785 unlicensed addresses identified, 65 notices of violation, 28 citations, and 32 license applications prompted by enforcement contact
+May 18, 2026 | New STR licensing system launched
+July 1, 2026 | Platform obligations took effect: license numbers required in listings, 10-day delisting on city notice, booking-fee ban for unlicensed rentals
+:::
+
+## The compliance gap is the story
+
+Read the city's April 2026 implementation memo carefully and the enforcement posture is deliberate, not chaotic. Mass delist notices are paused for roughly six months following the May 2026 licensing-system launch, then phase in starting with properties that generate nuisance complaints. Applying for a license pauses enforcement against you while the application is under review. Processing runs an estimated 6 to 10 weeks.
+
+That phased rollout is a window, not a reprieve. The scanning software has been building an address list since January. The fine structure is up to $500 per offense with each day counted as a separate offense, and the ordinance states that no culpable mental state is required. Thirty days of unlicensed operation is thirty separate offenses. A figure of $2,000 per day circulates on some blogs; it does not appear in the ordinance, and you should discount any source repeating it.
+
+Meanwhile, the licensed side of the market is growing fast. Active licenses were up 19.6 percent year over year as of March 2026 and reached 2,899 by late July 2026 on the city's open data. Hotel occupancy tax revenue from STRs is up more than 60 percent since fiscal year 2024. And the city has noted that 94 percent of STR complaint calls involve unlicensed properties, which tells you exactly who the phased enforcement is designed to remove first.
+
+Put those pieces together and the near-term supply picture writes itself. Several thousand unlicensed listings either register, convert to long-term rentals, or exit. Some cannot register even if they want to, because they fail the small-site ownership rules or sit inside 1,000 feet of the same owner's other property. Demand from SXSW, ACL, F1 weekend, university events, and business travel does not shrink because the city sent delist notices. Licensed operators are positioned to absorb displaced bookings. Investor demand and county arbitrage are moving in the same direction, which is why [where Austin homeowners are actually moving](/blog/where-austin-homeowners-are-moving) matters as much as the ordinance itself.
+
+## What the market actually pays: pick your data source carefully
+
+Here is where most STR content fails investors. Ask four data providers what an average Austin short-term rental earns and you get four materially different answers, because each tracks a different listing universe with different methodology.
+
+:::compare-table
+Source (2026 data) | Active listings tracked | Occupancy | Average daily rate | Average annual revenue
+AirDNA | Not published in summary | 54% | $265 | Not comparable
+Rabbu (April 2026) | 4,244 | 38% | $215 | $28,148
+AirROI (May 2025 to April 2026) | 8,007 | 41.1% | $288 | $32,669
+Chalet (March 2026) | 2,861 | 55% | $210 | $47,076
+:::
+
+The honest takeaways:
+
+The spread is the finding. Average annual revenue estimates for the same city range from roughly $28,000 to roughly $47,000 depending on who is counting and which listings count. Any pro forma built on a single provider's average is a guess wearing a spreadsheet costume. Underwrite from the conservative end and treat the optimistic end as upside, not base case.
+
+The averages skew small. In Rabbu's count, 1-bedroom units are the largest cohort at 1,555 listings, with 5-bedroom-plus properties at only about 309. Market-average revenue mostly describes condos and small units, not the larger homes where event demand concentrates.
+
+Seasonality is violent. Rabbu's monthly data shows average revenue peaking near $3,852 in March, driven by SXSW and spring travel, a secondary peak around $2,800 in October for ACL and F1 season, and troughs of $1,438 in January and $1,673 in December. That is roughly a 2.5x swing between the best and worst months. An Austin STR is a seasonal business with two harvests, and your reserves need to reflect that.
+
+Compare any of those listing counts against the city's 2,899 active licenses and one more conclusion drops out: even the most conservative count of active listings exceeds the number of licenses. The licensed universe is the durable universe. Underwrite as if the unlicensed portion of your comp set will not exist in 18 months, because that is the city's stated plan.
+
+## The worked example: a 3-bedroom East Austin house, underwritten honestly
+
+Take a 3-bedroom, 2-bath single-family house east of I-35 purchased at $625,000 and licensed properly. Property taxes, standard insurance, and debt service are identical whichever way you rent it, so the comparison below runs at the operating line, before those common costs.
+
+### Scenario A, conservative STR underwrite
+
+ADR of $275 for a 3-bedroom (above the small-unit market average, below premium), 45 percent occupancy, roughly 164 booked nights.
+
+:::compare-table
+Line item | Annual amount
+Gross booking revenue (164 nights at $275) | $45,100
+Full-service STR management (20%) | ($9,020)
+Utilities, internet, streaming | ($4,800)
+Supplies, consumables, minor repairs | ($3,000)
+Furnishing and refresh reserve | ($4,000)
+Host-side platform fees (approx. 3%) | ($1,353)
+STR insurance premium over standard policy | ($1,500)
+Pricing software and tools | ($600)
+License amortized ($836.30 over 2 years) | ($418)
+Net operating income before common costs | $20,409
+:::
+
+### Scenario B, strong operator
+
+Same house, $300 ADR, 55 percent occupancy, roughly 201 nights, $60,300 gross. Variable costs scale, fixed costs do not, and the operating line lands near $31,500.
+
+### Scenario C, long-term lease
+
+The same house rents conventionally at about $2,500 per month. $30,000 gross, minus 5 percent vacancy, 8 percent management, and $2,000 in maintenance and turnover, nets roughly $24,200. No furnishing capital, no nightly operations, no license, no hotel tax filings.
+
+:::compare-table
+Strategy | Operating income | Upfront furnishing capital | Operational load
+STR, conservative case | ~$20,400 | $40,000 to $60,000 | High
+STR, strong operator | ~$31,500 | $40,000 to $60,000 | High
+Long-term lease | ~$24,200 | $0 | Low
+:::
+
+Read that table without romance. The average execution of an Austin STR now underperforms a boring lease on the same asset once real costs are counted, and it does so after you wrote a five-figure furnishing check. The STR premium in this market exists only above-average: better property selection, event-calendar pricing, professional management, and design that photographs. That is not a reason to avoid the asset class. It is the reason the asset class is consolidating into the hands of operators who treat it as a business, which is precisely what the new ordinance accelerates.
+
+Note also what the 17 percent <a href="https://comptroller.texas.gov/taxes/hotel/" target="_blank" rel="noopener noreferrer">hotel occupancy tax</a> does even though guests nominally pay it. Your $275 net rate shows up to the guest as roughly $322 before cleaning and platform fees, and you compete against hotels on that all-in number. Tax capacity is pricing capacity you do not keep.
+
+## Four theses for investors
+
+1. **The rewrite legalized the dedicated investor STR. Price that in.** For a decade, non-owner-occupied STRs in Austin residential neighborhoods lived in legal gray space: capped at 3 percent per census tract, scheduled for phase-out, sustained only by litigation. That constraint is gone. The binding limits now are per-operator (two per small site, 1,000 feet between an operator's sites, 10 percent of a residential multifamily building), not per-neighborhood. Properties that could never carry a compliant STR entitlement before can carry one now, and that entitlement value is not yet reflected in how most Austin listings are marketed.
+2. **The shakeout is the opportunity.** Half the operating market is unlicensed and the city has published, in writing, the plan to remove it in phases. Every delisted competitor is displaced demand. Operators who are licensed, responsive, and review-strong before the delist notices scale up will absorb bookings without buying anything. For acquisitions, the same logic favors moving during the uncertainty window rather than after it resolves, when the licensed cash flows will be obvious to every buyer. Sourcing qualifying properties [off market in Austin](/blog/off-market-homes-austin) is how most of that inventory changes hands.
+3. **Average does not pencil. Specific does.** The worked example above is the discipline: at market-average performance, take the lease. The STR case in Austin concentrates in larger homes (the 5-bedroom-plus cohort is around 300 listings in a market of thousands), walkable and event-adjacent locations, unique or design-forward stays, and disciplined seasonal pricing against the March and October peaks. If the deal only works at the optimistic data provider's averages, it does not work.
+4. **The compliance rules are now acquisition criteria.** The 1,000-foot same-operator rule means a portfolio buyer cannot stack STRs on one street, and cannot LLC around it. Small sites are limited to individuals and natural-person entities, which restricts institutional structures. Jurisdiction matters at the margin: full-purpose Austin owes the full 17 percent tax stack, limited-purpose areas require a license but no city hotel tax, and ETJ parcels currently require neither. And no city license overrides an HOA or deed restriction that prohibits short-term rentals, which is a routine kill factor in exactly the master-planned and condo communities where STRs otherwise look attractive. Title review and HOA document review are now part of STR underwriting, full stop.
+
+## Buying or selling an operating STR: the license does not come with it
+
+One transactional detail in the ordinance changes how these properties trade. Licenses are non-transferable and do not convey at sale. A buyer of a performing, licensed Austin STR inherits the furniture, the photos, and the reviews, but not the license. The buyer applies fresh, at $836.30, into a queue the city estimates at 6 to 10 weeks. Underwrite a revenue gap at closing, structure the timeline so the application is filed the day the deed records, and verify the property still qualifies under the ownership and spacing rules given everything else the buyer holds.
+
+On the sell side, the roughly 2,800 identified unlicensed operators each face the same three doors: license the property if it qualifies, convert it to a long-term rental, or sell. Some will [decide to sell rather than wait](/blog/should-i-sell-my-house-now-or-wait-austin), and some of the most interesting acquisition opportunities of the next year in this niche will come from operators who ran the new math and chose the exit. Those conversations are happening quietly, off the MLS, which is where the overwhelming majority of the transactions Taylor closes have always lived. If you want access to that deal flow, or you are an operator running your own three-door decision and want the sale option priced honestly against the conversion option, that is exactly the analysis Echelon Property Group builds for clients, including the [capital gains consequences of the exit](/blog/capital-gains-tax-home-sale-texas).
+
+The city did not kill the Austin short-term rental. It ended the era of the casual one. What remains is a licensed, taxed, enforced, and therefore investable asset class, with a supply-side reset in progress and most of the market still pricing off the old, noisy data. Windows like that do not stay open.
+
+:::cta-anchor
+:::
+
+## Frequently asked questions
+
+:::faq
+Q: Do I need a license to run an Airbnb in Austin in 2026?
+A: Yes. Every short-term rental in Austin, meaning any residential property rented for fewer than 30 consecutive days, requires a city operating license from Austin Development Services, one license per unit. Since July 1, 2026, booking platforms must require a valid license number on every Austin listing and must remove listings the city flags, so operating unlicensed now fails at the platform level, not just the code-enforcement level.
+
+Q: How much does an Austin STR license cost?
+A: A new license costs $836.30, which is a $789 license fee plus a $47.30 neighbor notification fee. Renewal costs $385.30. Licenses run up to two years, are non-transferable, and do not convey when the property sells. City Council has directed staff to explore lowering fees, so verify current amounts when you apply.
+
+Q: Can an investor who does not live in the property get an Austin STR license?
+A: Yes, and this is the biggest quiet change in the 2025 rewrite. The old framework restricted non-owner-occupied rentals through zoning caps that were repeatedly struck down in court. The current ordinance licenses STRs across residential zoning without an owner-occupancy requirement. The limits that remain are per-operator: up to two STRs on a small site, a 1,000-foot spacing rule between the same operator's sites, and unit caps in multifamily buildings.
+
+Q: How many short-term rentals can one owner operate in Austin?
+A: On sites with three or fewer housing units, an individual can operate up to two STRs, and only individuals or trusts and LLCs made up of natural persons qualify. The same person's STRs on different sites must be at least 1,000 feet apart, and the ordinance looks through entities to the people behind them, so retitling into a new LLC does not reset the distance. In residential multifamily buildings of four or more units, a person may operate the greater of one unit or 10 percent of the units they own or lease; mixed-use buildings keep a 25 percent cap.
+
+Q: What is the hotel occupancy tax on an Austin short-term rental?
+A: The total stack is 17 percent of the nightly rate in full-purpose Austin: 11 percent city tax (9 percent occupancy plus 2 percent venue project) plus 6 percent state tax. Platforms have collected and remitted the city portion automatically since April 2025, but operators must still file quarterly reports with the city, including zero reports for quarters with no bookings, and must self-collect on direct bookings. Properties in the limited-purpose jurisdiction need a license but owe no city hotel tax, and ETJ properties currently need neither.
+
+Q: What happens to unlicensed Austin STRs now?
+A: The city's enforcement software has been scanning listings since January 2026 and had identified about 2,785 unlicensed addresses by April 1. The city has said mass delist notices will phase in after a pause following the May 2026 launch of its licensing system, starting with properties that generate nuisance complaints. Fines run up to $500 per offense with each day counted separately, no intent required, and a property declared a nuisance faces a 12-month license ban. Filing a license application pauses enforcement while it is reviewed.
+
+Q: Does an STR license transfer when I buy the property?
+A: No. Licenses are non-transferable and do not convey at sale, so a buyer of an operating Austin STR must apply fresh and should underwrite a licensing gap, since the city estimates 6 to 10 weeks of processing. Buyers should also confirm the property still qualifies under the ownership and spacing rules given their other holdings, and that no HOA or deed restriction prohibits short-term rental, because private restrictions override the city license.
+
+Q: How much does an Austin Airbnb actually make?
+A: It depends heavily on who you ask, which is itself the answer. For 2026, Rabbu reports average annual revenue of $28,148 at 38 percent occupancy, AirROI reports $32,669 at 41.1 percent occupancy, and Chalet reports $47,076 at 55 percent occupancy, across different listing universes. Revenue is also sharply seasonal, peaking around March for SXSW and October for ACL and F1, with January and December troughs. Underwrite from the conservative end; at market-average performance, a conventional lease on the same house frequently nets more with far less capital and effort.
+:::
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin practice focused on luxury and investment real estate across Travis, Williamson, and Hays counties. This article is general information about a city ordinance and market data, not legal or tax advice. Verify current fees and rules with the City of Austin before acting.`,
+  },
   {
     id: "buying-land-texas-hill-country",
     title: "Buying Land in the Texas Hill Country: The 2026 Guide to Wells, Septic, Ag Exemptions, and Everything the Per-Acre Price Hides",

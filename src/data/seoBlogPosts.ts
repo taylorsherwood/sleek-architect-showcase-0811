@@ -129,9 +129,210 @@ const blogHillCountryLand = blogHillCountryLandAsset.url;
 import blogAustinStrPoolAsset from "@/assets/blog/austin-str-backyard-pool.avif.asset.json";
 const blogAustinStrPool = blogAustinStrPoolAsset.url;
 
+import blogCostToSellAustinAsset from "@/assets/blog/cost-to-sell-house-austin.png.asset.json";
+const blogCostToSellAustin = blogCostToSellAustinAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "cost-to-sell-a-house-austin",
+    title: "How Much Does It Cost to Sell a House in Austin? The Full 2026 Fee Stack",
+    metaTitle: "Cost to Sell a House in Austin in 2026: The Full Fee Stack",
+    excerpt: "What it really costs to sell an Austin home in 2026: post-NAR commission data, the new TDI title rates, tax prorations, carrying costs, and a full worked $1.5M net sheet.",
+    author: "Taylor Sherwood",
+    date: "2026-08-01",
+    readTime: "13 min read",
+    category: "SELLER STRATEGY",
+    image: blogCostToSellAustin,
+    heroImage: blogCostToSellAustin,
+    imageAlt: "Luxury Austin home exterior at dusk representing the full cost of selling a house in Austin in 2026",
+    content: `Most sellers can quote their list price to the dollar and their net proceeds not at all. The gap between those two numbers is the fee stack: commissions, title premiums, escrow charges, prorations, prep costs, and the quiet expense of every extra week the house sits on the market. In Austin in 2026, that stack has changed more in two years than it did in the previous twenty. The NAR settlement rewrote how commissions work, the Texas Department of Insurance cut title insurance rates statewide in March, and average marketing times have stretched long enough that carrying costs are now a real line item instead of a rounding error.
+
+This guide walks the entire stack, line by line, with current numbers, and finishes with a complete worked example on a $1.5 million Austin sale so you can see exactly where the money goes.
+
+:::callout
+Quick answer: Selling a house in Austin in 2026 typically costs 4.5 to 7 percent of the sale price in direct transaction costs, depending mostly on how you structure agent compensation. On a $1.5 million home, that is roughly $67,800 to $105,300, made up of the listing fee, any buyer-agent concession, a state-regulated owner's title policy of $7,256, escrow and document charges of about $1,100 to $1,700, and a prorated property tax credit to the buyer. Pre-listing prep, staging, and carrying costs while the home markets come on top of that. Texas charges no real estate transfer tax and no state income tax on the sale.
+:::
+
+## The Commission Is Still the Whole Ballgame
+
+Everything else in this article combined is smaller than the agent compensation decision. So start here.
+
+The 2024 NAR settlement changed the mechanics: buyer-agent compensation can no longer be advertised on the MLS, and buyers must sign written representation agreements stating their agent's fee before touring homes. What it did not change much is the money. Clever Real Estate's February 2026 survey of 533 agents nationwide put the average total commission at 5.70 percent, split roughly 2.88 percent to the listing side and 2.82 percent to the buyer side. Buyer-side fees dipped briefly after the settlement took effect, then climbed back. Texas actually runs above the national number on the buyer side, averaging about 2.95 percent as of early 2026.
+
+Here is the part most sellers get wrong in both directions. In the same 2026 survey data, 38 percent of recent sellers still believed 6 percent was the standard rate, yet only 14 percent actually paid a full 6 percent. Commissions are negotiable and always have been. The settlement just forced the negotiation into the open.
+
+As a seller in 2026 you are really making two separate decisions:
+
+### Decision one: your listing fee
+
+This pays for pricing strategy, marketing, negotiation, and transaction management on your side. Typical Austin range: 2.5 to 3 percent, negotiable based on price point and scope.
+
+### Decision two: whether to offer a buyer-agent concession
+
+You are no longer obligated to pay the buyer's agent anything. But most Austin sellers still offer something, because a buyer who must pay their own agent out of pocket has less cash left for your price, and buyers' agents steer their clients toward homes where compensation is workable. Offering nothing is a legitimate strategy on a hot property. On a home that needs the widest possible buyer pool in a 62-day market, it is usually a false economy.
+
+What the commission decision costs on a $1.5 million sale:
+
+:::compare-table
+Structure | Listing side | Buyer side | Total commission
+No buyer concession | 3.0% ($45,000) | 0% ($0) | $45,000
+Reduced concession | 3.0% ($45,000) | 2.0% ($30,000) | $75,000
+Common 2026 structure | 3.0% ($45,000) | 2.5% ($37,500) | $82,500
+Texas survey averages | 2.88% ($43,200) | 2.95% ($44,250) | $87,450
+:::
+
+The spread between the top and bottom rows is $42,450. No other line in this article moves that much money.
+
+## Title Insurance: Texas Sets the Price, and It Just Went Down
+
+Texas is one of the few states where title insurance premiums are promulgated, meaning the Texas Department of Insurance fixes the rate and every title company in the state must charge exactly the same premium. You cannot shop the premium. You can only shop service.
+
+The 2026 news is good for sellers: TDI cut the basic premium schedule by 6.2 percent effective March 1, 2026 under Order 2025-9697. In most Austin closings, the seller pays for the buyer's owner's policy by custom, so this cut lands on the seller's side of the settlement statement.
+
+For policies between $1,000,001 and $5,000,000, the 2026 formula is: subtract $1,000,000 from the sale price, multiply by 0.00406, and add $5,226. On a $1.5 million sale that works out to $7,256. Under the old schedule that same policy cost $7,740, so the March rate cut saves this seller $484.
+
+Texas owner's title premium at Austin price points (rates effective March 1, 2026):
+
+:::compare-table
+Sale price | Owner's policy premium
+$450,000 (metro median) | $2,509
+$605,000 (City of Austin median) | $3,275
+$1,000,000 | $5,226
+$1,500,000 | $7,256
+$2,000,000 | $9,286
+$3,000,000 | $13,346
+$5,000,000 | $21,466
+:::
+
+Note how gently the premium scales. Title insurance is regressive in the seller's favor: it is about 0.56 percent of a $450,000 sale but only 0.43 percent of a $5 million sale. It is one of the few line items where luxury sellers get a structural break.
+
+## The Smaller Line Items That Add Up
+
+None of these will ruin your net sheet individually. Together they typically run $1,100 to $1,700 before any HOA involvement, and $1,700 to $2,400 with one.
+
+:::compare-table
+Line item | Typical Austin cost | Notes
+Escrow / settlement fee (seller side) | $300 to $600 | Charged by the title company; sometimes split with buyer
+Tax certificates | $50 to $100 | Confirms tax status with each taxing jurisdiction
+Recording the lien release | $50 to $100 | Travis County charges $25 for the first page, $4 each additional
+Deed and document preparation | $150 to $300 | Attorney-prepared conveyance documents
+HOA resale certificate | Up to $375 | Capped by Texas Property Code Chapter 207; seller pays
+HOA transfer fee | $100 to $500 | Set by the management company; sometimes negotiable in the contract
+Home warranty for buyer | $450 to $800 | Optional, negotiated; common on resale homes
+New survey (only if needed) | $400 to $700 | Avoidable; see below
+:::
+
+Two seller-friendly notes hiding in that table. First, the resale certificate cap is state law, so if a management company quotes more than $375 for the certificate itself, push back. Second, the survey is usually avoidable: if you kept the survey from when you bought the home and nothing has changed, you can provide it with a T-47 affidavit and most lenders will accept it. That is a $400 to $700 savings for keeping a piece of paper.
+
+## Property Tax Proration: The Line That Surprises Everyone
+
+Texas property taxes are paid in arrears, meaning the 2026 bill does not come due until early 2027. When you sell mid-year, you have occupied the home for months of a tax year whose bill you will never receive. So at closing, the title company credits the buyer for your share.
+
+Worked example: a $1.5 million Austin home at a combined rate of roughly 1.8 percent carries about $27,000 in annual property tax. Close on June 30, day 181 of the year, and you credit the buyer approximately $13,400.
+
+Strictly speaking this is not a cost of selling. You would have owed those taxes anyway if you had kept the house. But it is real cash subtracted at the closing table, it shows up on every net sheet, and sellers who forget it are the ones who call their agent confused about the wire amount. Budget for it. One caveat: the proration is usually estimated off the appraisal district's assessed value and last year's rate, not your sale price, so a homestead with a capped assessed value will prorate lower than the headline math suggests.
+
+## What Texas Does Not Charge You
+
+Worth naming, because sellers relocating from other states keep waiting for these to appear:
+
+**No transfer tax.** States like New York, California, and Pennsylvania charge 0.4 to 2 percent or more of the sale price just to record the transfer. In Texas that number is zero. On a $1.5 million sale, that is $6,000 to $30,000 that simply does not exist here.
+
+**No state income tax on your gain.** Texas takes nothing from your profit. Federal capital gains tax can still apply above the Section 121 exclusion of $250,000 for single filers and $500,000 for married couples filing jointly. If your Austin home has appreciated past those thresholds, read our [full guide to capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas) before you list, because timing and basis documentation can move real money.
+
+**No mandatory attorney.** Texas closes through title companies, not attorney closings. Hiring counsel is optional.
+
+## Prep and Carrying Costs: The Stack Nobody Puts on the Net Sheet
+
+The settlement statement only captures closing day. The full cost of selling starts weeks earlier and runs until funding.
+
+### Pre-listing prep
+
+Paint, landscaping, make-ready repairs, and deferred maintenance typically run $2,000 to $10,000 on a well-kept home and far more on one that needs work. Inspection-driven repair credits after the option period commonly add $3,000 to $10,000 in this market.
+
+### Staging
+
+Occupied consultations are cheap. Full vacant staging is not, and at the luxury level it is a genuine budget line: full staging on a high-end Austin listing can run $9,000 per month, and our [complete breakdown of luxury home staging costs in Austin](/blog/luxury-home-staging-cost-austin) covers what each price tier should expect to spend and what it returns.
+
+### Carrying costs while you wait
+
+Per Unlock MLS, homes across the Austin metro averaged 62 days on market in June 2026, and homes closed at about 93.9 percent of list price. Add a 30-day escrow and a typical seller owns the home for roughly three months after listing day. On a $1.5 million home, taxes accrue at about $2,250 per month, insurance at $300 to $500, and utilities and lawn care at $300 to $500, before any mortgage interest. Call it $3,000 to $5,000 per month of ownership, or $9,000 to $15,000 across a typical marketing-plus-escrow window. Our [June 2026 Austin market update](/blog/austin-housing-market-update-june-2026) covers where days on market currently sit by county, and our guide on [whether to sell now or wait](/blog/should-i-sell-my-house-now-or-wait-austin) works the carrying-cost math in both directions.
+
+This is why pricing correctly on day one is a financial decision, not an ego decision. Every 30 days of overpricing costs a $1.5 million seller $3,000 to $5,000 in carrying costs before it costs them anything in negotiating leverage. It always costs them the leverage too.
+
+## The Full Worked Example: Selling a $1.5 Million Austin Home
+
+Assumptions: $1.5 million sale price, City of Austin, closing June 30, 2026, HOA community, seller provides existing survey with T-47, buyer requests a home warranty, no repair credits.
+
+:::compare-table
+Line item | Scenario A: 3% + 2.5% concession | Scenario B: 3% listing only
+Listing fee (3.0%) | $45,000 | $45,000
+Buyer-agent concession | $37,500 | $0
+Owner's title policy (TDI 2026 rate) | $7,256 | $7,256
+Escrow fee, seller side | $450 | $450
+Tax certificates | $75 | $75
+Recording lien release | $50 | $50
+Deed preparation | $250 | $250
+HOA resale certificate (capped) | $375 | $375
+HOA transfer fee | $250 | $250
+Home warranty | $650 | $650
+Prorated property taxes (June 30) | $13,400 | $13,400
+Total costs at closing | $105,256 (7.0%) | $67,756 (4.5%)
+Gross proceeds before mortgage payoff | $1,394,744 | $1,432,244
+:::
+
+Both columns exclude the mortgage payoff, which is not a cost of selling, and exclude prep, staging, and carrying costs, which vary too much to standardize but typically add $15,000 to $40,000 on a home at this price point once staging and three months of ownership are counted.
+
+The $37,500 difference between the columns is the buyer-concession decision, and it deserves strategy, not a default. The right answer depends on the property, the price band, the competition on the market that week, and how the buyer pool at your price point is being represented. That conversation is exactly what a listing consultation is for.
+
+## Seven Ways to Shrink the Stack
+
+1. **Negotiate the commission structure deliberately.** Both the listing fee and the concession are open questions in 2026. Treat them as separate decisions with separate justifications.
+2. **Time the concession, do not default it.** Some sellers launch with no offered concession and hold it in reserve as a negotiating chip for the right offer.
+3. **Keep your old survey.** A valid existing survey plus a T-47 affidavit saves $400 to $700.
+4. **Know the HOA fee caps.** The resale certificate is capped at $375 by state law. Transfer fees are contractual and can be negotiated between the parties in the contract.
+5. **Price to the first 30 days.** The Austin homes that sell inside a month skip one to two months of carrying costs and negotiate from strength. The ones that sit past 45 days almost always give the savings back in price cuts.
+6. **Mind the capital gains thresholds before you close, not after.** Basis documentation for improvements is worth real money above the exclusion.
+7. **Consider whether your sale belongs on the open market at all.** For certain properties, particularly at the luxury level, a private sale can eliminate staging, public marketing time, and months of carrying costs while protecting privacy. It does not eliminate professional representation, and it should not. Our [guide to off-market home sales in Austin](/blog/off-market-homes-austin) explains when a quiet sale outperforms a public one.
+
+:::cta-anchor
+:::
+
+## Frequently Asked Questions
+
+:::faq
+Q: How much does it cost to sell a house in Austin in 2026?
+A: Direct transaction costs typically run 4.5 to 7 percent of the sale price, driven mostly by commission structure. On the June 2026 City of Austin median price of $605,000, that is roughly $27,000 to $42,000. On a $1.5 million home, roughly $67,800 to $105,300. Prep, staging, and carrying costs while the home markets are additional.
+
+Q: What is the average real estate commission in Austin in 2026?
+A: National survey data from early 2026 puts the average total commission at about 5.7 percent, split roughly 2.88 percent to the listing side and 2.82 percent to the buyer side. Texas buyer-side averages run slightly higher at about 2.95 percent. Every commission is negotiable, and since the 2024 NAR settlement, the listing fee and any buyer-agent concession are negotiated separately.
+
+Q: Do sellers still have to pay the buyer's agent after the NAR settlement?
+A: No. Sellers are not obligated to offer buyer-agent compensation, and such offers can no longer be advertised on the MLS. In practice, most Austin sellers in 2026 still offer a concession of 2 to 3 percent because it widens the buyer pool and preserves buyers' cash for the purchase price. Whether to offer one, and how much, is now a strategic decision made listing by listing.
+
+Q: Who pays for title insurance in Texas?
+A: By custom in most Texas transactions, the seller pays for the buyer's owner's title policy, though this is negotiable in the contract. The premium is set by the Texas Department of Insurance and is identical at every title company in the state.
+
+Q: How much is title insurance on a $1.5 million home in Texas?
+A: Under the TDI rate schedule effective March 1, 2026, the owner's policy premium on a $1.5 million sale is $7,256. The March 2026 schedule cut premiums 6.2 percent statewide, so the same policy cost $7,740 under the prior schedule.
+
+Q: Does Texas charge a real estate transfer tax?
+A: No. Texas has no state or local real estate transfer tax and no state income tax on sale proceeds. Federal capital gains tax may apply to profit above the Section 121 exclusion of $250,000 for single filers or $500,000 for married couples filing jointly.
+
+Q: How does property tax proration work when selling a Texas home?
+A: Texas property taxes are paid in arrears, so at closing the seller credits the buyer for the portion of the year the seller owned the home. A June 30 closing on a home with a $27,000 annual tax bill produces a seller credit of roughly $13,400. The estimate is usually based on the appraisal district's assessed value and the prior year's rate.
+
+Q: Can you avoid paying commissions by selling off market?
+A: An off-market sale changes the marketing, not the need for representation. Private sales can eliminate staging costs, public marketing time, and months of carrying costs, which is often where luxury sellers save the most. Selling entirely without an agent is a different matter: industry data consistently shows unrepresented sales closing well below comparable agented sales, which usually erases the commission savings and then some.
+:::
+
+## What Your Actual Number Looks Like
+
+Every net sheet is specific: your price point, your tax jurisdiction, your HOA, your mortgage payoff, your prep list, and the commission structure that fits your property's buyer pool. Echelon Property Group builds a line-by-line seller net sheet for every listing consultation, at any price point, so you know your walk-away number before the sign goes in the yard, or before it quietly does not. [Reach out to Taylor Sherwood at Echelon Property Group](/contact) for a confidential consultation and your exact numbers.`,
+  },
+  {
+
     id: "austin-short-term-rental-rules-2026",
     title: "Austin Short-Term Rental Rules in 2026: The Investor's Guide to the New Ordinance, the License Math, and the Shakeout Ahead",
     metaTitle: "Austin Short-Term Rental Rules 2026: Investor Guide",

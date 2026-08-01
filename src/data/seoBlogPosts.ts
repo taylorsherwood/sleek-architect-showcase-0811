@@ -142,7 +142,7 @@ export const seoBlogPosts: BlogPost[] = [
     author: "Taylor Sherwood",
     date: "2026-08-01",
     readTime: "13 min read",
-    category: "SELLING",
+    category: "SELLER STRATEGY",
     image: blogCostToSellAustin,
     heroImage: blogCostToSellAustin,
     imageAlt: "Luxury Austin home exterior at dusk representing the full cost of selling a house in Austin in 2026",

@@ -132,9 +132,170 @@ const blogAustinStrPool = blogAustinStrPoolAsset.url;
 import blogCostToSellAustinAsset from "@/assets/blog/cost-to-sell-house-austin.png.asset.json";
 const blogCostToSellAustin = blogCostToSellAustinAsset.url;
 
+import blogPrivateListingsAustin2026Asset from "@/assets/blog/private-listings-austin-2026.jpg.asset.json";
+const blogPrivateListingsAustin2026 = blogPrivateListingsAustin2026Asset.url;
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "private-listings-austin",
+    title: "Private Listings in Austin: The 2026 Rules, the Data, and When Going Quiet Actually Pays",
+    metaTitle: "Private Listings in Austin: 2026 Rules, Data, Strategy",
+    excerpt: "Clear Cooperation is collapsing, Zillow launched Preview, and Unlock MLS built Flex Listings. Here is what Austin sellers can actually do in 2026, with the data on what private listings really cost or earn.",
+    author: "Taylor Sherwood",
+    date: "2026-08-03",
+    readTime: "15 min read",
+    category: "SELLER STRATEGY",
+    image: blogPrivateListingsAustin2026,
+    heroImage: blogPrivateListingsAustin2026,
+    imageAlt: "Modern limestone Austin luxury home at dusk with warm interior light and no for sale sign in the yard",
+    content: `For five years, the rule was simple. If you marketed a home anywhere, it had to be on the MLS within one business day. That rule, the National Association of REALTORS Clear Cooperation Policy, is still technically on the books in 2026. In practice, the industry has spent the last eighteen months building an entire parallel system around it, and the two biggest names in real estate sued each other over who gets to control it.
+
+If you are selling a home in Austin this year, none of that industry drama matters except for one thing: you now have more legal ways to control when and how your home reaches the public than any seller has had since 2020. Used well, that control is worth real money. Used badly, the data says it can cost you tens of thousands of dollars.
+
+This guide covers what actually changed, what the rules are on Unlock MLS right now, what the competing studies really show, and a worked example of how Echelon Property Group thinks about the public versus private decision on a $2.4M Westlake listing.
+
+## How We Got Here: Six Years in Ninety Seconds
+
+:::compare-table
+Date | What happened | Why it matters to you
+May 2020 | NAR Clear Cooperation Policy takes effect. Any public marketing means the listing must hit the MLS within 1 business day. | Pocket listings pushed to the margins. One path for almost everyone.
+March 2025 | NAR announces Multiple Listing Options for Sellers, creating the delayed marketing exempt listing. Sellers can hold a listing back from portals and IDX feeds for a period each MLS sets. Requires a signed seller disclosure. | The first sanctioned middle ground between fully public and fully hidden.
+April 2025 | Zillow announces Listing Access Standards: publicly market a home off the MLS for more than a day and Zillow bans that listing from its site. | The portal with the largest buyer audience starts playing enforcer.
+Summer 2025 | Unlock MLS launches Flex Listings in Austin: a private listing category visible to roughly 18,000 Unlock MLS subscribers, with no days on market clock running. | Austin gets its own private listing lane, inside the MLS, before most markets.
+June 2025 | Compass sues Zillow, calling the ban an abuse of monopoly power. | The seller-choice fight goes to federal court.
+September 30, 2025 | Deadline for every MLS in the country to implement delayed marketing. | Delayed marketing becomes a real option everywhere, including Central Texas.
+February 2026 | A federal judge denies Compass's injunction. Zillow can keep enforcing its standards. | Round one to transparency.
+March 2026 | Zillow launches Zillow Preview, its own pre-market listing product, and loosens its standards so listings can qualify without the MLS. Compass drops its lawsuit the next day. Keller Williams, RE/MAX, HomeServices, Side, and United sign on at launch, with two dozen more brokerages within a week. | The company that spent a year fighting private listings now sells pre-marketing as a product.
+April to May 2026 | Chicago's MLS (MRED) takes its Private Listing Network national with Compass syndicating inventory into it. Zillow sues Compass and MRED. MRED briefly cuts Zillow's Chicago data feed until a court orders it restored. | The infrastructure war over who controls listing data goes national.
+May 2026 | Zillow and Realtor.com announce Preview listings will appear on both portals starting this summer, reaching roughly three quarters of major portal visitors. | Pre-market exposure at portal scale becomes a mainstream product, not a loophole.
+:::
+
+The punchline: the Clear Cooperation Policy has not been repealed. It has been routed around. Industry press spent the spring of 2026 openly describing it as a rule that brokerages ignore and MLSs decline to enforce. Whatever your opinion of that, the practical menu for an Austin seller in August 2026 looks nothing like it did two years ago.
+
+## The Four Ways to Sell a Home in Austin Right Now
+
+Every one of these is available today through Unlock MLS, the MLS covering Travis, Williamson, and Hays counties, with data sharing into Houston and San Antonio.
+
+:::compare-table
+Option | Who can see it | Days on market clock | Portal exposure | Paperwork
+Full active MLS listing | Everyone: all agents, all portals, all buyers | Running from day one | Full syndication immediately | Standard listing agreement
+Delayed marketing exempt listing | All Unlock MLS participants and subscribers, but held back from IDX feeds and portal syndication for a set window | Handled per MLS policy during the delay | None during the delay window, then full | Listing agreement plus a signed seller disclosure waiving the benefits of immediate public marketing
+Flex Listing (Unlock MLS private category) | Roughly 18,000 Unlock MLS subscribers only, via a members-only site | Not running | None. Distributed only through virtual office website feeds | Listing agreement with reduced data entry requirements
+Office exclusive / true off-market | Your brokerage's clients, or a hand-selected buyer pool through direct broker-to-broker outreach | Not running | None | Listing agreement plus a signed office exclusive disclosure filed with the MLS
+:::
+
+Two rule details most sellers never hear about:
+
+**One-to-one broker conversations do not trigger Clear Cooperation.** NAR clarified this in 2025. Your agent can call another broker about your home without starting the one-day MLS clock. Marketing to multiple brokerages at once does trigger it. This distinction is the entire legal foundation of relationship-driven [off-market home sales in Austin](/blog/off-market-homes-austin), and it is why a deep broker network matters more now than it has in years.
+
+**The disclosure is not optional.** If you delay marketing or go office exclusive, you sign a document acknowledging you are waiving the benefits of immediate public exposure. That form exists because the data on what private selling costs the average seller is genuinely ugly. Which brings us to the numbers.
+
+## The Data War: What Private Listings Actually Do to Your Price
+
+Zillow and Compass have spent two years lobbing studies at each other. Both have obvious commercial motives. There is also now one genuinely independent academic study. Here is the full scoreboard, methodology warts included.
+
+:::compare-table
+Study | Source and date | Headline finding | The catch
+Off-MLS seller losses | Zillow, Feb 2025 | Sellers who skipped the MLS left over $1 billion on the table in 2023 to 2024, a typical loss of $4,975 per home, up to $30,000 in some areas | Baseline is the Zestimate, which critics call too blunt for the exact homes most likely to sell privately
+Off-MLS and dual agency losses | Zillow, May 2026 | Off-MLS sellers lost a combined $1.36 billion from 2023 to 2025, selling for 1.3% less. Same-agent dual agency cost sellers another $1.49 billion, about $2,165 per typical deal | Same Zestimate methodology. Private sales identified by proxy (zero or one day active, same brokerage on both sides)
+Who gets hurt most | Zillow, May 2026 | The off-MLS penalty was 2.2% in lower price tiers and 1.9% in communities of color, versus 1.1% in majority-white neighborhoods. A separate Zillow survey found 63% of sellers said their agent pushed a private listing, up from 18% five years earlier | Survey and transaction data are separate datasets
+On-MLS premium | Bright MLS and Drexel University | Homes listed on the MLS sold for as much as 18% more than homes never marketed there | Mid-Atlantic data, and an MLS is not a neutral party either
+Pre-marketing premium | Compass, Feb 2025 | Pre-marketed listings sold for 2.9% more, accepted offers 20% faster, and were 30% less likely to take a price cut after going active | Compass's own listings, closed deals only
+Pre-marketing premium, updated | Compass, July 2026 | Across 70,809 closed Compass transactions from April 2025 to March 2026, homes that began as Private Exclusives or Coming Soons sold for 4.6% more, went under contract 34% faster, and were 29% less likely to see a price cut | Excludes listings that expired or withdrew without selling. Critics note roughly 94% of Compass private listings ultimately sold on the open market anyway
+Independent academic study | Darren Hayunga, University of Georgia, published 2026 | Analyzing Dallas-Fort Worth sales from 2002 to 2022, pocket sales sold for 1.7% more overall, with a premium above 8% for luxury properties. Also found Clear Cooperation negated price premiums without reducing private listings | Pre-dates the current rule environment, and off-market sales peaked at only about 3% of the sample
+:::
+
+Read all seven rows and a pattern emerges that neither Zillow's press releases nor Compass's admit out loud:
+
+**For the typical home, the market is the marketing.** A median-priced home in Pflugerville or Manor has thousands of plausible buyers, and the only way to find the one who will pay the most is to let all of them see it. Zillow's numbers, Bright's numbers, and basic economics all agree here. Restricting exposure on a mass-market home is how you donate 1% to 2% of your equity to a stranger.
+
+**At the top of the market, the math genuinely changes.** The one independent study in the pile found the largest private-sale premium, more than 8%, exactly where the buyer pool is thinnest: luxury. When there are perhaps a dozen realistic buyers for a property in the entire country, broad exposure adds less value, and the costs of public listing (days on market stigma, price cut history, privacy loss, lookie-loo traffic through your home) add more. This matches what Echelon Property Group sees in practice. Every transaction over $2 million this team has ever closed happened entirely off the MLS, and the overwhelming majority of our career volume, out of $150M+ in closed sales, came from private opportunities and relationship-driven sourcing rather than portal traffic.
+
+**Pre-marketing and never-marketing are different products.** Compass's own data shows about 94% of its private listings eventually sold publicly. The quiet phase mostly functions as a pricing laboratory and momentum builder before a public launch, not as a replacement for one. The sellers who get hurt in Zillow's data are largely the ones who never reached the full market at all, on homes where the full market was the whole point.
+
+## Worked Example: A $2.4M Westlake Listing, Three Ways
+
+Illustrative numbers, real mechanics. Assume a $2.4M target value in 78746, roughly $3,800 a month in property taxes at a 1.9% effective rate, plus insurance, utilities, and maintenance bringing monthly carry to about $5,500.
+
+:::compare-table
+Stage | Path A: Straight to MLS, priced ambitiously | Path B: Phased launch | Path C: True off-market
+Opening move | Active on Unlock MLS at $2.595M, full syndication day one | 3 weeks as a Flex Listing at $2.55M, exposed to 18,000 Unlock MLS subscribers and Echelon Property Group's private buyer network, zero DOM accruing | Direct outreach to a short list of known qualified buyers, one-to-one broker calls, office exclusive disclosure filed
+What the market says | Showings but no offers at $2.595M. Public price cut to $2.475M at day 45, visible in every portal's price history | Two showing requests and one soft offer signal the real number is near $2.475M. Public launch at $2.475M with a fresh day-zero listing | One buyer engages seriously at $2.42M
+Outcome | Closes at $2.36M after 95 total days. Buyers negotiated off the visible cut and 90+ DOM | Multiple first-weekend showings against a correctly priced, zero-DOM listing. Closes at $2.46M in 40 public days | Closes at $2.42M with no sign in the yard, no photos online, no neighbors touring the primary suite
+Extra carry vs Path B | About 55 extra days, roughly $10,000 | Baseline | About 30 fewer days, saves roughly $5,500
+Net position vs Path B | Roughly $110,000 worse | Baseline | Roughly $34,000 lower price, offset by carry savings and total privacy
+:::
+
+The lesson is not that Path B always wins. It is that the expensive mistake in Path A was never the MLS. It was launching publicly at the wrong price and letting the correction happen in front of every buyer in Central Texas. The private phase exists to make sure the public phase, if there is one, starts from strength. And Path C is not a loss if privacy, speed, and certainty are worth more to that seller than the last 1.5%, which for many of our clients at this price point they demonstrably are. For a deeper look at why publicly visible corrections are so costly, see our guide to [how long it takes to sell a house in Austin](/blog/how-long-to-sell-house-austin) and our breakdown of [why homes fail to sell in Austin](/blog/why-didnt-my-house-sell-austin). The full [cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin) shows how quickly carrying costs compound while a mispriced listing sits.
+
+## The Portal Wildcard: Zillow Preview Changes the Calculus Again
+
+Until March 2026, choosing privacy meant choosing invisibility on Zillow. That trade is softening. Zillow Preview, launched March 17, 2026, lets participating brokerages display pre-market listings publicly on Zillow and Trulia with no days on market accruing and no price change history shown, and those listings get elevated placement in search results. Realtor.com is carrying the same Preview inventory starting this summer, putting pre-market homes in front of roughly three quarters of major portal visitors.
+
+Translation for sellers: the industry is converging on a two-stage launch as the default playbook for well-marketed homes. A quiet or semi-quiet phase to build demand and test price, then a clean public debut. The fight in the courts is about who owns the pipes. The strategy available to you is already settled.
+
+One honest caveat: Zillow built Preview while simultaneously publishing research showing off-MLS sellers lose money, and Compass publishes premium studies while roughly 94% of its private listings end up public. Every major player's data conveniently supports its business model. That is exactly why the decision framework below starts from your property and your goals, not from anyone's press release.
+
+## The Echelon Property Group Read: Four Rules for 2026
+
+**1. Below roughly $1M in Central Texas, list publicly and let the market work.** The buyer pool is deep, the portals are where those buyers live, and the measured penalty for restricting exposure (1.3% to 2.2% in Zillow's data, up to 18% in Bright's) lands hardest on exactly this segment. Use a short delayed marketing or Coming Soon window for prep and momentum if useful, then go fully live.
+
+**2. From roughly $1M to $2M, phase it.** This is the zone where a Flex Listing or delayed marketing window earns its keep as a pricing laboratory. Three weeks of professional-only exposure tells you whether your number is right before the public DOM clock and price history can testify against you. The goal is a correctly priced public launch with zero baggage.
+
+**3. Above $2M, the private market is not a compromise, it is often the market.** Thin buyer pools, privacy-sensitive sellers, and the 8%+ luxury premium in the only independent study in this fight all point the same way. This is where broker relationships, one-to-one outreach, and a real private buyer network outperform syndication. It is the lane Echelon Property Group has operated in for over a decade, and it is why every $2M+ closing in our history happened off the MLS. Our full playbook on [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin) covers the execution.
+
+**4. Whatever the path, demand competition before you sign anything.** The disclosure form you sign for a private path exists because restricted exposure without competitive tension is how sellers get quietly underpaid, and it is doubly dangerous when one agent sits on both sides of the deal. Zillow's dual agency finding, $1.49 billion in seller losses over three years, is the one number in this entire fight that no opposing study rebuts. A private sale should still involve multiple interested parties, or a price validated against real market evidence. If your agent's private strategy conveniently ends with their own buyer and a double commission, that is not a strategy, that is a harvest.
+
+## Questions to Ask Before You Choose a Path
+
+Ask any agent proposing a private or delayed launch these five questions, and expect specific answers:
+
+1. How many qualified buyers can you actually put this in front of during the private phase, and how do you know them?
+2. What is the trigger for going public, and what price adjustment happens if the private phase says we are wrong?
+3. Who signs off if a buyer you also represent makes an offer, and how is my price protected in that scenario?
+4. What does the seller disclosure I am signing actually waive, in plain English?
+5. What did comparable homes that sold privately in this area net versus their public comps?
+
+An agent with a real private-market practice answers these in detail. An agent using "off-market" as a listing pitch buzzword does not.
+
+:::cta-anchor
+:::
+
+## FAQ: Private Listings and Clear Cooperation in Austin, 2026
+
+:::faq
+Q: Is the Clear Cooperation Policy still in effect in 2026?
+A: Technically yes. NAR's rule requiring MLS entry within one business day of public marketing remains on the books, now alongside the Multiple Listing Options for Sellers policy adopted in March 2025. In practice, enforcement has weakened dramatically, and sanctioned alternatives (delayed marketing, office exclusives, private MLS categories like Austin's Flex Listings, and portal products like Zillow Preview) now cover most of what sellers want to do privately.
+
+Q: What is a delayed marketing exempt listing?
+A: A listing entered into the MLS and visible to all MLS participants, but held back from IDX feeds and portal syndication (Zillow, Realtor.com, and similar) for a window set by the local MLS. It requires a signed seller disclosure acknowledging you are waiving the benefits of immediate public marketing. Every MLS nationwide had to implement this by September 30, 2025.
+
+Q: What is a Flex Listing on Unlock MLS?
+A: Austin's private listing category, launched in summer 2025. Your home is shared with roughly 18,000 Unlock MLS subscribers through a members-only site, with no days on market clock running and no syndication to public portals. It sits between a full public listing and a true office exclusive.
+
+Q: Do private listings sell for more or less money?
+A: It depends on the property, and the honest answer is that the studies conflict because they measure different things. Zillow found off-MLS sellers netted 1.3% less on average from 2023 to 2025, with bigger penalties at lower price points. Compass found its pre-marketed listings closed 4.6% higher. The one independent academic study, covering two decades of Dallas-Fort Worth sales, found pocket sales earned 1.7% more overall and over 8% more for luxury properties. Broad exposure wins for typical homes. Private strategies can win where buyer pools are thin, principally in the luxury segment.
+
+Q: Will my home still show up on Zillow if I pre-market it?
+A: Possibly, and this is new for 2026. Zillow Preview lets participating brokerages display pre-market listings on Zillow and Trulia with no days on market shown, and Realtor.com is carrying Preview listings as well starting this summer. A Flex Listing or office exclusive, by contrast, stays off public portals entirely.
+
+Q: Do I have to sign anything special to list privately in Texas?
+A: Yes. Under NAR's 2025 policy, both delayed marketing listings and office exclusives require a signed seller disclosure documenting your informed consent to waive immediate public marketing. Your agent should walk you through exactly what exposure you are giving up before you sign.
+
+Q: Does talking to one other broker about my home trigger the MLS clock?
+A: No. NAR clarified that one-to-one broker-to-broker communications do not constitute public marketing under Clear Cooperation. Marketing to multiple brokerages at once does. This is the mechanism that makes legitimate off-market selling possible.
+
+Q: Should I sell my luxury home off-market in Austin?
+A: Above roughly $2M, seriously consider it. The buyer pool is small enough that a well-connected broker can often reach every realistic buyer directly, the independent data shows the largest private-sale premiums in the luxury segment, and privacy has real value. The keys are competitive tension among more than one prospective buyer and pricing validated by hard comparable evidence. See our full guide to [selling a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+:::
+
+## Deciding Your Path
+
+The right answer is property-specific, and it starts with an honest read of your buyer pool, your timeline, and how much privacy is worth to you. Echelon Property Group runs this analysis before any listing decision, public or private, including what comparable homes actually netted on each path. [Reach out to Taylor Sherwood at Echelon Property Group](/contact) for a confidential conversation about which path fits your home.`,
+  },
+  {
+
     id: "cost-to-sell-a-house-austin",
     title: "How Much Does It Cost to Sell a House in Austin? The Full 2026 Fee Stack",
     metaTitle: "Cost to Sell a House in Austin in 2026: The Full Fee Stack",

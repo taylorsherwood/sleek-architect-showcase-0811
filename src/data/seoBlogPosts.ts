@@ -141,7 +141,6 @@ export const seoBlogPosts: BlogPost[] = [
     id: "private-listings-austin",
     title: "Private Listings in Austin: The 2026 Rules, the Data, and When Going Quiet Actually Pays",
     metaTitle: "Private Listings in Austin: 2026 Rules, Data, Strategy",
-    metaDescription: "Clear Cooperation is collapsing, Zillow launched Preview, and Unlock MLS built Flex Listings. Here is what Austin sellers can actually do in 2026, with the data on what private listings really cost or earn.",
     excerpt: "Clear Cooperation is collapsing, Zillow launched Preview, and Unlock MLS built Flex Listings. Here is what Austin sellers can actually do in 2026, with the data on what private listings really cost or earn.",
     author: "Taylor Sherwood",
     date: "2026-08-03",

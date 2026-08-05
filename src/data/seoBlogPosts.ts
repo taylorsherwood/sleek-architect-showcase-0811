@@ -146,6 +146,254 @@ const blogLuxuryNotSelling = blogLuxuryNotSellingAsset.url;
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "luxury-home-not-selling-austin",
+    title: "Luxury Home Not Selling in Austin? It's the Price, and Here's the Fix",
+    metaTitle: "Luxury Home Not Selling in Austin? It's the Price | Echelon Property Group",
+    excerpt: "In 78703, more luxury listings died than sold last year. What an overpriced Austin luxury home really costs per month, and the six-step reset that fixes it.",
+    author: "Taylor Sherwood",
+    date: "2026-08-05",
+    readTime: "16 min read",
+    category: "SELLER STRATEGY",
+    image: blogLuxuryNotSelling,
+    heroImage: blogLuxuryNotSelling,
+    imageAlt: "Modern Austin luxury home at golden hour with stone facade, walls of glass, negative-edge pool, and oak-shaded lawn",
+    content: `If your luxury listing is sitting, the market has already voted. Here is what the numbers say, what the delay is actually costing you per month, and the six-step reset that gets a stale high-end listing sold, with real Unlock MLS data behind every step.
+
+Over the last twelve months in Austin's 78703, [Tarrytown](/communities/tarrytown) and Old West Austin, some of the most desirable dirt in the city, 242 residential listings closed. In the same period, 243 expired or were withdrawn.
+
+Read that again. In one of Austin's premier zip codes, a listing was slightly more likely to die on the vine than to sell.
+
+This is not a marketing problem. It is not a staging problem, a photography problem, or a "the market is slow" problem. When roughly half of a submarket's listings fail while the other half closes in under two months, the difference between the two groups is almost always one variable: price.
+
+Luxury buyers in Austin are a small, patient, extremely well-informed pool. Most have toured a dozen comparable homes before they walk through yours. They know what closed on the next street and for how much. They do not negotiate down from an aspirational number. They simply skip it and buy the house that was priced to the evidence.
+
+This guide is for sellers whose property is already sitting, or who can feel it starting to. It walks through the actual state of Austin's upper-tier market, quantifies what every additional month on market costs you, and lays out a six-step reset, the same framework we use at Echelon Property Group when we take over a listing that failed with another brokerage. If you want the broader diagnostic first, start with [why your Austin home didn't sell](/blog/why-didnt-my-house-sell-austin).
+
+## What the Data Actually Says About Austin's Upper-Tier Market
+
+Before fixing your listing, you need an honest picture of the arena it is competing in. Here is the trailing twelve months (August 2025 through July 2026) across Austin's core luxury zip codes, per Unlock MLS data:
+
+:::compare-table
+Market | Median Sale Price | Median DOM | Avg DOM | Months of Inventory | Sold | Expired + Withdrawn | Avg Discount, Original List to Close
+78746 (Westlake, Rob Roy) | $1,862,000 | 53 | 97 | 5.7 | 319 | 263 | about -9.5%
+78703 (Tarrytown, Old West Austin) | $1,352,000 | 60 | 101 | 6.1 | 242 | 243 | about -9.8%
+78733 (Westlake / Cuernavaca) | $1,275,000 | 31 | 69 | 4.2 | 89 | 61 | about -8.0%
+78738 (Bee Cave, Spanish Oaks, Lake Travis corridor) | $863,000 | 48 | 83 | 4.1 | 721 | 361 | about -6.6%
+78620 (Dripping Springs / Hill Country) | $612,000 | 53 | 82 | 4.8 | 633 | 327 | about -6.5%
+Austin citywide (all price points) | $569,000 | 46 | 81 | 5.0 | 10,839 | 7,142 | about -7.1%
+:::
+
+Discount figures approximate the combined effect of price reductions while listed plus negotiation below final list, for listings that closed. Source: Unlock MLS via MLS Grid, trailing 12 months through July 2026.
+
+Three things in this table should change how you think about your listing.
+
+**First, the failure rate.** Citywide, for roughly every three listings that closed last year, two more expired or were withdrawn. In [78746](/communities/westlake-hills), 45% of listings that came off the market did so without selling. In 78703 it was a coin flip. "Just list it and see" is not a neutral strategy in this market. It fails almost as often as it works.
+
+**Second, the gap between median and average days on market.** In 78746, the median sale took 53 days, but the average was 97. That 44-day gap is the statistical shadow of the stale-listing cohort: a long tail of overpriced properties sitting 150, 200, 250 or more days, dragging the average to nearly double the median. Correctly priced homes in Westlake sell in under two months. The rest sit long enough to double the market-wide average. There is no meaningful middle. Our full read on timing is in [how long it takes to sell a house in Austin](/blog/how-long-to-sell-house-austin).
+
+**Third, the double discount.** Sellers who overprice pay twice: once in reductions while listed (about -4.5% from original to final list price in 78746), and again at the negotiating table (another -5.2% from list to close). Compounded, the average 78746 seller who actually closed last year finished roughly 9.5% below their original ask. On an original list price around $2.5M, that is on the order of $240,000 surrendered between the first ask and the closing table, and that is the sellers who succeeded. The 263 who expired or withdrew got nothing but carrying costs and a stigmatized MLS history.
+
+The rest of this guide exists to keep you out of both of those groups.
+
+## Step 1: Confirm It's a Pricing Problem, Not a Market Problem
+
+Start with a current comparative market analysis built strictly on closed sales from the last 90 days in your price tier and submarket. Not active listings. Active listings are a record of other sellers' hopes. Closed sales are a record of what buyers actually paid. If your agent is defending your price by pointing at the unsold competition, they are benchmarking you against the failure cohort.
+
+Then run the two diagnostics that separate "my price is wrong" from "the market is frozen."
+
+**The comp movement test.** Are comparable properties selling? In 78746, 319 homes closed last year at a 53-day median. If homes like yours are trading at that pace and yours has been sitting for 120 days or more, the market is functioning. It has simply routed around your price. If nothing in your tier is moving, you may be in a genuine demand pocket, which calls for a different playbook, often a withdrawal and off-market strategy rather than a public reduction.
+
+**The absorption math.** Count closed sales in your specific tier over the last 90 days, divide by three to get a monthly pace, then divide the current active count in that tier by that number. That is your months of inventory, and your actual competitive position. Zip-wide, 78746 sits at about 5.7 months. But run the same arithmetic on the $3M-plus band within it and the number typically stretches considerably, because sales thin out faster than inventory does as you move up the price ladder. Ask your agent for the tier-specific number, not the zip average. If your tier is carrying 9 to 12 months of supply, "priced at market" needs to mean the front of the market, not the middle.
+
+:::callout
+**Success indicator.** You can state, with closed-sale evidence, whether your property is priced above, at, or below where your tier is actually transacting, and you know your tier's true months of inventory.
+:::
+
+## Step 2: Understand Why Luxury Valuations Miss in the First Place
+
+Overpricing at the high end usually is not stubbornness. It is a structural feature of thin markets colliding with a few predictable cognitive traps.
+
+**The comps are thin.** All of 78733, one of the most desirable school-district submarkets in Texas, produced 89 closed sales in an entire year. Filter that to a specific tier, and an appraiser or agent may be working with three or four genuinely relevant closings, spread across different lot sizes, finish levels, and view corridors. The honest confidence interval on a luxury valuation is wide. That is precisely why the price needs to be re-tested against every new closing, not defended like a fixed truth.
+
+**The comps go stale fast.** Austin's citywide median is down about 1.3% year over year, and higher-tier submarkets have seen sharper swings in both directions. A comp from 12 to 14 months ago, which is often what thin markets force appraisers to use, can badly misstate what today's buyer pool will pay. If your list price was set off 2024 or early-2025 closings, it may have been wrong the day the sign went in the yard.
+
+**The renovation cost fallacy.** This is the expensive one. What you spent is not what it is worth. A $400,000 outdoor living build, wine room, and smart-home package does not add $400,000 of resale value. It adds whatever the marginal buyer will pay for it, which is usually a fraction, and sometimes, for highly personal choices, close to zero. Buyers are comparing your home against every alternative at your price point. Their math is forward-looking. Your receipts are not in it.
+
+**Feature premiums get double-counted.** Hill Country views, gated access, acreage, a negative-edge pool: all real value. But that value is usually already embedded in the comps you are using, because the comparable homes have views too. Adding a "view premium" on top of view-priced comps is how a defensible $2.9M becomes an undefendable $3.3M.
+
+:::callout
+**Success indicator.** You can articulate exactly which comps and assumptions produced your original list price, and honestly assess which of them still hold.
+:::
+
+## Step 3: Audit Your Marketing Reach Before You Touch the Price
+
+Price is the primary suspect, but confirm the property has actually been seen before you adjust. Use showing activity to locate where the funnel is breaking:
+
+:::compare-table
+Symptom | Diagnosis | Fix
+Few online views, few showings | Awareness problem: wrong channels, weak media, or priced outside your buyers' search bands | Media reset, channel expansion, and threshold pricing (Step 4)
+Strong views, few showings | Buyers are screening you out on price and value at the listing page | Price problem at the awareness stage
+Steady showings, zero offers | Buyers are using your home to justify buying a competitor | Price problem at the decision stage
+Second showings, still no offers | Close, but the value equation is not clearing, on price or terms | Targeted adjustment plus terms flexibility (Steps 4 and 6)
+:::
+
+A few Austin-specific realities while you audit:
+
+**MLS-only exposure is insufficient above $2M.** A meaningful share of Austin's high-net-worth buyer pool, including relocating executives, family offices, and investors, transacts through private channels and agent networks before listings ever hit a portal. At Echelon Property Group, every transaction we have closed above $2M has happened off-MLS. If your property has never been introduced to that layer of the market, you have been fishing in half the pond. More on how these channels work in our guides to [private listings in Austin](/blog/private-listings-austin) and [off-market homes in Austin](/blog/off-market-homes-austin).
+
+**Media quality is a filter, not a garnish.** At $3M, buyers decide whether to tour based entirely on photography, video, and floor plans. Mediocre media does not just underperform. It silently deletes qualified buyers from your funnel before anyone knows they existed. Staging economics are covered in [luxury home staging costs in Austin](/blog/luxury-home-staging-cost-austin).
+
+**Buyer profile matters.** A Spanish Oaks golf-course home, a Tarrytown teardown-adjacent lot, and a Wimberley compound with water features have three completely different buyer pools reached through three completely different channels. Confirm your marketing was ever aimed at the right one.
+
+:::callout
+**Success indicator.** You know how many qualified buyers have actually encountered the property, through which channels, and at which funnel stage interest is dying.
+:::
+
+## Step 4: Make One Decisive Adjustment, Not a Series of Small Ones
+
+If Steps 1 through 3 confirm a pricing problem, the single most expensive mistake left to make is the slow drip: $50K off, wait six weeks, another $75K, wait, repeat. Incremental cuts read as indecision, train buyers to wait for the next reduction, and extend the stigma clock instead of breaking it. The 78746 data, where more than half of new listings took at least one price reduction last year, is largely a record of drips that did not work.
+
+Here is what the drip actually costs. The model below assumes a Westlake-area property whose comp set supports roughly $2.9M, with full carrying costs of about $16,200 per month (itemized in the next table):
+
+:::compare-table
+Metric | Path A: The Drip | Path B: The Reset
+Original list | $3,350,000 | $3,350,000
+Adjustments | -$100K at day 60, -$100K at day 120, -$155K at day 180 | One cut to $2,975,000 at day 45, with full relaunch
+Goes under contract | Day 240 at $2,830,000 (stale listings get negotiated hard) | Day 100 at $2,920,000 (98.2% of list, fresh pricing holds)
+Months of carrying to close | about 9 | about 4.3
+Carrying cost | about $146,000 | about $70,000
+Economic net (sale minus carry) | about $2,684,000 | about $2,850,000
+:::
+
+Illustrative model. Assumptions drawn from trailing-twelve-month 78746 sale-to-list and DOM data.
+
+The seller who cut once, early, and decisively, to a lower list price than the dripper ever reached, walks away roughly $166,000 ahead and gets four months of their life back. Even counting only out-of-pocket costs and ignoring the opportunity cost of equity, the gap is about $130,000. The drip is not the cautious path. It is the expensive one.
+
+Three rules for sizing the adjustment:
+
+**1. Price to closed data, not to the neighbor's ask.** Undercutting the unsold competition by $50K just makes you the best-priced failure. Anchor to where buyers are actually transacting.
+
+**2. Respect search-band thresholds.** Luxury buyers search in capped ranges: under $2.5M, under $3M, under $3.5M. A home listed at $3,150,000 is invisible to every buyer whose search stops at $3M, which is a large and motivated slice of that market. If the data says you need roughly a 4% cut, a 4.9% cut that clears a threshold usually beats a 4% cut that does not:
+
+:::compare-table
+Current list | Invisible to searches capped at | Reset to | Reduction
+$3,600,000 | $3,500,000 | $3,495,000 | -2.9%
+$3,150,000 | $3,000,000 | $2,995,000 | -4.9%
+$2,600,000 | $2,500,000 | $2,495,000 | -4.0%
+:::
+
+**3. Know your carrying number before you negotiate with yourself.** Sellers agonize over $100K on the list price while ignoring what the calendar is charging them. For a roughly $3M Westlake-area property, a realistic monthly ledger looks like this:
+
+:::compare-table
+Monthly carrying cost | Amount
+Property taxes (about 1.6% all-in: Eanes ISD's adopted FY 2025-26 rate of $0.8322 per $100, plus Travis County, Central Health, ACC, and municipal levies) | about $3,900
+High-value homeowners insurance | about $1,250
+Utilities, pool, landscaping, housekeeping (kept show-ready) | about $2,000
+Maintenance reserve | about $800
+HOA | about $250
+Hard costs | about $8,200 per month
+Opportunity cost on about $2.4M of idle equity at 4% | about $8,000
+Full economic cost | about $16,200 per month (about $194K per year)
+:::
+
+Every month of "let's give it a little longer" has a five-figure invoice attached. Put your own number on it, in writing, before deciding how bold the adjustment should be. For the complete picture of transaction costs, see our breakdown of [what it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin).
+
+:::callout
+**Success indicator.** You have committed to a single, closed-data-anchored price that clears the relevant search threshold, with the carrying math on paper next to it.
+:::
+
+## Step 5: Relaunch Like It's a New Listing, Because It Needs to Be
+
+A price change with no relaunch is a number quietly edited on a webpage. Buyers who dismissed the property at $3.35M need a reason to re-form an opinion, and new buyers need to encounter it as a fresh event, not a marked-down leftover.
+
+A real relaunch has four components:
+
+**New media, new narrative.** Re-shoot if the original photography was anything less than excellent, or if the seasons have changed. Rewrite the listing copy around the buyer profile most likely to transact at the new price, which is often a different profile than the original price was aimed at.
+
+**Direct agent-to-agent outreach.** In Austin's upper tier, the highest-conversion marketing channel is your agent personally contacting the 30 to 50 buyer's agents who actually represent qualified clients in your band. Passive syndication waits for buyers. Outreach goes and gets them.
+
+**Consider an off-market reset.** For a listing carrying heavy public days on market, withdrawing and re-introducing the property through private channels, meaning quiet exposure to vetted buyers, agent networks, and relocation pipelines, can rebuild momentum without the public stigma meter running. This is the core of how we operate above $2M, and it is frequently the right move for a stigmatized listing: generate real interest privately, then either close privately or return to the MLS with demand already in hand. The mechanics, trade-offs, and Unlock MLS listing options are covered in depth in our [private listings guide](/blog/private-listings-austin), and our [off-market advisory](/off-market-real-estate-austin) explains how we run it.
+
+**Match channel to buyer.** Acreage and water in the Hill Country needs to reach ranch and land buyers, not just residential shoppers. A Tarrytown property with lot value needs builder and developer eyes. Relocation-grade Westlake needs to be in front of out-of-state buyer pipelines. Specificity is the whole game.
+
+:::callout
+**Success indicator.** Within two to three weeks of relaunch, showing volume from correct-profile buyers has measurably increased.
+:::
+
+## Step 6: Evaluate Offers on Net Proceeds and Certainty, Not Headline Price
+
+When the reset works and offers arrive, the headline number is only one input. Timeline and certainty carry real dollar values, and in the luxury tier the spread between offers is often decided there.
+
+A worked comparison on a property relisted at $2,995,000:
+
+:::compare-table
+Metric | Offer A: Financed | Offer B: Cash
+Price | $2,950,000 | $2,895,000
+Close timeline | 45 days | 21 days
+Contingencies | Financing and appraisal | None
+Carrying cost to close (about $16.2K per month) | about $24,000 | about $11,000
+Net of carrying | about $2,926,000 | about $2,884,000
+:::
+
+On paper, the financed offer nets about $42,000 more, so cash is not automatically king. But that $42K is the price of two live risks: an appraisal in a thin-comp submarket, where the appraiser may be working from three sales, one of them an outlier, and a financing contingency. If the appraisal lands at $2.85M and the price renegotiates to meet it, the financed offer's advantage evaporates entirely. If the deal dies at day 40, you are relisting a now twice-stigmatized property and writing carrying checks while you do it. The point is not to fear financed offers. It is to price the risk deliberately instead of reacting to the biggest number.
+
+Also on the table: seller-paid closing costs or rate buydowns can bridge a price gap while keeping the recorded sale price higher, which matters for the comp record in your submarket. Earnest money size, option periods, and response windows all shift the risk profile. Sophisticated buyers use these levers. Sellers should too.
+
+:::callout
+**Success indicator.** You are evaluating every offer on projected net proceeds, timeline, and probability of closing, with your minimum acceptable terms decided before the first offer arrives.
+:::
+
+## The First 21 Days After Relaunch: What to Track
+
+Execution shows up in the numbers fast. Benchmark against these:
+
+**Showings, weeks one and two.** A correctly reset luxury listing should see an immediate, obvious jump in tours. Flat activity after a real relaunch means the price still is not clearing the market's bar, or the marketing never reached the right pool.
+
+**Agent feedback, in writing.** Have your agent collect specific feedback from every showing. One agent's opinion is noise. The same objection three times is data.
+
+**Days on market versus your tier's median.** The medians are your scoreboard: roughly 53 days in 78746, 60 in 78703, 31 in 78733. Once your relaunch clock passes about twice your submarket's median with showings but no offers, the market is telling you the reset did not go far enough.
+
+**Your carrying ledger, updated monthly.** Keep the real cost of waiting in front of every decision. It is the most clarifying number in this entire process.
+
+The pattern in the data is unambiguous. Austin's luxury market in 2026 is functioning, selective, and completely unsentimental. Correctly priced properties in the premier submarkets sell in under two months. Mispriced ones feed a failure cohort of 7,000-plus expired and withdrawn listings a year. Which group you end up in is, far more than most sellers want to hear, a decision.
+
+:::cta-anchor
+:::
+
+## Frequently Asked Questions
+
+:::faq
+Q: How long is too long for a luxury home to sit on the market in Austin?
+A: Benchmark against your submarket's median days on market, roughly 53 days in 78746, 60 in 78703, and 31 in 78733 over the last twelve months. Once you pass about double your submarket's median without an offer, the market has rendered a verdict on the price, and every additional month compounds both stigma and carrying costs.
+
+Q: Should I do one big price cut or several small ones?
+A: One decisive adjustment, early. In our modeled Westlake scenario, the seller who made a single early cut netted roughly $130,000 to $166,000 more than the seller who dripped three small reductions over six months, despite listing lower, because they escaped months of carrying costs and the deep negotiation discount buyers extract from stale listings.
+
+Q: How much does an overpriced luxury listing actually cost per month?
+A: For a roughly $3M Westlake-area property, about $8,200 per month in hard costs (taxes, insurance, upkeep, HOA) and about $16,200 per month once you include the opportunity cost of idle equity. Call it $190K or more per year of waiting for your buyer.
+
+Q: Will withdrawing and relisting reset my days on market?
+A: Not in any way that fools the people who matter. Agents and informed buyers can see a property's cumulative listing history. A relist only works when paired with a genuine change: a meaningful price reset, new media, a new strategy. As a cosmetic trick, it tends to deepen skepticism rather than erase it.
+
+Q: Is it better to pull the listing and sell off-market?
+A: For stigmatized luxury listings, often yes. A private reset lets you rebuild momentum with vetted buyers while the public DOM meter is off. Every transaction Echelon Property Group has closed above $2M has been off-MLS. See our [private listings guide](/blog/private-listings-austin) for how the channels and Unlock MLS options actually work.
+
+Q: Do expensive upgrades raise my home's value dollar-for-dollar?
+A: No. Improvements return whatever the marginal buyer will pay for them, usually a fraction of cost, and occasionally nothing for highly personal choices. Pricing off your receipts instead of the comps is one of the most common ways luxury listings end up in the failure cohort.
+
+Q: How do I know it's my price and not the market?
+A: Run the comp movement test. If similar homes are closing at a normal pace, 319 sales in 78746 last year at a 53-day median, while yours sits, the market is working around your price. If nothing in your tier is trading, you are in a demand pocket, and the right play may be an off-market strategy rather than a public reduction.
+
+Q: What discount from original list should I realistically expect?
+A: Among listings that actually closed over the last twelve months, the combined effect of reductions plus negotiation ran about -7% citywide and -9.5% to -10% in 78746 and 78703. Sellers who price correctly at the outset largely avoid that spread. Sellers who overprice tend to pay all of it, plus carrying costs.
+:::
+
+Data: Unlock MLS via MLS Grid, trailing 12 months through July 2026. Models are illustrative, and every property deserves its own analysis.
+
+If your luxury listing is sitting, or you are about to list and want to skip this entire article's worth of pain, Echelon Property Group offers a no-obligation market review: your tier's real absorption rate, closed-comp pricing, and a candid read on whether a public reset or a private relaunch is the right move. Off-market options are available for sellers who would rather regroup without an audience. [Start the conversation](/contact) or review [how we sell](/sell).`,
+  },
+
+  {
     id: "austin-waterfront-luxury-homes-buying-strategies",
     title: "7 Smart Strategies for Buying Austin Waterfront Luxury Homes",
     metaTitle: "Austin Waterfront Luxury Homes: 7 Buying Strategies (2026) | Echelon Property Group",

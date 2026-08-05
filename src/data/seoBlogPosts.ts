@@ -138,6 +138,11 @@ const blogPrivateListingsAustin2026 = blogPrivateListingsAustin2026Asset.url;
 import blogAustinWaterfront360Asset from "@/assets/blog/austin-waterfront-360-bridge.jpg.asset.json";
 const blogAustinWaterfront360 = blogAustinWaterfront360Asset.url;
 
+import blogLuxuryNotSellingAsset from "@/assets/blog/luxury-home-not-selling-austin.png.asset.json";
+const blogLuxuryNotSelling = blogLuxuryNotSellingAsset.url;
+
+
+
 // Build marker: ensure new posts ship in bundle (v8)
 export const seoBlogPosts: BlogPost[] = [
   {

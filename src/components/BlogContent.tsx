@@ -328,7 +328,7 @@ const CompareTable = ({ body }: { body: string }) => {
               <th
                 key={i}
                 scope="col"
-                className={`text-left align-bottom py-4 px-3 text-minimal uppercase tracking-[0.1em] text-[10.5px] leading-[1.4] ${wide && i > 0 ? "whitespace-nowrap" : ""}`}
+                className={`text-left align-bottom py-4 px-3 text-minimal uppercase tracking-[0.1em] text-[10.5px] leading-[1.4] ${wide ? (i === 0 ? "min-w-[210px]" : "whitespace-nowrap") : ""}`}
                 style={{ color: i === 0 ? undefined : "#b9a06c" }}
               >
                 {h}
@@ -341,7 +341,7 @@ const CompareTable = ({ body }: { body: string }) => {
             <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
               <th
                 scope="row"
-                className="text-left align-top py-5 pr-6 px-3 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] font-normal whitespace-pre-line leading-[1.4]"
+                className={`text-left align-top py-5 pr-6 px-3 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] font-normal whitespace-pre-line leading-[1.4] ${wide ? "min-w-[210px]" : ""}`}
               >
                 {row[0]}
               </th>

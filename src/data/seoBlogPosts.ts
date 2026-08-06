@@ -316,23 +316,23 @@ The decisions that determine how much privacy protection you actually get are ma
 If you are considering selling a high-value property in Austin and want to understand your options for a confidential, structured process, [learn more about how we sell](/sell) and [connect with the Echelon Property Group team](/contact) to discuss a strategy that fits your situation.
 
 :::faq
-### Is my home sale price public record in Texas?
-Texas is a non-disclosure state, so sale prices are not required to be reported to the MLS or published by the county. The deed transfer itself is public, and price can sometimes be inferred from transfer documentation, but there is no public database of Austin sale prices the way there is in disclosure states.
+Q: Is my home sale price public record in Texas?
+A: Texas is a non-disclosure state, so sale prices are not required to be reported to the MLS or published by the county. The deed transfer itself is public, and price can sometimes be inferred from transfer documentation, but there is no public database of Austin sale prices the way there is in disclosure states.
 
-### Can I sell my Austin home without listing it publicly?
-Yes. Off-market and private listing strategies market the property selectively to qualified buyers and buyer's agents rather than syndicating it to public portals. In Austin's upper tier the qualified buyer pool is small enough that a well-networked advisor can reach it without a public listing.
+Q: Can I sell my Austin home without listing it publicly?
+A: Yes. Off-market and private listing strategies market the property selectively to qualified buyers and buyer's agents rather than syndicating it to public portals. In Austin's upper tier the qualified buyer pool is small enough that a well-networked advisor can reach it without a public listing.
 
-### Does selling off-market mean I get a lower price?
-Not necessarily. Above roughly $3 million the buyer pool is defined and finite, so broad public exposure adds volume of traffic rather than volume of qualified competition. What matters is whether your advisor can reach the actual buyers directly.
+Q: Does selling off-market mean I get a lower price?
+A: Not necessarily. Above roughly $3 million the buyer pool is defined and finite, so broad public exposure adds volume of traffic rather than volume of qualified competition. What matters is whether your advisor can reach the actual buyers directly.
 
-### Does holding my home in an LLC or trust keep my name off the record?
-In many cases the deed reflects the entity or trust name rather than your personal name, which limits the public association between your identity and the transaction. The structure must be in place before the sale, and should be set up with your attorney and CPA.
+Q: Does holding my home in an LLC or trust keep my name off the record?
+A: In many cases the deed reflects the entity or trust name rather than your personal name, which limits the public association between your identity and the transaction. The structure must be in place before the sale, and should be set up with your attorney and CPA.
 
-### Should I allow open houses when selling a luxury home?
-Generally no. Appointment-only showings with proof of funds or pre-approval, agent-to-agent vetting, and supervised access are the standard for high-value properties, both for security and for filtering out non-buyers.
+Q: Should I allow open houses when selling a luxury home?
+A: Generally no. Appointment-only showings with proof of funds or pre-approval, agent-to-agent vetting, and supervised access are the standard for high-value properties, both for security and for filtering out non-buyers.
 
-### How do NDAs work in a private home sale?
-A non-disclosure agreement is signed before sensitive materials such as floor plans, security details, or ownership information are shared. It creates a legal framework around the information and signals that the seller is running a controlled, serious process.
+Q: How do NDAs work in a private home sale?
+A: A non-disclosure agreement is signed before sensitive materials such as floor plans, security details, or ownership information are shared. It creates a legal framework around the information and signals that the seller is running a controlled, serious process.
 :::
 
 :::cta-anchor

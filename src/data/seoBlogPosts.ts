@@ -145,8 +145,264 @@ const blogLuxuryNotSelling = blogLuxuryNotSellingAsset.url;
 import blogPrivacySellingHighValueAsset from "@/assets/blog/privacy-selling-high-value-home-austin.webp.asset.json";
 const blogPrivacySellingHighValue = blogPrivacySellingHighValueAsset.url;
 
-// Build marker: ensure new posts ship in bundle (v8)
+import blogAustinAduRules2026Asset from "@/assets/blog/austin-adu-rules-2026.png.asset.json";
+const blogAustinAduRules2026 = blogAustinAduRules2026Asset.url;
+
+// Build marker: ensure new posts ship in bundle (v9)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-adu-rules-2026",
+    title: "Austin ADU Rules in 2026: What HOME Lets You Build, What It Costs, and When the Math Actually Works",
+    metaTitle: "Austin ADU Rules 2026: HOME Initiative, Costs, and the Real Math",
+    excerpt: "Austin ADU rules under the HOME initiative in 2026: what you can build, what it costs, what it rents for, and a worked investor model that shows when the math works.",
+    author: "Taylor Sherwood",
+    date: "2026-08-07",
+    readTime: "16 min read",
+    category: "INVESTMENT",
+    image: blogAustinAduRules2026,
+    heroImage: blogAustinAduRules2026,
+    imageAlt: "Modern detached ADU behind a 1950s Austin bungalow under live oak trees",
+    content: `Most of what you will read about building an ADU in Austin was written for the 2021 market. Rents were ripping, the city capped you at 1,100 square feet, and the internet promised that a backyard cottage was a money printer. In 2026, the rules are dramatically better and the rent math is dramatically worse. Both of those things are true at the same time, and if you only know one of them, you are going to make an expensive mistake in one direction or the other.
+
+This guide covers the current rules under Austin's HOME initiative, the real 2026 cost stack from Austin builders, what units are actually renting and selling for right now, and a worked three scenario underwrite so you can see exactly where the numbers land before you spend a dollar on drawings.
+
+:::callout
+**Quick answer:** In 2026, most Austin lots zoned SF-1, SF-2, or SF-3 can hold up to three housing units under the HOME initiative, with no owner occupancy requirement and no minimum parking. A detached ADU typically costs $175,000 to $400,000 all in, and long term rents in Austin's oversupplied 2026 market make pure rental yield thin. The trades that work are lower cost conversions, licensed short term rental combos, and build to sell exits, plus buying HOME eligible dirt while the market is soft.
+:::
+
+## What HOME actually changed
+
+The Home Options for Middle-income Empowerment initiative passed in two phases and rewrote the single family rulebook that had been mostly frozen for decades.
+
+**Phase 1, adopted December 2023.** Up to three housing units are allowed on lots zoned SF-1, SF-2, and SF-3. Tiny homes, defined as dwellings of 400 square feet or less excluding loft space, are now permitted as real housing units instead of being exiled to designated parks. The old cap limiting how many unrelated adults can live together was repealed. Impervious cover limits for these projects were aligned at 45 percent for SF-2 and SF-3 style standards. And because Austin eliminated minimum parking requirements citywide in November 2023, none of these units requires a parking space.
+
+**Phase 2, adopted May 2024.** The minimum lot size for a single home dropped from 5,750 square feet in SF-2 and SF-3, and 10,000 square feet in SF-1, down to roughly 1,800 square feet under the new Small Lot Single-Family use. Phase 2 also made it far easier to subdivide a standard lot into two or three small lots, each with its own house and its own deed.
+
+The size rules changed shape, not just number. Before HOME, a detached ADU was capped at 1,100 square feet or 0.15 floor to area ratio. That standalone ADU cap is gone. Inside the Subchapter F boundary, the McMansion ordinance still governs the whole project at a 0.4 FAR with a 2,300 square foot minimum allowance, and height still follows the base zoning district. Outside that boundary, FAR limits on these uses largely fall away. Design freedom went up substantially. So did the value of knowing exactly where your lot sits on the map.
+
+The preservation bonus is the sleeper. For structures built on or before December 31, 1960, if you preserve at least 50 percent of the existing dwelling and 100 percent of the street facing facade, the preserved area is exempt from FAR and gross floor area calculations. On a pre-1961 bungalow lot, that exemption is free buildable area that a teardown buyer does not get. Small Lot Single-Family use is not eligible for this bonus, so the play only works on standard lot configurations.
+
+### Pre-HOME vs. 2026, side by side
+
+:::compare-table
+Rule | Before HOME | 2026 under HOME
+Units per SF-1/SF-2/SF-3 lot | 1 home, restricted ADU on some lots | Up to 3 units
+Detached ADU size cap | 1,100 sq ft or 0.15 FAR | No standalone cap; 0.4 FAR under Subchapter F where applicable
+Minimum lot size for one home | 5,750 sq ft (SF-2/SF-3) | About 1,800 sq ft (Small Lot use)
+Owner occupancy required | Effectively yes for many ADU uses | No
+Minimum parking | 1 or more spaces | Zero, citywide since Nov 2023
+Tiny homes as dwellings | Not permitted on SF lots | Permitted, 400 sq ft or less
+Unrelated adult occupancy cap | Yes | Repealed
+Preservation bonus | None | Pre-1961 preserved area exempt from FAR/GFA
+:::
+
+One thing HOME did not change: private deed restrictions and HOA covenants still control. A city permit does not override a CC&R that prohibits second units, and a 100 year floodplain designation can kill project economics regardless of zoning. Verify both before you pay for architecture.
+
+## The 2026 scoreboard: what HOME has actually produced
+
+Two and a half years in, there is finally real data instead of predictions, and it cuts both ways.
+
+Per Austin Development Services, more than 600 applications had been approved under HOME Phase 1 as of May 2026, representing more than 1,200 new housing units built or in the pipeline. Phase 2 is moving slower, with roughly 40 small lot buildings and about half a dozen lot subdivisions advancing as of spring 2026.
+
+The Austin Board of REALTORS released a HOME affordability report in 2026 that gives us the first clean look at what this product sells for. Of the 57 HOME units built and sold in 2025, the median sales price was $750,000. Over the same period, 115 traditional non-HOME homes in comparable areas sold at a median of $1.58 million. HOME product is coming in at roughly half the price and half the size of the traditional single family homes around it.
+
+:::compare-table
+2025 sales, per ABoR HOME report | HOME units | Traditional homes
+Units sold | 57 | 115
+Median sales price | $750,000 | $1,580,000
+Relative size | Roughly half | Baseline
+:::
+
+Read that table the way an investor should. Critics are right that $750,000 is not affordable to a teacher, and ABoR itself pegs the realistic budget for working medic and teacher households near $380,000. But the market is validating small unit product at prices that make backyard construction pencil as a for sale strategy in [Austin's central neighborhoods](/blog/most-expensive-neighborhoods-in-austin), and that matters more to your underwrite than the affordability debate at City Hall.
+
+The politics are also moving in a builder friendly direction. In May 2026, City Council voted 9 to 1 to direct staff to simplify HOME rules: narrower lot width and side yard requirements, cleaner standards for porches and garages, clarification that two homes fit on a 3,600 square foot lot, and a smoother subdivision process. Those revisions are due back to Council by early December 2026, and staff have been directed to explore extending HOME allowances into areas like the Lake Austin overlay and several Neighborhood Conservation Combining Districts. If you own in one of those overlays, the entitlement conversation on your dirt may be about to change.
+
+## What it costs to build in Austin in 2026
+
+Austin builders quote a wide band because the site drives the number as much as the structure. Here is the honest 2026 cost picture, compiled from Austin ADU builders and cost guides published this year.
+
+:::compare-table
+Build path | Typical all-in cost | Per sq ft | Timeline, design to move-in
+Garage conversion | $80,000 to $150,000 | Varies with structure | 5 to 9 months
+Prefab / modular ADU | $120,000 to $250,000 | $200 to $300 plus site work | 7 to 10 months
+Site-built detached ADU | $175,000 to $400,000+ | $250 to $500+ | 10 to 18 months
+:::
+
+And the line items that ambush first-time builders:
+
+:::compare-table
+Line item | Typical 2026 range
+Permits, plan review, and impact fees | $3,000 to $15,000
+New Austin Water tap and meter, if not sharing | $3,000 to $8,000
+Electrical panel and service upgrade | $3,000 to $5,000
+Design and engineering | $8,000 to $15,000
+Sloped lot or complex foundation premium | $10,000+
+DSD plan review time | Roughly 2 to 4 months inside the timelines above
+:::
+
+Real bids reported by Austin homeowners for two story, 1,000 square foot custom units have landed between $375,000 and $400,000 before plans and surveys. If a builder quotes you $180 per square foot all in for a detached unit in 2026, ask very specific questions about what is excluded, because utilities, site work, and fees are usually the answer.
+
+Two cost control notes that survive contact with reality. First, sharing the existing water tap with a private sub-meter is meaningfully cheaper than a new tap, when Austin Water allows it for your configuration. Second, rental grade finishes cost 30 to 40 percent less than designer finishes and rent for nearly the same number. The tenant is paying for a detached unit and a location, not your quartz.
+
+## What it rents for: the 2026 problem nobody puts in the brochure
+
+Here is where the 2021 blog posts will hurt you. Austin has absorbed the largest apartment supply wave in its history, with more than 30,000 units delivered in a single year, vacancy near 13.8 percent, and concessions like two months free now common in lease-ups. Every major rent tracker shows the market flat to down.
+
+:::compare-table
+Source, mid-2026 | Metric | Figure | Trend
+RentCafe / Yardi Matrix (Aug 2026) | Average apartment rent | $1,638 | Down 2.1% YoY
+Zumper (Jul 2026) | Median 1BR / 2BR | $1,540 / $2,020 | Down YoY
+Zillow Rental Manager (Aug 2026) | Average, all types | $1,995 | Down $105 YoY, market rated cool
+Relocity market report (Apr 2026) | Median, all unit types | About $1,385 | Down 4 to 7% YoY by unit type
+:::
+
+The one bright spot for ADU owners is the detached premium. Renters consistently pay up to escape shared walls: houses in Austin command a median around $2,400 per month on Zumper's data while the average apartment sits near $1,638. A well located ADU rents like a small house, not like an apartment. In central neighborhoods, realistic 2026 ADU rents run about $1,400 to $2,200 per month for a one bedroom depending on size, finish, and walkability, with two bedroom units above that.
+
+That premium is real. It is also not always enough, which is what the model below is for.
+
+## The worked model: one ADU, three ways out
+
+The setup: you already own a central Austin lot zoned SF-3, standard size, outside the floodplain, no deed restrictions. You build a 700 square foot detached one bedroom, site-built at mid-market spec. The budget:
+
+:::compare-table
+Budget line | Amount
+Construction, 700 sq ft at $330/sq ft | $231,000
+Design and engineering | $12,000
+Permits, reviews, and fees | $6,500
+Water/sewer connection, shared tap with sub-meter | $6,000
+Electrical service and panel upgrade | $4,500
+All-in cost | $260,000 ($371/sq ft)
+:::
+
+### Scenario 1: Long term rental
+
+Assumptions: $1,895 per month rent, 8 percent vacancy and credit loss in a soft market, self-managed. Property taxes rise because TCAD reassesses when the certificate of occupancy is issued; assume $190,000 of added assessed value at a 1.85 percent effective rate.
+
+:::compare-table
+Long term rental, annual | Amount
+Gross scheduled rent | $22,740
+Less vacancy and credit at 8% | ($1,819)
+Effective gross income | $20,921
+Property tax increment | ($3,515)
+Insurance rider | ($750)
+Repairs and maintenance | ($1,600)
+Reserves | ($700)
+Landscaping, pest, misc | ($400)
+Net operating income | $13,956
+Yield on cost | 5.4%
+:::
+
+Add 8 percent professional management and NOI falls to $12,282, a 4.7 percent yield. Fund the build with a HELOC at 8.25 percent interest only and the annual interest is $21,450, which means roughly $7,500 of negative carry before you touch principal. In 2026's rent environment, a financed long term ADU on land you bought at full price is a lifestyle decision, not an investment. On land you have owned for years, a 5.4 percent unlevered yield plus long run rent growth and land appreciation is defensible, but it is not the money printer the old articles promised.
+
+### Scenario 2: Licensed short term rental
+
+Assumptions: 58 percent occupancy at a $159 average daily rate, self-managed, licensed under the current ordinance. Platforms collect and remit the 11 percent hotel occupancy tax, so it stays out of your operating statement, though you still file the quarterly report with the city.
+
+:::compare-table
+Short term rental, annual | Amount
+Room revenue, 212 nights at $159 | $33,708
+Platform host fees at 3% | ($1,011)
+Utilities and internet | ($3,000)
+Supplies and turnovers | ($1,800)
+STR insurance uplift | ($1,400)
+Property tax increment | ($3,515)
+Repairs and maintenance | ($2,000)
+License and compliance | ($200)
+Furnishings, $18,000 amortized over 6 years | ($3,000)
+Net operating income | $17,782
+Yield on cost | 6.8%
+:::
+
+Hand it to a 20 percent STR manager and NOI drops to $11,040, a 4.2 percent yield, worse than the self-managed long term case. The STR premium in this model is really a wage for hospitality work. It gets more interesting after July 1, 2026, which we cover in the next section, because the licensed supply pool just shrank.
+
+### Scenario 3: Build to sell under a condominium regime
+
+Texas lets you place two or three units on one lot under a condominium regime and sell them separately with their own deeds, and HOME Phase 2 adds a true fee-simple subdivision path on qualifying lots. ABoR's data shows the market clearing small HOME product at a $750,000 median in 2025. Assume a conservative $415,000 exit for a well finished 700 square foot detached unit in a strong central location, with [selling costs](/blog/cost-to-sell-a-house-austin) modeled at 7 percent.
+
+:::compare-table
+Build to sell, one-time | Amount
+Exit price | $415,000
+Selling costs at 7% | ($29,050)
+Build cost | ($260,000)
+Condo regime legal, survey, and docs | ($15,000)
+Profit before taxes and carry | $110,950
+Margin on cost | 40%
+:::
+
+This is the trade the professional builders behind those 600+ HOME applications are running. The risks are specific: appraisers are still building a comp set for condo-regime backyard units, some lenders are slower on them, and your buyer pool is thinner than for a standard house. Price accordingly and the margin absorbs it.
+
+## ADUs and short term rentals: the 2026 rules just repriced this combo
+
+Austin rewrote its [short term rental ordinance](/blog/austin-short-term-rental-rules-2026) after courts gutted the old one. Under the changes adopted in February 2025 and effective October 1, 2025, short term rental became an accessory use allowed in every residential zoning district, provided each unit holds a city license. The old rule that limited ADUs built after October 2015 to 30 rental days per year is gone, even though stale articles still repeating it rank on page one. Licenses are per unit and non-transferable, so a licensed property you buy does not come with its license.
+
+The enforcement hammer arrived on July 1, 2026. Platforms including Airbnb, Vrbo, and Booking.com must now display valid Austin license numbers on listings and remove unlicensed properties within 10 days of a city request, with violations carrying fines of $500 to $2,000 per day. Unlicensed inventory is being squeezed out of the market, which mechanically improves occupancy and pricing power for licensed operators.
+
+Here is the part that matters for this article: separation rules keep short term rentals at least 1,000 feet apart between different sites, but up to two licensed units are allowed on the same lot. A main house plus a licensed ADU is now the densest legal STR configuration in single family Austin. If you have been reading Echelon Property Group's [breakdown of the new ordinance](/blog/austin-short-term-rental-rules-2026), you already know the license process takes weeks, not days, so the sequencing is: permit the ADU, finish it, license both units, then list.
+
+## The watch-out list
+
+Before you fall in love with the pro forma, run the kill checklist:
+
+:::compare-table
+Risk | Why it kills deals
+Deed restrictions and HOA covenants | Private CC&Rs override city zoning; a permit does not cure a prohibition
+Floodplain | FEMA compliance and engineering routinely break the budget
+Heritage trees | Protected trees over 24 inch trunk diameter reshape or shrink the buildable envelope
+Utility capacity | Undersized panels, long service runs, and new taps add five figures
+Subchapter F position | Inside the boundary, the 0.4 FAR governs the whole lot, existing house included
+TCAD reassessment | The new unit is taxed from certificate of occupancy; model the increment, not the old bill
+Appraisal gap | ADU contributory value often appraises below cost in the short run; the exit fixes this, the refi may not
+Permit timeline | 2 to 4 months of review is normal; carry costs during construction are real money
+:::
+
+## Four theses for 2026
+
+**1. The yield goes to whoever already owns the dirt.** At 2026 rents, a $260,000 ADU returns about 5.4 percent unlevered. That works as an add-on to land with an embedded low basis. It does not work as a reason to pay full retail for a lot plus construction, unless you are exiting through a sale.
+
+**2. Buy entitlement while the market is pricing houses.** Austin listings are sitting, sellers are negotiating, and almost none of them price the HOME entitlement into the ask. A 5,750 square foot SF-3 lot is now legally a three unit site, and a pre-1961 bungalow carries a FAR exemption on top. The December 2026 code revisions and the possible extension of HOME into the Lake Austin overlay and the NCCDs are free options you collect by owning before the rules finish loosening.
+
+**3. The licensed house-plus-ADU STR combo just got scarcer and stronger.** Two licenses per lot, platform-level enforcement purging unlicensed competitors, and platforms remitting the hotel tax. The operators who did the paperwork are being handed market share.
+
+**4. Build to sell is the professional trade.** A 40 percent modeled margin through a condo regime, with ABoR data showing a real $750,000 median for HOME product, explains those 600+ applications better than any rental spreadsheet does. The buyers exist because $750,000 is what half-price Austin looks like next to a $1.58 million median.
+
+## Where Echelon Property Group fits
+
+Most HOME opportunities never hit the MLS as opportunities. They hit it as tired listings, estate sales, and pre-1961 bungalows described by square footage instead of entitlement, which is exactly the kind of inventory covered in our guide to [off-market homes in Austin](/blog/off-market-homes-austin). Echelon Property Group underwrites Austin dirt the way this article does: zoning, overlay position, preservation bonus eligibility, utility reality, and all three exits modeled before an offer goes out. If you want a feasibility read on a lot you own, or a target list of HOME eligible properties in the corridors where the math clears, reach Taylor Sherwood at 512.661.3843 or taylor@echelonpropertygroup.com.
+
+:::cta-anchor
+:::
+
+## Frequently asked questions
+
+:::faq
+Q: How many units can I build on a single family lot in Austin in 2026?
+A: Up to three housing units on most lots zoned SF-1, SF-2, or SF-3 under HOME Phase 1, including tiny homes of 400 square feet or less. Private deed restrictions, floodplain status, and overlay districts can still limit or block projects, so verify at the address level.
+
+Q: What is the minimum lot size for an ADU or extra unit under HOME?
+A: Standard SF-2 and SF-3 lots of 5,750 square feet or more generally support the full three unit allowance. Phase 2's Small Lot rules go down to roughly 1,800 square feet for a single home, and a pending 2026 code revision is set to clarify that two homes fit on a 3,600 square foot lot. Eligibility is address specific, so confirm with Austin Development Services before buying plans.
+
+Q: Do I have to live on the property to build or rent an ADU in Austin?
+A: No. Austin removed the owner occupancy requirement, so investors and non-resident owners can build and lease ADUs.
+
+Q: How much does it cost to build an ADU in Austin in 2026?
+A: Garage conversions run about $80,000 to $150,000, prefab units about $120,000 to $250,000, and site-built detached ADUs about $175,000 to $400,000 or more, typically $250 to $500 per square foot all in. Permits and impact fees add $3,000 to $15,000, and a new water tap adds $3,000 to $8,000.
+
+Q: What does an ADU rent for in Austin right now?
+A: Roughly $1,400 to $2,200 per month for a one bedroom in 2026, with two bedroom units higher. Austin's overall rental market is soft, with vacancy near 13.8 percent and average apartment rents around $1,638, but detached units carry a meaningful premium over apartments.
+
+Q: Can I use my Austin ADU as an Airbnb in 2026?
+A: Yes, with a city short term rental license for the unit. Under the ordinance changes effective October 2025, STRs are allowed in all residential zones with a per unit, non-transferable license, and up to two licensed units can operate on one lot. Since July 1, 2026, platforms must delist unlicensed properties, so license before you list. The old 30 day per year cap on newer ADUs no longer applies.
+
+Q: Will building an ADU raise my property taxes?
+A: Yes. The Travis Central Appraisal District reassesses the property when the certificate of occupancy is issued, and the added value is taxed from that point forward. Model the tax increment on the new assessed value, not your current bill.
+
+Q: Can I sell an ADU separately from the main house in Austin?
+A: Yes, through a Texas condominium regime that gives each unit its own deed, or on qualifying lots through a HOME Phase 2 subdivision that creates separate fee-simple small lots. Both paths add legal, survey, and documentation costs, and condo-regime units can involve extra lender and appraisal friction, so build that into pricing.
+:::
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with over $150 million in career sales across 200+ transactions, including luxury residential, multifamily, and land development deals across Travis, Williamson, and Hays counties. This article is general information about city code and market data, not legal or tax advice. Verify current rules and fees with the City of Austin before acting.`,
+  },
+
   {
     id: "privacy-concerns-selling-high-value-home",
     title: "Privacy Concerns When Selling a High-Value Home: What Sellers Need to Know",

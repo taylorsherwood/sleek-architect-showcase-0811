@@ -8,7 +8,21 @@ import SchemaMarkup, {
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
 
-const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
+// Retry once on a transient chunk-fetch failure (stale hashed module after a
+// deploy or flaky network) so the homepage never blanks out.
+const importHomeBelowFold = () =>
+  import("@/components/HomeBelowFold").catch(
+    () =>
+      new Promise<typeof import("@/components/HomeBelowFold")>((resolve, reject) => {
+        setTimeout(() => {
+          import(/* @vite-ignore */ `@/components/HomeBelowFold?retry=${Date.now()}`)
+            .then(resolve as never)
+            .catch(reject);
+        }, 600);
+      })
+  );
+
+const HomeBelowFold = lazy(importHomeBelowFold);
 
 /* ─────────────────────────────────────────────
    SECTION 1, HERO

@@ -355,6 +355,41 @@ Appraisal gap | ADU contributory value often appraises below cost in the short r
 Permit timeline | 2 to 4 months of review is normal; carry costs during construction are real money
 :::
 
+## How appraisers actually value an ADU, and why the number is smaller than your invoice
+
+You spent $260,000. The appraiser might credit you $180,000. Understanding why that happens, and what closes the gap, is the difference between a financing strategy and a disappointment.
+
+**Appraisers value contribution, not cost.** Residential appraisal runs on the sales comparison approach, and an ADU enters the analysis as contributory value: what buyers in your market have actually paid extra for comparable properties with a similar second unit. Your invoice is evidence of what you spent, not what a buyer will pay. Where paired sales are thin, appraisers bracket conservatively, and in a young ADU market that conservatism lands on you. The good news for Austin is mechanical: with 600 plus HOME projects approved and units now closing, the local comp set is compounding every quarter, and contributory values firm up as it does.
+
+**The square footage trap.** Under the ANSI measuring standard lenders require, a detached ADU's square footage does not merge into the main home's gross living area. Your 2,200 square foot house with a 700 square foot ADU is not a 2,900 square foot house on the appraisal. The ADU is reported separately and adjusted as its own line item. Sellers, and honestly plenty of agents, price ADU properties on blended price per square foot and then act surprised when the appraisal does not cooperate. Price the house and the unit as two components, the way the appraiser will.
+
+**Permits are the whole ballgame.** A permitted ADU with a certificate of occupancy is a valued improvement. An unpermitted one is frequently credited at zero, and it can do worse than nothing: an appraiser who flags the second unit as a non-legal use can make the property hard to finance at all. This is where HOME quietly did existing owners a favor. Units that sat in a legal gray zone for years are now legal conforming uses on most SF lots, which cleans up both the appraisal and the loan. If your unit predates its paperwork, legalizing it may be the highest ROI project on the property.
+
+**The income side finally matters.** For decades, appraisers ignored ADU rent on single family assignments because lenders could not use it. That changed. The 2026 financing rules now put a supported market rent, documented on the single family comparable rent schedule, directly into borrower qualification:
+
+:::compare-table
+Agency, 2026 | ADU rental income treatment | Key limits
+Fannie Mae | Allowed on a one-unit principal residence as of the March 2026 DU 12.1 release | Purchase or limited cash-out refi only; income from one ADU; capped at 30% of total qualifying income
+Freddie Mac | Allowed on a one-unit primary residence | Purchase or no cash-out refi; landlord education required for purchase transactions
+FHA | 75% of supported market rent or lease rent | 50% for a proposed ADU under a standard 203(k); same 30% concentration cap
+:::
+
+The practical math most lenders run: 75 percent of the lower of the lease rent or the appraiser's supported market rent, capped at 30 percent of your qualifying income. On our model's $1,895 rent, that is roughly $1,421 per month of qualifying income, which carries about $225,000 of additional loan on a 6.5 percent, 30 year note. For an owner occupant buyer, a property with a rentable ADU is not just worth more, it is affordable to a larger buyer pool, and appraisers are being cautioned to keep that income from being double counted in both the rent schedule and the sales adjustments. The new UAD 3.6 appraisal format, mandatory November 2, 2026, adds structured ADU data fields for the first time, which should make the comp problem measurably better within a few years.
+
+**The refi gap, quantified.** Take the worked model. You spend $260,000. In a thin comp set, assume the appraiser supports $180,000 of contributory value. At 80 percent loan to value, a cash-out refinance returns at most $144,000 of new borrowing capacity against your $260,000 outlay, about 55 cents of liquidity per dollar spent. That is the appraisal gap in one sentence: the sale exit and the condo regime recover full retail value from a buyer, the refi channel recovers only what the comp set can prove today. Meanwhile the Travis Central Appraisal District has no such hesitation, and will happily tax the new unit at close to its full value from the certificate of occupancy forward. Build with the exit that matches your capital plan.
+
+**How to defend the value on appraisal day.** Appraisers can only credit what they can support, so hand them the support:
+
+:::compare-table
+What to provide | Why it moves the number
+Permits and certificate of occupancy | Establishes the unit as a legal, valued improvement instead of a question mark
+Plans with a square footage breakdown | Keeps the ADU from being mismeasured or lumped into GLA incorrectly
+Current lease and rent comps | Feeds the rent schedule that now drives qualifying income
+Cost documentation | Cost is not value, but it supports the quality and condition ratings
+A list of area sales with ADUs | Appraisers are expected to use ADU comps when available; make them easy to find
+Reconsideration of value, if needed | Lenders must accept ROV requests; submit specific ADU comps, not complaints
+:::
+
 ## Four theses for 2026
 
 **1. The yield goes to whoever already owns the dirt.** At 2026 rents, a $260,000 ADU returns about 5.4 percent unlevered. That works as an add-on to land with an embedded low basis. It does not work as a reason to pay full retail for a lot plus construction, unless you are exiting through a sale.

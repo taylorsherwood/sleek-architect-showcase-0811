@@ -8,7 +8,21 @@ import SchemaMarkup, {
   createBreadcrumbSchema,
 } from "@/components/SchemaMarkup";
 
-const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
+// Retry once on a transient chunk-fetch failure (stale hashed module after a
+// deploy or flaky network) so the homepage never blanks out.
+const importHomeBelowFold = () =>
+  import("@/components/HomeBelowFold").catch(
+    () =>
+      new Promise<typeof import("@/components/HomeBelowFold")>((resolve, reject) => {
+        setTimeout(() => {
+          import(/* @vite-ignore */ `@/components/HomeBelowFold?retry=${Date.now()}`)
+            .then(resolve as never)
+            .catch(reject);
+        }, 600);
+      })
+  );
+
+const HomeBelowFold = lazy(importHomeBelowFold);
 
 /* ─────────────────────────────────────────────
    SECTION 1, HERO
@@ -43,7 +57,7 @@ const Hero = () => {
 
     // Warm the below-fold chunk during idle so animations are ready by the time
     // the user scrolls. Falls back to setTimeout where requestIdleCallback is missing.
-    const prefetch = () => { import("@/components/HomeBelowFold"); };
+    const prefetch = () => { void importHomeBelowFold(); };
     const ric = (window as any).requestIdleCallback;
     const handle = ric ? ric(prefetch, { timeout: 2500 }) : window.setTimeout(prefetch, 1500);
     return () => {

@@ -57,7 +57,7 @@ const Hero = () => {
 
     // Warm the below-fold chunk during idle so animations are ready by the time
     // the user scrolls. Falls back to setTimeout where requestIdleCallback is missing.
-    const prefetch = () => { import("@/components/HomeBelowFold"); };
+    const prefetch = () => { void importHomeBelowFold(); };
     const ric = (window as any).requestIdleCallback;
     const handle = ric ? ric(prefetch, { timeout: 2500 }) : window.setTimeout(prefetch, 1500);
     return () => {

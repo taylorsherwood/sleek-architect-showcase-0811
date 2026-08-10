@@ -118,7 +118,7 @@ import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-stat
 const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
 import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas.jpg.asset.json";
 const blogInheritedHouse = blogInheritedHouseAsset.url;
-import blogUpgradingLuxuryHomeAsset from "@/assets/blog/upgrading-to-a-luxury-home-in-austin.jpg.asset.json";
+import blogUpgradingLuxuryHomeAsset from "@/assets/blog/upgrading-to-luxury-home-austin.png.asset.json";
 const blogUpgradingLuxuryHome = blogUpgradingLuxuryHomeAsset.url;
 import blogSellNowOrWaitAsset from "@/assets/blog/should-i-sell-now-or-wait-austin.jpg.asset.json";
 const blogSellNowOrWait = blogSellNowOrWaitAsset.url;

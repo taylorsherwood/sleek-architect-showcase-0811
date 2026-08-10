@@ -12112,7 +12112,7 @@ Here is what the jump actually looks like on paper, using a $1.2M current home a
 
 :::compare-table
 Line item | Your current $1.2M home | The $2.5M target
-Earnest money at 2 to 3% | Not applicable | $50,000 to $75,000, wired within days of contract
+Earnest money at 1 to 2% of contract price | Not applicable | $25,000 to $50,000, wired within days of contract
 Down payment (jumbo, 20 to 30% typical) | Not applicable | $500,000 to $750,000
 Loan classification | Conforming often possible | Jumbo, any 2026 loan above $832,750 (FHFA limit)
 Property tax, year one | About $19,000 to $20,000 on a homestead-capped assessment | About $40,000 in Eanes ISD outside city limits (~1.6% effective) to about $51,000 inside Austin city limits (~2.05%)
@@ -12189,7 +12189,7 @@ Q: Should I sell my current Austin home before buying the luxury one?
 A: Usually, yes. Contingent offers compete poorly at $2M+ where roughly 38% of buyers pay cash. The cleaner structure is to sell first, negotiate a 30 to 90 day post-closing leaseback, and buy with proof of funds. Bridge financing works but costs more than a leaseback costs you.
 
 Q: How much earnest money do I need on a $2M to $3M Austin home?
-A: Plan on 2 to 3% of the purchase price, $40,000 to $90,000, often with a shorter option period than the standard market. At this level, sellers read the deposit as a signal of financial capacity.
+A: Plan on 1 to 2% of the purchase price, $20,000 to $60,000 on a typical $2M to $3M Austin home, often with a shorter option period than the standard market. At this level, sellers read the deposit as a signal of financial capacity.
 
 Q: What makes a mortgage "jumbo" in Austin in 2026?
 A: Any loan above $832,750, the 2026 FHFA conforming limit that applies in Travis County. Expect 20%+ down, credit scores of roughly 700+, deeper documentation, and longer underwriting, which is why the lender conversation starts before the touring does.

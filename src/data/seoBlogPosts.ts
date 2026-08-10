@@ -1195,7 +1195,7 @@ Read all seven rows and a pattern emerges that neither Zillow's press releases n
 
 **For the typical home, the market is the marketing.** A median-priced home in Pflugerville or Manor has thousands of plausible buyers, and the only way to find the one who will pay the most is to let all of them see it. Zillow's numbers, Bright's numbers, and basic economics all agree here. Restricting exposure on a mass-market home is how you donate 1% to 2% of your equity to a stranger.
 
-**At the top of the market, the math genuinely changes.** The one independent study in the pile found the largest private-sale premium, more than 8%, exactly where the buyer pool is thinnest: luxury. When there are perhaps a dozen realistic buyers for a property in the entire country, broad exposure adds less value, and the costs of public listing (days on market stigma, price cut history, privacy loss, lookie-loo traffic through your home) add more. This matches what Echelon Property Group sees in practice. Every transaction over $2 million this team has ever closed happened entirely off the MLS, and the overwhelming majority of our career volume, out of $150M+ in closed sales, came from private opportunities and relationship-driven sourcing rather than portal traffic.
+**At the top of the market, the math genuinely changes.** The one independent study in the pile found the largest private-sale premium, more than 8%, exactly where the buyer pool is thinnest: luxury. When there are perhaps a dozen realistic buyers for a property in the entire country, broad exposure adds less value, and the costs of public listing (days on market stigma, price cut history, privacy loss, lookie-loo traffic through your home) add more. This matches what Echelon Property Group sees in practice. Every transaction over $2 million this team has ever closed happened entirely off the MLS, and the overwhelming majority of our career volume, out of $155M+ in closed sales, came from private opportunities and relationship-driven sourcing rather than portal traffic.
 
 **Pre-marketing and never-marketing are different products.** Compass's own data shows about 94% of its private listings eventually sold publicly. The quiet phase mostly functions as a pricing laboratory and momentum builder before a public launch, not as a replacement for one. The sellers who get hurt in Zillow's data are largely the ones who never reached the full market at all, on homes where the full market was the whole point.
 
@@ -2878,7 +2878,7 @@ A: Supply and financing. Austin is carrying just over five months of inventory, 
 
 If your home just came off the market, the most valuable thing you can do this week is find out why, with data instead of theories. Echelon Property Group will run the forensic review, show you what the market is actually paying right now, and give you an honest read on whether your best path is a repriced relaunch or a private sale. Start with a [complimentary valuation](/home-value-austin), and we will take it from there.
 
-Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $150M in career sales across 200+ transactions.
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $155M in career sales across 200+ transactions.
 
 *Market statistics: Unlock MLS, City of Austin residential, trailing 12 months through June 30, 2026. Mortgage rates: Freddie Mac Primary Mortgage Market Survey, July 9, 2026. National concession data: industry reporting on 2025 to 2026 seller concession share.*`,
   },
@@ -2991,7 +2991,7 @@ A: Yes, but less than pricing does. Spring (March through June) brings the deepe
 
 Thinking about selling and want a realistic timeline for your specific property and price tier? Request a [private valuation](/home-value-austin) or [talk to us about strategy](/sell) before you list. The decisions that determine your days on market all happen before day one.
 
-Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $150M in career sales across 200+ transactions.
+Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and investment real estate practice, with more than 11 years of experience and over $155M in career sales across 200+ transactions.
 
 *Data sources: Unlock MLS/ABoR June 2026 market reports, Redfin Data Center, RPR market statistics, and Echelon Property Group transaction data. All figures as reported July 2026.*`,
   },
@@ -8437,7 +8437,7 @@ Off-market isn't magic, and anyone selling it as such is selling something. The 
 
 ## Why this is Echelon's home turf
 
-I'll say this plainly, because it's the reason to trust this article over the fifty generic ones: the overwhelming majority of my transaction volume across 11+ years and $150M+ in sales has come from private opportunities, relationship-driven sourcing, and off-market transactions. Every deal I've closed above $2M, every one, was entirely off-MLS. This isn't a service line we added because it's trendy. It's how the business was built. More on my approach and background at [Taylor Sherwood](/taylor-sherwood).
+I'll say this plainly, because it's the reason to trust this article over the fifty generic ones: the overwhelming majority of my transaction volume across 11+ years and $155M+ in sales has come from private opportunities, relationship-driven sourcing, and off-market transactions. Every deal I've closed above $2M, every one, was entirely off-MLS. This isn't a service line we added because it's trendy. It's how the business was built. More on my approach and background at [Taylor Sherwood](/taylor-sherwood).
 
 If you're a buyer who wants access to Austin inventory before it's public, or an owner weighing a quiet sale, [that's exactly the conversation to have](/contact).
 

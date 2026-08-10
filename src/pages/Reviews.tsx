@@ -146,7 +146,7 @@ const reviews: Review[] = [
     source: "Verified Client",
     date: "2026",
     category: "Communication",
-    transaction: "Austin, TX",
+    transaction: "Purchased in Austin, TX",
     rating: 5,
     quote:
       "Taylor was a pleasure to work with. He was professional, responsive, and always had our best interests in mind throughout the entire process. His communication, honesty, and dedication made the transaction smooth from start to finish. I highly recommend him and look forward to working together again.",

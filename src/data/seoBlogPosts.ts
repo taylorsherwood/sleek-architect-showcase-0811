@@ -118,6 +118,8 @@ import blogTexasNonDisclosureAsset from "@/assets/blog/texas-non-disclosure-stat
 const blogTexasNonDisclosure = blogTexasNonDisclosureAsset.url;
 import blogInheritedHouseAsset from "@/assets/blog/selling-inherited-house-texas.jpg.asset.json";
 const blogInheritedHouse = blogInheritedHouseAsset.url;
+import blogUpgradingLuxuryHomeAsset from "@/assets/blog/upgrading-to-a-luxury-home-in-austin.jpg.asset.json";
+const blogUpgradingLuxuryHome = blogUpgradingLuxuryHomeAsset.url;
 import blogSellNowOrWaitAsset from "@/assets/blog/should-i-sell-now-or-wait-austin.jpg.asset.json";
 const blogSellNowOrWait = blogSellNowOrWaitAsset.url;
 import blogWhereAustinMovingAsset from "@/assets/blog/where-austin-homeowners-are-moving.png.asset.json";
@@ -11710,6 +11712,8 @@ The right Lake Austin property should feel hard to replicate, not just expensive
 
 This guide walks through the entire process: how to see the inventory that never goes public, how to structure financing at the top of the market, what the new representation rules mean for you, and how to use the leverage this market is handing buyers right now.
 
+Already own a home in Austin and planning to sell it to fund the purchase? Start with the [move-up buyer's guide](/blog/upgrading-to-a-luxury-home-in-austin) instead.
+
 :::callout
 label: Quick answer
 To buy a luxury home in Austin in 2026, work with an agent who has genuine off-market access, since a large share of high-end Austin properties trade privately and never reach the MLS. Secure proof of funds or jumbo financing pre-approval before touring, sign a buyer representation agreement (required in Texas before an agent can show you homes), and negotiate from strength: Austin is carrying just over five months of inventory, roughly four in ten listings fail to sell, and sellers are accepting around three percent below asking on average.
@@ -12078,5 +12082,142 @@ A: Yes, frequently. A meaningful share of Lake Austin waterfront trades privatel
     heroImage: blogLivingOnLakeAustin,
     imageAlt: "Modern waterfront estate on Lake Austin at midday with pool, dock, and boat on calm water",
     imageCaption: "Lake Austin's constant water level and 22 miles of essentially built-out shoreline make direct waterfront one of the most supply-constrained addresses in Texas.",
+  },
+
+  {
+    id: "upgrading-to-a-luxury-home-in-austin",
+    title: "Upgrading to a Luxury Home in Austin: The 2026 Move-Up Buyer's Guide",
+    metaTitle: "Upgrading to a Luxury Home in Austin: 2026 Move-Up Guide",
+    excerpt: "Selling your Austin home to buy at $1.5M+? Inventory sits near 8 months above $1.4M and 17 months above $2M. The 2026 move-up playbook, with the numbers.",
+    content: `In the twelve months through last October, Austin-area buyers closed more than 2,700 homes above $1 million, roughly $4.6 billion in volume, at an average of $512 per square foot against $257 for the metro as a whole. If you already own a home here and you are eyeing that market, understand this: you are not making a bigger version of your last purchase. You are switching markets entirely, with different inventory dynamics, a different negotiation culture, and different pricing logic depending on the submarket.
+
+This guide is written for the move-up buyer. You own an Austin-area home, you will likely sell it to fund the purchase, and the sequencing between those two transactions is half the battle. (Relocating from out of state or making a [first purchase at this level](/blog/how-to-buy-a-luxury-home-in-austin)? Start with the luxury buyer's guide instead.)
+
+One framing note before the steps. Austin's upper tier is not one market. Westlake, Barton Creek, Tarrytown, Rollingwood, Spanish Oaks, and Lakeway [each behave differently as markets](/blog/most-expensive-neighborhoods-in-austin), and [Lake Austin waterfront properties follow different valuation drivers](/blog/living-on-lake-austin) altogether, where frontage, water depth, and dock permits matter more than square footage.
+
+:::callout
+label: Quick answer
+Moving up in Austin in 2026 favors the buyer at the top and the seller at the bottom of your trade. Supply runs roughly 5.5 months between $800K and $1.19M, about 8 months above $1.4M, and near 17 months above $2M. Sell into the tighter tier, buy into the softer one, and structure the sequence so your offer is not contingent: sell first, negotiate a 30 to 90 day post-closing leaseback, then buy with proof of funds in hand.
+:::
+
+## Step 1: Decide the sequence before you decide the house
+
+Every move-up transaction is really two transactions bolted together, and the order you run them in determines your negotiating power on both. This is [sequencing risk](/blog/should-i-sell-my-house-now-or-wait-austin), and it is the single largest variable in the process.
+
+Start with three numbers: what your current home realistically nets after costs, what the lender will support at the new price point, and how much cash you can move without touching the sale proceeds. Getting a current valuation on your existing home, a jumbo pre-approval on the target range, and a written closing-cost estimate is part of good preparation.
+
+## The Move-Up Math: What Changes Between $1.2M and $2.5M
+
+Here is what the jump actually looks like on paper, using a $1.2M current home and a $2.5M Westlake-area target:
+
+:::compare-table
+Line item | Your current $1.2M home | The $2.5M target
+Earnest money at 2 to 3% | Not applicable | $50,000 to $75,000, wired within days of contract
+Down payment (jumbo, 20 to 30% typical) | Not applicable | $500,000 to $750,000
+Loan classification | Conforming often possible | Jumbo, any 2026 loan above $832,750 (FHFA limit)
+Property tax, year one | About $19,000 to $20,000 on a homestead-capped assessment | About $40,000 in Eanes ISD outside city limits (~1.6% effective) to about $51,000 inside Austin city limits (~2.05%)
+Homestead protection | 10% annual cap and the $140,000 school exemption working in your favor | Resets. You are assessed at or near full purchase price, and the $140,000 exemption saves only about $1,165 per year at Eanes rates
+:::
+
+Three things fall out of that table. First, the tax bill roughly doubles or more, and the homestead cap that has been quietly protecting you disappears on day one of the new purchase, so budget year one at full market assessment, then protest and re-establish. Second, your down payment is almost certainly coming out of your sale, which makes the [capital gains exclusion](/blog/capital-gains-tax-home-sale-texas) (up to $500,000 of gain, tax free, for a married couple selling a primary residence) and [what it actually costs to sell](/blog/cost-to-sell-a-house-austin) your current home the two numbers to nail down before you tour anything. Third, on sequencing: a contingent offer is the weakest instrument in a market where 38% of your competition is paying cash. The cleanest structure in 2026 is usually sell first, negotiate a 30 to 90 day post-closing leaseback on your own sale, then buy with proof of funds in hand. A bridge loan solves the same problem at a higher cost; a contingency solves it at the cost of your negotiating position.
+
+## Step 2: Choose the submarket, not the listing
+
+Move-up buyers tend to shop houses first and neighborhoods second. Reverse it. At this level the address governs taxes, schools, resale liquidity, and how much competition you will face.
+
+[Barton Creek](https://www.bartoncreekvilla.com) offers gated golf-club living and larger lots inside the city footprint. Westlake and Rollingwood buy you Eanes ISD and a short downtown commute at a hard premium. Tarrytown trades lot size for walkability and central access. Spanish Oaks and Lakeway push west for Hill Country scale and Lake Travis ISD. Lake Austin waterfront is its own category entirely, priced on frontage and dockability rather than finish level.
+
+Pick two submarkets, not six. Depth of knowledge in a narrow set beats a broad search, because the value read on a specific street is what tells you whether a list price is defensible.
+
+## Step 3: The 2026 Numbers: Where the Leverage Actually Sits
+
+Start with the scale of the market you are entering. Per Texas Realtors' 2025 Sales of Million-Dollar Homes Report, the Austin metro closed more than 2,700 sales above $1 million in the twelve months through October, roughly $4.6 billion in volume and 19% of all luxury transactions in Texas. Those homes averaged $512 per square foot against $257 for the metro overall. As of March 2026, the median luxury sale sat at $1,395,000, up 1.8% year over year, with correctly priced homes closing in about 24 days.
+
+Now the number that matters most to a move-up buyer. Supply is not evenly distributed, and it deepens at every rung of the price ladder:
+
+:::compare-table
+Price tier | Months of supply | What it means for you
+$700K to $799K | ~3.8 | Tightest tier in the market, sellers hold the edge
+$800K to $1.19M | ~5.5 | Balanced
+$1.2M to $1.39M | ~5.8 | Balanced, tilting toward buyers
+$1.4M+ | ~8 | Clear buyer leverage
+$2M+ | ~16.7 | Deep buyer leverage, median time to sell around 111 days
+:::
+
+Source: ACTRIS MLS-derived market data, January to March 2026; $2M+ segment figures from spring 2026 reporting.
+
+Read that table as a single trade: if you are selling an $800K to $1.2M home to buy at $2M+, you are exiting a five-month market and entering a seventeen-month market. You sell with modest leverage and buy with a great deal of it. That asymmetry, not timing the bottom and not finding a "deal," is the structural advantage of moving up in 2026, and it is why the sequencing decisions in Step 1 matter more than anything else in this guide.
+
+Two more data points shape how you negotiate. First, pricing discipline is being enforced by the market itself: in March 2026, luxury homes that came out priced correctly closed at roughly 96% of original ask in about 24 days, while homes that required a reduction ultimately closed near 93.5%, and 38% of active luxury listings carried at least one price cut. A listing with 90+ days on market and a reduction has already told you its negotiating posture before you write a word. Second, roughly 38% of $1M+ purchases in Austin are cash. If you are financing, you will not out-simple a cash buyer, so you compete on certainty: proof of funds, tight option periods, and a clean appraisal strategy.
+
+One supply-side note for West Austin specifically: new luxury construction is coming online as direct competition to resale. Travis Club in Spicewood (1,500 acres on Lake Travis, golf opening mid-2026, homesites from roughly $700K to $3.4M) and The Overlook at Westlake (48 homes, $2.85M to $5M, Eanes ISD, move-ins late 2026) both pull from the same buyer pool as Barton Creek, Spanish Oaks, and Westlake resale. Every new-construction alternative is leverage in your resale negotiation.
+
+Two structural drivers still sit underneath those numbers. Austin's technology employment base continues to generate high-income households with cash from equity events, which supports the top of the market even in a soft cycle. And seasonality is real: spring and fall bring inventory and competition together, while summer and the holidays thin the buyer pool and improve terms for whoever is still working.
+
+## Step 4: Build the team before you tour
+
+Representation quality is the difference between seeing the market and seeing the MLS. When you interview agents, skip the marketing conversation. Ask for their last three closings above your target price in your target neighborhoods, addresses, not adjectives.
+
+You also want a jumbo lender who has closed in your target ISD, a real estate attorney or CPA if the sale carries meaningful gain, and an inspector who works on estate-scale properties. Assemble that group before you write an offer, not during the option period.
+
+## Step 5: Get inside the private inventory
+
+At the top of the Austin market, a significant share of transactions never reaches a public portal. Owners at this level protect privacy, test price quietly, and often sell to the first qualified buyer their agent brings.
+
+Ask your advisor directly about their [off-market pipeline](/blog/off-market-homes-austin): who they call, how often, and what they have sourced in the last ninety days that never hit the MLS. Understanding how [private listings, pocket listings, and coming-soon properties](/blog/private-listings-austin) actually work in Austin, and what the current representation rules allow, is what puts you in the conversation before a listing exists.
+
+## Step 6: Negotiate on certainty, not on price alone
+
+In a seventeen-month market, price is negotiable. What sellers actually reward is a clean path to closing: earnest money that signals capacity, a short and specific option period, a lender who will answer the phone, and flexibility on possession.
+
+Use days on market and price-cut history as your read on motivation, then structure terms that solve the seller's problem while protecting your inspection and appraisal position. The best move-up outcomes in this market are not the biggest discounts; they are the deals where your sale and your purchase closed in the right order.
+
+## Putting It All Together
+
+The move-up trade in 2026 is structurally favorable, but only if you run it in the right sequence. Establish what your current home nets and what the next tier actually costs to own. Pick two submarkets and learn them properly. Sell first if you can, with a leaseback to bridge the gap. Then buy into the deepest inventory Austin's upper tier has carried in over a decade, from a position of certainty rather than contingency.
+
+## Frequently Asked Questions
+
+:::faq
+Q: What price counts as a "luxury" home in Austin in 2026?
+A: The working definition is $1.5 million and up, with the upper tier starting around $3 to $5 million. For context, the metro's median luxury sale was $1,395,000 in March 2026, and the last reported twelve months saw 2,700+ sales above $1 million totaling about $4.6 billion, at an average of $512 per square foot versus $257 metro-wide.
+
+Q: Is 2026 a buyer's or seller's market for Austin luxury?
+A: It depends entirely on the tier. Supply runs about 5 to 6 months around $1M (balanced), roughly 8 months above $1.4M, and about 17 months above $2M, which is deep buyer leverage with a median time to sell around 111 days. The higher you buy, the more leverage you hold.
+
+Q: Should I sell my current Austin home before buying the luxury one?
+A: Usually, yes. Contingent offers compete poorly at $2M+ where roughly 38% of buyers pay cash. The cleaner structure is to sell first, negotiate a 30 to 90 day post-closing leaseback, and buy with proof of funds. Bridge financing works but costs more than a leaseback costs you.
+
+Q: How much earnest money do I need on a $2M to $3M Austin home?
+A: Plan on 2 to 3% of the purchase price, $40,000 to $90,000, often with a shorter option period than the standard market. At this level, sellers read the deposit as a signal of financial capacity.
+
+Q: What makes a mortgage "jumbo" in Austin in 2026?
+A: Any loan above $832,750, the 2026 FHFA conforming limit that applies in Travis County. Expect 20%+ down, credit scores of roughly 700+, deeper documentation, and longer underwriting, which is why the lender conversation starts before the touring does.
+
+Q: What will property taxes run on a $2.5M home in Austin?
+A: Roughly $38,000 to $51,000 per year depending on jurisdiction: about 1.5 to 1.6% effective in Eanes ISD outside Austin city limits, and about 2.05% inside city limits. In year one you are assessed at or near your purchase price with no cap protection, and the $140,000 school homestead exemption saves only about $1,100 to $1,300 annually at this price.
+
+Q: How much of Austin's luxury market sells off-market?
+A: There is no official statistic, since off-MLS sales are by definition not fully tracked. But at $2 million and above, a meaningful share of transactions happens through private networks before any public listing. In my own practice, every deal over $2 million I have ever closed traded entirely off-MLS.
+
+Q: When is the best time of year to buy a luxury home in Austin?
+A: Spring and fall bring the most inventory and the most competition; summer and the holidays bring fewer active buyers and better negotiating conditions. Above $2M, with 16+ months of supply, seller motivation matters more than the calendar.
+:::
+
+## Talk Through Your Move-Up Numbers
+
+If you are weighing a move up in 2026, what your current home nets, what the tax picture looks like at the next tier, or what is trading privately in Barton Creek, Westlake, and on Lake Austin before it ever hits a public search, that is a 20-minute conversation worth having before you tour a single property. Echelon Property Group works Austin's upper-tier market with direct access to off-market inventory, and every deal over $2 million we have closed has traded off-MLS. Reach out and we will run your numbers first.
+
+## About the Author
+
+Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas (brokered by eXp Realty), with 11+ years in Central Texas real estate and more than $150 million in closed volume across 200+ transactions. He holds the CLHMS designation as a Guild member of the Institute for Luxury Home Marketing, along with GRI and ABR. His practice centers on private and off-market transactions across Austin's western luxury corridor, and every deal over $2 million he has closed has traded entirely off-MLS. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
+    author: "Taylor Sherwood",
+    date: "2026-08-10",
+    readTime: "13 min read",
+    category: "BUYER STRATEGY",
+    image: blogUpgradingLuxuryHome,
+    heroImage: blogUpgradingLuxuryHome,
+    imageAlt: "Modern limestone and glass estate above Lake Austin at golden hour with a bungalow rooftop in the foreground",
+    imageCaption: "Moving up in Austin means switching markets, not simply buying a larger version of your current home."
   }
 ];

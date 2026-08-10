@@ -134,7 +134,7 @@ const reviews: Review[] = [
   {
     name: "Cynthia Hampton",
     source: "Verified Client",
-    date: "2025",
+    date: "2023",
     category: "Luxury Sellers",
     transaction: "Purchased and sold in Austin",
     rating: 5,

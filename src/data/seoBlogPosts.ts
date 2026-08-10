@@ -12080,8 +12080,8 @@ A: Yes, frequently. A meaningful share of Lake Austin waterfront trades privatel
     heroImage: blogLivingOnLakeAustin,
     imageAlt: "Modern waterfront estate on Lake Austin at midday with pool, dock, and boat on calm water",
     imageCaption: "Lake Austin's constant water level and 22 miles of essentially built-out shoreline make direct waterfront one of the most supply-constrained addresses in Texas.",
-  }
-  ,
+  },
+
   {
     id: "upgrading-to-a-luxury-home-in-austin",
     title: "Upgrading to a Luxury Home in Austin: The 2026 Move-Up Buyer's Guide",

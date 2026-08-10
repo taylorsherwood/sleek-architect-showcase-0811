@@ -434,6 +434,18 @@ const Reviews = () => {
                 </span>
               </div>
 
+              <div className="mt-3">
+                <a
+                  href="https://www.realsatisfied.com/real-estate-agent/Taylor-Sherwood"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[0.7rem] tracking-[0.2em] text-architectural/70 font-medium uppercase hover:text-gold transition-colors group"
+                >
+                  View Verified Profile
+                  <span aria-hidden className="inline-block transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
+                </a>
+              </div>
+
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a
                   href="#reviews"

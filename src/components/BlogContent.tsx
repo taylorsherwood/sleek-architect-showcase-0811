@@ -306,7 +306,7 @@ const CompareTable = ({ body }: { body: string }) => {
       {(() => {
         const cols = header.length;
         const wide = cols >= 5;
-        const firstWidth = cols === 2 ? 50 : cols === 3 ? 22 : 25;
+        const firstWidth = cols === 2 ? 50 : cols === 3 ? 25 : 25;
         const restWidth = (100 - firstWidth) / (cols - 1);
         return (
       <div className={wide ? "hidden md:block overflow-x-auto" : "contents"}>

@@ -154,7 +154,7 @@ const reviews: Review[] = [
   {
     name: "Kris Gonzalez",
     source: "Verified Client",
-    date: "2026",
+    date: "2024",
     category: "Luxury Sellers",
     transaction: "Sold in Dripping Springs",
     rating: 5,

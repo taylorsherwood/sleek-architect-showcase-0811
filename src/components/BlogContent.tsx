@@ -328,7 +328,7 @@ const CompareTable = ({ body }: { body: string }) => {
               <th
                 key={i}
                 scope="col"
-                className={`text-left align-bottom py-4 px-3 text-minimal uppercase tracking-[0.1em] text-[10.5px] leading-[1.4] ${wide ? (i === 0 ? "min-w-[210px]" : "whitespace-nowrap") : ""}`}
+                className={`text-left align-bottom py-4 px-4 text-minimal uppercase tracking-[0.1em] text-[10.5px] leading-[1.4] ${wide ? (i === 0 ? "min-w-[210px]" : "whitespace-nowrap") : ""}`}
                 style={{ color: i === 0 ? undefined : "#b9a06c" }}
               >
                 {h}
@@ -341,14 +341,14 @@ const CompareTable = ({ body }: { body: string }) => {
             <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
               <th
                 scope="row"
-                className={`text-left align-top py-5 pr-6 px-3 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] font-normal whitespace-pre-line leading-[1.4] ${wide ? "min-w-[210px]" : ""}`}
+                className={`text-left align-top py-5 pr-8 px-4 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] font-normal whitespace-pre-line leading-[1.5] ${wide ? "min-w-[210px]" : ""}`}
               >
                 {row[0]}
               </th>
               {row.slice(1).map((cell, cIdx) => (
                 <td
                   key={cIdx}
-                  className={`align-top py-5 px-3 text-[14px] leading-[1.6] text-muted-foreground ${wide ? "whitespace-nowrap" : ""}`}
+                  className={`align-top py-5 px-4 text-[14px] leading-[1.65] text-muted-foreground ${wide ? "whitespace-nowrap" : ""}`}
                 >
                   {cell}
                 </td>

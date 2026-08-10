@@ -409,7 +409,7 @@ const testimonials = [
   {
     quote: "Taylor was a pleasure to work with. He was professional, responsive, and always had our best interests in mind throughout the entire process. His communication, honesty, and dedication made the transaction smooth from start to finish. I highly recommend him and look forward to working together again.",
     name: "Shahar Keinan",
-    context: "Austin, TX",
+    context: "Purchased in Austin, TX",
   },
   {
     quote: "Taylor helped us in a downturn Austin market when we had to sell and we already had a preexisting realtor. We were not getting any offers without lowering pricing. Taylor offered us an alternative approach, improve where it mattered and then sell. We ended up getting 2 offers after making a smaller investment into our home. A practical approach and strategy is better than waiting for offers, and that's what he led us through and we're grateful for him coming through for us as an advisor and partner we could depend on.",

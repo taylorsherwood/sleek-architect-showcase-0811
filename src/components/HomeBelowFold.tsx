@@ -411,6 +411,12 @@ const testimonials = [
     name: "Shahar Keinan",
     context: "Austin, TX",
   },
+  {
+    quote: "Taylor helped us in a downturn Austin market when we had to sell and we already had a preexisting realtor. We were not getting any offers without lowering pricing. Taylor offered us an alternative approach, improve where it mattered and then sell. We ended up getting 2 offers after making a smaller investment into our home. A practical approach and strategy is better than waiting for offers, and that's what he led us through and we're grateful for him coming through for us as an advisor and partner we could depend on.",
+    name: "Kris Gonzalez",
+    context: "Sold in Dripping Springs",
+  },
+
 ];
 
 const TestimonialsSection = () => {

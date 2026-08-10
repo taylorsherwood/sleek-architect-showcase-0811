@@ -11712,6 +11712,8 @@ The right Lake Austin property should feel hard to replicate, not just expensive
 
 This guide walks through the entire process: how to see the inventory that never goes public, how to structure financing at the top of the market, what the new representation rules mean for you, and how to use the leverage this market is handing buyers right now.
 
+Already own a home in Austin and planning to sell it to fund the purchase? Start with the [move-up buyer's guide](/blog/upgrading-to-a-luxury-home-in-austin) instead.
+
 :::callout
 label: Quick answer
 To buy a luxury home in Austin in 2026, work with an agent who has genuine off-market access, since a large share of high-end Austin properties trade privately and never reach the MLS. Secure proof of funds or jumbo financing pre-approval before touring, sign a buyer representation agreement (required in Texas before an agent can show you homes), and negotiate from strength: Austin is carrying just over five months of inventory, roughly four in ten listings fail to sell, and sellers are accepting around three percent below asking on average.

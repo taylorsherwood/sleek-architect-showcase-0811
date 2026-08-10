@@ -12217,7 +12217,7 @@ Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group i
     category: "BUYER STRATEGY",
     image: blogUpgradingLuxuryHome,
     heroImage: blogUpgradingLuxuryHome,
-    imageAlt: "Modern limestone and glass estate above Lake Austin at golden hour with a bungalow rooftop in the foreground",
+    imageAlt: "Modern luxury kitchen and living area with large glass doors opening to a wooded outdoor dining space",
     imageCaption: "Moving up in Austin means switching markets, not simply buying a larger version of your current home."
   }
 ];

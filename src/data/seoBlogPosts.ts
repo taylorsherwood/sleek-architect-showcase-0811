@@ -150,8 +150,222 @@ const blogPrivacySellingHighValue = blogPrivacySellingHighValueAsset.url;
 import blogAustinAduRules2026Asset from "@/assets/blog/austin-adu-rules-2026.png.asset.json";
 const blogAustinAduRules2026 = blogAustinAduRules2026Asset.url;
 
+import blogMudPidTaxesAustin from "@/assets/blog/mud-pid-taxes-austin.jpg";
+
 // Build marker: ensure new posts ship in bundle (v9)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "mud-pid-taxes-austin",
+    title: "MUD and PID Taxes in Austin: What That Extra Line on the Tax Bill Really Costs",
+    metaTitle: "MUD and PID Taxes in Austin: 2026 Rates, Payoffs, Rules",
+    excerpt: "What MUD and PID taxes cost in Austin in 2026: real district rates, the maturity curve, payoff math, disclosure rights, and how to buy around them.",
+    author: "Taylor Sherwood",
+    date: "2026-08-11",
+    readTime: "18 min read",
+    category: "MARKET INSIGHTS",
+    image: blogMudPidTaxesAustin,
+    heroImage: blogMudPidTaxesAustin,
+    imageAlt: "Aerial view of a master planned community meeting open Texas Hill Country land",
+    content: `Two houses, both $700,000, both in the Austin metro, both twenty something minutes from downtown. The first sits inside Austin city limits and carries a property tax bill of about $14,300 a year. The second sits in a master planned community in Buda and carries a bill of about $19,100. Same state, same metro, no income tax either way. The difference is one line on the tax statement, and most buyers read that line for the first time at the closing table.
+
+That line is a district. In Central Texas it is usually a MUD, sometimes a PID, occasionally both. Districts are not scams and they are not fine print. They are the financing mechanism that built almost every master planned community you have toured in Leander, Liberty Hill, Buda, Kyle, Manor, and southeast Austin. But they behave very differently from ordinary property taxes, they follow different rules on exemptions and deductions, and they can move your effective cost of ownership by hundreds of dollars a month on identical list prices.
+
+This guide covers what MUDs and PIDs actually are, what real districts around Austin charge in 2026, why district rates fall as neighborhoods age, the payoff math on PIDs, and the disclosure rights Texas law gives every buyer. All rates cited are 2025 adopted rates, the most recent full tax year, which produced the bills due January 31, 2026. Taxing entities adopt 2026 rates in September and October.
+
+## What a MUD Actually Is
+
+A Municipal Utility District is an independent political subdivision of the State of Texas, usually created when a developer petitions the Texas Commission on Environmental Quality to form a district over raw land that no city serves. The MUD issues bonds to build the water lines, wastewater treatment, drainage, and often roads that make the subdivision possible. Homeowners then repay those bonds through an ad valorem tax, a rate per $100 of assessed value, that appears as its own line on the county tax bill alongside the county, the school district, and any city.
+
+The scale is bigger than most people assume. Texas has roughly 1,200 active MUDs and more than a million residents living inside them. Travis County alone has 54 active municipal utility districts, and Williamson and Hays counties are stacked with dozens more, which is why the Williamson County tax office publishes annual rate worksheets for districts like Leander MUD 1 through 3, North San Gabriel MUD 1 and 2, and the Leander TODD MUD, and why the Hays County Truth in Taxation portal lists Sunfield MUD 1, 3, and 4, Anthem MUD, Crosswinds MUD, and Dripping Springs MUD 1 as their own taxing units.
+
+MUD tax rates in Texas typically run from about $0.25 to $1.50 per $100 of assessed value. On a $500,000 home, the district line alone can add $1,250 to $7,500 a year. The rate is set annually by an elected board of district residents, the district is supervised by TCEQ, and the tax is collected by the county tax assessor along with everything else on the bill. Because it is ad valorem, a MUD tax rises with your appraised value. When TCAD or WCAD moves your assessment up 10 percent, the MUD line moves with it.
+
+Two structural points matter for buyers. First, a MUD tax has no fixed end date. It continues as long as the district has debt to service and operations to fund, though the rate typically steps down as bonds retire. Second, a MUD can outlive its construction purpose. If a city ever annexes the district, residents generally trade the MUD tax for the city tax. Austin rarely annexes anymore, so districts on the fringe tend to persist and mature in place.
+
+## What a PID Actually Is
+
+A Public Improvement District is a different instrument. A city or county creates it under Chapter 372 of the Texas Local Government Code, and instead of an ad valorem tax, the PID levies a fixed assessment against each lot. The total cost of the improvements is divided among the lots based on benefit, the schedule is locked, and when you close on a home in a residential PID you receive a printed schedule showing your annual payment for the full assessment period, typically 20 to 40 years.
+
+That fixed structure is the defining difference. A PID assessment does not rise when your appraisal rises. If your home runs from $400,000 to $600,000 over a decade, the MUD line grows 50 percent with it, but the PID line stays exactly where the schedule says. In an appreciating market that is a real advantage, and it is the reason developers of communities like Whisper Valley in east Austin lead with the PID structure in their marketing. Whisper Valley's 2025 annual assessments run from $1,480 to $2,004 per lot depending on lot size, on a 30 year schedule, and homeowners there are exempt from City of Austin taxes while the PID is in place.
+
+The second defining feature is the exit. You can pay a PID assessment off in a lump sum at any time under Texas Local Government Code 372.018. Once paid, it is gone permanently, a lien release is recorded with the county, and the line item disappears from every future tax bill. You cannot prepay 20 years of property taxes. You can absolutely prepay a PID.
+
+One distinction worth knowing: residential development PIDs like Whisper Valley or Estancia in south Austin, which finance bonded infrastructure through assessments, are a different animal from downtown service PIDs like the Austin Downtown Public Improvement District, which fund cleaning, safety, and maintenance through small annual assessments on commercial property and cannot issue bond debt at all. When this article says PID, it means the residential development kind, the kind that shows up on a home purchase.
+
+## MUD vs PID vs No District
+
+:::compare-table
+Feature | MUD | PID | No district (city limits)
+Created by | Developer petition to TCEQ under the Texas Water Code | City or county under Local Government Code Ch. 372 | n/a
+How you are charged | Ad valorem rate per $100 of assessed value | Fixed assessment per lot on a locked schedule | Standard city, county, school rates only
+Moves with appraisal | Yes, rises and falls with assessed value | No, fixed regardless of value | Yes
+Typical rate or amount | $0.25 to $1.50 per $100 | Roughly $1,200 to $2,500 per lot per year in Austin area residential PIDs | City of Austin: $0.524017 per $100 in 2025
+End date | None fixed; rate declines as bonds retire, ends only if annexed | 20 to 40 year schedule, or the day you pay it off | n/a
+Lump sum payoff | Not available | Available any time, lien released and recorded | n/a
+Homestead exemption applies | Generally no on the MUD line | No, exemptions never apply to assessments | Yes, on school, city, county lines per each entity's rules
+Federal deductibility | Generally deductible as property tax within the SALT cap | Capital portion not deductible, added to cost basis instead | Deductible within the SALT cap
+:::
+
+## What Austin Area Districts Actually Charge in 2026
+
+Start with the baseline. A home inside Austin city limits in Austin ISD pays a combined 2025 rate of roughly 2.05 percent of taxable value: Austin ISD at $0.9252, City of Austin at $0.524017, Travis County at about $0.3758, Central Health at about $0.1180, and Austin Community College at about $0.1034, all per $100. For context, the city rate jumped about 10 percent this cycle from $0.4776, and Travis County added roughly three cents for flood response, so the no district baseline is not exactly standing still.
+
+Now stack the district communities against it. These are 2025 adopted total rates for the full jurisdiction stack at each address, before exemptions.
+
+:::compare-table
+Community | County | District type | 2025 total tax rate
+Central Austin, Austin ISD | Travis | None | ~2.05%
+Steiner Ranch, 78732 | Travis | WCID 17, mature | 1.9702%
+Santa Rita Ranch, Liberty Hill | Williamson | Williamson Co. MUD 19, active | 2.2171% to 2.5772% by section
+Travisso, Leander | Travis | MUD, active | 2.4764%
+Easton Park, southeast Austin | Travis | Pilot Knob MUDs 2 to 5, active | ~2.60%
+Sunfield, Buda | Hays | Sunfield MUDs 1, 3, 4, active | 2.7269%
+:::
+
+Read that table twice, because it contains the two facts that should reframe how you shop. First, the spread between the cheapest and most expensive rows is about three quarters of a point of tax rate on identical home values. Second, the cheapest row is not central Austin. It is Steiner Ranch, a master planned community that has been paying into its district since 1987. Which brings us to the most underpriced concept in Central Texas homebuying.
+
+## The Maturity Curve: You Are Buying a Bond Amortization Schedule
+
+A MUD rate is not a fixed feature of a neighborhood. It is a snapshot of where that district sits in its debt cycle. Young districts carry maximum bond loads and maximum rates. As the bonds retire and the tax base grows, the rate steps down, sometimes dramatically. Here is the arc, using 2025 adopted district line rates around the Austin metro, from newest to most mature:
+
+:::compare-table
+District | Where | Stage | 2025 district rate per $100
+Wilbarger Creek MUD 2 | Manor | New, active build out | $0.9500
+Pilot Knob MUD 4 and 5 | Easton Park | Active build out | $0.9500
+Sunfield MUD 3 | Buda | Active build out | ~$0.9000
+Williamson Co. MUD 19B/19G | Santa Rita Ranch | Active build out | $0.8500
+West Travis County MUD 8 | Hwy 71 corridor | Mid cycle | $0.4750
+Wells Branch MUD | North Austin, est. 1981 | Built out | $0.2400
+West Travis County MUD 6 | Bee Cave area | Built out | $0.1729
+WCID 17, Steiner Ranch defined area | Steiner Ranch | Mature, est. 1987 | $0.1396 plus $0.0560 district wide
+WCID 18 | Lakeway area | Mature | $0.0552
+:::
+
+The pattern is not subtle. New districts cluster at $0.85 to $0.95. Mature districts cluster at $0.05 to $0.27. Steiner Ranch's district burden has amortized down to about a fifth of what Easton Park homeowners pay today, and the total Steiner Ranch rate now undercuts central Austin itself. Sunfield's own trajectory shows the same physics in miniature: the community's combined rate has already come down from 2.8085 percent in 2022 to 2.7269 percent in 2025 even while build out continues.
+
+Three practical conclusions. If you buy into a brand new district, you are volunteering for peak rate years, and your exit buyer in year eight will likely enjoy a lower rate than you did, which quietly supports resale. If you buy into a mature district, you are getting master planned amenities at a discount to the city's own tax stack. And if you are comparing two resale homes at the same price in districts of different ages, the tax line is not a tiebreaker, it is often the whole ballgame.
+
+## Worked Example: The Same $700,000, Three Tax Bills
+
+Take one $700,000 purchase, no exemptions, 2025 adopted rates held flat, and run it through three addresses.
+
+:::compare-table
+Address profile | Rate | Annual taxes | Monthly | 10 year total
+Central Austin, no district | 2.046% | $14,322 | $1,194 | $143,220
+Steiner Ranch, mature WCID | 1.9702% | $13,791 | $1,149 | $137,910
+Sunfield, Buda, active MUDs | 2.7269% | $19,088 | $1,591 | $190,880
+:::
+
+The Buda address costs $4,766 a year more than the Austin address and $5,297 a year more than Steiner Ranch, every year, on the same purchase price. Over a decade with values held flat, the active district address pays roughly $47,700 more in carrying cost than the no district address. In reality values do not hold flat, and because the MUD line is ad valorem, that gap compounds with every reappraisal.
+
+Now translate the rate gap into buying power, because that is how it actually hits your budget. Assume 20 percent down and a 6.5 percent 30 year mortgage, taxes escrowed, insurance and HOA set aside. The all in principal, interest, and tax payment on the $700,000 Austin address runs about $4,733 a month. To hit that same $4,733 in Sunfield's 2.7269 percent stack, your purchase price has to drop to roughly $646,000. That 0.68 point rate difference just cost you about $54,000 of house, or 7.7 percent of your budget, before you ever toured a property. This is why quoting a list price without the jurisdiction stack is quoting half a number.
+
+## Worked Example: The PID Payoff Decision
+
+PIDs invert the analysis because the obligation is fixed and killable. Take a Whisper Valley lot at the top of the 2025 assessment range, $2,004 a year, about $167 a month, on a 30 year schedule. Left alone, that is $60,120 of nominal payments over the life of the assessment, and the line survives every refinance and every appreciation cycle until the schedule ends.
+
+Because Texas law allows a lump sum payoff at any time, that assessment is also a negotiating instrument. Any owner or buyer can request a payoff quote from the PID administrator, in the Austin area typically P3Works or MuniCap. Now compare two ways to spend the same seller concession at closing on a financed purchase at 6.5 percent with 20 percent down:
+
+A $30,000 price reduction lowers the loan by $24,000 and cuts the payment by about $152 a month, and your tax bill barely moves. A seller funded PID payoff in the same ballpark deletes the entire $167 a month assessment, permanently, records a lien release, and hands your future buyer a home with no PID line at all.
+
+Dollar for dollar, the payoff usually beats the price cut for a financed buyer, and it carries two bonuses the price cut cannot match. First, lenders count the PID installment in your escrow and debt to income math, so removing it improves qualification, not just cash flow. Second, homes with no remaining PID are simply easier to resell, because the next buyer's agent does not have to explain a 20 year schedule at the kitchen table. Sellers in PID communities should also know the inverse: proactively quoting the payoff and offering to clear it at closing converts a disclosure liability into a closing tool.
+
+One caution: exemptions never touch a PID. The new $140,000 school homestead exemption Texas voters approved in November 2025 is real money on the school line, but it does nothing to a PID assessment, and generally nothing to a MUD line either, since MUDs typically extend no general homestead exemption.
+
+## Your Disclosure Rights: The Two Notices Texas Owes You
+
+Texas does not leave district membership to buyer diligence alone. Two statutes put the burden on the seller, with teeth.
+
+For MUDs, Section 49.452 of the Texas Water Code requires anyone selling property inside a district to deliver a written Notice to Purchaser before a binding contract is signed, or as an addendum at execution. The notice must state the district's tax rate, its outstanding bonded debt, and any standby fee. Both parties sign it, and at closing a fresh copy with current information is executed, acknowledged, and recorded in the county deed records. If the seller never delivers the notice, the buyer can terminate the contract at any time up to and including the day of closing. Miss it entirely and the buyer can pursue damages, though that suit must be filed within 90 days after receiving the first district tax notice or within four years of the sale, whichever comes first. This applies to every conveyance in a district, resale and new construction alike.
+
+For PIDs, the Legislature leveled the field in 2021 with HB 1543, which rewrote Property Code Section 5.014 to impose substantially the same duties and penalties on PID sellers that MUD sellers already carried, and TREC promulgated a dedicated PID addendum for the contract. A home inside both a MUD and a PID requires two separate notices, each with its own termination consequence. If you are buying and neither notice has appeared by the time you are reviewing a contract in a master planned community, that is not a paperwork quirk, that is leverage.
+
+Verifying district status yourself takes five minutes and should happen before the first showing, not after the option period starts:
+
+1. Pull the address on the county appraisal district site, TCAD, WCAD, or Hays CAD, and read the taxing entities panel. Any line containing MUD, WCID, PID, FWSD, or Improvement District is your answer. Small ESD lines, usually $0.06 to $0.10 for emergency services, are normal county fringe items, not development districts.
+2. Cross check the adopted rate on the county Truth in Taxation portal, which lists every district's current and historical rates.
+3. For MUD details, the TCEQ water district database lists every district's contact and its filed Notice to Purchaser form.
+4. For PIDs, the creating city posts the service and assessment plan, and the administrator will quote the remaining balance on any lot on request.
+
+## Exemptions, Deductions, and the SALT Cap
+
+The tax treatment of the two instruments diverges, and the difference is worth real money at Austin price points.
+
+A MUD tax is an ad valorem property tax, and it is generally deductible on a federal return like the rest of the property tax bill, subject to the SALT cap. That cap matters more than it used to: federal legislation passed in July 2025 raised the state and local tax deduction cap from $10,000 to $40,000 beginning with the 2025 tax year, with the benefit phasing down for incomes above roughly $500,000 and the cap scheduled to revert at the end of the decade. Since Texas has no state income tax, Austin homeowners can point the entire cap at property taxes, which means a household that was silently eating $8,000 of nondeductible property tax under the old cap may now deduct its full bill, MUD line included.
+
+A PID assessment plays by different rules. The IRS treats assessments for local benefits that increase your property's value, streets, sidewalks, water mains, sewer lines, the exact things a development PID finances, as additions to your home's cost basis, not as deductible taxes. Only the portion of an assessment attributable to maintenance, repair, or interest is deductible, and only if the administrator's statement breaks it out. If you cannot document the split, none of it is deductible. Translation: the MUD line usually shrinks your April bill, the PID line usually does not, and anyone comparing a MUD community to a PID community on gross annual cost alone is comparing pre tax apples to after tax oranges. Confirm your specific treatment with a CPA, since service and assessment plans vary.
+
+## How Echelon Property Group Underwrites a District
+
+After 200 plus transactions across Travis, Williamson, and Hays counties, this is the checklist Echelon Property Group runs on every district property, buy side or list side.
+
+1. Pull the jurisdiction stack before the first showing. The full taxing entity list gets screened on every candidate property before anyone drives anywhere. A list price is not a cost of ownership, and a 0.7 point rate difference moves the real budget by high five figures at Austin prices.
+2. Price the district at exit, not just at entry. A new district at $0.95 is a bet that the maturity curve will do its work by the time you sell. A mature district at $0.14 is a finished product. Both can be right, but they are different purchases and they get underwritten differently.
+3. Never trust the model home tax quote. Builder information sheets routinely show a section's oldest or lowest rate, or a rate captured before improvements hit the roll. The only number that counts is the current adopted rate for the specific section and lot, verified on the county portal. Santa Rita Ranch's own developer materials quote 2.5 to 3.1 percent depending on section, while third party 2025 data shows 2.22 to 2.58 by neighborhood, and that spread within one community is exactly the point.
+4. Work the PID payoff as a closing instrument. Buyers should request the payoff quote during the option period and negotiate it like a repair item. Sellers should quote it before listing and decide in advance whether clearing it is part of the pricing strategy.
+5. Underwrite investments at the full stacked rate. District taxes hit hardest at entry level price points, where rents do not scale with the tax line. A 2.7 percent stack on a $450,000 rental is $12,300 a year of pure carry before insurance, and it is the difference between a deal that cash flows and one that quietly does not. The migration corridors covered in [where Austin homeowners are moving](/blog/where-austin-homeowners-are-moving) are precisely the corridors where district stacks run highest, so the county arbitrage only works if the district line is in the model.
+
+One more note for the luxury map. Most of the core west Austin luxury inventory, Tarrytown, Pemberton Heights, Old Enfield, and the established heart of Westlake, predates the district era entirely, one structural reason effective carrying costs there compare better than sticker rates suggest, as covered in [the most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin). The exceptions sit on the Hill Country edge, where luxury sections like the Serene Hills defined area of WCID 17 still carry a $0.51 district line. At $2 million and up, that single line is over $10,000 a year, which is why [buying a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) starts with the tax stack, and why raw acreage buyers weighing well and septic against a district connection should read the infrastructure math in [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country).
+
+## Frequently Asked Questions
+
+:::faq
+Q: What is a MUD tax in Texas?
+A: A MUD tax is an additional property tax levied by a Municipal Utility District, a political subdivision created to finance water, sewer, drainage, and road infrastructure in areas without city services. It is an ad valorem tax, typically $0.25 to $1.50 per $100 of assessed value, collected on your county tax bill and used to repay the district's infrastructure bonds.
+
+Q: How much do MUD taxes add in the Austin area?
+A: On the district line alone, $1,250 to $7,500 a year on a $500,000 home depending on the district's rate. In total stack terms, active district communities like Sunfield in Buda carried a combined 2.7269 percent rate for 2025, versus roughly 2.05 percent inside Austin city limits, a gap of about $4,800 a year on a $700,000 home.
+
+Q: What is the difference between a MUD and a PID?
+A: A MUD levies an ad valorem tax that rises with your appraised value and has no fixed end date. A PID levies a fixed assessment per lot on a locked 20 to 40 year schedule that does not change with value and can be paid off in a lump sum at any time. MUD taxes are generally federally deductible as property tax, while the capital portion of a PID assessment is not.
+
+Q: Do MUD taxes ever go away?
+A: The rate declines as the district's bonds retire, but the tax itself generally continues for operations unless a city annexes the district. Around Austin the maturity curve is dramatic: new districts like Pilot Knob MUD 4 and 5 taxed at $0.95 per $100 in 2025, while the mature Steiner Ranch defined area of WCID 17 was down to $0.1396.
+
+Q: Can I pay off a PID assessment early?
+A: Yes. Texas law allows a lump sum payoff at any time. Request a payoff quote from the PID administrator, pay it, and the county records a lien release and the line disappears from future bills permanently. Payoffs can also be negotiated into a purchase contract as a seller funded closing item.
+
+Q: Are MUD taxes and PID assessments tax deductible?
+A: MUD taxes generally are, as ad valorem property taxes within the federal SALT cap, which 2025 legislation raised to $40,000 with a phase down at higher incomes. PID capital assessments generally are not deductible; the IRS treats them as additions to cost basis, with only documented maintenance, repair, or interest portions deductible. Confirm specifics with a CPA.
+
+Q: What disclosures is a buyer owed in a MUD or PID?
+A: Sellers in a MUD must deliver a statutory Notice to Purchaser under Water Code Section 49.452 before contract, stating the district's tax rate, bonded debt, and any standby fee, and a current copy is recorded at closing. Sellers in a PID owe a parallel notice under Property Code Section 5.014. If either notice is missing, the buyer can terminate the contract at any point up to closing.
+
+Q: How do I find out if a house is in a MUD or PID?
+A: Pull the address on the county appraisal district website and read the taxing entities panel. Any line containing MUD, WCID, PID, or Improvement District confirms it. Verify the current adopted rate on the county's Truth in Taxation portal, and for PIDs request the remaining assessment balance from the district administrator before you write an offer.
+:::
+
+## References
+
+- [LegalClarity, What Are MUD Taxes in Texas and How Do They Work](https://legalclarity.org/what-is-a-mud-tax-in-texas-and-how-does-it-work/)
+- [LegalClarity, What Is a PID in Texas and How Do Assessments Work](https://legalclarity.org/what-is-a-public-improvement-district-pid-in-texas/)
+- [CalcLogix, Texas MUD Tax Calculator 2026](https://calclogix.com/calculators/texas-mud-tax-calculator)
+- [The CLR Sales Group, MUD Taxes in Austin, Texas](https://www.theclrsalesgroup.com/blog/2026/5/6/mud-taxes-in-austin-texas-the-hidden-cost-every-new-construction-buyer-needs-to-know)
+- [Neuhaus Realty Group, MUDs, PIDs and Special Districts in Austin 2026](https://neuhausre.com/guides/mud-pid-special-districts-guide-austin/)
+- [Texas National Title, 2025 Central Texas Tax Rates](https://www.texasnationaltitle.com/wp-content/uploads/2023/01/CentralTexasTaxRates.pdf)
+- [Eleven Oaks Realty, Steiner Ranch Neighborhood Guide](https://www.austinrealestatehomesblog.com/northwest-austin/steiner-ranch/)
+- [Eleven Oaks Realty, Travisso Neighborhood Guide](https://www.austinrealestatehomesblog.com/leander/travisso/)
+- [Eleven Oaks Realty, Sunfield Neighborhood Guide](https://www.austinrealestatehomesblog.com/buda/sunfield/)
+- [Eleven Oaks Realty, Santa Rita Ranch Neighborhood Guide](https://www.austinrealestatehomesblog.com/liberty-hill/santa-rita-ranch/)
+- [Santa Rita Ranch, Community FAQs](https://santaritaranchaustin.com/frequently-asked-questions/)
+- [Easton Park, Community FAQ and tax rates](https://www.eastonparkatx.com/faq/)
+- [Whisper Valley, The Benefits of a PID](https://www.whispervalleyaustin.com/the-benefits-of-a-pid/)
+- [Travis County WCID No. 17, Rates and Fees](https://www.wcid17.org/rates-fees/)
+- [FindLaw, Texas Water Code Section 49.452](https://codes.findlaw.com/tx/water-code/water-sect-49-452.html)
+- [Texas Real Estate Research Center, Clear as MUD](https://trerc.tamu.edu/article/clear-as-mud/)
+- [Texas Legislature, HB 1543 Bill Analysis (87R)](https://capitol.texas.gov/tlodocs/87R/analysis/pdf/HB01543E.pdf)
+- [City of Austin, Downtown Public Improvement District](https://www.austintexas.gov/financial-services/austin-downtown-public-improvement-district)
+- [Community Impact, Austin ISD adopts lower tax rate for 2025-26](https://communityimpact.com/austin/southwest-austin-dripping-springs/education/2025/09/30/austin-isd-adopts-lower-tax-rate-for-2025-26-homeowners-could-see-savings/)
+- [Ballard Property Tax Protest, Austin Property Tax Rate 2025](https://www.ballardpropertytaxprotest.com/post/austin-property-tax-rate)
+- [Texas Tax Calculator, Austin Property Tax 2026](https://texastaxcalculator.com/property-tax/austin)
+- [Williamson County, Tax Rates and District Worksheets](https://www.wilcotx.gov/760/Tax-Rates)
+- [Hays County, Truth in Taxation](https://www.hayscountytx.gov/truth-in-taxation)
+- [Old Republic Title, Understanding PUDs, MUDs and PIDs in Texas](https://www.oldrepublictitle.com/media/u2vlpqo4/texas__understanding_puds_muds__pids_08092023.pdf)
+- [Destination North Texas, PID payoff mechanics](https://destinationnorthtexas.com/pid-texas/)
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
+  },
+
   {
     id: "austin-adu-rules-2026",
     title: "Austin ADU Rules in 2026: What HOME Lets You Build, What It Costs, and When the Math Actually Works",

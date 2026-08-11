@@ -651,7 +651,7 @@ Q: Can I sell an ADU separately from the main house in Austin?
 A: Yes, through a Texas condominium regime that gives each unit its own deed, or on qualifying lots through a HOME Phase 2 subdivision that creates separate fee-simple small lots. Both paths add legal, survey, and documentation costs, and condo-regime units can involve extra lender and appraisal friction, so build that into pricing.
 :::
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with over $150 million in career sales across 200+ transactions, including luxury residential, multifamily, and land development deals across Travis, Williamson, and Hays counties. This article is general information about city code and market data, not legal or tax advice. Verify current rules and fees with the City of Austin before acting.`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with over $155 million in career sales across 200+ transactions, including luxury residential, multifamily, and land development deals across Travis, Williamson, and Hays counties. This article is general information about city code and market data, not legal or tax advice. Verify current rules and fees with the City of Austin before acting.`,
   },
 
   {
@@ -2011,7 +2011,7 @@ Meanwhile, an active ag valuation on that same tract could hold annual carrying 
 
 ## The Part Nobody Puts in a Guide: The Best Tracts Never Hit the Market
 
-Here is what eleven years and $150 million in closed volume have taught me about Central Texas land: the MLS shows you the inventory that has to advertise. Legacy tracts, assemblage opportunities, and the properties with the water, the access, and the ag history already solved tend to trade quietly, seller to buyer, through relationships. The overwhelming majority of my career volume has come through [off-market and private channels](/blog/off-market-homes-austin), and land is the most off-market asset class of all. Nobody puts a sign on the family ranch. The same dynamic governs the residential side, where [Austin's most expensive neighborhoods](/blog/most-expensive-neighborhoods-in-austin) trade quietly at the top end.
+Here is what eleven years and $155 million in closed volume have taught me about Central Texas land: the MLS shows you the inventory that has to advertise. Legacy tracts, assemblage opportunities, and the properties with the water, the access, and the ag history already solved tend to trade quietly, seller to buyer, through relationships. The overwhelming majority of my career volume has come through [off-market and private channels](/blog/off-market-homes-austin), and land is the most off-market asset class of all. Nobody puts a sign on the family ranch. The same dynamic governs the residential side, where [Austin's most expensive neighborhoods](/blog/most-expensive-neighborhoods-in-austin) trade quietly at the top end.
 
 That Southeast Austin assemblage I mentioned did not exist as a listing. We created the deal parcel by parcel, seller by seller, through the broker network, then spent nine months in due diligence proving out water, zoning, and soils. That is the actual job. If you are serious about Hill Country acreage, whether it is a 10-acre homesite with a wildlife plan or a development-scale assemblage, the search should start before the inventory goes public.
 
@@ -2461,7 +2461,7 @@ Q: Should I sell an inherited house off market?
 A: It fits more often than not. Estates typically value privacy, as-is terms, and a flexible closing over squeezing out the last dollar of exposure, and inherited homes are one of the largest sources of legitimate off-market inventory in Austin. The honest tradeoff is exposure versus certainty. Get a real valuation first, then decide with full information rather than defaulting to either path.
 :::
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with more than $150 million in career sales across 200 plus transactions. The majority of his transaction volume has come through private and off-market channels, including estate and inherited property sales. This article is general information, not legal or tax advice. Consult a Texas probate attorney and a CPA about your specific situation.
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with more than $155 million in career sales across 200 plus transactions. The majority of his transaction volume has come through private and off-market channels, including estate and inherited property sales. This article is general information, not legal or tax advice. Consult a Texas probate attorney and a CPA about your specific situation.
 
 :::cta-anchor
 :::
@@ -2745,7 +2745,7 @@ Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonproperty
     imageAlt: "Modern Rollingwood, Austin luxury home with standing-seam metal roof, floor-to-ceiling glass, and infinity pool overlooking the Hill Country",
     content: `Austin is running two housing markets at once. Citywide, the median price has been drifting down for over a year and now sits in the mid $500Ks. West of MoPac, the luxury corridor never got the memo. Westlake area medians are up year over year, Eanes ISD neighborhoods keep absorbing inventory, and the top of the market keeps printing eight figure sales that most buyers never see listed anywhere.
 
-That last part matters more than any ranking. After 11 years and more than $150 million in closed volume, every transaction over $2 million I have personally closed traded entirely off the MLS. So when you read published medians for the neighborhoods below, understand that they are a floor, not a ceiling. The most significant sales in these markets often happen privately, between represented parties, before a sign ever goes in the yard.
+That last part matters more than any ranking. After 11 years and more than $155 million in closed volume, every transaction over $2 million I have personally closed traded entirely off the MLS. So when you read published medians for the neighborhoods below, understand that they are a floor, not a ceiling. The most significant sales in these markets often happen privately, between represented parties, before a sign ever goes in the yard.
 
 Here is where Austin's wealth actually lives in 2026, what it costs to join, and how the real market works behind the published numbers.
 
@@ -12424,7 +12424,7 @@ If you are weighing a move up in 2026, what your current home nets, what the tax
 
 ## About the Author
 
-Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas (brokered by eXp Realty), with 11+ years in Central Texas real estate and more than $150 million in closed volume across 200+ transactions. He holds the CLHMS designation as a Guild member of the Institute for Luxury Home Marketing, along with GRI and ABR. His practice centers on private and off-market transactions across Austin's western luxury corridor, and every deal over $2 million he has closed has traded entirely off-MLS. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
+Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas (brokered by eXp Realty), with 11+ years in Central Texas real estate and more than $155 million in closed volume across 200+ transactions. He holds the CLHMS designation as a Guild member of the Institute for Luxury Home Marketing, along with GRI and ABR. His practice centers on private and off-market transactions across Austin's western luxury corridor, and every deal over $2 million he has closed has traded entirely off-MLS. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
     author: "Taylor Sherwood",
     date: "2026-08-10",
     readTime: "13 min read",

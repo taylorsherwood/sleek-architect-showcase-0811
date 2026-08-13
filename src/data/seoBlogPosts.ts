@@ -152,8 +152,248 @@ const blogAustinAduRules2026 = blogAustinAduRules2026Asset.url;
 
 import blogMudPidTaxesAustin from "@/assets/blog/mud-pid-taxes-austin.jpg";
 
-// Build marker: ensure new posts ship in bundle (v9)
+import blogDowntownAustinCondos2026Asset from "@/assets/blog/downtown-austin-condos-2026-hero.webp.asset.json";
+const blogDowntownAustinCondos2026 = blogDowntownAustinCondos2026Asset.url;
+
+// Build marker: ensure new posts ship in bundle (v10)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "downtown-austin-condos-2026",
+    title: "Downtown Austin Condos in 2026: Texas Built Its Tallest Tower and Put Nothing in It for Sale",
+    metaTitle: "Downtown Austin Condos 2026: Prices, HOA Fees, and the Waterline Effect",
+    excerpt: "Texas built its tallest tower and put zero units up for sale. Downtown Austin condo prices, HOA fees by building, worked carry math, and why the resale market just became the only game in town.",
+    author: "Taylor Sherwood",
+    date: "2026-08-12",
+    readTime: "20 min read",
+    category: "MARKET INSIGHTS",
+    image: blogDowntownAustinCondos2026,
+    heroImage: blogDowntownAustinCondos2026,
+    imageAlt: "Downtown Austin skyline at dusk with the Waterline tower rising above the Rainey Street district near Lady Bird Lake",
+    content: `This month, the tallest building in Texas opens its doors in downtown Austin. Waterline rises 1,025 feet and 74 stories above the spot where Waller Creek meets Lady Bird Lake, and when it topped out in August 2025 it took a title Houston had held since 1981. The 1 Hotel Austin, 252 rooms of it, starts welcoming guests in August 2026. The tower holds 352 residences with lake views most Austinites will never see from their own windows.
+
+Here is the detail that should reframe how you think about the entire downtown condo market: not one of those 352 residences is for sale. Every unit in the tallest residential address in the state is a rental. So is nearly everything else under a crane downtown.
+
+That is not an accident. It is the market telling you something loudly, and if you own a downtown condo, want to buy one, or are trying to sell one right now, you should listen closely. This article lays out the actual numbers behind Austin's downtown condo market in 2026: what units are really trading for, what ownership actually costs per month, which buildings command what, and why the frozen construction pipeline quietly changes the math for everyone holding a deed.
+
+:::callout
+**The short version:** The tallest tower in Texas is a rental building. That is the whole story in one sentence. Downtown resale condos trade at a $680 median per square foot while new construction asks about $1,208, no for-sale tower is under construction, and 78701 carries 13.1 months of inventory with only 40.6 percent of listings actually closing.
+:::
+
+## Why Waterline Leases Instead of Sells
+
+Waterline was developed by Lincoln Property Company and Kairoi Residential at a reported cost of roughly $520 million. It is a 1.5 million square foot vertical city: more than 700,000 square feet of Class AA office space, the 1 Hotel, restaurants, and those 352 luxury apartments, with residential move-ins slated for fall 2026.
+
+When a development team spends half a billion dollars on the most prominent residential real estate in the state and chooses to lease every single door rather than sell a single one, they are making a statement about where for-sale condo pricing sits relative to construction costs. Developers are not sentimental. If they could sell new downtown condos profitably at today's resale prices, they would.
+
+They cannot, and the rest of the pipeline confirms it. Luminary, a planned 35 story tower with roughly 300 luxury condos at West 14th and Guadalupe, paused both construction and its sales launch in December 2025, with the developer citing the need for more stable market conditions against a record inventory of roughly 4,240 condo units across the Austin market. Wilson Tower, once pitched at 1,035 feet as a challenger for the tallest-in-Texas crown, has been indefinitely delayed since early 2025. The Modern Austin Residences, the 56 story condo tower at 610 Davis Street in the Rainey district, delivered in 2025 and now stands as the last for-sale high rise anyone has completed downtown, with nothing behind it under construction.
+
+A high rise takes three to four years from groundbreaking to keys. Even if a condo tower broke ground tomorrow, no meaningful new for-sale inventory arrives downtown before roughly 2030. The doors that exist today are, for practical purposes, all the doors there will be for years.
+
+Hold that thought while we look at what those doors are trading for.
+
+## The Numbers Nobody Prints in the Sales Gallery
+
+The 78701 zip code is downtown Austin, and its residential stock is almost entirely condominium. Here is the trailing 12 months through July 31, 2026, straight from Unlock MLS data.
+
+:::compare-table
+Metric | Trailing 12 months (Aug 2025 to Jul 2026)
+Median sale price | $633,750
+Average sale price | $930,410
+Median price per square foot | $680
+Average price per square foot | $709
+Median days on market | 95
+Average days on market | 152
+New listings | 573
+Closed sales | 224
+Expired listings | 135
+Withdrawn listings | 207
+Listings with price reductions | 353
+Success rate (listings that actually closed) | 40.6%
+Months of inventory | 13.1
+Final list vs original ask | 4.91% lower
+Sale price vs final list | 5.35% lower
+:::
+
+Read that table slowly, because three things in it explain the entire market.
+
+First, the correction is real and it is not small. The median price per square foot in 78701 was $791 in the trailing year ending March 2025. Today it is $680. That is a 14 percent decline in the cleanest, most mix-resistant measure we have, in roughly sixteen months. The median sale price tells an even sharper story: $780,000 in the trailing year ending November 2024, $633,750 now, a slide of almost 19 percent. Year over year, the median is down about 5.1 percent, so the fall is decelerating, but nobody should pretend it has not happened.
+
+Second, failure is the modal outcome for a downtown listing. In the last twelve months, 224 listings closed while 342 expired or were withdrawn. For every two condos that sold, roughly three listings died on the vine, publicly, with their full price cut history archived forever on every portal. The market recorded 353 price reductions against 224 closed sales. Downtown Austin cut prices more times than it closed transactions.
+
+Third, the discount stacks. The typical listing that did sell took a 4.91 percent haircut from its original ask before finding its final list price, then sold another 5.35 percent below that. Sellers who priced to 2022 memories gave up roughly 10 percent in two separate, painful stages, over an average of 152 days. If those numbers rhyme with what we documented in the broader West Austin luxury market, that is because the same physics apply, compressed into a few square miles of vertical inventory. We covered that dynamic in detail in our guide to [why luxury homes sit in Austin](/blog/luxury-home-not-selling-austin).
+
+At 13.1 months of inventory, downtown sits more than twice as deep into buyer's market territory as the six month line that marks balance. This is the softest major submarket in the metro, and it is not close.
+
+## Two Markets Wearing One Zip Code
+
+Here is where the medians start lying to you, and why building-level and floor-level knowledge matters more downtown than anywhere else in the city.
+
+Austin's condo market above $1 million has traded at a median of roughly $572 per square foot over the trailing 24 months, across 223 sales. The market above $2 million, which is overwhelmingly the downtown high rise trophy tier, traded at roughly $1,142 per square foot across just 55 sales in that same window.
+
+Sit with the second number. Fifty five sales above $2 million in two years is barely more than two closings per month across the entire metro. That is the actual liquidity of the trophy tier: penthouse and near-penthouse floors in perhaps a dozen buildings, trading at double the per foot price of the tier below, to a buyer pool you could fit in one elevator lobby.
+
+So when someone tells you downtown condos are down 14 percent, the honest answer is: which downtown? The commodity stack, the interior facing two bedroom on floor nine, has been repriced hard and competes with 236 active listings at any given moment. The corner unit on floor 50 with the unobstructed lake view competes with almost nothing, trades rarely, and holds a per foot pricing world of its own. Both statements are true simultaneously, and the spread between them is where deals are won and lost.
+
+## The Buildings, With Real Numbers
+
+Downtown Austin's for-sale high rise stock is a short list of names. Here is how the marquee buildings stack up on delivery year, size, recent pricing, and monthly HOA dues.
+
+:::compare-table
+Building | Delivered | Residences | Recent pricing | Monthly HOA
+360 Condos | 2007 | 430 | $460K to $1.95M | About $909 average
+The Austonian | 2010 | About 180 | Roughly $550 to $900+ per SF, penthouses above $1,000 | $0.85 to $1.10 per SF (about $1,100 to $4,400)
+Four Seasons Residences | 2010 | 147 | Roughly $2M to $12M | $1.25 to $1.75 per SF (about $2,000 to $6,000)
+Seaholm Residences | 2016 | About 280 | Average unit around $885K | Roughly $800 to $1,500+
+The Independent | 2019 | 370 | High $400s to $2M+ | Roughly $800 to $1,500+
+70 Rainey | 2019 | 164 | Wide band by floor and view | Comparable luxury band
+Natiivo Austin | 2021 | About 250 | Investor pricing, short term rental format | Higher, reflects hospitality operations
+The Modern Austin Residences | 2025 | 319 | Active asks average $1,208 per SF, median list $1.48M | New tower band
+:::
+
+A few notes that matter more than the table.
+
+The Austonian, 56 stories and 683 feet on Congress Avenue, remains the reference asset for non-hotel luxury: a stable, heavily owner occupied building where the penthouse floors were sold as customizable shell space and still trade above $1,000 per foot. Four Seasons Residences is a different product entirely, 147 homes with hotel services attached, which is why its dues run the highest downtown and why its resale floor starts around $2 million. The Independent, at 58 stories the tallest all-residential building in the city, spans the widest price range, from high $400s starter units to $2 million plus corners. The W Austin Residences occupy similar hotel-branded territory to the Four Seasons with a Second Street address. And Natiivo was purpose built for short term rentals, a fact that got materially more valuable after the city's rewritten ordinance and the July 1, 2026 platform enforcement date we broke down in our [Austin short term rental rules guide](/blog/austin-short-term-rental-rules-2026), because legally rentable downtown doors are now a scarce, licensed commodity.
+
+Now look at the last row again. The Modern's active listings are asking an average of $1,208 per square foot while the surrounding resale market's median is $680. That 78 percent gap between new build asks and resale reality is the single most important spread in this article, and we will come back to it.
+
+## What HOA Dues Actually Buy, and What They Hide
+
+Nothing scares a first time high rise buyer like a $2,400 monthly HOA line, and nothing gets misjudged more.
+
+Run the fee as dollars per square foot per month and the downtown market clusters tightly: roughly $0.85 to $1.10 at The Austonian, $1.25 to $1.75 at the Four Seasons Residences where hotel services ride along, and a broad $800 to $1,500 monthly band across the newer non-hotel towers. Against that fee, a house owner self-insures the same line items one contractor invoice at a time: roof, exterior, landscaping, pool, gym membership, security, structural insurance, water, trash, and in most buildings a concierge who accepts every package you will ever order. On a per foot basis, a well run tower is not dramatically more expensive to occupy than a well maintained Tarrytown house. It is simply honest about the cost, twelve months a year, in one line.
+
+What the fee can hide is the part that deserves your diligence. Three questions separate a sound building from a future headache. How funded are the reserves relative to the reserve study, because an underfunded tower eventually sends every owner a special assessment letter. What happened at the last insurance renewal, because high rise premiums repriced sharply across the country after 2021 and a building that ate a 40 percent renewal without adjusting dues is quietly draining its reserves. And what is the investor to owner-occupant ratio, because buildings that tip too far toward investors, hotel operations, or active litigation can become non-warrantable, which means conventional financing dries up, buyers need portfolio loans with bigger down payments and higher rates, and the resale buyer pool shrinks exactly when you need it. Under Texas Property Code Chapter 82, every condo resale comes with a resale certificate disclosing dues, reserves, assessments, and litigation. Read it like an underwriter, because it is the building's balance sheet, and downtown you are not just buying a unit, you are buying 1/180th of a corporation.
+
+## Worked Example One: The True Monthly Cost of a $1.5 Million Downtown Condo
+
+Numbers on paper beat vibes, so here is the full carry stack on a representative purchase: a $1.5 million resale unit, about 1,900 square feet at $789 per foot, bought as a primary residence with 30 percent down. Assumptions are stated so you can swap in your own.
+
+:::compare-table
+Line item | Assumption | Monthly
+Principal and interest | $1,050,000 jumbo loan, 30 year fixed at 6.75% | $6,810
+Property taxes | 2025-26 central Austin stack of about 2.1%, roughly 1.95% effective with homestead exemption | $2,438
+HOA dues | $1.00 per SF on 1,900 SF | $1,900
+HO-6 condo insurance | Interior and contents coverage | $150
+Total monthly carry | | $11,298
+:::
+
+Two footnotes with teeth. First, the 2026 conforming loan limit is $832,750, so a $1.05 million note is jumbo money with jumbo underwriting, and jumbo quotes this month have run roughly 6.7 to 6.9 percent, which is why we modeled 6.75 percent. Second, in month one only about $904 of that $11,298 builds equity. The other $10,394 is interest, taxes, dues, and insurance. That is the real cost of occupying the unit, and it is the number to weigh against renting a comparable residence in the new rental towers, where luxury one bedrooms start around $2,200 to $3,000 and a true 1,900 square foot luxury floor plan can run well into five figures with far less availability than the marketing suggests.
+
+The honest conclusion cuts both ways. On pure monthly cash flow, renting downtown can beat owning right now. What ownership buys is basis: a price 14 percent off the recent per foot peak, in a market where the replacement pipeline is frozen and new build asks sit 78 percent higher per foot. You are paying a monthly premium to own the scarce version of an asset the market has stopped manufacturing. Whether that trade makes sense depends on your horizon, and five plus years is the honest minimum.
+
+## Worked Example Two: What Mispricing Costs a $2 Million Seller
+
+Flip the table to the seller side, because the same data set prices the mistake most downtown sellers are currently making.
+
+The trailing year says the typical successful listing found its final list price 4.91 percent below its original ask, then closed 5.35 percent below that. Apply the sequence to a unit that comes out at $2,000,000: the ask drifts down to $1,901,800, then closes near $1,800,100. That is $199,900 surrendered in two stages, in public, while the portal archives every cut.
+
+:::compare-table
+Cost of starting at the 2022 number | Amount
+Original ask | $2,000,000
+Reduction to final list, 4.91% | ($98,200)
+Closing discount from final list, 5.35% | ($101,700)
+Carry during 152 days on market, about $6,093 per month for five months | ($30,500)
+All-in cost before commission | About $230,400
+Share of the asset | Roughly 11.5%
+:::
+
+The carry line is not theoretical. A 2,000 square foot unit at $1.10 per foot in dues is $2,200 a month. Taxes at the full 2.1 percent non-homestead rate on a $2 million valuation run about $3,493 a month, the common case since many downtown sellers have already claimed homestead elsewhere. Insurance and utilities add $400. We ran the same physics for detached luxury in [why luxury homes sit in Austin](/blog/luxury-home-not-selling-austin) and for the full closing cost stack in [what it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin). Vertical inventory obeys the same law, faster, because 236 active competitors sit in a walkable radius and every buyer's agent can tour six of them before lunch.
+
+There are exactly two rational responses to that math. Price to the 2026 tape on day one, or do not go to the public tape at all. More on the second option shortly.
+
+## Four Theses for Anyone Holding, Buying, or Circling Downtown
+
+**Thesis one: the supply curve is frozen, and frozen supply eventually meets normal demand.** The Modern was the last for-sale delivery. Luminary paused before selling a unit. Wilson Tower is indefinitely shelved. Every crane still standing downtown is building rentals or offices. With a three to four year construction cycle, the earliest plausible new for-sale door is around 2030, and that assumes someone starts soon, which the record 4,240 unit inventory overhang argues against. Buyers negotiating today are negotiating against a fixed set of doors. That does not guarantee appreciation, but it removes the classic condo killer, the next shinier tower delivering 300 discounted units across the street, from the board for the rest of the decade.
+
+**Thesis two: resales are trading far below replacement, which is the closest thing real estate has to a margin of safety.** New construction at The Modern asks an average of $1,208 per square foot. The resale market's median is $680. Nobody can acquire downtown land, carry it, and deliver a new tower at resale pricing in 2026, which is precisely why nobody is trying. When an asset trades this far under the cost to manufacture its replacement, the downside is cushioned by arithmetic rather than optimism.
+
+**Thesis three: the rental skyscrapers are running a free trial program for the ownership stock.** Waterline alone adds 352 top of market residences, and the towers delivered around it since 2024 have added thousands more. Every one of those leases onboards a high income household into vertical living, the trail, the ten minute commute, the building gym at 6 a.m. Some meaningful fraction of those renters will eventually want to own the lifestyle they just test drove, and there is no new for-sale product waiting for them. The existing 8,000 or so for-sale doors downtown are the only exit from that funnel.
+
+**Thesis four: in a 13 month market, the building is the underwrite.** Unit finishes are fixable. A building's reserve position, insurance trajectory, assessment history, litigation file, and investor ratio are not, at least not by you. The spread between a clean, warrantable, well reserved building and a troubled one is the spread between a 95 day sale near ask and membership in the 342 listing graveyard. Downtown due diligence is corporate due diligence, and it is where representation earns its keep.
+
+## The Discretion Problem, and the Off Market Answer
+
+Here is the strategic bind the data creates for downtown sellers, especially above $1.5 million.
+
+The public market currently fails six listings out of every ten. The ones that fail do so with a permanent, timestamped record: the original ask, every reduction, the expiration, the relist. In a vertical market this is worse than it is for houses, because your comps live in your own elevator bank. Every agent and every serious buyer can pull the full history of every unit in your stack in thirty seconds, and a stale listing on floor 22 reprices the identical floor plan on floor 31 whether its owner likes it or not.
+
+Meanwhile the trophy tier trades 55 times in 24 months. When your building has 147 doors and your price tier closes twice a month across the entire metro, blasting the unit onto the portals is not marketing, it is broadcasting your carrying costs to a buyer pool that already knows exactly how long you have been waiting.
+
+This is why the quiet market works differently downtown than almost anywhere else in Austin. Building-level relationships matter: the managers, the concierges, the handful of agents who have actually closed units on the high floors, the owners two lines down who have wanted your corner exposure for years. Private placement lets a seller test a number without printing it, reach the short list of qualified buyers directly, and keep the listing history clean if the timing is not right. Unlock MLS formalized several paths for exactly this in 2026, from office exclusives to delayed marketing Flex Listings, and we mapped all four in our [private listings guide](/blog/private-listings-austin). At Echelon Property Group, the overwhelming majority of transaction volume has come through private opportunities and relationship driven sourcing, and every deal over $2 million the team has ever closed happened entirely off MLS. Downtown, above $1.5 million, that is not a boutique preference. It is the statistically sound response to a 40.6 percent public success rate.
+
+Buyers should read the same paragraph in reverse. If the only inventory you are seeing is the portal inventory, you are seeing the 236 units everyone else sees, minus the floors that never surface publicly at all. The best stacks in the best buildings change hands quietly, and access to that flow is a representation question, not a search filter. Our guide to [buying a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) covers how that access gets built.
+
+## The Bottom Line
+
+Waterline's opening is a genuine civic moment, the tallest building in Texas, and Austin took the crown from Houston after 45 years. But for anyone with money in this market, the tower's real message is in its ownership structure: the smartest institutional capital in the state looked at downtown Austin residential in 2026 and chose rents over sales, because for-sale pricing sits too far below the cost of building anything new.
+
+That leaves the existing stock, repriced 14 percent per foot off its peak, sitting at 13.1 months of inventory, trading at barely half of new build asks, with zero replacement supply arriving before the end of the decade. Sellers who respect the tape, or who skip the public tape entirely, still transact. Buyers with a five year horizon are being offered the scarce version of an asset at a discount to its manufacturing cost. And the 352 renters moving into the sky this fall are the next cycle's buyer pool, touring the lifestyle one lease at a time.
+
+Markets like this one do not announce their turns. They just quietly stop making the thing, and then one day the discount is gone.
+
+:::cta-anchor
+
+Thinking about a downtown purchase, or holding a unit that needs a smarter exit than the portal graveyard? Taylor Sherwood and Echelon Property Group work both sides of Austin's quiet market. Call 512.661.3843 or email taylor@echelonpropertygroup.com.
+
+## Frequently Asked Questions
+
+:::faq
+Q: What is the tallest building in Texas in 2026?
+A: Waterline in downtown Austin, at 1,025 feet and 74 stories. It topped out in August 2025, taking the state title from Houston's JPMorgan Chase Tower, which had held it since 1981. Its 352 residences are rentals, with none offered for sale.
+
+Q: Are downtown Austin condo prices dropping in 2026?
+A: Yes. The 78701 median sale price is $633,750 for the trailing year, down about 5.1 percent year over year, and the median price per square foot has fallen from $791 in early 2025 to $680, a decline of roughly 14 percent. The pace of decline has slowed compared with 2025.
+
+Q: How much are HOA fees in downtown Austin high rises?
+A: Roughly $0.85 to $1.75 per square foot per month at the marquee buildings. The Austonian runs about $0.85 to $1.10 per foot, Four Seasons Residences about $1.25 to $1.75 with hotel services included, 360 Condos averages about $909 per month, and most newer luxury towers land in an $800 to $1,500 monthly band depending on unit size.
+
+Q: Is 2026 a buyer's market for downtown Austin condos?
+A: By every measure. Downtown carries 13.1 months of inventory against the six months that defines balance, listings take a median 95 days to sell, closed sales average about 5.35 percent below final list, and resale pricing sits far below what new construction asks per square foot.
+
+Q: How long does it take to sell a downtown Austin condo?
+A: The median successful listing takes 95 days, the average takes 152, and only about 41 percent of downtown listings actually closed in the trailing year. The rest expired or were withdrawn, which is why pricing to current data on day one, or marketing privately, matters so much.
+
+Q: Why are Austin's new towers apartments instead of condos?
+A: Because the math does not work. Resale condos trade near $680 per square foot while new construction needs asks around $1,200 to pencil, so developers cannot sell new units profitably at market clearing prices. Add construction defect liability and presale financing requirements, and rental towers win. That is why Waterline's 352 residences lease rather than sell, and why the Luminary condo project paused before launching sales.
+
+Q: Which downtown Austin buildings allow short term rentals?
+A: Most downtown condo declarations prohibit or heavily restrict short term rentals. Natiivo Austin was purpose built for them. Under the city's rewritten ordinance, platforms began enforcement on July 1, 2026, licenses do not transfer with a sale, and both the condo declaration and city licensing must permit the use, so verify both in writing before underwriting any rental income.
+
+Q: What should I review before buying in an Austin high rise?
+A: The resale certificate required under Texas Property Code Chapter 82, which discloses dues, reserve funding, special assessments, and litigation. Beyond it, review the reserve study, the most recent insurance renewal, the investor to owner-occupant ratio, and whether the building is warrantable for conventional financing, since any weakness there follows you to your own resale.
+:::
+
+## References
+
+- Unlock MLS via MLS Grid, 78701 residential market statistics, trailing 12 months ending July 31, 2026. Retrieved August 12, 2026.
+- [PRNewswire, 1 Hotel Austin Now Accepting Reservations](https://www.prnewswire.com/news-releases/1-hotel-austin-now-accepting-reservations-302756239.html)
+- [Lincoln Property Company, Waterline project page](https://lpc.com/project/waterline/)
+- [Waterline Austin, project overview and construction timeline](https://waterlineaustin.com/)
+- [Wikipedia, Waterline (Austin) building specifications](https://en.wikipedia.org/wiki/Waterline_(Austin))
+- [KVUE, Texas' tallest tower will soon open to the public](https://www.kvue.com/article/money/economy/boomtown-2040/texas-tallest-tower-soon-open-public-downtown-austin-growth-office-vacancies/269-a4b55e1d-a4b6-49ee-9a57-15cb483576cf)
+- [CultureMap Austin, 1 Hotel Austin opens reservations in city's tallest tower](https://austin.culturemap.com/news/travel/1-hotel-austin-opening-alteno/)
+- [Hotel Management, 1 Hotels sets August debut for 1 Hotel Austin at Waterline Tower](https://www.hotelmanagement.net/development/1-hotels-sets-august-debut-1-hotel-austin-waterline-tower)
+- [The Real Deal, Northland puts Austin condo tower on pause](https://therealdeal.com/texas/austin/2025/12/23/northland-puts-austin-condo-tower-hits-pause/)
+- [KXAN, Downtown condo tower delayed until market conditions improve](https://www.kxan.com/news/local/austin/downtown-condo-tower-delayed-until-market-conditions-improve-2/)
+- [The Real Deal, Austin's Wilson Tower development indefinitely delayed](https://therealdeal.com/texas/2025/03/31/austins-wilson-tower-development-indefinitely-delayed/)
+- [The Keenan Group, Austin Luxury Condo Market](https://thekeenangroup.com/the-source/austin-luxury-condo-market-2025)
+- [The Keenan Group, Four Seasons Residences building profile](https://thekeenangroup.com/luxury-buildings/four-seasons-residences)
+- [ATX Homes, The Austonian HOA fee](https://www.atxhomes.co/the-austonian-hoa/)
+- [Downtown Austin Blog, The Austonian building specifications](https://downtownaustinblog.org/austin-condo-for-sale/austonian/)
+- [Taco Street Locating, Downtown Austin condo review, Four Seasons Residences](https://tacostreetlocating.com/downtown-austin-condo-review-four-seasons-residences/)
+- [HomeCity, The Modern Austin Residences listings snapshot](https://www.homecity.com/the-modern/)
+- [Modern Austin Residences, first look at unit count and delivery timeline](https://modernaustinresidences.com/first-look-downtowns-modern-austin-residences/)
+- [Homes.com, Four Seasons Residences Austin building profile](https://www.homes.com/building/four-seasons-residences-austin-austin-tx/b-jq56y7s85chcj/)
+- [Neuhaus Realty Group, Austin Condo Market 2026](https://neuhausre.com/austin-condo-market-2026-prices-hoa-fees-best-buildings/)
+- [Freddie Mac, Primary Mortgage Market Survey](https://www.freddiemac.com/pmms)
+- [Mortgage News Daily, 30 year jumbo mortgage rate index](https://www.mortgagenewsdaily.com/mortgage-rates/30-year-jumbo)
+- [Bankrate, current mortgage and jumbo rates](https://www.bankrate.com/mortgages/30-year-mortgage-rates/)
+- [Texas Property Code Chapter 82, Uniform Condominium Act](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.82.htm)
+- City of Austin, short term rental ordinance and platform enforcement effective July 1, 2026.
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions, including every deal over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.\`,
+  },
+
   {
     id: "mud-pid-taxes-austin",
     title: "MUD and PID Taxes in Austin: What That Extra Line on the Tax Bill Really Costs",

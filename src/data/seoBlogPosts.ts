@@ -391,7 +391,7 @@ A: The resale certificate required under Texas Property Code Chapter 82, which d
 - [Texas Property Code Chapter 82, Uniform Condominium Act](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.82.htm)
 - City of Austin, short term rental ordinance and platform enforcement effective July 1, 2026.
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions, including every deal over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.\`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions, including every deal over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
   },
 
   {

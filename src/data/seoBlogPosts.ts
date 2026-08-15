@@ -155,8 +155,186 @@ import blogMudPidTaxesAustin from "@/assets/blog/mud-pid-taxes-austin.jpg";
 import blogDowntownAustinCondos2026Asset from "@/assets/blog/downtown-austin-condos-2026-hero.webp.asset.json";
 const blogDowntownAustinCondos2026 = blogDowntownAustinCondos2026Asset.url;
 
-// Build marker: ensure new posts ship in bundle (v10)
+import blogCostToBuildAustinAsset from "@/assets/blog/cost-to-build-a-house-austin-hero.png.asset.json";
+const blogCostToBuildAustin = blogCostToBuildAustinAsset.url;
+
+// Build marker: ensure new posts ship in bundle (v11)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "cost-to-build-a-house-austin",
+    title: "What It Really Costs to Build a Custom Home in Austin in 2026 (And When You Shouldn't)",
+    metaTitle: "Cost to Build a House in Austin (2026): The Real Number",
+    excerpt: "What it actually costs to build a custom home in Austin in 2026: per-square-foot tiers, the full cost stack, tariffs, permits, and when buying beats building.",
+    author: "Taylor Sherwood",
+    date: "2026-08-15",
+    readTime: "16 min read",
+    category: "MARKET INSIGHTS",
+    image: blogCostToBuildAustin,
+    heroImage: blogCostToBuildAustin,
+    imageAlt: "Custom Hill Country style home under construction in Austin with crews framing and stone masonry underway",
+    content: `Here is the number nobody puts on the billboard: a 4,000 square foot full custom home on a Westlake teardown lot pencils out to roughly $4 million all-in right now. Call it $1,000 per square foot once every real line item is counted. Meanwhile, the median home that actually sold in 78746 over the last twelve months traded at $561 per square foot, per Unlock MLS data through July 2026.
+
+Read that again. In much of Austin, existing homes are trading below what it costs to replace them. That is the single most important fact in this article, and it cuts both ways. It means 2026 is a historically strong moment to buy a finished home. It also means the people who build anyway, for the right reasons, will own product that gets scarcer every year the math stays upside down.
+
+This is the full accounting: what construction costs per foot, what the brochure number leaves out, what tariffs and regulation actually add, how Austin's brand-new permit timelines work, and a worked example that shows you the entire stack. Then the honest part: when building still wins.
+
+## Austin construction cost per square foot in 2026
+
+Austin is consistently the most expensive market to build in Texas. Higher land basis, a tight skilled-labor pool, and Hill Country site conditions (rock excavation, steep-slope foundations) push it above Houston, Dallas, and San Antonio. Here is where published 2026 pricing from Austin-area builders converges, for hard construction costs only:
+
+:::compare-table
+Build tier | 2026 cost per SF (hard costs) | 4,000 SF construction cost | What you get
+Production / tract | $160 to $225 | $640K to $900K | Builder's plans, limited selections, volume trades
+Semi-custom | $225 to $325 | $900K to $1.3M | Modified plans, upgraded finishes, some structural choices
+Full custom | $325 to $500 | $1.3M to $2.0M | Your architect, your plans, quality trades, unique lot response
+Luxury custom | $500 to $1,000+ | $2.0M to $4.0M+ | Architectural pedigree, imported materials, complex structural work, estate-level systems
+:::
+
+Two things about this table before you anchor on a number.
+
+First, these ranges have held roughly steady since late 2024, with one exception: tariffs on lumber, steel, cabinets, and imported fixtures added an estimated $10,000 to $25,000 per project starting in early 2026, and builders report an average tariff-driven cost increase of roughly $10,900 per home per NAHB survey data. More on that below.
+
+Second, and far more important: the per-square-foot construction number is only about 60 to 65 percent of your total project cost. The rest is land, site work, design fees, permits, contingency, and the carrying costs of owning a very expensive hole in the ground for a year and a half. Builders quote the 60 percent. You pay the 100 percent.
+
+## The full cost stack: a worked Westlake example
+
+Here is what a real 4,000 square foot full custom build looks like on a 78746 teardown lot in 2026, at $450 per foot hard cost, which is mid-range for true custom work in Eanes ISD:
+
+:::compare-table
+Line item | Cost | Notes
+Lot acquisition (teardown basis) | $1,200,000 | Buildable Westlake teardowns; premium view or creek lots run higher
+Demolition and clearing | $35,000 | Includes asbestos survey on pre-1980s structures
+Site work | $150,000 | Rock excavation, retaining, grading, utility trenching. Limestone is not negotiable
+Hard construction (4,000 SF x $450) | $1,800,000 | Vertical construction only
+Architecture, engineering, geotech, survey | $162,000 | Roughly 9% of hard costs for full custom
+Permits, plan review, tap fees, tree mitigation | $30,000 | City of Austin fees are modest; the cost of regulation is embedded elsewhere
+Pool, spa, outdoor living | $200,000 | Assume every buyer at this level expects it, because they do
+Landscape, hardscape, irrigation | $100,000 | Eanes-appropriate, not builder-grade
+Contingency (10% of hard + site) | $195,000 | Non-negotiable in 2026. Tariff volatility alone justifies it
+Carrying costs, 18 months | $155,000 | Lot property taxes plus construction loan interest on drawn balance
+**All-in total** | **$4,027,000** | **$1,007 per square foot**
+:::
+
+Sensitivity: every $25 per square foot of construction cost moves this total by $100,000. Drop to $400 per foot hard cost and you land near $3.8 million. Push into true luxury spec at $600 and you clear $4.6 million before anyone argues about the range hood.
+
+Now the comparison that matters. The 78746 median resale over the trailing twelve months is $561 per square foot (Unlock MLS via Agent Intel, T12 through July 2026). That median includes plenty of 1980s and 1990s housing stock, so it is not apples to apples. Like-new, recent-vintage luxury resale in Westlake typically trades in the $700s to low $800s per foot at the top of the market. Even against that flattering comp, the build premium is 25 to 35 percent, and you wait 18 to 24 months for the keys.
+
+That is the honest math. Buying the 2021-built home at $3.0 to $3.2 million beats building its twin at $4.0 million, unless the twin is not what you want. We will get to that. If you are weighing the finished-home path, our guide to [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) walks the process, and [the most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin) shows where the per-foot ceilings actually sit.
+
+### The Hill Country version, briefly
+
+Run the same exercise on 5 acres outside Dripping Springs: land at roughly $450,000, well, septic, and power extension adding $90,000 to $130,000, and a 3,500 square foot Hill Country custom at $325 to $375 per foot. All-in you land between $2.1 and $2.3 million, roughly $600 to $660 per finished square foot. The 78620 median resale? $244 per square foot over the trailing twelve months (Unlock MLS via Agent Intel). Nobody builds in the Hill Country to save money. You build because the exact land-and-house combination you want does not exist on the open market. We covered the full acreage cost stack, ag exemptions, and rollback rules in our guide to [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country).
+
+## The $131,734 you cannot see: regulation and tariffs
+
+Two macro forces sit inside every 2026 build budget, and most owners never see either one itemized.
+
+**Regulation.** A June 2026 NAHB study puts the cost of government regulation, meaning code changes, impact and permit fees, development requirements, and the carrying cost of delay, at $131,734 per new single-family home nationally, or 26.4 percent of the average new home price. That burden is up 40 percent in five years, from $93,871 in 2021. Austin's fee schedule itself is not the villain; a residential building permit and plan review typically runs low four figures to low five figures even on a large custom. The regulatory cost hides in engineered requirements, review cycles, and time.
+
+**Tariffs.** The 2025-2026 trade war ran straight through the lumber yard. The timeline, because it explains why your builder's bid has an escalation clause:
+
+:::compare-table
+Date | What happened | Effective duty on Canadian lumber
+Early 2025 | Existing anti-dumping and countervailing duties | 14.5%
+Mid 2025 | Commerce Department more than doubles duties | 35%
+Oct 14, 2025 | Section 232 adds 10% on softwood lumber; cabinet and furniture tariffs announced | ~45%
+Jan 1, 2026 | Kitchen cabinet tariffs double to 50% | ~45% on lumber, 50% on cabinets
+Feb 23, 2026 | Supreme Court strikes down the reciprocal tariff program; Section 232 duties survive | Uncertainty, refund process begins
+Aug 2026 | Revised preliminary rates take effect | ~36% (25.9% AD/CVD plus 10% Section 232)
+:::
+
+The saving grace: framing lumber itself sits around $550 to $590 per thousand board feet, down more than 60 percent from the May 2021 peak of $1,419, so the duty is raising the floor under an otherwise soft commodity. But an AGC-NCCER survey found 43 percent of general contractors had projects canceled, postponed, or scaled back due to tariff-driven material costs. The practical playbook for owners: lock material pricing 4 to 6 months before start, read the escalation clause before you sign it, and treat the 10 percent contingency as spoken for. Also remember Texas charges 8.25 percent sales tax on materials; it is in your builder's number, but it is real money at this scale.
+
+## Permits in 2026: Austin finally sped up
+
+This is genuinely new. Effective July 1, 2026, the City of Austin's Development Services Department cut its published residential review timelines. New construction and additions now carry a 10 business day first-review target, with update submittals at 7 business days. The city also launched an AI Pre-Check beta (powered by Archistar) that screens residential plans for zoning issues before formal submittal, plus a self-certification path for Texas-licensed architects and certified building designers on qualifying projects, and a Small Tree Fee Credit program (June 2026) that rewards preserving trees under 19 inches.
+
+Before you celebrate: the 10 day clock is per review cycle, and most custom homes take two to three cycles. The real timeline driver is which additional reviews your project triggers. For luxury builds, the answer is usually "several":
+
+:::compare-table
+Trigger | Review added | Who it catches
+Structure over 3,600 SF total under roof | Fire review | Essentially every luxury build in the city
+Wildland Urban Interface location | WUI code review | Most of the West Austin corridor
+Trees 19 inches or larger on or adjacent to the lot | Tree ordinance review | Nearly every mature Westlake or Tarrytown lot
+Within 100 feet of a creek centerline | Erosion Hazard Zone review | Creekside and canyon lots
+Structure 45+ years old being demolished | Historic review | Most central Austin teardowns
+Septic on site | OSSF review with Austin Water | Acreage and older West Austin properties
+:::
+
+A clean lot with a responsive design team can permit in 6 to 10 weeks under the new timelines. A steep, treed, creekside lot in the WUI, which is to say the exact lot luxury buyers want, can still take 4 to 7 months. The single highest-ROI habit: respond to Master Comment Reports in 48 to 72 hours, not three weeks. The review clock is the city's. The response clock is yours.
+
+Outside Austin city limits, in Travis, Hays, or Williamson County jurisdiction, the process is dramatically lighter, which is one underrated reason the custom market keeps sliding west and south.
+
+## The real timeline: 16 to 24 months
+
+:::compare-table
+Phase | Duration | What burns time
+Architect selection and design | 3 to 5 months | Decision speed. Yours, not theirs
+Engineering and permitting | 2 to 5 months | Review cycles, tree and WUI tracks
+Construction | 11 to 16 months | Weather, inspections, selections made late
+**Total, contract to keys** | **16 to 24 months** | 
+:::
+
+Money detail most owners miss: construction loans in 2026 run roughly a point above conventional mortgage rates, interest-only on the drawn balance, converting to permanent financing at completion. On the Westlake example above, that interest plus lot taxes is the $155,000 carrying line. Time is a line item.
+
+## So who should still build? The honest answer
+
+If the resale market is trading below replacement cost, why would anyone build? Four legitimate reasons, and they explain nearly every custom project Echelon Property Group has been involved with:
+
+1. **The product does not exist.** True single-story contemporary on flat usable acreage. A canyon-view lot with a specific orientation. A compound with a guest house, a wellness wing, and a twelve-car collection space. Austin's luxury resale inventory is deep right now (we broke down the 5.65 months of 78746 inventory and 54.7 percent listing success rate in [why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin)), but it is deep in a narrow band of 2000s Mediterranean and 2010s transitional. If your exact product is not in it, building is not a premium. It is the only path.
+
+2. **The hold horizon is generational.** A 30 percent build premium amortized over 15 or 20 years in a supply-constrained school district is a rounding error. The same premium on a 4 year hold is a losing trade.
+
+3. **The lot is the alpha.** The best teardowns, creek lots, and view parcels in West Austin rarely hit the MLS. They trade quietly, seller to buyer, through agent networks, before a sign ever goes up. Every transaction over $2 million that Echelon Property Group has closed happened entirely off-MLS, and sourcing dirt is the same discipline. Our team created a 9-acre multi-parcel assemblage in Southeast Austin from scratch, so we treat land acquisition as its own deal, not a shopping trip. If you are building, the lot decision is 40 percent of the outcome and it is made in the first month. See how [off-market homes actually trade in Austin](/blog/off-market-homes-austin).
+
+4. **The below-replacement math eventually flips.** When resale trades below replacement cost, builders stop building, spec pipelines thin, and new-product scarcity compounds. The owner delivering a finished custom home into 2028 faces less brand-new competition than at any point in the last decade. That is not a reason to build casually. It is a reason the people building deliberately are not crazy.
+
+And the appraisal warning that belongs in every 2026 build conversation: in a below-replacement market, custom homes frequently do not appraise for their cost at completion. If you build, underwrite your equity on comparable sales, not on your invoices.
+
+## Build, buy, or buy the almost-right house
+
+The decision framework Echelon Property Group actually uses with clients:
+
+**Buy finished** if a 90 percent match exists in resale. The 10 percent gap costs less to renovate than the 25 to 35 percent build premium plus two years of your life, and today's inventory gives buyers negotiating leverage that did not exist in 2021 (78746 sellers are averaging 5.17 percent below list at close, per Unlock MLS T12 data). If you are trading out of a current home first, run the numbers in our breakdown of [what it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin).
+
+**Build** if the match does not exist, the hold is long, and you control a superior lot. Then execute like an investor: fixed-price contract where possible, escalation clauses capped, 10 percent contingency untouched until drywall, selections finalized before foundation, and comment reports answered inside 72 hours.
+
+Either way, the first conversation is not with a builder. It is with someone who can show you what your target product actually trades for, on and off the MLS, before you commit seven figures to finding out.
+
+:::cta-anchor
+
+Thinking about building, or weighing a build against the resale market? Taylor Sherwood and Echelon Property Group advise clients across Travis, Williamson, and Hays counties on lot acquisition, teardown sourcing, and build-versus-buy analysis, with particular depth in off-market land. Call 512.661.3843 or email taylor@echelonpropertygroup.com.
+
+:::faq
+### How much does it cost to build a house in Austin in 2026?
+Hard construction costs run $160 to $225 per square foot for production homes, $225 to $325 for semi-custom, $325 to $500 for full custom, and $500 to $1,000 or more for luxury custom work. Construction is only 60 to 65 percent of total project cost; land, site work, design, permits, contingency, and carrying costs make up the rest.
+
+### What does it cost to build a 4,000 square foot custom home in Westlake?
+Roughly $3.8 to $4.2 million all-in on a teardown lot: about $1.2 million for the lot, $1.8 million in hard construction at $450 per square foot, and roughly $1 million across site work, design fees, permits, pool and landscape, contingency, and 18 months of carrying costs. That is about $1,000 per finished square foot.
+
+### Is it cheaper to build or buy a home in Austin right now?
+Buying, in most cases. The 78746 median resale traded at $561 per square foot over the trailing twelve months while all-in custom construction pencils near $1,000 per square foot, and even like-new luxury resale trades 25 to 35 percent below replacement cost. Building wins when the product you want does not exist in resale inventory, your hold period is long, or you control a superior lot.
+
+### How long does it take to build a custom home in Austin?
+Plan on 16 to 24 months from architect engagement to move-in: 3 to 5 months of design, 2 to 5 months of engineering and permitting, and 11 to 16 months of construction. Complex lots with tree, wildfire, or erosion reviews sit at the long end.
+
+### How long do Austin building permits take in 2026?
+Effective July 1, 2026, the City of Austin cut its first-review target for new residential construction to 10 business days, with updates at 7 business days. Most custom homes need two to three review cycles, and structures over 3,600 square feet trigger Fire review, so realistic permitting runs 6 to 10 weeks on clean lots and 4 to 7 months on complex ones.
+
+### How have tariffs affected Austin construction costs?
+Builders report an average tariff-driven increase of roughly $10,900 per home. Duties on Canadian lumber peaked near 45 percent in late 2025 and are easing to roughly 36 percent as revised rates take effect in August 2026, while kitchen cabinet tariffs doubled to 50 percent on January 1, 2026. Most builders now include escalation clauses, which is one more reason to carry a full 10 percent contingency.
+
+### What site costs surprise people building in the Hill Country?
+Rock excavation and steep-slope foundations, retaining walls, and rural infrastructure. A well, septic system, and power extension together commonly add $90,000 to $130,000 on acreage, before the driveway.
+
+### Will a new custom home appraise for what it cost to build?
+Often not in 2026. With resale trading below replacement cost across much of the Austin market, appraisals anchored to comparable sales frequently come in under total project cost at completion. Build for the product and the hold period, and underwrite your equity on comparable sales, not invoices.
+:::
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group (brokered by eXp Realty), with 11+ years of experience, more than $155 million in career sales across 200+ transactions, and CLHMS (Guild), GRI, and ABR designations. Every transaction over $2 million in his career has closed off-MLS.`,
+  },
+
+
   {
     id: "downtown-austin-condos-2026",
     title: "Downtown Austin Condos in 2026: Texas Built Its Tallest Tower and Put Nothing in It for Sale",

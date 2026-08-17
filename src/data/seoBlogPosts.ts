@@ -307,29 +307,29 @@ Either way, the first conversation is not with a builder. It is with someone who
 Thinking about building, or weighing a build against the resale market? Taylor Sherwood and Echelon Property Group advise clients across Travis, Williamson, and Hays counties on lot acquisition, teardown sourcing, and build-versus-buy analysis, with particular depth in off-market land. Call 512.661.3843 or email taylor@echelonpropertygroup.com.
 
 :::faq
-### How much does it cost to build a house in Austin in 2026?
-Hard construction costs run $160 to $225 per square foot for production homes, $225 to $325 for semi-custom, $325 to $500 for full custom, and $500 to $1,000 or more for luxury custom work. Construction is only 60 to 65 percent of total project cost; land, site work, design, permits, contingency, and carrying costs make up the rest.
+Q: How much does it cost to build a house in Austin in 2026?
+A: Hard construction costs run $160 to $225 per square foot for production homes, $225 to $325 for semi-custom, $325 to $500 for full custom, and $500 to $1,000 or more for luxury custom work. Construction is only 60 to 65 percent of total project cost; land, site work, design, permits, contingency, and carrying costs make up the rest.
 
-### What does it cost to build a 4,000 square foot custom home in Westlake?
-Roughly $3.8 to $4.2 million all-in on a teardown lot: about $1.2 million for the lot, $1.8 million in hard construction at $450 per square foot, and roughly $1 million across site work, design fees, permits, pool and landscape, contingency, and 18 months of carrying costs. That is about $1,000 per finished square foot.
+Q: What does it cost to build a 4,000 square foot custom home in Westlake?
+A: Roughly $3.8 to $4.2 million all-in on a teardown lot: about $1.2 million for the lot, $1.8 million in hard construction at $450 per square foot, and roughly $1 million across site work, design fees, permits, pool and landscape, contingency, and 18 months of carrying costs. That is about $1,000 per finished square foot.
 
-### Is it cheaper to build or buy a home in Austin right now?
-Buying, in most cases. The 78746 median resale traded at $561 per square foot over the trailing twelve months while all-in custom construction pencils near $1,000 per square foot, and even like-new luxury resale trades 25 to 35 percent below replacement cost. Building wins when the product you want does not exist in resale inventory, your hold period is long, or you control a superior lot.
+Q: Is it cheaper to build or buy a home in Austin right now?
+A: Buying, in most cases. The 78746 median resale traded at $561 per square foot over the trailing twelve months while all-in custom construction pencils near $1,000 per square foot, and even like-new luxury resale trades 25 to 35 percent below replacement cost. Building wins when the product you want does not exist in resale inventory, your hold period is long, or you control a superior lot.
 
-### How long does it take to build a custom home in Austin?
-Plan on 16 to 24 months from architect engagement to move-in: 3 to 5 months of design, 2 to 5 months of engineering and permitting, and 11 to 16 months of construction. Complex lots with tree, wildfire, or erosion reviews sit at the long end.
+Q: How long does it take to build a custom home in Austin?
+A: Plan on 16 to 24 months from architect engagement to move-in: 3 to 5 months of design, 2 to 5 months of engineering and permitting, and 11 to 16 months of construction. Complex lots with tree, wildfire, or erosion reviews sit at the long end.
 
-### How long do Austin building permits take in 2026?
-Effective July 1, 2026, the City of Austin cut its first-review target for new residential construction to 10 business days, with updates at 7 business days. Most custom homes need two to three review cycles, and structures over 3,600 square feet trigger Fire review, so realistic permitting runs 6 to 10 weeks on clean lots and 4 to 7 months on complex ones.
+Q: How long do Austin building permits take in 2026?
+A: Effective July 1, 2026, the City of Austin cut its first-review target for new residential construction to 10 business days, with updates at 7 business days. Most custom homes need two to three review cycles, and structures over 3,600 square feet trigger Fire review, so realistic permitting runs 6 to 10 weeks on clean lots and 4 to 7 months on complex ones.
 
-### How have tariffs affected Austin construction costs?
-Builders report an average tariff-driven increase of roughly $10,900 per home. Duties on Canadian lumber peaked near 45 percent in late 2025 and are easing to roughly 36 percent as revised rates take effect in August 2026, while kitchen cabinet tariffs doubled to 50 percent on January 1, 2026. Most builders now include escalation clauses, which is one more reason to carry a full 10 percent contingency.
+Q: How have tariffs affected Austin construction costs?
+A: Builders report an average tariff-driven increase of roughly $10,900 per home. Duties on Canadian lumber peaked near 45 percent in late 2025 and are easing to roughly 36 percent as revised rates take effect in August 2026, while kitchen cabinet tariffs doubled to 50 percent on January 1, 2026. Most builders now include escalation clauses, which is one more reason to carry a full 10 percent contingency.
 
-### What site costs surprise people building in the Hill Country?
-Rock excavation and steep-slope foundations, retaining walls, and rural infrastructure. A well, septic system, and power extension together commonly add $90,000 to $130,000 on acreage, before the driveway.
+Q: What site costs surprise people building in the Hill Country?
+A: Rock excavation and steep-slope foundations, retaining walls, and rural infrastructure. A well, septic system, and power extension together commonly add $90,000 to $130,000 on acreage, before the driveway.
 
-### Will a new custom home appraise for what it cost to build?
-Often not in 2026. With resale trading below replacement cost across much of the Austin market, appraisals anchored to comparable sales frequently come in under total project cost at completion. Build for the product and the hold period, and underwrite your equity on comparable sales, not invoices.
+Q: Will a new custom home appraise for what it cost to build?
+A: Often not in 2026. With resale trading below replacement cost across much of the Austin market, appraisals anchored to comparable sales frequently come in under total project cost at completion. Build for the product and the hold period, and underwrite your equity on comparable sales, not invoices.
 :::
 
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group (brokered by eXp Realty), with 11+ years of experience, more than $155 million in career sales across 200+ transactions, and CLHMS (Guild), GRI, and ABR designations. Every transaction over $2 million in his career has closed off-MLS.`,

@@ -302,6 +302,7 @@ The decision framework Echelon Property Group actually uses with clients:
 Either way, the first conversation is not with a builder. It is with someone who can show you what your target product actually trades for, on and off the MLS, before you commit seven figures to finding out.
 
 :::cta-anchor
+:::
 
 Thinking about building, or weighing a build against the resale market? Taylor Sherwood and Echelon Property Group advise clients across Travis, Williamson, and Hays counties on lot acquisition, teardown sourcing, and build-versus-buy analysis, with particular depth in off-market land. Call 512.661.3843 or email taylor@echelonpropertygroup.com.
 

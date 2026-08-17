@@ -158,9 +158,258 @@ const blogDowntownAustinCondos2026 = blogDowntownAustinCondos2026Asset.url;
 import blogCostToBuildAustinAsset from "@/assets/blog/cost-to-build-a-house-austin-hero.png.asset.json";
 const blogCostToBuildAustin = blogCostToBuildAustinAsset.url;
 
-// Build marker: ensure new posts ship in bundle (v11)
+import blogSellingHouseDivorceTexasAsset from "@/assets/blog/selling-house-divorce-texas-hero.png.asset.json";
+const blogSellingHouseDivorceTexas = blogSellingHouseDivorceTexasAsset.url;
+
+// Build marker: ensure new posts ship in bundle (v12)
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "selling-house-divorce-texas",
+    title: "Selling a House During a Divorce in Texas: The 2026 Guide",
+    metaTitle: "Selling a House During a Divorce in Texas (2026 Guide)",
+    excerpt: "Community property, owelty liens, the 95% LTV buyout, and the Section 121 tax clock. A data-driven 2026 guide to the house in a Texas divorce, built for Austin.",
+    author: "Taylor Sherwood",
+    date: "2026-08-17",
+    readTime: "17 min read",
+    category: "SELLER STRATEGY",
+    image: blogSellingHouseDivorceTexas,
+    heroImage: blogSellingHouseDivorceTexas,
+    imageAlt: "Two sets of house keys on a marble console table in a quiet luxury Austin living room",
+    content: `There are three clocks running on the house in a Texas divorce, and none of them cares about the other two.
+
+The legal clock starts the moment a petition is filed. In Travis County, a standing order attaches to the case that same day and immediately restricts what either spouse can do with the property. The market clock is the slowest it has been in years: the median Austin listing now takes 46 days to go under contract, the average takes 81, and only 61.2% of listings that came off the market in the last twelve months actually closed. The tax clock is the one almost everyone discovers too late: the shape of your capital gains exclusion changes with the decree, and the spouse who keeps the house quietly inherits every dollar of the built-in gain.
+
+This guide walks through all three, with 2026 numbers: what the law actually says about who owns the house, the four ways the house gets resolved, the owelty of partition lien that makes most Texas buyouts possible, what it really costs to sell into this Austin market, and the Section 121 timing math that can swing the tax bill by six figures.
+
+:::callout
+One note before the numbers. This is general information from a real estate practice, not legal or tax advice. Texas family law outcomes are fact-specific, and the two professionals who matter most in a divorce sale are a board-certified family law attorney and a CPA. What follows will make you a better client for both of them.
+:::
+
+## The first thing that happens: the standing order
+
+Before anyone calls an agent, understand what happened the moment the petition was filed.
+
+Every family law case filed in Travis County since January 1, 2020 is subject to the Travis County Standing Order for Family Law Cases. It is attached to the original petition, takes effect immediately, was not requested by either party, and exists for one purpose: to freeze the status quo and preserve the parties' property while the case is pending. It operates as a temporary restraining order for the first 14 days after filing, then continues as a temporary injunction for the life of the case unless a party contests it or the court modifies it.
+
+In practical terms, neither spouse may sell, list, encumber, transfer, or borrow against community property while the case is pending, except by a written agreement between the parties that is signed and filed with the court, or by court order. Spending is limited to the ordinary lanes: usual business and occupation, reasonable living expenses, and attorney's fees for the case. Williamson County operates under its own standing order as well. Not every Texas county uses one, which is exactly why the first signature in a divorce sale belongs to your attorney, not your agent.
+
+This is not a technicality. A listing agreement signed in violation of a standing order is a problem for everyone, and no title company in Austin is closing a sale the court has not blessed. The clean mechanism is simple: the attorneys paper an agreement authorizing the sale (in Texas practice, typically a Rule 11 agreement filed with the court, or an agreed temporary order), naming the broker, setting the list price mechanism, and directing where the proceeds go at closing, usually into a trust account or the registry of the court until the division is final.
+
+## Who actually owns the house: five assumptions Texas law disagrees with
+
+Texas is a community property state, and almost everything people believe about what that means is slightly wrong. Texas Family Code Section 3.003 presumes that all property possessed by either spouse at the end of the marriage is community property, and rebutting that presumption requires clear and convincing evidence. Character is set by the inception of title doctrine: what matters is when and how the asset was acquired, not whose name ended up on the deed.
+
+:::compare-table
+What people assume | What Texas law actually says
+"The deed is in my name only, so the house is mine." | Title does not control character. A house purchased during the marriage is presumed community property no matter whose name is on the deed (Tex. Fam. Code Sec. 3.003).
+"I bought it before we married, so it is off the table." | It is likely separate property under inception of title, but the community estate can assert reimbursement claims for mortgage principal paid down and improvements funded with community money during the marriage.
+"Texas splits everything 50/50." | Texas courts divide the community estate in a manner that is "just and right" (Tex. Fam. Code Sec. 7.001). That can be 50/50. It can also be 55/45 or 60/40 after the court weighs fault, earning capacity, health, and the size of each spouse's separate estate.
+"It is my separate property, so I can sell it myself." | Not if it is the homestead. Texas Family Code Section 5.001 requires both spouses to join in the sale of the homestead, whether it is community property or the separate property of either spouse.
+"The decree took my ex off the mortgage." | The lender was never a party to your divorce and is not bound by the decree. Until the loan is refinanced or paid off, both names stay on the note and both credit reports absorb every late payment.
+:::
+
+That last row is the most expensive misunderstanding in Texas divorce, and it is where the rest of this guide is headed.
+
+## The four paths for the house
+
+Every Texas divorce resolves the house one of four ways. The right one depends on equity, income, kids, and how much the two of you can still stand to coordinate.
+
+:::compare-table
+Path | How it works | Best when | Watch out for
+1. Sell now and divide | Court-authorized or agreed sale during the case or at decree; proceeds escrowed or divided per the decree | Neither spouse can carry the house alone, or both want a clean break and liquid capital | A 5-month-supply Austin market with a 61.2% close rate; pricing discipline decides whether this takes 60 days or 8 months
+2. One spouse buys the other out | Decree awards the house to one spouse and creates an owelty of partition lien for the other's equity share; an owelty refinance pays it out | One spouse can qualify alone and wants to keep kids in the school district | Qualifying on one income at 2026 rates; the buyout must be financeable, not just fair
+3. Offset with other assets | One spouse keeps the house, the other keeps equivalent value in retirement accounts, brokerage, or a business interest | The estate is large enough to balance without forcing a refinance | A dollar of home equity and a dollar of pre-tax 401(k) are not the same dollar; tax-adjust before you trade
+4. Defer the sale and co-own | Decree keeps both names on title, sets who lives there and who pays what, and fixes a future sale trigger (a date, or the youngest child's graduation) | Kids mid-school, or a market you both agree is the wrong one to sell into | Requires years of cooperation with an ex; needs airtight decree language on payments, maintenance, and the eventual listing
+:::
+
+Paths 1 and 2 are where the money moves, so they get the full treatment below.
+
+## Path 2 first: the buyout, and the owelty lien that makes it possible
+
+Texas has the strictest home equity rules in the country. Article XVI, Section 50(a)(6) of the Texas Constitution caps a standard cash-out refinance at 80% of the home's appraised value, with a stack of additional restrictions and pricing that lenders reserve for cash-out loans. If divorce buyouts had to run through that pipe, most of them would die there.
+
+They do not, because the Texas Constitution contains a different provision written for exactly this problem. Section 50(a)(3) authorizes an owelty of partition: a court-ordered lien against the property that equalizes the division of equity between co-owners. In a divorce, the decree awards the house to one spouse and simultaneously creates an owelty lien in favor of the other spouse for their share of the equity. The spouse keeping the house then refinances, and because the new loan is paying off a recorded lien (the old mortgage plus the owelty lien) rather than handing the borrower cash, lenders treat it as a rate-and-term refinance, not a cash-out.
+
+That classification is worth real money, twice:
+
+:::compare-table
+Feature | Standard Texas cash-out refinance | Owelty refinance
+Constitutional authority | Tex. Const. art. XVI Sec. 50(a)(6) | Tex. Const. art. XVI Sec. 50(a)(3)
+Maximum loan-to-value | 80% of appraised value | Up to roughly 95% of appraised value
+Pricing treatment | Cash-out pricing (rate add-ons) | Rate-and-term pricing
+When it can close | Standard eligibility | Only after the decree creating the lien is final
+Key requirement | Constitutional 50(a)(6) compliance stack | Owelty language in the decree before the judge signs, exact legal description, recorded deed to secure owelty of partition
+:::
+
+The catch that catches people: the owelty lien must be created in the decree (or a partition agreement) with the amount and the exact legal description, and it cannot be added retroactively after the judge signs. If your decree divides the house without owelty language, you have converted a 95% LTV rate-and-term refinance into an 80% LTV cash-out, permanently. This is a two-paragraph drafting task for a family law attorney and a five-figure mistake to skip.
+
+### Worked example 1: a $1.5M Austin buyout at 2026 rates
+
+The house: appraised at $1,500,000. First lien balance: $600,000. Equity: $900,000. The spouses agree to an equal split of the home equity, so the decree awards the house to Spouse A and creates a $450,000 owelty lien in favor of Spouse B.
+
+:::compare-table
+Line | Amount
+Appraised value | $1,500,000
+Payoff of existing first lien | $600,000
+Owelty lien to departing spouse | $450,000
+New loan amount (before closing costs) | $1,050,000
+Loan-to-value | 70%
+Loan type | Jumbo (above the 2026 conforming limit of $832,750)
+Rate assumption | 6.67% (Freddie Mac 30-year average, August 13, 2026; jumbo pricing varies by lender)
+Principal and interest | $6,755 per month
+Property taxes (est. 1.6% effective after homestead exemption) | $2,000 per month
+Insurance (est.) | $450 per month
+Total monthly carry | About $9,200 per month
+:::
+
+Here is the part that decides most buyouts: Spouse A must qualify for that loan alone. At a 43% debt-to-income ceiling with no other debt, a $9,200 monthly housing payment requires roughly $21,400 in monthly qualifying income, about $257,000 a year. Add an $800 car payment and the requirement climbs to roughly $279,000. The buyout that is fair on the settlement spreadsheet is only real if one income can carry it, which is why the smartest move in the entire process is getting pre-approved for the owelty refinance before mediation. You cannot negotiate around a loan you cannot get.
+
+Spouse B is protected too. The owelty lien is a recorded lien against the house, so Spouse B is not relying on an ex's goodwill; if the refinance and payout do not happen, the lien is enforceable against the property.
+
+### Worked example 2: the 80% cliff at Austin's median price point
+
+Owelty matters even more further down the price ladder, where equity is thinner relative to the buyout.
+
+The house: worth $800,000, balance $500,000, equity $300,000, agreed equalization $150,000. The spouse keeping the house needs a new loan of $650,000, which is 81.25% of value.
+
+**Standard Texas cash-out path:** capped at 80% LTV, so the maximum loan is $640,000. The buyout fails by $10,000, before closing costs, and at worse cash-out pricing.
+
+**Owelty path:** rate-and-term treatment up to roughly 95% LTV puts the ceiling at $760,000. The $650,000 loan clears with $110,000 of headroom, at 6.67% it carries about $4,182 per month in principal and interest, and at $650,000 it stays under the $832,750 conforming limit, so it prices as a conventional loan rather than a jumbo.
+
+Same house, same equity, same buyout. One drafting choice in the decree is the difference between keeping the home and being forced onto Path 1.
+
+### If there is no refinance: the deed of trust to secure assumption
+
+Sometimes the decree awards the house to one spouse who keeps paying the existing mortgage without refinancing, usually to preserve an older, lower rate. Two Texas mechanics matter here. First, federal law is on your side on the transfer itself: the Garn-St Germain Act prevents the lender from calling the loan due just because the house was transferred to a spouse in a divorce. Second, the departing spouse should insist on a deed of trust to secure assumption, a recorded instrument that gives them the right to foreclose and take the house back if the keeping spouse stops paying the loan both names are still on. It does not clean the departing spouse's credit exposure, nothing but a refinance or payoff does that, but it converts "trust me" into a lien.
+
+## Path 1: selling into the 2026 Austin market
+
+If the answer is a sale, sell with clear eyes. Here is what the Austin market actually did over the trailing twelve months, per Unlock MLS data (City of Austin, twelve months ending July 31, 2026):
+
+:::compare-table
+Metric | City of Austin, trailing 12 months
+Median sale price | $568,638
+Average sale price | $762,131
+Median days on market | 46
+Average days on market | 81
+Months of inventory | 5.0
+Listings that closed (success rate) | 61.2%
+Expired listings | 2,549
+Withdrawn listings | 4,616
+Listings taking at least one price cut | 10,462 (vs. 17,786 new listings, roughly 59%)
+Original list to final list | -4.1%
+Final list to sale price | -3.1%
+12-month price change | -1.4%
+:::
+
+Read that table the way a divorce seller has to. Nearly 4 in 10 Austin listings that ended in the last year did not close. The homes that did sell gave up about 7.1% between the original asking price and the closing table once you stack the list-price cuts on the negotiation discount. The median home went under contract in 46 days, but the average sat 81, which means the slow tail is long, and a divorce household is paying two sets of living expenses while it waits.
+
+That is why pricing discipline matters more in a divorce sale than in any other sale. Every extra month on market is another month of mortgage, taxes, insurance, and two rents or a rent plus a mortgage, split across a household that just doubled its overhead. If the marriage is ending in a market with 5 months of supply, price to the market on day one. The full breakdown of what a sale costs, commissions after the NAR settlement, the March 2026 Texas title rate cut, taxes, and a worked $1.5M net sheet, is in our guide to the [cost of selling a house in Austin](/blog/cost-to-sell-a-house-austin).
+
+Mechanics that make divorce listings close instead of expire:
+
+**Both signatures, everywhere.** Both spouses sign the listing agreement (Section 5.001 again), both approve price changes, both sign the contract and closing documents. Build the approval mechanics into the agreed order so a stalemate has a tiebreaker.
+
+**Put the pricing rules in writing before you list.** The strongest agreed orders and decrees now specify the initial list price (or the mechanism: an agreed CMA or a neutral appraisal), automatic reduction triggers if no contract materializes within set windows, and a floor below which neither spouse can be forced to accept without agreement.
+
+**Decide the money's path in advance.** Who pays the mortgage, taxes, and insurance until closing, whether those advances are reimbursed off the top, and where net proceeds land (escrow, trust account, or the registry of the court) should all be in the order before the sign goes in the yard.
+
+**Know the endgame if one spouse stonewalls.** Texas courts do not need a volunteer. Under Family Code Section 6.502 the court can issue temporary orders and appoint a receiver over the property, and a receiver can be authorized to list and sell the house whether or not both spouses cooperate. Receivers add fees and remove every ounce of control, which is precisely why the credible threat of one usually makes them unnecessary.
+
+## The tax clock: Section 121, Section 1041, and the six-figure timing decision
+
+Texas has no state income tax, so this is a federal conversation. Two Internal Revenue Code sections run the show.
+
+Section 1041 makes transfers between spouses, or between ex-spouses incident to divorce, tax-free at the moment of transfer, with carryover basis. No gain is recognized when the decree moves the house to one spouse. That sounds like a gift. It is a deferral: the keeping spouse takes the house with the couple's original basis and every dollar of built-in gain attached.
+
+Section 121 excludes gain on the sale of a principal residence: up to $500,000 for a married couple filing jointly, $250,000 for a single filer, if the two-of-five-year ownership and use tests are met. Two divorce-specific rules matter. Ownership transferred incident to divorce tacks: the receiving spouse counts the transferor's ownership period. And a spouse who moved out is treated as still using the home for the exclusion, as long as the other spouse occupies it under the divorce or separation instrument, which is what preserves the out-spouse's $250,000 in a deferred-sale arrangement.
+
+For 2026, long-term capital gains rates are 0%, 15%, and 20% (the 20% bracket starts above $545,500 of taxable income single, $613,700 married filing jointly, per IRS Rev. Proc. 2025-32), with the 3.8% net investment income tax stacking on top above $200,000 of MAGI single and $250,000 joint.
+
+Now the math. Take a house bought in 2014 for $900,000, worth $2,200,000 today: $1,300,000 of built-in gain before improvements and selling costs, both of which reduce the gain, so keep every receipt.
+
+:::compare-table
+Path | Exclusion available | Taxable gain | Federal tax at top rate (20% + 3.8% NIIT)
+A. Sell before the decree, file jointly | $500,000 | $800,000 | About $190,400
+B. Co-own through the decree, sell shortly after, split 50/50 | $250,000 each ($500,000 combined) | $400,000 each | About $95,200 each (about $190,400 combined)
+C. One spouse keeps the house via Section 1041, sells alone four years later at $2,500,000 | $250,000 | $1,350,000 | About $321,300
+:::
+
+Actual rates depend on each filer's total taxable income; portions of a gain can land in the 15% bracket. The table uses the top combined rate to show the structure.
+
+Paths A and B land in roughly the same place: the couple preserves the full $500,000 of exclusion, whether they use it jointly before the decree or as two $250,000 exclusions after it. Path C is the trap. The keeping spouse absorbed the entire $1,300,000 of built-in gain through carryover basis, then lost half the exclusion by selling single. The eventual sale at a higher price generated roughly $130,900 more federal tax than Path A, and every future dollar of appreciation compounds the problem.
+
+None of this means the buyout is wrong. It means the house carries an unrecorded tax lien, and a sophisticated settlement prices it in: a spouse keeping a low-basis house is not receiving equity dollar-for-dollar against a spouse taking cash or a stepped-up brokerage account, and the buyout number should reflect the embedded tax. This is a spreadsheet conversation for your CPA before mediation, not after. The full mechanics, including the 2026 brackets, basis rules, and a worked Westlake example, are in our [Texas capital gains guide](/blog/capital-gains-tax-home-sale-texas).
+
+## The discretion problem, and the off-market answer
+
+A divorce sale broadcasts on the MLS whether you want it to or not. Days on market accumulate publicly. Price cuts print. Vacant staging photographs read as exactly what they are. Buyer's agents in a 5-month-supply market are trained to hunt motivated sellers, and "divorce" is the first word they whisper to their clients before writing 8% under ask. The market already extracts about 7.1% between original list and closing from the average Austin seller who succeeds; a listing that signals distress invites worse.
+
+There are two ways to take that leverage back. The first is process: a listing that launches fully prepared, priced to the data on day one, with the decree-level pricing rules above, gives buyers no aging listing to circle. The second is privacy. Unlock MLS now supports several private and delayed-marketing paths, from office exclusives to limited-exposure listings, that let a home be sold without a public countdown clock attached to it, and we broke down all four selling paths, the data on what privacy costs and buys, and who should use which in our [private listings guide](/blog/private-listings-austin).
+
+This is also where Echelon Property Group lives. The overwhelming majority of our transaction volume has come through private opportunities, relationship-driven sourcing, and off-market transactions, and every deal above $2 million we have ever closed was entirely off-MLS. For divorcing owners of significant Austin properties, a quiet sale to a qualified buyer, negotiated without a public paper trail, is often the difference between a clean exit and a discounted one.
+
+When Echelon Property Group handles a divorce sale, the protocol is built for two clients who share one asset: every communication goes in writing to both spouses and both attorneys simultaneously, the pricing analysis is a documented CMA both sides can carry into mediation, the listing terms are drafted to drop into an agreed order (price mechanism, reduction schedule, showing rules, proceeds instructions), and the marketing plan is calibrated on a spectrum from fully public to fully private depending on what the property and the family need.
+
+## The timeline, start to finish
+
+:::compare-table
+Stage | Typical timing | What it means for the house
+Petition filed | Day 0 | Travis County standing order attaches immediately; no listing, sale, or new liens without agreement or court order
+Standing order hardens | Day 14 | The order continues as a temporary injunction for the life of the case
+Temporary orders | Weeks 2 to 6 | Who lives in the house, who pays the mortgage, whether a sale is authorized now
+Valuation | Months 2 to 5 | Appraisal or agreed CMA; owelty pre-approval should happen here, before mediation
+Mediation | Months 3 to 9 | The house's path (sell, buyout, offset, defer) is usually decided here
+Decree | Day 61 at the earliest (Tex. Fam. Code Sec. 6.702's 60-day waiting period); commonly months 6 to 12 in contested cases | Owelty lien created in the decree; sale terms or co-ownership terms finalized
+Owelty refinance closes | Roughly 30 to 45 days after the decree is final | Departing spouse is paid; refinance removes them from the note
+Or: listing to closing | 46-day median to contract, 81-day average, plus about 30 days to close | Proceeds distributed per the decree
+:::
+
+## Frequently Asked Questions
+
+:::faq
+Q: Can my spouse sell our house without my signature in Texas?
+A: No. Texas Family Code Section 5.001 requires both spouses to join in the sale of the homestead, even if the house is one spouse's separate property. Once a divorce is filed in Travis County, the standing order separately prohibits either spouse from selling or encumbering property without a filed written agreement or a court order.
+
+Q: Do we have to sell the house before the divorce is final?
+A: No. Texas divorces resolve the house four ways: a sale during the case or at the decree, a buyout secured by an owelty lien, an offset against other assets, or a deferred sale where both ex-spouses remain on title under decree terms. Selling before the decree is common, but it is a choice, not a requirement.
+
+Q: What is an owelty of partition lien?
+A: An owelty of partition is a court-ordered lien under Article XVI, Section 50(a)(3) of the Texas Constitution that secures one spouse's share of the home equity when the other spouse keeps the house. Refinancing to pay off an owelty lien is treated as rate-and-term, allowing up to about 95% loan-to-value instead of the 80% Texas cash-out cap. The lien must be created in the decree before the judge signs.
+
+Q: How much can I borrow to buy out my spouse in Texas?
+A: With a properly drafted owelty lien, lenders generally allow a rate-and-term refinance up to roughly 95% of appraised value. Without owelty language, a Texas cash-out refinance is capped at 80% of value with less favorable pricing. The spouse keeping the house must qualify for the entire new loan on their own income, credit, and debt-to-income ratio.
+
+Q: Who pays the mortgage during a Texas divorce?
+A: Whatever the temporary orders or the parties' filed written agreement provides. To the lender, nothing has changed: both borrowers remain fully liable on the note, and a missed payment damages both credit reports regardless of who the court directed to pay.
+
+Q: How is the house divided if it is only in my name?
+A: The name on the deed does not decide ownership character. A home acquired during the marriage is presumed community property under Texas Family Code Section 3.003, and the court divides the community estate in a just and right proportion, which is not automatically 50/50. A home owned before marriage is generally separate property, subject to possible community reimbursement claims.
+
+Q: Will we owe capital gains tax when we sell because of the divorce?
+A: Timing controls the answer. Selling while married and filing jointly preserves the $500,000 Section 121 exclusion; after the divorce, each co-owning ex-spouse can exclude $250,000 on their half. The costly path is one spouse keeping the house through a tax-free Section 1041 transfer with carryover basis and later selling alone with only a $250,000 exclusion against the entire gain. Texas adds no state income tax.
+
+Q: Can a Texas court force us to sell the house?
+A: Yes. If the spouses cannot agree, the court can order the home sold and, under Texas Family Code Section 6.502, appoint a receiver with authority to list and sell the property over either spouse's objection, with proceeds divided in the decree. Receivers add cost and remove control, so negotiated sale terms almost always beat litigated ones.
+:::
+
+## Related Reading
+
+- [Selling an inherited house in Texas](/blog/selling-inherited-house-texas)
+- [Should I sell my house now or wait in Austin?](/blog/should-i-sell-my-house-now-or-wait-austin)
+
+## Talk it through privately
+
+If the house is the asset the two of you cannot agree on, the fastest way forward is usually a documented, neutral read of what it is worth and what each path nets. [Reach out to Taylor Sherwood at Echelon Property Group](/contact) for a confidential conversation, and bring your attorney into it from the start.
+
+## About the author
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by eXp Realty, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
+
+*This article is general information, not legal, tax, or financial advice. Divorce outcomes in Texas are fact-specific. Consult a board-certified family law attorney and a CPA about your situation. Market data: Unlock MLS, City of Austin, trailing twelve months ending July 31, 2026. Rate data: Freddie Mac Primary Mortgage Market Survey, August 13, 2026. Tax thresholds: IRS Rev. Proc. 2025-32. Loan limits: FHFA, 2026.*`,
+  },
+  {
+
     id: "cost-to-build-a-house-austin",
     title: "What It Really Costs to Build a Custom Home in Austin in 2026 (And When You Shouldn't)",
     metaTitle: "Cost to Build a House in Austin (2026): The Real Number",

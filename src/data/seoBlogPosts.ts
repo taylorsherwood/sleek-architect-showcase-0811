@@ -161,8 +161,197 @@ const blogCostToBuildAustin = blogCostToBuildAustinAsset.url;
 import blogSellingHouseDivorceTexasAsset from "@/assets/blog/selling-house-divorce-texas-hero.png.asset.json";
 const blogSellingHouseDivorceTexas = blogSellingHouseDivorceTexasAsset.url;
 
+import blogAssumableMortgageAustinAsset from "@/assets/blog/assumable-mortgage-austin-hero.png.asset.json";
+const blogAssumableMortgageAustin = blogAssumableMortgageAustinAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v12)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "assumable-mortgage-austin",
+    title: "Assumable Mortgages in Austin: How Buyers Are Getting 2.75% in a 6.67% World",
+    metaTitle: "Assumable Mortgages in Austin: 2026 Buyer and Seller Guide",
+    excerpt: "294 Austin homes have assumable 3% mortgages right now. The 2026 guide to finding them, funding the equity gap, and what sellers should charge for the note.",
+    author: "Taylor Sherwood",
+    date: "2026-08-18",
+    readTime: "16 min read",
+    category: "MARKET INSIGHTS",
+    image: blogAssumableMortgageAustin,
+    heroImage: blogAssumableMortgageAustin,
+    imageAlt: "Austin home with an assumable low rate mortgage represented by house keys and loan documents",
+    content: `The cheapest money in the Austin housing market is not at any bank. It is already bolted to houses.
+
+Roughly one in five American mortgages still carries a rate below 3%, and just over half sit below 4%, according to Realtor.com and Redfin analyses of the Federal Housing Finance Agency's National Mortgage Database. Meanwhile, Freddie Mac's weekly survey put the average new 30 year fixed at 6.67% as of August 13, 2026. Most of those low rate notes will die quietly at closing when the seller pays off the loan. A specific slice of them does not have to. Government backed FHA and VA loans are assumable by law, which means a qualified buyer can step into the seller's exact loan: same rate, same balance, same payment.
+
+As of this writing, Roam, the largest assumable listing platform, shows 294 homes with assumable mortgages for sale in Austin and 7,597 across Texas, with rates as low as 3%. Against Unlock MLS's roughly 4,900 active Austin listings, that is about one in every seventeen homes on the market carrying a note worth more than the granite countertops. Almost nobody is marketing them that way.
+
+This guide covers the mechanics, the real math on an Austin priced example, the equity gap that kills most of these deals, the seller side (including the VA entitlement trap that can quietly cost a veteran their next purchase), and the 2026 policy developments that could blow this niche wide open.
+
+## The short answer
+
+:::callout
+An assumable mortgage lets a buyer take over the seller's existing FHA, VA, or USDA loan at its original interest rate instead of originating a new loan at today's rates. The buyer must qualify with the loan servicer and must cover the difference between the purchase price and the loan balance, in cash or with secondary financing. In Austin's current market, assuming a 2.75% note instead of borrowing at 6.67% saves roughly $235 per month for every $100,000 of loan balance. Conventional loans are generally not assumable in a sale, though federal regulators said in late 2025 they are evaluating changing that.
+:::
+
+## Which loans are assumable
+
+:::compare-table
+Loan type | Assumable in a sale? | Who can assume | Key costs | Mortgage insurance | Typical timeline
+VA | Yes, every VA loan | Any qualified buyer, veteran or not | 0.5% funding fee on the balance, plus a $250 to $300 processing fee and a regional locality variance | None | 45 to 120 days, servicer dependent
+FHA | Yes, with servicer approval | Owner occupants only, no investors | Processing fee capped at $1,800 (HUD doubled the old $900 cap in 2024) | MIP transfers with the loan, usually 0.55% annually, for the life of the loan if the original down payment was under 10% | 30 to 60 days
+USDA | Technically, but usually at new rates and terms | Income eligible buyers | Varies | Annual fee continues | Rarely worth pursuing for the rate
+Conventional | Generally no, due on sale clause | Exceptions only: death, divorce, and certain family transfers under the Garn-St Germain Act of 1982 | n/a | n/a | FHFA said in November 2025 it is evaluating broader assumability
+:::
+
+Two details in that table do most of the work. First, anyone can assume a VA loan. You do not need to be a veteran, you do not need military service, you just need to qualify with the servicer. Second, FHA assumptions are owner occupant only, which quietly makes VA notes the only low rate assumable paper an investor can touch.
+
+## The math on a real Austin example
+
+Unlock MLS data puts Austin's trailing twelve month median sale price at $568,638 through July 2026. So take a house just above the median.
+
+The setup: A seller bought in spring 2021 for $470,000 with a zero down VA loan at 2.75%. Their principal and interest payment is $1,919 per month, and after about five years the balance is down to roughly $412,000. They list at $585,000. The gap between price and balance, $173,000, is the seller's equity, and the buyer owes it at closing one way or another.
+
+Here are the buyer's three paths, each with the same $585,000 price:
+
+:::compare-table
+Line | Path 1: New loan at 6.67% | Path 2: Assume, pay gap in cash | Path 3: Assume, finance the gap
+Down payment / cash to seller | $117,000 (20%) | $173,000 | $117,000
+First lien | $468,000 at 6.67%, 30 yr | $412,000 at 2.75%, about 25 yrs left | $412,000 at 2.75%, about 25 yrs left
+Second lien | none | none | $56,000 at 9.5%, 20 yr
+Monthly P&I | $3,011 | $1,919 | $2,441
+Blended note rate | 6.67% | 2.75% | 3.56%
+First month toward principal | $410 (14% of payment) | $975 (51% of payment) | About $975 on the first, plus second lien amortization
+:::
+
+Path 3 is the honest comparison, because the cash to close matches Path 1 almost exactly. Same house, same $117,000 in, and the payment drops $570 per month. That is $6,840 per year and roughly $68,000 over a decade, before counting the faster equity build. On the assumed note, over half of the very first payment goes to principal. On the new 6.67% loan, 86 cents of every first year dollar is interest.
+
+Run it to the end and the gap gets absurd. Total remaining interest on Path 3 (assumed first lien plus the second) comes to about $225,000. Total interest on the new 30 year loan in Path 1 is about $616,000. The assumption path pays roughly $390,000 less interest and finishes paying off sooner.
+
+**The effective discount framing.** Hold the $117,000 down payment constant and ask: what purchase price at 6.67% produces the same $2,441 payment as Path 3? Answer: about $496,000. Assuming this loan is financially equivalent to buying the same house for $88,500 less, a 15% effective price cut that never shows up in the sale price. In a [non-disclosure state](/blog/texas-non-disclosure-state), that feels appropriate.
+
+**Savings scale with balance.** Monthly principal and interest at each rate, 30 year term:
+
+:::compare-table
+Loan balance | At 2.75% | At 6.67% | Monthly difference | Over 5 years
+$300,000 | $1,225 | $1,930 | $705 | $42,300
+$400,000 | $1,633 | $2,573 | $940 | $56,400
+$500,000 | $2,041 | $3,216 | $1,175 | $70,500
+:::
+
+Rule of thumb: every $100,000 of assumed balance at 2.75% saves about $235 per month against today's new money.
+
+## The equity gap, and how buyers actually bridge it
+
+The gap is where most assumptions die. A buyer who planned to put 5% down on a conventional purchase suddenly needs the seller's entire equity position at closing. Three workable answers:
+
+**Cash.** Cleanest, fastest, and the reason assumptions punch above their weight with relocating buyers who just sold elsewhere, and with move up buyers rolling equity forward.
+
+**A second lien.** The buyer assumes the first at its old rate and finances the gap with a second mortgage or HELOC at current second lien pricing. The VA formally blessed this structure in Circular 26-24-17 (August 2024), clarifying how servicers process an assumption with simultaneous secondary financing. The blended cost stays remarkably low:
+
+:::compare-table
+Gap financing rate on $56,000 second | Blended rate on $468,000 total debt
+8.5% | 3.44%
+9.5% | 3.56%
+10.5% | 3.68%
+:::
+
+Even paying double digit interest on the gap, the blend lands under 3.7% against a 6.67% market.
+
+**Seller carryback.** The seller finances part of their own equity as a note. In a market where Unlock MLS shows Austin sellers already conceding about 3.1% off list and 7% off original ask on average, carrying paper at 7 to 8% on a portion of equity can beat another price cut, and it turns the seller into the bank on money they were about to hand to one anyway.
+
+One structural warning: the gap math only works when the gap is small. A 2021 purchase in a market that doubled is a bad assumption candidate. Which brings us to the quietly good news.
+
+## Why Austin is a better assumption market than almost anywhere
+
+Austin's price correction, the thing every seller complains about, is exactly what keeps assumptions viable here. Unlock MLS data shows the citywide median has been essentially flat for two years: $569,000 in the trailing twelve months through July 2024, $568,638 through July 2026, with appreciation running negative 1.4% over the past year. A buyer assuming a 2021 or 2022 era loan in Austin faces a modest equity gap. The same vintage loan in a market that ran 40% since then requires a fortune in cash to reach.
+
+Add the supply side: Texas leads the nation in VA loan volume, Ginnie Mae data analyzed by Veterans United shows about 74% of VA borrowers nationally hold rates below 5%, and Central Texas has one of the largest veteran populations in the country between Fort Cavazos, Camp Mabry, and the tech workforce's veteran hiring pipelines. The paper is here. It is just invisible.
+
+How invisible? When NPR compared platforms in Houston, Roam's records identified 433 listings with assumable loans at 3% or below. Zillow showed three. Zillow only knows a loan is assumable if the seller checks a box, and most sellers do not know their own loan qualifies.
+
+**The non-disclosure state trick.** Texas keeps sale prices private, a topic Echelon Property Group covered in depth in the guide to [Texas as a non-disclosure state](/blog/texas-non-disclosure-state). But deeds of trust are public record at the county clerk. A recorded deed of trust shows the lender, the original loan amount, and, for FHA and VA loans, telltale riders and case numbers. Cross reference 2020 through early 2022 recordings against current and pre-market inventory and you have a map of every likely sub 3.5% assumable note in Travis, Williamson, and Hays counties. This is the same public records discipline Echelon Property Group uses for [off market sourcing](/blog/off-market-homes-austin), pointed at loan paper instead of ownership.
+
+## The process and timeline, without the mythology
+
+1. **Confirm assumability and get the servicer's package.** The seller requests the assumption packet from their loan servicer. This is the step that sets the clock, and servicer quality varies wildly.
+2. **Buyer qualifies with the servicer.** Full credit, income, and DTI underwriting to the loan program's standards. There is no appraisal requirement for the assumption itself, which removes an entire failure point.
+3. **Contract and gap plan.** In Texas, structure the deal on the TREC contract with the loan assumption addendum, and lock the gap financing before the option period ends.
+4. **Servicer processing.** FHA assumptions typically run 30 to 60 days. VA assumptions run 45 to 120 days depending on the servicer, with the large servicers averaging 60 to 90. Write the contract timeline accordingly. A 30 day close on an assumption is fiction.
+5. **Close, with a release of liability.** The seller should insist on a formal release of liability so the debt leaves their credit profile. On VA loans, this is separate from entitlement restoration, which is the next section's problem.
+
+Cost comparison at closing: a new $468,000 origination typically carries $10,000 to $12,000 in lender fees, points, and appraisal costs. The assumption path on the worked example costs about $2,060 in VA funding fee (0.5% of the $412,000 balance) plus a few hundred in processing, with title and escrow costs on top. Call it several thousand dollars cheaper before the rate savings even start.
+
+## Sellers: you are sitting on two assets, and only pricing one
+
+If you locked a sub 3.5% government backed loan in 2020 through 2022, your mortgage is a transferable asset with a computable value. In a market where Unlock MLS shows only 61% of Austin listings actually closing and the average sale printing 7% below original ask, an assumable note is differentiation that costs nothing to advertise. It also changes the net math, which is worth running against the full stack of [selling costs in Austin](/blog/cost-to-sell-a-house-austin) before you set a price.
+
+Price the note like an economist: the buyer on the worked example saves $570 per month against new money. Capitalize even half of that savings into price and the seller has a defensible case for a premium of $20,000 to $40,000 over otherwise identical comps, or for holding firm at ask while the neighbors cut. Advocates of expanding assumptions have argued sellers of assumable homes can command around 5% more. The exact premium is negotiable. The leverage is not.
+
+**The VA entitlement trap.** Here is the part most listing agents skip. When a civilian assumes a veteran's VA loan, the loan transfers but the veteran's entitlement stays pledged to it, potentially for decades, until that loan is paid off. Run the worked example from the seller's chair: the 2021 purchase pledged $117,500 of entitlement (25% of the $470,000 original loan). Against 2026's maximum entitlement of $208,187 (25% of the $832,750 conforming limit), the veteran has $90,687 left, which supports a next zero down VA purchase of only about $362,750. That is below Austin's median house. The fixes: sell to a veteran buyer who substitutes their own entitlement, price the entitlement cost into the deal, or plan the next purchase with conventional financing. A veteran seller should know which one they are choosing before the sign goes in the yard.
+
+## The 2026 policy watch: this niche might not stay niche
+
+Three developments worth tracking:
+
+**FHFA is openly evaluating assumable conventionals.** In November 2025, Federal Housing Finance Agency Director Bill Pulte said Fannie Mae and Freddie Mac are evaluating how to offer assumable or portable mortgages "in a safe and sound manner." Today the GSEs allow assumption of fixed rate loans only in narrow cases like death and divorce. If that changes, the assumable universe expands from government backed loans to most of the market, and every 2020 vintage conventional note becomes a marketing asset overnight.
+
+**Congress filed a portability bill this month.** H.R. 10028, the MOVE Act, introduced August 3, 2026, would require Fannie and Freddie to purchase portable mortgages, letting a seller carry their rate, terms, and balance to a new property within 90 days of selling. It was referred to committee the same day and has not been voted on. Portability is the mirror image of assumability: one moves the loan to a new buyer, the other moves it to a new house.
+
+**The existing legal machinery already matters for life events.** Under the Garn-St Germain Act, lenders cannot call a conventional loan due when property transfers by inheritance or divorce, which is exactly why loan assumption sits at the center of Echelon Property Group's guides to [selling an inherited house in Texas](/blog/selling-inherited-house-texas) and [selling a house during a Texas divorce](/blog/selling-house-divorce-texas). Assumption is not exotic. It is already how families keep 3% money in death and divorce. The only question is whether policy lets ordinary sales join the party.
+
+## Four Echelon Property Group plays on assumable paper
+
+**The buyer play.** Hunt 2020 to early 2022 FHA and VA purchases in flat appreciation zip codes, where equity gaps stayed small. Austin's two year sideways market is the best assumption hunting terrain in Texas. Demand the servicer packet early and write realistic timelines.
+
+**The investor play.** FHA assumptions exclude investors. VA assumptions do not require the assuming buyer to occupy, subject to servicer process. A 2.75% note on a rental rewrites the underwrite: on the worked example, the $570 monthly savings versus new money is roughly $6,800 of additional annual cash flow, which at a 6% cap rate behaves like adding six figures of value to the same asset. Deals like this are rare, servicer dependent, and worth the paperwork.
+
+**The seller play.** If your loan is assumable, market the note itself: rate, balance, and payment, in the listing remarks and the [private network channels](/blog/private-listings-austin) before the MLS ever sees it. Veterans: get the entitlement math done first.
+
+**The luxury play.** Since 2020, VA loans with full entitlement have had no loan limit. There are 2021 vintage VA notes in Lakeway, Steiner Ranch, and Cedar Park written at $800,000 and up with rates starting with a 2. An assumable seven figure note at 2.875% is the single rarest financial object in Central Texas real estate, and it will never appear on a portal filter. Every Echelon Property Group deal above $2 million has closed off MLS, and assumable paper is one more reason the interesting inventory trades quietly.
+
+## Frequently Asked Questions
+
+:::faq
+Q: What is an assumable mortgage?
+A: An assumable mortgage lets a home buyer take over the seller's existing loan, keeping the original interest rate, balance, remaining term, and monthly payment, instead of originating a new loan at current market rates. The buyer must qualify with the loan servicer and must cover the seller's equity separately.
+
+Q: Which mortgages are assumable in Texas?
+A: FHA and VA loans are assumable with servicer approval, and VA loans are assumable by any qualified buyer, not just veterans. USDA loans are technically assumable but usually at new rates and terms. Conventional loans generally are not assumable in a sale because of due on sale clauses, with exceptions for death, divorce, and certain family transfers under the Garn-St Germain Act.
+
+Q: Do I have to be a veteran to assume a VA loan?
+A: No. Any buyer who meets the servicer's credit and income standards can assume a VA loan. The catch falls on the seller: unless the buyer is a veteran who substitutes their own entitlement, the seller's VA entitlement stays tied to the loan until it is paid off.
+
+Q: How much does it cost to assume a mortgage in 2026?
+A: VA assumptions carry a 0.5% funding fee on the assumed balance plus a processing fee of roughly $250 to $300 and a regional locality variance. FHA assumption processing fees are capped at $1,800. Total assumption costs typically run thousands of dollars below the lender fees, points, and appraisal costs on a new loan of the same size.
+
+Q: How long does a mortgage assumption take?
+A: FHA assumptions usually take 30 to 60 days. VA assumptions typically run 45 to 120 days depending on the servicer. Contracts should be written with realistic timelines, since the servicer, not a new lender, controls the calendar.
+
+Q: What is the equity gap on an assumption?
+A: The equity gap is the difference between the purchase price and the remaining loan balance, which the buyer must cover at closing. Buyers bridge it with cash, a second mortgage or HELOC at current rates, or seller financing. Even with a second lien near 10 percent, the blended rate on a low assumed first lien usually lands in the mid 3 percent range.
+
+Q: Does letting someone assume my VA loan hurt my ability to buy again?
+A: It can. Your entitlement remains pledged to the assumed loan until it is paid off unless a veteran buyer substitutes their own entitlement. Depending on the original loan size, the remaining entitlement may only support a small zero down purchase, so run the numbers before listing.
+
+Q: Are conventional mortgages ever assumable?
+A: In a normal sale, almost never, because of due on sale clauses. Transfers through inheritance, divorce, and certain family situations are federally protected exceptions. In November 2025, FHFA leadership said Fannie Mae and Freddie Mac are evaluating broader assumable and portable mortgage options, and the MOVE Act introduced in Congress in August 2026 would mandate portable conventional loans, so the landscape may change.
+:::
+
+## Related Reading
+
+- [Off-market homes in Austin](/blog/off-market-homes-austin)
+- [Private listings in Austin](/blog/private-listings-austin)
+- [What it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
+
+## Talk it through privately
+
+If you are hunting a low rate assumable note in Austin, or you own one and want it priced into your sale, the work starts with the paper: the servicer, the balance, and the gap. [Reach out to Taylor Sherwood at Echelon Property Group](/contact) for a confidential read on your situation.
+
+## About the author
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by eXp Realty, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
+
+*This article is general information, not legal, tax, or lending advice. Assumption eligibility and processing are servicer specific. Sources: Freddie Mac Primary Mortgage Market Survey, August 13, 2026; Unlock MLS via Agent Intel, City of Austin, trailing twelve months ending July 31, 2026; Roam live counts, August 2026; Realtor.com and Redfin analyses of the FHFA National Mortgage Database; Veterans United analysis of Ginnie Mae data; HUD Handbook 4000.1; VA Circulars 26-24-5 and 26-24-17; H.R. 10028 (MOVE Act).*`,
+  },
   {
     id: "selling-house-divorce-texas",
     title: "Selling a House During a Divorce in Texas: The 2026 Guide",

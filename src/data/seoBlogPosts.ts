@@ -173,7 +173,7 @@ export const seoBlogPosts: BlogPost[] = [
     id: "texas-homestead-exemption-2026",
     title: "Texas Homestead Exemption 2026: The New $140,000 Rules, What They Actually Save in Austin, and the Cap That Dies in December",
     metaTitle: "Texas Homestead Exemption 2026: New $140K Rules + Austin Savings Math",
-    excerpt: "The Texas homestead exemption jumped to $140,000 in November 2025 ($200,000 at 65+). Full Austin entity-by-entity math, worked examples at $650K and $2.5M, the two-year refund window, and the investor cap expiring December 31, 2026.",
+    excerpt: "The Texas homestead exemption jumped to $140,000 in November 2025 ($200,000 at 65+). Full Austin entity-by-entity math, worked examples at $650K and $2.5M, the two-year refund window, and the investor cap expiring December 31, 2026.\u00a0",
     author: "Taylor Sherwood",
     date: "2026-08-20",
     readTime: "17 min read",

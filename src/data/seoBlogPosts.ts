@@ -164,8 +164,229 @@ const blogSellingHouseDivorceTexas = blogSellingHouseDivorceTexasAsset.url;
 import blogAssumableMortgageAustinAsset from "@/assets/blog/assumable-mortgage-austin-hero.png.asset.json";
 const blogAssumableMortgageAustin = blogAssumableMortgageAustinAsset.url;
 
+import blogTexasHomesteadExemption2026Asset from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
+const blogTexasHomesteadExemption2026 = blogTexasHomesteadExemption2026Asset.url;
+
 // Build marker: ensure new posts ship in bundle (v12)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "texas-homestead-exemption-2026",
+    title: "Texas Homestead Exemption 2026: The New $140,000 Rules, What They Actually Save in Austin, and the Cap That Dies in December",
+    metaTitle: "Texas Homestead Exemption 2026: New $140K Rules + Austin Savings Math",
+    excerpt: "The Texas homestead exemption jumped to $140,000 in November 2025 ($200,000 at 65+). Full Austin entity-by-entity math, worked examples at $650K and $2.5M, the two-year refund window, and the investor cap expiring December 31, 2026.",
+    author: "Taylor Sherwood",
+    date: "2026-08-20",
+    readTime: "17 min read",
+    category: "MARKET INSIGHTS",
+    image: blogTexasHomesteadExemption2026,
+    heroImage: blogTexasHomesteadExemption2026,
+    imageAlt: "Elevated golden hour view of an Austin residential neighborhood with live oaks and the downtown skyline in the distance",
+    content: `On November 4, 2025, Texas voters approved Proposition 13 with roughly 79 percent of the vote, raising the school district homestead exemption from $100,000 to $140,000. Proposition 11 passed alongside it, lifting the additional exemption for homeowners 65 or older or disabled from $10,000 to $60,000. Stack them and a senior homeowner now removes $200,000 of value from the school tax base.
+
+Both changes apply retroactively to tax year 2025, which means they are already baked into the bills that arrived in October 2025 and the ones coming this October. Here is the problem: most of what ranks online still cites the old $100,000 number, and most Austin homeowners have never seen the entity-by-entity math on what the full exemption stack is actually worth at their price point.
+
+This guide runs the real numbers, using tax year 2025 adopted rates for every major Travis County entity, at $650,000 and at $2.5 million. It also covers the two-year refund window if you never filed, what turning 65 does to your bill, and a deadline almost nobody is talking about: the 20 percent appraisal cap protecting your investment properties expires December 31, 2026, and the Legislature does not reconvene until twelve days after it lapses.
+
+## The Exemption Ladder: $25,000 to $140,000 in Three and a Half Years
+
+Texas has raised the school homestead exemption three times since 2022. The pace is unlike anything in the state's property tax history.
+
+:::compare-table
+Vote | Exemption | Change
+Before May 2022 | $25,000 | Baseline
+May 2022 (Prop 2) | $40,000 | Up $15,000
+November 2023 (Prop 4) | $100,000 | Up $60,000
+November 2025 (Prop 13) | $140,000 | Up $40,000
+:::
+
+The November 2025 package also included Senate Bill 1, which compressed school district tax rates by another 6.01 cents, taking the average Texas ISD rate from $0.9766 to $0.9165 per $100. Per Texas Senate estimates, the compression plus the exemption increase saves the average homeowner about $484 per year, and the senior package pushes average savings for over-65 households to roughly $939 per year. Lieutenant Governor Dan Patrick's office noted that about 492 school districts, nearly half the districts in Texas, have average home values under $140,000, meaning the typical homeowner in those districts now pays zero school property tax.
+
+Austin is obviously not one of those districts. Which is why the local math matters more here, not less.
+
+## How the Stack Actually Works
+
+The homestead exemption is not one number. It is a stack of separate exemptions granted by separate taxing entities, and each entity chooses its own.
+
+There are three layers:
+
+**Layer 1: The mandatory school exemption.** $140,000 off your appraised value for school district taxes only. Every ISD in Texas. Automatic once you have a homestead exemption on file, no reapplication needed for the new amount.
+
+**Layer 2: Local option percentage exemptions.** Cities, counties, and special districts may exempt up to 20 percent of your value (minimum $5,000). This is where Austin quietly outperforms most of Texas: Travis County, the City of Austin, and Central Health have all adopted the full 20 percent, the maximum allowed by law.
+
+**Layer 3: Over-65 and disabled add-ons.** An extra $60,000 off the school base (total $200,000), plus flat dollar amounts each local entity chooses, plus a permanent ceiling on your school taxes.
+
+Here is the full Travis County stack for a home inside Austin city limits and Austin ISD, using tax year 2025 adopted rates:
+
+:::compare-table
+Taxing entity | 2025 rate per $100 | General homestead exemption | Over-65 or disabled add-on
+Austin ISD | $0.9252 | $140,000 (mandatory) | $60,000 more, plus tax ceiling
+City of Austin | $0.5240 | 20% of value | $192,000
+Travis County | $0.375845 | 20% of value | $143,220
+Central Health | $0.1180 | 20% of value | Entity-set amount
+Austin Community College | $0.1034 | Varies, see TCAD entity list | Entity-set amount
+Combined | $2.0464 | | 
+:::
+
+Sources: Austin ISD FY 2025-26 adopted rate ($0.8022 M&O plus $0.1230 I&S, down $0.0253 from the prior year), Travis County FY 2026 Taxpayer Impact Statement, City of Austin FY 2026 Taxpayer Impact Statement. Travis County reports its average taxable homestead at $515,213 and its median at $391,064 for the current cycle. Rates for tax year 2026 get adopted this fall; Eanes ISD has already proposed holding at $0.8322 pending the state's final compression calculation.
+
+## Worked Example One: $650,000 Home in Austin ISD
+
+A buyer closes on a $650,000 home inside Austin city limits, Austin ISD, and files the homestead exemption. Tax year 2025 rates:
+
+:::compare-table
+Entity | Taxable value after exemptions | Tax
+Austin ISD | $510,000 (after $140,000 exemption) | $4,718.52
+City of Austin | $520,000 (after 20%) | $2,724.80
+Travis County | $520,000 (after 20%) | $1,954.39
+Central Health | $520,000 (after 20%) | $613.60
+ACC | $650,000 (before any ACC option) | $672.10
+Total with homestead | | $10,683.41
+Total with no homestead filed | $650,000 across the board | $13,301.89
+Annual savings | | $2,618.48
+:::
+
+Three things worth noticing in that table.
+
+First, the Proposition 13 increase alone (the move from $100,000 to $140,000) is worth $370 per year at Austin ISD's rate ($40,000 times $0.9252 per $100). Meaningful, not life-changing.
+
+Second, the 20 percent local option exemptions are collectively worth more than the school exemption bump. City, county, and Central Health together remove $130,000 of value at a combined rate of about $1.018 per $100, roughly $1,323 per year. Austin's decision to adopt the maximum local option is the quiet half of the savings.
+
+Third, and this is the one that produces actual checks: the exemption can be filed late, up to two years after the delinquency date, with refunds for the years you missed. A buyer who closed in early 2024 and never filed can still file today for 2024 and 2025 and recover roughly $5,200 at these numbers. We run this check on every buyer file at Echelon Property Group, and it is astonishing how often a two-year-old closing produces a four-figure refund.
+
+## Worked Example Two: $2.5 Million in Eanes ISD
+
+Now the luxury version. A $2.5 million home in the Westlake area, Eanes ISD, unincorporated Travis County (no city tax). Eanes adopted $0.8322 per $100 for tax year 2025, its lowest rate in a decade, and its median taxable homestead is $1,234,063, so a $2.5 million property is squarely in the district's normal business.
+
+:::compare-table
+Entity | Taxable value after exemptions | Tax
+Eanes ISD | $2,360,000 (after $140,000 exemption) | $19,639.92
+Travis County | $2,000,000 (after 20%) | $7,516.90
+Central Health | $2,000,000 (after 20%) | $2,360.00
+ACC | $2,500,000 (before any ACC option) | $2,585.00
+Total with homestead | | $32,101.82
+Total with no homestead filed | $2,500,000 across the board | $35,736.13
+Annual savings | | $3,634.31
+:::
+
+The structural insight for luxury owners: flat exemptions shrink as a share of your bill while percentage exemptions scale with it. At $2.5 million, the Proposition 13 increase is worth $333 per year at Eanes rates. Travis County's 20 percent local option is worth $1,879 per year, about 5.6 times as much. The full $140,000 school exemption is worth $1,165. The higher your value, the more the 20 percent entities carry the load, which is exactly why an unfiled exemption on a $2.5 million to $4 million property is such an expensive oversight. We see it on off-market acquisitions with some regularity: the entity records lag, nobody files, and the first escrow analysis lands $3,000 to $6,000 heavy.
+
+## Turning 65: The $200,000 Exemption and the Ceiling
+
+The over-65 package (identical rules for qualifying disabled homeowners) has three parts, and the third is the one that compounds.
+
+**Part one, the bigger exemptions.** School exemption rises to $200,000 total. The City of Austin adds a $192,000 exemption, Travis County adds $143,220, both on top of their 20 percent local options. On the $650,000 Austin example, the over-65 add-ons remove roughly another $2,100 per year: $555 at the school district, $1,006 at the city, $538 at the county.
+
+**Part two, the school tax ceiling.** The year you qualify, your school district taxes freeze at that year's dollar amount. Values can rise, rates can rise, your school tax bill does not, unless you add improvements like a pool or an addition.
+
+**Part three, the ceiling travels.** When an over-65 homeowner sells and buys elsewhere in Texas, the appraisal district issues a Tax Ceiling Certificate and a percentage of the frozen benefit transfers to the new homestead. If your ceiling had you paying 30 percent of what your school taxes would otherwise be, you pay roughly 30 percent at the new house too. For downsizing sellers this changes the entire net-carrying-cost comparison between staying and moving, and it is routinely left out of the analysis. If you are 65 or older and modeling a move, request the certificate before you list, not after you close.
+
+## The 10 Percent Cap, or Why Your Neighbor Pays Half Your Taxes
+
+Separate from the exemptions, a homestead carries an appraisal cap under Tax Code Section 23.23: your assessed value cannot rise more than 10 percent per year regardless of what the market does. Market value and assessed value diverge, and for long holders the gap gets large. Through Austin's 2020 to 2022 run, homeowners who bought in the mid 2010s accumulated capped values hundreds of thousands of dollars below market, worth several thousand dollars a year at a 2 percent combined rate.
+
+Two practical consequences:
+
+**For buyers: the cap dies at closing.** Your first full-year assessment resets to market value, so never underwrite a purchase using the seller's current tax bill. On a house the seller bought in 2017, their bill can easily run 30 to 40 percent below what yours will be. Pull the appraisal district's market value, apply the exemptions you will actually qualify for, and use current adopted rates. This is standard workup on every Echelon Property Group buyer file, and in 2026 there is a small tailwind: the Travis Central Appraisal District's 2026 notices showed single-family market values down about 1.8 percent on average, the rare year the reset math moves in the buyer's favor.
+
+**For owners: the cap only exists while the exemption does.** Appraisal districts are required to re-verify every homestead at least once every five years, and if you ignore the verification mailer, the exemption and the cap can quietly drop off. With $140,000 now riding on the school side alone, that piece of mail is worth opening.
+
+## Investors: Your 20 Percent Cap Expires December 31, 2026
+
+Homestead rules get the headlines. The clock that should have investor attention is Tax Code Section 23.231, the circuit breaker limitation created in the 2023 relief package.
+
+:::compare-table
+Circuit breaker mechanics | Detail
+What it does | Caps annual appraised value growth at 20% on qualifying non-homestead real property
+Who qualifies | Rentals, second homes, small commercial, vacant land under the value threshold
+Value threshold | $5,000,000 (2024), $5,160,000 (2025), $5,320,000 (2026), indexed to CPI
+Application | None required, applied automatically
+Seasoning | One full calendar year of ownership before the cap attaches
+On sale | Cap resets; the buyer starts over
+Authorized for | Tax years 2024, 2025, and 2026 only
+Expires | December 31, 2026
+:::
+
+The next regular legislative session begins January 12, 2027, after the cap has already lapsed. Nothing on the books extends it. A 2025 state review of the pilot found it limited value increases without reducing the overall cost of local government, which is not the kind of finding that guarantees renewal.
+
+What that means in practice: an Austin duplex carried at a $1,000,000 net appraised value that jumps to a $1,300,000 market value in a reappraisal is taxed at $1,200,000 under the cap, saving about $2,046 at Austin's combined rate for that year. In 2027, absent renewal, there is no cap and the full market value hits the roll. Three implications for anyone holding Central Texas rental or small commercial product:
+
+1. **The 2026 protest was the last capped protest.** From here, protests are the only value control on non-homestead property. Budget for them annually.
+2. **Underwrite 2027 and beyond with uncapped assessments.** If your pro forma assumed 20 percent value growth limits, strip that assumption out now.
+3. **Acquisitions closing now never get the cap.** The one-calendar-year seasoning requirement means a property bought in 2026 would first qualify in 2027, when the program no longer exists unless the Legislature revives it.
+
+One more 2025 change for the investor and small business file: Proposition 9 raised the business personal property exemption from $2,500 to $125,000 across all local taxing units. If you run furnished short-term rentals or carry equipment-heavy operations, the BPP rendition math just changed materially in your favor.
+
+## Filing in Travis, Williamson, and Hays Counties
+
+The exemption is free, it is a one-time filing, and no one should ever pay a third party to submit it. The solicitation letters offering to file for $50 or more are junk mail.
+
+:::compare-table
+County | Where to file | General homestead | County over-65 add-on
+Travis | traviscad.org | County offers 20% (max allowed) | $143,220
+Williamson | wcad.org | County offers 5%, $5,000 minimum | $125,000
+Hays | hayscad.com | Local options vary by entity; the county adopted the over-65 tax freeze in 2016 | See Hays CAD entity list
+:::
+
+Mechanics that matter:
+
+- Standard deadline is April 30 of the tax year, but filing is accepted year-round and applies once granted.
+- New buyers can often file immediately. Since 2022, if the previous owner did not have an exemption on the property, you can qualify from your move-in date rather than waiting for the next January 1. If the seller did have one, their exemption generally protects the property through year end and yours takes over January 1.
+- Late filing runs two years past the delinquency date for the general homestead, with refunds for over-collection. Miss it entirely and the money is gone. Hays CAD spells out the window plainly: a 2025 application had an April 30, 2025 deadline, a February 1, 2026 delinquency date, and a late filing window running to January 31, 2028. Note that some add-on exemptions carry shorter late windows, so file the over-65 promptly in the year you turn 65 rather than banking on the lookback.
+- Documentation is one item: a Texas driver's license or state ID with an address matching the property.
+- Processing runs up to 90 days at TCAD, which staffs a dedicated exemption helpline at (512) 873-1560.
+- Answer the five-year verification notice. Silence can cost you the exemption and the 10 percent cap in the same envelope.
+
+## Where This Lands for Buyers and Sellers
+
+For buyers, the exemption stack is underwriting input, not paperwork. The same $650,000 of budget carries very differently across a full-exemption Austin ISD address, a Williamson County address with a 5 percent county option, and a new-build MUD address layering another dollar per $100 on top. We covered the district side of that math in our [MUD and PID guide](/blog/mud-pid-taxes-austin); this is the exemption side of the same carrying-cost model.
+
+For sellers, two items belong on the pre-listing checklist. First, confirm your own exemption status before your agent builds a net sheet, because an escrowed tax line built on a lapsed exemption misstates your carry and occasionally your payoff. Second, expect a well-represented buyer to re-run taxes at market value with the cap reset, which means the monthly payment they are underwriting is higher than the one you are living with. Pricing strategy that ignores the buyer's true first-year carry is one of the quieter reasons listings in the $1.5 million to $3 million band sit, and it belongs alongside the rest of your [cost to sell](/blog/cost-to-sell-a-house-austin) math. On the private-sale side of our practice at Echelon Property Group, that reset math goes into every buyer model we build, because a $2.5 million acquisition with a stale assessed value can swing five figures the first full year.
+
+The 2025 package moved real money to homeowners: $140,000 off the school base for everyone, $200,000 plus a frozen bill at 65, and the strongest local option stack in Texas if your address is in Austin. The state did its part at the ballot box. The remaining variable is whether the paperwork on your specific address is actually in place, and for investment property, whether your 2027 numbers are ready for a world without the cap.
+
+## Related Reading
+
+- [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin)
+- [Capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas)
+- [Selling an inherited house in Texas](/blog/selling-inherited-house-texas)
+- [What it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
+
+## Frequently Asked Questions
+
+:::faq
+Q: How much is the Texas homestead exemption in 2026?
+A: $140,000 off your home's value for school district taxes, raised from $100,000 by Proposition 13 in November 2025. Homeowners 65 or older or disabled receive an additional $60,000, for $200,000 total on the school side. Cities, counties, and special districts can layer local option exemptions of up to 20 percent on top; Travis County, the City of Austin, and Central Health all grant the full 20 percent.
+
+Q: Do I need to reapply to get the new $140,000 amount?
+A: No. If you already have a homestead exemption on file, the appraisal district applies the higher amount automatically. The increase is retroactive to tax year 2025, so it is already reflected in current bills. You only need to act if you have never filed, if you turned 65, or if you receive a periodic verification notice, which you must answer to keep the exemption.
+
+Q: When did the $140,000 exemption take effect?
+A: Voters approved it November 4, 2025, and it applies retroactively to tax years beginning January 1, 2025. The October 2025 bills were calculated with the new amount, and the bills arriving in October 2026 use it as well.
+
+Q: Can I still file if I bought my house one or two years ago and forgot?
+A: Yes. Texas allows late homestead applications up to two years after the delinquency date, with refunds of the excess taxes you paid. On a $650,000 Austin home, two missed years is roughly $5,200. File with your county appraisal district (TCAD, WCAD, or Hays CAD) as soon as possible, because years that fall outside the window are unrecoverable.
+
+Q: I just closed on a home. Do I have to wait until January 1 to file?
+A: Often not. Since 2022, a buyer can qualify from the move-in date if the previous owner did not have an exemption on the property. If the seller did have one, that exemption generally covers the property through the end of the year and yours begins January 1. Either way, file right away; the exemption is free and the application takes minutes.
+
+Q: Does the homestead exemption apply to my rental or second home?
+A: No. It applies only to the residence you own and occupy as your principal home. Non-homestead property under $5.32 million currently gets a different protection, the 20 percent circuit breaker appraisal cap, but that program is authorized only through tax year 2026 and expires December 31, 2026 unless the Legislature renews it in the session beginning January 2027.
+
+Q: What happens to my property taxes when I turn 65?
+A: Three things. Your school exemption rises to $200,000 total. Local entities add flat exemptions ($192,000 at the City of Austin, $143,220 at Travis County). And your school taxes freeze at that year's dollar amount, a ceiling that lasts as long as you own and occupy the home and even transfers as a percentage when you move within Texas via a Tax Ceiling Certificate.
+
+Q: I have the exemption. Why did my bill still go up?
+A: Four usual suspects: your assessed value rose (the 10 percent cap limits the pace but not the direction), a taxing entity raised its rate (Travis County's rate rose about 3 cents this cycle), you lost the exemption by missing a verification notice, or you bought recently and the prior owner's capped value reset to market. Exemptions lower the base; they do not freeze the bill, except for the over-65 school ceiling.
+:::
+
+*Tax figures use tax year 2025 adopted rates published by each taxing entity and are for planning purposes, not tax advice. Confirm your specific parcel's entities and exemption status with the appropriate appraisal district or a licensed tax professional.*
+
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.
+
+:::cta-anchor
+:::
+`,
+  },
   {
     id: "assumable-mortgage-austin",
     title: "Assumable Mortgages in Austin: How Buyers Are Getting 2.75% in a 6.67% World",
@@ -1219,6 +1440,10 @@ A: Pull the address on the county appraisal district website and read the taxing
 - [Hays County, Truth in Taxation](https://www.hayscountytx.gov/truth-in-taxation)
 - [Old Republic Title, Understanding PUDs, MUDs and PIDs in Texas](https://www.oldrepublictitle.com/media/u2vlpqo4/texas__understanding_puds_muds__pids_08092023.pdf)
 - [Destination North Texas, PID payoff mechanics](https://destinationnorthtexas.com/pid-texas/)
+
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
 
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
   },
@@ -3318,6 +3543,10 @@ Q: Should I sell an inherited house off market?
 A: It fits more often than not. Estates typically value privacy, as-is terms, and a flexible closing over squeezing out the last dollar of exposure, and inherited homes are one of the largest sources of legitimate off-market inventory in Austin. The honest tradeoff is exposure versus certainty. Get a real valuation first, then decide with full information rather than defaulting to either path.
 :::
 
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
+
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with more than $155 million in career sales across 200 plus transactions. The majority of his transaction volume has come through private and off-market channels, including estate and inherited property sales. This article is general information, not legal or tax advice. Consult a Texas probate attorney and a CPA about your specific situation.
 
 :::cta-anchor
@@ -3577,6 +3806,10 @@ A: Usually very little. Inherited property receives a stepped-up basis equal to 
 :::
 
 *This article is general education on federal tax law, not tax or legal advice. Rules change and individual situations vary. Consult a CPA or tax attorney before acting on any strategy described here.*
+
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
 
 ## The bottom line
 

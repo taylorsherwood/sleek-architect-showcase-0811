@@ -1441,6 +1441,10 @@ A: Pull the address on the county appraisal district website and read the taxing
 - [Old Republic Title, Understanding PUDs, MUDs and PIDs in Texas](https://www.oldrepublictitle.com/media/u2vlpqo4/texas__understanding_puds_muds__pids_08092023.pdf)
 - [Destination North Texas, PID payoff mechanics](https://destinationnorthtexas.com/pid-texas/)
 
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
+
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
   },
 
@@ -3539,6 +3543,10 @@ Q: Should I sell an inherited house off market?
 A: It fits more often than not. Estates typically value privacy, as-is terms, and a flexible closing over squeezing out the last dollar of exposure, and inherited homes are one of the largest sources of legitimate off-market inventory in Austin. The honest tradeoff is exposure versus certainty. Get a real valuation first, then decide with full information rather than defaulting to either path.
 :::
 
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
+
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas, with more than $155 million in career sales across 200 plus transactions. The majority of his transaction volume has come through private and off-market channels, including estate and inherited property sales. This article is general information, not legal or tax advice. Consult a Texas probate attorney and a CPA about your specific situation.
 
 :::cta-anchor
@@ -3798,6 +3806,10 @@ A: Usually very little. Inherited property receives a stepped-up basis equal to 
 :::
 
 *This article is general education on federal tax law, not tax or legal advice. Rules change and individual situations vary. Consult a CPA or tax attorney before acting on any strategy described here.*
+
+## Related Reading
+
+- [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
 
 ## The bottom line
 

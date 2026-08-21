@@ -365,8 +365,9 @@ A serious valuation in Texas is a research project, because the sale prices are 
 **A pricing strategy, not just a value.** The right list price also accounts for search band thresholds and buyer psychology, which we covered in [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin). A home worth $2.05 million might be listed at $1,995,000 on purpose. No estimate widget thinks that way.
 
 :::cta-anchor
-If you want the real number on your home, we will build it the long way: verified sales, a walk-through, and the off-market data the algorithms have never met. [Request a private valuation](/home-value-austin) from Echelon Property Group and see what your Zestimate has been missing. And if you would rather your eventual sale never feed anyone's algorithm at all, read our guide to [private listings in Austin](/blog/private-listings-austin).
 :::
+
+If you want the real number on your home, we will build it the long way: verified sales, a walk-through, and the off-market data the algorithms have never met. [Request a private valuation](/home-value-austin) from Echelon Property Group and see what your Zestimate has been missing. And if you would rather your eventual sale never feed anyone's algorithm at all, read our guide to [private listings in Austin](/blog/private-listings-austin).
 
 ## Frequently Asked Questions
 

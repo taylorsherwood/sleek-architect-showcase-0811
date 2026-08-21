@@ -167,8 +167,247 @@ const blogAssumableMortgageAustin = blogAssumableMortgageAustinAsset.url;
 import blogTexasHomesteadExemption2026Asset from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
 const blogTexasHomesteadExemption2026 = blogTexasHomesteadExemption2026Asset.url;
 
+import blogZestimateAccuracyTexasAsset from "@/assets/blog/zestimate-accuracy-texas-hero.png.asset.json";
+const blogZestimateAccuracyTexas = blogZestimateAccuracyTexasAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v12)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "zestimate-accuracy-texas",
+    title: "How Accurate Is a Zestimate in Texas?",
+    metaTitle: "How Accurate Is a Zestimate in Texas? (2026 Data)",
+    excerpt: "Zillow publishes its own error rates. In Austin, 60% of off-market Zestimates miss by more than 5%, and 1 in 9 misses by 20%. Here is what that means in dollars.",
+    author: "Taylor Sherwood",
+    date: "2026-08-21",
+    readTime: "16 min read",
+    category: "SELLER RESOURCES",
+    image: blogZestimateAccuracyTexas,
+    heroImage: blogZestimateAccuracyTexas,
+    imageAlt: "Modern hillside home in West Austin at dusk with an out-of-focus home value estimate on a phone screen in the foreground",
+    content: `On February 29, 2016, the CEO of Zillow sold his Seattle home for $1,050,000. The next day, the Zestimate on that same property read $1,750,405. The man who ran the company that invented the Zestimate sold his own house for 40 percent less than his own algorithm said it was worth.
+
+That story is a decade old, and the model has improved enormously since then. So this article is not going to argue from one embarrassing anecdote. It is going to argue from the accuracy data Zillow itself publishes, run against a structural problem in Texas that no algorithm has engineered around: Texas does not tell anyone what homes actually sell for.
+
+If you own a home in Austin and you have ever refreshed your Zestimate before bed, this is the article that explains what that number is, what it is not, and exactly how far off it is likely to be, in dollars, on your street.
+
+## The Two Numbers Zillow Publishes, and Which One Is Yours
+
+Zillow grades its own homework, which deserves credit. The company publishes a national accuracy page comparing Zestimates to actual closed sale prices. As of mid 2026, it reports two headline figures:
+
+:::compare-table
+Home status | National median error rate
+On market (actively listed) | 1.74%
+Off market (not listed) | 7.20%
+:::
+
+Here is the part most homeowners miss: you are the second row. If you are checking your Zestimate to decide whether to sell, whether you can afford the move up, or what your equity looks like, your home is off market. The relevant error rate is not the impressive 1.74 percent. It is 7.20 percent, more than four times worse.
+
+And "median error" is a phrase doing heavy lifting. A 7.20 percent median error means half of all off-market Zestimates land within 7.20 percent of the eventual sale price. The other half miss by more than that, with no ceiling on how far. Median error is the midpoint of the misses, not the maximum.
+
+## What the Austin Numbers Actually Say
+
+Zillow also publishes a metro-level breakdown. Here is the Austin metro from Zillow's own accuracy tables:
+
+:::compare-table
+Austin metro | Median error | Within 5% of sale price | Within 10% | Within 20%
+On-market homes | 2.34% | 80.78% | 94.29% | 98.62%
+Off-market homes | 6.69% | 39.57% | 65.87% | 88.81%
+:::
+
+Read the off-market row carefully, because that row is your house. Fewer than 40 percent of off-market Austin Zestimates land within 5 percent of what the home actually sells for.
+
+Nobody publishes the table flipped around, so here it is. For an off-market home in the Austin metro, per Zillow's own data:
+
+:::compare-table
+The Zestimate misses by more than... | How often
+5% | 60.4% of the time
+10% | 34.1% of the time
+20% | 11.2% of the time
+:::
+
+In plain language: the Zestimate on your Austin home is more likely than not to be off by more than 5 percent. Roughly 1 in 3 misses by more than 10 percent. About 1 in 9 misses by more than 20 percent.
+
+Now put dollars on it:
+
+:::compare-table
+If your home is actually worth... | A 6.69% median miss is... | A 10% miss is... | A 20% miss is...
+$568,470 (Austin median sale, trailing 12 months) | $38,000 | $56,800 | $113,700
+$1,000,000 | $66,900 | $100,000 | $200,000
+$1,862,000 (78746 median sale, trailing 12 months) | $124,600 | $186,200 | $372,400
+$2,500,000 | $167,300 | $250,000 | $500,000
+:::
+
+Market medians per Unlock MLS trailing 12 month data through July 31, 2026. The typical miss on the typical Westlake home is a luxury car. The 1-in-9 miss is a starter home.
+
+## Why the On-Market Number Flatters the Model
+
+The obvious question: if the Zestimate gets nearly three times more accurate the moment a home is listed, is the model suddenly smarter about your house?
+
+No. It just got to peek at the answer key.
+
+Zillow says this itself. Its own FAQ explains that once a home goes on the market, the model incorporates listing information, including the list price. The Zestimate then drifts toward the number a licensed human already researched, priced, and published. The 2.34 percent on-market error is not the algorithm predicting the market. It is the algorithm agreeing with your agent.
+
+Zillow's FAQ contains another quiet admission: homes listed longer than is typical for the local market, in some cases around a year, can flip back to being valued as off-market homes. Translation: when the list price stops looking like reliable information, the model stops leaning on it, and the error rate goes back up.
+
+The pattern even followed Zillow's leadership. In 2020, the same former CEO from our opening listed his Los Angeles home for $24 million, nearly $8 million above its roughly $16.1 million Zestimate. Shortly after, the Zestimate was revised to approximately $23.6 million. The algorithm did not discover $7.5 million of hidden value in that house. It read the list price.
+
+For a seller, this matters for one reason: the Zestimate is at its least accurate at the exact moment you need it most. You need a number before you list. That is precisely when the model is guessing.
+
+## The Texas Handicap: The Model Is Working Blindfolded
+
+Everything above applies nationally. Texas adds a structural problem on top.
+
+Texas is one of about a dozen non-disclosure states. When a home closes here, the sale price does not appear on the deed, does not get filed with the county, and does not become public record. We wrote a full guide to how this works in [Texas is a non-disclosure state](/blog/texas-non-disclosure-state), including how the Travis Central Appraisal District once had so little sales data it struggled to reappraise the county at all.
+
+Why does that matter for an algorithm? Because a valuation model is only as good as the sale prices it trains on. In disclosure states, every closed sale becomes public ground truth the model can learn from. In Texas, there is no public record backstop. The only closed prices Zillow sees are the ones that flow through MLS data feeds.
+
+Which means two things:
+
+1. **Any sale that happens off the MLS is invisible to the model.** Private sales, pocket listings, family transfers, investor deals, and quiet luxury closings never teach the algorithm anything. It is not that the model weighs them poorly. They do not exist in its world.
+2. **Anywhere MLS coverage thins out, the model starves.** Rural Hill Country acreage, ranch land, and unique properties that trade broker to broker leave almost no digital footprint.
+
+You can see the Texas handicap in Zillow's own metro table. Compare the four big Texas metros to disclosure-state growth markets with similar Sun Belt profiles, young housing stock, and heavy sales volume, which is exactly the environment where automated models perform best:
+
+:::compare-table
+Metro (off-market homes) | Median error | Within 5% of sale price | Within 20%
+Colorado Springs, CO | 4.37% | 55.79% | 94.28%
+Las Vegas, NV | 5.08% | 49.25% | 93.06%
+Washington, DC | 5.11% | 49.36% | 91.90%
+Denver, CO | 5.17% | 48.67% | 93.39%
+Dallas-Fort Worth, TX | 5.98% | 43.46% | 89.64%
+Houston, TX | 6.40% | 41.27% | 87.66%
+San Antonio, TX | 6.65% | 39.57% | 85.71%
+Austin, TX | 6.69% | 39.57% | 88.81%
+:::
+
+Every Texas metro clusters at the bottom of its peer group. Austin, a market full of newer subdivisions and high transaction volume, the friendliest possible terrain for an algorithm, still posts an off-market error profile meaningfully worse than Denver, Las Vegas, or Washington. The difference is not the housing. It is the data. They disclose. We do not.
+
+## Where the Model Breaks Hardest: The Luxury Tail
+
+Averages hide the real damage. The Austin metro error rate is dominated by hundreds of thousands of relatively similar tract homes, where the model does its best work. The further your home gets from the middle of that distribution, the worse your personal error bar gets. Three reasons:
+
+**1. Thin comps.** In 78746, the entire zip code recorded 319 closed MLS sales in the trailing 12 months through July 2026. Spread across Westlake's dozens of distinct micro markets, that is a handful of sales per neighborhood per year, each one a custom home requiring judgment calls no public record captures. Zillow's own FAQ acknowledges that when nearby sales are scarce, the model extrapolates from areas as large as an entire county. Your canyon-rim contemporary is being priced, in part, off sales it has nothing in common with.
+
+**2. Dispersion.** Per Unlock MLS trailing 12 month data, the average 78746 sale price is $2,294,514 while the median is $1,862,000. The average sits 23 percent above the median, the signature of a fat right tail of eight-figure outliers. Average price per square foot is $610 while the median is $561. When same-size homes in the same zip routinely trade hundreds of dollars per foot apart based on lot, view, architect, and condition, a model that cannot see any of those things is not estimating. It is rounding.
+
+**3. Off-market invisibility.** This is the one we know firsthand. The overwhelming majority of Echelon Property Group's transaction volume has come through [private opportunities](/private-opportunities) and off-market deals, and every transaction over $2 million we have ever closed happened entirely off the MLS. In the segment of the Austin market where the most money changes hands, a meaningful share of the true comps never enter the dataset the Zestimate learns from. The algorithm is not just less accurate at the top of the market. It is working from a censored version of reality.
+
+## The $2 Million Westlake Stress Test
+
+Put it all together with a concrete example. Say you own a Westlake home genuinely worth $2,000,000, sitting near the middle of the 78746 market, and you pull up your Zestimate tonight.
+
+Applying Zillow's own published off-market distribution for the Austin metro:
+
+:::compare-table
+Outcome | Probability | Dollar range of the miss
+Zestimate lands within 5% | 39.6% | $0 to $100,000 off
+Misses by 5% to 10% | 26.3% | $100,000 to $200,000 off
+Misses by 10% to 20% | 22.9% | $200,000 to $400,000 off
+Misses by more than 20% | 11.2% | $400,000+ off
+:::
+
+There is roughly a 1 in 3 chance the number on your screen is at least $200,000 wrong, and about a 1 in 9 chance it is at least $400,000 wrong, in either direction, before accounting for the luxury-specific problems above, which the metro-wide averages understate. And you have no way to know which row you are in, or which direction the miss runs.
+
+## What Believing the Wrong Number Costs
+
+An inaccurate Zestimate is harmless right up until someone makes a decision with it. Both directions are expensive:
+
+If the Zestimate runs high and you anchor to it, you list high, and the Austin market is unforgiving about that right now. Per Unlock MLS trailing 12 month data, only 61.1 percent of City of Austin listings actually closed; 7,174 listings expired or were withdrawn against 10,873 sales. In 78746 the success rate falls to 54.6 percent, meaning roughly 45 percent of Westlake area listings failed to sell at all. Overpriced luxury listings do not just sit. They decay, absorb drip price cuts, and resurface stale. We modeled exactly how a $166,000 repricing spiral unfolds in [why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin), and covered the wider pattern in [why your Austin home didn't sell](/blog/why-didnt-my-house-sell-austin).
+
+If the Zestimate runs low and you anchor to it, the damage is quieter. You underprice and the market quietly thanks you. Or you accept an unsolicited cash offer from an investor who has read the same low Zestimate you have and is delighted you both believe it. Or you decide you cannot afford your next move and stay put, based on equity math that was wrong by six figures. The real net number depends on [what it actually costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin), not on a widget.
+
+Buyers weaponize it too. Every offer negotiation in Austin now includes someone's phone displaying a Zestimate. When the number is low, buyers treat it as evidence. When it is high, listing agents do. It is the same coin flip either way, and per Zillow's own Austin data, it comes up wrong by more than 5 percent about 60 percent of the time.
+
+## Zillow Bet Half a Billion Dollars on Its Own Number
+
+If you want to know how much confidence to place in algorithmic home pricing, watch what happened when Zillow priced homes with its own money.
+
+From 2018 to 2021, Zillow Offers used the company's valuation models to buy homes directly, renovate them, and resell them at scale. An executive told a technology conference in September 2021 that the program could eventually serve over half of the housing stock. Seven weeks later, on November 2, 2021, Zillow shut the entire business down.
+
+The damage, per Zillow's own SEC filings: a $304 million inventory write-down in Q3 2021 from buying homes for more than it could resell them, an expected $240 million to $265 million in further Q4 losses, and a full-year 2021 inventory write-down of $407.9 million. The company laid off roughly 25 percent of its workforce, about 2,000 people, and was left holding nearly 18,000 homes it had bought or contracted to buy. CEO Rich Barton's explanation was direct: "the unpredictability in forecasting home prices far exceeds what we anticipated."
+
+That is the fairest one-sentence review of automated valuation ever written, and it came from the company that pioneered it. Zillow trusted its own estimate enough to spend billions of dollars on it, in a rising market, with better data access than any consumer will ever have, and lost half a billion dollars. The Zestimate on your screen is a lighter-weight cousin of the models that produced that outcome.
+
+To be fair to Zillow, the company has been transparent about what the tool is. Its own page states the Zestimate "is not an appraisal and can't be used in place of an appraisal," and notes that lenders will not accept it. Zillow calls it a starting point. The problem is not the disclaimer. The problem is how many Texans treat the starting point as the finish line.
+
+## What the Model Cannot See From Space
+
+Some of what determines an Austin home's value simply does not exist in any dataset the Zestimate can reach. A few of the big ones:
+
+:::compare-table
+Value factor | Why it moves the price | What the algorithm sees
+Canyon, greenbelt, and hill topography | In 78746 and 78733, a rim lot with a canyon view and a landlocked lot two streets over are different asset classes | A lot size in square feet
+School attendance micro boundaries | Two similar homes on opposite sides of an Eanes ISD line can trade far apart | A zip code
+Interior condition and renovation quality | A taken-to-the-studs remodel vs. original 1994 finishes can be a 20 percent swing | Whatever the tax assessor was told, often nothing
+MUD and PID tax burden | An extra 1 percent tax rate changes what buyers will pay for the same house, as we showed in [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin) | Frequently not itemized at all
+STR permits and HOA rental rules | A transferable rental income stream, or a prohibition on one, changes investor demand | Nothing
+Off-MLS sale history | The private comps that set the real tone of a luxury street | Nothing, by definition
+:::
+
+None of this is a secret to Zillow. The model is not badly built. It is built for a world of recorded prices and interchangeable houses, and West Austin is neither.
+
+## When the Zestimate Is Actually Fine
+
+Credit where due. If you own a 2,100 square foot production build in a large, active subdivision in Round Rock, Pflugerville, or Kyle, where a dozen nearly identical floor plans have sold on the MLS in the last six months, your Zestimate is probably within a reasonable band, and it is a perfectly good tool for casual tracking. The model excels exactly where its critics say it does: uniform product, high turnover, on-MLS everything.
+
+The trust problem is that the widget looks equally confident everywhere. It displays a Zestimate on a $700,000 tract home and a $7 million canyon estate with the same font, the same precision, and the same authority, while the error bars behind those two numbers live in different universes.
+
+## How to Get a Real Number in a Non-Disclosure State
+
+A serious valuation in Texas is a research project, because the sale prices are not lying around in public. Here is what that looks like when Echelon Property Group prices a home:
+
+**Verified closed comps, including the invisible ones.** MLS solds are the floor, not the ceiling. Because most of our transaction volume has always run through private and off-market channels, we can often bring closed prices to a pricing conversation that no algorithm and no public-facing portal has ever seen. In the segments where the Zestimate is guessing hardest, that private comp file is the whole ballgame.
+
+**A walk-through, because condition is half the answer.** No model knows about the foundation work, the view corridor, the primary suite addition, or the 1980s kitchen hiding behind great listing photos. An adjustment-grade valuation requires standing in the house.
+
+**Adjustments a lender would recognize.** Lot, view, condition, finish level, floor plan function, tax burden, and timing, itemized the way an appraiser would, so the number survives contact with the buyer's appraisal later.
+
+**A pricing strategy, not just a value.** The right list price also accounts for search band thresholds and buyer psychology, which we covered in [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin). A home worth $2.05 million might be listed at $1,995,000 on purpose. No estimate widget thinks that way.
+
+:::cta-anchor
+:::
+
+If you want the real number on your home, we will build it the long way: verified sales, a walk-through, and the off-market data the algorithms have never met. [Request a private valuation](/home-value-austin) from Echelon Property Group and see what your Zestimate has been missing. And if you would rather your eventual sale never feed anyone's algorithm at all, read our guide to [private listings in Austin](/blog/private-listings-austin).
+
+## Frequently Asked Questions
+
+:::faq
+Q: How accurate is a Zestimate in Texas?
+A: For homes that are not listed for sale, which is the situation of nearly everyone checking their own value, Zillow reports a national median error of 7.20 percent, and 6.69 percent for the Austin metro. Median means half of all estimates miss by more than that. Per Zillow's own Austin data, fewer than 40 percent of off-market Zestimates land within 5 percent of the eventual sale price, and about 1 in 9 misses by more than 20 percent. Texas results tend to run worse than comparable disclosure states because sale prices here are not public record.
+
+Q: Why did my Zestimate jump the day I listed my home?
+A: Because the model saw your list price. Zillow's own documentation explains that on-market Zestimates incorporate listing information, including the list price. That is the main reason on-market accuracy (2.34 percent median error in Austin) looks so much better than off-market accuracy (6.69 percent). The algorithm is largely agreeing with the price a human already set, which is why the Zestimate is least reliable at the exact moment you need it: before you list.
+
+Q: Does Zillow actually know what Texas homes sell for?
+A: Only partially. Texas is a non-disclosure state, so sale prices never appear in deeds or county records. The only closed prices that reach Zillow's model are those transmitted through MLS data feeds. Homes sold privately, off the MLS, or broker to broker are invisible to the algorithm, and in Austin's luxury segment that is a meaningful share of the market.
+
+Q: Are Zestimates accurate for luxury homes in Austin?
+A: They are at their weakest there. Westlake's 78746 recorded only 319 MLS sales in the trailing 12 months, spread across dozens of micro markets, and the zip's average sale price ($2.29 million) runs 23 percent above its median ($1.86 million), a sign of exactly the kind of dispersion algorithms handle poorly. Zillow itself notes that where nearby sales are scarce, it extrapolates from areas as large as a county. Add the off-market share of luxury closings and the model is pricing custom homes from a censored dataset.
+
+Q: Why is my Zestimate lower than what my neighbor just sold for?
+A: Common causes: the neighbor's sale has not flowed through the MLS feed yet, the sale happened off the MLS entirely and never will, your home facts on file are stale or wrong, or the model is averaging your custom features against county-wide comps. In a non-disclosure state, the algorithm also cannot verify prices through public records the way it can elsewhere, so gaps persist longer.
+
+Q: Can I use my Zestimate to price my home for sale?
+A: Zillow's answer and ours are the same: no. Zillow states plainly that the Zestimate is not an appraisal and calls it a starting point. In Austin, an off-market Zestimate misses by more than 5 percent about 60 percent of the time, and a wrong anchor is expensive in both directions. Only 61 percent of Austin listings closed at all in the trailing 12 months, and overpricing is the leading cause of the listings that fail.
+
+Q: Do lenders or appraisers use the Zestimate?
+A: No. Lending decisions require a licensed appraisal, and Zillow itself notes that lenders will not accept a Zestimate. Courts, estates, and divorce proceedings likewise rely on appraisals or professional market analyses, not automated estimates.
+
+Q: What is more accurate than a Zestimate?
+A: For an Austin home, a comparative market analysis built by an agent with access to both MLS sold data and off-market comps, or a licensed appraisal. In a non-disclosure state, valuation quality is a direct function of access to closed prices that are not public, which is why local, transaction-level expertise beats any national model here by a wider margin than in disclosure states.
+:::
+
+## Related Reading
+
+- [Texas is a non-disclosure state](/blog/texas-non-disclosure-state)
+- [Why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin)
+- [What it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
+- [How to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin)
+- [Private listings in Austin](/blog/private-listings-austin)
+- [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin)
+
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11+ years and more than $155 million in closed volume across 200+ transactions, the overwhelming majority of his business has come through off-market and private-channel deals, including every transaction over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations and serves Travis, Williamson, and Hays counties.`,
+  },
   {
     id: "texas-homestead-exemption-2026",
     title: "Texas Homestead Exemption 2026: The New $140,000 Rules, What They Actually Save in Austin, and the Cap That Dies in December",

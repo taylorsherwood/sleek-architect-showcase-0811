@@ -174,7 +174,7 @@ const blogZestimateAccuracyTexas = blogZestimateAccuracyTexasAsset.url;
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "zestimate-accuracy-texas",
-    title: "How Accurate Is a Zestimate in Texas?",
+    title: "How Accurate Is a Zestimate in Texas? The two numbers Zillow publishes and which one is yours\u00a0\u00a0",
     metaTitle: "How Accurate Is a Zestimate in Texas? (2026 Data)",
     excerpt: "Zillow publishes its own error rates. In Austin, 60% of off-market Zestimates miss by more than 5%, and 1 in 9 misses by 20%. Here is what that means in dollars.",
     author: "Taylor Sherwood",

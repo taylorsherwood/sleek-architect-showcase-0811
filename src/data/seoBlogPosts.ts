@@ -164,7 +164,7 @@ const blogSellingHouseDivorceTexas = blogSellingHouseDivorceTexasAsset.url;
 import blogAssumableMortgageAustinAsset from "@/assets/blog/assumable-mortgage-austin-hero.png.asset.json";
 const blogAssumableMortgageAustin = blogAssumableMortgageAustinAsset.url;
 
-import blogTexasHomesteadExemption2026Asset from "@/assets/blog/texas-homestead-exemption-travis-county.jpg.asset.json";
+import blogTexasHomesteadExemption2026Asset from "@/assets/blog/texas-homestead-exemption-2026-hero.png.asset.json";
 const blogTexasHomesteadExemption2026 = blogTexasHomesteadExemption2026Asset.url;
 
 import blogZestimateAccuracyTexasAsset from "@/assets/blog/zestimate-accuracy-texas-hero.png.asset.json";

@@ -170,8 +170,336 @@ const blogTexasHomesteadExemption2026 = blogTexasHomesteadExemption2026Asset.url
 import blogZestimateAccuracyTexasAsset from "@/assets/blog/zestimate-accuracy-texas-hero.png.asset.json";
 const blogZestimateAccuracyTexas = blogZestimateAccuracyTexasAsset.url;
 
-// Build marker: ensure new posts ship in bundle (v12)
+import blogSellOrRentAustinAsset from "@/assets/blog/sell-or-rent-my-house-austin-hero.jpg.asset.json";
+const blogSellOrRentAustin = blogSellOrRentAustinAsset.url;
+
+// Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "sell-or-rent-my-house-austin",
+    title: "Should I Sell or Rent My House in Austin?",
+    metaTitle: "Should I Sell or Rent My House in Austin? (2026 Math)",
+    excerpt: "On an $800K Austin house, property tax eats a third of the rent and the yield is about 1%. The sell-vs-rent math, the Section 121 clock, and when renting wins.",
+    author: "Taylor Sherwood",
+    date: "2026-08-25",
+    readTime: "18 min read",
+    category: "SELLER RESOURCES",
+    image: blogSellOrRentAustin,
+    heroImage: blogSellOrRentAustin,
+    imageAlt: "Austin living room with vaulted wood ceiling and floor-to-ceiling steel windows overlooking a pool and yard",
+    content: `Somewhere in Austin right now, a couple is sitting at a kitchen island with two browser tabs open. One is their mortgage statement: 2.875 percent, thirty-year fixed, refinanced in January 2021. The other is a rent estimate. They are moving, and they are about to become landlords. Not because they ever wanted a rental property, but because handing that loan back to the bank feels like setting money on fire.
+
+That is the accidental landlord, and the numbers explain why Austin is full of them. Realtor.com's read of the FHFA National Mortgage Database shows just over half of all outstanding mortgages still carry rates at or below 4 percent, and one in five sits below 3 percent. FHFA's own researchers found that every percentage point the market rate rises above your origination rate cuts your probability of selling by about 18 percent. With Freddie Mac's 30-year fixed at 6.65 percent as of August 20, 2026, a 2021 borrower is staring at a 3.8-point gap. That is most of the way to "never."
+
+But "I cannot bear to give up the rate" is a feeling, not a return. The question is what keeping the house actually earns once you peel the emotion off the loan. In Austin, the answer is dominated by a number most homeowners have never calculated: the property tax bill on a house that no longer has a homestead exemption. On an $800,000 house inside the city, it takes about a third of the rent before you have fixed a single thing.
+
+Here is the full math with 2026 numbers, plus the three-year tax clock most accidental landlords hear about only after it has run out.
+
+## The Two Markets You Are Choosing Between
+
+You are not choosing between "keep" and "sell." You are choosing between selling into one market and leasing into another, and both are soft in their own way.
+
+The sale side first. City of Austin, all residential, trailing twelve months through July 31, 2026, from Unlock MLS:
+
+:::compare-table
+Metric | Reading
+Median sale price | $568,470
+Average sale price | $761,949
+One-year price change | -1.41%
+Months of inventory | 5.03
+Success rate (closed vs. expired plus withdrawn) | 61.1%
+Median days on market | 46
+Average days on market | 80.5
+Original list price to final list price | -4.1%
+Final list price to sale price | -3.13%
+Price reductions | 10,250 (against 10,875 closed sales)
+:::
+
+Read that as a seller: the average Austin listing gives up about 7 percent between its original ask and its closing price, roughly four in ten listings never close at all, and there was nearly one price cut for every closed sale. Not a collapse. A market that punishes pricing errors and rewards patience less than it used to.
+
+Now the rental side:
+
+:::compare-table
+Indicator | Reading | Source and date
+Median rent, City of Austin, all unit types | $1,322, down 3.8% year over year | Apartment List, August 2026
+Median rent, Greater Austin, all property types | $2,026, down 3.8%, about 50 days to lease | Doorstead, May 2026
+Median single-family rent, Greater Austin | $2,264 | Doorstead, May 2026
+Median four-bedroom asking rent, Austin | $2,899, up 0.6% | RentHop, August 2026
+Apartment vacancy | 11.5% to 13.5%, depending on the tracker | Northmarq and CoStar, Q1 2026
+Consecutive quarters of apartment rent decline | 12, through Q1 2026 | Northmarq
+Q2 2026 effective rent change | +1.8%, the first increase in three years | Northmarq, Q2 2026
+Rent decline from the 2022 peak | roughly 20% | Apartment List rent estimates
+Complexes offering concessions in 2025 | about 65% | CoStar
+2026 apartment deliveries forecast | about 10,200 units, half the pace of 2024 and 2025 | Northmarq
+:::
+
+Read that as a landlord: rents fell for three straight years while tens of thousands of new apartments delivered, two-thirds of the competition was handing out free months, and the second quarter of 2026 was the first time the line turned up. Deliveries are falling fast, so the direction is improving. But the tenant touring your house this fall is also touring a brand-new building with a pool and a concession. The good news for a house specifically: single-family homes lease faster than the blended market, and four-bedroom rents held while everything smaller fell. The bad news is the ceiling. An $800,000 house does not rent for $800,000 worth of rent.
+
+## The Number That Decides It: Price-to-Rent
+
+Divide your home's value by a year of rent. That is the price-to-rent ratio, and it tells you your gross yield before a single expense. Austin brokers put the typical ratio around 16 to 18 in most neighborhoods, and it climbs above 20 in the expensive ones, because rent does not scale with price. A $1.5 million house does not rent for three times what a $500,000 house does.
+
+Here is what the ratio does to an $800,000 house once you add the expense that makes Austin different from almost every other rental market in the country: a combined property tax rate of $2.0464 per $100 of value inside Austin city limits and Austin ISD, at tax year 2025 adopted rates, with no homestead exemption.
+
+:::compare-table
+Price-to-rent ratio | Gross yield | Monthly rent on $800,000 | Property tax as share of rent
+12 | 8.33% | $5,556 | 25%
+14 | 7.14% | $4,762 | 29%
+16 | 6.25% | $4,167 | 33%
+18 | 5.56% | $3,704 | 37%
+20 | 5.00% | $3,333 | 41%
+22 | 4.55% | $3,030 | 45%
+25 | 4.00% | $2,667 | 51%
+:::
+
+The "1 percent rule" that investor forums repeat (monthly rent equal to 1 percent of price) is a price-to-rent ratio of 8.3. Nothing in Austin trades there. At the ratios Austin actually clears, the tax bill alone eats a third to half of the rent, and that is before insurance, maintenance, management, vacancy, or the mortgage.
+
+This is the structural problem. Texas has no state income tax and funds its schools, cities, and hospital districts with property tax. A homeowner with a homestead exemption is shielded from part of that. A landlord is not. The day you move out, the Texas tax structure stops being a feature and becomes your largest operating expense.
+
+## Worked Example: The $800,000 Accidental Landlord
+
+Meet the couple from the kitchen island. Married, filing jointly, household income around $300,000, which matters for two tax reasons below. They bought the house in 2019 for $560,000, refinanced in January 2021 into a 30-year fixed at 2.875 percent on a $430,000 balance, and the house is worth $800,000 today, roughly in line with FHFA's Austin metro appreciation since 2019 after the 2023 to 2025 giveback. They are moving September 1.
+
+The loan: principal and interest is $1,784 a month, $21,408 a year. The balance today is $375,285. Over the next twelve months they will pay $10,648 in interest and $10,760 in principal.
+
+The rent: a price-to-rent ratio of 17.5, which is generous for an $800,000 house, gives $3,800 a month. We will stress that in both directions below.
+
+### Year One Operating Statement
+
+:::compare-table
+Line | Annual | Note
+Gross scheduled rent | $45,600 | $3,800 x 12
+Vacancy and turnover (6%) | -$2,736 | About three weeks a year; Austin averages 50 days to lease
+Effective gross income | $42,864 | 
+Property tax, no homestead | -$16,372 | $800,000 x $2.0464 per $100
+Landlord insurance | -$6,000 | 15% to 25% above a homeowner policy, percentage wind and hail deductible
+Maintenance and capital reserve (1% of value) | -$8,000 | Roof, HVAC, water heater, make-ready
+Property management (8% of collected rent) | -$3,429 | Austin runs 8% to 10%; self-managing saves this and costs your weekends
+Leasing fee (half a month, every two years) | -$950 | 
+Total operating expenses | -$34,751 | 76% of gross rent
+Net operating income | $8,113 | 
+Unlevered yield (cap rate) | 1.01% | 
+:::
+
+One percent. Before the mortgage. On $800,000 of capital. The tax line alone is 36 percent of the rent, which is why the same house at the same price-to-rent ratio in a low-tax state is a rental, and in Austin it is a hobby.
+
+Now add the loan, which is the whole reason they are considering this.
+
+### After Debt Service, and What Appreciation Has to Do
+
+:::compare-table
+Line | Annual
+Net operating income | $8,113
+Principal and interest at 2.875% | -$21,408
+Cash flow | -$13,295 (about -$1,108 a month)
+Principal paydown (equity you keep) | +$10,760
+Economic return before appreciation | -$2,535
+:::
+
+The house loses about $1,100 a month in cash, and about $2,500 a year in economic terms once you credit the principal the tenant is helping pay down. Everything after that is appreciation, or the lack of it.
+
+:::compare-table
+Appreciation assumption | Change in house value | Total return | Return on $424,715 of equity
+-1.43% (FHFA Austin metro, 2025 actual) | -$11,440 | -$13,975 | -3.3%
+0% | $0 | -$2,535 | -0.6%
++2% | +$16,000 | +$13,465 | +3.2%
++3% | +$24,000 | +$21,465 | +5.1%
++5% | +$40,000 | +$37,465 | +8.8%
+:::
+
+That is the entire decision in one table. The rental is a bet on appreciation with a small negative carry. If Austin returns to 3 to 5 percent a year, the accidental landlord does fine and gets to feel smart about the loan. If Austin does what it did in 2023, 2024, and 2025, they pay for the privilege of owning a second job.
+
+### Stress Test: What If the Rent Is Different
+
+:::compare-table
+Monthly rent | Price-to-rent | NOI | Cap rate | Cash flow after P&I | Cash flow plus principal
+$3,400 | 19.6 | $4,062 | 0.51% | -$17,346 | -$6,586
+$3,800 | 17.5 | $8,113 | 1.01% | -$13,295 | -$2,535
+$4,200 | 15.9 | $12,164 | 1.52% | -$9,244 | +$1,516
+:::
+
+Even $400 a month of extra rent, which is a lot at this price point, only gets the house to roughly break-even after principal. And the rent you plug in should be a closed lease comp from the MLS, not the estimate on a listing portal. The same models that [misprice sale values in a non-disclosure state](/blog/zestimate-accuracy-texas) misprice rent too.
+
+### The Negative Leverage Test
+
+Here is the cleanest way to see what your cheap loan is really doing. If an investor bought this house from you today at $800,000 with 20 percent down, the new $640,000 loan at 6.65 percent would cost $4,109 a month in principal and interest. That is more than the rent. Before taxes. Before insurance. No investor would pay $800,000 for this house as a rental, which is exactly why the only buyer for it at that price is a family who wants to live in it.
+
+Your 2.875 percent loan is worth about $14,167 a year compared with new money at 6.65 percent on the same balance. That is real. But the loan is the asset, not the house. You are keeping a great loan attached to a mediocre investment, and the loan only pays you if the investment does not lose more than the loan saves.
+
+## What Selling Now Actually Puts in Your Pocket
+
+:::compare-table
+Line | Amount
+Sale price | $800,000
+Selling costs at 6% (listing side, buyer-agent concession, title, closing) | -$48,000
+Net proceeds | $752,000
+Loan payoff | -$375,285
+Cash to seller | $376,715
+Gain (sale, less costs, less $560,000 basis) | $192,000
+Federal tax under Section 121 (married, $500,000 exclusion) | $0
+Texas state income tax | $0
+:::
+
+Six percent is a midpoint. The full 2026 fee stack, including how the buyer-agent concession works after the commission settlement, is in the [cost to sell a house in Austin guide](/blog/cost-to-sell-a-house-austin), and the Section 121 mechanics are in the [Texas capital gains guide](/blog/capital-gains-tax-home-sale-texas).
+
+The $376,715 walks out the door untaxed. What it earns next is the number to compare against the rental.
+
+:::compare-table
+Where the cash sits | Yield, late August 2026 | Annual income on $376,715
+Government money market fund | about 3.7% | $13,938
+2-year Treasury | 4.17% | $15,709
+10-year Treasury | 4.68% | $17,630
+:::
+
+Illustrative only. Interest is taxable at ordinary rates, yields move, and I am a REALTOR, not your financial advisor.
+
+Put the two columns together. The rental produces about -$2,535 a year in economic return before appreciation. The money market produces about +$13,938 with no tenants, no hail, and no 2 a.m. water heater. For the house to tie the money market, it has to appreciate about 2.06 percent a year: ($13,938 + $2,535) divided by $800,000. Adjust for the tax on the interest and for the rental loss you cannot currently deduct (more on that below) and the hurdle drops to roughly 1.5 percent. Still a hurdle.
+
+Now look at what Austin has actually done. FHFA All-Transactions House Price Index, Austin metro:
+
+:::compare-table
+Period | Price change
+2021 | +20.8%
+2022 | +22.7%
+2023 | -5.55%
+2024 | -1.83%
+2025 | -1.43%
+Three years, 2023 to 2025 | -8.6%
+Five years, 2021 to 2025 | +35.5%
+:::
+
+The five-year number is what accidental landlords remember. The three-year number is what they are currently living in. Keeping the house is a bet that the next three years look more like the five-year average than the three-year one, from a base that is still digesting 2022. It might. It is a bet, and you should know you are placing it. The seller-side version of this timing question, with carrying costs, is in [should I sell my house now or wait](/blog/should-i-sell-my-house-now-or-wait-austin).
+
+## The Three-Year Clock That Decides the Tax Bill
+
+This is the part the accidental landlord almost never hears until it is too late.
+
+Section 121 excludes up to $250,000 of gain ($500,000 married filing jointly) on a home you owned and used as your principal residence for at least two of the five years before the sale. The five years count backward from the closing date. Move out September 1, 2026, and the last day you can close and still have two qualifying years inside the window is August 31, 2029.
+
+Rent it for up to three years and you keep the entire exclusion on the appreciation. The Code specifically carves out the period after you last lived there, so those rental years do not count against you, as long as you close inside the window. Two things chip at it:
+
+**Depreciation recapture.** From the day it becomes a rental you depreciate the building (not the land) over 27.5 years, and the exclusion cannot shelter that. On a $560,000 basis with 35 percent allocated to land, that is $13,236 a year. After three years, $39,709 of depreciation comes back at up to 25 percent: about $9,927. The IRS taxes depreciation "allowed or allowable," so skipping the deduction does not skip the recapture.
+
+**The cliff.** Close on September 15, 2029 instead of August 31, and the exclusion is not reduced. It is gone. The full $192,000 gain, plus any appreciation, becomes long-term capital gain at 15 percent (20 percent above roughly $614,000 of taxable income for joint filers) plus the 3.8 percent net investment income tax at this income. On today's gain that is $36,096, or $45,696 in the 20 percent bracket. That is the price of missing a date, and it is about two and a half years of the money market income the sale would have produced.
+
+Moving back in later does not fully repair it either. Any rental period after 2008 that comes before your final stretch as a resident is "nonqualified use," and the exclusion is prorated by the fraction of ownership it represents. The clean pattern is live, then rent, then sell inside the window. The messy pattern is live, rent for years, move back, sell.
+
+The exception for people who want to hold: once the house has been operated as a rental long enough to establish investment intent (many CPAs want a full tax year or two on Schedule E), it can go into a 1031 exchange, and Revenue Procedure 2005-14 lets you stack the Section 121 exclusion and a 1031 deferral on the same sale if you are still inside the window. That is the pro move for owners who want to stay in real estate but not in this particular house. It is also a topic for another article.
+
+Here are the three paths side by side:
+
+:::compare-table
+ | Path A: Sell now | Path B: Rent, sell by August 2029 | Path C: Rent indefinitely
+Cash today | $376,715 | $0 (equity stays in the house) | $0
+Tax on today's $192,000 gain | $0 | $0 on the gain, about $9,927 of recapture | $36,096 to $45,696 at sale, unless a 1031
+Keeps the 2.875% loan | No | Yes, for three years | Yes
+Annual cash flow | +$13,938 (money market) | -$13,295 | -$13,295, improving as rent grows
+Landlord work | None | Three years | Indefinite
+What has to go right | Nothing | Appreciation above about 2% a year | Appreciation, rent growth, and a 1031 plan
+Biggest risk | Regret if Austin rips higher | A tenant who will not leave in month 34 | The Section 121 cliff
+:::
+
+## Your Property Tax Bill Changes the Day You Move Out
+
+Texas gives you a homestead exemption on the house you live in and nothing on the house you rent out. The [2026 Texas homestead exemption guide](/blog/texas-homestead-exemption-2026) covers the full exemption ladder. Here is what removing it does to this house, at tax year 2025 adopted rates:
+
+:::compare-table
+Taxing entity | With homestead | As a rental
+Austin ISD ($0.9252 per $100) | $6,106 (after the $140,000 exemption) | $7,402
+City of Austin ($0.5240) | $3,354 (after the 20% exemption) | $4,192
+Travis County ($0.375845) | $2,405 (after 20%) | $3,007
+Central Health ($0.1180) | $755 (after 20%) | $944
+Austin Community College ($0.1034) | $827 | $827
+Total | $13,448 | $16,372
+Annual difference |  | $2,924
+:::
+
+Three more things happen. First, the 10 percent annual cap on appraised value increases applies only to homesteads. Non-homestead property valued at or below $5.32 million currently gets a 20 percent cap under the temporary "circuit breaker," which is scheduled to expire December 31, 2026, unless the Legislature extends it when it reconvenes in January 2027. After that, a rental is reappraised at full market value every year. Second, the Tax Code requires you to notify the appraisal district in writing, before May 1 of the following year, that you no longer qualify. Leaving the exemption on a house you do not occupy is how people meet the back-tax and penalty provisions. Third, the appraisal district may not carry your house at $800,000. Use your actual appraised value, protest it every May, and remember that tax year 2026 rates get adopted this fall.
+
+## Insurance, Management, and the Lender Question
+
+**Insurance.** A homeowner policy does not cover a tenant-occupied house, and carriers deny claims on rentals insured as residences. You need a landlord policy (a DP-3), which typically runs 15 to 25 percent more than the homeowner policy on the same house, plus loss-of-rent coverage and an umbrella. That sits on top of a Texas market where premiums rose 74 percent above inflation between 2009 and 2024 while incomes rose 11 percent, per Texas 2036 and Rice's Kinder Institute, and where Insurify put the average Texas policy above $4,000 a year. Most Texas carriers have also moved to percentage wind and hail deductibles of 1 to 2 percent of the dwelling limit, so a hailstorm on a $600,000 rebuild is a $6,000 to $12,000 check before coverage starts.
+
+**Management.** Austin managers charge 8 to 10 percent of collected rent, half to a full month's rent to place a tenant, and $100 to $500 per renewal. Flat-fee operators run about $125 to $349 a month and usually win once rent clears $2,000. Self-managing is free in dollars and expensive in Tuesday nights.
+
+**The lender.** If you need a mortgage for the next house, Fannie Mae's rental income rules (Selling Guide B3-3.1-08) let the lender count 75 percent of a signed lease on the departing home, with the security deposit and first month's rent documented into your account. If you have no landlord history on a filed Schedule E, that rent can only offset the old payment. It cannot add to your income. And if your next down payment has to come out of this house, think hard before a cash-out refinance: it replaces the 2.875 percent loan with one near 6.65 percent and erases the only reason to keep the house. A home equity line keeps the first lien intact. If the loan happens to be FHA or VA, read the [assumable mortgage guide](/blog/assumable-mortgage-austin) first, because that rate may be worth more as a sales premium than as a rental subsidy.
+
+**The income tax trap.** Year one on Schedule E for this house: $42,864 of effective rent, less $34,751 of expenses, less $10,648 of mortgage interest, less $13,236 of depreciation, equals a paper loss of about $15,771. Investor forums will tell you that loss shelters your salary. For this couple it does not. The $25,000 passive loss allowance phases out between $100,000 and $150,000 of modified adjusted gross income, so at $300,000 the loss is suspended and carried forward until the year you sell, when it is released against the gain and the recapture. Real, but delayed, and you float the cash in the meantime.
+
+## When Renting Wins
+
+There are four situations where the rental math beats the sale math, and the accidental landlord should be able to name which one they are in.
+
+**1. You are coming back within three years.** A relocation, a sabbatical, a two-year assignment. Keep the loan, keep the house, come home, re-establish the homestead. The Section 121 window protects you the whole time and you skip two rounds of transaction costs. This is the cleanest case for renting, and it has nothing to do with investment returns.
+
+**2. Your price-to-rent ratio is under about 15 and your loan balance is small.** Run the same model on a $450,000 South Austin house renting for $2,600 (a ratio of 14.4) with a $187,000 balance at 2.75 percent: property tax is 30 percent of rent instead of 36, NOI is about $8,800, cash flow is about -$1,700, principal paydown is about $5,450, and the appreciation needed to beat the money market falls to roughly 1.1 percent a year. Still a bet, but a smaller one, and the kind Austin has usually paid over a full cycle.
+
+**3. You have a defined 1031 plan.** You are renting for a year or two specifically to exchange into something with a real yield: a small multifamily in Killeen, a commercial building, land you intend to hold. The house is the on-ramp, not the destination. That is a strategy, not an accident.
+
+**4. You bought at the 2022 peak and selling now locks in a loss you can afford to wait out.** Two cautions. Losses on a personal residence are never deductible, and converting to a rental does not fix that: your basis for computing a loss resets to the lower of cost or market value on the day it becomes a rental, so the decline you already took never becomes a write-off. And 2022 borrowers mostly do not have 2.875 percent loans, so the cheap-debt argument is weaker than it feels.
+
+## When Selling Wins
+
+**1. The house is worth more than about $700,000 and sits inside Austin city limits.** Above that line, the tax bill and the price-to-rent ratio push the unlevered yield toward 1 percent and the cheap loan cannot carry it. The higher the price, the worse the rental. At $1.5 million in Westlake the cap rate rounds to zero.
+
+**2. You need the equity for the next house.** A cash-out refinance kills the loan you are trying to protect, and Fannie Mae will not let a first-time landlord's lease add to qualifying income. Selling turns $376,715 of trapped equity into a down payment and a better rate quote on the next loan.
+
+**3. The exclusion covers your whole gain and you are not coming back.** Section 121 is worth $36,000 to $46,000 to this couple, it expires on a date, and it is the largest single tax benefit most households ever receive. Spending it to run a 1 percent rental is a poor trade.
+
+**4. You do not want a second job.** Turnover on an $800,000 house is roughly a $5,000 to $10,000 event: paint, carpet, make-ready, a month of vacancy, a leasing fee. The cash flow table assumes competent tenants, average weather, and an HVAC that lasts. Real life includes a compressor in August.
+
+## The Short-Term Rental Escape Hatch, and Why It Usually Is Not One
+
+Every accidental landlord eventually asks about Airbnb. Austin rewrote its short-term rental ordinance, platforms have been enforcing the license requirement since July 1, 2026, the license does not transfer to a buyer, and the cost structure (furnishings, utilities, cleaning, platform fees, occupancy taxes, and a management cut that typically runs 15 to 30 percent) is a different business entirely. The full investor breakdown is in the [Austin short-term rental rules guide](/blog/austin-short-term-rental-rules-2026). For a house you are leaving because you took a job in Denver, it is rarely the answer.
+
+## How Echelon Property Group Runs This for Clients
+
+The sell-or-rent decision goes wrong in one of three places: a rent number pulled from a portal instead of from leased comps, a tax bill estimated with the homestead still on, or a Section 121 date nobody wrote down. So the way this works with Echelon Property Group is a one-page net sheet, not a pep talk.
+
+- Closed lease comps from Unlock MLS for your street and floor plan, with days on market, instead of a rent estimate.
+- Your actual appraised value and the rental tax bill from the appraisal district roll, with the homestead removed.
+- The three paths side by side, with your loan, your basis, and your closing deadline for the exclusion written on the page.
+- If the answer is sell, the option to do it privately. The public data above is what happens to listings that go on the MLS and miss: about 4 percent cut from the original ask while it sits, another 3 percent at the closing table, and every day of it on the record. The [private listings guide](/blog/private-listings-austin) covers when a quiet sale beats a public one.
+
+:::cta-anchor
+:::
+
+Send the address and the loan statement. You get the numbers, and the decision stays yours. [Request a private valuation](/home-value-austin) from Echelon Property Group, or [start a conversation](/contact) about which of the three paths fits your timeline.
+
+## Related Reading
+
+- [Texas Homestead Exemption 2026](/blog/texas-homestead-exemption-2026)
+- [Capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas)
+- [What it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
+
+## Frequently Asked Questions
+
+:::faq
+Q: Can I rent out my Austin house and still avoid capital gains tax when I sell?
+A: Yes, for up to three years. Section 121 excludes $250,000 of gain ($500,000 married filing jointly) if you owned and lived in the home for two of the five years before closing. Time after you move out does not count against you, so a rental period of up to three years preserves the full exclusion as long as you close inside the window. Depreciation claimed during the rental is recaptured at up to 25 percent regardless, and missing the window by a day forfeits the entire exclusion, not part of it.
+
+Q: Do I lose my homestead exemption if I rent out my house in Texas?
+A: Yes. The homestead exemption applies only to the home you occupy as your principal residence, and the Tax Code requires you to notify the appraisal district in writing when you no longer qualify. On an $800,000 home inside Austin city limits and Austin ISD, removing the exemption raises the tax bill by roughly $2,900 a year at tax year 2025 rates. You also lose the 10 percent annual appraisal cap. Non-homestead property valued at or below $5.32 million falls under a temporary 20 percent cap that is scheduled to expire December 31, 2026.
+
+Q: How much rent can I get for my house in Austin?
+A: Austin single-family homes typically clear a price-to-rent ratio of about 16 to 20, so an $800,000 house rents for roughly $3,300 to $4,200 a month depending on submarket, floor plan, and condition. Citywide, the median four-bedroom asking rent was about $2,900 in August 2026. Rents fell roughly 20 percent from the 2022 peak as new apartments delivered and only turned positive in the second quarter of 2026. Price from closed lease comps in the MLS for your street, not from a rent estimate on a listing portal.
+
+Q: Is it better to rent out my house than sell it in a down market?
+A: Only if you expect appreciation to beat what the equity earns elsewhere. Austin's FHFA price index fell 8.6 percent over 2023 to 2025. On an $800,000 Austin house with a 2.875 percent loan, the rental needs about 2 percent a year of appreciation just to match a money market fund after its cash-flow loss, and about 1 percent on a $450,000 house with a small balance. If you bought at the 2022 peak, renting does not make the loss deductible, because your loss basis resets to market value on the conversion date.
+
+Q: Can I use rent from my current house to qualify for a mortgage on the next one?
+A: Usually, with limits. Under Fannie Mae's rental income rules, lenders count 75 percent of a fully executed lease on the departing residence, documented with the security deposit and first month's rent deposited in your account. If you have no landlord history on a filed Schedule E, that income can only offset the old house's payment. It cannot add to your qualifying income. Reserve requirements vary by lender.
+
+Q: What insurance do I need to rent out my house in Texas?
+A: A landlord policy, often called a DP-3, plus loss-of-rent coverage and ideally a personal umbrella. A standard homeowner policy excludes tenant-occupied homes and claims are routinely denied. Landlord policies cost about 15 to 25 percent more than the homeowner policy on the same house, and most Texas carriers now use percentage wind and hail deductibles of 1 to 2 percent of the dwelling limit, so a hail claim on a $600,000 rebuild can carry a $6,000 to $12,000 deductible.
+
+Q: What happens to my low mortgage rate if I sell?
+A: It ends with the sale. Conventional loans are not assumable, so a 2.875 percent rate has no resale value unless the loan is FHA or VA, which a qualified buyer can assume and which sometimes commands a premium. The rate is also not a reason to do a cash-out refinance, because that replaces the low-rate loan with one near 6.65 percent. If you need equity without selling, a home equity line leaves the first lien intact.
+
+Q: Can I do a 1031 exchange on a house that used to be my primary residence?
+A: Yes, once it has been held and operated as a rental long enough to establish investment intent, which many CPAs read as at least a full tax year of Schedule E history. Revenue Procedure 2005-14 allows the Section 121 exclusion and a 1031 deferral on the same sale if you still meet the two-of-five-year test, so the excluded gain comes out tax-free and the remainder defers into the replacement property. Section 121(d)(10) then blocks the exclusion on the replacement property for five years after the exchange.
+:::`
+  },
   {
     id: "zestimate-accuracy-texas",
     title: "How Accurate Is a Zestimate in Texas? The two numbers Zillow publishes and which one is yours\u00a0\u00a0",

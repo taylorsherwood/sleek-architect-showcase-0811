@@ -364,7 +364,7 @@ const LandRanch = () => {
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:scale-[1.12] lg:scale-100"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-[1.16] md:scale-[1.12] lg:scale-[1.05]"
           aria-hidden="true"
         />
         <img

@@ -177,7 +177,7 @@ const blogSellOrRentAustin = blogSellOrRentAustinAsset.url;
 export const seoBlogPosts: BlogPost[] = [
   {
     id: "sell-or-rent-my-house-austin",
-    title: "Should I Sell or Rent My House in Austin?",
+    title: "Should I Sell or Rent My House in Austin? Doing the math that matters.",
     metaTitle: "Should I Sell or Rent My House in Austin? (2026 Math)",
     excerpt: "On an $800K Austin house, property tax eats a third of the rent and the yield is about 1%. The sell-vs-rent math, the Section 121 clock, and when renting wins.",
     author: "Taylor Sherwood",

@@ -173,8 +173,349 @@ const blogZestimateAccuracyTexas = blogZestimateAccuracyTexasAsset.url;
 import blogSellOrRentAustinAsset from "@/assets/blog/sell-or-rent-my-house-austin-hero.jpg.asset.json";
 const blogSellOrRentAustin = blogSellOrRentAustinAsset.url;
 
+import blogCostSegregationAustinAsset from "@/assets/blog/cost-segregation-austin-hero.png.asset.json";
+const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
+
 // Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "cost-segregation-austin",
+    title: "Cost Segregation and 100% Bonus Depreciation for Austin Investors: The 2026 Playbook",
+    metaTitle: "Cost Segregation in Austin: 100% Bonus Depreciation 2026",
+    excerpt: "100% bonus depreciation is permanent. What a cost segregation study does on a $1M Austin STR and an 8-unit, who can use the loss, and what recapture costs.",
+    author: "Taylor Sherwood",
+    date: "2026-08-26",
+    readTime: "22 min read",
+    category: "INVESTMENT",
+    image: blogCostSegregationAustin,
+    heroImage: blogCostSegregationAustin,
+    imageAlt: "Pool and patio of a modern Austin bungalow at dusk, with a tablet showing an unbranded building component diagram on the outdoor table",
+    content: `On July 4, 2025, the One Big Beautiful Bill Act quietly did the single most valuable thing the tax code has done for small real estate investors in a decade. It took 100 percent bonus depreciation, which was scheduled to fall to 20 percent this year and disappear entirely in 2027, and made it permanent for property acquired and placed in service after January 19, 2025. The IRS confirmed the mechanics in Notice 2026-11 this January.
+
+Most Austin investors read that headline, nodded, and moved on. That is a mistake, because a permanent 100 percent allowance changes what a cost segregation study is worth. Under the old phase-down, a study on a 2026 purchase would have front-loaded 20 percent of the reclassified components. Now it front-loads all of them. On a $1,000,000 short-term rental in 78704, the difference is a year-one deduction of roughly $240,000 instead of $47,000. On an 8-unit in East Austin, it is $250,000 instead of $33,000.
+
+This guide walks through the mechanics, the two worked examples, the rules that decide whether you can use the loss at all, and the part the cost segregation salesmen skip: the bill that comes due at the exit, and the three ways Texas investors make that bill disappear.
+
+One disclosure before the numbers: this is general education from a broker who underwrites these deals, not tax advice. Your outcome depends on your entire return. Run everything below past a CPA and a qualified cost segregation provider before you act on it.
+
+## What a Cost Segregation Study Actually Does
+
+When you buy a rental property, the tax code lets you deduct the cost of the building (not the land) over time. Residential rental property depreciates on a straight line over 27.5 years. Commercial property takes 39 years. A $650,000 building basis on a residential rental produces a deduction of $23,636 a year, every year, for 27.5 years. That is the default, and it is what most CPAs file.
+
+A cost segregation study is an engineering analysis that breaks the building into its components and assigns each one to the shortest recovery period the law allows. The IRS Cost Segregation Audit Techniques Guide describes exactly what a quality study looks like, and the categories are well established:
+
+:::compare-table
+Recovery period | What lands here in a residential rental | Bonus eligible?
+5-year property | Appliances, carpet and vinyl plank flooring, furniture, decorative lighting, window treatments, ceiling fans, dedicated electrical and plumbing serving appliances, security and audio systems | Yes, 100%
+7-year property | Office furniture and equipment used in the rental business (rare in a residential file; most furnishings are 5-year under IRS Publication 527) | Yes, 100%
+15-year land improvements | Pool and decking, fencing, driveway and parking, patios, retaining walls, landscaping and irrigation, outdoor kitchens, exterior lighting | Yes, 100%
+27.5-year residential building | Foundation, framing, roof, walls, windows, HVAC, general electrical and plumbing, kitchens and baths as structural components | No
+Land | The dirt. Never depreciable | No
+:::
+
+Bonus depreciation applies to property with a recovery period of 20 years or less. Everything the study moves into the 5-, 7-, and 15-year buckets becomes deductible in full in the year you place the property in service. The 27.5-year remainder keeps its straight line.
+
+How much moves is the whole question. Two 2026 benchmark datasets bracket the answer. Cost Seg Smart's analysis of 412 studies puts the median reclassification for a furnished short-term rental at 29.8 percent of depreciable basis and an unfurnished single-family rental at 18.3 percent. Overline's benchmark across more than 8,000 studies lands at 20 to 28 percent, with 24 percent as the median for short-term rentals. Condos come in far lower, often under 12 percent, because the owner holds no land improvements and few systems. Pools, outdoor living, detached casitas, and heavy finish packages push the number up. The Austin properties that reclassify best are, not coincidentally, the ones that rent best.
+
+## What Changed on July 4, 2025
+
+The Tax Cuts and Jobs Act of 2017 created 100 percent bonus depreciation and scheduled it to die slowly. The One Big Beautiful Bill Act reversed the schedule and removed the expiration.
+
+:::compare-table
+Placed in service | Rate under the 2017 phase-down | Rate after OBBBA
+September 28, 2017 through 2022 | 100% | 100% (unchanged)
+2023 | 80% | 80% (unchanged)
+2024 | 60% | 60% (unchanged)
+January 1 through January 19, 2025 | 40% | 40%
+Acquired and placed in service after January 19, 2025 | 40% in 2025, 20% in 2026, 0% in 2027 | 100%, permanently
+:::
+
+Five rules inside the new law matter to a real estate buyer:
+
+1. **Both dates count.** The property must be acquired after January 19, 2025 and placed in service after January 19, 2025. Acquisition means the date you signed a written binding contract, not the closing date. A builder contract signed in December 2024 that closed in 2025 sits at 40 percent, not 100.
+2. **Used property qualifies.** It has since 2017, as long as the property is new to you and not bought from a related party. Every resale house in Austin is eligible.
+3. **New construction follows the 10 percent rule.** Self-constructed property is treated as acquired when physical work begins or when you have incurred more than 10 percent of hard construction costs. Projects that crossed that line before January 20, 2025 stay under the old rates, though a component election can carve out systems installed later.
+4. **You can elect out.** Taxpayers may elect out of bonus depreciation by asset class, and for the first tax year ending after January 19, 2025 there is a one-time election to take 40 percent instead of 100. That matters if a giant year-one loss would fall into low brackets or trip the excess business loss limit below.
+5. **Section 179 is bigger but not the tool.** OBBBA raised the Section 179 limit to $2,500,000 with a $4,000,000 phase-out, indexed. Section 179 cannot create a loss, though. Bonus depreciation can, and loss creation is the entire point of a study for most investors.
+
+## The Gates: Can You Actually Use the Loss?
+
+A $258,000 paper loss is only worth something if it lands against income that is taxed. The passive activity rules in Section 469 are where most investors find out their study bought them a carryforward instead of a refund. There are exactly four ways through the first gate.
+
+:::compare-table
+Path | The test | Who it fits
+The $25,000 allowance | Actively participate in a long-term rental and have modified AGI under $100,000. The allowance phases out completely at $150,000 | Moderate-income landlords. Nearly useless above the phase-out
+Real estate professional status (REPS) | More than half of your personal services and more than 750 hours a year in real property trades or businesses in which you materially participate. Each spouse is tested individually, though material participation in the rental itself can count both spouses' hours. A grouping election under Reg. 1.469-9(g) lets you treat all rentals as one activity | Full-time agents, brokers, developers, flippers, and property managers, and households where one spouse does this full time
+The short-term rental rule | Under Reg. 1.469-1T(e)(3)(ii), a property whose average guest stay is seven days or less (or 30 days or less with significant personal services) is not a "rental activity" at all. If you materially participate, the loss is nonpassive and offsets W-2 and business income. Material participation means one of seven tests in Reg. 1.469-5T(a), most commonly 500 hours, or 100 hours and more than any other individual | High-income W-2 households who self-manage an STR. This is the path most Austin cost segregation studies are sold on
+Passive income to absorb it | The loss is suspended and carried forward, but it offsets passive income from other sources (another rental, a syndication K-1) and is released in full when you sell the property in a taxable transaction | Everyone else. The loss is not lost. It waits
+:::
+
+Two more limits sit behind the passive rules. Section 461(l) caps the business losses a noncorporate taxpayer can deduct against nonbusiness income, and OBBBA reset the 2026 thresholds to $256,000 for single filers and $512,000 for joint filers, down from $313,000 and $626,000 in 2025. Anything above becomes a net operating loss carryforward limited to 80 percent of future taxable income. The saving grace for W-2 households is that wages are excluded from the calculation entirely, so a couple with $600,000 of salary and a $258,000 STR loss is nowhere near the cap. Section 280A is the other trap: use the property yourself for more than the greater of 14 days or 10 percent of rental days, and it becomes a vacation home whose losses are limited. If you plan to keep the 78704 house for your own ACL weekends, count the nights.
+
+One practical note on the short-term rental path. The 100-hours-and-more-than-anyone-else test fails the moment a full-service manager or a single cleaner logs more hours than you do. The 500-hour test survives outside management but is hard to reach on one property. Keep a contemporaneous log. The Tax Court has rejected reconstructed "ballpark" hour estimates for decades, and it will reject yours.
+
+## Worked Example 1: A $1,000,000 Short-Term Rental in 78704
+
+The property is a 2016 build in Bouldin Creek, four bedrooms, three baths, 2,300 square feet, with a pool and a real outdoor kitchen. The buyer is a married couple with $600,000 of taxable W-2 income who will self-manage and can document material participation. They close and list the house in September, which matters, because residential real estate uses a mid-month convention and a September placement earns only 3.5 months of straight-line depreciation in year one.
+
+The market they are buying into, Unlock MLS trailing twelve months through July 31, 2026, via Agent Intel:
+
+:::compare-table
+78704 residential, trailing 12 months | Value
+Median sale price | $867,625
+Average sale price | $1,073,231
+Median price per square foot | $513
+Months of inventory | 7.02
+Success rate (listings that closed) | 48.1%
+Median days on market | 58.6
+Original ask to final list price | -5.27%
+Final list to sale price | -3.93%
+Expired plus withdrawn listings | 660
+Price reductions | 658
+Appreciation, year over year | -1.17%
+:::
+
+Seven months of inventory and a 48 percent close rate make 78704 a negotiator's market. The average successful seller gave up about 9 percent between original ask and closing table. Keep that number; it matters more than the study.
+
+**Step one: the basis split.** Travis Central Appraisal District puts 35 percent of value in land on this lot, so the couple starts with $350,000 of non-depreciable land and $650,000 of building. They spend $40,000 furnishing the house, which is 5-year property in its own right whether or not anyone runs a study. The study costs $4,500.
+
+:::compare-table
+Component | No study | With cost segregation study
+Land (never depreciable) | $350,000 | $350,000
+5-year property (18% of building) | $0 | $117,000
+15-year land improvements (12%: pool, decking, fencing, driveway, landscaping, outdoor kitchen) | $0 | $78,000
+27.5-year building | $650,000 | $455,000
+Furnishings (5-year, bought new) | $40,000 | $40,000
+Year-one bonus depreciation | $40,000 | $235,000
+Year-one 27.5-year depreciation (September, mid-month) | $6,894 | $4,826
+Total year-one depreciation | $46,894 | $239,826
+:::
+
+The study adds $192,932 of year-one deduction. That is the number a provider will put in the proposal. It is not the number that matters yet.
+
+**Step two: the property's own economics.** AirDNA's July 2026 read on Austin is 17,165 active listings, a $264 average daily rate, 55 percent occupancy, and $24,800 of average annual revenue per listing, with revenue up 3.1 percent year over year while the listing count fell 11.1 percent. A four-bedroom with a pool near South Congress is not an average listing. We model it at a $475 average nightly rate and the market's 55 percent occupancy, which is $95,356 of gross revenue. Hotel occupancy tax (11 percent city, 6 percent state) is collected from guests and remitted, so it does not touch the owner's line.
+
+:::compare-table
+Annual operating line | Amount
+Gross booking revenue ($475 x 55% x 365) | $95,356
+Property tax (no homestead, Austin entity stack at $2.0464 per $100) | $20,464
+Short-term rental insurance | $6,000
+Utilities and internet | $7,200
+Platform host fee (3%; higher on host-only fee structures) | $2,861
+Repairs and maintenance | $9,500
+Pool and lawn service | $4,200
+Supplies and consumables | $3,600
+STR license, permits, miscellaneous | $1,500
+Total operating expenses | $55,325
+Net operating income | $40,032
+Unlevered yield on $1,000,000 | 4.0%
+:::
+
+Airbtics ranks Austin in the bottom 8 percent of U.S. markets for short-term rental yield, and a 4 percent cap rate is why. Now add debt. A 75 percent investor loan of $750,000 at 7.25 percent (Freddie Mac's August 20 survey rate of 6.65 percent plus a typical investor premium) costs $5,116 a month, or $61,396 a year, of which $54,137 is interest in year one.
+
+:::compare-table
+Year-one result | Financed (25% down) | All cash
+Cash invested (equity, closing, furnishings, study) | $319,500 | $1,069,500
+Net operating income | $40,032 | $40,032
+Debt service | $61,396 | $0
+Pre-tax cash flow | -$21,364 | $40,032
+Taxable income (NOI less interest, depreciation, study fee) | -$258,431 | -$204,294
+Federal tax saved at $600,000 joint taxable income | $80,366 | $67,373
+After-tax year-one cash | $59,002 | $107,405
+After-tax year-one return on cash | 18.5% | 10.0%
+:::
+
+Read the financed column carefully. This house loses $21,364 in cash before taxes and produces $59,002 after taxes, and the entire swing is the depreciation. The $80,366 refund is real money. It also happens once. In year two the depreciation drops to $16,545, the taxable loss shrinks to about $30,000, the refund shrinks to about $10,500, and the house is $10,800 underwater after tax. Bonus depreciation is an acceleration, not a yield. The property has to work on its own from year two, and at a 4 percent cap rate with 7.25 percent debt, this one does not.
+
+Notice also that the couple's refund was $80,366 on a $258,431 loss, a blended 31 percent, because the loss fell through the 35, 32, and 24 percent brackets on its way down. The same loss for a household at $900,000 of taxable income is worth $93,077, and at a flat 37 percent, $95,619. Cost segregation is most valuable to the people who need it least and least valuable to the people who buy it on a podcast's advice.
+
+## Buy the Depreciation: Two $1,000,000 Houses, One Deduction Twice the Size
+
+Land is never depreciable, and in central Austin land is a large share of the price. The appraisal district's land-to-improvement ratio is the conventional starting point for the allocation (a supportable appraisal can substitute), and the ratio varies enormously from lot to lot. Two houses at the same price can carry very different studies:
+
+:::compare-table
+Purchase at $1,000,000 | 1950s house on a quarter acre in Zilker | 2016 build with a pool on a small lot in Bouldin Creek
+Land share per TCAD | 55% | 30%
+Depreciable building basis | $450,000 | $700,000
+Reclassification rate (single-family benchmark vs. furnished STR benchmark) | 18% | 30%
+Year-one bonus depreciation | $81,000 | $210,000
+Year-one total depreciation (full year) | $94,418 | $227,818
+:::
+
+Same price, 2.4 times the deduction. The Zilker lot is the better land bet and the worse tax bet. Investors who intend to run a study should underwrite the TCAD split before they write the offer, and a buyer's agent who sources through private channels can put both kinds of house in front of you in the same week. Every transaction above $2,000,000 in Taylor Sherwood's career has closed entirely [off the MLS](/blog/off-market-homes-austin), and the reason that matters here is that pools, casitas, and heavy outdoor improvement packages, the things that reclassify, are exactly what the best off-market inventory in West Austin and 78704 carries.
+
+## Worked Example 2: An 8-Unit in East Austin
+
+Small multifamily is where cost segregation started, and it is where the passive loss rules bite hardest, because most 8-unit buyers are not running a short-term rental and are not real estate professionals. This example is deliberately built for the current market. Matthews' Q1 2026 Austin multifamily report puts average asking rent at $1,500 a unit, rent growth at negative 4.7 percent, vacancy at 13.5 percent, and the market cap rate at 5.7 percent. MMCG's 2026 national outlook calls Austin the poster child of post-pandemic overbuilding with the steepest rent declines among the 50 largest metros. Buyers are pricing to that.
+
+The property: eight one-bedroom units in 78702, 1970s construction, purchased for $1,250,000 ($156,250 a door) and placed in service in January.
+
+:::compare-table
+Annual operating line | Amount
+Gross potential rent (8 x $1,500 x 12) | $144,000
+Vacancy and credit loss (8%) | -$11,520
+Effective gross income | $132,480
+Property tax (Austin entity stack) | $25,580
+Insurance ($1,400 a unit) | $11,200
+Repairs and maintenance | $8,800
+Management (7% of EGI) | $9,274
+Water, trash, common-area utilities | $7,200
+Admin, legal, turnover | $2,400
+Reserves ($300 a unit) | $2,400
+Total operating expenses (50.5%) | $66,854
+Net operating income | $65,626
+Cap rate on purchase price | 5.25%
+:::
+
+Lenders are sizing small-balance loans to debt coverage rather than value in 2026. At a 1.25 coverage floor, the loan is $687,500 (55 percent of price) at 6.50 percent on a 30-year amortization: $52,146 a year in debt service, $44,461 of it interest in year one, $13,480 of pre-tax cash flow on $594,500 of cash in. That is a 2.3 percent cash-on-cash return. Nobody buys this building for the cash flow. They buy the basis, the East Austin land, and the depreciation.
+
+:::compare-table
+Depreciation, year one (January placement, 25% land) | No study | With study
+Depreciable building basis | $937,500 | $937,500
+5-year property (15%) | $0 | $140,625
+15-year land improvements (9%: parking, fencing, landscaping, site lighting) | $0 | $84,375
+27.5-year remainder | $937,500 | $712,500
+Bonus depreciation | $0 | $225,000
+27.5-year depreciation (11.5 months) | $32,670 | $24,831
+Total year-one depreciation | $32,670 | $249,830
+Taxable income after $44,461 interest and a $7,000 study fee | -$11,506 | -$235,665
+:::
+
+Now the fork. If one spouse is a full-time agent, developer, or property manager who qualifies for real estate professional status and materially participates, the $235,665 is an ordinary loss against the household's other income. At $450,000 of joint taxable income the refund is $60,276, and the building's year-one after-tax return on cash rises from 2.3 percent to 12.4 percent. At $700,000 it is $81,039.
+
+If nobody in the household qualifies, the loss is passive and suspended. It is not wasted; it shelters the building's own taxable income (which stays near zero for the first several years anyway, as the table shows), it offsets any other passive income, and it releases in full at a taxable sale. But it produces no refund this year, and a $7,000 study bought a very large carryforward. For that buyer, the honest answer is that the study can wait until the year they sell, the year they take on a spouse with 750 hours, or the year a K-1 starts throwing off passive income. A $60,000 annual K-1 would absorb this loss in about four years.
+
+## The ADU on the Back of the Lot
+
+New construction reclassifies well, and [Austin's HOME initiative](/blog/austin-adu-rules-2026) has made backyard units a live investor question. A $260,000 accessory dwelling unit finished as a furnished short-term rental (see the average-stay rules above and [Austin's licensing regime](/blog/austin-short-term-rental-rules-2026), including the platform enforcement that began July 1, 2026) typically carries 15 percent in 5-year property (appliances, flooring, fixtures, cabinetry) and 10 percent in 15-year site work (utility connections, walkway, fencing, landscaping): $65,000 of bonus depreciation on a new build placed in service after January 19, 2025, plus $7,091 a year on the remainder. At a 32 percent marginal rate that is $20,800 of year-one tax; at 37 percent, $24,050. The 10 percent rule above applies, but any project that broke ground in 2026 clears it easily.
+
+## Already Own It? The Lookback Study
+
+You do not have to be a buyer. A cost segregation study on a property you placed in service in a prior year is filed with Form 3115 as an automatic change in accounting method, and the catch-up (a Section 481(a) adjustment) is deducted in full in the year of change. No amended returns. The catch is that the bonus rate is frozen at the original placed-in-service date, so the lookback is worth what the calendar says it is worth:
+
+:::compare-table
+Original placed-in-service date | Bonus rate on the reclassified components
+September 28, 2017 through December 31, 2022 | 100%
+2023 | 80%
+2024 | 60%
+January 1 through January 19, 2025 | 40%
+After January 19, 2025 | 100%
+:::
+
+A house you bought in 2021 and never studied is still a 100 percent asset. One you closed in March 2024 gets 60 percent on the components plus normal MACRS on the rest, which is still far ahead of straight line. Sequence the lookback into a high-income year, or into the year before a sale, when the released deductions and the suspended losses both land.
+
+## Recapture: The Bill at the Exit
+
+Depreciation is a deferral, not a gift. When you sell in a taxable transaction, the government takes back the deductions at rates that depend on which bucket they came from:
+
+:::compare-table
+Asset class | Treatment at a taxable sale
+5-year and 7-year property (Section 1245) | Depreciation taken is recaptured as ordinary income, up to 37%, to the extent of the gain allocated to those assets. Practitioners disagree about how much of the sale price must be allocated to eight-year-old carpet; the conservative assumption is full recapture
+15-year land improvements (Section 1250) | The excess of bonus over straight line is recaptured as ordinary income; the straight-line portion is unrecaptured Section 1250 gain at a maximum of 25%
+27.5-year building (Section 1250) | Unrecaptured Section 1250 gain, maximum 25%
+Appreciation above original cost | Long-term capital gain, up to 20%, plus the 3.8% net investment income tax for most passive owners
+:::
+
+Here is what that does to the 78704 house if the couple sells for $1,200,000 after 6 percent selling costs. With the study, the tax on the depreciation buckets at exit is $101,894. Without it, $40,160. The study costs them $61,734 more at the closing table, on top of the same $20,944 both scenarios owe on the appreciation. Against that, the study produced $59,016 more refund in year one ($54,516 net of the fee) and gave back $2,482 a year afterward because the straight-line remainder was smaller.
+
+:::compare-table
+Holding period, then a taxable sale | Year-one edge from the study, net of fee, compounded at 5% | Give-back of smaller later deductions, compounded | Extra tax at exit caused by the study | Net result of the study
+5 years | $69,578 | -$10,698 | -$61,734 | -$2,854
+10 years | $88,801 | -$27,368 | -$49,750 | $11,682
+15 years | $113,335 | -$48,644 | -$37,767 | $26,924
+:::
+
+Reinvested at 8 percent instead of 5, which is what an investor who rolls the refund into the next down payment actually earns, the same rows read $7,184, $36,951, and $75,066. Read the table plainly: for a five-year hold that ends in a taxable sale at the top bracket, a cost segregation study is close to a wash. It is an interest-free loan from the Treasury, valuable in proportion to how long you keep it and what you do with it. The investors who win big are the ones who never pay it back, and Texas gives them three ways not to.
+
+**A 1031 exchange.** Rolling the property into a replacement defers the whole gain, recapture included. The 2020 regulations under Reg. 1.1031(a)-3 state that a component's depreciation classification does not decide whether it is real property for exchange purposes, so pools, fencing, dedicated electrical, and fixtures attached to the building still ride along. Loose furniture does not, but the regulations treat personal property worth up to 15 percent of the replacement property as incidental. Our [1031 exchange guide for Texas investors](/blog/1031-exchange-texas-investors) covers the mechanics.
+
+**A step-up at death.** Under Section 1014, an heir takes the property at fair market value on the date of death and the depreciation history is erased, recapture and all. Every dollar the study accelerated becomes permanent. This is the quiet reason long-hold Austin families should study their rentals and never their exit. (Our guide to [selling an inherited house in Texas](/blog/selling-inherited-house-texas) covers what the heirs do next.)
+
+**A low-bracket exit.** Recapture is taxed at the rates in effect for the year of sale. A sale in a retirement year, a sabbatical year, or a year with large suspended passive losses to release changes the arithmetic, and the suspended loss from example 2 is precisely what an 8-unit owner would use to absorb their own recapture.
+
+## Why Texas Makes This Cleaner
+
+Three things are different here.
+
+**No state income tax.** Many income-tax states decouple from federal bonus depreciation and force an add-back; California, New Jersey, and New York are the familiar examples, and an investor there gets the federal deduction and then pays the state as if it never happened. Texas has no individual income tax, so there is nothing to add back. The Texas franchise tax is a margin tax on entities above the no-tax-due revenue threshold and is unaffected by depreciation, which puts nearly every individual investor outside it entirely.
+
+**The appraisal district does not care.** A cost segregation study changes your federal depreciation schedule and nothing else. It does not change TCAD's appraised value, your protest, or your homestead status.
+
+**Your furniture is taxable business personal property, and the new exemption covers it.** Furnished short-term rentals hold income-producing tangible personal property, which Texas taxes and requires owners to render each April. Most STR owners never knew. Proposition 9, approved by voters in November 2025 under HB 9, raised the exemption from $2,500 to $125,000 of appraised value per taxing unit beginning with the 2026 tax year, which puts almost every residential furniture package under the line. Keep the rendition simple and take the exemption.
+
+## When a Study Is Not Worth It
+
+Skip it, or wait, when:
+
+- **The depreciable basis is under roughly $200,000.** Even a $495 automated study rarely beats its own fee and the CPA time.
+- **It is a condo.** No land improvements, few systems, and reclassification rates in the low teens.
+- **Nobody in the household can use the loss this year and there is no passive income to absorb it.** Run the study in the year you can.
+- **The plan is a two- to five-year hold with a taxable sale at a 37 percent bracket.** You will hand most of it back.
+- **The house doubles as your own vacation home past the 14-day, 10 percent line.**
+- **The year-one loss would fall into 12 and 22 percent brackets.** A deduction is worth its marginal rate, and the transition election to 40 percent exists for exactly this case.
+
+## Choosing a Study
+
+:::compare-table
+Study type | Typical 2026 price | Fits
+Automated or do-it-yourself desktop study | $495 to $3,000 | Single-family rentals and small STRs, roughly under $600,000 of basis
+Virtual engineered study (documents, photos, no site visit) | $2,500 to $6,000 | Most single-family STRs and small multifamily
+Full engineering study with site inspection | $6,000 to $15,000 or more | Larger multifamily, mixed-use, commercial, anything above about $2,000,000
+:::
+
+The IRS Audit Techniques Guide lists what a defensible study contains: a site visit or equivalent documentation, component-level cost detail rather than a percentage guess, a stated methodology, a reconciliation to your total basis, and a preparer who will support the numbers in an examination. The same guide flags contingency fee arrangements, where the provider is paid a share of the deduction, as an incentive to overreach. Pay a flat fee. On timing, the study has to be done before you file the return for the year the property was placed in service (extensions count), and placed in service means the house was ready and listed for rent, not the night the first guest arrived.
+
+## How Echelon Property Group Underwrites It
+
+Every investment acquisition Echelon Property Group underwrites carries a depreciation schedule and an after-tax line, because the pre-tax line on a 2026 Austin rental is usually a small negative number and the buyer deserves to see both. Three habits from that work:
+
+- **Pull the TCAD land split before the offer, not after closing.** On two houses at the same price, the split alone can double the deduction.
+- **Negotiate the discount first.** In 78704 the average successful seller gave up about 9 percent from original ask over the last twelve months, which is $90,000 on a $1,000,000 house. That is more than the study's net year-one edge, and it never gets recaptured.
+- **Source the component-heavy inventory.** Pools, casitas, outdoor kitchens, and finished site work reclassify, and they are concentrated in the private and off-market inventory in West Austin, 78704, and the small multifamily corridors east of I-35 and south of the river.
+
+:::cta-anchor
+:::
+
+Send the address, the TCAD land split, and the bracket you expect to be in this year, and Echelon Property Group will underwrite the deal with the depreciation line in it, then hand the file to your CPA and study provider with the assumptions already documented. [Start a conversation](/contact) or review [Austin investment strategy](/austin-real-estate-investment).
+
+**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty (TREC #734520), an Austin luxury and investment practice working across Travis, Williamson, and Hays counties. Over 11 years and more than 200 transactions totaling $155 million in career sales, the overwhelming majority of the volume has come from private, relationship-driven, and off-market opportunities, and every deal above $2 million has closed entirely off the MLS. Taylor holds the CLHMS (Guild), GRI, and ABR designations, focuses on multifamily investment and expired-listing repositioning, and is the owner of Open2Close, a real estate transaction management platform. This article is general education, not tax or legal advice.
+
+## Related Reading
+
+- [Austin short-term rental rules in 2026](/blog/austin-short-term-rental-rules-2026)
+- [Austin ADU rules in 2026](/blog/austin-adu-rules-2026)
+- [Should I sell or rent my house in Austin?](/blog/sell-or-rent-my-house-austin)
+- [Capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas)
+
+## Frequently Asked Questions
+
+:::faq
+Q: What is a cost segregation study and how much does it cost in 2026?
+A: A cost segregation study is an engineering analysis that reclassifies components of a rental property from the 27.5-year (residential) or 39-year (commercial) schedule into 5-, 7-, and 15-year property, which is eligible for 100 percent bonus depreciation in the first year. In 2026, automated studies for single-family rentals run about $495 to $3,000, virtual engineered studies $2,500 to $6,000, and full site-inspected studies $6,000 to $15,000 or more. Benchmark data puts typical reclassification at 18 percent of basis for an unfurnished single-family rental and about 24 to 30 percent for a furnished short-term rental.
+
+Q: Is 100% bonus depreciation permanent now?
+A: Yes. The One Big Beautiful Bill Act, signed July 4, 2025, permanently restored 100 percent bonus depreciation for qualified property acquired and placed in service after January 19, 2025, and IRS Notice 2026-11 confirmed the rules in January 2026. Property acquired under a binding contract signed on or before January 19, 2025 stays on the old phase-down: 40 percent for 2025 placements and 20 percent for 2026. Used property qualifies as long as it is new to you.
+
+Q: Can I use cost segregation losses against my W-2 income?
+A: Only if the loss is nonpassive. That happens in two main ways: you qualify as a real estate professional (more than 750 hours and more than half your working time in real property businesses, plus material participation in the rental), or the property is a short-term rental with an average guest stay of seven days or less in which you materially participate, most commonly by logging 100 hours and more than any other person. Otherwise the loss is passive, offsets only passive income, and carries forward until you sell. Above $100,000 of modified AGI the $25,000 landlord allowance phases out and is gone at $150,000.
+
+Q: Does cost segregation work on a short-term rental in Austin?
+A: Yes, and furnished STRs reclassify better than unfurnished rentals because furniture, appliances, and finishes are 5-year property and pools and outdoor living are 15-year. On a $1,000,000 house in 78704 with a 35 percent land allocation and $40,000 of furnishings, a study lifts year-one depreciation from about $47,000 to about $240,000. The catch is the property's own economics: Austin averages 55 percent occupancy and a $264 daily rate per AirDNA, the modeled house yields about 4 percent unlevered, and the tax refund is a one-time event. Austin also requires a short-term rental license, and since July 1, 2026 platforms must display license status and remove unlicensed listings on the city's request.
+
+Q: What is depreciation recapture and how much will I owe when I sell?
+A: At a taxable sale the depreciation you took comes back as income. Depreciation on 5- and 7-year property is recaptured as ordinary income at up to 37 percent; the accelerated portion on 15-year land improvements is ordinary as well; straight-line depreciation on the building is unrecaptured Section 1250 gain taxed at a maximum of 25 percent; and appreciation above your original cost is capital gain at up to 20 percent plus the 3.8 percent net investment income tax. On the $1,000,000 example sold after five years, the study adds about $61,700 of tax at exit against roughly $59,000 of extra refund in year one, which is why a 1031 exchange, a step-up at death, or a long hold is what turns the deferral into a real gain.
+
+Q: Can I do a cost segregation study on a property I already own?
+A: Yes. A lookback study is filed with Form 3115 as an automatic accounting method change, and the entire catch-up deduction (the Section 481(a) adjustment) is taken in the year of change with no amended returns. The bonus rate is fixed by the original placed-in-service date: 100 percent for 2017 through 2022 placements, 80 percent for 2023, 60 percent for 2024, 40 percent for the first 19 days of 2025, and 100 percent after January 19, 2025.
+
+Q: Does Texas tax bonus depreciation?
+A: No. Texas has no individual income tax, so unlike California, New Jersey, and New York there is no state add-back of federal bonus depreciation. The study has no effect on your Travis Central Appraisal District value. Furnishings in a short-term rental are taxable business personal property in Texas, but Proposition 9, approved in November 2025, exempts the first $125,000 of appraised value per taxing unit beginning with the 2026 tax year, which covers nearly every residential furniture package.
+
+Q: When is a cost segregation study not worth it?
+A: When the depreciable basis is under about $200,000, when the property is a condo with little to reclassify, when nobody in the household can use a nonpassive loss and there is no passive income to absorb it, when the plan is a short hold ending in a taxable sale at the top bracket, when personal use exceeds the greater of 14 days or 10 percent of rental days, or when the loss would fall into low tax brackets. In those cases the right move is usually to wait for the year the loss becomes usable, or to skip the study.
+:::
+`,
+  },
   {
     id: "sell-or-rent-my-house-austin",
     title: "Should I Sell or Rent My House in Austin? Doing the math that matters.",

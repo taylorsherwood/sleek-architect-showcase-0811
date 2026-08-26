@@ -15,9 +15,7 @@ const importHomeBelowFold = () =>
     () =>
       new Promise<typeof import("@/components/HomeBelowFold")>((resolve, reject) => {
         setTimeout(() => {
-          import(/* @vite-ignore */ `@/components/HomeBelowFold?retry=${Date.now()}`)
-            .then(resolve as never)
-            .catch(reject);
+          import("@/components/HomeBelowFold").then(resolve).catch(reject);
         }, 600);
       })
   );

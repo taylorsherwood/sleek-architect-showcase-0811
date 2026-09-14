@@ -176,7 +176,8 @@ const blogSellOrRentAustin = blogSellOrRentAustinAsset.url;
 import blogCostSegregationAustinAsset from "@/assets/blog/cost-segregation-austin-hero.png.asset.json";
 const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 
-import blogEanesIsdPremium from "@/assets/blog/eanes-isd-premium-hero.jpg";
+import blogEanesIsdPremiumAsset from "@/assets/blog/eanes-isd-premium-hero.jpg.asset.json";
+const blogEanesIsdPremium = blogEanesIsdPremiumAsset.url;
 
 // Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
@@ -191,7 +192,7 @@ export const seoBlogPosts: BlogPost[] = [
     category: "MARKET INTELLIGENCE",
     image: blogEanesIsdPremium,
     heroImage: blogEanesIsdPremium,
-    imageAlt: "Limestone and glass hillside home above a wooded canyon in West Austin at golden hour, with the downtown skyline faint on the horizon",
+    imageAlt: "Modern minimalist West Austin home with a glowing pool at dusk, floor-to-ceiling glass doors open to an open-concept living and dining area under a purple-pink sky",
     content: `On August 18, 2026, the Eanes ISD board adopted a tax rate of $0.8254 per $100 of value. The next night, Lake Travis ISD adopted $1.0329. The two districts share a border west of Austin and, thanks to state compression, the exact same maintenance and operations rate of $0.7054. The entire 20.75-cent gap is debt. Eanes carries 12 cents of it. Lake Travis carries 32.75.
 
 That is the quiet half of the Eanes premium. The loud half is in the MLS. Over the twelve months ending August 31, 2026, homes in 78746 closed at a median of $563 per square foot. Across the line in 78738, the number was $281. Across Lake Austin in 78732, Leander ISD territory, it was $271. Buyers on the Eanes side are paying two times per foot for roughly the same amount of house.

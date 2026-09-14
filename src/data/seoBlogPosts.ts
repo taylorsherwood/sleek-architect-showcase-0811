@@ -176,8 +176,350 @@ const blogSellOrRentAustin = blogSellOrRentAustinAsset.url;
 import blogCostSegregationAustinAsset from "@/assets/blog/cost-segregation-austin-hero.png.asset.json";
 const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 
+import blogEanesIsdPremium from "@/assets/blog/eanes-isd-premium-hero.jpg";
+
 // Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "eanes-isd-premium",
+    title: "The Eanes Premium: What Austin Buyers Really Pay for Westlake Schools, and Whether It Holds in 2026",
+    metaTitle: "The Eanes ISD Premium: Austin Home Prices by District 2026",
+    excerpt: "Eanes ISD homes sell at $563 a square foot, double the districts next door. The premium, the 2026 tax offset, and what held through the correction.",
+    author: "Taylor Sherwood",
+    date: "2026-09-14",
+    readTime: "24 min read",
+    category: "MARKET INTELLIGENCE",
+    image: blogEanesIsdPremium,
+    heroImage: blogEanesIsdPremium,
+    imageAlt: "Limestone and glass hillside home above a wooded canyon in West Austin at golden hour, with the downtown skyline faint on the horizon",
+    content: `On August 18, 2026, the Eanes ISD board adopted a tax rate of $0.8254 per $100 of value. The next night, Lake Travis ISD adopted $1.0329. The two districts share a border west of Austin and, thanks to state compression, the exact same maintenance and operations rate of $0.7054. The entire 20.75-cent gap is debt. Eanes carries 12 cents of it. Lake Travis carries 32.75.
+
+That is the quiet half of the Eanes premium. The loud half is in the MLS. Over the twelve months ending August 31, 2026, homes in 78746 closed at a median of $563 per square foot. Across the line in 78738, the number was $281. Across Lake Austin in 78732, Leander ISD territory, it was $271. Buyers on the Eanes side are paying two times per foot for roughly the same amount of house.
+
+This guide measures the premium three ways (by zip code, at the district boundary, and across the full 2020 to 2026 cycle), separates what the schools are worth from what the land and the tax structure are worth, runs the tax math on a $2,000,000 homestead under the rates adopted in the last four weeks, and names the things that could shrink the premium from here. It is written for buyers deciding whether to pay it and for owners deciding whether it will still be there when they sell.
+
+One disclosure before the numbers. Market data is Unlock MLS, trailing twelve months through August 31, 2026, pulled through Agent Intel unless a table says otherwise. Tax rates are the 2026 adopted rates where a taxing unit has already voted and the 2025 adopted rates where it has not; Austin ISD, Travis County, Central Health and Austin Community College all vote in late September. This is general education from a broker who works these streets, not tax or legal advice.
+
+## Where the line actually is
+
+Eanes ISD is small. One high school, two middle schools, five elementary campuses since Valley View closed in 2025, and roughly 7,450 students, of whom 2.9 percent are economically disadvantaged. The district sits west of MoPac and south of Lake Austin and takes in the cities of West Lake Hills and Rollingwood, the unincorporated Travis County pockets that Westlake Fire protects (Lost Creek, Rob Roy, Camelot, Westwood, Rolling Hills West, St. Stephens, Rivercrest and Riverhills), and a few areas inside Austin city limits, Davenport Ranch among them.
+
+In zip-code terms that means nearly all of 78746, most of 78733, and edges of 78731, 78735 and 78730. The trap is 78735. Lost Creek and some western sections are Eanes; the rest, including most of what the MLS calls Barton Creek, is Austin ISD. One street can be the difference, and the difference is measured in six figures.
+
+The only source that counts is the district's own property search on its boundary map page. Not the listing's school field, which agents fill in by hand. Not a portal's school module, which guesses from geography. If a contract is going to carry a seven-figure premium for the district, the address gets verified against the map before the option period, not after.
+
+:::compare-table
+Eanes ISD at a glance, September 2026 | Value
+Enrollment | About 7,450 projected for 2025-26, down from 7,594 in 2024-25
+Rated campuses | 8: five elementary, two middle, Westlake High School (2,899 students)
+TEA 2026 accountability | A, 94 of 100; seven campuses rated A, Cedar Creek Elementary rated B
+Niche 2026 | #1 of 876 Texas districts, #11 of 10,394 nationally, A+ overall
+US News 2026, Westlake High School | #53 in Texas, #376 nationally, 76% AP participation
+Economically disadvantaged | 2.9% of students
+Tax rate, tax year 2026 | $0.8254 per $100 ($0.7054 M&O plus $0.12 I&S), down from $0.8322
+Recapture | $90.7 million of $169.7 million collected sent to the state in the latest reported year; more than $1.6 billion since 1995
+Median-valued homestead | $1,292,871 (2026 preliminary certified value)
+:::
+
+A word on the two rankings, because buyers ask. Niche weights test scores, outcomes and parent surveys and puts Eanes first in Texas. US News weights outcomes for disadvantaged students heavily and ranks admission-based magnet campuses at the top, which is how Westlake lands at #53 in the state. Both are true. Only one of them moves prices, and the buyer pool reads Niche.
+
+## The premium by zip code
+
+Here is every zip that touches or borders the district, sorted by price per foot, with the City of Austin as the baseline.
+
+:::compare-table
+Zip (school district) | Median sale price | Median $/SF | Months of inventory | Success rate | Median days on market | Price, year over year
+78703 (Austin ISD) | $1,366,813 | $622 | 6.09 | 49.2% | 58 | +0.5%
+78746 (Eanes) | $1,844,189 | $563 | 5.44 | 56.0% | 47 | +3.8%
+78733 (Eanes) | $1,312,444 | $424 | 4.03 | 61.6% | 27 | +9.4%
+78731 (Austin ISD) | $1,073,095 | $410 | 3.95 | 71.8% | 43 | -5.6%
+78735 (Austin ISD, Eanes edges) | $832,078 | $359 | 4.45 | 65.1% | 45 | -5.5%
+78730 (Leander ISD, Eanes edges) | $1,180,145 | $354 | 6.01 | 58.1% | 53 | -4.4%
+78738 (Lake Travis ISD) | $869,177 | $281 | 4.02 | 67.0% | 48 | +2.3%
+78732 (Leander ISD) | $834,372 | $271 | 5.17 | 64.8% | 46 | -6.3%
+City of Austin, all zips | $567,140 | $296 | 4.95 | 61.3% | 46 | -1.7%
+:::
+
+Source: Unlock MLS via Agent Intel, residential closings, trailing twelve months through August 31, 2026. Success rate is closed listings divided by all listings that ended.
+
+The ratios are the story. 78746 trades at 2.00 times 78738 per foot and 2.08 times 78732. Against 78735, the Austin ISD side of the same hills, it is 1.57 times. Against the city as a whole, 1.90 times. The quieter Eanes zip, 78733, still carries a 1.51 to 1.56 times multiple over its Lake Travis and Leander neighbors, with more land per dollar and the fastest median days on market in the table.
+
+The one non-Eanes zip that beats it per foot is 78703, and that is a lot-size artifact. Tarrytown and Pemberton Heights sell small houses on small lots close to downtown, so $622 buys about 2,200 square feet. In 78746, $563 buys about 3,300. The median sale in 78746 is $477,000 higher than the median sale in 78703 even though the per-foot number is lower, and [our Tarrytown vs Westlake comparison](/blog/tarrytown-vs-westlake-austin) covers that trade in detail.
+
+Size is not the premium. Divide each zip's median price by its median price per foot and you get an implied median home size. It is an approximation (the two medians do not come from the same house), but it is a useful one.
+
+:::compare-table
+Zip (school district) | Median sale price | Median $/SF | Implied median size
+78746 (Eanes) | $1,844,189 | $563 | about 3,280 SF
+78733 (Eanes) | $1,312,444 | $424 | about 3,100 SF
+78738 (Lake Travis ISD) | $869,177 | $281 | about 3,090 SF
+78732 (Leander ISD) | $834,372 | $271 | about 3,080 SF
+78730 (Leander ISD, Eanes edges) | $1,180,145 | $354 | about 3,330 SF
+78735 (Austin ISD, Eanes edges) | $832,078 | $359 | about 2,320 SF
+78703 (Austin ISD) | $1,366,813 | $622 | about 2,200 SF
+City of Austin | $567,140 | $296 | about 1,920 SF
+:::
+
+Eanes, Lake Travis and Leander buyers are all buying a 3,100 to 3,300 square foot house. The Eanes buyer pays $975,000 more for it than the Lake Travis buyer at the median. Everything in that $975,000 is location, schools, tax structure and neighbors. None of it is drywall.
+
+The premium is paid at closing by the people who get there. 78746 is not a fast market. Inventory sits at 5.44 months against 4.02 in 78738. The success rate is 56 percent against 67 percent. Sellers who did close gave up 3.97 percent from original ask to final list and another 4.99 percent from final list to contract, an 8.8 percent combined discount. Of 513 new listings in the trailing year, 268 took at least one price cut and 255 expired or were withdrawn. The premium is real; it is also negotiated, slowly, house by house.
+
+## Same product, other side of the line
+
+Zip codes are blunt. The cleaner test is the one the academic literature uses: find two neighborhoods that are alike in everything except the district, and measure the gap.
+
+The best pair in West Austin is Davenport Ranch and River Place. Both are 1990s to 2000s hillside subdivisions strung along RM 2222 and Westlake Drive above Lake Austin. Both sit inside Austin city limits, so both pay the City of Austin rate and the same county stack. Two things change at the line: the school district (Eanes at $0.8254 versus Leander ISD at $1.1169, a 29-cent gap) and the schools themselves. Vandegrift High School on the Leander side is a well regarded campus in a district that just posted 19 A-rated schools. This is not a good-school-versus-bad-school comparison. It is an Eanes-versus-not-Eanes comparison.
+
+:::compare-table
+Trailing twelve months through August 31, 2026 | Davenport Ranch (Eanes ISD) | River Place area (Leander ISD) | Eanes premium
+Median sale price | $1,705,432 | $1,209,356 | +41%
+Median $/SF | $466 | $347 | +34%
+Closed sales | 45 | 143 | 
+Median days on market | 94 | 72 | 
+Months of inventory | 5.97 | 6.91 | 
+Sale price to list price | 95.5% | 96.0% | 
+Price, year over year | -2.9% | +5.4% | 
+:::
+
+Source: Redfin Data Center via Agent Intel, "Davenport Lake Austin" and "Mansfield-River Place" neighborhood boundaries, all residential. Both sides of this pair come from the same source and the same period.
+
+Thirty-four percent per foot, forty-one percent on price, with the city line, the county line and the commute held constant. Note the direction of the year-over-year numbers, though: River Place is up 5.4 percent and Davenport is down 2.9 percent on a small sample. The premium is large and it is not a straight line.
+
+The second pair is a luxury-tier comparison: the MLS neighborhood of Westlake, which is Eanes, against the MLS neighborhood of Barton Creek, which is Austin ISD. Same buyer pool, same price bracket, same architects, different district.
+
+:::compare-table
+Trailing twelve months through August 31, 2026 | Westlake (Eanes ISD) | Barton Creek (Austin ISD)
+Median sale price | $2,307,600 | $1,337,083
+Average sale price | $2,700,857 | $1,435,993
+Median $/SF | $566 | $504
+Closed sales | 89 | 62
+Expired plus withdrawn | 89 | 39
+Success rate | 51.1% | 61.8%
+Median days on market | 63 | 32
+Months of inventory | 7.03 | 4.55
+Original ask to final list | -4.45% | -3.63%
+Final list to sale | -5.37% | -4.30%
+Price, year over year | +8.6% | -8.0%
+:::
+
+Source: Unlock MLS via Agent Intel. The MLS "Barton Creek" boundary is wider than the gated golf community and includes surrounding Austin ISD product.
+
+Two things stand out. The per-foot gap between the two luxury enclaves is 12 percent, much narrower than the zip-level gap, because Barton Creek's land, gates and golf carry their own premium. But the direction is opposite: Westlake prices rose 8.6 percent over the year while Barton Creek fell 8.0 percent. And Westlake is the least liquid submarket in this article. Eighty-nine homes closed; eighty-nine expired or were withdrawn. Exactly half of the sellers who tried to collect the Eanes premium in the last twelve months did not, which is a number we come back to in the seller section and in our guide to [why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin).
+
+## What the schools are actually worth, and what they are not
+
+Economists have been measuring school-quality premiums since Sandra Black's 1999 paper compared houses on opposite sides of attendance-zone lines in Massachusetts. Twenty-five years of follow-up work points the same direction: schools are capitalized into prices, the effect is real, and it is smaller than most buyers assume.
+
+:::compare-table
+Study | Method | Finding
+Black (1999), Quarterly Journal of Economics | Attendance-zone boundaries, Massachusetts | Parents pay about 2.5% more for a 5% increase in elementary test scores
+Bayer, Ferreira and McMillan (2007), Journal of Political Economy | Boundary design plus neighbor demographics, San Francisco Bay Area | Roughly half of the raw school premium is really a premium for neighbors; about 2% per standard deviation of test scores once neighbors are held constant
+Nguyen-Hoang and Yinger (2011), Journal of Housing Economics | Review of every study since 1999 | Fixed-effects studies find prices rise by less than 4% for a one standard deviation increase in test scores
+Black and Machin (2010), Handbook of the Economics of Education | Literature survey | About 3% per standard deviation is the consensus figure
+Dhar and Ross (2012), Journal of Urban Economics | District boundaries, Connecticut | Larger effects, on the order of 10% per standard deviation, when comparing whole districts rather than attendance zones
+Chiodo, Hernandez-Murillo and Owyang (2010), Federal Reserve Bank of St. Louis Review | Nonlinear specification | The premium is concentrated at the top of the quality distribution; going from good to best is worth more than going from bad to good
+Turnbull and Zahirovic-Herbert (2021), Real Estate Economics | Meta-analysis of U.S. studies | Capitalization is systematically weaker in Southern markets
+:::
+
+Now apply that to Eanes. Be generous and call the gap between Eanes and its neighbors two standard deviations of measured quality. The consensus literature says that is worth 6 to 8 percent on price, and the most aggressive district-level estimates say 20 percent. The observed gap is 100 percent per foot against Lake Travis ISD at the zip level, and 34 to 41 percent against River Place with the city and county held constant.
+
+So the schools, in the narrow sense of test scores and ratings, explain a minority of the Eanes premium. Three other things explain the rest, and each of them matters more for resale than the rating does.
+
+The tax structure. A permanently lower tax bill is a permanent annuity, and buyers capitalize it. The next section puts a number on it: $3,700 to $9,200 a year on a $2,000,000 homestead depending on which non-Eanes address you compare against, which is worth roughly 3 to 9 percent of the purchase price on its own once you capitalize it.
+
+The land. Nobody is platting a new Rob Roy. The district is canyons, ridgelines and Lake Austin frontage ten minutes from downtown, and the supply of that is fixed. This is the part of the premium that has nothing to do with school boards and everything to do with topography, and it is the reason 78703 and 78735 also held up through the correction, as the cycle table below shows.
+
+The neighbors. Bayer, Ferreira and McMillan's finding is the one most buyers have not heard: half the raw school premium is a premium for living near other people who paid it. That is the mechanism, not an insult. Households with the means to pay for Eanes pay to be near each other, and that sorting is self-reinforcing. It is also why a single B rating at Cedar Creek Elementary in 2026 did nothing to prices.
+
+The Southern-market caveat from the 2021 meta-analysis cuts the other way. Across Texas, district lines move prices modestly. Eanes is the exception because it stacks all four drivers: a number-one rating, the lowest school tax rate of the four districts, scarce land, and thirty years of sorting. A premium built on test scores alone can evaporate in one accountability cycle. A premium built on land scarcity, a structurally lower rate and income sorting moves only when one of those moves. We list what could move them further down.
+
+## The tax offset, entity by entity
+
+Texas property tax is a stack. Your bill is the sum of every taxing unit whose boundary your lot falls inside, and the Eanes line is also, in most places, a city line and a fire-district line. So the offset depends on which of several Eanes address types you are comparing to which non-Eanes address type. Here are seven of them.
+
+:::compare-table
+Taxing unit (per $100 of taxable value) | West Lake Hills, Eanes | Rollingwood, Eanes | Unincorporated, Eanes (Lost Creek, Rob Roy) | Austin city, Eanes (Davenport Ranch) | Austin city, Austin ISD (Tarrytown, 78735) | Lakeway, Lake Travis ISD | Austin city, Leander ISD (River Place)
+School district | $0.8254 | $0.8254 | $0.8254 | $0.8254 | $0.9252 | $1.0329 | $1.1169
+City | $0.1768 | $0.2020 | none | $0.5799 | $0.5799 | $0.1696 | $0.5799
+Travis County | $0.3862 | $0.3862 | $0.3862 | $0.3862 | $0.3862 | $0.3862 | $0.3862
+Central Health | $0.1180 | $0.1180 | $0.1180 | $0.1180 | $0.1180 | $0.1180 | $0.1180
+Austin Community College | $0.1034 | $0.1034 | $0.1034 | $0.1034 | $0.1034 | $0.1034 | $0.1034
+Emergency services district | $0.1000 | $0.1000 | $0.1000 | none | none | $0.1000 | none
+Total | $1.7098 | $1.7351 | $1.5330 | $2.0130 | $2.1128 | $1.9102 | $2.3045
+:::
+
+Which rates are which: Eanes ISD ($0.8254, adopted August 18, 2026), Lake Travis ISD ($1.0329, August 19), Leander ISD ($1.1169, August 17) and the City of Austin ($0.579948, August 12, up 10.7 percent from $0.524017) are 2026 adopted rates. Austin ISD ($0.9252), West Lake Hills ($0.176783), Rollingwood ($0.202039), Lakeway ($0.16964), Central Health ($0.118023) and Austin Community College ($0.1034) are 2025 adopted rates pending September votes. Travis County is shown at its certified 2026 voter-approval ceiling of $0.386210; it cannot adopt higher without an election. Emergency services districts (Travis County ESD No. 9 for the Eanes side, ESD No. 6 for Lakeway) are shown at the $0.10 statutory maximum; confirm the adopted rate for a specific address. A Lakeway or Bee Cave address inside a municipal utility district would add a MUD levy on top; see our guide to [MUD and PID taxes](/blog/mud-pid-taxes-austin).
+
+Three things jump out of that table.
+
+First, the most expensive address type in West Austin is not Austin ISD. It is River Place: inside Austin city limits and inside Leander ISD, at $2.30 per $100. The cheapest is unincorporated Eanes at $1.53, because Lost Creek, Rob Roy and Camelot pay no city tax at all and buy their fire protection from ESD 9.
+
+Second, the Lake Travis line is entirely debt. Both districts levy $0.7054 for operations. Lake Travis levies $0.3275 for debt service; Eanes levies $0.12, and has held that number since a two-cent cut in 2020-21 by refunding old bonds rather than issuing much new paper. Remember that when we get to the 2027 bond.
+
+Third, the Eanes-to-Austin-ISD school gap is smaller than people think, just under ten cents. The big Eanes offset against a central Austin address is the City of Austin line, and that line just went up 10.7 percent.
+
+On a $2,000,000 homestead. Assumptions: general homestead exemption on file, the $140,000 school exemption from Proposition 13 (November 2025), the 20 percent exemptions offered by the City of Austin, Travis County and Central Health, the 1 percent ACC exemption, and no city or ESD exemption. Over-65 and disabled owners get more; see our [2026 Texas homestead exemption guide](/blog/texas-homestead-exemption-2026).
+
+:::compare-table
+Annual bill on a $2,000,000 homestead | West Lake Hills, Eanes | Rollingwood, Eanes | Unincorporated, Eanes | Austin city, Eanes | Austin city, Austin ISD | Lakeway, Lake Travis ISD | Austin city, Leander ISD
+School district | $15,352 | $15,352 | $15,352 | $15,352 | $17,209 | $19,212 | $20,774
+City | $3,536 | $4,041 | $0 | $9,279 | $9,279 | $3,393 | $9,279
+Travis County | $6,179 | $6,179 | $6,179 | $6,179 | $6,179 | $6,179 | $6,179
+Central Health | $1,888 | $1,888 | $1,888 | $1,888 | $1,888 | $1,888 | $1,888
+Austin Community College | $2,047 | $2,047 | $2,047 | $2,047 | $2,047 | $2,047 | $2,047
+Emergency services district | $2,000 | $2,000 | $2,000 | $0 | $0 | $2,000 | $0
+Total | $31,003 | $31,508 | $27,467 | $34,747 | $36,603 | $34,720 | $40,169
+:::
+
+Now turn the annual difference into what it is worth at purchase. A permanent saving is an annuity; divide it by a discount rate and you get the value a rational buyer should be willing to pay for it up front. We show two rates: 5 percent, roughly a long-run cap rate, and 6.5 percent, roughly a 2026 jumbo mortgage rate.
+
+:::compare-table
+Compared with West Lake Hills, Eanes | Annual difference | Over a 10-year hold | Capitalized at 5% | Capitalized at 6.5% | Share of a $2M price
+Unincorporated Eanes | $3,536 less | $35,357 less | $70,713 | $54,395 | 2.7% to 3.5%
+Austin city, Eanes (Davenport Ranch) | $3,744 more | $37,435 more | $74,870 | $57,592 | 2.9% to 3.7%
+Lakeway, Lake Travis ISD | $3,717 more | $37,166 more | $74,333 | $57,179 | 2.9% to 3.7%
+Austin city, Austin ISD | $5,600 more | $55,998 more | $111,996 | $86,151 | 4.3% to 5.6%
+Austin city, Leander ISD (River Place) | $9,165 more | $91,654 more | $183,308 | $141,006 | 7.1% to 9.2%
+:::
+
+That last row is the Davenport Ranch versus River Place pair from earlier, and it is worth reading twice. Both addresses pay the City of Austin. The only tax difference is the school district line, $0.2915 per $100, which on a $1,500,000 taxable value is $4,372 a year and $67,000 to $87,000 of capitalized value. The observed price gap between the two neighborhoods was 41 percent. The tax structure explains roughly a sixth of it. The schools and the sorting explain the rest.
+
+## Does the premium hold? The full cycle, 2020 to 2026
+
+The question every owner asks is whether the premium survives a down market. Austin just ran the experiment. The trailing twelve months ending August 2022 caught the top; the twelve months ending August 2026 are the current floor-finding phase. Here is every zip in the article at both points.
+
+:::compare-table
+Zip (school district) | Median price, T12 Aug 2022 | Median price, T12 Aug 2026 | Change | $/SF, T12 Aug 2022 | $/SF, T12 Aug 2026 | Change
+78746 (Eanes) | $1,785,750 | $1,844,189 | +3.3% | $622 | $563 | -9.5%
+78733 (Eanes) | $1,300,000 | $1,312,444 | +1.0% | $458 | $424 | -7.4%
+78703 (Austin ISD) | $1,310,000 | $1,366,813 | +4.3% | $659 | $622 | -5.6%
+78735 (Austin ISD, Eanes edges) | $907,100 | $832,078 | -8.3% | $374 | $359 | -4.0%
+78731 (Austin ISD) | $1,150,000 | $1,073,095 | -6.7% | $466 | $410 | -12.0%
+78730 (Leander ISD, Eanes edges) | $962,500 | $1,180,145 | +22.6% | $401 | $354 | -11.7%
+78738 (Lake Travis ISD) | $930,192 | $869,177 | -6.6% | $323 | $281 | -13.0%
+78732 (Leander ISD) | $940,000 | $834,372 | -11.2% | $319 | $271 | -15.0%
+City of Austin | $600,691 | $567,140 | -5.6% | $350 | $296 | -15.4%
+:::
+
+Source: Unlock MLS via Agent Intel, trailing twelve month windows ending August 31 of each year. Median price is sensitive to mix; the 78730 jump reflects larger and newer homes trading, not a 22 percent gain on any given house. Price per foot is the cleaner like-for-like measure.
+
+The honest reading: Eanes did not escape the correction. Per foot, 78746 gave back 9.5 percent and 78733 gave back 7.4 percent. But the city gave back 15.4 percent, Lake Travis ISD's 78738 gave back 13.0 percent, and Leander ISD's 78732 gave back 15.0 percent. Both Eanes zips are above their 2022 medians in dollars. The two Austin ISD zips west of MoPac, 78703 and 78735, also held per foot, which is the land story showing through: scarce, close-in, hilly ground held everywhere it exists, and Eanes is the largest concentration of it.
+
+Measured against the city, the premium did not just hold. It widened.
+
+:::compare-table
+78746 versus the City of Austin | T12 Aug 2020 | T12 Aug 2022 | T12 Aug 2026
+78746 median $/SF | $358 | $622 | $563
+City of Austin median $/SF | $226 | $350 | $296
+Eanes premium, per foot | 1.58x | 1.78x | 1.90x
+78746 median price | $1,177,261 | $1,785,750 | $1,844,189
+City of Austin median price | $417,896 | $600,691 | $567,140
+78746 months of inventory | 3.48 | 2.19 | 5.44
+78746 success rate | 72.8% | 76.3% | 56.0%
+78746 median days on market | 33 | 9 | 47
+:::
+
+Over six years, 78746 is up 57 percent per foot and 57 percent at the median. The city is up 31 percent per foot and 36 percent at the median. The premium went from 58 percent to 90 percent above the city, and every checkpoint along the way was wider than the one before.
+
+Where it gave was liquidity, not price. Inventory went from 2.19 months to 5.44. The success rate went from 76 percent to 56 percent. Median days on market went from 9 to 47, and the average is 91, which means a long tail of homes sitting past six months. Buyers still pay the premium. Sellers earn it slowly, and 44 percent of them do not earn it at all on the first attempt.
+
+## What could shrink the premium
+
+Nothing above says the premium is permanent. It says the premium is built on four things, and each of them has a known stress point. Here they are, with what to watch and how Echelon Property Group reads each one.
+
+:::compare-table
+Risk | What is happening | What to watch | How we read it
+Enrollment | Enrollment slid from 7,594 in 2024-25 to a projected 7,454; Valley View Elementary closed in 2025 and folded into Barton Creek Elementary; the district leans on roughly 750 out-of-district transfers, each of which trims its recapture bill by about $7,500 | The fall 2026 enrollment count and any further consolidation talk | Campus closures hurt specific streets more than the district brand. If you are buying for a particular elementary, buy the zone, not the promise
+The 2027 bond | A roughly $900 million project list is under study; the last day to call a May 1, 2027 election is February 12, 2027 | The bond advisory committee's recommendation this winter and the district's own I&S projection | Every $100 million of new debt costs about three cents of I&S on a tax base near $20 billion. A full package, even phased, could move the I&S rate from $0.12 toward the mid-$0.20s, erasing most of the 20.75-cent gap with Lake Travis ISD. The Austin ISD offset barely moves, since that district's I&S is already $0.123
+Recapture and state finance | Roughly 60 to 65 percent of M&O revenue leaves for the state; the $2.8 million Right Size Plan cut administrative positions and 69 full-time equivalents by attrition and added a virtual academy | The 2027 legislative session and any visible change in class sizes or programs | The asset is the brand. A slide in programs shows up in Niche parent surveys before it shows up in TEA scores, and prices follow the surveys
+Austin ISD's trajectory | Austin ISD earned a B in 2026, its first in four years, with 61 A or B campuses against 43 in 2024. It also posted 20 F campuses, the most in Texas, and two middle schools hit a fifth consecutive F, which gives the state the option of a takeover | The education commissioner's decision on Burnet and Webb this fall | Near term, takeover headlines push families west of MoPac. Long term, a sustained Austin ISD recovery narrows the Eanes gap against 78703, 78731 and 78735, the three Austin ISD zips that already hold value on land alone
+Neighbors raising rates | Leander ISD went up to $1.1169; the City of Austin went up 10.7 percent | The late-September adoptions by Austin ISD, Travis County, Central Health and ACC | This one runs the other way. Every rate increase next door widens the Eanes offset without Eanes doing anything
+Insurance and wildfire | Canyon lots with heavy tree cover sit in the wildland-urban interface; ESD 9 is the fire protection for the whole core district | Carrier appetite and premium quotes in 78733 and 78746 during the option period | Get the insurance quote before the inspection, not after. It is a carrying cost the tax offset has to cover
+:::
+
+## Buying into Eanes without overpaying for the badge
+
+The premium is real and the premium is negotiable. Both are true at once, and the buyers who do well in this district are the ones who separate the part they must pay from the part they can win back.
+
+Start with where the premium is cheapest. Every one of these feeds Westlake High School.
+
+:::compare-table
+Entry point | Median sale price, T12 | Median $/SF, T12 | Note
+78733 (Cuernavaca, Seven Oaks, Senna Hills) | $1,312,444 | $424 | Fastest median days on market in this analysis at 27; prices up 9.4% year over year
+Davenport Ranch | $1,705,432 | $466 | Inside Austin city limits, so the city rate applies; larger lots than the core
+Lost Creek | $1,265,000 | $508 | 1970s to 1990s product, 54 closings, 68.8% success rate; year-over-year price down 14.8% on a small sample, so comp carefully
+78746 overall | $1,844,189 | $563 | The district benchmark
+Westlake neighborhood | $2,307,600 | $566 | Highest price, lowest liquidity; half of listings failed
+:::
+
+Sources: Unlock MLS via Agent Intel; Davenport Ranch from Redfin Data Center via Agent Intel.
+
+Then the checklist we run on every Eanes contract.
+
+- Verify the district and the elementary zone on the district map, not the listing. The district redrew zones when Valley View closed. A listing that says "Eanes ISD" is a claim, not a fact, until the address comes back on the boundary map.
+
+- Comp on the correct side of the line, and the correct side of Loop 360. A house in Rob Roy on the Canyon is not a house in West Lake Hills, and pricing it off Westlake neighborhood statistics adds six figures to the ask. Use Eanes closings on its own side of 360 and its own lot size. If the seller's comps cross the district line, discard them; a Barton Creek closing is not evidence for a Lost Creek price.
+
+- Price the tax offset explicitly and stop there. Take the annual tax difference against the address you would otherwise buy, divide it by 6.5 percent, and that is the most the offset justifies. On a $2,000,000 West Lake Hills homestead against an Austin ISD address, that is about $86,000. Anything above that in the ask is being charged for schools and neighbors, which you can decide to pay, but not by accident.
+
+- Use the failure rate. Forty-four percent of 78746 listings did not close in the trailing year and 268 of 513 took a price cut. A second-listing seller, a withdrawn seller and any listing past sixty days are where the negotiated part of the premium lives. The combined discount from original ask to contract for the sellers who did close was 8.8 percent; start there.
+
+- Above $2 million, look where the listings are not. The Westlake neighborhood ran 89 closings against 89 expired and withdrawn listings. That is a market where a meaningful share of the best product never hits the MLS, or hits it and leaves. Our guide to [off-market homes in Austin](/blog/off-market-homes-austin) explains how the private side of this market works, and our guide to [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) covers the rest of the process.
+
+- Underwrite the bond. Assume the Eanes I&S rate rises before you sell. If the purchase only works at the unincorporated $1.53 stack, it does not work. If it works at $1.70, you have margin.
+
+One more sanity check: replacement cost. A new 4,000 square foot custom build in 78746 pencils at roughly $1,000 per foot all-in before land, per our analysis of [what it costs to build a house in Austin](/blog/cost-to-build-a-house-austin). Existing Eanes homes are trading at $563. The premium over the districts next door is large; the discount to what it would cost to replace the house is larger, which is the single strongest argument that the premium has room to hold.
+
+## Selling in Eanes: the premium is earned, not announced
+
+For owners, the same data reads differently. Fifty-six percent of 78746 sellers closed. In the Westlake neighborhood it was 51 percent. The premium is not attached to the deed; it is attached to the buyer who shows up, and the buyer who shows up has this table open on the other side of the negotiation.
+
+Three things follow. Price per foot against your own side of the line, not against the best sale in the district. Use the first thirty days, because the median successful listing went under contract in 47 days and the average listing sat 91, and the gap between those two numbers is the drip of price cuts that turns a premium into a discount. And market the district precisely: name the elementary campus, name the attendance zone, and put the tax stack in the listing package, because the buyer paying for Eanes is paying for exactly those three things. Our guide to [why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin) has the full playbook, and our [private listings guide](/blog/private-listings-austin) covers how to test the price before it becomes a days-on-market number.
+
+## Where Echelon Property Group fits
+
+Echelon Property Group works both sides of this line every week, and the practice is built for exactly the two problems this article describes: pricing the premium correctly, and finding the product that never shows up on a portal. Every closing above $2,000,000 that Taylor Sherwood has represented was sourced or transacted off the MLS, and West Austin is where that network is deepest. Send us an address and we will tell you which side of the line it is on, what its tax stack is, and what the last twelve months of closings on that side say it is worth. If you are thinking about the broader West Austin map, our guide to [the most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin) ranks all of them on the same data.
+
+About the author. Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas, brokered by eXp Realty (TREC
+
+#734520). He holds the CLHMS (Guild), GRI and ABR designations and has closed more than $150 million across 200-plus transactions in eleven-plus years, with a practice concentrated in West Austin luxury and Central Texas investment property. Every deal above $2 million he has closed was transacted off the MLS.
+
+## Frequently Asked Questions
+
+:::faq
+Q: What zip codes are in Eanes ISD?
+
+A: Eanes ISD covers nearly all of 78746 and most of 78733, plus edges of 78731, 78735 and 78730. It includes the cities of West Lake Hills and Rollingwood, unincorporated Travis County neighborhoods such as Lost Creek, Rob Roy and Camelot, and some areas inside Austin city limits such as Davenport Ranch. Zip codes are not district lines; 78735 in particular is split between Eanes and Austin ISD. Verify any specific address with the property search on the Eanes ISD boundary map page before you rely on it.
+
+Q: How much more do homes cost in Eanes ISD?
+
+A: Over the twelve months ending August 31, 2026, homes in 78746 closed at a median of $563 per square foot and $1,844,189, against $281 and $869,177 in 78738 (Lake Travis ISD) and $271 and $834,372 in 78732 (Leander ISD). That is roughly two times per foot for a similarly sized house. At the neighborhood level, Davenport Ranch (Eanes) sold at $466 per foot against $347 in the adjacent River Place area (Leander ISD), a 34 percent gap with the city and county taxes held constant.
+
+Q: Is the Eanes ISD tax rate lower than Austin ISD and Lake Travis ISD?
+
+A: Yes. Eanes ISD adopted $0.8254 per $100 for tax year 2026. Lake Travis ISD adopted $1.0329 and Leander ISD adopted $1.1169; Austin ISD's 2025 rate of $0.9252 is pending a September 2026 vote. Eanes and Lake Travis levy the identical $0.7054 for operations; the entire gap is debt service, $0.12 at Eanes versus $0.3275 at Lake Travis. On a $2,000,000 homestead, a West Lake Hills address pays about $31,000 a year in total property tax, against about $36,600 inside Austin city limits in Austin ISD and about $40,200 in River Place.
+
+Q: Does the Eanes premium hold in a down market?
+
+A: It held better than the alternatives. From the trailing twelve months ending August 2022 to the same window ending August 2026, price per square foot fell 9.5 percent in 78746 and 7.4 percent in 78733, against 15.4 percent for the City of Austin, 13.0 percent in 78738 and 15.0 percent in 78732. Measured against the city, the 78746 premium widened from 1.78 times to 1.90 times per foot. What gave was liquidity: months of inventory rose from 2.19 to 5.44 and the success rate fell from 76 percent to 56 percent.
+
+Q: Is Westlake the same thing as Eanes ISD?
+
+A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, where the median sale was $2,307,600 and $566 per foot in the last twelve months. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
+
+Q: What is the least expensive way into Eanes ISD?
+
+A: On a per-foot basis, 78733 at a $424 median and Davenport Ranch at $466 are the entry points, followed by Lost Creek at $508. All feed Westlake High School. 78733 had the fastest median days on market of any zip in this analysis at 27 and 9.4 percent year-over-year price growth, so the discount comes with competition. Unincorporated Eanes addresses also carry the lowest total tax stack in West Austin, about $1.53 per $100, because they pay no city tax.
+
+Q: What could shrink the Eanes premium?
+
+A: Three things to watch. Enrollment is falling (about 7,450 students projected, down from 7,594) and the district closed Valley View Elementary in 2025. A bond package of roughly $900 million is under study for a May 2027 election; every $100 million of new debt is about three cents of debt-service rate on the district's roughly $20 billion tax base, so a full package could push the I&S rate from $0.12 toward the mid-$0.20s and erase most of the Lake Travis ISD tax advantage. And Austin ISD earned a B rating in 2026, its first in four years; a sustained recovery there would narrow the gap with 78703, 78731 and 78735.
+
+Q: How do I confirm a home is zoned to Eanes ISD before I make an offer?
+
+A: Use the property search on the Eanes ISD boundary map page and confirm both the district and the elementary attendance zone, since the district redraws zones when it consolidates campuses. Do not rely on the MLS school fields, which agents type in manually, or on portal school modules, which infer from geography. Put the verified campus assignment in your offer file, and if the seller's listing claims a different assignment, treat that as a pricing issue during the option period.
+:::`,
+  },
   {
     id: "cost-segregation-austin",
     title: "Cost Segregation and 100% Bonus Depreciation for Austin Investors: The 2026 Playbook",

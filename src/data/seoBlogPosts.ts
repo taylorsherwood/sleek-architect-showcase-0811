@@ -488,35 +488,27 @@ About the author. Taylor Sherwood is the founder and principal REALTOR of Echelo
 
 :::faq
 Q: What zip codes are in Eanes ISD?
-
 A: Eanes ISD covers nearly all of 78746 and most of 78733, plus edges of 78731, 78735 and 78730. It includes the cities of West Lake Hills and Rollingwood, unincorporated Travis County neighborhoods such as Lost Creek, Rob Roy and Camelot, and some areas inside Austin city limits such as Davenport Ranch. Zip codes are not district lines; 78735 in particular is split between Eanes and Austin ISD. Verify any specific address with the property search on the Eanes ISD boundary map page before you rely on it.
 
 Q: How much more do homes cost in Eanes ISD?
-
 A: Over the twelve months ending August 31, 2026, homes in 78746 closed at a median of $563 per square foot and $1,844,189, against $281 and $869,177 in 78738 (Lake Travis ISD) and $271 and $834,372 in 78732 (Leander ISD). That is roughly two times per foot for a similarly sized house. At the neighborhood level, Davenport Ranch (Eanes) sold at $466 per foot against $347 in the adjacent River Place area (Leander ISD), a 34 percent gap with the city and county taxes held constant.
 
 Q: Is the Eanes ISD tax rate lower than Austin ISD and Lake Travis ISD?
-
 A: Yes. Eanes ISD adopted $0.8254 per $100 for tax year 2026. Lake Travis ISD adopted $1.0329 and Leander ISD adopted $1.1169; Austin ISD's 2025 rate of $0.9252 is pending a September 2026 vote. Eanes and Lake Travis levy the identical $0.7054 for operations; the entire gap is debt service, $0.12 at Eanes versus $0.3275 at Lake Travis. On a $2,000,000 homestead, a West Lake Hills address pays about $31,000 a year in total property tax, against about $36,600 inside Austin city limits in Austin ISD and about $40,200 in River Place.
 
 Q: Does the Eanes premium hold in a down market?
-
 A: It held better than the alternatives. From the trailing twelve months ending August 2022 to the same window ending August 2026, price per square foot fell 9.5 percent in 78746 and 7.4 percent in 78733, against 15.4 percent for the City of Austin, 13.0 percent in 78738 and 15.0 percent in 78732. Measured against the city, the 78746 premium widened from 1.78 times to 1.90 times per foot. What gave was liquidity: months of inventory rose from 2.19 to 5.44 and the success rate fell from 76 percent to 56 percent.
 
 Q: Is Westlake the same thing as Eanes ISD?
-
 A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, where the median sale was $2,307,600 and $566 per foot in the last twelve months. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
 
 Q: What is the least expensive way into Eanes ISD?
-
 A: On a per-foot basis, 78733 at a $424 median and Davenport Ranch at $466 are the entry points, followed by Lost Creek at $508. All feed Westlake High School. 78733 had the fastest median days on market of any zip in this analysis at 27 and 9.4 percent year-over-year price growth, so the discount comes with competition. Unincorporated Eanes addresses also carry the lowest total tax stack in West Austin, about $1.53 per $100, because they pay no city tax.
 
 Q: What could shrink the Eanes premium?
-
 A: Three things to watch. Enrollment is falling (about 7,450 students projected, down from 7,594) and the district closed Valley View Elementary in 2025. A bond package of roughly $900 million is under study for a May 2027 election; every $100 million of new debt is about three cents of debt-service rate on the district's roughly $20 billion tax base, so a full package could push the I&S rate from $0.12 toward the mid-$0.20s and erase most of the Lake Travis ISD tax advantage. And Austin ISD earned a B rating in 2026, its first in four years; a sustained recovery there would narrow the gap with 78703, 78731 and 78735.
 
 Q: How do I confirm a home is zoned to Eanes ISD before I make an offer?
-
 A: Use the property search on the Eanes ISD boundary map page and confirm both the district and the elementary attendance zone, since the district redraws zones when it consolidates campuses. Do not rely on the MLS school fields, which agents type in manually, or on portal school modules, which infer from geography. Put the verified campus assignment in your offer file, and if the seller's listing claims a different assignment, treat that as a pricing issue during the option period.
 :::`,
   },

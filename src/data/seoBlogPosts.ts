@@ -179,6 +179,10 @@ const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 import blogEanesIsdPremiumAsset from "@/assets/blog/eanes-isd-premium-hero.jpg.asset.json";
 const blogEanesIsdPremium = blogEanesIsdPremiumAsset.url;
 
+import blogBuilderIncentivesAustinAsset from "@/assets/blog/builder-incentives-austin-hero.png.asset.json";
+const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
+
+
 // Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
   {

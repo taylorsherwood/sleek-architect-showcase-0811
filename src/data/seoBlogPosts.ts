@@ -179,8 +179,381 @@ const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 import blogEanesIsdPremiumAsset from "@/assets/blog/eanes-isd-premium-hero.jpg.asset.json";
 const blogEanesIsdPremium = blogEanesIsdPremiumAsset.url;
 
+import blogBuilderIncentivesAustinAsset from "@/assets/blog/builder-incentives-austin-hero.png.asset.json";
+const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
+
+
 // Build marker: ensure new posts ship in bundle (v13)
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "builder-incentives-austin",
+    title: "Builder Incentives in Austin, 2026: What the 4.99 Percent Rate Really Costs and What Is Actually Negotiable",
+    metaTitle: "Builder Incentives in Austin 2026: What Is Negotiable",
+    excerpt: "Austin builders are spending 10 to 12 percent of the price to move new homes. The 2026 math on 4.99% buydowns, price cuts, MUD taxes and new build vs resale.",
+    author: "Taylor Sherwood",
+    date: "2026-09-18",
+    readTime: "22 min read",
+    category: "MARKET INTELLIGENCE",
+    image: blogBuilderIncentivesAustin,
+    heroImage: blogBuilderIncentivesAustin,
+    imageAlt: "New Austin-area home under construction at framing stage with limestone masonry, exposed roof framing and rolled blueprints on a stone ledge in the foreground",
+    content: `Three numbers landed inside forty-eight hours this week, and together they explain the Austin new-home market better than any sales brochure.
+
+On Wednesday, September 16, the National Association of Home Builders reported that 66 percent of builders used sales incentives in September and 38 percent cut prices outright, with the average cut holding at 6 percent for a sixth straight month. That evening Lennar, the second-largest builder in the country and one of the highest-volume builders in Central Texas, reported that its $372,000 average sales price reflected approximately 12 percent in incentives. That is roughly $50,000 a house. On Thursday, Freddie Mac put the average 30-year fixed rate at 6.95 percent, the highest in more than nineteen months, one day after the Federal Reserve raised its benchmark rate for the first time since 2023.
+
+Read those together. Market money costs almost 7 percent. Two of every three builders are paying buyers to show up. The largest operators are spending a tenth or more of the price to keep homes closing. When a builder in Leander, Liberty Hill or Kyle advertises 4.99 percent this fall, that two-point gap is not generosity. It is a line item on the builder's cost sheet, and line items can be negotiated.
+
+This guide covers what builders are spending, why they would rather hand you a rate than a price cut, how to tell a permanent buydown from a teaser, the costs that never make the incentive flyer, and a worked $500,000 comparison between a new build with the full builder package and a negotiated resale. The short version: the builder package usually beats a resale bought at full market rate, and a well-negotiated resale often beats the builder. In our model the difference is about $120 a month, and most of it is property tax.
+
+## The short answer
+
+Builder incentives in Austin in 2026 typically total 6 to 12 percent of the purchase price on quick move-in homes. Most of that value arrives as a below-market mortgage rate, commonly 4.99 percent fixed against a 6.95 percent market, with closing cost credits of $5,000 to $15,000 and design or upgrade allowances on top. The rate structure, closing costs, lot premiums, appliance and blind packages, and the price of finished inventory are negotiable. Base prices on to-be-built homes, option pricing and the builder's contract language mostly are not. Incentives are almost always conditioned on using the builder's affiliated lender and title company, so the only way to know what a package is worth is to price the same loan with an outside lender, convert every incentive to dollars per month and cash to close, and compare the full payment, including MUD or PID taxes, against a comparable resale.
+
+:::compare-table
+Metric | Figure | Source
+Builders using sales incentives, September 2026 | 66% | NAHB/Wells Fargo HMI
+Builders cutting prices, September 2026 | 38%, average cut 6% | NAHB/Wells Fargo HMI
+Communities advertising incentives on quick move-in homes, July 2026 | 81% (63% on to-be-built homes) | Zonda
+30-year fixed rate, week of September 17, 2026 | 6.95% | Freddie Mac
+Lennar incentives, fiscal Q3 2026 | About 12% of price on a $372,000 average sale | Lennar
+PulteGroup incentives, Q1 2026 | 10.9% of gross sales price | PulteGroup
+U.S. new-home supply, July 2026 | 9.6 months, 488,000 for sale, 117,000 of them completed | Census Bureau and HUD; Calculated Risk
+U.S. median price, new vs existing, July 2026 | $393,800 vs $434,100 | Census Bureau; National Association of REALTORS
+New homes listed in the Austin MLS, March 2026 | 5,781 | HomesUSA.com
+Average Austin new-home price and days on market, May 2026 | $480,634 and 115 days | HomesUSA.com
+:::
+
+Figures verified September 18, 2026. Mortgage rates and builder promotions change weekly; this post is updated as they do.
+
+## Why Austin builders are paying: the inventory picture
+
+Start nationally, because the big builders set incentive budgets nationally and deploy them by market. In July 2026 new homes sold at a seasonally adjusted annual rate of 607,000, down 10.5 percent from June. There were 488,000 new homes for sale, a 9.6-month supply, against 4.6 months for existing homes. Of those, 117,000 were finished and sitting, nearly four times the 31,000 on the ground at the February 2022 low. The median new-home price fell to $393,800, its lowest since July 2021 and $40,300 below the $434,100 existing-home median. New homes have historically sold at a premium to used ones. In 2026 they sell at a 9 percent discount, before counting the financing.
+
+Austin is a concentrated version of the same story. HomesUSA.com, which tracks builder listings in the Texas MLS systems, counted 5,781 new homes listed in the Austin MLS in March against a three-month average of 753 closings a month. That is 7.7 months of supply. At May's faster pace of 868 closings it was still 6.7 months, against 5.06 months for the whole Austin metro in Unlock MLS data. Set those 5,781 builder listings against the 13,000 to 14,500 total active listings Unlock MLS reported this summer and new construction is roughly four of every ten homes for sale in the metro, while producing about three of every ten closings. The average new home took 115 days to sell in May, up from 104 a year earlier, at an average price of $480,634, down $4,945 from May 2025.
+
+Zonda's Texas advisory team described the local picture in June: Austin starts fell year over year in the first quarter, closings are outrunning starts as builders work through standing inventory, vacant developed lot supply remains elevated across the metro, base prices for detached new homes keep edging lower, and mortgage rate buydowns and closing cost help rank as the most effective tools for keeping traffic moving. Unlock MLS's August report, released this week, showed metro sales down 7.3 percent year over year and the median price down 6.4 percent to $412,000. Williamson County, where much of the building happens, posted a $399,900 median, down 5.9 percent.
+
+The suburbs where builders concentrate tell it in more detail. These are trailing twelve-month Unlock MLS figures through August 31, 2026, pulled through Agent Intel.
+
+:::compare-table
+Market | Median price | Median $/SF | Months of inventory | Success rate | Original-to-list | Sale-to-list | Combined discount | 12-month price change
+Austin metro | $426,378 | $210 | 5.06 | 65.6% | -4.63% | -2.81% | -7.31% | -1.98%
+City of Austin | $565,902 | $296 | 4.95 | 61.2% | -4.04% | -3.08% | -6.99% | -1.93%
+Leander | $455,379 | $195 | 4.73 | 67.4% | -4.76% | -3.06% | -7.68% | -3.62%
+Liberty Hill | $502,799 | $195 | 5.55 | 74.6% | -5.99% | -2.73% | -8.56% | +0.56%
+Georgetown | $444,203 | $204 | 4.64 | 73.3% | -5.16% | -2.47% | -7.51% | -2.42%
+Hutto | $339,615 | $172 | 4.58 | 76.6% | -5.63% | -2.05% | -7.57% | -5.66%
+Manor | $341,835 | $171 | 5.63 | 56.9% | -4.51% | -2.40% | -6.81% | -3.72%
+Kyle | $318,418 | $166 | 4.83 | 74.1% | -5.53% | -2.21% | -7.61% | -4.57%
+:::
+
+Source: Unlock MLS via Agent Intel, residential, twelve months ending August 31, 2026. Success rate is closed sales divided by closed plus expired plus withdrawn listings. Combined discount compounds the original-to-list and sale-to-list gaps.
+
+Two things stand out. First, prices in the builder-heavy suburbs are falling two to three times faster than the metro: Hutto down 5.66 percent, Kyle down 4.57 percent, Manor down 3.72 percent and Leander down 3.62 percent, against 1.98 percent for the metro as a whole. Second, the deepest list-price cuts are in the same places. Liberty Hill sellers took 5.99 percent off their original prices before contract, Hutto 5.63 percent, Kyle 5.53 percent. In the City of Austin, where almost nothing new is being delivered, the figure was 4.04 percent.
+
+Here is the part that matters for anyone pricing a new home: those discounts are gross of financing incentives. When a builder sells a $500,000 house and spends $35,000 buying the rate down, the MLS records $500,000. Because [Texas is a non-disclosure state](/blog/texas-non-disclosure-state), no public record corrects it. The true discount in these zip codes is the 7 to 8 percent you can see plus the 6 to 12 percent you cannot. It is also a piece of the story of [where Austin homeowners are moving](/blog/where-austin-homeowners-are-moving): carrying costs push buyers outward, and the builders meet them there with a rate.
+
+## What builders are actually spending
+
+Public builders disclose incentive loads on their earnings calls. The last three reports from the three largest tell the same story.
+
+:::compare-table
+Builder | Period | Incentives as a share of price | Context
+Lennar | Fiscal Q3 2026 (June to August) | About 12% | $372,000 average sales price, 15.8% gross margin; incentives ran about 14% in late 2025 and early 2026
+D.R. Horton | Fiscal Q2 2026 (January to March) | About 10% | 19.7% gross margin; management expects incentives to stay elevated all fiscal year; unsold completed homes cut 35% from a year earlier
+PulteGroup | Q1 2026 | 10.9% | Up from 8.7% in Q2 2025 and 6.3% in Q2 2024; gross margin 24.4%, down from 27.5%
+PulteGroup in a normal market | Historical | 3.0% to 3.5% | $18,000 to $21,000 on a $600,000 home
+:::
+
+Sources: company earnings releases and calls, September 16 and 17, 2026 (Lennar), April 21, 2026 (D.R. Horton), April 2026 and July 2025 (PulteGroup); ResiClub for the PulteGroup normal-market range.
+
+Apply those percentages to HomesUSA.com's $480,634 average Austin new home and the budget comes into focus. A normal-market 3.5 percent incentive is about $16,800. Ten percent is $48,100. Twelve percent is $57,700. John Burns Research and Consulting reports the same range from its builder clients: some are spending 6.5 percent to more than 12 percent of the sales price through forward commitments combined with other incentives.
+
+Two details from the calls are worth keeping in mind at the sales office. Lennar's management said that in many markets almost half of the people walking into its communities could not immediately qualify for a mortgage, which tells you the buydown is not a perk. It is how the builder manufactures a qualified buyer. And PulteGroup reported that 85 percent of its second-quarter buyers financed through Pulte's own mortgage company. The incentive and the lender are one product.
+
+## Why a builder would rather give you $35,000 of rate than $35,000 of price
+
+Perry Homes published a useful example with its Austin summer promotion: up to $35,000, paid by the builder, toward either flex cash or a 4.99 percent fixed rate (5.178 percent APR) through its preferred lenders. Perry's own illustration uses a $500,000 home with 10 percent down, a $450,000 loan and a 780 credit score, producing principal and interest of $2,412.95. Run the same house three ways at this week's 6.95 percent market rate.
+
+:::compare-table
+Scenario | No incentive | $35,000 off the price | $35,000 into the rate
+Price | $500,000 | $465,000 | $500,000
+Loan at 10% down | $450,000 | $418,500 | $450,000
+Rate | 6.95% | 6.95% | 4.99%
+Principal and interest | $2,979 | $2,770 | $2,413
+Monthly savings | None | $209 | $566
+:::
+
+A dollar spent on rate buys 2.7 times the payment relief of a dollar spent on price. To reach the $2,413 payment with price alone, the builder would have to sell the house for $405,025. That is a $94,975 cut, 19 percent. The American Enterprise Institute's Housing Center reached the same ratio from the builder's side: one point of permanent rate reduction costs a builder about 3.2 percent of the sale price, while producing the same payment with price takes a cut of about 10 percent.
+
+That is reason one. Reason two is that a price cut is public and contagious. It resets the comps for every appraisal still in the backlog, and it infuriates the family that closed last month at the old number. A financing incentive never touches the recorded price.
+
+Reason three is that the big builders buy their money wholesale. In a forward commitment, the builder's mortgage affiliate pays points up front to reserve a block of below-market money, then originates loans out of that block for buyers of select homes. AEI estimated that about 64 percent of homes sold by the largest builders in mid-2025 used a permanent buydown, against about 13 percent for small builders, with an average rate discount of 1.3 points.
+
+Reason four is regulatory, and it is the one resale sellers cannot copy. Fannie Mae, Freddie Mac, FHA and VA all cap how much a seller can contribute toward a buyer's financing.
+
+:::compare-table
+Loan type | Situation | Maximum seller-paid contributions
+Conventional | Less than 10% down | 3% of price
+Conventional | 10% to just under 25% down | 6%
+Conventional | 25% or more down | 9%
+Conventional | Investment property | 2%
+FHA | Any down payment | 6%
+VA | Any down payment | 4%, not counting normal closing costs
+:::
+
+Sources: Fannie Mae Selling Guide B3-4.1-02; Freddie Mac Guide 5501.6; HUD Handbook 4000.1; VA Lenders Handbook chapter 8.
+
+A resale seller's buydown counts against those caps. A builder's forward commitment does not. Both Fannie Mae and Freddie Mac exclude forward commitment costs from the contribution limits as long as the commitment was obtained before the builder had a contract with the borrower and was not arranged for that specific deal. A first-time buyer putting 5 percent down on a resale can receive at most 3 percent from the seller, which buys perhaps three quarters of a point of rate. The same buyer at a production builder can be handed a rate two points under the market with the cap untouched. AEI has argued that the exemption props up new-home prices and should be phased out, and the agencies tightened their contribution and disclosure rules effective September 3, 2025. As of this writing the exemption stands.
+
+## Two offers that both say 4.99 percent
+
+The number on the banner tells you almost nothing. Compare two real 2026 promotions.
+
+Perry Homes, Austin, summer 2026: 4.99 percent (5.178 percent APR), obtained, in the builder's words, through an interest rate buydown by purchase of points. That is a permanent rate for all thirty years, bought with up to $35,000 of the builder's money, on a conventional loan through Crestmark Mortgage or Parkstone Mortgage.
+
+Taylor Morrison, national, June 24 to July 12, 2026: 3.99 percent in year one, then 4.99 percent (5.07 percent APR) from year two on. The fine print describes a pool of funds secured through Taylor Morrison Home Funding and available until depleted, which is a forward commitment, plus a seller-paid temporary buydown fund of up to 1 percent of the price to produce the first-year rate. The illustration assumes a $500,000 price, 20 percent down and a 780 score, and the buyer must use both the affiliated lender and the closing agent the seller selects.
+
+Both of those are permanent 4.99 percent loans, reached by different routes. The third structure you will meet is not. A 2-1 temporary buydown leaves the note at the market rate and subsidizes only the first two years, and it is often advertised with the year-one number in the largest type.
+
+:::compare-table
+Structure on a $450,000 loan | Year 1 payment | Year 2 payment | Years 3 to 30 | Approximate builder cost
+Permanent buydown to 4.99% | $2,413 | $2,413 | $2,413 | About $35,000 at retail point pricing, less through a forward commitment
+2-1 temporary buydown on a 6.95% note | $2,402 (4.95%) | $2,684 (5.95%) | $2,979 (6.95%) | $10,464, or 2.33% of the loan
+No buydown | $2,979 | $2,979 | $2,979 | $0
+:::
+
+In year one the teaser and the permanent loan are $11 apart. In year three they are $566 apart, every month, for the remaining twenty-eight years, and the builder spent about $24,500 less to run the more attractive ad. A temporary buydown also does nothing for qualification. Lenders underwrite to the note rate, so a buyer who cannot qualify at 6.95 percent is not helped by a 4.95 percent first year. That is why John Burns reports most builders now commit to thirty-year buydowns for first-time buyers.
+
+Five questions sort any offer in under a minute:
+
+1. Is the advertised rate the note rate for all thirty years, or only the first year or two?
+2. What is the APR, and what would the note rate be on this loan today with no incentive?
+3. Is the rate for an FHA, VA or conventional loan, and what down payment and credit score does it assume?
+4. Does it apply to this specific home, or only to select inventory?
+5. What is the incentive worth in dollars if I take it as price or closing costs instead?
+
+## Rate or price: the five-year rule
+
+Suppose the builder will give you $35,000 either way. Which should you take? Measure what each choice has cost you by the day you sell or refinance: your down payment, plus every principal and interest payment made, plus the loan balance you still owe.
+
+:::compare-table
+You sell or refinance after | $35,000 off the price, 6.95% | $35,000 into a 4.99% rate | Better choice | Margin
+1 year | $493,951 | $522,304 | Price | $28,354
+2 years | $522,593 | $544,269 | Price | $21,675
+3 years | $550,906 | $565,877 | Price | $14,971
+4 years | $578,865 | $587,109 | Price | $8,244
+5 years | $606,445 | $607,948 | Price | $1,503
+6 years | $633,618 | $628,371 | Rate | $5,246
+7 years | $660,356 | $648,360 | Rate | $11,996
+10 years | $737,632 | $705,483 | Rate | $32,149
+:::
+
+Model: $500,000 home, 10 percent down, 30-year fixed. Total is down payment plus cumulative principal and interest plus remaining balance.
+
+The crossover arrives in month 63. If you expect to keep the loan longer than about five years, take the rate. If you expect to sell inside five years, or you believe rates will fall far enough to refinance before then, take the price. A refinance erases a buydown on the day it funds. It does not erase a smaller loan balance.
+
+One caution from the negotiating table: builders rarely offer the swap dollar for dollar. Forward commitment money costs them less than the retail value of the rate, so the cash alternative is usually smaller than the buydown it replaces. Ask for both numbers in writing and run this table with the real figures.
+
+## New build vs resale: a $500,000 worked example
+
+Here is the comparison most buyers never see side by side, because no one at a sales office has a reason to build it. Column A is a quick move-in home in a MUD community northwest of Austin with a full builder package. Column B is a seven-year-old resale inside city limits with no MUD, listed at $479,000 and negotiated to $465,000, which is 2.9 percent off list and in line with Leander's 3.06 percent trailing sale-to-list gap, with the seller also paying 3 percent of the price into a permanent buydown. Column C is a similar resale where the seller concedes only $9,000 of price and nothing else.
+
+:::compare-table
+Line item | A: New build, builder package | B: Resale, negotiated | C: Resale, no concessions
+Price | $499,990 | $465,000 | $470,000
+Incentive | 4.99% fixed plus $10,000 toward closing costs | Seller pays 3% ($13,950) in discount points | None
+Loan at 10% down | $449,991 | $418,500 | $423,000
+Rate | 4.99% | 6.125% | 6.95%
+Principal and interest | $2,413 | $2,543 | $2,800
+Property tax | $1,025 (2.46%) | $783 (2.02%) | $791 (2.02%)
+HOA | $95 | $45 | $45
+Insurance | $200 | $250 | $250
+Mortgage insurance | $75 | $70 | $70
+Total monthly | $3,808 | $3,691 | $3,956
+Cash to close | $49,999 | $55,800 | $56,400
+Loan balance after 5 years | $413,162 | $390,029 | $397,963
+Total paid over 5 years | $228,473 | $221,436 | $237,372
+:::
+
+Model inputs: Column A's 2.46 percent tax rate and $95 monthly HOA come from Taylor Morrison's published community sheet for Santa Rita Ranch in Liberty Hill, which showed a combined $2.464614 per $100 at 2023 tax-year rates, $0.85 of it for the MUD, and a $285 quarterly HOA fee. Columns B and C use about 2.02 percent for an in-city Williamson County address in Leander ISD with no MUD: Leander ISD's 2026 rate of $1.1169 plus county, road, city and Austin Community College rates at recent adopted levels. Taxes are shown before homestead exemptions, which apply to all three. Column B's rate assumes the usual rule of thumb of a quarter point of rate per discount point. Closing costs are 2 percent of price. Verify every rate for the specific address before relying on it.
+
+Three readings.
+
+The builder beats the lazy resale. Column A is $148 a month cheaper than Column C, needs $6,401 less cash at closing, and the house is new.
+
+The negotiated resale beats the builder. Column B is $117 a month cheaper than Column A even though its mortgage rate is more than a full point higher. The entire gap, and then some, is property tax: $242 a month, $2,907 a year, for as long as the MUD is paying off its bonds. Column B also ends year five owing $23,133 less.
+
+The builder's real contribution is visible in what Column A would cost without the package: $4,374 a month at 6.95 percent. The incentive is worth $566 a month. It is real money. It is just not the only money in the comparison.
+
+What the table cannot show cuts both ways. A new home carries a warranty, a new roof and new mechanical systems, and lower utility bills. A seven-year-old resale is a few years from its first water heater and its first HVAC repair, and a reserve of $150 to $250 a month is fair. The resale comes with a fence, blinds, gutters, a refrigerator, grown trees and a known tax bill. The new build usually comes with none of those, which is the next section.
+
+## The costs the incentive sheet leaves out
+
+:::compare-table
+Item | Typical size | Why it matters
+MUD or PID tax | Roughly $0.85 to $1.00 per $100 in young districts, $4,250 to $5,000 a year on $500,000 | The largest recurring cost difference between a new community and an established one
+Year-two escrow reset | Up to about $800 a month on a $500,000 home | The first tax bill is often based on the lot alone
+Lot premium | A few thousand dollars to six figures on view, greenbelt and oversized lots | Seldom appraises at cost; negotiable on standing inventory
+Design center selections | Priced at retail margin | A $30,000 design credit buys less than $30,000 of value; spend it on structural items you cannot add later
+Fit-out after closing | Commonly $8,000 to $15,000 | Blinds, refrigerator, washer and dryer, gutters, back fence, garage door openers and rear landscaping are often excluded
+HOA capital and transfer fees | A few hundred to about $1,500 at closing | Disclosed in the HOA documents, rarely on the flyer
+Builder lender pricing | Varies | An incentive can be partly recovered through a higher base rate or fees, which is why you need an outside Loan Estimate
+:::
+
+The tax line deserves the most attention, and [our guide to MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin) walks through district rates and how they decline as bonds are retired. The point for this comparison is simple. A builder can buy your rate down for thirty years. Nobody buys down the MUD.
+
+The escrow reset is the one that ambushes people. Texas values property as of January 1. If your home was a vacant lot or a slab on January 1 of the year you close, that year's bill is based on the lot. On a $499,990 home at 2.46 percent, the full tax is $12,300 a year, or $1,025 a month. On a $110,000 lot it is $2,706, or $226 a month. If the lender sets your escrow from the lot-only bill, your payment looks $799 a month lighter than it really is. When the first full bill arrives, the servicer raises the escrow by that $799 and then collects the shortage on top, up to another $799 a month for a year. A payment that started at $3,000 can pass $4,500 before it settles.
+
+The fix costs nothing: instruct the lender, in writing, to escrow on the fully improved value from the first payment. While you are at it, file for [the 2026 Texas homestead exemption](/blog/texas-homestead-exemption-2026) as soon as you occupy the house. The school exemption alone is $140,000 of value.
+
+## The resale problem nobody at the sales office mentions
+
+A 4.99 percent rate makes a $500,000 house cost what a $405,025 house costs at 6.95 percent. That is wonderful for the buyer who keeps the loan. It is a problem for the buyer who has to sell while the builder is still open down the street.
+
+Picture year three. You list at $500,000. Your buyer, at market rates, faces a $2,979 payment. The builder, two streets over, is still selling the same plan, new, with a $2,413 payment. To match the builder on monthly cost you would have to price near $405,000. The builder's subsidy never appeared in the recorded price, so the comps say the neighborhood is worth $500,000 while the payment math says something lower. In an active community you are not competing with your neighbors. You are competing with a seller who owns a mortgage company.
+
+Four ways to protect yourself:
+
+1. Buy late in the community's life. In a final phase, the builder is gone before you are likely to sell.
+2. If you qualify, take the builder's rate on an FHA or VA loan. Those loans are assumable, which means your 4.99 percent can transfer to your buyer. Conventional loans cannot do that. The mechanics are in [our guide to assumable mortgages in Austin](/blog/assumable-mortgage-austin).
+3. On standing inventory, push for price as well as rate, so your basis sits closer to what buyers are effectively paying.
+4. Plan to stay at least five years, which is also where the rate-versus-price math turns in your favor.
+
+## What is actually negotiable
+
+:::compare-table
+Item | Flexibility | How to approach it
+Rate and buydown structure | High on quick move-in homes | Ask for a permanent rate in place of a temporary one, and ask what the same dollars do as price
+Closing costs | High | $5,000 to $15,000 is common in the Austin area; the owner's title policy is usually covered when you use the builder's title company
+Price of finished or nearly finished inventory | Moderate to high, rising with days on market | The national average cut is 6 percent; builders prefer to move value through financing to protect comps, so ask for both
+Base price of a to-be-built home | Low | The builder is protecting community pricing; aim at the lot premium and design credit
+Lot premium | Moderate | Often the easiest concession on a to-be-built contract
+Design center credit | Moderate | Worth less than face value; spend it on structure, ceiling height, extra bays and plumbing rough-ins
+Appliances, blinds, fence, gutters, landscaping | High | Cheap for the builder, expensive for you at retail; ask last, after the big items are settled
+Closing date | Moderate | Builders pay for speed near a quarter end
+Earnest money and deposits | Low to moderate | Expect deposits to become non-refundable quickly
+Contract language | Very low | Production builders rarely change their form; the goal is to understand it before you sign
+Buyer agent compensation | Set by the builder | Paid by the builder in most Austin-area communities; confirm it in writing and register on the first visit
+:::
+
+How to run the conversation:
+
+1. Get an outside Loan Estimate the same day as the builder lender's. Same loan type, same down payment, same lock period. The difference between them is the true value of the package.
+2. Ask for the incentive in dollars. "Up to $35,000" is a ceiling, and the amount depends on the home.
+3. Shop three builders in one weekend and say so. Sales counselors have more discretion than the flyer implies, and their managers have more.
+4. Target homes that have been finished for sixty days or more. A completed house is inventory on a balance sheet. D.R. Horton told investors in April that it had cut its unsold completed homes 35 percent in a year. That is the pressure you are negotiating with.
+5. Ask what the last buyer of this plan received. You will not always get an answer. You will sometimes get a better offer.
+
+## Timing: the builder calendar
+
+Public builders manage to quarterly delivery guidance, and a home only counts if it closes by the last day of the quarter.
+
+:::compare-table
+Builder | Fiscal year ends | Quarter ends
+D.R. Horton | September 30 | December 31, March 31, June 30, September 30
+Lennar | November 30 | February 28, May 31, August 31, November 30
+KB Home | November 30 | February 28, May 31, August 31, November 30
+Toll Brothers | October 31 | January 31, April 30, July 31, October 31
+PulteGroup (Pulte, Centex, Del Webb), Taylor Morrison, Meritage, Century Communities, M/I Homes, Tri Pointe | December 31 | Calendar quarters
+Private builders | Not publicly reported | Expect pushes at month end and calendar year end
+:::
+
+As this is published, D.R. Horton's fiscal year ends in twelve days. Lennar's ends November 30, and the company just guided to 22,000 to 23,000 fourth-quarter deliveries after closing 20,840 in the third. That is 1,200 to 2,200 more closings than last quarter, in a market Lennar's own management called more difficult than it was in June. A finished Lennar home that can close on November 25 is worth more to Lennar than the same home closing December 5.
+
+The leverage belongs to buyers who can perform: financing approved, and a home that is already complete. A to-be-built contract signed today closes next spring and helps no one's quarter.
+
+## Contract, representation and inspections in Texas
+
+The sales counselor works for the builder. Texas Senate Bill 1968, effective January 1, 2026, ended subagency and requires a license holder to have a written agreement with a buyer before showing residential property. A builder's on-site employee selling the builder's own homes may not need a real estate license at all, so the protections that govern a resale showing do not automatically reach the model home. If you want representation, arrange it before the first visit. Most builders require your agent to register you on that first visit, and buyers who walk in alone, or register online alone, can find they have waived representation with that builder.
+
+The contract is the builder's. Production builders use their own forms, not the Texas Real Estate Commission's new-home contracts. Expect no option period, deposits that turn non-refundable fast, binding arbitration, broad builder discretion over the completion date and material substitutions, and limited remedies if the appraisal comes in low.
+
+The lender tie is legal, within limits. Federal rules bar a builder from requiring its affiliated lender as a condition of the sale, but allow incentives conditioned on using it. Taylor Morrison's disclosure says it plainly: the buyer does not have to use the affiliated lender or the seller's closing agent to purchase, but must use both to receive the financing promotion. In Texas the title premium is set by the state, so the builder's title company costs the same as any other.
+
+Inspect anyway. Hire a third-party inspector at three points: before the foundation pour, before drywall, and at completion. Then schedule a fourth visit in month eleven, before the one-year workmanship warranty expires.
+
+Read the warranty's length. A 2023 Texas law, House Bill 2024, shortened the statute of repose for residential construction claims from ten years to six when the builder provides a written warranty of at least one year on workmanship and materials, two years on plumbing, electrical and HVAC delivery systems, and six years on major structural components. Many builders moved from ten-year structural coverage to six as a result.
+
+## If you are buying as an investor
+
+The owner-occupant playbook mostly does not transfer.
+
+The contribution cap on a conventional investment property loan is 2 percent, and forward commitment rates are generally reserved for owner-occupants. Claiming you will live in the house to get the rate is mortgage fraud. Some builders do run investor programs from time to time, but the headline rates in this article are not the investor rates.
+
+Because you are more likely to sell, exchange or refinance inside five years, the five-year rule usually points investors toward price, not rate.
+
+The rental competition is heaviest exactly where the incentives are richest. The same suburbs absorbing builder inventory are absorbing build-to-rent communities and accidental landlords, a dynamic we quantified in our analysis of [whether to sell or rent an Austin house](/blog/sell-or-rent-my-house-austin). And the MUD tax lands harder on a rental, which has no homestead exemption and no 10 percent appraisal cap.
+
+What new construction does offer an investor is depreciation. A new build has a clean cost basis and a high share of short-life components, which is the raw material for [cost segregation and bonus depreciation](/blog/cost-segregation-austin) under the 2025 tax law.
+
+## Luxury and spec homes: different leverage
+
+The custom and spec builders working in Westlake, Rollingwood, Barton Creek and the Hill Country have no mortgage company and no forward commitment. Nobody on Westlake Drive is advertising 4.99 percent. The leverage is different, and it is about carry.
+
+:::compare-table
+Monthly carry on a finished $3.2 million spec home | Estimate
+Interest on a $2.1 million construction loan at 9.5% | $16,625
+Property tax on $2.5 million of assessed value at 1.75% | $3,646
+Insurance | $1,200
+Utilities, pool, landscape, staging | $2,500
+Total | $23,971 a month, about $789 a day
+:::
+
+This is a model, not a quote. Bank spec loans price off a prime rate that now sits near 7 percent, and private construction money runs higher. The point is scale: six unsold months cost this builder about $144,000, three quarters of a percent of the list price every month, before any price cut. A buyer who can close in thirty days is offering the builder something worth real money, and should price the offer accordingly.
+
+What moves at this level: price, more than in production communities; completion items such as pools, landscape packages, shades and appliance upgrades; closing timeline; and seller-paid points, subject to the jumbo lender's own contribution limit, which is often tighter than the conforming caps above. Context matters too. When we priced [what it costs to build a house in Austin](/blog/cost-to-build-a-house-austin), a custom Westlake build came in near $1,000 per square foot before land, while 78746 resales trade around $563 a foot. A finished spec priced between those two numbers is competing against replacement cost and against resale at once.
+
+Spec builders also dislike public price cuts as much as production builders do, for the same reason: the next buyer reads the history. It is one cause of [why luxury homes fail to sell in Austin](/blog/luxury-home-not-selling-austin), and one reason a meaningful share of high-end new construction trades quietly. If you are shopping above $2 million, the finished and nearly finished homes you can see on the MLS are not the whole market. We cover how that works in [our guide to off-market homes in Austin](/blog/off-market-homes-austin).
+
+## How Echelon Property Group runs a new-construction purchase
+
+1. Register with each builder before the first visit, so representation is never in question.
+2. Pull Unlock MLS history for every inventory home in the community: days on market, price changes, and what the same plan closed for.
+3. Price the builder lender's loan against an outside lender on the same day, then convert every incentive into dollars per month and cash to close.
+4. Build the tax stack for the specific address, including MUD, PID and emergency services district rates, and set the escrow on improved value.
+5. Run the rate-versus-price crossover for your actual time horizon.
+6. Model the exit: who you will be selling against in three, five and seven years, and whether an assumable loan changes the answer.
+7. Schedule phased third-party inspections and the month-eleven warranty walk.
+
+:::cta-anchor
+:::
+
+If you are weighing a new build against a resale anywhere in Travis, Williamson or Hays County, send the address and the incentive sheet to Echelon Property Group and we will build the side-by-side.
+
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by eXp Realty (TREC #734520), with more than eleven years in Austin real estate and over $155 million in career sales across more than 200 transactions. He holds the CLHMS, GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, investment and off-market transactions. Reach him at [512.661.3843](tel:+15126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+This article is general information, not legal, tax or lending advice. Builder promotions change monthly and vary by community and home. Confirm every rate, tax figure and contract term for the specific property before you sign.
+
+## Frequently Asked Questions
+
+:::faq
+
+Q: What incentives are Austin home builders offering in 2026?
+A: Most Austin-area production builders are offering below-market mortgage rates, commonly 4.99 percent fixed against a market near 6.95 percent, along with closing cost credits of $5,000 to $15,000 and design or upgrade allowances. Public builders report total incentives of 10 to 12 percent of the price: Lennar about 12 percent, PulteGroup 10.9 percent and D.R. Horton about 10 percent. On the $480,634 average Austin new home, that is roughly $48,000 to $58,000.
+
+Q: Is a builder rate buydown better than a price reduction?
+A: It depends on how long you keep the loan. On a $500,000 home with 10 percent down, $35,000 spent on a permanent buydown from 6.95 to 4.99 percent saves $566 a month, while $35,000 off the price saves $209. But the price cut leaves you owing less. In our model the buydown pulls ahead in month 63, so take the rate if you will keep the loan more than about five years, and take the price if you expect to sell or refinance sooner.
+
+Q: What is the difference between a 2-1 buydown and a permanent buydown?
+A: A permanent buydown lowers the note rate for all thirty years. A 2-1 buydown leaves the note at the market rate and subsidizes only the first two years: two points lower in year one and one point lower in year two. On a $450,000 loan the two produce nearly identical first-year payments, about $2,400, but from year three the 2-1 loan costs $566 a month more. The temporary version costs the builder about $10,500, compared with roughly $35,000 for the permanent one.
+
+Q: Do I have to use the builder's lender to get the incentive?
+A: Almost always, yes. Federal rules do not let a builder require its affiliated lender as a condition of selling you the house, but they do let the builder condition incentives on using that lender and its chosen title company. PulteGroup reports that 85 percent of its buyers use its mortgage company. Get a same-day Loan Estimate from an outside lender for the same loan type and down payment. The difference in total cost is the true value of the builder's package.
+
+Q: Can you negotiate the price of a new construction home in Austin?
+A: Yes, mainly on finished or nearly finished inventory homes. Nationally, 38 percent of builders cut prices in September 2026, by an average of 6 percent. Builders resist cutting base prices on to-be-built homes because it resets community comps, so on those contracts the negotiable items are the lot premium, design center credit, closing costs, the rate structure and items such as appliances, blinds and fencing. Leverage rises with days on market and near the builder's quarter end.
+
+Q: Is it cheaper to buy a new build or a resale home in Austin right now?
+A: It depends on the negotiation and the tax rate. In our $500,000 model, a new build with a 4.99 percent builder rate costs $3,808 a month. A comparable resale bought at the full 6.95 percent market rate costs $3,956. A resale negotiated to $465,000 with the seller funding a buydown to 6.125 percent costs $3,691, because its property tax bill is $242 a month lower without a MUD. Run both with the real tax rate for each address.
+
+Q: When is the best time to buy a new construction home?
+A: Near the end of a builder's fiscal quarter or year, on a home that is already complete, with your financing approved. D.R. Horton's fiscal year ends September 30, Toll Brothers' October 31, Lennar's and KB Home's November 30, and most other public builders' December 31. Builders guide investors to quarterly delivery counts, and only homes that close by the deadline count, so a finished home that can close in thirty days commands the best terms.
+
+Q: Do I need my own agent to buy new construction in Texas?
+A: You are not required to have one, but the on-site sales counselor works for the builder, and the builder's contract is written to protect the builder. Texas Senate Bill 1968, effective January 1, 2026, requires agents to have a written agreement with buyers before showing homes, and most builders require your agent to register you on your first visit. In most Austin-area communities the builder pays the buyer's agent. Confirm that in writing before you tour.
+:::`,
+  },
   {
     id: "eanes-isd-premium",
     title: "The Eanes Premium: What Austin Buyers Really Pay for Westlake Schools, and Whether It Holds in 2026",

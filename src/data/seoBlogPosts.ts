@@ -179,7 +179,7 @@ const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 import blogEanesIsdPremiumAsset from "@/assets/blog/eanes-isd-premium-hero.jpg.asset.json";
 const blogEanesIsdPremium = blogEanesIsdPremiumAsset.url;
 
-import blogBuilderIncentivesAustinAsset from "@/assets/blog/builder-incentives-austin-hero.png.asset.json";
+import blogBuilderIncentivesAustinAsset from "@/assets/blog/builder-incentives-austin-hero.jpg.asset.json";
 const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
 
 

@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import AliasRedirect from "@/components/AliasRedirect";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { chunkRetry } from "@/lib/chunkRetry";
 const FloatingContact = lazy(chunkRetry(() => import("@/components/FloatingContact")));
 const ExitIntentModal = lazy(chunkRetry(() => import("@/components/ExitIntentModal")));
 

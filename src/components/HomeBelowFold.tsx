@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
 import { submitLeadToZapier } from "@/lib/formUtils";
+import { chunkRetry } from "@/lib/chunkRetry";
 
 gsap.registerPlugin(ScrollTrigger);
 

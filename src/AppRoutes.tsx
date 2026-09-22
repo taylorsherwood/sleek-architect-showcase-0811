@@ -2,80 +2,80 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import AliasRedirect from "@/components/AliasRedirect";
 import { ScrollToTop } from "@/components/ScrollToTop";
-const FloatingContact = lazy(() => import("@/components/FloatingContact"));
-const ExitIntentModal = lazy(() => import("@/components/ExitIntentModal"));
+const FloatingContact = lazy(chunkRetry(() => import("@/components/FloatingContact")));
+const ExitIntentModal = lazy(chunkRetry(() => import("@/components/ExitIntentModal")));
 
 // Eagerly load the homepage for instant first paint
 import Index from "@/pages/Index";
 
 // Lazy-load every other route to defer non-critical JS
 const aboutImport = () => import("@/pages/About");
-const About = lazy(aboutImport);
+const About = lazy(chunkRetry(aboutImport));
 const listingsImport = () => import("@/pages/Listings");
-const Listings = lazy(listingsImport);
+const Listings = lazy(chunkRetry(listingsImport));
 const buyImport = () => import("@/pages/Buy");
-const Buy = lazy(buyImport);
+const Buy = lazy(chunkRetry(buyImport));
 const sellImport = () => import("@/pages/Sell");
-const Sell = lazy(sellImport);
+const Sell = lazy(chunkRetry(sellImport));
 const communitiesImport = () => import("@/pages/Communities");
-const Communities = lazy(communitiesImport);
+const Communities = lazy(chunkRetry(communitiesImport));
 const communityPageImport = () => import("@/pages/CommunityPage");
-const CommunityPage = lazy(communityPageImport);
+const CommunityPage = lazy(chunkRetry(communityPageImport));
 const blogImport = () => import("@/pages/Blog");
-const Blog = lazy(blogImport);
+const Blog = lazy(chunkRetry(blogImport));
 const blogPostImport = () => import("@/pages/BlogPost");
-const BlogPost = lazy(blogPostImport);
+const BlogPost = lazy(chunkRetry(blogPostImport));
 const contactImport = () => import("@/pages/Contact");
-const Contact = lazy(contactImport);
-const MovingToAustin = lazy(() => import("@/pages/MovingToAustin"));
-const BestLuxuryNeighborhoods = lazy(() => import("@/pages/BestLuxuryNeighborhoods"));
-const MarketReport = lazy(() => import("@/pages/MarketReport"));
+const Contact = lazy(chunkRetry(contactImport));
+const MovingToAustin = lazy(chunkRetry(() => import("@/pages/MovingToAustin")));
+const BestLuxuryNeighborhoods = lazy(chunkRetry(() => import("@/pages/BestLuxuryNeighborhoods")));
+const MarketReport = lazy(chunkRetry(() => import("@/pages/MarketReport")));
 
-const AustinLuxuryHomes = lazy(() => import("@/pages/AustinLuxuryHomes"));
-const AustinCommercialRealEstate = lazy(() => import("@/pages/AustinCommercialRealEstate"));
-const HomeValueAustin = lazy(() => import("@/pages/HomeValueAustin"));
-const CommercialInvestment = lazy(() => import("@/pages/CommercialInvestment"));
-const LuxuryRealEstateAustin = lazy(() => import("@/pages/LuxuryRealEstateAustin"));
+const AustinLuxuryHomes = lazy(chunkRetry(() => import("@/pages/AustinLuxuryHomes")));
+const AustinCommercialRealEstate = lazy(chunkRetry(() => import("@/pages/AustinCommercialRealEstate")));
+const HomeValueAustin = lazy(chunkRetry(() => import("@/pages/HomeValueAustin")));
+const CommercialInvestment = lazy(chunkRetry(() => import("@/pages/CommercialInvestment")));
+const LuxuryRealEstateAustin = lazy(chunkRetry(() => import("@/pages/LuxuryRealEstateAustin")));
 
 
-const AustinRealEstateInvestment = lazy(() => import("@/pages/AustinRealEstateInvestment"));
-const LandForSaleAustin = lazy(() => import("@/pages/LandForSaleAustin"));
-const LandRanch = lazy(() => import("@/pages/LandRanch"));
-const LandRanchMarket = lazy(() => import("@/pages/LandRanchMarket"));
-const SearchPage = lazy(() => import("@/pages/Search"));
-const LandPage = lazy(() => import("@/pages/Land"));
-const PastTransactions = lazy(() => import("@/pages/PastTransactions"));
+const AustinRealEstateInvestment = lazy(chunkRetry(() => import("@/pages/AustinRealEstateInvestment")));
+const LandForSaleAustin = lazy(chunkRetry(() => import("@/pages/LandForSaleAustin")));
+const LandRanch = lazy(chunkRetry(() => import("@/pages/LandRanch")));
+const LandRanchMarket = lazy(chunkRetry(() => import("@/pages/LandRanchMarket")));
+const SearchPage = lazy(chunkRetry(() => import("@/pages/Search")));
+const LandPage = lazy(chunkRetry(() => import("@/pages/Land")));
+const PastTransactions = lazy(chunkRetry(() => import("@/pages/PastTransactions")));
 
-const BestNeighborhoodsAustin = lazy(() => import("@/pages/BestNeighborhoodsAustin"));
-const AustinMultifamilyReport2026 = lazy(() => import("@/pages/AustinMultifamilyReport2026"));
+const BestNeighborhoodsAustin = lazy(chunkRetry(() => import("@/pages/BestNeighborhoodsAustin")));
+const AustinMultifamilyReport2026 = lazy(chunkRetry(() => import("@/pages/AustinMultifamilyReport2026")));
 const connectImport = () => import("@/pages/Connect");
-const Connect = lazy(connectImport);
-const AgentIntegrations = lazy(() => import("@/pages/AgentIntegrations"));
-const PrivateOpportunitiesPage = lazy(() => import("@/pages/PrivateOpportunitiesPage"));
-const LuxuryHomesAustin = lazy(() => import("@/pages/LuxuryHomesAustin"));
-const BillionaireMigration = lazy(() => import("@/pages/BillionaireMigration"));
+const Connect = lazy(chunkRetry(connectImport));
+const AgentIntegrations = lazy(chunkRetry(() => import("@/pages/AgentIntegrations")));
+const PrivateOpportunitiesPage = lazy(chunkRetry(() => import("@/pages/PrivateOpportunitiesPage")));
+const LuxuryHomesAustin = lazy(chunkRetry(() => import("@/pages/LuxuryHomesAustin")));
+const BillionaireMigration = lazy(chunkRetry(() => import("@/pages/BillionaireMigration")));
 
-const AustinLuxuryMarketTrends = lazy(() => import("@/pages/AustinLuxuryMarketTrends"));
-const OffMarketRealEstateAustin = lazy(() => import("@/pages/OffMarketRealEstateAustin"));
-const AustinLandDevelopmentOpportunities = lazy(() => import("@/pages/AustinLandDevelopmentOpportunities"));
-const LandDevelopment = lazy(() => import("@/pages/LandDevelopment"));
-const AustinLuxuryRealEstateMarketReport = lazy(() => import("@/pages/AustinLuxuryRealEstateMarketReport"));
-const MarketIntelligence = lazy(() => import("@/pages/MarketIntelligence"));
+const AustinLuxuryMarketTrends = lazy(chunkRetry(() => import("@/pages/AustinLuxuryMarketTrends")));
+const OffMarketRealEstateAustin = lazy(chunkRetry(() => import("@/pages/OffMarketRealEstateAustin")));
+const AustinLandDevelopmentOpportunities = lazy(chunkRetry(() => import("@/pages/AustinLandDevelopmentOpportunities")));
+const LandDevelopment = lazy(chunkRetry(() => import("@/pages/LandDevelopment")));
+const AustinLuxuryRealEstateMarketReport = lazy(chunkRetry(() => import("@/pages/AustinLuxuryRealEstateMarketReport")));
+const MarketIntelligence = lazy(chunkRetry(() => import("@/pages/MarketIntelligence")));
 const investImport = () => import("@/pages/Invest");
-const Invest = lazy(investImport);
+const Invest = lazy(chunkRetry(investImport));
 
-const AboutAustinRealEstateAdvisory = lazy(() => import("@/pages/AboutAustinRealEstateAdvisory"));
-const SellPrivate = lazy(() => import("@/pages/SellPrivate"));
-const SellPrivateThankYou = lazy(() => import("@/pages/SellPrivateThankYou"));
-const NotFound = lazy(() => import("@/pages/NotFound"));
-const CommunityReportPage = lazy(() => import("@/pages/CommunityReportPage"));
-const AdminLogin = lazy(() => import("@/pages/admin/AdminLogin"));
-const AdminDashboard = lazy(() => import("@/pages/admin/AdminDashboard"));
-const AdminCommunityEditor = lazy(() => import("@/pages/admin/AdminCommunityEditor"));
-const OAuthConsent = lazy(() => import("@/pages/OAuthConsent"));
-const Reviews = lazy(() => import("@/pages/Reviews"));
-const TaylorSherwood = lazy(() => import("@/pages/TaylorSherwood"));
-const Developments = lazy(() => import("@/pages/Developments"));
+const AboutAustinRealEstateAdvisory = lazy(chunkRetry(() => import("@/pages/AboutAustinRealEstateAdvisory")));
+const SellPrivate = lazy(chunkRetry(() => import("@/pages/SellPrivate")));
+const SellPrivateThankYou = lazy(chunkRetry(() => import("@/pages/SellPrivateThankYou")));
+const NotFound = lazy(chunkRetry(() => import("@/pages/NotFound")));
+const CommunityReportPage = lazy(chunkRetry(() => import("@/pages/CommunityReportPage")));
+const AdminLogin = lazy(chunkRetry(() => import("@/pages/admin/AdminLogin")));
+const AdminDashboard = lazy(chunkRetry(() => import("@/pages/admin/AdminDashboard")));
+const AdminCommunityEditor = lazy(chunkRetry(() => import("@/pages/admin/AdminCommunityEditor")));
+const OAuthConsent = lazy(chunkRetry(() => import("@/pages/OAuthConsent")));
+const Reviews = lazy(chunkRetry(() => import("@/pages/Reviews")));
+const TaylorSherwood = lazy(chunkRetry(() => import("@/pages/TaylorSherwood")));
+const Developments = lazy(chunkRetry(() => import("@/pages/Developments")));
 
 // Prefetch high-traffic route chunks after homepage is interactive
 if (typeof window !== "undefined") {

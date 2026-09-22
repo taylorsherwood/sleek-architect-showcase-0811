@@ -7,10 +7,10 @@ import { submitLeadToZapier } from "@/lib/formUtils";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollingCredibilityStrip = lazy(() => import("@/components/ScrollingCredibilityStrip"));
-const ExpertiseSection = lazy(() => import("@/components/ExpertiseSection"));
-const HomeValuationInline = lazy(() => import("@/components/HomeValuationInline"));
-const HomeCommunitiesScroll = lazy(() => import("@/components/HomeCommunitiesScroll"));
+const ScrollingCredibilityStrip = lazy(chunkRetry(() => import("@/components/ScrollingCredibilityStrip")));
+const ExpertiseSection = lazy(chunkRetry(() => import("@/components/ExpertiseSection")));
+const HomeValuationInline = lazy(chunkRetry(() => import("@/components/HomeValuationInline")));
+const HomeCommunitiesScroll = lazy(chunkRetry(() => import("@/components/HomeCommunitiesScroll")));
 import FeaturedProperties from "@/components/FeaturedProperties";
 
 // Dynamic image imports, only loaded when this chunk is loaded
@@ -32,7 +32,7 @@ const blogTarrytownVsBrykerWoods = new URL("@/assets/tarrytown-bryker-woods.avif
 const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", import.meta.url).href;
 const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
-const Footer = lazy(() => import("@/components/Footer"));
+const Footer = lazy(chunkRetry(() => import("@/components/Footer")));
 
 import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
 

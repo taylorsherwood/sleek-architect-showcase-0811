@@ -553,6 +553,9 @@ Sources: Echelon Property Group scenario analysis; Texas Real Estate Research Ce
 
 None of these triggers is exotic. Four of them are being decided in the next ninety days, which is why this post is dated and will be updated as the December Fed meeting, the Q3 FHFA index and the Unlock MLS year-end report land.
 
+:::cta-anchor
+:::
+
 :::faq
 
 Q: Will Austin home prices go up or down in 2027?

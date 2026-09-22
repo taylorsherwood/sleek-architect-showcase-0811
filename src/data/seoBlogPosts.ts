@@ -184,7 +184,406 @@ const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
 
 
 // Build marker: ensure new posts ship in bundle (v13)
+import blogAustinHousingForecast2027Asset from "@/assets/blog/austin-housing-market-forecast-2027-hero.png.asset.json";
+const blogAustinHousingForecast2027 = blogAustinHousingForecast2027Asset.url;
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-housing-market-forecast-2027",
+    title: "Austin Housing Market Forecast 2027: What the Data Says Happens Next",
+    metaTitle: "Austin Housing Market Forecast 2027: Prices, Rates, Supply",
+    excerpt: "Austin's 2027 housing forecast: prices, mortgage rates, inventory and sales by price tier, three rate scenarios, and the Unlock MLS data behind each call.",
+    author: "Taylor Sherwood",
+    date: "2026-09-22",
+    readTime: "35 min read",
+    category: "MARKET INTELLIGENCE",
+    image: blogAustinHousingForecast2027,
+    heroImage: blogAustinHousingForecast2027,
+    imageAlt: "New homes at framing stage with ZIP System sheathing and a CAT skid steer on site",
+    content: `A year ago this week, Fannie Mae told the country that mortgage rates would end 2026 at 5.9 percent. Freddie Mac's survey printed 6.95 percent on September 17, 2026, the daily trackers are above 7 percent, and on September 16 the Federal Reserve raised its policy rate for the first time since 2023. If you built a 2026 plan around the consensus forecast, you were off by a full point in the wrong direction.
+
+So this forecast starts from a different place. It is built from Unlock MLS transaction data for the city of Austin, Travis, Williamson and Hays counties and the luxury ZIP codes Echelon Property Group works in every week, layered on the rate path the bond market is actually pricing, not the one everyone hoped for. It covers prices, sales volume, inventory, rents and the luxury tier separately, because in Austin right now those are four different markets that happen to share a ZIP code prefix.
+
+The one-paragraph version: 2027 is the year Austin finishes bottoming, not the year it takes off. Volume recovers before price does. The luxury tier is already flat to up. The entry-level and new-construction corridors have one more soft stretch in them. And the whole thing is hostage to a 30-year mortgage rate that will probably spend most of 2027 between 6.5 and 7 percent.
+
+## The short answer
+
+Here is the Echelon Property Group base case, with the range that covers the three rate scenarios modeled later in this post. All current figures are trailing twelve months through August 31, 2026, from Unlock MLS via Agent Intel, unless noted.
+
+:::compare-table
+Metric | Where it stands (T12 through Aug 31, 2026) | 2027 base case (Dec 2027 vs Dec 2026) | Full range
+City of Austin median sale price | $565,942 (-1.9% YoY) | Flat to +2% | -6% to +5%
+Austin metro median sale price | $426,322 (-2.0% YoY) | -1% to +1% | -7% to +4%
+City of Austin closed sales | 10,852 (+9.2% YoY) | +3% to +6% | -5% to +12%
+Months of inventory, city of Austin | 4.95 (down from 5.47 peak in Feb 2026) | 4.5 to 5.5 | 3.8 to 6.5
+Median days on market, city of Austin | 45.7 | 40 to 50 | 30 to 65
+Success rate, city of Austin (listings that close) | 61.2% | 62% to 66% | 55% to 70%
+Luxury West Austin (78746) median | $1,844,189 (+3.8% YoY) | +1% to +4% | -3% to +7%
+Entry-level South Austin (78745) median | $456,398 (-5.5% YoY) | -2% to +1% | -7% to +3%
+30-year fixed mortgage rate (Freddie Mac) | 6.95% (Sept 17, 2026) | 6.5% to 7.0% average | 6.0% to 7.75%
+Austin apartment rents | -4% to -7% YoY, 13.8% vacancy | Flat to +2% | -3% to +4%
+:::
+
+Sources: Unlock MLS via Agent Intel, T12 through August 31, 2026; Freddie Mac PMMS; Apartment List and CoStar via the Austin American-Statesman; Echelon Property Group forecast.
+
+Figures verified September 22, 2026. Mortgage rates and monthly MLS data change; this post is updated as they do.
+
+Three things drive that table, and the rest of this post walks through each with the numbers.
+
+First, the volume recovery is already underway and it is not fragile. Closed sales in the city of Austin ran 14 percent ahead of 2025 from March through July before the August rate spike knocked them back. Second, inventory is shrinking, not growing. Active listings inside the city have been down 8 to 12 percent year over year every month since April, because sellers with 3 and 4 percent mortgages are not listing and 7,075 listings that did come to market in the last twelve months expired or were withdrawn. Third, the price decline has already stopped on a quality-adjusted basis. The FHFA all-transactions repeat-sales index for the Austin metro was up 0.3 percent year over year in the second quarter of 2026 and 11.3 percent below its 2022 peak, even while the headline August median printed down 6.4 percent and 25 percent below peak. That gap is mix, not value.
+
+## Where Austin stands entering the fourth quarter of 2026
+
+The headline numbers from Unlock MLS's August 2026 Central Texas Housing Report were not pretty: the metro median fell 6.4 percent to $412,000, closed sales fell 7.3 percent to 2,501, and the city of Austin median dropped 4.3 percent to $560,000 on 844 sales, down 10.3 percent. Travis County's median fell 6.4 percent to $489,000.
+
+One month is noise in a market this seasonal. The trailing twelve months is the real picture, and it tells a different story.
+
+:::compare-table
+City of Austin, residential | T12 through Aug 31, 2025 | T12 through Aug 31, 2026 | Change
+Median sale price | $577,022 | $565,942 | -1.9%
+Average sale price | $765,958 | $762,089 | -0.5%
+Median price per square foot | $303 | $295 | -2.6%
+Closed sales | 9,942 | 10,852 | +9.2%
+Pending sales | 10,101 | 10,891 | +7.8%
+New listings | 17,914 | 17,758 | -0.9%
+Active listings (month-end) | 5,189 | 4,764 | -8.2%
+Listings with a price reduction | 9,838 | 10,089 | +2.6%
+Expired listings | 2,564 | 2,489 | -2.9%
+Withdrawn listings | 4,543 | 4,586 | +0.9%
+Success rate | 58.7% | 61.2% | +2.5 pts
+Months of inventory | 5.38 | 4.95 | -0.43
+Median days on market | 47.0 | 45.7 | -1.3 days
+Average days on market | 77.0 | 79.9 | +2.9 days
+Original list to final list | -4.17% | -4.04% | Narrower
+Final list to sale | -3.18% | -3.08% | Narrower
+:::
+
+Source: Unlock MLS via Agent Intel (MLS Grid), city of Austin, residential, trailing twelve months.
+
+Read that table as a market clearing at a price. Sales are up 9 percent. Pendings are up 8 percent. The median is down 2 percent, and the median price per square foot is down 2.6 percent, which means the homes that sold this year were slightly bigger and slightly cheaper per foot than last year's. The two discounts sellers eat, the cut from original list price to final list price and then the cut from final list to contract, are both a hair narrower than a year ago. Stack them and the typical city of Austin seller closed about 7 percent below where they first listed. That is the number to plan around, and it has been remarkably stable for two years.
+
+Now the monthly path through 2026, which is where the story actually lives.
+
+:::compare-table
+2026 month, city of Austin | Closed sales vs 2025 | Median price vs 2025 | Active listings vs 2025 | Months of inventory (2026 vs 2025) | Median days on market (2026 vs 2025)
+January | -3.7% | -2.7% | +6.7% | 4.76 vs 4.56 | 73.6 vs 77.0
+February | +2.7% | -3.5% | +3.7% | 5.07 vs 5.07 | 76.1 vs 71.0
+March | +10.6% | -6.7% | -0.8% | 5.78 vs 6.07 | 46.5 vs 38.6
+April | +17.2% | -4.0% | -7.7% | 5.33 vs 6.40 | 25.0 vs 21.4
+May | +12.1% | +0.6% | -10.6% | 4.79 vs 6.07 | 24.7 vs 22.0
+June | +13.9% | +2.9% | -11.7% | 4.59 vs 5.93 | 27.9 vs 36.2
+July | +17.9% | -2.2% | -11.9% | 4.43 vs 5.75 | 32.9 vs 38.0
+August | -4.4% | -3.2% | -8.2% | 4.60 vs 5.48 | 42.5 vs 52.7
+:::
+
+Source: Unlock MLS via Agent Intel, city of Austin, residential, monthly. Agent Intel's monthly counts differ slightly from the Unlock MLS press release because of report timing and property-type filters; the direction is identical.
+
+March through July was a real recovery: 5,392 closings against 4,718 in the same five months of 2025, a 14.3 percent gain, with the June median actually up 2.9 percent year over year and months of inventory dropping to 4.4. Then the 30-year rate went from 6.53 percent in June to 6.95 percent by mid-September, and August closings, which reflect contracts written in July as the rate climb started, turned negative. Pendings in August fell 10 percent. That is the whole 2027 forecast in one sentence: the demand is there at 6.5 percent and it thins out fast at 7.
+
+And the distance from the peak, because every seller conversation starts there:
+
+:::compare-table
+Market | May 2022 peak median | August 2026 median | Decline from peak | Gain needed to get back
+Austin-Round Rock-San Marcos metro | $550,000 | $412,000 | -25.1% | +33.5%
+City of Austin | $667,000 | $560,000 | -16.0% | +19.1%
+Travis County | $659,000 | $489,000 | -25.8% | +34.8%
+:::
+
+Sources: Austin Board of REALTORS May 2022 report; Unlock MLS August 2026 Central Texas Housing Report.
+
+The metro and Travis County numbers overstate the damage to any individual house, for reasons covered in the section on medians versus repeat sales. But the psychology is real. A 2022 buyer at the metro median needs a 33 percent gain to get back to even, and that is not a 2027 event under any scenario in this post.
+
+## The rate call: why 2027 starts at 7 percent, not 6
+
+The macro setup behind 2027 changed in about ten weeks. The war with Iran and the disruption in the Strait of Hormuz pushed Brent crude toward $99 a barrel in early September. The August Consumer Price Index rose 0.4 percent in the month and 3.4 percent over the year, with the energy index up 16.3 percent from a year earlier and shelter inflation accelerating again. The 10-year Treasury, which is what actually prices your mortgage, crossed 5 percent on September 16, its highest level since 2007. That same afternoon the Fed raised the federal funds rate a quarter point to a 3.75 to 4 percent range, unanimously, and Chairman Warsh told reporters that inflation "is too high and has been for too long."
+
+The dot plot that came with the decision has the median official at a 4 to 4.25 percent policy rate at the end of both 2026 and 2027. Fed funds futures are pricing something tighter: roughly 4.2 percent by December and about 4.7 percent by September 2027. Eight of eighteen officials penciled in another hike for 2027, six saw no change, four saw cuts. The next meeting is October 27 and 28, which most desks expect the Fed to skip given the midterm election, with December 9 the live date for a second hike.
+
+Against that backdrop, here is what the forecasters said about 2026 a year ago, and what they say about 2027 now.
+
+:::compare-table
+Forecaster | Said in late 2025 about year-end 2026 | Actual, Sept 17, 2026 | Says now about 2027
+Fannie Mae ESR | 5.9% | 6.95% | 6.8% at year-end 2026, 6.7% for all of 2027 (Sept 15, 2026)
+Mortgage Bankers Association | 6.4% | 6.95% | 6.8% through Q2 2027, then 6.7% (Sept 16, 2026)
+Texas Real Estate Research Center | Not published | 6.95% | 6% to 7% in August 2027, with the Fed back at 3.4% to 3.8% (Sept 10, 2026)
+Keefe, Bruyette and Woods | Not published | 6.95% | 6.5% by year-end 2026 on a 4.75% 10-year
+Federal Reserve dot plot (policy rate) | Cuts through 2026 (March 2026 SEP) | 3.75% to 4.00% | 4.00% to 4.25% median at end of 2027
+Fed funds futures (policy rate) | Cuts through 2027 (Feb 2026 pricing) | 3.88% effective | About 4.7% by September 2027
+:::
+
+Sources: Fannie Mae ESR September 2025 and September 2026 forecasts; MBA Mortgage Finance Forecast; Texas Real Estate Research Center Forecast Through Summer 2027; FOMC Summary of Economic Projections, September 16, 2026; CME fed funds futures via StreetStats; National Mortgage News.
+
+Notice the spread. The Texas Real Estate Research Center's base case has the Fed cutting by next August because it assumes oil falls back to $65 and inflation lands at 2.1 to 2.5 percent. The futures market assumes the opposite. Both are plausible, and the difference is worth about a point on a 30-year mortgage. That is why this forecast runs three scenarios instead of pretending to know.
+
+## Three rate scenarios for 2027, and what each does to Austin
+
+Austin is a rate-sensitive market because most of its buyers finance. The luxury tier is the exception, covered separately below. For everyone else, the cleanest way to see the sensitivity is the payment on the city of Austin median home with 20 percent down, a $452,754 loan.
+
+:::compare-table
+30-year fixed rate | Principal and interest | Payment vs 6.95% | Price that produces today's payment
+5.50% | $2,571 | -14.2% | $659,795
+6.00% | $2,714 | -9.4% | $624,842
+6.25% | $2,788 | -7.0% | $608,435
+6.50% | $2,862 | -4.5% | $592,696
+6.95% (today) | $2,997 | 0.0% | $565,942
+7.25% | $3,089 | +3.1% | $549,160
+7.50% | $3,166 | +5.6% | $535,779
+7.75% | $3,244 | +8.2% | $522,917
+:::
+
+Model: $565,942 city of Austin T12 median, 20 percent down, 30-year fixed, principal and interest only. Taxes and insurance add roughly $1,000 a month at this price with a homestead exemption.
+
+Every quarter point is worth about 2.5 to 2.8 percent of purchase price to a financed buyer. A move from today's 6.95 percent to 6 percent is the same thing as a 10.4 percent price cut. A move to 7.5 percent is a 5.3 percent price increase. Sellers who understand this stop arguing about $10,000 on the list price and start asking their agent about a seller-paid rate buydown, which is exactly the tool the builders have been using to hold sticker price while clearing lots.
+
+Here are the three scenarios, with Echelon Property Group's probability weights.
+
+:::compare-table
+ | Base case: grind | Bear case: inflation sticks | Bull case: ceasefire and cuts
+Probability | 55% | 25% | 20%
+What has to happen | Oil drifts down, CPI eases toward 2.5% by mid-2027, Fed hikes once more in December then holds | Oil stays above $90, CPI holds above 3.5%, Fed hikes to 4.50% to 4.75%, 10-year at 5.25% to 5.50% | Hormuz reopens, oil below $70, CPI at 2.5% by spring, Fed cuts by mid-2027, 10-year near 4.25%
+30-year fixed, 2027 average | 6.5% to 7.0% | 7.25% to 7.75% | 6.0% to 6.25%
+City of Austin median, Dec 2027 vs Dec 2026 | Flat to +2% | -4% to -6% | +3% to +5%
+Metro median, Dec 2027 vs Dec 2026 | -1% to +1% | -5% to -7% | +2% to +4%
+City of Austin closed sales, 2027 vs 2026 | +3% to +6% | -3% to -5% | +10% to +12%
+Months of inventory, city of Austin | 4.5 to 5.5 | 6.0 to 6.5 | 3.8 to 4.5
+Luxury West Austin (78746) | +1% to +4% | -2% to -3% | +5% to +7%
+Entry-level and new-build suburbs | -2% to +1% | -6% to -8% | +2% to +4%
+Austin apartment rents | Flat to +2% | -2% to -3% | +3% to +4%
+:::
+
+Model: Echelon Property Group scenario analysis on Unlock MLS T12 data, the payment sensitivity above, and the 2026 monthly pattern (sales up 14 percent year over year at 6.5 percent, negative at 7 percent).
+
+The base case is a grind, and it is still a better year than 2026 for anyone who has to transact. The volume recovers because inventory keeps shrinking and buyers have had three years to get used to 6.5 to 7 percent. Prices do not recover because the payment math does not allow it. The bear case looks like the spring of 2026 with fewer sellers: prices drift, days on market stretch past 60, and the suburbs where builders are still delivering take the worst of it. The bull case is the one everyone has been waiting for since 2023, and if it arrives the recovery will be violent at the entry level, because 128 percent more sellers than buyers becomes a rough balance within two quarters once the payment drops 10 percent.
+
+## Supply: the seller strike is real
+
+The single most underreported fact about Austin housing in 2026 is that inventory is falling. Not stabilizing. Falling.
+
+Active listings inside the city of Austin ended August at 4,764, down 8.2 percent from a year earlier, and the summer peak of 5,134 in June was 11.7 percent below the June 2025 peak of 5,812. New listings over the trailing twelve months were essentially flat at 17,758. So where did the inventory go? Two places. First, into closings: sales are up 9 percent. Second, off the market entirely: 2,489 listings expired and 4,586 were withdrawn in the twelve months through August, 7,075 homes whose owners decided the price the market offered was not worth taking. At the metro level the failure count is 16,998, roughly 35 percent of all listing outcomes.
+
+That is the seller strike. It is powered by the same lock-in effect covered in the [sell-or-rent analysis](/blog/sell-or-rent-my-house-austin): more than half of outstanding U.S. mortgages carry rates at or below 4 percent, and the owner of a 3.25 percent note on a Circle C house is not trading it for a 7 percent note on anything. In a market with fewer forced sellers, prices get sticky on the way down. Austin is now three years past its peak with no wave of distressed supply, and the withdrawal numbers say owners would rather rent the house or wait than cut it another 5 percent.
+
+The new-construction pipeline, which supplied the competition that pushed resale prices down in 2024 and 2025, is thinning on both the for-sale and the rental side.
+
+:::compare-table
+Supply indicator | Peak or prior level | Latest | Direction into 2027
+City of Austin residential permits | About 33,500 in 2024 (implied) | 27,438 in 2025 (-18.2%, still 17.5% above the long-run average) | Lower
+Austin metro apartment deliveries | About 21,500 units in 2025; 60,000-plus from 2023 to 2025 | 12,000 to 13,000 scheduled for 2026 | Lower; estimates run from 24% below the 2024 to 2025 peak (Northmarq) to 60% to 74% below (CoStar)
+Austin apartment units under construction | 2024 peak | Down 55% year over year | Lower through 2027
+Austin apartment construction starts | 2021 to 2023 boom | Ten-year low in 2024 | Deliveries thin further in 2027
+Texas single-family permits (statewide) | 2025 level | 149,000 forecast for 2027, flat | Flat
+Texas apartment deliveries (statewide) | 93,000 units, trailing 12 months | About 40,000 forecast through summer 2027 | Down more than half
+City of Austin active listings, June peak | 5,812 (June 2025) | 5,134 (June 2026) | -11.7%
+City of Austin expired plus withdrawn, T12 | 7,107 | 7,075 | Flat, and large
+:::
+
+Sources: City of Austin permit data via Doorstead; Northmarq Austin Multifamily Q2 2026; CoStar via the Austin American-Statesman; Texas Real Estate Research Center Forecast Through Summer 2027; Unlock MLS via Agent Intel.
+
+The practical consequence for 2027: the metro is unlikely to see months of inventory rise above 6 in the base case, which is the line Echelon Property Group treats as the center of a balanced market. The city of Austin sat at 4.6 in August. Sellers still have to earn a buyer, but the days of watching 40 competing listings pile up in a single subdivision are mostly over outside the newest suburban corridors, and those are exactly where the builders are still buying down rates to move standing inventory.
+
+## Demand: the jobs are fine, the migration is not what it was
+
+The bull case for Austin has always been people and paychecks. Both are still positive, and both are slower than the numbers everyone quotes from 2021.
+
+:::compare-table
+Demand indicator | Then | Now | What it means for 2027
+Austin metro population | 2.57 million (July 2024), +2.7% | 2.62 million (July 2025), +2.1% | Still the fastest-growing big Texas metro, but the growth is in Williamson, Hays and Bastrop
+City of Austin population | +58,000 in the 2023 to 2024 period (+2.3%) | +4,025 in 2024 to 2025 (+0.4%) | Household formation inside the city has nearly stalled
+Travis County domestic migration | Positive through 2021 | Negative (-13,504 in the 2023 to 2024 estimates) | Central demand relies on international arrivals and income growth
+Net migration to the metro | 132,535 domestic plus 71,200 international, 2020 to 2024 | +37,500 total in 2024 to 2025 | Positive but roughly half the 2022 pace
+Texas payroll jobs | +2.2% annual growth in 2024 | +1.1% (159,400 jobs) in the year through August 2026 | Slower, still above the U.S. rate of 0.4%
+Austin unemployment rate | 3.5% (January 2025) | 3.9% in August 2026, lowest of the big Texas metros | Labor market intact
+Indeed job postings index, Austin | Well above baseline in 2022 | About 2% above the February 2020 baseline | Hiring is flat, not growing
+Samsung Taylor fab | Announced at $17 billion in 2021 | Equipment moving in, about 1,500 employees targeted by end of 2026, Tesla AI chip contract through 2033 | A 2027 hiring tailwind in Williamson County
+Austin office vacancy | Single digits pre-2020 | About 25% | Downtown condo and rental demand stays soft
+:::
+
+Sources: U.S. Census Bureau Vintage 2025 estimates via Austin Business Journal and the Austin American-Statesman; City of Austin Demographer; Texas Workforce Commission August 2026 release; Indeed Hiring Lab via Agent Intel; Samsung Semiconductor; Taylor Press; Opportunity Austin.
+
+The affordability gap is the other half of demand. Apartment List's median rent across all Austin unit types was $1,296 in January 2026, down from $1,546 at the December 2021 peak, and CoStar counted about two-thirds of complexes offering concessions. The all-in cost of owning the city of Austin median home with 20 percent down is about $4,025 a month before maintenance. That is a 3.1 times gap between renting and owning at the median, which is why the sell-or-rent question keeps landing on rent for would-be buyers with a 4 percent mortgage somewhere else, and why a rate move to 6 percent matters more for 2027 demand than any employer announcement. The good news for owners is that the rental side has stopped falling. Northmarq reported Austin multifamily rents beginning to reverse a three-year slide in the second quarter of 2026, CoStar has positive rent growth resuming in early 2027, and every month the apartment pipeline shrinks, the rent-versus-own gap narrows from the other direction.
+
+## The K-shaped market: what each tier does in 2027
+
+Averages hide the most useful thing in this data, which is that Austin's price tiers stopped moving together in 2025. The luxury West Austin ZIP codes are up. The central new-construction and condo-heavy ZIP codes are down hard. The entry-level resale tier sits in between and moves with the mortgage rate.
+
+:::compare-table
+Submarket, T12 through Aug 31, 2026 | Median sale price | Median $/SF | Median YoY | Months of inventory | Success rate | Combined discount from original list
+78746 (Westlake, Rollingwood, Barton Creek) | $1,844,189 | $563 | +3.8% | 5.45 | 55.9% | 8.8%
+78703 (Tarrytown, Pemberton, Clarksville) | $1,366,813 | $622 | +0.5% | 6.09 | 49.0% | 9.3%
+78704 (Zilker, Bouldin, Travis Heights, South Lamar) | $842,354 | $508 | -6.3% | 6.79 | 49.5% | 8.8%
+78745 (South Austin, Cherry Creek, Westgate) | $456,398 | $306 | -5.5% | 5.28 | 56.1% | 7.1%
+City of Austin | $565,942 | $295 | -1.9% | 4.95 | 61.2% | 7.0%
+Travis County | $501,790 | $262 | -1.6% | 5.29 | 61.0% | 7.2%
+Williamson County | $408,942 | $194 | -3.2% | 4.48 | 71.1% | 7.2%
+Hays County | $371,934 | $187 | +1.2% | 4.88 | 70.8% | 7.3%
+Austin metro (five counties) | $426,322 | $210 | -2.0% | 5.06 | 65.5% | 7.3%
+:::
+
+Source: Unlock MLS via Agent Intel, residential, trailing twelve months. Combined discount compounds the original-to-final list price change and the final-list-to-sale change.
+
+Three patterns matter for 2027.
+
+The luxury tier is already through its correction. Westlake's median rose 3.8 percent on 315 closings, at $563 a foot, and the [Eanes premium](/blog/eanes-isd-premium) over the rest of the city is wider than it was in 2022, not narrower. The reason is the buyer pool: a large share of $2 million-plus purchases in West Austin are cash or lightly financed, which makes them nearly immune to the payment math above. What the luxury tier has instead is a marketing problem. Only 56 percent of 78746 listings and 49 percent of 78703 listings actually closed; the rest expired or were withdrawn. The sellers who closed gave up 8.8 to 9.3 percent from their original ask on average. That is not a price problem, it is an exposure and pricing-strategy problem, and it is why the [off-market channel](/blog/off-market-homes-austin) does so much of the volume at this tier.
+
+The central ZIP codes with heavy new-construction and condo mix are the weak spot. 78704's 6.3 percent decline is mostly a mix story, with new builds and condos closing at lower prices and a 6.8-month supply, the highest in this table. It rhymes with downtown, where the condo analysis found the 78701 median price per square foot down about 13 percent in two years with 13 months of inventory and no new for-sale tower delivering before roughly 2029.
+
+The entry-level resale tier is the rate trade. 78745 fell 5.5 percent because its buyers finance and its competition includes new builds in Kyle, Buda and Manor with builder-paid 4.99 percent rates. Williamson County closed 71 percent of its listings, the best conversion in the region, at a 3.2 percent lower median; that is a market clearing quickly at a discount, which is exactly what a builder-incentive corridor looks like. Hays County was the outlier at plus 1.2 percent, helped by a lower starting price and a sales mix that runs from Kyle starter homes to Dripping Springs and Wimberley acreage.
+
+:::compare-table
+Tier | 2026 reality | 2027 base case | What drives it
+Luxury West Austin, $2M and up (78746, 78733, 78738 Spanish Oaks) | Flat to up; long marketing times; most volume off-market | +1% to +4% | Cash buyers, scarce lots, Eanes ISD, thin new supply
+Central established, $800K to $2M (78703, 78731, 78704 single-family) | Flat to slightly down | Flat to +2% | Rate-sensitive at the low end, scarcity at the high end
+Core resale, $400K to $800K (78745, 78749, 78757, 78723, 78748) | Down 3% to 6% | -2% to +1% | Pure payment math; recovers first if rates fall
+Entry-level and new-build suburbs (Kyle, Buda, Manor, Hutto, Leander, Liberty Hill) | Down 3% to 5%; builders discounting 10% to 12% through incentives | -2% to +1% in the first half, firming in the second half | Builder inventory clears as starts fall; the [MUD tax gap](/blog/mud-pid-taxes-austin) persists
+Downtown and central condos (78701, 78702 towers) | Down; 13 months of supply | -3% to flat | No new for-sale supply until about 2029; rentals absorbing renters
+:::
+
+Model: Echelon Property Group tier forecast on Unlock MLS T12 data by ZIP code and county.
+
+## Which price is right: medians, Zestimates and repeat sales disagree
+
+Every Austin homeowner has heard three different numbers for what the market did this year. All three are technically correct and only one of them describes their house.
+
+:::compare-table
+Measure | Geography | Latest reading | What it measures
+Unlock MLS monthly median | Austin metro | $412,000, -6.4% YoY (August 2026) | The middle closing in one month; moves with what sold, not what homes are worth
+Unlock MLS trailing 12-month median | Austin metro | $426,322, -2.0% | Same measure, smoothed
+Unlock MLS trailing 12-month median | City of Austin | $565,942, -1.9% | Same measure, city limits
+FHFA All-Transactions House Price Index (repeat sales) | Austin metro | 506.31 in Q2 2026: +0.3% YoY, +0.9% quarter over quarter, 11.3% below the Q2 2022 peak, 46% above Q4 2019 | The same houses selling twice; the closest thing to a real value index
+Zillow Home Value Index | City of Austin | $497,418, -3.7% YoY | A model estimate of every home, sold or not
+Zillow 12-month forecast | Austin metro | -4.6% from March 2026 to March 2027 | A model forecast, published April 2026
+Redfin median sale price | Austin metro | About -4% YoY (December 2025) | Monthly median from MLS data
+:::
+
+Sources: Unlock MLS August 2026 report and Agent Intel T12; Federal Housing Finance Agency All-Transactions HPI via FRED, released August 25, 2026; Zillow; ResiClub; Redfin.
+
+The gap between the August median (down 6.4 percent) and the FHFA index (up 0.3 percent) is the most important number in this post for anyone pricing a home. A median falls when cheaper homes make up a bigger share of closings. That is what happened in Austin this summer: builder incentives moved new-construction volume at lower price points in Williamson and Hays, entry-level resale volume recovered faster than luxury volume, and the luxury tier that props up the top of the distribution transacts heavily off-market where it never touches the MLS median at all. Repeat sales strip all of that out by comparing the same house to its own prior sale, and on that basis Austin values were flat year over year, 11 percent below the 2022 peak rather than 25 percent, and still 46 percent above where they ended 2019.
+
+This is also why the [Zestimate accuracy analysis](/blog/zestimate-accuracy-texas) found Zillow's off-market error in Austin running nearly three times its on-market error. The model leans on the same mix-distorted medians. If you are pricing a specific home for 2027, use the trailing twelve months of closed comps within the ZIP code and the price-per-foot trend, not the metro headline, and expect the headline to keep printing scarier numbers than your neighborhood for another two or three quarters.
+
+## What the outside forecasters say, and where Echelon Property Group differs
+
+:::compare-table
+Source | Geography | Call for 2027
+Zillow (April 2026 update) | Austin metro | -4.6% home value change, March 2026 to March 2027; one of the four largest projected declines among 300 metros
+Zillow (July 2026 update) | United States | 0.0% from June 2026 to June 2027
+Fannie Mae ESR (June 2026) | United States | Home prices +1.9% in 2027; existing-home sales +7.2% (May 2026 forecast)
+Mortgage Bankers Association | United States | Home prices +0.8% in 2027, +1.4% in 2028
+Texas Real Estate Research Center (Sept 2026) | Texas | Median price +1.8% to $341,000; sales +2.5% to 354,000; single-family rents flat near $2,200; permits flat at 149,000
+Texas Real Estate Research Center Housing Insight (Aug 2026) | Austin | Price corrections "more pronounced in Austin and San Antonio" while DFW and Houston move toward stabilization
+CoStar | Austin apartments | Positive rent growth resumes in early 2027
+Echelon Property Group | City of Austin and metro | City median flat to +2%, metro -1% to +1%, city closed sales +3% to +6%, luxury +1% to +4%
+:::
+
+Sources: ResiClub; Fast Company; Fannie Mae ESR via U.S. News and Scotsman Guide; MBA Mortgage Finance Forecast; Texas Real Estate Research Center; CoStar via the Austin American-Statesman.
+
+Echelon Property Group is more constructive on price than Zillow and less constructive on volume than Fannie Mae, and both differences come from the local data. Zillow's minus 4.6 percent was published in April, when the 30-year was at 6.4 percent, active listings were rising 4.5 percent year over year and the metro had 5.5 months of supply. Since then inventory turned down, the FHFA index turned positive, and the March-through-July sales recovery showed the buyer pool is real at 6.5 percent. Fannie Mae's 7.2 percent national sales gain was modeled on a 6.3 percent rate that no longer exists, so a 3 to 6 percent Austin gain at 6.5 to 7 percent is the honest translation.
+
+The Texas Real Estate Research Center's statewide 1.8 percent price call is consistent with the Echelon Property Group metro range once you remember that Austin lags the state on price and leads it on inventory discipline. Their August note that Austin's correction is more pronounced is true in the medians and already false in the repeat-sales index, which is the whole point of the prior section.
+
+## The 2027 calendar: dates that move this market
+
+:::compare-table
+Date | Event | Why it matters for Austin
+October 27 to 28, 2026 | FOMC meeting | Expected skip; the statement language sets December expectations
+November 24, 2026 | FHFA Q3 2026 House Price Index | Confirms whether the Austin repeat-sales index held its second-quarter gain through the summer rate spike
+December 9, 2026 | FOMC meeting | Base case second quarter-point hike; a hold would pull mortgage rates toward 6.5% into the spring window
+December 31, 2026 | Texas 20% appraisal cap on non-homestead property under $5.32 million expires unless the Legislature extends it | Investor tax bills reset in 2027; watch for a special session or a 2027 session fix
+January 1, 2027 | Tax year 2027 appraisal date; Opportunity Zone 2.0 program begins | TCAD values lock; a new capital-gains deferral for qualified zone investment, with Texas zone designations still to be finalized
+Mid-January 2027 | Unlock MLS full-year 2026 report | Sets the narrative for the spring
+February to April 2027 | Spring listing window | The best seller window in the base case; 2026 sales ran 10% to 18% ahead of 2025 in these months
+April to May 15, 2027 | Appraisal notices and protest deadline | 2026's soft comps become protest evidence
+Mid-2027 | Fed fork: TRERC has cuts by August, futures have a 4.7% policy rate by September | Decides whether the second half looks like the base case or the bull case
+Late 2026 through 2027 | Samsung Taylor production ramp toward 1,500 employees | Williamson County demand, especially Taylor, Hutto and Round Rock
+:::
+
+Sources: Federal Reserve meeting calendar; FHFA release schedule; Texas Tax Code chapter 23; Texas Real Estate Research Center; Unlock MLS; Samsung Semiconductor.
+
+## What this means if you are selling in 2027
+
+The 2026 data gives sellers a clear playbook, and it differs by tier.
+
+:::compare-table
+If you own | When to list | Price against | What to expect | The Echelon Property Group path
+Luxury West Austin, $2M and up | Now through spring, with private exposure before any public listing | Closed comps from the last six months and $/SF, not 2022 | 47-day median but 91-day average marketing time in 78746; 44% of public listings fail; 8.8% combined discount for those that chase | Off-market network first, then Unlock MLS [private listing options](/blog/private-listings-austin); every $2 million-plus sale Echelon Property Group has closed was off-MLS
+Central established, $800K to $2M | February to April 2027 | T12 price per square foot ($622 in 78703) | 58-day median in 78703; 49% success rate | Full pre-market preparation, one decisive price if a cut is needed, never a drip of small cuts
+Core resale, $400K to $800K | February to May 2027 | T12 ZIP-code comps; plan for a 7% combined discount or fund a buydown instead | 42-day median in 78745; 56% success rate | Offer a seller-paid rate buydown before you cut price; a $15,000 buydown moves a financed buyer's payment more than a $30,000 price cut
+Entry-level or new-build suburb resale | Second half of 2027 if you can wait for builder deliveries to thin; otherwise now, priced under the builder's incentive-adjusted net | The builder's effective price after incentives, not their sticker | Direct competition with quick move-in inventory carrying 4.99% rates | Compete on total monthly payment, including the tax difference resale homes in older districts usually win on
+:::
+
+Model: Echelon Property Group seller strategy on Unlock MLS T12 data. Buydown comparison uses the payment table above on a $565,942 purchase with 20 percent down and assumes one discount point buys about a quarter point of rate: a $15,000 buydown lowers the payment about $248 a month, a $30,000 price cut about $159.
+
+Two rules apply across every tier. First, the market only takes homes that are priced to the trailing twelve months. Of the 17,758 homes listed in the city of Austin in the last year, 10,089 cut price at least once, and 7,075 never sold. The homes that closed at a median of 45 days were the ones priced to the comps on day one. If your listing expired or was withdrawn in 2026, the post on [why your house did not sell in Austin](/blog/why-didnt-my-house-sell-austin) walks through the specific failure patterns, the analysis of [why luxury homes are not selling in Austin](/blog/luxury-home-not-selling-austin) covers the drip-versus-single-cut math at $2 million and up, and the guide to [what it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin) has the full 2026 fee stack.
+
+Second, if you are deciding between selling now and waiting for 2027, the base case says waiting buys you a slightly better spring with slightly less competition, not a better price. The [sell-now-or-wait analysis](/blog/should-i-sell-my-house-now-or-wait-austin) works the carrying-cost math; at $2 million, twelve months of waiting costs more in taxes, insurance and opportunity cost than any base-case appreciation returns.
+
+## What this means if you are buying or investing in 2027
+
+:::compare-table
+If you are | The 2027 move | The data behind it
+A financed primary buyer | Buy the payment, not the rate. Negotiate a 2% to 3% seller credit into a permanent buydown and write on listings past 60 days | 57% of city of Austin listings cut price; the typical seller gives up 7% from original list; 39% of listings never sell
+A move-up buyer | Sell and buy in the same soft market; the 7% discount you give up on the smaller house applies to the bigger one, on a larger number | City median $565,942 versus 78746 median $1,844,189; the spread is the widest in the cycle
+A luxury buyer | Work the withdrawn and expired pool and the off-market inventory: 168 withdrawn and 87 expired listings in 78746 last year, 148 and 96 in 78703 | Luxury success rates of 49% to 56% mean half the inventory you want never closed publicly
+A long-term rental investor | Most Austin single-family rentals fail a 1.0 debt-coverage test at 7%; look at assumable loans, seller financing and the accidental-landlord sellers who would rather carry paper than cut | Rents down 4% to 7%, vacancy 13.8%, CoStar rent growth not until early 2027
+A short-term rental, ADU or cost-segregation investor | The tax math still works: 100% bonus depreciation is permanent, the [HOME ADU rules](/blog/austin-adu-rules-2026) are live, and the [2026 STR ordinance](/blog/austin-short-term-rental-rules-2026) is settled | Pre-tax cash flow is negative at 7%; the return is in the depreciation and the 2028 rent recovery
+A condo buyer | Downtown is the deepest discount in the city and the slowest to recover | 13 months of supply in 78701, no new for-sale delivery before about 2029
+A cash buyer at any tier | You are the market's favorite customer in a 7% world; expect to trade certainty for 5% to 10% below list on homes past 60 days | 128% more sellers than buyers in Redfin's December count; 91-day average marketing time in 78746
+:::
+
+Model: Echelon Property Group buyer strategy on Unlock MLS T12 data, Redfin and CoStar.
+
+The guide to [assumable mortgages in Austin](/blog/assumable-mortgage-austin) covers the below-market loans that make the rate scenarios irrelevant, the [Austin builder incentives guide](/blog/builder-incentives-austin) shows what is negotiable on a new build, and the [cost segregation guide](/blog/cost-segregation-austin) and the 1031 exchange guide cover the tax side for investors who are buying into negative cash flow on purpose.
+
+## What would change this forecast
+
+:::compare-table
+Trigger | Direction | Effect
+Oil back below $70 and the 10-year Treasury near 4.25% | Up | Bull case; city median +3% to +5%, entry-level suburbs recover first
+Fed at 4.50% to 4.75% with the 10-year above 5.25% | Down | Bear case; 30-year fixed near 7.5%, city median -4% to -6%
+Austin tech employment shrinks, or the AI capital spending wave keeps bypassing Austin for the Bay Area | Down | Luxury demand softens first; 78746 and 78703 flat instead of up
+Samsung Taylor production slips into 2028 | Down | Williamson County entry-level absorption slows
+Texas homeowners insurance premiums rise another 15% | Down | Carrying costs offset any rate relief; hits high-value West Austin and Hill Country hardest
+Legislature extends or expands the [non-homestead appraisal cap](/blog/texas-homestead-exemption-2026) | Up | Investor carrying costs fall; small-multifamily and rental demand improves
+Domestic migration to Travis County turns positive again | Up | Central demand returns; condo absorption improves
+Apartment deliveries finish absorbing earlier than CoStar projects | Up | Rents rise, the rent-versus-own gap narrows, first-time buyers return
+A recession that pushes Texas job growth below zero | Down | The one scenario in which Austin sees forced selling; not in any base case
+:::
+
+Sources: Echelon Property Group scenario analysis; Texas Real Estate Research Center; Federal Reserve; Opportunity Austin.
+
+None of these triggers is exotic. Four of them are being decided in the next ninety days, which is why this post is dated and will be updated as the December Fed meeting, the Q3 FHFA index and the Unlock MLS year-end report land.
+
+:::faq
+
+Q: Will Austin home prices go up or down in 2027?
+A: The Echelon Property Group base case has the city of Austin median flat to up 2 percent by December 2027 and the five-county metro median between minus 1 and plus 1 percent, with the 30-year mortgage rate averaging 6.5 to 7 percent. The luxury West Austin tier is forecast up 1 to 4 percent and the entry-level and new-build suburbs between minus 2 and plus 1 percent. A rate move to 6 percent would push the city median up 3 to 5 percent; a move to 7.5 percent would push it down 4 to 6 percent.
+
+Q: Is the Austin housing market going to crash in 2027?
+A: No scenario in the data supports a crash. The metro median is already 25 percent below its May 2022 peak, active listings in the city of Austin are down 8 to 12 percent year over year, closed sales are up 9 percent on a trailing twelve-month basis, and the FHFA repeat-sales index for the metro was up 0.3 percent year over year in the second quarter of 2026. A crash needs forced sellers, and with more than half of U.S. mortgages at or below 4 percent, Austin owners are withdrawing listings rather than dumping them.
+
+Q: What will mortgage rates be in 2027?
+A: As of September 2026 the 30-year fixed averaged 6.95 percent per Freddie Mac. Fannie Mae forecasts 6.7 percent for all of 2027, the Mortgage Bankers Association 6.8 percent through mid-2027 and 6.7 percent after, and the Texas Real Estate Research Center a 6 to 7 percent range by August 2027. The Fed raised its policy rate to 3.75 to 4 percent on September 16, 2026, and futures price about 4.7 percent by September 2027, so the Echelon Property Group base case is 6.5 to 7 percent for most of the year.
+
+Q: Is 2027 a good year to buy a house in Austin?
+A: For a financed buyer, 2027 offers the best negotiating leverage since 2012 and no expectation of missing a price surge. Fifty-seven percent of city of Austin listings cut price at least once, the typical seller closes about 7 percent below the original list price, and 39 percent of listings never sell. The trade-off is the payment: the city median home costs about $2,997 a month in principal and interest at 6.95 percent with 20 percent down. Buyers who negotiate a seller-paid rate buydown instead of a price cut get more for the same money.
+
+Q: Should I sell my Austin house now or wait until 2027?
+A: The base case says waiting buys a slightly better spring with less competition, not a materially higher price. The spring listing window of February through April 2027 is the strongest seller window in the forecast because 2026 sales ran 10 to 18 percent ahead of 2025 in those months. At $2 million and up, the off-market path is available year-round and carries none of the seasonal timing risk. Twelve months of carrying costs at that price exceed any base-case appreciation.
+
+Q: Which Austin neighborhoods will hold value best in 2027?
+A: The luxury West Austin ZIP codes are already flat to up. Westlake's 78746 median rose 3.8 percent to $1,844,189 on a trailing twelve-month basis at $563 per square foot, and Tarrytown's 78703 rose 0.5 percent to $1,366,813. Cash-heavy buyer pools, scarce lots and Eanes ISD support those tiers. The weakest tiers into 2027 are downtown condos, new-construction-heavy central ZIP codes like 78704, and entry-level suburbs where builders are still using rate buydowns to clear standing inventory.
+
+Q: How far are Austin home prices below the 2022 peak?
+A: The Austin metro median was $412,000 in August 2026 versus a $550,000 peak in May 2022, a 25.1 percent decline that requires a 33.5 percent gain to recover. The city of Austin median was $560,000 versus a $667,000 peak, down 16 percent. Those medians overstate the loss on any individual home because the mix of what sells has shifted toward cheaper homes and new builds; the FHFA repeat-sales index, which compares the same houses, has the metro 11.3 percent below its 2022 peak and up 0.3 percent year over year.
+
+Q: Is Austin a buyer's market or a seller's market right now?
+A: 
+:::
+
+**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by eXp Realty (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or [512.661.3843](tel:+15126613843).
+
+This article is general information, not investment, lending or tax advice. Forecasts are scenario analyses based on data available as of September 22, 2026; mortgage rates and MLS data change. Confirm every rate and figure for the specific property before you transact.`,
+  },
   {
     id: "builder-incentives-austin",
     title: "Builder Incentives in Austin, 2026: What the 4.99 Percent Rate Really Costs and What Is Actually Negotiable",

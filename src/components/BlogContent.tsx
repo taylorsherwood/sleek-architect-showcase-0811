@@ -350,7 +350,9 @@ const CompareTable = ({ body }: { body: string }) => {
                   key={cIdx}
                   className={`align-top py-5 px-4 text-[14px] leading-[1.65] text-muted-foreground ${wide ? "whitespace-nowrap" : ""}`}
                 >
-                  {cell}
+                  {cell.includes("](")
+                    ? <span dangerouslySetInnerHTML={{ __html: renderInline(cell) }} />
+                    : cell}
                 </td>
               ))}
             </tr>
@@ -379,7 +381,9 @@ const CompareTable = ({ body }: { body: string }) => {
                     {header[cIdx + 1]}
                   </dt>
                   <dd className="text-[15px] leading-[1.65] text-muted-foreground">
-                    {cell}
+                    {cell.includes("](")
+                      ? <span dangerouslySetInnerHTML={{ __html: renderInline(cell) }} />
+                      : cell}
                   </dd>
                 </div>
               ))}

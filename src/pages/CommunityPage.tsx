@@ -70,7 +70,6 @@ const neighborhoodInsights: Record<string, { title: string; description: string;
   ],
   "barton-creek": [
     { title: "Living in Barton Creek: What Luxury Buyers Should Know", description: "An insider's guide to country club lifestyle, Eanes ISD schools, and what makes Barton Creek a perennial luxury favorite.", href: "/blog/living-in-barton-creek-austin" },
-    { title: "Luxury Lock-and-Leave in Governor's Hill", description: "Inside a fully reimagined residence in one of Barton Creek's most exclusive gated enclaves.", href: "/blog/2300-barton-creek-blvd" },
     { title: "Best Luxury Neighborhoods in Austin", description: "Where Barton Creek fits within Austin's luxury real estate hierarchy.", href: "/blog/best-luxury-neighborhoods-austin-texas" },
   ],
   "pemberton-heights": [

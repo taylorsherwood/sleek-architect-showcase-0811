@@ -1,6 +1,7 @@
 import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
 import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
+import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
 import blogSellPrivately from "@/assets/blog-sell-privately.webp";
 import blog78746Guide from "@/assets/blog-78746-luxury-homes-guide.jpg";
 import blogOutdoorBars2026 from "@/assets/blog-austin-outdoor-bars-2026.jpg";
@@ -10019,6 +10020,69 @@ Walkability varies by neighborhood. Central areas like Tarrytown, Bryker Woods, 
     readTime: "10 min read",
     category: "URBAN PLANNING",
     image: blogUrban
+  },
+  {
+    id: "2300-barton-creek-blvd",
+    title: "Luxury Lock-and-Leave in Governor's Hill",
+    metaTitle: "Lock-and-Leave in Governor's Hill | Echelon Property Group",
+    excerpt: "Living at 2300 Barton Creek Blvd #15, Austin, TX 78735",
+    content: `
+
+
+## The Offering
+
+Relocation buyers and second-home owners searching for a true lock-and-leave residence in Austin will immediately recognize the appeal of 2300 Barton Creek Blvd #15. Located within the gated Governors Hill enclave of Barton Creek, this 4-bedroom, 4-bath, 4,147-square-foot residence offers a rare blend of privacy, security, and refined Hill Country living. Completely reimagined with a designer’s eye, the home delivers a turnkey experience for those who want to enjoy Austin without the demands of ongoing maintenance.
+
+
+
+## An Address That Works for Your Lifestyle
+
+Set within the Barton Creek master-planned community, the property is minutes from Omni Barton Creek Resort & Spa, along with world-class golf, tennis, fitness, and spa amenities. For buyers relocating to Austin or splitting time between cities, the location provides seamless access to downtown, Austin’s tech corridor, and Austin-Bergstrom International Airport, while maintaining the feel of a private retreat in the hills. The gated Governors Hill setting adds an extra layer of privacy and ease, ideal for those who travel frequently.
+
+## A Fully Reimagined, Move-In-Ready Retreat
+
+The home has been thoughtfully updated to meet modern expectations for luxury, with an emphasis on clean design, high-end finishes, and functional flow. Generous living spaces and an intuitive layout create an environment suited for both everyday living and lock-and-leave convenience. Each of the four bedrooms is paired with its own bath, offering comfort and privacy for owners and guests alike.
+
+Multiple living areas provide flexibility for entertaining, remote work, or extended stays. For second-home buyers, the residence lives more like a private retreat than a traditional home, designed to be enjoyed immediately upon arrival.
+
+## The Barton Creek Lifestyle
+
+Barton Creek is one of Austin's most sought-after communities, offering world-class golf, a private country club, top-rated schools, and direct access to the Barton Creek Greenbelt. Residents enjoy a lifestyle defined by privacy, nature, and convenience, just minutes from downtown Austin.
+
+
+
+## Designed for Easy Lock-and-Leave Ownership
+
+Within Barton Creek, lock-and-leave properties are increasingly sought after for their low-maintenance appeal. Governors Hill is known for its villa-style residences and managed surroundings, allowing owners to enjoy the benefits of a private home without the upkeep of a larger estate.
+
+
+
+For those who divide time between residences or travel often, the combination of a gated setting, community oversight, and proximity to essential services creates a level of convenience and peace of mind that is difficult to replicate.
+
+
+
+
+## Barton Creek: A Destination for Relocation and Second Homes
+
+Barton Creek has emerged as one of Austin’s most desirable destinations for relocation buyers and second-home ownership. Centered around the Omni Barton Creek Resort & Spa, the community offers access to championship golf, dining, wellness amenities, and a well-established social environment.
+
+At the same time, nearby greenbelts, trails, and natural preserves provide a direct connection to the Hill Country landscape. From custom estates to golf villas and lock-and-leave residences, inventory at this level remains limited, particularly for fully reimagined homes of this caliber.
+
+
+
+
+## A Rare Opportunity in Governors Hill
+
+Offered at $3,275,000, 2300 Barton Creek Blvd #15 represents a compelling opportunity to acquire a fully renovated lock-and-leave residence in one of Austin’s most exclusive gated communities.
+
+For buyers relocating to Austin or seeking a refined second home, this property offers a rare combination of security, convenience, and elevated design, all within minutes of the city’s core.
+
+    `,
+    author: "Taylor Sherwood",
+    date: "2026-03-26",
+    readTime: "5 min read",
+    category: "FEATURED LISTING",
+    image: blog2300BartonCreek
   },
   {
     id: "austin-mixed-use-development",

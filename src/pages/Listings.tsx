@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { createRealEstateListingSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const RealScoutListings = lazy(() => import("@/components/RealScoutListings"));
 const RealScoutSearch = lazy(() => import("@/components/RealScoutSearch"));
@@ -15,6 +15,21 @@ import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
+
+const listings = [
+  {
+    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
+    address: "2300 Barton Creek Boulevard #15",
+    location: "Barton Creek, Austin",
+    price: "$3,275,000",
+    beds: 4,
+    baths: 4,
+    sqft: "4,147",
+    acres: "0.55",
+    description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
+    link: "https://www.bartoncreekvilla.com",
+  },
+];
 
 const commercialLabelStyle = {
   fontSize: "0.6rem" as const,
@@ -110,6 +125,19 @@ const Listings = () => {
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
         { name: "Listings", url: "https://www.echelonpropertygroup.com/listings" }
       ])} />
+      {listings.map((listing, i) => (
+        <SchemaMarkup
+          key={i}
+          schema={createRealEstateListingSchema({
+            name: listing.address,
+            description: listing.description,
+            image: listing.image.startsWith('http') ? listing.image : `https://www.echelonpropertygroup.com${listing.image}`,
+            price: listing.price,
+            url: listing.link,
+            location: listing.location,
+          })}
+        />
+      ))}
       <Navigation />
       <div className="h-12 md:h-20" aria-hidden="true" />
 
@@ -131,6 +159,66 @@ const Listings = () => {
             <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl">
               Beyond what appears on public listing portals, our team maintains access to exclusive off-market inventory through established relationships with Austin's top agents, developers, and property owners. If you don't see what you're looking for here, <Link to="/contact" className="text-foreground hover:text-gold transition-colors duration-300 underline underline-offset-4">connect with our team</Link>, the right opportunity may already be within reach.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Listings */}
+      <section className="pb-28">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto space-y-20">
+            {listings.map((listing, index) => (
+              <a
+                key={index}
+                href={listing.link}
+                className="group grid md:grid-cols-2 gap-10 items-center"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={listing.image}
+                    alt={listing.address}
+                    title={`${listing.address}, ${listing.price}`}
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy" decoding="async"
+                  />
+                  <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-5 py-2.5">
+                    <span className="text-minimal text-foreground font-semibold">
+                      {listing.price}
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-minimal text-gold mb-3">{listing.location}</p>
+                  <h2 className="text-3xl md:text-4xl font-display font-normal text-architectural mb-4 group-hover:text-muted-foreground transition-colors duration-300">
+                    {listing.address}
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-8">
+                    {listing.description}
+                  </p>
+                  <div className="flex flex-wrap gap-8 border-t border-border pt-6">
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">BEDS</p>
+                      <p className="text-lg font-display">{listing.beds}</p>
+                    </div>
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">BATHS</p>
+                      <p className="text-lg font-display">{listing.baths}</p>
+                    </div>
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">SQ FT</p>
+                      <p className="text-lg font-display">{listing.sqft}</p>
+                    </div>
+                    <div>
+                      <p className="text-minimal text-muted-foreground mb-1">ACRES</p>
+                      <p className="text-lg font-display">{listing.acres}</p>
+                    </div>
+                  </div>
+                  <p className="mt-6 text-minimal text-foreground group-hover:text-gold transition-colors duration-300">
+                    VIEW PROPERTY WEBSITE →
+                  </p>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>

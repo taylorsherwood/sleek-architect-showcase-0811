@@ -15447,7 +15447,7 @@ Three things fall out of that table. First, the tax bill roughly doubles or more
 
 Move-up buyers tend to shop houses first and neighborhoods second. Reverse it. At this level the address governs taxes, schools, resale liquidity, and how much competition you will face.
 
-[Barton Creek](/communities/barton-creek) offers gated golf-club living and larger lots inside the city footprint. Westlake and Rollingwood buy you Eanes ISD and a short downtown commute at a hard premium. Tarrytown trades lot size for walkability and central access. Spanish Oaks and Lakeway push west for Hill Country scale and Lake Travis ISD. Lake Austin waterfront is its own category entirely, priced on frontage and dockability rather than finish level.
+[Barton Creek](https://www.bartoncreekvilla.com) offers gated golf-club living and larger lots inside the city footprint. Westlake and Rollingwood buy you Eanes ISD and a short downtown commute at a hard premium. Tarrytown trades lot size for walkability and central access. Spanish Oaks and Lakeway push west for Hill Country scale and Lake Travis ISD. Lake Austin waterfront is its own category entirely, priced on frontage and dockability rather than finish level.
 
 Pick two submarkets, not six. Depth of knowledge in a narrow set beats a broad search, because the value read on a specific street is what tells you whether a list price is defensible.
 

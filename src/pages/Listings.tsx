@@ -16,20 +16,18 @@ import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
-const listings = [
-  {
-    image: "/lovable-uploads/0fc79a0b-1fde-439f-bb08-6062e50770b7.webp",
-    address: "2300 Barton Creek Boulevard #15",
-    location: "Barton Creek, Austin",
-    price: "$3,275,000",
-    beds: 4,
-    baths: 4,
-    sqft: "4,147",
-    acres: "0.55",
-    description: "Elegant villa in the heart of Barton Creek with refined finishes, open floor plan, and access to world-class amenities.",
-    link: "https://www.bartoncreekvilla.com",
-  },
-];
+const listings: {
+  image: string;
+  address: string;
+  location: string;
+  price: string;
+  beds: number;
+  baths: number;
+  sqft: string;
+  acres: string;
+  description: string;
+  link: string;
+}[] = [];
 
 const commercialLabelStyle = {
   fontSize: "0.6rem" as const,

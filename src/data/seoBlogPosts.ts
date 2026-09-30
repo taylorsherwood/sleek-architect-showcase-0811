@@ -179,6 +179,8 @@ const blogCostSegregationAustin = blogCostSegregationAustinAsset.url;
 import blogEanesIsdPremiumAsset from "@/assets/blog/eanes-isd-premium-hero.jpg.asset.json";
 const blogEanesIsdPremium = blogEanesIsdPremiumAsset.url;
 
+import blogAustinHikingTrailsAsset from "@/assets/blog/austin-hiking-trails-hero.jpg.asset.json";
+const blogAustinHikingTrails = blogAustinHikingTrailsAsset.url;
 import blogBuilderIncentivesAustinAsset from "@/assets/blog/builder-incentives-austin-hero.jpg.asset.json";
 const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
 
@@ -188,6 +190,443 @@ import blogAustinHousingForecast2027Asset from "@/assets/blog/austin-housing-mar
 const blogAustinHousingForecast2027 = blogAustinHousingForecast2027Asset.url;
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-hiking-trails-greenbelts-parks",
+    title: "Austin Hiking Trails, Greenbelts and Parks: The 2026 Guide (and What a Greenbelt Lot Is Really Worth)",
+    metaTitle: "Austin Hiking Trails, Greenbelts and Parks: 2026 Guide",
+    excerpt: "Every Austin trail, greenbelt, park and swimming hole in one 2026 guide: miles, access points, fees, the drought, the parks bond and greenbelt home values.",
+    author: "Taylor Sherwood",
+    date: "2026-09-30",
+    readTime: "48 min read",
+    category: "NEIGHBORHOODS",
+    image: blogAustinHikingTrails,
+    heroImage: blogAustinHikingTrails,
+    imageAlt: "Barton Creek Greenbelt limestone ledges and cascading waterfalls framed by Hill Country trees in Austin",
+    content: `Zilker Park's Great Lawn has been fenced since September 21 for the 25th Austin City Limits Music Festival, the first weekend starts Friday, and the neighborhood between Barton Springs Road and South Lamar is bracing for a hundred thousand people a day. That is the loud version of Austin's park system. The quiet version is that the Barton Creek Greenbelt, Barton Springs Pool and the Butler Trail all stay open through both festival weekends, the first real cold front is a few weeks out, and October through April is the only stretch of the year when a Hill Country trail is comfortable at two in the afternoon.
+
+2026 is also the busiest year the park system has had in almost a decade. The Wishbone Bridge closed the last gap in the 10-mile Lady Bird Lake loop in February. Barton Springs reopened in March after an infrastructure removal and a new fee schedule. The 13-acre Confluence opened downtown in June. Trust for Public Land moved Austin up seven places in its national ParkScore ranking in May. And on November 3, Austin votes on its first parks bond since 2018, a $260 million proposition that touches Zilker, Mount Bonnell, Commons Ford, the St. Edward's Greenbelt and four public pools.
+
+This guide covers all of it: every major trail, greenbelt, metro park, preserve and swimming hole with the miles, acres, access points and fees, the drought status that decides whether the creek is running, the projects that change in 2026 and 2027, and then the question Echelon Property Group gets on nearly every West Austin showing, which is what backing to the greenbelt is actually worth. That last part has a peer-reviewed study attached, and it was done on Barton Creek.
+
+## The short answer
+
+Austin's Parks and Recreation Department manages 20,790 acres of parkland, 382 parks and 287 miles of trail, and Austin Water protects another 48,000-plus acres of preserve and water-quality land on the west and southwest sides of the city, most of it open only on guided hikes. The trails below are the ones that matter. Distances are trail miles, not park acreage, and every one of them is inside 45 minutes of downtown.
+
+:::compare-table
+Trail or park | Miles | Surface | Difficulty | Water | Dogs | Parking and fee | ZIP
+Barton Creek Greenbelt | 7.25 main trail, 12.7 total | Dirt, limestone | Easy to strenuous (Hill of Life) | Swimming holes when the creek runs | Leash | Free, seven access points | 78704, 78746, 78735
+Ann and Roy Butler Hike-and-Bike Trail | 10.1 loop | Crushed granite, boardwalk | Easy | Lady Bird Lake (paddle, no swimming) | Leash | Free, many trailheads | 78701, 78702, 78704, 78741
+Violet Crown Trail | 13 open, 30 planned | Granite, concrete, single-track | Easy to moderate | Creek crossings | Leash | Free, Mile Zero at Zilker | 78704, 78745, 78749, 78739
+Walnut Creek Metropolitan Park | About 15 miles, 8.8-mile loop | Dirt | Easy to moderate | Walnut Creek | Off-leash | Free | 78753
+Southern Walnut Creek Trail | 7.3 | Concrete | Easy | No | Leash | Free | 78721, 78724
+Turkey Creek Trail, Emma Long Metro Park | 2.7 out and back | Dirt, creek crossings | Easy to moderate | Turkey Creek pools | Off-leash | Free lot, fills by 9 a.m. on weekends | 78730
+Bull Creek Greenbelt and St. Edward's Park | About 3.5 across both | Rock, dirt | Moderate | Bull Creek falls and pools | Leash | Free | 78731, 78759
+Mount Bonnell (Covert Park) | 0.3, just over 100 steps | Stone steps, paved | Easy | View of Lake Austin | Leash | Free | 78731
+Wild Basin Wilderness Preserve | 2.5 | Rock, dirt | Moderate | Seasonal waterfall | No dogs | Small per-person fee, no bikes | 78746
+River Place Nature Trail | 5.5, about 2,700 steps | Dirt, stairs | Strenuous | Panther Hollow Creek | Leash | Free weekdays; non-residents pay on weekends and holidays | 78730
+Slaughter Creek Trail | 5.1 loop | Natural surface | Easy to moderate | No | Leash | Free | 78739, 78749
+McKinney Falls State Park | About 9 | Rock, dirt, paved | Easy to moderate | Onion Creek, upper and lower falls | Leash | $6 per adult, kids 12 and under free | 78744
+Mary Moore Searight Metro Park | About 4 | Dirt, paved | Easy | Slaughter Creek | Leash, with an off-leash area | Free | 78748
+Shoal Creek Trail | 3.7 | Concrete, granite | Easy | Shoal Creek | Leash | Free | 78701, 78703, 78705, 78756
+:::
+
+Sources: Austin Parks and Recreation Department; Hill Country Conservancy; The Trail Conservancy; Texas Parks and Wildlife Department; Austin Water Wildland Conservation Division.
+
+Figures verified September 30, 2026. Trail closures, pool hours and creek flow change with the weather; this post is updated as they do.
+
+Three things to know before you go anywhere on that list. First, Austin is a leash city. The city ordinance requires a leash everywhere except the 19 designated off-leash areas, and on the trails that means Walnut Creek Metro Park, Turkey Creek, Red Bud Isle, most of Zilker, Onion Creek District Park and the Guerrero and Mary Moore Searight off-leash sections. The Barton Creek Greenbelt, the Butler Trail and the Violet Crown Trail all require a leash, and park rangers write tickets there. Second, the creeks are rain-fed. Barton Creek is dry at Twin Falls more months than it is wet, and the section below on the aquifer explains how to check before you drive. Third, parking is the hard part, not the hiking. Every popular trailhead in this guide is full by 9 a.m. on a Saturday from March through November, and the paid or restricted lots at Zilker, Trail's End and River Place are enforced.
+
+## Austin's park system by the numbers
+
+Every number that follows is the current figure from the agency that owns it, which matters because Austin's park statistics get quoted from decade-old fact sheets more often than any other set of numbers in the city.
+
+:::compare-table
+Measure | Figure | Source
+Parkland managed by Austin Parks and Recreation | 20,790 acres | Austin Parks and Recreation, 2026
+Parks managed by Austin Parks and Recreation | 382, excluding cemeteries | Austin Parks and Recreation, 2026
+Publicly accessible parks inside the city, all owners | 531 | Trust for Public Land ParkScore, May 2026
+Trail miles maintained by the city | 287 | Austin Parks and Recreation Board, February 2026
+Off-leash dog areas | 19 | Austin Parks and Recreation, 2026
+Public pools and swim facilities | 35 pools, 11 splash pads | Austin Parks and Recreation, 2026
+Share of city land in parks and recreation | 9% (national median 15%) | Trust for Public Land, 2026
+Residents within a 10-minute walk of a park | 76%, up from 68% in 2025 | Trust for Public Land, 2026
+Park spending per resident, all sources | $236 (national average $154) | Trust for Public Land, 2026
+Balcones Canyonlands Preserve | About 31,000 to 32,000 acres, 7 endangered species | Austin Water Wildland Conservation Division
+Water Quality Protection Lands | About 28,000 acres over the Barton Springs recharge and contributing zones | Austin Water Wildland Conservation Division
+Total land protected by Austin Water | More than 48,000 acres | City of Austin Water Forward 2024
+Butler Trail visits per year | Nearly 5 million | The Trail Conservancy
+Barton Springs Pool | 3 acres, 68 to 70 degrees F year-round | Austin Parks and Recreation
+:::
+
+Sources: as listed. The Trust for Public Land count of 531 parks includes county, state, school and privately owned public spaces; the city's 382 is the parkland it maintains.
+
+The two most important numbers in that table are the ones that look like a contradiction. Austin spends $236 per resident on parks, 53 percent more than the average big city, yet only 9 percent of its land is parkland against a 15 percent national median. The explanation is where the land is. The Balcones Canyonlands Preserve and the Water Quality Protection Lands are enormous, they are protected, and they are mostly closed to the public, so they do not count toward park acreage in the ranking even though they are the reason West Austin looks the way it does from Mount Bonnell. The parkland that is open sits in a handful of large corridors along the creeks and the lake, which is why access to a trail is so unevenly distributed across the city and why the same trailheads fill up.
+
+[Trust for Public Land's May 2026 ParkScore index](https://www.tpl.org/city/austin-texas) ranked Austin 47th of the 100 largest U.S. cities with 54.0 points out of 100, up from 54th in 2025. The gain came almost entirely from access: the share of residents within a 10-minute walk of a park jumped eight points on the strength of new parks in South Austin and downtown, and the Confluence, which opened after the index closed, will show up in the 2027 score.
+
+:::compare-table
+ParkScore category, 2026 | Austin points (out of 100) | What drives it
+Investment | 72 | $236 per resident, 87% of it from the city budget
+Access | 67 | 76% of residents within a 10-minute walk
+Acreage | 52 | 9% of city land; median park size above the national average
+Park space equity | 45 | Low-income neighborhoods have 60% less park space per person than the city average
+Amenities | 34 | Dog parks score well (1.8 per 100,000 residents); sport fields, bathrooms and rec centers score poorly
+:::
+
+Source: Trust for Public Land ParkScore 2026, Austin city page and downloadable report.
+
+For context inside the state, Plano ranked 13th nationally, Frisco 30th, Dallas 38th, Arlington 45th, Austin 47th, Fort Worth 58th, and El Paso and San Antonio tied at 61st. Austin is the fifth-best park system in Texas by this measure, nine places behind Dallas and well ahead of San Antonio, Fort Worth and Houston, and it is still 46 places off the top of the national list. The amenities score is the reason: Austin has built trails and greenbelts and bought preserve land for thirty years while under-building the fields, restrooms and recreation centers that the index rewards. That is exactly the gap the November bond targets.
+
+## The greenbelts: Barton Creek first, then the creeks that come after it
+
+Austin has dozens of greenbelts, which is the city's word for parkland that follows a creek through a canyon, and one of them is so dominant that locals call it "the Greenbelt" as if there were no others.
+
+The Barton Creek Greenbelt is 809 acres of limestone canyon running from Zilker Park southwest to the Hill of Life at Camp Craft Road, with a 7.25-mile main trail and about 12.7 miles of trail in total once the spurs, climbing-wall paths and the east-bank Barton Hills trails are counted. The adjoining Barton Creek Wilderness Park protects roughly 1,100 more acres upstream around Twin Falls and Sculpture Falls, and the Trust for Public Land bought and donated close to 1,000 acres in the watershed between 1992 and 1999 to turn a thin strip of public land into the park it is now. It is free, it is open sunrise to 10 p.m., and it has seven official access points, which is the part newcomers get wrong.
+
+:::compare-table
+Access point | Address | Parking | What it reaches | Difficulty
+Zilker Park and the Mile Zero Trailhead | Behind Barton Springs Pool, 2201 Barton Springs Rd, 78704 | Zilker lots, paid in season; walk in from the Butler Trail | Campbell's Hole (about 1 mile), the Flats, Violet Crown Trail start | Easy
+Spyglass | 1601 Spyglass Dr, 78746 | Limited street parking | Campbell's Hole, climbing walls, Gus Fruh in about 1.2 miles | Easy to moderate
+Barton Hills (Homedale) | Homedale Dr at the greenbelt, 78704 | Residential street | East-bank trails, Gus Fruh | Moderate
+Gus Fruh | 2642 Barton Hills Dr, 78704 | Small free lot | Gus Fruh pool, Urban Assault climbing wall, Loop 360 in about 1.4 miles | Moderate
+Loop 360 | 3755 S Capital of Texas Hwy, 78704 | Largest free lot, fills early | Mid-trail hub: Gus Fruh downstream, Twin Falls upstream | Moderate
+Twin Falls (Gaines Creek) | 3918 S MoPac frontage road, 78746 | Roadside shoulder, free | Twin Falls in about 0.4 miles, Sculpture Falls in about 1.2 | Moderate
+Trail's End (Camp Craft Road) | 1712 Camp Craft Rd, 78746 | Paid street parking, 8 a.m. to 8 p.m. | The Hill of Life, then Sculpture Falls about 1.5 miles in | Strenuous
+:::
+
+Sources: Austin Parks and Recreation Department; Hill Country Conservancy trail signage; Echelon Property Group field notes.
+
+Two rules of thumb. The Loop 360 lot is the largest and the most convenient, and it is also the loudest and the first to fill; the classic swimming-hole day is the Twin Falls entrance, where the creek is a ten-minute walk from the car. The Hill of Life at Trail's End is the trail's only real climb, roughly 300 vertical feet in a half mile of loose limestone switchbacks, and it is a training hill for trail runners, mountain bikers and Scout troops with full packs. Start there only if you want to earn the swim; the reward is that Sculpture Falls holds water longer than any other pool on the creek. From Zilker, Twin Falls is near mile marker 5 and Sculpture Falls near 6.25.
+
+The rest of the city's creek corridors are smaller and quieter, and several of them are on the November ballot.
+
+:::compare-table
+Greenbelt | Where | What it offers | 2026 note
+Bull Creek Greenbelt, Bull Creek District Park and St. Edward's Park | Northwest Austin, Spicewood Springs Rd and Loop 360, 78731 and 78759 | Waterfalls and pools on Bull Creek, an 80-acre park at St. Edward's, the most reliable moving water inside the city after a rain | Prop A on the November ballot funds the St. Edward's Greenbelt trail and park
+Walnut Creek Greenbelt and Metropolitan Park | North Austin, 12138 N Lamar Blvd, 78753 | 293 acres, about 15 miles of dirt trail, an 8.8-mile loop, the city's biggest off-leash trail system, mountain biking | Prop A includes Walnut Creek Municipal Pool
+Shoal Creek Greenbelt | Downtown to Allandale, 78701 to 78756 | A 3.7-mile trail from Lady Bird Lake to 38th St, Pease Park, the 2018 landslide section rebuilt | Pease Park's 84 acres anchor the corridor
+Williamson Creek Greenbelt | South Austin, 78745 and 78748 | A creek corridor with limited formal trail | Prop A funds the Williamson Creek Trail
+Slaughter Creek Preserve | Southwest Austin off FM 1826, 78739 | A 5.1-mile loop on Water Quality Protection Lands open to hikers, cyclists and horses without a permit | The Violet Crown Trail crosses Slaughter Creek nearby
+Onion Creek Greenbelt, District Park and Metro Park | Southeast Austin, 78744 and 78747 | 170-acre off-leash district park, creek swimming, and a largely undeveloped metro park upstream of McKinney Falls | Prop A funds Onion Creek Metro Park and the All Abilities Playground
+Country Club Creek and Blunn Creek | South Central, 78741 and 78704 | Short neighborhood nature preserves, Blunn Creek's roughly 40 acres are a five-minute walk from Travis Heights | No change
+:::
+
+Sources: Austin Parks and Recreation Department; Austin Water; City of Austin Proposition A ordinance language, August 2026.
+
+## The long trails: the Butler Trail, the Violet Crown and the network being built
+
+The Ann and Roy Butler Hike-and-Bike Trail is a 10.1-mile loop around Lady Bird Lake on crushed granite and boardwalk, with nearly 5 million visits a year, which makes it the most used trail in Central Texas and one of the most used in the country. The 1.3-mile boardwalk on the south shore closed the first gap in 2014 for about $28 million. The second gap closed on February 7, 2026, when the Wishbone Bridge and Unity Underpass opened at Longhorn Dam, a $25 million project paid for by the 2020 mobility bond and a federal grant, so the loop no longer detours onto the Pleasant Valley Road sidewalk. The one thing to plan around is I-35: the Texas Department of Transportation is rebuilding the interstate bridges over the lake, the trail has run on a detour under the spans since September 2025, and TxDOT can close that stretch for up to five days at a time as many as three times a year while the bridges come down and go back up.
+
+:::compare-table
+Trail | Miles open | Surface | Status and 2026 notes
+Ann and Roy Butler Hike-and-Bike Trail | 10.1 loop | Granite, boardwalk | Loop completed by the Wishbone Bridge, February 2026; I-35 bridge detour through construction
+Violet Crown Trail | 13 of 30 | Granite, concrete, single-track | Zilker to the Lady Bird Johnson Wildflower Center complete; the Mile Zero Trailhead at Zilker opened November 2025; the 13-mile Circle C to Hays County extension has been under construction since fall 2025 with the city projecting completion in summer 2026, and Hill Country Conservancy received a $300,000 Texas Parks and Wildlife grant in June 2026 for a 2-mile Hays County segment
+Southern Walnut Creek Trail | 7.3 | Concrete | Govalle Park to Johnny Morris Rd; connects to the 5.5-mile Austin to Manor Trail
+Northern Walnut Creek Trail | About 3 | Concrete | Balcones District Park toward Walnut Creek Metro Park; later phases in the urban trails plan
+Shoal Creek Trail | 3.7 | Concrete, granite | Lady Bird Lake to 38th St
+Brushy Creek Regional Trail | 6.75 | Concrete | Cedar Park to Round Rock, Williamson County's flagship
+The Veloway | 3.1 loop | Concrete | Bicycles and skates only, no pedestrians, Circle C
+Slaughter Creek Trail | 5.1 loop | Natural surface | Water Quality Protection Lands, hikers, bikes and horses
+Bergstrom Spur Trail | 6.5 planned | Concrete | A rail-trail from Vinson Dr to Riverside and US 183; the first 1.12-mile western segment was scheduled for mid-2026, the full corridor for about 2027 at roughly $25 million
+Waterloo Greenway | 1.5 planned | Concrete, boardwalk | Waterloo Park (2021) plus the Confluence (June 2026) are open; Palm Park and the 4th to 12th St phase remain
+Lake Georgetown Goodwater Loop | 26 | Natural surface | The region's only true backpacking loop, 45 minutes north
+Great Springs Project | About a third of 100-plus | Mixed | Barton Springs to San Antonio's Blue Hole by way of the Violet Crown Trail; TxDOT corridor study wraps December 2026; target completion 2036
+:::
+
+Sources: The Trail Conservancy; Austin Transportation and Public Works Urban Trails Program; Hill Country Conservancy; City of Austin Violet Crown Trail project page; Texas Parks and Wildlife Department, June 1, 2026; Great Springs Project via Axios, June 2026.
+
+The Violet Crown Trail is the one to watch. When Phase 2 opens, the trail runs 30 miles from Barton Springs, along the greenbelt, through Sunset Valley, past the Wildflower Center and across the Water Quality Protection Lands into Hays County near Buda, the longest trail of its kind in Central Texas and the first leg of the 100-plus-mile Great Springs route to San Antonio. As of this writing the city's project page still lists the extension as under construction, so confirm the opening date with Hill Country Conservancy before planning a through-hike.
+
+## Metro parks, preserves and the places with acreage
+
+Austin's metropolitan parks are where the acreage is, and three of them are among the largest city parks in Texas.
+
+:::compare-table
+Park | Acres | Trails | Signature | Dogs | Fee
+Walter E. Long Metropolitan Park | 3,695 | Limited | Austin's largest park, wrapped around Decker Lake; on the Prop A list for parkland improvements | Leash | Free, boat and fishing fees
+Emma Long Metropolitan Park | About 1,147 | Turkey Creek 2.7 miles, motorcycle trails | The city's first park, built by the Civilian Conservation Corps in 1939 to 1942, a mile of Lake Austin shoreline, camping | Off-leash on Turkey Creek only | Vehicle entry fee, higher on weekends
+McKinney Falls State Park | 641 | About 9 miles | Upper and Lower Falls on Onion Creek, camping, 13 miles from the Capitol | Leash | $6 per adult, reservations recommended
+Roy G. Guerrero Colorado River Metro Park | 363 | Several miles, off-leash area, disc golf | River access, the Butler Trail's east end, the Colorado River Park Foundation's restoration work | Off-leash area | Free
+Zilker Metropolitan Park | 351 | Butler Trail, greenbelt start, Zilker Botanical Garden | Barton Springs Pool, the Great Lawn, Zilker Botanical Garden's 28 acres, the Hillside Theater | Off-leash on the lawns, leash at the pool and garden | Free; paid parking in season
+Mary Moore Searight Metropolitan Park | 344 | About 4 miles | Slaughter Creek, disc golf, an off-leash area, equestrian trails | Leash, with an off-leash area | Free
+Walnut Creek Metropolitan Park | 293 | About 15 miles | The off-leash trail system, mountain biking, the municipal pool | Off-leash | Free
+Wild Basin Wilderness Preserve | 227 | 2.5 miles | Golden-cheeked warbler habitat, a seasonal waterfall, a St. Edward's University research center; part of the Balcones Canyonlands Preserve | No dogs | Small per-person fee
+Commons Ford Ranch Metropolitan Park | 215 | About 2 miles | A restored 40-acre prairie and a mile of Lake Austin shoreline in 78733; Prop A funds the shoreline | Leash | Free
+Pease Park | 84 | Shoal Creek Trail | Kingsbury Commons (2021), the oldest park in the city | Leash | Free
+St. Edward's Park | 80 | About 3 miles with Bull Creek | Bull Creek pools and a small waterfall | Leash | Free
+Mayfield Park and Preserve | 23 | About 1.5 miles | The peacocks (since 1935), the cottage gardens, next door to Laguna Gloria; Prop A funds the Mayfield facilities | Leash on preserve trails | Free
+Mount Bonnell, Covert Park | About 5 | 0.3 miles | 775 feet, the highest point inside the city, Lake Austin and downtown views; Prop A funds improvements | Leash | Free
+Red Bud Isle | 13 | 1 loop | An off-leash island below Tom Miller Dam | Off-leash | Free
+:::
+
+Sources: Austin Parks and Recreation Department; Texas Parks and Wildlife Department; Wild Basin Creative Research Center; Austin Water; City of Austin Proposition A ordinance, August 2026.
+
+## Swimming holes and springs
+
+Austin's swimming is spring-fed, creek-fed or lake-fed, and only the first kind is reliable in a drought year.
+
+:::compare-table
+Swimming spot | Where | Water | Cost in 2026 | Status
+Barton Springs Pool | Zilker Park, 78704 | 3 acres, spring-fed, 68 to 70 degrees F | Adults $5 resident, $9 non-resident; $2 to $5 for kids and seniors; veterans free; no fee from November through spring break | Reopened March 21, 2026 after the 1940s bypass removal; open through ACL by way of the Azie Morton Rd entrance; the Joan Means Khabele Bathhouse rehabilitation continues, rotunda done summer 2026
+Deep Eddy Pool | 401 Deep Eddy Ave, 78703 | Spring-fed, the oldest swimming pool in Texas (1915) | Same city fee schedule | Open; the Butler Trail runs past the gate
+Campbell's Hole and Gus Fruh | Barton Creek Greenbelt, 78704 | Creek pools | Free | Only after rain; dry or stagnant most of 2026
+Twin Falls and Sculpture Falls | Barton Creek Greenbelt, 78746 | Two-tier falls and a chest-deep pool | Free | Sculpture Falls holds water longest; check the gauge below
+Bull Creek | Bull Creek District Park, 78731 | Falls and pools | Free | Runs after rain, dries between
+Turkey Creek | Emma Long, 78730 | Creek pools, dogs welcome | Free lot | Seasonal
+Lake Austin | Emma Long, Commons Ford, Walsh Boat Landing | Constant-level lake | Emma Long vehicle fee; Commons Ford free | Year-round, the only lake in the region whose level does not drop in a drought
+Hamilton Pool Preserve | Travis County, 45 minutes west | A collapsed grotto on Hamilton Creek | Reservation required every day, per-vehicle plus per-person fees, non-refundable; the reservation also covers Reimers Ranch | Swimming allowed only when bacteria and rockfall conditions permit and only in a small roped section; reservations open through November 2026
+Krause Springs | Spicewood, 50 minutes west | Private, 32 springs, cash gate | Per-person fee | Open
+Blue Hole Regional Park | Wimberley, 55 minutes southwest | Cypress Creek | Reservation and per-person fee in season | Summer season
+Jacob's Well Natural Area | Wimberley | An artesian spring, the second-longest underwater cave in Texas | Reservation for hiking only | Closed to swimming since 2022; the spring recorded 0.0 cubic feet per second in November 2025
+Pedernales Falls State Park | Johnson City, 50 minutes west | Pedernales River, swimming in the designated area only | $6 per adult | Open; the falls area itself is no-swim
+:::
+
+Sources: Austin Parks and Recreation Department pool fee schedule and Barton Springs page; Travis County Parks; Hays County; Texas Parks and Wildlife Department; [Barton Springs-Edwards Aquifer Conservation District](https://bseacd.org/).
+
+The Barton Springs fee schedule is the item that changed this year. The pool had been free for the length of the bathhouse and bypass work, it reopened March 21 with the fees above, and the charging season for all of the city's regional pools runs from Austin ISD spring break through the end of October. From November 1 until mid-March, Barton Springs is free again, and at 68 to 70 degrees the water does not know what month it is. The lake is the other year-round option, and the analysis of [living on Lake Austin](/blog/living-on-lake-austin) explains why its constant level is the reason the shoreline trades the way it does.
+
+## Why the creek is dry: the aquifer in 2026
+
+The single most useful thing to understand about hiking in Austin is that Barton Creek, Bull Creek, Walnut Creek and Onion Creek are rain-fed, and the springs that feed Barton Springs Pool are aquifer-fed. In a wet year the creeks run for months; in the current one they run for days after a storm and then go back to a chain of pools.
+
+The Barton Springs-Edwards Aquifer Conservation District has been in continuous drought since July 2022 and declared Stage 3 Exceptional Drought effective October 1, 2025, only the second time in its history. It came within a few weeks of a first-ever Stage 4 Emergency Response Period in March 2026 before spring rain pushed the indicators back. Then August did what August does.
+
+:::compare-table
+Indicator | Long-term reference | Reading | What it means on the trail
+Barton Springs discharge, 10-day average | 68 cubic feet per second, average since 1978 | 16 cfs on September 9, 2026, about 24% of normal | The pool is fine, it is the pool; the creek above it is not running
+Stage 3 Exceptional Drought threshold | 14 cfs | District remains in Stage 3 | Groundwater pumping cuts of 30% to 100% for permit holders
+Stage 4 Emergency threshold | 10 cfs, never declared | Nearly reached in January and March 2026 | Would be the first in the district's history
+Lovelady monitor well, 10-day average | Typically about 490.9 feet above sea level | 457.1 feet on September 9, exactly the Stage 3 line | The aquifer's other trigger, back at Stage 3 after a brief summer recovery
+Jacob's Well spring flow | Historically continuous | 0.0 cfs from mid-November 2025 | Swimming closed since 2022
+Barton Creek at Loop 360, [USGS gauge 08155300](https://waterdata.usgs.gov/monitoring-location/08155300/) | Flows only after rain | Check the day you go | Below roughly 10 cfs, Twin Falls is a pool; above 30 to 50 cfs, the falls are running and the crossings get interesting
+:::
+
+Sources: Barton Springs-Edwards Aquifer Conservation District drought updates, August and September 2026; KXAN; U.S. Geological Survey.
+
+The practical rule: look at the Loop 360 gauge before you drive to Twin Falls. If it is flatlined, go anyway for the hike and the shade, and save the swim for Barton Springs. If it is spiking after a storm, wait a day; the greenbelt flash-floods, the crossings become impassable, and Austin's Watershed Protection Department posts warnings for good reason. The district notes that September is historically the fourth-wettest month in Central Texas with about 3.5 inches on average, so the odds of a running creek improve from here through the spring.
+
+## Beyond the city limits: the 90-minute radius
+
+The Hill Country starts at Loop 360. Everything in this table is a day trip, and the first four are close enough for a weekday morning.
+
+:::compare-table
+Destination | Drive from downtown | Size | Why go | Reservations and fees
+McKinney Falls State Park | 15 minutes | 641 acres, about 9 miles | The closest state park in Texas to a capitol; Onion Creek falls, camping, the 1850s McKinney homestead | $6 per adult; reserve day passes on busy weekends
+Milton Reimers Ranch Park | 40 minutes | 2,427 acres, 18-plus miles | Travis County's largest park, three miles of Pedernales River, the best sport climbing in Central Texas, mountain bike trails | County day-use fee; included with a Hamilton Pool reservation
+Hamilton Pool Preserve | 45 minutes | 232 acres | The grotto; hiking open daily even when swimming is not | Reservation required every day, booked out weeks ahead in season
+Pace Bend Park | 50 minutes | 1,368 acres | Nine miles of Lake Travis shoreline, cliff jumping when the lake is up, primitive camping | County day-use fee per vehicle
+Lake Georgetown, Goodwater Loop | 45 minutes | 26 miles | The only overnight backpacking loop near Austin; Crockett Gardens springs and waterfall | Free; U.S. Army Corps of Engineers primitive sites
+Brushy Creek Regional Trail | 30 minutes | 6.75 miles | Paved, shaded, family-grade, Cedar Park to Round Rock | Free
+Pedernales Falls State Park | 55 minutes | 5,212 acres, 20-plus miles | The falls, the Wolf Mountain loop, river swimming downstream | $6 per adult; reservations on weekends
+Purgatory Creek Natural Area | 45 minutes | 570 acres, 12-plus miles | San Marcos's greenbelt system, a Great Springs Project link | Free
+Bastrop and Buescher State Parks | 45 minutes | 6,600 and 1,000 acres | The Lost Pines, recovering from the 2011 fire, the 12-mile park road between them | $5 to $6 per adult
+Inks Lake State Park | 75 minutes | 1,201 acres, 9 miles | Pink granite, Devil's Waterhole, a constant-level lake | $6 per adult; reservations
+Enchanted Rock State Natural Area | 105 minutes | 1,644 acres | The summit trail on a 425-foot pink granite dome, 1,825 feet elevation | Day passes required, sell out weeks ahead in spring and fall
+Colorado Bend State Park | 105 minutes | 5,300 acres, 35 miles | Gorman Falls, a 70-foot spring-fed waterfall; Spicewood Springs | $5 per adult; reservations
+Lost Maples State Natural Area | 3 hours | 2,900 acres, 11 miles | The only reliable fall color in Texas, peaking in early to mid November | Day passes sell out for November weekends
+:::
+
+Sources: Texas Parks and Wildlife Department; Travis County Parks; U.S. Army Corps of Engineers; City of San Marcos.
+
+## What is new in 2026, and what the November bond would change
+
+Austin's park system runs on bonds. The last parks bond, Proposition C in 2018, provided $149 million and has been spent or committed, and the anticipated 2024 bond cycle never happened after voters rejected the city's Proposition Q tax rate election last fall. On August 6, 2026, a divided City Council put a $260 million parks bond and a $35 million library bond on the November 3 ballot over the objection of the mayor and city financial staff, who wanted to wait for 2028. If both pass, the owner of a median-valued Austin home of about $485,000 pays roughly $40 more a year, taking the city portion of the bill from about $2,071 to $2,111.
+
+:::compare-table
+Proposition A, $260 million parks bond | Amount | Named projects
+Park buildings and facilities | $65.5 million | Gus Garcia Recreation Center, Doris Miller Auditorium, Mayfield Park facilities
+Parkland improvements | $65 million | Bolm District Park, Walter E. Long Metro Park, Onion Creek Metro Park, Commons Ford Park, Wooldridge Square, Jamestown, Lantana, Cooper, Old Lampasas Pocket Park, community gardens, Guitar Land, Grand Meadow
+Park infrastructure | $29.5 million | Zilker Metro Park, Williamson Creek Trail, St. Edward's Greenbelt, Commons Ford, Circle C Metro Park, Mount Bonnell, Onion Creek All Abilities Playground, Evergreen Cemetery, Brentwood, Riata and Springwoods parks, citywide electrical upgrades
+Pools | $65 million | Garrison Municipal Pool, Big Stacy Neighborhood Pool, Walnut Creek Municipal Pool, Civitan Neighborhood Pool
+Land acquisition and trail connectivity | $35 million | Infill parks in park-deficient areas, greenbelts and greenways to connect trails, land for a new southeast recreation center
+Proposition B, $35 million library bond | $35 million | Hampton Branch at Oak Hill renovation and expansion ($20 million), a new Colony Park library ($15 million)
+:::
+
+Source: City of Austin bond election ordinance and ballot language, August 6, 2026, as reported by Austin Current and the Austin American-Statesman.
+
+Read the third row closely if you own in West Austin. Mount Bonnell, Commons Ford and the St. Edward's Greenbelt are three of the most-visited small parks on the west side and three of the least-improved, and $29.5 million in infrastructure money means trailheads, restrooms, parking and erosion control that change how many people show up and where they park. That is good for the parks and it is a change in traffic for the streets around them, which is worth knowing whether you are voting or buying.
+
+The rest of the 2026 and 2027 calendar:
+
+:::compare-table
+Project or event | Status | Date | Why it matters
+ACL Festival at Zilker | Great Lawn closed September 21 to October 18; pool, greenbelt and trail open | October 2 to 4 and 9 to 11, 2026 | 28 days of closures and permit parking in Zilker and Barton Hills; a share of every ticket funds the Austin Parks Foundation
+Barton Springs charging season ends | Fees run spring break through October | October 31, 2026 | Free swimming resumes November 1
+Parks and library bonds | On the ballot | November 3, 2026 | First parks bond since 2018
+Creek Show | Moves to the Confluence | November 13 to 21, 2026 | Waterloo Greenway's light-art event on the newest park in the system
+Trail of Lights at Zilker | Annual | December 2026 | More Zilker closures; plan the greenbelt around it
+Violet Crown Trail Phase 2 | Under construction since fall 2025 | City projected summer 2026; confirm | Completes the 30-mile trail into Hays County
+Bergstrom Spur Trail, west segment | Under construction since January 2025 | First 1.12 miles targeted for 2026, full 6.5 miles about 2027 | South Austin's longest urban trail
+Waterloo Greenway, Palm Park and Phase 3 | Design | Palm Park construction begins after the Confluence; 4th to 12th St to follow | Finishes the 1.5-mile Waller Creek corridor and 35 acres downtown
+Joan Means Khabele Bathhouse at Barton Springs | Rotunda complete summer 2026; project continues | 2026 to 2027 | The main pool entrance moves back to the historic rotunda
+I-35 bridges over Lady Bird Lake | Under reconstruction | Through the end of the decade | Butler Trail detour, occasional multi-day closures
+Balcones Canyonlands Conservation Plan permit | Extended 15 years | Through May 2, 2041 | Keeps the 31,000-acre preserve system and the streamlined permitting that West Austin development depends on
+Wildland-Urban Interface Code, 2024 edition | In effect | Since July 10, 2025; Fire Protection Criteria Manual updates expected in 2026 | Applies to new construction, additions and remodels near wildland, which now covers just over half of Austin's habitable land
+Barton Springs-Edwards Aquifer drought | Stage 3 Exceptional | Since October 1, 2025 | Creek flow, pumping limits, and the Stage 4 watch
+Great Springs Project corridor study | With TxDOT | Wraps December 2026 | Sets the build order for the Austin to San Antonio trail
+Trust for Public Land ParkScore 2027 | Annual | May 2027 | The Confluence and the Wishbone Bridge count for the first time
+:::
+
+Sources: Austin Parks and Recreation closures list; City of Austin; Waterloo Greenway Conservancy; Austin Transportation and Public Works; The Trail Conservancy; Austin Fire Department; Barton Springs-Edwards Aquifer Conservation District; Great Springs Project.
+
+## When to go
+
+Austin has two hiking seasons and a long intermission. The intermission is June through mid-September, when the daily high averages the mid-90s, the trails are unshaded limestone, and the only sane plan is an early start and a swim.
+
+:::compare-table
+Month | Typical high (degrees F) | Best for | Watch for
+October | Low 80s | Everything; the first fronts; Sculpture Falls after the fall rains | ACL closures at Zilker the first two weekends; flash flooding in fall storms
+November | Low 70s | The greenbelt end to end, Enchanted Rock, Lost Maples, free Barton Springs | Trail of Lights setup at Zilker; short days
+December to February | Low 60s | Turkey Creek, Bull Creek, Walnut Creek, long Butler Trail loops | Mountain cedar pollen from mid-December through February; a handful of hard freezes
+March to April | Mid 70s to 80 | Bluebonnets at the Wildflower Center and along the Violet Crown Trail, the first swims, the bats returning to the Congress Avenue Bridge | Spring break crowds; golden-cheeked warbler nesting closures on some preserve tracts from March 1 through July
+May | Upper 80s | Creek flow at its most reliable; Hamilton Pool if you booked in January | The wettest month; flash floods on Barton, Bull and Onion creeks; poison ivy in full leaf
+June to September | Mid to upper 90s | Barton Springs, Deep Eddy, Lake Austin, dawn trail runs | Heat; dry creeks; the Great Lawn closing in mid September
+:::
+
+Sources: National Weather Service Austin/San Antonio climate normals for Camp Mabry; Austin Parks and Recreation; Austin Water Wildland Conservation Division.
+
+A few rules that keep people out of trouble. Carry more water than you think a Central Texas hike requires. Wear real shoes; every serious injury on the greenbelt involves sandals and wet limestone. Give snakes the right of way from March through October. Do not cross a flowing creek that is above your knees, and do not park where the sign says not to, because at Zilker, Trail's End, River Place and the Twin Falls shoulder the enforcement is real. And leave the speaker at home; the city's Leave No Trace guidance is polite about it, the trail runners at 6 a.m. are not.
+
+## The real estate lens: what a greenbelt lot is actually worth
+
+Every buyer Echelon Property Group takes through Westlake, Lost Creek, Travis Country, Barton Hills or Northwest Hills eventually asks the same question in one of two forms: how much more is the house worth because it backs to the greenbelt, or how much less should I pay for the one across the street that does not. The answer has a peer-reviewed study attached, and the study was done on Barton Creek.
+
+In 2005, Sarah Nicholls and John Crompton of Texas A&M published a hedonic pricing analysis of three neighborhoods bordering the Barton Creek Greenbelt and Wilderness Park, urban wildland southwest of downtown with 7.5 miles of multi-use trail at the time. They controlled for house size, lot size, age and the usual variables and isolated the effect of adjacency and distance to the greenbelt in each neighborhood separately. The results were not the same in all three, and that is the finding.
+
+:::compare-table
+Study | Setting | Result
+Nicholls and Crompton (2005), Journal of Leisure Research | Barton neighborhood (Barton Hills), Austin | Homes adjacent to the greenbelt sold for $44,332 more, about 20% of the mean sale price; values fell $13.51 per foot of distance from the greenbelt
+Nicholls and Crompton (2005) | Travis neighborhood (Travis Country), Austin | Adjacent homes sold for $14,777 more, about 6% of the mean price; values fell $10.61 per foot of distance
+Nicholls and Crompton (2005) | Lost Creek, Austin | No adjacency premium; the adjacent lots were heavily wooded with no view of or access to the trail. Homes within a quarter mile of a greenbelt entrance carried a $46,086 premium instead
+Nicholls and Crompton (2005) | City of Austin tax base | The premium generated roughly $59,000 a year in additional property tax from the Barton and Travis neighborhoods alone
+Crompton and Nicholls meta-analysis of 33 park studies | U.S. cities | A premium of 8% to 10% for homes abutting a passive park is the reasonable starting point; the effect fades to negligible beyond about 500 feet; heavily used active parks earn less, and noise, congestion and lost privacy can erase it
+Crompton (2001, 2004), the proximate principle | U.S. cities | Up to 20% for homes adjacent to passive parks in the original formulation; later revised downward to the 8% to 10% range
+Crompton and Nicholls, greenway trail review | U.S. trail corridors | The most common result for single-family homes near a trail is a 3% to 5% premium, decaying past three blocks
+Correll, Lillydahl and Singell (1978) | Boulder, Colorado greenbelt | Homes adjacent to the greenbelt were valued 32% higher than homes 3,200 feet away, with value declining about $4.20 per foot in 1978 dollars
+:::
+
+Sources: Nicholls, S. and Crompton, J.L., "The Impact of Greenways on Property Values: Evidence from Austin, Texas," Journal of Leisure Research 37(3), 2005; Crompton, J.L., "The Proximate Principle," National Recreation and Park Association, 2004; Nicholls and Crompton, Journal of Leisure Research meta-analysis via NatureQuant; Headwaters Economics trail research library; Correll, Lillydahl and Singell, Land Economics, 1978.
+
+Three lessons come out of that table, and they match what Echelon Property Group sees in contracts.
+
+The premium is for the view and the access, not the label. Barton Hills lots with an open view down into the canyon earned 20 percent; Travis Country lots with a wooded edge earned 6 percent; Lost Creek lots with a cedar thicket between the back fence and the trail earned nothing, while the Lost Creek homes near the trailhead did. A listing that says "backs to greenbelt" is describing a survey line. What the buyer pays for is what they see from the back porch and how fast they can be on the trail.
+
+The premium is real but it is not 20 percent by default. Apply the 8 to 10 percent meta-analysis range to the 2026 trailing-twelve-month medians and the arithmetic is clarifying: about $67,000 to $84,000 on the 78704 median of $842,354, roughly $105,000 to $131,000 on the 78733 median of $1,312,444, and $148,000 to $185,000 on the 78746 median of $1,849,097. Those are the numbers a well-priced greenbelt listing should command over an otherwise identical interior lot. A seller who asks for 25 percent is going to sit, and the trailing twelve months in 78746 already show 254 listings that expired or were withdrawn against 316 that closed.
+
+The premium can go negative. The same literature that finds it finds the cases where it disappears: a busy trailhead at the end of the cul-de-sac, a parking shoulder that fills with cars at 8 a.m., a creek crossing that turns into a party on the first hot Saturday. Twin Falls and Trail's End are the two Barton Creek entrances where nearby homes carry that trade-off, and the November bond's improvements at Mount Bonnell, Commons Ford and St. Edward's will shift it again.
+
+Here is how the trail-adjacent ZIP codes actually traded over the last twelve months.
+
+:::compare-table
+ZIP and neighborhoods | Trails and parks | Median sale | Median $/SF | Median YoY | Months of inventory | Success rate | Median days on market
+78746: Westlake, Rollingwood, Lost Creek, Rob Roy | Barton Creek Greenbelt (Trail's End, Twin Falls, Spyglass), Wild Basin, Zilker | $1,849,097 | $564 | +4.0% | 5.43 | 56.1% | 47
+78703: Tarrytown, Pemberton, Clarksville | Pease Park, Shoal Creek Trail, Butler Trail, Deep Eddy, Mayfield | $1,366,813 | $622 | +0.5% | 6.10 | 49.0% | 58
+78733: Cuernavaca, Davenport Ranch, Bee Cave Road | Commons Ford, Wild Basin, Lake Austin | $1,312,444 | $424 | +9.4% | 4.03 | 59.6% | 27
+78730: River Place, Glenlake, Long Canyon | River Place Nature Trail, Emma Long, Turkey Creek | $1,180,145 | $354 | -4.4% | 6.02 | 57.5% | 53
+78731: Northwest Hills, Mount Bonnell, Highland Park West | Mount Bonnell, Mayfield, Bull Creek, Shoal Creek | $1,074,896 | $410 | -5.5% | 3.96 | 71.5% | 43
+78704: Zilker, Barton Hills, Bouldin, Travis Heights | Zilker, Barton Springs, the greenbelt's east entrances, Butler Trail | $842,354 | $508 | -6.3% | 6.79 | 49.3% | 61
+78732: Steiner Ranch | Bull Creek nature trails, Lake Austin | $835,463 | $271 | -6.1% | 5.17 | 64.5% | 46
+78735: Travis Country, Barton Creek, Estates Above Lost Creek | Barton Creek Wilderness Park, Sculpture Falls, Violet Crown Trail | $832,078 | $359 | -5.5% | 4.46 | 64.9% | 45
+78759: Great Hills, Balcones Woods | Bull Creek Greenbelt, St. Edward's Park, Balcones District Park | $668,641 | $325 | +5.6% | 3.48 | 70.7% | 29
+78702: East Austin, Holly | Butler Trail east shore, the Wishbone Bridge, Waterloo Greenway | $666,540 | $459 | -2.7% | 8.14 | 48.5% | 55
+78749: Circle C, Oak Hill | Violet Crown Trail, the Veloway, Slaughter Creek Trail, Dick Nichols Park | $576,603 | $292 | -0.8% | 2.18 | 80.8% | 20
+78745: South Austin, Cherry Creek | Mary Moore Searight, Williamson Creek, Slaughter Creek | $456,398 | $306 | -5.5% | 5.28 | 56.1% | 42
+78744: Southeast Austin, McKinney | McKinney Falls State Park, Onion Creek Metro Park | $392,303 | $213 | -2.8% | 3.95 | 75.2% | 70
+78753: North Austin | Walnut Creek Metropolitan Park, the Northern Walnut Creek Trail | $357,366 | $227 | +2.1% | 5.44 | 61.1% | 49
+City of Austin | All of the above | $567,440 | $295 | -1.7% | 4.95 | 61.0% | 46
+:::
+
+Source: Unlock MLS via Agent Intel (MLS Grid), residential, trailing twelve months through August 31, 2026. Success rate is the share of listings that closed rather than expiring or being withdrawn.
+
+Two patterns stand out. The three ZIP codes with positive appreciation in a year when the city fell 1.7 percent are 78733, 78759 and 78746, which sit on the Balcones preserves and the Barton and Bull Creek greenbelts, and 78749, the Violet Crown and Veloway ZIP code, has the tightest market in Austin at 2.18 months of inventory and an 81 percent success rate. That is not proof that trails cause appreciation, and Eanes ISD, lot sizes and cash buyers are doing a lot of the work in 78746 and 78733. But it is consistent with three decades of literature that says buyers pay for protected open space, and it is the opposite of what the headline Austin median suggests.
+
+The second pattern is the failure rate. In 78703, 78704 and 78702, the ZIP codes with the Butler Trail, Pease Park and Zilker, fewer than half of listings closed in the last twelve months. Proximity to the city's most-used park is not saving a home that is priced for 2022, and the trail-adjacent homes in those ZIP codes are competing against new construction and condos that never mention a trail at all. The post on [why your house did not sell in Austin](/blog/why-didnt-my-house-sell-austin) walks through what those failed listings have in common.
+
+## What the model cannot see
+
+Automated valuation models price a greenbelt lot badly in both directions. They can read a lot size and a school district, but they cannot tell whether the back fence looks at a canyon or a cedar thicket, whether the lot is above or below the floodplain line, or whether the trailhead parking is two houses down. That is a large part of why the [Zestimate accuracy analysis](/blog/zestimate-accuracy-texas) found Zillow's off-market error in Austin running nearly three times its on-market error, and it is why the greenbelt premium shows up in closed comps and disappears in algorithms. Echelon Property Group prices these lots from the last twelve months of closings on the same side of the same creek, and nothing else.
+
+Before writing an offer on a home that backs to a greenbelt, preserve or creek, this is the diligence list.
+
+:::compare-table
+Item | Why it matters | Where to check
+Wildland-Urban Interface zone | Austin adopted the 2024 International Wildland-Urban Interface Code effective July 10, 2025; it applies to new construction, additions and remodels within 150 feet of a 40-acre wildland or 1.5 miles of a 750-acre one, which is just over half of the city's habitable land and nearly every greenbelt lot. Existing homes are exempt until they remodel; insurers are not | Austin Fire Department WUI map and code page; insurance quotes before the option period ends
+Floodplain and creek buffer | Creek-adjacent lots often carry 25-year or 100-year floodplain across the rear yard after the 2019 Atlas 14 rainfall update expanded Austin's mapped floodplains; setbacks limit pools, decks and additions | City of Austin FloodPro map; the seller's elevation certificate; the survey
+Critical environmental features and setbacks | Springs, seeps, sinkholes, caves and canyon rimrock carry setbacks under the Land Development Code; in the Barton Springs Zone the Save Our Springs Ordinance caps impervious cover at 15% to 25% | City of Austin Development Services; the plat notes; a site visit with the survey in hand
+Preserve versus park | Land in the Balcones Canyonlands Preserve or the Water Quality Protection Lands is protected in perpetuity and closed to casual access; city parkland can be improved, and the November bond is a list of exactly which ones will be | Austin Water Wildland Conservation Division maps; Proposition A project list
+View and access | The Nicholls and Crompton result in one line: the premium follows the view and the trail access, not the deed | Stand on the back porch; walk to the nearest trailhead with a stopwatch
+Trailhead traffic | Homes within a block of Twin Falls, Trail's End, Loop 360, Turkey Creek and Mount Bonnell absorb the parking and the noise | Visit at 9 a.m. on a Saturday in April, not at 2 p.m. on a Tuesday in January
+Slope and erosion | Limestone rimrock and 15 percent-plus slopes mean foundation movement, drainage work and a hillside that moves in a flood | Structural inspection with the slope in mind; Watershed Protection erosion records
+Utilities and services | Preserve-edge lots in 78730, 78733 and 78738 can be on septic, on a private water supply corporation, or outside the city's fire response area | Travis County records; the seller's disclosure; the water provider
+Creek reality | A "creek-front" lot on Barton, Bull or Walnut Creek is dry most of the year in a Stage 3 drought | The USGS gauges in the section above; ask the neighbors
+Deed restrictions and easements | Trail easements, conservation easements and no-build strips are common at the back of greenbelt lots and do not always show on a listing | The title commitment's Schedule B; the plat
+:::
+
+Sources: Austin Fire Department; City of Austin Watershed Protection; City of Austin Land Development Code chapter 25-8; Austin Water; Nicholls and Crompton (2005).
+
+None of that is a reason not to buy the greenbelt lot. It is the reason the good ones rarely reach the open market. Homes that back to Barton Creek, Bull Creek or the Balcones preserves in Rob Roy, Lost Creek, Davenport Ranch and Travis Country change hands between neighbors and through agents' private networks more often than they trade on the MLS; they are the classic [off-market homes in Austin](/blog/off-market-homes-austin), and the ones that do list and fail tend to be the ones whose owners priced the label instead of the view. Every transaction above $2 million that Echelon Property Group has closed was completed off-MLS. If a greenbelt lot is the goal, the search starts with the trail map, moves to the [most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin) and the [Eanes premium](/blog/eanes-isd-premium) that sits on top of them, and ends in conversations that never produce a listing. The guide to [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) covers how that process works, the analysis of [private listings](/blog/private-listings-austin) covers what the MLS now allows sellers to do quietly, and for buyers who would rather own the wildland itself, [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country) walks through well, septic and ag exemption math. For an owner deciding whether the greenbelt premium is worth cashing in this cycle, the [2027 Austin housing forecast](/blog/austin-housing-market-forecast-2027) is the place to start, and the [Texas homestead exemption guide](/blog/texas-homestead-exemption-2026) covers the tax side of staying put.
+
+## Frequently asked questions
+
+:::faq
+
+Q: What is the best hiking trail in Austin?
+A: The Barton Creek Greenbelt is the answer for most people: 809 acres of limestone canyon with a 7.25-mile main trail from Zilker Park to the Hill of Life, about 12.7 miles of trail in total, seven free access points, and swimming holes at Campbell's Hole, Gus Fruh, Twin Falls and Sculpture Falls when the creek is running. For a paved, flat loop the Ann and Roy Butler Hike-and-Bike Trail circles Lady Bird Lake for 10.1 miles and draws nearly 5 million visits a year. For distance, the Violet Crown Trail runs 13 miles from Zilker to the Lady Bird Johnson Wildflower Center and will reach 30 miles into Hays County when its second phase opens.
+
+Q: Is the Barton Creek Greenbelt free, and where do you park?
+A: Yes, the greenbelt is free and open from sunrise to 10 p.m. It has seven official access points: the Zilker Park trailhead behind Barton Springs Pool, Spyglass Drive, the Barton Hills entrance at Homedale Drive, Gus Fruh at 2642 Barton Hills Drive, the Loop 360 lot at 3755 South Capital of Texas Highway, the Twin Falls entrance on the southbound MoPac frontage road at Gaines Creek, and Trail's End at 1712 Camp Craft Road. The Loop 360 lot is the largest free lot and the first to fill. Trail's End has paid street parking from 8 a.m. to 8 p.m., Zilker's lots charge in season, and the Twin Falls shoulder is free but enforced.
+
+Q: Does Barton Creek have water in it right now?
+A: Usually not in 2026 unless it has rained in the last few days. Barton Creek is rain-fed, and the Barton Springs-Edwards Aquifer Conservation District has been in Stage 3 Exceptional Drought since October 1, 2025, with Barton Springs discharging about 16 cubic feet per second in September 2026 against a long-term average of 68. Check the U.S. Geological Survey gauge for Barton Creek at Loop 360 before you drive: below roughly 10 cubic feet per second Twin Falls is a still pool, and after a storm the crossings can be impassable. Sculpture Falls holds water longer than any other spot on the creek, and Barton Springs Pool is spring-fed and always full.
+
+Q: Where can dogs go off leash on Austin trails?
+A: Austin requires a leash everywhere except 19 designated off-leash areas. The trail-relevant ones are Walnut Creek Metropolitan Park, the Turkey Creek Trail at Emma Long Metropolitan Park, Red Bud Isle, most of Zilker Park's lawns, Onion Creek District Park, and the off-leash sections at Roy G. Guerrero Colorado River Metro Park and Mary Moore Searight Metropolitan Park. Dogs must be leashed on the Barton Creek Greenbelt, the Butler Trail and the Violet Crown Trail, and they are not allowed at all in Wild Basin Wilderness Preserve.
+
+Q: How does Austin's park system rank nationally?
+A: Trust for Public Land's 2026 ParkScore index ranked Austin 47th of the 100 largest U.S. cities with 54.0 points out of 100, up from 54th in 2025. Seventy-six percent of residents live within a 10-minute walk of a park, up from 68 percent, and the city spends $236 per resident on parks against a national average of $154. Austin's weak spots are acreage, with 9 percent of city land in parks against a 15 percent national median, and amenities such as sport fields and restrooms. Within Texas, Austin ranks fifth, behind Plano, Frisco, Dallas and Arlington and ahead of Fort Worth, San Antonio, El Paso and Houston.
+
+Q: What is on the November 2026 Austin parks bond?
+A: Proposition A on the November 3, 2026 ballot is a $260 million parks bond, the first since 2018: $65.5 million for park buildings including Mayfield Park, $65 million for parkland improvements at Walter E. Long, Onion Creek, Commons Ford, Bolm and other parks, $29.5 million for infrastructure at Zilker, the Williamson Creek Trail, the St. Edward's Greenbelt, Circle C, Mount Bonnell and the Onion Creek All Abilities Playground, $65 million for the Garrison, Big Stacy, Walnut Creek and Civitan pools, and $35 million for land acquisition and trail connectivity. Proposition B is a separate $35 million library bond. Together they add about $40 a year to the tax bill on a $485,000 median-valued home.
+
+Q: Do homes that back to a greenbelt sell for more in Austin?
+A: Usually, and the best evidence comes from Barton Creek itself. Nicholls and Crompton's 2005 study of three neighborhoods on the Barton Creek Greenbelt found a $44,332 premium, about 20 percent, for adjacent homes in Barton Hills, a $14,777 premium, about 6 percent, in Travis Country, and no adjacency premium in Lost Creek, where wooded lots had no view of or access to the trail, though Lost Creek homes within a quarter mile of a trailhead did carry a premium. The broader research puts the typical premium for a home abutting a passive park at 8 to 10 percent and a trail at 3 to 5 percent, fading within about 500 feet. On the 2026 medians that is roughly $67,000 to $84,000 in 78704 and $148,000 to $185,000 in 78746, and it depends on the view and the access rather than the deed.
+
+Q: Do you need a reservation for Hamilton Pool, and can you swim there?
+A: A reservation is required every day of the week and is currently available through November 2026, with one vehicle per reservation and fees that are not refundable. Swimming is never guaranteed: Travis County allows water access only when bacteria levels and recent rainfall permit, and only in a small roped section because of falling rock. The preserve is open for hiking even when swimming is closed, and the same reservation covers admission to Milton Reimers Ranch Park next door. Jacob's Well in Wimberley has been closed to swimming since 2022 because of the drought.
+
+:::
+
+### About the author
+
+[Taylor Sherwood](/taylor-sherwood) is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by eXp Realty (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or 512.661.3843.
+
+## Sources
+
+1. Austin Parks and Recreation Department, "Austin Parks and Recreation by the Numbers" (20,790 acres, 382 parks, 287 miles of trails, 19 off-leash areas, 35 pools) and Operations and Maintenance presentation to the Parks and Recreation Board, February 23, 2026.
+2. Trust for Public Land, ParkScore Index 2026, Austin city page and downloadable report (rank 47, 54.0 points, category scores, 76 percent walk access, $236 per resident, 531 parks); Austin Parks and Recreation news release "Austin Climbs to 47th on 2026 ParkScore Index," May 2026; CultureMap Austin and CultureMap Houston ParkScore coverage, May 22, 2026.
+3. Austin Water Wildland Conservation Division program descriptions (Balcones Canyonlands Preserve about 31,000 acres, Water Quality Protection Lands about 28,000 acres); City of Austin, Water Forward 2024 Appendix H (more than 48,000 acres protected); Community Impact, "Austin extends permit protecting 32,000 acres," September 2025; City of Austin BCCP presentation to the Zoning and Platting Commission, May 21, 2024.
+4. Austin Parks and Recreation Department, Barton Creek Greenbelt and Violet Crown Trail project pages; Hill Country Conservancy and violetcrowntrail.com (13 miles open, 30 planned, Mile Zero Trailhead); KXAN, "Critical connection point constructed along Violet Crown Trail," March 2025; CultureMap Austin, Mile Zero Trailhead opening, November 2025.
+5. Texas Parks and Wildlife Department news release, "Texas Parks and Wildlife Department Awards Statewide Recreational Trails Grants Totaling $6.17 million," June 1, 2026.
+6. The Trail Conservancy (10-mile loop, nearly 5 million visits, natural resource management plan); The Daily Texan, "New sections added to Lady Bird Lake trail," February 10, 2026; Austin Monitor, "Lady Bird Lake trail will detour during I-35 construction," August 2025; City of Austin, Boardwalk at Lady Bird Lake project history.
+7. Austin Current, "Austin voters will decide on $295 million in city bonds, charter amendments this November," August 6, 2026, and "Austin City Council signs off on $295 million bond proposal," August 4, 2026; Austin American-Statesman, "Everything Austin voters need to know about the packed November 2026 ballot," August 2026; FOX 7 Austin, August 2026; Austin Parks Foundation bond updates, May and June 2026; City of Austin Economic Prosperity Commission Recommendation 20260715-004.
+8. City of Austin Parks and Recreation, "Closed Parks and Buildings" (ACL Festival closures, September 21 to October 18, 2026); Austin American-Statesman, "ACL Fest 2026 traffic guide," September 2026.
+9. City of Austin, Barton Springs Pool page, pool fee schedule and charging season, Joan Means Khabele Bathhouse Rehabilitation project page, Barton Springs Skimmer Bypass Project (reopening March 21, 2026).
+10. Barton Springs-Edwards Aquifer Conservation District, "Drought Update: August 2026" (September 2026), "The District Remains in Stage 3 Exceptional Drought" (August 2026) and district home page (16 cfs and 457.1 ft-msl as of September 9, 2026); KXAN, drought declaration and Stage 4 coverage, September 2025, January and March 2026; Hays Free Press, January 2026 (Jacob's Well at 0.0 cfs).
+11. Travis County Parks, Hamilton Pool Preserve page (reservations through November 2026, swimming conditions, Reimers Ranch admission); Hays County and Wimberley Valley Watershed Association, Jacob's Well status, via KVUE and FOX 7 Austin.
+12. Waterloo Greenway Conservancy, "Waterloo Greenway, Phase II Grand Opening Celebration," May 6, 2026 (13 acres, $91.5 million, June 6 opening, Palm Park and Phase III); KVUE, June 5, 2026; Community Impact, June 3, 2026; KXAN Studio 512, Waterloo Greenway fall 2026 events (Creek Show November 13 to 21); City of Austin, Waterloo Greenway annual project plan.
+13. KUT, "South Austin's newest trail is under construction," February 4, 2025; KVUE and KXAN, Bergstrom Spur Trail groundbreaking, January 2025; Community Impact, January 2023.
+14. Axios San Antonio, "How a trail connecting San Antonio and Austin can protect water," June 18, 2026; MySA, Great Springs Project TxDOT corridor study, October 2025; Texas Standard and Texas Public Radio, 2023 and 2024.
+15. Nicholls, S. and Crompton, J.L. (2005), "The Impact of Greenways on Property Values: Evidence from Austin, Texas," Journal of Leisure Research 37(3): 321-341; Headwaters Economics trail research library summary; Crompton, J.L. (2005), "The impact of parks on property values: empirical evidence from the past two decades in the United States," Managing Leisure 10(4).
+16. Crompton, J.L. (2004), "The Proximate Principle: The Impact of Parks, Open Space and Water Features on Residential Property Values and the Property Tax Base," National Recreation and Park Association; Nicholls and Crompton meta-analysis of 33 park studies as summarized by NatureQuant; Crompton and Nicholls, "The Impact of Greenways and Trails on Proximate Property Values"; Correll, Lillydahl and Singell (1978), Land Economics.
+17. Austin Fire Department, Wildland-Urban Interface Code page (2024 IWUIC with local amendments, effective July 10, 2025); SpeakUp Austin, Fire Protection Criteria Manual WUI update, 2026; International Code Council and FEMA case studies on Austin's 2020 adoption; KXAN, January 2021 (150-foot and 1.5-mile applicability thresholds).
+18. Unlock MLS via Agent Intel (MLS Grid), residential statistics for the City of Austin and ZIP codes 78702, 78703, 78704, 78730, 78731, 78732, 78733, 78735, 78744, 78745, 78746, 78749, 78753 and 78759, trailing twelve months through August 31, 2026.
+19. Texas Parks and Wildlife Department park pages: McKinney Falls, Pedernales Falls, Enchanted Rock, Inks Lake, Colorado Bend, Lost Maples, Bastrop and Buescher; Travis County Parks: Milton Reimers Ranch and Pace Bend; U.S. Army Corps of Engineers, Lake Georgetown Goodwater Loop; City of San Marcos, Purgatory Creek Natural Area.
+20. National Weather Service Austin/San Antonio, 1991 to 2020 climate normals for Austin Camp Mabry.
+21. City of Austin Land Development Code chapter 25-8 (critical environmental features, Save Our Springs impervious cover limits); City of Austin Watershed Protection, Atlas 14 floodplain update and FloodPro.
+22. Living New Deal, Emma Long Metropolitan Park CCC history; Wild Basin Creative Research Center, St. Edward's University; Austin Parks and Recreation park pages for Walter E. Long, Zilker, Mary Moore Searight, Walnut Creek, Commons Ford, Pease, St. Edward's, Mayfield, Mount Bonnell and Red Bud Isle.
+23. Data.gov and City of Austin open data, Zilker Metropolitan Park Vision Plan (suspended August 2023); KVUE and Community Impact coverage, 2023.
+24. Echelon Property Group prior posts referenced: "Living on Lake Austin," "Most Expensive Neighborhoods in Austin," "The Eanes Premium," "Zestimate Accuracy in Texas," "Off-Market Homes in Austin," "Private Listings in Austin," "How to Buy a Luxury Home in Austin," "Buying Land in the Texas Hill Country," "Austin Housing Market Forecast 2027," "Texas Homestead Exemption 2026" and "Why Didn't My House Sell in Austin."`,
+  },
   {
     id: "austin-housing-market-forecast-2027",
     title: "Austin Housing Market Forecast 2027: What the Data Says Happens Next",

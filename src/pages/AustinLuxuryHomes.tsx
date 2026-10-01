@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
-import FeaturedLuxuryListings from "@/components/FeaturedLuxuryListings";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { communityPages } from "@/data/communityData";

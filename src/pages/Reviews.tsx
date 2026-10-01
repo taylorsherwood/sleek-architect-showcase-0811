@@ -161,6 +161,16 @@ const reviews: Review[] = [
     quote:
       "Taylor helped us in a downturn Austin market when we had to sell and we already had a preexisting realtor. We were not getting any offers without lowering pricing. Taylor offered us an alternative approach, improve where it mattered and then sell. We ended up getting 2 offers after making a smaller investment into our home. A practical approach and strategy is better than waiting for offers, and that's what he led us through and we're grateful for him coming through for us as an advisor and partner we could depend on. I'm certain that he will help us in the future as he won over some clients for life!",
   },
+  {
+    name: "Matthew and Esra Berchuck",
+    source: "Verified Client",
+    date: "2026",
+    category: "Luxury Buyers",
+    transaction: "Purchased in Rob Roy",
+    rating: 5,
+    quote:
+      "I would like to offer my highest recommendation to Taylor Sherwood who served as our realtor on my wife and my recent purchase of a home in Austin, Texas. After showing us a home that didn't align with our priorities, Taylor showed us a number of homes that met our criteria. He really listened to us. He showed us what we wanted to see, not what he wanted to sell. Once we found the \"right\" home Taylor guided us through every aspect of the process. He was always available, attentive to detail, and used his decade of experience to advocate for us every step in the process. My wife and I have bought and sold several homes and this was by far the most user-friendly experience we've had. We owe much of this to Taylor's exceptional service.",
+  },
 
 ];
 

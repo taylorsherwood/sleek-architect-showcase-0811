@@ -3878,6 +3878,7 @@ A: Pull the address on the county appraisal district website and read the taxing
 - [The CLR Sales Group, MUD Taxes in Austin, Texas](https://www.theclrsalesgroup.com/blog/2026/5/6/mud-taxes-in-austin-texas-the-hidden-cost-every-new-construction-buyer-needs-to-know)
 - [Neuhaus Realty Group, MUDs, PIDs and Special Districts in Austin 2026](https://neuhausre.com/guides/mud-pid-special-districts-guide-austin/)
 - [Texas National Title, 2025 Central Texas Tax Rates](https://www.texasnationaltitle.com/wp-content/uploads/2023/01/CentralTexasTaxRates.pdf)
+- [The HOA Book, Texas MUD tax rates by county, 2025](https://thehoabook.com/texas/mud-tax/)
 - [Eleven Oaks Realty, Steiner Ranch Neighborhood Guide](https://www.austinrealestatehomesblog.com/northwest-austin/steiner-ranch/)
 - [Eleven Oaks Realty, Travisso Neighborhood Guide](https://www.austinrealestatehomesblog.com/leander/travisso/)
 - [Eleven Oaks Realty, Sunfield Neighborhood Guide](https://www.austinrealestatehomesblog.com/buda/sunfield/)

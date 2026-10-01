@@ -66,6 +66,13 @@ const testimonials = [
     type: "Seller Client",
     context: "Sold in Dripping Springs",
   },
+  {
+    quote:
+      "I would like to offer my highest recommendation to Taylor Sherwood who served as our realtor on my wife and my recent purchase of a home in Austin, Texas. After showing us a home that didn't align with our priorities, Taylor showed us a number of homes that met our criteria. He really listened to us. He showed us what we wanted to see, not what he wanted to sell. Once we found the \"right\" home Taylor guided us through every aspect of the process. He was always available, attentive to detail, and used his decade of experience to advocate for us every step in the process. My wife and I have bought and sold several homes and this was by far the most user-friendly experience we've had. We owe much of this to Taylor's exceptional service.",
+    name: "Matthew and Esra Berchuck",
+    type: "Buyer Client",
+    context: "Purchased in Rob Roy",
+  },
 ];
 
 

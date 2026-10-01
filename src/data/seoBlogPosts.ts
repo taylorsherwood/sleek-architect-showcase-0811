@@ -3878,6 +3878,7 @@ A: Pull the address on the county appraisal district website and read the taxing
 - [The CLR Sales Group, MUD Taxes in Austin, Texas](https://www.theclrsalesgroup.com/blog/2026/5/6/mud-taxes-in-austin-texas-the-hidden-cost-every-new-construction-buyer-needs-to-know)
 - [Neuhaus Realty Group, MUDs, PIDs and Special Districts in Austin 2026](https://neuhausre.com/guides/mud-pid-special-districts-guide-austin/)
 - [Texas National Title, 2025 Central Texas Tax Rates](https://www.texasnationaltitle.com/wp-content/uploads/2023/01/CentralTexasTaxRates.pdf)
+- [The HOA Book, Texas MUD tax rates by county, 2025](https://thehoabook.com/texas/mud-tax/)
 - [Eleven Oaks Realty, Steiner Ranch Neighborhood Guide](https://www.austinrealestatehomesblog.com/northwest-austin/steiner-ranch/)
 - [Eleven Oaks Realty, Travisso Neighborhood Guide](https://www.austinrealestatehomesblog.com/leander/travisso/)
 - [Eleven Oaks Realty, Sunfield Neighborhood Guide](https://www.austinrealestatehomesblog.com/buda/sunfield/)
@@ -3894,9 +3895,9 @@ A: Pull the address on the county appraisal district website and read the taxing
 - [Ballard Property Tax Protest, Austin Property Tax Rate 2025](https://www.ballardpropertytaxprotest.com/post/austin-property-tax-rate)
 - [Texas Tax Calculator, Austin Property Tax 2026](https://texastaxcalculator.com/property-tax/austin)
 - [Williamson County, Tax Rates and District Worksheets](https://www.wilcotx.gov/760/Tax-Rates)
-- [Hays County, Truth in Taxation](https://www.hayscountytx.gov/truth-in-taxation)
+- [Hays County, Truth in Taxation (2025 adopted rates)](https://hays.countytaxrates.com/tax)
 - [Old Republic Title, Understanding PUDs, MUDs and PIDs in Texas](https://www.oldrepublictitle.com/media/u2vlpqo4/texas__understanding_puds_muds__pids_08092023.pdf)
-- [Destination North Texas, PID payoff mechanics](https://destinationnorthtexas.com/pid-texas/)
+- [Texas Local Government Code §372.018, PID assessment lien and prepayment right](https://statutes.capitol.texas.gov/Docs/LG/htm/LG.372.htm#372.018)
 
 ## Related Reading
 

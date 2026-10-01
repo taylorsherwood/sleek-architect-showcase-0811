@@ -47,8 +47,6 @@ const AustinLuxuryHomes = () => {
         </div>
       </section>
 
-      <FeaturedLuxuryListings />
-
       <article className="pb-24">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto space-y-12 sm:space-y-16">

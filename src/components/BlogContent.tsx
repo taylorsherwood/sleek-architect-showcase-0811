@@ -97,7 +97,10 @@ const renderHeading = (line: string): string => {
     return `<h2 class="text-3xl md:text-4xl font-light text-architectural mb-6 mt-12 whitespace-pre-wrap">${line.substring(2)}</h2>`;
   }
   if (line.startsWith("## ")) {
-    return `<h2 class="text-2xl md:text-3xl font-light text-architectural mb-5 mt-12">${line.substring(3)}</h2>`;
+    const text = line.substring(3);
+    // Stable anchor ids so in-article tables of contents and AI citations can deep-link sections.
+    const id = text.replace(/<[^>]+>/g, "").toLowerCase().replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 80);
+    return `<h2 id="${id}" class="text-2xl md:text-3xl font-light text-architectural mb-5 mt-12 scroll-mt-32">${text}</h2>`;
   }
   if (line.startsWith("### ")) {
     return `<h3 class="text-xl md:text-2xl font-medium text-foreground mb-3 mt-8">${line.substring(4)}</h3>`;

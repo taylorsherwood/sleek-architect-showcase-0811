@@ -189,7 +189,399 @@ const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
 import blogAustinHousingForecast2027Asset from "@/assets/blog/austin-housing-market-forecast-2027-hero.png.asset.json";
 const blogAustinHousingForecast2027 = blogAustinHousingForecast2027Asset.url;
 
+import blogBestTimeToSellAustinAsset from "@/assets/blog/best-time-to-sell-a-house-austin-hero.jpg.asset.json";
+const blogBestTimeToSellAustin = blogBestTimeToSellAustinAsset.url;
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "best-time-to-sell-a-house-austin",
+    title: "The Best Time to Sell a House in Austin: 36 Months of Contract Data, and Why Luxury Runs on a Different Calendar",
+    metaTitle: "Best Time to Sell a House in Austin: 2026 to 2027 Data",
+    excerpt: "Three years of Unlock MLS data for Austin and the 78746/78703 luxury core show when buyers sign, when sellers flood in, and the one window that beats spring.",
+    author: "Taylor Sherwood",
+    date: "2026-10-12",
+    readTime: "20 min read",
+    category: "MARKET INTELLIGENCE",
+    image: blogBestTimeToSellAustin,
+    heroImage: blogBestTimeToSellAustin,
+    imageAlt: "Infinity-edge pool and stone terrace behind a Mediterranean-style West Austin estate framed by live oaks",
+    content: `**Quick answer:** For most Austin homes, the best time to list is the last week of February through mid-March. That puts a fresh listing in front of buyers as contracts peak in April and ahead of the April listing flood, when an average 2,177 new listings hit the market against 600 in an average December. Spring closings carry the smallest total discount from original asking price (about 5 percent) and the fastest median days on market (23 days for April closings). In the luxury core of 78746 and 78703, the spring flood is more extreme (five times as many new listings in April as in December), and two secondary windows matter: early-to-mid February, ahead of the March surge, and July through early August, when relocation buyers with a school deadline sign. The single worst month to debut a luxury listing in Austin is October.
+
+The week of October 2, 2026 was not a great week to be a luxury listing in Austin. Two days of rain, two weekends of ACL, and the Reisor Team's weekly luxury report counted six publicly listed homes over $2 million going under contract, down 54 percent from the 13 the week before. The Real Deal ran it under the headline "Rain on Austin's luxury parade."
+
+Every October, that kind of week produces the same phone call. A seller looks at a quiet showing calendar, looks at the holidays coming, and asks the question: should I list now, or wait for spring?
+
+The usual answer is folklore. "Spring is the selling season." It is repeated by people who have never looked at a single month of contract data, and it is only half right. So we pulled 36 consecutive months of Unlock MLS data (October 2023 through September 2026) for the city of Austin and for the two ZIP codes that define the luxury core, 78746 (Westlake, Rollingwood, Rob Roy, Davenport Ranch) and 78703 (Tarrytown, Pemberton Heights, Old Enfield, Clarksville), and counted what actually happens in each month: how many sellers show up, how many buyers sign, how long it takes, how much comes off the price, and how many listings quit.
+
+The short version: buyers barely take the winter off. Sellers do. That gap, not the weather, is what should decide your listing date.
+
+## What we measured, and why "pending" is the number that matters
+
+Most "best time to sell" articles use list prices or closing prices by month. Both are lagging indicators. A home that closes in May usually went under contract in March or April and was listed in February or March. If you want to know when buyers are active, you look at contracts written, which Unlock MLS reports as pending listings.
+
+Here is the vocabulary for the tables below. All figures are three-year monthly averages (each calendar month appears three times in the 36-month series) for residential listings, from Unlock MLS via Agent Intel.
+
+- **New listings:** homes that came to market that month. This is seller supply.
+- **Contracts written:** listings that went pending that month. This is buyer demand.
+- **Listing-to-contract ratio:** new listings divided by contracts written. It is our competition gauge. A ratio of 2.0 means two fresh listings arrived for every buyer who signed. The lower the number, the better the month is for a seller.
+- **Median days on market:** for the homes that closed that month, how long the typical one took to go under contract.
+- **Asking vs. sale and original vs. asking:** the two price haircuts. Original-to-asking captures the price cuts a listing took before it sold. Asking-to-sale is the negotiation at the end. Multiplied together, they give the total discount from the first asking price, which is the number sellers actually feel.
+- **Success rate:** of the listings that left the market that month, the share that left by closing rather than by expiring or being withdrawn.
+## Finding 1: Austin's seasonality is a supply story, not a demand story
+
+**Table 1. The Austin selling calendar (city of Austin, three-year monthly averages, Oct 2023 to Sep 2026)**
+
+:::compare-table
+Month | New listings | Contracts written | Listing-to-contract ratio | Median days on market (closings) | Success rate | Months of inventory
+January | 1,187 | 757 | 1.57 | 74 | 66% | 4.6
+February | 1,478 | 882 | 1.68 | 72 | 75% | 4.9
+March | 1,997 | 1,029 | 1.94 | 41 | 75% | 5.5
+April | 2,177 | 1,089 | 2.00 | 23 | 73% | 5.4
+May | 2,038 | 1,022 | 1.99 | 21 | 66% | 5.2
+June | 1,724 | 920 | 1.87 | 30 | 59% | 5.2
+July | 1,502 | 918 | 1.64 | 34 | 56% | 5.1
+August | 1,322 | 837 | 1.58 | 47 | 53% | 5.1
+September | 1,334 | 778 | 1.72 | 60 | 55% | 5.3
+October | 1,236 | 742 | 1.67 | 59 | 53% | 4.9
+November | 871 | 671 | 1.30 | 59 | 52% | 5.0
+December | 600 | 604 | 0.99 | 64 | 45% | 4.0
+Annual average | 1,456 | 854 | 1.70 | – | – | –
+:::
+
+Source: Unlock MLS via Agent Intel, residential, city of Austin. Contracts written = pending listings in the month.
+
+Read the second and third columns against each other. New listings swing from 600 in December to 2,177 in April, a 3.6x range. Contracts written swing from 604 to 1,089, a 1.8x range. Sellers are twice as seasonal as buyers.
+
+That produces the number nobody talks about. In December, the listing-to-contract ratio is 0.99: one fresh listing for every buyer who signed. In April and May it is 2.00. The month everyone is told to wait for is the month with the most competition per buyer in the entire year.
+
+Three more things fall out of Table 1.
+
+First, the contract curve rises fast and early. Contracts written jump 17 percent from January to February and another 17 percent from February to March. By March, buyer demand is 95 percent of its April peak. Sellers, meanwhile, are still arriving: new listings climb another 9 percent from March to April. Demand peaks before supply does.
+
+Second, success rates collapse in December because December is where listings go to die. In an average December, 320 Austin listings expire (the annual average is 197), another 413 are withdrawn, and only 799 close. In December 2025, 810 listings left the market without selling against 893 that closed. Nearly half the listings that quit the market in December were never going to sell in December; they were spring and summer listings whose six-month agreements ran out. That matters for how you read the 45 percent December success rate. It is not the fate of December listings. It is the funeral for everyone else's.
+
+Third, the fall is quieter than people think, but not dead. October and November contracts (742 and 671) are 87 and 79 percent of the annual average. That is a real buyer pool, just a smaller one with far fewer new listings to look at.
+
+## Finding 2: Spring gives you the best price and the worst competition. Both are true.
+
+Two national studies landed on Austin this year, and they agree with each other more than it first appears.
+
+Realtor.com's 2026 Best Time to Sell report named the week of April 12 to 18 as the best listing week nationally, and specifically for the Austin-Round Rock-San Marcos metro. Its Austin table shows listings in that week priced 9.1 percent (about $41,000) above the start of the year, drawing 26.3 percent more views than an average week, with 8 percent fewer price reductions, 10.2 percent fewer active listings, and roughly 15 fewer days on market. Zillow's analysis of 2025 sales found Austin's sale-price premium peaks for homes listed in the last two weeks of March, at 2.5 percent, or about $10,800 on a typical home.
+
+Both are right about outcomes. Our closing-month data says the same thing.
+
+**Table 2. What Austin closings look like by month (city of Austin, three-year averages)**
+
+:::compare-table
+Closing month | Original vs. asking | Asking vs. sale | Total discount from original ask | Median days on market | Median sale price
+January | -5.44% | -3.90% | -9.13% | 74 | $537,500
+February | -4.36% | -3.05% | -7.28% | 72 | $543,333
+March | -3.40% | -2.68% | -6.00% | 41 | $566,786
+April | -2.65% | -2.38% | -4.97% | 23 | $582,050
+May | -2.69% | -2.47% | -5.09% | 21 | $597,396
+June | -3.20% | -2.77% | -5.88% | 30 | $591,000
+July | -3.66% | -2.95% | -6.50% | 34 | $578,989
+August | -4.51% | -3.28% | -7.64% | 47 | $576,266
+September | -5.16% | -3.32% | -8.31% | 60 | $567,333
+October | -5.26% | -3.35% | -8.43% | 59 | $555,518
+November | -5.36% | -3.20% | -8.39% | 59 | $564,000
+December | -5.33% | -3.75% | -8.88% | 64 | $553,992
+:::
+
+Source: Unlock MLS via Agent Intel. Total discount = (1 + original-to-asking) x (1 + asking-to-sale) - 1. Price ratios are sales-weighted across the three years.
+
+April closings gave up 4.97 percent from the original asking price and took 23 days to find a buyer. December closings gave up 8.88 percent and took 64 days. January closings gave up 9.13 percent and took 74. On a $600,000 home that spread is roughly $24,000. On a $2 million home it is about $80,000.
+
+Two caveats before anyone prints this and tapes it to the fridge.
+
+The median sale price in Table 2 is a mix effect. May's $597,396 and January's $537,500 do not mean the same house is worth 11 percent more in May. Bigger, pricier homes sell in the spring; the January closings skew toward smaller homes and investors. That is why we lead with the discount columns, which compare each sale to its own asking price.
+
+The second caveat is survivorship. A home closing in November is disproportionately a home that listed in April, did not sell, cut its price in July, and finally found its buyer in October. Part of the fall discount is simply what mispriced spring listings look like after six months, which is a subject we have covered in detail in [why luxury homes do not sell in Austin](/blog/luxury-home-not-selling-austin) and [why your house did not sell](/blog/why-didnt-my-house-sell-austin). But that is also the point: the fall market is where spring's mistakes get corrected, and a fresh, correctly priced fall listing is competing against them, not against the spring winners.
+
+### The late-February rule
+
+Here is the reconciliation. April closings with a median 23 days on market went under contract in late March or early April. Allow 30 to 45 days to close, and the typical April closing was listed between roughly February 20 and March 15. May closings with 21 median days tell the same story one month later.
+
+So the "list in April" advice and the "spring is best" advice are both describing the same homes, and those homes were listed in late February and early March. If you go live on April 12, you are not joining the winners. You are joining the 2,177 listings that arrive in April to compete for the 1,089 buyers who sign that month, and you will spend May and June in the price-reduction column (Austin logs 973 price cuts in an average May and 1,058 in June).
+
+The rule for a typical Austin home is to be live by the first week of March, and the last week of February is better. If you want the full timeline from photos to closing, see [how long it takes to sell a house in Austin](/blog/how-long-to-sell-house-austin).
+
+## Finding 3: The luxury core runs on a different calendar
+
+Westlake and Tarrytown do not follow the citywide curve. They exaggerate it in some months and reverse it in others.
+
+**Table 3. The luxury core calendar (78746 + 78703 combined, three-year monthly averages, Oct 2023 to Sep 2026)**
+
+:::compare-table
+Month | New listings | Contracts written | Listing-to-contract ratio | Median days on market (closings) | Success rate | Listings that expired or were withdrawn
+January | 69 | 31 | 2.24 | 90 | 53% | 26
+February | 91 | 42 | 2.14 | 105 | 68% | 19
+March | 129 | 51 | 2.54 | 72 | 66% | 27
+April | 146 | 54 | 2.72 | 38 | 59% | 36
+May | 114 | 56 | 2.04 | 33 | 58% | 41
+June | 85 | 47 | 1.82 | 53 | 48% | 53
+July | 71 | 49 | 1.47 | 46 | 43% | 61
+August | 73 | 40 | 1.83 | 69 | 47% | 47
+September | 88 | 45 | 1.93 | 70 | 56% | 36
+October | 73 | 34 | 2.18 | 67 | 40% | 49
+November | 51 | 38 | 1.35 | 65 | 44% | 48
+December | 29 | 24 | 1.24 | 61 | 29% | 59
+Annual average | 85 | 42 | 2.02 | – | – | –
+:::
+
+Source: Unlock MLS via Agent Intel, residential, ZIP codes 78746 and 78703, counts summed, ratios sales-weighted.
+
+Five things in that table should change how a luxury seller thinks about the calendar.
+
+The spring flood is five times the winter trickle. New listings in the luxury core go from 29 in December to 146 in April. Citywide the swing is 3.6x; in Westlake and Tarrytown it is 5.0x. Luxury sellers are more herd-like than the rest of the market, which means the April ratio (2.72 new listings per contract) is the worst competitive environment of any month in any segment we measured. In 78746 alone, an average April brings 73 new listings against 29 contracts, a ratio of 2.53.
+
+There is a second season, and Eanes ISD created it. Contracts written in the luxury core peak in May (56), then dip in June (47), then come back in July (49). In 78746 specifically, July contracts (29) match April. That July bump is the relocation calendar: executives and families moving into Eanes ISD or the west Austin corridor who need to close before school starts in mid-August. The July buyer is a deadline buyer, which is the best kind. The July listing-to-contract ratio in the core is 1.47, and in 78746 it is 1.51. We wrote about what families are paying for that school boundary in [the Eanes premium](/blog/eanes-isd-premium).
+
+October is the dead zone. Contracts written in the luxury core fall to 34 in October, 79 percent of the annual average and the weakest month outside December and January, while new listings stay elevated at 73. The ratio jumps to 2.18 and the success rate drops to 40 percent. That is the structural version of The Real Deal's rainy ACL week. Two ACL weekends, the Formula 1 weekend at COTA in late October, UT home football Saturdays, fourth-quarter bonus uncertainty, and the simple fact that a buyer touring in October knows the holidays will stall any closing. In 78746, October contracts averaged 18 over the three years (13, 14, and 26) against 38 new listings.
+
+November beats October. This is the one that surprises people. Luxury contracts written rise from 34 in October to 38 in November while new listings fall from 73 to 51. The November ratio of 1.35 is the second-best of the year. In 78746, November contracts beat October in all three years (18 vs. 13, 21 vs. 14, 23 vs. 26 is the only exception, and 2025's October was unusually strong). The buyer who is still looking at a $3 million home the week of Thanksgiving is not browsing. They have a January start date.
+
+December is the graveyard, not the grave. In an average December in the luxury core, 59 listings expire or are withdrawn and 42 close. The 29 percent success rate is mostly the year-end cleanup of listings that should have repriced in July. Only 29 new listings arrive, against 24 contracts, for a ratio of 1.24, the best of the year. A fresh, correctly priced December listing in Westlake is one of 14 new listings in the ZIP (the three-year average), with a buyer pool of 10 to 14 contracts and almost no fresh competition.
+
+**Table 4. The 78746 ratio, ranked (Westlake only, three-year monthly averages)**
+
+:::compare-table
+Rank | Month | New listings | Contracts written | Listing-to-contract ratio
+Best | November | 27 | 21 | 1.29
+2 | December | 14 | 10 | 1.39
+3 | July | 43 | 29 | 1.51
+4 | August | 37 | 23 | 1.61
+5 | September | 44 | 24 | 1.85
+6 | June | 48 | 26 | 1.87
+7 | February | 45 | 23 | 1.93
+8 | January | 37 | 17 | 2.12
+9 | May | 69 | 32 | 2.15
+10 | October | 38 | 18 | 2.17
+11 | March | 64 | 28 | 2.30
+Worst | April | 73 | 29 | 2.53
+:::
+
+Source: Unlock MLS via Agent Intel, ZIP 78746.
+
+A ratio is not the whole picture. November's 21 contracts and December's 10 are small pools, and a seller with an unusual house (the 12,000-square-foot one, the one with the helipad) needs the bigger spring pool to find the one buyer who wants it. But for a well-located, correctly priced home in the $1.5 million to $4 million range that has broad appeal, the data says the folklore has it backwards: the lowest-competition months in Westlake are November, December, July, and August, and the most crowded are April and March.
+
+## Finding 4: What the seasons cost, side by side
+
+**Table 5. Total discount from original asking price by season, Austin vs. the luxury core (closings, three-year sales-weighted averages)**
+
+:::compare-table
+Season (closing months) | Austin ratio | Austin median DOM | Austin total discount | Luxury core ratio | Luxury core median DOM | Luxury core total discount
+Spring (Mar to May) | 1.98 | 28 | -5.3% | 2.42 | 46 | -8.6%
+Summer (Jun to Aug) | 1.70 | 37 | -6.6% | 1.70 | 56 | -10.5%
+Fall (Sep to Nov) | 1.57 | 59 | -8.4% | 1.81 | 68 | -11.5%
+Winter (Dec to Feb) | 1.46 | 70 | -8.4% | 1.95 | 82 | -10.8%
+Fourth quarter only (Oct to Dec) | 1.34 | 61 | -8.6% | 1.61 | 64 | -11.0%
+:::
+
+Source: Unlock MLS via Agent Intel. Luxury core = 78746 + 78703. Ratios are new listings per contract written in the same months. January 2024 in 78746 had only four closings and an unusually deep discount, which pulls the winter luxury figure down slightly.
+
+Two patterns. The luxury core gives up more in every season (the Westlake home that closes in spring still leaves 8.6 percent on the table from its first asking price, which is a pricing problem we unpacked in [how to price a luxury home in Austin](/blog/how-to-price-a-luxury-home-in-austin)). And the spring-to-fall gap is about three points in both segments: 3.1 points citywide, 2.9 points in the core. On a $2.4 million Westlake home, 2.9 points is roughly $70,000, before survivorship, which likely accounts for a third to a half of it.
+
+Hold that number. We will use it in the worked example.
+
+## Fourth quarter 2026 is not a normal fourth quarter
+
+Seasonal averages tell you what usually happens. September 2026 tells you what is happening now, and it is not usual.
+
+**Table 6. September 2026 vs. September 2025 (Unlock MLS, residential)**
+
+:::compare-table
+Metric | Austin Sep 2025 | Austin Sep 2026 | 78746 Sep 2025 | 78746 Sep 2026 | 78703 Sep 2025 | 78703 Sep 2026
+Active listings | 4,957 | 4,703 (-5%) | 190 | 126 (-34%) | 126 | 119 (-6%)
+Months of inventory | 5.45 | 5.10 | 7.22 | 4.45 | 5.40 | 6.87
+New listings | 1,336 | 1,399 | 47 | 48 | 45 | 42
+Contracts written | 816 | 741 (-9%) | 25 | 26 | 24 | 16 (-33%)
+Closed sales | 895 | 803 | 24 | 27 | 24 | 15
+Median days on market | 67 | 54.5 | 43 | 38 | 112 | 64.5
+Asking vs. sale | -3.58% | -3.23% | -6.63% | -5.03% | -5.04% | -6.57%
+Success rate | 51.1% | 55.9% | 53.2% | 68.2% | 57.1% | 56.3%
+Price reductions in the month | 978 | 1,500 | 31 | 26 | 25 | 28
+:::
+
+Source: Unlock MLS via Agent Intel.
+
+Start with rates, because they explain the citywide row. Freddie Mac's 30-year fixed averaged 7.28 percent as of October 1, 2026, up from 6.95 percent in mid-September and 6.34 percent a year earlier. Austin's financed buyers felt it: contracts written fell 9 percent year over year in September, and the city logged 1,500 price reductions in the month, the most of any month in the 36-month series. Metro-wide, the October 9 Austin-area MLS snapshot showed 16,756 active listings, 5.7 months of inventory, and 57.6 percent of active listings with at least one price drop. For the rate and inventory outlook we published three weeks ago, see the [Austin housing market forecast for 2027](/blog/austin-housing-market-forecast-2027).
+
+Now look at Westlake. Contracts written in 78746 were flat year over year (26 vs. 25), closings rose, the median time to contract fell to 38 days, and the asking-to-sale discount narrowed from 6.63 to 5.03 percent. The difference is supply. Active listings in 78746 fell by a third, from 190 to 126, and months of inventory went from 7.22 to 4.45. Westlake entered the fourth quarter of 2026 with the thinnest fall inventory in the three years we measured, and its buyers, who skew to cash and relocation, do not read the Fed statement the way a $450,000 buyer in Pflugerville does.
+
+Then look at Tarrytown, because the luxury core is not one market. Contracts in 78703 fell by a third, active inventory barely moved, and months of inventory rose to 6.87. A Tarrytown seller is facing a loose fall; a Westlake seller is facing a tight one. Same price tier, same month, opposite advice. This is why the Market Balance work we publish in [Austin inventory levels explained](/blog/austin-inventory-levels-explained) is done at the ZIP and subdivision level, never citywide.
+
+The fourth-quarter 2026 read, in one line each:
+
+- **Westlake (78746):** a correctly priced listing faces the least fall competition in three years. If the price is built on evidence, there is no reason to wait.
+- **Tarrytown (78703):** demand is soft this fall. Unless there is a reason to sell now, a private window through January and a public debut in February is the better path.
+- **Citywide:** financed buyers are rate-shocked and 1,500 of your neighbors cut their price in September. A fresh listing in the $400,000 to $800,000 range should be priced to the September comps, not the June ones, or it should wait for late February and a possible rate reprieve.
+:::cta
+heading: When should your home go live?
+subheading: We run your ZIP code's current listing-to-contract ratio, not the three-year average, against each listing window.
+button: Request a home value and timing analysis
+href: /home-value-austin
+:::
+
+## The worked example: a $2.4 million Westlake home, list now or wait
+
+Say you own a $2.4 million home in Westlake Hills, it is ready, and it is October 12. Three paths.
+
+Path A: debut October 20, 2026. You enter the October dead zone, which in an average year means 38 new listings in 78746 against 18 contracts. But this is not an average year: active inventory in the ZIP is down 34 percent. Your realistic exit is a November or December contract and a December or January closing.
+
+Path B: private window now, public debut February 22, 2027. From mid-November through January the home is shown privately to qualified buyers (more on that below), then goes live on the MLS in the last week of February. February's 78746 ratio is 1.93, March's is 2.30, and the three-year success rate for listings exiting in February through April runs 65 to 71 percent. Realistic exit: a late March or April contract, a May closing.
+
+Path C: debut April 12, 2027, the Realtor.com week. You enter the flood. An average April in 78746 brings 73 new listings against 29 contracts, a ratio of 2.53. Realistic exit: a June or July contract, a July or August closing, in the months when luxury closings give up 9.7 to 11.9 percent from their original asking price.
+
+The waiting cost is real money. Here is what carrying a $2.4 million Westlake home actually runs per month, using illustrative but realistic figures.
+
+**Table 7. Monthly carrying cost of waiting, $2.4 million Westlake home (illustrative)**
+
+:::compare-table
+Line item | Assumption | Monthly cost
+Property tax | 1.7% effective rate on $2.4M (see the Eanes-area tax stack in the Eanes premium) | $3,400
+Homeowners insurance | $9,600 per year on a high-value policy | $800
+Utilities, pool, landscaping, upkeep | Luxury home standard | $1,500
+Staging rental extension | Furnished luxury staging, month to month | $1,200
+Opportunity cost on equity | 4% money-market yield on $1.6M of equity | $5,333
+Total | – | $12,233
+:::
+
+Waiting from October 20 to February 22 is about 4.5 months, or roughly $55,000. Waiting to April 12 is about 6 months, or roughly $73,000.
+
+Against that, the seasonal discount gap between fourth-quarter closings (-11.0 percent in the luxury core) and spring closings (-8.6 percent) is 2.4 points, or about $58,000 on $2.4 million. If a third to a half of that gap is survivorship, the real spring premium for a correctly priced home is somewhere between $29,000 and $39,000.
+
+**Table 8. Three paths, side by side ($2.4 million, 78746)**
+
+:::compare-table
+Factor | Path A: list Oct 20, 2026 | Path B: private window, public Feb 22, 2027 | Path C: list Apr 12, 2027
+Debut-month competition (3-yr avg, 78746) | 38 new vs. 18 contracts (2.17), but 2026 actives down 34% | 45 new vs. 23 contracts (1.93) | 73 new vs. 29 contracts (2.53)
+Success rate in the likely exit months (3-yr avg) | 40 to 45% (Oct to Nov) | 65 to 71% (Feb to Apr) | 51 to 62% (May to Jun)
+Total discount on closings in the likely closing season (luxury core) | -11.0% (Oct to Dec) | -8.6% (Mar to May) | -9.7 to -11.9% (Jun to Aug)
+Carrying cost before debut | $0 | about $55,000 | about $73,000
+Spring premium, net of survivorship | n/a | $29,000 to $39,000 | mostly gone by July
+Verdict | Best in a tight-inventory year like this one, if priced on evidence | Best in an average year, and the default for a home that needs its price tested | The folklore path, and the worst of the three
+:::
+
+The honest conclusion is that in an average year, the spring premium roughly pays for the wait, and not much more. The calendar is a tiebreaker, not a strategy. What decides the outcome is whether the price is right on day one, which is why we spend our time on [pricing a luxury home](/blog/how-to-price-a-luxury-home-in-austin), [staging it](/blog/luxury-home-staging-cost-austin), and understanding the [full cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin) before we ever argue about dates.
+
+What the calendar can do is tell you which mistakes are available in each month. In April, the available mistake is getting lost in the flood. In October, the available mistake is going stale and becoming a December expired. Path B exists because it avoids both.
+
+## The month-by-month seller playbook
+
+**Table 9. The Austin listing calendar, month by month**
+
+:::compare-table
+Month | What the data says (3-yr averages) | Seller move | What else is on the calendar
+January | Contracts 757 citywide, 31 in the core; closings take 74 days; ratio 1.57 | Prep, photos, inspections, private previews. Mild weather (average high about 62 degrees) and evergreen live oaks make January photos work | Jan 1 is the property tax appraisal date; relocation buyers tour now and sign in March
+February | Contracts up 17% month over month; ratio 1.68 citywide, 2.14 core | Go live in the last week. This is the window | SXSW prep; out-of-town eyes arrive mid-March
+March | Contracts 95% of peak; closings take 41 days; luxury ratio jumps to 2.54 | Already live. Hold price, no "testing" | SXSW mid-month; Zillow's Austin sale-price peak is for homes listed in the last two weeks of March
+April | Listing flood: 2,177 new citywide, 146 in the core, the year's worst ratio | Do not debut late in the month without a pricing edge | Realtor.com's "best week" (Apr 12 to 18); wildflower curb appeal
+May | Fastest closings of the year (21 days); contracts 1,022 | Last clean window before the heat | Protest deadline for appraisal values is May 15
+June | Contracts fall 10%; withdrawals climb to 454 citywide | If unsold since March, reprice now, not in August | School ends; relocation deadlines start
+July | Luxury second peak (49 core contracts, 29 in 78746); price cuts peak citywide (1,131) | Luxury sellers: this is a legitimate debut window. Shoot pool and evening photos; book showings after 6 p.m. | Average high about 97 degrees
+August | Lowest citywide success rate (53%); core ratio 1.83 | Relocation buyers close in the first half of the month | School starts mid-August in Eanes ISD and Austin ISD
+September | Price cuts stay high (1,124); contracts 778; ratio 1.72 | The second-chance repricing month | Heat breaks late in the month
+October | Luxury dead zone: core contracts 34, ratio 2.18, success 40% | Do not debut a luxury listing. If live, do not panic-cut during ACL week | ACL (two weekends), F1 at COTA, UT home games, property tax bills arrive
+November | Best ratio of the year citywide (1.30), second-best in the core (1.35); November contracts beat October in the luxury core | Serious buyers only. Show through Thanksgiving week | Early voting and the election pull attention early in the month
+December | 600 new listings citywide, 604 contracts; 320 expireds | Be fresh or be gone. A listing that expires in December is a listing that should have repriced in July | A closing before Dec 31 puts the buyer's homestead on the Jan 1 roll a full year earlier
+:::
+
+## What the national studies get right, and what they miss about Austin
+
+Realtor.com and Zillow score weeks on price, views, and competition. Both pick spring for Austin, and for a typical home they are right. What neither captures is that Austin's luxury supply is five times more seasonal than its demand, that the July relocation wave exists at all, or that October, not December, is the month luxury contracts bottom out before the holidays. Those are the three facts that should move a west Austin seller's date.
+
+## What about buyers?
+
+The seller's worst months are the buyer's best. Realtor.com's 2026 fall report named the week of September 27 to October 3 as the best week to buy in the Austin-Round Rock-San Marcos metro, with 22.1 percent more active listings than an average week and prices about 6.6 percent below their seasonal peak. Our data agrees and extends it.
+
+- October in the luxury core has 73 new listings for 34 contracts. Buyers choose; sellers wait. The success rate is 40 percent, which means a third of the sellers you are negotiating with are watching their listing clock run down.
+- December expireds are the most motivated sellers in Austin. In an average December, 320 citywide listings expire and 413 are withdrawn. Many of those owners still want to sell, and they are reachable in January before they relist in February. A buyer's agent who tracks that list is worth their fee.
+- January is the last low-competition month for buyers. Contracts written in February jump 17 percent, and by March the 2027 spring buyer pool is fully in the market.
+- Year-end builder closeouts are their own calendar, covered in [builder incentives in Austin](/blog/builder-incentives-austin).
+
+For the full buyer-side approach to this market, see [how to buy a home in Austin's buyer's market](/blog/how-to-buy-home-austin-buyers-market-2026).
+
+## The calendar nobody puts in the seasonality studies
+
+Three Austin-specific clocks run underneath the contract data.
+
+Weather. Austin averages roughly 30 days a year at or above 100 degrees, and 2011 and 2023 delivered 90 and 80 of them. The practical effect is that July and August showings happen after 6 p.m., pools photograph better than patios, and a buyer walking a half-acre Westlake lot at 2 p.m. in August is not falling in love. January, by contrast, averages a high in the low 60s. Austin's winter is a selling asset that most sellers leave on the table.
+
+School. Eanes ISD and Austin ISD both start in mid-August. That single date creates the July contract bump in 78746 and the first-half-of-August closing crunch. If your buyer pool is families, your deadline is theirs.
+
+Taxes. January 1 is the Texas appraisal date. A buyer who closes and moves in before January 1 qualifies for the homestead exemption on the new year's roll, which starts the 10 percent appraisal cap clock one tax year earlier than a January 15 closing would. The mechanics are in the [2026 Texas homestead exemption guide](/blog/texas-homestead-exemption-2026). On the seller side, a closing on January 5 instead of December 28 moves any taxable gain into the next tax year and defers the bill by twelve months; the rules on what is taxable are in [capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas). Neither point should drive the decision. Both are worth a conversation with your CPA before you pick a closing date in late December.
+
+## The luxury timing play: use the quiet months privately
+
+Every luxury seller faces the same trade. The spring pool is biggest and the spring competition is worst. The winter pool is small and the winter competition is nearly nonexistent. The way to take both is to separate the private window from the public debut.
+
+From mid-November through January, a well-prepared home can be shown privately to qualified buyers, relocation clients, and the agents who represent them, without a public listing, without days on market accruing, and without a December expiration on the record. If the right buyer surfaces in that window (and in Westlake, the three-year November ratio of 1.29 says the odds are better than most sellers assume), the home sells in the quietest, least competitive stretch of the year. If not, it debuts publicly in the last week of February with zero days on market and a price that has been tested against real buyers rather than guessed at.
+
+This is how Echelon Property Group has handled the top of the market for years. Every transaction above $2 million that Taylor Sherwood has closed was completed off the MLS. The mechanics of the private window, and how it interacts with the 2026 Unlock MLS rules, are in [private listings in Austin](/blog/private-listings-austin), [how to sell privately the right way](/blog/how-to-sell-privately-the-right-way), and [why Austin luxury sellers are going quiet](/blog/why-austin-luxury-sellers-are-going-quiet).
+
+## The bottom line
+
+- Austin's seasonality is driven by sellers, not buyers. New listings swing 3.6x across the year citywide and 5.0x in the luxury core; contracts written swing 1.8x and 2.3x.
+- For a typical Austin home, be live by the first week of March, ideally the last week of February. April closings carry the smallest total discount (about 5 percent) and the fastest time to contract (23 days), and they were listed in late February and early March.
+- In Westlake and Tarrytown, the lowest-competition months are November, December, July, and August. The most crowded are April and March. October is the month luxury contracts bottom out before the holidays, and it is the wrong month to debut.
+- Fourth quarter 2026 is unusual: 78746 active inventory is down 34 percent year over year with flat demand, while 78703 demand is down a third. The right answer depends on your ZIP code, and on whether your price is built on evidence.
+- In an average year the spring premium (roughly $29,000 to $39,000 on a $2.4 million home after survivorship) about pays for the cost of waiting (roughly $55,000). The calendar is a tiebreaker. Price is the strategy.
+
+If you want to know what your home would do in each of those windows, with your ZIP code's current ratio instead of the three-year average, [request a home value and timing analysis](/home-value-austin) and we will run it on the same data.
+
+:::cta
+heading: When should your home go live?
+subheading: We run your ZIP code's current listing-to-contract ratio, not the three-year average, against each listing window.
+button: Request a home value and timing analysis
+href: /home-value-austin
+:::
+
+## Frequently asked questions
+
+:::faq
+
+Q: What is the best month to sell a house in Austin?
+A: List in late February or the first week of March. Contracts written in Austin peak in April (1,089 in an average April) and April closings carry the smallest total discount from original asking price (about 5 percent) with a median 23 days to contract, but those homes were listed in late February and early March. New listings peak in April at 2,177, so a home that debuts in mid-April faces the most competition of any month, with two new listings for every buyer who signs.
+
+Q: Is it a bad idea to list a house in Austin during the holidays?
+A: Not for a correctly priced home with broad appeal. December has the lowest competition of the year (600 new listings against 604 contracts citywide, a ratio of 0.99), and the buyers who are active are usually relocating or on a deadline. The risk is going stale: 320 Austin listings expire in an average December. A home that debuts in late November or early December needs to be priced to sell in its first 30 days, not to test the market.
+
+Q: When is the best time to sell a luxury home in Westlake or Tarrytown?
+A: The lowest-competition months in the 78746 and 78703 luxury core are November, December, July, and August, when the ratio of new listings to contracts written runs 1.24 to 1.83. The most crowded are March and April, when the ratio reaches 2.54 to 2.72 and five times as many homes come to market as in December. The best public debut window is the first three weeks of February, ahead of the March surge, and July is a legitimate second season because relocation buyers close before school starts in mid-August.
+
+Q: How much more do homes sell for in the spring in Austin?
+A: Spring closings (March to May) give up about 5.3 percent from their original asking price citywide and 8.6 percent in the luxury core. Fourth-quarter closings give up 8.6 and 11.0 percent. That is a gap of roughly three points, but part of it is survivorship, because fall closings include spring listings that overpriced and corrected. Zillow's 2026 analysis puts Austin's sale-price premium for homes listed in the last two weeks of March at 2.5 percent, about $10,800 on a typical home.
+
+Q: Is fall 2026 a good time to sell in Austin?
+A: It depends on the ZIP code. In 78746, active inventory in September 2026 was down 34 percent from a year earlier (126 vs. 190) while contracts written were flat, so a correctly priced Westlake listing faces the least fall competition in three years. Citywide, mortgage rates above 7 percent cut contracts written 9 percent year over year and produced 1,500 price reductions in September, so a financed-buyer home should be priced to September comps or should wait for late February.
+
+Q: What is the best time to buy a house in Austin?
+A: Realtor.com named the week of September 27 to October 3, 2026 as the best week to buy in the Austin metro, with 22.1 percent more active listings than an average week and prices about 6.6 percent below their seasonal peak. Unlock MLS data agrees: October has 73 new luxury-core listings for every 34 contracts, and December brings 320 citywide expired listings whose owners are often still motivated. January is the last low-competition month before the spring buyer pool arrives.
+
+Q: How long does it take to sell a house in Austin by season?
+A: The median time to contract for Austin closings is 21 to 23 days in April and May, 30 to 34 days in June and July, 47 to 60 days from August through November, and 64 to 74 days for December through February closings. In the luxury core the same pattern runs longer: 33 to 38 days for April and May closings, 46 to 70 days in summer and fall, and 61 to 105 days in winter.
+
+Q: Should I pull my listing in December and relist in the spring?
+A: Only with a plan. Withdrawing a listing does not erase its history for buyers' agents, and the cumulative days-on-market rules vary by MLS, so ask how yours counts time off the market before assuming a reset. A better approach for a luxury home is to convert the public listing into a private window from mid-November through January, which stops the public clock, then relaunch in late February at a price tested against real buyers. If the home has been on the market since spring, the honest fix is price, not timing.
+
+:::
+
+## Sources
+
+1. Unlock MLS via Agent Intel, monthly residential statistics for the city of Austin and ZIP codes 78746 and 78703, October 2023 through September 2026 (new listings, pending listings, closed sales, days on market, asking vs. sale, original vs. asking, success rate, expired and withdrawn listings, months of inventory, price reductions).
+2. Realtor.com, 2026 Best Time to Sell Report, March 18, 2026, including the metro table for Austin-Round Rock-San Marcos (best week starting April 12, 2026; listing price +9.1 percent vs. start of year; views +26.3 percent; price reductions -8.0 percent; days on market -15; active listings -10.2 percent).
+3. CultureMap Austin, "Here's the best time to sell a house in Austin in 2026, experts say," April 2026.
+4. Zillow, 2026 best time to list analysis of 2025 sales across the 35 largest metros (late May nationally, +1.7 percent; Austin, last two weeks of March, +2.5 percent or about $10,800), as reported by National Mortgage News and BAM, March 2026.
+5. Realtor.com, 2026 Best Time to Buy report, as reported by CultureMap Austin, September 2026 (Austin metro best week September 27 to October 3, 2026; +22.1 percent active listings; prices 6.6 percent below seasonal peak).
+6. The Real Deal, "Rain on Austin's luxury parade last week: total contracts down 54%," October 7, 2026, citing the Reisor Team Weekly Luxury Report.
+7. Freddie Mac Primary Mortgage Market Survey, weekly 30-year fixed averages of 6.95 percent (September 17, 2026), 7.03 percent (September 24, 2026), and 7.28 percent (October 1, 2026), as reported by Trading Economics.
+8. Austin-area MLS market snapshot, October 9, 2026 (16,756 active listings, 5.7 months of inventory, 57.58 percent of active listings with a price drop), Team Price Real Estate weekly update.
+9. National Weather Service, Austin/San Antonio, climate normals and annual 100-degree day counts for Austin Camp Mabry (2011: 90 days; 2023: 80 days).
+10. Texas Property Tax Code, Sections 11.13 and 23.23 (homestead exemption and the 10 percent appraisal cap, including the timing of the cap after the first qualifying year).
+11. Eanes ISD and Austin ISD academic calendars (mid-August start dates).
+12. Austin City Limits Music Festival, Formula 1 United States Grand Prix at Circuit of The Americas, and University of Texas football schedules (October event calendar).`,
+  },
   {
     id: "austin-hiking-trails-greenbelts-parks",
     title: "Austin Hiking Trails, Greenbelts and Parks: The 2026 Guide (and What a Greenbelt Lot Is Really Worth)",

@@ -248,7 +248,7 @@ December | 600 | 604 | 0.99 | 64 | 45% | 4.0
 Annual average | 1,456 | 854 | 1.70 | – | – | –
 :::
 
-*Source: Unlock MLS via Agent Intel, residential, city of Austin. Contracts written = pending listings in the month.*
+Source: Unlock MLS via Agent Intel, residential, city of Austin. Contracts written = pending listings in the month.
 
 Read the second and third columns against each other. New listings swing from 600 in December to 2,177 in April, a 3.6x range. Contracts written swing from 604 to 1,089, a 1.8x range. Sellers are twice as seasonal as buyers.
 
@@ -288,7 +288,7 @@ November | -5.36% | -3.20% | -8.39% | 59 | $564,000
 December | -5.33% | -3.75% | -8.88% | 64 | $553,992
 :::
 
-*Source: Unlock MLS via Agent Intel. Total discount = (1 + original-to-asking) x (1 + asking-to-sale) - 1. Price ratios are sales-weighted across the three years.*
+Source: Unlock MLS via Agent Intel. Total discount = (1 + original-to-asking) x (1 + asking-to-sale) - 1. Price ratios are sales-weighted across the three years.
 
 April closings gave up 4.97 percent from the original asking price and took 23 days to find a buyer. December closings gave up 8.88 percent and took 64 days. January closings gave up 9.13 percent and took 74. On a $600,000 home that spread is roughly $24,000. On a $2 million home it is about $80,000.
 
@@ -329,7 +329,7 @@ December | 29 | 24 | 1.24 | 61 | 29% | 59
 Annual average | 85 | 42 | 2.02 | – | – | –
 :::
 
-*Source: Unlock MLS via Agent Intel, residential, ZIP codes 78746 and 78703, counts summed, ratios sales-weighted.*
+Source: Unlock MLS via Agent Intel, residential, ZIP codes 78746 and 78703, counts summed, ratios sales-weighted.
 
 Five things in that table should change how a luxury seller thinks about the calendar.
 
@@ -361,7 +361,7 @@ Best | November | 27 | 21 | 1.29
 Worst | April | 73 | 29 | 2.53
 :::
 
-*Source: Unlock MLS via Agent Intel, ZIP 78746.*
+Source: Unlock MLS via Agent Intel, ZIP 78746.
 
 A ratio is not the whole picture. November's 21 contracts and December's 10 are small pools, and a seller with an unusual house (the 12,000-square-foot one, the one with the helipad) needs the bigger spring pool to find the one buyer who wants it. But for a well-located, correctly priced home in the $1.5 million to $4 million range that has broad appeal, the data says the folklore has it backwards: the lowest-competition months in Westlake are November, December, July, and August, and the most crowded are April and March.
 
@@ -378,7 +378,7 @@ Winter (Dec to Feb) | 1.46 | 70 | -8.4% | 1.95 | 82 | -10.8%
 Fourth quarter only (Oct to Dec) | 1.34 | 61 | -8.6% | 1.61 | 64 | -11.0%
 :::
 
-*Source: Unlock MLS via Agent Intel. Luxury core = 78746 + 78703. Ratios are new listings per contract written in the same months. January 2024 in 78746 had only four closings and an unusually deep discount, which pulls the winter luxury figure down slightly.*
+Source: Unlock MLS via Agent Intel. Luxury core = 78746 + 78703. Ratios are new listings per contract written in the same months. January 2024 in 78746 had only four closings and an unusually deep discount, which pulls the winter luxury figure down slightly.
 
 Two patterns. The luxury core gives up more in every season (the Westlake home that closes in spring still leaves 8.6 percent on the table from its first asking price, which is a pricing problem we unpacked in [how to price a luxury home in Austin](/blog/how-to-price-a-luxury-home-in-austin)). And the spring-to-fall gap is about three points in both segments: 3.1 points citywide, 2.9 points in the core. On a $2.4 million Westlake home, 2.9 points is roughly $70,000, before survivorship, which likely accounts for a third to a half of it.
 
@@ -403,7 +403,7 @@ Success rate | 51.1% | 55.9% | 53.2% | 68.2% | 57.1% | 56.3%
 Price reductions in the month | 978 | 1,500 | 31 | 26 | 25 | 28
 :::
 
-*Source: Unlock MLS via Agent Intel.*
+Source: Unlock MLS via Agent Intel.
 
 Start with rates, because they explain the citywide row. Freddie Mac's 30-year fixed averaged 7.28 percent as of October 1, 2026, up from 6.95 percent in mid-September and 6.34 percent a year earlier. Austin's financed buyers felt it: contracts written fell 9 percent year over year in September, and the city logged 1,500 price reductions in the month, the most of any month in the 36-month series. Metro-wide, the October 9 Austin-area MLS snapshot showed 16,756 active listings, 5.7 months of inventory, and 57.6 percent of active listings with at least one price drop. For the rate and inventory outlook we published three weeks ago, see the [Austin housing market forecast for 2027](/blog/austin-housing-market-forecast-2027).
 

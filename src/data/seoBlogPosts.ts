@@ -202,10 +202,34 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-10-12",
     readTime: "20 min read",
     category: "MARKET INTELLIGENCE",
+    dateModified: "2026-10-12",
+    keywords: "best time to sell a house in Austin, best month to sell a house in Austin, when to list a luxury home in Austin, selling a house during the holidays Austin, best time to buy a house in Austin, Austin housing market seasonality",
+    aboutPlaces: ["Austin, Texas", "Westlake Hills, Texas", "Tarrytown, Austin, Texas"],
     image: blogBestTimeToSellAustin,
     heroImage: blogBestTimeToSellAustin,
     imageAlt: "Infinity-edge pool and stone terrace behind a Mediterranean-style West Austin estate framed by live oaks",
     content: `**Quick answer:** For most Austin homes, the best time to list is the last week of February through mid-March. That puts a fresh listing in front of buyers as contracts peak in April and ahead of the April listing flood, when an average 2,177 new listings hit the market against 600 in an average December. Spring closings carry the smallest total discount from original asking price (about 5 percent) and the fastest median days on market (23 days for April closings). In the luxury core of 78746 and 78703, the spring flood is more extreme (five times as many new listings in April as in December), and two secondary windows matter: early-to-mid February, ahead of the March surge, and July through early August, when relocation buyers with a school deadline sign. The single worst month to debut a luxury listing in Austin is October.
+
+:::callout
+Key takeaways: Austin sellers are twice as seasonal as buyers, so competition, not weather, sets the calendar. For a typical Austin home, go live in the last week of February. In 78746 and 78703, the lowest-competition months are November, December, July and August, and October is the worst month to debut. In fourth quarter 2026, Westlake inventory is down 34 percent with flat demand, while Tarrytown demand is down a third.
+:::
+
+## In this guide
+
+- [What we measured, and why "pending" is the number that matters](#what-we-measured-and-why-pending-is-the-number-that-matters)
+- [Finding 1: Austin's seasonality is a supply story, not a demand story](#finding-1-austin-s-seasonality-is-a-supply-story-not-a-demand-story)
+- [Finding 2: Spring gives you the best price and the worst competition. Both are true.](#finding-2-spring-gives-you-the-best-price-and-the-worst-competition-both-are-tru)
+- [Finding 3: The luxury core runs on a different calendar](#finding-3-the-luxury-core-runs-on-a-different-calendar)
+- [Finding 4: What the seasons cost, side by side](#finding-4-what-the-seasons-cost-side-by-side)
+- [Fourth quarter 2026 is not a normal fourth quarter](#fourth-quarter-2026-is-not-a-normal-fourth-quarter)
+- [The worked example: a $2.4 million Westlake home, list now or wait](#the-worked-example-a-2-4-million-westlake-home-list-now-or-wait)
+- [The month-by-month seller playbook](#the-month-by-month-seller-playbook)
+- [What the national studies get right, and what they miss about Austin](#what-the-national-studies-get-right-and-what-they-miss-about-austin)
+- [What about buyers?](#what-about-buyers)
+- [The calendar nobody puts in the seasonality studies](#the-calendar-nobody-puts-in-the-seasonality-studies)
+- [The luxury timing play: use the quiet months privately](#the-luxury-timing-play-use-the-quiet-months-privately)
+- [The bottom line](#the-bottom-line)
+- [Frequently asked questions](#frequently-asked-questions)
 
 The week of October 2, 2026 was not a great week to be a luxury listing in Austin. Two days of rain, two weekends of ACL, and the Reisor Team's weekly luxury report counted six publicly listed homes over $2 million going under contract, down 54 percent from the 13 the week before. The Real Deal ran it under the headline "Rain on Austin's luxury parade."
 

@@ -83,7 +83,7 @@ const BlogPost = () => {
   const schemas: Record<string, unknown>[] = [
     organizationSchema,
     createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl),
-    ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl })]),
+    ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl, dateModified: post.dateModified, keywords: post.keywords, section: post.category, aboutPlaces: post.aboutPlaces })]),
     createBreadcrumbSchema([
       { name: "Home", url: "https://www.echelonpropertygroup.com/" },
       { name: "Blog", url: "https://www.echelonpropertygroup.com/blog" },

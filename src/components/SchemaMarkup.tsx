@@ -346,17 +346,24 @@ export function createBreadcrumbSchema(items: { name: string; url: string }[]) {
   };
 }
 
-export function createBlogPostingSchema(post: { title: string; description: string; datePublished: string; author: string; image?: string; url: string }) {
+export function createBlogPostingSchema(post: { title: string; description: string; datePublished: string; author: string; image?: string; url: string; dateModified?: string; keywords?: string; section?: string; aboutPlaces?: string[] }) {
+  // dateModified must never precede datePublished.
+  const modified = post.dateModified && post.dateModified >= post.datePublished ? post.dateModified : post.datePublished;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${post.url}#article`,
     "headline": post.title,
     "description": post.description,
     "name": post.title,
     "url": post.url,
     "image": post.image || OG,
+    "inLanguage": "en-US",
+    ...(post.keywords ? { "keywords": post.keywords } : {}),
+    ...(post.section ? { "articleSection": post.section } : {}),
+    ...(post.aboutPlaces?.length ? { "about": post.aboutPlaces.map((name) => ({ "@type": "Place", name })) } : {}),
     "datePublished": post.datePublished,
-    "dateModified": "2026-03-27",
+    "dateModified": modified,
     "author": {
       "@type": "Person",
       "@id": `${SITE}/taylor-sherwood#person`,

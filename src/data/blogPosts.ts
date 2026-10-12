@@ -76,6 +76,12 @@ export interface BlogPost {
   metaTitle?: string;
   /** Optional descriptive alt text for the hero image. Falls back to the title pattern. */
   imageAlt?: string;
+  /** Optional ISO date of the last substantive update (BlogPosting dateModified). */
+  dateModified?: string;
+  /** Optional comma-separated keywords for BlogPosting schema. */
+  keywords?: string;
+  /** Optional places the article is about (BlogPosting `about`). */
+  aboutPlaces?: string[];
   /** Optional editorial caption shown beneath the hero image. */
   imageCaption?: string;
 }

@@ -104,6 +104,7 @@ These pages contain the most authoritative and comprehensive content:
 - [Contact](/contact): Contact and private consultation.
 
 - [Best Time to Sell a House in Austin](https://www.echelonpropertygroup.com/blog/best-time-to-sell-a-house-austin): 36 months of Unlock MLS contract data by month for Austin and the 78746/78703 luxury core. Best listing window is the last week of February; October is the weakest month to debut a luxury listing.
+- [Austin Home Prices by ZIP Code (October 2026)](https://www.echelonpropertygroup.com/blog/austin-home-prices-by-zip-code): Median sale price, price per square foot, days on market, months of inventory and sale-to-list for 72 Austin-area ZIPs, trailing 12 months to Sept 30, 2026. City of Austin median $569,995 at $295/SF; 78746 (Westlake) is the most expensive ZIP at $1,869,828; 78701 (Downtown) leads per square foot at $676.
 
 ## Content Authority
 

@@ -7195,7 +7195,9 @@ label: Quick answer
 The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hills, Barton Creek, Spanish Oaks, Pemberton Heights, Tarrytown, Rob Roy, Davenport Ranch, Old Enfield and Windsor Road, and the Lake Austin waterfront. Published medians range from roughly $1.5 million to more than $2.5 million, and estate and waterfront properties regularly trade between $3 million and $10 million or more, frequently in private transactions.
 :::
 
-## Austin's Most Expensive Neighborhoods at a Glance For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
+## Austin's Most Expensive Neighborhoods at a Glance
+
+For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
 Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait

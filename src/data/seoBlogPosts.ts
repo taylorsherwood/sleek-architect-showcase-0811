@@ -189,10 +189,487 @@ const blogBuilderIncentivesAustin = blogBuilderIncentivesAustinAsset.url;
 import blogAustinHousingForecast2027Asset from "@/assets/blog/austin-housing-market-forecast-2027-hero.png.asset.json";
 const blogAustinHousingForecast2027 = blogAustinHousingForecast2027Asset.url;
 
+import blogAustinZipPricesAsset from "@/assets/blog/austin-home-prices-by-zip-code-hero.jpg.asset.json";
+const blogAustinZipPrices = blogAustinZipPricesAsset.url;
 import blogBestTimeToSellAustinAsset from "@/assets/blog/best-time-to-sell-a-house-austin-hero.jpg.asset.json";
 const blogBestTimeToSellAustin = blogBestTimeToSellAustinAsset.url;
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-home-prices-by-zip-code",
+    title: "Austin Home Prices by ZIP Code (October 2026)",
+    metaTitle: "Austin Home Prices by ZIP Code: October 2026 Data for 72 ZIPs",
+    excerpt: "Median sale price, price per square foot, days on market and inventory for 72 Austin-area ZIP codes, trailing 12 months to Sept 30, 2026. Updated quarterly.",
+    author: "Taylor Sherwood",
+    date: "2026-10-16",
+    dateModified: "2026-10-16",
+    readTime: "22 min read",
+    category: "MARKET INTELLIGENCE",
+    keywords: "Austin home prices by ZIP code, Austin median home price 2026, most expensive ZIP code in Austin, Austin price per square foot by ZIP",
+    aboutPlaces: ["Austin, Texas", "Westlake Hills, Texas", "Tarrytown, Austin, Texas", "Downtown Austin, Texas"],
+    image: blogAustinZipPrices,
+    heroImage: blogAustinZipPrices,
+    imageAlt: "Golden hour over the tree-covered hills of West Austin with Lady Bird Lake and the downtown skyline beyond",
+    relatedPostIds: ["most-expensive-neighborhoods-in-austin", "austin-housing-market-forecast-2027", "best-time-to-sell-a-house-austin", "eanes-isd-premium"],
+    extraSchema: [{"@context": "https://schema.org", "@type": "Dataset", "@id": "https://www.echelonpropertygroup.com/blog/austin-home-prices-by-zip-code#dataset", "name": "Austin Home Prices by ZIP Code, Trailing 12 Months Through September 30, 2026", "description": "Median sale price, median price per square foot, median days on market, months of inventory, sale-to-list ratio and one-year change for 72 ZIP codes in the Austin-Round Rock metro, all residential property types, October 1, 2025 through September 30, 2026.", "url": "https://www.echelonpropertygroup.com/blog/austin-home-prices-by-zip-code", "creator": {"@type": "Organization", "name": "Echelon Property Group", "url": "https://www.echelonpropertygroup.com"}, "temporalCoverage": "2025-10-01/2026-09-30", "spatialCoverage": {"@type": "Place", "name": "Austin-Round Rock, Texas metropolitan area"}, "dateModified": "2026-10-16", "isBasedOn": ["Unlock MLS via MLS Grid", "Agent Intel housing dataset"], "variableMeasured": ["median sale price", "median price per square foot", "median days on market", "months of inventory", "sale-to-list ratio", "one-year change in median sale price", "listing success rate"], "keywords": ["Austin home prices by ZIP code", "Austin median home price 2026", "most expensive ZIP code in Austin", "Austin price per square foot by ZIP"], "license": "https://creativecommons.org/licenses/by/4.0/", "distribution": {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://www.echelonpropertygroup.com/blog/austin-home-prices-by-zip-code#download"}}, {"@context": "https://schema.org", "@type": "WebPage", "@id": "https://www.echelonpropertygroup.com/blog/austin-home-prices-by-zip-code", "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".quick-answer", ".key-facts"]}, "mentions": [{"@type": "Place", "name": "78746 Westlake Hills"}, {"@type": "Place", "name": "78703 Tarrytown"}, {"@type": "Place", "name": "78701 Downtown Austin"}, {"@type": "Place", "name": "78704 South Austin"}, {"@type": "Place", "name": "78738 Bee Cave"}, {"@type": "Place", "name": "78739 Circle C Ranch"}]}],
+    content: `Median price, price per square foot, days on market and months of inventory for 72 ZIPs, trailing twelve months through September 30, 2026
+
+Data through September 30, 2026. Updated October 16, 2026. Next refresh January 2027.
+
+:::callout
+label: Quick answer
+class: quick-answer
+The median home sale price in the City of Austin is $569,995 for the twelve months ending September 30, 2026, on a median $295 per square foot, 43 median days on market, 4.93 months of inventory, and a 61.1 percent listing success rate (Unlock MLS via Agent Intel). Across the Austin metro, ZIP-level medians run from $1,869,828 in 78746 (Westlake) down to $207,425 in 78648 (Luling), a 9x spread inside one metro. Downtown 78701 is the most expensive ZIP per square foot at $676, 2.3 times the city median. Citywide prices are down 0.87 percent year over year, but the spread is the story: 78746 is up 10.0 percent while 78756 (Rosedale and Allandale) is down 11.8 percent.
+:::
+
+:::callout
+label: Austin home prices by ZIP code, key facts as of October 16, 2026
+class: key-facts
+- Most expensive Austin ZIP by median price: 78746 (Westlake Hills, Rollingwood, Lost Creek) at $1,869,828
+- Most expensive Austin ZIP per square foot: 78701 (Downtown) at $676 per square foot
+- Second and third by median price: 78733 (Davenport Ranch, Cuernavaca) at $1,289,268 and 78703 (Tarrytown, Pemberton Heights) at $1,274,281
+- Highest one-year appreciation among core ZIPs: 78746 at +10.0 percent; metro-wide leader 78676 (Wimberley) at +15.5 percent
+- Steepest one-year decline among core ZIPs: 78756 at -11.8 percent, then 78747 (Onion Creek, Goodnight Ranch) at -9.7 percent and 78736 (West Oak Hill) at -9.6 percent
+- Fastest-selling ZIP: 78739 (Circle C, Shady Hollow) at 45 median days on market, 2.4 months of inventory and 98.6 percent of asking
+- Slowest core ZIPs: 78701 (Downtown condos) at 12.2 months of inventory and 78705 (West Campus) at 12.4 months
+- Six ZIPs clear a $1 million median: 78746, 78733, 78703, 78730, 78731 and 78619 (Driftwood)
+- Twenty-nine of the 72 ZIPs trade under $400,000; the ten inside Austin proper (78705, 78724, 78725, 78741, 78744, 78747, 78752, 78753, 78754, 78758) all sit east of MoPac
+:::
+
+**In this guide**
+
+- [Austin home prices by ZIP code: the full table](#austin-home-prices-by-zip-code-the-full-table)
+- [Price per square foot by ZIP: the league table](#price-per-square-foot-by-zip-the-league-table)
+- [West Austin and the luxury core](#west-austin-and-the-luxury-core)
+- [Central and East Austin](#central-and-east-austin)
+- [North, Northwest, South and Southwest Austin](#north-northwest-south-and-southwest-austin)
+- [Commuter suburbs: Williamson, Hays, Bastrop and the lake towns](#commuter-suburbs-williamson-hays-bastrop-and-the-lake-towns)
+- [How to read the numbers](#how-to-read-the-numbers)
+- [What the data says for buyers and sellers, by price tier](#what-the-data-says-for-buyers-and-sellers-by-price-tier)
+- [Methodology and data notes](#methodology-and-data-notes)
+- [Frequently asked questions](#frequently-asked-questions)
+
+All ZIP figures are trailing twelve months, October 1, 2025 through September 30, 2026, all residential property types, via Agent Intel. The full table of 72 ZIPs follows.
+
+## Austin home prices by ZIP code: the full table
+
+Every Austin-area ZIP with enough closed sales to report, ranked by median sale price. Sale-to-list is the median closed price as a share of final asking price. One-year change compares the median against the prior twelve months. Source: Agent Intel housing dataset, all residential segments, October 1, 2025 through September 30, 2026.
+
+:::zip-table
+Rank | ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+1 | 78746 | Westlake Hills, Rollingwood, Lost Creek | $1,869,828 | $560 | 87 | 5.3 | 95.1% | +10.0%
+2 | 78733 | Davenport Ranch, Cuernavaca, Austin Lake Hills | $1,289,268 | $421 | 50 | 5.0 | 95.8% | +4.1%
+3 | 78703 | Tarrytown, Pemberton Heights, Clarksville | $1,274,281 | $602 | 69 | 6.9 | 95.0% | -7.7%
+4 | 78730 | River Place, Glenlake, Long Canyon | $1,170,036 | $345 | 64 | 5.0 | 96.5% | -5.3%
+5 | 78731 | Northwest Hills, Cat Mountain | $1,084,668 | $403 | 69 | 4.1 | 96.0% | -2.9%
+6 | 78619 | Driftwood | $1,009,056 | $313 | 93 | 8.9 | 96.9% | -5.9%
+7 | 78738 | Bee Cave, Spanish Oaks, Lakeway south | $884,524 | $280 | 70 | 4.4 | 96.9% | +6.8%
+8 | 78737 | Belterra, Highpointe (SW Austin) | $844,314 | $273 | 75 | 3.8 | 97.5% | +5.0%
+9 | 78735 | Barton Creek, Travis Country | $824,439 | $366 | 67 | 4.2 | 96.3% | -7.1%
+10 | 78704 | Zilker, Bouldin, Travis Heights, South Congress | $822,692 | $492 | 90 | 7.0 | 96.1% | -7.2%
+11 | 78739 | Circle C Ranch, Shady Hollow | $807,940 | $295 | 45 | 2.4 | 98.6% | +5.3%
+12 | 78732 | Steiner Ranch | $807,435 | $266 | 90 | 5.7 | 96.5% | -6.5%
+13 | 78756 | Rosedale, Allandale south | $724,952 | $468 | 64 | 4.5 | 96.9% | -11.8%
+14 | 78757 | Crestview, Allandale, Brentwood | $713,326 | $432 | 62 | 5.0 | 96.7% | +6.9%
+15 | 78726 | Four Points, Canyon Creek | $689,152 | $248 | 66 | 4.5 | 97.2% | -1.6%
+16 | 78702 | East Austin, Holly, Govalle | $681,202 | $457 | 71 | 8.2 | 96.5% | -2.1%
+17 | 78759 | Great Hills, Arboretum | $655,961 | $327 | 58 | 3.7 | 97.2% | +2.1%
+18 | 78734 | Lakeway, Hudson Bend | $651,452 | $275 | 87 | 7.8 | 96.2% | -5.2%
+19 | 78751 | Hyde Park, North Loop | $643,080 | $455 | 90 | 6.6 | 96.7% | -3.1%
+20 | 78669 | Spicewood | $637,454 | $262 | 125 | 10.9 | 95.7% | -5.0%
+21 | 78701 | Downtown (condos) | $636,082 | $676 | 102 | 12.2 | 95.2% | -5.5%
+22 | 78620 | Dripping Springs | $610,875 | $244 | 89 | 5.7 | 97.0% | -1.6%
+23 | 78717 | Avery Ranch, Brushy Creek | $608,069 | $231 | 66 | 4.4 | 97.5% | +7.1%
+24 | 78750 | Anderson Mill, Jollyville | $605,486 | $279 | 61 | 3.5 | 97.2% | +0.6%
+25 | 78722 | Cherrywood, French Place | $583,567 | $436 | 94 | 5.3 | 95.1% | -7.8%
+26 | 78749 | Legend Oaks, Western Oaks, Oak Hill east | $573,833 | $290 | 49 | 3.0 | 98.5% | +0.1%
+27 | 78723 | Mueller, Windsor Park | $558,510 | $355 | 74 | 5.6 | 97.3% | -4.2%
+28 | 78676 | Wimberley | $547,764 | $272 | 107 | 8.9 | 95.9% | +15.5%
+29 | 78736 | West Oak Hill, Bee Creek | $517,449 | $278 | 63 | 4.3 | 97.0% | -9.6%
+30 | 78642 | Liberty Hill | $507,682 | $195 | 121 | 5.8 | 97.3% | +2.3%
+31 | 78628 | Georgetown west, Wolf Ranch | $502,573 | $204 | 106 | 5.3 | 97.3% | -0.7%
+32 | 78681 | Round Rock west, Brushy Creek | $486,929 | $214 | 65 | 4.2 | 97.3% | -5.4%
+33 | 78613 | Cedar Park | $481,661 | $213 | 62 | 3.6 | 97.5% | -1.9%
+34 | 78727 | Scofield, Milwood (North Austin) | $473,339 | $264 | 65 | 4.6 | 97.4% | -4.8%
+35 | 78721 | East Austin, MLK east | $468,089 | $322 | 80 | 8.8 | 96.6% | -8.3%
+36 | 78641 | Leander | $459,961 | $195 | 92 | 5.3 | 96.9% | -3.9%
+37 | 78729 | Milwood, Anderson Mill east | $455,717 | $226 | 54 | 4.3 | 97.6% | +0.5%
+38 | 78745 | South Austin, Westgate, Garrison Park | $451,991 | $303 | 68 | 5.6 | 97.0% | -5.7%
+39 | 78652 | Manchaca | $437,839 | $205 | 98 | 5.9 | 97.4% | -10.5%
+40 | 78633 | Georgetown north, Sun City | $434,477 | $207 | 89 | 4.2 | 98.0% | -0.8%
+41 | 78645 | Lago Vista, Jonestown | $427,783 | $216 | 110 | 8.4 | 96.9% | -4.1%
+42 | 78728 | Wells Branch | $417,470 | $224 | 67 | 3.2 | 97.7% | -3.5%
+43 | 78748 | South Austin, Slaughter Lane | $414,104 | $236 | 63 | 3.9 | 97.9% | -6.5%
+44 | 78744 | Southeast Austin, Easton Park | $399,722 | $212 | 101 | 4.7 | 97.2% | +2.5%
+45 | 78665 | Round Rock east, Teravista | $387,126 | $182 | 79 | 4.4 | 97.4% | -3.8%
+46 | 78752 | North Central, St. Johns, Highland | $386,752 | $278 | 72 | 7.9 | 96.4% | -5.0%
+47 | 78660 | Pflugerville | $384,473 | $186 | 82 | 5.2 | 97.6% | -5.0%
+48 | 78758 | North Austin, Domain-adjacent | $381,226 | $252 | 79 | 5.1 | 97.1% | -9.4%
+49 | 78612 | Cedar Creek | $378,456 | $183 | 152 | 7.5 | 96.4% | -14.3%
+50 | 78602 | Bastrop | $374,322 | $190 | 114 | 6.7 | 97.5% | +1.5%
+51 | 78724 | East Austin, Decker, Colony Park | $367,073 | $200 | 74 | 6.8 | 97.4% | +5.8%
+52 | 78747 | Onion Creek, Goodnight Ranch | $366,491 | $192 | 107 | 5.9 | 98.2% | -9.7%
+53 | 78741 | Riverside, Montopolis | $366,229 | $260 | 89 | 9.6 | 95.9% | +2.1%
+54 | 78626 | Georgetown east | $361,336 | $188 | 88 | 6.4 | 97.6% | -5.2%
+55 | 78753 | North Austin, Walnut Creek | $356,262 | $229 | 74 | 6.3 | 96.9% | -0.5%
+56 | 78754 | Northeast Austin, Harris Branch | $351,211 | $184 | 69 | 6.1 | 97.3% | -6.0%
+57 | 78653 | Manor | $344,146 | $173 | 91 | 6.2 | 97.7% | -4.3%
+58 | 78610 | Buda | $344,100 | $177 | 90 | 5.1 | 97.5% | -0.8%
+59 | 78664 | Round Rock central | $340,837 | $198 | 65 | 5.0 | 96.6% | -4.7%
+60 | 78634 | Hutto | $340,773 | $173 | 92 | 5.5 | 98.1% | -4.5%
+61 | 78666 | San Marcos | $322,728 | $181 | 102 | 6.6 | 96.9% | -7.6%
+62 | 78705 | West Campus, UT (condos) | $320,977 | $354 | 91 | 12.4 | 94.4% | -4.6%
+63 | 78957 | Smithville | $320,508 | $202 | 124 | 9.8 | 96.4% | -3.7%
+64 | 78617 | Del Valle | $320,076 | $172 | 86 | 5.0 | 97.6% | -2.6%
+65 | 78640 | Kyle | $306,300 | $164 | 94 | 5.1 | 97.8% | -6.2%
+66 | 76574 | Taylor | $292,492 | $167 | 80 | 7.2 | 96.7% | -5.2%
+67 | 78621 | Elgin | $286,563 | $165 | 105 | 6.4 | 98.3% | -5.8%
+68 | 78644 | Lockhart | $283,350 | $162 | 76 | 6.3 | 96.2% | -0.9%
+69 | 78725 | Hornsby Bend | $274,592 | $178 | 61 | 5.0 | 97.9% | -7.0%
+70 | 76537 | Jarrell | $260,120 | $151 | 106 | 5.8 | 97.9% | -4.5%
+71 | 78656 | Maxwell | $244,952 | $150 | 83 | 7.3 | 97.4% | -5.8%
+72 | 78648 | Luling | $207,425 | $155 | 136 | 12.0 | 94.4% | -16.4%
+---
+All figures are trailing twelve months, October 1, 2025 through September 30, 2026, pulled October 16, 2026 through Agent Intel. The 72-ZIP tables use Agent Intel's housing dataset for the Austin metro, all residential segments (single-family, condo, townhouse), ranked at the ZIP level; 14 metro ZIPs with too few closings to report a segment (PO-box ZIPs and rural ZIPs such as 78799, 78762, 78742, 78715, 78953, 78662, 78615, 76527, 76530, 76578, 78659, 78650, 78616, 78720) were excluded. The City of Austin benchmark and the deep-dive tables for 78746, 78703, 78738, 78704 and 78702 use Unlock MLS data via MLS Grid, residential property type, through Agent Intel. Months of inventory follows the Echelon Market Balance scale, where 6.0 months is balanced. One-year change compares the trailing-twelve-month median to the prior twelve months. Neighborhood labels are the dominant subdivisions in each ZIP, not exhaustive. Echelon Property Group refreshes this table quarterly; the next update follows the December 31, 2026 close.
+:::
+
+The median of the 72 ZIP medians is $457,839, well under the city's $569,995 median, because the metro's ring of commuter towns outnumbers its core. The citywide benchmark for comparison, from Unlock MLS via Agent Intel for the same twelve months: $569,995 median, $295 per square foot, 43 median days on market, 4.93 months of inventory, 61.1 percent success rate, closed prices 3.05 percent under final asking and 3.92 percent under original asking, 10,784 closed sales, 2,496 expired and 4,531 withdrawn listings.
+
+## Price per square foot by ZIP: the league table
+
+Price per square foot ranks the ZIPs differently than median price does, and it is the number that actually tells you what land and location cost. Downtown 78701 leads at $676 per square foot on a $636,082 median because the typical sale is a 940 square foot condo. Westlake 78746 is third per square foot but first by price because the typical sale is a 3,300 square foot house. The city median is $295 per square foot; the multiple column shows how far each ZIP sits from it.
+
+### The 25 most expensive Austin ZIPs per square foot
+
+:::compare-table
+Rank | ZIP | Area | Median $/SF | Multiple of city median ($295) | Median sale price
+1 | 78701 | Downtown (condos) | $676 | 2.29x | $636,082
+2 | 78703 | Tarrytown, Pemberton Heights, Clarksville | $602 | 2.04x | $1,274,281
+3 | 78746 | Westlake Hills, Rollingwood, Lost Creek | $560 | 1.90x | $1,869,828
+4 | 78704 | Zilker, Bouldin, Travis Heights, South Congress | $492 | 1.67x | $822,692
+5 | 78756 | Rosedale, Allandale south | $468 | 1.59x | $724,952
+6 | 78702 | East Austin, Holly, Govalle | $457 | 1.55x | $681,202
+7 | 78751 | Hyde Park, North Loop | $455 | 1.54x | $643,080
+8 | 78722 | Cherrywood, French Place | $436 | 1.48x | $583,567
+9 | 78757 | Crestview, Allandale, Brentwood | $432 | 1.46x | $713,326
+10 | 78733 | Davenport Ranch, Cuernavaca, Austin Lake Hills | $421 | 1.43x | $1,289,268
+11 | 78731 | Northwest Hills, Cat Mountain | $403 | 1.37x | $1,084,668
+12 | 78735 | Barton Creek, Travis Country | $366 | 1.24x | $824,439
+13 | 78723 | Mueller, Windsor Park | $355 | 1.20x | $558,510
+14 | 78705 | West Campus, UT (condos) | $354 | 1.20x | $320,977
+15 | 78730 | River Place, Glenlake, Long Canyon | $345 | 1.17x | $1,170,036
+16 | 78759 | Great Hills, Arboretum | $327 | 1.11x | $655,961
+17 | 78721 | East Austin, MLK east | $322 | 1.09x | $468,089
+18 | 78619 | Driftwood | $313 | 1.06x | $1,009,056
+19 | 78745 | South Austin, Westgate, Garrison Park | $303 | 1.03x | $451,991
+20 | 78739 | Circle C Ranch, Shady Hollow | $295 | 1.00x | $807,940
+21 | 78749 | Legend Oaks, Western Oaks, Oak Hill east | $290 | 0.98x | $573,833
+22 | 78738 | Bee Cave, Spanish Oaks, Lakeway south | $280 | 0.95x | $884,524
+23 | 78750 | Anderson Mill, Jollyville | $279 | 0.95x | $605,486
+24 | 78736 | West Oak Hill, Bee Creek | $278 | 0.94x | $517,449
+25 | 78752 | North Central, St. Johns, Highland | $278 | 0.94x | $386,752
+:::
+
+### The 10 cheapest Austin-area ZIPs per square foot
+
+:::compare-table
+Rank | ZIP | Area | Median $/SF | Multiple of city median ($295) | Median sale price
+63 | 78653 | Manor | $173 | 0.59x | $344,146
+64 | 78634 | Hutto | $173 | 0.59x | $340,773
+65 | 78617 | Del Valle | $172 | 0.58x | $320,076
+66 | 76574 | Taylor | $167 | 0.57x | $292,492
+67 | 78621 | Elgin | $165 | 0.56x | $286,563
+68 | 78640 | Kyle | $164 | 0.56x | $306,300
+69 | 78644 | Lockhart | $162 | 0.55x | $283,350
+70 | 78648 | Luling | $155 | 0.53x | $207,425
+71 | 76537 | Jarrell | $151 | 0.51x | $260,120
+72 | 78656 | Maxwell | $150 | 0.51x | $244,952
+:::
+
+Three things jump out of this table that the median-price table hides.
+
+1. The central core is a per-foot market, not a price market. Eight of the top nine per square foot (78701, 78703, 78704, 78756, 78702, 78751, 78722, 78757) are inside the urban core, where lots are small and the house is often the smaller part of the value. The exception is 78746, which is the only ZIP in the metro that is top three on both lists.
+2. The Lake Travis corridor is cheap per foot and expensive per house. 78738 (Bee Cave, Spanish Oaks) carries an $884,524 median on $280 per square foot, below the city average. 78732 (Steiner Ranch) is $807,435 on $266. You are buying square footage and views, not dirt.
+3. The ratio between 78703 and 78746 flipped the way it always does. Tarrytown out-prices Westlake per foot ($602 vs $560) because the Tarrytown median sale is roughly 2,100 square feet and the Westlake median sale is roughly 3,300. Same money, different houses. We covered the mechanics in [Tarrytown vs Westlake](/blog/tarrytown-vs-westlake-austin) and The Eanes Premium.
+
+## West Austin and the luxury core
+
+The six seven-figure ZIPs form a single arc west of MoPac, from Tarrytown through Westlake and up the Lake Austin corridor to River Place, plus Driftwood out in Hays County. Together with the Lake Travis ZIPs they account for most of the metro's $2 million-plus trade, and they behave nothing alike.
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78746 | Westlake Hills, Rollingwood, Lost Creek | $1,869,828 | $560 | 87 | 5.3 | 95.1% | +10.0%
+78733 | Davenport Ranch, Cuernavaca, Austin Lake Hills | $1,289,268 | $421 | 50 | 5.0 | 95.8% | +4.1%
+78703 | Tarrytown, Pemberton Heights, Clarksville | $1,274,281 | $602 | 69 | 6.9 | 95.0% | -7.7%
+78730 | River Place, Glenlake, Long Canyon | $1,170,036 | $345 | 64 | 5.0 | 96.5% | -5.3%
+78731 | Northwest Hills, Cat Mountain | $1,084,668 | $403 | 69 | 4.1 | 96.0% | -2.9%
+78619 | Driftwood | $1,009,056 | $313 | 93 | 8.9 | 96.9% | -5.9%
+78738 | Bee Cave, Spanish Oaks, Lakeway south | $884,524 | $280 | 70 | 4.4 | 96.9% | +6.8%
+78735 | Barton Creek, Travis Country | $824,439 | $366 | 67 | 4.2 | 96.3% | -7.1%
+78732 | Steiner Ranch | $807,435 | $266 | 90 | 5.7 | 96.5% | -6.5%
+78734 | Lakeway, Hudson Bend | $651,452 | $275 | 87 | 7.8 | 96.2% | -5.2%
+78669 | Spicewood | $637,454 | $262 | 125 | 10.9 | 95.7% | -5.0%
+78620 | Dripping Springs | $610,875 | $244 | 89 | 5.7 | 97.0% | -1.6%
+:::
+
+### What the Unlock MLS listing data adds for the three biggest luxury ZIPs
+
+The table above tells you what sold. Unlock MLS listing data (via Agent Intel, same twelve months) tells you what did not, which matters more if you are the seller.
+
+:::compare-table
+Metric (Oct 2025 to Sep 2026) | 78746 Westlake | 78703 Tarrytown | 78738 Bee Cave and Lakeway
+Closed sales | 319 | 228 | 705
+Dollar volume | $750 million | $370 million | $805 million
+Median sale price | $1,850,000 | $1,302,500 | $880,000
+Average sale price | $2,349,823 | $1,624,333 | $1,141,846
+Average vs median | +27% | +25% | +30%
+Median $/SF (average $/SF) | $565 ($619) | $613 ($643) | $283 ($317)
+Median days on market (average) | 48.5 (90.2) | 55.5 (87.6) | 44 (81.2)
+Listing success rate | 56.9% | 48.2% | 67.4%
+Expired plus withdrawn listings | 248 | 242 | 342
+Listings with a price reduction | 245 | 223 | 562
+Original list to final list | -3.77% | -4.42% | -3.39%
+Final list to closed price | -4.88% | -4.97% | -3.06%
+Combined discount from original ask | about 8.5% | about 9.2% | about 6.3%
+Months of inventory | 5.2 | 6.2 | 4.0
+One-year change in median | +5.7% | -6.2% | +3.6%
+:::
+
+Read the success-rate row twice. In Tarrytown, fewer than half the listings that hit Unlock MLS in the past year closed; 242 expired or were withdrawn against 228 sales. Westlake closed 57 percent. Bee Cave and Lakeway closed 67 percent, on four months of inventory, with the metro's biggest luxury dollar volume at $805 million. If you are listing above $2 million in 78703 or 78746, the base rate says you have roughly a coin flip of closing on the first listing agreement, and the ones that do close give up 8 to 9 percent from the original ask. That is the math behind why luxury homes don't sell in Austin and why Echelon Property Group runs most $2 million-plus transactions off-market.
+
+The two datasets disagree on direction for 78703 (-7.7 percent vs -6.2 percent) and 78746 (+10.0 percent vs +5.7 percent) because they slice the sales differently, but both agree on the shape: Westlake is the one West Austin ZIP whose median rose this year, Tarrytown gave back the most, and the Lake Travis side (78738) rose on volume while the Lake Austin side (78732, 78734) fell. For the corridor-by-corridor case, see [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis), [Bee Cave vs Lakeway](/blog/bee-cave-vs-lakeway-luxury-buyers), [Living in Barton Creek](/blog/living-in-barton-creek-austin) and the [78746 luxury homes guide](/blog/78746-luxury-homes-guide-for-smart-buyers).
+
+## Central and East Austin
+
+The urban core is the most expensive part of the metro per square foot and the slowest to clear. Ten of the thirteen central ZIPs lost ground this year, the two downtown condo ZIPs carry a full year of inventory, and in 78704 more listings died than closed.
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78704 | Zilker, Bouldin, Travis Heights, South Congress | $822,692 | $492 | 90 | 7.0 | 96.1% | -7.2%
+78756 | Rosedale, Allandale south | $724,952 | $468 | 64 | 4.5 | 96.9% | -11.8%
+78757 | Crestview, Allandale, Brentwood | $713,326 | $432 | 62 | 5.0 | 96.7% | +6.9%
+78702 | East Austin, Holly, Govalle | $681,202 | $457 | 71 | 8.2 | 96.5% | -2.1%
+78751 | Hyde Park, North Loop | $643,080 | $455 | 90 | 6.6 | 96.7% | -3.1%
+78701 | Downtown (condos) | $636,082 | $676 | 102 | 12.2 | 95.2% | -5.5%
+78722 | Cherrywood, French Place | $583,567 | $436 | 94 | 5.3 | 95.1% | -7.8%
+78723 | Mueller, Windsor Park | $558,510 | $355 | 74 | 5.6 | 97.3% | -4.2%
+78721 | East Austin, MLK east | $468,089 | $322 | 80 | 8.8 | 96.6% | -8.3%
+78752 | North Central, St. Johns, Highland | $386,752 | $278 | 72 | 7.9 | 96.4% | -5.0%
+78724 | East Austin, Decker, Colony Park | $367,073 | $200 | 74 | 6.8 | 97.4% | +5.8%
+78741 | Riverside, Montopolis | $366,229 | $260 | 89 | 9.6 | 95.9% | +2.1%
+78705 | West Campus, UT (condos) | $320,977 | $354 | 91 | 12.4 | 94.4% | -4.6%
+:::
+
+### 78704 and 78702 under the Unlock MLS microscope
+
+:::compare-table
+Metric (Oct 2025 to Sep 2026) | 78704 South Central | 78702 East Austin
+Closed sales | 584 | 343
+Dollar volume | $616 million | $246 million
+Median sale price | $845,400 | $662,500
+Average sale price | $1,054,978 | $715,829
+Median $/SF (average $/SF) | $512 ($542) | $467 ($477)
+Median days on market (average) | 61 (96.1) | 49 (93.7)
+Listing success rate | 49.8% | 47.7%
+Expired plus withdrawn listings | 611 | 393
+Listings with a price reduction | 666 | 434
+Original list to final list | -5.05% | -5.24%
+Final list to closed price | -3.88% | -3.50%
+Combined discount from original ask | about 8.7% | about 8.6%
+Months of inventory | 6.7 | 7.8
+One-year change in median | -6.1% | -3.3%
+:::
+
+The 78704 number worth memorizing: 611 listings expired or were withdrawn against 584 closed sales. For every house that sold in Zilker, Bouldin and Travis Heights this year, slightly more than one came off the market unsold. In 78702 the ratio is 393 to 343. Both ZIPs close around 8.6 percent under the original ask. The buyer-side read is simple: in the central core, the first list price is a suggestion, the second one is the negotiation, and the third one is where you buy.
+
+The two condo ZIPs are their own market. 78701 at 12.2 months of inventory and 78705 at 12.4 are the deepest buyer's markets in the metro, both selling at roughly 95 percent of asking after 100-plus days. 78701's $676 per square foot is the highest in the city and still down 5.5 percent year over year, with no new for-sale tower delivering before about 2029. The full case is in [Downtown Austin condos](/blog/downtown-austin-condos-2026) 2026.
+
+Two central ZIPs went the other way. 78757 (Crestview, Allandale, Brentwood) rose 6.9 percent on 62 days and 5.0 months of inventory, and 78724 (Decker, Colony Park) rose 5.8 percent on the cheapest per-foot price inside the city at $200. The 78756 decline of 11.8 percent next door to 78757's gain is almost certainly mix: Rosedale and Shoalwood trade a handful of new-construction sales against original 1940s bungalows, and the median swings on which kind sold. Treat any central ZIP with fewer than 200 annual sales as a mix-sensitive number, not a trend.
+
+## North, Northwest, South and Southwest Austin
+
+The belt of 1980s-to-2000s subdivisions inside the city limits is where the Austin market still functions like a market: inventory under four months, contracts in two months, closed prices within two points of asking. Circle C (78739) is the tightest ZIP in the metro, and the whole southwest quadrant from Legend Oaks to Belterra is either flat or up.
+
+### North and Northwest Austin
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78726 | Four Points, Canyon Creek | $689,152 | $248 | 66 | 4.5 | 97.2% | -1.6%
+78759 | Great Hills, Arboretum | $655,961 | $327 | 58 | 3.7 | 97.2% | +2.1%
+78717 | Avery Ranch, Brushy Creek | $608,069 | $231 | 66 | 4.4 | 97.5% | +7.1%
+78750 | Anderson Mill, Jollyville | $605,486 | $279 | 61 | 3.5 | 97.2% | +0.6%
+78727 | Scofield, Milwood (North Austin) | $473,339 | $264 | 65 | 4.6 | 97.4% | -4.8%
+78729 | Milwood, Anderson Mill east | $455,717 | $226 | 54 | 4.3 | 97.6% | +0.5%
+78728 | Wells Branch | $417,470 | $224 | 67 | 3.2 | 97.7% | -3.5%
+78758 | North Austin, Domain-adjacent | $381,226 | $252 | 79 | 5.1 | 97.1% | -9.4%
+78753 | North Austin, Walnut Creek | $356,262 | $229 | 74 | 6.3 | 96.9% | -0.5%
+78754 | Northeast Austin, Harris Branch | $351,211 | $184 | 69 | 6.1 | 97.3% | -6.0%
+:::
+
+### South and Southwest Austin
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78737 | Belterra, Highpointe (SW Austin) | $844,314 | $273 | 75 | 3.8 | 97.5% | +5.0%
+78739 | Circle C Ranch, Shady Hollow | $807,940 | $295 | 45 | 2.4 | 98.6% | +5.3%
+78749 | Legend Oaks, Western Oaks, Oak Hill east | $573,833 | $290 | 49 | 3.0 | 98.5% | +0.1%
+78736 | West Oak Hill, Bee Creek | $517,449 | $278 | 63 | 4.3 | 97.0% | -9.6%
+78745 | South Austin, Westgate, Garrison Park | $451,991 | $303 | 68 | 5.6 | 97.0% | -5.7%
+78652 | Manchaca | $437,839 | $205 | 98 | 5.9 | 97.4% | -10.5%
+78748 | South Austin, Slaughter Lane | $414,104 | $236 | 63 | 3.9 | 97.9% | -6.5%
+78744 | Southeast Austin, Easton Park | $399,722 | $212 | 101 | 4.7 | 97.2% | +2.5%
+78747 | Onion Creek, Goodnight Ranch | $366,491 | $192 | 107 | 5.9 | 98.2% | -9.7%
+:::
+
+The pattern across both tables is the same one that showed up in [Austin inventory levels explained](/blog/austin-inventory-levels-explained): months of inventory predicts price direction better than price level does. Every ZIP in these two tables under 4.0 months of inventory (78739, 78749, 78728, 78750, 78759, 78737, 78748) sold at 97.2 percent of asking or better, and six of the seven held or gained. Every ZIP over 5.5 months (78753, 78754, 78745, 78652, 78747) lost ground.
+
+The outliers are worth naming. 78717 (Avery Ranch) at +7.1 percent is the best-performing ZIP north of the river with meaningful volume. 78758 at -9.4 percent is the worst inside the city, which is what a flood of Domain-area condo and townhome deliveries does to a median. 78747 and 78744 are the two cheapest ZIPs south of the river, both under $400,000, and they tell opposite stories: Easton Park (78744) rose 2.5 percent on new-build demand while Onion Creek and Goodnight Ranch (78747) fell 9.7 percent on 107 days of market time. The spread between them is $33,000; the spread in direction is 12 points.
+
+## Commuter suburbs: Williamson, Hays, Bastrop and the lake towns
+
+The suburbs are where the metro's price declines concentrate, and they are also where closed prices sit closest to asking, because new-construction builders set the list price and then buy it down with incentives instead of cutting it. Cedar Park and west Round Rock are the only commuter ZIPs that still clear in about two months.
+
+### Williamson County
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78642 | Liberty Hill | $507,682 | $195 | 121 | 5.8 | 97.3% | +2.3%
+78628 | Georgetown west, Wolf Ranch | $502,573 | $204 | 106 | 5.3 | 97.3% | -0.7%
+78681 | Round Rock west, Brushy Creek | $486,929 | $214 | 65 | 4.2 | 97.3% | -5.4%
+78613 | Cedar Park | $481,661 | $213 | 62 | 3.6 | 97.5% | -1.9%
+78641 | Leander | $459,961 | $195 | 92 | 5.3 | 96.9% | -3.9%
+78633 | Georgetown north, Sun City | $434,477 | $207 | 89 | 4.2 | 98.0% | -0.8%
+78665 | Round Rock east, Teravista | $387,126 | $182 | 79 | 4.4 | 97.4% | -3.8%
+78660 | Pflugerville | $384,473 | $186 | 82 | 5.2 | 97.6% | -5.0%
+78626 | Georgetown east | $361,336 | $188 | 88 | 6.4 | 97.6% | -5.2%
+78664 | Round Rock central | $340,837 | $198 | 65 | 5.0 | 96.6% | -4.7%
+78634 | Hutto | $340,773 | $173 | 92 | 5.5 | 98.1% | -4.5%
+76574 | Taylor | $292,492 | $167 | 80 | 7.2 | 96.7% | -5.2%
+76537 | Jarrell | $260,120 | $151 | 106 | 5.8 | 97.9% | -4.5%
+:::
+
+### Hays County and the Hill Country
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78619 | Driftwood | $1,009,056 | $313 | 93 | 8.9 | 96.9% | -5.9%
+78620 | Dripping Springs | $610,875 | $244 | 89 | 5.7 | 97.0% | -1.6%
+78676 | Wimberley | $547,764 | $272 | 107 | 8.9 | 95.9% | +15.5%
+78610 | Buda | $344,100 | $177 | 90 | 5.1 | 97.5% | -0.8%
+78666 | San Marcos | $322,728 | $181 | 102 | 6.6 | 96.9% | -7.6%
+78640 | Kyle | $306,300 | $164 | 94 | 5.1 | 97.8% | -6.2%
+78656 | Maxwell | $244,952 | $150 | 83 | 7.3 | 97.4% | -5.8%
+:::
+
+### Lake Travis west, Bastrop and Caldwell counties
+
+:::compare-table
+ZIP | Area | Median sale price | Median $/SF | Median DOM | Months of inventory | Sale-to-list | 1-yr change
+78669 | Spicewood | $637,454 | $262 | 125 | 10.9 | 95.7% | -5.0%
+78645 | Lago Vista, Jonestown | $427,783 | $216 | 110 | 8.4 | 96.9% | -4.1%
+78612 | Cedar Creek | $378,456 | $183 | 152 | 7.5 | 96.4% | -14.3%
+78602 | Bastrop | $374,322 | $190 | 114 | 6.7 | 97.5% | +1.5%
+78653 | Manor | $344,146 | $173 | 91 | 6.2 | 97.7% | -4.3%
+78957 | Smithville | $320,508 | $202 | 124 | 9.8 | 96.4% | -3.7%
+78617 | Del Valle | $320,076 | $172 | 86 | 5.0 | 97.6% | -2.6%
+78621 | Elgin | $286,563 | $165 | 105 | 6.4 | 98.3% | -5.8%
+78644 | Lockhart | $283,350 | $162 | 76 | 6.3 | 96.2% | -0.9%
+78725 | Hornsby Bend | $274,592 | $178 | 61 | 5.0 | 97.9% | -7.0%
+78648 | Luling | $207,425 | $155 | 136 | 12.0 | 94.4% | -16.4%
+:::
+
+Four reads from the suburban tables.
+
+1. Sale-to-list is lying to you out here. Hutto closes at 98.1 percent of asking and is down 4.5 percent. Elgin closes at 98.3 percent and is down 5.8 percent. Kyle, 97.8 percent and down 6.2 percent. Those are builder ZIPs, and builders hold the sticker and give the discount back as a rate buydown or closing credit, which never shows up in the sale-to-list ratio. The real concession math is in Austin [builder incentives](/blog/builder-incentives-austin).
+2. The [MUD and PID](/blog/mud-pid-taxes-austin) tax stack explains the $/SF gap. Hutto at $173 per square foot and Kyle at $164 are not half the price of Austin because the houses are worse. They carry total tax rates of $2.20 to $3.00 per $100 against roughly $1.80 to $2.05 inside Austin, and the market capitalizes that difference into the price. Worked numbers are in MUD and PID taxes in Austin.
+3. Taylor is the warning label on headline-driven buying. The Samsung fab did not stop 76574 from falling 5.2 percent on 7.2 months of inventory. Jobs announced are not households moved.
+4. The far ring is a buyer's market by any definition. Spicewood (10.9 months), Smithville (9.8), Driftwood (8.9), Wimberley (8.9), Lago Vista (8.4) and Luling (12.0) all sit well past the six-month balance point. Wimberley's +15.5 percent is the one gain in the group and should be read as a small-sample mix shift after the 2025 flood year, not a boom.
+
+For the household-level version of this migration, see [where Austin homeowners are moving](/blog/where-austin-homeowners-are-moving) and [best Austin suburbs 2026](/blog/best-austin-suburbs-2026).
+
+## How to read the numbers
+
+A ZIP median is a mix-weighted average of whatever happened to sell, so the table is a map, not an appraisal. Six definitions keep you from misreading it.
+
+:::compare-table
+Metric | What it measures | City of Austin benchmark (T12 to Sep 30, 2026) | How to use it
+Median sale price | The middle closed price; half sold above, half below | $569,995 | Compare ZIPs at a glance. Never use it to price a specific house
+Median $/SF | Closed price divided by living area, middle value | $295 | The cleanest proxy for land and location value; compare like-sized houses only
+Median days on market | Days from list to contract for the middle listing | 43 (average 79) | The average is nearly double the median because stale luxury listings drag the tail
+Months of inventory | Active listings divided by the monthly sales pace | 4.93 | Under 6 leans seller, over 6 leans buyer, 6 is balanced on the Echelon Market Balance scale
+Sale-to-list | Closed price as a share of final list price | 96.95% (3.05% under) | Add the original-to-final cut (3.92%) for the real discount: about 7% from first ask
+Success rate | Share of listings that closed instead of expiring or being withdrawn | 61.1% | The seller's base rate; 48 to 57 percent in the luxury core, 67 percent in Bee Cave and Lakeway
+:::
+
+**Median vs mix.** When 78756 shows -11.8 percent and 78757 next door shows +6.9 percent, Rosedale did not lose a tenth of its value in a year. A ZIP with 150 sales swings on whether this year's closings skewed to new construction or to original bungalows. Treat any ZIP under 200 annual closings as directional and check the per-square-foot number before believing the median.
+
+**Price per square foot is a land index.** In the urban core, where lots are 6,000 to 8,000 square feet and the house may be 1,200, $/SF mostly measures dirt. In Steiner Ranch or Belterra, where the house is 3,000 square feet on a quarter acre, it mostly measures the house. That is why 78702 at $457 can out-rank 78738 at $280 while the Bee Cave house costs $200,000 more.
+
+**The double discount.** Sale-to-list only captures the last cut. Citywide, listings dropped 3.92 percent from original to final list and then closed 3.05 percent under that, for a combined 6.9 percent off the first ask. In 78703 and 78704 the combined figure is about 9 percent. If you are a buyer modeling an offer, start from the original list price, not the current one.
+
+**Success rate is the number listing agents don't put on the flyer.** Of the 17,821 new City of Austin listings in the past twelve months, 2,496 expired and 4,531 were withdrawn against 10,784 closings. Roughly four in ten listings did not sell. In Tarrytown, East Austin and 78704 it was more than half. That base rate, not the median price, is what should drive how you price and where you market. We wrote the playbook in [why didn't my house sell](/blog/why-didnt-my-house-sell-austin).
+
+**The [non-disclosure](/blog/texas-non-disclosure-state) caveat.** Texas does not record sale prices in public records, so every ZIP figure that is not MLS-derived is an estimate built from listing prices, assessed values and modeled sales. The figures here come from closed MLS transactions through Agent Intel; a [Zestimate](/blog/zestimate-accuracy-texas) for the same ZIP can miss by 6 to 7 percent on an off-market home, as Zillow's own accuracy tables show. Details in Texas is a non-disclosure state and Zestimate accuracy in Texas.
+
+**Two datasets, one direction.** The 72-ZIP table uses Agent Intel's all-residential housing dataset; the deep-dive tables for 78746, 78703, 78738, 78704 and 78702 use Unlock MLS listing data via MLS Grid, which adds success rates and listing counts. The two sources differ by one to four percent on any given ZIP because they treat condos, new construction and relists differently. Where they disagree on magnitude, they agree on direction in every ZIP we checked.
+
+## What the data says for buyers and sellers, by price tier
+
+Leverage in Austin right now is a function of inventory and failure rate, not price, and both rise with the price tag. Buyers have the most room above $1 million in the central core; sellers have the most room in the sub-$900,000 subdivisions west and southwest of downtown.
+
+:::compare-table
+Tier | ZIPs where sellers still hold the cards (under 4.5 months, 97%+ of ask) | ZIPs where buyers hold the cards (over 6.5 months or under 96% of ask) | Realistic discount from original ask
+Under $500,000 | 78728, 78748, 78749, 78613, 78633, 78681, 78665 | 78741, 78752, 78753, 78754, 78666, 78612, 78648 | 3 to 5 percent, more at the far ring
+$500,000 to $1,000,000 | 78739, 78737, 78759, 78750, 78717, 78735, 78738 | 78704, 78702, 78751, 78701, 78734, 78669, 78619 | 5 to 9 percent in the core, 3 to 4 in the suburbs
+$1,000,000 to $2,000,000 | 78731, 78733, 78730 | 78703, 78704 (upper end), 78701 | 8 to 9 percent on the listings that close; 48 to 57 percent close
+$2,000,000 and up | None by the numbers; well-priced 78746 and 78733 listings still trade | 78703, 78746 (long-tail listings), Lake Travis waterfront | 9 percent-plus, or off-market at a negotiated number
+:::
+
+### For buyers
+
+- Under $1 million, do not expect a discount in 78739, 78749 or 78759. Circle C is at 2.4 months of inventory and 98.6 percent of ask; a lowball there costs you the house. Offer at list, ask for the inspection credit instead.
+- Between $1 million and $2 million in 78703, 78704 or 78702, work the double discount. Pull the original list price, model 8 to 9 percent off it, and let the 48 percent success rate do the negotiating. A seller 90 days in with a 1-in-2 shot of closing is reading the same table you are.
+- Above $2 million, the MLS is the catalog of what nobody wanted at the first price. Every $2 million-plus sale Echelon Property Group has closed came from [off-market inventory](/blog/off-market-homes-austin), where the price is set once by two parties instead of cut three times in public.
+- In the builder suburbs (Hutto, Kyle, Elgin, Leander), ignore sale-to-list and negotiate the incentive package. A 97.8 percent ratio with a $30,000 buydown attached is a 92 percent sale.
+
+### For sellers
+
+- Price to the success rate, not the median. In 78746 a listing that opens 5 percent above the comps joins the 43 percent that expire; one that opens at the comps joins the 57 percent that close and gives up about 5 percent at the table. The second path nets more and takes 48 days instead of 150. The pricing math is in [how to price a luxury home](/blog/how-to-price-a-luxury-home-in-austin) in Austin.
+- In the sub-$900,000 southwest belt, you have the only genuine seller's market in the metro. List in the first half of the week, hold your number for 14 days, and expect to close within two points of it.
+- In the central core above $1 million, decide before you list whether you can absorb a 9 percent combined discount and a coin-flip close rate. If not, [a private listing](/blog/private-listings-austin) protects the number and the days-on-market clock.
+- Timing still matters more than most sellers think. The ZIP table is twelve months blended; the monthly version shows a July second peak and an October dead zone in the luxury core. See [the best time to sell a house in Austin](/blog/best-time-to-sell-a-house-austin) and [should I sell now or wait](/blog/should-i-sell-my-house-now-or-wait-austin).
+
+:::callout
+label: Worked example: a $1.3 million Tarrytown purchase
+A 78703 house that opened at $1,420,000 in June has, by the citywide and ZIP data, likely been reduced once to about $1,357,000 (the 4.42 percent original-to-final cut). The median 78703 closing lands another 4.97 percent under that, at roughly $1,290,000. The combined discount from the first ask is $130,000, or 9.2 percent. Open at $1,250,000 with a clean inspection period and the seller, who is now 100-plus days in with a 48 percent base rate of closing, has every reason to meet you at $1,290,000. Model it the other way, from the current list price, and you leave $60,000 on the table.
+:::
+
+:::faq
+Q: What is the median home price in Austin, Texas in 2026?
+A: The median home sale price in the City of Austin is $569,995 for the twelve months ending September 30, 2026, at a median $295 per square foot, down 0.87 percent from the prior year (Unlock MLS via Agent Intel).
+
+Q: What is the most expensive ZIP code in Austin?
+A: 78746 (Westlake Hills, Rollingwood and Lost Creek) is the most expensive Austin ZIP by median sale price at $1,869,828, up 10.0 percent year over year. By price per square foot, downtown 78701 leads at $676, followed by 78703 (Tarrytown) at $602 and 78746 at $560.
+
+Q: What is the cheapest ZIP code in Austin?
+A: Inside Austin city limits, 78725 (Hornsby Bend) has the lowest median at $274,592, followed by 78705 (West Campus condos) at $320,977 and 78754 (Harris Branch) at $351,211. Across the full metro, 78648 (Luling) is lowest at $207,425.
+
+Q: Which Austin ZIP codes went up in value in 2026?
+A: Seventeen of 72 metro ZIPs posted a higher trailing-twelve-month median than the year before. The largest gains were 78676 Wimberley (+15.5 percent), 78746 Westlake (+10.0 percent), 78717 Avery Ranch (+7.1 percent), 78757 Crestview (+6.9 percent), 78738 Bee Cave (+6.8 percent), 78724 Decker (+5.8 percent), 78739 Circle C (+5.3 percent) and 78737 Belterra (+5.0 percent).
+
+Q: Which Austin ZIP codes dropped the most in 2026?
+A: Among ZIPs with meaningful volume, the steepest declines were 78612 Cedar Creek (-14.3 percent), 78756 Rosedale (-11.8 percent), 78652 Manchaca (-10.5 percent), 78747 Onion Creek (-9.7 percent), 78736 West Oak Hill (-9.6 percent), 78758 North Austin (-9.4 percent) and 78721 East Austin (-8.3 percent). Luling (78648) fell 16.4 percent on very low volume.
+
+Q: How many Austin ZIP codes have a median home price over $1 million?
+A: Six: 78746 ($1,869,828), 78733 ($1,289,268), 78703 ($1,274,281), 78730 ($1,170,036), 78731 ($1,084,668) and 78619 Driftwood ($1,009,056). The five Austin ZIPs in that group form one arc from Tarrytown west through Westlake and north along Lake Austin to River Place.
+
+Q: Is Austin a buyer's market or a seller's market in late 2026?
+A: The city as a whole is slightly seller-leaning at 4.93 months of inventory, but it splits sharply by ZIP. Circle C (78739, 2.4 months), Legend Oaks (78749, 3.0), Wells Branch (78728, 3.2) and Cedar Park (78613, 3.6) are seller's markets. Downtown (78701, 12.2 months), West Campus (78705, 12.4), Spicewood (78669, 10.9) and Riverside (78741, 9.6) are deep buyer's markets.
+
+Q: How much under asking do Austin homes sell for?
+A: Citywide, homes closed 3.05 percent under final list price and 3.92 percent under original list price in the past twelve months, a combined discount of about 7 percent from the first ask. In 78703 and 78704 the combined discount is about 9 percent; in Circle C (78739) homes closed at 98.6 percent of asking.
+:::`,
+  },
   {
     id: "best-time-to-sell-a-house-austin",
     title: "The Best Time to Sell a House in Austin: 36 Months of Contract Data, and Why Luxury Runs on a Different Calendar",
@@ -1259,7 +1736,7 @@ The affordability gap is the other half of demand. Apartment List's median rent 
 
 ## The K-shaped market: what each tier does in 2027
 
-Averages hide the most useful thing in this data, which is that Austin's price tiers stopped moving together in 2025. The luxury West Austin ZIP codes are up. The central new-construction and condo-heavy ZIP codes are down hard. The entry-level resale tier sits in between and moves with the mortgage rate.
+Averages hide the most useful thing in this data, which is that Austin's price tiers stopped moving together in 2025. The luxury West Austin ZIP codes are up. The central new-construction and condo-heavy ZIP codes are down hard. The entry-level resale tier sits in between and moves with the mortgage rate. For how each tier is pricing ZIP by ZIP today, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
 Submarket, T12 through Aug 31, 2026 | Median sale price | Median $/SF | Median YoY | Months of inventory | Success rate | Combined discount from original list
@@ -6719,6 +7196,8 @@ The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hi
 :::
 
 ## Austin's Most Expensive Neighborhoods at a Glance
+
+For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
 Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait

@@ -22,6 +22,7 @@ const MortgageCalculator = lazy(
 const GatedCommunityGauge = lazy(
   () => import("@/components/market-intel/GatedCommunityGauge"),
 );
+import ZipPriceTable from "@/components/blog/ZipPriceTable";
 const BeforeAfterSlider = lazy(
   () => import("@/components/BeforeAfterSlider"),
 );
@@ -197,7 +198,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "before-after" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator";
+  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "before-after" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator" | "zip-table";
   body: string;
 }
 
@@ -216,7 +217,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta-anchor|cta|faq|stat-block|before-after|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-gauge-gated-austin|intel-rates|intel-luxury-snapshot|mortgage-calculator)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta-anchor|cta|faq|stat-block|before-after|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-gauge-gated-austin|intel-rates|intel-luxury-snapshot|mortgage-calculator|zip-table)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -412,6 +413,13 @@ const Callout = ({ body }: { body: string }) => {
     label = m[1].trim();
     text = lines.slice(1).join("\n").trim();
   }
+  // Optional "class: name" line, used for speakable CSS selectors.
+  let extraClass = "";
+  const cm = text.match(/^class:\s*([a-z0-9- ]+)\n/i);
+  if (cm) {
+    extraClass = cm[1].trim();
+    text = text.slice(cm[0].length).trim();
+  }
 
   const textLines = text.split("\n").map((l) => l.trim()).filter(Boolean);
   const listItems = textLines.filter((l) => l.startsWith("- "));
@@ -419,7 +427,7 @@ const Callout = ({ body }: { body: string }) => {
 
   return (
     <aside
-      className="my-10 border-l-2 pl-6 md:pl-8 py-2"
+      className={`my-10 border-l-2 pl-6 md:pl-8 py-2 ${extraClass}`}
       style={{ borderColor: "#b9a06c" }}
       aria-label={label || "Callout"}
     >
@@ -726,6 +734,8 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
           }
           case "compare-table":
             return <CompareTable key={idx} body={block.body} />;
+          case "zip-table":
+            return <ZipPriceTable key={idx} body={block.body} renderInline={renderInline} />;
           case "callout":
             return <Callout key={idx} body={block.body} />;
           case "best-for":

@@ -93,10 +93,16 @@ const BlogPost = () => {
   if (faqs.length > 0) {
     schemas.push(createFAQSchema(faqs));
   }
+  if (post.extraSchema) schemas.push(...post.extraSchema);
 
-  const relatedPosts = allPosts
-    .filter(p => p.id !== post.id && p.category === post.category)
-    .slice(0, 4);
+  const pinnedRelated = (post.relatedPostIds || [])
+    .map(id => allPosts.find(p => p.id === id))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const relatedPosts = pinnedRelated.length
+    ? pinnedRelated.slice(0, 4)
+    : allPosts
+        .filter(p => p.id !== post.id && p.category === post.category)
+        .slice(0, 4);
 
   // If not enough same-category posts, fill with recent posts from other categories
   const filledRelatedPosts = relatedPosts.length >= 3
@@ -118,7 +124,7 @@ const BlogPost = () => {
       />
       <Helmet>
         <meta property="article:published_time" content={post.date} />
-        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:modified_time" content={post.dateModified || post.date} />
         <meta property="article:author" content={post.author} />
         <meta property="article:section" content={post.category} />
       </Helmet>

@@ -84,6 +84,10 @@ export interface BlogPost {
   aboutPlaces?: string[];
   /** Optional editorial caption shown beneath the hero image. */
   imageCaption?: string;
+  /** Optional explicit related-post ids, shown in this order before auto-picked posts. */
+  relatedPostIds?: string[];
+  /** Optional additional JSON-LD nodes injected on this post only. */
+  extraSchema?: Record<string, unknown>[];
 }
 
 const LINK = "text-foreground underline hover:text-muted-foreground";

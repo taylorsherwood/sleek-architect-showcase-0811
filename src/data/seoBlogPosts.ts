@@ -1736,7 +1736,7 @@ The affordability gap is the other half of demand. Apartment List's median rent 
 
 ## The K-shaped market: what each tier does in 2027
 
-Averages hide the most useful thing in this data, which is that Austin's price tiers stopped moving together in 2025. The luxury West Austin ZIP codes are up. The central new-construction and condo-heavy ZIP codes are down hard. The entry-level resale tier sits in between and moves with the mortgage rate.
+Averages hide the most useful thing in this data, which is that Austin's price tiers stopped moving together in 2025. The luxury West Austin ZIP codes are up. The central new-construction and condo-heavy ZIP codes are down hard. The entry-level resale tier sits in between and moves with the mortgage rate. For how each tier is pricing ZIP by ZIP today, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
 Submarket, T12 through Aug 31, 2026 | Median sale price | Median $/SF | Median YoY | Months of inventory | Success rate | Combined discount from original list
@@ -7195,7 +7195,7 @@ label: Quick answer
 The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hills, Barton Creek, Spanish Oaks, Pemberton Heights, Tarrytown, Rob Roy, Davenport Ranch, Old Enfield and Windsor Road, and the Lake Austin waterfront. Published medians range from roughly $1.5 million to more than $2.5 million, and estate and waterfront properties regularly trade between $3 million and $10 million or more, frequently in private transactions.
 :::
 
-## Austin's Most Expensive Neighborhoods at a Glance
+## Austin's Most Expensive Neighborhoods at a Glance For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
 Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait

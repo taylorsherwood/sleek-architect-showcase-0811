@@ -268,21 +268,6 @@ const CommercialInvestment = () => {
                 cta={{ type: "external", href: "https://www.4314gillis.com", label: "View Property Website" }}
               />
 
-              <CommercialListingCard
-                image={sanJoseAve}
-                alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land"
-                title="10811 San Jose Ave, development land opportunity, Del Valle TX"
-                badge="DEVELOPMENT LAND"
-                price="$1,600,000"
-                name="10811 San Jose Ave"
-                location="Del Valle, TX"
-                meta={[
-                  { label: "ASSET TYPE", value: "Redevelopment Land" },
-                  { label: "UNITS", value: "3.06 Acres" },
-                ]}
-                description="3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor."
-                cta={{ type: "external", href: "https://www.10811sanjose.com", label: "View Property Website" }}
-              />
 
               <CommercialListingCard
                 image={s11thStreet}

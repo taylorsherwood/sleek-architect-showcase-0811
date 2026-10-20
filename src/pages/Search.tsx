@@ -9,7 +9,6 @@ import { Link, useSearchParams } from "react-router-dom";
 import heroSearchImgAsset from "@/assets/hero-search-austin.png.asset.json";
 const heroSearchImg = heroSearchImgAsset.url;
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
-import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
@@ -295,31 +294,6 @@ const SearchPage = () => {
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.</p>
                   <span className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 group-hover:bg-gold group-hover:text-white group-hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>VIEW PROPERTY WEBSITE</span>
-                </div>
-              </a>
-
-              {/* San Jose Ave */}
-              <a href="https://www.10811sanjose.com" target="_blank" rel="noopener noreferrer" className="border border-border/60 overflow-hidden group bg-card hover:border-gold hover:shadow-[0_0_0_1px_hsl(var(--gold))] transition-colors duration-500 flex flex-col">
-                <div className="relative overflow-hidden">
-                  <OptimizedImage src={sanJoseAve} alt="10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land" width={900} height={600} className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <span className="absolute top-4 left-4 text-minimal bg-gold text-white px-3 py-1 font-extrabold">REDEVELOPMENT LAND</span>
-                  <span className="absolute bottom-3 right-3 text-white text-sm font-light  bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-sm">$1,600,000</span>
-                </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-light text-foreground mb-1 ">10811 San Jose Ave</h3>
-                  <p className="text-muted-foreground mb-2 ">Del Valle, TX</p>
-                  <div className="grid grid-cols-2 gap-3 mb-4">
-                    <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>ASSET TYPE</p>
-                      <p className="text-foreground font-medium text-sm ">Redevelopment Land</p>
-                    </div>
-                    <div>
-                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif' }}>UNITS</p>
-                      <p className="text-foreground font-medium text-sm ">3.06 Acres</p>
-                    </div>
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed  mb-4 flex-grow">3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.</p>
-                  <span className="border border-border/50 rounded-sm px-6 py-2 text-foreground/70 hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 ease-out self-center" style={{ fontSize: "0.6rem", letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: '"Jost", sans-serif', fontWeight: 500 }}>VIEW PROPERTY WEBSITE</span>
                 </div>
               </a>
 

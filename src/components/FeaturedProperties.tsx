@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import gillisStreet from "@/assets/gillis-street-home-card.jpg";
-import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 
 const properties = [
   {
@@ -13,16 +12,6 @@ const properties = [
     link: "https://www.4314gillis.com",
     badge: "COMMERCIAL LISTING",
     subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
-  },
-  {
-    image: sanJoseAve,
-    address: "10811 San Jose Ave",
-    location: "Austin, TX",
-    price: "$1,600,000",
-    beds: 0, baths: 0, sqft: "—",
-    link: "https://www.10811sanjose.com",
-    badge: "COMMERCIAL LISTING",
-    subtitle: "10811 San Jose Ave, value-add commercial opportunity.",
   },
 ];
 

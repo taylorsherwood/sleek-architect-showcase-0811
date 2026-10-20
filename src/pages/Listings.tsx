@@ -11,7 +11,6 @@ import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.webp";
 import gillisStreet from "@/assets/commercial-gillis-street.jpg";
-import sanJoseAve from "@/assets/commercial-san-jose-ave.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
@@ -57,19 +56,6 @@ const commercialListings = [
     units: "24",
     description: "24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.",
     externalUrl: "https://www.4314gillis.com",
-  },
-  {
-    image: sanJoseAve,
-    alt: "10811 San Jose Ave, Del Valle TX, 3.06 acres redevelopment land",
-    title: "10811 San Jose Ave, development land opportunity, Del Valle TX",
-    badge: "DEVELOPMENT LAND",
-    name: "10811 San Jose Ave",
-    location: "Del Valle, TX",
-    price: "$1,600,000",
-    assetType: "Redevelopment Land",
-    units: "3.06 Acres",
-    description: "3.06-acre redevelopment parcel with existing mobile homes and zero zoning restrictions. Ideal for ground-up multifamily, mixed-use, or commercial development in the high-growth Del Valle corridor.",
-    externalUrl: "https://www.10811sanjose.com",
   },
   {
     image: s11thStreet,

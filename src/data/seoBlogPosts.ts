@@ -194,7 +194,414 @@ const blogAustinZipPrices = blogAustinZipPricesAsset.url;
 import blogBestTimeToSellAustinAsset from "@/assets/blog/best-time-to-sell-a-house-austin-hero.jpg.asset.json";
 const blogBestTimeToSellAustin = blogBestTimeToSellAustinAsset.url;
 
+import blogBuyBeforeYouSellAsset from "@/assets/blog/buy-before-you-sell-austin-hero.jpg.asset.json";
+const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "buy-before-you-sell-austin",
+    title: "Buy Before You Sell in Austin (2026): Bridge Loans, Texas HELOC Rules, and Keeping Your 3% Mortgage",
+    metaTitle: "How to Buy Before You Sell in Austin (2026 Guide)",
+    excerpt: "Five ways to buy your next Austin home before you sell, priced for 2026: bridge loans, Texas HELOC rules, contingent offers, and keeping your 3% loan as a rental.",
+    author: "Taylor Sherwood",
+    date: "2026-10-27",
+    dateModified: "2026-10-27",
+    readTime: "21 min read",
+    category: "MARKET INTELLIGENCE",
+    keywords: "buy before you sell Austin, bridge loan Austin, Texas home equity loan rules, HELOC on departing residence, contingent offer Austin, buy a house before selling yours Texas, mortgage recast after sale",
+    aboutPlaces: ["Austin, Texas", "Westlake Hills, Texas", "Allandale, Austin, Texas"],
+    image: blogBuyBeforeYouSell,
+    heroImage: blogBuyBeforeYouSell,
+    imageAlt: "Aerial view of a stone estate on a wooded Austin lakefront lot with a covered boat dock and sweeping lawn",
+    relatedPostIds: ["upgrading-to-a-luxury-home-in-austin", "should-i-sell-my-house-now-or-wait-austin", "assumable-mortgage-austin", "austin-home-prices-by-zip-code"],
+    extraSchema: [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.echelonpropertygroup.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.echelonpropertygroup.com/blog"}, {"@type": "ListItem", "position": 3, "name": "Buy Before You Sell in Austin (2026)", "item": "https://www.echelonpropertygroup.com/blog/buy-before-you-sell-austin"}]}],
+    content: `The hardest house to buy in Austin right now is the one you want while you still own the one you have. Roughly half of American homeowners with a mortgage carry a rate at or below 4%, the 30-year fixed sat at 7.40% in Freddie Mac's survey the week of October 15, and the Fed meets this week with futures pricing another hike by December, not a cut. Every month you keep the old loan you save money; every month you wait for it to sell you risk losing the next house. That tension has a name in underwriting: the departing residence. This guide covers the five ways to buy before you sell in Austin, what each one costs in 2026 dollars, the Texas rules that make two of them different here than anywhere else, and a new Fannie Mae rule that lands December 1 and changes the math on keeping the old house as a rental.
+
+:::callout
+Key takeaways: There are five ways to buy before you sell in Austin. A Texas HELOC opened before you list is the cheapest gap money, but Texas caps all liens at 80% of value and requires a 12-day wait plus a 3-day rescission. Bridge loans and buy-before-you-sell programs cost $14,000 to $45,000 on a $1.2 million home. With five months of citywide inventory, contingent offers are being accepted again. Fannie Mae's departing-residence rule, mandatory December 1, 2026, ends lease-based rental income on the house you leave.
+:::
+
+## In this guide
+
+- [Why this is a 2026 question](#why-this-is-a-2026-question)
+- [Austin in October 2026: the market that makes this possible](#austin-in-october-2026-the-market-that-makes-this-possible)
+- [The five ways to buy before you sell in Austin](#the-five-ways-to-buy-before-you-sell-in-austin)
+- [Path 1: sell first, and make the gap short](#path-1-sell-first-and-make-the-gap-short)
+- [Path 2: the contingent offer is back](#path-2-the-contingent-offer-is-back)
+- [Path 3: bridge loans and the buy-before-you-sell programs](#path-3-bridge-loans-and-the-buy-before-you-sell-programs)
+- [Path 4: the Texas HELOC, the state's best-kept move-up tool](#path-4-the-texas-heloc-the-state-s-best-kept-move-up-tool)
+- [Path 5: keep the old house, and the Fannie Mae rule that changes December 1](#path-5-keep-the-old-house-and-the-fannie-mae-rule-that-changes-december-1)
+- [The worked example: $1.2M Allandale to $2.2M Westlake](#the-worked-example-1-2m-allandale-to-2-2m-westlake)
+- [After the sale: recast, don't refinance](#after-the-sale-recast-don-t-refinance)
+- [The 150-day sequence](#the-150-day-sequence)
+- [Eight mistakes we see](#eight-mistakes-we-see)
+- [When each path wins](#when-each-path-wins)
+- [How Echelon runs this](#how-echelon-runs-this)
+- [Frequently asked questions](#frequently-asked-questions)
+
+## Why this is a 2026 question
+
+Three numbers explain why move-up buyers are stuck.
+
+| Number | Value | Why it matters to a buy-before-you-sell |
+| --- | --- | --- |
+| Share of U.S. mortgages at or below 4% | ~50% (FHFA National Mortgage Database, via Redfin analysis, mid-2026) | The loan on your current house is probably the cheapest money you will ever borrow |
+| 30-year fixed, Freddie Mac PMMS, week of Oct 15, 2026 | 7.40% (15-year 6.71%) | The new loan costs 2.4x the old one in rate terms |
+| FHFA estimate of lock-in effect | Each 1-point gap between your rate and the market rate cuts the odds you move by about 18% (Fonseca & Liu, FHFA Working Paper 23-06) | A 3% borrower facing 7.4% is 4.4 points under water on rate: the research says most of them stay put |
+| Fed funds target after the Sept 16, 2026 hike | 3.75% to 4.00%; Oct 27-28 meeting expected to hold | HELOC and bridge pricing keys off prime (7.00%), so short-term money is not getting cheaper this quarter |
+
+The people who do move anyway are the ones who have to: a third child, a parent moving in, a job that landed on the other side of MoPac. For them the question is not whether to give up the 3% loan. It is how to control the gap between two closings without paying for it twice.
+
+## Austin in October 2026: the market that makes this possible
+
+The same market that makes selling slow makes buying forgiving. Unlock MLS's September 2026 Central Texas Housing Report (released October 13) and the weekly Austin-area MLS counts show a two-speed market: central Austin firming, the suburbs loosening, and the luxury tier sitting on inventory.
+
+| Metric, September 2026 | City of Austin | Austin-Round Rock-San Marcos metro | Hays County |
+| --- | --- | --- | --- |
+| Median sold price | $570,958 (+4.2% YoY) | $421,000 (+1.4%) | $399,900 (+10.8%) |
+| Closed sales | 777 (-12.7%) | 2,223 (-14.8%) | -30.5% |
+| Active listings (mid-October weekly count) | 4,568 (-7.5% YoY) | 16,668 (+1.5% YoY) | 1,898 (+4.9%) |
+| Months of inventory | ~5 (citywide, Unlock MLS trailing 12 months) | 4.8 to 5+ | 4.8 |
+| Average sale as % of final list | 97.2% | 97.2% | n/a |
+
+*Sources: Unlock MLS September 2026 report as summarized by Compass/Serendipity (Oct 19, 2026); Team Price weekly market update (Oct 15, 2026). Redfin counted 17,972 sellers against 8,360 buyers in metro Austin in August, which put Austin in its top 10 buyer's markets nationally (CultureMap, Sept 17, 2026).*
+
+Two things in that table matter for a buy-before-you-sell plan.
+
+First, sellers are negotiating. A 97.2% average sale-to-list is after price cuts; measured against original list price, our Unlock MLS trailing-12-month work has the combined discount in the city near 7%, and only about 61% of listings that go live actually close (the rest expire or withdraw). See [how long it takes to sell a house in Austin](/blog/how-long-to-sell-house-austin) and [why luxury homes don't sell in Austin](/blog/luxury-home-not-selling-austin) for the tier-by-tier version. A seller who has watched 140 days tick by is a seller who will take a contingent offer or a 45-day close.
+
+Second, the luxury tier is slow but liquid. The Reisor Team's weekly count of $2 million-plus contracts in Austin and West Lake Hills ran at nine contracts a week in mid-October, about $30 million in volume, with single-family contracts averaging 141 days on market and $740 per square foot (The Real Deal, Oct 21, 2026). Nine a week is a market where the house you want will still be there in 60 days. It is also a market where your $1.2 million house in a central neighborhood, priced to the market, moves faster than the $2.2 million one you are buying: Team Price's weekly data has recent listings that are priced correctly going under contract in a median of 7 days.
+
+### Fast house, slow house: 78757 vs 78746
+
+The worked example later in this post sells in 78757 and buys in 78746. These are the trailing-12-month numbers behind the strategy.
+
+| Metric (Oct 1, 2025 to Sep 30, 2026) | 78757 Crestview, Allandale, Brentwood (selling) | 78746 Westlake Hills, Rollingwood, Lost Creek (buying) | City of Austin |
+| --- | --- | --- | --- |
+| Median sale price | $713,326 | $1,869,828 | $569,995 |
+| Median price per square foot | $432 | $560 | $295 |
+| Median days on market | 62 | 87 | 43 (average 79) |
+| Months of inventory | 5.0 | 5.3 | 4.9 |
+| Sale-to-list (final ask) | 96.7% | 95.1% | 97.0% |
+| One-year change in median | +6.9% | +10.0% | -0.9% |
+
+*ZIP columns are the Agent Intel housing dataset (all residential segments) behind our [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code) hub; the city column is Unlock MLS trailing-12 data to September 30, 2026. Unlock MLS's own 78746 figures tell the slow-house story in more detail: 319 closings, a 56.9% listing success rate (248 listings expired or were withdrawn), 245 price reductions, a median of 48.5 days to contract but an average of 90.2 because of the stale tail, and a combined discount from original ask of about 8.5%.*
+
+Read the two ZIP columns as a seller and a buyer. In 78757 you are selling a house 25 days faster than the one you are buying, into a ZIP where prices rose 6.9% and sellers still get 96.7% of their last ask. In 78746 you are buying from a seller whose neighborhood carries 5.3 months of supply, where 43% of listings never close with their first agent, and where the average listing has sat three months. Both columns favor the same plan.
+
+That asymmetry is the whole strategy. Buy the slow house first, on your timeline. Sell the fast house second, vacant and staged, without a kitchen full of moving boxes in the listing photos.
+
+## The five ways to buy before you sell in Austin
+
+There are five structures. Everything else is a brand name for one of them.
+
+| Path | What it is | Hard cost on a $1.2M departing home (4-month overlap) | Speed to funds | Who qualifies | Where it breaks |
+| --- | --- | --- | --- | --- | --- |
+| 1. Sell first, then buy | Close the old house, rent for 3 to 9 months, buy with cash-strong, non-contingent offers | ~$41K (rent, two moves, storage); offset by 2% to 3% better purchase pricing, often a net gain | Immediate (you have the proceeds) | Anyone | Moving twice; prices move while you rent; the right house shows up before you are ready |
+| 2. Contingent offer with kick-out | Offer on the new house contingent on your sale, seller keeps marketing with a 72-hour bump clause (TREC Addendum for Sale of Other Property) | $0 direct; 1% to 3% weaker purchase price and the risk of being bumped | n/a | Anyone; works best on listings past 60 days | Hot listings; sellers with a cash alternative; two closings on one day |
+| 3. Bridge loan or buy-before-you-sell program | Short-term loan secured by the old house (or an equity advance) that funds the down payment; repaid at sale | $25K to $45K in fees and interest, plus the old house's $5,375/mo PITI while it sits | 2 to 4 weeks | 640+ credit, verifiable equity, DTI with both payments or program backup offer | Program clocks (120 to 180 days) and backup offers at 80% to 85% of value |
+| 4. Texas HELOC on the departing home | Second lien under Art. XVI §50(a)(6)/50(t): up to 80% combined LTV, opened before you list, drawn at the new closing, paid off at sale | ~$8K to $10K (interest at ~7.5% to 8% plus capped fees) plus the old house's PITI | 3 to 4 weeks (12-day wait + 3-day rescission) | Homestead only; one home-equity lien at a time; none closed in the last 12 months | 80% cap leaves a gap on heavily mortgaged homes; cannot start after you list |
+| 5. Keep the old house as a rental | Buy the new primary, convert the old one to an investment property; qualify under Fannie Mae's departing-residence rule | No selling costs (saves ~$78K at 6.5%), but $440K down must come from somewhere else; negative carry after rent | 30 to 45 days (normal purchase) | DTI with both PITIAs less 75% of market rent; 6 months reserves on the old PITIA if under 12 months landlord experience | Homestead exemption lost on the old house; 3-year Section 121 clock; ~1.7% cap rate |
+
+*Costs assume the worked example in part 4: a $1.2M departing home with a $711K balance at 3.00%, a $2.2M purchase at 7.25% jumbo, 20% down, and 120 days between closings. Program fees change often; the ranges reflect published 2026 fee schedules (Knock 2.25% + $1,850; Homeward 3.5%, 2.5% with its mortgage; Orchard 1.9% to 2.4% plus listing fees; Calque $2,000 plus 1% at closing) and are worth confirming with each company before you sign.*
+
+The short version: Path 4 is the cheapest way to control the gap if you plan 45 days ahead and have some cash alongside it. Path 3 is what you buy when you did not plan ahead. Path 1 is the best purchase price and the worst month of your life. Path 2 works in this market and would not have in 2021. Path 5 is a portfolio decision dressed up as a moving decision, and the December 1 Fannie Mae change makes it harder to fake.
+
+## Path 1: sell first, and make the gap short
+
+Selling first is the only path with no financing risk, and in a market at 97% of final list it has a hidden return: a buyer with proceeds in the bank and no contingency is the buyer a 141-day luxury seller has been waiting for. The move-twice cost is real but bounded. A furnished three-bedroom rental in central Austin runs $4,000 to $6,000 a month in late 2026; two moves for a 3,000-square-foot household run $5,000 to $8,000 each; storage adds $200 to $400 a month.
+
+The gap-shorteners that work here:
+
+- **Seller's temporary leaseback.** TREC's Seller's Temporary Residential Lease lets you stay in the house you just sold for up to 90 days. Your buyer's lender will usually cap it at 60 days if the buyer is financing a primary residence, so plan on 60.
+
+- **Buy the stale listing.** Filter your search to 60-plus days on market. Those sellers have already cut price once (Austin's citywide trailing-12 data shows a combined discount near 7% off original list) and will trade a flexible closing date for certainty.
+
+- **Off-market purchase with a seller who sets the date.** Most of the $2 million-plus houses we place never hit the MLS; the seller's flexibility on timing replaces the bridge loan. See [off-market homes in Austin](/blog/off-market-homes-austin).
+
+## Path 2: the contingent offer is back
+
+In 2021 a home-sale contingency was a polite way to lose. In October 2026, with about five months of citywide inventory and luxury listings averaging 141 days, it is a normal term. The mechanics in Texas run through the TREC Addendum for Sale of Other Property by Buyer, which makes your purchase contingent on closing the old house by a date you set and gives the seller a kick-out: if another acceptable offer arrives, you get written notice and a short window (72 hours is customary) to waive the contingency or terminate and get your earnest money back.
+
+What gets a contingent offer accepted in this market:
+
+| Term | Weak version | Strong version |
+| --- | --- | --- |
+| Status of your old house | Not yet listed | Already under contract, inspection period over |
+| Contingency deadline | 90 days | 45 days, with a 15-day extension you pay for |
+| Earnest money | 1% | 2% to 3%, with part non-refundable after the option period |
+| Price | Below ask because "we're contingent" | At or near ask: the contingency is the discount |
+| Proof | Pre-approval letter | Fully underwritten approval that already includes both payments |
+| Kick-out window | 72 hours | 72 hours, plus a written waiver plan (bridge or HELOC already approved) so you can actually waive if bumped |
+
+The last row is the trick. A contingent buyer who has a HELOC or bridge approval in a drawer can waive the contingency the day the kick-out notice arrives. A contingent buyer without one is bluffing, and listing agents know it.
+
+## Path 3: bridge loans and the buy-before-you-sell programs
+
+A bridge loan is six to twelve months of interest-only money secured by the house you are leaving, used to fund the down payment on the one you are buying, repaid when the old house closes. The 2026 market has three flavors.
+
+**Bank and private-bank bridge loans.** Texas banks and the private banks that serve $2 million-plus buyers write bridge loans at roughly 9% to 11% interest-only, one to two points, and a 6- to 12-month term, usually cross-collateralized against both properties. Expect a full underwrite of both payments. On a $440,000 bridge over four months: about $14,700 in interest at 10%, $6,600 in points, and $1,500 in closing costs, around $22,800 all-in.
+
+**Buy-before-you-sell platforms.** Two of the largest are headquartered in Austin: Homeward (founded in 2018 by an Austin agent) and Calque, the trade-in-mortgage company that partners with lenders. Knock (bridge loan), Orchard (equity advance, must list with an Orchard agent) and HomeLight (equity unlock) also operate here. They sell the same thing with different wrappers: a down-payment advance, a contingency-free offer, and a backup offer on your old house (typically 80% to 85% of value) if it does not sell inside the program clock.
+
+| Program | Published 2026 fee structure | On a $1.2M departing home | Clock and backstop |
+| --- | --- | --- | --- |
+| Knock Bridge Loan | 2.25% of old-home list price + $1,850 loan fee; interest on the bridged amount | ~$28,850 + interest | 6 months; backup offer if unsold |
+| Homeward Buy Before You Sell | 3.5% of current home value (2.5% with Homeward Mortgage) + carrying costs while Homeward holds the new home | $42,000 ($30,000 bundled) | Old house must be listed within ~14 days |
+| Orchard Move First | 1.9% to 2.4% program fee + 3% listing fee with an Orchard agent | ~$23,000 to $29,000 + listing commission | 120 days, then a cash offer from a partner or a paid extension |
+| Calque Trade-In Mortgage | $2,000 up front + 1% at closing, through a partner lender | ~$14,000 | Purchase-price guarantee (backup contract) on the old home |
+| Bank bridge loan | 9% to 11% interest-only, 1 to 2 points, closing costs | ~$22,800 over 4 months | 6 to 12 months, no backstop |
+
+*Fee schedules are the companies' published 2026 figures and change without notice; confirm them in writing. The backup offer is the part to read twice. At 82% of a $1.2 million value, the backstop is a $216,000 haircut; it is insurance, not a plan.*
+
+## Path 4: the Texas HELOC, the state's best-kept move-up tool
+
+Texas regulates home-equity lending in its constitution, which is why most national "buy before you sell" advice is wrong here. Article XVI, Section 50(a)(6) and 50(t) set the rules for a second lien on your homestead:
+
+| Rule | What it says | What it means for a buy-before-you-sell |
+| --- | --- | --- |
+| 80% cap | All liens combined cannot exceed 80% of fair market value at closing (§50(a)(6)(B)) | $1.2M house with a $711K balance: $249K maximum line |
+| Homestead only | A §50(a)(6) lien attaches only to your homestead | Open it while you still live there, never after you move |
+| One at a time | Only one home-equity lien on the homestead at any time (§50(a)(6)(K)) | A cash-out refi from 2023 blocks a HELOC until it is paid off |
+| One per 12 months | No new home-equity loan within 12 months of the last one (§50(a)(6)(M)) | Plan the lien, you only get one |
+| 12-day wait | Cannot close before the 12th day after application and the consumer-rights notice (§50(a)(6)(M)) | Add three to four weeks to your timeline |
+| 3-day rescission | You can cancel for three business days after closing | Funds arrive about day 16 at the earliest |
+| 2% fee cap | Lender fees capped at 2% of principal, excluding appraisal, survey, title insurance and title exam (since the 2018 Prop 2 amendments) | $249K line: lender fees of $4,980 at most, often $0 to $1,500 at credit unions |
+| Where it closes | At the office of the lender, a title company or an attorney | No kitchen-table closings |
+| Non-recourse, judicial foreclosure | The lender's remedy is the house, through a court order | Protections you give up if you later refinance it into a non-home-equity loan |
+| HELOC advances | Draws of at least $4,000, no credit cards, advances allowed as long as total debt stays under 80% of value (the old 50% advance limit was removed in 2018) | Draw the full amount at the new closing, pay it off at the old one |
+
+*Sources: Texas Constitution Art. XVI §50; Texas Finance Commission 7 TAC Chapter 153 (2018 amendments); lender summaries linked in Sources.*
+
+The sequencing is the whole game. Lenders will not open a HELOC on a house that is listed, and most want it unlisted for 90 to 180 days. So the order is: apply for the line, wait the 12 days, close, wait the 3-day rescission, then list. The draw is interest-only during the draw period at prime plus a margin; prime is 7.00% after the Fed's September hike, and Bankrate's national average for a $30,000 HELOC was 7.47% in June, so budget 7.5% to 8.25% for a strong-credit borrower in Q4 2026. Interest on $249,000 for four months at 7.75% is about $6,430.
+
+Two more points that matter in Texas:
+
+- **Do not cash-out refinance.** A cash-out refinance is also a §50(a)(6) loan, and it replaces your 3% first lien with a 7.4% one. The HELOC leaves the first lien untouched; the old loan keeps running at 3% until the sale pays it off.
+
+- **Borrowed down payment is allowed.** Fannie Mae, Freddie Mac and most jumbo investors accept funds borrowed against real estate you own as a down-payment source; the HELOC payment just has to fit in your debt-to-income ratio. Disclose it on the application. Undisclosed liens surface at closing on the title commitment.
+
+## Path 5: keep the old house, and the Fannie Mae rule that changes December 1
+
+The "accidental landlord" path is the one most people assume they will take and the one that pencils least often. Fannie Mae's Selling Guide Announcement SEL-2026-08 (September 2, 2026, updated September 23) rewrote the departing-residence rules; lenders may use them now and must for applications dated December 1, 2026 or later (Fannie pushed the date back from November 1).
+
+| Qualifying rent from the house you are leaving | Before SEL-2026-08 | After (mandatory Dec 1, 2026) |
+| --- | --- | --- |
+| Documentation | A signed lease plus proof the security deposit and first month's rent were received | Leases not permitted. Market rent from an appraisal with a rent schedule, Fannie Form 1007, or a market-analysis tool with at least three comparable rentals |
+| Vacancy haircut | 75% of lease rent | 75% of market rent |
+| How much counts | 75% of rent minus PITIA; positive amount could add to qualifying income with landlord history | Positive amount offsets the departing residence's PITIA only, never adds income, regardless of experience |
+| Reserves | Standard | Six months of the departing home's PITIA if you have less than 12 months of property-management experience |
+| Freddie Mac | Lease plus deposit evidence; positive income only with 1-year landlord history | Unchanged: Freddie still accepts a lease and does not allow Zillow-style tools in place of an appraiser rent estimate |
+
+The practical effect: the friend-of-a-friend lease at an optimistic number is gone. Your lender will run an appraiser's market-rent figure (a $1.2 million central Austin house rents for roughly $4,500 to $5,000 a month in late 2026), take 75% of it, and subtract the house's full payment. For the worked example that is $3,600 against a $5,375 PITIA: a $1,775 monthly shortfall that goes straight into your debt-to-income ratio on the new jumbo, plus $32,250 in extra reserves. The numbers still work for a lot of high-income buyers; they no longer work on paper alone.
+
+Three Texas-specific costs of keeping the house, covered in depth in [sell or rent my house in Austin](/blog/sell-or-rent-my-house-austin):
+
+1. The homestead exemption leaves with you. On a $1.2 million house the lost exemptions add roughly $4,000 to $4,500 a year in property tax at 2025-2026 rates, and the 10% appraisal cap goes with it (non-homestead property gets the 20% circuit breaker through December 31, 2026). Details in [Texas homestead exemption 2026](/blog/texas-homestead-exemption-2026).
+
+2. The Section 121 clock starts. You keep the $500,000 married gain exclusion only if you sell within three years of moving out (two of the last five years as a primary residence). See [capital gains tax on a home sale in Texas](/blog/capital-gains-tax-home-sale-texas).
+
+3. The yield. At $4,800 rent, $24,800 in taxes without the exemption, $3,600 insurance, $6,000 maintenance and 5% vacancy, the house throws off about $20,300 a year: a 1.7% cap rate on $1.2 million. The 3% mortgage is the only reason it is not a bad rental, and it is a good enough reason for some owners. Your lender does not care either way; the rate does not change when a tenant moves in, and renting after the 12-month occupancy period on a primary-residence loan does not trigger the due-on-sale clause.
+
+## The worked example: $1.2M Allandale to $2.2M Westlake
+
+### The setup
+
+A couple bought a $1 million house in Allandale (78757) in mid-2021 with 20% down and an $800,000 loan at 3.00%. Five years in, the house is worth $1.2 million and the balance is about $711,000. They are buying a $2.2 million house in Westlake (78746, Eanes ISD) with 20% down on a 30-year jumbo. Jumbo pricing has run a bit under the conforming average all year, so the example uses 7.25% against Freddie Mac's 7.40% conforming rate.
+
+| | Departing home (Allandale) | New home (Westlake) |
+| --- | --- | --- |
+| Value / price | $1,200,000 | $2,200,000 |
+| Loan | $711,000 balance at 3.00% (30-yr fixed, 2021) | $1,760,000 at 7.25% (30-yr jumbo), $440,000 down |
+| Principal and interest | $3,373 | $12,006 |
+| Property tax (homestead, ~1.7% effective) | $1,700 | $3,210 (Eanes ISD + City of Austin stack, see [the Eanes premium](/blog/eanes-isd-premium)) |
+| Insurance | $300 | $600 |
+| PITI | $5,375 / month | $15,815 / month |
+| Net equity at sale (6.5% selling costs) | $1,200,000 - $78,000 - $711,000 = $411,000 | n/a |
+
+Selling costs follow [what it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin). The $440,000 down payment is the problem: $411,000 of it is sitting in the Allandale house until that house closes.
+
+### The double-carry clock
+
+The new PITI gets paid in every scenario; the overlap cost is the old house's $5,375 a month, plus whatever the gap financing costs. Measure it against a price cut, because that is the real alternative.
+
+| Months the old house sits after you close the new one | Carry at $5,375/month | Same money as a price cut on $1.2M |
+| --- | --- | --- |
+| 2 | $10,750 | 0.9% |
+| 4 | $21,500 | 1.8% |
+| 6 | $32,250 | 2.7% |
+| 9 | $48,375 | 4.0% |
+
+:::carry-calculator
+:::
+
+That table is why a vacant, staged house priced 2% under the number you wanted is usually the cheap option. In the citywide trailing-12 data, roughly 39% of Austin listings never close with the agent that listed them, and nearly all of those started high. See [how to price a luxury home in Austin](/blog/how-to-price-a-luxury-home-in-austin) and [the best time to sell a house in Austin](/blog/best-time-to-sell-a-house-austin) for the seasonal version (listing a central Austin house in early November beats listing it in October, and both beat December).
+
+### Five paths, 120 days of overlap, all-in cost
+
+| Path | Gap financing cost | Old-house carry (4 months) | Effect on the $2.2M purchase price | Net cost versus a clean back-to-back close |
+| --- | --- | --- | --- | --- |
+| 1. Sell first, rent 6 months | $40,800 (rent $27,000, two moves $12,000, storage $1,800) | $0 | About 2.5% better (-$55,000, estimate) | -$14,200: a gain, paid for in moves |
+| 2. Contingent offer with kick-out | $0 | $0 (back-to-back closings) | About 1.5% weaker (+$33,000, estimate) plus bump risk | +$33,000 |
+| 3a. Bank bridge loan, $440K at 10% I/O, 1.5 points | $22,800 | $21,500 | None | +$44,300 |
+| 3b. Platform bridge (2.25% + $1,850 + ~9% interest) | $42,050 | $21,500 (advanced by the program, repaid at sale) | None | +$63,550 |
+| 4. Texas HELOC $249K at 7.75% + $191K from savings | $8,500 (interest $6,430, fees ~$2,100) | $21,500 | None: non-contingent offer | +$30,000 |
+| 5. Keep Allandale as a rental | $0 (no sale, saves $78,000 in selling costs today) | Ongoing: $1,775/mo shortfall after 75% of a $4,800 market rent | None, but the $440K down must come from elsewhere | About -$1,000/yr after principal paydown; see below |
+
+*Estimates in the purchase-price column are ours, from how stale luxury listings have been negotiating in 2026, not a published statistic. Everything else is arithmetic on the published rates and fees above.*
+
+### Reading the table
+
+The HELOC wins on cost if you can plan 45 days ahead and bring $191,000 of your own cash. The 80% cap stops the line at $249,000 ($960,000 less the $711,000 balance), so the couple fills the rest of the down payment from savings or a securities-backed line. Opportunity cost on $191,000 for four months at a 4% money-market yield is about $2,550. Total gap cost: about $30,000, and the offer on Westlake goes in with no sale contingency.
+
+The bridge loan is the HELOC for people who already listed. Same outcome, $14,000 to $34,000 more, because the lender is pricing speed and the program is pricing its backup offer. If the Allandale house were already on the market, the HELOC door is closed and this is the path.
+
+Selling first can be free. If a 60-day-vacant luxury seller gives you 2.5% for a non-contingent, proceeds-in-hand offer, the $55,000 covers the rent, both moves and storage with $14,000 left. The cost is six months in a furnished rental and the risk the right house sells while you are in it. In a market with nine $2 million-plus contracts a week, that risk is lower than it feels.
+
+The contingent offer is the HELOC's hidden twin. Its cost is the discount you do not get. At 1.5% that is $33,000, almost exactly the HELOC's $30,000, with less certainty. Pair them: write the offer with the contingency and the HELOC approval in hand, then waive when bumped.
+
+Keeping the house is a yield decision. At $4,800 rent the Allandale house produces about $20,300 of net operating income on $1.2 million (1.7% cap rate) and loses about $20,200 a year after the 3% mortgage payment, which is a wash once $19,000 of annual principal paydown is counted. To qualify, the couple needs the new $15,815 payment plus the $1,775 departing-residence shortfall (plus a HELOC payment if that funded the down payment) inside a 43% debt-to-income ratio: roughly $490,000 to $540,000 of gross household income, and six months of the Allandale PITIA ($32,250) in reserves if they have never been landlords. The December 1 rule removes the option of a lease at $5,800 from a cousin to make that work.
+
+## After the sale: recast, don't refinance
+
+On day 120 the Allandale house closes. The HELOC and the 3% first lien are paid off at the title company, and $162,000 lands in the couple's account ($1,122,000 net less $711,000 less $249,000). Most jumbo and conventional servicers will recast the new loan for a flat $250 to $500 fee: you pay down principal (usually a $10,000 minimum), the servicer re-amortizes the remaining balance over the remaining term at the same 7.25%, and the payment drops with no appraisal, no underwriting and no closing costs.
+
+| Principal applied to the $1.76M jumbo | New balance | New P&I at 7.25% | Monthly saving |
+| --- | --- | --- | --- |
+| $0 | $1,760,000 | $12,006 |   |
+| $162,000 (HELOC path proceeds) | $1,598,000 | $10,901 | $1,105 |
+| $400,000 (if the whole down payment was bridged) | $1,360,000 | $9,278 | $2,728 |
+
+A refinance would cost $10,000 to $20,000 in closing costs for the same rate; save it for the day rates are actually lower. Two caveats: FHA and VA loans generally cannot be recast, and some jumbo investors will not. Ask the question before you sign the new loan, not after.
+
+## The 150-day sequence
+
+The order matters more than the product. This is the sequence we run for a HELOC-funded, non-contingent purchase; swap a bridge loan into step 3 if the house is already listed.
+
+1. **Day -60:** underwrite both payments. Get a fully underwritten approval on the new purchase that already includes the departing residence. If you intend to keep the old house, ask the lender whether it has adopted SEL-2026-08 early; after December 1 every conventional file uses market rent and the six-month reserve rule.
+
+2. **Day -50:** order the appraisal with a rent schedule. One appraisal with a Form 1007 rent addendum serves the HELOC lender and, if you keep the house, the Fannie Mae departing-residence calculation.
+
+3. **Day -45:** apply for the HELOC. The 12-day waiting period starts when the lender delivers the consumer-rights notice. Do not list the house. Do not put a sign in the yard. Do not post it as coming soon.
+
+4. **Day -30:** close the HELOC, wait the 3-day rescission. Funds are available around day -26. Draw nothing yet.
+
+5. **Day -25:** write the offer. Non-contingent, or contingent with a 45-day deadline and a kick-out you can waive because step 4 is done. Target listings past 60 days; ask for a 45-day close.
+
+6. **Day 0:** close the new house. Draw the HELOC at the title company for the down payment; wire the balance from savings. File the homestead exemption on the new house (Texas prorates it in the year of purchase; your old homestead stays in place through December 31).
+
+7. **Day +7 to +14:** move, stage, list the old house. Vacant, photographed empty of your life, priced to the market rather than to your 2022 memory of it. See [best time to sell a house in Austin](/blog/best-time-to-sell-a-house-austin) for the month-by-month calendar.
+
+8. **Day +45:** under contract. A correctly priced central Austin house is going under contract in days; a luxury one in months. Price for the former.
+
+9. **Day +90 to +120:** close the old house. The title company pays off the 3% first lien and the HELOC in the same disbursement.
+
+10. **Day +130:** recast the jumbo. Send the servicer the lump sum and the recast request; the new payment shows up on the next statement.
+
+## Eight mistakes we see
+
+1. **Listing before the HELOC funds.** The line dies the moment the MLS status flips. Sequence it or lose it.
+
+2. **Cash-out refinancing the 3% loan.** It is the same §50(a)(6) lien with a 7.4% rate attached. The HELOC leaves the first lien alone.
+
+3. **Forgetting the 12-month rule.** A cash-out refi or HELOC closed in the last year blocks a new one until that anniversary.
+
+4. **Planning on a lease after December 1.** Fannie Mae's departing-residence rule no longer accepts one. Budget on 75% of an appraiser's market rent and six months of reserves.
+
+5. **Letting the program clock run out.** Knock's 6 months and Orchard's 120 days end in a backup offer at 80% to 85% of value. Price to sell inside the clock.
+
+6. **Buying with 10% down to shrink the gap.** On a $2.2 million purchase that usually means a jumbo second lien or PMI at a rate that eats the HELOC savings twice over.
+
+7. **Two homestead exemptions.** Texas allows one. Claim the new house, and expect the old house's tax bill to reset if you keep it.
+
+8. **Not asking about recast before signing.** It is a two-sentence question that is worth $1,100 to $2,700 a month in the example above.
+
+## When each path wins
+
+| Your situation | Best path | Why |
+| --- | --- | --- |
+| Old house not listed, 45+ days before you need to write an offer, some cash on hand | Texas HELOC (Path 4) | Cheapest gap money in the state; keeps the 3% loan; non-contingent offer |
+| Old house already listed or under contract | Contingent offer with kick-out (Path 2) | Free, and a listing past 60 days will take it; back it with a bridge approval |
+| No listing, no planning time, equity-rich, cash-poor | Bridge loan or platform (Path 3) | Speed costs $25K to $45K; the backup offer is the price of certainty |
+| Flexible on timing, want the lowest purchase price, can tolerate a rental | Sell first (Path 1) | Proceeds-in-hand buyers get the discount; nine $2M+ contracts a week means the next house will exist |
+| Income over ~$500K, long horizon, want the 3% loan as a portfolio asset | Keep as a rental (Path 5) | 1.7% cap rate is bad; a 3% loan on an appreciating asset is not; sell inside the three-year Section 121 window if it stops working |
+| Buying off-market from a seller who can wait | Sell first or HELOC, with a negotiated close date | The seller's flexibility on timing replaces the bridge loan |
+
+## How Echelon runs this
+
+Most of the move-up purchases we close above $2 million never carried a bridge loan, because the purchase was negotiated off-market with a closing date that fit the sale, or because the HELOC was opened 45 days before the client ever saw the house. The sale side gets listed vacant, priced from a current CMA rather than a 2022 Zestimate, and timed to the Austin seasonal calendar. If you are weighing the next house while you still own this one, send us both addresses. We will run the five-path table on your actual numbers, including the December 1 departing-residence math, before you talk to a lender.
+
+### Send us both addresses
+
+We'll run the five-path table on your actual numbers, including the December 1 departing-residence math, before you talk to a lender. [Talk to Taylor](/contact) or call [512.661.3843](tel:+15126613843).
+
+## Frequently asked questions
+
+:::faq
+
+Q: Can I buy a house before selling mine in Texas?
+A: Yes. The five ways are selling first and renting briefly, writing a contingent offer with a kick-out clause, a bridge loan or buy-before-you-sell program, a Texas HELOC on your current home opened before you list, or keeping the current home as a rental and qualifying for both payments. In Austin's October 2026 market, with about five months of inventory and luxury listings averaging 141 days, contingent offers and 45-day closings are routinely accepted.
+
+Q: How much can I borrow on a HELOC in Texas?
+A: Texas caps all liens on a homestead at 80% of fair market value under Article XVI, Section 50(a)(6) of the state constitution. On a $1.2 million house with a $711,000 first mortgage, the maximum line is $249,000 ($960,000 less $711,000). The line must be on your homestead, you can have only one home-equity lien at a time, and you cannot open one within 12 months of closing another.
+
+Q: How long does a Texas home equity loan or HELOC take to close?
+A: Plan on three to four weeks. Texas requires a 12-day waiting period after you apply and receive the consumer-rights notice, then a three-business-day right of rescission after closing before funds are available. Lender fees are capped at 2% of the loan amount, excluding the appraisal, survey, title insurance and title exam.
+
+Q: Can I get a HELOC on a house I am about to list?
+A: Only if you open it before the house is listed. Lenders will not open a home-equity line on a property that is on the market, and most want it unlisted for 90 to 180 days. The order is: apply, wait 12 days, close, wait 3 days, then list.
+
+Q: What is Fannie Mae's new departing-residence rule?
+A: Selling Guide Announcement SEL-2026-08 (September 2, 2026) stops lenders from using a lease to count rent from the home you are leaving. Lenders must use market rent from an appraisal rent schedule, Form 1007, or a market-analysis tool with at least three comparable rentals, count 75% of it, and apply any positive amount only to offset that home's payment. Borrowers with less than 12 months of landlord experience need six months of that home's PITIA in reserves. It is mandatory for applications dated December 1, 2026 or later.
+
+Q: How much does a bridge loan cost in Austin?
+A: Bank bridge loans run roughly 9% to 11% interest-only with one to two points and a 6- to 12-month term; on a $440,000 bridge over four months that is about $22,800. Buy-before-you-sell programs charge a published program fee instead: Knock 2.25% of your home's list price plus $1,850, Homeward 3.5% of your home's value (2.5% with its mortgage), Orchard 1.9% to 2.4% plus a listing fee, Calque $2,000 plus 1% at closing. Most include a backup offer on your old house at roughly 80% to 85% of value if it does not sell inside the program window.
+
+Q: Do Austin sellers accept contingent offers in 2026?
+A: Increasingly, yes. Unlock MLS data for September 2026 shows citywide closings down 12.7% year over year with about five months of inventory, and $2 million-plus single-family contracts averaging 141 days on market. A contingent offer at or near asking, with a 45-day deadline, a 72-hour kick-out and a fully underwritten approval, is competitive on any listing past 60 days.
+
+Q: What is a mortgage recast and why does it matter when you buy before you sell?
+A: A recast applies a lump sum to principal and re-amortizes the remaining balance over the remaining term at the same rate, for a flat fee of about $250 to $500 and no new underwriting. When your old house closes 90 to 120 days after the new one, you apply the proceeds to the new jumbo and the payment drops; applying $162,000 to a $1.76 million loan at 7.25% cuts the payment by about $1,105 a month. FHA and VA loans generally cannot be recast, and some jumbo investors will not, so ask before you sign.
+:::
+
+## Sources
+
+- Fannie Mae Selling Guide Announcement SEL-2026-08 (Sept 2, 2026, updated Sept 23)
+- Fannie Mae Selling Guide B3-3.8-05, Rental Income from Non-Subject Property: Departing Residence
+- National Mortgage Professional, Fannie Changes How Rent From A Former Home Counts (Sept 22, 2026)
+- TENA, Fannie Mae update to SEL-2026-08 implementation date
+- Legal Clarity, Texas Home Equity Loan Rules and Notice Requirements
+- Alston & Bird, Texas Home Equity Loan Amendments Enacted (Dec 2017)
+- CLA, Texas Amends Provisions Regarding Home Equity Lending (7 TAC 153, eff. Mar 29, 2018)
+- National Mortgage Professional, Texas Home Equity Loans Q&A
+- Bankrate, HELOC rates
+- Mortgage Professional America, Oct 19, 2026
+- Norada, Interest Rate Predictions October 2026
+- Serendipity Realty Group at Compass via openPR, Oct 19, 2026
+- Team Price, Austin Housing Market Oct 15, 2026 and Oct 8, 2026
+- CultureMap Austin, Sept 17, 2026 (Redfin buyer's-market report)
+- The Real Deal, Oct 21, 2026 (Reisor Team Weekly Luxury Report) and Oct 14, 2026
+- JVM Lending, Buy Before You Sell Programs Compared: 2026 Guide
+- Real Estate Witch, Knock review and Clever, Knock Bridge Loan review
+- AnytimeEstimate, Homeward review and How to Buy a House Before You Sell Yours
+- FHFA Working Paper 23-06, Fonseca and Liu, The Lock-In Effect of Mortgage Rates
+- Redfin analysis of FHFA National Mortgage Database
+- Echelon analysis of Unlock MLS trailing-12-month data via Agent Intel (through Aug 31, 2026)
+
+## Related reading
+
+- [Upgrading to a luxury home in Austin](/blog/upgrading-to-a-luxury-home-in-austin)
+- [Should I sell my house now or wait?](/blog/should-i-sell-my-house-now-or-wait-austin)
+- [Assumable mortgages in Austin](/blog/assumable-mortgage-austin)
+- [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code)
+- [Austin housing market forecast 2027](/blog/austin-housing-market-forecast-2027)
+- [How to buy a home in Austin's buyer's market](/blog/how-to-buy-home-austin-buyers-market-2026)
+- [Private listings in Austin](/blog/private-listings-austin)
+- [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin)
+- [Texas as a non-disclosure state](/blog/texas-non-disclosure-state)
+
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by eXp Realty (TREC #734520), with $155 million-plus in career sales across 200-plus transactions. He holds the CLHMS Guild, GRI and ABR designations. Read more on the [Taylor Sherwood](/taylor-sherwood) page or reach him at [512.661.3843](tel:+15126613843).`
+  },
   {
     id: "austin-home-prices-by-zip-code",
     title: "Austin Home Prices by ZIP Code (October 2026)",

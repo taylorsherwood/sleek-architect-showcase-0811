@@ -3612,7 +3612,7 @@ Three more things happen. First, the 10 percent annual cap on appraised value in
 
 **Management.** Austin managers charge 8 to 10 percent of collected rent, half to a full month's rent to place a tenant, and $100 to $500 per renewal. Flat-fee operators run about $125 to $349 a month and usually win once rent clears $2,000. Self-managing is free in dollars and expensive in Tuesday nights.
 
-**The lender.** If you need a mortgage for the next house, Fannie Mae's rental income rules (Selling Guide B3-3.1-08) let the lender count 75 percent of a signed lease on the departing home, with the security deposit and first month's rent documented into your account. If you have no landlord history on a filed Schedule E, that rent can only offset the old payment. It cannot add to your income. And if your next down payment has to come out of this house, think hard before a cash-out refinance: it replaces the 2.875 percent loan with one near 6.65 percent and erases the only reason to keep the house. A home equity line keeps the first lien intact. If the loan happens to be FHA or VA, read the [assumable mortgage guide](/blog/assumable-mortgage-austin) first, because that rate may be worth more as a sales premium than as a rental subsidy.
+**The lender.** If you need a mortgage for the next house, Fannie Mae's rental income rules (Selling Guide B3-3.1-08) let the lender count 75 percent of a signed lease on the departing home, with the security deposit and first month's rent documented into your account. If you have no landlord history on a filed Schedule E, that rent can only offset the old payment. It cannot add to your income. And if your next down payment has to come out of this house, think hard before a cash-out refinance: it replaces the 2.875 percent loan with one near 6.65 percent and erases the only reason to keep the house. A home equity line keeps the first lien intact. If the loan happens to be FHA or VA, read the [assumable mortgage guide](/blog/assumable-mortgage-austin) first, because that rate may be worth more as a sales premium than as a rental subsidy. Fannie Mae's December 1, 2026 departing-residence rule changes how lenders count that rent; the details are in our [buy-before-you-sell guide](/blog/buy-before-you-sell-austin).
 
 **The income tax trap.** Year one on Schedule E for this house: $42,864 of effective rent, less $34,751 of expenses, less $10,648 of mortgage interest, less $13,236 of depreciation, equals a paper loss of about $15,771. Investor forums will tell you that loss shelters your salary. For this couple it does not. The $25,000 passive loss allowance phases out between $100,000 and $150,000 of modified adjusted gross income, so at $300,000 the loss is suspended and carried forward until the year you sell, when it is released against the gain and the recapture. Real, but delayed, and you float the cash in the meantime.
 
@@ -4318,6 +4318,7 @@ A: In a normal sale, almost never, because of due on sale clauses. Transfers thr
 
 - [Off-market homes in Austin](/blog/off-market-homes-austin)
 - [Private listings in Austin](/blog/private-listings-austin)
+- [Buy before you sell in Austin](/blog/buy-before-you-sell-austin)
 - [What it costs to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
 
 ## Talk it through privately
@@ -7110,7 +7111,7 @@ Total cash and concession exposure | $67,000 to $79,000 |
 
 Against that, you are betting on appreciation strong enough to beat roughly $70,000 in carrying and concession drag, in a market where the affordable-buyer pool is shrinking and prices have been flat since the 2022 peak.
 
-One more thing to price in: the lock-in effect that has been propping up values is not permanent. About 56% of Texas mortgages carry rates below 4%, and the Federal Housing Finance Agency estimates rate lock-in prevented about 1.72 million home sales nationally from mid-2022 through mid-2024 while inflating prices by roughly 7%. Translation: a meaningful chunk of today's pricing is supported by inventory that is being withheld. When rates ease and that inventory unlocks, you will not be the only seller with this idea. The sellers who transact ahead of the unlock face less competition than the ones who wait for it.
+One more thing to price in: the lock-in effect that has been propping up values is not permanent. About 56% of Texas mortgages carry rates below 4%, and the Federal Housing Finance Agency estimates rate lock-in prevented about 1.72 million home sales nationally from mid-2022 through mid-2024 while inflating prices by roughly 7%. Translation: a meaningful chunk of today's pricing is supported by inventory that is being withheld. When rates ease and that inventory unlocks, you will not be the only seller with this idea. The sellers who transact ahead of the unlock face less competition than the ones who wait for it. Owners who need to move anyway have [five ways to buy before they sell](/blog/buy-before-you-sell-austin) without giving up the old loan early.
 
 ## "But My Listing Already Expired"
 
@@ -17168,7 +17169,7 @@ Moving up in Austin in 2026 favors the buyer at the top and the seller at the bo
 
 Every move-up transaction is really two transactions bolted together, and the order you run them in determines your negotiating power on both. This is [sequencing risk](/blog/should-i-sell-my-house-now-or-wait-austin), and it is the single largest variable in the process.
 
-Start with three numbers: what your current home realistically nets after costs, what the lender will support at the new price point, and how much cash you can move without touching the sale proceeds. Getting a current valuation on your existing home, a jumbo pre-approval on the target range, and a written closing-cost estimate is part of good preparation.
+Start with three numbers: what your current home realistically nets after costs, what the lender will support at the new price point, and how much cash you can move without touching the sale proceeds. Getting a current valuation on your existing home, a jumbo pre-approval on the target range, and a written closing-cost estimate is part of good preparation. If you need the next house before this one closes, see our guide to [buying before you sell in Austin](/blog/buy-before-you-sell-austin).
 
 ## The Move-Up Math: What Changes Between $1.2M and $2.5M
 

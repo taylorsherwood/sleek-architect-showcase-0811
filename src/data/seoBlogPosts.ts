@@ -3861,6 +3861,8 @@ That is the fairest one-sentence review of automated valuation ever written, and
 
 To be fair to Zillow, the company has been transparent about what the tool is. Its own page states the Zestimate "is not an appraisal and can't be used in place of an appraisal," and notes that lenders will not accept it. Zillow calls it a starting point. The problem is not the disclaimer. The problem is how many Texans treat the starting point as the finish line.
 
+Unlike an AVM, the [new UAD 3.6 appraisal report](/blog/new-appraisal-report-2026-austin) records room-level updates and separate interior and exterior ratings using an appraiser's property analysis.
+
 ## What the Model Cannot See From Space
 
 Some of what determines an Austin home's value simply does not exist in any dataset the Zestimate can reach. A few of the big ones:
@@ -5446,6 +5448,8 @@ FHA | 75% of supported market rent or lease rent | 50% for a proposed ADU under 
 
 The practical math most lenders run: 75 percent of the lower of the lease rent or the appraiser's supported market rent, capped at 30 percent of your qualifying income. On our model's $1,895 rent, that is roughly $1,421 per month of qualifying income, which carries about $225,000 of additional loan on a 6.5 percent, 30 year note. For an owner occupant buyer, a property with a rentable ADU is not just worth more, it is affordable to a larger buyer pool, and appraisers are being cautioned to keep that income from being double counted in both the rent schedule and the sales adjustments. The new UAD 3.6 appraisal format, mandatory November 2, 2026, adds structured ADU data fields for the first time, which should make the comp problem measurably better within a few years.
 
+Our [new appraisal report guide for Austin](/blog/new-appraisal-report-2026-austin) details the dedicated ADU fields and the permit, floor plan, and rental documentation to assemble before the visit.
+
 **The refi gap, quantified.** Take the worked model. You spend $260,000. In a thin comp set, assume the appraiser supports $180,000 of contributory value. At 80 percent loan to value, a cash-out refinance returns at most $144,000 of new borrowing capacity against your $260,000 outlay, about 55 cents of liquidity per dollar spent. That is the appraisal gap in one sentence: the sale exit and the condo regime recover full retail value from a buyer, the refi channel recovers only what the comp set can prove today. Meanwhile the Travis Central Appraisal District has no such hesitation, and will happily tax the new unit at close to its full value from the certificate of occupancy forward. Build with the exit that matches your capital plan.
 
 **How to defend the value on appraisal day.** Appraisers can only credit what they can support, so hand them the support:
@@ -5891,6 +5895,8 @@ Net of carrying | about $2,926,000 | about $2,884,000
 :::
 
 On paper, the financed offer nets about $42,000 more, so cash is not automatically king. But that $42K is the price of two live risks: an appraisal in a thin-comp submarket, where the appraiser may be working from three sales, one of them an outlier, and a financing contingency. If the appraisal lands at $2.85M and the price renegotiates to meet it, the financed offer's advantage evaporates entirely. If the deal dies at day 40, you are relisting a now twice-stigmatized property and writing carrying checks while you do it. The point is not to fear financed offers. It is to price the risk deliberately instead of reacting to the biggest number.
+
+For financed offers during the transition, our [Austin guide to the new appraisal report](/blog/new-appraisal-report-2026-austin) explains the documentation and lender questions that help you assess appraisal risk.
 
 Also on the table: seller-paid closing costs or rate buydowns can bridge a price gap while keeping the recorded sale price higher, which matters for the comp record in your submarket. Earnest money size, option periods, and response windows all shift the risk profile. Sophisticated buyers use these levers. Sellers should too.
 
@@ -6438,6 +6444,8 @@ New survey (only if needed) | $400 to $700 | Avoidable; see below
 :::
 
 Two seller-friendly notes hiding in that table. First, the resale certificate cap is state law, so if a management company quotes more than $375 for the certificate itself, push back. Second, the survey is usually avoidable: if you kept the survey from when you bought the home and nothing has changed, you can provide it with a T-47 affidavit and most lenders will accept it. That is a $400 to $700 savings for keeping a piece of paper.
+
+Appraisal revisions and a low valuation can also change your net proceeds; prepare the [seller appraisal packet for the new UAD 3.6 report](/blog/new-appraisal-report-2026-austin) before a financed buyer orders the appraisal.
 
 ## Property Tax Proration: The Line That Surprises Everyone
 
@@ -7349,6 +7357,8 @@ The current list of non-disclosure states: Alaska, Idaho, Kansas, Louisiana, Mis
 Two common misconceptions worth killing:
 
 **Misconception #1: "Non-disclosure means nobody knows what homes sell for."** Wrong. Listing brokers report closed prices to the MLS, in Austin that's ACTRIS, where licensed agents and appraisers can see them. The data exists; it's just not public.
+
+For financed purchases, the [new appraisal report arriving November 2](/blog/new-appraisal-report-2026-austin) makes documented MLS comps and improvement records more important.
 
 **Misconception #2: "Non-disclosure means I can't find out anything."** Also wrong. Plenty is still public, which is exactly why the next section matters.
 

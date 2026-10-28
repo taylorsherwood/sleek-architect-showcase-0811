@@ -2,6 +2,7 @@ import { lazy, Suspense, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import InlineEditorialCTA from "@/components/blog/InlineEditorialCTA";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { pathwayForCategory } from "@/lib/articlePathways";
 
 const AgentIntelMarketSnapshot = lazy(
@@ -299,7 +300,7 @@ const GlanceTable = ({ body }: { body: string }) => {
  * First cell of each subsequent row is the row label (<th scope="row">).
  * Stacks to a definition-list-style layout on mobile.
  */
-const CompareTable = ({ body }: { body: string }) => {
+const CompareTable = ({ body, refined = false }: { body: string; refined?: boolean }) => {
   const rows = body
     .split("\n")
     .map((r) => r.split("|").map((c) => c.trim()))
@@ -327,7 +328,7 @@ const CompareTable = ({ body }: { body: string }) => {
         </colgroup>
         )}
 
-        <thead>
+        <thead className={refined ? "sticky top-0 bg-background z-10" : undefined}>
           <tr className="border-b border-foreground/20">
             {header.map((h, i) => (
               <th
@@ -343,10 +344,10 @@ const CompareTable = ({ body }: { body: string }) => {
         </thead>
         <tbody>
           {data.map((row, rIdx) => (
-            <tr key={rIdx} className="border-b border-foreground/10 last:border-b-0">
+            <tr key={rIdx} className={`border-b border-foreground/10 last:border-b-0 ${refined ? "even:bg-secondary" : ""}`}>
               <th
                 scope="row"
-                className={`text-left align-top py-5 pr-8 px-4 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] font-normal whitespace-pre-line leading-[1.5] ${wide ? "min-w-[210px]" : ""}`}
+                className={`text-left align-top py-5 pr-8 px-4 text-minimal text-foreground uppercase tracking-[0.1em] text-[11px] ${refined ? "font-semibold" : "font-normal"} whitespace-pre-line leading-[1.5] ${wide ? "min-w-[210px]" : ""}`}
               >
                 {row[0]}
               </th>
@@ -578,7 +579,7 @@ const SoftCTA = ({ body }: { body: string }) => {
   );
 };
 
-const FAQBlock = ({ body }: { body: string }) => {
+const FAQBlock = ({ body, expandable = false }: { body: string; expandable?: boolean }) => {
   const items: { q: string; a: string }[] = [];
   const chunks = body.split(/\n\s*\n/);
   chunks.forEach((chunk) => {
@@ -589,6 +590,23 @@ const FAQBlock = ({ body }: { body: string }) => {
     }
   });
   if (!items.length) return null;
+  if (expandable) {
+    return (
+      <section className="faq mt-16 pt-10 border-t border-foreground/15">
+        <h2 className="text-2xl md:text-3xl font-light text-architectural mb-8">Frequently asked questions</h2>
+        <Accordion type="multiple">
+          {items.map((item, idx) => (
+            <AccordionItem key={idx} value={`faq-${idx}`} className="border-foreground/15">
+              <AccordionTrigger className="text-left text-lg font-medium text-foreground gap-6">{item.q}</AccordionTrigger>
+              <AccordionContent className="text-base text-muted-foreground leading-relaxed" forceMount>
+                <p dangerouslySetInnerHTML={{ __html: renderInline(item.a) }} />
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+    );
+  }
   return (
     <div className="mt-16 pt-10 border-t border-foreground/15">
       <h2 className="text-2xl md:text-3xl font-light text-architectural mb-8">
@@ -734,7 +752,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             );
           }
           case "compare-table":
-            return <CompareTable key={idx} body={block.body} />;
+            return <CompareTable key={idx} body={block.body} refined={articleId === "new-appraisal-report-2026-austin"} />;
           case "carry-calculator":
             return <CarryCalculator key={idx} />;
           case "zip-table":
@@ -754,7 +772,7 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
           case "stat-block":
             return <StatBlock key={idx} body={block.body} />;
           case "faq":
-            return <FAQBlock key={idx} body={block.body} />;
+            return <FAQBlock key={idx} body={block.body} expandable={articleId === "new-appraisal-report-2026-austin"} />;
           case "before-after": {
             const kv: Record<string, string> = {};
             block.body.split("\n").forEach((ln) => {

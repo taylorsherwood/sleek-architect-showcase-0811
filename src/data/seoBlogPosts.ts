@@ -197,7 +197,352 @@ const blogBestTimeToSellAustin = blogBestTimeToSellAustinAsset.url;
 import blogBuyBeforeYouSellAsset from "@/assets/blog/buy-before-you-sell-austin-hero.jpg.asset.json";
 const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 
+import blogAppraisalHero from "@/assets/blog/new-appraisal-report-2026-austin-hero.webp.asset.json";
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "new-appraisal-report-2026-austin",
+    title: "The New Appraisal Report Arrives Nov. 2: What Austin Sellers and Buyers Need to Know",
+    metaTitle: "New Appraisal Report Nov. 2, 2026: Austin Buyer-Seller Guide | Echelon Property Group",
+    excerpt: "Fannie Mae and Freddie Mac retire the 1004 on Nov. 2, 2026. What the new UAD 3.6 report records, why it matters more in Austin, and the seller packet that protects your price.",
+    author: "Taylor Sherwood",
+    date: "2026-10-28",
+    dateModified: "2026-10-28",
+    readTime: "32 min read",
+    category: "MARKET INTELLIGENCE",
+    keywords: "UAD 3.6, new URAR, appraisal changes November 2026, Austin home appraisal, appraisal gap Austin, Fannie Mae 1004 retired, new appraisal report 2026",
+    aboutPlaces: ["Austin, Texas", "Westlake Hills, Texas", "Travis County, Texas"],
+    imageAlt: "Appraiser inspecting the exterior of a stone Austin home ahead of the UAD 3.6 appraisal report transition",
+    relatedPostIds: ["cost-to-sell-a-house-austin", "best-time-to-sell-a-house-austin", "buy-before-you-sell-austin", "should-i-sell-my-house-now-or-wait-austin"],
+    extraSchema: [{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://www.echelonpropertygroup.com/blog/new-appraisal-report-2026-austin", "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".key-takeaways", ".faq"]}}],
+    image: blogAppraisalHero.url,
+    heroImage: blogAppraisalHero.url,
+    content: `## Key takeaways
+
+On Monday, November 2, 2026, the appraisal report that has backed almost every financed home purchase in Austin since 2005 gets replaced. Here is the short version.
+
+:::callout
+label: Key takeaways
+class: key-takeaways
+- The Fannie Mae Form 1004 and its cousins (1073 condo, 1025 two-to-four unit, 2055 exterior-only, 1004C manufactured) retire. One dynamic Uniform Residential Appraisal Report built on the UAD 3.6 data standard takes their place for new appraisal reports submitted to UCDP for loans sold to Fannie Mae or Freddie Mac, subject to approved lender exceptions.
+- The appraiser still values your house the same way: comparable sales, adjustments, reconciliation. What changes is the documentation. Condition and quality now get separate interior and exterior ratings, kitchens and baths get room-level update status, ADUs get their own size, room and condition fields, and photos and commentary sit inside the section they support instead of in an addendum at the back.
+- The cutover is based on the date the report is first submitted to the GSE portal, not your contract date. A deal that goes under contract this week can land on either side of the line depending on how fast the appraisal is ordered.
+- On September 30, 2026 the GSEs added a safety valve: lenders that obtain an exception from each applicable GSE can keep submitting legacy reports until May 19, 2027. So some Austin deals will see the new report on November 2 and some will not until spring. Ask the lender which one.
+- FHA accepts the new report but has set no mandatory date. VA and USDA have announced none. If your buyer is FHA or VA, nothing is forced on November 2.
+- For sellers, the practical change is that undocumented improvements get harder to credit. A dated list of updates with invoices and permits, plus clear disclosure of ADUs, solar ownership, additions and conversions, is a practical part of listing prep in Austin.
+- For buyers, build a few extra days into the appraisal contingency on contracts written in November, and do not read a longer report as a problem report.
+:::
+
+## What changes on November 2, 2026 (and what does not)
+
+Fannie Mae and Freddie Mac are retiring the fixed appraisal forms and replacing them with a single, data-driven report. Starting November 2, 2026, every new appraisal submitted to the GSEs' Uniform Collateral Data Portal must be in the UAD 3.6 format unless the submitting lender has an approved exception, delivered on the redesigned Uniform Residential Appraisal Report. The GSEs themselves call it the biggest change to appraisal reporting since the first Uniform Appraisal Dataset in 2011, and the form it replaces, the March 2005 edition of the 1004, is old enough to vote.
+
+The name sounds like a software patch. It is closer to a rewrite. Here is what actually changes.
+
+One report instead of a drawer of forms. The 1004 (single-family), 1073 (condo), 1025 (two-to-four unit), 2055 (exterior-only), 1004C (manufactured), the 2090 and 2095 co-op forms, and the 1007 rent schedule all go away. In their place is one URAR that configures itself from the property data. In the GSEs' words, "the data that describes the subject property drives the appraisal report, not a form type or number." A house with an ADU grows a unit section. A condo grows a project section. A house with solar grows energy-efficiency fields. A house with none of that stays short.
+
+Deeper, more structured property data. The old form leaned on checkboxes plus a free-text addendum the appraiser typed at the end. The new one replaces most of that narrative with enumerated fields. The General Addendum is gone; commentary lives inside the section it explains. Industry alerts put the full data dictionary at more than 1,500 possible data points per property, most of them conditional, meaning they appear only when the feature exists.
+
+Condition and quality, now split. The C1 to C6 condition scale and Q1 to Q6 quality scale survive, with rewritten definitions, but each now gets separate interior and exterior ratings. A 1978 Northwest Hills house with original brick and a gutted-to-the-studs interior no longer has to be averaged into one number.
+
+Room-level update status. Kitchens and bathrooms each get their own update status. Flooring and bathrooms also get an overall update status. New construction is reported as "fully updated" rather than "not updated." This is where a dated remodel list matters, because the appraiser is now asked to classify the work, not just mention it.
+
+ADUs get real fields. Size, condition, room count and location of an accessory unit are captured in their own section, and the sales grid gets a "total units" row to reconcile comps with different unit counts. Market rent moves into a Rental Information section of the main report instead of a separate 1007.
+
+Area is reported four ways. Finished and unfinished, above grade and below grade, measured to the ANSI Z765-2021 standard, with the above-grade figure broken out by level. Expect the appraiser's number to differ from both the TCAD record and the MLS sheet, and set that expectation with clients before the visit, not after.
+
+Photos and exhibits move inside. Instead of a stack of photo pages at the back, images and supporting documents sit in the section they support. The report also opens with a summary page: value, market value condition, key property facts, and a table of apparent defects, damage or deficiencies.
+
+Scope of work is set by the lender. Traditional (interior and exterior inspection), hybrid, desktop and exterior-only are all assignment types under the same report. The engagement letter, not the form number, tells the appraiser how much to inspect.
+
+What does not change matters just as much. The valuation method is the same: the appraiser selects comparable sales, adjusts them, and reconciles to an opinion of value. The sales comparison grid is still the center of the report. Appraiser independence rules are unchanged, so your agent still cannot lobby for a number. And the report's purpose is the same: it protects the lender's collateral, not your sale price.
+
+Why do the GSEs want this? Cleaner data. Standardized fields feed Fannie Mae's Collateral Underwriter and Freddie Mac's Loan Collateral Advisor, the automated review tools that flag appraisals for a second look. More structured data in means fewer narrative ambiguities and, in theory, fewer revision requests. For Austin sellers it also means the house is being described to a database as much as to a person, and databases do not infer what they are not told.
+
+
+## The rollout timeline
+
+The mandate is one date, but the transition is a nine-month window, and the date that controls is the report's first submission to the GSE portal, not the contract date or the appraisal's effective date.
+
+:::compare-table
+Date | What happens | Who it touches
+March 2005 | Current edition of Form 1004 published | Every conventional appraisal since
+2011 | First Uniform Appraisal Dataset (UAD) standardizes fields and adds the C1-C6 and Q1-Q6 scales to the 2005 forms | Appraisers, lenders
+Sept. 8, 2025 | Limited production: a small group of lenders and appraisers begin delivering UAD 3.6 reports | Pilot lenders
+Jan. 26, 2026 | Broad production: any lender may deliver UAD 3.6 or legacy UAD 2.6 reports | All conventional lenders
+Aug. 6, 2026 | UCDP begins returning warning messages on legacy UAD 2.6 submissions | Lenders still on old forms
+Sept. 30, 2026 | Fannie Mae and Freddie Mac announce a temporary policy exception for approved sellers that cannot make the November date | Lenders that request it
+Nov. 2, 2026 | Mandate: new appraisal submissions to UCDP must be UAD 3.6. The 1004, 1073, 1025, 2055, 1004C, 2090, 2095, 1007 and 1004D are retired for new GSE submissions without an approved exception | GSE purchase and refinance appraisal submissions, subject to approved exceptions
+Nov. 2, 2026 to Feb. 28, 2027 | Exception lenders may still submit new legacy reports with normal Collateral Underwriter and Loan Collateral Advisor review | Exception lenders only
+March 1 to May 19, 2027 | Reduced-functionality period: legacy reports receive a CU risk score of 999 and an LCA score of 99, and loans backed by them lose collateral rep-and-warranty relief on value | Exception lenders only
+May 20, 2027 | UAD 3.6 mandatory for all new submissions, no exceptions | Everyone
+June 27, 2027 | Last day to resubmit a previously delivered legacy report | Loans in cleanup
+Spring 2026, ongoing | FHA systems accept UAD 3.6 on an optional basis; no mandatory date announced | FHA borrowers
+Not announced | VA and USDA have published no adoption date | VA and USDA borrowers
+:::
+
+Sources: Freddie Mac UAD and Forms Redesign FAQ, HousingWire (Sept. 30, 2026), Oklahoma Real Estate Commission industry alert (Oct. 14, 2026), McKissock, Compass Mortgage. The GSEs' own timeline fact sheet listed a UAD 2.6 retirement of May 3, 2027 before the exception was announced; the dates above reflect the Sept. 30 policy.
+
+Two practical consequences fall out of that table. First, a lender that obtained the exception can keep ordering old-form appraisals into the spring, so the report your buyer gets in December depends on which lender they chose. Second, the March 1, 2027 cliff is real for lenders: once legacy reports lose rep-and-warranty relief, lenders have a strong incentive to be fully on UAD 3.6 by late February, which means most of the Austin market will have converted well before the May 20 hard stop.
+
+
+## Old form vs. new report
+
+The table below is the part of this post to screenshot. It is what your appraiser was asked to record before November 2 and what they are asked to record after.
+
+:::compare-table
+Topic | Legacy 1004 / UAD 2.6 (through Nov. 1, 2026) | New URAR / UAD 3.6 (from Nov. 2, 2026)
+Report structure | Separate fixed forms by property type: 1004, 1073, 1025, 2055, 1004C, 2090, 2095 | One dynamic report; sections appear only when the property has the feature
+Data standard | UAD 2.6 on a 2005 form layout | MISMO 3.6 data model, enumerated fields in place of most free text
+Commentary | Typed into a General Addendum at the back | Written inside the section it explains; addendum role sharply reduced
+Condition and quality | One C rating and one Q rating for the whole property | Separate interior and exterior C and Q ratings, rewritten definitions; now applied to manufactured homes too
+Updates and remodels | "Updated" or "remodeled" with a loose timeframe in the improvements box | Room-level update status for each kitchen and bath, overall status for bathrooms and flooring; new construction reported as fully updated
+ADUs and extra units | Described in narrative; often forced onto the wrong form | Dedicated section for size, condition, rooms and location; "total units" row in the sales grid
+Rental income | Separate Form 1007 rent schedule and 216 operating statement | Rental Information section inside the URAR; 1007 and 216 retired
+Square footage | Gross living area, one number | Finished and unfinished area, above and below grade, above-grade area by level, measured to ANSI Z765-2021
+Energy features | Narrative mention, if any | Energy and sustainability fields appear when solar or similar features exist
+Photos and exhibits | Photo pages and exhibits appended at the back | Placed in the section they support
+Opening page | Jumps straight into subject and contract sections | Report summary up front: value, market value condition, key facts, apparent defects table
+Inspection scope | Implied by the form chosen (1004 interior, 2055 exterior) | Set by the lender in the engagement letter: traditional, hybrid, desktop, exterior-only
+Update and completion | Combined Form 1004D | Two separate reports, each linked to the original UAD 3.6 submission
+Lender review | Collateral Underwriter and Loan Collateral Advisor read the limited UAD 2.6 fields | Same tools read a far richer dataset; UAD Compliance API checks completeness before delivery
+Government loans | FHA, VA and USDA used the same forms with their own addenda | FHA accepts UAD 3.6 optionally with no mandate date; VA and USDA have no announced date
+:::
+
+Sources: Freddie Mac UAD and Forms Redesign FAQ; Fannie Mae UAD 3.6 FAQ; Class Valuation guide to the new report; McKissock; Compass Mortgage.
+
+Read the middle column again and notice how much of it was discretionary. Under the old form a conscientious appraiser could document a 2023 kitchen in the addendum, and a rushed one could write "updated kitchen" and move on. Under the new one, the field exists either way, and an empty or wrong field is visible to the lender's review software. That cuts both ways. Well-documented homes get their improvements recorded in a format the lender's model can read. Poorly documented ones get a blank where credit should be.
+
+
+## Why this hits harder in Austin
+
+A national form change lands differently in a non-disclosure state with a five-month supply of homes and some of the most customized housing stock in Texas. Five local facts shape how the new report plays here.
+
+1. Texas hides sale prices, so the appraiser's data comes from the MLS. Texas is one of a dozen non-disclosure states. Closed prices are not public record, which means an appraiser's comparable sales, and now the condition, quality and update detail the new report asks about for each comp, come almost entirely from Unlock MLS listings, photos and agent remarks. Under the old form that detail was optional narrative. Under the new one it is a field. The quality of the listing data your neighbors' agents entered two years ago now feeds the grid your house is valued on. We covered the data gap in [Texas is a non-disclosure state: what that means for your home's value](/blog/texas-non-disclosure-state); the new URAR makes it more consequential, not less.
+2. Roughly two of every three Austin sales still run through an appraisal. Realtor.com's August 2026 cash report put the Austin-Round Rock-San Marcos all-cash share at 35.2 percent for January through April 2026, up 2.7 points year over year and above the 31.4 percent national figure. Flip it around: about 65 percent of local closings carry a loan, and nearly all of those get an appraisal. Nationally, NAR's September 2026 REALTORS Confidence Index found 16 percent of contracts had delayed settlement and 7 percent were terminated over the prior three months, with appraisal issues behind about 5 percent of contracts. Those are small numbers until one of them is your house.
+3. It is a buyer's market by the numbers, so a low appraisal has no backup offer behind it. Unlock MLS's September 2026 report shows the City of Austin at 5.4 months of inventory, 4,502 active listings, 777 closed sales (down 12.7 percent year over year) and a $570,958 median (up 4.2 percent). The five-county MSA sits at 5.4 months and a $421,000 median. In 2021 a short appraisal was a negotiation; the buyer covered the gap because three other buyers were waiting. In a 5.4-month market the buyer has the leverage, and the seller who cannot document value is the one who eats the difference.
+4. Austin's housing stock is full of the features the new report singles out. The HOME initiative has allowed up to three units on single-family lots since December 2023, so casitas, garage apartments and new ADUs are everywhere from Bouldin to Brentwood, each of which now gets its own size, room count and condition fields. Austin Energy reported 690 new residential solar systems in the year through November 2025 and an "unprecedented" 18.8 megawatts added in 2025, and the new report has energy fields waiting for every one of them. Add central Austin's 1940s to 1970s bungalows with additions of uncertain permit history, Hill Country acreage with wells, septic, barns and shops, and the Eanes and Lake Travis custom builds where quality ratings swing six figures of value, and you have a market with more conditional sections than most.
+5. Solar ownership is a yes-or-no valuation question, and Austin has a lot of leased systems. Fannie Mae's rule is blunt: if the panels are leased or under a power purchase agreement, the appraiser "may not include the value of the solar panels in the appraised value of the property." Panels financed as personal property with a lien that allows repossession get no value either. Owned panels can be valued through the sales grid, but only if ownership is documented; if it is unclear, the lender must run a UCC search before any value is attributed. The new URAR's energy section does not change that rule. It just makes the blank more visible when a seller cannot produce the paperwork.
+
+In the luxury tier the arithmetic is bigger, not different. Our trailing-12 pull of Unlock MLS data in August put the 78746 median sale at $1.862 million. A 3 percent documentation miss on a house like that is $56,000, and on an 80 percent jumbo loan the buyer has to find roughly $45,000 of it in additional cash. That is the conversation the next section walks through.
+
+
+## Worked example: the same Westlake house, two packets
+
+The numbers below are illustrative, but the mechanics are exactly how a short appraisal plays out under a Texas contract. The documentation does not create value. It determines whether the appraiser can support the value that is already there.
+
+The house. A 1998 four-bedroom in the Westlake area of 78746, 3,420 square feet per TCAD on 0.4 acres. Kitchen and primary bath remodeled in March 2022 for $185,000, permitted. A 520-square-foot detached casita with a full bath and kitchenette, built in 2019 with a permit and certificate of occupancy. A 9.6 kW owned solar array installed in 2021 and paid in cash after the Austin Energy rebate. New class 4 roof in May 2024 after hail. Under contract at $1,850,000 with a buyer putting 20 percent down on a jumbo loan.
+
+Packet A, the thin one. MLS remarks say "updated kitchen, detached casita, solar." No invoices, no permits, no solar paperwork. The seller is at work during the visit and the listing agent sends a lockbox code. Under the new URAR the appraiser still fills every section, from observation:
+
+- Kitchen and primary bath are visibly updated, but with no dates the work cannot be placed in a timeframe, and missing dates can make the update history harder to support.
+- The ADU section is completed from the walkthrough, but permit and legal status cannot be confirmed from the packet. That may invite a lender condition or a conservative contributory value.
+- Solar ownership is undocumented. Under Fannie Mae's rule no value is attributed until the lender obtains a UCC search, so the array carries zero on the report.
+- The roof looks new. Nobody told the appraiser it is a 2024 class 4 roof, so it is simply "good condition."
+Illustrative result: $1,790,000, a 3.2 percent miss.
+
+Packet B, the complete one. The listing agent hands the appraiser a one-page improvements schedule with dates and costs, the permit history printed from the City of Austin's AB+C portal, the casita's certificate of occupancy, the paid solar invoice plus the Austin Energy interconnection letter, the roof invoice and insurance claim summary, the survey and a measured floor plan. The appraiser can now pick comps with similar update profiles, support an ADU adjustment with paired Eanes sales, and treat the solar as owned real property valued by market reaction. Illustrative result: $1,850,000.
+
+:::compare-table
+Outcome | Packet A (thin) | Packet B (complete)
+Appraised value (illustrative) | $1,790,000 | $1,850,000
+Gap to the $1,850,000 contract | $60,000 | $0
+Maximum loan at 80% of the lower of price or value | $1,432,000 | $1,480,000
+Buyer cash to close before closing costs | $418,000 | $370,000
+Extra cash the buyer must find | $48,000 | $0
+Seller's alternative: cut to appraised value | $60,000 off the price | none needed
+Middle path common in Austin | Seller cuts $30,000 and the buyer's cash to close rises $18,000 to $388,000 | none needed
+Timeline | Reconsideration of value and lender conditions add a week or more | On schedule
+:::
+
+The asymmetry is the point. Under Texas's TREC contract with the standard financing addendum, a buyer may have a right to terminate and recover earnest money when lender approval fails because of an appraisal, subject to the signed addenda, notice requirements and deadlines. In a market with 5.4 months of inventory, the seller's fallback is not a backup offer; it is relisting a house that now has days on market and a failed contract behind it. We documented what that costs in the luxury tier in [why luxury homes do not sell in Austin](/blog/luxury-home-not-selling-austin): the combined discount from the original list price on relisted homes ran close to ten percent. Against that, assembling Packet B is a weekend of paperwork.
+
+One more thing the example shows. In Packet A, nothing the appraiser did was wrong. The new report asks for data the seller never supplied, and the appraiser is not allowed to assume it. That is the practical shift: sellers benefit from supplying documentation rather than relying on assumptions.
+
+
+:::callout
+label: The documentation shift
+The burden of proof for your improvements moved to you.
+:::
+
+## Seller playbook: the appraisal packet
+
+Build this before the house goes live, not after the appraisal is ordered. It doubles as the backup for your Seller's Disclosure Notice, and in a non-disclosure state it is the only record of your improvements the appraiser will ever see.
+
+:::compare-table
+What to assemble | Why the new report wants it | Where to get it in Central Texas
+Improvements schedule: every project with month, year, cost and contractor (kitchen, each bath, flooring, roof, HVAC, water heater, windows, pool, electrical, plumbing) | Feeds the room-level update status for kitchens and baths, the flooring status and the interior condition rating | Your records, contractor invoices, credit card statements if invoices are gone
+Permit history | Confirms additions, conversions, ADUs and major systems are legal; blanks here invite lender conditions | City of Austin: the [Austin Build + Connect (AB+C) portal public search](https://abc.austintexas.gov/). West Lake Hills, Rollingwood, Lakeway, Bee Cave, Round Rock, Cedar Park and Dripping Springs issue their own permits; unincorporated Travis, Williamson and Hays County generally permit only septic and development, not building
+Casita or ADU file: permit, certificate of occupancy, square footage, utilities and metering, current lease if rented | The URAR's ADU section records size, rooms, condition and location, and the Rental Information section records market rent | Permit office above, your closing file, the lease
+Solar file: paid invoice or loan payoff, system size, install date, Austin Energy (or PEC or Bluebonnet) interconnection or permission-to-operate letter, and confirmation of no UCC filing against the system | Owned systems can be valued; leased, PPA or personal-property systems subject to repossession cannot. Ownership must be documented or the lender orders a UCC search | Installer, utility account, your title company for the UCC check
+Roof: invoice, warranty, insurance claim summary, shingle class | Exterior condition rating and insurability; hail is a fact of life here | Roofer, insurer
+Foundation: repair invoices, engineer's letter, transferable warranty | Austin clay soils make piers common; a documented repair with a warranty reads as cured, an undocumented crack reads as a defect on the summary page | Foundation company, engineer
+Survey, floor plan, architect's plans for custom builds | Area is now reported four ways to the ANSI standard; a measured plan speeds the visit and reduces disputes with the TCAD figure | Your closing file (T-47 survey), listing photographer's floor plan, builder or architect
+Pool and spa: permit, equipment ages, service records | Site improvement fields and condition | Pool builder, service company
+Condo and HOA documents: resale certificate, budget, reserves, litigation, insurance | The condo project section replaces the old 1073 and asks about the project, not just the unit | HOA manager, resale certificate order
+A consistent Seller's Disclosure Notice | Appraisers read it; contradictions between the notice and the packet are a credibility problem | Your agent
+:::
+
+
+### On the day of the visit
+
+- Expect it to run longer than the last appraisal you sat through. Every room, the casita, the attic access, the outbuildings and the mechanicals get photographed and placed in their own sections.
+- Be reachable, or have your agent there. Questions about dates and permits get answered on the spot instead of becoming assumptions.
+- Hand over the packet in person or by email the day the appraisal is ordered, not at the door. Appraisers pull comps before they arrive.
+- Utilities on, pets out, keys to every structure and gate, lights working. A room the appraiser cannot enter is a room that cannot be rated.
+- Your agent can provide comparable sales and documentation. Appraiser independence rules prohibit conditioning the appraiser on a number, and a good agent will not try. Information is allowed; pressure is not.
+If you are reading this in October and your house is already under contract, you can still do most of this. Send the packet to the buyer's lender and ask that it be forwarded to the appraiser with the engagement.
+
+
+## Buyer playbook: reading the new report and protecting the contract
+
+If you are financing a purchase that closes after November 2, the PDF your lender sends will not look like the one from your last house. It will be longer, it will open with a summary page, and it will contain fields you have never seen. None of that means something is wrong.
+
+
+### How to read it in ten minutes
+
+1. Start on the summary page: the opinion of value, the market value condition (as-is, subject to repairs, subject to completion) and the table of apparent defects, damage or deficiencies. Anything in that table can become a lender condition, so it is the first thing to discuss with your agent and loan officer.
+2. Check the four area figures against the MLS sheet and the TCAD record. The appraiser's ANSI measurement is the one the lender uses, and differences on older Austin homes are common once sloped-ceiling bonus rooms, enclosed porches and additions are measured to the standard.
+3. Read the update statuses for the kitchen and each bath and the interior and exterior condition and quality ratings. If the listing said 2023 kitchen and the report says otherwise, that is a factual question worth raising, with the invoice attached.
+4. If the house has a casita or ADU, find its section and the "total units" row in the sales grid. Confirm the appraiser treated it the way the seller represented it.
+5. If there is solar, confirm how it was treated. Leased panels at zero contributory value is correct, not a mistake, and it also means you will be asked to assume the lease.
+6. Look at the comps. In Texas the appraiser's sale prices came from the MLS. If your agent knows of a closed sale the grid missed, that is the basis for a reconsideration of value.
+
+
+### Protecting the contract in Texas
+
+The standard TREC contract handles appraisals in two places. The Third Party Financing Addendum ties your financing contingency to loan approval, and an appraisal that comes in short can be the reason approval fails. The Addendum Concerning Right to Terminate Due to Lender's Appraisal lets you choose among three positions: waive the appraisal protection, cap it by agreeing to cover a gap up to a stated dollar amount, or add a standalone right to terminate if the appraised value comes in below a number you name. In a 5.4-month market most Austin buyers should keep the protection or cap it generously; in the competitive pockets of Eanes and central Austin where multiple offers still happen, a capped gap clause with a real dollar figure is the honest compromise.
+
+
+### Timing moves for November and December contracts
+
+- Ask the lender three questions before you apply: Are you delivering UAD 3.6 on November 2, or did you request the exception? Which appraisal management company do you use? What is their current turn time in Travis County?
+- Order the appraisal during the option period, not after it. The old habit of waiting to avoid paying for an appraisal on a house you might walk from is worth less than the days you lose if turn times stretch.
+- Build a cushion. Our recommendation for contracts written in November is three to five extra days on the buyer approval deadline and the closing date, more for acreage, ADU or luxury properties where the new report has the most sections to fill.
+- Know the reconsideration process. Since 2024 both GSEs require lenders to maintain a borrower-initiated reconsideration of value process. The new report's structured fields make factual errors (a missed update status, an ADU not counted, a wrong area figure) far easier to point to than a vague "we think it is worth more."
+- FHA and VA buyers: nothing is forced on November 2. FHA accepts the new report but has no mandate date, and VA has announced none. Your appraisal process is unchanged until your agency says otherwise.
+- Jumbo and portfolio buyers: the mandate technically binds only loans sold to Fannie Mae and Freddie Mac, but jumbo lenders order from the same appraisers using the same software, so expect most to convert on a similar schedule. Ask.
+- Cash buyers: you can still order an appraisal for your own protection, and on a seven-figure purchase we usually recommend it. Ask which format the appraiser will use; you can read it without a lender in the loop.
+
+## Investors and non-standard properties
+
+The new report was designed for exactly the properties that gave the old forms trouble. That is good news if your documentation is in order and a problem if it is not.
+
+ADUs and HOME-initiative lots. A house with a casita used to be a 1004 with a paragraph of explanation. Now it is a URAR with an ADU section (size, rooms, condition, location), a Rental Information section for market rent, and a "total units" row that reconciles it against comps with and without a second unit. If your lender is using ADU rent to help you qualify, the rent data now lives in the main report instead of a bolt-on 1007. Our [Austin ADU rules and math for 2026](/blog/austin-adu-rules-2026) post covers what the units cost and rent for; the appraisal piece is simpler: permit, certificate of occupancy, square footage, lease.
+
+Duplexes, triplexes and fourplexes. Form 1025 is retired. Two-to-four unit properties use the same URAR, with per-unit rental information inside it. For the central Austin duplex market that means the appraiser's unit mix, rent and condition data is structured and comparable across reports, which cuts both ways for a seller whose rents are below market.
+
+Hill Country acreage. Land-only appraisals are outside the URAR entirely. For improved acreage in Hays, Blanco and western Travis County, the site section captures the land and the improvements section captures barns, shops, wells, septic and guest houses as site improvements with contributory value. Bring the septic permit, the well log from the Texas Water Development Board's driller's report database, the ag or wildlife exemption paperwork, and the survey. Comps are thin out there and appraisers are often driving in from town; the more the packet answers, the less gets assumed. See [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country) for the cost stack.
+
+Unpermitted conversions. Garage conversions, enclosed porches and the detached "office" that is really a rental are common in 78704, 78745 and 78757. The appraiser can still give unpermitted space value when the market clearly does, but under the new report that judgment goes into a field rather than a sentence in an addendum, and the lender's automated review sees it. Expect more lender conditions on unpermitted living area, not fewer. If you can permit it before listing, the math usually works.
+
+Fix-and-flip exits. Your buyer's appraiser now records the update status of each kitchen and bath and the flooring, plus separate interior and exterior condition ratings. A documented flip with permits, a scope of work and before-and-after photos reads as fully updated across the board. An undocumented one reads as "appears updated," and the comps the appraiser picks will follow that read. Keep the scope and permits in the listing file.
+
+Short-term rentals and DSCR loans. Debt-service-coverage and other portfolio lenders are not bound by the GSE mandate, and some will keep using legacy formats for a while. But they rent the same appraisers, and the industry's software is converting, so plan on the new report there too by spring. STR income still does not count for conventional qualifying; nothing about November 2 changes that.
+
+Condos. The 1073 is gone and the condo project questions move into the main report's project section: budget, reserves, litigation, insurance, owner-occupancy. Downtown and West Campus sellers should have the resale certificate and the current budget ready before the appraisal is ordered. We covered the building-by-building picture in [downtown Austin condos in 2026](/blog/downtown-austin-condos-2026).
+
+Manufactured homes get condition and quality ratings for the first time under this standard, which mostly matters outside the city but is worth knowing for Bastrop and Caldwell County investors.
+
+
+## Timing and the transition window
+
+The honest answer on turn times is that nobody knows yet, and the two camps disagree. State regulators and lenders are warning that on-site inspections will take "considerably longer" and that appraisal fee structures are changing. Appraisal software vendors say the slowdown is a short adjustment, not a permanent one, while admitting that in one survey nearly three quarters of appraisers said they felt unprepared. Class Valuation, one of the largest appraisal management companies, told its appraisers to expect five or six reports before the new format feels comfortable.
+
+For an Austin seller or buyer, the realistic planning assumptions for November through February are these.
+
+- On-site time may go up. More rooms photographed individually, more structures entered, measurements to the ANSI standard, more fields filled in the driveway instead of at the desk. Budget for a longer visit and make the house easy to work in.
+- Report delivery may stretch in the first weeks. Appraisers who have been delivering UAD 3.6 since January will be fine. Those who waited are learning on your file. Ask the lender which kind their AMC assigns.
+- Revision requests may spike, then fall. The GSEs' review tools now read far more fields. Early reports that leave conditional sections blank will bounce back for completion. By spring the data should be cleaner than it has ever been, which is the whole point.
+- Deals straddling November 2 can go either way. The rule is the report's first submission to the GSE portal. A report written October 30 and submitted November 3 must be UAD 3.6 unless the lender has the exception. Appraisers who are converting will simply write everything in the new format from late October on. If your appraisal was ordered in October and has not been delivered, ask which format it will be in and whether the lender can accept it.
+- The exception creates a two-track market until May 19, 2027. Some lenders will be fully converted on November 2. Others will keep ordering legacy reports into the new year. From March 1, 2027 legacy reports lose rep-and-warranty relief on value, which is the date most holdout lenders are really aiming for. May 20, 2027 is the hard stop, and June 27, 2027 is the last day to resubmit a legacy report at all.
+- Fees. Several AMCs have repriced for the new format. Expect the appraisal line on the Loan Estimate to move, and on complex properties to move more. Buyers pay it, so buyers should ask.
+The constructive version of all this is that sellers who list between now and February are selling into the learning curve. The appraiser working your file in December is managing new software, new definitions and new review feedback. A clean, complete packet is the easiest file on their desk that week, and easy files get done first.
+
+
+## How Echelon Property Group handles it
+
+We treat the appraisal as part of listing prep, not something that happens to the deal six weeks in. On Echelon Property Group listings the improvements schedule, permit history, survey and system documentation get assembled before photos are taken, because the same file that supports the appraisal supports the disclosure, the marketing and the negotiation. When the appraisal is ordered, the packet and a comp set with condition and update detail go to the appraiser the same day, and one of us meets them at the property.
+
+On the buyer side we read the report the way the lender's software does: summary page, defects table, area figures, update statuses, comps. If something is factually wrong we file the reconsideration with documents, not adjectives.
+
+Off-market deals get one extra step. Most of the $2 million-plus transactions we have closed never touched the MLS, and in a non-disclosure state a private sale leaves almost no price trail for the next appraiser to find. That protects the client's privacy, but it also means the appraiser on a financed off-market purchase may be working with fewer comps than the market actually produced. We build the comp file for those deals ourselves and hand it over. If you are weighing a private sale, [off-market homes in Austin](/blog/off-market-homes-austin) and [private listings in Austin](/blog/private-listings-austin) explain the trade-offs.
+
+If you have a listing with an addition, an outbuilding, acreage, solar, a casita or unpermitted space and a contract that will close after November 2, the time to talk about it is before the appraisal is ordered. [Call or text 512.661.3843](tel:+15126613843) or [email taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+:::cta
+heading: Prepare your Austin appraisal packet
+subheading: Call or text 512.661.3843, or email taylor@echelonpropertygroup.com.
+button: Discuss your property
+href: /contact
+:::
+
+## Related reading
+
+- [Cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin)
+- [Best time to sell a house in Austin](/blog/best-time-to-sell-a-house-austin)
+- [Buy before you sell in Austin](/blog/buy-before-you-sell-austin)
+- [Should I sell now or wait?](/blog/should-i-sell-my-house-now-or-wait-austin)
+- [Zestimate accuracy in Texas](/blog/zestimate-accuracy-texas)
+- [Austin housing market forecast for 2027](/blog/austin-housing-market-forecast-2027)
+- [How to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin)
+- [How mortgage rates affect Austin buyers](/blog/austin-mortgage-rate-impact)
+
+:::faq
+Q: What is UAD 3.6, and what is the new URAR?
+A: UAD 3.6 is the updated Uniform Appraisal Dataset, the data standard Fannie Mae and Freddie Mac require for appraisals on loans they buy. The new Uniform Residential Appraisal Report is the single, dynamic report built on that standard. It replaces the Form 1004 and the other fixed forms (1073, 1025, 2055, 1004C, 2090, 2095, 1007, 1004D) for new appraisals submitted to the GSEs, subject to approved lender exceptions, on or after November 2, 2026.
+
+Q: Does the new appraisal report change what my Austin home is worth?
+A: No. The appraiser still values the property by comparing it with recent sales and adjusting for differences. What changes is the documentation: separate interior and exterior condition and quality ratings, room-level update status for kitchens and baths, dedicated ADU and energy fields, and four square-footage figures measured to the ANSI standard. Improvements you can document get recorded in a format the lender's review tools can read. Improvements you cannot document are harder to credit.
+
+Q: My contract was signed in October. Which report will my appraisal use?
+A: It depends on when the report is first submitted to the GSE portal and on the lender. Reports submitted on or after November 2, 2026 must be UAD 3.6 unless the lender obtained the temporary exception, which allows legacy reports through May 19, 2027. Ask the loan officer which format their appraisal management company is delivering.
+
+Q: Does the November 2 change apply to FHA and VA loans?
+A: Not yet. FHA began accepting the new report in spring 2026 but has set no mandatory date. VA and USDA have announced no adoption timeline. If your buyer is using FHA or VA financing, the appraisal process is unchanged until those agencies say otherwise.
+
+Q: Will appraisals take longer or cost more after November 2?
+A: Probably, for a while. State regulators are warning that on-site inspections will take considerably longer and that fee structures are changing; appraisal software vendors expect a short adjustment rather than a permanent slowdown. For contracts written in November and December in Austin, plan on a longer visit, build a few extra days into the buyer approval and closing deadlines, and ask the lender about turn times in Travis County.
+
+Q: How does the new report treat solar panels?
+A: The same way Fannie Mae has for years, but more visibly. Owned panels can be valued through the sales comparison grid based on market reaction. Leased panels and panels under a power purchase agreement may not be included in the appraised value at all, and neither can panels financed as personal property and secured by a loan that allows repossession. If ownership is unclear, the lender must obtain a UCC search before any value is attributed, so sellers should have the paid invoice and the utility interconnection letter ready.
+
+Q: What happens if the appraisal comes in below the contract price?
+A: Under the standard TREC contract, the buyer's options depend on the financing addendum and whether they signed the appraisal addendum waiving, capping or adding a right to terminate. The lender bases the loan on the lower of price or appraised value, so on an 80 percent loan the buyer must cover 80 percent of any gap in cash unless the seller cuts the price or the two split it. Either side can ask the lender for a reconsideration of value, which works best when it points to factual errors in the report or closed sales the appraiser missed.
+
+Q: What should I give the appraiser?
+A: A dated improvements schedule with costs, the permit history, the survey and any floor plan, documentation for any ADU or casita (permit, certificate of occupancy, square footage, lease), proof of solar ownership, roof and foundation records, HOA documents for condos, and a Seller's Disclosure Notice that matches all of it. Send it the day the appraisal is ordered and have someone available during the visit to answer questions about dates.
+:::
+
+## Sources
+
+1. [Freddie Mac, UAD and Forms Redesign FAQ: mandate based on initial UCDP submission date, retired form list, what changes in the report.](https://sf.freddiemac.com/faqs/uad-and-forms-redesign)
+2. [Fannie Mae, Uniform Appraisal Dataset 3.6 FAQ: interior and exterior ratings, update statuses, ADU fields, addendum removal.](https://singlefamily.fanniemae.com/media/23286/display)
+3. [HousingWire, "Fannie Mae, Freddie Mac offer temporary UAD 3.6 exception" (Sept. 30, 2026): exception window, reduced-functionality period, May 20 and June 27, 2027 dates.](https://www.housingwire.com/articles/gses-temporary-uad-3-6-exception-sellers-2027-timeline/)
+4. [TENA, "Fannie Mae and Freddie Mac Announce Temporary UAD 3.6 Exception Policy" (Oct. 5, 2026): who must request the exception, Lender Letter and Bulletin effective Sept. 30, 2026.](https://www.tenaco.com/fannie-mae-and-freddie-mac-announce-temporary-uniform-appraisal-dataset-3-6-exception-policy/)
+5. [Oklahoma Real Estate Commission and Appraiser Board, Industry Alert: Mortgage Appraisal Reports (Oct. 14, 2026): 1,500-plus data points, longer inspections, fee changes, FHA/VA/USDA status.](https://oklahoma.gov/content/dam/ok/en/orec/documents/resources/OREC_OREAB-20261014-Industry%20Alert_Mortgage%20Appraisal%20Reports_V1.pdf)
+6. [McKissock, "Fannie Mae and Freddie Mac Announce UAD 3.6 Implementation Timeline and Policy Changes": Sept. 8, 2025 and Jan. 26, 2026 milestones, ANSI Z765-2021, rating definitions.](https://www.mckissock.com/blog/appraisal/the-future-is-now-fannie-mae-and-freddie-mac-announce-uad-3-6-implementation-timeline-and-policy-changes/)
+7. [McKissock, "The 10 Biggest Changes in the New URAR": dynamic sections, integrated commentary, structured inspection fields.](https://www.mckissock.com/blog/appraisal/the-10-biggest-changes-in-the-new-urar/)
+8. [Class Valuation, "UAD 3.6: A Complete Guide to the New Report": report summary page, defects table, four area figures, six report products, learning curve.](https://www.classvaluation.com/blog/uad-3-6-a-complete-guide-to-the-new-report-with-pictures/)
+9. [Cotality, "UAD 3.6 URAR Myth Busting": turn-time expectations, appraiser readiness survey.](https://www.cotality.com/resources/uad-36-urar-myth-busting)
+10. [Compass Mortgage, "UAD 3.6 Appraisal Changes: What Real Estate Agents Need to Know": Aug. 6, 2026 UCDP warnings, seller preparation, contingency timing.](https://www.compmort.com/uad-3-6-appraisal-changes-real-estate-agents/)
+11. [Appraiser Machine, "FHA, VA, and UAD 3.6: Which Loans Are Affected?" (updated Oct. 2026): FHA optional with no mandate date, VA and USDA no timeline.](https://www.appraisermachine.com/blog/fha-va-uad-36)
+12. [National Mortgage News, "FHA is also adopting the UAD 3.6 appraisal format" (Aug. 27, 2025): FHA information bulletin 2025-42, spring 2026 start.](https://www.nationalmortgagenews.com/news/fha-is-also-adopting-the-uad-3-6-appraisal-format)
+13. [Fannie Mae, appraisal guidance for properties with solar panels: owned, financed, leased and PPA treatment, UCC search requirement.](https://singlefamily.fanniemae.com/media/23651/display)
+14. [Unlock MLS, September 2026 Central Texas Housing Report: City of Austin and MSA sales, median price, inventory.](https://www.unlockmls.com/news/september-2026-central-texas-housing-report)
+15. [National Association of REALTORS, REALTORS Confidence Index, September 2026: delayed and terminated contracts, appraisal-related delays, cash share.](https://www.nar.realtor/research-and-statistics/research-reports/realtors-confidence-index)
+16. [Realtor.com, "Cash Buyers Pull Back Faster Than Housing Market as Cash Sales Fade" (Aug. 18, 2026): Austin 35.2 percent cash share, national 31.4 percent.](https://mediaroom.realtor.com/2026-08-18-Cash-Buyers-Pull-Back-Faster-Than-Housing-Market-as-Cash-Sales-Fade,-Realtor-com-R-Report-Finds)
+17. [Austin Energy, record local solar additions in 2025: 690 residential systems, 18.8 MW.](https://austinenergy.com/about/news/news-releases/2025/Austin-Energy-adds-record-18MW-of-local-solar-to-the-grid)
+18. [City of Austin Development Services, Austin Build + Connect (AB+C): public permit search.](https://abc.austintexas.gov/)
+19. [Echelon Property Group, Zestimate accuracy in Texas: 78746 trailing-12 median of $1.862 million (Unlock MLS via Agent Intel, August 2026).](/blog/zestimate-accuracy-texas)
+
+20. [Joint-GSE updated transition timeline](https://sf.freddiemac.com/docs/pdf/fact-sheet/uad-redesign-timeline.pdf).
+21. [Fannie Mae temporary exception lender letter](https://singlefamily.fanniemae.com/media/48181/display).
+
+Source note: The September NAR report and Austin-specific cash-share figure quoted above were supplied for this article and have not been independently rechecked. FHA, VA and USDA timing should be confirmed with the lender; the November mandate applies to GSE submissions, not government loans. The Westlake outcomes are illustrative, not a promise of an appraisal increase.
+`,
+  },
+
   {
     id: "buy-before-you-sell-austin",
     title: "Buy Before You Sell in Austin (2026): Bridge Loans, Texas HELOC Rules, and Keeping Your 3% Mortgage",
@@ -3861,6 +4206,8 @@ That is the fairest one-sentence review of automated valuation ever written, and
 
 To be fair to Zillow, the company has been transparent about what the tool is. Its own page states the Zestimate "is not an appraisal and can't be used in place of an appraisal," and notes that lenders will not accept it. Zillow calls it a starting point. The problem is not the disclaimer. The problem is how many Texans treat the starting point as the finish line.
 
+Unlike an AVM, the [new UAD 3.6 appraisal report](/blog/new-appraisal-report-2026-austin) records room-level updates and separate interior and exterior ratings using an appraiser's property analysis.
+
 ## What the Model Cannot See From Space
 
 Some of what determines an Austin home's value simply does not exist in any dataset the Zestimate can reach. A few of the big ones:
@@ -5446,6 +5793,8 @@ FHA | 75% of supported market rent or lease rent | 50% for a proposed ADU under 
 
 The practical math most lenders run: 75 percent of the lower of the lease rent or the appraiser's supported market rent, capped at 30 percent of your qualifying income. On our model's $1,895 rent, that is roughly $1,421 per month of qualifying income, which carries about $225,000 of additional loan on a 6.5 percent, 30 year note. For an owner occupant buyer, a property with a rentable ADU is not just worth more, it is affordable to a larger buyer pool, and appraisers are being cautioned to keep that income from being double counted in both the rent schedule and the sales adjustments. The new UAD 3.6 appraisal format, mandatory November 2, 2026, adds structured ADU data fields for the first time, which should make the comp problem measurably better within a few years.
 
+Our [new appraisal report guide for Austin](/blog/new-appraisal-report-2026-austin) details the dedicated ADU fields and the permit, floor plan, and rental documentation to assemble before the visit.
+
 **The refi gap, quantified.** Take the worked model. You spend $260,000. In a thin comp set, assume the appraiser supports $180,000 of contributory value. At 80 percent loan to value, a cash-out refinance returns at most $144,000 of new borrowing capacity against your $260,000 outlay, about 55 cents of liquidity per dollar spent. That is the appraisal gap in one sentence: the sale exit and the condo regime recover full retail value from a buyer, the refi channel recovers only what the comp set can prove today. Meanwhile the Travis Central Appraisal District has no such hesitation, and will happily tax the new unit at close to its full value from the certificate of occupancy forward. Build with the exit that matches your capital plan.
 
 **How to defend the value on appraisal day.** Appraisers can only credit what they can support, so hand them the support:
@@ -5891,6 +6240,8 @@ Net of carrying | about $2,926,000 | about $2,884,000
 :::
 
 On paper, the financed offer nets about $42,000 more, so cash is not automatically king. But that $42K is the price of two live risks: an appraisal in a thin-comp submarket, where the appraiser may be working from three sales, one of them an outlier, and a financing contingency. If the appraisal lands at $2.85M and the price renegotiates to meet it, the financed offer's advantage evaporates entirely. If the deal dies at day 40, you are relisting a now twice-stigmatized property and writing carrying checks while you do it. The point is not to fear financed offers. It is to price the risk deliberately instead of reacting to the biggest number.
+
+For financed offers during the transition, our [Austin guide to the new appraisal report](/blog/new-appraisal-report-2026-austin) explains the documentation and lender questions that help you assess appraisal risk.
 
 Also on the table: seller-paid closing costs or rate buydowns can bridge a price gap while keeping the recorded sale price higher, which matters for the comp record in your submarket. Earnest money size, option periods, and response windows all shift the risk profile. Sophisticated buyers use these levers. Sellers should too.
 
@@ -6438,6 +6789,8 @@ New survey (only if needed) | $400 to $700 | Avoidable; see below
 :::
 
 Two seller-friendly notes hiding in that table. First, the resale certificate cap is state law, so if a management company quotes more than $375 for the certificate itself, push back. Second, the survey is usually avoidable: if you kept the survey from when you bought the home and nothing has changed, you can provide it with a T-47 affidavit and most lenders will accept it. That is a $400 to $700 savings for keeping a piece of paper.
+
+Appraisal revisions and a low valuation can also change your net proceeds; prepare the [seller appraisal packet for the new UAD 3.6 report](/blog/new-appraisal-report-2026-austin) before a financed buyer orders the appraisal.
 
 ## Property Tax Proration: The Line That Surprises Everyone
 
@@ -7349,6 +7702,8 @@ The current list of non-disclosure states: Alaska, Idaho, Kansas, Louisiana, Mis
 Two common misconceptions worth killing:
 
 **Misconception #1: "Non-disclosure means nobody knows what homes sell for."** Wrong. Listing brokers report closed prices to the MLS, in Austin that's ACTRIS, where licensed agents and appraisers can see them. The data exists; it's just not public.
+
+For financed purchases, the [new appraisal report arriving November 2](/blog/new-appraisal-report-2026-austin) makes documented MLS comps and improvement records more important.
 
 **Misconception #2: "Non-disclosure means I can't find out anything."** Also wrong. Plenty is still public, which is exactly why the next section matters.
 

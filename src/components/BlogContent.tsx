@@ -598,7 +598,7 @@ const FAQBlock = ({ body, expandable = false }: { body: string; expandable?: boo
           {items.map((item, idx) => (
             <AccordionItem key={idx} value={`faq-${idx}`} className="border-foreground/15">
               <AccordionTrigger className="text-left text-lg font-medium text-foreground gap-6">{item.q}</AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground leading-relaxed [&[data-state=closed]]:hidden" forceMount>
+              <AccordionContent className="text-base text-muted-foreground leading-relaxed">
                 <p dangerouslySetInnerHTML={{ __html: renderInline(item.a) }} />
               </AccordionContent>
             </AccordionItem>

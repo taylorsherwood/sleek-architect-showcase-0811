@@ -1299,7 +1299,7 @@ body.hcs-immersive nav.fixed {
 
 /* ============================================================
    Commercial & Investment — scoped retone
-   Mirrors the 4314 Gillis offering memorandum system:
+   Offering-memorandum system:
    dark graphite as the dominant surface, brass accent,
    elevated white "card-light" + "surface-light" annual-report sections.
    ============================================================ */
@@ -1328,7 +1328,7 @@ body.hcs-immersive nav.fixed {
 /* ── Surfaces ── */
 .commercial-theme .cm-surface-stone { background-color: var(--cm-stone); }
 
-/* Dark dominant surface (matches Gillis bg) */
+/* Dark dominant surface */
 .commercial-theme .cm-surface-graphite,
 .commercial-theme .cm-surface-charcoal { color: var(--cm-stone); }
 .commercial-theme .cm-surface-graphite { background-color: var(--cm-graphite); }

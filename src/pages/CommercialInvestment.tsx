@@ -251,23 +251,6 @@ const CommercialInvestment = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
               <CommercialListingCard
-                image={gillisStreet}
-                alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily"
-                title="4314 Gillis Street, 24-unit multifamily investment, Austin TX"
-                badge="MULTIFAMILY"
-                price="$2,375,000"
-                name="4314 Gillis Street"
-                location="Austin, TX 78745"
-                meta={[
-                  { label: "ASSET TYPE", value: "Value-Add Multifamily" },
-                  { label: "UNITS", value: "24" },
-                ]}
-                description="24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor."
-                cta={{ type: "external", href: "https://www.4314gillis.com", label: "View Property Website" }}
-              />
-
-
-              <CommercialListingCard
                 image={s11thStreet}
                 alt="717 S. 11th St, Temple TX, 6-unit multifamily"
                 title="717 S. 11th St, multifamily investment, Temple TX"

@@ -10,7 +10,6 @@ const Footer = lazy(() => import("@/components/Footer"));
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.webp";
-import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
@@ -44,19 +43,6 @@ const commercialCtaStyle = {
 };
 
 const commercialListings = [
-  {
-    image: gillisStreet,
-    alt: "4314 Gillis Street, Austin TX 78745, 24-unit multifamily",
-    title: "4314 Gillis Street, 24-unit multifamily investment, Austin TX",
-    badge: "MULTIFAMILY",
-    name: "4314 Gillis Street",
-    location: "Austin, TX 78745",
-    price: "$2,375,000",
-    assetType: "Value-Add Multifamily",
-    units: "24",
-    description: "24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor.",
-    externalUrl: "https://www.4314gillis.com",
-  },
   {
     image: s11thStreet,
     alt: "717 S. 11th St, Temple TX, 6-unit multifamily",

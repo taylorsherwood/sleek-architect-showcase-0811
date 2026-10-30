@@ -5,7 +5,6 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 
-import gillisStreet from "@/assets/commercial-gillis-street.jpg";
 import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
@@ -155,7 +154,7 @@ const CommercialInvestment = () => {
       ])} />
       <Navigation />
 
-      {/* Hero — Gillis OM treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
+      {/* Hero — offering-memorandum treatment: full-bleed image, kicker over hairline, brass-outline CTAs */}
       <section className="relative w-full min-h-[760px] md:min-h-[860px] lg:min-h-[920px] overflow-hidden flex items-center pt-32 md:pt-36 pb-16 md:pb-24 lg:pb-32">
         <div className="absolute inset-0">
           <CommercialHeroVideo />
@@ -251,23 +250,6 @@ const CommercialInvestment = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-              <CommercialListingCard
-                image={gillisStreet}
-                alt="4314 Gillis Street, Austin TX 78745, 24-unit multifamily"
-                title="4314 Gillis Street, 24-unit multifamily investment, Austin TX"
-                badge="MULTIFAMILY"
-                price="$2,375,000"
-                name="4314 Gillis Street"
-                location="Austin, TX 78745"
-                meta={[
-                  { label: "ASSET TYPE", value: "Value-Add Multifamily" },
-                  { label: "UNITS", value: "24" },
-                ]}
-                description="24-unit value-add multifamily opportunity in South Austin. Well-positioned for rent growth and operational improvements in a high-demand rental corridor."
-                cta={{ type: "external", href: "https://www.4314gillis.com", label: "View Property Website" }}
-              />
-
-
               <CommercialListingCard
                 image={s11thStreet}
                 alt="717 S. 11th St, Temple TX, 6-unit multifamily"

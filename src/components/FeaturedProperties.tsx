@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
-import gillisStreet from "@/assets/gillis-street-home-card.jpg";
 
-const properties = [
-  {
-    image: gillisStreet,
-    address: "4314 Gillis Street",
-    location: "Austin, TX 78745",
-    price: "$2,375,000",
-    beds: 24, baths: 0, sqft: "24-unit",
-    link: "https://www.4314gillis.com",
-    badge: "COMMERCIAL LISTING",
-    subtitle: "4314 Gillis Street, 24-unit value-add multifamily, 78745.",
-  },
-];
+const properties: {
+  image: string;
+  address: string;
+  location: string;
+  price: string;
+  beds: number;
+  baths: number;
+  sqft: string;
+  link: string;
+  badge: string;
+  subtitle?: string;
+}[] = [];
 
 const FeaturedProperties = () => {
   return (

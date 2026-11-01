@@ -8,6 +8,8 @@ import MidPageCTABand from "@/components/community-report/MidPageCTABand";
 import { useParams, Link } from "react-router-dom";
 import AliasRedirect from "@/components/AliasRedirect";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
+import { neighborhoodPriceSummary } from "@/data/neighborhoodStats";
 
 // Slugs whose old LiveBy CommunityGuideCTA is replaced inline by the new
 // CMS-driven gated report (teaser + gate + full unlocked content).
@@ -309,7 +311,7 @@ const CommunityPage = () => {
     },
     {
       question: `What are home prices in ${community.name}?`,
-      answer: `Home prices in ${community.name} vary based on size, lot, and location. Current pricing typically falls within the ${community.priceRange} range. Contact Echelon Property Group for a detailed market analysis and current listings.`,
+      answer: neighborhoodPriceSummary(community.slug),
     },
     {
       question: `Are there luxury homes in ${community.name}?`,
@@ -368,7 +370,7 @@ const CommunityPage = () => {
             <Link to="/communities" className="inline-block text-minimal text-muted-foreground hover:text-foreground transition-colors duration-300 mb-6">
               ← ALL COMMUNITIES
             </Link>
-            <p className="text-minimal text-gold mb-3">{community.priceRange}</p>
+            <NeighborhoodMedian area={community.slug} className="text-minimal text-gold mb-3" />
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-normal text-architectural mb-6">
               {override?.heroTitle || community.heroTitle || `Homes for Sale in ${community.name}`}
             </h1>
@@ -459,7 +461,7 @@ const CommunityPage = () => {
       {/* Editorial AgentIntel market pulse — a localized extension of
           /market-intelligence for ultra-luxury opt-in markets. Restrained,
           private-brief composition; no dashboard grids. */}
-      {AGENTINTEL_PULSE_SLUGS.has(community.slug) && (
+      {AGENTINTEL_PULSE_SLUGS.has(community.slug) && community.slug !== "barton-creek" && (
         <Suspense fallback={<div className="min-h-[320px]" />}>
           <AgentIntelMarketSnapshot
             marketName="Southwest Austin"
@@ -732,7 +734,7 @@ const CommunityPage = () => {
                       to={`/communities/${rc.slug}`}
                       className="group border-2 border-border p-6 rounded-lg hover:border-gold transition-colors duration-500"
                     >
-                      <p className="text-minimal text-gold mb-2">{rc.priceRange}</p>
+                      <NeighborhoodMedian area={rc.slug} />
                       <h3 className="text-xl font-display font-normal text-architectural group-hover:text-gold transition-colors mb-2">
                         {rc.name}
                       </h3>

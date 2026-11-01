@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
+import { neighborhoodPriceSummary } from "@/data/neighborhoodStats";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
@@ -13,7 +15,7 @@ import LuxuryMarketInsights from "@/components/market-intel/LuxuryMarketInsights
 const faqs = [
   { question: "What defines luxury real estate in Austin Texas?", answer: "Luxury real estate in Austin generally begins at $1.5 million for single-family homes in premium neighborhoods. The core luxury tier spans $1.5M to $5M, while ultra-luxury encompasses Lake Austin waterfront estates, Hill Country ranches, and architectural masterpieces above $5M. Key indicators include location prestige, lot size, build quality, and access to top-rated school districts like Eanes ISD." },
   { question: "Is Austin's luxury housing market a good investment in 2026?", answer: "Austin's luxury market fundamentals remain strong heading into 2026. Supply-constrained neighborhoods like West lake Hills, Lake Austin, and Barton Creek continue to appreciate at 5-10% annually. The combination of tech-sector job growth, no state income tax, and sustained in-migration from coastal markets provides a durable demand foundation that supports long-term appreciation." },
-  { question: "How much have Austin luxury home prices increased?", answer: "Austin luxury home prices have appreciated significantly over the past decade. Median prices in top neighborhoods like West lake Hills have increased from approximately $1.2M in 2016 to over $2.1M in 2026. Lake Austin waterfront has seen even steeper gains, with median prices exceeding $5M. While the pace moderated after the 2021-2022 peak, the long-term trend remains upward." },
+  { question: "How much have Austin luxury home prices increased?", answer: `Changes depend on the neighborhood and reporting period. ${neighborhoodPriceSummary("westlake-hills")}. A single trailing-year median does not establish appreciation; compare like-for-like periods and property types.` },
   { question: "What neighborhoods have the strongest luxury market performance?", answer: "Lake Austin waterfront leads with 8-12% annual appreciation and the highest absolute prices. West lake Hills and Barton Creek deliver consistent 5-8% gains with deep buyer demand. Tarrytown offers strong central-city appreciation of 6-9%. Dripping Springs and Hill Country represent the fastest-growing luxury corridor with 8-12% gains on estate properties." },
   { question: "Should luxury buyers act now or wait in Austin?", answer: "For buyers with a 5+ year horizon, current conditions favor purchasing in supply-constrained neighborhoods where inventory won't materially increase. Interest rate stabilization has improved purchasing power compared to 2023-2024. The strongest opportunity exists in acquiring quality properties in premium locations before the next appreciation cycle accelerates. Consult Echelon Property Group for a personalized market assessment." },
 ];
@@ -90,14 +92,8 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <span className="text-foreground font-medium">Average luxury sale price (citywide)</span>
                   <span className="text-gold font-display">$2.2M</span>
                 </div>
-                <div className="flex justify-between items-center border-b border-border pb-3">
-                  <span className="text-foreground font-medium">Lake Austin waterfront median</span>
-                  <span className="text-gold font-display">$5.4M+</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-border pb-3">
-                  <span className="text-foreground font-medium">West lake Hills median</span>
-                  <span className="text-gold font-display">$2.1M+</span>
-                </div>
+                <NeighborhoodMedian area="lake-austin" />
+                <NeighborhoodMedian area="westlake-hills" />
                 <div className="flex justify-between items-center border-b border-border pb-3">
                   <span className="text-foreground font-medium">Year-over-year appreciation (premium areas)</span>
                   <span className="text-gold font-display">5–10%</span>
@@ -142,7 +138,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West lake Hills</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $2.1M+ | Annual appreciation: 6–8%</p>
+                  <NeighborhoodMedian area="westlake-hills" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most consistently high-performing luxury submarket. Limited buildable lots, Eanes ISD, and proximity to downtown create sustained demand from tech executives and relocating families. Inventory turns over quickly and properties rarely linger.
                   </p>
@@ -152,7 +148,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $5.4M+ | Annual appreciation: 8–12%</p>
+                  <NeighborhoodMedian area="lake-austin" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's ultra-luxury tier. Permanent shoreline scarcity and a constant-level lake ensure lasting value. Many transactions occur through private channels, making broker relationships essential for access.
                   </p>
@@ -162,7 +158,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $2.5M+ | Annual appreciation: 5–7%</p>
+                  <NeighborhoodMedian area="barton-creek" />
                   <p className="text-muted-foreground leading-relaxed">
                     Gated community with world-class amenities approaching full build-out. Remaining lots and renovation opportunities command increasing premiums. Country club lifestyle and Eanes ISD drive consistent interest.
                   </p>
@@ -172,7 +168,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $1.6M+ | Annual appreciation: 6–9%</p>
+                  <NeighborhoodMedian area="tarrytown" />
                   <p className="text-muted-foreground leading-relaxed">
                     Central Austin's most coveted neighborhood. Walkability, tree-lined streets, and active teardown-rebuild market. New construction achieves $600–$800 per square foot. Casis Elementary zone adds a premium.
                   </p>
@@ -182,7 +178,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/dripping-springs" className="hover:text-muted-foreground transition-colors">Dripping Springs and Hill Country</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $850K+ | Annual appreciation: 8–12%</p>
+                  <NeighborhoodMedian area="dripping-springs" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's fastest-growing luxury corridor. Remote-work flexibility and infrastructure improvements fuel demand for estate properties on acreage. <Link to="/land-for-sale-austin" className="text-foreground underline hover:text-muted-foreground">Land values</Link> along the Highway 290 corridor continue to climb.
                   </p>
@@ -192,7 +188,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/rob-roy" className="hover:text-muted-foreground transition-colors">Rob Roy</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $3.5M+ | Annual appreciation: 5–8%</p>
+                  <NeighborhoodMedian area="rob-roy" />
                   <p className="text-muted-foreground leading-relaxed">
                     One of Austin's most exclusive gated communities with panoramic Hill Country views and Eanes ISD schools. Limited inventory and estate-scale architecture support strong value resilience. Properties recover faster than most Austin neighborhoods during market corrections.
                   </p>
@@ -202,7 +198,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/pemberton-heights" className="hover:text-muted-foreground transition-colors">Pemberton Heights</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $2.8M+ | Annual appreciation: 6–8%</p>
+                  <NeighborhoodMedian area="pemberton-heights" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most prestigious central neighborhood with irreplaceable half-acre lots and distinguished estate architecture. Walk-to-downtown convenience and mature tree canopy create demand resilience that has proven remarkably consistent across market cycles.
                   </p>
@@ -212,7 +208,7 @@ const AustinLuxuryRealEstateMarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/lakeway" className="hover:text-muted-foreground transition-colors">Lakeway and Lake Travis Corridor</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $1.2M+ | Annual appreciation: 5–8%</p>
+                  <NeighborhoodMedian area="lakeway" />
                   <p className="text-muted-foreground leading-relaxed">
                     The <Link to="/communities/lake-travis" className="text-foreground underline hover:text-muted-foreground">Lake Travis corridor</Link> has emerged as a major luxury growth area, with <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> providing full-service resort infrastructure, <Link to="/communities/bee-cave" className="text-foreground underline hover:text-muted-foreground">Bee Cave</Link> offering Hill Country commercial convenience, and <Link to="/communities/steiner-ranch" className="text-foreground underline hover:text-muted-foreground">Steiner Ranch</Link> delivering family-oriented amenity-rich living. Waterfront scarcity and Lake Travis ISD demand support sustained appreciation across the corridor.
                   </p>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 
 const featured = [
   { name: "Barton Creek", slug: "barton-creek", price: "From $1.5M+" },
@@ -38,11 +39,7 @@ const FeaturedCommunities = () => (
                 <h3 className="font-display text-sm md:text-[15px] font-medium text-foreground group-hover:text-gold transition-colors duration-300 mb-1">
                   {c.name}
                 </h3>
-                <p className="text-muted-foreground/60" style={{
-                  fontFamily: '"Jost", sans-serif', fontSize: "10px", letterSpacing: "0.1em"
-                }}>
-                  {c.price}
-                </p>
+                <NeighborhoodMedian area={c.slug} className="text-xs text-muted-foreground" />
               </Link>
             ))}
           </div>

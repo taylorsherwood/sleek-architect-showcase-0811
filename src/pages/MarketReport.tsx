@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
@@ -99,7 +100,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West lake Hills</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $2.1M+ | Appreciation: 6-8% annually</p>
+                  <NeighborhoodMedian area="westlake-hills" />
                   <p className="text-muted-foreground leading-relaxed">
                     West lake Hills continues to demonstrate the strongest and most consistent appreciation among Austin's luxury neighborhoods. Limited buildable lots, Eanes ISD enrollment, and sustained demand from tech executives create a market characterized by low inventory and competitive pricing. Properties with Hill Country views and updated interiors sell most quickly.
                   </p>
@@ -109,7 +110,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $2.5M+ | Appreciation: 5-7% annually</p>
+                  <NeighborhoodMedian area="barton-creek" />
                   <p className="text-muted-foreground leading-relaxed">
                     Barton Creek's market reflects the community's maturity and approaching build-out. Remaining lots and teardown opportunities command increasing premiums. The community's world-class amenities, gated security, and Eanes ISD enrollment maintain strong buyer interest, particularly from out-of-state purchasers drawn to the country club lifestyle.
                   </p>
@@ -119,7 +120,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $5M+ | Appreciation: 8-12% annually</p>
+                  <NeighborhoodMedian area="lake-austin" />
                   <p className="text-muted-foreground leading-relaxed">
                     The most supply-constrained and highest-performing segment of Austin's luxury market. Waterfront properties benefit from permanent shoreline scarcity, and the constant-level lake ensures year-round usability. Many transactions occur off-market through established relationships, underscoring the importance of working with a connected specialist.
                   </p>
@@ -129,7 +130,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $1.6M+ | Appreciation: 6-9% annually</p>
+                  <NeighborhoodMedian area="tarrytown" />
                   <p className="text-muted-foreground leading-relaxed">
                     Tarrytown's central location and walkability drive strong demand across buyer demographics. The teardown-rebuild market remains active, with new construction achieving $600-$800 per square foot. Properties within the Casis Elementary attendance zone command meaningful premiums.
                   </p>
@@ -139,7 +140,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/downtown-austin-condos" className="hover:text-muted-foreground transition-colors">Downtown Austin Condos</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $650K+ | Appreciation: 4-6% annually</p>
+                  <NeighborhoodMedian area="downtown" />
                   <p className="text-muted-foreground leading-relaxed">
                     The downtown condo market shows varied performance by building and unit type. Well-located units in established buildings with strong amenities and HOA management maintain value, while new supply has created opportunities for buyers in some segments. The rental market remains robust.
                   </p>
@@ -149,7 +150,7 @@ const MarketReport = () => {
                   <h3 className="text-xl font-display font-medium mb-2">
                     <Link to="/communities/dripping-springs" className="hover:text-muted-foreground transition-colors">Dripping Springs &amp; Hill Country</Link>
                   </h3>
-                  <p className="text-minimal text-gold mb-2">Median: $850K+ | Appreciation: 8-12% annually</p>
+                  <NeighborhoodMedian area="dripping-springs" />
                   <p className="text-muted-foreground leading-relaxed">
                     The fastest-growing segment of Austin's luxury market. Infrastructure improvements, expanding commercial amenities, and remote-work flexibility continue to drive demand for estate properties on acreage. Land values along the Highway 290 corridor have appreciated dramatically.
                   </p>

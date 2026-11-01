@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   createFAQSchema,
@@ -441,7 +442,7 @@ const TaylorSherwood = () => {
                   <h3 className="font-display text-base md:text-lg text-foreground group-hover:text-gold transition-colors duration-300 mb-1">
                     {c.name}
                   </h3>
-                  <p className="text-xs text-muted-foreground/70 tracking-widest">{c.priceRange}</p>
+                  <NeighborhoodMedian area={c.slug} className="text-xs text-muted-foreground tracking-widest" />
                 </Link>
               ))}
             </div>

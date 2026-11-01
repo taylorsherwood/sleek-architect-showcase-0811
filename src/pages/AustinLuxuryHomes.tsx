@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import { neighborhoodPriceSummary } from "@/data/neighborhoodStats";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
@@ -9,7 +10,7 @@ import { communityPages } from "@/data/communityData";
 
 const faqs = [
   { question: "What defines luxury real estate in Austin Texas?", answer: "Luxury real estate in Austin generally starts at $1 million for single-family homes and encompasses properties up to $30 million or more. The luxury segment includes waterfront estates on Lake Austin, hilltop mansions in West Lake Hills, gated golf community homes in Barton Creek, walkable urban estates in Tarrytown, high-rise penthouses downtown, and sprawling Hill Country ranches. What unifies Austin luxury is exceptional quality, premium locations, and distinctive lifestyle experiences." },
-  { question: "Where are the most expensive homes in Austin?", answer: "The most expensive homes in Austin are concentrated along Lake Austin's waterfront ($2M–$25M+), in West Lake Hills ($1.2M–$20M+), and within the gated Barton Creek community ($1.5M–$15M+). Texas Hill Country ranch estates can exceed $30 million for exceptional properties with significant acreage." },
+  { question: "Where are the most expensive homes in Austin?", answer: neighborhoodPriceSummary("westlake-hills") },
   { question: "Is Austin luxury real estate a good investment?", answer: "Yes. Austin's luxury market benefits from a booming tech economy (Apple, Google, Tesla, Meta, Oracle), no state income tax, sustained in-migration from high-cost states, limited premium inventory, and exceptional lifestyle appeal. Supply-constrained neighborhoods like Lake Austin waterfront and West Lake Hills have demonstrated 7–12% average annual appreciation over the past decade." },
   { question: "How do I find luxury homes for sale in Austin?", answer: "Working with a specialized luxury agent is essential. Many of Austin's finest properties trade off-market through private networks. Echelon Property Group provides access to both publicly listed and exclusive off-market luxury homes across all of Austin's premier neighborhoods. Contact us for a personalized property search." },
   { question: "What is the average price per square foot for luxury homes in Austin?", answer: "Price per square foot varies significantly by neighborhood and property type. New construction in Tarrytown and Rollingwood typically achieves $600–$800/sq ft. West Lake Hills and Barton Creek estates range from $400–$600/sq ft. Lake Austin waterfront can exceed $1,000/sq ft for premium properties. Downtown luxury condos range from $400–$1,500/sq ft depending on building and floor." },
@@ -77,21 +78,21 @@ const AustinLuxuryHomes = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Waterfront Estates</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level, unlike the fluctuating Lake Travis, makes it ideal for year-round boating and waterfront enjoyment. Prices range from $2 million to over $25 million, with extreme scarcity ensuring strong long-term appreciation.
+                    <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> homes represent the pinnacle of Austin luxury real estate. These properties feature private docks, infinity-edge pools, panoramic water views, and resort-style outdoor living. Lake Austin's constant water level, unlike the fluctuating Lake Travis, makes it ideal for year-round boating and waterfront enjoyment. 
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Hilltop Estates and Hill Country View Homes</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West Lake Hills</Link> is Austin's premier destination for homes with sweeping Hill Country and Lake Austin views. Perched on scenic bluffs west of downtown, these estates offer privacy, space, and access to the top-rated Eanes Independent School District. Many properties feature walls of glass, seamless indoor-outdoor living, and custom architecture designed to frame the landscape. Homes range from $1.2 million to over $20 million.
+                    <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West Lake Hills</Link> is Austin's premier destination for homes with sweeping Hill Country and Lake Austin views. Perched on scenic bluffs west of downtown, these estates offer privacy, space, and access to the top-rated Eanes Independent School District. Many properties feature walls of glass, seamless indoor-outdoor living, and custom architecture designed to frame the landscape. 
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Gated Community and Golf Estates</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> is Austin's premier gated luxury community, featuring four championship golf courses, a full-service country club, and estate homes on generous lots nestled among mature oaks and limestone terrain. The community's approaching build-out makes remaining properties increasingly valuable. Homes range from $1.5 million to over $15 million, with golf-course-front and greenbelt-view lots commanding the highest premiums.
+                    <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link> is Austin's premier gated luxury community, featuring four championship golf courses, a full-service country club, and estate homes on generous lots nestled among mature oaks and limestone terrain. The community's approaching build-out makes remaining properties increasingly valuable. 
                   </p>
                 </div>
 
@@ -119,7 +120,7 @@ const AustinLuxuryHomes = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-3">Small-Town Luxury</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, a small incorporated city of fewer than 1,500 residents nestled between Zilker Park and West Lake Hills, offers an intimate luxury experience with Eanes ISD schools, walkable access to Zilker Park and Barton Springs Pool, and homes ranging from $1 million to over $5 million. Its compact geography and active teardown-rebuild market create a dynamic and desirable community.
+                    <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, a small incorporated city of fewer than 1,500 residents nestled between Zilker Park and West Lake Hills, offers an intimate luxury experience with Eanes ISD schools, walkable access to Zilker Park and Barton Springs Pool. Its compact geography and active teardown-rebuild market create a dynamic and desirable community.
                   </p>
                 </div>
               </div>

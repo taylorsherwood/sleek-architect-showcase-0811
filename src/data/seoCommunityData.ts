@@ -16,7 +16,7 @@ export const seoCommunityPages: SEOCommunityPage[] = [
     slug: "westlake-hills-homes-for-sale",
     name: "West Lake Hills",
     metaTitle: "West Lake Hills Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse luxury homes for sale in West Lake Hills Austin TX. Hillside estates, Eanes ISD schools, and Hill Country views.2M to $20M+.",
+    metaDescription: "Browse luxury homes for sale in West Lake Hills Austin TX. Hillside estates, Eanes ISD schools, and Hill Country views.",
     priceRange: formatNeighborhoodMedian("westlake-hills"),
     overview: `West Lake Hills is one of the most prestigious residential enclaves in Austin, Texas. Located just west of downtown along the scenic bluffs overlooking Lake Austin and the Hill Country, it offers a rare combination of privacy, natural beauty, and proximity to urban amenities.
 
@@ -132,7 +132,7 @@ Clarksville attracts a diverse mix of creative professionals, tech executives, a
     slug: "barton-creek-homes-for-sale",
     name: "Barton Creek",
     metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse luxury homes for sale in Barton Creek Austin TX. Gated country club estates, championship golf.5M to $15M+.",
+    metaDescription: "Browse luxury homes for sale in Barton Creek Austin TX. Gated country club estates, championship golf.",
     priceRange: formatNeighborhoodMedian("barton-creek"),
     overview: `Barton Creek is one of Austin's premier gated luxury communities, situated along the scenic bluffs of Barton Creek southwest of downtown. The community is anchored by the Barton Creek Country Club, which features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer.
 
@@ -219,7 +219,7 @@ Lake Travis appeals to a diverse buyer pool including families seeking a weekend
     slug: "mueller-homes-for-sale",
     name: "Mueller",
     metaTitle: "Mueller Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops.5M+.",
+    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops.",
     priceRange: formatNeighborhoodMedian("mueller"),
     overview: `Mueller is Austin's award-winning master-planned community built on the former Robert Mueller Municipal Airport site in central-east Austin. The development has transformed 700 acres into one of the most walkable, mixed-use neighborhoods in the city, featuring homes, retail, restaurants, parks, and cultural amenities.
 
@@ -306,7 +306,7 @@ Hyde Park appeals to buyers who prioritize character, walkability, and proximity
     slug: "pemberton-heights-homes-for-sale",
     name: "Pemberton Heights",
     metaTitle: "Pemberton Heights Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees.5M to $10M+.",
+    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees.",
     priceRange: formatNeighborhoodMedian("pemberton-heights"),
     overview: `Pemberton Heights is one of Austin's most prestigious and established residential neighborhoods, located just north of Lady Bird Lake and west of Shoal Creek. Developed in the 1920s and 1930s, Pemberton Heights features wide, tree-lined streets, generous lot sizes, and some of the most distinguished architecture in the city.
 
@@ -393,7 +393,7 @@ Bee Cave appeals to buyers seeking more space and a slower pace while maintainin
     slug: "great-hills-homes-for-sale",
     name: "Great Hills",
     metaTitle: "Great Hills Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees.5M+.",
+    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees.",
     priceRange: formatNeighborhoodMedian("great-hills"),
     overview: `Great Hills is an established residential neighborhood in northwest Austin, situated along the Capital of Texas Highway (Loop 360) corridor between MoPac and Highway 183. The community was developed in the 1970s and 1980s and has matured into one of the most desirable neighborhoods in northwest Austin.
 
@@ -451,7 +451,7 @@ Balcones Park attracts buyers who want central Austin character and Tarrytown ad
     slug: "rob-roy-homes-for-sale",
     name: "Rob Roy",
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views.5M to $20M+.",
+    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views.",
     priceRange: formatNeighborhoodMedian("rob-roy"),
     overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West Lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
 
@@ -584,7 +584,7 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     slug: "davenport-ranch-homes-for-sale",
     name: "Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools.5M to $5M+.",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Hill Country estates off Loop 360, Eanes ISD schools.",
     priceRange: formatNeighborhoodMedian("davenport-ranch"),
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
 

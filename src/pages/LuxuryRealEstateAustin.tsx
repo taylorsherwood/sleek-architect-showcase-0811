@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
@@ -74,47 +75,52 @@ const LuxuryRealEstateAustin = () => {
               <div className="space-y-6">
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West Lake Hills</Link>, $1.2M to $20M+
+                    <Link to="/communities/westlake-hills" className="hover:text-muted-foreground transition-colors">West Lake Hills</Link>
                   </h3>
+                  <NeighborhoodMedian area="westlake-hills" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most prestigious address. Panoramic Hill Country views, Eanes ISD schools, and estate homes on generous lots. Popular with tech executives, families, and buyers seeking prestige and privacy.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>, $1.5M to $15M+
+                    <Link to="/communities/barton-creek" className="hover:text-muted-foreground transition-colors">Barton Creek</Link>
                   </h3>
+                  <NeighborhoodMedian area="barton-creek" />
                   <p className="text-muted-foreground leading-relaxed">
                     Premier gated community with four championship golf courses, country club amenities, and access to the Barton Creek Greenbelt. Approaching build-out, which increases the premium on existing homes.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>, $2M to $25M+
+                    <Link to="/communities/lake-austin" className="hover:text-muted-foreground transition-colors">Lake Austin Waterfront</Link>
                   </h3>
+                  <NeighborhoodMedian area="lake-austin" />
                   <p className="text-muted-foreground leading-relaxed">
                     The pinnacle of Austin luxury. Constant-level lake, private docks, and extreme scarcity create the strongest appreciation profile in the metro. Many transactions occur off-market.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>, $800K to $8M+
+                    <Link to="/communities/tarrytown" className="hover:text-muted-foreground transition-colors">Tarrytown</Link>
                   </h3>
+                  <NeighborhoodMedian area="tarrytown" />
                   <p className="text-muted-foreground leading-relaxed">
                     Austin's most walkable luxury neighborhood. Tree-lined streets, eclectic architecture, and proximity to downtown, Lady Bird Lake, and Deep Eddy Pool.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/spanish-oaks" className="hover:text-muted-foreground transition-colors">Spanish Oaks</Link>, $1.5M to $10M+
+                    <Link to="/communities/spanish-oaks" className="hover:text-muted-foreground transition-colors">Spanish Oaks</Link>
                   </h3>
+                  <NeighborhoodMedian area="spanish-oaks" />
                   <p className="text-muted-foreground leading-relaxed">
                     Exclusive gated community in Bee Cave featuring a private Bobby Weed-designed golf course, resort amenities, and custom estates on 1–5+ acre lots surrounded by Hill Country landscape.
                   </p>
                 </div>
                 <div className="border-l-2 border-gold pl-6">
                   <h3 className="text-xl font-display font-medium mb-2">
-                    <Link to="/communities/texas-hill-country-estates" className="hover:text-muted-foreground transition-colors">Texas Hill Country</Link>, $1M to $30M+
+                    <Link to="/communities/texas-hill-country-estates" className="hover:text-muted-foreground transition-colors">Texas Hill Country</Link>
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Ranch estates, vineyard properties, and luxury retreats on expansive acreage. Remote-work flexibility has accelerated demand for Hill Country properties with space and privacy.

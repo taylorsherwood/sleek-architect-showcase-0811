@@ -8,7 +8,7 @@ import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbS
 
 const communityFaqs = [
   { question: "What are the best luxury neighborhoods in Austin Texas?", answer: "Austin's premier luxury neighborhoods include West Lake Hills, Barton Creek, Lake Austin, Tarrytown, Rollingwood, Spanish Oaks, and Dripping Springs. Each offers distinct lifestyle benefits, school districts, and price ranges." },
-  { question: "What is the average home price in Austin's luxury communities?", answer: "Prices vary by neighborhood. West Lake Hills ranges from $1.2M to $20M+, Barton Creek from $1.5M to $15M+, and Lake Austin waterfront from $2M to $25M+. Entry-level luxury starts around $800K in neighborhoods like Tarrytown." },
+  { question: "What is the average home price in Austin's luxury communities?", answer: neighborhoodPriceSummary("westlake-hills") },
   { question: "Which Austin neighborhood has the best schools?", answer: "West Lake Hills, Barton Creek, and Rollingwood are served by the Eanes Independent School District, consistently ranked among the top districts in Texas." },
   { question: "Are there waterfront homes in Austin?", answer: "Yes. Lake Austin and Lake Travis offer waterfront estates with private docks, panoramic water views, and a resort-like lifestyle just minutes from downtown Austin." },
   { question: "Barton Creek vs West Lake Hills, which is better?", answer: "Both are premier Austin neighborhoods. Barton Creek offers gated country club living with championship golf and resort amenities, ideal for families and golf enthusiasts. West Lake Hills provides sweeping Hill Country views, a wider price range, and more diverse architectural styles. Both share access to the top-rated Eanes ISD school district." },
@@ -145,7 +145,7 @@ const Communities = () => {
                   Barton Creek vs West Lake Hills
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Both neighborhoods share access to the top-rated Eanes ISD school district and offer homes in the $1.5M–$15M+ range. Barton Creek is ideal for buyers who want gated community security, country club amenities, and championship golf. West Lake Hills suits buyers seeking larger lots, Hill Country views, and more architectural variety. Both communities deliver strong long-term appreciation.
+                  Both neighborhoods share access to the top-rated Eanes ISD school district. Barton Creek is ideal for buyers who want gated community security, country club amenities, and championship golf. West Lake Hills suits buyers seeking larger lots, Hill Country views, and more architectural variety. Both communities deliver strong long-term appreciation.
                 </p>
               </div>
               <div>
@@ -161,7 +161,7 @@ const Communities = () => {
                   Tarrytown vs Travis Heights for Urban Buyers
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Tarrytown offers old Austin charm with tree-lined streets, walkability to downtown, and homes from $800K to $8M+. Travis Heights appeals to buyers seeking South Congress proximity, downtown skyline views, and a more eclectic architectural character. Both are among Austin's most walkable luxury neighborhoods.
+                  Tarrytown offers old Austin charm with tree-lined streets, walkability to downtown. Travis Heights appeals to buyers seeking South Congress proximity, downtown skyline views, and a more eclectic architectural character. Both are among Austin's most walkable luxury neighborhoods.
                 </p>
               </div>
             </div>

@@ -7355,11 +7355,11 @@ This is where private property tour services become valuable. At the highest lev
 
 :::glance
 Neighborhood | Price Range | Best For | Access Note
-Barton Creek | $3M-$15M+ | Estate privacy, golf access | Often pre-market via club network
-Westlake Hills & Rollingwood | $3M-$20M+ | Top schools, hill country views | Tight inventory, relationship-driven
-Lake Austin Waterfront | $5M-$40M+ | Private docks, water access | Mostly off-market
-Tarrytown & Pemberton Heights | $3M-$12M+ | Historic central Austin | Quiet whisper listings
-Spanish Oaks | $4M-$15M+ | Gated, resort amenities | Pre-market within community
+Barton Creek | Not available | Estate privacy, golf access | Often pre-market via club network
+Westlake Hills & Rollingwood | Not available | Top schools, hill country views | Tight inventory, relationship-driven
+Lake Austin Waterfront | Not available | Private docks, water access | Mostly off-market
+Tarrytown & Pemberton Heights | Not available | Historic central Austin | Quiet whisper listings
+Spanish Oaks | Not available | Gated, resort amenities | Pre-market within community
 :::
 
 ## Why Many Austin Luxury Homes Never Hit the MLS

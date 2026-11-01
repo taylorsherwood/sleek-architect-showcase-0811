@@ -62,7 +62,7 @@ export const communityPages: CommunityData[] = [
     name: "West Lake Hills",
     heroTitle: "Homes for Sale in West Lake Hills",
     metaTitle: "West Lake Hills Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in West Lake Hills Austin. Stunning Hill Country views, top Eanes ISD schools.2M to $20M+.",
+    metaDescription: "Explore luxury homes for sale in West Lake Hills Austin. Stunning Hill Country views, top Eanes ISD schools.",
     priceRange: formatNeighborhoodMedian("westlake-hills"),
     image: westlakeHillsImg,
     heroImage: westlakeHillsHeroImg,
@@ -100,7 +100,7 @@ Upscale dining and boutique shops line Bee Caves Road and the Hill Country Galle
 West Lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
     marketInsights: `### Pricing & Demand
 
-${neighborhoodPriceSummary("westlake-hills")} Luxury estates regularly trade above $5 million. The market is characterized by low inventory and high demand.
+${neighborhoodPriceSummary("westlake-hills")}  The market is characterized by low inventory and high demand.
 
 ### Appreciation Trends
 
@@ -186,7 +186,7 @@ The area's strict development standards ensure that quality investments are prot
     name: "Barton Creek, Lost Creek & Amarra",
     heroTitle: "Homes for Sale in Barton Creek, Lost Creek & Amarra",
     metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
-    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living.5M to $15M+ in this premier community.",
+    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living.",
     priceRange: formatNeighborhoodMedian("barton-creek"),
     image: bartonCreekCommunityImg,
     heroImage: bartonCreekHeroImg,
@@ -339,7 +339,7 @@ Local favorites include Tacodeli, Tarrytown Pharmacy, and shops along Exposition
 Block parties, neighborhood association activities, and multigenerational families create a strong social fabric. Many Tarrytown families have lived here for generations.`,
     marketInsights: `### Pricing
 
-Premium properties on larger lots or near the lake trade well above $5 million.
+
 
 ### Renovation & Teardown Market
 
@@ -449,7 +449,7 @@ South Lamar Boulevard, just minutes away, features acclaimed restaurants, brewer
 The Rollingwood Women's Club, community pool, and neighborhood parks serve as gathering places. The annual Fourth of July celebration draws the entire community.`,
     marketInsights: `### Pricing
 
-New construction and renovated homes regularly trade above $2.5 million.
+
 
 ### Teardown-Rebuild Market
 
@@ -489,7 +489,7 @@ High-quality tenants, often executives on temporary assignments or families expl
       { question: "What are home prices in Rollingwood?", answer: neighborhoodPriceSummary("rollingwood") },
       { question: "Is Rollingwood near Zilker Park?", answer: "Yes. Rollingwood is directly adjacent to Zilker Park, providing residents with walkable access to 350 acres of recreation including Barton Springs Pool, Zilker Botanical Garden, sports fields, and the Barton Creek Greenbelt." },
       { question: "Why are people moving to Rollingwood?", answer: "Buyers are attracted to Rollingwood's combination of Eanes ISD schools, Zilker Park proximity, small-town community atmosphere, generous lot sizes, and quick access to both downtown Austin and the Hill Country. It's often called the 'best of both worlds.'" },
-      { question: "Can you build a new home in Rollingwood?", answer: "Yes. The teardown-rebuild market is robust in Rollingwood. Original 1950s-1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction, typically priced between $2 million and $5 million." }
+      { question: "Can you build a new home in Rollingwood?", answer: "Yes. The teardown-rebuild market is robust in Rollingwood. Original 1950s-1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction." }
     ]
   },
   {
@@ -525,7 +525,7 @@ Some of Austin's best restaurants, boutiques, coffee shops, and live music venue
 The Travis Heights Art Trail opens private homes and studios each spring. Block parties and community clean-up days reinforce the neighborhood's reputation as one of Austin's most engaged communities.`,
     marketInsights: `### Pricing
 
-Premium properties, especially those with downtown views or larger lots, trade well above $2 million.
+
 
 ### New vs. Vintage
 
@@ -721,7 +721,7 @@ The historic Mercer Street downtown features locally owned restaurants, boutique
 Austin's full range of urban amenities remains accessible within 30 to 45 minutes via Highway 290.`,
     marketInsights: `### Pricing
 
-Custom homes on acreage regularly exceed $1.5 million. Premier estate properties trade between $3 million and $10 million.
+ 
 
 ### Market Segments
 
@@ -1528,7 +1528,7 @@ Finite waterfront supply and growing demand from Austin's expanding population c
     name: "Mueller",
     heroTitle: "Homes for Sale in Mueller",
     metaTitle: "Mueller Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops.5M+.",
+    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops.",
     priceRange: formatNeighborhoodMedian("mueller"),
     image: muellerImg,
     overview: `Mueller is Austin's award-winning master-planned community built on the former Robert Mueller Municipal Airport site in central-east Austin. The development has transformed 700 acres into one of the most walkable, mixed-use neighborhoods in the city.
@@ -1721,7 +1721,7 @@ Central location, UT proximity, and walkability ensure enduring demand across ma
     name: "Pemberton Heights",
     heroTitle: "Homes for Sale in Pemberton Heights",
     metaTitle: "Pemberton Heights Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees.5M to $10M+.",
+    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees.",
     priceRange: formatNeighborhoodMedian("pemberton-heights"),
     image: pembertonHeightsImg,
     overview: `Pemberton Heights is one of Austin's most prestigious and established residential neighborhoods, located just north of Lady Bird Lake and west of Shoal Creek. Developed in the 1920s and 1930s, Pemberton Heights features wide, tree-lined streets, generous lot sizes, and some of the most distinguished architecture in the city.
@@ -1940,7 +1940,7 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
     name: "Great Hills",
     heroTitle: "Homes for Sale in Great Hills",
     metaTitle: "Great Hills Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees.5M+.",
+    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees.",
     priceRange: formatNeighborhoodMedian("great-hills"),
     image: greatHillsImg,
     overview: `Great Hills is an established residential neighborhood in northwest Austin, situated along the Capital of Texas Highway (Loop 360) corridor between MoPac and Highway 183. The community was developed in the 1970s and 1980s and has matured into one of the most desirable neighborhoods in northwest Austin.
@@ -2132,7 +2132,7 @@ Proximity to downtown, MoPac, UT, and the central Austin employment base ensures
     name: "Rob Roy",
     heroTitle: "Homes for Sale in Rob Roy",
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views.5M to $20M+.",
+    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views.",
     priceRange: formatNeighborhoodMedian("rob-roy"),
     image: robRoyImg,
     overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West Lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
@@ -2382,7 +2382,7 @@ The neighborhood is surrounded by beloved Austin institutions including Sweetish
 Bryker Woods is known for its family-oriented character. Children walk to school, neighbors know each other by name, and the community maintains a safe, welcoming environment that attracts young families and long-term residents alike.`,
     marketInsights: `### Pricing
 
-Homes in Bryker Woods range from approximately $700K for original bungalows needing renovation to over $3M for new construction and premium renovations on larger lots.
+${neighborhoodPriceSummary("bryker-woods")}
 
 ### Market Dynamics
 
@@ -2483,7 +2483,7 @@ East Austin's culinary scene is legendary. From acclaimed restaurants like Suert
 - Festival Beach, waterfront park along the Colorado River`,
     marketInsights: `### Pricing
 
-Homes in East Austin range from approximately $400K for smaller bungalows and condos to over $3M for premium new construction on larger lots.
+${neighborhoodPriceSummary("east-austin")}
 
 ### Market Dynamics
 
@@ -2584,7 +2584,7 @@ Old Enfield's central location places residents within minutes of Austin's most 
 Despite its urban proximity, Old Enfield maintains a serene, residential character. Wide lots, deep setbacks, and the dense tree canopy create an atmosphere of privacy and tranquility that belies the neighborhood's central location. It's a place where neighbors walk their dogs, children ride bikes, and the pace of life feels distinctly unhurried.`,
     marketInsights: `### Pricing
 
-Homes in Old Enfield range from approximately $900K for smaller homes and condominiums to over $5M for grand estates and premium new construction on large lots.
+${neighborhoodPriceSummary("old-enfield")}
 
 ### Market Dynamics
 
@@ -2653,7 +2653,7 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
     name: "Davenport Ranch",
     heroTitle: "Homes for Sale in Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities.5M to $5M+.",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities.",
     priceRange: formatNeighborhoodMedian("davenport-ranch"),
     image: davenportRanchImg,
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. Nestled into the rolling hills west of downtown, the community offers oversized lots, mature tree canopy, and a coveted position within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
@@ -2693,7 +2693,7 @@ The neighborhood's 360 corridor location provides easy access to multiple retail
 Davenport Ranch is known for its family-friendly character. The neighborhood's quiet streets, large lots, and Eanes ISD schools attract families who prioritize outdoor space, safety, and academic excellence. Children grow up with room to play, and the community maintains a welcoming, established atmosphere.`,
     marketInsights: `### Pricing
 
-Homes in Davenport Ranch range from approximately $1.5M for homes on standard lots needing updates to over $5M for fully renovated or rebuilt estates on premium lots with Hill Country views.
+${neighborhoodPriceSummary("davenport-ranch")}
 
 ### Market Dynamics
 

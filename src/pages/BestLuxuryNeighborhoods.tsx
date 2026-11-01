@@ -1,35 +1,36 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 const Footer = lazy(() => import("@/components/Footer"));
 import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 
 const faqs = [
-  { question: "What is the most expensive neighborhood in Austin Texas?", answer: "Lake Austin waterfront is Austin's most expensive area, with estates regularly exceeding $10 million. West lake Hills and Barton Creek also feature homes above $15 million. These neighborhoods offer limited inventory, premium amenities, and the strongest long-term appreciation in the Austin market." },
-  { question: "Which Austin neighborhood has the best schools?", answer: "West lake Hills, Barton Creek, and Rollingwood are served by Eanes Independent School District, consistently ranked among the top districts in Texas. Westlake High School earns National Blue Ribbon recognition. Tarrytown's Casis Elementary is also one of the highest-performing schools in Austin ISD." },
-  { question: "Where do tech executives live in Austin?", answer: "Many tech executives choose West lake Hills for its combination of prestige, Eanes ISD schools, and Hill Country views. Barton Creek's gated exclusivity and golf amenities are also popular. Lake Austin waterfront attracts executives seeking a resort-like lifestyle, while Tarrytown appeals to those who prefer urban walkability." },
-  { question: "What is the average luxury home price in Austin?", answer: "Austin's luxury market spans a wide range. Entry-level luxury starts around $1 million in neighborhoods like Rollingwood and Travis Heights. Mid-tier luxury ($2M-$5M) is well represented in West lake Hills, Barton Creek, and Tarrytown. Ultra-luxury ($5M+) is concentrated on Lake Austin waterfront and in premier West lake Hills estates." },
-  { question: "Is Austin a good place to invest in luxury real estate?", answer: "Yes. Austin's luxury market benefits from strong tech-economy growth, sustained in-migration from high-cost states, no state income tax, limited premium inventory, and exceptional lifestyle appeal. Neighborhoods like West lake Hills, Lake Austin, and Barton Creek have demonstrated consistent long-term appreciation." }
+  { question: "What is the most expensive neighborhood in Austin Texas?", answer: "Lake Austin waterfront is Austin's most expensive area, with estates regularly exceeding $10 million. West Lake Hills and Barton Creek also feature homes above $15 million. These neighborhoods offer limited inventory, premium amenities, and the strongest long-term appreciation in the Austin market." },
+  { question: "Which Austin neighborhood has the best schools?", answer: "West Lake Hills, Barton Creek, and Rollingwood are served by Eanes Independent School District, consistently ranked among the top districts in Texas. Westlake High School earns National Blue Ribbon recognition. Tarrytown's Casis Elementary is also one of the highest-performing schools in Austin ISD." },
+  { question: "Where do tech executives live in Austin?", answer: "Many tech executives choose West Lake Hills for its combination of prestige, Eanes ISD schools, and Hill Country views. Barton Creek's gated exclusivity and golf amenities are also popular. Lake Austin waterfront attracts executives seeking a resort-like lifestyle, while Tarrytown appeals to those who prefer urban walkability." },
+  { question: "What is the average luxury home price in Austin?", answer: "Austin's luxury market spans a wide range. Entry-level luxury starts around $1 million in neighborhoods like Rollingwood and Travis Heights. Mid-tier luxury ($2M-$5M) is well represented in West Lake Hills, Barton Creek, and Tarrytown. Ultra-luxury ($5M+) is concentrated on Lake Austin waterfront and in premier West Lake Hills estates." },
+  { question: "Is Austin a good place to invest in luxury real estate?", answer: "Yes. Austin's luxury market benefits from strong tech-economy growth, sustained in-migration from high-cost states, no state income tax, limited premium inventory, and exceptional lifestyle appeal. Neighborhoods like West Lake Hills, Lake Austin, and Barton Creek have demonstrated consistent long-term appreciation." }
 ];
 
 const neighborhoods = [
-  { name: "West lake Hills", slug: "westlake-hills", price: "$1.2M – $20M+", highlight: "Top-rated Eanes ISD, panoramic Hill Country views, estate living minutes from downtown", best: "Families seeking top schools, tech executives, prestige buyers" },
-  { name: "Barton Creek", slug: "barton-creek", price: "$1.5M – $15M+", highlight: "World-class golf, gated community, Barton Creek Greenbelt access", best: "Golf enthusiasts, families, buyers seeking resort-style amenities" },
-  { name: "Lake Austin", slug: "lake-austin", price: "$2M – $25M+", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
-  { name: "Tarrytown", slug: "tarrytown", price: "$800K – $8M+", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
-  { name: "Rob Roy", slug: "rob-roy", price: "$1.5M – $20M+", highlight: "Gated hilltop estates, panoramic views, Eanes ISD, multiple exclusive enclaves", best: "Privacy-focused buyers, executives, estate-scale architecture seekers" },
-  { name: "Pemberton Heights", slug: "pemberton-heights", price: "$1.5M – $10M+", highlight: "Distinguished central estates, half-acre lots, walk-to-downtown convenience", best: "Established professionals, legacy families, prestige-driven central Austin buyers" },
-  { name: "Lake Travis", slug: "lake-travis", price: "$1M – $15M+", highlight: "Deep-water lakefront, private docks, Hill Country cliff-side estates", best: "Waterfront lifestyle buyers, second-home owners, boating enthusiasts" },
-  { name: "Lakeway", slug: "lakeway", price: "$600K – $5M+", highlight: "Lake Travis waterfront, championship golf, resort-caliber amenities", best: "Lake lifestyle buyers, families seeking Lake Travis ISD, retirees" },
-  { name: "Bee Cave", slug: "bee-cave", price: "$500K – $8M+", highlight: "Hill Country Galleria, Lake Travis ISD, master-planned and custom estate living", best: "Families upgrading from central Austin, Hill Country lifestyle seekers" },
-  { name: "Steiner Ranch", slug: "steiner-ranch", price: "$500K – $13M+", highlight: "Master-planned resort living, Lake Austin access, comprehensive amenities", best: "Families, outdoor enthusiasts, buyers seeking value-driven luxury" },
-  { name: "Rollingwood", slug: "rollingwood", price: "$1M – $5M+", highlight: "Small-town charm, Zilker Park proximity, Eanes ISD schools", best: "Families, outdoor enthusiasts, value-conscious luxury buyers" },
-  { name: "Travis Heights", slug: "travis-heights", price: "$600K – $4M+", highlight: "Downtown skyline views, South Congress walkability, creative energy", best: "Creative professionals, empty-nesters, lifestyle-driven buyers" },
-  { name: "Downtown Austin", slug: "downtown", price: "$400K – $10M+", highlight: "High-rise living, walkable entertainment, Lady Bird Lake access", best: "Urban professionals, pied-à-terre buyers, rental investors" },
-  { name: "Dripping Springs", slug: "dripping-springs", price: "$500K – $10M+", highlight: "Hill Country estates, wine trail proximity, rapid growth", best: "Acreage seekers, remote workers, wine country enthusiasts" },
-  { name: "Texas Hill Country", slug: "texas-hill-country-estates", price: "$1M – $30M+", highlight: "Ranch estates, vineyard properties, breathtaking landscapes", best: "Ranch buyers, privacy seekers, conservation-minded investors" },
+  { name: "West Lake Hills", slug: "westlake-hills", highlight: "Top-rated Eanes ISD, panoramic Hill Country views, estate living minutes from downtown", best: "Families seeking top schools, tech executives, prestige buyers" },
+  { name: "Barton Creek", slug: "barton-creek", highlight: "World-class golf, gated community, Barton Creek Greenbelt access", best: "Golf enthusiasts, families, buyers seeking resort-style amenities" },
+  { name: "Lake Austin", slug: "lake-austin", highlight: "Constant-level lake, private docks, extreme scarcity", best: "Waterfront lifestyle seekers, trophy property buyers, investors" },
+  { name: "Tarrytown", slug: "tarrytown", highlight: "Walkable streets, eclectic architecture, central Austin location", best: "Urban lifestyle buyers, walkability prioritizers, young families" },
+  { name: "Rob Roy", slug: "rob-roy", highlight: "Gated hilltop estates, panoramic views, Eanes ISD, multiple exclusive enclaves", best: "Privacy-focused buyers, executives, estate-scale architecture seekers" },
+  { name: "Pemberton Heights", slug: "pemberton-heights", highlight: "Distinguished central estates, half-acre lots, walk-to-downtown convenience", best: "Established professionals, legacy families, prestige-driven central Austin buyers" },
+  { name: "Lake Travis", slug: "lake-travis", highlight: "Deep-water lakefront, private docks, Hill Country cliff-side estates", best: "Waterfront lifestyle buyers, second-home owners, boating enthusiasts" },
+  { name: "Lakeway", slug: "lakeway", highlight: "Lake Travis waterfront, championship golf, resort-caliber amenities", best: "Lake lifestyle buyers, families seeking Lake Travis ISD, retirees" },
+  { name: "Bee Cave", slug: "bee-cave", highlight: "Hill Country Galleria, Lake Travis ISD, master-planned and custom estate living", best: "Families upgrading from central Austin, Hill Country lifestyle seekers" },
+  { name: "Steiner Ranch", slug: "steiner-ranch", highlight: "Master-planned resort living, Lake Austin access, comprehensive amenities", best: "Families, outdoor enthusiasts, buyers seeking value-driven luxury" },
+  { name: "Rollingwood", slug: "rollingwood", highlight: "Small-town charm, Zilker Park proximity, Eanes ISD schools", best: "Families, outdoor enthusiasts, value-conscious luxury buyers" },
+  { name: "Travis Heights", slug: "travis-heights", highlight: "Downtown skyline views, South Congress walkability, creative energy", best: "Creative professionals, empty-nesters, lifestyle-driven buyers" },
+  { name: "Downtown Austin", slug: "downtown", highlight: "High-rise living, walkable entertainment, Lady Bird Lake access", best: "Urban professionals, pied-à-terre buyers, rental investors" },
+  { name: "Dripping Springs", slug: "dripping-springs", highlight: "Hill Country estates, wine trail proximity, rapid growth", best: "Acreage seekers, remote workers, wine country enthusiasts" },
+  { name: "Texas Hill Country", slug: "texas-hill-country-estates", highlight: "Ranch estates, vineyard properties, breathtaking landscapes", best: "Ranch buyers, privacy seekers, conservation-minded investors" },
 ];
 
 const BestLuxuryNeighborhoods = () => {
@@ -37,7 +38,7 @@ const BestLuxuryNeighborhoods = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Best Luxury Neighborhoods in Austin"
-        description="Best luxury neighborhoods in Austin TX. Expert guide to West lake Hills, Barton Creek, Lake Austin, Tarrytown, and more from Echelon Property Group."
+        description="Best luxury neighborhoods in Austin TX. Expert guide to West Lake Hills, Barton Creek, Lake Austin, Tarrytown, and more from Echelon Property Group."
         canonical="/best-luxury-neighborhoods-austin"
       />
       <SchemaMarkup schema={realEstateAgentSchema} />
@@ -78,7 +79,7 @@ const BestLuxuryNeighborhoods = () => {
                 Austin, Texas has cemented its position as one of the premier luxury real estate markets in the United States. The city's extraordinary growth, fueled by a world-class technology economy, Texas's favorable tax environment, and an unmatched quality of life, has created a luxury housing market that attracts discerning buyers from across the country and around the globe. For a detailed look at current pricing and trends, see our <Link to="/austin-luxury-real-estate-market-report" className="text-foreground underline hover:text-muted-foreground">Austin luxury real estate market report</Link>.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                What sets Austin apart from other luxury markets is the diversity of lifestyle options available within a single metropolitan area. Buyers can choose from lakefront estates on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, walkable urban neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, resort-caliber communities like <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> on Lake Travis, gated golf enclaves such as <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and sprawling <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country ranches</Link>, all within 30 minutes of a vibrant downtown core.
+                What sets Austin apart from other luxury markets is the diversity of lifestyle options available within a single metropolitan area. Buyers can choose from lakefront estates on <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin</Link>, hilltop mansions in <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West Lake Hills</Link>, walkable urban neighborhoods like <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>, resort-caliber communities like <Link to="/communities/lakeway" className="text-foreground underline hover:text-muted-foreground">Lakeway</Link> on Lake Travis, gated golf enclaves such as <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and sprawling <Link to="/communities/texas-hill-country-estates" className="text-foreground underline hover:text-muted-foreground">Hill Country ranches</Link>, all within 30 minutes of a vibrant downtown core.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 This breadth of choice, combined with pricing that offers exceptional value relative to coastal markets, makes Austin uniquely compelling for luxury buyers. Whether you're <Link to="/moving-to-austin-texas" className="text-foreground underline hover:text-muted-foreground">relocating to Austin</Link> or expanding your real estate portfolio, the following guide examines each of Austin's premier luxury neighborhoods in detail.
@@ -98,7 +99,7 @@ const BestLuxuryNeighborhoods = () => {
                         <Link to={`/communities/${n.slug}`} className="text-2xl font-display font-normal text-architectural hover:text-muted-foreground transition-colors">
                           {n.name}
                         </Link>
-                        <p className="text-minimal text-gold mt-1">{n.price}</p>
+                        <NeighborhoodMedian area={n.slug} className="text-minimal text-gold mt-1" />
                       </div>
                       <Link to={`/communities/${n.slug}`} className="text-minimal text-foreground hover:text-muted-foreground transition-colors whitespace-nowrap">
                         FULL GUIDE →
@@ -122,7 +123,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Schools</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    If top-rated public schools are non-negotiable, focus on <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, all served by the acclaimed Eanes ISD. <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>'s Casis Elementary is the top choice within Austin ISD.
+                    If top-rated public schools are non-negotiable, focus on <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West Lake Hills</Link>, <Link to="/communities/barton-creek" className="text-foreground underline hover:text-muted-foreground">Barton Creek</Link>, and <Link to="/communities/rollingwood" className="text-foreground underline hover:text-muted-foreground">Rollingwood</Link>, all served by the acclaimed Eanes ISD. <Link to="/communities/tarrytown" className="text-foreground underline hover:text-muted-foreground">Tarrytown</Link>'s Casis Elementary is the top choice within Austin ISD.
                   </p>
                 </div>
                 <div>
@@ -146,7 +147,7 @@ const BestLuxuryNeighborhoods = () => {
                 <div>
                   <h3 className="text-xl font-display font-medium mb-2">Investment Strength</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West lake Hills</Link> historically leading in long-term value growth due to permanent supply constraints. For properties with renovation or repositioning potential, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor advisory approach</Link>.
+                    All Austin luxury neighborhoods have demonstrated strong appreciation, with <Link to="/communities/lake-austin" className="text-foreground underline hover:text-muted-foreground">Lake Austin waterfront</Link> and <Link to="/communities/westlake-hills" className="text-foreground underline hover:text-muted-foreground">West Lake Hills</Link> historically leading in long-term value growth due to permanent supply constraints. For properties with renovation or repositioning potential, <Link to="/invest" className="text-foreground underline hover:text-muted-foreground">explore our investor advisory approach</Link>.
                   </p>
                 </div>
               </div>

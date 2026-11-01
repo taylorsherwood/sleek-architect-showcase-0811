@@ -1,4 +1,5 @@
 import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
+import { neighborhoodPriceSummary } from "./neighborhoodStats";
 import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
 import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
@@ -139,9 +140,9 @@ Finally, map your timeline honestly. When does your start date begin? Do childre
 
 Austin's luxury market is geographically fragmented. Each submarket has a distinct character, school district, commute profile, and price dynamic. Choosing the right submarket is more consequential than choosing between two specific properties inside it. Our [best luxury neighborhoods](/best-luxury-neighborhoods-austin) guide and <a href="/blog/best-austin-suburbs-2026" class="${LINK}">best Austin suburbs for 2026</a> are useful references as you narrow.
 
-**Westlake Hills and Rollingwood.** These are the most established luxury addresses in Austin, just west of downtown, feeding Eanes ISD, consistently one of the top-ranked school districts in Texas. Median values sit near $2.2M in 2026, inventory is limited, and sellers know it. If top-tier schools and downtown proximity are priorities, start with <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>.
+**West Lake Hills and Rollingwood.** These are the most established luxury addresses in Austin, just west of downtown, feeding Eanes ISD, consistently one of the top-ranked school districts in Texas. ${neighborhoodPriceSummary("westlake-hills")}. Inventory is limited. If top-tier schools and downtown proximity are priorities, start with <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>.
 
-**Barton Creek and Rob Roy.** Gated communities with private security, deed restrictions, and a Hill Country feel roughly 20 minutes from downtown. <a href="/communities/barton-creek" class="${LINK}">Barton Creek Estates</a> trades most actively in the $1.5M to $2.5M range; Barton Creek West is the ultra-luxury tier, with homes from $3M to $7M and above. Rob Roy is smaller, more private, and highly sought after. Both attract buyers who want security and seclusion without giving up proximity to the city.
+**Barton Creek and Rob Roy.** Gated communities with private security, deed restrictions, and a Hill Country feel roughly 20 minutes from downtown. <a href="/communities/barton-creek" class="${LINK}">Barton Creek Estates</a> and Barton Creek West serve distinct buyer preferences. Rob Roy is smaller, more private, and highly sought after. Both attract buyers who want security and seclusion without giving up proximity to the city.
 
 **Lake Austin corridor, Steiner Ranch, Lakeway, Bee Cave.** Waterfront properties on <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> carry significant premiums, driven by limited supply and LCRA water rights that govern what you can do with the water. <a href="/communities/steiner-ranch" class="${LINK}">Steiner Ranch</a> is a large master-planned community with lake access. <a href="/communities/lakeway" class="${LINK}">Lakeway</a> and <a href="/communities/bee-cave" class="${LINK}">Bee Cave</a> skew toward newer construction and family amenities at price points somewhat below Westlake, though that gap has narrowed. School districts vary across the corridor; verify before you commit.
 
@@ -3135,7 +3136,7 @@ Most luxury homes in Austin never reach Zillow, Realtor.com, or any public porta
 
 :::stat-block
 title: Austin Luxury, by the Numbers
-• The median home in West Lake Hills and Rollingwood (78746) sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
+• The median home across the full 78746 ZIP code sold for **$1,882,500** over the trailing year, more than triple Austin's citywide median of **$567,613**.
 :::
 
 This guide outlines seven approaches I use with serious buyers to access properties before they hit the market, negotiate with precision, and secure homes that simply are not available to the general public. Whether you are relocating from California or New York, upgrading within Austin, or acquiring a second property for lifestyle or investment purposes, understanding how the exclusive end of this market actually works will give you a meaningful advantage.
@@ -7354,11 +7355,11 @@ This is where private property tour services become valuable. At the highest lev
 
 :::glance
 Neighborhood | Price Range | Best For | Access Note
-Barton Creek | $3M-$15M+ | Estate privacy, golf access | Often pre-market via club network
-Westlake Hills & Rollingwood | $3M-$20M+ | Top schools, hill country views | Tight inventory, relationship-driven
-Lake Austin Waterfront | $5M-$40M+ | Private docks, water access | Mostly off-market
-Tarrytown & Pemberton Heights | $3M-$12M+ | Historic central Austin | Quiet whisper listings
-Spanish Oaks | $4M-$15M+ | Gated, resort amenities | Pre-market within community
+Barton Creek | Not available | Estate privacy, golf access | Often pre-market via club network
+Westlake Hills & Rollingwood | Not available | Top schools, hill country views | Tight inventory, relationship-driven
+Lake Austin Waterfront | Not available | Private docks, water access | Mostly off-market
+Tarrytown & Pemberton Heights | Not available | Historic central Austin | Quiet whisper listings
+Spanish Oaks | Not available | Gated, resort amenities | Pre-market within community
 :::
 
 ## Why Many Austin Luxury Homes Never Hit the MLS
@@ -9534,7 +9535,7 @@ If you are considering 78746, the smartest move is not moving faster. It is seei
 
 ### What neighborhoods are inside the 78746 ZIP code?
 
-78746 covers West lake Hills, Rollingwood, and portions of unincorporated Travis County including parts of Rob Roy, Davenport Ranch, and the western edges of Tarrytown-adjacent enclaves. Each pocket trades on different attributes, so micro-market analysis matters more than ZIP-level averages.
+78746 covers West Lake Hills, Rollingwood, and portions of unincorporated Travis County including parts of Rob Roy, Davenport Ranch, and the western edges of Tarrytown-adjacent enclaves. Each pocket trades on different attributes, so micro-market analysis matters more than ZIP-level averages.
 
 ### Why are 78746 luxury homes priced higher than other Austin areas?
 
@@ -9651,7 +9652,7 @@ The fourth is indecision. Sellers who want complete discretion, top-dollar prici
 
 The best private sales are not driven by secrecy alone. They are driven by fit.
 
-If the property is compelling, the pricing is disciplined, the buyer pool is identifiable, and the outreach is handled through the right channels, a private sale can deliver a cleaner process with meaningful discretion. For certain homes and certain sellers, particularly in markets like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/rob-roy" class="text-foreground underline hover:text-muted-foreground">Rob Roy</a> where buyer networks run deep, that is exactly the right play.
+If the property is compelling, the pricing is disciplined, the buyer pool is identifiable, and the outreach is handled through the right channels, a private sale can deliver a cleaner process with meaningful discretion. For certain homes and certain sellers, particularly in markets like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/rob-roy" class="text-foreground underline hover:text-muted-foreground">Rob Roy</a> where buyer networks run deep, that is exactly the right play.
 
 But private should never mean passive. It should mean deliberate, selective, and expertly managed from the first conversation through closing. In luxury real estate, quiet often works best when the strategy behind it is anything but quiet.
 
@@ -9721,7 +9722,7 @@ While the path toward sustainable architecture presents challenges, including hi
 
 ## Sustainable Architecture in Austin, Texas
 
-Austin's luxury real estate market has embraced sustainable design principles with particular enthusiasm. The city's Hill Country setting, abundant sunshine, and environmentally conscious culture create ideal conditions for sustainable building. Custom homes in communities like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a> and <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> increasingly incorporate solar arrays, rainwater collection systems, and passive cooling strategies that respond to the Central Texas climate.
+Austin's luxury real estate market has embraced sustainable design principles with particular enthusiasm. The city's Hill Country setting, abundant sunshine, and environmentally conscious culture create ideal conditions for sustainable building. Custom homes in communities like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a> and <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> increasingly incorporate solar arrays, rainwater collection systems, and passive cooling strategies that respond to the Central Texas climate.
 
 For buyers exploring Austin's luxury market, sustainable features are no longer a niche preference, they are a value driver. Homes with thoughtful environmental design often command premiums, particularly among relocating buyers from California and the Pacific Northwest who prioritize energy performance. To explore how sustainability intersects with Austin's luxury landscape, browse our guide to the <a href="/blog/best-luxury-neighborhoods-austin-texas" class="text-foreground underline hover:text-muted-foreground">best luxury neighborhoods in Austin</a> or explore <a href="/communities" class="text-foreground underline hover:text-muted-foreground">all Austin communities</a>.
 
@@ -9735,7 +9736,7 @@ The future of architecture lies in our ability to create buildings that work in 
 Initial construction costs for sustainable homes are typically 5-15% higher, but long-term savings on energy, water, and maintenance often offset the premium within 5-7 years. Many Austin luxury builders now integrate sustainable features as standard practice.
 
 ### Which Austin neighborhoods have the most sustainable homes?
-West lake Hills, Barton Creek, and Dripping Springs feature many custom homes with sustainable design elements including solar energy, native landscaping, and advanced insulation systems suited to the Central Texas climate.
+West Lake Hills, Barton Creek, and Dripping Springs feature many custom homes with sustainable design elements including solar energy, native landscaping, and advanced insulation systems suited to the Central Texas climate.
 
 ### Does sustainable design affect resale value?
 Yes. Homes with verified energy-efficient features and sustainable materials increasingly command higher resale values in Austin's luxury market, particularly among relocating buyers who prioritize environmental performance.
@@ -9822,7 +9823,7 @@ The minimalist approach aligns naturally with sustainable design principles:
 
 ## Minimalist Design in Austin Luxury Real Estate
 
-Austin's luxury real estate market has seen a significant shift toward minimalist design principles. Contemporary new construction in neighborhoods like <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> and <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a> frequently features clean-lined architecture with floor-to-ceiling glass, open floor plans, and restrained material palettes that let the Hill Country landscape serve as the primary design element.
+Austin's luxury real estate market has seen a significant shift toward minimalist design principles. Contemporary new construction in neighborhoods like <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> and <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a> frequently features clean-lined architecture with floor-to-ceiling glass, open floor plans, and restrained material palettes that let the Hill Country landscape serve as the primary design element.
 
 Downtown Austin high-rises, including The Independent and newer developments, embody minimalist living at scale, offering pared-down luxury with concierge services and curated amenities that eliminate the need for excess. For buyers drawn to this aesthetic, Austin provides a compelling intersection of architectural ambition and natural beauty.
 
@@ -9837,7 +9838,7 @@ The challenge for architects and designers is to create minimalist spaces that f
 ## Frequently Asked Questions
 
 ### Are minimalist homes popular in Austin?
-Yes. Austin's luxury market has seen strong demand for minimalist and contemporary design, particularly in Tarrytown, West lake Hills, and downtown high-rises where clean architecture and natural materials are prized.
+Yes. Austin's luxury market has seen strong demand for minimalist and contemporary design, particularly in Tarrytown, West Lake Hills, and downtown high-rises where clean architecture and natural materials are prized.
 
 ### Does minimalist design work in Texas Hill Country homes?
 Absolutely. The Hill Country's dramatic landscapes and natural light make it an ideal setting for minimalist architecture. Floor-to-ceiling glass, natural stone, and open floor plans allow the environment to become part of the interior experience.

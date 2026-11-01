@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
 import { submitLeadToZapier } from "@/lib/formUtils";
 import { chunkRetry } from "@/lib/chunkRetry";
+import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "@/config/taylorStats";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -247,53 +248,23 @@ const AdvisorSection = () => (
    SECTION 3B, STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
-  // Initialize to the FINAL value so server-rendered/prerendered HTML always
-  // contains the target number. Animation still runs on the client via
-  // IntersectionObserver; it just resets to `from` immediately before
-  // stepping back up to `target`.
-  const [count, setCount] = useState(target);
+const useCountUp = (target: number, _duration = 2600, _from = 0, _decimals = 0) => {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const animId = useRef(0);
-
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          setCount(from);
-          const startTime = performance.now();
-          const id = ++animId.current;
-          const step = (now: number) => {
-            if (id !== animId.current) return;
-            const progress = Math.min((now - startTime) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const raw = from + eased * (target - from);
-            setCount(decimals > 0 ? Number(raw.toFixed(decimals)) : Math.round(raw));
-            if (progress < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-        } else {
-          setCount(from);
-          setInView(false);
-        }
-      },
-      { threshold: 0.3 }
-    );
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.3 });
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration, from, decimals]);
-
-  return { count, ref, inView };
+  }, []);
+  return { count: target, ref, inView };
 };
 
 const stats = [
-  { value: 155, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
-  { value: 200, suffix: "+", prefix: "", label: "Transactions Closed", from: 100 },
-  { value: 11, suffix: "+", prefix: "", label: "Years of Experience", from: 1 },
+  { ...taylorStats[1], prefix: "$", suffix: "M+", from: 50 },
+  { ...taylorStats[2], prefix: "", suffix: "+", label: TRANSACTIONS_CLOSED_LABEL, from: 100 },
+  { ...taylorStats[0], prefix: "", suffix: "+", label: "Years of Experience", from: 1 },
   { value: 1.6, suffix: "B+", prefix: "$", label: "Off-Market Access", from: 0.5, decimals: 1 },
 ];
 
@@ -301,7 +272,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
   const { count, ref, inView } = useCountUp(stat.value, 3500, stat.from, (stat as any).decimals ?? 0);
   return (
     <div ref={ref} className="text-center group/stat">
-      <p style={{
+      <p aria-label={`${stat.prefix}${stat.value}${stat.suffix} ${stat.label}`} style={{
         fontFamily: '"Cinzel", serif', fontWeight: 400,
         fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>
@@ -870,15 +841,6 @@ const TestimonialsSection = () => {
    SECTION 6, COMMUNITIES
    ───────────────────────────────────────────── */
 
-const communities = [
-  { name: "Barton Creek", eyebrow: "MEDIAN SALE: $3.2M", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek" },
-  { name: "Lake Austin", eyebrow: "WATERFRONT ESTATES FROM $3.5M", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin" },
-  { name: "Rollingwood", eyebrow: "MEDIAN SALE: $1.8M", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood" },
-  { name: "Spanish Oaks", eyebrow: "GATED ESTATES FROM $2.5M", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks" },
-  { name: "Tarrytown", eyebrow: "OLD AUSTIN, CENTRAL", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown" },
-  { name: "West lake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
-];
-
 const CommunitiesSection = () => {
   const headerRef = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState(false);
@@ -1349,7 +1311,7 @@ const FinalCTA = () => (
 
 const editorialArticles = [
   {
-    title: "Rollingwood vs West lake Hills",
+    title: "Rollingwood vs West Lake Hills",
     description: "How two of Austin's most prestigious neighborhoods compare for luxury buyers.",
     image: blogRollingwoodVsWestlake,
     href: "/blog/rollingwood-vs-westlake-hills",
@@ -1565,7 +1527,7 @@ const NoscriptFallback = () => (
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
         <p className="mb-4">Echelon Property Group provides strategic luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>Luxury residential sales in West lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
+          <li>Luxury residential sales in West Lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>
           <li>Commercial real estate and multifamily investment</li>
           <li>Land acquisition and development advisory</li>

@@ -32,7 +32,7 @@ const propertyTypes = [
 ];
 
 const submarkets = [
-  "Austin", "West lake Hills", "Barton Creek", "Lake Travis", "Bee Cave",
+  "Austin", "West Lake Hills", "Barton Creek", "Lake Travis", "Bee Cave",
   "Dripping Springs", "Spicewood", "Bastrop", "Manor", "Liberty Hill",
   "Georgetown", "Cedar Park", "Round Rock",
 ];

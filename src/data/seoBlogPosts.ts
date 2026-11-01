@@ -1,3 +1,4 @@
+import { formatNeighborhoodMedian, neighborhoodPriceSummary, neighborhoodSourceNote } from "./neighborhoodStats";
 import heroLuxury from "@/assets/hero-luxury-austin.jpg";
 import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";
 import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
@@ -3373,7 +3374,7 @@ Q: Does the Eanes premium hold in a down market?
 A: It held better than the alternatives. From the trailing twelve months ending August 2022 to the same window ending August 2026, price per square foot fell 9.5 percent in 78746 and 7.4 percent in 78733, against 15.4 percent for the City of Austin, 13.0 percent in 78738 and 15.0 percent in 78732. Measured against the city, the 78746 premium widened from 1.78 times to 1.90 times per foot. What gave was liquidity: months of inventory rose from 2.19 to 5.44 and the success rate fell from 76 percent to 56 percent.
 
 Q: Is Westlake the same thing as Eanes ISD?
-A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, where the median sale was $2,307,600 and $566 per foot in the last twelve months. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
+A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, which should be analyzed separately from the district-wide and ZIP-wide datasets. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
 
 Q: What is the least expensive way into Eanes ISD?
 A: On a per-foot basis, 78733 at a $424 median and Davenport Ranch at $466 are the entry points, followed by Lost Creek at $508. All feed Westlake High School. 78733 had the fastest median days on market of any zip in this analysis at 27 and 9.4 percent year-over-year price growth, so the discount comes with competition. Unincorporated Eanes addresses also carry the lowest total tax stack in West Austin, about $1.53 per $100, because they pay no city tax.
@@ -7968,7 +7969,7 @@ Here is where Austin's wealth actually lives in 2026, what it costs to join, and
 
 :::callout
 label: Quick answer
-The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hills, Barton Creek, Spanish Oaks, Pemberton Heights, Tarrytown, Rob Roy, Davenport Ranch, Old Enfield and Windsor Road, and the Lake Austin waterfront. Published medians range from roughly $1.5 million to more than $2.5 million, and estate and waterfront properties regularly trade between $3 million and $10 million or more, frequently in private transactions.
+The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hills, Barton Creek, Spanish Oaks, Pemberton Heights, Tarrytown, Rob Roy, Davenport Ranch, Old Enfield and Windsor Road, and the Lake Austin waterfront. 
 :::
 
 ## Austin's Most Expensive Neighborhoods at a Glance
@@ -7976,60 +7977,60 @@ The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hi
 For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
-Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait
-Rollingwood | West Austin (own city) | Eanes ISD | $2.2M+ | Small city inside the city
-West Lake Hills | West Austin (own city) | Eanes ISD | $2.2M+ | Hillside estates, canyon views
-Barton Creek | Southwest Austin | Eanes/Austin ISD | $2.3M+, list near $2.6M | Gated golf and resort living
-Spanish Oaks | Bee Cave | Lake Travis ISD | $2.5M+ | Private club, new construction
-Pemberton Heights | Central Austin | Austin ISD | $2M+ | Historic estates, old money
-Tarrytown | Central Austin | Austin ISD | $1.9M+ | Legacy central, lake access
-Rob Roy | West Austin | Eanes ISD | $2M+ | Gated acreage, skyline views
-Davenport Ranch | West Austin | Eanes ISD | $1.8M+ | Country club, hilltop views
-Old Enfield / Windsor Road | Central Austin | Austin ISD | $1.5M to $2M+ | Historic district prestige
-Lake Austin Waterfront | Along the lake | Varies | $3M to $10M+ | Scarce, deeded waterfront
+Neighborhood | Area | Schools | Median sale | Defining Trait
+Rollingwood | West Austin (own city) | Eanes ISD | Not available | Small city inside the city
+West Lake Hills | West Austin (own city) | Eanes ISD | ${formatNeighborhoodMedian("westlake-hills") || "Not available"} | Hillside estates, canyon views
+Barton Creek | Southwest Austin | Eanes/Austin ISD | Not available | Gated golf and resort living
+Spanish Oaks | Bee Cave | Lake Travis ISD | Not available | Private club, new construction
+Pemberton Heights | Central Austin | Austin ISD | Not available | Historic estates, old money
+Tarrytown | Central Austin | Austin ISD | Not available | Legacy central, lake access
+Rob Roy | West Austin | Eanes ISD | Not available | Gated acreage, skyline views
+Davenport Ranch | West Austin | Eanes ISD | Not available | Country club, hilltop views
+Old Enfield / Windsor Road | Central Austin | Austin ISD | Not available | Historic district prestige
+Lake Austin Waterfront | Along the lake | Varies | Not available | Scarce, deeded waterfront
 :::
 
-Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by source, comp window, and boundary definition, and they exclude the private sales discussed below.
+${neighborhoodSourceNote("westlake-hills")}. Other neighborhood medians are withheld pending a verified dataset.
 
 ## 1. Rollingwood
 
-[Rollingwood](/communities/rollingwood) is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. Medians run above $2.2 million, and new construction routinely clears $4 million.
+[Rollingwood](/communities/rollingwood) is a separate municipality of fewer than 1,500 residents wrapped in Austin on three sides, minutes from Zilker Park and downtown. It combines Eanes ISD, its own police force, large flat lots, and a location most Westlake residents would trade for. Inventory is structurally scarce because the city is fully built out, so nearly every significant purchase is either a teardown, a rebuild, or a quiet approach to an owner who was not planning to sell. 
 
 ## 2. West Lake Hills
 
-The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. Medians sit above $2.2 million, with view estates trading well beyond that, often before they are ever publicly marketed.
+The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. ${neighborhoodPriceSummary("westlake-hills")}. View estates often trade privately.
 
 ## 3. Barton Creek
 
-[Barton Creek](/communities/barton-creek) is southwest Austin's gated estate market, built around the Barton Creek Country Club and the Omni Barton Creek Resort. Communities behind the gates offer acreage, Hill Country panoramas, and custom architecture at a scale central Austin cannot physically deliver. Published medians run around $2.3 million with list prices near $2.6 million, and the top of this market is one of the most private in the city. Estate sellers here value discretion, which is exactly why so much Barton Creek volume trades through broker networks rather than the open MLS.
+[Barton Creek](/communities/barton-creek) is southwest Austin's gated estate market, built around the Barton Creek Country Club and the Omni Barton Creek Resort. Communities behind the gates offer acreage, Hill Country panoramas, and custom architecture at a scale central Austin cannot physically deliver.  Estate sellers here value discretion, which is exactly why so much Barton Creek volume trades through broker networks rather than the open MLS.
 
 ## 4. Spanish Oaks
 
-Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the newest money on this list. A private golf club, a guarded gate, and a run of architecturally serious new construction have pushed it into the same price band as Westlake, with medians above $2.5 million and signature properties far beyond. It attracts buyers who want new systems, new finishes, and resort amenities without a remodel, plus Lake Travis ISD. If Barton Creek is establishment luxury, Spanish Oaks is its ambitious younger sibling.
+Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the newest money on this list. A private golf club, a guarded gate, and a run of architecturally serious new construction have pushed it into the same price band as Westlake. It attracts buyers who want new systems, new finishes, and resort amenities without a remodel, plus Lake Travis ISD. If Barton Creek is establishment luxury, Spanish Oaks is its ambitious younger sibling.
 
 ## 5. Pemberton Heights
 
-[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
+[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with landmark homes commanding premiums. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
 
 ## 6. Tarrytown
 
-[Tarrytown](/communities/tarrytown) stretches from Enfield toward Lake Austin and is the largest of the central legacy neighborhoods. It offers walkability, Casis Elementary, mature streets, and a mix of original cottages, full renovations, and new builds, which gives it a wider price range than its neighbors. Medians run around $1.9 million and climb quickly toward the water. Together with the Westlake corridor, Tarrytown has posted year over year gains through 2026 while the broader city declined. Read more on the waterfront side of this market in our guide to [living on Lake Austin](/blog/living-on-lake-austin).
+[Tarrytown](/communities/tarrytown) stretches from Enfield toward Lake Austin and is the largest of the central legacy neighborhoods. It offers walkability, Casis Elementary, mature streets, and a mix of original cottages, full renovations, and new builds, which gives it a wider price range than its neighbors.  Together with the Westlake corridor, Tarrytown has posted year over year gains through 2026 while the broader city declined. Read more on the waterfront side of this market in our guide to [living on Lake Austin](/blog/living-on-lake-austin).
 
 ## 7. Rob Roy
 
-[Rob Roy](/communities/rob-roy) is gated acreage off Loop 360 with some of the best skyline and Hill Country views in the city, all inside Eanes ISD. Lots of an acre or more, winding private streets, and a limited number of homes make it a low turnover market where the best properties change hands through relationships. Medians run above $2 million, and view estates on the bluff command significant premiums when they trade at all.
+[Rob Roy](/communities/rob-roy) is gated acreage off Loop 360 with some of the best skyline and Hill Country views in the city, all inside Eanes ISD. Lots of an acre or more, winding private streets, and a limited number of homes make it a low turnover market where the best properties change hands through relationships. View estates on the bluff command significant premiums when they trade at all.
 
 ## 8. Davenport Ranch
 
-[Davenport Ranch](/communities/davenport-ranch) sits on the hills above Loop 360 near the Pennybacker Bridge, anchored by the Austin Country Club. It offers Eanes ISD, quick access to both downtown and the lake, and a range that runs from lock and leave garden homes to hilltop estates, with list medians around $1.8 million. For buyers who want the Westlake school zone with country club infrastructure and slightly more attainable entry points, Davenport is often the answer.
+[Davenport Ranch](/communities/davenport-ranch) sits on the hills above Loop 360 near the Pennybacker Bridge, anchored by the Austin Country Club. It offers Eanes ISD, quick access to both downtown and the lake, and a range that runs from lock and leave garden homes to hilltop estates. For buyers who want the Westlake school zone with country club infrastructure and slightly more attainable entry points, Davenport is often the answer.
 
 ## 9. Old Enfield and Windsor Road
 
-The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
+The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots, while the Windsor Road corridor includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
 
 ## 10. Lake Austin Waterfront
 
-Deeded [Lake Austin waterfront](/communities/lake-austin) is the scarcest asset in Central Texas residential real estate. It crosses several neighborhoods, from Tarrytown's lake streets through Westlake coves and up the 360 corridor, and it behaves as its own market. Entry starts around $3 million, trophy compounds trade from $10 million up, and a meaningful share of waterfront volume never touches the MLS. We covered the lifestyle, the constraints, and the pricing logic in detail in [Living on Lake Austin](/blog/living-on-lake-austin).
+Deeded [Lake Austin waterfront](/communities/lake-austin) is the scarcest asset in Central Texas residential real estate. It crosses several neighborhoods, from Tarrytown's lake streets through Westlake coves and up the 360 corridor, and it behaves as its own market. A meaningful share of waterfront volume never touches the MLS. We covered the lifestyle, the constraints, and the pricing logic in detail in [Living on Lake Austin](/blog/living-on-lake-austin).
 
 ## Why the Published Numbers Undersell These Neighborhoods
 
@@ -8056,13 +8057,13 @@ Taylor Sherwood | Echelon Property Group | 512.661.3843 | taylor@echelonproperty
 
 :::faq
 Q: What is the most expensive neighborhood in Austin?
-A: By published medians, Rollingwood, West Lake Hills, Barton Creek, and Spanish Oaks all sit above $2.2 million in 2026, with Barton Creek list prices running near $2.6 million. By actual transaction values, Lake Austin waterfront is the most expensive segment, with trophy properties trading from $10 million up, often privately.
+A: ${neighborhoodPriceSummary("westlake-hills")} Other neighborhoods require a verified, like-for-like dataset before comparison.
 
 Q: What is the richest zip code in Austin?
 A: 78746, covering West Lake Hills, Rollingwood, and surrounding Eanes ISD neighborhoods, is consistently Austin's strongest luxury zip code by median price and value retention. 78703, covering Tarrytown, Pemberton Heights, and Old Enfield, is the central Austin counterpart.
 
 Q: How much does a home in Westlake cost in 2026?
-A: Median prices in the Westlake area run above $2.2 million in mid 2026, up year over year even as the citywide Austin median declined. Hillside view estates and anything near the water trade well beyond the median.
+A: ${neighborhoodPriceSummary("westlake-hills")}
 
 Q: Why do the biggest Austin sales not show up on Zillow?
 A: Many high end Austin transactions close off the MLS through private broker networks, so they never enter the public data that portals and home value indexes rely on. Texas is also a non disclosure state, meaning sale prices are not public record. Published medians for luxury neighborhoods are therefore best read as a floor.
@@ -8575,7 +8576,7 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 
 [BARTON CREEK](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
 
-The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
+The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing dependent on lot position and architectural quality. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
 
 Two practical notes I give every BARTON CREEK buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA. Underwrite the specific street, not the brand. Second, a significant share of BARTON CREEK's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
 
@@ -8583,7 +8584,7 @@ Two practical notes I give every BARTON CREEK buyer. First, costs and architectu
 
 [Spanish Oaks](/communities/spanish-oaks) in Bee Cave is what most people picture when they say "guard-gated golf community": two gatehouses staffed 24/7, a private golf club whose course consistently ranks among the best in Texas, a swim club, fish camp, and trail system, all composed in limestone-and-oak Hill Country vernacular.
 
-Spanish Oaks is a true club-life community. Homes generally start well above $2M and run past $7M for estate sections, and the buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin. This is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
+Spanish Oaks is a true club-life community. ${neighborhoodPriceSummary("spanish-oaks")} The buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin. This is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
 
 ## Rob Roy: Old-Guard Estates Behind the Gate
 
@@ -14182,7 +14183,7 @@ If you are considering [selling a luxury home in Austin](/sell), the first conve
 
 :::faq
 Q: How long does it take to sell a luxury home in Austin?
-A: It varies widely. Well-positioned luxury homes in core neighborhoods like West lake Hills, Tarrytown, and Barton Creek often go under contract within 30 to 90 days when pricing and presentation are aligned. Homes that are overpriced or poorly positioned can sit for six months or longer, which typically erodes negotiating leverage. Days on market becomes part of the asset's story at this level, which is why launch strategy matters so much.
+A: It varies widely. Well-positioned luxury homes in core neighborhoods like West Lake Hills, Tarrytown, and Barton Creek often go under contract within 30 to 90 days when pricing and presentation are aligned. Homes that are overpriced or poorly positioned can sit for six months or longer, which typically erodes negotiating leverage. Days on market becomes part of the asset's story at this level, which is why launch strategy matters so much.
 
 Q: Should I sell my luxury home off-market or list it publicly?
 A: It depends on the property, the seller's privacy needs, and where demand is concentrated. Public listings maximize competitive exposure and tend to perform best on homes with broad aspirational appeal. Off-market or private sales work better when discretion matters, when the buyer pool is narrow and well-defined, or when the seller wants to test pricing before committing to a public launch. Often the most effective strategy is a hybrid, a curated private phase followed by public exposure if needed.
@@ -14197,7 +14198,7 @@ Q: Do I need to stage a luxury home before selling?
 A: Yes, but staging at the luxury level is closer to editing than decorating. The goal is to make the home's value proposition read clearly within moments, whether that is architectural purity, family functionality, entertaining, wellness, views, or land. Buyers at this level are paying for a feeling of readiness, so removing visual noise and correcting small imperfections often matters more than adding furniture.
 
 Q: Which Austin neighborhoods have the strongest luxury resale demand?
-A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and Spanish Oaks consistently lead in luxury resale demand, though each behaves differently. Westlake and Barton Creek trade heavily on land, views, and privacy. Tarrytown and Pemberton trade on centrality and legacy character. Rollingwood balances proximity with family-scale livability. The right strategy depends on which submarket the home actually competes in, not just where it is located.
+A: West Lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and Spanish Oaks consistently lead in luxury resale demand, though each behaves differently. Westlake and Barton Creek trade heavily on land, views, and privacy. Tarrytown and Pemberton trade on centrality and legacy character. Rollingwood balances proximity with family-scale livability. The right strategy depends on which submarket the home actually competes in, not just where it is located.
 :::`,
     author: "Taylor Sherwood",
     date: "2026-04-25",
@@ -14209,7 +14210,7 @@ A: West lake Hills, Tarrytown, Pemberton Heights, Barton Creek, Rollingwood, and
     id: "best-austin-neighborhoods-for-luxury-homes",
     title: "Best Austin Neighborhoods for Luxury Homes",
     metaTitle: "Best Austin Neighborhoods for Luxury Homes",
-    excerpt: "A precise look at the best Austin neighborhoods for luxury homes, from West lake Hills and Tarrytown to Barton Creek, Pemberton Heights, Rollingwood, Lake Austin, Spanish Oaks, Zilker, and Barton Hills, and how serious buyers narrow the field.",
+    excerpt: "A precise look at the best Austin neighborhoods for luxury homes, from West Lake Hills and Tarrytown to Barton Creek, Pemberton Heights, Rollingwood, Lake Austin, Spanish Oaks, Zilker, and Barton Hills, and how serious buyers narrow the field.",
     content: `A luxury home search in Austin usually narrows quickly once priorities become clear. The best Austin neighborhoods for luxury homes are not interchangeable. Some trade on land and privacy, some on walkability and architectural pedigree, and some on long-term scarcity that keeps demand durable even when the broader market shifts.
 
 For buyers operating above the commodity tier, neighborhood selection is less about broad popularity and more about fit. The right address should align with how you live, how you entertain, how much privacy you expect, and how you want the asset to perform over time. In Austin, that level of precision matters because the [luxury market](/austin-luxury-homes-for-sale) is built on micro-locations, not zip code averages.
@@ -14420,7 +14421,7 @@ But in certain neighborhoods and price points, it's common.
 - Properties with privacy or view premiums
 - Homes tied to specific timing events like relocations or new construction transitions
 
-These are the situations where a quiet sale often makes more sense than a public one. They concentrate in places like [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), [Rob Roy](/communities/rob-roy), [Spanish Oaks](/communities/spanish-oaks), and along [Lake Austin](/communities/lake-austin).
+These are the situations where a quiet sale often makes more sense than a public one. They concentrate in places like [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), [Rob Roy](/communities/rob-roy), [Spanish Oaks](/communities/spanish-oaks), and along [Lake Austin](/communities/lake-austin).
 
 Understanding those patterns changes how you search.
 
@@ -14463,7 +14464,7 @@ If you want to be in that room, [request private access](/private-opportunities)
 
 :::faq
 ### Why don't the best homes in Austin show up on Zillow or the MLS?
-Many of Austin's most desirable homes, particularly in Tarrytown, West lake Hills, Barton Creek, Rob Roy, and along Lake Austin, sell through private and off-market channels. Sellers choose discretion to protect privacy, control pricing, and avoid public days-on-market history. By the time a home reaches a public portal, it has already been exposed to competition.
+Many of Austin's most desirable homes, particularly in Tarrytown, West Lake Hills, Barton Creek, Rob Roy, and along Lake Austin, sell through private and off-market channels. Sellers choose discretion to protect privacy, control pricing, and avoid public days-on-market history. By the time a home reaches a public portal, it has already been exposed to competition.
 
 ### What is the difference between the public market and the controlled market?
 The public market is the inventory openly listed on the MLS and syndicated to portals. The controlled market is inventory shared selectively, inside a brokerage, between trusted agents, or directly between a seller and a known buyer pool, and never publicly marketed. A meaningful portion of luxury Austin transactions occurs in the controlled market.
@@ -14475,7 +14476,7 @@ No. Off-market does not automatically mean a discount. Some sellers expect a pre
 Access comes from working with an advisor who is already inside the conversations that drive private inventory, broker networks, brokerage-internal channels, and direct seller relationships. Clear, specific buyer criteria and the ability to move decisively when the right opportunity surfaces are what convert access into transactions.
 
 ### What neighborhoods in Austin have the most off-market activity?
-Off-market and private listing activity is concentrated in luxury neighborhoods including West lake Hills, Barton Creek, Tarrytown, Rob Roy, Spanish Oaks, Davenport Ranch, Pemberton Heights, and the Lake Austin corridor. These markets combine high-net-worth ownership, architecturally distinct inventory, and a strong preference for discretion.
+Off-market and private listing activity is concentrated in luxury neighborhoods including West Lake Hills, Barton Creek, Tarrytown, Rob Roy, Spanish Oaks, Davenport Ranch, Pemberton Heights, and the Lake Austin corridor. These markets combine high-net-worth ownership, architecturally distinct inventory, and a strong preference for discretion.
 :::`,
     author: "Taylor Sherwood",
     date: "2026-04-20",
@@ -14493,7 +14494,7 @@ Off-market and private listing activity is concentrated in luxury neighborhoods 
 
 If you are searching for off market homes in Austin, the short answer is to stop refreshing public portals. The listings you see represent only a fraction of what actually changes hands here.
 
-Industry estimates put roughly 48% of Austin homes as trading privately, with no single source tracking it comprehensively. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the Lake Austin corridor. The gap between what is listed and what is actually available is wide, and most buyers never realize it exists.
+Industry estimates put roughly 48% of Austin homes as trading privately, with no single source tracking it comprehensively. In the luxury segment above $1.2M, reported figures hover between 40 and 45% in [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the Lake Austin corridor. The gap between what is listed and what is actually available is wide, and most buyers never realize it exists.
 
 This guide explains how [Austin's private listing inventory](/off-market-real-estate-austin) really works, broker networks, county records, direct outreach, and when to bring in a team that already operates inside those channels.
 
@@ -14502,7 +14503,7 @@ This guide explains how [Austin's private listing inventory](/off-market-real-es
 - Many of Austin's strongest luxury and investment opportunities trade off-market, especially above $1.5M.
 - Private deals reduce competition and often open up better terms, but they are rarely "discounts."
 - Access depends on relationships, network strength, and disciplined sourcing, not search alerts.
-- Above $1.5M in West lake Hills, Barton Creek, and Lake Austin, working with a team already inside private channels is typically the only consistent path.
+- Above $1.5M in West Lake Hills, Barton Creek, and Lake Austin, working with a team already inside private channels is typically the only consistent path.
 
 ## What "Off-Market" Actually Means in Austin
 
@@ -14517,7 +14518,7 @@ All three exist in Austin, and the access strategy for each is different.
 Sellers skip the MLS for a few core reasons:
 
 ### 1. Seller Discretion
-In West lake Hills and Barton Creek, high-net-worth owners do not want strangers walking through their homes every weekend. Privacy is not a perk, it is the requirement.
+In West Lake Hills and Barton Creek, high-net-worth owners do not want strangers walking through their homes every weekend. Privacy is not a perk, it is the requirement.
 
 ### 2. Strategic Pricing
 Many owners want to gauge interest without creating a public record of days-on-market or price reductions that would later weaken their position.
@@ -14540,7 +14541,7 @@ Several platforms drive Austin's broker-to-broker private inventory:
 
 Access to any of these requires being represented by an agent who participates. Buyers without the right representation never see what flows through these channels.
 
-Some teams do not just have access, they are built around it. [Echelon Property Group](/about) is a boutique Austin advisory team whose practice is centered on private transactions across [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), Lake Austin, and [Tarrytown](/communities/tarrytown). For more on how this private layer behaves, see our analysis of the [hidden market across Austin's neighborhoods](/blog/off-market-real-estate-austin) and our deeper look at [private listings real estate](/blog/private-listings-real-estate-explained).
+Some teams do not just have access, they are built around it. [Echelon Property Group](/about) is a boutique Austin advisory team whose practice is centered on private transactions across [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), Lake Austin, and [Tarrytown](/communities/tarrytown). For more on how this private layer behaves, see our analysis of the [hidden market across Austin's neighborhoods](/blog/off-market-real-estate-austin) and our deeper look at [private listings real estate](/blog/private-listings-real-estate-explained).
 
 When evaluating a buyer's agent, the better question is specific: how many of your last 10 transactions came from private channels rather than the MLS? Do you participate in ALN or similar platforms? Can you name an off-market deal you sourced in the neighborhoods I am targeting? An agent who cannot answer concretely probably does not have the access they imply.
 
@@ -14572,11 +14573,11 @@ A letter that opens with "I noticed the property is currently in the estate of [
 
 ## Where Off-Market Activity Concentrates Across Austin
 
-[West lake Hills](/communities/westlake-hills) and the 78746 zip code lead Austin's private sale activity, with reported figures of 40–45% of ultra-luxury transactions happening off-market. [Barton Creek](/communities/barton-creek), [Rollingwood](/communities/rollingwood), and the Lake Austin corridor (78730 and 78733) follow as high-discretion, low-inventory markets where private sales are common.
+[West Lake Hills](/communities/westlake-hills) and the 78746 zip code lead Austin's private sale activity, with reported figures of 40–45% of ultra-luxury transactions happening off-market. [Barton Creek](/communities/barton-creek), [Rollingwood](/communities/rollingwood), and the Lake Austin corridor (78730 and 78733) follow as high-discretion, low-inventory markets where private sales are common.
 
 These neighborhoods share a profile: limited inventory, high-equity owners, and buyers who value discretion. The combination makes off-market the preferred transaction method for both sides.
 
-In the [luxury tier](/austin-luxury-homes-for-sale) between $750K and $1.2M, Tarrytown, Zilker, and Bouldin Creek see meaningful private sales, often driven by agent networks rather than county records outreach. Mid-market neighborhoods like Allandale, Crestview, and Mueller see off-market activity primarily driven by investors. For a deeper neighborhood-level read on micro-market dynamics, see our [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) and [Rollingwood vs West lake Hills](/blog/rollingwood-vs-westlake-hills) breakdowns.
+In the [luxury tier](/austin-luxury-homes-for-sale) between $750K and $1.2M, Tarrytown, Zilker, and Bouldin Creek see meaningful private sales, often driven by agent networks rather than county records outreach. Mid-market neighborhoods like Allandale, Crestview, and Mueller see off-market activity primarily driven by investors. For a deeper neighborhood-level read on micro-market dynamics, see our [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) and [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills) breakdowns.
 
 ## Common Mistakes Buyers Make Sourcing Off-Market
 
@@ -14608,7 +14609,7 @@ A buyer who networks with a few agents, sends targeted mail, and mines public re
 
 An off-market specialist brings a network that took years to build: direct relationships with Austin sellers, access to private platforms, and visibility into deals that never get mentioned publicly. The critical distinction is not just access, it is knowing which off-market opportunities are actually priced well versus which sellers are testing privately because they could not get their ask publicly.
 
-At $1.5M and above, the number of legitimate private deals a single buyer can uncover through cold outreach is small. Sellers in West lake Hills and Barton Creek do not respond to mail from strangers. They transact through relationships, quietly and on their own timeline. Buyers competing at this level need a broker already inside those conversations.
+At $1.5M and above, the number of legitimate private deals a single buyer can uncover through cold outreach is small. Sellers in West Lake Hills and Barton Creek do not respond to mail from strangers. They transact through relationships, quietly and on their own timeline. Buyers competing at this level need a broker already inside those conversations.
 
 Ask for a track record, not a pitch. How many off-market transactions in the past 24 months? In which neighborhoods? At what price points? A team whose practice is built around [private transactions](/private-opportunities) can show that record. One that claims broad off-market access but primarily lists on MLS cannot.
 
@@ -14626,7 +14627,7 @@ If you want to see what is moving privately in your target neighborhoods before 
 Off-market homes in Austin are accessed through agent networks like the Austin Luxury Network, broker-only platforms such as Compass Private Exclusives, targeted direct outreach to homeowners using Travis County (TCAD) records, and by working with teams whose practice is built around private transactions. Public listing sites like Zillow only show a fraction of homes that actually trade.
 
 ### What percentage of Austin luxury homes sell off-market?
-In Austin's luxury segment above $1.2M, reported figures suggest 40 to 45% of transactions happen off-market, particularly in West lake Hills, Barton Creek, and the Lake Austin corridor. Across all price tiers, industry estimates put private Austin transactions at roughly 48%, though no single source tracks this comprehensively.
+In Austin's luxury segment above $1.2M, reported figures suggest 40 to 45% of transactions happen off-market, particularly in West Lake Hills, Barton Creek, and the Lake Austin corridor. Across all price tiers, industry estimates put private Austin transactions at roughly 48%, though no single source tracks this comprehensively.
 
 ### Are off-market deals in Austin always discounted?
 No. Some off-market properties are priced attractively, but many are valuable because of reduced competition, better terms, or strategic upside, not simply a lower price. The real advantage is often access and positioning rather than a discount.
@@ -14638,7 +14639,7 @@ A pocket listing is a property an agent holds back from MLS, sharing it quietly 
 Luxury buyers seeking privacy, investors with clear acquisition criteria, developers sourcing land, and relocating executives who want curated options are all well-suited for off-market access in Austin. The common thread is a defined target profile and the ability to move decisively when the right opportunity surfaces.
 
 ### Can I find off-market homes in Austin without an agent?
-Yes, but the yield is inconsistent. You can mine Travis County probate filings, send targeted direct mail through TCAD records, and drive neighborhoods looking for distressed properties. Above $1.5M in neighborhoods like West lake Hills and Barton Creek, however, sellers transact through trusted broker relationships, so working with a firm already inside those channels is typically the only path to consistent access.
+Yes, but the yield is inconsistent. You can mine Travis County probate filings, send targeted direct mail through TCAD records, and drive neighborhoods looking for distressed properties. Above $1.5M in neighborhoods like West Lake Hills and Barton Creek, however, sellers transact through trusted broker relationships, so working with a firm already inside those channels is typically the only path to consistent access.
 `,
     author: "Taylor Sherwood",
     date: "2026-04-17",
@@ -14650,20 +14651,20 @@ Yes, but the yield is inconsistent. You can mine Travis County probate filings, 
     id: "best-luxury-neighborhoods-austin-texas",
     title: "Best Luxury Neighborhoods in Austin Texas",
     metaTitle: "Austin TX Luxury Neighborhoods Guide",
-    excerpt: "Discover the top luxury neighborhoods in Austin, Texas. From West lake Hills to Barton Creek, explore where Austin's finest homes and estates are located.",
+    excerpt: "Discover the top luxury neighborhoods in Austin, Texas. From West Lake Hills to Barton Creek, explore where Austin's finest homes and estates are located.",
     content: `## Why Austin Is a Top Luxury Real Estate Market
 
 Austin, Texas has established itself as one of the most dynamic luxury real estate markets in the United States. Fueled by a booming technology economy, no state income tax, year-round outdoor lifestyle, and a world-class cultural scene, Austin attracts high-net-worth buyers from across the country and around the globe. The city's luxury neighborhoods offer everything from lakefront estates and hilltop mansions to sleek downtown penthouses and sprawling Hill Country ranches.
 
 Whether you're relocating to Austin, upgrading your current home, or investing in luxury real estate, understanding the distinctive character of each neighborhood is essential. Here are the best luxury neighborhoods in Austin, Texas.
 
-## West lake Hills
+## West Lake Hills
 
-West lake Hills consistently ranks as one of Austin's most prestigious addresses. Perched on the scenic bluffs west of downtown, this incorporated city offers panoramic Hill Country views, mature live oak canopies, and some of the finest estate homes in Central Texas. Homes range from $1.2 million to over $20 million.
+West Lake Hills consistently ranks as one of Austin's most prestigious addresses. Perched on the scenic bluffs west of downtown, this incorporated city offers panoramic Hill Country views, mature live oak canopies, and some of the finest estate homes in Central Texas. 
 
-The community is anchored by the highly acclaimed Eanes Independent School District, featuring Westlake High School, a perennial state powerhouse in academics and athletics. Families seeking top-tier schools and luxury living find West lake Hills to be the ideal combination.
+The community is anchored by the highly acclaimed Eanes Independent School District, featuring Westlake High School, a perennial state powerhouse in academics and athletics. Families seeking top-tier schools and luxury living find West Lake Hills to be the ideal combination.
 
-### What Makes West lake Hills Special
+### What Makes West Lake Hills Special
 - Panoramic Hill Country and Lake Austin views
 - Eanes ISD with top-rated schools
 - Low density and generous lot sizes
@@ -14673,7 +14674,7 @@ The community is anchored by the highly acclaimed Eanes Independent School Distr
 
 Barton Creek is Austin's premier master-planned luxury community, renowned for its world-class golf courses, country club amenities, and stunning natural setting. The gated community features four championship golf courses designed by legends including Tom Fazio and Ben Crenshaw.
 
-Homes in Barton Creek range from $1.5 million to over $15 million, with estate lots often exceeding one acre. The community's proximity to the Barton Creek Greenbelt provides private trail access to miles of hiking and natural swimming holes.
+ The community's proximity to the Barton Creek Greenbelt provides private trail access to miles of hiking and natural swimming holes.
 
 ### Barton Creek Highlights
 - Four championship golf courses
@@ -14683,7 +14684,7 @@ Homes in Barton Creek range from $1.5 million to over $15 million, with estate l
 
 ## Lake Austin Waterfront
 
-Lake Austin waterfront properties represent the pinnacle of luxury living in Central Texas. Unlike Lake Travis, Lake Austin maintains a constant water level, making it ideal for private docks and year-round water activities. Waterfront homes range from $2 million to over $25 million.
+Lake Austin waterfront properties represent the pinnacle of luxury living in Central Texas. Unlike Lake Travis, Lake Austin maintains a constant water level, making it ideal for private docks and year-round water activities. 
 
 The limited shoreline and strict development regulations make Lake Austin waterfront properties exceptionally rare. Many transactions occur off-market, underscoring the importance of working with a connected local specialist.
 
@@ -14691,11 +14692,11 @@ The limited shoreline and strict development regulations make Lake Austin waterf
 
 Tarrytown is one of Austin's most beloved neighborhoods, situated between downtown and Lake Austin. Known for tree-canopied streets and eclectic architecture ranging from 1930s bungalows to contemporary new construction, Tarrytown offers walkability, charm, and central convenience.
 
-Homes range from $800,000 to over $8 million. The neighborhood's proximity to Deep Eddy Pool, Lady Bird Lake, and South Congress makes it ideal for buyers seeking an active urban lifestyle.
+ The neighborhood's proximity to Deep Eddy Pool, Lady Bird Lake, and South Congress makes it ideal for buyers seeking an active urban lifestyle.
 
 ## Rollingwood
 
-Rollingwood is a small incorporated city nestled between Zilker Park and West lake Hills. With fewer than 1,500 residents, it offers small-town intimacy with big-city access. Homes range from $1 million to over $5 million, and the community is served by Eanes ISD.
+Rollingwood is a small incorporated city nestled between Zilker Park and West Lake Hills. With fewer than 1,500 residents, it offers small-town intimacy with big-city access. 
 
 ## Travis Heights
 
@@ -14718,7 +14719,7 @@ For buyers seeking expansive acreage and breathtaking landscapes, the Texas Hill
 Selecting the right luxury neighborhood depends on your priorities:
 
 ### Schools
-If top-rated public schools are essential, West lake Hills, Barton Creek, and Rollingwood (all Eanes ISD) are top choices.
+If top-rated public schools are essential, West Lake Hills, Barton Creek, and Rollingwood (all Eanes ISD) are top choices.
 
 ### Waterfront Living
 Lake Austin waterfront properties offer unmatched lakeside luxury.
@@ -14730,12 +14731,12 @@ Tarrytown, Travis Heights, and Downtown Austin provide the most walkable lifesty
 Dripping Springs and the Texas Hill Country offer acreage and seclusion.
 
 ### Investment Potential
-All Austin luxury neighborhoods have demonstrated strong appreciation, with Lake Austin waterfront and West lake Hills historically leading in value growth.
+All Austin luxury neighborhoods have demonstrated strong appreciation, with Lake Austin waterfront and West Lake Hills historically leading in value growth.
 
 ## Frequently Asked Questions
 
 ### What is the most expensive neighborhood in Austin?
-Lake Austin waterfront properties command the highest prices, with estates regularly trading above $10 million. West lake Hills and Barton Creek also feature homes exceeding $15 million.
+Lake Austin waterfront properties command the highest prices, with estates regularly trading above $10 million. West Lake Hills and Barton Creek also feature homes exceeding $15 million.
 
 ### Are Austin luxury home prices still rising?
 Austin's luxury market has shown sustained appreciation driven by tech-sector growth, corporate relocations, and limited inventory in premium neighborhoods.
@@ -14748,7 +14749,7 @@ Yes. Austin's luxury market involves unique dynamics including off-market transa
 
 ## Explore Austin's Luxury Landscape
 
-Understanding each neighborhood's character is only part of the equation. For buyers weighing specific communities side by side, our guides on <a href="/blog/rollingwood-vs-westlake-hills" class="text-foreground underline hover:text-muted-foreground">Rollingwood vs West lake Hills</a> and <a href="/blog/lake-austin-vs-lake-travis" class="text-foreground underline hover:text-muted-foreground">Lake Austin vs Lake Travis</a> offer deeper lifestyle comparisons. You can also browse all <a href="/communities" class="text-foreground underline hover:text-muted-foreground">Austin luxury communities</a> or return to our <a href="/" class="text-foreground underline hover:text-muted-foreground">homepage</a> to explore current opportunities.`,
+Understanding each neighborhood's character is only part of the equation. For buyers weighing specific communities side by side, our guides on <a href="/blog/rollingwood-vs-westlake-hills" class="text-foreground underline hover:text-muted-foreground">Rollingwood vs West Lake Hills</a> and <a href="/blog/lake-austin-vs-lake-travis" class="text-foreground underline hover:text-muted-foreground">Lake Austin vs Lake Travis</a> offer deeper lifestyle comparisons. You can also browse all <a href="/communities" class="text-foreground underline hover:text-muted-foreground">Austin luxury communities</a> or return to our <a href="/" class="text-foreground underline hover:text-muted-foreground">homepage</a> to explore current opportunities.`,
     author: "Taylor Sherwood",
     date: "2025-03-01",
     readTime: "12 min read",
@@ -14767,7 +14768,7 @@ The migration from California to Austin, Texas has become one of the most signif
 ## Cost of Living Comparison: California vs Austin
 
 ### Housing
-The most dramatic difference between California and Austin is housing cost. A luxury home that would cost $5 million to $10 million in the Bay Area, Los Angeles, or San Diego can be purchased for $2 million to $5 million in Austin's top neighborhoods. Buyers relocating from California are often pleasantly surprised by the space, quality, and value available in communities like West lake Hills, Barton Creek, and Lake Austin.
+The most dramatic difference between California and Austin is housing cost. A luxury home that would cost $5 million to $10 million in the Bay Area, Los Angeles, or San Diego can be purchased for $2 million to $5 million in Austin's top neighborhoods. Buyers relocating from California are often pleasantly surprised by the space, quality, and value available in communities like West Lake Hills, Barton Creek, and Lake Austin.
 
 ### Taxes
 Texas has no state income tax, which represents significant savings for high-income earners moving from California, where the top marginal rate exceeds 13%. While Texas property taxes are higher than California's (approximately 1.8% to 2.2% vs. 0.75% on average), the overall tax burden is typically lower, especially for high-income households.
@@ -14777,7 +14778,7 @@ Groceries, dining, utilities, and transportation costs in Austin are generally 1
 
 ## Where California Transplants Live in Austin
 
-### West lake Hills
+### West Lake Hills
 Popular with tech executives and families seeking top schools and Hill Country views. The luxury estates, privacy, and natural beauty remind many Californians of the best Northern California communities.
 
 ### Tarrytown
@@ -14825,7 +14826,7 @@ Austin's transplant-friendly culture makes it easy to build social connections. 
 Austin's luxury market has unique dynamics, including off-market transactions and neighborhood-specific considerations. Working with a local specialist like Echelon Property Group ensures you find the right property in the right community.
 
 ### Visit Multiple Neighborhoods
-Austin's neighborhoods have distinct personalities. Spend time in West lake Hills, Tarrytown, Travis Heights, Downtown, and the Hill Country before making a decision.
+Austin's neighborhoods have distinct personalities. Spend time in West Lake Hills, Tarrytown, Travis Heights, Downtown, and the Hill Country before making a decision.
 
 ### Understand Texas Property Taxes
 While there's no income tax, property taxes are higher. Factor this into your budget and explore homestead exemptions that can reduce your tax liability.
@@ -14839,7 +14840,7 @@ Austin summers are intense. Ensure your new home has efficient HVAC systems, poo
 Yes, significantly. Housing costs are 40-60% lower than comparable California luxury markets, and the absence of state income tax provides additional savings.
 
 ### What is the best Austin neighborhood for California transplants?
-It depends on your California lifestyle. West lake Hills appeals to Peninsula/Marin County buyers, Tarrytown to Palo Alto/Pasadena buyers, Downtown to SF/WeHo buyers, and the Hill Country to Napa/Sonoma buyers.
+It depends on your California lifestyle. West Lake Hills appeals to Peninsula/Marin County buyers, Tarrytown to Palo Alto/Pasadena buyers, Downtown to SF/WeHo buyers, and the Hill Country to Napa/Sonoma buyers.
 
 ### How long does it take to relocate from California to Austin?
 Most relocations can be completed within 60-90 days, including home search, closing, and moving. Working with an experienced agent can accelerate the process.
@@ -14865,7 +14866,7 @@ Austin also offers a thriving job market, particularly in technology. Major comp
 
 Buyers relocating from cities like San Francisco or Los Angeles often find that their purchasing power increases dramatically in Austin.
 
-Luxury properties in neighborhoods like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> frequently offer larger homes, more land, and better views compared with similarly priced homes in California.
+Luxury properties in neighborhoods like <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> frequently offer larger homes, more land, and better views compared with similarly priced homes in California.
 
 Waterfront estates on <a href="/communities/lake-austin" class="text-foreground underline hover:text-muted-foreground">Lake Austin</a>, for example, provide a lifestyle that combines luxury living with outdoor recreation such as boating, paddleboarding, and lakeside entertaining.
 
@@ -14873,8 +14874,8 @@ Waterfront estates on <a href="/communities/lake-austin" class="text-foreground 
 
 Several neighborhoods consistently attract buyers moving from California.
 
-### West lake Hills
-West lake Hills is known for its luxury homes, hilltop views, and highly rated schools. Many executives choose this area because it provides privacy while remaining just minutes from downtown Austin.
+### West Lake Hills
+West Lake Hills is known for its luxury homes, hilltop views, and highly rated schools. Many executives choose this area because it provides privacy while remaining just minutes from downtown Austin.
 
 ### Barton Creek
 This gated community features golf course estates and scenic Hill Country landscapes. It appeals to buyers seeking resort-style living.
@@ -14910,7 +14911,7 @@ Many relocate for job opportunities, lifestyle advantages, and Texas' lack of a 
 While Austin housing prices have increased, buyers from California often find significantly more value and space for their budget.
 
 ### What Austin neighborhoods do Californians prefer?
-West lake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities are among the most popular.`,
+West Lake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities are among the most popular.`,
     author: "Taylor Sherwood",
     date: "2025-02-20",
     readTime: "14 min read",
@@ -14966,7 +14967,7 @@ Disabled veterans may qualify for exemptions ranging from partial to complete, d
 
 Tax rates vary significantly depending on your location within the Austin metro area:
 
-### West lake Hills and Barton Creek (Eanes ISD)
+### West Lake Hills and Barton Creek (Eanes ISD)
 Properties in the Eanes ISD area benefit from a lower school district tax rate compared to Austin ISD. While the overall combined rate is still significant, the Eanes ISD rate is among the more favorable in the Austin metro area for luxury properties.
 
 ### Rollingwood
@@ -15055,10 +15056,10 @@ Lake Austin is widely considered the most prestigious waterfront address in Cent
 - **Natural beauty** – Limestone cliffs, mature cypress trees, and Hill Country views
 
 ### Lake Austin Home Prices
-Waterfront homes on Lake Austin typically range from $2 million to $25 million or more. Price per front foot of shoreline ranges from $10,000 to $30,000, depending on location, water depth, and improvements. Premium properties with deep water, gentle slopes, and western exposure (for sunset views) command the highest prices.
+ Price per front foot of shoreline ranges from $10,000 to $30,000, depending on location, water depth, and improvements. Premium properties with deep water, gentle slopes, and western exposure (for sunset views) command the highest prices.
 
 ### Best Areas on Lake Austin
-- **South Shore** – Optimal sun exposure, stunning sunset views, close to West lake Hills
+- **South Shore** – Optimal sun exposure, stunning sunset views, close to West Lake Hills
 - **North Shore** – More secluded, larger lots, convenient to Tarrytown
 - **Near Mansfield Dam** – Deepest water, most dramatic cliff settings
 
@@ -15120,7 +15121,7 @@ For a side-by-side comparison of Austin's two premier lakes, read our guide on <
 ## Frequently Asked Questions
 
 ### What is the most expensive waterfront area in Austin?
-Lake Austin waterfront is the most expensive, with premium properties exceeding $20 million. The south shore near West lake Hills commands the highest per-front-foot prices.
+Lake Austin waterfront is the most expensive, with premium properties exceeding $20 million. The south shore near West Lake Hills commands the highest per-front-foot prices.
 
 ### Can I build a dock on Lake Austin?
 Dock construction requires a permit from the LCRA. Existing dock permits transfer with property purchases. New dock permits are available but subject to environmental and regulatory review.
@@ -15157,7 +15158,7 @@ Why this tier? It's where the deepest buyer pool exists. A family relocating fro
 
 ### The $3.5M–$7M Segment
 
-This is where leverage has shifted most dramatically. Sellers who priced correctly in Q1 2026 are seeing multiple-offer scenarios in <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a> and <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>. But "priced correctly" is doing heavy lifting in that sentence. Overpriced listings in this tier sit for 90+ days and eventually sell at 8–12% reductions. The market is rewarding precision and punishing ego.
+This is where leverage has shifted most dramatically. Sellers who priced correctly in Q1 2026 are seeing multiple-offer scenarios in <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a> and <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>. But "priced correctly" is doing heavy lifting in that sentence. Overpriced listings in this tier sit for 90+ days and eventually sell at 8–12% reductions. The market is rewarding precision and punishing ego.
 
 Appreciation in this segment is running 4–7% annually, concentrated in properties with contemporary architecture, privacy, and views. Traditional floor plans on smaller lots are appreciating at 2–3%, still positive, but the market is clearly expressing a preference.
 
@@ -15179,9 +15180,9 @@ The popular narrative of "it's a buyer's market" or "it's a seller's market" is 
 
 ## Neighborhood-Level Forecasts for 2026–2027
 
-### West lake Hills: Continued Strength, Tightening Supply
+### West Lake Hills: Continued Strength, Tightening Supply
 
-West lake Hills remains the benchmark for Austin luxury. Eanes ISD alone generates a floor under values that other neighborhoods simply can't replicate. With buildable lots nearly exhausted, the teardown-rebuild cycle is now the primary source of new inventory. Expect 5–8% annual appreciation. The <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills community profile</a> details current opportunities.
+West Lake Hills remains the benchmark for Austin luxury. Eanes ISD alone generates a floor under values that other neighborhoods simply can't replicate. With buildable lots nearly exhausted, the teardown-rebuild cycle is now the primary source of new inventory. Expect 5–8% annual appreciation. The <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills community profile</a> details current opportunities.
 
 ### Tarrytown: The Urban Luxury Play
 
@@ -15226,7 +15227,7 @@ For personalized guidance on navigating Austin's luxury market, <a href="/connec
 ## Frequently Asked Questions
 
 ### What is the outlook for Austin luxury real estate in 2026?
-Austin's luxury market in 2026 shows selective momentum, with the $2M–$3.5M segment being the most active. Well-priced properties in top school districts and supply-constrained neighborhoods like West lake Hills and Lake Austin are appreciating 5–12% annually, while overpriced listings face extended market times and price reductions. The buyer pool has matured from speculative to strategic, creating more sustainable growth patterns.
+Austin's luxury market in 2026 shows selective momentum, with the $2M–$3.5M segment being the most active. Well-priced properties in top school districts and supply-constrained neighborhoods like West Lake Hills and Lake Austin are appreciating 5–12% annually, while overpriced listings face extended market times and price reductions. The buyer pool has matured from speculative to strategic, creating more sustainable growth patterns.
 
 ### Are Austin luxury home prices going up or down in 2026?
 Prices are trending upward in most luxury segments, but the rate varies significantly by neighborhood and price tier. The $2M–$3.5M range is seeing 4–6% appreciation, while Lake Austin waterfront is appreciating 8–12% due to permanent supply constraints. Overbuilt condo segments and dated properties in less desirable locations may see flat or slightly declining values.
@@ -15235,10 +15236,10 @@ Prices are trending upward in most luxury segments, but the rate varies signific
 Neither label accurately describes Austin's luxury market in 2026. Leverage is property-specific: sellers of recently built homes in Eanes ISD with views are fielding multiple offers, while buyers negotiating on 45+ day listings or properties needing updates have meaningful leverage. The market rewards pricing precision above all else.
 
 ### What price range offers the best value in Austin luxury real estate?
-The $2M–$5M range offers exceptional relative value compared to peer markets. Properties in this range in West lake Hills, Barton Creek, or Tarrytown would cost $5M–$15M in comparable neighborhoods in San Francisco, Los Angeles, or New York. This value gap continues to attract high-net-worth relocations from higher-cost metros.
+The $2M–$5M range offers exceptional relative value compared to peer markets. Properties in this range in West Lake Hills, Barton Creek, or Tarrytown would cost $5M–$15M in comparable neighborhoods in San Francisco, Los Angeles, or New York. This value gap continues to attract high-net-worth relocations from higher-cost metros.
 
 ### Where should I invest in Austin luxury real estate in 2026?
-The strongest risk-adjusted returns are in supply-constrained neighborhoods with multiple demand drivers: West lake Hills for school-driven appreciation, Lake Austin for scarcity-premium growth, and Tarrytown for urban luxury demand. For higher-risk, higher-reward plays, land acquisition in the Dripping Springs corridor offers significant upside as Austin's westward expansion continues.
+The strongest risk-adjusted returns are in supply-constrained neighborhoods with multiple demand drivers: West Lake Hills for school-driven appreciation, Lake Austin for scarcity-premium growth, and Tarrytown for urban luxury demand. For higher-risk, higher-reward plays, land acquisition in the Dripping Springs corridor offers significant upside as Austin's westward expansion continues.
 
 ### How does Austin luxury compare to Dallas and Houston luxury markets?
 Austin commands a 20–40% premium on price per square foot over Dallas and Houston luxury, reflecting its unique combination of tech economy concentration, lifestyle appeal, Hill Country topography, and more constrained supply. However, Austin also delivers stronger appreciation: 5–8% annually versus 3–5% in Dallas and Houston luxury segments over the past five years.`,
@@ -15275,9 +15276,9 @@ New construction pipeline, available land, and regulatory constraints that affec
 
 ## Top Austin Neighborhoods for Investment
 
-### 1. West lake Hills – Premium Appreciation Play
+### 1. West Lake Hills – Premium Appreciation Play
 
-West lake Hills is the gold standard for luxury real estate investment in Austin. The combination of Eanes ISD schools, Hill Country views, proximity to downtown, and severely limited land supply creates a market that consistently outperforms.
+West Lake Hills is the gold standard for luxury real estate investment in Austin. The combination of Eanes ISD schools, Hill Country views, proximity to downtown, and severely limited land supply creates a market that consistently outperforms.
 
 **Investment Profile:**
 - Average annual appreciation: 7-10% over the past decade
@@ -15350,7 +15351,7 @@ Lake Austin waterfront properties are the ultimate trophy investment in Austin. 
 ## Building an Austin Real Estate Portfolio
 
 ### Diversification
-Consider diversifying across neighborhoods and property types. A portfolio combining a West lake Hills estate, a Downtown condo, and Dripping Springs acreage provides exposure to different market segments and risk profiles.
+Consider diversifying across neighborhoods and property types. A portfolio combining a West Lake Hills estate, a Downtown condo, and Dripping Springs acreage provides exposure to different market segments and risk profiles.
 
 ### Leverage Local Expertise
 Austin's real estate market rewards local knowledge. Neighborhood dynamics, off-market opportunities, and development trends require on-the-ground expertise. Working with a specialist like Echelon Property Group provides access to the insights and relationships that drive successful investment outcomes.
@@ -15407,7 +15408,7 @@ Texas has no state income tax and generally favorable business regulations, maki
 
 While Austin remains more affordable than cities like San Francisco or Los Angeles, housing prices have increased significantly in recent years due to demand.
 
-Luxury homes in desirable neighborhoods such as <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> can range from $2 million to well over $10 million depending on location, views, and acreage.
+Luxury homes in desirable neighborhoods such as <a href="/communities/westlake-hills" class="text-foreground underline hover:text-muted-foreground">West Lake Hills</a>, <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a>, and <a href="/communities/tarrytown" class="text-foreground underline hover:text-muted-foreground">Tarrytown</a> can range from $2 million to well over $10 million depending on location, views, and acreage.
 
 For buyers relocating from higher-cost markets, Austin still offers strong value relative to other major tech cities.
 
@@ -15415,7 +15416,7 @@ For buyers relocating from higher-cost markets, Austin still offers strong value
 
 Austin offers a wide range of communities that appeal to different lifestyles.
 
-### West lake Hills
+### West Lake Hills
 Known for its hilltop estates, top-rated schools, and proximity to downtown.
 
 ### Barton Creek
@@ -15464,7 +15465,7 @@ Whether you're seeking a luxury estate, a waterfront home, or an investment prop
 
 ## School Districts That Drive Home Values
 
-For families relocating with children, school quality is often the deciding factor. The Eanes Independent School District, serving West lake Hills, Rollingwood, and parts of Barton Creek, consistently ranks among the top districts in Texas. Homes within Eanes ISD boundaries command a measurable premium, reflecting the value buyers place on educational excellence.
+For families relocating with children, school quality is often the deciding factor. The Eanes Independent School District, serving West Lake Hills, Rollingwood, and parts of Barton Creek, consistently ranks among the top districts in Texas. Homes within Eanes ISD boundaries command a measurable premium, reflecting the value buyers place on educational excellence.
 
 Austin ISD serves most central neighborhoods including Tarrytown, Travis Heights, and downtown. While the district is larger and more varied, specific attendance zones, particularly those feeding into schools like Casis Elementary, carry their own prestige and pricing power.
 
@@ -15503,36 +15504,36 @@ While the market fluctuates, Austin has experienced long-term appreciation drive
   },
   {
     id: "rollingwood-vs-westlake-hills",
-    title: "Rollingwood vs West lake Hills: Which Austin Luxury Neighborhood Is Right for You?",
+    title: "Rollingwood vs West Lake Hills: Which Austin Luxury Neighborhood Is Right for You?",
     metaTitle: "Rollingwood vs Westlake Hills | Echelon Property Group",
-    excerpt: "Compare Rollingwood and West lake Hills to find the right Austin luxury neighborhood. Explore lifestyle, home styles, location advantages, and long-term value.",
-    content: `When buyers begin narrowing down Austin's most desirable close-in luxury neighborhoods, Rollingwood and West lake Hills almost always rise to the top. Both offer exceptional access to downtown, strong long-term appeal, and a polished residential atmosphere, but the day-to-day experience of living in each is very different.
+    excerpt: "Compare Rollingwood and West Lake Hills to find the right Austin luxury neighborhood. Explore lifestyle, home styles, location advantages, and long-term value.",
+    content: `When buyers begin narrowing down Austin's most desirable close-in luxury neighborhoods, Rollingwood and West Lake Hills almost always rise to the top. Both offer exceptional access to downtown, strong long-term appeal, and a polished residential atmosphere, but the day-to-day experience of living in each is very different.
 
-For some buyers, the priority is easy proximity to downtown Austin, Zilker, and everyday convenience. For others, the goal is more privacy, larger lots, elevated views, and a more estate-like feel. If you are deciding between Rollingwood and West lake Hills, the right choice usually comes down to how you want luxury living to feel on a daily basis.
+For some buyers, the priority is easy proximity to downtown Austin, Zilker, and everyday convenience. For others, the goal is more privacy, larger lots, elevated views, and a more estate-like feel. If you are deciding between Rollingwood and West Lake Hills, the right choice usually comes down to how you want luxury living to feel on a daily basis.
 
 ## Location and Access
 
 Rollingwood offers one of the most convenient locations in Austin. It sits just minutes from downtown, Zilker Park, and Lady Bird Lake, making daily life incredibly efficient. For buyers who value walkability, quick commutes, and proximity to Austin's best dining and entertainment, Rollingwood delivers without compromise.
 
-West lake Hills is still very close to the city, but offers more separation. The slight increase in drive time creates a quieter, more private residential experience. Buyers who want to feel removed from the pace of the city, while remaining minutes away, tend to gravitate toward West lake Hills.
+West Lake Hills is still very close to the city, but offers more separation. The slight increase in drive time creates a quieter, more private residential experience. Buyers who want to feel removed from the pace of the city, while remaining minutes away, tend to gravitate toward West Lake Hills.
 
 ## Home Styles and Lot Characteristics
 
 Rollingwood homes tend to sit on flatter lots and include a mix of classic homes, remodels, and newer construction. Many properties have been thoughtfully updated over the years, and the neighborhood continues to attract new custom builds that blend modern design with established tree canopy.
 
-West lake Hills offers more variation, including larger estates, hillside homes, and properties with panoramic views. Homes here often feel more private and individually placed, with generous setbacks and mature landscaping that reinforces a sense of seclusion.
+West Lake Hills offers more variation, including larger estates, hillside homes, and properties with panoramic views. Homes here often feel more private and individually placed, with generous setbacks and mature landscaping that reinforces a sense of seclusion.
 
 ## Lifestyle and Atmosphere
 
 Rollingwood feels connected and community-oriented. It is ideal for buyers who want convenience and a neighborhood feel, families walking to the park, easy access to South Lamar dining, and a strong sense of belonging.
 
-West lake Hills feels more secluded and elevated. It appeals to buyers who prioritize privacy, scenery, and a quieter lifestyle. The community is anchored by the acclaimed Eanes Independent School District, which remains one of the top-rated districts in Texas.
+West Lake Hills feels more secluded and elevated. It appeals to buyers who prioritize privacy, scenery, and a quieter lifestyle. The community is anchored by the acclaimed Eanes Independent School District, which remains one of the top-rated districts in Texas.
 
 ## Pricing and Value
 
-Rollingwood pricing is driven by location and convenience. Its proximity to downtown, combined with limited inventory in a small incorporated city, keeps demand consistently strong. Homes in Rollingwood typically range from the low $1 millions to well above $3 million for newer construction.
+Rollingwood pricing is driven by location and convenience. Its proximity to downtown, combined with limited inventory in a small incorporated city, keeps demand consistently strong. 
 
-West lake Hills pricing is driven by lot size, views, and privacy. Larger estate properties with Hill Country views command premium pricing, often ranging from $1.5 million to $10 million and beyond depending on acreage, elevation, and architectural quality.
+West Lake Hills pricing is driven by lot size, views, and privacy. ${neighborhoodPriceSummary("westlake-hills")}
 
 ## Which One Is Right for You
 
@@ -15542,7 +15543,7 @@ Choose Rollingwood if you want:
 - Walkability and everyday convenience
 - A tight-knit, community-oriented neighborhood feel
 
-Choose West lake Hills if you want:
+Choose West Lake Hills if you want:
 
 - Privacy and larger lots
 - Hill Country views and natural scenery
@@ -15556,28 +15557,28 @@ If you are comparing neighborhoods and want a deeper look at Austin's luxury lan
 
 ## Schools and Family Considerations
 
-Both Rollingwood and West lake Hills are served by the Eanes Independent School District, one of the highest-rated public school districts in Texas. For families, this shared advantage means the school decision is not a differentiator, both neighborhoods provide access to the same outstanding campuses, including Westlake High School.
+Both Rollingwood and West Lake Hills are served by the Eanes Independent School District, one of the highest-rated public school districts in Texas. For families, this shared advantage means the school decision is not a differentiator, both neighborhoods provide access to the same outstanding campuses, including Westlake High School.
 
-What does differ is the commute to extracurriculars, community sports, and neighborhood amenities. Rollingwood families often cite the ease of walking to Zilker Park and nearby recreation as a daily quality-of-life advantage. West lake Hills families tend to gravitate toward private club amenities and more secluded outdoor space on their own properties.
+What does differ is the commute to extracurriculars, community sports, and neighborhood amenities. Rollingwood families often cite the ease of walking to Zilker Park and nearby recreation as a daily quality-of-life advantage. West Lake Hills families tend to gravitate toward private club amenities and more secluded outdoor space on their own properties.
 
 ## Investment and Long-Term Value
 
-Both neighborhoods have demonstrated consistent long-term appreciation. Rollingwood benefits from extremely limited inventory, fewer than 1,500 residents in a small incorporated city, which creates natural scarcity. West lake Hills, while larger, offers a broader range of price points that attract both primary-residence buyers and long-term investors.
+Both neighborhoods have demonstrated consistent long-term appreciation. Rollingwood benefits from extremely limited inventory, fewer than 1,500 residents in a small incorporated city, which creates natural scarcity. West Lake Hills, while larger, offers a broader range of price points that attract both primary-residence buyers and long-term investors.
 
 For additional neighborhood comparisons, read our guides on <a href="/blog/tarrytown-vs-bryker-woods" class="text-foreground underline hover:text-muted-foreground">Tarrytown vs Bryker Woods</a> and <a href="/blog/lake-austin-vs-lake-travis" class="text-foreground underline hover:text-muted-foreground">Lake Austin vs Lake Travis</a>. Explore all <a href="/communities" class="text-foreground underline hover:text-muted-foreground">Austin luxury communities</a> or visit our <a href="/" class="text-foreground underline hover:text-muted-foreground">homepage</a>.
 
 ## Frequently Asked Questions
 
 ### Is Rollingwood a good place to live in Austin?
-Yes. Rollingwood is one of Austin's most desirable small communities, offering top-rated Eanes ISD schools, proximity to downtown and Zilker Park, and a tight-knit residential feel with homes typically ranging from $1 million to over $3 million.
+Yes. Rollingwood is one of Austin's most desirable small communities, offering top-rated Eanes ISD schools, proximity to downtown and Zilker Park, and a tight-knit residential feel with homes suited to a range of buyer needs.
 
-### What is the average home price in West lake Hills?
-Homes in West lake Hills range broadly from approximately $1.2 million to over $20 million, depending on lot size, views, and architectural quality. The median typically falls between $2 million and $4 million.
+### What is the average home price in West Lake Hills?
+${neighborhoodPriceSummary("westlake-hills")}
 
 ### How close is Rollingwood to downtown Austin?
 Rollingwood is approximately 5 minutes from downtown Austin, making it one of the closest luxury neighborhoods to the city center.
 
-### Are Rollingwood and West lake Hills in the same school district?
+### Are Rollingwood and West Lake Hills in the same school district?
 Yes. Both neighborhoods are served by the Eanes Independent School District, consistently ranked among the best public school districts in Texas.`,
     author: "Taylor Sherwood",
     date: "2026-04-03",
@@ -15670,13 +15671,13 @@ Choose Bryker Woods if you want:
 
 Both Tarrytown and Bryker Woods represent some of the most desirable real estate in Austin. The right choice ultimately comes down to how you prioritize space, walkability, and lifestyle.
 
-If you are comparing neighborhoods, explore our guide to [Austin's best luxury neighborhoods](/best-luxury-neighborhoods-austin) or compare [Rollingwood vs West lake Hills](/blog/rollingwood-vs-westlake-hills) and [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis) to round out your search.
+If you are comparing neighborhoods, explore our guide to [Austin's best luxury neighborhoods](/best-luxury-neighborhoods-austin) or compare [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills) and [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis) to round out your search.
 
 ## Schools and Families
 
 Tarrytown is primarily served by Austin ISD, with Casis Elementary being the anchor school, a campus that consistently ranks among the top elementary schools in Austin. Bryker Woods is served by Bryker Woods Elementary, another well-regarded Austin ISD school with a devoted neighborhood following.
 
-For families weighing school options, both neighborhoods offer strong public school access, though buyers prioritizing the Eanes ISD may want to explore <a href="/blog/rollingwood-vs-westlake-hills" class="text-foreground underline hover:text-muted-foreground">Rollingwood or West lake Hills</a> as alternatives within the western Austin corridor.
+For families weighing school options, both neighborhoods offer strong public school access, though buyers prioritizing the Eanes ISD may want to explore <a href="/blog/rollingwood-vs-westlake-hills" class="text-foreground underline hover:text-muted-foreground">Rollingwood or West Lake Hills</a> as alternatives within the western Austin corridor.
 
 ## Long-Term Investment Outlook
 
@@ -15689,7 +15690,7 @@ For investment-focused analysis, read our guide to <a href="/blog/top-investment
 ## Frequently Asked Questions
 
 ### Is Tarrytown a good neighborhood in Austin?
-Yes. Tarrytown is one of Austin's most established and desirable neighborhoods, known for tree-canopied streets, proximity to Lake Austin and downtown, and strong long-term property values. Homes range from approximately $800,000 to over $8 million.
+Yes. Tarrytown is one of Austin's most established and desirable neighborhoods, known for tree-canopied streets, proximity to Lake Austin and downtown, and strong long-term property values. 
 
 ### What is the average home price in Bryker Woods?
 Bryker Woods homes typically range from $700,000 to over $2.5 million, with updated and new-construction properties commanding premiums due to the neighborhood's central location.
@@ -15795,7 +15796,7 @@ Choose Lake Travis if you want:
 
 Both Lake Austin and Lake Travis offer exceptional opportunities, but they serve very different lifestyles. The right choice depends on how you want to live, not just where.
 
-If you are comparing neighborhoods, explore our guides on [Rollingwood vs West lake Hills](/blog/rollingwood-vs-westlake-hills) and [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) or browse all [Austin communities](/communities).
+If you are comparing neighborhoods, explore our guides on [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills) and [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) or browse all [Austin communities](/communities).
 
 ## Dock Permitting and Water Access
 
@@ -15817,7 +15818,7 @@ For a comprehensive look at Austin waterfront options, read our detailed guide t
 Lake Austin is generally considered the more prestigious waterfront address due to its proximity to downtown, constant water levels, and extreme scarcity. Lake Travis offers more variety in price points and a resort-style atmosphere.
 
 ### What is the average price of a Lake Austin waterfront home?
-Lake Austin waterfront homes typically range from $2 million to over $25 million, with price per front foot of shoreline ranging from $10,000 to $30,000 depending on location and water depth.
+
 
 ### How far is Lake Travis from downtown Austin?
 Most Lake Travis waterfront properties are 30-45 minutes from downtown Austin, compared to 10-20 minutes for Lake Austin properties.
@@ -15845,7 +15846,7 @@ Daily life in Barton Creek revolves around the Barton Creek Country Club, which 
 
 ## Housing Stock and Pricing
 
-Homes in Barton Creek range from $1.5 million to over $15 million. The community features Spanish Colonial estates, Mediterranean villas, and contemporary builds that leverage the dramatic Hill Country topography. Properties on golf course fairways and those backing the [Barton Creek Greenbelt](/communities/barton-creek) command the highest premiums. With the community approaching build-out, remaining homesites are increasingly rare and valuable.
+ The community features Spanish Colonial estates, Mediterranean villas, and contemporary builds that leverage the dramatic Hill Country topography. Properties on golf course fairways and those backing the [Barton Creek Greenbelt](/communities/barton-creek) command the highest premiums. With the community approaching build-out, remaining homesites are increasingly rare and valuable.
 
 ## Schools and Families
 
@@ -15853,7 +15854,7 @@ Barton Creek is served by the Eanes ISD, including Barton Creek Elementary, Hill
 
 ## How Barton Creek Compares
 
-Buyers often compare Barton Creek to [West lake Hills](/communities/westlake-hills), which shares Eanes ISD zoning but offers an ungated, more architecturally diverse setting. [Rob Roy](/communities/rob-roy) provides a smaller, more intimate gated experience with panoramic views. [Pemberton Heights](/communities/pemberton-heights) offers distinguished central Austin estates but trades country club amenities for downtown walkability.
+Buyers often compare Barton Creek to [West Lake Hills](/communities/westlake-hills), which shares Eanes ISD zoning but offers an ungated, more architecturally diverse setting. [Rob Roy](/communities/rob-roy) provides a smaller, more intimate gated experience with panoramic views. [Pemberton Heights](/communities/pemberton-heights) offers distinguished central Austin estates but trades country club amenities for downtown walkability.
 
 ## Investment Outlook
 
@@ -15869,9 +15870,9 @@ Yes. The combination of gated exclusivity, championship golf, Eanes ISD schools,
 
 Typical buyers include corporate executives, entrepreneurs, and high-net-worth families drawn to country club living. Many are relocating from major metros and are attracted to the combination of resort amenities, security, and top schools in a single community.
 
-### How does Barton Creek compare to West lake Hills?
+### How does Barton Creek compare to West Lake Hills?
 
-[West lake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that West lake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.`,
+[West Lake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that West Lake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.`,
     author: "Taylor Sherwood",
     date: "2026-04-08",
     readTime: "7 min read",
@@ -16016,7 +16017,7 @@ Infrastructure is still catching up. Well, septic, and road conditions vary parc
 
 [Westlake](/communities/westlake-hills) isn't really a "comparison." It's a different category.
 
-You're buying proximity to downtown, top-tier Eanes ISD schools, and one of the most stable luxury submarkets in Austin. Inventory stays so tight that a meaningful share of the best homes here trade through [off-market channels in Austin](/off-market-real-estate-austin) before the public ever sees them, a dynamic we explore further in our breakdown of [Rollingwood vs West lake Hills](/blog/rollingwood-vs-westlake-hills).
+You're buying proximity to downtown, top-tier Eanes ISD schools, and one of the most stable luxury submarkets in Austin. Inventory stays so tight that a meaningful share of the best homes here trade through [off-market channels in Austin](/off-market-real-estate-austin) before the public ever sees them, a dynamic we explore further in our breakdown of [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills).
 
 There's less guesswork here. You pay more upfront, but you're stepping into one of the most resilient areas in the city. For buyers weighing the lake side of this equation, the [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis) comparison is a useful next read.
 
@@ -16092,7 +16093,7 @@ Typical buyers include established professionals, legacy Austin families, C-suit
 
 ## How Pemberton Heights Compares
 
-[Tarrytown](/communities/tarrytown) offers a more eclectic, walkable village feel with smaller lots and a stronger commercial corridor. [West lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting. [Barton Creek](/communities/barton-creek) offers gated country club amenities. Each serves a different buyer profile, Pemberton Heights is for those who want distinguished central estates above all else.
+[Tarrytown](/communities/tarrytown) offers a more eclectic, walkable village feel with smaller lots and a stronger commercial corridor. [West Lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting. [Barton Creek](/communities/barton-creek) offers gated country club amenities. Each serves a different buyer profile, Pemberton Heights is for those who want distinguished central estates above all else.
 
 ## Investment Strength
 
@@ -16186,11 +16187,11 @@ Custom-built estates dominate Rob Roy, ranging from $1.5M to over $20M. The comm
 
 ## Schools and Location
 
-Rob Roy is served by the Eanes ISD, including top-rated Westlake High School. The community is centrally positioned along Loop 360, providing quick access to both downtown Austin and the [West lake Hills](/communities/westlake-hills) corridor. Despite its exclusive feel, Rob Roy is surprisingly accessible, a 15-minute drive to downtown.
+Rob Roy is served by the Eanes ISD, including top-rated Westlake High School. The community is centrally positioned along Loop 360, providing quick access to both downtown Austin and the [West Lake Hills](/communities/westlake-hills) corridor. Despite its exclusive feel, Rob Roy is surprisingly accessible, a 15-minute drive to downtown.
 
 ## How Rob Roy Compares
 
-[West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and Hill Country setting but is an ungated community with more architectural diversity. [Barton Creek](/communities/barton-creek) offers country club amenities with golf, spa, and social programming. [Tarrytown](/communities/tarrytown) provides walkable central living, the opposite end of Austin's luxury spectrum. Rob Roy's unique value proposition is maximum privacy and views within a gated, estate-oriented setting.
+[West Lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and Hill Country setting but is an ungated community with more architectural diversity. [Barton Creek](/communities/barton-creek) offers country club amenities with golf, spa, and social programming. [Tarrytown](/communities/tarrytown) provides walkable central living, the opposite end of Austin's luxury spectrum. Rob Roy's unique value proposition is maximum privacy and views within a gated, estate-oriented setting.
 
 ## Investment Performance
 
@@ -16204,7 +16205,7 @@ Yes. Rob Roy and its sub-communities are gated with controlled access, providing
 
 ### What makes Rob Roy different from other Austin luxury communities?
 
-Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.`,
+Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West Lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.`,
     author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "7 min read",
@@ -16369,7 +16370,7 @@ That is also why many of the best opportunities never become widely marketed. Ow
 
 Lake Austin is often spoken about as if it were one market. It is not. The differences between sections of the lake are meaningful, and they affect both lifestyle and liquidity.
 
-In [Westlake](/communities/westlake-hills)-adjacent stretches, demand tends to stay especially durable because buyers are balancing waterfront living with proximity to central Austin. These homes attract executives, founders, and relocators who want immediate access to the city without giving up privacy, a pattern we examine more closely in our [Rollingwood vs West lake Hills](/blog/rollingwood-vs-westlake-hills) comparison. In these pockets, even non-waterfront properties with commanding views can trade at strong levels because the broader location carries status and long-term demand support.
+In [Westlake](/communities/westlake-hills)-adjacent stretches, demand tends to stay especially durable because buyers are balancing waterfront living with proximity to central Austin. These homes attract executives, founders, and relocators who want immediate access to the city without giving up privacy, a pattern we examine more closely in our [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills) comparison. In these pockets, even non-waterfront properties with commanding views can trade at strong levels because the broader location carries status and long-term demand support.
 
 Further along the lake, value can shift toward estate scale, larger land holdings, or a more resort-like experience. Some buyers prefer that remove from the city. Others see it as a compromise if daily convenience matters. Neither is inherently better. It depends on whether the property is being used as a primary residence, a legacy hold, or a lifestyle-driven second home within the metro.
 
@@ -16542,7 +16543,7 @@ A broad public launch can create urgency when the asset is positioned correctly,
 
 Private marketing gives sellers more control over that narrative. It allows price discovery among serious, qualified buyers without immediately creating a public record of market response. That does not guarantee a better result. Some homes still benefit from full public competition. But in the right circumstances, controlled exposure preserves optionality.
 
-For buyers, the value is equally strategic. In competitive [micro-markets](/communities) like [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and [Tarrytown](/communities/tarrytown), private inventory can reveal supply that the broader market does not know exists. That can reduce bidding pressure, create cleaner negotiation dynamics, and open doors to assets that align more precisely with a buyer's standards.
+For buyers, the value is equally strategic. In competitive [micro-markets](/communities) like [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and [Tarrytown](/communities/tarrytown), private inventory can reveal supply that the broader market does not know exists. That can reduce bidding pressure, create cleaner negotiation dynamics, and open doors to assets that align more precisely with a buyer's standards.
 
 ## The seller's calculus: privacy, leverage, and timing
 
@@ -16604,7 +16605,7 @@ Private listings real estate refers to properties marketed outside the public ML
 Luxury sellers often choose private listings to protect privacy, control the property's market narrative, avoid public days-on-market and price-reduction history, and reach a curated pool of qualified buyers. In Austin's upper tier, controlled exposure can preserve negotiating leverage better than a broad public launch.
 
 ### How can buyers access private listings in Austin?
-Buyers access private listings primarily through advisors who participate in trusted agent networks, brokerage-internal channels, and direct relationships with sellers. Working with a relationship-led advisory firm that operates inside these channels is typically the most reliable path to private inventory in neighborhoods like West lake Hills, Barton Creek, and Tarrytown.
+Buyers access private listings primarily through advisors who participate in trusted agent networks, brokerage-internal channels, and direct relationships with sellers. Working with a relationship-led advisory firm that operates inside these channels is typically the most reliable path to private inventory in neighborhoods like West Lake Hills, Barton Creek, and Tarrytown.
 
 ### Are private listings always a better deal than MLS homes?
 No. Private listings are about fit, timing, and positioning rather than automatic discounts. Premium homes offered quietly still command premium pricing when demand is strong. The advantage is securing the right asset under the right terms before competition widens, not paying less at any cost.
@@ -16646,7 +16647,7 @@ Privacy is only part of it. A private listing also protects pricing flexibility.
 
 There is also the matter of control. A public launch generates a high volume of activity, much of it unqualified. A private approach lets the seller govern showings, timing, and the flow of information. That can matter for executives, founders, public figures, or families who prefer a low-profile process.
 
-In Austin, private strategy also fits when a seller wants to reach a very specific buyer pool rather than the general market. In tightly held enclaves like [West lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the [Lake Austin](/communities/lake-austin) corridor, certain homes trade because the right person sees them, not because thousands do.
+In Austin, private strategy also fits when a seller wants to reach a very specific buyer pool rather than the general market. In tightly held enclaves like [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and the [Lake Austin](/communities/lake-austin) corridor, certain homes trade because the right person sees them, not because thousands do.
 
 ## When a LUXURY LISTING Strategy Makes Sense
 
@@ -16760,7 +16761,7 @@ A private listing is a property offered for sale without broad public marketing 
 A private listing is actively for sale but marketed discreetly with formal representation, pricing intent, and a seller ready to transact. An off-market opportunity is often more exploratory, an owner who would consider selling under the right terms but has not formally listed the home.
 
 ### Why would an Austin seller choose a private listing?
-Sellers choose private listings to protect privacy, control the property's market narrative, avoid public days-on-market history, and reach a curated buyer pool. In neighborhoods like West lake Hills, Barton Creek, and Tarrytown, controlled exposure can preserve pricing leverage better than a public launch.
+Sellers choose private listings to protect privacy, control the property's market narrative, avoid public days-on-market history, and reach a curated buyer pool. In neighborhoods like West Lake Hills, Barton Creek, and Tarrytown, controlled exposure can preserve pricing leverage better than a public launch.
 
 ### Are private listings always cheaper than MLS homes?
 No. Private listings are about access, fit, and timing rather than automatic discounts. Premium homes offered quietly still command premium pricing when demand is strong. The advantage is securing the right asset under the right terms before competition widens.
@@ -17402,10 +17403,10 @@ A: Yes. Private buyers form impressions quickly and are often more sophisticated
     id: "living-on-lake-austin",
     title: "Living on Lake Austin: Why Austin's Most Exclusive Waterfront Costs What It Does",
     metaTitle: "Living on Lake Austin: Why It's So Exclusive & Expensive",
-    excerpt: "Why Lake Austin is Austin's most exclusive address: constant-level water, fixed supply, dock permit scarcity, and waterfront pricing from $4M to $35M+.",
+    excerpt: "Why Lake Austin is Austin's most exclusive address: constant-level water, fixed supply, dock permit scarcity, and the factors that drive waterfront pricing.",
     content: `:::callout
 label: Quick answer
-Lake Austin is the most supply-constrained residential market in Central Texas. Direct waterfront homes start around $4M to $5M for older properties or challenging lots, prime estates with modern construction run $8M to $15M+, and trophy compounds reach $25M to $35M and beyond. Dock-permitted properties command premiums of 30 to 50 percent over comparable lots without them. The reasons are structural: 22 miles of constant-level shoreline that is essentially built out, minutes from downtown, with no new supply coming, ever.
+Lake Austin is the most supply-constrained residential market in Central Texas. Waterfront pricing depends on frontage, dock rights, lot usability, and construction quality. Dock-permitted properties command premiums of 30 to 50 percent over comparable lots without them. The reasons are structural: 22 miles of constant-level shoreline that is essentially built out, minutes from downtown, with no new supply coming, ever.
 :::
 
 This guide explains what makes living on Lake Austin different from every other waterfront market in Texas, why the price of entry keeps climbing, and how these properties actually change hands, which is often not on the open market.
@@ -17467,7 +17468,7 @@ The lake runs through several distinct corridors, each with its own character.
 
 **The Island and Westlake shoreline.** The Island on Westlake is a gated enclave of a few dozen estates, among the most private addresses in the city. The broader Westlake Drive and Rockcliff corridor in 78746 combines Eanes ISD with some of the lake's most significant estates.
 
-**Cuernavaca and Davenport Ranch (78733).** West of the 360 bridge, larger lots, Hill Country terrain, and Eanes schools. True waterfront here medians around $4M.
+**Cuernavaca and Davenport Ranch (78733).** West of the 360 bridge, larger lots, Hill Country terrain, and Eanes schools. Waterfront pricing requires a corridor-specific analysis.
 
 **Ski Shores and River Hills.** The classic lake-culture stretch, where original weekend cabins have steadily given way to significant new construction.
 

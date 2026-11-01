@@ -29,7 +29,7 @@ const BLURRED_CARDS: { eyebrow: string; title: string; preview: string }[] = [
     eyebrow: "PRICE SEGMENTATION",
     title: "Where the market is actually clearing",
     preview:
-      "$2.4M – $3.1M tier moving fastest · $4M+ tier sitting · entry-level under contract within 12 days on average.",
+      "Neighborhood-specific sale pricing, organized by property type and lot context.",
   },
   {
     eyebrow: "RECENT SALES",
@@ -41,7 +41,7 @@ const BLURRED_CARDS: { eyebrow: string; title: string; preview: string }[] = [
     eyebrow: "BUYER DEMAND",
     title: "Where pressure is building right now",
     preview:
-      "Showings up 22% MoM in the under-$3.5M tier · multiple-offer activity returning · cash share at 41%.",
+      "Buyer activity, financing mix, and inventory context for this neighborhood.",
   },
   {
     eyebrow: "OFF-MARKET INVENTORY",

@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   createFAQSchema,
@@ -149,51 +150,9 @@ const formatStat = (s: (typeof taylorStats)[number]) =>
   `${s.prefix ?? ""}${s.value}${s.suffix ?? ""}`;
 
 const CountUpStat = ({ stat }: { stat: (typeof taylorStats)[number] }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [display, setDisplay] = useState<number>(1);
-  const rafRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const target = stat.value;
-    const duration = 1600;
-
-    const animate = () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      const start = performance.now();
-      const from = 1;
-      const step = (now: number) => {
-        const t = Math.min(1, (now - start) / duration);
-        const eased = 1 - Math.pow(1 - t, 3);
-        const value = Math.round(from + (target - from) * eased);
-        setDisplay(value);
-        if (t < 1) rafRef.current = requestAnimationFrame(step);
-      };
-      rafRef.current = requestAnimationFrame(step);
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setDisplay(1);
-            animate();
-          }
-        });
-      },
-      { threshold: 0.4 }
-    );
-    observer.observe(el);
-    return () => {
-      observer.disconnect();
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, [stat.value]);
-
   return (
-    <div ref={ref} className="text-4xl md:text-5xl font-display font-normal text-architectural mb-2">
-      {stat.prefix ?? ""}{display}{stat.suffix ?? ""}
+    <div aria-label={`${formatStat(stat)} ${stat.label}`} className="text-4xl md:text-5xl font-display font-normal text-architectural mb-2">
+      {formatStat(stat)}
     </div>
   );
 };
@@ -483,7 +442,7 @@ const TaylorSherwood = () => {
                   <h3 className="font-display text-base md:text-lg text-foreground group-hover:text-gold transition-colors duration-300 mb-1">
                     {c.name}
                   </h3>
-                  <p className="text-xs text-muted-foreground/70 tracking-widest">{c.priceRange}</p>
+                  <NeighborhoodMedian area={c.slug} className="text-xs text-muted-foreground tracking-widest" />
                 </Link>
               ))}
             </div>

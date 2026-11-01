@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import { fetchAgentIntel, formatLastUpdated, AgentIntelResponse } from "@/lib/agentIntel";
 import InsightCard from "./InsightCard";
+import { formatNeighborhoodMedian, neighborhoodSourceNote } from "@/data/neighborhoodStats";
 
 interface Props { standfirst?: ReactNode; interpretation?: ReactNode; id?: string }
 
@@ -56,7 +57,10 @@ export const NeighborhoodStats = ({ standfirst, interpretation, id }: Props = {}
               {resp.data.items.map((r) => (
                 <tr key={r.name} className="border-b border-border/30">
                   <td className="py-4 pr-4 font-display text-architectural">{r.name}</td>
-                  <td className="py-4 pr-4 text-right text-foreground/85">{fmtMoney(r.median_price)}</td>
+                  <td className="py-4 pr-4 text-right text-foreground/85">
+                    {formatNeighborhoodMedian(r.name) || "Not available"}
+                    {neighborhoodSourceNote(r.name) && <p className="text-xs text-muted-foreground">{neighborhoodSourceNote(r.name)}</p>}
+                  </td>
                   <td className={`py-4 pr-4 text-right ${r.yoy_pct >= 0 ? "text-gold" : "text-muted-foreground"}`}>
                     {r.yoy_pct > 0 ? "+" : ""}{r.yoy_pct.toFixed(1)}%
                   </td>

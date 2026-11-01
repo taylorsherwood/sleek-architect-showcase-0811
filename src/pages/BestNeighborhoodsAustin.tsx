@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import AuthorBio from "@/components/AuthorBio";
@@ -12,17 +13,17 @@ const faqs = [
 {
   question: "What is the most expensive neighborhood in Austin?",
   answer:
-  "The most expensive neighborhoods in Austin include West lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, and Spanish Oaks. Trophy estates in these areas can exceed $15–25 million. Lake Austin waterfront properties command some of the highest per-foot prices in Texas."
+  "The most expensive neighborhoods in Austin include West Lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, and Spanish Oaks. Trophy estates in these areas can exceed $15–25 million. Lake Austin waterfront properties command some of the highest per-foot prices in Texas."
 },
 {
   question: "What is the best neighborhood in Austin for families?",
   answer:
-  "West lake Hills and Barton Creek are top choices for families due to the Eanes Independent School District, consistently ranked among the best in Texas. Steiner Ranch and Dripping Springs also offer excellent schools and family-friendly amenities."
+  "West Lake Hills and Barton Creek are top choices for families due to the Eanes Independent School District, consistently ranked among the best in Texas. Steiner Ranch and Dripping Springs also offer excellent schools and family-friendly amenities."
 },
 {
   question: "Where do wealthy people live in Austin?",
   answer:
-  "High-net-worth buyers concentrate in West lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, Rob Roy, and Spanish Oaks. Tech executives frequently choose West lake Hills for Eanes ISD schools and proximity to downtown."
+  "High-net-worth buyers concentrate in West Lake Hills, Barton Creek, Lake Austin Waterfront, Pemberton Heights, Rob Roy, and Spanish Oaks. Tech executives frequently choose West Lake Hills for Eanes ISD schools and proximity to downtown."
 },
 {
   question: "What is the best area in Austin for walkability?",
@@ -37,22 +38,21 @@ const faqs = [
 {
   question: "What neighborhoods in Austin have the best views?",
   answer:
-  "West lake Hills and Rob Roy offer panoramic Hill Country views from elevated lots. Lake Austin and Lake Travis provide stunning waterfront panoramas. Travis Heights is known for its iconic downtown skyline views across Lady Bird Lake."
+  "West Lake Hills and Rob Roy offer panoramic Hill Country views from elevated lots. Lake Austin and Lake Travis provide stunning waterfront panoramas. Travis Heights is known for its iconic downtown skyline views across Lady Bird Lake."
 }];
 
 
 const luxuryNeighborhoods = [
 {
-  name: "West lake Hills",
+  name: "West Lake Hills",
   slug: "/westlake-hills-homes-for-sale",
   existingSlug: "/communities/westlake-hills",
   description:
-  "West lake Hills is Austin's most sought-after luxury enclave, situated on scenic bluffs west of downtown overlooking the Hill Country and Lake Austin. The community is anchored by the acclaimed Eanes Independent School District.",
+  "West Lake Hills is Austin's most sought-after luxury enclave, situated on scenic bluffs west of downtown overlooking the Hill Country and Lake Austin. The community is anchored by the acclaimed Eanes Independent School District.",
   architecture:
   "Contemporary masterpieces, mid-century estates, and custom Hill Country modern homes on generous lots with mature live oaks.",
-  prices: "$1.2M – $20M+",
   lifestyle:
-  "World-class hiking at Barton Creek Greenbelt, boating on Lake Austin, dining along Bee Caves Road, and country club living at West lake Hills Country Club."
+  "World-class hiking at Barton Creek Greenbelt, boating on Lake Austin, dining along Bee Caves Road, and country club living at West Lake Hills Country Club."
 },
 {
   name: "Tarrytown",
@@ -62,7 +62,6 @@ const luxuryNeighborhoods = [
   "Tarrytown is one of Austin's most beloved historic neighborhoods, located just west of downtown along Lady Bird Lake. Known for its mature tree canopy, walkable streets, and eclectic architectural character.",
   architecture:
   "Beautifully preserved 1930s bungalows, mid-century ranch homes, and striking contemporary new construction on established lots.",
-  prices: "$800K – $8M+",
   lifestyle:
   "Deep Eddy Pool, Lady Bird Lake Hike-and-Bike Trail, walkable dining on Exposition Boulevard, and proximity to downtown Austin."
 },
@@ -74,7 +73,6 @@ const luxuryNeighborhoods = [
   "Spanish Oaks is one of Austin's most exclusive gated communities, offering luxury estate living alongside a private Tom Fazio-designed championship golf course in the scenic Hill Country southwest of downtown.",
   architecture:
   "Custom luxury estates with Hill Country stone, contemporary design, and seamless indoor-outdoor living on one-acre-plus homesites.",
-  prices: "$3M – $15M+",
   lifestyle:
   "Private Tom Fazio golf course, resort-style amenities, hiking trails, and a members-only social calendar in a gated Hill Country setting."
 },
@@ -86,7 +84,6 @@ const luxuryNeighborhoods = [
   "Barton Creek is Austin's premier gated country club community, featuring four championship golf courses, world-class amenities, and stunning homes along scenic canyon bluffs southwest of downtown.",
   architecture:
   "Mediterranean villas, contemporary Hill Country estates, and custom builds with canyon and golf course views on manicured lots.",
-  prices: "$1.5M – $15M+",
   lifestyle:
   "Four championship golf courses by Fazio, Crenshaw, and Palmer. Full-service country club with tennis, spa, and fine dining."
 },
@@ -98,7 +95,6 @@ const luxuryNeighborhoods = [
   "Pemberton Heights is one of Austin's most prestigious established neighborhoods, located just north of Lady Bird Lake with wide tree-lined streets, generous lots, and some of the most distinguished architecture in the city.",
   architecture:
   "Georgian, Colonial, and Tudor estates alongside contemporary new construction on half-acre-plus lots with mature oaks.",
-  prices: "$1.5M – $10M+",
   lifestyle:
   "Walking distance to downtown Austin, Pease Park, Shoal Creek Trail, and Clarksville's boutique restaurants and shops."
 }];
@@ -111,7 +107,6 @@ const waterfrontNeighborhoods = [
   existingSlug: "/communities/lake-austin",
   description:
   "Lake Austin is a constant-level reservoir offering Austin's most exclusive waterfront living. Properties feature private docks, boathouses, and direct deep-water access with panoramic lake views.",
-  prices: "$2M – $25M+",
   lifestyle:
   "Year-round boating, paddleboarding, waterfront dining, and sunset entertaining, all minutes from downtown Austin."
 },
@@ -121,7 +116,6 @@ const waterfrontNeighborhoods = [
   existingSlug: null,
   description:
   "Lake Travis stretches over 60 miles through the Hill Country west of Austin. The lake offers recreational waterfront living with clear blue water, limestone cliffs, and resort-style communities.",
-  prices: "$1M – $15M+",
   lifestyle:
   "Boating, wakeboarding, sailing, and lakeside dining in a scenic Hill Country setting with dramatic views."
 },
@@ -131,7 +125,6 @@ const waterfrontNeighborhoods = [
   existingSlug: null,
   description:
   "Steiner Ranch is one of Austin's largest master-planned communities, perched on the bluffs above Lake Austin. It offers resort-style amenities, trails, and homes ranging from family-friendly to custom luxury estates.",
-  prices: "$500K – $3M+",
   lifestyle:
   "Multiple pools, community centers, miles of trails, Lake Austin access, and sweeping Hill Country sunset views."
 }];
@@ -144,7 +137,6 @@ const walkableNeighborhoods = [
   existingSlug: null,
   description:
   "Clarksville is one of Austin's oldest and most culturally significant neighborhoods, offering a walkable village atmosphere with boutique shops, local restaurants, and coffee shops along West Lynn Street, all steps from downtown.",
-  prices: "$800K – $6M+",
   lifestyle:
   "Walk to restaurants, Whole Foods, Lady Bird Lake, and downtown. Victorian cottages alongside contemporary new construction."
 },
@@ -154,7 +146,6 @@ const walkableNeighborhoods = [
   existingSlug: "/communities/zilker-austin",
   description:
   "Zilker surrounds Austin's most iconic park, offering direct access to Barton Springs Pool, the Barton Creek Greenbelt, and Lady Bird Lake. The neighborhood blends vintage charm with modern luxury.",
-  prices: "$800K – $5M+",
   lifestyle:
   "Zilker Park, Barton Springs Pool, Greenbelt hiking, ACL Music Festival, and walkable access to South Congress and South Lamar."
 },
@@ -164,7 +155,6 @@ const walkableNeighborhoods = [
   existingSlug: null,
   description:
   "Mueller is Austin's award-winning master-planned community built on the former municipal airport site. Designed around new urbanist principles with walkable streets, parks, retail, and restaurants.",
-  prices: "$400K – $1.5M+",
   lifestyle:
   "Lake Park, the Thinkery, local restaurants, and miles of trails, all within walking or biking distance in central-east Austin."
 }];
@@ -177,7 +167,6 @@ const investmentAreas = [
   existingSlug: "/communities/dripping-springs",
   description:
   "Known as the Gateway to the Hill Country, Dripping Springs is one of Austin's fastest-growing communities along the Highway 290 corridor. Wineries, ranch estates, and master-planned communities attract buyers seeking space and Hill Country lifestyle.",
-  prices: "$500K – $10M+",
   drivers:
   "Highway 290 corridor growth, winery tourism, Dripping Springs ISD investment, and Austin's westward expansion."
 },
@@ -187,7 +176,6 @@ const investmentAreas = [
   existingSlug: "/communities/cat-mountain",
   description:
   "Northwest Hills and Cat Mountain offer established homes on mature, tree-covered lots in a prime northwest Austin location. The area provides strong value relative to central Austin with easy access to the Domain and major employers.",
-  prices: "$600K – $3M+",
   drivers:
   "Central northwest location, proximity to Domain and tech employers, mature lots with renovation and rebuild potential."
 },
@@ -197,7 +185,6 @@ const investmentAreas = [
   existingSlug: null,
   description:
   "Great Hills is an established neighborhood in northwest Austin along the Loop 360 corridor. Generous lots, mature trees, and strong value relative to central Austin make it attractive for families and investors alike.",
-  prices: "$600K – $2.5M+",
   drivers:
   "Loop 360 corridor access, Arboretum and Domain proximity, increasing renovation and rebuild activity, and strong rental demand."
 }];
@@ -261,7 +248,7 @@ const BestNeighborhoodsAustin = () => {
                     <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-3">
                       {n.name}
                     </h3>
-                    <p className="text-minimal text-gold mb-4">{n.prices}</p>
+                    <NeighborhoodMedian area={n.name} className="text-minimal text-gold mb-4" />
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       {n.description}
                     </p>
@@ -305,7 +292,7 @@ const BestNeighborhoodsAustin = () => {
                     <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-3">
                       {n.name}
                     </h3>
-                    <p className="text-minimal text-gold mb-4">{n.prices}</p>
+                    <NeighborhoodMedian area={n.name} className="text-minimal text-gold mb-4" />
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       {n.description}
                     </p>
@@ -345,7 +332,7 @@ const BestNeighborhoodsAustin = () => {
                     <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-3">
                       {n.name}
                     </h3>
-                    <p className="text-minimal text-gold mb-4">{n.prices}</p>
+                    <NeighborhoodMedian area={n.name} className="text-minimal text-gold mb-4" />
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       {n.description}
                     </p>
@@ -385,7 +372,7 @@ const BestNeighborhoodsAustin = () => {
                     <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-3">
                       {n.name}
                     </h3>
-                    <p className="text-minimal text-gold mb-4">{n.prices}</p>
+                    <NeighborhoodMedian area={n.name} className="text-minimal text-gold mb-4" />
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       {n.description}
                     </p>
@@ -414,7 +401,7 @@ const BestNeighborhoodsAustin = () => {
                   Austin's real estate market continues to rank among the strongest in the United States. The city's population growth, fueled by corporate relocations, tech expansion, and lifestyle migration, has created sustained demand across residential, commercial, and land segments.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  The luxury market, generally defined as homes above $1 million, has shown particular resilience. Neighborhoods like West lake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
+                  The luxury market, generally defined as homes above $1 million, has shown particular resilience. Neighborhoods like West Lake Hills, Barton Creek, and Lake Austin Waterfront have demonstrated 7–12% annual appreciation over the past decade, driven by limited inventory, top-tier schools, and Austin's economic fundamentals.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Texas's lack of a state income tax remains a powerful draw for high-net-worth individuals and business owners relocating from California, New York, and other high-tax states. This migration pattern continues to support premium pricing in Austin's most desirable neighborhoods.

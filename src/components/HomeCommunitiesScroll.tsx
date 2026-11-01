@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 
 import card78746 from "@/assets/barton-creek-estate-new.webp";
 import cardRollingwood from "@/assets/community-rollingwood.webp";
@@ -13,10 +14,10 @@ import cardSpanishOaks from "@/assets/spanish-oaks-estate.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const NEIGHBORHOODS = [
-  { name: "Barton creek", image: card78746, stat: "Median sale: $3.2M", slug: "barton-creek" },
-  { name: "Rollingwood", image: cardRollingwood, stat: "Avg DOM off-market: 14 days", slug: "rollingwood" },
-  { name: "Old Enfield", image: cardOldEnfield, stat: "60% OF TRADES ARE PRIVATE", slug: "old-enfield" },
-  { name: "West lake Hills", image: cardWestlake, stat: "Median sale: $4.1M", slug: "westlake-hills" },
+  { name: "Barton Creek", image: card78746, stat: "", slug: "barton-creek" },
+  { name: "Rollingwood", image: cardRollingwood, stat: "", slug: "rollingwood" },
+  { name: "Old Enfield", image: cardOldEnfield, stat: "", slug: "old-enfield" },
+  { name: "West Lake Hills", image: cardWestlake, stat: "", slug: "westlake-hills" },
   { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown" },
   { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES", slug: "spanish-oaks" },
 ];
@@ -217,12 +218,13 @@ const HomeCommunitiesScroll = () => {
                 }}
               />
               <div className="hcs-card-content relative z-10 p-10 lg:p-14 max-w-xl">
-                <p
+                <NeighborhoodMedian area={n.slug} />
+                {n.stat && <p
                   className="mb-4 text-xs uppercase tracking-[0.24em] font-sans"
                   style={{ color: "#b9a06c" }}
                 >
                   {n.stat}
-                </p>
+                </p>}
                 <h2 className="font-display text-4xl lg:text-6xl text-white leading-[0.98] mb-5 whitespace-nowrap">
                   {n.name}
                 </h2>
@@ -274,12 +276,13 @@ const HomeCommunitiesScroll = () => {
               }}
             />
             <div className="absolute bottom-0 left-0 right-0 p-8 max-w-xl">
-              <p
+              <NeighborhoodMedian area={n.slug} />
+              {n.stat && <p
                 className="mb-3 text-[0.65rem] uppercase tracking-[0.24em] font-sans"
                 style={{ color: "#b9a06c" }}
               >
                 {n.stat}
-              </p>
+              </p>}
               <h2 className="font-display text-3xl text-white leading-[1] whitespace-nowrap">
                 {n.name}
               </h2>

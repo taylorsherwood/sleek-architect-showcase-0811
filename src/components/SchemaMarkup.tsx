@@ -44,7 +44,7 @@ const address = {
 
 const areasServed = [
   { "@type": "City" as const, "name": "Austin", "containedInPlace": { "@type": "State" as const, "name": "Texas" } },
-  { "@type": "Place" as const, "name": "West lake Hills, Texas" },
+  { "@type": "Place" as const, "name": "West Lake Hills, Texas" },
   { "@type": "Place" as const, "name": "Tarrytown, Austin" },
   { "@type": "Place" as const, "name": "Spanish Oaks, Austin" },
   { "@type": "Place" as const, "name": "Barton Creek, Austin" },

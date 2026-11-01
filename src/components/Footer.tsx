@@ -105,7 +105,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                 {[
                   { to: "/communities/barton-creek", label: "Barton Creek" },
                   { to: "/communities/lake-austin", label: "Lake Austin" },
-                  { to: "/communities/westlake-hills", label: "West lake Hills" },
+                  { to: "/communities/westlake-hills", label: "West Lake Hills" },
                   { to: "/communities/tarrytown", label: "Tarrytown" },
                   { to: "/communities/rollingwood", label: "Rollingwood" },
                   { to: "/communities/spanish-oaks", label: "Spanish Oaks" },

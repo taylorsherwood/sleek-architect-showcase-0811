@@ -868,15 +868,6 @@ const TestimonialsSection = () => {
    SECTION 6, COMMUNITIES
    ───────────────────────────────────────────── */
 
-const communities = [
-  { name: "Barton Creek", eyebrow: "MEDIAN SALE: $3.2M", image: "/static-assets/community-barton-creek.webp", slug: "barton-creek" },
-  { name: "Lake Austin", eyebrow: "WATERFRONT ESTATES FROM $3.5M", image: "/static-assets/community-lake-austin.webp", slug: "lake-austin" },
-  { name: "Rollingwood", eyebrow: "MEDIAN SALE: $1.8M", image: "/static-assets/community-rollingwood.webp", slug: "rollingwood" },
-  { name: "Spanish Oaks", eyebrow: "GATED ESTATES FROM $2.5M", image: "/static-assets/community-spanish-oaks.webp", slug: "spanish-oaks" },
-  { name: "Tarrytown", eyebrow: "OLD AUSTIN, CENTRAL", image: "/static-assets/community-tarrytown.webp", slug: "tarrytown" },
-  { name: "West lake Hills", eyebrow: "EANES ISD, FROM $1.8M", image: "/static-assets/community-westlake-hills.webp", slug: "westlake-hills" },
-];
-
 const CommunitiesSection = () => {
   const headerRef = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState(false);
@@ -1347,7 +1338,7 @@ const FinalCTA = () => (
 
 const editorialArticles = [
   {
-    title: "Rollingwood vs West lake Hills",
+    title: "Rollingwood vs West Lake Hills",
     description: "How two of Austin's most prestigious neighborhoods compare for luxury buyers.",
     image: blogRollingwoodVsWestlake,
     href: "/blog/rollingwood-vs-westlake-hills",
@@ -1563,7 +1554,7 @@ const NoscriptFallback = () => (
         <h2 className="text-3xl font-light mb-6">Austin Luxury Real Estate Services</h2>
         <p className="mb-4">Echelon Property Group provides strategic luxury real estate advisory across Austin, Texas.</p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>Luxury residential sales in West lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
+          <li>Luxury residential sales in West Lake Hills, Barton Creek, Lake Austin, Tarrytown, and Rollingwood</li>
           <li>Off-market and private listing opportunities</li>
           <li>Commercial real estate and multifamily investment</li>
           <li>Land acquisition and development advisory</li>

@@ -1,3 +1,4 @@
+import { formatNeighborhoodMedian, neighborhoodPriceSummary } from "./neighborhoodStats";
 import travisHeightsImg from "@/assets/community-travis-heights.jpg";
 import lakeAustinImg from "@/assets/community-lake-austin.jpg";
 import tarrytownImg from "@/assets/community-tarrytown.jpg";
@@ -58,14 +59,14 @@ export interface CommunityData {
 export const communityPages: CommunityData[] = [
   {
     slug: "westlake-hills",
-    name: "West lake Hills",
-    heroTitle: "Homes for Sale in West lake Hills",
-    metaTitle: "West lake Hills Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in West lake Hills Austin. Stunning Hill Country views, top Eanes ISD schools, and estates from $1.2M to $20M+.",
-    priceRange: "$1.2M – $20M+",
+    name: "West Lake Hills",
+    heroTitle: "Homes for Sale in West Lake Hills",
+    metaTitle: "West Lake Hills Homes for Sale | Echelon Property Group",
+    metaDescription: "Explore luxury homes for sale in West Lake Hills Austin. Stunning Hill Country views, top Eanes ISD schools.2M to $20M+.",
+    priceRange: formatNeighborhoodMedian("westlake-hills"),
     image: westlakeHillsImg,
     heroImage: westlakeHillsHeroImg,
-    overview: `West lake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
+    overview: `West Lake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
 
 ### Location & Setting
 
@@ -73,7 +74,7 @@ This incorporated city offers rolling terrain, mature live oaks, and panoramic h
 
 ### Architecture & Homes
 
-Homes range from elegant mid-century estates on generous lots to contemporary masterpieces featuring walls of glass, infinity-edge pools, and seamless indoor-outdoor living. Prices span from $1.2 million to over $20 million.
+Homes range from elegant mid-century estates on generous lots to contemporary masterpieces featuring walls of glass, infinity-edge pools, and seamless indoor-outdoor living.
 
 ### Schools & Exclusivity
 
@@ -88,7 +89,7 @@ Residents enjoy world-class hiking and biking at the Barton Creek Greenbelt and 
 
 ### Country Club Living
 
-The West lake Hills Country Club provides golf, tennis, swimming, and fine dining in an intimate setting.
+The West Lake Hills Country Club provides golf, tennis, swimming, and fine dining in an intimate setting.
 
 ### Dining & Culture
 
@@ -96,14 +97,14 @@ Upscale dining and boutique shops line Bee Caves Road and the Hill Country Galle
 
 ### Community Character
 
-West lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
+West Lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
     marketInsights: `### Pricing & Demand
 
-Median home prices consistently exceed $1.5 million. Luxury estates regularly trade above $5 million. The market is characterized by low inventory and high demand.
+${neighborhoodPriceSummary("westlake-hills")} Luxury estates regularly trade above $5 million. The market is characterized by low inventory and high demand.
 
 ### Appreciation Trends
 
-Over the past decade, West lake Hills property values have outpaced many other Austin-area neighborhoods. New construction often exceeds $500 per square foot.
+Over the past decade, West Lake Hills property values have outpaced many other Austin-area neighborhoods. New construction often exceeds $500 per square foot.
 
 ### Buyer Profile
 
@@ -115,7 +116,7 @@ The buyer profile includes:
 
 ### Rental Market
 
-Luxury rentals command $8,000 to $25,000 per month, making West lake Hills attractive for investors targeting high-net-worth tenants.`,
+Luxury rentals command $8,000 to $25,000 per month, making West Lake Hills attractive for investors targeting high-net-worth tenants.`,
     amenitiesAndSchools: `### Eanes ISD Schools
 
 Key schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, a perennial state powerhouse that consistently earns National Blue Ribbon recognition.
@@ -140,11 +141,11 @@ Outdoor highlights include:
 - Zilker Park and Barton Springs Pool`,
     investmentPotential: `### Long-Term Appreciation
 
-West lake Hills has historically outperformed the broader Austin market during growth periods and demonstrated greater resilience during downturns.
+West Lake Hills has historically outperformed the broader Austin market during growth periods and demonstrated greater resilience during downturns.
 
 ### Tech Economy Driver
 
-The expansion of Apple, Google, Tesla, Oracle, and Meta continues to drive high-income relocations. West lake Hills is a primary beneficiary of this trend.
+The expansion of Apple, Google, Tesla, Oracle, and Meta continues to drive high-income relocations. West Lake Hills is a primary beneficiary of this trend.
 
 ### Investment Strategies
 
@@ -155,29 +156,29 @@ Opportunities include:
 - Properties with waterfront access, panoramic views, or guest houses
 
 The area's strict development standards ensure that quality investments are protected by overall neighborhood character.`,
-    echelonPerspective: `West lake Hills remains one of the most consistent luxury markets in Austin, Texas. Buyers are drawn to the combination of Eanes ISD schools, hilltop privacy, and a 10-minute commute to downtown. The housing stock ranges from refined mid-century estates on half-acre lots to contemporary builds exceeding $500 per square foot. Typical buyers include tech executives relocating from the Bay Area, established Austin families upgrading within the Eanes district, and investors drawn to the area's steady 7–10% annual appreciation. For those considering alternatives, [Barton Creek](/communities/barton-creek) offers country club living with gated security, while [Tarrytown](/communities/tarrytown) provides a more walkable, urban-adjacent lifestyle at a lower entry price. West lake Hills continues to command a premium for its blend of serenity, access, and school quality.`,
-    communityComparison: `### West lake Hills vs Barton Creek
+    echelonPerspective: `West Lake Hills remains one of the most consistent luxury markets in Austin, Texas. Buyers are drawn to the combination of Eanes ISD schools, hilltop privacy, and a 10-minute commute to downtown. The housing stock ranges from refined mid-century estates on half-acre lots to contemporary builds exceeding $500 per square foot. Typical buyers include tech executives relocating from the Bay Area, established Austin families upgrading within the Eanes district, and investors drawn to the area's steady 7–10% annual appreciation. For those considering alternatives, [Barton Creek](/communities/barton-creek) offers country club living with gated security, while [Tarrytown](/communities/tarrytown) provides a more walkable, urban-adjacent lifestyle at a lower entry price. West Lake Hills continues to command a premium for its blend of serenity, access, and school quality.`,
+    communityComparison: `### West Lake Hills vs Barton Creek
 
-[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience, gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. West lake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy. Barton Creek homes tend to start higher, while West lake Hills offers a broader range from $1.2M renovations to $20M+ new construction.
+[Barton Creek](/communities/barton-creek) shares Eanes ISD zoning and a Hill Country setting, but offers a fundamentally different experience, gated country club living with four championship golf courses, 24/7 security, and a resort-caliber amenity set. West Lake Hills, by contrast, is an independent incorporated city with more architectural diversity, no HOA gates, and a stronger sense of neighborhood autonomy.
 
-### West lake Hills vs Tarrytown
+### West Lake Hills vs Tarrytown
 
-[Tarrytown](/communities/tarrytown) is Austin's most walkable luxury neighborhood, offering tree-canopied streets, Deep Eddy Pool, and an urban village feel. West lake Hills trades that walkability for Hill Country views, larger lots, and Eanes ISD (versus Austin ISD for Tarrytown). Buyers who prioritize proximity to restaurants and Lady Bird Lake often prefer Tarrytown; those seeking panoramic views and top-ranked public schools gravitate toward Westlake.
+[Tarrytown](/communities/tarrytown) is Austin's most walkable luxury neighborhood, offering tree-canopied streets, Deep Eddy Pool, and an urban village feel. West Lake Hills trades that walkability for Hill Country views, larger lots, and Eanes ISD (versus Austin ISD for Tarrytown). Buyers who prioritize proximity to restaurants and Lady Bird Lake often prefer Tarrytown; those seeking panoramic views and top-ranked public schools gravitate toward Westlake.
 
-### West lake Hills vs Pemberton Heights
+### West Lake Hills vs Pemberton Heights
 
-[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake, one of the most prestigious addresses in central Austin. West lake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
+[Pemberton Heights](/communities/pemberton-heights) offers distinguished estates on generous lots just north of Lady Bird Lake, one of the most prestigious addresses in central Austin. West Lake Hills provides a more suburban Hill Country setting with Eanes ISD, while Pemberton Heights sits in Austin ISD with a shorter walk to downtown dining and culture.`,
     relatedCommunities: ["barton-creek", "lake-austin", "rollingwood", "tarrytown"],
     faqs: [
-      { question: "What school district serves West lake Hills?", answer: "West lake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
-      { question: "What is the average home price in West lake Hills Austin?", answer: "Home prices in West lake Hills range from $1.2 million to over $20 million. The median home price exceeds $1.5 million, with luxury estates regularly trading above $5 million. New construction often exceeds $500 per square foot." },
-      { question: "How far is West lake Hills from downtown Austin?", answer: "West lake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
-      { question: "Is West lake Hills a good place to buy a luxury home in Austin?", answer: "Yes. West lake Hills consistently ranks among Austin's most desirable luxury communities thanks to Eanes ISD schools, hilltop views, architectural diversity, and proximity to downtown. The area attracts tech executives, established families, and discerning buyers seeking privacy with urban convenience." },
-      { question: "How does West lake Hills compare to nearby neighborhoods?", answer: "West lake Hills offers a Hill Country setting with Eanes ISD and larger lots compared to walkable Tarrytown (Austin ISD) or gated Barton Creek (country club living). Rob Roy provides a more exclusive gated enclave nearby, while Rollingwood offers similar school zoning in a smaller, more intimate community." },
-      { question: "What types of homes are common in West lake Hills?", answer: "West lake Hills features mid-century estates on generous lots, contemporary builds with walls of glass and infinity pools, and traditional limestone residences. Many homes showcase indoor-outdoor living with Hill Country views. Teardown-rebuild activity is common on premium parcels." },
-      { question: "Who typically buys in West lake Hills?", answer: "Typical buyers include tech executives relocating from the Bay Area and other major metros, established Austin families upgrading within Eanes ISD, and investors seeking strong long-term appreciation in a supply-constrained market." },
-      { question: "Are there waterfront homes in West lake Hills?", answer: "While West lake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
-      { question: "What outdoor activities are near West lake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
+      { question: "What school district serves West Lake Hills?", answer: "West Lake Hills is served by the Eanes Independent School District, consistently ranked among the top districts in Texas. Schools include Bridge Point Elementary, Hill Country Middle School, and Westlake High School, which earns National Blue Ribbon recognition." },
+      { question: "What is the average home price in West Lake Hills Austin?", answer: neighborhoodPriceSummary("westlake-hills") },
+      { question: "How far is West Lake Hills from downtown Austin?", answer: "West Lake Hills is approximately 10 to 15 minutes from downtown Austin via Loop 360 or MoPac Expressway, offering a retreat-like atmosphere with quick urban access." },
+      { question: "Is West Lake Hills a good place to buy a luxury home in Austin?", answer: "Yes. West Lake Hills consistently ranks among Austin's most desirable luxury communities thanks to Eanes ISD schools, hilltop views, architectural diversity, and proximity to downtown. The area attracts tech executives, established families, and discerning buyers seeking privacy with urban convenience." },
+      { question: "How does West Lake Hills compare to nearby neighborhoods?", answer: "West Lake Hills offers a Hill Country setting with Eanes ISD and larger lots compared to walkable Tarrytown (Austin ISD) or gated Barton Creek (country club living). Rob Roy provides a more exclusive gated enclave nearby, while Rollingwood offers similar school zoning in a smaller, more intimate community." },
+      { question: "What types of homes are common in West Lake Hills?", answer: "West Lake Hills features mid-century estates on generous lots, contemporary builds with walls of glass and infinity pools, and traditional limestone residences. Many homes showcase indoor-outdoor living with Hill Country views. Teardown-rebuild activity is common on premium parcels." },
+      { question: "Who typically buys in West Lake Hills?", answer: "Typical buyers include tech executives relocating from the Bay Area and other major metros, established Austin families upgrading within Eanes ISD, and investors seeking strong long-term appreciation in a supply-constrained market." },
+      { question: "Are there waterfront homes in West Lake Hills?", answer: "While West Lake Hills itself is a hilltop community, many homes are just minutes from Lake Austin waterfront access. Some properties on the western edge offer lake views, and nearby marinas provide boating access." },
+      { question: "What outdoor activities are near West Lake Hills?", answer: "Residents enjoy the Barton Creek Greenbelt, Wild Basin Wilderness Preserve, Lake Austin boating, and numerous hiking and biking trails. The area also offers country club golf, tennis, and swimming." }
     ]
   },
   {
@@ -185,8 +186,8 @@ The area's strict development standards ensure that quality investments are prot
     name: "Barton Creek, Lost Creek & Amarra",
     heroTitle: "Homes for Sale in Barton Creek, Lost Creek & Amarra",
     metaTitle: "Barton Creek Homes for Sale | Echelon Property Group",
-    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living, and homes from $1.5M to $15M+ in this premier community.",
-    priceRange: "$1.5M – $15M+",
+    metaDescription: "Discover luxury estates in Barton Creek, Lost Creek & Amarra Austin. World-class golf, gated country club living.5M to $15M+ in this premier community.",
+    priceRange: formatNeighborhoodMedian("barton-creek"),
     image: bartonCreekCommunityImg,
     heroImage: bartonCreekHeroImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community. Spanning thousands of acres along the scenic Barton Creek corridor, this gated community rivals the most exclusive neighborhoods in the country.
@@ -222,7 +223,7 @@ Despite its secluded feel, Barton Creek is just 15 to 20 minutes from downtown A
 Wine dinners, holiday celebrations, and social events at the country club foster a vibrant community spirit.`,
     marketInsights: `### Pricing
 
-Median home prices exceed $2 million. Estate properties regularly trade between $3 million and $15 million or more.
+
 
 ### Market Characteristics
 
@@ -271,10 +272,10 @@ The community is approaching build-out. The shrinking supply of available homesi
 ### Stable Demand
 
 The combination of country club amenities, top schools, and proximity to Austin's tech economy ensures ongoing demand from high-net-worth buyers. Properties in Barton Creek have demonstrated consistent value growth, even during periods of broader market softening.`,
-    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare, making resale values particularly resilient. For those who prefer a non-gated setting, [West lake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
-    communityComparison: `### Barton Creek vs West lake Hills
+    echelonPerspective: `Barton Creek represents the gold standard of gated luxury living in Austin, Texas. Four championship golf courses, 24/7 security, and Eanes ISD schools create a resort-caliber experience that few communities nationwide can match. The housing stock spans Spanish Colonial estates on golf course fairways to sleek contemporary builds backing the Barton Creek Greenbelt. Buyers tend to be corporate executives, entrepreneurs, and high-net-worth families who value privacy, country club membership, and walkable greenbelt access. With the community approaching build-out, remaining homesites are increasingly rare, making resale values particularly resilient. For those who prefer a non-gated setting, [West Lake Hills](/communities/westlake-hills) provides a similar school district and Hill Country character without country club HOA commitments. [Rob Roy](/communities/rob-roy) offers a smaller, more intimate gated experience nearby.`,
+    communityComparison: `### Barton Creek vs West Lake Hills
 
-[West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a scenic Hill Country setting, but diverges in character. Barton Creek is a gated, amenity-rich master-planned community with country club membership options, while West lake Hills is an independent city offering more architectural freedom and no gated entry. Barton Creek's entry point is higher, but its resort-caliber amenities and security infrastructure appeal to buyers who want a self-contained luxury lifestyle.
+[West Lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a scenic Hill Country setting, but diverges in character. Barton Creek is a gated, amenity-rich master-planned community with country club membership options, while West Lake Hills is an independent city offering more architectural freedom and no gated entry. Barton Creek's entry point is higher, but its resort-caliber amenities and security infrastructure appeal to buyers who want a self-contained luxury lifestyle.
 
 ### Barton Creek vs Rob Roy
 
@@ -287,9 +288,9 @@ The combination of country club amenities, top schools, and proximity to Austin'
     faqs: [
       { question: "Is Barton Creek a gated community?", answer: "Yes. Barton Creek is a gated, master-planned community with 24/7 security staffing. The gated entrance provides privacy and exclusivity for residents while maintaining convenient access to Austin via Loop 360 and MoPac." },
       { question: "How many golf courses are in Barton Creek?", answer: "Barton Creek features four championship golf courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer, all accessible through the Barton Creek Country Club. Membership provides access to golf, tennis, swimming, dining, and spa facilities." },
-      { question: "What are home prices in Barton Creek Austin?", answer: "Homes in Barton Creek range from $1.5 million to over $15 million. The median home price exceeds $2 million, with estate properties on golf course lots or with greenbelt views commanding the highest premiums." },
+      { question: "What are home prices in Barton Creek Austin?", answer: neighborhoodPriceSummary("barton-creek") },
       { question: "Is Barton Creek a good place to buy a luxury home in Austin?", answer: "Barton Creek is widely regarded as one of Austin's premier luxury addresses. Gated security, championship golf, Eanes ISD schools, and a supply-constrained market create exceptional long-term value and lifestyle quality for discerning buyers." },
-      { question: "How does Barton Creek compare to nearby neighborhoods?", answer: "Barton Creek offers gated country club living with four golf courses and resort amenities. West lake Hills provides a similar school district without gates. Rob Roy offers a smaller gated enclave with more panoramic views. Pemberton Heights trades seclusion for central Austin walkability." },
+      { question: "How does Barton Creek compare to nearby neighborhoods?", answer: "Barton Creek offers gated country club living with four golf courses and resort amenities. West Lake Hills provides a similar school district without gates. Rob Roy offers a smaller gated enclave with more panoramic views. Pemberton Heights trades seclusion for central Austin walkability." },
       { question: "What types of homes are common in Barton Creek?", answer: "Barton Creek features Spanish Colonial estates, Mediterranean villas, contemporary glass-and-stone builds, and traditional Hill Country residences. Many homes sit on golf course fairways or back to the Barton Creek Greenbelt with private trail access." },
       { question: "Who typically buys in Barton Creek?", answer: "Typical buyers include corporate executives, entrepreneurs, and high-net-worth families seeking privacy, country club amenities, and top-tier schools. Many are relocating from major metros and are drawn to the gated, resort-caliber lifestyle." },
       { question: "What school district is Barton Creek in?", answer: "Barton Creek is served by the Eanes Independent School District, including Barton Creek Elementary, Hill Country Middle School, and Westlake High School, all consistently ranked among the top schools in Texas." },
@@ -302,8 +303,8 @@ The combination of country club amenities, top schools, and proximity to Austin'
     name: "Tarrytown",
     heroTitle: "Homes for Sale in Tarrytown",
     metaTitle: "Tarrytown Austin Homes for Sale | Echelon Property Group",
-    metaDescription: "Find luxury homes for sale in Tarrytown Austin. Tree-lined streets, walkable to downtown, and classic Austin charm from $800K to $8M+.",
-    priceRange: "$800K – $8M+",
+    metaDescription: "Find luxury homes for sale in Tarrytown Austin. Tree-lined streets, walkable to downtown, and classic Austin charm.",
+    priceRange: formatNeighborhoodMedian("tarrytown"),
     image: tarrytownImg,
     overview: `Tarrytown is one of Austin's most beloved neighborhoods, situated on bluffs between downtown and Lake Austin. Known for tree-canopied streets and walkable charm, it has been a preferred address since the 1930s.
 
@@ -338,7 +339,7 @@ Local favorites include Tacodeli, Tarrytown Pharmacy, and shops along Exposition
 Block parties, neighborhood association activities, and multigenerational families create a strong social fabric. Many Tarrytown families have lived here for generations.`,
     marketInsights: `### Pricing
 
-Median home prices exceed $1.5 million. Premium properties on larger lots or near the lake trade well above $5 million.
+Premium properties on larger lots or near the lake trade well above $5 million.
 
 ### Renovation & Teardown Market
 
@@ -383,10 +384,10 @@ Acquiring original homes on large lots (7,000+ sq ft) and building new can gener
 ### Growth Tailwinds
 
 As Austin's tech economy expands, demand for walkable, centrally located neighborhoods like Tarrytown continues to intensify. Proximity to downtown, the university, and major employment centers ensures broad buyer demand.`,
-    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse, young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [West lake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
-    communityComparison: `### Tarrytown vs West lake Hills
+    echelonPerspective: `Tarrytown is Austin's quintessential walkable luxury neighborhood, where tree-canopied streets, historic character, and a 5-minute downtown commute create a lifestyle that is genuinely difficult to replicate elsewhere in the city. The buyer profile here is diverse, young families drawn to Casis Elementary, professionals who want to walk to work downtown, and long-time Austinites upgrading within the 78703 zip code. Housing ranges from original 1930s bungalows on quarter-acre lots to contemporary new construction exceeding $700 per square foot. The teardown-rebuild cycle is particularly active here, as lot values in prime Casis zones regularly exceed $1 million. For buyers weighing alternatives, [West Lake Hills](/communities/westlake-hills) offers Eanes ISD and Hill Country views, while [Pemberton Heights](/communities/pemberton-heights) provides similarly distinguished central Austin living with even larger lots.`,
+    communityComparison: `### Tarrytown vs West Lake Hills
 
-[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views, but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
+[West Lake Hills](/communities/westlake-hills) offers Eanes ISD schools (consistently ranked above Austin ISD), larger lots, and panoramic Hill Country views, but trades away Tarrytown's walkability, urban village feel, and proximity to Lady Bird Lake. Tarrytown buyers typically prioritize a pedestrian-friendly lifestyle with walkable dining and recreation, while Westlake buyers seek hilltop privacy and top-tier school ratings.
 
 ### Tarrytown vs Pemberton Heights
 
@@ -399,11 +400,11 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
     faqs: [
       { question: "What makes Tarrytown Austin a desirable neighborhood?", answer: "Tarrytown offers a rare combination of central location (minutes from downtown), tree-canopied walkable streets, excellent schools (Casis Elementary), proximity to Lady Bird Lake and Deep Eddy Pool, and eclectic architectural character spanning 1930s bungalows to contemporary estates." },
       { question: "Is Tarrytown a good place to buy a luxury home in Austin?", answer: "Yes. Tarrytown is one of Austin's most established luxury neighborhoods, prized for walkability, mature tree canopy, and the coveted Casis Elementary zone. Properties here have demonstrated strong appreciation driven by limited lot supply and intense buyer demand in the 78703 zip code." },
-      { question: "How does Tarrytown compare to nearby neighborhoods?", answer: "Tarrytown offers walkable urban luxury that West lake Hills and Barton Creek cannot match. Pemberton Heights provides similar central positioning with larger estate lots. Clarksville is more compact and boutique-oriented. Each neighborhood serves a distinct buyer profile while sharing Austin's west-side desirability." },
+      { question: "How does Tarrytown compare to nearby neighborhoods?", answer: "Tarrytown offers walkable urban luxury that West Lake Hills and Barton Creek cannot match. Pemberton Heights provides similar central positioning with larger estate lots. Clarksville is more compact and boutique-oriented. Each neighborhood serves a distinct buyer profile while sharing Austin's west-side desirability." },
       { question: "What types of homes are common in Tarrytown?", answer: "Tarrytown features original 1930s-1960s bungalows, mid-century ranch homes, thoughtfully renovated period properties, and contemporary new construction. The teardown-rebuild market is active, with new builds achieving $600 to $800 per square foot." },
       { question: "Who typically buys in Tarrytown?", answer: "Typical buyers include young families seeking Casis Elementary, downtown professionals wanting walkable commutes, and established Austinites upgrading within the 78703 zip code. The neighborhood also attracts relocating buyers from California and the Northeast drawn to its village-like character." },
       { question: "What school zone is Tarrytown Austin in?", answer: "Tarrytown is served by Austin ISD, with homes primarily zoned to Casis Elementary School (one of the highest-performing in the district), O. Henry Middle School, and Austin High School. St. Andrew's Episcopal School, a top private school, is also located within the neighborhood." },
-      { question: "What are home prices in Tarrytown Austin?", answer: "Tarrytown home prices range from $800,000 to over $8 million. The median exceeds $1.5 million. Properties within the Casis Elementary zone command a 10-15% premium. New construction achieves $600 to $800 per square foot." },
+      { question: "What are home prices in Tarrytown Austin?", answer: neighborhoodPriceSummary("tarrytown") },
       { question: "Can you walk to restaurants from Tarrytown?", answer: "Yes. Tarrytown offers walkable access to local favorites along Exposition Boulevard including Tacodeli and Tarrytown Pharmacy. South Congress Avenue and downtown Austin's restaurant scene are just minutes away by car." },
       { question: "Are there teardown opportunities in Tarrytown?", answer: "Yes. The teardown-rebuild market is active in Tarrytown, with original 1930s-1960s homes on desirable lots frequently purchased for renovation or new construction. Lot values alone can exceed $1 million in prime locations." }
     ]
@@ -413,10 +414,10 @@ As Austin's tech economy expands, demand for walkable, centrally located neighbo
     name: "Rollingwood",
     heroTitle: "Homes for Sale in Rollingwood",
     metaTitle: "Rollingwood Homes for Sale | Echelon Property Group",
-    metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools and homes from $1M to $5M+.",
-    priceRange: "$1M – $5M+",
+    metaDescription: "Discover homes for sale in Rollingwood Austin. Charming enclave near Zilker Park with top Eanes ISD schools.",
+    priceRange: formatNeighborhoodMedian("rollingwood"),
     image: rollingwoodImg,
-    overview: `Rollingwood is a small incorporated city nestled between Zilker Park and West lake Hills. With just over 1,500 residents, it offers small-town intimacy with immediate access to Austin's best amenities.
+    overview: `Rollingwood is a small incorporated city nestled between Zilker Park and West Lake Hills. With just over 1,500 residents, it offers small-town intimacy with immediate access to Austin's best amenities.
 
 ### Housing Stock
 
@@ -448,11 +449,11 @@ South Lamar Boulevard, just minutes away, features acclaimed restaurants, brewer
 The Rollingwood Women's Club, community pool, and neighborhood parks serve as gathering places. The annual Fourth of July celebration draws the entire community.`,
     marketInsights: `### Pricing
 
-Median home prices now exceed $1.5 million. New construction and renovated homes regularly trade above $2.5 million.
+New construction and renovated homes regularly trade above $2.5 million.
 
 ### Teardown-Rebuild Market
 
-Original 1950s–1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction, typically priced between $2 million and $5 million.
+
 
 ### Inventory & Demand
 
@@ -485,7 +486,7 @@ High-quality tenants, often executives on temporary assignments or families expl
     faqs: [
       { question: "Is Rollingwood in Eanes ISD?", answer: "Yes. Rollingwood is served by the Eanes Independent School District, with children typically attending Eanes Elementary, Hill Country Middle School, and Westlake High School, all among the top-ranked schools in Texas." },
       { question: "How big is Rollingwood Austin?", answer: "Rollingwood is a small incorporated city of less than one square mile with approximately 1,500 residents. Its compact size creates a walkable, close-knit community with a strong neighborhood identity." },
-      { question: "What are home prices in Rollingwood?", answer: "Homes in Rollingwood range from $1 million to over $5 million. Median home prices exceed $1.5 million, with new construction and renovated homes regularly trading above $2.5 million. The teardown-rebuild market is active." },
+      { question: "What are home prices in Rollingwood?", answer: neighborhoodPriceSummary("rollingwood") },
       { question: "Is Rollingwood near Zilker Park?", answer: "Yes. Rollingwood is directly adjacent to Zilker Park, providing residents with walkable access to 350 acres of recreation including Barton Springs Pool, Zilker Botanical Garden, sports fields, and the Barton Creek Greenbelt." },
       { question: "Why are people moving to Rollingwood?", answer: "Buyers are attracted to Rollingwood's combination of Eanes ISD schools, Zilker Park proximity, small-town community atmosphere, generous lot sizes, and quick access to both downtown Austin and the Hill Country. It's often called the 'best of both worlds.'" },
       { question: "Can you build a new home in Rollingwood?", answer: "Yes. The teardown-rebuild market is robust in Rollingwood. Original 1950s-1960s homes on generous lots (many exceeding 10,000 sq ft) are frequently purchased for custom new construction, typically priced between $2 million and $5 million." }
@@ -496,8 +497,8 @@ High-quality tenants, often executives on temporary assignments or families expl
     name: "Travis Heights",
     heroTitle: "Homes for Sale in Travis Heights",
     metaTitle: "Travis Heights Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Travis Heights Austin. Iconic South Austin neighborhood with walkability to SoCo, eclectic charm, and homes from $600K to $4M+.",
-    priceRange: "$600K – $4M+",
+    metaDescription: "Browse homes for sale in Travis Heights Austin. Iconic South Austin neighborhood with walkability to SoCo, eclectic charm.",
+    priceRange: formatNeighborhoodMedian("travis-heights"),
     image: travisHeightsImg,
     overview: `Travis Heights is one of Austin's most iconic neighborhoods. Perched on wooded bluffs south of Lady Bird Lake, it offers sweeping downtown skyline views and vibrant community spirit.
 
@@ -524,7 +525,7 @@ Some of Austin's best restaurants, boutiques, coffee shops, and live music venue
 The Travis Heights Art Trail opens private homes and studios each spring. Block parties and community clean-up days reinforce the neighborhood's reputation as one of Austin's most engaged communities.`,
     marketInsights: `### Pricing
 
-Median home prices exceed $1 million. Premium properties, especially those with downtown views or larger lots, trade well above $2 million.
+Premium properties, especially those with downtown views or larger lots, trade well above $2 million.
 
 ### New vs. Vintage
 
@@ -572,7 +573,7 @@ The proximity to downtown and South Congress makes properties attractive for:
     faqs: [
       { question: "What is Travis Heights Austin known for?", answer: "Travis Heights is known for its eclectic architectural character, sweeping downtown skyline views, proximity to South Congress Avenue, creative community spirit, and historic charm. It's one of Austin's most iconic and sought-after neighborhoods." },
       { question: "Can you walk to South Congress from Travis Heights?", answer: "Yes. Travis Heights borders South Congress Avenue, making many of Austin's best restaurants, boutiques, coffee shops, and live music venues within easy walking or biking distance." },
-      { question: "What are home prices in Travis Heights?", answer: "Travis Heights home prices range from $600,000 to over $4 million. Median prices exceed $1 million, with premium properties featuring downtown views or larger lots trading well above $2 million. New construction commands $500 to $700 per square foot." },
+      { question: "What are home prices in Travis Heights?", answer: neighborhoodPriceSummary("travis-heights") },
       { question: "Is Travis Heights a historic neighborhood?", answer: "Yes. Travis Heights was established in the 1920s-1930s and features a diverse mix of Craftsman bungalows, Spanish Colonial Revival homes, and contemporary new construction. The neighborhood's architectural variety and mature tree canopy reflect its rich history." },
       { question: "What parks are near Travis Heights?", answer: "Travis Heights is near Big Stacy Park (with a spring-fed pool), the Butler Hike-and-Bike Trail along Lady Bird Lake, Red Bud Isle, and Zilker Park. The Ann and Roy Butler Trail provides miles of running, walking, and cycling paths." },
       { question: "Is Travis Heights good for investment?", answer: "Yes. Travis Heights offers strong investment potential driven by its proximity to downtown and South Congress, broad buyer appeal across demographics, and active teardown-rebuild market. Properties have shown 7-10% annual appreciation over the past decade." }
@@ -583,8 +584,8 @@ The proximity to downtown and South Congress makes properties attractive for:
     name: "Downtown Austin",
     heroTitle: "Downtown Austin Homes & Condos for Sale",
     metaTitle: "Downtown Austin Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury homes and condos for sale in downtown Austin TX. High-rise living, townhomes, skyline views, walkable lifestyle, and properties from $400K to $10M+.",
-    priceRange: "$400K – $10M+",
+    metaDescription: "Explore luxury homes and condos for sale in downtown Austin TX. High-rise living, townhomes, skyline views, walkable lifestyle.",
+    priceRange: formatNeighborhoodMedian("downtown"),
     image: downtownImg,
     overview: `Downtown Austin's luxury condo market represents the urban pinnacle of Central Texas living. Over two decades of high-rise development has created a vibrant, walkable urban core.
 
@@ -668,7 +669,7 @@ Units with efficient layouts, desirable views, and premium building amenities ge
     relatedCommunities: ["travis-heights", "tarrytown", "westlake-hills", "lake-austin"],
     faqs: [
       { question: "What are the best condo buildings in downtown Austin?", answer: "Top luxury condo buildings include The Independent (Austin's tallest at 58 stories), The Austonian, Four Seasons Residences, Spring, W Hotel Residences, and 70 Rainey. Each offers distinct amenities, views, and lifestyle experiences." },
-      { question: "How much do downtown Austin condos cost?", answer: "Downtown Austin condos range from approximately $400,000 for one-bedroom units in older buildings to over $10 million for penthouses in premier towers. Price per square foot ranges from $400 to over $1,500 depending on building, floor, and views." },
+      { question: "How much do downtown Austin condos cost?", answer: neighborhoodPriceSummary("downtown") },
       { question: "Are downtown Austin condos a good investment?", answer: "Downtown condos can be strong investments when carefully selected. Well-located units in established buildings with strong HOA management generate 5-7% gross rental yields. Location, amenity quality, and building reputation are key differentiators." },
       { question: "What is the walkability score of downtown Austin?", answer: "Downtown Austin has one of the highest walkability scores in Texas. Residents can walk to restaurants, entertainment venues, Lady Bird Lake trails, groceries, and many employers. The area also offers bike lanes and public transit access." },
       { question: "Can you rent out a downtown Austin condo?", answer: "Most downtown condo buildings allow long-term rentals. Short-term rental regulations in Austin have evolved, so investors should review current city policies and individual building HOA rules before pursuing a vacation rental strategy." },
@@ -680,8 +681,8 @@ Units with efficient layouts, desirable views, and premium building amenities ge
     name: "Dripping Springs",
     heroTitle: "Homes for Sale in Dripping Springs Texas",
     metaTitle: "Dripping Springs Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore homes and estates for sale in Dripping Springs TX. Hill Country charm, wineries, and ranch properties from $500K to $10M+ just west of Austin.",
-    priceRange: "$500K – $10M+",
+    metaDescription: "Explore homes and estates for sale in Dripping Springs TX. Hill Country charm, wineries, and ranch properties.",
+    priceRange: formatNeighborhoodMedian("dripping-springs"),
     image: drippingSpringsImg,
     overview: `Dripping Springs, the "Gateway to the Hill Country", is one of the fastest-growing luxury communities near Austin. Located about 25 miles west along Highway 290, it blends small-town authenticity with modern luxury.
 
@@ -764,7 +765,7 @@ Investors should monitor local regulations regarding short-term rentals, as the 
     relatedCommunities: ["texas-hill-country-estates", "barton-creek", "westlake-hills", "rollingwood"],
     faqs: [
       { question: "How far is Dripping Springs from Austin?", answer: "Dripping Springs is approximately 25 miles (30-45 minutes) west of downtown Austin via Highway 290. Improved road infrastructure and hybrid work arrangements have made the commute increasingly manageable for professionals." },
-      { question: "What are home prices in Dripping Springs Texas?", answer: "Homes in Dripping Springs range from $500,000 to over $10 million. Custom estates on acreage regularly exceed $1.5 million, while master-planned community homes start in the $500,000 to $800,000 range." },
+      { question: "What are home prices in Dripping Springs Texas?", answer: neighborhoodPriceSummary("dripping-springs") },
       { question: "Is Dripping Springs a good school district?", answer: "Yes. Dripping Springs ISD has earned a strong reputation for academic excellence, consistently receiving high ratings from the Texas Education Agency. The district has invested significantly in new facilities and technology to accommodate growth." },
       { question: "What wineries are near Dripping Springs?", answer: "Dripping Springs is the heart of the Texas Wine Trail along Highway 290, featuring over a dozen wineries, distilleries, and breweries. Popular destinations include Duchman Family Winery, Deep Eddy Vodka, and Treaty Oak Distilling." },
       { question: "Why is Dripping Springs growing so fast?", answer: "Dripping Springs is growing due to Austin's westward expansion, improved infrastructure, Hill Country lifestyle appeal, remote work flexibility, expanding commercial amenities, and the area's natural beauty. It consistently ranks among Texas's fastest-growing communities." },
@@ -776,8 +777,8 @@ Investors should monitor local regulations regarding short-term rentals, as the 
     name: "Texas Hill Country",
     heroTitle: "Texas Hill Country Estate Homes for Sale",
     metaTitle: "Hill Country Estates for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury ranch estates and homes in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and views from $1M to $30M+.",
-    priceRange: "$1M – $30M+",
+    metaDescription: "Explore luxury ranch estates and homes in the Texas Hill Country near Austin. Sprawling acreage, vineyard properties, and views.",
+    priceRange: formatNeighborhoodMedian("texas-hill-country-estates"),
     image: hillCountryImg,
     overview: `The Texas Hill Country west of Austin is one of the most extraordinary luxury markets in the American Southwest. Rolling limestone hills, spring-fed creeks, ancient live oaks, and wildflower meadows define the landscape.
 
@@ -861,7 +862,7 @@ Prime acreage near Austin has appreciated 10-15% annually over the past five yea
 Agricultural exemptions can reduce property taxes by 90% or more on qualifying land. Combined with no state income tax, the Hill Country offers compelling investment economics.`,
     relatedCommunities: ["dripping-springs", "barton-creek", "lake-austin", "westlake-hills"],
     faqs: [
-      { question: "How much does a ranch cost in the Texas Hill Country?", answer: "Hill Country ranch properties range from $1 million for smaller boutique estates (10-50 acres) to over $30 million for large working ranches with thousands of acres. Price per acre ranges from $5,000 to $15,000+ for improved land near Austin." },
+      { question: "How much does a ranch cost in the Texas Hill Country?", answer: neighborhoodPriceSummary("texas-hill-country-estates") },
       { question: "Can you run cattle on Hill Country land?", answer: "Yes. Many Hill Country properties support cattle, horses, and other livestock. Agricultural use qualifies for agricultural tax exemptions, significantly reducing property tax liability. Working ranches with existing infrastructure are available across the region." },
       { question: "What is the best area of the Texas Hill Country?", answer: "The most popular areas include the Highway 290 corridor toward Fredericksburg (wine country), the Pedernales and Blanco River valleys, the Marble Falls and Highland Lakes area, and Wimberley. Each offers distinct landscapes and lifestyle experiences." },
       { question: "Is Hill Country land a good investment?", answer: "Yes. Hill Country land has appreciated 10-15% annually over the past five years, driven by Austin's growth, remote work trends, and increasing demand for rural luxury properties. Land banking in the path of development has been consistently profitable." },
@@ -875,7 +876,7 @@ Agricultural exemptions can reduce property taxes by 90% or more on qualifying l
     heroTitle: "Zilker & Barton Hills Real Estate & Homes for Sale in Austin",
     metaTitle: "Zilker & Barton Hills Homes | Echelon Property Group",
     metaDescription: "Explore homes for sale in Zilker & Barton Hills Austin including modern homes, luxury properties, and investment opportunities near Barton Springs and downtown.",
-    priceRange: "$800K – $5M+",
+    priceRange: formatNeighborhoodMedian("zilker-austin"),
     image: zilkerImg,
     overview: `Zilker is one of Austin's most iconic neighborhoods, named after the 351-acre Zilker Metropolitan Park. Located south of Lady Bird Lake and minutes from downtown, it offers an extraordinary combination of urban convenience and outdoor access.
 
@@ -913,7 +914,7 @@ Zilker hosts major events including:
 - Free summer musicals at the Hillside Theater`,
     marketInsights: `### Pricing
 
-Median prices range from $800,000 for smaller bungalows to over $5 million for new-construction luxury homes. New builds frequently exceed $600 per square foot.
+New builds frequently exceed $600 per square foot.
 
 ### Tight Inventory
 
@@ -965,7 +966,7 @@ The built-out neighborhood means supply will remain limited, supporting continue
 The neighborhood's association with Austin's identity, live music, Barton Springs, ACL Festival, adds intangible value that supports long-term pricing.`,
     relatedCommunities: ["barton-creek", "travis-heights", "downtown", "tarrytown"],
     faqs: [
-      { question: "What is the average home price in Zilker Austin?", answer: "Homes in Zilker range from approximately $800,000 for smaller bungalows to over $5 million for new-construction luxury homes. The median home price is approximately $1.2 million, with new builds frequently exceeding $600 per square foot." },
+      { question: "What is the average home price in Zilker Austin?", answer: neighborhoodPriceSummary("zilker-austin") },
       { question: "What school district serves Zilker?", answer: "Zilker is served by Austin Independent School District. Neighborhood schools include Zilker Elementary, O. Henry Middle School, and Austin High School. Several private schools are also located nearby." },
       { question: "How far is Zilker from downtown Austin?", answer: "Zilker is approximately 5 minutes from downtown Austin by car and easily accessible by bike via the Hike-and-Bike Trail. The neighborhood's central location is one of its greatest assets." },
       { question: "What is Barton Springs Pool?", answer: "Barton Springs Pool is a natural, spring-fed swimming pool located in Zilker Park. The pool maintains a year-round temperature of 68°F and is one of Austin's most iconic landmarks, attracting swimmers daily." },
@@ -979,7 +980,7 @@ The neighborhood's association with Austin's identity, live music, Barton Spring
     heroTitle: "Homes for Sale in Spanish Oaks",
     metaTitle: "Spanish Oaks Homes for Sale | Echelon Property Group",
     metaDescription: "Explore homes for sale in Spanish Oaks, one of Austin's most exclusive gated communities featuring luxury estates, golf course homes, and Hill Country views.",
-    priceRange: "$3M – $15M+",
+    priceRange: formatNeighborhoodMedian("spanish-oaks"),
     image: spanishOaksImg,
     overview: `Spanish Oaks is widely considered one of the most prestigious luxury communities in the Austin area. Located just west of downtown in the Texas Hill Country, this private gated enclave offers exceptional custom estates and sweeping views.
 
@@ -1011,7 +1012,7 @@ The nationally recognized private course offers a resort-style experience for me
 Downtown Austin, Lake Travis, and the broader Hill Country are all easily accessible.`,
     marketInsights: `### Pricing
 
-Homes typically range from $3 million to over $15 million, depending on lot size, views, and architectural design.
+
 
 ### Property Features
 
@@ -1053,7 +1054,7 @@ Properties with golf course frontage, exceptional views, or unique architecture 
     faqs: [
       { question: "What is Spanish Oaks in Austin?", answer: "Spanish Oaks is one of the most prestigious gated communities in the Austin area. Located just west of downtown Austin in the Texas Hill Country, the neighborhood is known for luxury estate homes, large private lots, and the exclusive Spanish Oaks Golf Club." },
       { question: "Is Spanish Oaks a gated community?", answer: "Yes. Spanish Oaks is a fully gated community with 24-hour guard-gated security, offering privacy and controlled access for residents and guests." },
-      { question: "How much do homes cost in Spanish Oaks?", answer: "Homes in Spanish Oaks typically range from approximately $3 million to over $15 million, depending on lot size, views, and architectural design. Many homes are custom-built luxury estates." },
+      { question: "How much do homes cost in Spanish Oaks?", answer: neighborhoodPriceSummary("spanish-oaks") },
       { question: "What amenities are in Spanish Oaks?", answer: "Amenities in Spanish Oaks include the Spanish Oaks Golf Club, a community pool pavilion, a private fish camp on Barton Creek, hiking and nature trails, and parks and playgrounds. The community is designed to provide a quiet Hill Country lifestyle while still being close to Austin." },
       { question: "What school district serves Spanish Oaks?", answer: "Spanish Oaks is served by the Lake Travis Independent School District, one of the top-performing school districts in the Austin area. Nearby schools include Lake Pointe Elementary School, Bee Cave Middle School, and Lake Travis High School." },
       { question: "How far is Spanish Oaks from downtown Austin?", answer: "Spanish Oaks is located approximately 20 minutes from downtown Austin, depending on traffic, offering residents convenient access to the city while maintaining a private Hill Country setting." },
@@ -1066,7 +1067,7 @@ Properties with golf course frontage, exceptional views, or unique architecture 
     heroTitle: "Homes for Sale in Cat Mountain & Northwest Hills",
     metaTitle: "Cat Mountain Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Discover Cat Mountain homes for sale in Austin. Elevated hillside estates with canyon views, mature oaks, and quick access to downtown and the Domain.",
-    priceRange: "$900K – $4M+",
+    priceRange: formatNeighborhoodMedian("cat-mountain"),
     image: catMountainImg,
     overview: `Cat Mountain and Northwest Hills are two of Austin's most established hillside neighborhoods. Known for sweeping canyon views, mature oak trees, and peaceful residential character, they offer natural beauty with central convenience.
 
@@ -1098,7 +1099,7 @@ Local favorites include Russell's Bakery, Chez Zee American Bistro, and Biderman
 Downtown Austin and major tech employers are just 15–20 minutes away.`,
     marketInsights: `### Pricing
 
-Homes range from approximately $900,000 to over $4 million, depending on lot size, views, and renovations.
+
 
 ### Strong Demand
 
@@ -1141,7 +1142,7 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
     faqs: [
       { question: "Where are Cat Mountain and Northwest Hills located?", answer: "Cat Mountain and Northwest Hills are established hillside neighborhoods located in northwest Austin, just a short drive from downtown Austin and The Domain." },
       { question: "What are Cat Mountain and Northwest Hills known for?", answer: "These neighborhoods are known for elevated homes with canyon views, quiet residential streets, mature oak trees and natural landscapes, and proximity to downtown Austin. Many homes sit on hillsides overlooking greenbelts and the surrounding Texas Hill Country." },
-      { question: "How much do homes cost in Northwest Hills?", answer: "Homes in Northwest Hills and Cat Mountain generally range from approximately $900,000 to over $4 million, depending on lot size, views, and renovations." },
+      { question: "How much do homes cost in Northwest Hills?", answer: neighborhoodPriceSummary("cat-mountain") },
       { question: "Are Cat Mountain homes on hillsides?", answer: "Yes. Many homes in Cat Mountain are built on elevated lots, offering panoramic canyon views and dramatic hillside architecture." },
       { question: "What schools serve Northwest Hills?", answer: "Northwest Hills is served by Austin Independent School District (AISD). Nearby schools include Doss Elementary School, Murchison Middle School, and Anderson High School." },
       { question: "How far is Northwest Hills from downtown Austin?", answer: "Northwest Hills is typically 15–20 minutes from downtown Austin, depending on traffic." },
@@ -1154,7 +1155,7 @@ Proximity to Apple, Google, Meta, and other major employers makes these neighbor
     heroTitle: "Homes for Sale in Northwest Hills",
     metaTitle: "Northwest Hills Austin Homes for Sale | Echelon Property Group",
     metaDescription: "Northwest Hills homes for sale in Austin TX. Established 1960s-70s neighborhood between MoPac and Loop 360 with mid-century architecture, Austin ISD schools, and quick Domain access.",
-    priceRange: "$800K – $3M",
+    priceRange: formatNeighborhoodMedian("northwest-hills"),
     image: catMountainImg,
     overview: `Northwest Hills is a settled residential district developed primarily between 1965 and 1978, sitting on gently rolling terrain between MoPac Expressway and Loop 360. Unlike the dramatic canyon topography of neighboring Cat Mountain to the west, Northwest Hills reads more as a mature suburban enclave, defined by curving side streets, deep front lawns, and an unusually high canopy of live oak, cedar elm, and pecan.
 
@@ -1180,7 +1181,7 @@ Northwest Hills feels quieter and more residential than nearby Great Hills or th
 Far West Boulevard anchors the neighborhood's small commercial spine, home to Chez Zee, Russell's Bakery, and long-standing local favorites. The Arboretum and Domain are five to ten minutes north for upscale shopping and dining.`,
     marketInsights: `### Pricing
 
-Northwest Hills homes generally trade between $800,000 and $3 million. The floor is set by unrenovated original-condition homes on standard lots; the ceiling is defined by studs-out remodels and larger properties along the Bull Creek greenbelt.
+The floor is set by unrenovated original-condition homes on standard lots; the ceiling is defined by studs-out remodels and larger properties along the Bull Creek greenbelt.
 
 ### Market Behavior
 
@@ -1223,7 +1224,7 @@ Long-term rental demand is steady, driven by relocating families completing home
     faqs: [
       { question: "Where is Northwest Hills located?", answer: "Northwest Hills sits in north-central Austin between MoPac Expressway (Loop 1) on the east and Loop 360 on the west, roughly bounded by Spicewood Springs Road to the north and Hart Lane to the south. Downtown Austin is approximately 15 minutes south via MoPac." },
       { question: "How does Northwest Hills differ from Cat Mountain?", answer: "Northwest Hills sits on gently rolling terrain and is characterized by 1960s and 1970s mid-century and ranch homes on interior residential streets. Cat Mountain, immediately to the west, occupies steeper hillside topography with more dramatic elevation changes and a higher concentration of newer contemporary hillside estates." },
-      { question: "What do Northwest Hills homes cost?", answer: "Homes generally range from approximately $800,000 for original-condition properties to $3 million for studs-out renovations and larger lots along the Bull Creek greenbelt. Fully renovated homes zoned to Anderson High School consistently trade at the upper end of that range." },
+      { question: "What do Northwest Hills homes cost?", answer: neighborhoodPriceSummary("northwest-hills") },
       { question: "What schools serve Northwest Hills?", answer: "Northwest Hills is served by Austin ISD. The primary attendance pattern is Doss Elementary, Murchison Middle School, and Anderson High School. Portions of the eastern edge feed into Hill Elementary or Highland Park Elementary." },
       { question: "Are homes in Northwest Hills good renovation candidates?", answer: "Yes. Northwest Hills is one of the few central Austin neighborhoods where a meaningful share of the housing stock remains in original 1960s or 1970s condition, making it one of the region's more active markets for whole-home renovations and value-add investment strategies." },
       { question: "What is the walkability like in Northwest Hills?", answer: "Walkability is neighborhood-scale rather than urban. Residents can typically walk to Doss Elementary, the Northwest Hills Greenbelt, and small pockets of Far West Boulevard retail. Errands, dining, and commuting still generally require a car." },
@@ -1236,7 +1237,7 @@ Long-term rental demand is steady, driven by relocating families completing home
     heroTitle: "Lake Austin Real Estate",
     metaTitle: "Lake Austin Waterfront Homes for Sale",
     metaDescription: "Discover Lake Austin waterfront homes, private dock estates, and exclusive off-market opportunities. Explore one of Austin's most coveted luxury enclaves.",
-    priceRange: "$1.5M – $15M+",
+    priceRange: formatNeighborhoodMedian("lake-austin"),
     image: lakeAustinImg,
     overview: `Lake Austin is widely considered the most prestigious waterfront stretch in Central Texas. Running along the Colorado River just west of downtown, it offers a rare combination of privacy, direct water access, and proximity to the city's core.
 
@@ -1273,10 +1274,10 @@ Lake Austin operates in a different tier than most Austin submarkets.
 
 ### Typical Ranges
 
-- Non-waterfront nearby: $1.5M – $3M
-- Entry waterfront: $2.5M – $5M
-- Prime waterfront estates: $5M – $15M+
-- Trophy properties: $15M+
+
+
+
+
 
 True waterfront inventory remains extremely limited, and a meaningful percentage of transactions occur off-market or through private networks.
 
@@ -1304,14 +1305,14 @@ A significant portion of Lake Austin properties trade quietly. Some of the most 
 ### Redevelopment Opportunities
 
 Because of limited waterfront inventory, many buyers prioritize lot quality and location over structure, with tear-downs and redevelopment opportunities being common at the high end.`,
-    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market, a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [West lake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). Pricing tiers are well-defined: non-waterfront proximity homes trade between $1.5M and $3M, entry-level waterfront sits between $2.5M and $5M, and prime waterfront with deep-water docks and unobstructed frontage commands $5M to $15M+, with trophy estates clearing $15M. What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity, most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
+    echelonPerspective: `Lake Austin is the rarest waterfront tier in the Austin, Texas market, a constant-level reservoir running through the heart of the city's most established residential corridor. The buyer profile is narrow and consistent: relocating tech and finance executives from California, New York, and the Pacific Northwest who treat the waterfront as a primary residence rather than a second home, alongside a smaller cohort of established Austin families upgrading from [Tarrytown](/communities/tarrytown), [West Lake Hills](/communities/westlake-hills), or [Pemberton Heights](/communities/pemberton-heights). What sets Lake Austin apart from [Lake Travis](/communities/lake-travis) is the combination of constant water level, year-round dockability, and proximity, most homes are 10 to 15 minutes from downtown, a logistical reality that no other Texas waterfront market can replicate. A meaningful share of inventory trades privately; access here is a function of relationships rather than search filters.`,
     communityComparison: `### Lake Austin vs Lake Travis
 
 [Lake Travis](/communities/lake-travis) sits roughly 25 miles upriver and offers a more resort-oriented waterfront lifestyle, larger lots, deeper coves, and significantly lower price-per-acre, but with seasonal water-level fluctuations that affect dock usability in drought years. Lake Austin's constant level, downtown proximity, and Eanes / Austin ISD zoning command a substantial premium. Buyers who prioritize daily commute, urban convenience, and year-round water access choose Lake Austin; those who prioritize space, value, and a Hill Country resort feel often choose Lake Travis or [Lakeway](/communities/lakeway).
 
-### Lake Austin vs West lake Hills
+### Lake Austin vs West Lake Hills
 
-[West lake Hills](/communities/westlake-hills) shares the Eanes ISD school zone but sits on the bluffs above the lake rather than at the water. Westlake offers more inventory, more architectural variety, and Hill Country views without the dock-and-boathouse maintenance profile of waterfront ownership. Lake Austin trades that breadth for direct water access, which carries an irreplaceable lifestyle and value premium.
+[West Lake Hills](/communities/westlake-hills) shares the Eanes ISD school zone but sits on the bluffs above the lake rather than at the water. Westlake offers more inventory, more architectural variety, and Hill Country views without the dock-and-boathouse maintenance profile of waterfront ownership. Lake Austin trades that breadth for direct water access, which carries an irreplaceable lifestyle and value premium.
 
 ### Lake Austin vs Rob Roy / Davenport Ranch
 
@@ -1319,7 +1320,7 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
     relatedCommunities: ["westlake-hills", "rob-roy", "davenport-ranch", "lake-travis"],
     faqs: [
       { question: "What makes Lake Austin different from Lake Travis?", answer: "Lake Austin maintains a constant water level year-round, unlike Lake Travis which can fluctuate significantly. This makes Lake Austin ideal for private docks, boathouses, and consistent waterfront living. It's also significantly closer to downtown Austin." },
-      { question: "How much do Lake Austin waterfront homes cost?", answer: "Entry-level waterfront homes start around $2.5M–$5M. Prime waterfront estates range from $5M–$15M+, with trophy properties exceeding $15M. Non-waterfront homes nearby typically range from $1.5M–$3M." },
+      { question: "How much do Lake Austin waterfront homes cost?", answer: neighborhoodPriceSummary("lake-austin") },
       { question: "Are there off-market homes available on Lake Austin?", answer: "Yes. A meaningful percentage of Lake Austin transactions occur off-market or through private networks. Access often comes down to relationships and timing. Contact Echelon Property Group for private listing access." },
       { question: "What school districts serve Lake Austin?", answer: "Most Lake Austin properties are served by Eanes ISD (including Westlake High School) or Austin ISD, depending on location. Several top private schools are also within a short drive." },
       { question: "How far is Lake Austin from downtown Austin?", answer: "Most Lake Austin homes are located just 10–15 minutes from downtown Austin, making it one of the most accessible waterfront markets in Central Texas." },
@@ -1331,8 +1332,8 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
     name: "Clarksville",
     heroTitle: "Homes for Sale in Clarksville",
     metaTitle: "Clarksville Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Clarksville Austin TX. Historic neighborhood near downtown with boutique shops, dining, and homes from $800K to $6M+.",
-    priceRange: "$800K – $6M+",
+    metaDescription: "Explore homes for sale in Clarksville Austin TX. Historic neighborhood near downtown with boutique shops, dining.",
+    priceRange: formatNeighborhoodMedian("clarksville"),
     image: clarksvilleImg,
     overview: `Clarksville is one of Austin's oldest and most culturally significant neighborhoods, located just west of downtown between MoPac and Lamar Boulevard. Founded in the 1870s as a freedmen's community, Clarksville has evolved into one of the city's most desirable residential areas while maintaining its historic character and walkable village atmosphere.
 
@@ -1363,7 +1364,7 @@ Local favorites include Jeffrey's (fine dining), Josephine House, Cipollina, and
 Clarksville's history as a freedmen's community adds cultural depth. The neighborhood hosts annual events celebrating its heritage, and its architectural diversity reflects over a century of Austin's evolution.`,
     marketInsights: `### Pricing
 
-Prices range from $800K for smaller historic homes to over $6M for new-construction estates. The neighborhood's proximity to downtown and its walkable commercial district drive sustained demand.
+The neighborhood's proximity to downtown and its walkable commercial district drive sustained demand.
 
 ### Construction & Development
 
@@ -1414,7 +1415,7 @@ The neighborhood's walkability and proximity to downtown make it highly attracti
     relatedCommunities: ["tarrytown", "downtown", "travis-heights", "westlake-hills"],
     faqs: [
       { question: "What is it like living in Clarksville Austin?", answer: "Clarksville offers a walkable village lifestyle with boutique shops, restaurants, and parks, all within walking distance of downtown Austin. The neighborhood's historic character and cultural significance create a unique sense of place." },
-      { question: "What are home prices in Clarksville?", answer: "Prices range from approximately $800K for smaller historic homes to over $6M for new-construction estates. New construction commands $500 to $700+ per square foot." },
+      { question: "What are home prices in Clarksville?", answer: neighborhoodPriceSummary("clarksville") },
       { question: "Are there luxury homes in Clarksville?", answer: "Yes. Contemporary new construction and beautifully restored historic homes in Clarksville rank among Austin's most desirable properties." },
       { question: "What schools serve Clarksville?", answer: "Clarksville is served by Austin ISD. Nearby schools include Mathews Elementary, O. Henry Middle School, and Austin High School." },
       { question: "Is Clarksville a good investment area?", answer: "Yes. Extremely limited inventory, walkability, and proximity to downtown create strong long-term appreciation fundamentals." },
@@ -1426,8 +1427,8 @@ The neighborhood's walkability and proximity to downtown make it highly attracti
     name: "Lake Travis",
     heroTitle: "Lake Travis Waterfront Homes for Sale",
     metaTitle: "Lake Travis Waterfront Homes | Echelon Property Group",
-    metaDescription: "Browse waterfront homes for sale on Lake Travis TX. Lakefront estates, deep-water access, and Hill Country views from $1M to $15M+.",
-    priceRange: "$1M – $15M+",
+    metaDescription: "Browse waterfront homes for sale on Lake Travis TX. Lakefront estates, deep-water access, and Hill Country views.",
+    priceRange: formatNeighborhoodMedian("lake-travis"),
     image: lakeTravisImg,
     overview: `Lake Travis is one of the Highland Lakes chain along the Colorado River, stretching over 60 miles through the scenic Texas Hill Country west of Austin. It is one of the most popular recreational lakes in Texas, renowned for its clear blue water, dramatic limestone cliffs, and resort-style waterfront communities.
 
@@ -1517,7 +1518,7 @@ Finite waterfront supply and growing demand from Austin's expanding population c
       { question: "How does Lake Travis compare to nearby neighborhoods?", answer: "Lake Travis offers open-water boating and dramatic Hill Country scenery. Lakeway provides the most developed lakeside infrastructure with marinas and golf. Bee Cave offers similar school zoning with commercial convenience but no waterfront. Lake Austin is closer to downtown with constant water levels." },
       { question: "What types of homes are common on Lake Travis?", answer: "Waterfront estates with private docks and boat lifts, cliff-side contemporary builds with panoramic lake views, and custom Hill Country homes on acreage. Architectural styles range from rustic limestone to modern glass-and-steel." },
       { question: "Who typically buys on Lake Travis?", answer: "Buyers include families seeking Lake Travis ISD schools with weekend boating, retirees drawn to the resort lifestyle, second-home buyers from major metros, and investors targeting waterfront appreciation and vacation rental income." },
-      { question: "What are home prices on Lake Travis?", answer: "Waterfront homes range from approximately $1M to over $15M depending on shoreline, water depth, and lot position." },
+      { question: "What are home prices on Lake Travis?", answer: neighborhoodPriceSummary("lake-travis") },
       { question: "What schools serve Lake Travis areas?", answer: "Most Lake Travis properties are served by the Lake Travis ISD, which includes the well-regarded Lake Travis High School." },
       { question: "How does Lake Travis differ from Lake Austin?", answer: "Lake Travis is a fluctuating-level reservoir that stretches over 60 miles, while Lake Austin maintains constant water levels. Lake Travis offers more open water and recreational space, while Lake Austin is closer to downtown." }
     ]
@@ -1527,8 +1528,8 @@ Finite waterfront supply and growing demand from Austin's expanding population c
     name: "Mueller",
     heroTitle: "Homes for Sale in Mueller",
     metaTitle: "Mueller Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops, and homes from $400K to $1.5M+.",
-    priceRange: "$400K – $1.5M+",
+    metaDescription: "Explore homes for sale in Mueller Austin TX. Master-planned urban community with parks, shops.5M+.",
+    priceRange: formatNeighborhoodMedian("mueller"),
     image: muellerImg,
     overview: `Mueller is Austin's award-winning master-planned community built on the former Robert Mueller Municipal Airport site in central-east Austin. The development has transformed 700 acres into one of the most walkable, mixed-use neighborhoods in the city.
 
@@ -1560,7 +1561,7 @@ Mueller's town center features restaurants, coffee shops, and retail. The nearby
 The Mueller Farmers Market operates weekly, providing fresh produce, artisanal goods, and community gathering space.`,
     marketInsights: `### Pricing
 
-Single-family homes range from approximately $500K to $1.2M, townhomes from $400K to $800K, and select premium properties can exceed $1.5M.
+
 
 ### Market Dynamics
 
@@ -1607,7 +1608,7 @@ East Austin's continued development and Mueller's established reputation support
     relatedCommunities: ["travis-heights", "downtown", "zilker-austin", "hyde-park"],
     faqs: [
       { question: "What is it like living in Mueller Austin?", answer: "Mueller offers a walkable, master-planned lifestyle with parks, trails, shops, restaurants, and a strong sense of community in central-east Austin." },
-      { question: "What are home prices in Mueller?", answer: "Prices range from approximately $400K for townhomes to over $1.5M for premium single-family homes in established sections." },
+      { question: "What are home prices in Mueller?", answer: neighborhoodPriceSummary("mueller") },
       { question: "Are there luxury homes in Mueller?", answer: "Mueller features upscale single-family homes and premium townhomes with modern design, high-end finishes, and prime lot positions." },
       { question: "What schools serve Mueller?", answer: "Mueller is served by Austin ISD. Schools include Blanton Elementary, Martin Middle School, and various nearby magnet programs." },
       { question: "Is Mueller a good investment area?", answer: "Yes. Central location, walkability, and comprehensive amenities support consistent demand and appreciation." },
@@ -1619,8 +1620,8 @@ East Austin's continued development and Mueller's established reputation support
     name: "Hyde Park",
     heroTitle: "Homes for Sale in Hyde Park",
     metaTitle: "Hyde Park Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Hyde Park Austin TX. Historic bungalows, walkable streets, and central location with homes from $500K to $2M+.",
-    priceRange: "$500K – $2M+",
+    metaDescription: "Explore homes for sale in Hyde Park Austin TX. Historic bungalows, walkable streets, and central location.",
+    priceRange: formatNeighborhoodMedian("hyde-park"),
     image: hydeParkImg,
     overview: `Hyde Park is one of Austin's first suburban neighborhoods, established in 1891 and listed on the National Register of Historic Places. Located just north of the University of Texas campus, Hyde Park is beloved for its tree-lined streets, Victorian and Craftsman architecture, and strong sense of community.
 
@@ -1658,7 +1659,7 @@ Proximity to the University of Texas provides cultural amenities including museu
 The Hyde Park Homes Tour and Fest showcase the neighborhood's architectural heritage and community spirit annually.`,
     marketInsights: `### Pricing
 
-Prices range from approximately $500K for smaller bungalows to over $2M for larger renovated or new-construction homes on premium lots.
+
 
 ### Historic Premium
 
@@ -1708,7 +1709,7 @@ Central location, UT proximity, and walkability ensure enduring demand across ma
     relatedCommunities: ["mueller", "travis-heights", "downtown", "tarrytown"],
     faqs: [
       { question: "What is it like living in Hyde Park Austin?", answer: "Hyde Park offers historic charm, tree-lined walkable streets, a strong community identity, and central access to UT and downtown Austin." },
-      { question: "What are home prices in Hyde Park?", answer: "Prices range from approximately $500K for smaller bungalows to over $2M for larger renovated or new-construction homes." },
+      { question: "What are home prices in Hyde Park?", answer: neighborhoodPriceSummary("hyde-park") },
       { question: "Are there luxury homes in Hyde Park?", answer: "Hyde Park features beautifully renovated historic homes and select new construction that honors the neighborhood's architectural heritage." },
       { question: "What schools serve Hyde Park?", answer: "Hyde Park is served by Austin ISD, including Lee Elementary, Lamar Middle School, and McCallum High School." },
       { question: "Is Hyde Park a good investment area?", answer: "Yes. Historic character, central location, and proximity to UT create consistent demand and appreciation." },
@@ -1720,8 +1721,8 @@ Central location, UT proximity, and walkability ensure enduring demand across ma
     name: "Pemberton Heights",
     heroTitle: "Homes for Sale in Pemberton Heights",
     metaTitle: "Pemberton Heights Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees and homes from $1.5M to $10M+.",
-    priceRange: "$1.5M – $10M+",
+    metaDescription: "Browse homes for sale in Pemberton Heights Austin TX. Prestigious central neighborhood with mature trees.5M to $10M+.",
+    priceRange: formatNeighborhoodMedian("pemberton-heights"),
     image: pembertonHeightsImg,
     overview: `Pemberton Heights is one of Austin's most prestigious and established residential neighborhoods, located just north of Lady Bird Lake and west of Shoal Creek. Developed in the 1920s and 1930s, Pemberton Heights features wide, tree-lined streets, generous lot sizes, and some of the most distinguished architecture in the city.
 
@@ -1751,7 +1752,7 @@ Walking distance to Clarksville's charming shops and restaurants, downtown Austi
 Pemberton Heights maintains a quiet, residential character with strong neighborhood pride. Many families have lived in the neighborhood for generations.`,
     marketInsights: `### Pricing
 
-Prices range from $1.5M for homes needing renovation to over $10M for trophy estates on premium lots. New construction and significant renovations routinely exceed $600 per square foot.
+New construction and significant renovations routinely exceed $600 per square foot.
 
 ### Inventory
 
@@ -1798,14 +1799,14 @@ Many Pemberton Heights properties represent generational wealth holdings. The ne
 ### Demand Resilience
 
 The neighborhood demonstrates remarkable demand resilience during market downturns, with values recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods, a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds, many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [West lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
+    echelonPerspective: `Pemberton Heights is one of Austin's most quietly prestigious neighborhoods, a place where half-acre lots, mature live oaks, and distinguished architecture create a sense of permanence that few Austin communities can match. Located just north of Lady Bird Lake and west of Shoal Creek, the neighborhood is minutes from downtown dining, the Hike and Bike Trail, and Whole Foods Market's flagship store. Buyers here tend to be established professionals, legacy Austin families, and executives who want central proximity without sacrificing lot size or privacy. The housing stock includes Georgian colonials, stately traditionals, and contemporary rebuilds, many exceeding $500 per square foot for new construction. For those weighing alternatives, [Tarrytown](/communities/tarrytown) offers a more walkable village feel at a slightly lower entry point, while [West Lake Hills](/communities/westlake-hills) provides Eanes ISD schools and Hill Country views in a more suburban setting.`,
     communityComparison: `### Pemberton Heights vs Tarrytown
 
 [Tarrytown](/communities/tarrytown) shares Pemberton Heights' central positioning and Austin ISD zoning, but offers a more eclectic architectural mix and a stronger walkable commercial corridor along Exposition Boulevard. Pemberton Heights provides larger lots, more estate-scale architecture, and a quieter residential feel. Buyers choosing between the two weigh walkable convenience (Tarrytown) against space and architectural gravitas (Pemberton Heights).
 
-### Pemberton Heights vs West lake Hills
+### Pemberton Heights vs West Lake Hills
 
-[West lake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different, urban estate living versus Hill Country retreat.
+[West Lake Hills](/communities/westlake-hills) offers Eanes ISD schools and panoramic Hill Country views in a more suburban setting west of MoPac. Pemberton Heights trades those school ratings for central Austin walkability, proximity to downtown, and some of the most distinguished residential architecture in the city. Both communities attract high-net-worth buyers, but the lifestyle is fundamentally different, urban estate living versus Hill Country retreat.
 
 ### Pemberton Heights vs Barton Creek
 
@@ -1813,10 +1814,10 @@ The neighborhood demonstrates remarkable demand resilience during market downtur
     relatedCommunities: ["tarrytown", "clarksville", "westlake-hills", "downtown"],
     faqs: [
       { question: "Is Pemberton Heights a good place to buy a luxury home in Austin?", answer: "Pemberton Heights is one of Austin's most prestigious residential addresses. Distinguished architecture, half-acre lots, mature oak canopy, and walk-to-downtown convenience make it a perennial favorite among luxury buyers seeking central Austin living." },
-      { question: "How does Pemberton Heights compare to nearby neighborhoods?", answer: "Pemberton Heights offers larger lots and more estate-scale architecture than neighboring Tarrytown and Clarksville, while maintaining similar central Austin convenience. West lake Hills provides Eanes ISD but is more suburban. Barton Creek offers gated country club living. Pemberton Heights is the choice for buyers seeking distinguished central estates." },
+      { question: "How does Pemberton Heights compare to nearby neighborhoods?", answer: "Pemberton Heights offers larger lots and more estate-scale architecture than neighboring Tarrytown and Clarksville, while maintaining similar central Austin convenience. West Lake Hills provides Eanes ISD but is more suburban. Barton Creek offers gated country club living. Pemberton Heights is the choice for buyers seeking distinguished central estates." },
       { question: "What types of homes are common in Pemberton Heights?", answer: "Pemberton Heights features Georgian colonials, traditional estates, Mediterranean-influenced homes, and contemporary rebuilds. Most properties sit on generous lots with mature landscaping, significant setbacks, and architectural distinction uncommon in central Austin." },
       { question: "Who typically buys in Pemberton Heights?", answer: "Typical buyers include established professionals, legacy Austin families, C-suite executives, and discerning relocating buyers who want proximity to downtown, Lady Bird Lake, and Austin's cultural core without sacrificing lot size or privacy." },
-      { question: "What are home prices in Pemberton Heights?", answer: "Prices range from approximately $1.5M to over $10M for trophy estates on premium lots." },
+      { question: "What are home prices in Pemberton Heights?", answer: neighborhoodPriceSummary("pemberton-heights") },
       { question: "What schools serve Pemberton Heights?", answer: "Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School." },
       { question: "How large are lots in Pemberton Heights?", answer: "Many homes in Pemberton Heights sit on half-acre or larger lots with mature oaks, manicured gardens, and significant setbacks from the street, among the most generous lot sizes in central Austin." }
     ]
@@ -1826,8 +1827,8 @@ The neighborhood demonstrates remarkable demand resilience during market downtur
     name: "Bee Cave",
     heroTitle: "Homes for Sale in Bee Cave Texas",
     metaTitle: "Bee Cave Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Bee Cave TX near Austin. Hill Country living, top schools, shopping, and homes from $500K to $8M+.",
-    priceRange: "$500K – $8M+",
+    metaDescription: "Browse homes for sale in Bee Cave TX near Austin. Hill Country living, top schools, shopping.",
+    priceRange: formatNeighborhoodMedian("bee-cave"),
     image: beeCaveImg,
     heroImage: beeCaveHeroImg,
     overview: `Bee Cave is a thriving Hill Country city located along Highway 71 approximately 15 miles west of downtown Austin. Once a quiet rural community, Bee Cave has evolved into one of the most desirable suburban destinations in the Austin metro.
@@ -1863,7 +1864,7 @@ Restaurants range from casual Hill Country fare to upscale dining. The Galleria 
 Bee Cave's family-oriented character includes parks, sports leagues, community pools, and well-maintained neighborhoods.`,
     marketInsights: `### Pricing
 
-Master-planned community homes range from $500K to $1.5M, while custom estates and luxury properties range from $2M to $8M+.
+
 
 ### Key Communities
 
@@ -1929,7 +1930,7 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
       { question: "How does Bee Cave compare to nearby neighborhoods?", answer: "Bee Cave offers stronger commercial infrastructure than neighboring Lakeway, while Lakeway provides direct waterfront living. Barton Creek offers gated country club living with Eanes ISD. Steiner Ranch provides master-planned amenities at a lower price point. Bee Cave balances Hill Country space, school quality, and urban access." },
       { question: "What types of homes are common in Bee Cave?", answer: "Bee Cave features master-planned community homes, custom estates on Hill Country acreage, and luxury properties in communities like Spanish Oaks. Architectural styles range from Hill Country contemporary to traditional limestone estates." },
       { question: "Who typically buys in Bee Cave?", answer: "Typical buyers include families upgrading from central Austin seeking Lake Travis ISD schools and more space, professionals drawn to the Hill Country Galleria corridor, and relocating buyers from major metros seeking Hill Country living within easy reach of Austin." },
-      { question: "What are home prices in Bee Cave?", answer: "Prices range from approximately $500K in master-planned communities to over $8M for custom estates on acreage." },
+      { question: "What are home prices in Bee Cave?", answer: neighborhoodPriceSummary("bee-cave") },
       { question: "What schools serve Bee Cave?", answer: "Bee Cave is primarily served by the Lake Travis ISD, including Lake Travis High School and several highly rated elementary and middle schools." },
       { question: "How far is Bee Cave from downtown Austin?", answer: "Bee Cave is approximately 15 miles (20-30 minutes) west of downtown Austin via Highway 71 and Loop 360." }
     ]
@@ -1939,8 +1940,8 @@ Strong schools, lifestyle amenities, and Austin's continued growth support consi
     name: "Great Hills",
     heroTitle: "Homes for Sale in Great Hills",
     metaTitle: "Great Hills Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees and homes from $600K to $2.5M+.",
-    priceRange: "$600K – $2.5M+",
+    metaDescription: "Explore homes for sale in Great Hills Austin TX. Established northwest Austin neighborhood with mature trees.5M+.",
+    priceRange: formatNeighborhoodMedian("great-hills"),
     image: greatHillsImg,
     overview: `Great Hills is an established residential neighborhood in northwest Austin, situated along the Capital of Texas Highway (Loop 360) corridor between MoPac and Highway 183. The community was developed in the 1970s and 1980s and has matured into one of the most desirable neighborhoods in northwest Austin.
 
@@ -1971,7 +1972,7 @@ The Arboretum and The Domain are nearby, offering upscale shopping, dining, and 
 Major tech employers including Apple, Google, and numerous companies along the 360 and MoPac corridors are within minutes.`,
     marketInsights: `### Pricing
 
-Prices range from approximately $600K for smaller homes to $2.5M+ for larger updated or rebuilt estates on premium lots.
+
 
 ### Renovation Activity
 
@@ -2022,7 +2023,7 @@ Established location, mature lots, and proximity to major employers support cons
     relatedCommunities: ["cat-mountain", "balcones-park", "westlake-hills", "barton-creek"],
     faqs: [
       { question: "What is it like living in Great Hills Austin?", answer: "Great Hills offers mature tree-lined streets, generous lots, Hill Country views, and convenient access to the Domain, Arboretum, and downtown Austin." },
-      { question: "What are home prices in Great Hills?", answer: "Prices range from approximately $600K to over $2.5M for updated or rebuilt estates on premium lots." },
+      { question: "What are home prices in Great Hills?", answer: neighborhoodPriceSummary("great-hills") },
       { question: "Are there luxury homes in Great Hills?", answer: "Yes. Great Hills features renovated and rebuilt homes with modern finishes, pool lots, and premium Hill Country views." },
       { question: "What schools serve Great Hills?", answer: "Great Hills is served by Austin ISD, with access to several well-regarded elementary, middle, and high schools in northwest Austin." },
       { question: "Is Great Hills a good investment area?", answer: "Yes. Established location, mature lots, and proximity to major employers support consistent demand and value growth." },
@@ -2035,7 +2036,7 @@ Established location, mature lots, and proximity to major employers support cons
     heroTitle: "Homes for Sale in Balcones Park",
     metaTitle: "Balcones Park Homes for Sale | Echelon Property Group",
     metaDescription: "Browse homes for sale in Balcones Park Austin TX. Quiet central Austin neighborhood off Balcones Drive, just north of Tarrytown.",
-    priceRange: "$900K – $3M+",
+    priceRange: formatNeighborhoodMedian("balcones-park"),
     image: balconesImg,
     heroImage: balconesHeroImg,
     overview: `Balcones Park is a quiet, established central Austin neighborhood tucked along Balcones Drive, just north of Tarrytown and west of MoPac near West 35th Street. It sits in the wooded bluffs above Shoal Creek, offering a residential pocket that feels removed from the city while remaining minutes from downtown.
@@ -2067,7 +2068,7 @@ Tarrytown's shops and cafes, Pemberton Heights, and Camp Mabry are immediately a
 - Reed Park and Pease Park, nearby`,
     marketInsights: `### Pricing
 
-Prices generally range from approximately $900K for original-condition homes to over $3M for fully renovated or new-construction residences. Premium lots backing the country club or with hill views command the upper end of the range.
+Premium lots backing the country club or with hill views command the upper end of the range.
 
 ### Redevelopment Activity
 
@@ -2120,7 +2121,7 @@ Proximity to downtown, MoPac, UT, and the central Austin employment base ensures
     faqs: [
       { question: "Where is Balcones Park in Austin?", answer: "Balcones Park is a central Austin neighborhood along Balcones Drive, just north of Tarrytown and west of MoPac near West 35th Street, bordering the Westwood Country Club." },
       { question: "What is it like living in Balcones Park Austin?", answer: "Balcones Park offers quiet, tree-canopied streets, generous lots, and a peaceful residential feel just minutes from downtown Austin, Tarrytown, and Camp Mabry." },
-      { question: "What are home prices in Balcones Park?", answer: "Prices typically range from around $900K for original-condition homes to over $3M for renovated or newly built residences." },
+      { question: "What are home prices in Balcones Park?", answer: neighborhoodPriceSummary("balcones-park") },
       { question: "Are there luxury homes in Balcones Park?", answer: "Yes. Sustained teardown and rebuild activity has introduced high-end remodels and new contemporary construction alongside well-maintained mid-century originals." },
       { question: "What schools serve Balcones Park?", answer: "Balcones Park is served by Austin ISD, with access to highly regarded central Austin schools including Casis Elementary, O. Henry Middle, and Austin High (verify zoning by address)." },
       { question: "Is the Westwood Country Club in Balcones Park?", answer: "The Westwood Country Club borders the western edge of the neighborhood, providing golf, tennis, swimming, and dining for members." }
@@ -2131,10 +2132,10 @@ Proximity to downtown, MoPac, UT, and the central Austin employment base ensures
     name: "Rob Roy",
     heroTitle: "Homes for Sale in Rob Roy",
     metaTitle: "Rob Roy Homes for Sale Austin TX | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views and homes from $1.5M to $20M+.",
-    priceRange: "$1.5M – $20M+",
+    metaDescription: "Explore luxury homes for sale in Rob Roy Austin TX. Gated Hill Country estates with panoramic views.5M to $20M+.",
+    priceRange: formatNeighborhoodMedian("rob-roy"),
     image: robRoyImg,
-    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
+    overview: `Rob Roy is one of Austin's most exclusive luxury neighborhoods, located in the West Lake Hills area along the scenic bluffs of the Capital of Texas Highway (Loop 360) corridor. The community features several gated enclaves including Rob Roy, Rob Roy on the Creek, and Rob Roy on the Lake, each offering distinctive luxury living experiences.
 
 ### Architectural Excellence
 
@@ -2142,7 +2143,7 @@ Homes in Rob Roy range from elegant traditional estates to contemporary architec
 
 ### Gated Exclusivity
 
-Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the West lake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.
+Rob Roy is served by the Eanes Independent School District and offers proximity to both downtown Austin and the West Lake Hills corridor. The community's gated security, large lot sizes, and architectural quality have made it a preferred address for Austin's most discerning buyers for decades.
 
 `,
     lifestyle: `### Views & Privacy
@@ -2154,7 +2155,7 @@ The panoramic Hill Country views available from Rob Roy's hilltop lots are among
 - Barton Creek Greenbelt, accessible from several community entry points
 - Lake Austin, nearby for boating and waterfront dining
 - Wild Basin Wilderness Preserve, hiking and nature observation
-- West lake Hills Country Club, golf, tennis, and swimming
+- West Lake Hills Country Club, golf, tennis, and swimming
 
 ### Dining & Shopping
 
@@ -2165,7 +2166,7 @@ Bee Caves Road provides upscale dining and retail. The Hill Country Galleria and
 Gated entrances with 24/7 security create a secure, private environment. Community events and neighbor connections foster a strong sense of belonging.`,
     marketInsights: `### Pricing
 
-Prices range from approximately $1.5M for smaller homes in the community to over $20M for trophy estates with significant acreage, views, and waterfront access in the creek and lake sections.
+
 
 ### Community Sections
 
@@ -2193,7 +2194,7 @@ Nearby private schools include St. Andrew's Episcopal School, Regents School of 
 
 - Barton Creek Greenbelt, hiking, swimming, and mountain biking
 - Lake Austin, boating, paddleboarding, and waterfront dining
-- West lake Hills Country Club, golf, tennis, and swimming
+- West Lake Hills Country Club, golf, tennis, and swimming
 
 ### Shopping & Services
 
@@ -2213,10 +2214,10 @@ Properties in Rob Roy's premium sections, particularly those with exceptional vi
 ### Resilient Values
 
 Rob Roy has demonstrated strong value resilience during market downturns, with properties recovering faster than most Austin neighborhoods.`,
-    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas, a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the West lake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [West lake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
-    communityComparison: `### Rob Roy vs West lake Hills
+    echelonPerspective: `Rob Roy is among the most exclusive gated communities in Austin, Texas, a collection of hilltop enclaves along the Loop 360 corridor where panoramic views, multi-acre lots, and Eanes ISD schools converge. The community is organized into distinct sections: Rob Roy proper (hilltop estates), Rob Roy on the Creek (properties along Barton Creek), and Rob Roy on the Lake (Lake Austin waterfront access). Buyers are drawn by the combination of gated privacy, architectural distinction, and proximity to both downtown and the West Lake Hills corridor. The housing stock features custom-built estates ranging from classic limestone traditionals to contemporary masterpieces with walls of glass oriented toward sweeping views. For buyers comparing options, [West Lake Hills](/communities/westlake-hills) offers a similar school district without gates, while [Barton Creek](/communities/barton-creek) provides country club amenities with a resort-caliber lifestyle.`,
+    communityComparison: `### Rob Roy vs West Lake Hills
 
-[West lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a Hill Country setting, but is an independent incorporated city without gated entry. Rob Roy offers more exclusivity and larger lots within its guarded enclaves, while West lake Hills provides a broader architectural range and a more integrated community feel. Both attract high-net-worth buyers; the choice often comes down to whether gated privacy or neighborhood accessibility is the priority.
+[West Lake Hills](/communities/westlake-hills) shares Eanes ISD zoning and a Hill Country setting, but is an independent incorporated city without gated entry. Rob Roy offers more exclusivity and larger lots within its guarded enclaves, while West Lake Hills provides a broader architectural range and a more integrated community feel. Both attract high-net-worth buyers; the choice often comes down to whether gated privacy or neighborhood accessibility is the priority.
 
 ### Rob Roy vs Barton Creek
 
@@ -2228,10 +2229,10 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
     relatedCommunities: ["westlake-hills", "barton-creek", "lake-austin", "spanish-oaks"],
     faqs: [
       { question: "Is Rob Roy a good place to buy a luxury home in Austin?", answer: "Rob Roy is one of Austin's most exclusive luxury communities, offering gated privacy, panoramic Hill Country views, Eanes ISD schools, and estate-scale architecture. Properties here have demonstrated strong value resilience and consistent appreciation." },
-      { question: "How does Rob Roy compare to nearby neighborhoods?", answer: "Rob Roy offers gated estate living with panoramic views. West lake Hills provides a similar school district without gates. Barton Creek offers country club amenities with golf. Tarrytown provides walkable central Austin living. Rob Roy is the choice for buyers seeking maximum privacy and architectural distinction." },
+      { question: "How does Rob Roy compare to nearby neighborhoods?", answer: "Rob Roy offers gated estate living with panoramic views. West Lake Hills provides a similar school district without gates. Barton Creek offers country club amenities with golf. Tarrytown provides walkable central Austin living. Rob Roy is the choice for buyers seeking maximum privacy and architectural distinction." },
       { question: "What types of homes are common in Rob Roy?", answer: "Custom-built estates dominate Rob Roy, ranging from classic Hill Country limestone homes to contemporary glass-and-steel masterpieces. Most properties feature generous lots, resort-style outdoor living areas, and orientation toward sweeping Hill Country or lake views." },
       { question: "Who typically buys in Rob Roy?", answer: "Buyers include C-suite executives, entrepreneurs, and high-net-worth families seeking gated privacy, Eanes ISD schools, and trophy-caliber architecture. The community also attracts second-home buyers from major metros drawn to its exclusive character." },
-      { question: "What are home prices in Rob Roy?", answer: "Prices range from approximately $1.5M to over $20M for trophy estates with premium views, acreage, or waterfront access." },
+      { question: "What are home prices in Rob Roy?", answer: neighborhoodPriceSummary("rob-roy") },
       { question: "What schools serve Rob Roy?", answer: "Rob Roy is served by the Eanes ISD, including top-rated Westlake High School, Hill Country Middle School, and area elementary schools." },
       { question: "What are the different sections of Rob Roy?", answer: "Rob Roy features several distinct enclaves including Rob Roy proper (hilltop estates), Rob Roy on the Creek (Barton Creek properties), and Rob Roy on the Lake (Lake Austin waterfront access)." }
     ]
@@ -2241,8 +2242,8 @@ Rob Roy has demonstrated strong value resilience during market downturns, with p
     name: "Steiner Ranch",
     heroTitle: "Homes for Sale in Steiner Ranch",
     metaTitle: "Steiner Ranch Homes for Sale | Echelon Property Group",
-    metaDescription: "Browse homes for sale in Steiner Ranch Austin TX. Master-planned community with Lake Austin access, trails, and homes from $500K to $13M+.",
-    priceRange: "$500K – $13M+",
+    metaDescription: "Browse homes for sale in Steiner Ranch Austin TX. Master-planned community with Lake Austin access, trails.",
+    priceRange: formatNeighborhoodMedian("steiner-ranch"),
     image: steinerRanchImg,
     overview: `Steiner Ranch is one of Austin's largest and most popular master-planned communities, situated along the bluffs above Lake Austin in the far northwest section of the city. The community spans approximately 4,600 acres and offers a comprehensive range of amenities.
 
@@ -2336,7 +2337,7 @@ Buyers choosing between Steiner Ranch and [Lake Travis waterfront](/communities/
       { question: "How does Steiner Ranch compare to nearby neighborhoods?", answer: "Steiner Ranch provides comprehensive master-planned amenities at a more accessible price point than Lakeway or Lake Travis waterfront. Bee Cave offers Lake Travis ISD and upscale shopping. Cat Mountain provides proximity to northwest Austin tech corridors. Steiner Ranch is the choice for families seeking resort living with Lake Austin proximity." },
       { question: "What types of homes are common in Steiner Ranch?", answer: "Steiner Ranch features established family homes, move-in-ready residences in various sections, and custom luxury estates in The Commons with panoramic Lake Austin and Hill Country views. Architectural styles range from traditional Hill Country to modern transitional." },
       { question: "Who typically buys in Steiner Ranch?", answer: "Typical buyers include families seeking Leander ISD schools and resort-style amenities, professionals working in northwest Austin's tech corridor, and luxury buyers drawn to The Commons for its Lake Austin views and custom estate opportunities." },
-      { question: "What are home prices in Steiner Ranch?", answer: "Prices range from approximately $500K for family homes to over $13M for custom estates with Lake Austin views in The Commons." },
+      { question: "What are home prices in Steiner Ranch?", answer: neighborhoodPriceSummary("steiner-ranch") },
       { question: "What schools serve Steiner Ranch?", answer: "Steiner Ranch is served by the Leander ISD, with several schools located within the community including Steiner Ranch Elementary and Vandegrift High School." },
       { question: "What amenities does Steiner Ranch offer?", answer: "Steiner Ranch features multiple resort-style pools, sports courts, miles of trails, parks, playgrounds, fitness facilities, and community event centers." }
     ]
@@ -2346,8 +2347,8 @@ Buyers choosing between Steiner Ranch and [Lake Travis waterfront](/communities/
     name: "Bryker Woods",
     heroTitle: "Homes for Sale in Bryker Woods",
     metaTitle: "Bryker Woods Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Bryker Woods Austin TX. Charming central Austin neighborhood with tree-lined streets, walkability, and homes from $700K to $3M+.",
-    priceRange: "$700K – $3M+",
+    metaDescription: "Explore homes for sale in Bryker Woods Austin TX. Charming central Austin neighborhood with tree-lined streets, walkability.",
+    priceRange: formatNeighborhoodMedian("bryker-woods"),
     image: brykerWoodsImg,
     overview: `Bryker Woods is one of Austin's most beloved central neighborhoods, nestled in the heart of the 78703 zip code just east of MoPac and minutes from downtown. Established in the 1930s and 1940s, the neighborhood is defined by its mature live oaks, quiet tree-lined streets, and a mix of original bungalows, thoughtfully renovated homes, and contemporary new construction.
 
@@ -2381,7 +2382,7 @@ The neighborhood is surrounded by beloved Austin institutions including Sweetish
 Bryker Woods is known for its family-oriented character. Children walk to school, neighbors know each other by name, and the community maintains a safe, welcoming environment that attracts young families and long-term residents alike.`,
     marketInsights: `### Pricing
 
-Homes in Bryker Woods range from approximately $700K for original bungalows needing renovation to over $3M for new construction and premium renovations on larger lots. The median home price typically falls between $1M and $1.8M.
+Homes in Bryker Woods range from approximately $700K for original bungalows needing renovation to over $3M for new construction and premium renovations on larger lots.
 
 ### Market Dynamics
 
@@ -2431,7 +2432,7 @@ Bryker Woods has been one of central Austin's strongest appreciating neighborhoo
     relatedCommunities: ["tarrytown", "clarksville", "hyde-park", "zilker-austin"],
     faqs: [
       { question: "What is it like living in Bryker Woods Austin?", answer: "Bryker Woods offers a walkable, tree-lined neighborhood with a strong sense of community, excellent schools, and unmatched proximity to downtown Austin and local dining." },
-      { question: "What are home prices in Bryker Woods?", answer: "Prices range from approximately $700K for original bungalows to over $3M for new construction and premium renovations on larger lots." },
+      { question: "What are home prices in Bryker Woods?", answer: neighborhoodPriceSummary("bryker-woods") },
       { question: "Are there luxury homes in Bryker Woods?", answer: "Yes. Modern new construction and high-end renovations in Bryker Woods feature premium finishes, open floor plans, and outdoor living spaces, often exceeding $2M." },
       { question: "What schools serve Bryker Woods?", answer: "Bryker Woods is served by Austin ISD, with Bryker Woods Elementary, O. Henry Middle School, and Austin High School." },
       { question: "Is Bryker Woods a good investment area?", answer: "Yes. Limited inventory, central location, top-rated schools, and strong demand from families and professionals support consistent long-term appreciation." },
@@ -2443,8 +2444,8 @@ Bryker Woods has been one of central Austin's strongest appreciating neighborhoo
     name: "East Austin",
     heroTitle: "Homes for Sale in East Austin",
     metaTitle: "East Austin Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore homes for sale in East Austin TX. From modern new builds to creative bungalows, discover one of Austin's most dynamic neighborhoods from $400K to $3M+.",
-    priceRange: "$400K – $3M+",
+    metaDescription: "Explore homes for sale in East Austin TX. From modern new builds to creative bungalows, discover one of Austin's most dynamic neighborhoods.",
+    priceRange: formatNeighborhoodMedian("east-austin"),
     image: eastAustinImg,
     overview: `East Austin has emerged as one of the most dynamic and culturally vibrant neighborhoods in the city, stretching east of Interstate 35 from the Colorado River north through the 78702 and 78722 zip codes. Once an overlooked corridor, the area has undergone a dramatic transformation over the past decade, becoming a magnet for artists, entrepreneurs, young professionals, and families drawn to its creative energy, walkability, and architectural diversity.
 
@@ -2482,7 +2483,7 @@ East Austin's culinary scene is legendary. From acclaimed restaurants like Suert
 - Festival Beach, waterfront park along the Colorado River`,
     marketInsights: `### Pricing
 
-Homes in East Austin range from approximately $400K for smaller bungalows and condos to over $3M for premium new construction on larger lots. The median home price in the core 78702 zip code typically falls between $700K and $1.2M.
+Homes in East Austin range from approximately $400K for smaller bungalows and condos to over $3M for premium new construction on larger lots.
 
 ### Market Dynamics
 
@@ -2535,7 +2536,7 @@ East Austin's transformation from overlooked corridor to one of Austin's most de
     relatedCommunities: ["mueller", "travis-heights", "downtown", "hyde-park"],
     faqs: [
       { question: "What is it like living in East Austin?", answer: "East Austin offers a vibrant, walkable urban lifestyle with world-class dining, a thriving arts scene, and a creative energy that's unlike any other Austin neighborhood." },
-      { question: "What are home prices in East Austin?", answer: "Prices range from approximately $400K for smaller homes and condos to over $3M for premium new construction on larger lots in the core 78702 zip code." },
+      { question: "What are home prices in East Austin?", answer: neighborhoodPriceSummary("east-austin") },
       { question: "Are there luxury homes in East Austin?", answer: "Yes. Modern new construction in East Austin features striking contemporary architecture, premium finishes, and innovative design, often exceeding $1.5M." },
       { question: "What schools serve East Austin?", answer: "East Austin is served by Austin ISD, including Blackshear Fine Arts Academy, Martin Middle School, and several high school options depending on location." },
       { question: "Is East Austin a good investment area?", answer: "Yes. East Austin has seen some of the highest appreciation rates in the metro, supported by downtown proximity, cultural amenities, and planned light rail transit." },
@@ -2547,8 +2548,8 @@ East Austin's transformation from overlooked corridor to one of Austin's most de
     name: "Old Enfield",
     heroTitle: "Homes for Sale in Old Enfield",
     metaTitle: "Old Enfield Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore homes for sale in Old Enfield Austin TX. One of Austin's most prestigious central neighborhoods with grand estates, tree-lined streets, and homes from $900K to $5M+.",
-    priceRange: "$900K – $5M+",
+    metaDescription: "Explore homes for sale in Old Enfield Austin TX. One of Austin's most prestigious central neighborhoods with grand estates, tree-lined streets.",
+    priceRange: formatNeighborhoodMedian("old-enfield"),
     image: oldEnfieldImg,
     overview: `Old Enfield is one of Austin's most storied and prestigious residential neighborhoods, occupying a prime position between downtown Austin and the western hills. Bounded roughly by Lamar Boulevard to the east, MoPac to the west, West 15th Street to the north, and Lady Bird Lake to the south, this historic enclave sits within the coveted 78703 zip code and offers an unrivaled combination of elegance, convenience, and natural beauty.
 
@@ -2583,7 +2584,7 @@ Old Enfield's central location places residents within minutes of Austin's most 
 Despite its urban proximity, Old Enfield maintains a serene, residential character. Wide lots, deep setbacks, and the dense tree canopy create an atmosphere of privacy and tranquility that belies the neighborhood's central location. It's a place where neighbors walk their dogs, children ride bikes, and the pace of life feels distinctly unhurried.`,
     marketInsights: `### Pricing
 
-Homes in Old Enfield range from approximately $900K for smaller homes and condominiums to over $5M for grand estates and premium new construction on large lots. The median home price typically falls between $1.5M and $2.5M.
+Homes in Old Enfield range from approximately $900K for smaller homes and condominiums to over $5M for grand estates and premium new construction on large lots.
 
 ### Market Dynamics
 
@@ -2640,7 +2641,7 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
     relatedCommunities: ["tarrytown", "clarksville", "pemberton-heights", "bryker-woods"],
     faqs: [
       { question: "What is it like living in Old Enfield Austin?", answer: "Old Enfield offers estate-level living within walking distance of downtown Austin, with tree-lined streets, grand homes, and access to Pease Park, Shoal Creek, and Lady Bird Lake." },
-      { question: "What are home prices in Old Enfield?", answer: "Prices range from approximately $900K for smaller homes to over $5M for grand estates and premium new construction on large lots." },
+      { question: "What are home prices in Old Enfield?", answer: neighborhoodPriceSummary("old-enfield") },
       { question: "Are there luxury homes in Old Enfield?", answer: "Yes. Old Enfield features some of Austin's finest residences, including restored historic estates, mid-century modern gems, and sophisticated contemporary new construction." },
       { question: "What schools serve Old Enfield?", answer: "Old Enfield is served by Austin ISD, with Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby." },
       { question: "Is Old Enfield a good investment area?", answer: "Yes. Irreplaceable location, structural scarcity, and strong demand from affluent buyers support consistent long-term appreciation in Old Enfield." },
@@ -2652,8 +2653,8 @@ Old Enfield has been one of central Austin's most consistently appreciating neig
     name: "Davenport Ranch",
     heroTitle: "Homes for Sale in Davenport Ranch",
     metaTitle: "Davenport Ranch Homes for Sale Austin | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities, and homes from $1.5M to $5M+.",
-    priceRange: "$1.5M – $5M+",
+    metaDescription: "Explore luxury homes for sale in Davenport Ranch Austin TX. Gated Hill Country estates with panoramic views, resort-style amenities.5M to $5M+.",
+    priceRange: formatNeighborhoodMedian("davenport-ranch"),
     image: davenportRanchImg,
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. Nestled into the rolling hills west of downtown, the community offers oversized lots, mature tree canopy, and a coveted position within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
 
@@ -2692,7 +2693,7 @@ The neighborhood's 360 corridor location provides easy access to multiple retail
 Davenport Ranch is known for its family-friendly character. The neighborhood's quiet streets, large lots, and Eanes ISD schools attract families who prioritize outdoor space, safety, and academic excellence. Children grow up with room to play, and the community maintains a welcoming, established atmosphere.`,
     marketInsights: `### Pricing
 
-Homes in Davenport Ranch range from approximately $1.5M for homes on standard lots needing updates to over $5M for fully renovated or rebuilt estates on premium lots with Hill Country views. The median home price typically falls between $2M and $4M.
+Homes in Davenport Ranch range from approximately $1.5M for homes on standard lots needing updates to over $5M for fully renovated or rebuilt estates on premium lots with Hill Country views.
 
 ### Market Dynamics
 
@@ -2748,7 +2749,7 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
     relatedCommunities: ["westlake-hills", "rob-roy", "barton-creek", "bee-cave"],
     faqs: [
       { question: "What is it like living in Davenport Ranch Austin?", answer: "Davenport Ranch offers spacious Hill Country living on large wooded lots off Loop 360, with Eanes ISD schools and downtown Austin just 15 minutes away." },
-      { question: "What are home prices in Davenport Ranch?", answer: "Prices range from approximately $1.5M for homes needing updates to over $5M for fully renovated estates with Hill Country views on premium lots." },
+      { question: "What are home prices in Davenport Ranch?", answer: neighborhoodPriceSummary("davenport-ranch") },
       { question: "Are there luxury homes in Davenport Ranch?", answer: "Yes. Davenport Ranch features custom estates with resort-caliber amenities including pools, sport courts, outdoor kitchens, and panoramic Hill Country views." },
       { question: "What schools serve Davenport Ranch?", answer: "Davenport Ranch is served by the Eanes ISD, including Eanes Elementary, Hill Country Middle School, and Westlake High School." },
       { question: "Is Davenport Ranch a good investment area?", answer: "Yes. Eanes ISD zoning, the 78746 zip code, and limited inventory on large lots support strong long-term appreciation." },
@@ -2760,8 +2761,8 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
     name: "Lakeway",
     heroTitle: "Homes for Sale in Lakeway TX",
     metaTitle: "Lakeway Homes for Sale | Echelon Property Group",
-    metaDescription: "Explore luxury homes for sale in Lakeway TX. Waterfront estates on Lake Travis, resort-style amenities, top-rated Lake Travis ISD schools, and homes from $600K to $5M+.",
-    priceRange: "$600K – $5M+",
+    metaDescription: "Explore luxury homes for sale in Lakeway TX. Waterfront estates on Lake Travis, resort-style amenities, top-rated Lake Travis ISD schools.",
+    priceRange: formatNeighborhoodMedian("lakeway"),
     image: lakewayImg,
     overview: `Lakeway is a premier Hill Country community located along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin. Spanning roughly 11 square miles, this incorporated city offers a resort-caliber lifestyle with Lake Travis waterfront access, championship golf courses, and nationally recognized schools within the Lake Travis Independent School District. For buyers considering a [move to the Austin metro](/moving-to-austin-texas), Lakeway consistently ranks among the most desirable landing spots.
 
@@ -2805,7 +2806,7 @@ Lakeway's own commercial corridor along Lohmans Crossing and Ranch Road 620 feat
 Lakeway maintains a welcoming, family-oriented culture with an active calendar of community events, farmers markets, holiday celebrations, and charity galas. The Lakeway Heritage Center preserves the community's resort-era history. Lakeway's small-city governance provides residents with responsive local services, a dedicated police department, and community-focused planning.`,
     marketInsights: `### Pricing
 
-Lakeway's real estate market spans a broad range, from well-maintained homes in established sections starting around $600K to waterfront estates and custom builds on premium lots exceeding $5M. The median home price typically falls between $800K and $1.5M, with lakefront and golf-course properties commanding significant premiums. For current data on how Lakeway fits within the broader market, see the [Austin luxury real estate market report](/austin-luxury-real-estate-market-report).
+Lakeway's real estate market spans a broad range, from well-maintained homes in established sections starting around $600K to waterfront estates and custom builds on premium lots exceeding $5M. For current data on how Lakeway fits within the broader market, see the [Austin luxury real estate market report](/austin-luxury-real-estate-market-report).
 
 ### Market Dynamics
 
@@ -2873,7 +2874,7 @@ The Highway 71 and Ranch Road 620 corridors continue to attract commercial and r
 ### Long-Term Appreciation
 
 Lakeway has appreciated consistently over multiple decades, supported by waterfront scarcity, Lake Travis ISD demand, resort-caliber amenities, and Austin metro growth. These fundamentals support continued strong long-term value growth.`,
-    echelonPerspective: `Lakeway is the most established resort community along Lake Travis, offering an infrastructure depth that sets it apart from more rural lakefront options in the Austin, Texas area. Championship golf at Flintrock Falls and Lakeway Resort, full-service marinas, and a self-contained commercial corridor along Ranch Road 620 create a lifestyle that is largely self-sufficient. The buyer profile ranges from families relocating for Lake Travis ISD schools to retirees seeking waterfront living and second-home buyers from major metros. Pricing spans from $600K for established homes to $5M+ for waterfront estates with private docks. What makes Lakeway particularly compelling is its position as both a primary residence community and a vacation destination, properties with lake access command strong appreciation and seasonal rental income. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers a shorter commute with upscale shopping, while [Steiner Ranch](/communities/steiner-ranch) provides a family-oriented alternative at a lower entry point.`,
+    echelonPerspective: `Lakeway is the most established resort community along Lake Travis, offering an infrastructure depth that sets it apart from more rural lakefront options in the Austin, Texas area. Championship golf at Flintrock Falls and Lakeway Resort, full-service marinas, and a self-contained commercial corridor along Ranch Road 620 create a lifestyle that is largely self-sufficient. The buyer profile ranges from families relocating for Lake Travis ISD schools to retirees seeking waterfront living and second-home buyers from major metros. What makes Lakeway particularly compelling is its position as both a primary residence community and a vacation destination, properties with lake access command strong appreciation and seasonal rental income. For buyers comparing options, [Bee Cave](/communities/bee-cave) offers a shorter commute with upscale shopping, while [Steiner Ranch](/communities/steiner-ranch) provides a family-oriented alternative at a lower entry point.`,
     communityComparison: `Lakeway occupies a distinct position among West Austin's luxury communities, offering a combination of waterfront access, resort amenities, and master-planned living that few neighborhoods can match.
 
 Compared to the broader [Lake Travis waterfront market](/communities/lake-travis), Lakeway provides the most comprehensive infrastructure, marinas, championship golf, and a self-contained commercial corridor, making it ideal for buyers who want a full-service lake lifestyle rather than a secluded waterfront retreat.
@@ -2888,7 +2889,7 @@ Established northwest Austin neighborhoods like [Great Hills](/communities/great
     relatedCommunities: ["lake-travis", "bee-cave", "steiner-ranch", "spanish-oaks"],
     faqs: [
       { question: "What is it like living in Lakeway TX?", answer: "Lakeway offers a resort-caliber Hill Country lifestyle with Lake Travis waterfront access, championship golf, top-rated Lake Travis ISD schools, and a thriving local dining and shopping scene, all within 25 minutes of downtown Austin." },
-      { question: "What are home prices in Lakeway?", answer: "Prices range from approximately $600K for established homes to over $5M for waterfront estates and custom builds on premium lots. The median home price typically falls between $800K and $1.5M." },
+      { question: "What are home prices in Lakeway?", answer: neighborhoodPriceSummary("lakeway") },
       { question: "Are there luxury waterfront homes in Lakeway?", answer: "Yes. Lakeway features waterfront estates on Lake Travis with private boat docks, resort-style pools, and panoramic lake and Hill Country views." },
       { question: "What schools serve Lakeway?", answer: "Lakeway is served by the Lake Travis ISD, including Lake Travis Elementary, Hudson Bend Middle School, Lake Travis Middle School, and Lake Travis High School." },
       { question: "Is Lakeway a good investment area?", answer: "Yes. Waterfront scarcity, Lake Travis ISD demand, resort amenities, and Austin metro growth support strong long-term appreciation. Select properties also offer short-term rental income potential." },

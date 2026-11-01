@@ -85,6 +85,7 @@ interface BlogContentProps {
 
 const renderInline = (text: string) =>
   text
+    .replace(/(Median sale · [^.]+ · Source: Unlock MLS)/g, '<span class="block text-xs text-muted-foreground">$1</span>')
     .replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground">$1</strong>')
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,

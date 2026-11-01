@@ -27,7 +27,7 @@ export const neighborhoodStats: Record<string, NeighborhoodStat> = {
 };
 
 export function getNeighborhoodStat(areaOrSlug: string): NeighborhoodStat | undefined {
-  const normalized = areaOrSlug.toLowerCase().replace(/-homes-for-sale$/, "").replace(/ waterfront$/, "");
+  const normalized = areaOrSlug.toLowerCase().replace(/-homes-for-sale$/, "").replace(/[- ]waterfront$/, "");
   return neighborhoodStats[normalized] ?? Object.values(neighborhoodStats).find(
     (entry) => entry.area.toLowerCase() === normalized,
   );
@@ -47,5 +47,6 @@ export function neighborhoodSourceNote(areaOrSlug: string): string {
 
 export function neighborhoodPriceSummary(areaOrSlug: string): string {
   const value = formatNeighborhoodMedian(areaOrSlug);
-  return value ? `${value}. ${neighborhoodSourceNote(areaOrSlug)}` : "Contact Echelon Property Group for a current, neighborhood-specific pricing analysis.";
+  const stat = getNeighborhoodStat(areaOrSlug);
+  return value ? `${value}. ${neighborhoodSourceNote(areaOrSlug)}. ${stat?.salesCount} sales.` : "Contact Echelon Property Group for a current, neighborhood-specific pricing analysis.";
 }

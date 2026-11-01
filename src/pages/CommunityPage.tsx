@@ -179,6 +179,10 @@ function createCommunityPlaceSchema(community: { name: string; slug: string; met
 
 /** Parses markdown-style [text](/url) links into React elements */
 const parseInlineLinks = (text: string): React.ReactNode => {
+  const source = text.match(/Median sale · [^.]+ · Source: Unlock MLS/);
+  if (source?.index !== undefined) {
+    return <>{parseInlineLinks(text.slice(0, source.index))}<span className="block text-xs text-muted-foreground">{source[0]}</span>{parseInlineLinks(text.slice(source.index + source[0].length))}</>;
+  }
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
   const parts: React.ReactNode[] = [];
   let lastIndex = 0;

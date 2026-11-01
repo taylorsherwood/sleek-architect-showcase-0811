@@ -180,7 +180,7 @@ var neighborhoodStats = {
   "lake-austin": pending("Lake Austin")
 };
 function getNeighborhoodStat(areaOrSlug) {
-  const normalized = areaOrSlug.toLowerCase().replace(/-homes-for-sale$/, "").replace(/ waterfront$/, "");
+  const normalized = areaOrSlug.toLowerCase().replace(/-homes-for-sale$/, "").replace(/[- ]waterfront$/, "");
   return neighborhoodStats[normalized] ?? Object.values(neighborhoodStats).find(
     (entry) => entry.area.toLowerCase() === normalized
   );

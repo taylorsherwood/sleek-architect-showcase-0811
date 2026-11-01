@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 const BookingModal = lazy(() => import("@/components/BookingModal"));
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   localBusinessSchema,

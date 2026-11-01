@@ -248,44 +248,17 @@ const AdvisorSection = () => (
    SECTION 3B, STATS STRIP
    ───────────────────────────────────────────── */
 
-const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
-  // Initialize to the FINAL value so server-rendered/prerendered HTML always
-  // contains the target number. Animation still runs on the client via
-  // IntersectionObserver; it just resets to `from` immediately before
-  // stepping back up to `target`.
-  const [count, setCount] = useState(target);
+const useCountUp = (target: number, _duration = 2600, _from = 0, _decimals = 0) => {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const animId = useRef(0);
-
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          const startTime = performance.now();
-          const id = ++animId.current;
-          const step = (now: number) => {
-            if (id !== animId.current) return;
-            const progress = Math.min((now - startTime) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const raw = from + eased * (target - from);
-            if (progress < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-        } else {
-          setInView(false);
-        }
-      },
-      { threshold: 0.3 }
-    );
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.3 });
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration, from, decimals]);
-
-  return { count, ref, inView };
+  }, []);
+  return { count: target, ref, inView };
 };
 
 const stats = [

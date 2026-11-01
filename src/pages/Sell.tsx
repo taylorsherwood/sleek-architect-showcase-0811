@@ -165,41 +165,18 @@ const stats = [
   { target: 155, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 75 },
 ];
 
-function useCountUp(target: number, duration = 3500, from = 0) {
-  // Initialize to final value so SSR/prerender HTML shows the target.
-  const [count, setCount] = useState(target);
+function useCountUp(target: number, _duration = 3500, _from = 0) {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const animId = useRef(0);
-
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          const startTime = performance.now();
-          const id = ++animId.current;
-          const step = (now: number) => {
-            if (id !== animId.current) return;
-            const progress = Math.min((now - startTime) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            if (progress < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-        } else {
-          setInView(false);
-        }
-      },
-      { threshold: 0.3 }
-    );
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.3 });
     observer.observe(el);
     return () => observer.disconnect();
-  }, [target, duration, from]);
-
-  return { count, ref, inView };
-}
+  }, []);
+  return { count: target, ref, inView };
+};
 
 function AnimatedStat({ target, suffix = "", prefix = "", label, from = 0 }: {
   target: number; suffix?: string; prefix?: string; label: string; countDown?: boolean; from?: number;

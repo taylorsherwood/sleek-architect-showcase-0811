@@ -330,56 +330,11 @@ const CountUp = ({
   suffix: string;
   duration?: number;
 }) => {
-  const ref = useRef<HTMLSpanElement>(null);
-  // Initialize to final value so SSR/prerender HTML shows the target.
-  const [value, setValue] = useState(to);
-  const rafRef = useRef<number | null>(null);
-  const wasVisibleRef = useRef(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
-      setValue(to);
-      return;
-    }
-
-    const runAnimation = () => {
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
-      const start = performance.now();
-      const tick = (now: number) => {
-        const elapsed = now - start;
-        const t = Math.min(1, elapsed / duration);
-        const eased = 1 - Math.pow(1 - t, 3);
-        if (t < 1) rafRef.current = requestAnimationFrame(tick);
-      };
-      rafRef.current = requestAnimationFrame(tick);
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !wasVisibleRef.current) {
-            wasVisibleRef.current = true;
-            runAnimation();
-          } else if (!entry.isIntersecting && wasVisibleRef.current) {
-            wasVisibleRef.current = false;
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(el);
-    return () => {
-      observer.disconnect();
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
-    };
-  }, [from, to, duration]);
 
   return (
-    <span ref={ref} aria-label={`${prefix}${to.toFixed(decimals)}${suffix}`}>
+    <span aria-label={`${prefix}${to.toFixed(decimals)}${suffix}`}>
       {prefix}
-      {value.toFixed(decimals)}
+      {to.toFixed(decimals)}
       {suffix}
     </span>
   );

@@ -1,4 +1,4 @@
-import { formatNeighborhoodMedian, neighborhoodPriceSummary } from "./neighborhoodStats";
+import { formatNeighborhoodMedian, neighborhoodPriceSummary, neighborhoodSourceNote } from "./neighborhoodStats";
 import heroLuxury from "@/assets/hero-luxury-austin.jpg";
 import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";
 import blogLakeAustinVsLakeTravis from "@/assets/lake-travis-sunset.jpg";
@@ -3374,7 +3374,7 @@ Q: Does the Eanes premium hold in a down market?
 A: It held better than the alternatives. From the trailing twelve months ending August 2022 to the same window ending August 2026, price per square foot fell 9.5 percent in 78746 and 7.4 percent in 78733, against 15.4 percent for the City of Austin, 13.0 percent in 78738 and 15.0 percent in 78732. Measured against the city, the 78746 premium widened from 1.78 times to 1.90 times per foot. What gave was liquidity: months of inventory rose from 2.19 to 5.44 and the success rate fell from 76 percent to 56 percent.
 
 Q: Is Westlake the same thing as Eanes ISD?
-A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, where the median sale was $2,307,600 and $566 per foot in the last twelve months. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
+A: No. Westlake High School serves the entire district, but Westlake as a neighborhood or market term usually means the area around West Lake Hills, which should be analyzed separately from the district-wide and ZIP-wide datasets. Lost Creek, Davenport Ranch, Rob Roy on the Canyon and the 78733 corridor are all Eanes ISD with different price points, lot sizes and comparable sets. Pricing a Rob Roy house off Westlake neighborhood statistics is a common and expensive mistake; comp it against closings on its own side of Loop 360.
 
 Q: What is the least expensive way into Eanes ISD?
 A: On a per-foot basis, 78733 at a $424 median and Davenport Ranch at $466 are the entry points, followed by Lost Creek at $508. All feed Westlake High School. 78733 had the fastest median days on market of any zip in this analysis at 27 and 9.4 percent year-over-year price growth, so the discount comes with competition. Unincorporated Eanes addresses also carry the lowest total tax stack in West Austin, about $1.53 per $100, because they pay no city tax.
@@ -7977,20 +7977,20 @@ The most expensive neighborhoods in Austin in 2026 are Rollingwood, West Lake Hi
 For all 72 metro ZIPs ranked side by side, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
 
 :::compare-table
-Neighborhood | Area | Schools | Typical Median (Mid 2026) | Defining Trait
+Neighborhood | Area | Schools | Median sale | Defining Trait
 Rollingwood | West Austin (own city) | Eanes ISD | Not available | Small city inside the city
 West Lake Hills | West Austin (own city) | Eanes ISD | ${formatNeighborhoodMedian("westlake-hills") || "Not available"} | Hillside estates, canyon views
 Barton Creek | Southwest Austin | Eanes/Austin ISD | Not available | Gated golf and resort living
 Spanish Oaks | Bee Cave | Lake Travis ISD | Not available | Private club, new construction
-Pemberton Heights | Central Austin | Austin ISD | $2M+ | Historic estates, old money
+Pemberton Heights | Central Austin | Austin ISD | Not available | Historic estates, old money
 Tarrytown | Central Austin | Austin ISD | Not available | Legacy central, lake access
-Rob Roy | West Austin | Eanes ISD | $2M+ | Gated acreage, skyline views
-Davenport Ranch | West Austin | Eanes ISD | $1.8M+ | Country club, hilltop views
-Old Enfield / Windsor Road | Central Austin | Austin ISD | $1.5M to $2M+ | Historic district prestige
+Rob Roy | West Austin | Eanes ISD | Not available | Gated acreage, skyline views
+Davenport Ranch | West Austin | Eanes ISD | Not available | Country club, hilltop views
+Old Enfield / Windsor Road | Central Austin | Austin ISD | Not available | Historic district prestige
 Lake Austin Waterfront | Along the lake | Varies | Not available | Scarce, deeded waterfront
 :::
 
-Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by source, comp window, and boundary definition, and they exclude the private sales discussed below.
+${neighborhoodSourceNote("westlake-hills")}. Other neighborhood medians are withheld pending a verified dataset.
 
 ## 1. Rollingwood
 
@@ -7998,7 +7998,7 @@ Figures reflect mid 2026 MLS and home value index data, rounded. Medians vary by
 
 ## 2. West Lake Hills
 
-The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. Medians sit above $2.2 million, with view estates trading well beyond that, often before they are ever publicly marketed.
+The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. ${neighborhoodPriceSummary("westlake-hills")}. View estates often trade privately.
 
 ## 3. Barton Creek
 
@@ -8010,7 +8010,7 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 5. Pemberton Heights
 
-[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with medians above $2 million and landmark homes trading far higher. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
+[Pemberton Heights](/communities/pemberton-heights) is central Austin's blue chip historic neighborhood, with early twentieth century estates under mature oaks a few minutes north of downtown. Supply is fixed, demand is generational, and prices reflect it, with landmark homes commanding premiums. Many Pemberton sales are quiet by design. Families who have held these homes for decades tend to sell to a known buyer through a trusted broker rather than run a public process.
 
 ## 6. Tarrytown
 
@@ -8018,7 +8018,7 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 7. Rob Roy
 
-[Rob Roy](/communities/rob-roy) is gated acreage off Loop 360 with some of the best skyline and Hill Country views in the city, all inside Eanes ISD. Lots of an acre or more, winding private streets, and a limited number of homes make it a low turnover market where the best properties change hands through relationships. Medians run above $2 million, and view estates on the bluff command significant premiums when they trade at all.
+[Rob Roy](/communities/rob-roy) is gated acreage off Loop 360 with some of the best skyline and Hill Country views in the city, all inside Eanes ISD. Lots of an acre or more, winding private streets, and a limited number of homes make it a low turnover market where the best properties change hands through relationships. View estates on the bluff command significant premiums when they trade at all.
 
 ## 8. Davenport Ranch
 
@@ -8026,11 +8026,11 @@ Out Highway 71 in Bee Cave, [Spanish Oaks](/communities/spanish-oaks) is the new
 
 ## 9. Old Enfield and Windsor Road
 
-The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots with medians around $1.4 to $1.5 million, while the Windsor Road corridor runs above $2 million and includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
+The Old West Austin historic district holds two of the city's most prestigious addresses. [Old Enfield](/communities/old-enfield) offers original estates and deep lots, while the Windsor Road corridor includes some of the highest household incomes in Austin. These are steady, low drama markets. Appreciation is consistent rather than explosive, supply is permanently constrained by the historic fabric, and provenance matters as much as square footage.
 
 ## 10. Lake Austin Waterfront
 
-Deeded [Lake Austin waterfront](/communities/lake-austin) is the scarcest asset in Central Texas residential real estate. It crosses several neighborhoods, from Tarrytown's lake streets through Westlake coves and up the 360 corridor, and it behaves as its own market. Entry starts around $3 million, trophy compounds trade from $10 million up, and a meaningful share of waterfront volume never touches the MLS. We covered the lifestyle, the constraints, and the pricing logic in detail in [Living on Lake Austin](/blog/living-on-lake-austin).
+Deeded [Lake Austin waterfront](/communities/lake-austin) is the scarcest asset in Central Texas residential real estate. It crosses several neighborhoods, from Tarrytown's lake streets through Westlake coves and up the 360 corridor, and it behaves as its own market. A meaningful share of waterfront volume never touches the MLS. We covered the lifestyle, the constraints, and the pricing logic in detail in [Living on Lake Austin](/blog/living-on-lake-austin).
 
 ## Why the Published Numbers Undersell These Neighborhoods
 
@@ -17403,10 +17403,10 @@ A: Yes. Private buyers form impressions quickly and are often more sophisticated
     id: "living-on-lake-austin",
     title: "Living on Lake Austin: Why Austin's Most Exclusive Waterfront Costs What It Does",
     metaTitle: "Living on Lake Austin: Why It's So Exclusive & Expensive",
-    excerpt: "Why Lake Austin is Austin's most exclusive address: constant-level water, fixed supply, dock permit scarcity, and waterfront pricing from $4M to $35M+.",
+    excerpt: "Why Lake Austin is Austin's most exclusive address: constant-level water, fixed supply, dock permit scarcity, and the factors that drive waterfront pricing.",
     content: `:::callout
 label: Quick answer
-Lake Austin is the most supply-constrained residential market in Central Texas. Direct waterfront homes start around $4M to $5M for older properties or challenging lots, prime estates with modern construction run $8M to $15M+, and trophy compounds reach $25M to $35M and beyond. Dock-permitted properties command premiums of 30 to 50 percent over comparable lots without them. The reasons are structural: 22 miles of constant-level shoreline that is essentially built out, minutes from downtown, with no new supply coming, ever.
+Lake Austin is the most supply-constrained residential market in Central Texas. Waterfront pricing depends on frontage, dock rights, lot usability, and construction quality. Dock-permitted properties command premiums of 30 to 50 percent over comparable lots without them. The reasons are structural: 22 miles of constant-level shoreline that is essentially built out, minutes from downtown, with no new supply coming, ever.
 :::
 
 This guide explains what makes living on Lake Austin different from every other waterfront market in Texas, why the price of entry keeps climbing, and how these properties actually change hands, which is often not on the open market.

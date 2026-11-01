@@ -8576,7 +8576,7 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 
 [BARTON CREEK](/communities/barton-creek) is not one gated community. It is a 2,500-acre master-planned area containing roughly a dozen separate gated enclaves, each with its own gate, HOA layer, and personality. The names to know: Amarra, Verano, Escala, Mirador, The Estates, WatersMark, The Fairways, The Foothills, North Rim, Wimberly Lane, and the Woods sections.
 
-The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing commonly running from the $4M range well past $6M. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
+The newer, view-driven sections (Amarra, Verano, Escala, Mirador) are where Austin's most architecture-forward new estates are being built, with pricing dependent on lot position and architectural quality. The established sections trade on mature lots, Fazio Foothills and Fazio Canyons golf frontage, and proximity to Barton Creek Country Club. All of it sits in Eanes ISD, fifteen minutes from downtown.
 
 Two practical notes I give every BARTON CREEK buyer. First, costs and architectural review vary meaningfully by enclave, since each section layers its own association on top of the master POA. Underwrite the specific street, not the brand. Second, a significant share of BARTON CREEK's best inventory trades before it's ever publicly listed. If you're only watching portals, you're seeing a partial market. That's exactly the dynamic our [private access network](/off-market-real-estate-austin) exists to solve. For daily life inside the community, see [Living in Barton Creek](/blog/living-in-barton-creek-austin).
 
@@ -8584,7 +8584,7 @@ Two practical notes I give every BARTON CREEK buyer. First, costs and architectu
 
 [Spanish Oaks](/communities/spanish-oaks) in Bee Cave is what most people picture when they say "guard-gated golf community": two gatehouses staffed 24/7, a private golf club whose course consistently ranks among the best in Texas, a swim club, fish camp, and trail system, all composed in limestone-and-oak Hill Country vernacular.
 
-Spanish Oaks is a true club-life community. Homes generally start well above $2M and run past $7M for estate sections, and the buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin. This is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
+Spanish Oaks is a true club-life community. ${neighborhoodPriceSummary("spanish-oaks")} The buyer profile skews toward families prioritizing Lake Travis ISD, golf, and a resort cadence over central-Austin proximity. The Hill Country Galleria is minutes away; downtown is a 25–30 minute run. Inventory is chronically thin. This is one of the communities where knowing a listing is coming matters more than seeing it hit the market.
 
 ## Rob Roy: Old-Guard Estates Behind the Gate
 
@@ -15533,7 +15533,7 @@ West Lake Hills feels more secluded and elevated. It appeals to buyers who prior
 
 Rollingwood pricing is driven by location and convenience. Its proximity to downtown, combined with limited inventory in a small incorporated city, keeps demand consistently strong. 
 
-West Lake Hills pricing is driven by lot size, views, and privacy. Larger estate properties with Hill Country views command premium pricing, often ranging from $1.5 million to $10 million and beyond depending on acreage, elevation, and architectural quality.
+West Lake Hills pricing is driven by lot size, views, and privacy. ${neighborhoodPriceSummary("westlake-hills")}
 
 ## Which One Is Right for You
 
@@ -15570,7 +15570,7 @@ For additional neighborhood comparisons, read our guides on <a href="/blog/tarry
 ## Frequently Asked Questions
 
 ### Is Rollingwood a good place to live in Austin?
-Yes. Rollingwood is one of Austin's most desirable small communities, offering top-rated Eanes ISD schools, proximity to downtown and Zilker Park, and a tight-knit residential feel with homes typically ranging from $1 million to over $3 million.
+Yes. Rollingwood is one of Austin's most desirable small communities, offering top-rated Eanes ISD schools, proximity to downtown and Zilker Park, and a tight-knit residential feel with homes suited to a range of buyer needs.
 
 ### What is the average home price in West Lake Hills?
 ${neighborhoodPriceSummary("westlake-hills")}

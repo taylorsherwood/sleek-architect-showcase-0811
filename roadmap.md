@@ -5,7 +5,7 @@
 - [x] Verify the article in the preview, including mobile layout, hosted image, and all eight FAQ interactions.
 
 # Counter and neighborhood-data fixes
-- [ ] Render final career statistics from first paint and standardize Transactions Closed labels without design changes.
-- [ ] Centralize neighborhood summaries and source notes; use verified West Lake Hills data and remove unsupported figures and regional widgets.
-- [ ] Verify initial rendering, neighborhood consumers, and regression tests; provide the changed-file/page inventory.
+- [x] Render final career statistics from first paint and standardize Transactions Closed labels without design changes.
+- [x] Centralize neighborhood summaries and source notes; use verified West Lake Hills data and remove unsupported figures and regional widgets.
+- [x] Verify initial rendering, neighborhood consumers, and regression tests; provide the changed-file/page inventory.
 - [ ] Await verified median, sales count, and reporting period for Barton Creek, Rollingwood, Tarrytown, Spanish Oaks, and Lake Austin; hide their unsupported figures meanwhile.

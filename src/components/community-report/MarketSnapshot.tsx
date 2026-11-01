@@ -1,4 +1,5 @@
 import { CommunityMarketStats } from "@/types/community";
+import { formatNeighborhoodMedian, neighborhoodSourceNote } from "@/data/neighborhoodStats";
 
 interface MarketSnapshotProps {
   stats: CommunityMarketStats;
@@ -14,7 +15,7 @@ const MarketSnapshot = ({ stats, communityName }: MarketSnapshotProps) => {
   const numericItems = [
     { label: "Median Active Price", value: fmtCurrency(stats.median_active_price) },
     { label: "Average Active Price", value: fmtCurrency(stats.average_active_price) },
-    { label: "Median Sold Price (area)", value: fmtCurrency(stats.median_sold_price_area) },
+    { label: "Median sale", value: formatNeighborhoodMedian(communityName) || null },
     { label: "Average Sold Price (area)", value: fmtCurrency(stats.average_sold_price_area) },
     { label: "Active Inventory", value: fmtNumber(stats.active_inventory_count) },
     { label: "Sold (last 90 days)", value: fmtNumber(stats.sold_count_last_90_days) },
@@ -49,6 +50,7 @@ const MarketSnapshot = ({ stats, communityName }: MarketSnapshotProps) => {
                 {item.label}
               </p>
               <p className="text-2xl font-display text-architectural">{item.value}</p>
+              {item.label === "Median sale" && <p className="text-xs text-muted-foreground mt-2">{neighborhoodSourceNote(communityName)}</p>}
             </div>
           ))}
         </div>

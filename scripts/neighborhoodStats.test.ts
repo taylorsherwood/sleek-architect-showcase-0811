@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { formatNeighborhoodMedian, getNeighborhoodStat, neighborhoodPriceSummary, neighborhoodSourceNote } from "./neighborhoodStats";
-import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "../config/taylorStats";
+import { formatNeighborhoodMedian, getNeighborhoodStat, neighborhoodPriceSummary, neighborhoodSourceNote } from "../src/data/neighborhoodStats";
+import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "../src/config/taylorStats";
 
 describe("verified neighborhood statistics", () => {
   test("West Lake Hills median is $2.5M", () => {

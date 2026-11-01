@@ -347,12 +347,10 @@ const CountUp = ({
     const runAnimation = () => {
       if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
       const start = performance.now();
-      setValue(from);
       const tick = (now: number) => {
         const elapsed = now - start;
         const t = Math.min(1, elapsed / duration);
         const eased = 1 - Math.pow(1 - t, 3);
-        setValue(from + (to - from) * eased);
         if (t < 1) rafRef.current = requestAnimationFrame(tick);
       };
       rafRef.current = requestAnimationFrame(tick);
@@ -379,7 +377,7 @@ const CountUp = ({
   }, [from, to, duration]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} aria-label={`${prefix}${to.toFixed(decimals)}${suffix}`}>
       {prefix}
       {value.toFixed(decimals)}
       {suffix}

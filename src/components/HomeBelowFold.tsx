@@ -522,8 +522,8 @@ const TestimonialsSection = () => {
           className="tsplit-section relative w-full h-screen bg-secondary overflow-hidden"
           aria-label="Client experiences"
         >
-        <div className="absolute inset-0 z-0 flex items-start justify-end pl-8 md:pl-10 lg:pl-14 pr-16 md:pr-24 lg:pr-32">
-          <div className="max-w-xl md:w-1/2 md:pl-0" style={{ paddingTop: "clamp(140px, 22vh, 260px)" }}>
+        <div className="absolute inset-0 z-0 flex items-start pr-8 md:pr-10 lg:pr-14">
+          <div className="max-w-xl md:w-1/2 md:ml-auto md:pl-10 lg:pl-16" style={{ paddingTop: "clamp(140px, 22vh, 260px)" }}>
             {/* Eyebrow with gold hairline rule, magazine masthead treatment */}
             <div
               className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"

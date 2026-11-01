@@ -153,6 +153,44 @@ var communities_default = [
   }
 ];
 
+// src/data/neighborhoodStats.ts
+var pending = (area) => ({
+  area,
+  medianSale: null,
+  metricLabel: "Median sale",
+  period: null,
+  salesCount: null,
+  source: null,
+  asOf: null
+});
+var neighborhoodStats = {
+  "westlake-hills": {
+    area: "West Lake Hills",
+    medianSale: 25e5,
+    metricLabel: "Median sale",
+    period: "12 months through October 2026",
+    salesCount: 47,
+    source: "Unlock MLS",
+    asOf: "2026-10-31"
+  },
+  "barton-creek": pending("Barton Creek"),
+  rollingwood: pending("Rollingwood"),
+  tarrytown: pending("Tarrytown"),
+  "spanish-oaks": pending("Spanish Oaks"),
+  "lake-austin": pending("Lake Austin")
+};
+function getNeighborhoodStat(areaOrSlug) {
+  const normalized = areaOrSlug.toLowerCase().replace(/-homes-for-sale$/, "").replace(/ waterfront$/, "");
+  return neighborhoodStats[normalized] ?? Object.values(neighborhoodStats).find(
+    (entry) => entry.area.toLowerCase() === normalized
+  );
+}
+function formatNeighborhoodMedian(areaOrSlug) {
+  const stat = getNeighborhoodStat(areaOrSlug);
+  if (stat?.medianSale == null) return "";
+  return `$${Number((stat.medianSale / 1e6).toFixed(2))}M`;
+}
+
 // src/lib/mcp/tools/list-communities.ts
 var list_communities_default = defineTool({
   name: "list_communities",
@@ -169,7 +207,8 @@ var list_communities_default = defineTool({
     ).map((c) => ({
       slug: c.slug,
       name: c.name,
-      priceRange: c.priceRange,
+      priceRange: formatNeighborhoodMedian(c.slug),
+      neighborhoodStats: getNeighborhoodStat(c.slug) ?? null,
       url: `https://www.echelonpropertygroup.com/communities/${c.slug}`
     }));
     return {
@@ -201,7 +240,8 @@ var get_community_default = defineTool2({
     const payload = {
       slug: match.slug,
       name: match.name,
-      priceRange: match.priceRange,
+      priceRange: formatNeighborhoodMedian(match.slug),
+      neighborhoodStats: getNeighborhoodStat(match.slug) ?? null,
       overview: match.overview,
       url: `https://www.echelonpropertygroup.com/communities/${match.slug}`
     };

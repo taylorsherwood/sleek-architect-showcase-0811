@@ -1,6 +1,7 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
 import communityPages from "../data/communities.json" with { type: "json" };
+import { getNeighborhoodStat, formatNeighborhoodMedian } from "../../../data/neighborhoodStats";
 
 export default defineTool({
   name: "list_communities",
@@ -23,7 +24,8 @@ export default defineTool({
       .map((c) => ({
         slug: c.slug,
         name: c.name,
-        priceRange: c.priceRange,
+        priceRange: formatNeighborhoodMedian(c.slug),
+        neighborhoodStats: getNeighborhoodStat(c.slug) ?? null,
         url: `https://www.echelonpropertygroup.com/communities/${c.slug}`,
       }));
     return {

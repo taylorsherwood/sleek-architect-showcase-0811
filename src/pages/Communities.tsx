@@ -1,5 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
+import NeighborhoodMedian from "@/components/NeighborhoodMedian";
+import { neighborhoodPriceSummary } from "@/data/neighborhoodStats";
 const Footer = lazy(() => import("@/components/Footer"));
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -113,9 +115,7 @@ const Communities = () => {
                     </div>
                     {/* Editorial caption block, anchored below image, not floating */}
                     <div className="pt-5 sm:pt-6">
-                      <p className="text-[10px] sm:text-[11px] tracking-[0.25em] uppercase mb-2" style={{ color: "#b9a06c" }}>
-                        {community.priceRange}
-                      </p>
+                      <NeighborhoodMedian area={community.slug} className="text-[10px] sm:text-[11px] tracking-[0.25em] uppercase mb-2 text-gold" />
                       <h3 className="text-xl sm:text-2xl font-display font-normal text-architectural leading-tight mb-3">
                         {community.name}
                       </h3>

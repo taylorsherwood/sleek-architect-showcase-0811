@@ -141,7 +141,7 @@ const Hero = () => {
           tabIndex={-1}
           width={1920} height={1080}
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src={heroVideoAsset.url} type="video/mp4" />
         </video>
       </div>
 

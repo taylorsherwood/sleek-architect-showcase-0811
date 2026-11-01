@@ -589,7 +589,7 @@ Pease District Park provides wooded trails and swimming holes directly adjacent 
     overview: `Davenport Ranch is one of West Austin's most sought-after luxury neighborhoods, located off Capital of Texas Highway (Loop 360) in the 78746 zip code. The community features custom-built estate homes on large, wooded lots within the Eanes Independent School District, home to Westlake High School, one of the top-ranked public high schools in Texas.
 
 Developed primarily in the 1980s and 1990s, Davenport Ranch offers oversized lots, mature tree canopy, and architectural styles ranging from traditional Hill Country limestone to fully renovated contemporary estates. Many homes feature resort-caliber outdoor living with pools, sport courts, and outdoor kitchens.`,
-Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
+    market: `Demand is consistently strong due to Eanes ISD zoning, the 78746 zip code, and the neighborhood's established reputation along the 360 corridor.
 
 Many original homes offer significant renovation upside. Buyers who invest in quality modernization frequently realize substantial returns. Inventory turns over gradually as many homeowners are long-term residents, keeping supply tight and values stable.`,
     whyBuyersLove: `Buyers are drawn to Davenport Ranch for its Eanes ISD schools, large wooded lots, and convenient Loop 360 location, just 15 minutes from downtown Austin. The neighborhood's established character and mature landscaping create a Hill Country retreat feel without sacrificing urban access.
@@ -612,7 +612,7 @@ Wild Basin Wilderness Preserve offers 227 acres of trails adjacent to the neighb
     overview: `Lakeway is a premier Hill Country community along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin. Originally developed as a resort community in the 1960s, Lakeway has evolved into one of the Austin metro's most sought-after residential destinations featuring waterfront estates, master-planned neighborhoods, championship golf courses, and top-rated Lake Travis ISD schools.
 
 Spanning roughly 11 square miles, Lakeway offers distinct sub-communities including Rough Hollow, Flintrock Falls, The Hills of Lakeway, and established neighborhoods along Live Oak Golf Course, each with unique character and price points.`,
-Waterfront and golf-course properties command significant premiums.
+    market: `Waterfront and golf-course properties command significant premiums.
 
 Lakeway benefits from consistent demand driven by Lake Travis ISD schools, waterfront lifestyle appeal, and resort-caliber amenities. Master-planned communities like Rough Hollow and Flintrock Falls continue to add luxury inventory, while waterfront estates trade less frequently at premium valuations.`,
     whyBuyersLove: `Buyers are drawn to Lakeway for its Lake Travis waterfront access, championship golf courses, Lake Travis ISD schools, and resort-caliber amenities, all within 25 minutes of downtown Austin. The community offers boating, kayaking, paddleboarding, and fishing on 63 miles of Lake Travis waterway.

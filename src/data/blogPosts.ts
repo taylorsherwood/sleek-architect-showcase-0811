@@ -1,4 +1,5 @@
 import blogSustainable from "@/assets/blog-sustainable-architecture.jpg";
+import { neighborhoodPriceSummary } from "./neighborhoodStats";
 import blogMinimalist from "@/assets/blog-minimalist-living.jpg";
 import blogUrban from "@/assets/blog-urban-planning.jpg";
 import blog2300BartonCreek from "@/assets/2300-barton-creek-blvd.jpg";
@@ -139,9 +140,9 @@ Finally, map your timeline honestly. When does your start date begin? Do childre
 
 Austin's luxury market is geographically fragmented. Each submarket has a distinct character, school district, commute profile, and price dynamic. Choosing the right submarket is more consequential than choosing between two specific properties inside it. Our [best luxury neighborhoods](/best-luxury-neighborhoods-austin) guide and <a href="/blog/best-austin-suburbs-2026" class="${LINK}">best Austin suburbs for 2026</a> are useful references as you narrow.
 
-**Westlake Hills and Rollingwood.** These are the most established luxury addresses in Austin, just west of downtown, feeding Eanes ISD, consistently one of the top-ranked school districts in Texas. Median values sit near $2.2M in 2026, inventory is limited, and sellers know it. If top-tier schools and downtown proximity are priorities, start with <a href="/communities/westlake-hills" class="${LINK}">Westlake Hills</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>.
+**West Lake Hills and Rollingwood.** These are the most established luxury addresses in Austin, just west of downtown, feeding Eanes ISD, consistently one of the top-ranked school districts in Texas. ${neighborhoodPriceSummary("westlake-hills")}. Inventory is limited. If top-tier schools and downtown proximity are priorities, start with <a href="/communities/westlake-hills" class="${LINK}">West Lake Hills</a> and <a href="/communities/rollingwood" class="${LINK}">Rollingwood</a>.
 
-**Barton Creek and Rob Roy.** Gated communities with private security, deed restrictions, and a Hill Country feel roughly 20 minutes from downtown. <a href="/communities/barton-creek" class="${LINK}">Barton Creek Estates</a> trades most actively in the $1.5M to $2.5M range; Barton Creek West is the ultra-luxury tier, with homes from $3M to $7M and above. Rob Roy is smaller, more private, and highly sought after. Both attract buyers who want security and seclusion without giving up proximity to the city.
+**Barton Creek and Rob Roy.** Gated communities with private security, deed restrictions, and a Hill Country feel roughly 20 minutes from downtown. <a href="/communities/barton-creek" class="${LINK}">Barton Creek Estates</a> and Barton Creek West serve distinct buyer preferences. Rob Roy is smaller, more private, and highly sought after. Both attract buyers who want security and seclusion without giving up proximity to the city.
 
 **Lake Austin corridor, Steiner Ranch, Lakeway, Bee Cave.** Waterfront properties on <a href="/communities/lake-austin" class="${LINK}">Lake Austin</a> carry significant premiums, driven by limited supply and LCRA water rights that govern what you can do with the water. <a href="/communities/steiner-ranch" class="${LINK}">Steiner Ranch</a> is a large master-planned community with lake access. <a href="/communities/lakeway" class="${LINK}">Lakeway</a> and <a href="/communities/bee-cave" class="${LINK}">Bee Cave</a> skew toward newer construction and family amenities at price points somewhat below Westlake, though that gap has narrowed. School districts vary across the corridor; verify before you commit.
 

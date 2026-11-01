@@ -282,7 +282,14 @@ const REALSCOUT_URL = "https://taylorsherwood.realscout.com/";
 
 const SearchSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isMobile = INITIAL_IS_MOBILE;
+  // First render always matches the prerendered mobile-first markup
+  // (SSR has no viewport). Re-evaluate after mount; on desktop the
+  // embedded RealScout widget mounts then, with no hydration mismatch.
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+  }, []);
 
   useEffect(() => {
     if (isMobile) return;

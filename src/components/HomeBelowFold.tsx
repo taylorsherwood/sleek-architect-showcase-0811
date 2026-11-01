@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollReveal from "@/components/ScrollReveal";
 import { submitLeadToZapier } from "@/lib/formUtils";
 import { chunkRetry } from "@/lib/chunkRetry";
+import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "@/config/taylorStats";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -264,7 +265,6 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          setCount(from);
           const startTime = performance.now();
           const id = ++animId.current;
           const step = (now: number) => {
@@ -272,12 +272,10 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
             const progress = Math.min((now - startTime) / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
             const raw = from + eased * (target - from);
-            setCount(decimals > 0 ? Number(raw.toFixed(decimals)) : Math.round(raw));
             if (progress < 1) requestAnimationFrame(step);
           };
           requestAnimationFrame(step);
         } else {
-          setCount(from);
           setInView(false);
         }
       },
@@ -291,9 +289,9 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
 };
 
 const stats = [
-  { value: 155, suffix: "M+", prefix: "$", label: "Career Sales Volume", from: 50 },
-  { value: 200, suffix: "+", prefix: "", label: "Transactions Closed", from: 100 },
-  { value: 11, suffix: "+", prefix: "", label: "Years of Experience", from: 1 },
+  { ...taylorStats[1], prefix: "$", suffix: "M+", from: 50 },
+  { ...taylorStats[2], prefix: "", suffix: "+", label: TRANSACTIONS_CLOSED_LABEL, from: 100 },
+  { ...taylorStats[0], prefix: "", suffix: "+", label: "Years of Experience", from: 1 },
   { value: 1.6, suffix: "B+", prefix: "$", label: "Off-Market Access", from: 0.5, decimals: 1 },
 ];
 
@@ -301,7 +299,7 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
   const { count, ref, inView } = useCountUp(stat.value, 3500, stat.from, (stat as any).decimals ?? 0);
   return (
     <div ref={ref} className="text-center group/stat">
-      <p style={{
+      <p aria-label={`${stat.prefix}${stat.value}${stat.suffix} ${stat.label}`} style={{
         fontFamily: '"Cinzel", serif', fontWeight: 400,
         fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>

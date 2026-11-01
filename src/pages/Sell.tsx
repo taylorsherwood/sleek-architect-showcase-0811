@@ -179,19 +179,16 @@ function useCountUp(target: number, duration = 3500, from = 0) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          setCount(from);
           const startTime = performance.now();
           const id = ++animId.current;
           const step = (now: number) => {
             if (id !== animId.current) return;
             const progress = Math.min((now - startTime) / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.round(from + eased * (target - from)));
             if (progress < 1) requestAnimationFrame(step);
           };
           requestAnimationFrame(step);
         } else {
-          setCount(from);
           setInView(false);
         }
       },
@@ -210,7 +207,7 @@ function AnimatedStat({ target, suffix = "", prefix = "", label, from = 0 }: {
   const { count, ref, inView } = useCountUp(target, 3500, from);
   return (
     <div ref={ref} className="text-center group/stat">
-      <p style={{
+      <p aria-label={`${prefix}${target}${suffix} ${label}`} style={{
         fontFamily: '"Cinzel", serif', fontWeight: 400,
         fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>

@@ -161,7 +161,7 @@ const GlobalLuxuryAdvertising = () => {
 
   /* Animated counter for "80+" Global Reach stat */
   const globalReachRef = useRef<HTMLParagraphElement>(null);
-  const [globalReachCount, setGlobalReachCount] = useState(5);
+  const [globalReachCount] = useState(80);
   const [grVisible, setGrVisible] = useState(false);
 
   useEffect(() => {
@@ -172,7 +172,6 @@ const GlobalLuxuryAdvertising = () => {
         setGrVisible(true);
       } else {
         setGrVisible(false);
-        setGlobalReachCount(5);
       }
     }, { threshold: 0.3 });
     obs.observe(el);
@@ -187,7 +186,6 @@ const GlobalLuxuryAdvertising = () => {
     const tick = (now: number) => {
       const p = Math.min((now - t0) / duration, 1);
       const eased = 1 - Math.pow(1 - p, 3);
-      setGlobalReachCount(Math.round(start + eased * (end - start)));
       if (p < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);

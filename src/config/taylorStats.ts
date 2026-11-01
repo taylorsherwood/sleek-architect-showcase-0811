@@ -13,10 +13,12 @@ export interface TaylorStat {
   suffix?: string;
 }
 
+export const TRANSACTIONS_CLOSED_LABEL = "Transactions Closed";
+
 export const taylorStats: TaylorStat[] = [
   { label: "Years in Austin Real Estate", value: 11, suffix: "+" },
   { label: "Career Sales Volume", value: 155, prefix: "$", suffix: "M+" },
-  { label: "Homes Sold", value: 200, suffix: "+" },
+  { label: TRANSACTIONS_CLOSED_LABEL, value: 200, suffix: "+" },
   { label: "Communities Served", value: 0, suffix: "+" }, // FILL BEFORE LAUNCH
   { label: "Commercial Transactions", value: 0, suffix: "+" }, // FILL BEFORE LAUNCH
   { label: "Land Acres Represented", value: 0, suffix: "+" }, // FILL BEFORE LAUNCH

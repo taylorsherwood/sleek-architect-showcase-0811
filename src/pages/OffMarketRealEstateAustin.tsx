@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import OptimizedImage from "@/components/OptimizedImage";
 import SchemaMarkup, { createBreadcrumbSchema, createFAQSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
@@ -10,9 +9,7 @@ import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
 import CinematicSections from "@/components/off-market/CinematicSections";
 
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import NewsletterSignup from "@/components/NewsletterSignup";
-import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
 
 
 // Eagerly preload all hero & funnel media so it's ready before scroll
@@ -73,7 +70,6 @@ const OffMarketRealEstateAustin = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
 
   // Aggressively preload every funnel image + drone video so nothing pops in on scroll
   useEffect(() => {
@@ -280,11 +276,11 @@ const OffMarketRealEstateAustin = () => {
       {/* ── Minimal header ──────────────────────────── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary/60 backdrop-blur-[6px] border-b border-white/[0.03]">
         <div className="container mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="text-white/[0.85] hover:text-gold transition-colors tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.8rem" }}>
+          <span className="text-white/[0.85] tracking-[0.18em] uppercase font-sans" style={{ fontSize: "0.8rem" }}>
             Echelon Property Group
-          </Link>
+          </span>
           <button
-            onClick={() => setModalOpen(true)}
+            onClick={scrollToForm}
             className="text-[hsl(var(--gold))]/80 hover:text-white transition-colors tracking-[0.12em] uppercase font-sans" style={{ fontSize: "0.75rem" }}
           >
             {"\n"}
@@ -355,13 +351,11 @@ const OffMarketRealEstateAustin = () => {
             </p>
             <p className="text-white/55 text-sm sm:text-base font-light leading-relaxed mb-7 md:mb-6 max-w-xl whitespace-pre-line">
               Many of Austin's most desirable homes never hit the public market. They trade quietly, through trusted relationships and private networks that most buyers never see. Sourced by{" "}
-              <Link to="/taylor-sherwood" className="underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white transition-colors duration-300">
-                Austin luxury Realtor Taylor Sherwood
-              </Link>.&nbsp;{"\n\n\n"}
+              Austin luxury Realtor Taylor Sherwood.&nbsp;{"\n\n\n"}
               There is no public portal of off-market homes. Access comes through our private network and relationships, not through a searchable website.
             </p>
             <button
-              onClick={() => setModalOpen(true)}
+              onClick={scrollToForm}
               className="group inline-flex items-center justify-center transition-colors duration-300 ease-out w-full sm:w-auto"
               style={{
                 fontFamily: '"Jost", sans-serif',
@@ -440,99 +434,62 @@ const OffMarketRealEstateAustin = () => {
           </h2>
           <p className="text-white/55 text-center leading-relaxed max-w-2xl mx-auto mb-10 text-[1.0625rem]">
             Off-market opportunities in Central Texas extend well beyond residential. We also work quietly with landowners, builders, and developers on{" "}
-            <Link to="/land-ranch" className="text-white/85 underline decoration-[hsl(var(--gold))]/40 underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">
+            <span className="text-white/85">
               Texas Hill Country ranches and acreage
-            </Link>
+            </span>
             ,{" "}
-            <Link to="/land-development" className="text-white/85 underline decoration-[hsl(var(--gold))]/40 underline-offset-4 hover:text-[hsl(var(--gold))] transition-colors">
+            <span className="text-white/85">
               development sites and strategic land
-            </Link>
+            </span>
             , and commercial tracts long before they are widely marketed.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/[0.06]">
-            <Link
-              to="/land-ranch"
-              className="group bg-primary hover:bg-primary/90 transition-colors p-8 md:p-10"
-            >
+            <div className="bg-primary p-8 md:p-10">
               <p
                 className="text-[hsl(var(--gold))] mb-3"
                 style={{ fontFamily: "var(--font-jost), 'Jost', sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 500 }}
               >
                 Land & Ranch Advisory
               </p>
-              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug group-hover:text-[hsl(var(--gold))] transition-colors">
+              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug ">
                 Private Hill Country Ranches & Acreage
               </h3>
               <p className="mt-4 text-white/55 text-[0.95rem] leading-relaxed">
                 Legacy ranches, live-water tracts, and recreational land shared discreetly with qualified buyers.
               </p>
-            </Link>
-            <Link
-              to="/land-development"
-              className="group bg-primary hover:bg-primary/90 transition-colors p-8 md:p-10"
-            >
+            </div>
+            <div className="bg-primary p-8 md:p-10">
               <p
                 className="text-[hsl(var(--gold))] mb-3"
                 style={{ fontFamily: "var(--font-jost), 'Jost', sans-serif", fontSize: "0.6rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 500 }}
               >
                 Land Development Advisory
               </p>
-              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug group-hover:text-[hsl(var(--gold))] transition-colors">
+              <h3 className="font-display text-xl md:text-[1.4rem] text-white leading-snug ">
                 Private Development & Strategic Acreage
               </h3>
               <p className="mt-4 text-white/55 text-[0.95rem] leading-relaxed">
                 Entitled tracts, infill assemblages, and path-of-growth sites moved quietly through relationships.
               </p>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
 
 
-
-      <DevelopmentAdvisoryCTA
-        variant="transparent"
-        eyebrow="ADJACENT ADVISORY"
-        heading="Private development opportunities"
-        intro="Land, infill, mixed-use, and residential development positions are shared through our dedicated"
-        anchorText="Austin development advisory platform"
-      />
-
-      {/* ── Footer (minimal) ────────────────────────── */}
-
+      {/* ── Footer (legal only, distraction-free landing page) ── */}
       <footer className="py-8 bg-primary">
-        <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty</p>
-          <div className="flex gap-5">
-            <Link to="/" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Home</Link>
-            <Link to="/off-market-real-estate-austin" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Private</Link>
-            <a href="https://developments.echelonpropertygroup.com" target="_blank" rel="noopener noreferrer" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Developments</a>
-
-            <Link to="/contact" className="text-white/25 hover:text-white/50 transition-colors text-xs tracking-[0.1em] uppercase">Contact</Link>
-          </div>
+        <div className="container mx-auto px-6 flex flex-col items-center gap-2 text-center">
+          <a href="https://www.dropbox.com/scl/fi/ism1gkeqt0bol9srh3b0a/IABS-1-2.pdf?rlkey=l05zn9bqqmg8e1ru4qjzsnd1o&dl=0" target="_blank" rel="noopener noreferrer nofollow" className="text-white/40 hover:text-white/70 transition-colors text-xs tracking-wide underline underline-offset-2 decoration-white/20">
+            Texas Real Estate Commission Information About Brokerage Services
+          </a>
+          <a href="https://tinyurl.com/3mcfufa8" target="_blank" rel="noopener noreferrer nofollow" className="text-white/40 hover:text-white/70 transition-colors text-xs tracking-wide underline underline-offset-2 decoration-white/20">
+            Texas Real Estate Commission Consumer Protection Notice
+          </a>
+          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty · Equal Housing Opportunity</p>
         </div>
       </footer>
 
-      {/* ── Lightbox: Request Private Access form ── */}
-      <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="max-w-2xl bg-primary border border-white/10 p-8 sm:p-10 max-h-[90vh] overflow-y-auto">
-          <DialogTitle className="sr-only">Request Private Access</DialogTitle>
-          <DialogDescription className="sr-only">
-            Submit your details to receive curated off-market opportunities in Austin.
-          </DialogDescription>
-          {!submitted && (
-            <div className="mb-6">
-              <p className="text-[hsl(var(--gold))] mb-3 font-bold" style={labelStyle}>
-                PRIVATE ACCESS
-              </p>
-              <h2 className="font-display text-2xl sm:text-3xl text-white font-light leading-tight">
-                Request Private Access
-              </h2>
-            </div>
-          )}
-          {formContent}
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };

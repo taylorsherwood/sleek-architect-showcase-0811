@@ -5,6 +5,16 @@
     <meta name="color-scheme" content="light only" />
     <meta name="supported-color-schemes" content="light only" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js): GA4 + Google Ads, loaded immediately -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y84Q0NX0NE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-Y84Q0NX0NE');
+      gtag('config', 'AW-17598090760');
+    </script>
     <script>
       (function () {
         try {
@@ -280,20 +290,6 @@
     <!-- Defer analytics & third-party scripts until after page is interactive -->
     <script>
       function loadDeferredScripts() {
-        // Google Analytics
-        var ga = document.createElement('script');
-        ga.async = true;
-        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y84Q0NX0NE';
-        document.head.appendChild(ga);
-        ga.onload = function() {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', 'G-Y84Q0NX0NE');
-          gtag('config', 'AW-17598090760');
-        };
-
         // Microsoft Clarity
         (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

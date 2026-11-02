@@ -16,7 +16,7 @@ import { trackEvent } from "@/lib/analytics";
  *  - mobile_sticky_impression  once per route, when the bar first reveals
  *  - mobile_sticky_click       on each action tap (with action + href)
  */
-const SUPPRESSED_PREFIXES = ["/connect", "/admin", "/sell-private/thank-you"];
+const SUPPRESSED_PREFIXES = ["/connect", "/admin", "/sell-private/thank-you", "/off-market-real-estate-austin"];
 
 const ACTIONS = [
   { label: "Private Listings", href: "/private-opportunities", key: "private_listings" },

@@ -19,8 +19,11 @@ export function useAnalytics(): void {
   useEffect(() => {
     const path = location.pathname + location.search;
     if (path === lastPathRef.current) return;
+    const isInitialLoad = lastPathRef.current === "";
     lastPathRef.current = path;
     captureAdsClickIds();
+    // gtag('config') in index.html already sends the initial page_view.
+    if (isInitialLoad) return;
     // Defer so document.title reflects the new route's <Helmet> title.
     const id = window.setTimeout(() => trackPageView(path), 60);
     return () => window.clearTimeout(id);

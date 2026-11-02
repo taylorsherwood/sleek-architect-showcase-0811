@@ -70,11 +70,6 @@ const OffMarketRealEstateAustin = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const scrollToForm = () => {
-    const targets = Array.from(document.querySelectorAll<HTMLElement>("#section-7-form"));
-    const visible = targets.find((el) => el.offsetParent !== null) ?? targets[0];
-    visible?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   // Aggressively preload every funnel image + drone video so nothing pops in on scroll
   useEffect(() => {

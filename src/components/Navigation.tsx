@@ -145,7 +145,7 @@ const Navigation = () => {
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
             className={`block min-[1280px]:hidden w-auto max-w-[450px] shrink-0 object-contain`}
-            style={{ height: "auto", maxHeight: "118%" }}
+            style={{ height: "auto", maxHeight: "128%" }}
             loading="eager"
             decoding="async"
             fetchPriority="high"
@@ -217,7 +217,7 @@ const Navigation = () => {
           src={evMark}
           alt="Engel & Völkers"
           title="Brokered by Engel & Völkers Austin"
-          className="block min-[1280px]:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 pointer-events-none h-[clamp(12px,4.4vw,19px)] w-auto max-[350px]:h-[9px]"
+          className="block min-[1280px]:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 pointer-events-none h-[clamp(11px,3.8vw,19px)] w-auto max-[350px]:h-[7px]"
           style={{ width: "auto" }}
           loading="eager"
           decoding="async"

@@ -145,7 +145,7 @@ const Navigation = () => {
               src={evMark}
               alt="Engel & Völkers"
               title="Brokered by Engel & Völkers Austin"
-              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-4"
+              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-7"
               loading="eager"
               decoding="async"
               width={580}

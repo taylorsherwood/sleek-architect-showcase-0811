@@ -5,7 +5,7 @@ import { Globe, Monitor, BookOpen, MapPin, CheckCircle } from "lucide-react";
 import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.jpg";
 import printImg from "@/assets/marketing-print.jpg";
-import localImg from "@/assets/marketing-local.jpg";
+import localImg from "@/assets/marketing-local.webp";
 import collageImg from "@/assets/marketing-print.jpg";
 
 /* ------------------------------------------------------------------ */

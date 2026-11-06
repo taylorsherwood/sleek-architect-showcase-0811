@@ -145,18 +145,18 @@ const Navigation = () => {
               src={evMark}
               alt="Engel & Völkers"
               title="Brokered by Engel & Völkers Austin"
-              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-5"
+              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-4"
               loading="eager"
               decoding="async"
               width={580}
               height={250}
             />
-            <span aria-hidden="true" className="w-px h-20 md:h-16 bg-gold shrink-0" />
+            <span aria-hidden="true" className="w-px h-16 md:h-14 bg-gold shrink-0" />
             <img
               src={logoMobile}
               alt="Echelon Property Group"
               title="Echelon Property Group, Austin Luxury Real Estate"
-              className="w-auto h-[100px] md:h-[88px] lg:h-[80px] shrink-0 object-contain ml-[12px]"
+              className="w-auto h-[84px] md:h-[76px] lg:h-[72px] shrink-0 object-contain ml-4"
               loading="eager"
               decoding="async"
               fetchPriority="high"

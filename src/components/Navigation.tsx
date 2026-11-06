@@ -140,23 +140,23 @@ const Navigation = () => {
           className="flex items-center shrink-0"
           style={{ height: "100%" }}
         >
-          <span className="flex min-[1280px]:hidden items-center gap-5">
+          <span className="flex min-[1280px]:hidden items-center">
             <img
               src={evMark}
               alt="Engel & Völkers"
               title="Brokered by Engel & Völkers Austin"
-              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0"
+              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-5"
               loading="eager"
               decoding="async"
               width={580}
               height={250}
             />
-            <span aria-hidden="true" className="w-px h-24 md:h-20 bg-gold shrink-0" />
+            <span aria-hidden="true" className="w-px h-20 md:h-16 bg-gold shrink-0" />
             <img
               src={logoMobile}
               alt="Echelon Property Group"
               title="Echelon Property Group, Austin Luxury Real Estate"
-              className="w-auto h-28 md:h-24 lg:h-[89px] shrink-0 object-contain"
+              className="w-auto h-[100px] md:h-[88px] lg:h-[80px] shrink-0 object-contain ml-[12px]"
               loading="eager"
               decoding="async"
               fetchPriority="high"

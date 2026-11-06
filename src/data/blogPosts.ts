@@ -170,7 +170,7 @@ When evaluating a buyer's agent for a relocation purchase at this price point, a
 
 A skilled advisor structures a two-day scouting trip very differently from a standard weekend of showings: pre-screened properties, neighborhood context provided before each showing, honest assessments of each property's weaknesses, and a clear framework for evaluating what you saw. That's the standard you should expect. For a broader view of how to evaluate advisory firms, our <a href="/blog/boutique-vs-large-luxury-real-estate-firms-austin" class="${LINK}">boutique vs large luxury firms</a> and <a href="/blog/choosing-luxury-real-estate-brokerage-austin" class="${LINK}">choosing a luxury real estate brokerage in Austin</a> guides are worth reading.
 
-[Echelon Property Group](/about-austin-real-estate-advisory) works specifically with relocating buyers and operates with the backing of eXp Realty's national network, which provides access to relocation intelligence and market connections across major U.S. metros. That context matters when you're making a cross-market move. [Taylor Sherwood](/taylor-sherwood) leads the practice.
+[Echelon Property Group](/about-austin-real-estate-advisory) works specifically with relocating buyers and operates with the backing of Engel & Völkers' global network, which provides access to relocation intelligence and market connections across major U.S. metros. That context matters when you're making a cross-market move. [Taylor Sherwood](/taylor-sherwood) leads the practice.
 
 ## Step 4: Access the Full Market, Including What Isn't Listed Publicly
 
@@ -270,7 +270,7 @@ A: Effective property tax rates in Texas are higher than in California or New Yo
 
 ## Work With Echelon Property Group
 
-Echelon Property Group works with relocating executives across every stage of the Austin luxury purchase, from initial submarket analysis through closing and post-move support. If you're planning a relocation from another market and want an advisor with off-market access, cross-market relocation experience, and the backing of eXp Realty's national network, [start a conversation](/contact).
+Echelon Property Group works with relocating executives across every stage of the Austin luxury purchase, from initial submarket analysis through closing and post-move support. If you're planning a relocation from another market and want an advisor with off-market access, cross-market relocation experience, and the backing of Engel & Völkers' global network, [start a conversation](/contact).
 
 *This article is for educational purposes only and does not constitute financial, legal, tax, or investment advice. Austin market conditions, tax rules, and transaction practices change over time and vary by submarket. Confirm current conditions with appropriate professional advisors before making real estate decisions.*
 `
@@ -2266,7 +2266,7 @@ A complete luxury marketing plan includes:
 - **Professional media.** Architectural photography, cinematic video, drone, twilight shots, and a 3D walkthrough. At this level, the media is the first showing, and most buyers decide whether to visit based on it.
 - **Staging and the edit.** Either professional staging or a careful edit of the existing home so the spaces read as large, light, and effortless. Luxury buyers notice clutter, dated finishes, and deferred maintenance instantly.
 - **A listing narrative.** Luxury homes sell on story as much as square footage. The architect, the build quality, the provenance, the lifestyle the home makes possible. That story runs through the copy, the brochure, and every conversation.
-- **Targeted buyer outreach.** The MLS is the floor, not the ceiling. Real reach means going directly to the agents and networks that represent qualified luxury buyers, locally and beyond Austin. As a practice brokered by eXp Realty, Echelon Property Group can put a listing in front of a global agent network, which matters when your buyer is relocating from California, New York, or overseas.
+- **Targeted buyer outreach.** The MLS is the floor, not the ceiling. Real reach means going directly to the agents and networks that represent qualified luxury buyers, locally and beyond Austin. As a practice brokered by Engel & Völkers, Echelon Property Group can put a listing in front of a global agent network, which matters when your buyer is relocating from California, New York, or overseas.
 - **Digital and print presence.** A dedicated property presence, paid placement where the right buyers are looking, and print where it still carries weight in the luxury segment.
 
 The goal is simple: create real demand from qualified buyers, not passive views from people who will never write the check.
@@ -3827,7 +3827,7 @@ The boutique versus large brokerage question is worth thinking through carefully
 
 Smaller, specialized teams often provide more personalized exclusive representation because agents carry fewer clients and maintain deeper relationships within specific submarkets. This is a structural observation, not a universal rule, but it is a meaningful consideration when evaluating who you want advising you on a transaction of this magnitude.
 
-<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> operates as a hyper-local Austin advisory team backed by the global reach of eXp Realty. The approach is built around strategy, discretion, and access. For buyers, that means exclusive representation with genuine <a href="/private-opportunities" class="${LINK}">off-market reach in Austin</a>, a clear negotiation framework, and a process designed to protect your position at every stage. For sellers, it means counsel on <a href="/sell-private" class="${LINK}">how to sell privately</a> in a way that maximizes outcome while maintaining control over who has access to your property and your information.
+<a href="/about-austin-real-estate-advisory" class="${LINK}">Echelon Property Group</a> operates as a hyper-local Austin advisory team backed by the global reach of Engel & Völkers. The approach is built around strategy, discretion, and access. For buyers, that means exclusive representation with genuine <a href="/private-opportunities" class="${LINK}">off-market reach in Austin</a>, a clear negotiation framework, and a process designed to protect your position at every stage. For sellers, it means counsel on <a href="/sell-private" class="${LINK}">how to sell privately</a> in a way that maximizes outcome while maintaining control over who has access to your property and your information.
 
 The firm's focus on the upper tier of the Austin market, including West Lake Hills, Barton Creek, Lake Austin waterfront, and surrounding submarkets, reflects a deliberate choice to go deep rather than broad. That depth is what makes exclusive representation meaningful rather than nominal.
 
@@ -7242,7 +7242,7 @@ Boutique advisory teams often provide:
 
 The strongest model in today's market often combines both.
 
-Echelon Property Group operates with the flexibility, responsiveness, and specialization of a boutique advisory team while leveraging the global infrastructure and reach of eXp Realty. For many luxury clients, particularly those navigating complex or confidential transactions, that combination creates a significant advantage.
+Echelon Property Group operates with the flexibility, responsiveness, and specialization of a boutique advisory team while leveraging the global infrastructure and reach of Engel & Völkers. For many luxury clients, particularly those navigating complex or confidential transactions, that combination creates a significant advantage.
 
 ### Questions to Ask
 
@@ -7301,7 +7301,7 @@ The brokerages that consistently perform at the highest level combine:
 
 Those qualities tend to matter far more than headline production numbers.
 
-At Echelon Property Group, we intentionally operate with a selective, advisory-focused approach built around <a href="/luxury-real-estate-austin" class="${LINK}">Austin's luxury market</a>. Our clients benefit from hyper-local expertise, <a href="/private-opportunities" class="${LINK}">private-market relationships</a>, elevated marketing strategy, and the global infrastructure of eXp Realty while still receiving direct, highly personalized representation.
+At Echelon Property Group, we intentionally operate with a selective, advisory-focused approach built around <a href="/luxury-real-estate-austin" class="${LINK}">Austin's luxury market</a>. Our clients benefit from hyper-local expertise, <a href="/private-opportunities" class="${LINK}">private-market relationships</a>, elevated marketing strategy, and the global infrastructure of Engel & Völkers while still receiving direct, highly personalized representation.
 
 For buyers and sellers evaluating luxury real estate brokerages in Austin, the goal is not simply choosing the biggest name. It is choosing the team best equipped to protect your interests, navigate complexity, and create leverage in one of the country's most competitive luxury markets.
 
@@ -7323,7 +7323,7 @@ Q: How should I evaluate a luxury brokerage's negotiation performance?
 A: Look beyond total sales volume. Ask about list-to-sale price ratios above $2M and $3M, average days on market by price tier, pricing accuracy, deal structure sophistication, and specific examples of difficult negotiations they have successfully managed. Strong advisors answer with specifics rather than generic talking points and can explain how they create leverage, protect pricing, and structure discreet transactions.
 
 Q: Are boutique brokerages better than large luxury brokerages for Austin luxury real estate?
-A: Each model has advantages. Large brokerages offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of eXp Realty, which provides both personalized representation and broader reach.
+A: Each model has advantages. Large brokerages offer global reach and referral pipelines. Boutique advisory teams offer direct advisor access, higher-touch service, and hyper-local specialization. The strongest model today often combines both. Echelon Property Group operates with boutique-level attention while leveraging the global infrastructure of Engel & Völkers, which provides both personalized representation and broader reach.
 
 Q: What questions should I ask a luxury brokerage before signing a representation agreement?
 A: Ask who will personally manage the transaction day to day, how many active clients the advisor currently handles, what their off-market network actually consists of, how they handle confidentiality and buyer vetting, what their list-to-sale ratio looks like above $3M, and how they market properties beyond the MLS. Pay equal attention to responsiveness, preparation, and clarity of communication during the evaluation process itself.
@@ -8181,7 +8181,7 @@ The right luxury real estate team should combine:
 
 Ultimately, the best representation is not defined by the size of the brokerage. It is defined by the quality of the people, relationships, strategy, and execution behind it.
 
-At <a href="/" class="${LINK}">Echelon Property Group</a>, that philosophy shapes every client relationship. Backed by the global infrastructure and reach of eXp Realty while remaining deeply focused on <a href="/luxury-homes-austin" class="${LINK}">Austin's luxury market</a>, our approach is intentionally relationship-driven, highly specialized, and built around delivering a level of strategy and discretion that high-end transactions demand.
+At <a href="/" class="${LINK}">Echelon Property Group</a>, that philosophy shapes every client relationship. Backed by the global infrastructure and reach of Engel & Völkers while remaining deeply focused on <a href="/luxury-homes-austin" class="${LINK}">Austin's luxury market</a>, our approach is intentionally relationship-driven, highly specialized, and built around delivering a level of strategy and discretion that high-end transactions demand.
 
 ### Verified Credentials
 

@@ -959,7 +959,7 @@ A: A recast applies a lump sum to principal and re-amortizes the remaining balan
 - [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin)
 - [Texas as a non-disclosure state](/blog/texas-non-disclosure-state)
 
-**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by eXp Realty (TREC #734520), with $155 million-plus in career sales across 200-plus transactions. He holds the CLHMS Guild, GRI and ABR designations. Read more on the [Taylor Sherwood](/taylor-sherwood) page or reach him at [512.661.3843](tel:+15126613843).`
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by Engel & Völkers (TREC #734520), with $155 million-plus in career sales across 200-plus transactions. He holds the CLHMS Guild, GRI and ABR designations. Read more on the [Taylor Sherwood](/taylor-sherwood) page or reach him at [512.661.3843](tel:+15126613843).`
   },
   {
     id: "austin-home-prices-by-zip-code",
@@ -2257,7 +2257,7 @@ A: A reservation is required every day of the week and is currently available th
 
 ### About the author
 
-[Taylor Sherwood](/taylor-sherwood) is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by eXp Realty (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or 512.661.3843.
+[Taylor Sherwood](/taylor-sherwood) is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by Engel & Völkers (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or 512.661.3843.
 
 ## Sources
 
@@ -2681,7 +2681,7 @@ Q: Is Austin a buyer's market or a seller's market right now?
 A: Balanced leaning buyer's, and tightening. The city of Austin had 4.6 months of inventory in August 2026 and the metro 5.1, both below the 6-month line that marks a balanced market. Redfin counted 128 percent more sellers than buyers in December 2025 and named Austin the slowest of the 50 largest metros. Since then active listings have fallen 8 to 12 percent year over year each month and the success rate has climbed to 61 percent, so buyers still have leverage but less of it than they had in the spring.
 :::
 
-**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by eXp Realty (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or [512.661.3843](tel:+15126613843).
+**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, brokered by Engel & Völkers (TREC #734520). Over 11 years and more than 200 transactions totaling more than $155 million, every deal above $2 million he has closed was completed off-MLS. He holds the CLHMS (Guild), GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, multifamily and off-market transactions. He is also the owner of Open2Close, a real estate transaction management platform. Contact: [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) or [512.661.3843](tel:+15126613843).
 
 This article is general information, not investment, lending or tax advice. Forecasts are scenario analyses based on data available as of September 22, 2026; mortgage rates and MLS data change. Confirm every rate and figure for the specific property before you transact.`,
   },
@@ -3021,7 +3021,7 @@ Spec builders also dislike public price cuts as much as production builders do, 
 
 If you are weighing a new build against a resale anywhere in Travis, Williamson or Hays County, send the address and the incentive sheet to Echelon Property Group and we will build the side-by-side.
 
-**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by eXp Realty (TREC #734520), with more than eleven years in Austin real estate and over $155 million in career sales across more than 200 transactions. He holds the CLHMS, GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, investment and off-market transactions. Reach him at [512.661.3843](tel:+15126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, brokered by Engel & Völkers (TREC #734520), with more than eleven years in Austin real estate and over $155 million in career sales across more than 200 transactions. He holds the CLHMS, GRI and ABR designations and works across Travis, Williamson and Hays counties in luxury residential, investment and off-market transactions. Reach him at [512.661.3843](tel:+15126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
 
 This article is general information, not legal, tax or lending advice. Builder promotions change monthly and vary by community and home. Confirm every rate, tax figure and contract term for the specific property before you sign.
 
@@ -3354,7 +3354,7 @@ Three things follow. Price per foot against your own side of the line, not again
 
 Echelon Property Group works both sides of this line every week, and the practice is built for exactly the two problems this article describes: pricing the premium correctly, and finding the product that never shows up on a portal. Every closing above $2,000,000 that Taylor Sherwood has represented was sourced or transacted off the MLS, and West Austin is where that network is deepest. Send us an address and we will tell you which side of the line it is on, what its tax stack is, and what the last twelve months of closings on that side say it is worth. If you are thinking about the broader West Austin map, our guide to [the most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin) ranks all of them on the same data.
 
-About the author. Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas, brokered by eXp Realty (TREC
+About the author. Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas, brokered by Engel & Völkers (TREC
 
 #734520). He holds the CLHMS (Guild), GRI and ABR designations and has closed more than $150 million across 200-plus transactions in eleven-plus years, with a practice concentrated in West Austin luxury and Central Texas investment property. Every deal above $2 million he has closed was transacted off the MLS.
 
@@ -3686,7 +3686,7 @@ Every investment acquisition Echelon Property Group underwrites carries a deprec
 
 Send the address, the TCAD land split, and the bracket you expect to be in this year, and Echelon Property Group will underwrite the deal with the depreciation line in it, then hand the file to your CPA and study provider with the assumptions already documented. [Start a conversation](/contact) or review [Austin investment strategy](/austin-real-estate-investment).
 
-**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty (TREC #734520), an Austin luxury and investment practice working across Travis, Williamson, and Hays counties. Over 11 years and more than 200 transactions totaling $155 million in career sales, the overwhelming majority of the volume has come from private, relationship-driven, and off-market opportunities, and every deal above $2 million has closed entirely off the MLS. Taylor holds the CLHMS (Guild), GRI, and ABR designations, focuses on multifamily investment and expired-listing repositioning, and is the owner of Open2Close, a real estate transaction management platform. This article is general education, not tax or legal advice.
+**About the author.** Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by Engel & Völkers (TREC #734520), an Austin luxury and investment practice working across Travis, Williamson, and Hays counties. Over 11 years and more than 200 transactions totaling $155 million in career sales, the overwhelming majority of the volume has come from private, relationship-driven, and off-market opportunities, and every deal above $2 million has closed entirely off the MLS. Taylor holds the CLHMS (Guild), GRI, and ABR designations, focuses on multifamily investment and expired-listing repositioning, and is the owner of Open2Close, a real estate transaction management platform. This article is general education, not tax or legal advice.
 
 ## Related Reading
 
@@ -4285,7 +4285,7 @@ A: For an Austin home, a comparative market analysis built by an agent with acce
 - [Private listings in Austin](/blog/private-listings-austin)
 - [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin)
 
-**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11+ years and more than $155 million in closed volume across 200+ transactions, the overwhelming majority of his business has come through off-market and private-channel deals, including every transaction over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations and serves Travis, Williamson, and Hays counties.`,
+**About the author.** Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers. Over 11+ years and more than $155 million in closed volume across 200+ transactions, the overwhelming majority of his business has come through off-market and private-channel deals, including every transaction over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations and serves Travis, Williamson, and Hays counties.`,
   },
   {
     id: "texas-homestead-exemption-2026",
@@ -4499,7 +4499,7 @@ A: Four usual suspects: your assessed value rose (the 10 percent cap limits the 
 
 *Tax figures use tax year 2025 adopted rates published by each taxing entity and are for planning purposes, not tax advice. Confirm your specific parcel's entities and exemption status with the appropriate appraisal district or a licensed tax professional.*
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.
 
 :::cta-anchor
 :::
@@ -4688,7 +4688,7 @@ If you are hunting a low rate assumable note in Austin, or you own one and want 
 
 ## About the author
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by eXp Realty, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by Engel & Völkers, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
 
 *This article is general information, not legal, tax, or lending advice. Assumption eligibility and processing are servicer specific. Sources: Freddie Mac Primary Mortgage Market Survey, August 13, 2026; Unlock MLS via Agent Intel, City of Austin, trailing twelve months ending July 31, 2026; Roam live counts, August 2026; Realtor.com and Redfin analyses of the FHFA National Mortgage Database; Veterans United analysis of Ginnie Mae data; HUD Handbook 4000.1; VA Circulars 26-24-5 and 26-24-17; H.R. 10028 (MOVE Act).*`,
   },
@@ -4933,7 +4933,7 @@ If the house is the asset the two of you cannot agree on, the fastest way forwar
 
 ## About the author
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by eXp Realty, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group in Austin, Texas (brokered by Engel & Völkers, TREC #734520), with 11+ years of experience and more than $155 million in career sales across 200+ transactions in Travis, Williamson, and Hays counties. Taylor holds the CLHMS (Guild member), GRI, and ABR designations and specializes in luxury residential, investment property, and private off-market transactions. Every transaction above $2 million in Taylor's career has closed entirely off-MLS. Reach Taylor at 512.661.3843 or taylor@echelonpropertygroup.com.
 
 *This article is general information, not legal, tax, or financial advice. Divorce outcomes in Texas are fact-specific. Consult a board-certified family law attorney and a CPA about your situation. Market data: Unlock MLS, City of Austin, trailing twelve months ending July 31, 2026. Rate data: Freddie Mac Primary Mortgage Market Survey, August 13, 2026. Tax thresholds: IRS Rev. Proc. 2025-32. Loan limits: FHFA, 2026.*`,
   },
@@ -5110,7 +5110,7 @@ Q: Will a new custom home appraise for what it cost to build?
 A: Often not in 2026. With resale trading below replacement cost across much of the Austin market, appraisals anchored to comparable sales frequently come in under total project cost at completion. Build for the product and the hold period, and underwrite your equity on comparable sales, not invoices.
 :::
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group (brokered by eXp Realty), with 11+ years of experience, more than $155 million in career sales across 200+ transactions, and CLHMS (Guild), GRI, and ABR designations. Every transaction over $2 million in his career has closed off-MLS.`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group (brokered by Engel & Völkers), with 11+ years of experience, more than $155 million in career sales across 200+ transactions, and CLHMS (Guild), GRI, and ABR designations. Every transaction over $2 million in his career has closed off-MLS.`,
   },
 
 
@@ -5348,7 +5348,7 @@ A: The resale certificate required under Texas Property Code Chapter 82, which d
 - [Texas Property Code Chapter 82, Uniform Condominium Act](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.82.htm)
 - City of Austin, short term rental ordinance and platform enforcement effective July 1, 2026.
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by eXp Realty, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions, including every deal over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, brokered by Engel & Völkers, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions, including every deal over $2 million he has ever closed. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
   },
 
   {
@@ -5565,7 +5565,7 @@ A: Pull the address on the county appraisal district website and read the taxing
 
 - [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by eXp Realty. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
   },
 
   {
@@ -8178,7 +8178,7 @@ A: Caldwell County, at a $260,495 median - about 42% below the metro median - fo
 
 ## Talk to an Advisor
 
-Taylor Sherwood is a REALTOR® and the founder of Echelon Property Group (brokered by eXp Realty) in Austin, Texas, and a member of the Austin Board of REALTORS®. Taylor works with buyers and sellers across Travis, Williamson, and Hays counties and publishes a monthly, data-first read on the Central Texas market. Thinking about a move, or just want to know what your home is worth in this market? [Reach out for a no-pressure comparative market analysis](/contact).
+Taylor Sherwood is a REALTOR® and the founder of Echelon Property Group (brokered by Engel & Völkers) in Austin, Texas, and a member of the Austin Board of REALTORS®. Taylor works with buyers and sellers across Travis, Williamson, and Hays counties and publishes a monthly, data-first read on the Central Texas market. Thinking about a move, or just want to know what your home is worth in this market? [Reach out for a no-pressure comparative market analysis](/contact).
 
 *Data sources: Unlock MLS June 2026 Market Snapshot (single-family homes, condos, and townhomes, year-over-year); AgentIntel trailing-12-month market statistics for the Austin metro, Unlock MLS via MLS Grid. All figures as reported July 2026. This article is market commentary, not financial advice.*`,
   },
@@ -9986,7 +9986,7 @@ The challenge is that broad national and international marketing often loses the
 
 Effective multi-market outreach combines the reach of a national or global platform with hyper-local content that demonstrates genuine knowledge of Austin's neighborhoods, communities, and lifestyle. Buyers relocating from other markets are not just evaluating a property. They are evaluating a city, and the advisor who can speak knowledgeably about Austin's school systems, commute patterns, cultural assets, and neighborhood distinctions will earn their trust faster than one who simply sends listings.
 
-Echelon Property Group's affiliation with eXp Realty provides access to a global network of agents and referral relationships that can surface qualified buyers from out-of-state markets. Combined with targeted digital marketing to buyer profiles in specific feeder cities, this creates a reach that local-only marketing cannot replicate.
+Echelon Property Group's affiliation with Engel & Völkers provides access to a global network of agents and referral relationships that can surface qualified buyers from out-of-state markets. Combined with targeted digital marketing to buyer profiles in specific feeder cities, this creates a reach that local-only marketing cannot replicate.
 
 ### Implementation Steps
 
@@ -10089,7 +10089,7 @@ What private networks or advisor groups are you actively part of? Legitimate ans
 
 Can you describe a recent off-market acquisition you facilitated? The details matter. How did the seller come to them? How was the buyer matched? What made the transaction possible outside public channels?
 
-The value of an advisor backed by a large national brokerage network is real, not just theoretical. [Echelon Property Group](/about) operates through eXp Realty, which maintains one of the largest agent networks on the planet. That reach creates direct connections into buyer pools from the high-cost coastal markets that continue to feed [Austin's luxury segment](/luxury-real-estate-austin), including California, New York, and Chicago. When a seller wants to move quietly, an advisor with that reach can find qualified buyers through trusted advisor relationships without ever going public.
+The value of an advisor backed by a large national brokerage network is real, not just theoretical. [Echelon Property Group](/about) operates through Engel & Völkers, a global brokerage network with offices across dozens of countries. That reach creates direct connections into buyer pools from the high-cost coastal markets that continue to feed [Austin's luxury segment](/luxury-real-estate-austin), including California, New York, and Chicago. When a seller wants to move quietly, an advisor with that reach can find qualified buyers through trusted advisor relationships without ever going public.
 
 Red flags to watch for: advisors who rely entirely on MLS searches to find you properties, those who conflate "coming soon" MLS status with genuine off-market access, and those who cannot name a single private transaction when asked directly. Coming soon status is still an MLS designation. It is not the same as a property that has never entered any public system.
 
@@ -13875,7 +13875,7 @@ I'll say this plainly, because it's the reason to trust this article over the fi
 
 If you're a buyer who wants access to Austin inventory before it's public, or an owner weighing a quiet sale, [that's exactly the conversation to have](/contact).
 
-**Taylor Sherwood** — Founder & Principal REALTOR®, Echelon Property Group (brokered by eXp Realty)
+**Taylor Sherwood** — Founder & Principal REALTOR®, Echelon Property Group (brokered by Engel & Völkers)
 
 :::faq
 Q: What does off-market mean in real estate?
@@ -16509,7 +16509,7 @@ Discretion means private matters stay private. Directness means clear advice, ev
 
 This is one reason many sophisticated buyers and sellers gravitate toward smaller, selective advisory models instead of large-volume teams. High-end real estate decisions often benefit from concentrated attention, not layered handoffs.
 
-Firms such as [Echelon Property Group](/about), brokered by eXp Realty operate in that lane by focusing on curated representation, private access, and strategic guidance rather than broad-based transaction volume. For the right client, that distinction is meaningful.
+Firms such as [Echelon Property Group](/about), brokered by Engel & Völkers, operate in that lane by focusing on curated representation, private access, and strategic guidance rather than broad-based transaction volume. For the right client, that distinction is meaningful.
 
 Austin's luxury market still rewards bold moves, but only when they are informed ones. The right property, handled with the right strategy, can outperform expectations. The wrong one can tie up capital and time without delivering either lifestyle or [investment](/austin-real-estate-investment) quality. That is why the brokerage relationship matters. At this level, it is not about who can show you what is available. It is about who can tell you what is worth your attention in the first place.`,
     author: "Taylor Sherwood",
@@ -17644,7 +17644,7 @@ If you are weighing a move up in 2026, what your current home nets, what the tax
 
 ## About the Author
 
-Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas (brokered by eXp Realty), with 11+ years in Central Texas real estate and more than $155 million in closed volume across 200+ transactions. He holds the CLHMS designation as a Guild member of the Institute for Luxury Home Marketing, along with GRI and ABR. His practice centers on private and off-market transactions across Austin's western luxury corridor, and every deal over $2 million he has closed has traded entirely off-MLS. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
+Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group in Austin, Texas (brokered by Engel & Völkers), with 11+ years in Central Texas real estate and more than $155 million in closed volume across 200+ transactions. He holds the CLHMS designation as a Guild member of the Institute for Luxury Home Marketing, along with GRI and ABR. His practice centers on private and off-market transactions across Austin's western luxury corridor, and every deal over $2 million he has closed has traded entirely off-MLS. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.`,
     author: "Taylor Sherwood",
     date: "2026-08-10",
     readTime: "13 min read",

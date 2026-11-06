@@ -386,7 +386,7 @@ const Reviews = () => {
                 </span>
               </h1>
               <p className="mt-6 text-[0.7rem] tracking-[0.28em] uppercase text-architectural/70 font-medium">
-                Echelon Property Group · eXp Realty
+                Echelon Property Group · Engel & Völkers
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -691,7 +691,7 @@ const Reviews = () => {
             </div>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Brokerage</dt>
-              <dd className="font-display text-architectural">eXp Realty</dd>
+              <dd className="font-display text-architectural">Engel & Völkers</dd>
             </div>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Market</dt>
@@ -794,7 +794,7 @@ const Reviews = () => {
           </div>
 
           <p className="mt-8 text-sm text-architectural/70 font-light">
-            Echelon Property Group · eXp Realty · Austin, Texas
+            Echelon Property Group · Engel & Völkers · Austin, Texas
           </p>
         </div>
       </section>

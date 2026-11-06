@@ -486,7 +486,7 @@ const OffMarketRealEstateAustin = () => {
           <a href="https://tinyurl.com/3mcfufa8" target="_blank" rel="noopener noreferrer nofollow" className="text-white/40 hover:text-white/70 transition-colors text-xs tracking-wide underline underline-offset-2 decoration-white/20">
             Texas Real Estate Commission Consumer Protection Notice
           </a>
-          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by eXp Realty · Equal Housing Opportunity</p>
+          <p className="text-white/25 text-xs tracking-wide">© {new Date().getFullYear()} Echelon Property Group · Austin, Texas · Brokered by Engel & Völkers · Equal Housing Opportunity</p>
         </div>
       </footer>
 

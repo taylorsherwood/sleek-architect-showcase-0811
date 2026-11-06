@@ -1,7 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import OptimizedImage from "@/components/OptimizedImage";
-import expEchelonLogo from "@/assets/exp-echelon-logo.png";
 import taylorAboutHeadshot from "@/assets/taylor-about-headshot.jpg.asset.json";
 import austinLifestyle from "@/assets/austin-approach-pool.jpg";
 import { Link } from "react-router-dom";
@@ -288,9 +287,6 @@ const About = () => {
                   priority
                   className="w-full h-auto"
                 />
-                <div className="mt-10 max-w-[320px] mx-auto rounded-sm overflow-hidden" style={{ backgroundColor: "hsl(var(--background))" }}>
-                  <OptimizedImage src={expEchelonLogo} alt="eXp Realty and Echelon Property Group logo" width={400} height={160} className="w-full mix-blend-multiply" />
-                </div>
               </div>
               <div>
                 <p className="text-minimal text-gold mb-3 tracking-[0.25em]">FOUNDER</p>
@@ -386,7 +382,7 @@ const About = () => {
                   We measure success not by the number of transactions we close, but by the strength of the relationships we build. Many of our clients return for multiple transactions, purchasing investment properties, upgrading primary residences, or referring family and colleagues. That continuity reflects a level of trust and satisfaction that only comes from consistently delivering exceptional outcomes.
                 </p>
                 <p>
-                  As a member of the eXp Luxury Division, Echelon Property Group connects clients to a global network of agents and affluent buyers, expanding the reach of every listing and search beyond Austin's borders. Whether your next real estate move involves a $1.5 million Tarrytown bungalow or a $15 million Lake Austin estate, we bring the same level of strategic thinking and personal commitment.
+                  Brokered by Engel & Völkers, Echelon Property Group connects clients to a global network of agents and affluent buyers, expanding the reach of every listing and search beyond Austin's borders. Whether your next real estate move involves a $1.5 million Tarrytown bungalow or a $15 million Lake Austin estate, we bring the same level of strategic thinking and personal commitment.
                 </p>
               </div>
             </div>

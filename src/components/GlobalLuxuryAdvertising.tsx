@@ -6,8 +6,7 @@ import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.jpg";
 import printImg from "@/assets/marketing-print.jpg";
 import localImg from "@/assets/marketing-local.jpg";
-import collageImg from "@/assets/marketing-collage-spaced.jpg";
-import expLuxuryLogo from "@/assets/exp-luxury-logo-white.png";
+import collageImg from "@/assets/marketing-print.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  Scroll-triggered reveal hook                                       */
@@ -371,7 +370,7 @@ const GlobalLuxuryAdvertising = () => {
                 style={{ transition: "transform 0.1s linear" }}>
                 <img
                   src={collageImg}
-                  alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, UPMKT, and eXp Luxury"
+                  alt="Luxury marketing collage featuring Robb Report, Wall Street Journal, Mansion Global, and UPMKT"
                   className="w-full h-auto object-cover transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-110"
                   loading="lazy"
                   decoding="async"

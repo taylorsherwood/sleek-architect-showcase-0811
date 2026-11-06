@@ -238,14 +238,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                 Texas Real Estate Commission Consumer Protection Notice
               </a>
               <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "rgba(184,160,109,0.8)", fontWeight: 700 }}>
-                <a
-                  href="https://www.exprealty.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#b9a06c] transition-colors duration-300"
-                >
-                  Brokered by eXp Realty
-                </a>
+                Brokered by Engel & Völkers
               </p>
             </div>
             <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "10.5px", color: "rgba(255,255,255,0.25)", letterSpacing: "0.05em" }}>

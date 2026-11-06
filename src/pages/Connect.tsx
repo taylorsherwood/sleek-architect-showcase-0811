@@ -1,7 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
-import combinedLogo from "@/assets/exp-echelon-combined-logo.png";
 import { Instagram, Mail, Phone, Home, Search, Mountain } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
@@ -135,17 +134,6 @@ const Connect = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="mt-4 flex flex-col items-center px-4 sm:mt-2">
-            <img
-              src={combinedLogo}
-              alt="eXp Realty and Echelon Property Group combined brokerage logo"
-              className="h-[110px] w-full sm:h-[300px]"
-              style={{ marginBottom: "8px", objectFit: "contain", objectPosition: "53.25% center" }}
-              loading="lazy"
-              decoding="async"
-            />
           </div>
 
           <div className="px-8 mb-3 mt-6">
@@ -308,7 +296,7 @@ const Connect = () => {
                 color: "hsl(233 50% 9% / 0.4)",
               }}
             >
-              Brokered by eXp Realty
+              Brokered by Engel & Völkers
             </p>
           </div>
         </div>

@@ -22,7 +22,6 @@ import catRecreational from "@/assets/cat-recreational-land.jpg";
 import catInvestment from "@/assets/cat-investment-acreage.jpg";
 import catDevelopment from "@/assets/cat-development-opportunities.jpg";
 import catHomesites from "@/assets/cat-hill-country-homesites.jpg";
-import expLandRanchLogo from "@/assets/exp-land-ranch-logo.png";
 import marketFredericksburgAsset from "@/assets/market-fredericksburg.jpg.asset.json";
 import marketKerrvilleAsset from "@/assets/market-kerrville.jpg.asset.json";
 import marketDrippingSpringsAsset from "@/assets/market-dripping-springs.jpg.asset.json";
@@ -575,21 +574,6 @@ const LandRanch = () => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-normal text-architectural leading-[1.1]">
                 Land Requires a Different Level of Expertise
               </h2>
-              <a
-                href="https://landandranch.exprealty.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit eXp Realty Land & Ranch"
-                className="inline-block mt-8 transition-opacity duration-300 hover:opacity-80"
-              >
-                <img
-                  src={expLandRanchLogo}
-                  alt="eXp Realty Land & Ranch"
-                  className="h-12 md:h-14 w-auto"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground leading-[1.8] text-[1.0625rem]">
               <p>

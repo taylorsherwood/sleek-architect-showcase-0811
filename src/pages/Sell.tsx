@@ -142,7 +142,7 @@ const whySell = [
 {
   title: "Global Reach, Local Expertise",
   description:
-  "As a member of the eXp Luxury Division, we connect your property to a worldwide network of agents and affluent buyers, while our Austin roots ensure hyper-local market knowledge and pricing accuracy."
+  "Through Engel & Völkers, we connect your property to a worldwide network of agents and affluent buyers, while our Austin roots ensure hyper-local market knowledge and pricing accuracy."
 }];
 
 
@@ -154,7 +154,7 @@ const marketingFeatures = [
 "Targeted social media & Google ad campaigns",
 "Private broker previews & luxury open houses",
 "Syndication to 500+ listing platforms worldwide",
-"eXp Luxury Division & global referral network",
+"Engel & Völkers global referral network",
 "Email campaigns to curated buyer database",
 "Print features in luxury real estate publications"];
 
@@ -368,7 +368,7 @@ const Sell = () => {
       { question: "What does it cost to sell a home in Austin Texas?", answer: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
       { question: "Should I sell my Austin home off-market?", answer: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
       { question: "How should I prepare my Austin home for sale?", answer: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
-      { question: "What marketing does Echelon Property Group provide for listings?", answer: "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms. Luxury listings also receive private broker previews and global network exposure through eXp Luxury Division." },
+      { question: "What marketing does Echelon Property Group provide for listings?", answer: "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms. Luxury listings also receive private broker previews and global network exposure through the Engel & Völkers network." },
       { question: "Is now a good time to sell a luxury home in Austin?", answer: "Austin's luxury inventory remains limited in top neighborhoods, creating favorable conditions for well-positioned sellers. Based on current market data, properly priced homes in West Lake Hills, Barton Creek, and Lake Austin are achieving strong results with motivated buyers." },
       ])} />
       <Navigation />
@@ -619,7 +619,7 @@ const Sell = () => {
                 {
                   title: "Global Exposure Matters",
                   body:
-                    "Echelon Property Group listings receive enhanced distribution through the eXp Luxury Division network and syndication across 500+ platforms.",
+                    "Echelon Property Group listings receive enhanced distribution through the Engel & Völkers network and syndication across 500+ platforms.",
                 },
               ].map((card, i) => (
                 <ScrollReveal key={card.title} delay={i * 90}>
@@ -1004,7 +1004,7 @@ const Sell = () => {
               { q: "What does it cost to sell a home in Austin Texas?", a: "Typical seller costs include agent commissions, title insurance, property taxes prorated to closing, and any repairs or staging. In Texas, sellers also provide a survey and pay for an owner's title policy." },
               { q: "Should I sell my Austin home off-market?", a: "Off-market sales offer privacy and the ability to test pricing without public days-on-market accumulation. They're ideal for high-profile sellers or unique luxury properties. Echelon Property Group helps sellers evaluate which approach best serves their goals." },
               { q: "How should I prepare my Austin home for sale?", a: "Key preparation steps include professional staging, decluttering, addressing deferred maintenance, fresh paint, and landscaping. For luxury homes, professional photography, cinematic video, drone footage, and a custom property website are essential." },
-              { q: "What marketing does Echelon Property Group provide for listings?", a: "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms. Luxury listings also receive private broker previews and global network exposure through eXp Luxury Division." },
+              { q: "What marketing does Echelon Property Group provide for listings?", a: "Every listing receives professional HDR photography, cinematic video, drone footage, 3-D virtual tours, a custom property website, targeted digital advertising, and syndication to 500+ listing platforms. Luxury listings also receive private broker previews and global network exposure through the Engel & Völkers network." },
               { q: "Is now a good time to sell a luxury home in Austin?", a: "Austin's luxury inventory remains limited in top neighborhoods, creating favorable conditions for well-positioned sellers. Based on current market data, properly priced homes in West Lake Hills, Barton Creek, and Lake Austin are achieving strong results with motivated buyers." },
               ].
               map((faq, i) =>

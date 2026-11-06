@@ -7,7 +7,7 @@ const CredibilityStrip = () => {
             className="text-[11px] uppercase font-medium text-center"
             style={{ letterSpacing: "0.16em" }}
           >
-            eXp Luxury Division
+            Engel & Völkers
           </span>
           <span
             className="text-[11px] uppercase font-medium text-center"

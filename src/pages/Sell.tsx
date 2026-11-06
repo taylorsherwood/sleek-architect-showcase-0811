@@ -829,7 +829,7 @@ const Sell = () => {
                     aria-label="Verify Certified Luxury Home Marketing Specialist credential"
                   >
                     <img
-                      src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=12"
+                      src="https://www.luxuryhomemarketing.com/en/logo.html?m=47b7631918fd737ab569ce1c45792b4b&v=10"
                       alt="Certified Luxury Home Marketing Specialist (CLHMS), verified member"
                       className="h-[72px] md:h-[84px] w-auto object-contain"
                       loading="lazy"

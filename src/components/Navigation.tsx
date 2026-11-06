@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const logo = "/images/echelon-logo.webp";
 const logoMobile = "/images/echelon-logo-mobile.png";
+const evMark = "/images/engel-volkers-ev-mark.svg";
 
 const BRONZE = "#b9a06c";
 const IVORY = "#FAF7F1";
@@ -144,7 +145,7 @@ const Navigation = () => {
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
             className={`block min-[1280px]:hidden w-auto max-w-[450px] shrink-0 object-contain`}
-            style={{ height: "auto", maxHeight: "128%" }}
+            style={{ height: "auto", maxHeight: "118%" }}
             loading="eager"
             decoding="async"
             fetchPriority="high"
@@ -210,6 +211,19 @@ const Navigation = () => {
         >
           <ClientPortalButton />
         </div>
+
+        {/* Brokerage mark - mobile header only */}
+        <img
+          src={evMark}
+          alt="Engel & Völkers"
+          title="Brokered by Engel & Völkers Austin"
+          className="block min-[1280px]:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 pointer-events-none h-[clamp(12px,4.4vw,19px)] w-auto max-[350px]:h-[9px]"
+          style={{ width: "auto" }}
+          loading="eager"
+          decoding="async"
+          width={580}
+          height={250}
+        />
 
         {/* Mobile toggle */}
         <Button

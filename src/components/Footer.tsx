@@ -50,7 +50,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
             <div className="flex flex-col items-center sm:items-start order-1">
               <Link to="/" className="inline-block mb-1">
                 <img
-                  src="/static-assets/echelon-footer-logo.webp"
+                  src="/static-assets/echelon-logo-gold-square.webp"
                   alt="Echelon Property Group"
                   className="h-56 w-56 ml-0 sm:-ml-4 object-contain"
                   loading="lazy" decoding="async"
@@ -123,8 +123,9 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
             <div className="order-4 sm:order-4">
               <h4 style={headingStyle}>Contact</h4>
               <div style={{ ...linkStyle, lineHeight: 1.7 }}>
-                <p>2105 East MLK Blvd Ste 227</p>
-                <p className="mb-2">Austin, Texas 78702</p>
+                <p>Engel & Völkers Austin</p>
+                <p>3700 Bee Caves Rd, Ste 102</p>
+                <p className="mb-2">Austin, TX 78746</p>
                 <a href="tel:+15126613843" className="block transition-colors duration-300 hover:text-white">(512) 661-3843</a>
                 <a href="mailto:info@echelonpropertygroup.com" className="block transition-colors duration-300 hover:text-white" style={{ fontSize: "11.5px" }}>info@echelonpropertygroup.com</a>
               </div>

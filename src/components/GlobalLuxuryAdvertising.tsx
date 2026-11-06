@@ -417,7 +417,7 @@ const GlobalLuxuryAdvertising = () => {
                       height={533}
                     />
                   </div>
-                  <div className="h-px w-full bg-gold" />
+                  <div className="h-0.5 w-full bg-gold" />
                   <div className="p-7">
                     <div className="flex items-center gap-2.5 mb-3">
                       <card.icon className="w-4 h-4 text-gold" />

@@ -296,7 +296,7 @@ const Connect = () => {
                 color: "hsl(233 50% 9% / 0.4)",
               }}
             >
-              Brokered by Engel & Völkers
+              Brokered by Engel & Völkers Austin · 3700 Bee Caves Rd, Ste 102, Austin, TX 78746
             </p>
           </div>
         </div>

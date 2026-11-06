@@ -1,3 +1,4 @@
+import evLogo from "@/assets/engel-volkers-taylor-sherwood-logo.png.asset.json";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -287,6 +288,9 @@ const About = () => {
                   priority
                   className="w-full h-auto"
                 />
+                <div className="mt-10 max-w-[280px] mx-auto">
+                  <img src={evLogo.url} alt="Engel & Völkers Taylor Sherwood logo" className="w-full h-auto" loading="lazy" decoding="async" width={1970} height={430} />
+                </div>
               </div>
               <div>
                 <p className="text-minimal text-gold mb-3 tracking-[0.25em]">FOUNDER</p>

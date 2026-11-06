@@ -238,7 +238,8 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                 Texas Real Estate Commission Consumer Protection Notice
               </a>
               <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "rgba(184,160,109,0.8)", fontWeight: 700 }}>
-                Brokered by Engel & Völkers
+                Brokered by Engel & Völkers Austin
+                <span className="block font-normal" style={{ fontSize: "11px", color: "rgba(184,160,109,0.65)" }}>3700 Bee Caves Rd, Ste 102, Austin, TX 78746</span>
               </p>
             </div>
             <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "10.5px", color: "rgba(255,255,255,0.25)", letterSpacing: "0.05em" }}>

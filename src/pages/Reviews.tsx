@@ -691,7 +691,7 @@ const Reviews = () => {
             </div>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Brokerage</dt>
-              <dd className="font-display text-architectural">Engel & Völkers</dd>
+              <dd className="font-display text-architectural">Engel & Völkers Austin</dd>
             </div>
             <div>
               <dt className="text-[0.7rem] tracking-[0.22em] text-gold font-extrabold uppercase mb-1">Market</dt>

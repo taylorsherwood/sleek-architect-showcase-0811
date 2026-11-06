@@ -513,8 +513,10 @@ const TestimonialsSection = () => {
           className="tsplit-section relative w-full h-screen bg-secondary overflow-hidden"
           aria-label="Client experiences"
         >
-        <div className="absolute inset-0 z-0 flex items-start pr-8 md:pr-10 lg:pr-14">
-          <div className="max-w-xl md:w-1/2 md:ml-auto md:pl-10 lg:pl-16" style={{ paddingTop: "clamp(140px, 22vh, 260px)" }}>
+        <div className="absolute inset-0 z-0 flex items-start">
+          {/* Spacer holds the copy in the right half, anchored to the image edge */}
+          <div aria-hidden="true" className="hidden md:block w-1/2 shrink-0" />
+          <div className="max-w-xl md:w-1/2 md:pl-12 lg:pl-16 md:pr-8 lg:pr-14" style={{ paddingTop: "clamp(140px, 22vh, 260px)" }}>
             {/* Eyebrow with gold hairline rule, magazine masthead treatment */}
             <div
               className="tsplit-attribution flex items-center gap-4 mb-12 will-change-transform"
@@ -683,7 +685,7 @@ const TestimonialsSection = () => {
 
         <Link
           to="/reviews"
-          className="absolute bottom-10 right-16 md:right-24 lg:right-32 z-[18] inline-flex items-center text-gold transition-colors duration-[450ms] group/link text-right"
+          className="absolute bottom-10 left-1/2 ml-12 lg:ml-16 z-[18] inline-flex items-center text-gold transition-colors duration-[450ms] group/link"
           style={{
             fontFamily: '"Jost", sans-serif',
             fontSize: "11px",

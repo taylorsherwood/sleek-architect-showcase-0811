@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const logo = "/images/echelon-logo.webp";
-const logoMobile = "/images/echelon-logo-mobile.png";
+const logoMobile = "/images/echelon-property-group-mobile.webp";
 const evMark = "/images/engel-volkers-ev-mark.svg";
 
 const BRONZE = "#b9a06c";

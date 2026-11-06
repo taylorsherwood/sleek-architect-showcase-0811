@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const logo = "/images/echelon-logo.webp";
-const logoMobile = "/images/echelon-property-group-mobile.webp";
+const logoMobile = "/images/echelon-property-group-header.webp";
 const evMark = "/images/engel-volkers-ev-mark.svg";
 
 const BRONZE = "#b9a06c";
@@ -140,18 +140,30 @@ const Navigation = () => {
           className="flex items-center shrink-0"
           style={{ height: "100%" }}
         >
-          <img
-            src={logoMobile}
-            alt="Echelon Property Group"
-            title="Echelon Property Group, Austin Luxury Real Estate"
-            className={`block min-[1280px]:hidden w-auto max-w-[450px] shrink-0 object-contain`}
-            style={{ height: "auto", maxHeight: "128%" }}
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-            width={400}
-            height={218}
-          />
+          <span className="flex min-[1280px]:hidden items-center gap-5">
+            <img
+              src={evMark}
+              alt="Engel & Völkers"
+              title="Brokered by Engel & Völkers Austin"
+              className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0"
+              loading="eager"
+              decoding="async"
+              width={580}
+              height={250}
+            />
+            <span aria-hidden="true" className="w-px h-24 md:h-20 bg-gold shrink-0" />
+            <img
+              src={logoMobile}
+              alt="Echelon Property Group"
+              title="Echelon Property Group, Austin Luxury Real Estate"
+              className="w-auto h-28 md:h-24 lg:h-[89px] shrink-0 object-contain"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              width={161}
+              height={150}
+            />
+          </span>
           <img
             src={logo}
             alt="Echelon Property Group"
@@ -211,19 +223,6 @@ const Navigation = () => {
         >
           <ClientPortalButton />
         </div>
-
-        {/* Brokerage mark - mobile header only */}
-        <img
-          src={evMark}
-          alt="Engel & Völkers"
-          title="Brokered by Engel & Völkers Austin"
-          className="block min-[1280px]:hidden absolute left-2 md:left-4 top-1/2 -translate-y-1/2 pointer-events-none h-[clamp(11px,3.8vw,19px)] w-auto max-[350px]:h-[7px]"
-          style={{ width: "auto" }}
-          loading="eager"
-          decoding="async"
-          width={580}
-          height={250}
-        />
 
         {/* Mobile toggle */}
         <Button

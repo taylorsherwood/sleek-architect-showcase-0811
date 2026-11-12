@@ -29,14 +29,17 @@ type FooterProps = {
 
 const Footer = ({ showNewsletter = true }: FooterProps) => {
   return (
-    <>
-      {/* Brokerage mark — sits directly above the footer on every page */}
+    <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
+      {/* Newsletter signup — immediately above footer navigation */}
+      {showNewsletter && <NewsletterSignup className="py-16 md:py-24" />}
+
+      {/* Brokerage mark — sits directly above the footer navigation on every page */}
       <div
         className="w-full flex justify-center items-center"
         style={{
-          background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
-          paddingTop: "clamp(48px, 6vw, 76px)",
-          paddingBottom: "clamp(40px, 5vw, 64px)",
+          background: "#FAFAF8",
+          paddingTop: "clamp(16px, 2vw, 24px)",
+          paddingBottom: "clamp(36px, 5vw, 56px)",
         }}
       >
         <img
@@ -51,15 +54,9 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
         />
       </div>
 
-    <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
-      {/* Newsletter signup — immediately above footer navigation */}
+      {/* Fancy gold divider between the mark and footer navigation */}
       {showNewsletter && (
-        <>
-          <NewsletterSignup className="py-16 md:py-24" />
-
-          {/* Fancy gold divider between newsletter and footer navigation */}
-          <div className="w-full h-1 bg-gold shadow-[0_0_16px_rgba(185,160,108,0.45)]" />
-        </>
+        <div className="w-full h-1 bg-gold shadow-[0_0_16px_rgba(185,160,108,0.45)]" />
       )}
 
 
@@ -273,7 +270,6 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
         </div>
       </div>
     </footer>
-    </>
   );
 };
 

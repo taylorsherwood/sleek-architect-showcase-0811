@@ -8,6 +8,7 @@ import heroVideoWebm from "@/assets/video/sell-private-hero.webm";
 import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
+import evLogo from "@/assets/engel-volkers-villa-logo.webp.asset.json";
 
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -628,6 +629,27 @@ const SellPrivate = () => {
         </div>
       </section>
 
+
+      {/* Brokerage mark — sits directly above the footer */}
+      <div
+        className="w-full flex justify-center items-center"
+        style={{
+          background: IVORY,
+          paddingTop: "clamp(16px, 2vw, 24px)",
+          paddingBottom: "clamp(36px, 5vw, 56px)",
+        }}
+      >
+        <img
+          src={evLogo.url}
+          alt="Engel & Völkers"
+          title="Brokered by Engel & Völkers Austin"
+          width={664}
+          height={276}
+          className="w-[168px] sm:w-[196px] md:w-[224px] h-auto object-contain"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
       {/* ─────────── Quiet footer ─────────── */}
       <footer className="py-9" style={{ backgroundColor: NAVY }}>

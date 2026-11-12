@@ -96,8 +96,8 @@ const AdvisorSection = () => (
               }} />
             </div>
 
-            {/* Brokerage logo, desktop only */}
-            <div className="hidden lg:flex w-full justify-center pt-8 pb-2 px-4">
+            {/* Brokerage logo */}
+            <div className="flex w-full justify-center pt-8 pb-2 px-4">
               <img src={evLogo.url} alt="Engel & Völkers Echelon Property Group logo" className="w-full max-w-[260px] h-auto" loading="lazy" decoding="async" width={1916} height={398} />
             </div>
           </div>

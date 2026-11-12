@@ -11,6 +11,7 @@ import SchemaMarkup, {
 import OptimizedImage from "@/components/OptimizedImage";
 import ScrollReveal from "@/components/ScrollReveal";
 import taylorHeadshot from "@/assets/taylor-headshot.webp";
+import evLogo from "@/assets/engel-volkers-echelon-logo.png.asset.json";
 import { blogPosts } from "@/data/blogPosts";
 import { communityPages } from "@/data/communityData";
 import { taylorStats, taylorFeaturedMedia } from "@/config/taylorStats";
@@ -221,6 +222,17 @@ const TaylorSherwood = () => {
                   height={1000}
                   className="w-full h-full object-cover object-[50%_25%]"
                   priority
+                />
+              </div>
+              <div className="mt-8 max-w-[280px] mx-auto">
+                <img
+                  src={evLogo.url}
+                  alt="Engel & Völkers Echelon Property Group logo"
+                  className="w-full h-auto"
+                  loading="lazy"
+                  decoding="async"
+                  width={1916}
+                  height={398}
                 />
               </div>
             </div>

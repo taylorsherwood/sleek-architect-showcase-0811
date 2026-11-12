@@ -9,6 +9,7 @@ import sectionImage from "@/assets/sell-private-approach-kitchen.webp";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
 import evLogo from "@/assets/engel-volkers-villa-logo.webp.asset.json";
+import evWordmark from "@/assets/engel-volkers-wordmark.svg.asset.json";
 
 
 const SITE = "https://www.echelonpropertygroup.com";
@@ -632,7 +633,7 @@ const SellPrivate = () => {
 
       {/* Brokerage mark — sits directly above the footer */}
       <div
-        className="w-full flex justify-center items-center"
+        className="w-full flex flex-col justify-center items-center gap-4 md:gap-5"
         style={{
           background: IVORY,
           paddingTop: "clamp(16px, 2vw, 24px)",
@@ -646,6 +647,16 @@ const SellPrivate = () => {
           width={664}
           height={276}
           className="w-[168px] sm:w-[196px] md:w-[224px] h-auto object-contain"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src={evWordmark.url}
+          alt="Engel & Völkers"
+          title="Brokered by Engel & Völkers Austin"
+          width={543}
+          height={119}
+          className="w-[152px] sm:w-[178px] md:w-[204px] h-auto object-contain"
           loading="lazy"
           decoding="async"
         />

@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import evLogoAsset from "@/assets/engel-volkers-villa-logo.webp.asset.json";
 
 const logo = "/images/echelon-logo.webp";
 const logoMobile = "/images/echelon-property-group-header.webp";
-const evMark = "/images/engel-volkers-ev-mark.svg";
+const evMark = evLogoAsset.url;
 
 const BRONZE = "#b9a06c";
 const IVORY = "#FAF7F1";
@@ -148,8 +149,8 @@ const Navigation = () => {
               className="w-[80px] max-[350px]:w-[64px] h-auto object-contain shrink-0 mr-7"
               loading="eager"
               decoding="async"
-              width={580}
-              height={250}
+              width={664}
+              height={276}
             />
             <span aria-hidden="true" className="w-px h-16 md:h-14 bg-gold shrink-0" />
             <img

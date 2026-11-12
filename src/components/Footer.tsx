@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import evLogo from "@/assets/engel-volkers-villa-logo.webp.asset.json";
 
 const headingStyle: React.CSSProperties = {
   fontFamily: '"Jost", sans-serif',
@@ -28,6 +29,28 @@ type FooterProps = {
 
 const Footer = ({ showNewsletter = true }: FooterProps) => {
   return (
+    <>
+      {/* Brokerage mark — sits directly above the footer on every page */}
+      <div
+        className="w-full flex justify-center items-center"
+        style={{
+          background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
+          paddingTop: "clamp(48px, 6vw, 76px)",
+          paddingBottom: "clamp(40px, 5vw, 64px)",
+        }}
+      >
+        <img
+          src={evLogo.url}
+          alt="Engel & Völkers"
+          title="Brokered by Engel & Völkers Austin"
+          width={664}
+          height={276}
+          className="w-[168px] sm:w-[196px] md:w-[224px] h-auto object-contain"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       {/* Newsletter signup — immediately above footer navigation */}
       {showNewsletter && (
@@ -250,6 +273,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

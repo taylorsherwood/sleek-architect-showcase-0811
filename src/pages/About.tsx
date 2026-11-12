@@ -1,4 +1,4 @@
-import evLogo from "@/assets/engel-volkers-taylor-sherwood-logo.png.asset.json";
+import evLogo from "@/assets/engel-volkers-echelon-logo.png.asset.json";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -289,7 +289,7 @@ const About = () => {
                   className="w-full h-auto"
                 />
                 <div className="mt-10 max-w-[280px] mx-auto">
-                  <img src={evLogo.url} alt="Engel & Völkers Taylor Sherwood logo" className="w-full h-auto" loading="lazy" decoding="async" width={1970} height={430} />
+                  <img src={evLogo.url} alt="Engel & Völkers Echelon Property Group logo" className="w-full h-auto" loading="lazy" decoding="async" width={1916} height={398} />
                 </div>
               </div>
               <div>

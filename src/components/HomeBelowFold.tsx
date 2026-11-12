@@ -1,4 +1,4 @@
-import evLogo from "@/assets/engel-volkers-taylor-sherwood-logo.png.asset.json";
+import evLogo from "@/assets/engel-volkers-echelon-logo.png.asset.json";
 import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
@@ -98,7 +98,7 @@ const AdvisorSection = () => (
 
             {/* Brokerage logo, desktop only */}
             <div className="hidden lg:flex w-full justify-center pt-8 pb-2 px-4">
-              <img src={evLogo.url} alt="Engel & Völkers Taylor Sherwood logo" className="w-full max-w-[260px] h-auto" loading="lazy" decoding="async" width={1970} height={430} />
+              <img src={evLogo.url} alt="Engel & Völkers Echelon Property Group logo" className="w-full max-w-[260px] h-auto" loading="lazy" decoding="async" width={1916} height={398} />
             </div>
           </div>
 

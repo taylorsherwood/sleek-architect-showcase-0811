@@ -1,78 +1,27 @@
-## Goal
+# Focused cleanup without SEO or behavior changes
 
-Stop treating `/land-ranch/hill-country-ranches` as a market report. Reauthor it as a land acquisition experience that puts Taylor Sherwood at the center, leads with imagery and motion, and exposes one proprietary "how we evaluate land" moment that no other page on the site has.
+## Confirmed findings
+- **Three unused components:** `Portfolio.tsx`, `Services.tsx`, and `BlogCTA.tsx` have no import references in the app, scripts, or configuration. Two contain leftover architecture-template content. They add maintenance clutter, not current visitor download weight.
+- **Duplicated brokerage logo band:** the shared footer and private-seller page repeat the same two images, dimensions, and spacing. Changes currently require two edits, which risks inconsistent presentation.
+- **Large multi-purpose files:** the homepage below-fold file is 1,616 lines; Land & Ranch is 1,830 lines. Keeping unrelated sections together increases the work and regression risk of small changes. Article collections are long because they contain actual editorial content, not disposable junk.
+- **Limited regression coverage:** the existing test file covers statistics; the post-build SEO check covers metadata on eight routes, but not article body completeness. Cleanup needs a before/after content comparison to protect Google and AI readability.
 
-Brand system stays locked: ivory `#F5F3EF` / `#FAFAF8`, navy `#0C0F24`, gold `#b9a06c`, Cinzel + Jost. No new colors, no new fonts.
+## Ordered cleanup
+1. **Delete only the three confirmed unused components.** Keep their image assets unless separately proven unused. Confirm no surviving imports; run existing statistics tests and check homepage, Sell, and a blog post in the preview.
+2. **Share the brokerage logo band.** Preserve each page's existing background, transparent images, sizing, spacing, text alternatives, and position. Check both footer versions at desktop and phone widths against baseline screenshots.
+3. **Split the homepage below-fold sections into focused files.** Move code without changing content, exported interfaces, section order, loading timing, or interactions. Start with this file only; defer the larger land pages. Check homepage search, testimonials, contact controls, and footer before moving on.
 
-## New page narrative (top to bottom)
+Each step leaves the app working and is checked before the next step. No rewrite, dependency updates, or design changes.
 
-```text
-1  Cinematic hero               full-bleed video, single line: "The most valuable
-                                land in Texas rarely trades publicly."
-2  Advisor anchor                Taylor portrait, signature, one sentence of
-                                positioning, single CTA. Replaces "Market Overview".
-3  Opportunity reel              5 horizontal full-bleed editorial cards
-                                (Legacy · Live Water · Recreational · Investment ·
-                                Off-Market) on dark navy ground. Image-led.
-4  Signature evaluation          PROPRIETARY block: "The Six Lenses".
-                                Water · Access · Exemptions · Topography ·
-                                Feasibility · Position. Interactive vertical
-                                stepper — hover/scroll reveals advisor commentary
-                                on each lens. This is the page's memorable moment.
-5  Regional map                  Kept. Reframed as "Where we operate" with a
-                                single short caption, no surrounding text grid.
-6  Quiet lifestyle frame         One large editorial image + one Cinzel pull
-                                quote. No paragraph stack.
-7  Off-market access CTA         Navy band, gold rule, one CTA to /off-market.
-8  Adjacent markets              Kept, slimmed to a clean 4-up row.
-```
+## SEO and AI safeguards
+- Preserve all article text, titles, headings, links, routes, aliases, canonical URLs, FAQs, author details, schema, sitemap entries, and AI index files.
+- Compare page content and structured data before/after on the homepage, Sell, private-seller page, and a representative article.
+- Keep prerendering and lazy-loading behavior intact; use the automatic build and existing post-build SEO verifier.
+- Do not remove content merely to reduce line count or file size.
 
-Removed entirely from this slug only (still live for other markets):
-- Buyer/Seller Market Balance gauge (reads like a report)
-- Market Overview prose + bullet list
-- By-the-numbers stats grid inside `HillCountryTopEnhancements`
-- "Three ways buyers acquire" category grid inside `HillCountryTopEnhancements`
-  (replaced by Opportunity Reel, which covers the same idea with imagery)
+## Separate findings, not included in this cleanup
+- The private-seller form ignores the submitter's failure result and still navigates to its thank-you page. That can make an unsuccessful inquiry look successful. Changing it requires a separate behavior fix and failure-path test.
+- Security results are stale. The latest available storage result flags public file listing in `listing-media` as informational; available dependency results report no findings but are dated October 16. There is no recent full-app deep scan. Run a scan from the Security tab for a current assessment. No security or package changes are proposed here.
 
-## What gets built
-
-**New components (Hill Country only):**
-
-- `HillCountryHero` — full-bleed cinematic video, single headline, single eyebrow, no buttons. Replaces the shared market hero on this slug.
-- `HillCountryAdvisorAnchor` — Taylor portrait left, short positioning + signature CTA right. Asymmetric, off-center.
-- `HillCountryOpportunityReel` — horizontal scroll-snap row of 5 dark editorial cards on navy. Image-forward, gold eyebrow, one-line title, single thin gold rule, no body copy.
-- `HillCountrySixLenses` — the signature section. Vertical stepper with sticky left column ("How we read a tract of land · The Six Lenses") and right column listing all six lenses with advisor commentary. Numbered 01-06, gold rule under each, hover lifts the active lens.
-- `HillCountryLifestyleQuote` — large image + Cinzel pull quote, no surrounding paragraphs.
-
-**Reused:**
-- `LandRanchMap` (rewrapped with single caption)
-- Existing Featured Opportunities CTA band
-- Existing Related Markets row
-- Existing navigation, footer, schema, SEO head
-
-**Edited:**
-- `src/pages/LandRanchMarket.tsx` — for `slug === "hill-country-ranches"`, render a new `<HillCountryExperience />` instead of the shared template (hero, balance gauge, overview, agent intel, property types, why buyers, lifestyle, all skipped on this slug). Other markets unchanged.
-- `src/components/land-ranch/HillCountryEnhancements.tsx` — delete the by-the-numbers and ownership-categories blocks; keep the parallax/video and map wrappers if still needed, otherwise fold into the new experience component.
-
-## Motion & interaction
-
-- Hero video continues; copy fades in on top with a slow opacity ramp.
-- Opportunity reel cards: subtle gold underline grows left-to-right on hover, image cross-fade scale 1.00 → 1.04 over 1200ms.
-- Six Lenses: sticky-left layout; each lens row fades in on intersection, gold number scales from 0.96 → 1.
-- No bounce, no spring, no flashy transitions — calm, editorial.
-
-## Technical notes
-
-- All sections respect the global vertical rhythm spacers (`h-12 md:h-20`).
-- All gold elements use `#b9a06c` at 100% opacity, no gradients.
-- Headings stay strictly H1 → H2 → H3. Only the hero gets H1.
-- All images `object-fit: cover`. Mobile collapses the sticky stepper to a stacked list.
-- No new dependencies. No backend changes.
-- SEO meta, schema markup, breadcrumb schema all preserved from the existing page.
-
-## Out of scope
-
-- Other `/land-ranch/*` market pages
-- Copy rewrites beyond what the new sections require
-- New imagery beyond what already exists in `src/assets`
-- Typography or color system changes
+## Scope
+Only the approved cleanup steps above. Application code and dependencies remain unchanged until approval.

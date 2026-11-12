@@ -531,11 +531,11 @@ const Developments = () => {
           <div className="max-w-6xl mx-auto">
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 md:gap-x-20 gap-y-8 md:gap-y-12 items-center justify-items-center">
               {[
-                { name: "Austin Home", src: new URL("@/assets/media-austin-home.webp", import.meta.url).href, h: 68, w: 240 },
-                { name: "CultureMap Austin", src: new URL("@/assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 240 },
-                { name: "Tribeza", src: new URL("@/assets/media-tribeza.webp", import.meta.url).href, h: 78, w: 260 },
-                { name: "Austin Luxury Home Magazine", src: new URL("@/assets/media-austin-luxury-home.webp", import.meta.url).href, h: 96, w: 280 },
-                { name: "Austin Business Journal", src: new URL("@/assets/media-abj.webp", import.meta.url).href, h: 118, w: 240 },
+                { name: "Austin Home", src: new URL("../assets/media-austin-home.webp", import.meta.url).href, h: 68, w: 240 },
+                { name: "CultureMap Austin", src: new URL("../assets/media-culturemap.webp", import.meta.url).href, h: 78, w: 240 },
+                { name: "Tribeza", src: new URL("../assets/media-tribeza.webp", import.meta.url).href, h: 78, w: 260 },
+                { name: "Austin Luxury Home Magazine", src: new URL("../assets/media-austin-luxury-home.webp", import.meta.url).href, h: 96, w: 280 },
+                { name: "Austin Business Journal", src: new URL("../assets/media-abj.webp", import.meta.url).href, h: 118, w: 240 },
                 { name: "Austin Monthly", wordmark: true },
               ].map((p) => (
                 <li

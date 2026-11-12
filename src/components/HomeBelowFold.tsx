@@ -29,10 +29,10 @@ import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.j
 // Blog images use lazy-friendly static paths (not eager imports) to avoid
 // pulling ~836 KB into the initial HomeBelowFold chunk. These are only
 // visible far below the fold in the EditorialInsights section.
-const blogRollingwoodVsWestlake = new URL("@/assets/blog-rollingwood-vs-westlake.jpg", import.meta.url).href;
-const blogTarrytownVsBrykerWoods = new URL("@/assets/tarrytown-bryker-woods.avif", import.meta.url).href;
-const blogLakeAustinVsLakeTravis = new URL("@/assets/lake-travis-sunset.jpg", import.meta.url).href;
-const blogWhatIsPrivateListing = new URL("@/assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
+const blogRollingwoodVsWestlake = new URL("../assets/blog-rollingwood-vs-westlake.jpg", import.meta.url).href;
+const blogTarrytownVsBrykerWoods = new URL("../assets/tarrytown-bryker-woods.avif", import.meta.url).href;
+const blogLakeAustinVsLakeTravis = new URL("../assets/lake-travis-sunset.jpg", import.meta.url).href;
+const blogWhatIsPrivateListing = new URL("../assets/blog-what-is-private-listing-hero.webp", import.meta.url).href;
 
 const Footer = lazy(chunkRetry(() => import("@/components/Footer")));
 

@@ -50,4 +50,3 @@ const HomeCommunitiesScroll = () => (
   </div>
 );
 export default HomeCommunitiesScroll;
-export default HomeCommunitiesScroll;

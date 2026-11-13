@@ -63,7 +63,7 @@ const Communities = () => {
                 Taylor Sherwood
               </Link>.
             </p>
-            <div className="mt-8 flex justify-center"><MovingToAustinGuideCTA /></div>
+            <div className="mt-12"><MovingToAustinGuideCTA /></div>
           </div>
         </div>
       </section>

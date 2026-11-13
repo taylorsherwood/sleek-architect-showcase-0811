@@ -48,7 +48,7 @@ const MovingToAustin = () => {
               Your comprehensive guide to relocating to Austin, Texas. From neighborhoods and schools 
               to cost of living and lifestyle, everything high-net-worth buyers need to make an informed move.
             </p>
-            <div className="mt-8"><MovingToAustinGuideCTA /></div>
+            <div className="mt-12"><MovingToAustinGuideCTA /></div>
           </div>
         </div>
       </section>

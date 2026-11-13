@@ -50,7 +50,6 @@ const MarketSnapshot = ({ stats, communityName }: MarketSnapshotProps) => {
                 {item.label}
               </p>
               <p className="text-2xl font-display text-architectural">{item.value}</p>
-              {item.label === "Median sale" && <p className="text-xs text-muted-foreground mt-2">{neighborhoodSourceNote(communityName)}</p>}
             </div>
           ))}
         </div>

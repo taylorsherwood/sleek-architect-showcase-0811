@@ -7990,7 +7990,7 @@ Old Enfield / Windsor Road | Central Austin | Austin ISD | Not available | Histo
 Lake Austin Waterfront | Along the lake | Varies | Not available | Scarce, deeded waterfront
 :::
 
-${neighborhoodSourceNote("westlake-hills")}. Other neighborhood medians are withheld pending a verified dataset.
+
 
 ## 1. Rollingwood
 
@@ -7998,7 +7998,7 @@ ${neighborhoodSourceNote("westlake-hills")}. Other neighborhood medians are with
 
 ## 2. West Lake Hills
 
-The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. ${neighborhoodPriceSummary("westlake-hills")}. View estates often trade privately.
+The name most people mean when they say Westlake. [West Lake Hills](/communities/westlake-hills) is its own city in the 78746 zip code, defined by hillside estates, canyon and skyline views, and lot sizes that allow real privacy ten minutes from downtown. Eanes ISD is the anchor. Westlake High School consistently ranks among the top public high schools in Texas, and that ranking alone imports buyers from both coasts every year. ${neighborhoodPriceSummary("westlake-hills")} View estates often trade privately.
 
 ## 3. Barton Creek
 

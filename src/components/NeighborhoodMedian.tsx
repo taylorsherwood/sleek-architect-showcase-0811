@@ -5,6 +5,5 @@ export default function NeighborhoodMedian({ area, className = "text-minimal tex
   if (!value) return null;
   return <>
     <p className={className}>{value}</p>
-    <p className="text-xs text-muted-foreground mb-3">{neighborhoodSourceNote(area)}</p>
   </>;
 }

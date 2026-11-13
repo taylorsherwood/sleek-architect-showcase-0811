@@ -42,11 +42,11 @@ export function formatNeighborhoodMedian(areaOrSlug: string): string {
 export function neighborhoodSourceNote(areaOrSlug: string): string {
   const stat = getNeighborhoodStat(areaOrSlug);
   if (stat?.medianSale == null || !stat.period || !stat.source) return "";
-  return `${stat.metricLabel} · ${stat.area}, all residential closings, ${stat.period} · Source: ${stat.source}`;
+  return "";
 }
 
 export function neighborhoodPriceSummary(areaOrSlug: string): string {
   const value = formatNeighborhoodMedian(areaOrSlug);
   const stat = getNeighborhoodStat(areaOrSlug);
-  return value ? `${value}. ${neighborhoodSourceNote(areaOrSlug)}. ${stat?.salesCount} sales.` : "Contact Echelon Property Group for a current, neighborhood-specific pricing analysis.";
+  return value ? `Homes in ${stat?.area} have a median sale price of ${value}.` : "Contact Echelon Property Group for a current, neighborhood-specific pricing analysis.";
 }

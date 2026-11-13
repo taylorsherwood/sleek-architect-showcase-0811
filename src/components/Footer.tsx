@@ -54,7 +54,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
                 <img
                   src="/static-assets/echelon-logo-gold-square.webp"
                   alt="Echelon Property Group"
-                  className="w-[112px] sm:w-[130.667px] md:w-[149.333px] h-auto ml-0 sm:-ml-4 object-contain"
+                  className="w-[112px] sm:w-[130.667px] md:w-[149.333px] max-w-none h-auto ml-0 sm:-ml-4 object-contain"
                   loading="lazy" decoding="async"
                   width={224} height={224}
                 />

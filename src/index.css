@@ -1507,7 +1507,7 @@ body.hcs-immersive nav.fixed {
   margin-top: 20px;
 }
 .home-editorial-nav:not(.is-scrolled) .home-opening-mark {
-  display: block;
+  display: none;
   width: auto;
   height: 84px;
 }
@@ -1530,10 +1530,4 @@ body.hcs-immersive nav.fixed {
   .home-community-tile img, .home-editorial-nav .nav-surface { transition: none; }
 }
 
-/* Frosted panel behind homepage hero copy; video stays visible through it */
-.home-hero-glass {
-  background: hsl(var(--primary) / 0.28);
-  -webkit-backdrop-filter: blur(14px) saturate(110%);
-  backdrop-filter: blur(14px) saturate(110%);
-  border: 1px solid hsl(var(--primary-foreground) / 0.12);
-}
+.home-editorial-nav:not(.is-scrolled) .nav-brand { visibility: hidden; }

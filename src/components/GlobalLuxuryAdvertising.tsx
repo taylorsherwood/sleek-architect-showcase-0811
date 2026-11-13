@@ -92,13 +92,27 @@ const marketingCards: MarketingCard[] = [
     title: "Print & Editorial",
     description: "High-design collateral and editorial-quality materials that elevate perception.",
     image: printImage.url,
-    icon: BookOpen
+    icon: BookOpen,
+    stats: [
+      { value: "275K", label: "Readers Per Issue" },
+      { value: "4", label: "Issues Per Year" },
+      { value: "30+", label: "Countries In Print" },
+      { value: "5", label: "Language Editions" }
+    ],
+    source: "Sources: GG Magazine editorial data, 2026."
   },
   {
     title: "Local Presence",
     description: "Strategic on-the-ground marketing that creates visibility and momentum where it matters.",
     image: localImg,
-    icon: MapPin
+    icon: MapPin,
+    stats: [
+      { value: "50", label: "Austin Neighborhood Guides" },
+      { value: "145+", label: "Market Intelligence Reports" },
+      { value: "11+", label: "Years in Austin" },
+      { value: "200+", label: "Transactions Closed" }
+    ],
+    source: "Sources: Echelon Property Group market library and transaction record, 2026."
   }
 ];
 
@@ -442,7 +456,7 @@ const GlobalLuxuryAdvertising = () => {
               {marketingCards.map((card, i) =>
                 <div
                   key={card.title}
-                  className="group bg-card rounded-lg overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-0.5 hover:scale-[1.012]"
+                  className="group bg-card rounded-lg overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:-translate-y-0.5 hover:scale-[1.012] h-full flex flex-col"
                   style={{ ...revealScaleStyle(cards.visible, 200 + i * 180), boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}
                   onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.10)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)"; }}>
@@ -473,27 +487,26 @@ const GlobalLuxuryAdvertising = () => {
                     )}
                   </div>
                   <div className="h-0.5 w-full bg-gold" />
-                  <div className="p-7">
+                  <div className="p-7 flex flex-col flex-1">
                     <div className="flex items-center gap-2.5 mb-3">
                       <card.icon className="w-4 h-4 text-gold" />
                       <h3 className="text-base font-display font-medium">{card.title}</h3>
                     </div>
-                    {card.stats ? (
-                      <>
-                        <div className="grid grid-cols-2 gap-x-6 gap-y-5">
-                          {card.stats.map((stat) => (
-                            <div key={stat.label}>
-                              <p className="text-xl md:text-2xl font-display font-normal text-gold leading-none">{stat.value}</p>
-                              <p className="mt-1.5 text-[9px] uppercase tracking-[0.12em] text-muted-foreground leading-snug">{stat.label}</p>
-                            </div>
-                          ))}
-                        </div>
-                        {card.source && (
-                          <p className="mt-5 text-[9px] leading-relaxed text-muted-foreground/70">{card.source}</p>
-                        )}
-                      </>
-                    ) : (
-                      <p className="text-muted-foreground text-xs leading-relaxed">{card.description}</p>
+                    {card.stats && (
+                      <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                        {card.stats.map((stat) => (
+                          <div key={stat.label}>
+                            <p className="text-xl md:text-2xl font-display font-normal text-gold leading-none">{stat.value}</p>
+                            <p className="mt-1.5 text-[9px] uppercase tracking-[0.12em] text-muted-foreground leading-snug">{stat.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {card.description && (
+                      <p className="mt-5 text-muted-foreground text-xs leading-relaxed">{card.description}</p>
+                    )}
+                    {card.source && (
+                      <p className="mt-auto pt-5 text-[9px] leading-relaxed text-muted-foreground/70">{card.source}</p>
                     )}
                   </div>
                 </div>

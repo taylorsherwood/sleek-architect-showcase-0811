@@ -1479,6 +1479,16 @@ body.hcs-immersive nav.fixed {
   min-height: 650px;
 }
 .home-editorial-shade { background: hsl(var(--primary) / 0.48); }
+#hero-section .home-hero-glass {
+  background: hsl(var(--primary) / 0.32);
+  -webkit-backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(14px) !important;
+  border: 1px solid hsl(var(--primary-foreground) / 0.12);
+  border-radius: 2px;
+}
+@supports not ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
+  #hero-section .home-hero-glass { background: hsl(var(--primary) / 0.65); }
+}
 .home-editorial-hero p,
 .home-editorial-hero h1,
 .home-editorial-hero a,

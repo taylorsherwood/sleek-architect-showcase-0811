@@ -9,7 +9,7 @@ const BrokerageLogoBand = ({ privateSeller = false }: { privateSeller?: boolean 
       title="Brokered by Engel & Völkers Austin"
       width={664}
       height={276}
-      className="w-[168px] sm:w-[196px] md:w-[224px] h-auto object-contain"
+      className="w-[112px] sm:w-[130.667px] md:w-[149.333px] h-auto object-contain"
       loading="lazy"
       decoding="async"
     />
@@ -19,7 +19,7 @@ const BrokerageLogoBand = ({ privateSeller = false }: { privateSeller?: boolean 
       title="Brokered by Engel & Völkers Austin"
       width={543}
       height={119}
-      className="w-[152px] sm:w-[178px] md:w-[204px] h-auto object-contain"
+      className="w-[101.333px] sm:w-[118.667px] md:w-[136px] h-auto object-contain"
       loading="lazy"
       decoding="async"
     />

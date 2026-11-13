@@ -45,7 +45,7 @@ export default function AustinRelocationGuide() {
       <header className="guide-masthead">
         <p className="text-gold text-xs mb-3">The Official Austin Relocation Guide 2026-2027 Edition</p>
         <h1 className="font-serif text-3xl md:text-4xl text-foreground">Moving to Austin</h1>
-        <p className="text-muted-foreground text-sm mt-3">A considered introduction to your next chapter.</p>
+        <p className="text-muted-foreground text-sm mt-3">A curated introduction to your next chapter in the live music capital.</p>
       </header>
       {url ? <div className="container mx-auto px-4"><Suspense fallback={<p role="status" className="text-center py-20">Opening your guide…</p>}><Flipbook url={url} /></Suspense></div> : <div className="guide-preview">
         <div className="guide-preview-stage" onKeyDown={event => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); setGateOpen(true); } }}>

@@ -15,7 +15,7 @@ const pending = (area: string): NeighborhoodStat => ({
 
 export const neighborhoodStats: Record<string, NeighborhoodStat> = {
   "westlake-hills": {
-    area: "West Lake Hills", medianSale: 2_500_000, metricLabel: "Median sale",
+    area: "West Lake Hills", medianSale: null, metricLabel: "Median sale",
     period: "12 months through October 2026", salesCount: 47,
     source: "Unlock MLS", asOf: "2026-10-31",
   },

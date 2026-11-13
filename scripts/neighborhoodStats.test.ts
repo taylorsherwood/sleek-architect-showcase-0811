@@ -3,20 +3,11 @@ import { formatNeighborhoodMedian, getNeighborhoodStat, neighborhoodPriceSummary
 import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "../src/config/taylorStats";
 
 describe("verified neighborhood statistics", () => {
-  test("West Lake Hills median is $2.5M", () => {
-    expect(getNeighborhoodStat("westlake-hills")?.medianSale).toBe(2_500_000);
-    expect(formatNeighborhoodMedian("West Lake Hills")).toBe("$2.5M");
-  });
-  test("West Lake Hills reporting window has 47 closings through October 2026", () => {
-    const stat = getNeighborhoodStat("West Lake Hills");
-    expect(stat?.salesCount).toBe(47);
-    expect(stat?.period).toBe("12 months through October 2026");
-    expect(stat?.asOf).toBe("2026-10-31");
-  });
-  test("verified median retains Unlock MLS provenance", () => {
-    expect(getNeighborhoodStat("West Lake Hills")?.source).toBe("Unlock MLS");
-    expect(neighborhoodSourceNote("West Lake Hills")).toBe("Median sale · West Lake Hills, all residential closings, 12 months through October 2026 · Source: Unlock MLS");
-    expect(neighborhoodPriceSummary("westlake-hills")).toContain("47 sales.");
+  test("West Lake Hills shows no median price", () => {
+    expect(getNeighborhoodStat("westlake-hills")?.medianSale).toBeNull();
+    expect(formatNeighborhoodMedian("West Lake Hills")).toBe("");
+    expect(neighborhoodSourceNote("West Lake Hills")).toBe("");
+    expect(neighborhoodPriceSummary("westlake-hills")).not.toContain("$2.5M");
   });
   for (const area of ["barton-creek", "rollingwood", "tarrytown", "spanish-oaks", "lake-austin"]) {
     test(`${area} has no fabricated median or sales count`, () => {

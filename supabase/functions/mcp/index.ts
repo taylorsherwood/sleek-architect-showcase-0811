@@ -166,7 +166,7 @@ var pending = (area) => ({
 var neighborhoodStats = {
   "westlake-hills": {
     area: "West Lake Hills",
-    medianSale: 25e5,
+    medianSale: null,
     metricLabel: "Median sale",
     period: "12 months through October 2026",
     salesCount: 47,

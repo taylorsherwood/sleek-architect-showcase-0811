@@ -1,17 +1,35 @@
 import { useState, useRef, useEffect } from "react";
 import { taylorStats, TRANSACTIONS_CLOSED_LABEL } from "@/config/taylorStats";
 
-const useCountUp = (target: number, _duration = 2600, _from = 0, _decimals = 0) => {
+const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => {
+  const [count, setCount] = useState(target);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.3 });
+    let frame = 0;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      setInView(true);
+      observer.disconnect();
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const start = performance.now();
+      const animate = (now: number) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setCount(Number((from + (target - from) * eased).toFixed(decimals)));
+        if (progress < 1) frame = requestAnimationFrame(animate);
+      };
+      frame = requestAnimationFrame(animate);
+    }, { threshold: 0.3 });
     observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-  return { count: target, ref, inView };
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+    };
+  }, [target, duration, from, decimals]);
+  return { count, ref, inView };
 };
 
 const stats = [
@@ -29,11 +47,12 @@ const StatItem = ({ stat }: { stat: typeof stats[number] }) => {
         fontFamily: '"Cinzel", serif', fontWeight: 400,
         fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>
-        {stat.prefix}{count}
+        <span className="sr-only">{stat.prefix}{stat.value}{stat.suffix}</span>
+        <span aria-hidden="true" className="tabular-nums">{stat.prefix}{count}</span>
         <span style={{
           fontFamily: '"Cinzel", serif', fontWeight: 400,
           fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
-        }}>
+        }} aria-hidden="true">
           {stat.suffix}
         </span>
       </p>

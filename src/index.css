@@ -1492,7 +1492,8 @@ body.hcs-immersive nav.fixed {
 .home-private-button { background: transparent; border-color: hsl(var(--primary-foreground)); color: hsl(var(--primary-foreground)); }
 .home-private-button:hover { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
 .home-shortcut { gap: 12px; text-decoration: none; }
-.home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.82), hsl(var(--primary) / 0) 65%); }
+.home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.35) 45%, hsl(var(--primary) / 0.1) 100%); }
+.home-community-tile:hover .home-community-shade { opacity: 0.85; }
 .home-editorial-nav .nav-surface { transition: background 300ms ease; }
 .home-editorial-nav:not(.is-scrolled) {
   border-bottom-color: transparent !important;

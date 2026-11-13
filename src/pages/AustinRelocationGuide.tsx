@@ -26,6 +26,15 @@ export default function AustinRelocationGuide() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [gateOpen, setGateOpen] = useState(false);
+  useEffect(() => {
+    if (url) return;
+    const token = new URLSearchParams(window.location.search).get("owner");
+    if (!token) return;
+    void loadFlipbook();
+    supabase.functions.invoke("unlock-relocation-guide", { body: { admin_token: token } }).then(({ data }) => {
+      if (typeof data?.url === "string") setUrl(data.url);
+    });
+  }, [url]);
   useEffect(() => { if (gateOpen) void loadFlipbook(); }, [gateOpen]);
   async function unlock(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); if (busy) return;

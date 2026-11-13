@@ -26,8 +26,8 @@ const HomeCommunitiesScroll = () => {
   const go = (d: number) => setActive((a) => (a + d + N) % N);
 
   return (
-    <div className="container mx-auto px-6">
-      <div className="home-deck relative h-[460px] sm:h-[520px] lg:h-[600px]" aria-label="Featured Austin communities">
+    <div className="container mx-auto px-6 lg:flex lg:items-center lg:gap-12">
+      <div className="home-deck relative lg:flex-1 lg:order-2 h-[460px] sm:h-[520px] lg:h-[600px]" aria-label="Featured Austin communities">
         {NEIGHBORHOODS.map((n, i) => {
           const pos = (i - active + N) % N;
           const front = pos === 0;
@@ -40,7 +40,7 @@ const HomeCommunitiesScroll = () => {
               onFocus={() => setActive(i)}
               data-pos={pos > 3 ? "hidden" : pos}
               aria-label={`Explore ${n.name}, Austin community`}
-              className="home-deck-card group absolute top-0 left-0 lg:left-[8%] h-full w-[78%] sm:w-[62%] lg:w-[52%] overflow-hidden bg-primary"
+              className="home-deck-card group absolute top-0 left-0 lg:left-[4%] h-full w-[78%] sm:w-[62%] lg:w-[52%] overflow-hidden bg-primary"
             >
               <img src={n.image} alt={`${n.name} Austin neighborhood`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out motion-safe:group-hover:scale-[1.04]" loading="lazy" decoding="async" />
               <div className="home-community-shade absolute inset-0 pointer-events-none" />
@@ -56,7 +56,7 @@ const HomeCommunitiesScroll = () => {
           );
         })}
       </div>
-      <div className="mt-8 flex items-center justify-center gap-6">
+      <div className="mt-8 lg:mt-0 lg:order-1 flex lg:flex-col items-center justify-center gap-6 lg:shrink-0">
         <button type="button" onClick={() => go(-1)} aria-label="Previous community" className="home-deck-arrow"><ArrowLeft className="w-4 h-4" /></button>
         <button type="button" onClick={() => go(1)} aria-label="Next community" className="home-deck-arrow"><ArrowRight className="w-4 h-4" /></button>
         <span className="font-display text-sm tracking-[0.2em] text-muted-foreground">{String(active + 1).padStart(2, "0")} / {String(N).padStart(2, "0")}</span>

@@ -654,7 +654,7 @@ const IntelInsert = ({ children, tight = false }: { children: ReactNode; tight?:
 
 
 const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentProps) => {
-  const blocks = parseBlocks(content);
+  const blocks = parseBlocks(content.replace(/^#{2,3}\s+Frequently asked questions\s*\n+(?=:::faq)/gim, ""));
   let glanceRendered = false;
 
   // ── Mid-article CTA insertion ──────────────────────────────────────

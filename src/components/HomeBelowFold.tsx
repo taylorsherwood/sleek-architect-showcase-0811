@@ -2,7 +2,6 @@ import React, { lazy, Suspense } from "react";
 import { chunkRetry } from "@/lib/chunkRetry";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import LandRanchHomeIntro from "@/components/LandRanchHomeIntro";
-import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
 import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.json";
 import AdvisorSection from "@/components/HomeAdvisorSection";
 import StatsStrip from "@/components/HomeStatsStrip";
@@ -62,8 +61,6 @@ const HomeBelowFold = () => (
 
     <FeaturedProperties />
     <LandRanchHomeIntro />
-
-    <DevelopmentAdvisoryCTA variant="ivory" />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 

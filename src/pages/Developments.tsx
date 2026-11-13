@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -616,6 +617,8 @@ const Developments = () => {
           </div>
         </div>
       </section>
+
+      <DevelopmentAdvisoryCTA variant="ivory" />
 
       {/* Closing */}
       <section className="relative py-28 md:py-40 overflow-hidden" style={{ background: "#0C0F24" }}>

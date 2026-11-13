@@ -9,11 +9,13 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
     const el = ref.current;
     if (!el) return;
     let frame = 0;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      setInView(true);
-      observer.disconnect();
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const run = () => {
+      cancelAnimationFrame(frame);
+      if (reduced) {
+        setCount(target);
+        return;
+      }
       const start = performance.now();
       const animate = (now: number) => {
         const progress = Math.min((now - start) / duration, 1);
@@ -22,6 +24,19 @@ const useCountUp = (target: number, duration = 2600, from = 0, decimals = 0) => 
         if (progress < 1) frame = requestAnimationFrame(animate);
       };
       frame = requestAnimationFrame(animate);
+    };
+    // Re-runs on every entry, so the counters animate whenever the strip
+    // scrolls into view from either direction.
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setCount(Number(from.toFixed(decimals)));
+        setInView(true);
+        run();
+      } else {
+        cancelAnimationFrame(frame);
+        setCount(target);
+        setInView(false);
+      }
     }, { threshold: 0.3 });
     observer.observe(el);
     return () => {

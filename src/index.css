@@ -1509,11 +1509,11 @@ body.hcs-immersive nav.fixed {
 .home-editorial-nav:not(.is-scrolled) .home-opening-mark {
   display: block;
   width: auto;
-  height: 140px;
+  height: 84px;
 }
 .home-editorial-nav:not(.is-scrolled) button[aria-expanded] { color: hsl(var(--primary-foreground)); }
 @media (min-width: 1280px) {
-  .home-editorial-nav:not(.is-scrolled) .home-opening-mark { height: 180px; }
+  .home-editorial-nav:not(.is-scrolled) .home-opening-mark { height: 104px; }
 }
 @media (min-width: 1280px) {
   .home-editorial-nav:not(.is-scrolled) { border-bottom-color: transparent !important; backdrop-filter: none !important; }

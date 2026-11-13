@@ -1,0 +1,8 @@
+.guide-reader { background: hsl(var(--background)); padding: 0 12px 32px; }
+.guide-reader:fullscreen { overflow: auto; }
+.guide-book-shell { max-width: 1120px; margin: auto; }
+.guide-page { background: hsl(var(--background)); overflow: hidden; }
+.guide-page canvas { display: block; width: 100%; height: 100%; object-fit: contain; }
+.guide-zoom { overflow: auto; max-height: 78svh; }
+.guide-zoom .guide-page { width: 1000px; max-width: none; margin: auto; }
+.guide-cover { width: 100%; max-width: 350px; aspect-ratio: 612 / 792; object-fit: cover; }

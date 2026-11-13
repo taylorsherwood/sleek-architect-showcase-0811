@@ -1,4 +1,5 @@
 # Project architecture
+- Keep relocation guide PDFs in private Cloud storage and issue short-lived access only after successful server-side lead capture; render original pages with PDF.js and react-pageflip without exposing a public PDF asset.
 - Keep editorial posts in the existing blog data collections and use BlogContent blocks for tables, callouts, CTAs, and FAQs so index, prerender, and schema consumers share the same content.
 - Scope specialized table presentation and expandable FAQs to the requesting article; preserve existing articles' rendering defaults.
 - Keep current neighborhood price summaries in `src/data/neighborhoodStats.ts` and render them through its formatters and `NeighborhoodMedian`; missing verified values are hidden, preventing unsourced duplicates across pages.

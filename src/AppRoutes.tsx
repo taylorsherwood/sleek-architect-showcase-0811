@@ -29,6 +29,7 @@ const BlogPost = lazy(chunkRetry(blogPostImport));
 const contactImport = () => import("@/pages/Contact");
 const Contact = lazy(chunkRetry(contactImport));
 const MovingToAustin = lazy(chunkRetry(() => import("@/pages/MovingToAustin")));
+const AustinRelocationGuide = lazy(chunkRetry(() => import("@/pages/AustinRelocationGuide")));
 const BestLuxuryNeighborhoods = lazy(chunkRetry(() => import("@/pages/BestLuxuryNeighborhoods")));
 const MarketReport = lazy(chunkRetry(() => import("@/pages/MarketReport")));
 
@@ -124,6 +125,7 @@ const AppRoutes = () => {
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/moving-to-austin-texas" element={<MovingToAustin />} />
+          <Route path="/austin-relocation-guide" element={<AustinRelocationGuide />} />
           <Route path="/moving-to-austin" element={<AliasRedirect to="/moving-to-austin-texas" />} />
           <Route path="/best-luxury-neighborhoods-austin" element={<BestLuxuryNeighborhoods />} />
           <Route path="/best-luxury-neighborhoods-in-austin" element={<AliasRedirect to="/best-luxury-neighborhoods-austin" />} />

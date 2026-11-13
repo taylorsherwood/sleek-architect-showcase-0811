@@ -10,7 +10,6 @@ const Footer = lazy(() => import("@/components/Footer"));
 import listing1 from "@/assets/listing-1.jpg";
 import listing2 from "@/assets/listing-2.jpg";
 import listing3 from "@/assets/listing-3.webp";
-import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
@@ -42,7 +41,7 @@ const commercialCtaStyle = {
   fontWeight: 500 as const,
 };
 
-const commercialListings = [
+const commercialListings: Array<{ image: string; alt: string; title: string; badge: string; name: string; location: string; price: string; assetType: string; units: string; description: string; externalUrl?: string }> = [
   {
     image: s11thStreet,
     alt: "717 S. 11th St, Temple TX, 6-unit multifamily",
@@ -66,19 +65,6 @@ const commercialListings = [
     assetType: "Rental Portfolio",
     units: "9 Rentable Units",
     description: "9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate.",
-  },
-  {
-    image: bremserAve,
-    alt: "709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes",
-    title: "709/711/713 Bremser Ave, rental homes, Killeen TX",
-    badge: "PORTFOLIO SALE",
-    name: "709/711/713 Bremser Ave",
-    location: "Killeen, TX",
-    price: "$199,900",
-    assetType: "Single-Family Rentals",
-    units: "3 Homes",
-    description: "Three individual rental homes on Bremser Ave in Killeen. Each unit separately metered. Ideal for a buy-and-hold investor seeking affordable entry into the Central Texas rental market.",
-    externalUrl: "https://www.bremserportfolio.com",
   },
 ];
 

@@ -5,7 +5,6 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import heroArchitecture from "@/assets/hero-architecture.jpg";
 
-import bremserAve from "@/assets/commercial-bremser-ave.jpg";
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
 
@@ -281,22 +280,6 @@ const CommercialInvestment = () => {
                 ]}
                 description="9-unit rental portfolio in Killeen, TX. Fully occupied with a 14% cap rate."
                 cta={{ type: "internal", to: "/contact", label: "Request Information" }}
-              />
-
-              <CommercialListingCard
-                image={bremserAve}
-                alt="709/711/713 Bremser Ave, Killeen TX, 3 individual rental homes"
-                title="709/711/713 Bremser Ave, rental homes, Killeen TX"
-                badge="SALE PENDING"
-                price="$199,900"
-                name="709/711/713 Bremser Ave"
-                location="Killeen, TX"
-                meta={[
-                  { label: "ASSET TYPE", value: "3 Individual Homes" },
-                  { label: "INCOME", value: "Rental Income" },
-                ]}
-                description="Three individual rental homes on Bremser Ave in Killeen, TX. Opportunity to acquire a small residential rental portfolio."
-                cta={{ type: "external", href: "https://www.bremserportfolio.com", label: "View Property Website" }}
               />
             </div>
           </div>

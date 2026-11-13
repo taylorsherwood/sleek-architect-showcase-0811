@@ -79,6 +79,7 @@ import echelonWatermark from "@/assets/echelon-watermark.webp";
 import austinLuxuryNetwork from "@/assets/austin-luxury-network.jpg";
 import topAgentNetwork from "@/assets/top-agent-network.webp";
 import homesComLogo from "@/assets/homes-com-logo.webp";
+import ggMagazineLogo from "@/assets/gg-magazine-logo.png.asset.json";
 import commissionClubhouse from "@/assets/clubhouse-commission.png";
 
 /* ------------------------------------------------------------------ */
@@ -791,8 +792,8 @@ const Sell = () => {
             </div>
           </ScrollReveal>
 
-          {/* Two-column horizontal strip */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-x-12 lg:gap-x-16 max-w-[860px] mx-auto">
+          {/* Partnership and credential strip */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-x-12 lg:gap-x-16 mx-auto">
             {/* Homes.com */}
             <ScrollReveal delay={120}>
               <div className="flex flex-col items-center text-center">
@@ -807,6 +808,34 @@ const Sell = () => {
                 </div>
                 <p className="mt-8 max-w-[360px] text-foreground/70 text-[13.5px] leading-[1.8] tracking-[0.01em]">
                   Premier placement and enhanced exposure across one of the nation's fastest-growing luxury home search platforms.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* GG Magazine */}
+            <ScrollReveal delay={170}>
+              <div className="flex flex-col items-center text-center">
+                <div className="h-16 md:h-20 flex items-center justify-center">
+                  <a
+                    href="https://www.engelvoelkers.com/gg-magazine/en/about-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="About GG Magazine"
+                    className="inline-flex items-center justify-center transition-opacity duration-500 hover:opacity-80"
+                  >
+                    <img
+                      src={ggMagazineLogo.url}
+                      alt="GG Magazine"
+                      width={500}
+                      height={272}
+                      className="h-14 md:h-16 w-auto object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                </div>
+                <p className="mt-8 max-w-[360px] text-foreground/70 text-[13.5px] leading-[1.8] tracking-[0.01em]">
+                  GG Magazine, the international lifestyle magazine from Engel &amp; Völkers.
                 </p>
               </div>
             </ScrollReveal>

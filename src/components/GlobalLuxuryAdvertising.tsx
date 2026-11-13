@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Globe, Monitor, BookOpen, MapPin, CheckCircle } from "lucide-react";
+import { Globe, Monitor, BookOpen, MapPin, CheckCircle, type LucideIcon } from "lucide-react";
 
 import heroImg from "@/assets/global-luxury-hero.jpg";
-import digitalImg from "@/assets/marketing-digital.webp";
+import digitalVideo from "@/assets/marketing-digital.mp4.asset.json";
+import digitalPoster from "@/assets/marketing-digital-poster.webp.asset.json";
 import printImage from "@/assets/gg-magazine-editorial.webp.asset.json";
 import localImg from "@/assets/marketing-local.webp";
 import collageImg from "@/assets/marketing-print.jpg";
@@ -60,11 +61,21 @@ const platforms = [
   "80+ International Sites"
 ];
 
-const marketingCards = [
+type MarketingCard = {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+  image?: string;
+  video?: string;
+  poster?: string;
+};
+
+const marketingCards: MarketingCard[] = [
   {
     title: "Digital Experience",
     description: "Immersive digital presentation designed to capture attention and engage qualified buyers.",
-    image: digitalImg,
+    video: digitalVideo.url,
+    poster: digitalPoster.url,
     icon: Monitor
   },
   {
@@ -157,6 +168,26 @@ const GlobalLuxuryAdvertising = () => {
   const stats = useScrollReveal(0.2);
   const cta = useScrollReveal(0.15);
   const collageParallaxRef = useParallaxDrift(0.06);
+
+  /* Digital Experience clip: iOS-safe autoplay once the cards are in view */
+  const digitalVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = digitalVideoRef.current;
+    if (!cards.visible || !video) return;
+
+    const attemptPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    if (video.readyState >= 2) {
+      attemptPlay();
+    } else {
+      video.addEventListener("canplay", attemptPlay, { once: true });
+      video.load();
+      return () => video.removeEventListener("canplay", attemptPlay);
+    }
+  }, [cards.visible]);
 
   const globalReachRef = useRef<HTMLParagraphElement>(null);
   const globalReachCount = 80;
@@ -406,16 +437,30 @@ const GlobalLuxuryAdvertising = () => {
                   onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.10)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)"; }}>
                   <div className="aspect-[3/2] overflow-hidden">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                      loading="lazy"
-                      decoding="async"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      width={800}
-                      height={533}
-                    />
+                    {card.video ? (
+                      <video
+                        ref={digitalVideoRef}
+                        src={card.video}
+                        poster={card.poster}
+                        aria-label={card.title}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    ) : (
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        width={800}
+                        height={533}
+                      />
+                    )}
                   </div>
                   <div className="h-0.5 w-full bg-gold" />
                   <div className="p-7">

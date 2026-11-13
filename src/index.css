@@ -1492,7 +1492,7 @@ body.hcs-immersive nav.fixed {
 .home-private-button { background: transparent; border-color: hsl(var(--primary-foreground)); color: hsl(var(--primary-foreground)); }
 .home-private-button:hover { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
 .home-shortcut { gap: 12px; text-decoration: none; }
-.home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.35) 45%, hsl(var(--primary) / 0.1) 100%); }
+.home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.92) 0%, hsl(var(--primary) / 0.6) 40%, hsl(var(--primary) / 0.05) 75%); }
 .home-community-tile:hover .home-community-shade { opacity: 0.85; }
 .home-editorial-nav .nav-surface { transition: background 300ms ease; }
 .home-editorial-nav:not(.is-scrolled) {
@@ -1532,3 +1532,4 @@ body.hcs-immersive nav.fixed {
 }
 
 .home-editorial-nav:not(.is-scrolled) .nav-brand { visibility: hidden; }
+.home-community-tile .text-muted-foreground, .home-community-tile [class*="text-foreground"] { color: hsl(var(--primary-foreground) / 0.8) !important; }

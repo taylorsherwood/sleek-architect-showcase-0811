@@ -4,7 +4,7 @@ import { Globe, Monitor, BookOpen, MapPin, CheckCircle } from "lucide-react";
 
 import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalImg from "@/assets/marketing-digital.webp";
-import printImg from "@/assets/marketing-print.jpg";
+import printImage from "@/assets/gg-magazine-editorial.webp.asset.json";
 import localImg from "@/assets/marketing-local.webp";
 import collageImg from "@/assets/marketing-print.jpg";
 
@@ -70,7 +70,7 @@ const marketingCards = [
   {
     title: "Print & Editorial",
     description: "High-design collateral and editorial-quality materials that elevate perception.",
-    image: printImg,
+    image: printImage.url,
     icon: BookOpen
   },
   {

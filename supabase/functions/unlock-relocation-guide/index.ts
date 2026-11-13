@@ -16,7 +16,7 @@ Deno.serve(async (req) => {
   try {
     const client = createClient(url, key, { auth: { persistSession: false } });
     // Generate access before submitting, but never return it unless the lead is saved and forwarded.
-    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide.pdf", 3600);
+    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide-v2.pdf", 3600);
     if (error || !access) return json({ error: "The guide could not be opened." }, 503);
     const timestamp = new Date().toISOString();
     const result = await client.functions.invoke("submit-lead", { body: {

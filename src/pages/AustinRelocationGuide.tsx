@@ -7,10 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { trackLead } from "@/lib/analytics";
-import cover from "@/assets/austin-relocation-cover.webp.asset.json";
+import cover from "@/assets/austin-relocation-cover-v2.webp.asset.json";
 import "@/components/relocation-guide.css";
 const Flipbook = lazy(() => import("@/components/RelocationFlipbook"));
-const SESSION_KEY = "austin-relocation-guide-access";
+const SESSION_KEY = "austin-relocation-guide-access-v2";
 function storedAccess(): string {
   try {
     const saved = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null");

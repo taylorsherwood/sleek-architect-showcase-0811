@@ -11,6 +11,7 @@ import signageAsset from "@/assets/developments/arbors-signage.jpg.asset.json";
 import buyerKitAsset from "@/assets/developments/arbors-buyer-kit.jpg.asset.json";
 import renderingAsset from "@/assets/developments/arbors-rendering.jpg.asset.json";
 import aerialAsset from "@/assets/developments/arbors-aerial.jpg.asset.json";
+import devServicesLogo from "@/assets/developments/engel-volkers-development-services-logo.svg.asset.json";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -308,6 +309,23 @@ const Developments = () => {
 
 
 
+
+      {/* Brokerage affiliation — Engel & Völkers Development Services */}
+      <section className="bg-background">
+        <div className="container mx-auto px-6 pt-16 pb-8 md:pt-24 md:pb-10 flex flex-col items-center gap-6 md:gap-8">
+          <span className="block h-px w-12" style={{ background: GOLD }} aria-hidden="true" />
+          <img
+            src={devServicesLogo.url}
+            alt="Engel & Völkers Development Services"
+            title="Brokered by Engel & Völkers Austin"
+            width={521}
+            height={103}
+            className="w-[220px] sm:w-[260px] md:w-[300px] h-auto object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
 
       {/* Showcase intro */}
       <section className="py-24 md:py-32 bg-background">

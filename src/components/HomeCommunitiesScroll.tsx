@@ -49,15 +49,5 @@ const HomeCommunitiesScroll = () => (
     </div>
   </div>
 );
-
-}</p>}
-            <h3 className="font-display font-normal text-2xl leading-snug mb-3">{n.name}</h3>
-            <span className="text-xs inline-block border-b border-gold pb-1">Explore Community →</span>
-          </div>
-        </Link>
-      ))}
-    </div>
-  </div>
-);
-
+export default HomeCommunitiesScroll;
 export default HomeCommunitiesScroll;

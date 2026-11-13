@@ -43,7 +43,7 @@ export default function AustinRelocationGuide() {
   return <><SEOHead title="Austin Relocation Guide" description="The 2026–2027 Austin Relocation Guide from Echelon Property Group: neighborhoods, schools, taxes, employers and your move." noindex /><Navigation />
     <main className="relocation-editorial bg-background min-h-screen pb-16">
       <header className="guide-masthead">
-        <p className="text-gold uppercase text-xs mb-3">The relocation collection · 2026–2027</p>
+        <p className="text-gold text-xs mb-3">the official Austin Relocation Guide 2026-2027 Edition</p>
         <h1 className="font-serif text-3xl md:text-4xl text-foreground">Moving to Austin</h1>
         <p className="text-muted-foreground text-sm mt-3">A considered introduction to your next chapter.</p>
       </header>

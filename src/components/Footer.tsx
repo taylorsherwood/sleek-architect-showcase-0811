@@ -244,7 +244,9 @@ const Footer = ({ showNewsletter = true, afterLogoBand }: FooterProps) => {
                 Texas Real Estate Commission Consumer Protection Notice
               </a>
               <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "12px", color: "rgba(184,160,109,0.8)", fontWeight: 700 }}>
-                Brokered by Engel & Völkers Austin
+                <a href="https://www.evrealestate.com/en/shops/austin" target="_blank" rel="noopener noreferrer" className="hover:text-[#b9a06c] transition-colors duration-300 underline decoration-[#b9a06c]/30 underline-offset-2 hover:decoration-[#b9a06c]">
+                  Brokered by Engel & Völkers Austin
+                </a>
                 <span className="block font-normal" style={{ fontSize: "11px", color: "rgba(184,160,109,0.65)" }}>3700 Bee Caves Rd, Ste 102, Austin, TX 78746</span>
               </p>
             </div>

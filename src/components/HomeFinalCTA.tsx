@@ -64,7 +64,13 @@ const FinalCTA = () => (
       </div>
     </section>
 
-    {/* Priority internal links */}
+
+    
+  </>
+);
+
+/** Priority internal links, rendered in the homepage footer below the brokerage mark. */
+export const HomeExploreLinks = () => (
     <section className="bg-secondary" style={{ padding: "clamp(48px, 7vw, 76px) 0" }}>
       <div className="container mx-auto px-6">
         <div className="max-w-[760px] mx-auto">
@@ -137,9 +143,6 @@ const FinalCTA = () => (
         </div>
       </div>
     </section>
-
-    
-  </>
 );
 
 export default FinalCTA;

@@ -7,7 +7,7 @@ import AdvisorSection from "@/components/HomeAdvisorSection";
 import StatsStrip from "@/components/HomeStatsStrip";
 import CommunitiesSection from "@/components/HomeCommunitiesSection";
 import LeadCapture from "@/components/HomeLeadCapture";
-import FinalCTA from "@/components/HomeFinalCTA";
+import FinalCTA, { HomeExploreLinks } from "@/components/HomeFinalCTA";
 import { InsightsSection, EditorialInsights } from "@/components/HomeInsightsSections";
 
 const ScrollingCredibilityStrip = lazy(chunkRetry(() => import("@/components/ScrollingCredibilityStrip")));
@@ -102,7 +102,7 @@ const HomeBelowFold = () => (
     </div>
 
     <Suspense fallback={<div className="min-h-[100px]" />}>
-      <Footer />
+      <Footer afterLogoBand={<HomeExploreLinks />} />
     </Suspense>
   </>
 );

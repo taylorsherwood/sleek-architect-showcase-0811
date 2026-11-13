@@ -25,9 +25,11 @@ const linkHoverClass = "block transition-colors duration-300 hover:text-white";
 
 type FooterProps = {
   showNewsletter?: boolean;
+  /** Optional content rendered directly below the brokerage mark band. */
+  afterLogoBand?: React.ReactNode;
 };
 
-const Footer = ({ showNewsletter = true }: FooterProps) => {
+const Footer = ({ showNewsletter = true, afterLogoBand }: FooterProps) => {
   return (
     <footer data-nav-dark-zone style={{ background: "#0C0F24", fontFamily: '"Jost", sans-serif', fontWeight: 300 }}>
       {/* Newsletter signup — immediately above footer navigation */}
@@ -35,6 +37,7 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
 
       {/* Brokerage mark — sits directly above the footer navigation on every page */}
       <BrokerageLogoBand />
+      {afterLogoBand}
 
       {/* Fancy gold divider between the mark and footer navigation */}
       {showNewsletter && (

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import shareImage from "@/assets/engel-volkers-share.jpg.asset.json";
 
 interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[] | null;
@@ -30,7 +31,7 @@ export default SchemaMarkup;
 
 const SITE = "https://www.echelonpropertygroup.com";
 const LOGO = `${SITE}/lovable-uploads/echelon-logo-gold.png`;
-const OG = `${SITE}/og-image.png`;
+const OG = `${SITE}${shareImage.url}`;
 const HEADSHOT = `${SITE}/lovable-uploads/taylor-headshot-widget.jpg`;
 
 const address = {

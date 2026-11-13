@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import shareImage from "@/assets/engel-volkers-share.jpg.asset.json";
 
 const SITE_URL = "https://www.echelonpropertygroup.com";
 const BRAND_NAME = "Echelon Property Group";
@@ -63,7 +64,7 @@ const SEOHead = ({ title, description, canonical, ogTitle, ogDescription, ogType
   const canonicalUrl = resolveCanonicalUrl(pathname, canonical);
   const openGraphTitle = ogTitle || seoTitle;
   const openGraphDescription = ogDescription || seoDescription;
-  const socialImage = ogImage || `${SITE_URL}/og-image.png`;
+  const socialImage = ogImage || `${SITE_URL}${shareImage.url}`;
 
   return (
     <Helmet prioritizeSeoTags>

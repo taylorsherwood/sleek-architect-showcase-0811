@@ -9,3 +9,9 @@
 - [x] Centralize neighborhood summaries and source notes; use verified West Lake Hills data and remove unsupported figures and regional widgets.
 - [x] Verify initial rendering, neighborhood consumers, and regression tests; provide the changed-file/page inventory.
 - [ ] Await verified median, sales count, and reporting period for Barton Creek, Rollingwood, Tarrytown, Spanish Oaks, and Lake Austin; hide their unsupported figures meanwhile.
+
+# Approved code cleanup
+- [x] Remove the three confirmed unused components without deleting assets.
+- [x] Consolidate the brokerage logo band without presentation changes.
+- [x] Split homepage below-fold sections while preserving content and loading behavior.
+- [x] Verify page content, metadata, links, schema, phone/desktop appearance, and existing tests.

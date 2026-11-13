@@ -96,6 +96,18 @@ realscout-simple-search::part(container) {
 
 :root {
   color-scheme: light only;
+  --brokerage-band-background: #FAFAF8;
+  --brokerage-band-private-background: #F5F3EF;
+}
+
+.brokerage-logo-band {
+  background: var(--brokerage-band-background);
+  padding-top: clamp(16px, 2vw, 24px);
+  padding-bottom: clamp(36px, 5vw, 56px);
+}
+
+.brokerage-logo-band--private {
+  background: var(--brokerage-band-private-background);
 }
 
 /* ─────────────────────────────────────────────────────────

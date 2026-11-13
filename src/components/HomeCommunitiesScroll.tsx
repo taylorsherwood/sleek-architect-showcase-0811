@@ -14,7 +14,11 @@ const NEIGHBORHOODS = [
   { name: "Rollingwood", image: cardRollingwood, stat: "", slug: "rollingwood", note: "Quiet streets minutes from downtown" },
   { name: "Old Enfield", image: cardOldEnfield, stat: "", slug: "old-enfield", note: "Historic central Austin architecture" },
   { name: "West Lake Hills", image: cardWestlake, stat: "", slug: "westlake-hills", note: "Eanes ISD and wooded hillside lots" },
-  { name: "Tarrytown", imagconst SPANS = [
+  { name: "Tarrytown", image: cardDavenport, stat: "CENTRAL ACCESS TO AUSTIN", slug: "tarrytown", note: "Lake Austin access, close to the core" },
+  { name: "Spanish Oaks", image: cardSpanishOaks, stat: "GUARD GATED GOLF ESTATES", slug: "spanish-oaks", note: "Gated golf living in the hills" },
+];
+
+const SPANS = [
   "lg:col-span-4 lg:row-span-2 aspect-[4/5] sm:aspect-[4/3] lg:aspect-auto",
   "lg:col-span-2 aspect-[4/5] lg:aspect-auto",
   "lg:col-span-2 aspect-[4/5] lg:aspect-auto",

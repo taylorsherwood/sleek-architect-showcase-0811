@@ -6,7 +6,6 @@ import DevelopmentAdvisoryCTA from "@/components/DevelopmentAdvisoryCTA";
 import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.json";
 import AdvisorSection from "@/components/HomeAdvisorSection";
 import StatsStrip from "@/components/HomeStatsStrip";
-import TestimonialsSection from "@/components/HomeTestimonialsSection";
 import CommunitiesSection from "@/components/HomeCommunitiesSection";
 import LeadCapture from "@/components/HomeLeadCapture";
 import FinalCTA from "@/components/HomeFinalCTA";
@@ -65,12 +64,6 @@ const HomeBelowFold = () => (
     <LandRanchHomeIntro />
 
     <DevelopmentAdvisoryCTA variant="ivory" />
-
-    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
-
-
-
-    <TestimonialsSection />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 

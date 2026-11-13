@@ -561,7 +561,7 @@ const ClientPortalButton = () => (
     href="https://portal.echelonpropertygroup.com/login"
     target="_blank"
     rel="noopener noreferrer nofollow"
-    className="inline-flex items-center justify-center"
+    className="client-portal-btn inline-flex items-center justify-center"
     style={{
       height: "40px",
       padding: "0 18px",

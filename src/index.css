@@ -1533,3 +1533,15 @@ body.hcs-immersive nav.fixed {
 
 .home-editorial-nav:not(.is-scrolled) .nav-brand { visibility: hidden; }
 .home-community-tile .text-muted-foreground, .home-community-tile [class*="text-foreground"] { color: hsl(var(--primary-foreground) / 0.8) !important; }
+/* Homepage, over the hero video: frosted Client Portal that fills ivory on hover */
+.home-editorial-nav:not(.is-scrolled) .client-portal-btn {
+  background: hsl(var(--primary-foreground) / 0.08) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: none !important;
+}
+.home-editorial-nav:not(.is-scrolled) .client-portal-btn:hover {
+  background: #FAFAF8 !important;
+  color: #0C0F24 !important;
+}

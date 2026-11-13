@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import evLogoAsset from "@/assets/engel-volkers-villa-logo.webp.asset.json";
+import openingMark from "@/assets/echelon-opening-mark.webp";
 
 const logo = "/images/echelon-logo.webp";
 const logoMobile = "/images/echelon-property-group-header.webp";
@@ -146,10 +147,21 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
           onClick={() => {
             if (location.pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="flex items-center shrink-0"
+          className="nav-brand flex items-center shrink-0"
           style={{ height: "100%" }}
         >
-          <span className="flex min-[1280px]:hidden items-center">
+          {editorialHome && (
+            <img
+              src={openingMark}
+              alt="Echelon Property Group"
+              className="home-opening-mark hidden h-auto object-contain"
+              width={1037}
+              height={1454}
+              loading="eager"
+              decoding="async"
+            />
+          )}
+          <span className="nav-normal-brand flex min-[1280px]:hidden items-center">
             <img
               src={evMark}
               alt="Engel & Völkers"
@@ -177,7 +189,7 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
             src={logo}
             alt="Echelon Property Group"
             title="Echelon Property Group, Austin Luxury Real Estate"
-            className={`hidden min-[1280px]:block w-auto max-w-none shrink-0 object-contain`}
+            className={`nav-normal-brand hidden min-[1280px]:block w-auto max-w-none shrink-0 object-contain`}
             style={{ height: "140%", maxHeight: "140%", maxWidth: "310px", aspectRatio: "200 / 80" }}
             loading="eager"
             decoding="async"

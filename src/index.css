@@ -1494,6 +1494,27 @@ body.hcs-immersive nav.fixed {
 .home-shortcut { gap: 12px; text-decoration: none; }
 .home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.82), hsl(var(--primary) / 0) 65%); }
 .home-editorial-nav .nav-surface { transition: background 300ms ease; }
+.home-editorial-nav:not(.is-scrolled) {
+  border-bottom-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.home-editorial-nav:not(.is-scrolled) .nav-surface { background: transparent !important; }
+.home-editorial-nav:not(.is-scrolled) .nav-normal-brand { display: none; }
+.home-editorial-nav:not(.is-scrolled) .nav-brand {
+  align-self: flex-start;
+  height: auto !important;
+  margin-top: 20px;
+}
+.home-editorial-nav:not(.is-scrolled) .home-opening-mark {
+  display: block;
+  width: auto;
+  height: 140px;
+}
+.home-editorial-nav:not(.is-scrolled) button[aria-expanded] { color: hsl(var(--primary-foreground)); }
+@media (min-width: 1280px) {
+  .home-editorial-nav:not(.is-scrolled) .home-opening-mark { height: 180px; }
+}
 @media (min-width: 1280px) {
   .home-editorial-nav:not(.is-scrolled) { border-bottom-color: transparent !important; backdrop-filter: none !important; }
   .home-editorial-nav:not(.is-scrolled) .nav-surface { background: transparent !important; }

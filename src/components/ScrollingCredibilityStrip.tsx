@@ -11,6 +11,7 @@ import mediaFoxNews from "@/assets/media-fox-news.webp";
 import mediaYahoo from "@/assets/media-yahoo.webp";
 import mediaHgtv from "@/assets/media-hgtv.webp";
 import mediaNyt from "@/assets/media-nyt.webp";
+import mediaGg from "@/assets/media-gg-magazine.webp";
 import mediaCulturemap from "@/assets/media-culturemap.webp";
 
 const logos = [
@@ -18,6 +19,7 @@ const logos = [
   { src: mediaCnn, alt: "CNN", h: "h-10 md:h-13" },
   { src: mediaMansionGlobal, alt: "Mansion Global", h: "h-20 md:h-26" },
   { src: mediaNyt, alt: "The New York Times", h: "h-7 md:h-9" },
+  { src: mediaGg, alt: "GG Magazine", h: "h-8 md:h-11" },
   { src: mediaRobbReport, alt: "Robb Report" },
   { src: mediaFoxNews, alt: "Fox News", h: "h-8 md:h-10" },
   { src: mediaTribeza, alt: "Tribeza" },

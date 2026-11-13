@@ -195,6 +195,9 @@ const blogAustinZipPrices = blogAustinZipPricesAsset.url;
 import blogBestTimeToSellAustinAsset from "@/assets/blog/best-time-to-sell-a-house-austin-hero.jpg.asset.json";
 const blogBestTimeToSellAustin = blogBestTimeToSellAustinAsset.url;
 
+import blogTravisTaxProtestAsset from "@/assets/blog/travis-county-property-tax-protest-guide-hero.jpg.asset.json";
+const blogTravisTaxProtest = blogTravisTaxProtestAsset.url;
+
 import blogBuyBeforeYouSellAsset from "@/assets/blog/buy-before-you-sell-austin-hero.jpg.asset.json";
 const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 
@@ -17653,5 +17656,194 @@ Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group i
     heroImage: blogUpgradingLuxuryHome,
     imageAlt: "Modern luxury kitchen and living area with large glass doors opening to a wooded outdoor dining space",
     imageCaption: "Moving up in Austin means switching markets, not simply buying a larger version of your current home."
-  }
+  },
+  {
+    id: "travis-county-property-tax-protest-guide",
+    title: "How to Protest Your Property Taxes in Travis County: 2027 Guide for Austin Luxury Homeowners",
+    metaTitle: "Travis County Property Tax Protest: 2027 Luxury Guide",
+    excerpt: "Protest your Travis County property taxes the right way: TCAD deadlines, steps, $1M+ home rules and 2026 Austin tax rates from a local luxury advisor.",
+    author: "Taylor Sherwood",
+    date: "2026-11-12",
+    readTime: "9 min read",
+    category: "OWNERSHIP",
+    dateModified: "2026-11-12",
+    keywords: "Travis County property tax protest, protest your property taxes in Travis County, TCAD, Travis County protest deadline, Austin luxury home property taxes, Appraisal Review Board, unequal appraisal",
+    aboutPlaces: ["Travis County, Texas", "Austin, Texas", "Westlake Hills, Texas", "Tarrytown, Austin, Texas"],
+    image: blogTravisTaxProtest,
+    heroImage: blogTravisTaxProtest,
+    imageAlt: "Stone-and-glass luxury home on a tree-lined street in Tarrytown, Austin, Texas",
+    relatedPostIds: ["texas-homestead-exemption-2026", "texas-homestead-exemption-travis-county", "mud-pid-taxes-austin", "best-time-to-sell-a-house-austin"],
+    content: `To protest your property taxes in Travis County, file a notice of protest with the Travis Central Appraisal District (TCAD) by May 15 or 30 days after your Notice of Appraised Value is mailed, whichever is later. Then settle with a TCAD appraiser at an informal meeting, or argue your case to the Appraisal Review Board (ARB). The 2026 season is closed, so November is the right time to build your evidence for 2027.
+
+Here is the twist this year. TCAD values fell. Tax rates did not. If you pay Austin luxury home property taxes in Tarrytown, Westlake Hills, Barton Creek, Rob Roy or on Lake Austin, that gap is where a good protest lives.
+
+## Key takeaways
+
+- **Deadline:** May 15 or 30 days after the notice is mailed, whichever is later. In 2027, May 15 is a Saturday, so TCAD's weekend rule moves it to Monday, May 17, if notices mail in late March as they did in 2026.
+- **There is no filing fee to protest,** and the appraisal district generally carries the burden of proof, per the Texas Comptroller.
+- **Values down, rates up:** the median Travis County homestead value fell about 5% for 2026, while the City of Austin, Travis County and Central Health raised their rates.
+- **Homes above $1 million** do not get the certified-appraisal shortcut in Tax Code 41.43(a-1), so comps and equity evidence carry the case.
+- **Your 2026 bill is due February 1, 2027,** because January 31 is a Sunday.
+- **The 20% cap on non-homestead property expires December 31, 2026.**
+
+## Why does a Travis County property tax protest matter right now?
+
+Because a lower value does not mean a lower bill. TCAD reports the median Travis County homestead market value dropped from $519,677 to $493,449 for 2026, and single-family values fell 1.8% on average. Meanwhile, [four of the five taxing entities on a typical Austin ISD bill raised their rates](https://communityimpact.com/central-austin/government/where-austin-property-taxes-go-this-year/).
+
+:::compare-table
+Taxing unit | 2026 rate per $100 | Prior year | Direction
+Austin ISD | $0.9184 | $0.9252 | Lower
+Eanes ISD | $0.8254 | Slightly higher | Lower
+City of Austin | $0.579948 | $0.524017 | Higher
+Travis County | $0.386210 | $0.375845 | Higher
+Central Health | $0.132863 | $0.118023 | Higher
+Austin Community College | $0.103643 | $0.1034 | Slightly higher
+:::
+
+Austin Community College also taxes the parts of Eanes ISD inside Austin city limits, so bills differ within the same school district.
+
+The market supports a conversation about value. Unlock MLS reports the City of Austin median price held at $550,000 in October 2026, with 5.7 months of inventory and homes closing at 92.0% of list price on average. TCAD values your home as of January 1, so that softness matters.
+
+### How much can a lower value save?
+
+Each $100,000 of taxable value you remove saves about $918 in Austin ISD school tax or $825 in Eanes ISD school tax. That is my arithmetic from the adopted rates, before the 10% homestead cap and the city, county and other units. On a $3 million home, a $150,000 correction is worth roughly $1,240 a year in Eanes ISD school tax alone.
+
+## When is the Travis County protest deadline?
+
+The 2026 window has closed. Here is the annual rhythm, using TCAD's 2026 calendar:
+
+- **January 1:** TCAD values your property as of this date.
+- **Late March:** Notices of Appraised Value go out. The 2026 notices were mailed March 27.
+- **May 15 or 30 days after mailing:** protest deadline, whichever is later.
+- **April to June:** informal meetings. The 2026 residential window ran April 6 to June 26.
+- **Late May onward:** formal ARB hearings. They began May 26 in 2026.
+- **October:** tax bills are mailed.
+- **January 31:** payment deadline, moved to the next business day when it lands on a weekend.
+
+## How do you file a protest with TCAD?
+
+1. **Get your owner ID and PIN** from your Notice of Appraised Value and create a portal account at traviscad.org.
+2. **File online, by mail or in person.** Filing the protest is what preserves your right to a hearing, even if you expect to settle.
+3. **Review TCAD's evidence packet** in the portal, then **schedule an informal meeting** and submit your evidence at least 48 hours ahead.
+4. **Accept a fair offer, or go formal.** If you do not settle, your filed protest sends you to the ARB.
+5. **Pick your hearing format** on the protest form: in person at 850 East Anderson Lane, by affidavit, by phone or by video. If you pick nothing, TCAD defaults you to a phone hearing.
+
+Plan for a short hearing. The ARB aims for about 15 minutes per property, covering both sides, questions and the decision.
+
+## Should you protest market value or unequal appraisal?
+
+Often both. They are separate arguments, and the ARB rules on each one separately.
+
+- **Market value:** your home is worth less than TCAD says. Under [Tax Code 41.43](https://law.justia.com/codes/texas/tax-code/title-1/subtitle-f/chapter-41/subchapter-c/section-41-43/), the district must prove its value by a preponderance of the evidence.
+- **Unequal appraisal:** similar homes are appraised lower. You win unless TCAD shows your appraisal ratio is at or below the median for comparable properties, or that your value is at or below the median of adjusted comparables.
+
+## Is a protest different for a home over $1 million?
+
+Yes. Three differences matter for luxury owners.
+
+**1. The appraisal shortcut stops at $1 million.** If your property is valued at $1 million or less, a certified appraisal delivered 14 days before the hearing raises TCAD's burden to clear and convincing evidence. Above that line, you win with comps and equity data instead.
+
+**2. Comparable sales are thinner.** Texas is a non-disclosure state, so [appraisal districts cannot force anyone to hand over a sales price](https://www.texasrealestate.com/magazine/april-2023/fact-or-fiction-must-i-report-sales-prices-to-the-mls). MLS rules still require listing brokers to report closed sales. A Lake Austin waterfront estate or a Barton Creek view home may have few true comps, so adjustments for lot, view, frontage and condition do the heavy lifting. That is where a local advisor helps.
+
+**3. You can request a private hearing.** Hearings are recorded and open to the public. To show confidential information, such as an off-market sale price, the owner and chief appraiser can file a joint motion for a closed hearing.
+
+## What evidence moves a TCAD appraiser?
+
+The Comptroller is blunt: you cannot just say the district is wrong. Bring facts.
+
+- Closed sales near your home that sold before January 1, from the MLS or your closing statement
+- Photos of condition issues, with dated repair estimates for foundation, roof, drainage or flood damage
+- A survey and measurements, since wrong square footage or lot data is a common fix
+- Listings and price reductions on competing homes, which show the market's actual temperature
+- Equity comps: similar homes with lower appraised values, adjusted for differences
+
+Improvements or damage after January 1 should not count in the appraisal or the protest, so ask your appraiser exactly which sales and data they relied on.
+
+## What if the ARB says no? Your appeal options
+
+:::compare-table
+Option | Who it fits | Deadline | Cost
+Informal TCAD meeting | Anyone with a filed protest | Before your hearing date | No fee
+ARB formal hearing | Anyone with a filed protest | Set by ARB, 15 days notice | No fee
+SOAH appeal | ARB value over $1 million | 30 days to file notice | $1,500 deposit
+Binding arbitration | Any homestead, or up to $5 million | 60 days | Deposit by value
+District court | Any property | 60 days from ARB order | Court costs
+:::
+
+For estates above $5 million, SOAH or district court is the realistic path, and a property tax attorney is worth a call.
+
+## Which exemptions and caps should you check first?
+
+Before you argue value, confirm the basics on your TCAD record.
+
+- **The $140,000 school homestead exemption** is required by state law. Cities and counties may add up to 20% (minimum $5,000). File by May 1.
+- **The 10% homestead cap** limits yearly appraised-value growth to the lesser of market value or 10% over last year, plus new improvements. It starts January 1 of the year after you qualify.
+- **The 20% circuit breaker** for non-homestead property up to $5 million (adjusted yearly) expires December 31, 2026. I could not confirm an extension.
+- **Over-65 and disability freezes** generally cap school tax at the first qualifying year's amount.
+
+Our deep dives on the [2026 homestead exemption](/blog/texas-homestead-exemption-2026) and [Travis County exemptions](/blog/texas-homestead-exemption-travis-county) cover the math.
+
+## What should you do between now and spring 2027?
+
+1. **Pay your 2026 bill by February 1, 2027.** Pay by December 31 if you need a paid receipt for 2026 income taxes.
+2. **Check your TCAD record** for square footage, exemptions and property details.
+3. **Start an evidence folder:** dated photos, estimates, survey, inspection reports.
+4. **Request a comps pull** in January, once fourth-quarter sales have closed.
+5. **Calendar the spring dates:** notices in late March, protest by May 15 (Monday, May 17 in 2027).
+
+## How does this affect buying or selling a luxury home in Austin?
+
+Buyers should ask for the current bill, the exemptions in place and every taxing unit, including any MUD or PID. Our [MUD and PID guide](/blog/mud-pid-taxes-austin) explains why. Your 10% cap does not start until the January 1 after you qualify for the homestead exemption, so the seller's bill is not a clean forecast of yours. Sellers can read [the best time to sell in Austin](/blog/best-time-to-sell-a-house-austin).
+
+:::cta
+heading: Want a second set of eyes on your value?
+subheading: I'll pull recent MLS comparables for your address and tell you honestly whether a protest is worth your time.
+button: Request a comps review
+href: /contact
+:::
+
+## Frequently asked questions
+
+:::faq
+
+Q: When is the Travis County property tax protest deadline?
+A: File by May 15 or 30 days after TCAD mails your Notice of Appraised Value, whichever is later. If May 15 falls on a weekend, the deadline moves to the next business day. In 2027, that means Monday, May 17, if notices mail in late March.
+
+Q: Can I protest if my appraised value went down?
+A: Yes. A lower value can still be too high, and you may not receive a mailed notice in a year your value falls, so check your TCAD record each spring. An Austin Board of REALTORS official told Community Impact the worst outcome is keeping the value on your notice.
+
+Q: Do I need an agent or attorney to protest?
+A: No. You can file and present your own case through the TCAD portal. An agent needs a signed appointment form on file. For homes over $1 million, a local advisor can pull adjusted comparables, and estates above $5 million often justify a property tax attorney.
+
+Q: Does protesting lower my taxes if I have the 10% homestead cap?
+A: It can. Your appraised value is the lesser of market value or the capped amount. If the ARB lowers market value below the capped figure, your taxable base drops. If market value stays above it, you may see no change this year.
+
+Q: Can I protest after the deadline passes?
+A: Only in narrow cases, such as a notice you never received, a clerical error or a motion to correct for homesteads appraised at least one-fourth too high. Missing the deadline usually means waiting for next year, so calendar May 15 now.
+
+Q: Is there a cost to appeal after the ARB hearing?
+A: There is no fee for the ARB hearing. Later steps cost more: SOAH requires a $1,500 deposit for values over $1 million, and arbitration and court have their own fees. You must also pay the undisputed portion of your taxes before the delinquency date.
+
+:::
+
+## Before the spring rush
+
+If your 2026 number never felt right, let's talk before the spring rush. I'm happy to pull recent MLS comparables for your address and tell you honestly whether a protest is worth your time. I'm an advisor, not a tax attorney, so for complex estates I will point you to the right specialist.
+
+**Taylor Sherwood**, Echelon Property Group | Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746
+
+## Sources and further reading
+
+- [TCAD: deadline to file a protest](https://traviscad.org/events/deadline-to-file-a-protest/)
+- [Travis ARB formal hearing procedures (PDF)](https://traviscad.org/wp-content/uploads/Travis-Appraisal-Review-Board-Formal-Hearing-Procedures.pdf)
+- [Texas Comptroller: appraisal protests and appeals](https://comptroller.texas.gov/taxes/property-tax/protests/)
+- [Texas Comptroller: appraisal and tax limitations](https://comptroller.texas.gov/taxes/property-tax/appraisal-tax-limitations.php)
+- [Travis County Tax Office: important dates](https://tax-office.traviscountytx.gov/properties/taxes/important-dates/)
+- [City of Austin: tax rates](https://www.austintexas.gov/budget-excellence/tax-rates)
+- [Unlock MLS: October 2026 housing report](https://www.unlockmls.com/news/october-2026-central-texas-housing-report)
+- [Community Impact: 2026 Travis County appraisals](https://communityimpact.com/central-austin/real-estate/what-to-know-about-2026-property-value-appraisals-in-travis-county/)
+- [Community Impact: where Austin property taxes go in 2026](https://communityimpact.com/central-austin/government/where-austin-property-taxes-go-this-year/)
+- [Community Impact: Eanes ISD adopts 2026-27 tax rate](https://communityimpact.com/lake-travis-westlake/education/eanes-isd-adopts-tax-rate-postpones-staff-compensation-vote/)
+- [Texas Tax Code 41.43](https://law.justia.com/codes/texas/tax-code/title-1/subtitle-f/chapter-41/subchapter-c/section-41-43/)`,
+  },
 ];

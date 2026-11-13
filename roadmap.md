@@ -19,3 +19,7 @@
 # Homepage reference adaptation
 - [x] Adapt the opening layout, homepage navigation, neighborhood presentation, and section spacing while preserving branding and search.
 - [x] Verify desktop/mobile rendering, advisory booking, and community navigation.
+
+# Plus-inspired homepage refinement
+- [x] Center existing homepage branding, use a discreet menu at every size, and simplify opening copy while preserving search details.
+- [x] Verify desktop/mobile opening, menu navigation, and advisory booking.

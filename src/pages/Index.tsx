@@ -109,12 +109,8 @@ const Hero = () => {
       <div className="home-editorial-shade absolute inset-0" aria-hidden="true" />
       <div className="relative z-10 flex h-full items-center pb-16 md:pb-24 lg:pb-32 px-6 pt-32">
         <div className="mx-auto max-w-4xl text-center text-primary-foreground">
-          <p className="text-xs text-gold uppercase mb-5">STRATEGIC AUSTIN REAL ESTATE ADVISORY</p>
           <h1 className="font-display font-normal text-3xl md:text-5xl lg:text-6xl leading-tight mb-6">Echelon Property Group</h1>
-          <p className="text-base md:text-lg mb-3">Access Austin&apos;s most exceptional real estate</p>
-          <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-8">
-            Luxury homes, ranch land, redevelopment opportunities, commercial property and private market access.
-          </p>
+          <p className="text-sm md:text-base mb-8 font-light">Strategic Austin real estate advisory.</p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
             <Button variant="outline" className="home-advisory-button rounded-none h-auto py-3.5 px-5 text-[10px] md:text-xs" onClick={() => setBookingOpen(true)}>
               BOOK A 15-MINUTE ADVISORY CALL
@@ -194,7 +190,7 @@ const SearchSection = () => {
             Search {"\n"}
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-5 font-light max-w-md mx-auto">
-            Homes, estates, ranch land, and investment property across Austin and the surrounding Hill Country.&nbsp;
+            Access Austin&apos;s most exceptional real estate. Luxury homes, ranch land, redevelopment opportunities, commercial property and private market access across Austin and the surrounding Hill Country.
           </p>
           {isMobile ? (
             <a

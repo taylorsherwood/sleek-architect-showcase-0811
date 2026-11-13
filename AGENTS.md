@@ -7,4 +7,5 @@
 - Compose homepage below-fold content from eagerly imported focused section modules inside the existing lazy boundary; preserve loading timing and prerendered content.
 - Use BrokerageLogoBand for shared and private-seller footer marks, with background variants defined in global CSS; keep logo presentation synchronized without page seams.
 - Scope reference-inspired homepage presentation through homepage classes and the optional Navigation editorialHome prop so other routes keep their styling.
+- Use the existing responsive navigation menu at all viewport sizes on the editorial homepage, keeping its centered branding and styles scoped to that variant.
 - Render the homepage neighborhood atlas as a responsive image grid without scroll pinning so every neighborhood link remains directly accessible.

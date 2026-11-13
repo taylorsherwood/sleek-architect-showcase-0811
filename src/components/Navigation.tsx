@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import evLogoAsset from "@/assets/engel-volkers-villa-logo.webp.asset.json";
+import { Menu, X } from "lucide-react";
 
 const logo = "/images/echelon-logo.webp";
 const logoMobile = "/images/echelon-property-group-header.webp";
@@ -39,6 +40,20 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const closeTimer = useRef<number | null>(null);
   const location = useLocation();
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [isMenuOpen]);
 
   const cancelClose = () => {
     if (closeTimer.current !== null) {
@@ -188,7 +203,7 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
 
         {/* Desktop nav - CENTER */}
         <div
-          className="hidden min-[1280px]:flex items-center"
+          className={`${editorialHome ? "hidden" : "hidden min-[1280px]:flex"} items-center`}
           style={{ overflow: "visible", gap: "36px", marginLeft: "-72px" }}
         >
           <ul
@@ -227,7 +242,7 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
 
         {/* Client Portal - RIGHT */}
         <div
-          className="hidden min-[1280px]:flex items-center shrink-0"
+          className={`${editorialHome ? "hidden" : "hidden min-[1280px]:flex"} items-center shrink-0`}
           style={{ overflow: "visible", transform: "translateX(10px) translateY(-2px)" }}
         >
           <ClientPortalButton />
@@ -237,35 +252,38 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
         <Button
           variant="ghost"
           size="sm"
-          className={`min-[1280px]:hidden absolute right-2 md:right-6`}
+          className={`${editorialHome ? "home-menu-toggle" : "min-[1280px]:hidden"} absolute right-2 md:right-6`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
+          aria-controls="site-navigation-menu"
         >
-          {isMenuOpen ? "✕" : "☰"}
+          {isMenuOpen ? <X size={22} strokeWidth={1} /> : <Menu size={22} strokeWidth={1} />}
         </Button>
       </div>
 
       {/* Mobile menu */}
       {isMenuOpen && (
         <div
-          className={`min-[1280px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto`}
+          id="site-navigation-menu"
+          className={`${editorialHome ? "home-navigation-menu" : "min-[1280px]:hidden"} absolute left-0 right-0 top-full z-40 overflow-y-auto`}
           style={{ backgroundColor: CHARCOAL, minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
         >
           <div className="container mx-auto px-6 py-12 space-y-7">
             {links.map((link) =>
               link.children ? (
                 <div key={link.href} className="space-y-5">
-                  <button
+                  <Button
+                    variant="ghost"
                     onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                    className="block transition-colors duration-300 text-white/80 hover:text-gold"
+                    className="block h-auto p-0 rounded-none transition-colors duration-300 text-primary-foreground hover:bg-transparent hover:text-gold"
                     style={mobileLinkStyle}
                   >
                     {link.label}
                     <span className="ml-1.5 text-[7px] opacity-30">
                       {openDropdown === link.href ? "▲" : "▼"}
                     </span>
-                  </button>
+                  </Button>
                   {openDropdown === link.href && (
                     <div className="pl-5 space-y-5" style={{ borderLeft: "1px solid hsl(38 39% 61% / 0.3)" }}>
                       {link.children.map((child) => (

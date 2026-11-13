@@ -61,22 +61,32 @@ const platforms = [
   "80+ International Sites"
 ];
 
+type MarketingStat = { value: string; label: string };
+
 type MarketingCard = {
   title: string;
-  description: string;
+  description?: string;
   icon: LucideIcon;
   image?: string;
   video?: string;
   poster?: string;
+  stats?: MarketingStat[];
+  source?: string;
 };
 
 const marketingCards: MarketingCard[] = [
   {
     title: "Digital Experience",
-    description: "Immersive digital presentation designed to capture attention and engage qualified buyers.",
     video: digitalVideo.url,
     poster: digitalPoster.url,
-    icon: Monitor
+    icon: Monitor,
+    stats: [
+      { value: "1.6B", label: "Monthly Media Impressions" },
+      { value: "5.7M", label: "Monthly Search Impressions" },
+      { value: "7.3M", label: "Monthly Property Views" },
+      { value: "21,000", label: "Monthly Online Client Inquiries" }
+    ],
+    source: "Sources: Multiple media sources. Engel & Völkers Americas 2025-2026 data."
   },
   {
     title: "Print & Editorial",
@@ -468,7 +478,23 @@ const GlobalLuxuryAdvertising = () => {
                       <card.icon className="w-4 h-4 text-gold" />
                       <h3 className="text-base font-display font-medium">{card.title}</h3>
                     </div>
-                    <p className="text-muted-foreground text-xs leading-relaxed">{card.description}</p>
+                    {card.stats ? (
+                      <>
+                        <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                          {card.stats.map((stat) => (
+                            <div key={stat.label}>
+                              <p className="text-xl md:text-2xl font-display font-normal text-gold leading-none">{stat.value}</p>
+                              <p className="mt-1.5 text-[9px] uppercase tracking-[0.12em] text-muted-foreground leading-snug">{stat.label}</p>
+                            </div>
+                          ))}
+                        </div>
+                        {card.source && (
+                          <p className="mt-5 text-[9px] leading-relaxed text-muted-foreground/70">{card.source}</p>
+                        )}
+                      </>
+                    ) : (
+                      <p className="text-muted-foreground text-xs leading-relaxed">{card.description}</p>
+                    )}
                   </div>
                 </div>
               )}

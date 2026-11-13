@@ -91,6 +91,7 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
       children: [
         { href: "/blog", label: "Blog & Press" },
         { href: "/market-intelligence", label: "Market Intelligence" },
+        { href: "/austin-relocation-guide", label: "Buyer Relocation Guide" },
       ],
     },
     { href: "/about", label: "About" },

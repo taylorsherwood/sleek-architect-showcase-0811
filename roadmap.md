@@ -19,3 +19,8 @@
 # Homepage reference adaptation
 - [x] Adapt the opening layout, homepage navigation, neighborhood presentation, and section spacing while preserving branding and search.
 - [x] Verify desktop/mobile rendering, advisory booking, and community navigation.
+
+# Homeowners insurance guide
+- [x] Add the supplied article and uploaded hero, tables, six FAQs, sources and consultation link.
+- [x] Add requested contextual backlinks and update the sitemap and AI index.
+- [ ] Verify the article and FAQ interactions on desktop and phone.

@@ -203,7 +203,186 @@ const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 
 import blogAppraisalHero from "@/assets/blog/new-appraisal-report-2026-austin-hero.webp.asset.json";
 
+import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-luxury-homeowners-insurance-guide",
+    title: "Austin Homeowners Insurance for Luxury Homes: What to Know in 2026",
+    metaTitle: "Austin Homeowners Insurance for Luxury Homes: 2026 Guide | Echelon Property Group",
+    excerpt: "Austin homeowners insurance for luxury homes: 2026 premiums, hail and wind deductibles, flood gaps and nonrenewal rules, from a local luxury advisor.",
+    author: "Taylor Sherwood",
+    date: "2026-11-12",
+    dateModified: "2026-11-12",
+    readTime: "10 min read",
+    category: "OWNERSHIP",
+    keywords: "Austin homeowners insurance, luxury home insurance Austin, Texas wind and hail deductible, flood insurance Austin, Texas FAIR Plan, homeowners insurance nonrenewal Texas, Travis County home insurance cost, high-value home insurance Texas",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas", "West Lake Hills, Texas", "Lake Austin, Texas"],
+    imageAlt: "Dark standing-seam metal roof and timber-clad gable beneath a cloudy evening sky",
+    relatedPostIds: ["travis-county-property-tax-protest-guide", "lake-austin-waterfront-homes-what-drives-value", "how-to-buy-luxury-home-austin", "buy-before-you-sell-austin"],
+    image: blogInsuranceHero.url,
+    heroImage: blogInsuranceHero.url,
+    content: `Austin homeowners insurance averaged $3,245 a year in Travis County in 2025, up 8.6% in one year and 92.8% since 2019, according to [Texas Department of Insurance (TDI) data compiled by the Texas Insurance Tracker](https://texasinsurancetracker.com/texas/travis-county/). That is a countywide average. On a luxury home, three things matter more than the sticker price: your wind and hail deductible, your roof terms and the flood coverage a standard policy leaves out.
+
+If you own in West Lake Hills, Tarrytown, Barton Creek or on Lake Austin, November is a smart month to read your declarations page. Renewals are landing, the state's largest insurer has filed an increase for renewals starting November 1, and spring storm season is only a few months away.
+
+## Key takeaways
+
+- **Average cost:** $3,245 in Travis County in 2025, for policies with wind coverage. High-value homes price higher.
+- **Wind drives the claims:** 61% of the $404.9 million paid on Travis County home claims in 2025 was for wind.
+- **Run the deductible math:** a wind and hail deductible can be a percentage of your dwelling limit. At 2% on a $2 million dwelling, that is $40,000 out of pocket.
+- **Flood is separate:** most home policies exclude it, and a federal flood policy tops out at $250,000 for the building.
+- **Nonrenewal rules tightened:** 60 days' notice, and written reasons since January 1, 2026.
+- **The backstop has a ceiling:** the Texas FAIR Plan caps dwelling coverage at $1,000,000.
+
+## How much is homeowners insurance in Austin in 2026?
+
+The latest full-year county data is 2025. It shows premiums climbing faster than the insured value of the homes.
+
+:::compare-table
+Year | Avg. Travis County premium | Change vs. prior year | Avg. coverage amount
+2019 | $1,683 | n/a | $362,000
+2022 | $2,061 | +13.2% | $453,000
+2024 | $2,989 | +20.2% | $523,000
+2025 | $3,245 | +8.6% | $557,000
+:::
+Average coverage rose about 54% from 2019 to 2025. The average premium rose 92.8%. Travis County's 2025 average sits $2 below the median Texas county ($3,247).
+
+Averages include every policy TDI counted, so a $4 million estate in 78746 will not look like this table. It is a starting point, not a quote.
+
+Rates tell the same story. TDI's [statewide homeowners rate changes](https://www.tdi.texas.gov/blog/auto-and-home-insurance-rate-changes.html) were 10.8% in 2022, 21.1% in 2023, 18.7% in 2024 and 4.3% in 2025.
+
+For 2026, the picture is mixed. TDI said homeowners filings since July 1 averaged a 4.3% decrease, but [ABC13 reported](https://abc13.com/post/texas-says-insurance-rates-are-trending-down-state-records-show-more-complicated-picture/19925756/) that TDI confirmed this is a simple average, not weighted by policyholders. State Farm Lloyds, the largest Texas homeowners insurer, filed a 4% increase for renewals starting November 1. Its own estimate showed 751,000 of about 987,000 policies rising.
+
+Insurance now sits next to taxes as a major carrying cost. Start with the tax side in our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide).
+
+## Is wind and hail the biggest risk to an Austin luxury home?
+
+Based on paid claims, yes. Of the $404,911,769 paid on Travis County home claims in 2025, wind was 61%, water 20% and fire 12%.
+
+Hail-size weather does reach central Austin neighborhoods. NOAA's Storm Prediction Center logged [preliminary reports on April 30, 2026](https://www.spc.noaa.gov/climo/reports/260430_rpts.html) of 1-inch hail in Sunset Valley and quarter-size hail north of McKinney Falls State Park. It also logged video of 3 to 6 inch limbs down in the Zilker neighborhood.
+
+### What is a wind and hail deductible?
+
+It is what you pay before the insurer pays for storm damage. [TDI advises shoppers](https://www.tdi.texas.gov/takefive/replacing-your-roof.html) to ask whether it differs from other deductibles, because you may pay more out of pocket after a storm.
+
+It can be set as a percentage of your dwelling limit instead of a flat dollar figure, so it scales with the house. As simple math, not a quote, 1% of a $2 million dwelling limit is $20,000, and 2% is $40,000.
+
+### Should my roof have replacement cost or actual cash value coverage?
+
+Replacement cost, if you can get it. TDI explains that some policies pay current prices to repair a roof, while others pay less if it is older or worn, and some companies switch to actual cash value as roofs age.
+
+TDI's example: a 10-year-old roof costs $10,000 to replace today. With replacement cost and a $2,000 deductible, the company pays $8,000. With actual cash value, the roof might be valued at $7,000, so it pays $5,000. On a large home with premium roofing, the gap is bigger.
+
+Insurers inspect your roof when you apply and may charge more or decline, TDI notes. An impact-resistant roof may earn a discount.
+
+## Does homeowners insurance cover flood in Austin?
+
+Usually not. TDI states that most home policies do not cover flood damage, and that floods can happen anywhere. It adds that more than half of the homes flooded by Hurricane Harvey were outside designated flood zones.
+
+The City of Austin says [about 10% of land in Austin is in the floodplain](https://www.austintexas.gov/watershed-protection/programs/floodplain-management), and every creek and lake has a floodplain, mapped or not. After the Atlas 14 rainfall study, the City is updating its maps from 10.2 inches of rain in 24 hours to almost 13 inches in some areas.
+
+### What does federal flood insurance actually cover?
+
+The National Flood Insurance Program (NFIP) offers [up to $250,000 for the building and $100,000 for contents](https://www.floodsmart.gov/get-insured/buy-a-policy). Against a $2 million rebuild, that is one-eighth of the house.
+
+FloodSmart lists what NFIP does not cover, including landscaping, decks and patios, fences, swimming pools and temporary housing during repairs. Original artwork is covered only up to $2,500. Coverage takes effect 30 days after purchase, with exceptions.
+
+Ask your agent about private flood options with limits above the federal caps.
+
+### How do I check a Lake Austin or creek-side property?
+
+Use the City's FloodPro tool at ATXFloodPro.com and FEMA's Flood Map Service Center. FloodPro's FEMA print map shows the floodplains used for insurance premiums. The City also limits how much work you can do on an existing building in the floodplain without meeting local floodplain rules. Check that before you plan a major remodel on a lake or creek lot. Our guides to [Lake Austin waterfront values](/blog/lake-austin-waterfront-homes-what-drives-value) and [living on Lake Austin](/blog/living-on-lake-austin) cover the ownership side.
+
+## What coverage gaps do high-value homes hit most often?
+
+The gaps between a standard policy and a home that is worth more, rebuilds for more and holds more. TDI's [home insurance guide](https://tdi.texas.gov/pubs/consumer/cb025.html) flags most of them.
+
+:::compare-table
+Gap | What the source says | Ask your agent
+Dwelling limit | TDI: most companies require at least 80% of replacement cost, some 100%. If you fall short, you pay the difference. | Is my limit tied to current rebuild cost?
+Art and jewelry | TDI: policies limit what they pay for jewelry and art. | Should I schedule these items?
+Flood | NFIP: $250,000 building, $100,000 contents. | Do I need excess or private flood?
+Liability | TDI: limits are capped, and a separate umbrella policy adds more. | What umbrella limit fits my net worth?
+Code, foundation, sewer | TDI lists these as common endorsements. | Which do I have?
+Short-term rental | TDI: most policies will not pay for damage or injuries during rentals. | Is my guest house covered if I rent it?
+Living expenses | TDI: may be limited to 10% to 20% of dwelling coverage. | Is it enough for a long rebuild?
+:::
+## What happens if my insurer will not renew my Austin home?
+
+You have rights, and more notice than before. TDI says the company [must give 60 days' notice](https://www.tdi.texas.gov/tips/home-insurance-canceled-or-not-renewed.html) of a nonrenewal if you bought or renewed in 2024 or later. If you were declined, canceled or nonrenewed after January 1, 2026, the company must give you a written statement of why.
+
+TDI lists the reasons: your house is in worse condition, you file three or more nonweather-related claims in three years (such as fires, rodent damage or broken pipes), the house is vacant for 60 days or more, or the company limits coverage in your area.
+
+TDI advises having a new policy in place before the old one expires. Its HelpInsure.com site shows sample rates.
+
+### What is the Texas FAIR Plan, and is it enough for a luxury home?
+
+If at least two companies refuse to insure you, you may buy through the Texas FAIR Plan Association. Its [dwelling coverage tops out at $1,000,000](https://www.texasfairplan.org/about-us/summary-description-of-tfpa-coverages/), and it pays actual cash value for the dwelling unless you add replacement cost on its homeowners policy. If your rebuild cost is above $1 million, the FAIR Plan cannot fully cover the house.
+
+TDI adds that FAIR Plan and surplus lines coverage costs more than standard coverage.
+
+## How should luxury buyers handle insurance before closing?
+
+Treat it like an inspection item, not an afterthought. Here is the order I suggest.
+
+1. **Get quotes early,** with the roof's age and material in hand.
+2. **Compare terms, not just premiums:** the wind and hail deductible, roof settlement and dwelling limit.
+3. **Check the floodplain.** Pull the address on FloodPro and FEMA before you remove contingencies. FloodSmart says there is no 30-day wait if you buy flood coverage while making a mortgage.
+4. **Ask about claims history.** TDI says CLUE reports show a house's claims for the last seven years, regardless of owner.
+5. **Tell your agent everything:** guest house, rentals, art, a boathouse.
+6. **Budget it with taxes.** See [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin) and our [luxury buyer guide](/blog/how-to-buy-luxury-home-austin). Buying before you sell? You will carry two policies for a while, as our [buy before you sell guide](/blog/buy-before-you-sell-austin) explains.
+
+## Frequently asked questions
+
+:::faq
+
+Q: How much is homeowners insurance in Austin, TX?
+A: Travis County's average premium was $3,245 in 2025, per TDI data compiled by the Texas Insurance Tracker, for policies with wind coverage. That is up 8.6% from 2024. A high-value home will typically cost more, since premiums follow replacement cost, so get quotes on your actual address.
+
+Q: Does homeowners insurance cover flood damage in Texas?
+A: Usually not. TDI says most home policies do not cover flooding, and floods can happen outside designated flood zones. You can buy a federal NFIP policy or a private flood policy. NFIP policies typically take effect 30 days after purchase, so do not wait for a storm forecast.
+
+Q: What is a typical wind and hail deductible in Texas?
+A: It varies by company and policy, and may differ from your other deductibles. It can be a percentage of your dwelling limit, which makes it larger on a luxury home. Check your declarations page for the exact dollar amount, and ask your agent to show you the math.
+
+Q: Can my insurer drop me because of my roof?
+A: TDI says a company might not renew if your house is in worse condition than when you bought the policy, and some will give you six months to make repairs. It must give 60 days' notice and, since 2026, a written reason. Keep your roof documented and inspected.
+
+Q: Do hail claims count toward nonrenewal?
+A: TDI says a company might nonrenew after three or more nonweather-related claims in three years, such as fires, rodent damage or broken pipes. Hail is a weather event, so it is not on that list. Still, claims can affect your rates, so ask your agent how your insurer treats them.
+
+Q: What if no company will insure my Austin home?
+A: If at least two companies refuse, you may qualify for the Texas FAIR Plan, with dwelling coverage up to $1,000,000. Surplus lines carriers are another route. TDI says both cost more than standard coverage. An independent agent can tell you which option fits your home's rebuild cost.
+
+:::
+
+## Sources and further reading
+
+- [Texas Insurance Tracker: Travis County home insurance data](https://texasinsurancetracker.com/texas/travis-county/)
+- [TDI: auto and home insurance rate changes](https://www.tdi.texas.gov/blog/auto-and-home-insurance-rate-changes.html)
+- [TDI: home insurance guide](https://tdi.texas.gov/pubs/consumer/cb025.html)
+- [TDI: was your home insurance canceled or not renewed?](https://www.tdi.texas.gov/tips/home-insurance-canceled-or-not-renewed.html)
+- [TDI: insurance and your roof](https://www.tdi.texas.gov/takefive/replacing-your-roof.html)
+- [FloodSmart (FEMA): buy a flood insurance policy](https://www.floodsmart.gov/get-insured/buy-a-policy)
+- [City of Austin: floodplain management](https://www.austintexas.gov/watershed-protection/programs/floodplain-management)
+- [Texas FAIR Plan Association: summary of coverages](https://www.texasfairplan.org/about-us/summary-description-of-tfpa-coverages/)
+- [NOAA Storm Prediction Center: April 30, 2026 storm reports](https://www.spc.noaa.gov/climo/reports/260430_rpts.html)
+- [ABC13: Texas says insurance rates are trending down](https://abc13.com/post/texas-says-insurance-rates-are-trending-down-state-records-show-more-complicated-picture/19925756/)
+
+## Thinking about a purchase or sale and want a local read on the house?
+
+Insurance advice belongs with a licensed agent, and I am not one. I can help you look at a property the way an insurer will: roof age, floodplain status and carrying cost. If you are weighing a move in West Lake Hills, Tarrytown, Barton Creek or on Lake Austin, reach out for a private consult.
+
+**Taylor Sherwood**, Echelon Property Group | Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746
+
+:::cta
+heading: Request a private consult
+button: Discuss your property
+href: /contact
+:::`,
+  },
+
   {
     id: "new-appraisal-report-2026-austin",
     title: "The New Appraisal Report Arrives Nov. 2: What Austin Sellers and Buyers Need to Know",
@@ -10926,6 +11105,8 @@ Echelon Property Group advises executors, trustees, estate representatives, luxu
     imageAlt: "Aerial view of the Pennybacker Bridge framing the downtown Austin skyline above the Hill Country",
     content: `Buying a luxury home in Austin is less about searching listings and more about understanding how the city's high-end market works. Many of the best [Austin luxury homes](/luxury-real-estate-austin) trade through private networks before they ever reach Zillow or Realtor.com. The buyers who acquire them typically learned how Austin works before they started touring. This guide walks through nine Austin-specific strategies, from neighborhood-by-neighborhood pricing logic to [Lake Austin waterfront](/blog/lake-austin-waterfront-homes-what-drives-value) nuance, relocation realities, and the [off-market channels](/off-market-real-estate-austin) where the most desirable properties tend to surface.
 
+Get insurance quotes before closing, not after the inspection window. Our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) explains roof coverage, wind and hail deductibles and flood gaps.
+
 Austin's upper tier of the residential market operates differently than most buyers expect. Properties priced above $2 million move through channels that aren't always visible on public listing platforms, and the buyers who succeed are typically those who understand how that market works before they start looking.
 
 This guide is for buyers who are serious about acquiring a high-quality home in Austin, whether that's a waterfront property on [Lake Austin](/communities/lake-austin), an architecturally significant residence in [Tarrytown](/communities/tarrytown) or [West Lake Hills](/communities/westlake-hills), or a newer build in a gated community like [Barton Creek](/communities/barton-creek) or [Spanish Oaks](/communities/spanish-oaks). The strategies here reflect how the [Austin luxury market](/luxury-real-estate-austin) functions, not how most people assume it does.
@@ -17056,6 +17237,8 @@ A new luxury home should feel current on day one. The better ones still feel rel
     excerpt: "What actually drives pricing on Lake Austin waterfront homes, how frontage, topography, privacy, dock rights, and micro-segment demand separate trophy assets from merely expensive ones.",
     content: `On [Lake Austin](/communities/lake-austin), two homes can sit minutes apart by boat and still command meaningfully different pricing. The gap usually has less to do with square footage than buyers expect and far more to do with shoreline quality, privacy, topography, and what the property actually allows you to do on the water. That is the real conversation around [Lake Austin waterfront homes](/austin-luxury-homes-for-sale).
 
+Before closing, review flood coverage, rebuild limits and roof terms with a licensed insurance agent. Our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) lays out those ownership costs.
+
 For [buyers](/buy) operating at the top of the market, this is not a category you approach through broad averages. Lake Austin is a narrow, highly nuanced market where small differences create seven-figure swings. The buyers who perform best here tend to look past marketing language and focus on the factors that continue to matter long after the closing.
 
 ## Why Lake Austin waterfront homes trade differently
@@ -17674,6 +17857,8 @@ Taylor Sherwood is the founder and principal REALTOR of Echelon Property Group i
     imageAlt: "Stone-and-glass luxury home on a tree-lined street in Tarrytown, Austin, Texas",
     relatedPostIds: ["texas-homestead-exemption-2026", "texas-homestead-exemption-travis-county", "mud-pid-taxes-austin", "best-time-to-sell-a-house-austin"],
     content: `To protest your property taxes in Travis County, file a notice of protest with the Travis Central Appraisal District (TCAD) by May 15 or 30 days after your Notice of Appraised Value is mailed, whichever is later. Then settle with a TCAD appraiser at an informal meeting, or argue your case to the Appraisal Review Board (ARB). The 2026 season is closed, so November is the right time to build your evidence for 2027.
+
+Insurance is another major carrying cost. Our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) covers premiums, wind and hail deductibles, roof terms and flood coverage.
 
 Here is the twist this year. TCAD values fell. Tax rates did not. If you pay Austin luxury home property taxes in Tarrytown, Westlake Hills, Barton Creek, Rob Roy or on Lake Austin, that gap is where a good protest lives.
 

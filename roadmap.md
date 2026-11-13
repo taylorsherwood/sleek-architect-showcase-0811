@@ -23,4 +23,5 @@
 # Homeowners insurance guide
 - [x] Add the supplied article and uploaded hero, tables, six FAQs, sources and consultation link.
 - [x] Add requested contextual backlinks and update the sitemap and AI index.
-- [ ] Verify the article and FAQ interactions on desktop and phone.
+- [x] Verify article text, two tables, six visible FAQ answers and consultation link on desktop and phone.
+- [ ] Confirm hero visually in hosted preview; local asset proxy is unavailable and live asset request returned 403.

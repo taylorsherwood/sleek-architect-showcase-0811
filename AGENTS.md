@@ -8,4 +8,4 @@
 - Use BrokerageLogoBand for shared and private-seller footer marks, with background variants defined in global CSS; keep logo presentation synchronized without page seams.
 - Scope reference-inspired homepage presentation through homepage classes and the optional Navigation editorialHome prop so other routes keep their styling.
 - Switch the homepage opening mark and standard header lockup with scroll-state CSS inside Navigation; shared markup keeps prerendering stable and other pages unchanged.
-- Render the homepage neighborhood atlas as a responsive image grid without scroll pinning so every neighborhood link remains directly accessible.
+- Render the homepage neighborhood atlas as an overlapping card deck without scroll pinning; keep every neighborhood link in the DOM and focusable so all remain accessible and crawlable.

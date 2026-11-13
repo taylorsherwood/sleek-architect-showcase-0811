@@ -6,3 +6,28 @@
 .guide-zoom { overflow: auto; max-height: 78svh; }
 .guide-zoom .guide-page { width: 1000px; max-width: none; margin: auto; }
 .guide-cover { width: 100%; max-width: 350px; aspect-ratio: 612 / 792; object-fit: cover; }
+
+.relocation-editorial { padding-top: 145px; }
+.guide-masthead { text-align: center; padding: 28px 24px 32px; }
+.guide-preview { max-width: 1160px; margin: auto; padding: 0 32px 32px; }
+.guide-preview-stage { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 24px; align-items: center; }
+.guide-opening-spread { position: relative; display: grid; grid-template-columns: 1fr 1fr; width: 100%; height: auto; padding: 0; gap: 0; border-radius: 0; overflow: hidden; background: hsl(var(--background)); box-shadow: var(--guide-paper-shadow); }
+.guide-opening-spread:hover { background: hsl(var(--background)); }
+.guide-opening-spread img { display: block; width: 100%; height: auto; aspect-ratio: 612 / 792; object-fit: cover; }
+.guide-opening-spread::after { content: ""; position: absolute; left: 50%; top: 0; height: 100%; width: 1px; background: hsl(var(--foreground) / .12); box-shadow: var(--guide-spine-shadow); pointer-events: none; }
+.guide-preview-next, .guide-preview-prev { border-radius: 0; color: hsl(var(--foreground)); }
+.guide-preview-caption { display: flex; justify-content: space-between; align-items: center; margin: 22px 68px 0; border-top: 1px solid hsl(var(--border)); padding-top: 12px; }
+.guide-access-dialog { padding: 44px; max-width: 480px; max-height: 92svh; overflow-y: auto; }
+.guide-access-form input { border-radius: 0; border: 0; border-bottom: 1px solid hsl(var(--border)); background: transparent; box-shadow: none; padding-left: 0; height: 44px; }
+.guide-access-form label { font-size: 12px; font-weight: 400; }
+@media (min-width: 900px) { .guide-opening-spread { max-width: 850px; margin: auto; } }
+@media (max-width: 767px) {
+  .relocation-editorial { padding-top: 118px; }
+  .guide-masthead { padding: 24px 20px; }
+  .guide-preview { padding: 0 16px 24px; }
+  .guide-preview-stage { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .guide-preview-prev { display: none; }
+  .guide-preview-next { justify-self: end; }
+  .guide-preview-caption { margin: 0; }
+  .guide-access-dialog { width: calc(100% - 32px); padding: 32px 24px; }
+}

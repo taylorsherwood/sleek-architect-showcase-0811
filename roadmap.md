@@ -1,4 +1,5 @@
 # Gated relocation flipbook
+- [x] Refine the guide as an editorial opening spread; show contact capture on attempted page turn and preserve private reader access.
 - [x] Add contextual guide invitations on Buy, Moving to Austin, and Communities; verify the form-to-reader flow.
 - [x] Store the uploaded guide privately and add name/email access with optional phone.
 - [x] Add the flipbook reader and verify access, page turns, zoom, mobile viewing, saved leads, and Zapier forwarding.

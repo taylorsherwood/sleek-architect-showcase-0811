@@ -96,6 +96,8 @@ realscout-simple-search::part(container) {
 
 :root {
   color-scheme: light only;
+  --guide-paper-shadow: 0 18px 48px -18px hsl(var(--foreground) / .23), 0 2px 8px hsl(var(--foreground) / .07);
+  --guide-spine-shadow: 0 0 15px 3px hsl(var(--foreground) / .12);
   --brokerage-band-background: #FAFAF8;
   --brokerage-band-private-background: #F5F3EF;
 }

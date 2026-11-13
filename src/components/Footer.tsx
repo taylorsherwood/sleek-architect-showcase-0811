@@ -49,18 +49,18 @@ const Footer = ({ showNewsletter = true }: FooterProps) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 lg:gap-x-6">
 
             {/* Brand block */}
-            <div className="flex flex-col items-center sm:items-start order-1">
+            <div className="flex flex-col items-center text-center order-1">
               <Link to="/" className="inline-block mb-1">
                 <img
                   src="/static-assets/echelon-logo-gold-square.webp"
                   alt="Echelon Property Group"
-                  className="w-[112px] sm:w-[130.667px] md:w-[149.333px] max-w-none h-auto ml-0 sm:-ml-4 object-contain"
+                  className="w-[112px] sm:w-[130.667px] md:w-[149.333px] max-w-none h-auto object-contain"
                   loading="lazy" decoding="async"
                   width={224} height={224}
                 />
               </Link>
               <p style={{ fontFamily: '"Jost", sans-serif', fontSize: "11.5px", color: "rgba(255,255,255,0.4)", lineHeight: 1.6, fontWeight: 300, maxWidth: "240px" }}
-                className="text-center sm:text-left -mt-4 mb-3">
+                className="text-center -mt-4 mb-3">
                 Strategic Austin real estate advisory. Residential, ranch, land, redevelopment, and investment.
               </p>
 

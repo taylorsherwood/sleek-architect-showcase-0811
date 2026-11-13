@@ -1475,7 +1475,7 @@ body.hcs-immersive nav.fixed {
 
 /* Homepage editorial treatment. Other routes retain their existing navigation. */
 .home-editorial-hero {
-  height: min(860px, calc(100svh - 48px));
+  height: 100svh;
   min-height: 650px;
 }
 .home-editorial-shade { background: hsl(var(--primary) / 0.48); }
@@ -1502,7 +1502,7 @@ body.hcs-immersive nav.fixed {
   .home-editorial-nav .group.cursor-pointer { font-size: 10px !important; text-transform: uppercase !important; letter-spacing: 0 !important; }
 }
 @media (max-width: 767px) {
-  .home-editorial-hero { min-height: 680px; height: calc(100svh - 24px); }
+  .home-editorial-hero { min-height: 680px; height: 100svh; }
   .home-shortcut { flex-direction: column; gap: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {

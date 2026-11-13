@@ -703,11 +703,15 @@ section[class*="bg-navy"]::after {
     position: relative;
     overflow: hidden;
   }
-  /* Use background-attachment: fixed only on non-touch devices. */
-  @supports not (-webkit-touch-callout: none) {
-    .parallax-break {
-      background-attachment: fixed;
-    }
+  /* Image moves on an inherited layer via transform (see useParallaxBreaks). */
+  .parallax-break::before {
+    content: '';
+    position: absolute;
+    inset: -25% 0;
+    background: inherit;
+    background-attachment: scroll;
+    transform: translate3d(0, var(--parallax-y, 0), 0);
+    will-change: transform;
   }
   .parallax-break::after {
     content: '';

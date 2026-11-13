@@ -7,6 +7,7 @@ import AppRoutes from "./AppRoutes";
 import SchemaMarkup, { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import { AuthProvider } from "@/hooks/useAuth";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import { useParallaxBreaks } from "@/hooks/useParallaxBreaks";
 import MobileStickyActionBar from "@/components/MobileStickyActionBar";
 
 const browserQueryClient = new QueryClient();
@@ -30,6 +31,7 @@ export const AppShell = ({ children, queryClient = browserQueryClient }: AppShel
 
 const AnalyticsBridge = () => {
   useAnalytics();
+  useParallaxBreaks();
   return null;
 };
 

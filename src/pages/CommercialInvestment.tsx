@@ -447,7 +447,7 @@ const CommercialInvestment = () => {
                   src={evCommercialLogo.url}
                   alt="Engel & Völkers Commercial"
                   loading="lazy"
-                  className="mt-10 w-[200px] max-w-full h-auto sm:ml-4"
+                  className="mt-10 mx-auto w-[200px] max-w-full h-auto"
                 />
               </div>
             </div>

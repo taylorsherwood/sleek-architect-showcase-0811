@@ -24,7 +24,7 @@ Deno.serve(async (req) => {
     const url = Deno.env.get("SUPABASE_URL"), key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
     if (!url || !key) return json({ error: "Guide access is temporarily unavailable." }, 503);
     const client = createClient(url, key, { auth: { persistSession: false } });
-    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide-v2.pdf", 3600);
+    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide-v3.pdf", 3600);
     if (error || !access) return json({ error: "The guide could not be opened." }, 503);
     return json({ url: access.signedUrl, expiresAt: Date.now() + 3600000 });
   }
@@ -34,7 +34,7 @@ Deno.serve(async (req) => {
   try {
     const client = createClient(url, key, { auth: { persistSession: false } });
     // Generate access before submitting, but never return it unless the lead is saved and forwarded.
-    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide-v2.pdf", 3600);
+    const { data: access, error } = await client.storage.from("buyer-guides").createSignedUrl("austin-relocation-guide-v3.pdf", 3600);
     if (error || !access) return json({ error: "The guide could not be opened." }, 503);
     const timestamp = new Date().toISOString();
     const result = await client.functions.invoke("submit-lead", { body: {

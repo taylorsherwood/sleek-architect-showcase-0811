@@ -108,7 +108,7 @@ const Hero = () => {
       </div>
       <div className="home-editorial-shade absolute inset-0" aria-hidden="true" />
       <div className="relative z-10 flex h-full items-center pb-16 md:pb-24 lg:pb-32 px-6 pt-32">
-        <div className="mx-auto max-w-4xl text-center text-primary-foreground">
+        <div className="home-hero-glass mx-auto max-w-4xl text-center text-primary-foreground px-6 py-10 md:px-14 md:py-14">
           <p className="text-xs text-gold uppercase mb-5">STRATEGIC AUSTIN REAL ESTATE ADVISORY</p>
           <h1 className="font-display font-normal text-3xl md:text-5xl lg:text-6xl leading-tight mb-6">Echelon Property Group</h1>
           <p className="text-base md:text-lg mb-3">Access Austin&apos;s most exceptional real estate</p>

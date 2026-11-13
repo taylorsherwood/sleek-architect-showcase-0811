@@ -16,7 +16,7 @@ const PDFPage = forwardRef<HTMLDivElement, { pdf: PDFDocumentProxy; number: numb
     let render: ReturnType<Awaited<ReturnType<PDFDocumentProxy["getPage"]>>["render"]> | undefined;
     pdf.getPage(number).then(page => {
       if (cancelled || !canvas.current) return;
-      const viewport = page.getViewport({ scale: 1.7 });
+      const viewport = page.getViewport({ scale: Math.min(2, Math.max(1.2, window.devicePixelRatio || 1)) });
       const context = canvas.current.getContext("2d");
       if (!context) return;
       canvas.current.width = viewport.width; canvas.current.height = viewport.height;
@@ -31,6 +31,20 @@ const PDFPage = forwardRef<HTMLDivElement, { pdf: PDFDocumentProxy; number: numb
 });
 PDFPage.displayName = "PDFPage";
 
+let audio: AudioContext | undefined;
+function playPageTurn() {
+  try {
+    audio ??= new AudioContext();
+    const ctx = audio, length = Math.floor(ctx.sampleRate * 0.35);
+    const buffer = ctx.createBuffer(1, length, ctx.sampleRate), data = buffer.getChannelData(0);
+    for (let i = 0; i < length; i++) { const t = i / length; data[i] = (Math.random() * 2 - 1) * Math.sin(Math.PI * t) ** 2 * (1 - t * 0.6); }
+    const source = ctx.createBufferSource(), filter = ctx.createBiquadFilter(), gain = ctx.createGain();
+    filter.type = "bandpass"; filter.frequency.setValueAtTime(2400, ctx.currentTime); filter.frequency.exponentialRampToValueAtTime(900, ctx.currentTime + 0.35); filter.Q.value = 0.7;
+    gain.gain.value = 0.18; source.buffer = buffer;
+    source.connect(filter).connect(gain).connect(ctx.destination); source.start();
+  } catch { /* sound is optional */ }
+}
+
 type BookHandle = { pageFlip: () => { flipNext: () => void; flipPrev: () => void; turnToPage: (page: number) => void } };
 export default function RelocationFlipbook({ url }: { url: string }) {
   const [pdf, setPdf] = useState<PDFDocumentProxy>();
@@ -42,7 +56,7 @@ export default function RelocationFlipbook({ url }: { url: string }) {
   const reduced = typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   useEffect(() => {
     let cancelled = false;
-    const task = getDocument({ url, disableAutoFetch: true, disableStream: true });
+    const task = getDocument({ url, disableAutoFetch: true, rangeChunkSize: 262144 });
     task.promise.then(document => {
       if (!cancelled) { setError(""); setPdf(document); }
     }).catch(() => {
@@ -50,6 +64,19 @@ export default function RelocationFlipbook({ url }: { url: string }) {
     });
     return () => { cancelled = true; void task.destroy(); };
   }, [url]);
+  useEffect(() => {
+    if (!pdf) return;
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target && /^(INPUT|SELECT|TEXTAREA)$/.test(target.tagName)) return;
+      const flip = book.current?.pageFlip();
+      if (!flip) return;
+      if (e.key === "ArrowRight") { e.preventDefault(); reduced ? flip.turnToPage(Math.min(pdf.numPages - 1, page + 1)) : flip.flipNext(); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); reduced ? flip.turnToPage(Math.max(0, page - 1)) : flip.flipPrev(); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [pdf, page, reduced]);
   if (error) return <p role="alert" className="py-16 text-center">{error}</p>;
   if (!pdf) return <div role="status" className="flex items-center justify-center gap-3 py-24"><Loader2 className="animate-spin" /> Opening your guide…</div>;
   return <div ref={reader} className="guide-reader">
@@ -60,8 +87,8 @@ export default function RelocationFlipbook({ url }: { url: string }) {
       <Button variant="ghost" size="icon" title={zoom ? "Zoom out" : "Zoom in"} aria-label={zoom ? "Zoom out" : "Zoom in"} onClick={() => setZoom(!zoom)}>{zoom ? <ZoomOut /> : <ZoomIn />}</Button>
       <Button variant="ghost" size="icon" title="Fullscreen" aria-label="Fullscreen" onClick={() => { if (document.fullscreenElement) void document.exitFullscreen(); else void reader.current?.requestFullscreen?.().catch(() => undefined); }}><Maximize /></Button>
     </div>
-    {zoom ? <div className="guide-zoom"><PDFPage pdf={pdf} number={page + 1} active /></div> : <div className="guide-book-shell"><HTMLFlipBook ref={book} width={460} height={595} size="stretch" minWidth={260} maxWidth={560} minHeight={337} maxHeight={725} startPage={page} drawShadow={false} flippingTime={reduced ? 1 : 650} usePortrait startZIndex={0} autoSize maxShadowOpacity={0} showCover mobileScrollSupport clickEventForward useMouseEvents swipeDistance={30} showPageCorners={!reduced} disableFlipByClick={false} className="guide-book" style={{}} onFlip={e => setPage(e.data)}>
-      {Array.from({ length: pdf.numPages }, (_, i) => <PDFPage key={i} pdf={pdf} number={i + 1} active={Math.abs(i - page) <= 3} />)}
+    {zoom ? <div className="guide-zoom"><PDFPage pdf={pdf} number={page + 1} active /></div> : <div className="guide-book-shell"><HTMLFlipBook ref={book} width={460} height={595} size="stretch" minWidth={260} maxWidth={560} minHeight={337} maxHeight={725} startPage={page} drawShadow={false} flippingTime={reduced ? 1 : 650} usePortrait startZIndex={0} autoSize maxShadowOpacity={0} showCover mobileScrollSupport clickEventForward useMouseEvents swipeDistance={30} showPageCorners={!reduced} disableFlipByClick={false} className="guide-book" style={{}} onFlip={e => { setPage(e.data); playPageTurn(); }}>
+      {Array.from({ length: pdf.numPages }, (_, i) => <PDFPage key={i} pdf={pdf} number={i + 1} active={i - page <= 3 && page - i <= 1} />)}
     </HTMLFlipBook></div>}
   </div>;
 }

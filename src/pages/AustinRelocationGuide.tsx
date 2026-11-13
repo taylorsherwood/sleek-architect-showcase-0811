@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, type FormEvent } from "react";
+import { lazy, Suspense, useEffect, useState, type FormEvent } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -12,7 +12,8 @@ import { trackLead } from "@/lib/analytics";
 import openingLeft from "@/assets/guide-opening-01.webp.asset.json";
 import openingRight from "@/assets/guide-opening-02.webp.asset.json";
 import "@/components/relocation-guide.css";
-const Flipbook = lazy(() => import("@/components/RelocationFlipbook"));
+const loadFlipbook = () => import("@/components/RelocationFlipbook");
+const Flipbook = lazy(loadFlipbook);
 const SESSION_KEY = "austin-relocation-guide-access-v2";
 function storedAccess(): string {
   try {
@@ -25,6 +26,7 @@ export default function AustinRelocationGuide() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [gateOpen, setGateOpen] = useState(false);
+  useEffect(() => { if (gateOpen) void loadFlipbook(); }, [gateOpen]);
   async function unlock(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); if (busy) return;
     const form = new FormData(event.currentTarget);
@@ -58,7 +60,7 @@ export default function AustinRelocationGuide() {
         </div>
         <div className="guide-preview-caption"><span className="text-muted-foreground text-xs">01 — 02 <span className="mx-3 text-gold">/</span> 44</span><Button variant="link" className="text-foreground text-xs" onClick={() => setGateOpen(true)}>Read the full edition <ArrowRight /></Button></div>
       </div>}
-      <Dialog open={gateOpen} onOpenChange={setGateOpen}>
+      <Dialog open={gateOpen} onOpenChange={open => { setGateOpen(open); if (open) void loadFlipbook(); }}>
         <DialogContent className="guide-access-dialog rounded-none sm:rounded-none border-0">
           <p className="text-gold uppercase text-xs mb-2">Your Austin chapter</p>
           <DialogTitle className="font-serif text-2xl md:text-3xl font-normal leading-snug">The full guide,<br />just for you.</DialogTitle>

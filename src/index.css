@@ -1483,14 +1483,17 @@ body.hcs-immersive nav.fixed {
 .home-editorial-hero h1,
 .home-editorial-hero a,
 .home-editorial-hero button { letter-spacing: 0; }
-.home-advisory-button {
-  background: transparent;
-  border: 1px solid #b9a06c;
-  color: #b9a06c;
+.home-advisory-button,
+.home-private-button {
+  background: hsl(var(--primary-foreground) / 0.08) !important;
+  border: 1px solid #b9a06c !important;
+  color: hsl(var(--primary-foreground)) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: none !important;
 }
-.home-advisory-button:hover { background: #b9a06c; color: hsl(var(--primary-foreground)); }
-.home-private-button { background: transparent; border-color: hsl(var(--primary-foreground)); color: hsl(var(--primary-foreground)); }
-.home-private-button:hover { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.home-advisory-button:hover,
+.home-private-button:hover { background: #FAFAF8 !important; color: #0C0F24 !important; }
 .home-shortcut { gap: 12px; text-decoration: none; }
 .home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.92) 0%, hsl(var(--primary) / 0.6) 40%, hsl(var(--primary) / 0.05) 75%); }
 .home-community-tile:hover .home-community-shade { opacity: 0.85; }

@@ -6,6 +6,7 @@ import AboutBlock from "@/components/AboutBlock";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createFAQSchema, createBreadcrumbSchema, realEstateAgentSchema } from "@/components/SchemaMarkup";
 import RelatedInsights from "@/components/RelatedInsights";
+import MovingToAustinGuideCTA from "@/components/MovingToAustinGuideCTA";
 
 const faqs = [
   { question: "What is the cost of living in Austin compared to other major cities?", answer: "Austin's cost of living is significantly lower than San Francisco, New York, and Los Angeles. Luxury homes that cost $5-10M in coastal markets can be found for $2-5M in Austin's top neighborhoods like West Lake Hills, Barton Creek, and Lake Austin. Combined with no state income tax, Austin offers exceptional value for high-income households." },
@@ -47,6 +48,7 @@ const MovingToAustin = () => {
               Your comprehensive guide to relocating to Austin, Texas. From neighborhoods and schools 
               to cost of living and lifestyle, everything high-net-worth buyers need to make an informed move.
             </p>
+            <div className="mt-8"><MovingToAustinGuideCTA /></div>
           </div>
         </div>
       </section>

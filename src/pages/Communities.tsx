@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
+import MovingToAustinGuideCTA from "@/components/MovingToAustinGuideCTA";
 import NeighborhoodMedian from "@/components/NeighborhoodMedian";
 import { neighborhoodPriceSummary } from "@/data/neighborhoodStats";
 const Footer = lazy(() => import("@/components/Footer"));
@@ -62,6 +63,7 @@ const Communities = () => {
                 Taylor Sherwood
               </Link>.
             </p>
+            <div className="mt-8 flex justify-center"><MovingToAustinGuideCTA /></div>
           </div>
         </div>
       </section>

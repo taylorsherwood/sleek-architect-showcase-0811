@@ -7,6 +7,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const MarketBalanceGauge = lazy(() => import("@/components/market-intel/MarketBalanceGauge"));
 import LandCrossLinks from "@/components/LandCrossLinks";
 import MortgageCalculator from "@/components/MortgageCalculator";
+import MovingToAustinGuideCTA from "@/components/MovingToAustinGuideCTA";
 
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { realEstateAgentSchema, createFAQSchema, createBreadcrumbSchema } from "@/components/SchemaMarkup";
@@ -299,6 +300,7 @@ const Buy = () => {
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Eanes ISD, serving West Lake Hills, Barton Creek, and Rollingwood, is consistently ranked among the top school districts in Texas.</span></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1.5 shrink-0">•</span><span>Austin's tech economy (Apple, Tesla, Google, Meta, Oracle) drives sustained luxury housing demand and long-term appreciation.</span></li>
             </ul>
+            <div className="mt-8"><MovingToAustinGuideCTA /></div>
           </div>
         </div>
       </section>

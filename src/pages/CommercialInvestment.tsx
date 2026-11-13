@@ -7,6 +7,7 @@ import heroArchitecture from "@/assets/hero-architecture.jpg";
 
 import killeenPortfolio from "@/assets/commercial-killeen-portfolio.jpg";
 import s11thStreet from "@/assets/commercial-s-11th-street.webp";
+import evCommercialLogo from "@/assets/ev-commercial-logo.png.asset.json";
 
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
@@ -421,6 +422,12 @@ const CommercialInvestment = () => {
                 >
                   Share Your Investment Criteria
                 </Link>
+                <img
+                  src={evCommercialLogo.url}
+                  alt="Engel & Völkers Commercial"
+                  loading="lazy"
+                  className="mt-8 w-[200px] max-w-full h-auto"
+                />
               </div>
               <div className="md:col-span-7">
                 <p className="cm-kicker mb-6" style={{ color: "#A68A5B" }}>Asset Classes Underwritten</p>

@@ -1472,3 +1472,39 @@ body.hcs-immersive nav.fixed {
   opacity: 1 !important;
 }
 
+
+/* Homepage editorial treatment. Other routes retain their existing navigation. */
+.home-editorial-hero {
+  height: min(860px, calc(100svh - 48px));
+  min-height: 650px;
+}
+.home-editorial-shade { background: hsl(var(--primary) / 0.48); }
+.home-editorial-hero p,
+.home-editorial-hero h1,
+.home-editorial-hero a,
+.home-editorial-hero button { letter-spacing: 0; }
+.home-advisory-button {
+  background: transparent;
+  border: 1px solid #b9a06c;
+  color: #b9a06c;
+}
+.home-advisory-button:hover { background: #b9a06c; color: hsl(var(--primary-foreground)); }
+.home-private-button { background: transparent; border-color: hsl(var(--primary-foreground)); color: hsl(var(--primary-foreground)); }
+.home-private-button:hover { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.home-shortcut { gap: 12px; text-decoration: none; }
+.home-community-shade { background: linear-gradient(to top, hsl(var(--primary) / 0.82), hsl(var(--primary) / 0) 65%); }
+.home-editorial-nav .nav-surface { transition: background 300ms ease; }
+@media (min-width: 1280px) {
+  .home-editorial-nav:not(.is-scrolled) { border-bottom-color: transparent !important; backdrop-filter: none !important; }
+  .home-editorial-nav:not(.is-scrolled) .nav-surface { background: transparent !important; }
+  .home-editorial-nav:not(.is-scrolled) .group.cursor-pointer { color: hsl(var(--primary-foreground)) !important; }
+  .home-editorial-nav:not(.is-scrolled) .group.cursor-pointer:hover { color: #b9a06c !important; }
+  .home-editorial-nav .group.cursor-pointer { font-size: 10px !important; text-transform: uppercase !important; letter-spacing: 0 !important; }
+}
+@media (max-width: 767px) {
+  .home-editorial-hero { min-height: 680px; height: calc(100svh - 24px); }
+  .home-shortcut { flex-direction: column; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-community-tile img, .home-editorial-nav .nav-surface { transition: none; }
+}

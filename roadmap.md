@@ -15,3 +15,7 @@
 - [x] Consolidate the brokerage logo band without presentation changes.
 - [x] Split homepage below-fold sections while preserving content and loading behavior.
 - [x] Verify page content, metadata, links, schema, phone/desktop appearance, and existing tests.
+
+# Homepage reference adaptation
+- [x] Adapt the opening layout, homepage navigation, neighborhood presentation, and section spacing while preserving branding and search.
+- [x] Verify desktop/mobile rendering, advisory booking, and community navigation.

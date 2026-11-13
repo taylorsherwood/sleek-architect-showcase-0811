@@ -26,7 +26,15 @@ interface NavLink {
 
 const DESKTOP_BP = "min-[1280px]";
 
-const Navigation = () => {
+const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
+  const [pastHero, setPastHero] = useState(false);
+  useEffect(() => {
+    if (!editorialHome) return;
+    const update = () => setPastHero(window.scrollY > 80);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, [editorialHome]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const closeTimer = useRef<number | null>(null);
@@ -118,7 +126,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 h-32 md:h-28 lg:h-[6.5rem]"
+      className={`fixed top-0 left-0 right-0 z-50 h-32 md:h-28 lg:h-[6.5rem] ${editorialHome ? `home-editorial-nav ${pastHero ? "is-scrolled" : ""}` : ""}`}
       style={{
         overflow: "visible",
         borderBottom: "1px solid rgba(12, 15, 36, 0.06)",
@@ -126,7 +134,7 @@ const Navigation = () => {
         backdropFilter: "blur(6px)",
       }}
     >
-      <div className="absolute inset-0 pointer-events-none" style={{ background: "#FCFBF9" }} />
+      <div className="nav-surface absolute inset-0 pointer-events-none" style={{ background: "#FCFBF9" }} />
 
       <div
         className={`relative w-full h-full flex items-center px-4 md:px-6 min-[1280px]:px-5 justify-center min-[1280px]:justify-between pb-3 min-[1280px]:pb-0 min-[1280px]:max-w-[1288px] min-[1280px]:mx-auto`}

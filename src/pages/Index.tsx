@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useState, useRef, useEffect } from "react";
 const BookingModal = lazy(() => import("@/components/BookingModal"));
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, {
   localBusinessSchema,
@@ -26,7 +27,6 @@ const HomeBelowFold = lazy(importHomeBelowFold);
    SECTION 1, HERO
    ───────────────────────────────────────────── */
 
-const FALLBACK_TIMEOUT = 4000;
 const RETRY_DELAY = 800;
 
 
@@ -42,15 +42,12 @@ const INITIAL_IS_MOBILE = getIsMobile();
 const INITIAL_SKIP_VIDEO = INITIAL_IS_MOBILE || (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
 const Hero = () => {
-  const [videoReady, setVideoReady] = useState(false);
   // After hydration, re-evaluate on client to enable video on desktop
-  const [isMobileHero, setIsMobileHero] = useState(INITIAL_IS_MOBILE);
   const [skipVideo, setSkipVideo] = useState(INITIAL_SKIP_VIDEO);
 
   useEffect(() => {
     const mobile = window.matchMedia("(max-width: 767px)").matches;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setIsMobileHero(mobile);
     setSkipVideo(mobile || reducedMotion);
 
     // Warm the below-fold chunk during idle so animations are ready by the time
@@ -65,8 +62,6 @@ const Hero = () => {
   }, []);
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  const posterRef = useRef<HTMLImageElement>(null);
-  const [heroVisible, setHeroVisible] = useState(true);
   const sectionRef = useRef<HTMLElement>(null);
   const [bookingOpen, setBookingOpen] = useState(false);
 
@@ -81,11 +76,11 @@ const Hero = () => {
 
     const attemptPlay = () => {
       video.play()
-        .then(() => setVideoReady(true))
+        .then(() => {})
         .catch(() => {
           setTimeout(() => {
             video.muted = true;
-            video.play()?.then(() => setVideoReady(true)).catch(() => {});
+            video.play()?.catch(() => {});
           }, RETRY_DELAY);
         });
     };
@@ -97,173 +92,55 @@ const Hero = () => {
     }
   }, []);
 
-  // Re-trigger text animation on visibility
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setHeroVisible(entry.isIntersecting),
-      { threshold: 0.4 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  const anim = (delay: string) => ({
-    opacity: heroVisible ? 1 : 0,
-    transform: heroVisible ? "translateY(0)" : "translateY(10px)",
-    transition: `opacity 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}, transform 0.9s cubic-bezier(0.16,1,0.3,1) ${delay}`,
-  });
-
   return (
     <>
-    <section ref={sectionRef} id="hero-section" className="relative min-h-[640px] md:min-h-[720px] lg:h-[820px] xl:h-[860px] 2xl:h-[880px] flex flex-col justify-end overflow-hidden bg-primary">
-      {/* Poster images, BOTH rendered with CSS media queries so the correct one paints
-          instantly regardless of SSR assumptions (no JS-driven swap on hydration). */}
+    <section ref={sectionRef} id="hero-section" className="home-editorial-hero relative overflow-hidden bg-primary">
       <img
         src="/images/hero-mobile-austin-v2.webp"
         alt="Austin Texas skyline"
-        className="hero-poster-mobile absolute inset-0 w-full h-full object-cover md:hidden"
-        style={{ zIndex: 0 }}
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
-        width={780}
-        height={1385}
+        className="absolute inset-0 w-full h-full object-cover md:hidden"
+        loading="eager" fetchPriority="high" decoding="async" width={780} height={1385}
       />
-      {/* Desktop: video paints directly with no static poster placeholder.
-          Always rendered (hidden on mobile via CSS) so it exists in prerendered HTML
-          and starts downloading immediately on initial load. */}
-      <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none hidden md:block" style={{ zIndex: 1 }}>
-        <video ref={videoRef} autoPlay muted loop playsInline preload="auto"
-          className="hero-bg-video"
-          tabIndex={-1}
-          width={1920} height={1080}
-        >
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none select-none hidden md:block">
+        <video ref={videoRef} autoPlay muted loop playsInline preload="auto" className="hero-bg-video" tabIndex={-1} width={1920} height={1080}>
           <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
       </div>
-
-      {/* Left-to-right gradient overlay for text readability */}
-      {/* Mobile: stronger overlay for text readability */}
-      <div className="absolute inset-0 md:hidden" style={{ zIndex: 1, background: 'linear-gradient(to bottom, rgba(10,14,25,0.35) 0%, rgba(10,14,25,0.45) 45%, rgba(10,14,25,0.70) 100%)' }} />
-      {/* Desktop: heavier gradient covering left side, fading through center */}
-      <div className="absolute inset-0 hidden md:block" style={{
-        zIndex: 1,
-        background: `linear-gradient(to right, rgba(10,14,25,0.55) 0%, rgba(10,14,25,0.40) 30%, rgba(10,14,25,0.25) 60%, rgba(10,14,25,0.10) 100%)`
-      }} />
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pb-40 md:pb-48 lg:pb-56 pt-48 md:pt-32 lg:pt-44">
-        <div className="max-w-[780px] md:max-w-[640px] lg:max-w-[820px] relative">
-          {/* Gold line + kicker */}
-          <div style={anim("0s")} className="mb-5 mt-4 md:mt-5 lg:mt-6">
-            
-            <p style={{
-              fontFamily: '"Jost", sans-serif', fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase",
-              color: "hsl(38 45% 72%)",
-              textShadow: "0 1px 6px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5)"
-            }}>
-              STRATEGIC AUSTIN REAL ESTATE ADVISORY
-            </p>
-          </div>
-
-          <h1 className="font-display mb-7 md:mb-8 lg:mb-9 text-[29px] md:text-[clamp(34px,4.4vw,58px)] lg:text-[clamp(38px,4.4vw,58px)]" style={{
-            ...anim("0.15s"), fontWeight: 400, lineHeight: 1.08, letterSpacing: "0.012em",
-            color: "rgba(252,250,246,1)",
-            textShadow: "0 2px 14px rgba(0,0,0,0.55), 0 6px 30px rgba(0,0,0,0.35), 0 0 60px rgba(0,0,0,0.18)"
-          }}>
-            Access Austin&apos;s&nbsp;<br />
-            most exceptional<br />
-            real estate
-          </h1>
-
-          <p className="max-w-[620px] mb-12 md:mb-[52px] lg:mb-14 leading-[1.65]" style={{
-            ...anim("0.3s"),
-            fontFamily: '"Jost", sans-serif', fontWeight: 400, fontSize: "15.5px",
-            letterSpacing: "0.04em", color: "rgba(250,248,244,0.95)",
-            textShadow: "0 1px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)",
-            whiteSpace: "pre-wrap"
-          }}>
-            {"Luxury homes, ranch land, redevelopment opportunities, \ncommercial property and private market access."}
+      <div className="home-editorial-shade absolute inset-0" aria-hidden="true" />
+      <div className="relative z-10 flex h-full items-center pb-16 md:pb-24 lg:pb-32 px-6 pt-32">
+        <div className="mx-auto max-w-4xl text-center text-primary-foreground">
+          <p className="text-xs text-gold uppercase mb-5">STRATEGIC AUSTIN REAL ESTATE ADVISORY</p>
+          <h1 className="font-display font-normal text-3xl md:text-5xl lg:text-6xl leading-tight mb-6">Echelon Property Group</h1>
+          <p className="text-base md:text-lg mb-3">Access Austin&apos;s most exceptional real estate</p>
+          <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-8">
+            Luxury homes, ranch land, redevelopment opportunities, commercial property and private market access.
           </p>
-
-          {/* CTA Buttons */}
-          <div className="inline-flex flex-col items-center w-full sm:w-auto" style={anim("0.4s")}>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto items-stretch sm:items-center">
-              <button
-                onClick={() => setBookingOpen(true)}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "hsl(var(--gold))";
-                  e.currentTarget.style.color = "#fff";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(10,14,25,0.55)";
-                  e.currentTarget.style.color = "hsl(var(--gold))";
-                }}
-                className="inline-block text-center px-5 py-3 sm:px-8 sm:py-3.5 cursor-pointer transition-all duration-300 text-[10px] sm:text-[11px]"
-                style={{
-                  fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 500,
-                  border: "1px solid hsl(var(--gold))",
-                  color: "hsl(var(--gold))",
-                  background: "rgba(10,14,25,0.55)",
-                  backdropFilter: "blur(12px)",
-                  WebkitBackdropFilter: "blur(12px)",
-                  textShadow: "0 1px 2px rgba(0,0,0,0.45)",
-                }}
-              >
-                BOOK A 15-MINUTE ADVISORY CALL
-              </button>
-              <Link to="/off-market-real-estate-austin"
-                className="inline-block text-center px-5 py-3 sm:px-6 sm:py-[14px] text-[10px] sm:text-[11px]"
-                style={{
-                  fontFamily: '"Jost", sans-serif', letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 400,
-                  border: "1px solid rgba(255,255,255,0.72)", color: "#fff",
-                  background: "rgba(10,14,25,0.55)",
-                  backdropFilter: "blur(12px)",
-                  WebkitBackdropFilter: "blur(12px)",
-                  textShadow: "0 1px 2px rgba(0,0,0,0.45)",
-                  transform: "translateX(0) translateZ(0)", willChange: "transform, background, border-color",
-                  transition: "transform 250ms ease, background 250ms ease, border-color 250ms ease",
-                }}
-                onMouseEnter={e => { e.currentTarget.style.transform = "translateX(3px) translateZ(0)"; e.currentTarget.style.background = "#0C0F24"; e.currentTarget.style.borderColor = "#0C0F24"; e.currentTarget.style.color = "#fff"; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = "translateX(0) translateZ(0)"; e.currentTarget.style.background = "rgba(10,14,25,0.55)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.72)"; e.currentTarget.style.color = "#fff"; }}
-              >
-                ACCESS PRIVATE OPPORTUNITIES →
-              </Link>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+            <Button variant="outline" className="home-advisory-button rounded-none h-auto py-3.5 px-5 text-[10px] md:text-xs" onClick={() => setBookingOpen(true)}>
+              BOOK A 15-MINUTE ADVISORY CALL
+            </Button>
+            <Button asChild variant="outline" className="home-private-button rounded-none h-auto py-3.5 px-5 text-[10px] md:text-xs">
+              <Link to="/off-market-real-estate-austin">ACCESS PRIVATE OPPORTUNITIES →</Link>
+            </Button>
           </div>
-
         </div>
       </div>
-
-      {/* Scroll indicator, animated bar travels down a gold track */}
-      <button
-        onClick={() => {
-          window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-        }}
-        aria-label="Scroll to discover Austin"
-        className="hero-scroll-cue absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 group cursor-pointer"
-        style={{ zIndex: 3 }}
-      >
-        <span
-          className="group-hover:text-white transition-colors duration-500"
-          style={{
-            fontFamily: '"Cinzel", serif',
-            fontSize: "0.85rem",
-            letterSpacing: "0.5em",
-            textTransform: "uppercase",
-            fontWeight: 600,
-            color: "hsl(var(--warm-cream))",
-            textShadow: "0 1px 6px rgba(0,0,0,0.6)",
-          }}
-        >
-          Discover Austin
-        </span>
-        <span className="hero-scroll-track relative block w-[1px] h-16 md:h-20 overflow-hidden bg-[hsl(var(--gold))]/20">
-          <span className="hero-scroll-bar absolute top-0 left-0 w-full h-1/2 bg-[hsl(var(--gold))]" />
-        </span>
-      </button>
+      <div className="home-editorial-shortcuts absolute z-10 bottom-8 md:bottom-10 inset-x-0 px-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-3 gap-4 md:gap-10">
+          {[
+            { number: "01", label: "Featured Properties", href: "/search" },
+            { number: "02", label: "Private Access", href: "/off-market-real-estate-austin" },
+            { number: "03", label: "Explore Austin", href: "/communities" },
+          ].map((item) => (
+            <Button asChild variant="link" key={item.number} className="home-shortcut h-auto p-0 justify-center whitespace-normal text-primary-foreground hover:text-gold">
+              <Link to={item.href}>
+                <span className="text-gold text-[10px]">{item.number}</span>
+                <span className="font-display text-xs md:text-base font-normal">{item.label}</span>
+              </Link>
+            </Button>
+          ))}
+        </div>
+      </div>
     </section>
     {bookingOpen ? (
       <Suspense fallback={null}>
@@ -355,11 +232,11 @@ const Index = () => (
     <SchemaMarkup schema={localBusinessSchema} />
     <SchemaMarkup schema={createBreadcrumbSchema([{ name: "Home", url: "https://www.echelonpropertygroup.com/" }])} />
 
-    <Navigation />
+    <Navigation editorialHome />
     <Hero />
-    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#FAFAF8" }} />
+    <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
     <SearchSection />
-    <div className="h-16 md:h-24" aria-hidden="true" style={{ background: "#F5F3EF" }} />
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     <Suspense fallback={<div className="min-h-[400px] bg-background" />}>
       <HomeBelowFold />

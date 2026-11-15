@@ -1,3 +1,6 @@
+# Seller hero updates
+- [x] Replay seller hero counters on viewport entry from either direction while preserving final accessible figures; link the Homes.com logo to the supplied presentation and verify both changes.
+
 # Gated relocation flipbook
 - [x] Refine the guide as an editorial opening spread; show contact capture on attempted page turn and preserve private reader access.
 - [x] Add contextual guide invitations on Buy, Moving to Austin, and Communities; verify the form-to-reader flow.

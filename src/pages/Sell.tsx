@@ -166,17 +166,39 @@ const stats = [
   { target: 155, prefix: "$", suffix: "M+", label: "Career Sales Volume", countDown: false, from: 75 },
 ];
 
-function useCountUp(target: number, _duration = 3500, _from = 0) {
+function useCountUp(target: number, duration = 3500, from = 0) {
+  const [count, setCount] = useState(target);
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.3 });
+    let frame = 0;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const observer = new IntersectionObserver(([entry]) => {
+      cancelAnimationFrame(frame);
+      setInView(entry.isIntersecting);
+      if (!entry.isIntersecting || reducedMotion.matches) {
+        setCount(target);
+        return;
+      }
+      setCount(from);
+      const start = performance.now();
+      const animate = (now: number) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setCount(Math.round(from + (target - from) * eased));
+        if (progress < 1) frame = requestAnimationFrame(animate);
+      };
+      frame = requestAnimationFrame(animate);
+    }, { threshold: 0.3 });
     observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-  return { count: target, ref, inView };
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+    };
+  }, [target, duration, from]);
+  return { count, ref, inView };
 };
 
 function AnimatedStat({ target, suffix = "", prefix = "", label, from = 0 }: {
@@ -189,11 +211,12 @@ function AnimatedStat({ target, suffix = "", prefix = "", label, from = 0 }: {
         fontFamily: '"Cinzel", serif', fontWeight: 400,
         fontSize: "clamp(48px, 6vw, 80px)", lineHeight: 1, color: "#F5F3EF",
       }}>
-        {prefix}{count}
+        <span className="sr-only">{prefix}{target}{suffix}</span>
+        <span aria-hidden="true" className="tabular-nums">{prefix}{count}</span>
         <span style={{
           fontFamily: '"Cinzel", serif', fontWeight: 400,
           fontSize: "0.6em", color: "hsl(38 39% 61%)", verticalAlign: "super",
-        }}>
+        }} aria-hidden="true">
           {suffix}
         </span>
       </p>
@@ -692,6 +715,13 @@ const Sell = () => {
             <ScrollReveal delay={120}>
               <div className="flex flex-col items-center text-center">
                 <div className="h-16 md:h-20 flex items-center justify-center">
+                  <a
+                    href="https://www.homes.com/report/listing-presentation/eg8309q08lmyk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Homes.com listing presentation"
+                    className="inline-flex items-center justify-center transition-opacity duration-500 hover:opacity-80"
+                  >
                   <img
                     src={homesComLogo}
                     alt="Homes.com Premier Agent"
@@ -699,6 +729,7 @@ const Sell = () => {
                     loading="lazy"
                     decoding="async"
                   />
+                  </a>
                 </div>
                 <p className="mt-8 max-w-[360px] text-foreground/70 text-[13.5px] leading-[1.8] tracking-[0.01em]">
                   Premier placement and enhanced exposure across one of the nation's fastest-growing luxury home search platforms.

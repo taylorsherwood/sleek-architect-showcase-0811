@@ -39,6 +39,7 @@ img {
 
 /* ── Constrain embedded widgets (RealScout, EmbedSocial, iframes) ── */
 realscout-your-listings,
+realscout-office-listings,
 iframe {
   max-width: 100% !important;
   overflow: hidden;

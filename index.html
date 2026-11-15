@@ -184,6 +184,11 @@
         width: 100%;
       }
 
+      realscout-office-listings {
+        --rs-listing-divider-color: #b9a06c;
+        width: 100%;
+      }
+
       realscout-advanced-search::part(search-button),
       realscout-advanced-search button[type="submit"],
       realscout-advanced-search button {
@@ -275,7 +280,7 @@
           document.body.appendChild(s);
         }
         function observe(){
-          var els=document.querySelectorAll('realscout-simple-search,realscout-advanced-search,realscout-your-listings');
+          var els=document.querySelectorAll('realscout-simple-search,realscout-advanced-search,realscout-your-listings,realscout-office-listings');
           if(!els.length){setTimeout(observe,2000);return;}
           if('IntersectionObserver' in window){
             var io=new IntersectionObserver(function(entries){

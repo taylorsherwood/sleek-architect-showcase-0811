@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { chunkRetry } from "@/lib/chunkRetry";
 import FeaturedProperties from "@/components/FeaturedProperties";
+import HomeOfficeListings from "@/components/HomeOfficeListings";
 import LandRanchHomeIntro from "@/components/LandRanchHomeIntro";
 import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.json";
 import AdvisorSection from "@/components/HomeAdvisorSection";
@@ -61,6 +62,7 @@ const HomeBelowFold = () => (
     </Suspense>
 
     <FeaturedProperties />
+    <HomeOfficeListings />
     <SellerTestimonials />
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
     <LandRanchHomeIntro />

@@ -16,7 +16,7 @@ const SellerTestimonials = () => {
       <div className="container mx-auto px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-12 lg:items-center">
           <div className="flex flex-col items-start">
-            <p className="text-xs uppercase text-gold mb-5">Client experiences</p>
+            <p className="text-xs uppercase text-gold mb-5 border-b border-gold pb-2">Client experiences</p>
             <h2 id="seller-experiences-heading" className="font-display font-normal text-architectural text-3xl md:text-4xl leading-relaxed max-w-sm">
               Clients first.<br />Proven results.
             </h2>
@@ -32,7 +32,7 @@ const SellerTestimonials = () => {
               </Button>
             </div>
             <Button asChild variant="link" className="mt-7 h-auto rounded-none p-0 font-normal text-foreground hover:text-gold">
-              <Link to="/reviews" className="border-b border-gold pb-1">Read more reviews <ArrowRight aria-hidden="true" /></Link>
+              <Link to="/reviews">Read more reviews <ArrowRight aria-hidden="true" /></Link>
             </Button>
           </div>
 

@@ -1,5 +1,5 @@
 # Project architecture
-- Scope the editorial review carousel to Sell and reuse the shared testimonial data; other pages retain their existing presentation and all review text remains in the DOM.
+- Scope the text-only overlapping review deck to Sell and reuse the shared testimonial data; other pages retain their existing presentation and all review text remains in the DOM.
 - Expose only two rasterized opening pages for the relocation preview; attempted page turns open the existing lead gate before the private PDF reader loads.
 - Use the shared MovingToAustinGuideCTA for contextual relocation invitations; link to the existing gated guide page so every entry point shares validation and reader access.
 - Keep relocation guide PDFs in private Cloud storage and issue short-lived access only after successful server-side lead capture; render original pages with PDF.js and react-pageflip without exposing a public PDF asset.

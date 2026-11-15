@@ -1574,3 +1574,25 @@ body.hcs-immersive nav.fixed {
 }
 .home-deck-arrow:hover { background: #b9a06c; color: hsl(var(--primary-foreground)); }
 @media (prefers-reduced-motion: reduce) { .home-deck-card, .home-deck-copy { transition: none; } }
+
+/* Text-only counterpart to the homepage community deck. */
+.seller-review-card {
+  transform-origin: left center;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1), opacity 700ms ease;
+  box-shadow: var(--shadow-architectural);
+}
+.seller-review-card[data-pos="0"] { transform: translateX(0) rotate(-2deg); z-index: 40; }
+.seller-review-card[data-pos="1"] { transform: translateX(14%) scale(0.94) rotate(2deg); z-index: 30; background: hsl(var(--background)); }
+.seller-review-card[data-pos="2"] { transform: translateX(25%) scale(0.88) rotate(5deg); z-index: 20; }
+.seller-review-card[data-pos="3"] { transform: translateX(34%) scale(0.82) rotate(8deg); z-index: 10; background: hsl(var(--background)); }
+.seller-review-card[data-pos="hidden"] { transform: translateX(-5%) scale(0.95); opacity: 0; z-index: 0; pointer-events: none; }
+.seller-review-copy { transition: opacity 500ms ease; }
+.seller-review-card:not([data-pos="0"]) .seller-review-copy { opacity: 0; }
+@media (max-width: 639px) {
+  .seller-review-card[data-pos="1"] { transform: translateX(8%) scale(0.94) rotate(2deg); }
+  .seller-review-card[data-pos="2"] { transform: translateX(14%) scale(0.88) rotate(4deg); }
+  .seller-review-card[data-pos="3"] { transform: translateX(20%) scale(0.82) rotate(6deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .seller-review-card, .seller-review-copy { transition: none; }
+}

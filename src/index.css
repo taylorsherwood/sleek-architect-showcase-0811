@@ -1590,10 +1590,12 @@ body.hcs-immersive nav.fixed {
 .seller-review-copy { transition: opacity 500ms ease; }
 .seller-review-card:not([data-pos="0"]) .seller-review-copy { opacity: 0; }
 @media (max-width: 639px) {
-  .seller-review-card { align-self: start; }
-  .seller-review-card[data-pos="1"] { transform: translateX(8%) scale(0.94); }
-  .seller-review-card[data-pos="2"] { transform: translateX(14%) scale(0.88); }
-  .seller-review-card[data-pos="3"] { transform: translateX(20%) scale(0.82); }
+  .seller-review-deck { display: block; }
+  .seller-review-card { position: absolute; top: 8px; height: calc(100% - 16px); overflow: hidden; }
+  .seller-review-card[data-pos="0"] { position: relative; top: 0; height: auto; }
+  .seller-review-card[data-pos="1"] { transform: translateX(2%) scale(0.98); }
+  .seller-review-card[data-pos="2"] { transform: translateX(4%) scale(0.96); }
+  .seller-review-card[data-pos="3"] { transform: translateX(6%) scale(0.94); }
   .seller-review-quote:not(.is-expanded) > p {
     display: -webkit-box;
     -webkit-box-orient: vertical;

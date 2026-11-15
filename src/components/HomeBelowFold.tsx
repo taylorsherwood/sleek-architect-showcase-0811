@@ -67,13 +67,15 @@ const HomeBelowFold = () => (
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
+    <CommunitiesSection />
+
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
+
     <LeadCapture />
 
     <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: `url('${parallaxHillCountryAsset.url}')`, contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
-    <CommunitiesSection />
 
     <NoscriptFallback />
 

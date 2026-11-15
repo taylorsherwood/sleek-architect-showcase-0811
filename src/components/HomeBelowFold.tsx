@@ -9,6 +9,7 @@ import CommunitiesSection from "@/components/HomeCommunitiesSection";
 import LeadCapture from "@/components/HomeLeadCapture";
 import FinalCTA, { HomeExploreLinks } from "@/components/HomeFinalCTA";
 import { InsightsSection, EditorialInsights } from "@/components/HomeInsightsSections";
+import SellerTestimonials from "@/components/SellerTestimonials";
 
 const ScrollingCredibilityStrip = lazy(chunkRetry(() => import("@/components/ScrollingCredibilityStrip")));
 const ExpertiseSection = lazy(chunkRetry(() => import("@/components/ExpertiseSection")));
@@ -75,9 +76,8 @@ const HomeBelowFold = () => (
     <NoscriptFallback />
 
     <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
-
-
+    <SellerTestimonials />
+    <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
       <InsightsSection />

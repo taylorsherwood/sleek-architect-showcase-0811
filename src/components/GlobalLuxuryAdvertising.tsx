@@ -109,7 +109,7 @@ const marketingCards: MarketingCard[] = [
     stats: [
       { value: "50", label: "Austin Neighborhood Guides" },
       { value: "145+", label: "Market Intelligence Reports" },
-      { value: "11+", label: "Years in Austin" },
+      { value: "21+", label: "Years in Austin" },
       { value: "200+", label: "Transactions Closed" }
     ],
     source: "Sources: Echelon Property Group market library and transaction record, 2026."

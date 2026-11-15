@@ -1590,9 +1590,17 @@ body.hcs-immersive nav.fixed {
 .seller-review-copy { transition: opacity 500ms ease; }
 .seller-review-card:not([data-pos="0"]) .seller-review-copy { opacity: 0; }
 @media (max-width: 639px) {
+  .seller-review-card { align-self: start; }
   .seller-review-card[data-pos="1"] { transform: translateX(8%) scale(0.94); }
   .seller-review-card[data-pos="2"] { transform: translateX(14%) scale(0.88); }
   .seller-review-card[data-pos="3"] { transform: translateX(20%) scale(0.82); }
+  .seller-review-quote:not(.is-expanded) > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    overflow: hidden;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .seller-review-card, .seller-review-copy { transition: none; }

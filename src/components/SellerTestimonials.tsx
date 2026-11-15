@@ -6,9 +6,22 @@ import { testimonials } from "@/components/Testimonials";
 
 const SellerTestimonials = () => {
   const [active, setActive] = useState(0);
+  const [expanded, setExpanded] = useState(false);
   const touchStart = useRef<number | null>(null);
   const move = (direction: number) => {
+    setExpanded(false);
     setActive((current) => (current + direction + testimonials.length) % testimonials.length);
+  };
+  const jump = (index: number) => {
+    setExpanded(false);
+    setActive(index);
+  };
+  const cardRef = useRef<HTMLElement | null>(null);
+  const toggleExpanded = () => {
+    setExpanded((value) => !value);
+    requestAnimationFrame(() => {
+      cardRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
   };
 
   return (
@@ -63,8 +76,9 @@ const SellerTestimonials = () => {
                 return (
                 <figure
                   key={review.name}
+                  ref={front ? cardRef : undefined}
                   data-pos={position > 3 ? "hidden" : position}
-                  className="seller-review-card col-start-1 row-start-1 m-0 relative w-[86%] sm:w-[76%] min-h-[580px] p-6 sm:p-8 md:p-10 bg-background text-foreground flex flex-col justify-between"
+                  className={`seller-review-card col-start-1 row-start-1 m-0 relative w-[86%] sm:w-[76%] min-h-[420px] sm:min-h-[580px] p-6 sm:p-8 md:p-10 bg-background text-foreground flex flex-col justify-between${expanded && front ? " is-expanded" : ""}`}
                   aria-hidden={!front}
                   role="group"
                   aria-roledescription="slide"
@@ -75,12 +89,22 @@ const SellerTestimonials = () => {
                     <span className="text-gold font-display text-sm">{String(index + 1).padStart(2, "0")}</span>
                   </div>
                   {!front && position <= 3 && (
-                    <Button variant="ghost" className="absolute inset-0 w-full h-full rounded-none p-0 hover:bg-transparent" tabIndex={-1} aria-label={`Show review by ${review.name}`} onClick={() => setActive(index)} />
+                    <Button variant="ghost" className="absolute inset-0 w-full h-full rounded-none p-0 hover:bg-transparent" tabIndex={-1} aria-label={`Show review by ${review.name}`} onClick={() => jump(index)} />
                   )}
-                  <blockquote className="seller-review-copy font-sans font-light text-foreground text-lg md:text-2xl leading-[1.85] flex-1">
+                  <blockquote className={`seller-review-copy seller-review-quote font-sans font-light text-foreground text-lg md:text-2xl leading-[1.85] flex-1${expanded && front ? " is-expanded" : ""}`}>
                     <p>{review.quote}</p>
                   </blockquote>
-                  <figcaption className="seller-review-copy pt-10">
+                  {front && review.quote.length > 240 && (
+                    <button
+                      type="button"
+                      onClick={toggleExpanded}
+                      aria-expanded={expanded}
+                      className="seller-review-expand sm:hidden mt-5 mb-1 self-start border-b border-gold pb-1 font-display text-sm text-gold"
+                    >
+                      {expanded ? "Show less" : "Read full review"}
+                    </button>
+                  )}
+                  <figcaption className="seller-review-copy pt-6 sm:pt-10">
                     <span className="block w-10 h-px bg-gold mb-5" aria-hidden="true" />
                     <p className="font-display text-lg md:text-2xl text-foreground">{review.name}</p>
                     <p className="mt-2 text-xs uppercase text-gold">{review.type}</p>

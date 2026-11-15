@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Quote } from "lucide-react";
 import echelonWatermark from "@/assets/echelon-watermark.webp";
 
-const testimonials = [
+export const testimonials = [
   {
     quote:
       "After a failed listing experience I was hesitant. Taylor showed me exactly what went wrong before and what he would do differently. That honesty earned my trust, and the sale.",

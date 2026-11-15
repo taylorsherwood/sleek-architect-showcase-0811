@@ -11,7 +11,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 
-const Testimonials = lazy(() => import("@/components/Testimonials"));
+const Testimonials = lazy(() => import("@/components/SellerTestimonials"));
 const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
 const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
@@ -877,17 +877,7 @@ const Sell = () => {
         <Testimonials />
       </Suspense>
 
-      {/* Read more reviews link */}
-      <section className="bg-background pt-4 pb-20 md:pb-24">
-        <div className="container mx-auto px-6 text-center">
-          <Link
-            to="/reviews"
-            className="inline-block font-display text-base md:text-lg text-architectural border-b border-gold pb-1 hover:text-gold transition-colors duration-300"
-          >
-            Read More Reviews →
-          </Link>
-        </div>
-      </section>
+      <div className="h-12 md:h-20 bg-secondary" aria-hidden="true" />
 
       {/* ── Full-Spectrum Real Estate Advisory ── */}
       <section className="py-20 bg-background">

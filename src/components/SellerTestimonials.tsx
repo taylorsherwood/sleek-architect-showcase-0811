@@ -64,7 +64,7 @@ const SellerTestimonials = () => {
                 <figure
                   key={review.name}
                   data-pos={position > 3 ? "hidden" : position}
-                  className="seller-review-card col-start-1 row-start-1 m-0 relative w-[86%] sm:w-[76%] min-h-[580px] p-6 sm:p-8 md:p-10 bg-primary text-primary-foreground flex flex-col justify-between"
+                  className="seller-review-card col-start-1 row-start-1 m-0 relative w-[86%] sm:w-[76%] min-h-[580px] p-6 sm:p-8 md:p-10 bg-background text-foreground flex flex-col justify-between"
                   aria-hidden={!front}
                   role="group"
                   aria-roledescription="slide"
@@ -77,14 +77,14 @@ const SellerTestimonials = () => {
                   {!front && position <= 3 && (
                     <Button variant="ghost" className="absolute inset-0 w-full h-full rounded-none p-0 hover:bg-transparent" tabIndex={-1} aria-label={`Show review by ${review.name}`} onClick={() => setActive(index)} />
                   )}
-                  <blockquote className="seller-review-copy font-sans font-light text-primary-foreground text-base md:text-lg leading-[1.85] flex-1">
+                  <blockquote className="seller-review-copy font-sans font-light text-foreground text-base md:text-lg leading-[1.85] flex-1">
                     <p>{review.quote}</p>
                   </blockquote>
                   <figcaption className="seller-review-copy pt-10">
                     <span className="block w-10 h-px bg-gold mb-5" aria-hidden="true" />
-                    <p className="font-display text-lg md:text-2xl text-primary-foreground">{review.name}</p>
+                    <p className="font-display text-lg md:text-2xl text-foreground">{review.name}</p>
                     <p className="mt-2 text-xs uppercase text-gold">{review.type}</p>
-                    <p className="mt-2 text-sm text-primary-foreground font-light">{review.context}</p>
+                    <p className="mt-2 text-sm text-muted-foreground font-light">{review.context}</p>
                   </figcaption>
                 </figure>
               ); })}

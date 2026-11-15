@@ -79,12 +79,12 @@ const HomeBelowFold = () => (
 
     <NoscriptFallback />
 
-    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
-
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 800px" } as React.CSSProperties}>
       <InsightsSection />
     </div>
     <div className="h-12 md:h-20 bg-background" aria-hidden="true" />
+    <div className="parallax-break hidden md:block" style={{ backgroundImage: "url('/images/parallax-barton-springs.webp')", contentVisibility: "auto", containIntrinsicSize: "0 400px" } as React.CSSProperties} aria-hidden="true" />
+
     <div style={{ contentVisibility: "auto", containIntrinsicSize: "0 1200px" } as React.CSSProperties}>
       <EditorialInsights />
     </div>

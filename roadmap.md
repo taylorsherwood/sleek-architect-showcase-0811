@@ -1,3 +1,6 @@
+# Homepage testimonials
+- [x] Place the shared client experiences block directly above Land, Ranch & Development and verify review navigation.
+
 # Seller hero updates
 - [x] Replay seller hero counters on viewport entry from either direction while preserving final accessible figures; link the Homes.com logo to the supplied presentation and verify both changes.
 

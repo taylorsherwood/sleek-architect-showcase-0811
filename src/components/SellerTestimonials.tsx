@@ -20,16 +20,16 @@ const SellerTestimonials = () => {
             <h2 id="seller-experiences-heading" className="font-display font-normal text-architectural text-3xl md:text-4xl leading-relaxed max-w-sm">
               Clients first.<br />Proven results.
             </h2>
-            <div className="mt-8 flex items-center lg:items-start lg:flex-col gap-5">
-              <Button variant="ghost" size="icon" className="h-12 w-12 rounded-none border border-gold text-foreground hover:bg-gold hover:text-primary-foreground" aria-label="Next client review" title="Next client review" onClick={() => move(1)}>
-                <ArrowRight aria-hidden="true" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-12 w-12 rounded-none border border-gold text-foreground hover:bg-gold hover:text-primary-foreground" aria-label="Previous client review" title="Previous client review" onClick={() => move(-1)}>
-                <ArrowLeft aria-hidden="true" />
+            <div className="mt-8 flex items-center gap-4">
+              <Button variant="ghost" size="icon" className="h-12 w-12 rounded-none text-foreground hover:bg-transparent hover:text-gold [&_svg]:!size-7" aria-label="Previous client review" title="Previous client review" onClick={() => move(-1)}>
+                <ArrowLeft strokeWidth={1} aria-hidden="true" />
               </Button>
               <span className="text-sm text-muted-foreground tabular-nums" aria-live="polite" aria-atomic="true">
                 {String(active + 1).padStart(2, "0")} / {String(testimonials.length).padStart(2, "0")}
               </span>
+              <Button variant="ghost" size="icon" className="h-12 w-12 rounded-none text-foreground hover:bg-transparent hover:text-gold [&_svg]:!size-7" aria-label="Next client review" title="Next client review" onClick={() => move(1)}>
+                <ArrowRight strokeWidth={1} aria-hidden="true" />
+              </Button>
             </div>
             <Button asChild variant="link" className="mt-7 h-auto rounded-none p-0 font-normal text-foreground hover:text-gold">
               <Link to="/reviews" className="border-b border-gold pb-1">Read more reviews <ArrowRight aria-hidden="true" /></Link>
@@ -77,7 +77,7 @@ const SellerTestimonials = () => {
                   {!front && position <= 3 && (
                     <Button variant="ghost" className="absolute inset-0 w-full h-full rounded-none p-0 hover:bg-transparent" tabIndex={-1} aria-label={`Show review by ${review.name}`} onClick={() => setActive(index)} />
                   )}
-                  <blockquote className="seller-review-copy font-sans font-light text-foreground text-base md:text-lg leading-[1.85] flex-1">
+                  <blockquote className="seller-review-copy font-sans font-light text-foreground text-lg md:text-2xl leading-[1.85] flex-1">
                     <p>{review.quote}</p>
                   </blockquote>
                   <figcaption className="seller-review-copy pt-10">

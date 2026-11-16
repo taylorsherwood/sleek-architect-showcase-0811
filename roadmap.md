@@ -1,4 +1,5 @@
 # About navigation and brokerage page
+- [x] Reduce the centered brokerage logo size.
 - [x] Make the supplied brokerage lockup background transparent and retain its centered placement.
 - [x] Enrich the brokerage page with official history, network reach, development expertise, and service commitments; attribute current figures to the source.
 - [x] Add Meet the Team and Why Engel & Völkers to About navigation.

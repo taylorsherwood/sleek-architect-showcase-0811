@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import * as Dialog from "@radix-ui/react-dialog";
+import { ArrowUpRight, Menu, Minus, Plus, X } from "lucide-react";
 import evLogoAsset from "@/assets/engel-volkers-villa-logo.webp.asset.json";
 import openingMark from "@/assets/echelon-opening-mark.webp";
 
@@ -113,17 +115,6 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
     textTransform: "none",
     display: "inline-flex",
     alignItems: "center",
-  };
-
-  // Mobile keeps prior uppercase styling
-  const mobileLinkStyle: React.CSSProperties = {
-    fontFamily: '"Jost", sans-serif',
-    fontSize: "10px",
-    letterSpacing: "0.11em",
-    textTransform: "uppercase",
-    fontWeight: 400,
-    whiteSpace: "nowrap",
-    lineHeight: 1,
   };
 
   return (
@@ -247,95 +238,62 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
         </div>
 
         {/* Mobile toggle */}
-        <Button
-          variant="ghost"
-          size="sm"
-          className={`min-[1280px]:hidden absolute right-2 md:right-6`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isMenuOpen}
-        >
-          {isMenuOpen ? "✕" : "☰"}
-        </Button>
+        <Dialog.Root open={isMenuOpen} onOpenChange={(open) => { setIsMenuOpen(open); setOpenDropdown(null); }}>
+          <Dialog.Trigger asChild>
+            <Button variant="ghost" size="icon" className="min-[1280px]:hidden absolute right-2 md:right-6 rounded-none hover:bg-transparent" aria-label="Open menu">
+              <Menu className="!h-6 !w-6" strokeWidth={1} />
+            </Button>
+          </Dialog.Trigger>
+          <Dialog.Portal>
+            <Dialog.Overlay className="editorial-menu-overlay" />
+            <Dialog.Content className="editorial-menu" aria-describedby={undefined}>
+              <div className="editorial-menu-heading">
+                <Dialog.Title className="editorial-menu-brand">Echelon Property Group</Dialog.Title>
+                <Dialog.Close asChild>
+                  <Button variant="ghost" size="icon" className="editorial-menu-close" aria-label="Close menu">
+                    <X className="!h-6 !w-6" strokeWidth={1} />
+                  </Button>
+                </Dialog.Close>
+              </div>
+              <div className="editorial-menu-scroll" data-lenis-prevent>
+                <ul className="editorial-menu-links">
+                  {links.map((link, index) => (
+                    <li key={link.href} className="editorial-menu-row">
+                      <div className="editorial-menu-line">
+                        <span className="editorial-menu-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                        {link.children ? (
+                          <Button variant="ghost" className="editorial-menu-link" aria-expanded={openDropdown === link.href} aria-controls={`menu-section-${index}`} onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}>
+                            <span>{link.label}</span>
+                            {openDropdown === link.href ? <Minus strokeWidth={1} /> : <Plus strokeWidth={1} />}
+                          </Button>
+                        ) : (
+                          <Button variant="ghost" asChild className="editorial-menu-link">
+                            <Link to={link.href} aria-current={isActive(link) ? "page" : undefined} onClick={() => setIsMenuOpen(false)}>{link.label}<ArrowUpRight strokeWidth={1} /></Link>
+                          </Button>
+                        )}
+                      </div>
+                      {link.children && (
+                        <div id={`menu-section-${index}`} className="editorial-menu-subsection" hidden={openDropdown !== link.href}>
+                          {link.children.map(child => (
+                            <Link key={child.href} to={child.href} aria-current={location.pathname === child.href ? "page" : undefined} onClick={() => setIsMenuOpen(false)}>{child.label}<ArrowUpRight size={14} strokeWidth={1} /></Link>
+                          ))}
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+                <div className="editorial-menu-footer">
+                  <span>Austin, Texas</span>
+                  <Button variant="ghost" asChild className="editorial-menu-portal">
+                    <a href="https://portal.echelonpropertygroup.com/login" target="_blank" rel="noopener noreferrer nofollow">Client Portal<ArrowUpRight size={16} strokeWidth={1} /></a>
+                  </Button>
+                </div>
+              </div>
+            </Dialog.Content>
+          </Dialog.Portal>
+        </Dialog.Root>
       </div>
 
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div
-          className={`min-[1280px]:hidden absolute left-0 right-0 top-full z-40 overflow-y-auto`}
-          style={{ backgroundColor: CHARCOAL, minHeight: "calc(100vh - 7rem)", WebkitOverflowScrolling: "touch" }}
-        >
-          <div className="container mx-auto px-6 py-12 space-y-7">
-            {links.map((link) =>
-              link.children ? (
-                <div key={link.href} className="space-y-5">
-                  <button
-                    onClick={() => setOpenDropdown(openDropdown === link.href ? null : link.href)}
-                    className="block transition-colors duration-300 text-white/80 hover:text-gold"
-                    style={mobileLinkStyle}
-                  >
-                    {link.label}
-                    <span className="ml-1.5 text-[7px] opacity-30">
-                      {openDropdown === link.href ? "▲" : "▼"}
-                    </span>
-                  </button>
-                  {openDropdown === link.href && (
-                    <div className="pl-5 space-y-5" style={{ borderLeft: "1px solid hsl(38 39% 61% / 0.3)" }}>
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          to={child.href}
-                          onClick={() => setIsMenuOpen(false)}
-                          className="block text-white/50 hover:text-gold transition-colors duration-300"
-                          style={mobileLinkStyle}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : link.external ? (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  rel="noopener"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block text-white/80 hover:text-gold transition-colors duration-300"
-                  style={mobileLinkStyle}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block text-white/80 hover:text-gold transition-colors duration-300"
-                  style={mobileLinkStyle}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
-            <div className="pt-8" style={{ borderTop: "1px solid hsl(38 39% 61% / 0.2)" }}>
-              <a
-                href="https://portal.echelonpropertygroup.com/login"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-block px-6 py-3 transition-all duration-300"
-                style={{
-                  ...mobileLinkStyle,
-                  border: `1px solid ${BRONZE}`,
-                  color: BRONZE,
-                }}
-              >
-                Client Portal
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </nav>
   );
 };

@@ -1696,7 +1696,8 @@ body.hcs-immersive nav.fixed {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
-  /* The artwork ends abruptly at its right edge, so both ends dissolve. */
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 84%, transparent 99%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 84%, transparent 99%);
+  /* The artwork's line heights step abruptly near its right end, so both ends
+     dissolve before that point. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 76%, transparent 90%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 76%, transparent 90%);
 }

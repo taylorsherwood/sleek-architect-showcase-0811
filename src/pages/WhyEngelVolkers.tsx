@@ -116,7 +116,6 @@ export default function WhyEngelVolkers() {
         <EvWaveBand />
 
         <section className="relative overflow-hidden bg-primary text-primary-foreground py-16 md:py-20">
-          <EvWaveBand variant="navy" className="absolute inset-x-0 bottom-0 z-0" />
           <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10 items-center relative z-10">
             <div><p className="text-gold text-sm mb-5">ECHELON PROPERTY GROUP</p><h2 className="font-display text-3xl md:text-4xl font-normal leading-tight">Global perspective.<br />Austin, understood.</h2></div>
             <div className="max-w-lg"><p className="text-lg font-light leading-relaxed mb-8">Tell us about your property and your priorities. We will help you consider the right next move.</p><Button variant="outline" asChild className="rounded-none border-gold bg-transparent text-primary-foreground hover:bg-background hover:text-foreground"><Link to="/contact">Start a conversation<ArrowUpRight strokeWidth={1} /></Link></Button></div>

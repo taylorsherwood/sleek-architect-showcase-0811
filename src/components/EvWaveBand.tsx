@@ -1,24 +1,16 @@
 import type { CSSProperties } from "react";
-import navyWaves from "@/assets/ev-waves-navy.png.asset.json";
-import ivoryWaves from "@/assets/ev-waves-ivory.png.asset.json";
+import waves from "@/assets/ev-waves-navy.png.asset.json";
 
 type Props = {
-  /** "ivory" for light pages (navy contour lines); "navy" for dark sections (ivory lines). */
-  variant?: "ivory" | "navy";
   className?: string;
 };
 
-const SOURCES: Record<NonNullable<Props["variant"]>, string> = {
-  ivory: navyWaves.url,
-  navy: ivoryWaves.url,
-};
-
 /**
- * Decorative Engel & Völkers wave pattern, pre-tinted to the site palette and
- * faded toward its lower edge so it can sit behind or between sections.
+ * Decorative Engel & Völkers wave pattern, pre-tinted navy with its fade baked
+ * in. For light sections only — it is never placed over dark backgrounds.
  */
-export default function EvWaveBand({ variant = "ivory", className = "" }: Props) {
-  const style: CSSProperties = { backgroundImage: `url("${SOURCES[variant]}")` };
+export default function EvWaveBand({ className = "" }: Props) {
+  const style: CSSProperties = { backgroundImage: `url("${waves.url}")` };
 
   return (
     <div

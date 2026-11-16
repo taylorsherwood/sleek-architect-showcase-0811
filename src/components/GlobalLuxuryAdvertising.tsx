@@ -6,7 +6,7 @@ import heroImg from "@/assets/global-luxury-hero.jpg";
 import digitalVideo from "@/assets/marketing-digital.mp4.asset.json";
 import digitalPoster from "@/assets/marketing-digital-poster.webp.asset.json";
 import printImage from "@/assets/gg-magazine-editorial.webp.asset.json";
-import localImg from "@/assets/marketing-local.webp";
+import localImage from "@/assets/local-presence-sold-sign.webp.asset.json";
 import collageImg from "@/assets/marketing-print.jpg";
 
 /* ------------------------------------------------------------------ */
@@ -104,7 +104,7 @@ const marketingCards: MarketingCard[] = [
   {
     title: "Local Presence",
     description: "Strategic on-the-ground marketing that creates visibility and momentum where it matters.",
-    image: localImg,
+    image: localImage.url,
     icon: MapPin,
     stats: [
       { value: "50", label: "Austin Neighborhood Guides" },

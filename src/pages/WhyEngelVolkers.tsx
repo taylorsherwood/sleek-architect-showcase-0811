@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import EvWaveBand from "@/components/EvWaveBand";
 import { Button } from "@/components/ui/button";
-import wordmark from "@/assets/engel-volkers-wordmark.svg.asset.json";
+import brokerageLogo from "@/assets/brokerage-group-lockup.webp.asset.json";
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
 import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
 import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";
@@ -66,7 +66,7 @@ export default function WhyEngelVolkers() {
               <h2 className="font-display font-normal text-3xl md:text-4xl leading-tight">A recognizable standard.</h2>
             </div>
             <div className="max-w-2xl space-y-6">
-              <img src={wordmark.url} alt="Engel & Völkers" className="w-56 md:w-72 h-auto object-cover mb-10 -translate-x-3 md:-translate-x-4" width={543} height={119} loading="lazy" />
+              <img src={brokerageLogo.url} alt="Engel & Völkers, Echelon Property Group" className="w-72 md:w-80 max-w-full h-auto object-cover mx-auto mb-10" width={1320} height={580} loading="lazy" />
               <p className="text-lg font-light leading-relaxed">Founded in Hamburg in 1977, Engel & Völkers grew from a European real estate business into an international network of local shops and advisors. Its first shop outside Germany opened in Mallorca in 1990, followed by U.S. franchising in 2013.</p>
               <p className="text-base leading-relaxed text-muted-foreground">The distinctive wordmark and villa emblem are part of a consistent identity, refined globally in 2023. Behind that presentation is a commitment to competency, personal service, and advisors who pair precise market knowledge with considered care.</p>
               <p className="text-base leading-relaxed text-muted-foreground">For Echelon Property Group, that affiliation supports an Austin-centered practice. Neighborhood knowledge, property-specific advice, and a direct relationship with your advisor remain at the heart of every engagement.</p>

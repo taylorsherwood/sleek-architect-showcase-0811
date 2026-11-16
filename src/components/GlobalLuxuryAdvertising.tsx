@@ -347,7 +347,7 @@ const GlobalLuxuryAdvertising = () => {
       {/* ═══════════════════════════════════════════════════════════════ */}
       {/*  2 · PLATFORM EXPOSURE                                         */}
       {/* ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-14 md:py-18 relative overflow-hidden" style={{ background: "#0C0F24" }} ref={platforms1.ref}>
+      <section className="py-14 md:py-18 relative overflow-hidden bg-background text-foreground" ref={platforms1.ref}>
         {/* ── Oversized WSJ anchor mark, nearly imperceptible ── */}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -378,12 +378,12 @@ const GlobalLuxuryAdvertising = () => {
             {/* Left – text */}
             <div className="max-w-[480px]" style={revealStyle(platforms1.visible, 0)}>
               <p className="text-minimal text-gold mb-4" style={{ letterSpacing: "0.14em" }}>LUXURY SYNDICATION</p>
-              <h2 className="text-3xl md:text-5xl font-display font-normal mb-5" style={{ color: "#ffffff" }}>
+              <h2 className="text-3xl md:text-5xl font-display font-normal mb-5 text-foreground">
                 Featured Across <br /> Recognized Luxury Media
               </h2>
               <p
-                className="mb-10 max-w-[410px]"
-                style={{ lineHeight: 1.7, fontSize: "15px", letterSpacing: "0.01em", color: "rgba(255,255,255,0.75)", ...revealStyle(platforms1.visible, 200) }}>
+                className="mb-10 max-w-[410px] text-muted-foreground"
+                style={{ lineHeight: 1.7, fontSize: "15px", letterSpacing: "0.01em", ...revealStyle(platforms1.visible, 200) }}>
                 Your property is positioned within a curated network of the world's most influential luxury, financial, and real estate platforms, strategically selected to reach qualified, high-intent buyers globally.
               </p>
 
@@ -393,10 +393,9 @@ const GlobalLuxuryAdvertising = () => {
                   SELECT MEDIA DISTRIBUTION
                 </p>
                 <div
-                  className="mb-5"
-                  style={{ width: 28, height: 1, background: "#b9a06c" }}
+                  className="mb-5 w-7 h-px bg-gold"
                 />
-                <p className="text-sm tracking-[0.06em] font-medium" style={{ lineHeight: 2.4, color: "rgba(255,255,255,0.85)" }}>
+                <p className="text-sm tracking-[0.06em] font-medium text-foreground" style={{ lineHeight: 2.4 }}>
                   Robb Report · Mansion Global · Wall Street Journal · Barron's
                   <br />
                   JamesEdition · MarketWatch · Unique Homes · LuxuryEstate
@@ -404,20 +403,20 @@ const GlobalLuxuryAdvertising = () => {
               </div>
 
               {/* Stat line */}
-              <div className="mt-12 pt-7" style={{ ...revealStyle(platforms1.visible, 550), borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+              <div className="mt-12 pt-7 border-t border-border" style={revealStyle(platforms1.visible, 550)}>
                 <p className="text-minimal text-gold mb-3" style={{ fontSize: "9px", letterSpacing: "0.15em" }}>
                   GLOBAL REACH
                 </p>
-                <p className="flex items-baseline gap-2.5" style={{ color: "#ffffff" }} ref={globalReachRef}>
+                <p className="flex items-baseline gap-2.5 text-foreground" ref={globalReachRef}>
                   <span aria-label="80+ International Distribution Channels" className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>{globalReachCount}+</span>
-                  <span className="text-[11px] tracking-[0.1em] uppercase" style={{ color: "rgba(255,255,255,0.55)" }}>International Distribution Channels</span>
+                  <span className="text-[11px] tracking-[0.1em] uppercase text-muted-foreground">International Distribution Channels</span>
                 </p>
               </div>
             </div>
 
             {/* Right – collage image with smooth parallax drift */}
             <div
-              className="overflow-hidden group cursor-default bg-primary"
+              className="overflow-hidden group cursor-default bg-background"
               style={revealScaleStyle(platforms1.visible, 300)}>
               <div
                 ref={collageParallaxRef}

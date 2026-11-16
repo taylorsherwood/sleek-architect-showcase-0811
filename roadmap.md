@@ -52,3 +52,4 @@
 - [x] Shift hero wording and villa emblem down, widen the gap between them, and keep the emblem clear of clipping on short viewports.
 - [x] Recolor the sales-approach numerals 01-03 to Engel & Völkers red via a new ev-red token.
 - [x] Increase the perspective-section photo size by 30% (448px wide on desktop, full width on phone).
+- [x] Recolor the divider lines above the approach numerals to Engel & Völkers red.

@@ -342,7 +342,7 @@ Deno.serve(async (req) => {
       console.error("[book-consultation] gmail send failed:", emailError);
     } else {
       emailSent = true;
-      console.log("[book-consultation] confirmation email sent to", email);
+      console.log("[book-consultation] confirmation email sent");
     }
   } catch (e) {
     emailError = e instanceof Error ? e.message : "gmail dispatch failed";

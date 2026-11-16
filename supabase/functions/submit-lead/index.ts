@@ -279,7 +279,11 @@ Deno.serve(async (req) => {
     });
 
     const webhookUrl = clean(body?.webhookUrl);
-    if (!webhookUrl || !webhookUrl.startsWith("https://hooks.zapier.com/hooks/catch/")) {
+    const ALLOWED_WEBHOOKS = new Set([
+      "https://hooks.zapier.com/hooks/catch/26916347/upj5fa0/",
+      "https://hooks.zapier.com/hooks/catch/26916347/u7plp1z/",
+    ]);
+    if (!webhookUrl || !ALLOWED_WEBHOOKS.has(webhookUrl)) {
       return json({ ok: false, error: "Invalid lead webhook." }, 400);
     }
 

@@ -49,7 +49,7 @@ export default function WhyEngelVolkers() {
               <h2 className="font-display font-normal text-3xl md:text-4xl leading-tight">A recognizable standard.</h2>
             </div>
             <div className="max-w-2xl space-y-6">
-              <img src={wordmark.url} alt="Engel & Völkers" className="w-56 md:w-72 h-auto object-cover mb-10" width={543} height={119} loading="lazy" />
+              <img src={wordmark.url} alt="Engel & Völkers" className="w-56 md:w-72 h-auto object-cover mb-10 -translate-x-3 md:-translate-x-4" width={543} height={119} loading="lazy" />
               <p className="text-lg font-light leading-relaxed">Engel & Völkers brings a consistent visual identity to real estate: the distinctive wordmark, the villa emblem, and a presentation that places the property first. The brand connects local real estate shops with an international network of advisors.</p>
               <p className="text-base leading-relaxed text-muted-foreground">For Echelon Property Group, that affiliation supports an Austin-centered practice. Neighborhood knowledge, property-specific advice, and a direct relationship with your advisor remain at the heart of every engagement.</p>
               <Button variant="link" asChild className="px-0 font-normal text-foreground hover:text-gold"><Link to="/about">Meet the team<ArrowUpRight strokeWidth={1} /></Link></Button>

@@ -47,3 +47,8 @@
 - [x] Add requested contextual backlinks and update the sitemap and AI index.
 - [x] Verify article text, two tables, six visible FAQ answers and consultation link on desktop and phone.
 - [ ] Confirm hero visually in hosted preview; local asset proxy is unavailable and live asset request returned 403.
+
+# Why Engel & Völkers hero refinement
+- [x] Shift hero wording and villa emblem down, widen the gap between them, and keep the emblem clear of clipping on short viewports.
+- [x] Recolor the sales-approach numerals 01-03 to Engel & Völkers red via a new ev-red token.
+- [x] Increase the perspective-section photo size by 30% (448px wide on desktop, full width on phone).

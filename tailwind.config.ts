@@ -32,6 +32,7 @@ export default {
           dark: "hsl(var(--gold-dark))",
         },
         "warm-cream": "hsl(var(--warm-cream))",
+        "ev-red": "hsl(var(--ev-red))",
         "black-soft": "hsl(var(--black-soft))",
         "black-card": "hsl(var(--black-card))",
         primary: {

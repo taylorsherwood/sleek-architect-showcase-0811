@@ -59,19 +59,19 @@ export default function WhyEngelVolkers() {
       ])} />
       <Navigation />
       <main>
-        <section className="relative h-[85svh] min-h-[560px] w-full overflow-hidden bg-primary">
+        <section className="relative h-[85svh] min-h-[640px] w-full overflow-hidden bg-primary">
           {showVideo ? (
             <video src={heroVideo.url} poster={heroPoster.url} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
           ) : (
             <img src={heroPoster.url} alt="" className="absolute inset-0 h-full w-full object-cover" width={1600} height={900} fetchPriority="high" />
           )}
           <div className="absolute inset-0 bg-primary/35" aria-hidden="true" />
-          <div className="relative container mx-auto px-6 md:px-10 flex h-full items-center justify-center pb-16 md:pb-24 lg:pb-32 text-center text-primary-foreground">
+          <div className="relative container mx-auto px-6 md:px-10 flex h-full items-center justify-center pt-10 md:pt-14 text-center text-primary-foreground">
             <div className="max-w-3xl">
               <p className="text-[0.68rem] md:text-xs tracking-[0.3em] uppercase text-primary-foreground/80">Our Brokerage</p>
               <h1 className="font-sans font-light text-[2.6rem] md:text-6xl lg:text-7xl leading-[1.05] tracking-[-0.015em] mt-6">Why Engel&nbsp;&amp;&nbsp;Völkers</h1>
               <p className="text-base md:text-lg font-light leading-[1.7] text-primary-foreground/85 mt-6 max-w-xl mx-auto">The perspective of a global brand. The judgment of a local advisor. Echelon Property Group is brokered by Engel &amp; Völkers Austin.</p>
-              <img src={villaWhite.url} alt="Engel & Völkers villa emblem" className="w-32 md:w-44 h-auto object-contain mx-auto mt-10 md:mt-14" width={1600} height={664} loading="eager" />
+              <img src={villaWhite.url} alt="Engel & Völkers villa emblem" className="w-32 md:w-44 h-auto object-contain mx-auto mt-20 md:mt-28" width={1600} height={664} loading="eager" />
             </div>
           </div>
         </section>
@@ -129,7 +129,7 @@ export default function WhyEngelVolkers() {
           </div>
           <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
             {approach.map((item, index) => <div key={item.title} className="pt-8 border-t border-foreground">
-              <p className="text-xs tracking-[0.2em] text-gold mb-6">0{index + 1}</p>
+              <p className="text-xs tracking-[0.2em] text-ev-red mb-6">0{index + 1}</p>
               <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
               <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
             </div>)}
@@ -153,10 +153,10 @@ export default function WhyEngelVolkers() {
                 <h2 className={`${h2} mt-5 mb-8 max-w-xl`}>The right home for our clients.</h2>
                 <p className="text-lg font-light leading-[1.7] max-w-2xl">With more than a decade in Austin real estate, over $155 million in career sales, and 200+ transactions closed, Taylor Sherwood brings experience across residential, commercial, land, and investment properties. That breadth informs how Echelon Property Group evaluates opportunities, positions properties, and negotiates for its clients.</p>
               </div>
-              <div className="order-1 lg:order-2 lg:col-span-4 lg:col-start-9">
+              <div className="order-1 lg:order-2 lg:col-span-5 lg:col-start-8">
                 <img src={advisorPortrait.url} alt="Taylor Sherwood outside an Engel & Völkers shop" className="w-full aspect-[4/3] object-cover" width={1152} height={864} loading="lazy" />
               </div>
-              <div className="order-3 lg:col-span-9 grid md:grid-cols-2 gap-8 md:gap-12">
+              <div className="order-3 lg:col-span-12 grid md:grid-cols-2 gap-8 md:gap-12">
                 <p className={body}>We chose Engel &amp; Völkers because its approach complements our own: thoughtful presentation, personal advisory, and relationships that extend beyond a single market. Its international referral network, property marketing resources, and editorial perspective give our team more ways to connect the right people with the right properties.</p>
                 <div>
                   <p className={body}>For our clients, the purpose is straightforward. Keep the direct attention and Austin knowledge of our team, supported by the reach and resources of an established global brokerage. The affiliation strengthens our work without changing who is accountable to you.</p>

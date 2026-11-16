@@ -221,6 +221,7 @@ section[class*="bg-navy"]::after {
     --gold-dark: 41 45% 30%;         /* #6F5E2A */
     --gold-deep: 41 30% 40%;         /* #857548 */
     --gold-highlight: 41 35% 68%;    /* #C5B88E */
+    --ev-red: 350 83% 42%;           /* #C41230, Engel & Völkers brand red */
 
     --background: 40 33% 97%;        /* #FAF9F6, warm white (primary) */
     --foreground: 233 47% 9%;           /* #0C0F24 */

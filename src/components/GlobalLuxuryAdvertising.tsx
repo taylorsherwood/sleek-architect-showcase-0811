@@ -477,7 +477,7 @@ const GlobalLuxuryAdvertising = () => {
                       <img
                         src={card.image}
                         alt={card.title}
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        className={`w-full h-full object-cover transition-transform duration-700 ease-out ${card.title === "Local Presence" ? "-rotate-1 scale-[1.03] group-hover:scale-[1.07]" : "group-hover:scale-[1.04]"}`}
                         loading="lazy"
                         decoding="async"
                         sizes="(max-width: 768px) 100vw, 33vw"

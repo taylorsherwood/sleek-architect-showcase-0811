@@ -9,12 +9,20 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/compone
 import { ArrowLeft, ArrowRight, LockKeyhole } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { trackLead } from "@/lib/analytics";
+import { z } from "zod";
 import openingLeft from "@/assets/guide-opening-01.webp.asset.json";
 import openingRight from "@/assets/guide-opening-02.webp.asset.json";
 import "@/components/relocation-guide.css";
 const loadFlipbook = () => import("@/components/RelocationFlipbook");
 const Flipbook = lazy(loadFlipbook);
-const SESSION_KEY = "austin-relocation-guide-access-v2";
+const SESSION_KEY = "austin-relocation-guide-access-v3";
+const guideLeadSchema = z.object({
+  name: z.string().trim().min(1, "Please provide your name.").max(200),
+  email: z.string().trim().email("Please provide a valid email address.").max(255),
+  phone: z.string().trim().min(1, "Please provide your phone number.").max(40)
+    .regex(/^[+\d\s().-]+$/, "Please provide a valid phone number.")
+    .refine(value => { const digits = value.replace(/\D/g, "").length; return digits >= 7 && digits <= 15; }, "Please provide a valid phone number."),
+});
 function storedAccess(): string {
   try {
     const saved = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "null");
@@ -40,6 +48,8 @@ export default function AustinRelocationGuide() {
     event.preventDefault(); if (busy) return;
     const form = new FormData(event.currentTarget);
     const name = String(form.get("name") || "").trim(), email = String(form.get("email") || "").trim(), phone = String(form.get("phone") || "").trim();
+    const validated = guideLeadSchema.safeParse({ name, email, phone });
+    if (!validated.success) { setError(validated.error.issues[0]?.message || "Please complete every field."); return; }
     setBusy(true); setError("");
     try {
       const { data, error: failure } = await supabase.functions.invoke("unlock-relocation-guide", { body: { name, email, phone, page_url: window.location.href } });
@@ -77,7 +87,7 @@ export default function AustinRelocationGuide() {
           <form onSubmit={unlock} className="guide-access-form space-y-5">
             <div className="space-y-2"><Label htmlFor="guide-name">Name</Label><Input id="guide-name" name="name" autoComplete="name" required maxLength={200} /></div>
             <div className="space-y-2"><Label htmlFor="guide-email">Email</Label><Input id="guide-email" name="email" type="email" autoComplete="email" required maxLength={255} /></div>
-            <div className="space-y-2"><Label htmlFor="guide-phone">Phone <span className="text-muted-foreground">(optional)</span></Label><Input id="guide-phone" name="phone" type="tel" autoComplete="tel" maxLength={40} /></div>
+            <div className="space-y-2"><Label htmlFor="guide-phone">Phone</Label><Input id="guide-phone" name="phone" type="tel" autoComplete="tel" required maxLength={40} /></div>
             {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
             <Button type="submit" disabled={busy} className="w-full h-12 rounded-none hover:bg-gold hover:text-primary">{busy ? "Opening your guide…" : "Continue reading"}<ArrowRight /></Button>
             <p className="flex items-center justify-center gap-2 text-xs text-muted-foreground"><LockKeyhole className="h-3 w-3" />Your details are kept private.</p>

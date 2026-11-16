@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
     if (error || !access) return json({ error: "The guide could not be opened." }, 503);
     return json({ url: access.signedUrl, expiresAt: Date.now() + 3600000 });
   }
-  if (!lead) return json({ error: "Please provide your name and a valid email address." }, 400);
+  if (!lead) return json({ error: "Please provide your name, a valid email address, and a valid phone number." }, 400);
   const url = Deno.env.get("SUPABASE_URL"), key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
   if (!url || !key) return json({ error: "Guide access is temporarily unavailable." }, 503);
   try {

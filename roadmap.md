@@ -5,6 +5,7 @@
 - [x] Replay seller hero counters on viewport entry from either direction while preserving final accessible figures; link the Homes.com logo to the supplied presentation and verify both changes.
 
 # Gated relocation flipbook
+- [x] Require name, email, and valid phone before visitor access; verify browser and server rejection of incomplete entries.
 - [x] Refine the guide as an editorial opening spread; show contact capture on attempted page turn and preserve private reader access.
 - [x] Add contextual guide invitations on Buy, Moving to Austin, and Communities; verify the form-to-reader flow.
 - [x] Store the uploaded guide privately and add name/email access with optional phone.

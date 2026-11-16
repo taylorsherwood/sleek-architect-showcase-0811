@@ -11,6 +11,7 @@ import brokerageLogo from "@/assets/brokerage-group-lockup-transparent.webp.asse
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
 import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
 import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";
+import advisorPortrait from "@/assets/taylor-engel-volkers-austin.webp.asset.json";
 
 const approach = [
   { title: "Position before promotion", text: "We begin with the property, its likely buyer, and the current market. Pricing, preparation, photography, and the launch sequence work together, rather than as separate decisions." },
@@ -117,6 +118,23 @@ export default function WhyEngelVolkers() {
         </section>
         <div className="h-12 md:h-20" aria-hidden="true" />
         <EvWaveBand />
+
+        <section className="container mx-auto px-6 md:px-10 py-8 md:py-12">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <figure>
+              <img src={advisorPortrait.url} alt="Taylor Sherwood outside an Engel & Völkers shop" className="w-full aspect-[4/3] object-cover" width={1152} height={864} loading="lazy" />
+              <figcaption className="text-sm text-muted-foreground mt-4">Taylor Sherwood · Founder, Echelon Property Group</figcaption>
+            </figure>
+            <div className="max-w-xl">
+              <p className="text-sm text-gold mb-5">OUR PERSPECTIVE</p>
+              <h2 className="font-display font-normal text-3xl md:text-4xl leading-tight mb-7">The right home for our clients.</h2>
+              <p className="text-lg font-light leading-relaxed mb-5">With more than a decade in Austin real estate, over $155 million in career sales, and 200+ transactions closed, Taylor Sherwood brings experience across residential, commercial, land, and investment properties. That breadth informs how Echelon Property Group evaluates opportunities, positions properties, and negotiates for its clients.</p>
+              <p className="text-base text-muted-foreground leading-relaxed mb-5">We chose Engel & Völkers because its approach complements our own: thoughtful presentation, personal advisory, and relationships that extend beyond a single market. Its international referral network, property marketing resources, and editorial perspective give our team more ways to connect the right people with the right properties.</p>
+              <p className="text-base text-muted-foreground leading-relaxed">For our clients, the purpose is straightforward. Keep the direct attention and Austin knowledge of our team, supported by the reach and resources of an established global brokerage. The affiliation strengthens our work without changing who is accountable to you.</p>
+            </div>
+          </div>
+        </section>
+        <div className="h-12 md:h-20" aria-hidden="true" />
 
         <section className="relative overflow-hidden bg-primary text-primary-foreground py-16 md:py-20">
           <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10 items-center relative z-10">

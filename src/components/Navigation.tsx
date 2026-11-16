@@ -96,7 +96,14 @@ const Navigation = ({ editorialHome = false }: { editorialHome?: boolean }) => {
         { href: "/austin-relocation-guide", label: "Buyer Relocation Guide" },
       ],
     },
-    { href: "/about", label: "About" },
+    {
+      href: "/about",
+      label: "About",
+      children: [
+        { href: "/about", label: "Meet the Team" },
+        { href: "/why-engel-volkers", label: "Why Engel & Völkers" },
+      ],
+    },
   ];
 
   const isActive = (link: NavLink) =>

@@ -12,6 +12,7 @@ import Index from "@/pages/Index";
 // Lazy-load every other route to defer non-critical JS
 const aboutImport = () => import("@/pages/About");
 const About = lazy(chunkRetry(aboutImport));
+const WhyEngelVolkers = lazy(chunkRetry(() => import("@/pages/WhyEngelVolkers")));
 const listingsImport = () => import("@/pages/Listings");
 const Listings = lazy(chunkRetry(listingsImport));
 const buyImport = () => import("@/pages/Buy");
@@ -113,6 +114,7 @@ const AppRoutes = () => {
           <Route path="/developments" element={<Developments />} />
           <Route path="/lander" element={<AliasRedirect to="/" />} />
           <Route path="/about" element={<About />} />
+          <Route path="/why-engel-volkers" element={<WhyEngelVolkers />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/listings/commercial-investment-austin" element={<CommercialInvestment />} />
           <Route path="/buy" element={<Buy />} />

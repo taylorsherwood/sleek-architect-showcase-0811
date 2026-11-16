@@ -1,4 +1,5 @@
 # Project architecture
+- Keep brokerage identity content on its own lazy-loaded, indexable page linked from the shared About menu; this separates brokerage context from team biographies and keeps both navigation formats synchronized.
 - Keep the collapsible navigation in a focus-trapped Radix dialog with its own scroll area and semantic menu styles; this preserves keyboard access and prevents background interaction without changing desktop navigation.
 - Reuse HomeOfficeListings on the homepage and Sell so office inventory, filters, and loading behavior stay synchronized.
 - Reuse the text-only overlapping review deck on Sell and the homepage above Land, Ranch & Development so both presentations stay synchronized; on phones only the active card determines height and navigation follows the card to avoid oversized empty decks, while all review text remains in the DOM.

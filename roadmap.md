@@ -1,3 +1,8 @@
+# About navigation and brokerage page
+- [x] Add Meet the Team and Why Engel & Völkers to About navigation.
+- [x] Create an editorial brokerage page covering identity, marketing reach, and sales approach; include metadata and indexing.
+- [x] Verify both menu links, metadata, and page layout on desktop and phone; imagery checked with retrieved assets because local CDN delivery is unavailable.
+
 # Homepage testimonials
 - [x] Place the shared client experiences block directly above Land, Ranch & Development and verify review navigation.
 

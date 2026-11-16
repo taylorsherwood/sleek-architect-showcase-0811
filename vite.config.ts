@@ -14,6 +14,7 @@ const DATA_DIR = path.resolve(__dirname, "src/data");
 const prerenderRoutes = [
   "/",
   "/about",
+  "/why-engel-volkers",
   "/buy",
   "/sell",
   "/listings",
@@ -59,6 +60,7 @@ const prerenderRoutes = [
 const sitemapStaticRoutes = [
   "/",
   "/about",
+  "/why-engel-volkers",
   "/buy",
   "/sell",
   "/listings",

@@ -20,6 +20,7 @@ const staticRoutes = [
   "/",
   "/taylor-sherwood",
   "/about",
+  "/why-engel-volkers",
   "/buy",
   "/sell",
   "/listings",

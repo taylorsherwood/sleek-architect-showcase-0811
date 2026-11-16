@@ -129,7 +129,7 @@ export default function WhyEngelVolkers() {
           </div>
           <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
             {approach.map((item, index) => <div key={item.title} className="pt-8 border-t border-ev-red">
-              <p className="text-xs tracking-[0.2em] text-ev-red mb-6">0{index + 1}</p>
+              <p className="text-xs font-semibold tracking-[0.2em] text-ev-red mb-6">0{index + 1}</p>
               <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
               <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
             </div>)}

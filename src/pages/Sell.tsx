@@ -12,7 +12,7 @@ import { formatPhoneNumber, submitLeadToZapier } from "@/lib/formUtils";
 
 
 const Testimonials = lazy(() => import("@/components/SellerTestimonials"));
-const FeaturedListings = lazy(() => import("@/components/FeaturedListings"));
+const OfficeListings = lazy(() => import("@/components/HomeOfficeListings"));
 const GlobalLuxuryAdvertising = lazy(() => import("@/components/GlobalLuxuryAdvertising"));
 const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSection"));
 const Footer = lazy(() => import("@/components/Footer"));
@@ -910,7 +910,17 @@ const Sell = () => {
         </div>
       </section>
 
-      <Suspense fallback={<div className="min-h-[200px]" />}><FeaturedListings hideRealScout /></Suspense>
+      <div className="bg-secondary pt-20 md:pt-28">
+        <div className="container mx-auto px-6 mb-12">
+          <div className="max-w-[1200px] mx-auto">
+            <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
+              Featured Austin Luxury Properties
+            </h2>
+          </div>
+        </div>
+        <Suspense fallback={<div className="min-h-[320px]" />}><OfficeListings /></Suspense>
+      </div>
 
       {/* ── Expert Insight ── */}
       <section className="py-20 bg-background">

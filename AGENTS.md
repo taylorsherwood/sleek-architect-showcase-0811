@@ -1,4 +1,5 @@
 # Project architecture
+- Reuse HomeOfficeListings on the homepage and Sell so office inventory, filters, and loading behavior stay synchronized.
 - Reuse the text-only overlapping review deck on Sell and the homepage above Land, Ranch & Development so both presentations stay synchronized; on phones only the active card determines height and navigation follows the card to avoid oversized empty decks, while all review text remains in the DOM.
 - Expose only two rasterized opening pages for the relocation preview; attempted page turns open the existing lead gate before the private PDF reader loads.
 - Use the shared MovingToAustinGuideCTA for contextual relocation invitations; link to the existing gated guide page so every entry point shares validation and reader access.

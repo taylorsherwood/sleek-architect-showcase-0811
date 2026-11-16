@@ -964,7 +964,7 @@ const Sell = () => {
       <div className="bg-secondary pt-20 md:pt-28">
         <div className="container mx-auto px-6 mb-12">
           <div className="max-w-[1200px] mx-auto">
-            <p className="text-minimal text-gold mb-4 font-extrabold">FEATURED LISTINGS</p>
+            <p className="text-minimal text-gold mb-4 font-extrabold">FROM THE SHOP</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
               Featured Austin Luxury Properties
             </h2>

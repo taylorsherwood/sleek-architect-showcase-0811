@@ -1,6 +1,11 @@
 import { useEffect, useRef } from "react";
 
-const HomeOfficeListings = () => {
+type HomeOfficeListingsProps = {
+  /** Spacing above the section heading, so each page can match its own rhythm. */
+  topSpacing?: string;
+};
+
+const HomeOfficeListings = ({ topSpacing = "pt-4 md:pt-8" }: HomeOfficeListingsProps) => {
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,7 +29,15 @@ const HomeOfficeListings = () => {
   }, []);
 
   return (
-    <section aria-label="Current Austin property listings" className="bg-secondary pb-20 md:pb-28">
+    <section aria-label="Current Austin property listings" className={`bg-secondary ${topSpacing} pb-20 md:pb-28`}>
+      <div className="container mx-auto px-6 mb-12">
+        <div className="max-w-[1200px] mx-auto">
+          <p className="text-minimal text-gold mb-4 font-extrabold">FROM THE SHOP</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-normal text-architectural">
+            Featured Austin Luxury Properties
+          </h2>
+        </div>
+      </div>
       <div className="container mx-auto px-6">
         <div className="max-w-[1200px] mx-auto">
           <div ref={widgetRef} className="w-full min-h-[320px]" />

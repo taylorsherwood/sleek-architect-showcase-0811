@@ -1684,3 +1684,19 @@ body.hcs-immersive nav.fixed {
 @media (prefers-reduced-motion: reduce) {
   .seller-review-card, .seller-review-copy { transition: none; }
 }
+
+/* ── Engel & Völkers wave pattern band ──────────────────────────────────
+   Pattern images are pre-tinted to the site palette (navy lines for light
+   sections, ivory lines for dark ones) with the fade baked in, so the band
+   only has to place the image. Weight sits at the top of the pattern. */
+.ev-wave-band {
+  width: 100%;
+  height: clamp(96px, 11vw, 180px);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  /* The artwork ends abruptly at its right edge, so both ends dissolve. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 84%, transparent 99%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 84%, transparent 99%);
+}

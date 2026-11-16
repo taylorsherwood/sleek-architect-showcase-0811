@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
+import EvWaveBand from "@/components/EvWaveBand";
 import { Button } from "@/components/ui/button";
 import wordmark from "@/assets/engel-volkers-wordmark.svg.asset.json";
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
@@ -112,9 +113,11 @@ export default function WhyEngelVolkers() {
           </div>
         </section>
         <div className="h-12 md:h-20" aria-hidden="true" />
+        <EvWaveBand />
 
-        <section className="bg-primary text-primary-foreground py-16 md:py-20">
-          <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10 items-center">
+        <section className="relative overflow-hidden bg-primary text-primary-foreground py-16 md:py-20">
+          <EvWaveBand variant="navy" className="absolute inset-x-0 bottom-0 z-0" />
+          <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10 items-center relative z-10">
             <div><p className="text-gold text-sm mb-5">ECHELON PROPERTY GROUP</p><h2 className="font-display text-3xl md:text-4xl font-normal leading-tight">Global perspective.<br />Austin, understood.</h2></div>
             <div className="max-w-lg"><p className="text-lg font-light leading-relaxed mb-8">Tell us about your property and your priorities. We will help you consider the right next move.</p><Button variant="outline" asChild className="rounded-none border-gold bg-transparent text-primary-foreground hover:bg-background hover:text-foreground"><Link to="/contact">Start a conversation<ArrowUpRight strokeWidth={1} /></Link></Button></div>
           </div>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -7,7 +8,8 @@ import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup"
 import { Button } from "@/components/ui/button";
 import wordmark from "@/assets/engel-volkers-wordmark.svg.asset.json";
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
-import soldSign from "@/assets/local-presence-sold-sign.webp.asset.json";
+import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
+import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";
 
 const approach = [
   { title: "Position before promotion", text: "We begin with the property, its likely buyer, and the current market. Pricing, preparation, photography, and the launch sequence work together, rather than as separate decisions." },
@@ -16,6 +18,16 @@ const approach = [
 ];
 
 export default function WhyEngelVolkers() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px) and (prefers-reduced-motion: no-preference)");
+    const update = () => setShowVideo(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead title="Why Engel & Völkers" description="Explore the Engel & Völkers brand, international marketing network, and considered sales approach behind Echelon Property Group's Austin real estate advisory." canonical="/why-engel-volkers" />
@@ -38,7 +50,11 @@ export default function WhyEngelVolkers() {
         </section>
 
         <div className="container mx-auto px-6 md:px-10">
-          <img src={soldSign.url} alt="Engel & Völkers sold sign in front of a residential property" className="w-full aspect-[16/9] md:aspect-[21/9] object-cover" width={1366} height={768} fetchPriority="high" />
+          {showVideo ? (
+            <video src={heroVideo.url} poster={heroPoster.url} autoPlay muted loop playsInline preload="metadata" aria-label="Engel & Völkers brand film" className="w-full aspect-[16/9] md:aspect-[21/9] object-cover" />
+          ) : (
+            <img src={heroPoster.url} alt="Engel & Völkers brand film" className="w-full aspect-[16/9] md:aspect-[21/9] object-cover" width={1600} height={900} fetchPriority="high" />
+          )}
         </div>
         <div className="h-12 md:h-20" aria-hidden="true" />
 

@@ -93,10 +93,13 @@ export default function WhyEngelVolkers() {
               <p className="text-xs leading-relaxed text-muted-foreground mt-5">Network and development figures reported by Engel & Völkers, reviewed November 16, 2026.</p>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t border-border max-w-3xl">
-            <h3 className="font-display text-xl font-normal mb-4">A service standard with substance.</h3>
-            <p className="text-muted-foreground leading-relaxed">Engel & Völkers describes its professionals as trusted advisors, not simply agents. Its stated commitments include fair housing, inclusion, environmental responsibility, and support for Special Olympics. Echelon Property Group brings that advisory perspective to local pricing, negotiation, and the decisions that matter to your transaction.</p>
-            <Button variant="link" asChild className="px-0 mt-5 font-normal text-foreground hover:text-gold"><a href="https://www.evrealestate.com/en/company/about-us" target="_blank" rel="noopener noreferrer">Explore the brokerage’s story<ArrowUpRight strokeWidth={1} /></a></Button>
+          <div className="mt-12 md:mt-16 pt-8 md:pt-10 border-t border-border grid md:grid-cols-2 gap-6 md:gap-14 lg:gap-20 items-start">
+            <h3 className="font-display text-xl md:text-2xl leading-relaxed font-normal max-w-sm">A service standard<br className="hidden md:block" /> with substance.</h3>
+            <div className="max-w-xl">
+              <p className="text-base text-muted-foreground leading-relaxed">Engel & Völkers describes its professionals as trusted advisors, not simply agents. Its stated commitments include fair housing, inclusion, environmental responsibility, and support for Special Olympics.</p>
+              <p className="text-base text-muted-foreground leading-relaxed mt-4">Echelon Property Group brings that advisory perspective to local pricing, negotiation, and the decisions that matter to your transaction.</p>
+              <Button variant="link" asChild className="px-0 mt-6 h-auto py-2 font-normal text-foreground hover:text-gold whitespace-normal text-left justify-start"><a href="https://www.evrealestate.com/en/company/about-us" target="_blank" rel="noopener noreferrer">Explore the brokerage’s story<ArrowUpRight className="shrink-0" strokeWidth={1} /></a></Button>
+            </div>
           </div>
         </section>
         <div className="h-12 md:h-20" aria-hidden="true" />

@@ -564,6 +564,57 @@ const Sell = () => {
         </div>
       </section>
 
+      {/* ── Listing Consultation (tracked lead form) ── */}
+      <section
+        id="listing-consultation"
+        className="py-24 md:py-28 bg-primary text-primary-foreground"
+        style={{ scrollMarginTop: "6rem" }}
+      >
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto grid gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-20 items-start">
+            <div>
+              <p className="text-minimal text-gold mb-5">PRIVATE CONSULTATION</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-normal leading-[1.1] mb-6 text-balance">
+                Plan your sale with Echelon Property Group.
+              </h2>
+              <p className="text-primary-foreground/70 leading-relaxed text-base md:text-lg max-w-md">
+                Pricing, preparation and a marketing plan built around your timing, whether you sell privately or on the open market.
+              </p>
+            </div>
+            <form onSubmit={handleConSubmit} noValidate className="space-y-7" aria-label="Request a listing consultation">
+              <div className="grid gap-7 sm:grid-cols-2">
+                <div>
+                  <label htmlFor="con-name" className="sr-only">Full name</label>
+                  <input id="con-name" name="name" type="text" autoComplete="name" maxLength={100} placeholder="Full name" value={conForm.name} onChange={handleConChange} className={inputDark} aria-invalid={!!conErrors.name} />
+                  {conErrors.name && <p className="mt-2 text-xs text-gold">{conErrors.name}</p>}
+                </div>
+                <div>
+                  <label htmlFor="con-email" className="sr-only">Email</label>
+                  <input id="con-email" name="email" type="email" autoComplete="email" maxLength={255} placeholder="Email" value={conForm.email} onChange={handleConChange} className={inputDark} aria-invalid={!!conErrors.email} />
+                  {conErrors.email && <p className="mt-2 text-xs text-gold">{conErrors.email}</p>}
+                </div>
+              </div>
+              <div>
+                <label htmlFor="con-phone" className="sr-only">Phone</label>
+                <input id="con-phone" name="phone" type="tel" autoComplete="tel" placeholder="Phone" value={conForm.phone} onChange={handleConChange} className={inputDark} aria-invalid={!!conErrors.phone} />
+                {conErrors.phone && <p className="mt-2 text-xs text-gold">{conErrors.phone}</p>}
+              </div>
+              <div>
+                <label htmlFor="con-message" className="sr-only">About your property</label>
+                <textarea id="con-message" name="message" rows={3} maxLength={1000} placeholder="Property address and timing (optional)" value={conForm.message} onChange={handleConChange} className={`${inputDark} resize-none`} />
+                {conErrors.message && <p className="mt-2 text-xs text-gold">{conErrors.message}</p>}
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-5 pt-2">
+                <button type="submit" disabled={conSubmitting} style={{ border: "1px solid #b9a06c" }} className="inline-flex items-center justify-center px-9 py-4 text-xs tracking-[0.22em] uppercase text-primary-foreground transition-colors duration-300 hover:bg-gold hover:text-primary disabled:opacity-60">
+                  {conSubmitting ? "Sending…" : "Request a Consultation"}
+                </button>
+                <p className="text-[11px] tracking-wide text-primary-foreground/45">Confidential. No obligation.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* ── Greater Austin Metro — Buyer/Seller Market Conditions ── */}
       <MarketBalanceGauge
         communityName="Greater Austin Metro"

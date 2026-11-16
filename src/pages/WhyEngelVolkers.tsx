@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import EvWaveBand from "@/components/EvWaveBand";
 import { Button } from "@/components/ui/button";
-import brokerageLogo from "@/assets/brokerage-group-lockup.webp.asset.json";
+import brokerageLogo from "@/assets/brokerage-group-lockup-transparent.webp.asset.json";
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
 import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
 import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";

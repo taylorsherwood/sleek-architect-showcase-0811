@@ -1,4 +1,5 @@
 # About navigation and brokerage page
+- [x] Make the supplied brokerage lockup background transparent and retain its centered placement.
 - [x] Enrich the brokerage page with official history, network reach, development expertise, and service commitments; attribute current figures to the source.
 - [x] Add Meet the Team and Why Engel & Völkers to About navigation.
 - [x] Create an editorial brokerage page covering identity, marketing reach, and sales approach; include metadata and indexing.

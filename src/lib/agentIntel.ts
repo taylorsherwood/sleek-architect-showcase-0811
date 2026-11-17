@@ -27,8 +27,14 @@ async function callFn<T>(query: Record<string, string>, ttlMs: number): Promise<
   if (cached && Date.now() - cached.at < ttlMs) return cached.value as T;
 
   const url = `${FN_URL}?${key}`;
+  let token = publishableKey;
+  if (query.action) {
+    const { supabase } = await import("@/integrations/supabase/client");
+    const { data } = await supabase.auth.getSession();
+    if (data.session?.access_token) token = data.session.access_token;
+  }
   const res = await fetch(url, {
-    headers: { apikey: publishableKey, Authorization: `Bearer ${publishableKey}` },
+    headers: { apikey: publishableKey, Authorization: `Bearer ${token}` },
   });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) {

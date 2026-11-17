@@ -1,3 +1,4 @@
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.95.0";
 // AgentIntel server-side proxy.
 //
 // Keeps AGENTINTEL_API_KEY secret. The browser only ever talks to this function.
@@ -253,6 +254,22 @@ Deno.serve(async (req) => {
 
     // -------- Live action surface --------
     if (action) {
+      const authHeader = req.headers.get("Authorization") ?? "";
+      if (!authHeader.startsWith("Bearer ")) {
+        return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+      }
+      const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_ANON_KEY")!, {
+        global: { headers: { Authorization: authHeader } },
+      });
+      const { data: claims, error: claimsErr } = await sb.auth.getClaims(authHeader.slice(7));
+      const uid = claims?.claims?.sub;
+      if (claimsErr || !uid) {
+        return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+      }
+      const { data: isAdmin } = await sb.rpc("has_role", { _user_id: uid, _role: "admin" });
+      if (!isAdmin) {
+        return new Response(JSON.stringify({ error: "forbidden" }), { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+      }
       const cacheKey = `action:${action}:${url.search}`;
       const hit = cacheGet(cacheKey, 60_000); // soft floor; real TTL applied on set
       if (hit) {

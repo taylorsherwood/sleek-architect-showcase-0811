@@ -571,6 +571,9 @@ Treat it like an inspection item, not an afterthought. Here is the order I sugge
 5. **Tell your agent everything:** guest house, rentals, art, a boathouse.
 6. **Budget it with taxes.** See [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin) and our [luxury buyer guide](/blog/how-to-buy-luxury-home-austin). Buying before you sell? You will carry two policies for a while, as our [buy before you sell guide](/blog/buy-before-you-sell-austin) explains.
 
+
+Wooded lots add another underwriting question. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) shows how to check an address's risk score and WUI zone before you quote coverage.
+
 ## Frequently asked questions
 
 :::faq
@@ -2645,6 +2648,9 @@ Sources: Austin Fire Department; City of Austin Watershed Protection; City of Au
 
 None of that is a reason not to buy the greenbelt lot. It is the reason the good ones rarely reach the open market. Homes that back to Barton Creek, Bull Creek or the Balcones preserves in Rob Roy, Lost Creek, Davenport Ranch and Travis Country change hands between neighbors and through agents' private networks more often than they trade on the MLS; they are the classic [off-market homes in Austin](/blog/off-market-homes-austin), and the ones that do list and fail tend to be the ones whose owners priced the label instead of the view. Every transaction above $2 million that Echelon Property Group has closed was completed off-MLS. If a greenbelt lot is the goal, the search starts with the trail map, moves to the [most expensive neighborhoods in Austin](/blog/most-expensive-neighborhoods-in-austin) and the [Eanes premium](/blog/eanes-isd-premium) that sits on top of them, and ends in conversations that never produce a listing. The guide to [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin) covers how that process works, the analysis of [private listings](/blog/private-listings-austin) covers what the MLS now allows sellers to do quietly, and for buyers who would rather own the wildland itself, [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country) walks through well, septic and ag exemption math. For an owner deciding whether the greenbelt premium is worth cashing in this cycle, the [2027 Austin housing forecast](/blog/austin-housing-market-forecast-2027) is the place to start, and the [Texas homestead exemption guide](/blog/texas-homestead-exemption-2026) covers the tax side of staying put.
 
+
+Buying a home that backs to a greenbelt? Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) covers the free risk checks and upkeep that come with the view.
+
 ## Frequently asked questions
 
 :::faq
@@ -3804,7 +3810,10 @@ A: Three things to watch. Enrollment is falling (about 7,450 students projected,
 
 Q: How do I confirm a home is zoned to Eanes ISD before I make an offer?
 A: Use the property search on the Eanes ISD boundary map page and confirm both the district and the elementary attendance zone, since the district redraws zones when it consolidates campuses. Do not rely on the MLS school fields, which agents type in manually, or on portal school modules, which infer from geography. Put the verified campus assignment in your offer file, and if the seller's listing claims a different assignment, treat that as a pricing issue during the option period.
-:::`,
+:::
+
+Much of the district sits in oak and juniper canyon country. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) explains what Westlake buyers should check on a wooded lot.
+`,
   },
   {
     id: "cost-segregation-austin",
@@ -16294,7 +16303,10 @@ Typical buyers include corporate executives, entrepreneurs, and high-net-worth f
 
 ### How does Barton Creek compare to West Lake Hills?
 
-[West Lake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that West Lake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.`,
+[West Lake Hills](/communities/westlake-hills) shares Eanes ISD schools and Hill Country character but is an ungated community with more architectural diversity. Barton Creek offers country club amenities and 24/7 security that West Lake Hills does not. The choice often depends on whether a buyer prioritizes country club lifestyle or neighborhood autonomy.
+
+Barton Creek's greenbelt edges are part of its appeal. Before you buy, read our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) for the address-level checks that matter.
+`,
     author: "Taylor Sherwood",
     date: "2026-04-08",
     readTime: "7 min read",
@@ -16627,7 +16639,10 @@ Yes. Rob Roy and its sub-communities are gated with controlled access, providing
 
 ### What makes Rob Roy different from other Austin luxury communities?
 
-Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West Lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.`,
+Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West Lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.
+
+Large wooded lots deserve wildfire due diligence. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) walks through risk scores, WUI rules and home hardening.
+`,
     author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "7 min read",
@@ -16673,7 +16688,10 @@ Yes. Steiner Ranch is one of Austin's most family-oriented communities, with poo
 
 ### How does Steiner Ranch compare to Bee Cave?
 
-[Bee Cave](/communities/bee-cave) offers Lake Travis ISD and commercial convenience at the Hill Country Galleria, while Steiner Ranch provides more comprehensive built-in amenities and Lake Austin proximity at generally similar price points. Both are popular with families, the choice often depends on school district preference and lifestyle priorities.`,
+[Bee Cave](/communities/bee-cave) offers Lake Travis ISD and commercial convenience at the Hill Country Galleria, while Steiner Ranch provides more comprehensive built-in amenities and Lake Austin proximity at generally similar price points. Both are popular with families, the choice often depends on school district preference and lifestyle priorities.
+
+For the lessons of the 2011 Steiner Ranch Fire and how to evaluate a lot today, see our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes).
+`,
     author: "Taylor Sherwood",
     date: "2026-04-02",
     readTime: "7 min read",

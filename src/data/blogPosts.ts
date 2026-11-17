@@ -9554,7 +9554,10 @@ Well-positioned homes with disciplined pricing often trade quickly, sometimes be
 ### Should I buy in 78746 or in Barton Creek or Spanish Oaks instead?
 
 It depends on lifestyle priorities. 78746 favors closer-in convenience and Eanes schools. <a href="/communities/barton-creek" class="text-foreground underline hover:text-muted-foreground">Barton Creek</a> and <a href="/communities/spanish-oaks" class="text-foreground underline hover:text-muted-foreground">Spanish Oaks</a> offer more gated, club-oriented estate environments. The right answer is property-specific, not ZIP-specific.
-    `,
+    
+
+Many 78746 homes border Wild Basin and other open space. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) explains which agency sets the rules and what to inspect.
+`,
     author: "Taylor Sherwood",
     date: "2026-05-06",
     readTime: "9 min read",

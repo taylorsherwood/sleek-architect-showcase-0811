@@ -97,7 +97,11 @@ Upscale dining and boutique shops line Bee Caves Road and the Hill Country Galle
 
 ### Community Character
 
-West Lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.`,
+West Lake Hills maintains small-town charm with local events, farmers markets, and community gatherings throughout the year.
+
+### Wooded Lots and Wildfire
+
+Canopy and canyon views come with upkeep. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) explains the free risk checks and what to inspect before you buy.`,
     marketInsights: `### Pricing & Demand
 
 ${neighborhoodPriceSummary("westlake-hills")}  The market is characterized by low inventory and high demand.

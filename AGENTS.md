@@ -1,4 +1,5 @@
 # Project architecture
+- Serve public market figures only for approved site markets, metrics and periods through canonical cached requests; require admin authentication for other paid API queries so visitor access does not become an unrestricted proxy.
 - Keep brokerage identity content on its own lazy-loaded, indexable page linked from the shared About menu; this separates brokerage context from team biographies and keeps both navigation formats synchronized.
 - Keep brokerage specialty descriptions linked to their official divisions and the uploaded brand film in the standard page container below Marketing Reach with muted inline autoplay; this separates specialist designations from local advisory and preserves the film's original sizing.
 - Keep the collapsible navigation in a focus-trapped Radix dialog with its own scroll area and semantic menu styles; this preserves keyboard access and prevents background interaction without changing desktop navigation.

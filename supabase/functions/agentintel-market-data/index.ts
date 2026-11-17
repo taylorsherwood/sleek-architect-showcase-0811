@@ -15,21 +15,25 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.95.0";
 // to know the shape of the v0 API.
 
 import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
+import { PUBLIC_MARKETS, PUBLIC_METRICS, publicMarketQuery, publicMetricsAllowed } from "./public-access.ts";
 
 const AGENTINTEL_BASE_URL = "https://api.agentintel.co/v0";
 
 // ---------------------------------------------------------------------------
 // In-memory cache (per warm instance). Per-action TTL.
 // ---------------------------------------------------------------------------
-const cache = new Map<string, { at: number; payload: unknown; status: number }>();
+const cache = new Map<string, { at: number; payload: unknown; status: number; ttlMs: number }>();
+const pending = new Map<string, Promise<ActionResult>>();
+const publicMarketIds = new Set<string>();
+let publicCatalog: Promise<void> | undefined;
 
 function cacheGet(key: string, ttlMs: number) {
   const hit = cache.get(key);
-  if (hit && Date.now() - hit.at < ttlMs) return hit;
+  if (hit && Date.now() - hit.at < Math.min(ttlMs, hit.ttlMs)) return hit;
   return null;
 }
-function cacheSet(key: string, payload: unknown, status: number) {
-  cache.set(key, { at: Date.now(), payload, status });
+function cacheSet(key: string, payload: unknown, status: number, ttlMs: number) {
+  cache.set(key, { at: Date.now(), payload, status, ttlMs });
 }
 
 // ---------------------------------------------------------------------------
@@ -152,6 +156,60 @@ function normalizeMetrics(raw: any) {
 // ---------------------------------------------------------------------------
 interface ActionResult { status: number; body: unknown; ttlMs: number }
 
+async function cachedAction(action: string, params: URLSearchParams): Promise<ActionResult> {
+  const canonical = new URLSearchParams();
+  if (action === "search-markets") canonical.set("q", params.get("q") || "");
+  if (action === "market-metrics") {
+    canonical.set("market_uuid", params.get("market_uuid") || "");
+    canonical.set("metrics", [...new Set((params.get("metrics") || "median_sales_price").split(",").map((m) => m.trim()))].sort().join(","));
+    canonical.set("duration", params.get("duration") || "1_month");
+  }
+  const key = `action:${action}:${canonical}`;
+  const hit = cacheGet(key, Infinity);
+  if (hit) return { status: hit.status, body: { ...(hit.payload as object), cached: true, last_updated: new Date(hit.at).toISOString() }, ttlMs: hit.ttlMs };
+  const inFlight = pending.get(key);
+  if (inFlight) return inFlight;
+  const work = handleAction(action, canonical).then((result) => {
+    // Cache failures briefly too, so unavailable markets don't repeatedly hit the paid API.
+    cacheSet(key, result.body, result.status, result.ttlMs || 60_000);
+    return { ...result, body: { ...(result.body as object), cached: false, last_updated: new Date().toISOString() } };
+  }).finally(() => pending.delete(key));
+  pending.set(key, work);
+  return work;
+}
+
+async function resolvePublicMarket(q: string) {
+  const result = await cachedAction("search-markets", new URLSearchParams({ q }));
+  if (result.status === 200 && publicMarketQuery(q)) {
+    const body = result.body as ReturnType<typeof normalizeMarkets>;
+    for (const market of body.markets) publicMarketIds.add(market.uuid);
+  }
+  return result;
+}
+
+async function isPublicAction(action: string, params: URLSearchParams): Promise<boolean> {
+  if (action === "search-markets") {
+    const q = publicMarketQuery(params.get("q") || "");
+    if (!q) return false;
+    params.set("q", q);
+    return true;
+  }
+  if (action !== "market-metrics" || !publicMetricsAllowed(params)) return false;
+  const uuid = params.get("market_uuid") || "";
+  if (!/^[a-zA-Z0-9_-]{1,128}$/.test(uuid)) return false;
+  const allow = () => {
+    // One cache entry per public market, regardless of metric order/subsets.
+    params.set("metrics", PUBLIC_METRICS.join(","));
+    return true;
+  };
+  if (publicMarketIds.has(uuid)) return allow();
+  // Cold instances can validate IDs returned by another instance, using only
+  // fixed approved searches. Arbitrary caller IDs never reach the paid API.
+  publicCatalog ??= Promise.all(PUBLIC_MARKETS.map(resolvePublicMarket)).then(() => undefined);
+  await publicCatalog;
+  return publicMarketIds.has(uuid) ? allow() : false;
+}
+
 async function handleAction(action: string, params: URLSearchParams): Promise<ActionResult> {
   switch (action) {
     case "me": {
@@ -254,36 +312,32 @@ Deno.serve(async (req) => {
 
     // -------- Live action surface --------
     if (action) {
-      const authHeader = req.headers.get("Authorization") ?? "";
-      if (!authHeader.startsWith("Bearer ")) {
-        return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
-      }
-      const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_ANON_KEY")!, {
-        global: { headers: { Authorization: authHeader } },
-      });
-      const { data: claims, error: claimsErr } = await sb.auth.getClaims(authHeader.slice(7));
-      const uid = claims?.claims?.sub;
-      if (claimsErr || !uid) {
-        return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
-      }
-      const { data: isAdmin } = await sb.rpc("has_role", { _user_id: uid, _role: "admin" });
-      if (!isAdmin) {
-        return new Response(JSON.stringify({ error: "forbidden" }), { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } });
-      }
-      const cacheKey = `action:${action}:${url.search}`;
-      const hit = cacheGet(cacheKey, 60_000); // soft floor; real TTL applied on set
-      if (hit) {
-        return new Response(JSON.stringify({ ...((hit.payload as object) || {}), cached: true, last_updated: new Date(hit.at).toISOString() }), {
-          status: hit.status,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
+      const publicRead = await isPublicAction(action, url.searchParams);
+      if (!publicRead) {
+        const authHeader = req.headers.get("Authorization") ?? "";
+        if (!authHeader.startsWith("Bearer ")) {
+          return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+        }
+        const backendUrl = Deno.env.get("SUPABASE_URL");
+        const anonKey = Deno.env.get("SUPABASE_ANON_KEY");
+        if (!backendUrl || !anonKey) throw new Error("Missing backend configuration");
+        const sb = createClient(backendUrl, anonKey, {
+          global: { headers: { Authorization: authHeader } },
         });
+        const { data: claims, error: claimsErr } = await sb.auth.getClaims(authHeader.slice(7));
+        const uid = claims?.claims?.sub;
+        if (claimsErr || !uid) {
+          return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+        }
+        const { data: isAdmin } = await sb.rpc("has_role", { _user_id: uid, _role: "admin" });
+        if (!isAdmin) {
+          return new Response(JSON.stringify({ error: "forbidden" }), { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+        }
       }
-
-      const result = await handleAction(action, url.searchParams);
-      if (result.ttlMs > 0 && result.status === 200) {
-        cacheSet(cacheKey, result.body, result.status);
-      }
-      return new Response(JSON.stringify({ ...(result.body as object), cached: false, last_updated: new Date().toISOString() }), {
+      const result = action === "search-markets"
+        ? await resolvePublicMarket(url.searchParams.get("q") || "")
+        : await cachedAction(action, url.searchParams);
+      return new Response(JSON.stringify(result.body), {
         status: result.status,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
@@ -295,7 +349,7 @@ Deno.serve(async (req) => {
       const TTL = 1000 * 60 * 60 * 24;
       const hit = cacheGet(cacheKey, TTL);
       const payload = hit?.payload ?? { ...(MOCK_DATA[dataset] as object), _source: "mock" };
-      if (!hit) cacheSet(cacheKey, payload, 200);
+      if (!hit) cacheSet(cacheKey, payload, 200, TTL);
       return new Response(JSON.stringify({
         dataset,
         data: payload,

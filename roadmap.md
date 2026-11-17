@@ -1,3 +1,6 @@
+# Public market data
+- [x] Restore bounded anonymous market reads; verified live intelligence, seller, community and blog figures while diagnostic and arbitrary paid queries remain restricted.
+
 # About navigation and brokerage page
 - [x] Move the brand film below Marketing Reach and match the opening video's full width; desktop/phone dimensions verified and muted autoplay confirmed with the optimized local film because the sandbox media proxy is unavailable.
 - [x] Preserve the existing layout and style above and through Brand Identity; add supplied photography/video below it and verified Yachting, Private Office, and Private Residences content. Desktop/phone photos and playback verified with local media because the sandbox CDN proxy returns HTML.

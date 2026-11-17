@@ -538,6 +538,8 @@ const SoftCTA = ({ body }: { body: string }) => {
   const subheading = get("subheading");
   const buttonLabel = get("button") || "Request Area Guide";
   const href = get("href") || "/contact";
+  const isExternal = /^https?:\/\//.test(href);
+  const extProps = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
   if (eyebrow) {
     return (
       <aside className="mt-14 md:mt-16 mb-20 md:mb-28 pt-10 md:pt-12 border-t border-foreground/15">
@@ -555,6 +557,7 @@ const SoftCTA = ({ body }: { body: string }) => {
           )}
           <Link
             to={href}
+            {...extProps}
             className="inline-block border border-[#b9a06c] text-[#b9a06c] bg-transparent hover:bg-[#b9a06c] hover:text-white uppercase tracking-[0.18em] text-xs px-8 py-4 transition-colors"
           >
             {buttonLabel}
@@ -574,7 +577,7 @@ const SoftCTA = ({ body }: { body: string }) => {
         </p>
       )}
       <Button asChild variant="outline" className="rounded-none border-[#b9a06c] text-[#b9a06c] bg-transparent hover:bg-[#b9a06c] hover:text-white hover:border-[#b9a06c] uppercase tracking-wider text-xs px-8 py-5 transition-colors">
-        <Link to={href}>{buttonLabel}</Link>
+        <Link to={href} {...extProps}>{buttonLabel}</Link>
       </Button>
     </div>
   );

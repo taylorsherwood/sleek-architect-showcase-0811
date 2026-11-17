@@ -181,7 +181,7 @@ export default function WhyEngelVolkers() {
         <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-10 md:pb-14">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>Sales Approach</p>
-            <h2 className={`${h2} mt-5`}>Strategy, not spectacle.</h2>
+            <h2 className={`${h2} mt-5`}>Standards. Raised.</h2>
           </div>
           <img src={vineyard.url} alt="Engel & Völkers advisor greeting clients beside a sold sign at a vineyard home" className="w-full max-w-3xl mx-auto aspect-video object-cover mb-14 md:mb-20" width={1800} height={1013} loading="lazy" decoding="async" />
           <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">

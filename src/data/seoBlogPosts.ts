@@ -204,9 +204,251 @@ const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 import blogAppraisalHero from "@/assets/blog/new-appraisal-report-2026-austin-hero.webp.asset.json";
 
 import blogWildfireHero from "@/assets/blog/austin-wildfire-risk-hero.webp.asset.json";
+import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-preservation.webp.asset.json";
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "wealth-preservation-luxury-real-estate-austin",
+    title: "Wealth Preservation and Austin Luxury Homes: What the Engel & Völkers Private Office Report 2026/27 Means for You",
+    metaTitle: "Wealth Preservation Real Estate in Austin: 2026/27 Report | Echelon Property Group",
+    excerpt: "Wealth preservation real estate outweighed lifestyle in 37% of luxury deals, per Engel & Völkers' 2026/27 Private Office Report. What it means for Austin.",
+    author: "Taylor Sherwood",
+    date: "2026-11-17",
+    dateModified: "2026-11-17",
+    readTime: "13 min read",
+    category: "MARKET INSIGHTS",
+    keywords: "wealth preservation real estate, Engel & Völkers Private Office Market Report 2026/27, Austin luxury real estate 2026, generational wealth transfer real estate, Texas homestead protection, cash buyers luxury homes Austin",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas", "Texas Hill Country"],
+    image: blogPrivateOfficeReport.url,
+    heroImage: blogPrivateOfficeReport.url,
+    imageAlt: "Engel & Völkers Private Office Market Report cover and research spreads, accompanying an Austin luxury real estate wealth-preservation analysis",
+    imageCaption: "Engel & Völkers Private Office report photography. © Engel & Völkers. All rights reserved.",
+    relatedPostIds: ["wealth-building-through-luxury-real-estate", "build-luxury-real-estate-portfolio-austin", "texas-homestead-exemption-2026", "austin-housing-market-forecast-2027"],
+    content: `**Short answer:** Luxury buyers still say they buy for lifestyle, but wealth preservation was the stronger motive in an average of 37% of transactions, according to the [Engel & Völkers Private Office Market Report 2026/27](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=31). For Austin, that means buyers should judge a home as a long-term family asset, and sellers should market to that motive.
+
+Every year I read the global research our brand publishes, then ask one question: what does it change for my clients here in Austin? This year's answer is bigger than usual. The report puts words to something I see in almost every high-end conversation. People talk about the view and the pool. Then they ask about taxes, privacy and who will own the house in 20 years.
+
+## Key takeaways
+
+- **Preservation runs under the surface.** Only 18.9% of advisors said clients frame property as a preservation asset, yet preservation was the stronger motive in 37.4% of deals, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=31).
+- **Caution is the global mood.** 70% of advisors say clients have become more cautious amid global uncertainty, per [Engel & Völkers](https://www.engelvoelkers.com/private-office/en/market-report).
+- **Taxes now weigh almost as much as lifestyle.** Lifestyle was cited by 34% of advisors, and geopolitical instability and tax or regulatory change by 30% each, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=32).
+- **Heirs are at the table.** The next generation materially influences 24% of transactions, and preservation rises to 55% where heirs influence a majority of decisions, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=38).
+- **The U.S. is a domestic, rate-sensitive market.** U.S. advisors reported the heaviest interest-rate effect of any market (net -1.05) and a 33% preservation share, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=60).
+- **Texas has structural advantages.** The Texas Constitution prohibits a [personal income tax](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=CN&Value=8.24-a) and, since 2025, [state estate and inheritance taxes](https://lrl.texas.gov/legis/billsearch/amendmentdetails.cfm?amendmentID=727&billNumberDetail=2&billSuffixDetail=&billtypeDetail=HJR&legSession=89-0).
+
+## What is the Engel & Völkers Private Office Market Report 2026/27?
+
+The Private Office Market Report is Engel & Völkers' annual study of the top tier of the global luxury market. The 2026/27 edition was produced with Henley & Partners, the residence and citizenship planning firm, per [Engel & Völkers](https://www.engelvoelkers.com/private-office/en/market-report).
+
+The research surveyed 185 Private Office advisors across 17 countries between May and July 2026. The questionnaire had 45 questions across eight sections, and advisors averaged 12.3 years of luxury experience, per the report's [research approach](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=24).
+
+The report measures what advisors observe, not closed-sale prices. Many questions use a net score from -2 to +2, where zero means no change. I keep that in mind when I translate it to Austin.
+
+:::compare-table
+Report detail | Figure | Source
+Advisors surveyed | 185 | [Report, p. 24](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=24)
+Countries covered | 17 | [Report, p. 24](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=24)
+Survey window | May to July 2026 | [Report, p. 24](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=24)
+U.S. advisors in the panel | 80 of 185 | [Report, p. 59](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=59)
+Research partner | Henley & Partners | [Engel & Völkers](https://www.engelvoelkers.com/private-office/en/market-report)
+:::
+
+:::cta
+eyebrow: Private Office research
+heading: Read the full Private Office Market Report 2026/27
+subheading: Explore the global findings, country profiles, and research behind this Austin perspective.
+button: Read the full report
+href: https://tinyurl.com/ycywf55b
+:::
+
+## Why do luxury buyers say "lifestyle" but act on wealth preservation?
+
+The report's central finding is a gap between what clients say and what drives the deal. Asked how clients position property, 62.7% of advisors described it as a lifestyle and quality-of-life decision. Only 18.9% said long-term capital preservation, and 1.1% said rental yield, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=30).
+
+Asked what actually drove each transaction, the same advisors said wealth preservation was the stronger motive in 37.4% of cases. The report calls that "very nearly double" the stated figure, per [page 31](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=31).
+
+I see the same pattern in Austin. A buyer falls for a Westlake view, then spends the next meeting on property taxes, title and how the house fits the family's plans. Both motives are real. A good advisor plans for both.
+
+:::compare-table
+What clients say vs. what advisors observe | Share | Source
+Property described as a lifestyle decision | 62.7% of advisors | [Report, p. 30](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=30)
+Property described as long-term preservation | 18.9% of advisors | [Report, p. 30](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=30)
+Property bought for rental yield | 1.1% of advisors | [Report, p. 30](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=30)
+Preservation was the stronger motive | 37.4% of transactions | [Report, p. 31](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=31)
+:::
+
+## What is driving high-net-worth buyers in 2026?
+
+Personal preference still leads, but outside pressures are close behind. Lifestyle was cited by 34% of advisors as a factor shaping client decisions. Geopolitical instability and tax or regulatory change followed at 30% each, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=32). Personal security and privacy, and inflation, ranked next.
+
+The behavioral result is caution. 70% of advisors reported more cautious clients, against roughly 11% describing more opportunistic ones, per [page 33](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=33). Clients are taking more time, asking for more information and leaning harder on advisors.
+
+U.S. advisors named tax and regulatory change most often, ahead of personal security and privacy, per the report's [U.S. profile](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=60). That ranking matters in Texas, where the tax picture is unusual.
+
+## How do Texas tax and homestead rules fit a wealth-preservation strategy?
+
+Texas answers several of the questions the report says buyers are quietly asking. I am not a tax attorney or CPA, so treat this as a starting list for your advisors.
+
+- **No personal income tax.** Article 8, Section 24-a of the [Texas Constitution](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=CN&Value=8.24-a) says the legislature may not tax the net incomes of individuals.
+- **No state estate or inheritance tax.** Texas voters adopted Proposition 8 on November 4, 2025, adding Article 8, Section 26, which bars state estate, inheritance and death taxes, per the [Texas Legislative Reference Library](https://lrl.texas.gov/legis/billsearch/amendmentdetails.cfm?amendmentID=727&billNumberDetail=2&billSuffixDetail=&billtypeDetail=HJR&legSession=89-0).
+- **Strong homestead protection.** A Texas homestead is exempt from seizure for most creditor claims, with listed exceptions such as purchase money, property taxes and qualifying liens, under [Property Code Section 41.001](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm).
+- **The trade-off is property tax.** Texas has no state property tax, but local taxing units assess it, per the [Texas Comptroller](https://comptroller.texas.gov/taxes/property-tax/exemptions/). School districts must provide a $140,000 residence homestead exemption.
+
+Texas homestead protection is defined by acreage, not dollar value. That is a real difference for estate-level homes.
+
+:::compare-table
+Texas homestead type | Size limit | Source
+Urban home (city limits, ETJ or platted subdivision with services) | Up to 10 acres | [Property Code 41.002](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+Rural home, family | Up to 200 acres | [Property Code 41.002](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+Rural home, single adult | Up to 100 acres | [Property Code 41.002](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+Sale proceeds from a homestead | Protected for 6 months after the sale | [Property Code 41.001(c)](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+:::
+
+Property taxes are where Austin owners feel the cost. I walk through the details in my guides to [Austin property taxes](/blog/austin-property-taxes-explained) and the [2026 Texas homestead exemption](/blog/texas-homestead-exemption-2026).
+
+## Are luxury buyers paying cash or financing in 2026?
+
+Mostly, nothing has changed, and where it has, it tilts toward cash. 114 of 185 advisors reported no material change in how deals are funded. 49 described a shift from financing to cash, against 22 describing the reverse, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=42).
+
+Interest rates are a headwind, and the U.S. feels it most. The global rate effect scored net -0.65, and the U.S. scored net -1.05, per [page 43](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=43). Nationally, Freddie Mac's 30-year fixed average was 7.11% as of November 12, 2026, up from 6.24% a year earlier, per [Freddie Mac PMMS](https://www.freddiemac.com/pmms).
+
+One San Francisco advisor quoted in the report said many clients prefer to borrow against an investment portfolio rather than take a traditional purchase loan. Whether that suits you is a question for your wealth manager and lender. I explain how rates move Austin pricing in [how mortgage rates affect Austin](/blog/austin-mortgage-rate-impact).
+
+Crypto is not the story yet. 130 of 185 advisors reported no crypto-settled activity and none expected within 24 months. Only 10 had seen any, per [page 43](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=43).
+
+## How does the U.S. luxury market compare with the rest of the world?
+
+The report describes a two-speed market. Southern Europe and Switzerland look confident, while North America and Germany look measured, per [page 36](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=36). The U.S. is still rising on balance, but under rate pressure.
+
+:::compare-table
+United States reading | Net score or share | What it means
+Prices | +0.29 | Rising on balance
+Foreign interest | -0.04 | Steady
+Client confidence | -0.99 | Measured, in line with the global mood
+Interest rates | -1.05 | Heaviest rate effect of any market
+Preservation share | 33% of transactions | One deal in three
+Lifestyle buyers | 70% | Firmly a lifestyle market
+:::
+
+*Source: [Engel & Völkers Private Office Market Report 2026/27, p. 60](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=60). Net scores run from -2 to +2.*
+
+U.S. demand is mostly domestic. Only around 7% of enquiries originate abroad for the typical U.S. advisor, led by Canada and Mexico, then the United Kingdom, per the same page. Globally, the report says current price gains are being sustained by domestic demand rather than foreign capital, per [page 28](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=28).
+
+That fits what I see in Austin, where most of my luxury buyers are already U.S.-based, often relocating from another state. If that is you, my [California to Austin guide](/blog/moving-to-austin-texas-from-california) covers the practical side.
+
+## What does the Austin housing market look like right now?
+
+The broad Austin market is soft on volume and steady on price inside the city. These are all-price-range figures, not luxury-only figures.
+
+:::compare-table
+Area, October 2026 | Homes sold | Median price | Months of inventory
+City of Austin | 704 (down 14.6%) | $550,000 (flat) | 5.7
+Travis County | 958 (down 13.2%) | $480,000 (down 4.9%) | 6.2
+Austin-Round Rock-San Marcos MSA | 2,114 (down 11.4%) | $404,802 (down 6.9%) | 6.2
+:::
+
+*Source: [Unlock MLS, October 2026 Central Texas Housing Report](https://www.unlockmls.com/news/october-2026-central-texas-housing-report), released November 11, 2026. Changes compare with October 2025.*
+
+Unlock MLS attributed the metro median decline to lower-priced homes making up a larger share of sales. Its president said softer prices may give buyers more negotiating room, per the [report release](https://www.unlockmls.com/news/october-2026-central-texas-housing-report).
+
+My read: a careful, preservation-minded buyer has time to do real diligence in Austin today. A seller needs a price and a story that hold up to that diligence.
+
+## How is generational wealth transfer changing what luxury buyers want?
+
+Heirs are increasingly part of the decision. Advisors say the next generation materially influences 24% of transactions on average, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=38). When heirs are involved, the time horizon gets longer.
+
+That shift changes the motive. Where heirs influence about half of decisions, preservation is the primary motive in 49% of transactions. Where they influence a majority, it reaches 55%, per [page 38](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=38).
+
+The next generation also wants different things. 43% of advisors cite a stronger pull toward hobby and passion-led property, such as ski access, vineyards, equestrian facilities or boating, per [page 39](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=39). Multigenerational living capacity was cited by 19%, per [page 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40).
+
+Around Austin, that passion list maps to [Lake Austin](/communities/lake-austin) and [Lake Travis waterfront](/communities/lake-travis), Hill Country acreage and equestrian land. My [Hill Country ranch market guide](/blog/texas-hill-country-ranch-market-guide) is a good next read.
+
+:::compare-table
+Next-generation preference | Share of advisors | Source
+Hobby and passion-led properties | 43% | [Report, p. 39](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=39)
+Multigenerational living capacity | 19% | [Report, p. 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40)
+Different geographic preferences | 18% | [Report, p. 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40)
+Wellness and health amenities | 16% | [Report, p. 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40)
+Branded residences and turn-key product | 15% | [Report, p. 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40)
+Technology and smart-home integration | 12% | [Report, p. 40](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=40)
+:::
+
+## Who is the typical luxury buyer, according to the report?
+
+The typical buyer is established, not newly wealthy. Seven in ten advisors named the 50 to 65 age group as typical, and fewer than one in twenty named buyers under 35, per [page 46](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=46). U.S. advisors describe a clientele weighted toward the older group.
+
+Portfolios are simpler than the word "ultra-prime" suggests. 41% of advisors said the typical client owns a primary home plus one second or holiday home. On average, 28% of clients own homes in more than one country, per [page 47](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=47). Formal family offices and trusts remain the exception.
+
+## What should Austin luxury buyers do with these findings?
+
+Buy for the life you want, and underwrite it like a family asset. Here is the checklist I use with clients.
+
+1. **Name both motives early.** Tell me the lifestyle goal and the 10 to 20 year goal. They often point to different neighborhoods.
+2. **Bring in your team before you write an offer.** Advisors in the report most often engage finance, legal and tax partners around a deal, per [page 44](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=44). Do the same.
+3. **Decide how you will hold title.** A trust or entity can serve privacy and estate goals, but it can affect the homestead exemption. Ask your attorney first.
+4. **Model the property tax, not just the price.** Texas trades no income tax for real local property taxes.
+5. **Check the acreage against homestead rules.** Urban and rural limits differ under [Property Code 41.002](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm).
+6. **Plan for the next generation's use.** Guest quarters, water access and land can widen long-term appeal.
+
+If you are building a broader holding, my post on [building a luxury real estate portfolio in Austin](/blog/build-luxury-real-estate-portfolio-austin) goes deeper.
+
+## What should Austin luxury sellers do with these findings?
+
+Market to the motive buyers do not say out loud. A preservation-minded buyer wants proof that the home holds value and is easy to own.
+
+- **Lead with durability.** Highlight build quality, recent systems work, land and location fundamentals.
+- **Have the paperwork ready.** Survey, tax history, HOA documents and permits shorten diligence for cautious buyers.
+- **Respect privacy.** Discretion is a selling point for this buyer, and I cover how to protect it in [privacy concerns when selling a high-value home](/blog/privacy-concerns-selling-high-value-home).
+- **Price for a patient market.** With 5.7 months of inventory in the city of Austin in October, per [Unlock MLS](https://www.unlockmls.com/news/october-2026-central-texas-housing-report), buyers can compare.
+
+My full process is in [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+
+:::faq
+Q: What is the Engel & Völkers Private Office Market Report?
+A: The Private Office Market Report is an annual Engel & Völkers study of the top tier of the luxury market. The 2026/27 edition, produced with Henley & Partners, surveyed 185 Private Office advisors in 17 countries between May and July 2026 about wealth preservation, generational transition and global uncertainty.
+
+Q: What percentage of luxury purchases are driven by wealth preservation?
+A: Advisors in the Engel & Völkers Private Office Market Report 2026/27 said wealth preservation was a stronger motive than lifestyle or practical use in 37.4% of transactions on average. Only 18.9% of advisors said clients openly describe property as a long-term preservation asset.
+
+Q: Are luxury buyers more cautious in 2026?
+A: Yes. In the Engel & Völkers Private Office Market Report 2026/27, 70% of advisors said clients had become more cautious amid global uncertainty, taking more time to evaluate options. Roughly 11% described clients as more opportunistic, giving a net score of -0.83 on the report's scale.
+
+Q: Does Texas have an estate or inheritance tax?
+A: No. Texas voters adopted Proposition 8 on November 4, 2025, adding Article 8, Section 26 to the Texas Constitution. It prohibits the legislature from imposing state estate, inheritance or death taxes. Federal estate tax rules still apply, so confirm your situation with an estate attorney.
+
+Q: How much land does the Texas homestead protect?
+A: Under Texas Property Code Section 41.002, an urban homestead can include up to 10 acres. A rural homestead can include up to 200 acres for a family or up to 100 acres for a single adult. The protection is set by acreage, not by the dollar value of the home.
+
+Q: Is the luxury market in Austin driven by foreign buyers?
+A: The report suggests not. U.S. advisors said only around 7% of enquiries come from abroad for the typical advisor, led by Canada and Mexico. Globally, the report found price gains are being sustained by domestic demand rather than foreign capital, which matches what I see in Austin.
+
+Q: How does generational wealth transfer affect luxury real estate?
+A: The report found heirs materially influence 24% of luxury transactions. Where heirs influence a majority of decisions, wealth preservation becomes the primary motive in 55% of deals. Families plan on longer horizons and favor homes with multigenerational space and passion features like water, land or equestrian use.
+:::
+
+## Sources
+
+- [Engel & Völkers Private Office Market Report 2026/27 (digital edition, Precision Media Group)](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61)
+- [Engel & Völkers Private Office: Market Report 2026/27 overview](https://www.engelvoelkers.com/private-office/en/market-report)
+- [Texas Constitution, Article 8, Section 24-a: Individual income tax prohibited](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=CN&Value=8.24-a)
+- [Texas Legislative Reference Library: Proposition 8 (2025), adds Article 8, Section 26](https://lrl.texas.gov/legis/billsearch/amendmentdetails.cfm?amendmentID=727&billNumberDetail=2&billSuffixDetail=&billtypeDetail=HJR&legSession=89-0)
+- [Texas Property Code, Chapter 41: Interests in land (homestead)](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+- [Texas Comptroller: Property tax exemptions](https://comptroller.texas.gov/taxes/property-tax/exemptions/)
+- [Unlock MLS: October 2026 Central Texas Housing Report](https://www.unlockmls.com/news/october-2026-central-texas-housing-report)
+- [Freddie Mac: Primary Mortgage Market Survey](https://www.freddiemac.com/pmms)
+
+## Want to plan a purchase or sale around your long-term goals?
+
+I am not a tax advisor, attorney or wealth manager, and nothing here replaces their advice. What I do is help you find, price and negotiate the right Austin home while your team handles the structure. Engel & Völkers' global network is one reason I chose the brand, as I explain in [why Engel & Völkers](/why-engel-volkers). If you are weighing a move in Westlake, Lake Austin, Barton Creek or the Hill Country, [reach out for a private consult](/contact).
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI**, is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. He advises buyers, sellers and investors on luxury homes, land and investment property across Austin and the Texas Hill Country, and is licensed in Texas and Tennessee. [More about Taylor](/about).
+
+Echelon Property Group | Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746`,
+  },
   {
     id: "austin-wildfire-risk-luxury-homes",
     title: "Austin Wildfire Risk and Luxury Homes: What to Check Before You Buy or Remodel",
@@ -2735,6 +2977,8 @@ A: A reservation is required every day of the week and is currently available th
     imageAlt: "New homes at framing stage with ZIP System sheathing and a CAT skid steer on site",
     content: `A year ago this week, Fannie Mae told the country that mortgage rates would end 2026 at 5.9 percent. Freddie Mac's survey printed 6.95 percent on September 17, 2026, the daily trackers are above 7 percent, and on September 16 the Federal Reserve raised its policy rate for the first time since 2023. If you built a 2026 plan around the consensus forecast, you were off by a full point in the wrong direction.
 
+For a separate view of what motivates high-end buyers, our [Private Office Report 2026/27 analysis for Austin](/blog/wealth-preservation-luxury-real-estate-austin) examines wealth preservation, family decision-making, and global advisor observations.
+
 So this forecast starts from a different place. It is built from Unlock MLS transaction data for the city of Austin, Travis, Williamson and Hays counties and the luxury ZIP codes Echelon Property Group works in every week, layered on the rate path the bond market is actually pricing, not the one everyone hoped for. It covers prices, sales volume, inventory, rents and the luxury tier separately, because in Austin right now those are four different markets that happen to share a ZIP code prefix.
 
 The one-paragraph version: 2027 is the year Austin finishes bottoming, not the year it takes off. Volume recovers before price does. The luxury tier is already flat to up. The entry-level and new-construction corridors have one more soft stretch in them. And the whole thing is hostage to a 30-year mortgage rate that will probably spend most of 2027 between 6.5 and 7 percent.
@@ -4738,6 +4982,8 @@ A: For an Austin home, a comparative market analysis built by an agent with acce
     heroImage: blogTexasHomesteadExemption2026,
     imageAlt: "Elevated golden hour view of an Austin residential neighborhood with live oaks and the downtown skyline in the distance",
     content: `On November 4, 2025, Texas voters approved Proposition 13 with roughly 79 percent of the vote, raising the school district homestead exemption from $100,000 to $140,000. Proposition 11 passed alongside it, lifting the additional exemption for homeowners 65 or older or disabled from $10,000 to $60,000. Stack them and a senior homeowner now removes $200,000 of value from the school tax base.
+
+The exemption is one part of the ownership picture. Our [wealth preservation and Austin luxury homes guide](/blog/wealth-preservation-luxury-real-estate-austin) distinguishes property-tax savings from creditor protection and estate planning.
 
 Both changes apply retroactively to tax year 2025, which means they are already baked into the bills that arrived in October 2025 and the ones coming this October. Here is the problem: most of what ranks online still cites the old $100,000 number, and most Austin homeowners have never seen the entity-by-entity math on what the full exemption stack is actually worth at their price point.
 
@@ -9938,6 +10184,8 @@ If you are serious about buying in Austin or across Central Texas, a strategy co
     imageAlt: "Investor's desk in an Austin luxury estate with portfolio strategy checklist, market research notes, and a Hill Country pool view through floor-to-ceiling windows",
     imageCaption: "A disciplined Austin luxury portfolio is built through deliberate sequencing across Travis, Williamson, and Hays counties — not single-asset speculation.",
     content: `Investors serious about how to [build a luxury real estate portfolio in Austin](/austin-real-estate-investment) will find a concrete, market-specific framework covering asset diversification across [Travis](/communities), [Williamson, and Hays counties](/best-neighborhoods-in-austin-texas), [off-market acquisition](/off-market-real-estate-austin), [1031 exchanges](/blog/intermediary-texas-real-estate), and neighborhood selection grounded in supply dynamics and buyer profiles rather than national real estate generalizations.
+
+Before choosing the next asset, consider the ownership horizon. Our [Austin wealth-preservation analysis of the Private Office Report 2026/27](/blog/wealth-preservation-luxury-real-estate-austin) covers family priorities, title planning, and the difference between lifestyle and preservation.
 
 Austin is not a single market. It is a collection of distinct submarkets, each with its own supply dynamics, buyer profiles, and appreciation trajectories. Travis, Williamson, and Hays counties each behave differently, and a portfolio built without that nuance is a portfolio built on guesswork.
 
@@ -15220,6 +15468,8 @@ Understanding each neighborhood's character is only part of the equation. For bu
 
 The migration from California to Austin, Texas has become one of the most significant relocation trends in American real estate. Driven by lower taxes, more affordable luxury housing, a thriving technology economy, and an exceptional quality of life, thousands of Californians have made Austin their new home. Whether you're a tech professional following your company's expansion, an entrepreneur seeking a business-friendly environment, or a family looking for more space and better value, Austin offers a compelling alternative to California living.
 
+For buyers considering a home as a long-term family asset, our [Austin wealth-preservation guide](/blog/wealth-preservation-luxury-real-estate-austin) puts Texas tax and homestead rules alongside the Engel & Völkers Private Office Report 2026/27 findings.
+
 ## Cost of Living Comparison: California vs Austin
 
 ### Housing
@@ -16732,6 +16982,8 @@ For the lessons of the 2011 Steiner Ranch Fire and how to evaluate a lot today, 
     excerpt: "A strategic look at the austin luxury real estate market, from pricing power and private inventory to micro-markets shaping buyer and seller decisions.",
     content: `A $3 million home in Austin does not trade for the same reasons it did three years ago. Today, buyers are more selective, sellers are being judged against sharper standards, and the spread between a well-positioned asset and an average luxury listing can be significant. That is what makes the [austin luxury real estate market](/austin-luxury-homes-for-sale) more strategic than headline-driven.
 
+For the buyer motivations behind those decisions, read our [Private Office report analysis for Austin luxury homes](/blog/wealth-preservation-luxury-real-estate-austin), covering wealth preservation, caution, and generational planning.
+
 At the top end, broad city averages rarely tell the full story. Luxury activity in Austin is shaped by micro-markets, school alignment, lot quality, architecture, privacy, and whether a property feels replaceable or genuinely scarce. For executives relocating from coastal markets, founders after a liquidity event, and investors looking for durable value, the real opportunity is in understanding what actually commands attention when price sensitivity becomes more nuanced.
 
 ## What is shaping the Austin luxury real estate market now
@@ -17347,6 +17599,8 @@ The most common error is underestimating how much micro-market fit drives long-t
     metaTitle: "Wealth Building via Luxury RE | Echelon Property Group",
     excerpt: "How affluent buyers and investors compound capital through scarcity, off-market access, and disciplined micro-market judgment, why the best luxury acquisitions protect capital, create optionality, and reward selectivity over time.",
     content: `The difference between a luxury home and a luxury asset is rarely the finish level. It is the quality of the location, the scarcity of the offering, and the discipline behind the acquisition. [Wealth building through luxury real estate](/austin-real-estate-investment) is less about buying something expensive and more about securing something difficult to replicate, difficult to access, and well positioned to compound value over time.
+
+The [Private Office report on wealth preservation and Austin luxury homes](/blog/wealth-preservation-luxury-real-estate-austin) separates long-term capital protection from lifestyle motives and explains what that distinction means locally.
 
 For affluent buyers and investors, that distinction matters. A beautiful property can satisfy a lifestyle objective. A strategic property can do that while also protecting capital, creating optionality, and strengthening a broader wealth plan. Those are not always the same purchase.
 

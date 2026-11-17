@@ -177,6 +177,7 @@ export default function WhyEngelVolkers() {
             </div>)}
           </div>
           <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
+          <p className="mt-6 text-sm leading-relaxed text-muted-foreground">For a local perspective on the research, read our <Link to="/blog/wealth-preservation-luxury-real-estate-austin" className="underline underline-offset-4 hover:text-foreground transition-colors">Private Office Report 2026/27 analysis for Austin buyers and sellers</Link>.</p>
         </section>
 
         <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-10 md:pb-14">

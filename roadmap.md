@@ -1,3 +1,7 @@
+# Private Office report article
+- [x] Add supplied article and image with full-report CTA and valid contextual internal links.
+- [x] Add six related-post backlinks and a brokerage-page backlink; verify article, image, tables, FAQs, report link and phone layout.
+
 # Public market data
 - [x] Restore bounded anonymous market reads; verified live intelligence, seller, community and blog figures while diagnostic and arbitrary paid queries remain restricted.
 

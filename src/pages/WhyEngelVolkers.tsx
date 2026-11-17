@@ -135,7 +135,7 @@ export default function WhyEngelVolkers() {
           <p className="container mx-auto px-6 md:px-10 pb-12 text-xs text-muted-foreground/80">Network and development figures reported by Engel &amp; Völkers, reviewed November 16, 2026.</p>
         </section>
 
-        <div className="w-full">
+        <div className="container mx-auto px-6 md:px-10 pb-20 md:pb-32">
           <video src={brandFilm.url} poster={shopFront.url} autoPlay muted loop controls playsInline preload="metadata" onCanPlay={(event) => { void event.currentTarget.play().catch(() => {}); }} aria-label="Engel & Völkers brand film" className="block w-full aspect-video object-cover bg-background" />
         </div>
 

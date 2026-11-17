@@ -203,9 +203,247 @@ const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 
 import blogAppraisalHero from "@/assets/blog/new-appraisal-report-2026-austin-hero.webp.asset.json";
 
+import blogWildfireHero from "@/assets/blog/austin-wildfire-risk-hero.webp.asset.json";
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-wildfire-risk-luxury-homes",
+    title: "Austin Wildfire Risk and Luxury Homes: What to Check Before You Buy or Remodel",
+    metaTitle: "Austin Wildfire Risk: A Guide for Luxury Home Buyers | Echelon Property Group",
+    excerpt: "Check Austin wildfire risk on any address: WUI code zones, the 2026 wildfire plan, lessons from Steiner Ranch, and a buyer and owner checklist.",
+    author: "Taylor Sherwood",
+    date: "2026-11-16",
+    dateModified: "2026-11-16",
+    readTime: "12 min read",
+    category: "OWNERSHIP",
+    keywords: "Austin wildfire risk, Austin WUI code, wildland urban interface Austin, wildfire risk West Lake Hills, ATXWildfireHub risk score, Travis County wildfire protection plan, buying a home near a greenbelt in Austin, home hardening Austin",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas", "West Lake Hills, Texas", "Steiner Ranch, Texas"],
+    imageAlt: "Wild Basin Wilderness Preserve in West Austin, a Hill Country woodland that borders West Lake Hills",
+    relatedPostIds: ["austin-luxury-homeowners-insurance-guide", "austin-hiking-trails-greenbelts-parks", "cost-to-build-a-house-austin", "steiner-ranch-lake-austin-family-living"],
+    image: blogWildfireHero.url,
+    heroImage: blogWildfireHero.url,
+    content: `**Short answer:** Austin wildfire risk is real and it is address specific. More than half of Austin sits in a Wildland-Urban Interface code zone, per the [Austin Fire Department](https://www.austintexas.gov/fire/wildland-urban-interface-code). Before you buy, check the address on ATXWildfireHub.com, confirm the WUI zone, inspect roof, vents and the first 5 feet, and price insurance early.
+
+The trees, canyons and greenbelt views that make West Austin special are the same things that carry fire. I want my clients to buy those views with open eyes. This guide shows you how to read wildfire risk on one address, which rules apply where, and what to do about it.
+
+## Key takeaways
+
+- **It is widespread.** More than half of Austin falls in WUI code Zones A, B or C, per [Austin Fire](https://www.austintexas.gov/fire/wildland-urban-interface-code).
+- **It is a county story too.** Roughly half of Travis County residents live in the wildland-urban interface, per the [2026 Community Wildfire Protection Plan executive summary](https://austin.widen.net/view/pdf/fbgstxh5tr).
+- **Existing homes are not forced to retrofit.** Austin's 2024 WUI code applies to new work with permit applications on or after July 10, 2025.
+- **Remodels can trigger it.** Replace 50% or more of a roof in a WUI area, and the code requires a full replacement.
+- **Small fires can still take homes.** The 2011 Pinnacle Fire burned about 100 acres and destroyed 10 homes, per [Texas A&M Forest Service](https://ticc.tamu.edu/FireInformation/Case%20Studies/2011%20Wildfires/2011%20Texas%20Wildfires.pdf).
+- **The checks are free.** ATXWildfireHub risk scores, the WUI map and a confidential Austin Fire home evaluation cost nothing.
+
+## How high is wildfire risk in Austin?
+
+It depends on where the house sits. Austin Fire says [more than half of Austin](https://www.austintexas.gov/fire/wildland-urban-interface-code) now falls into one of three WUI code zones.
+
+The 2026 City of Austin/Travis County Community Wildfire Protection Plan (CWPP) gives the regional picture. Its [executive summary](https://austin.widen.net/view/pdf/fbgstxh5tr) says roughly half of Travis County residents live in the WUI, where homes sit near fire-prone vegetation.
+
+The plan finds the highest risk where continuous vegetation overlaps development, especially in eastern, southeastern and western Travis County. It flags western Travis County for potential intense timber and shrub fires. Built-up areas are generally lower risk, with localized concerns near greenbelts and open space.
+
+The Austin City Council [adopted the updated plan on October 22, 2026](https://austincouncil.app/archives/meeting/20261022-reg/). Texas A&M Forest Service approved it on July 13, 2026, according to the [City's agenda backup](https://services.austintexas.gov/edims/document.cfm?id=483507).
+
+### Has wildfire actually destroyed homes in Austin?
+
+Yes. Two 2011 fires in Travis County are the local lessons I share with every buyer of a wooded lot.
+
+:::compare-table
+Fire | Date | Area | Homes destroyed | Source
+Pinnacle Fire, Oak Hill | April 17, 2011 | About 100 acres | 10 | [Texas A&M Forest Service case study](https://ticc.tamu.edu/FireInformation/Case%20Studies/2011%20Wildfires/2011%20Texas%20Wildfires.pdf)
+Steiner Ranch Fire | September 4, 2011 | In and around Steiner Ranch | 23 | [KUT](https://www.kut.org/texas/2011-09-08/steiner-ranch-fire-80-percent-contained)
+:::
+
+Emergency responders reported that the Pinnacle Fire ran through the crowns of cedar and live oak trees and lofted embers over entire city blocks, igniting homes far ahead of the fire, per the Texas A&M Forest Service case study.
+
+In Steiner Ranch, [Four Points News reported](https://www.fourpointsnews.com/2021/09/03/a-decade-later-lessons-learned-from-sept-2011-wildfires-in-steiner/) that embers carried the fire across RM 620 and into the neighborhood. The same weekend, the Bastrop fire destroyed more than 1,600 homes, per the [Texas Department of Insurance](https://www.tdi.texas.gov/blog/do-you-know-your-homes-wildfire-risk.html). Steiner Ranch remains one of Austin's most popular lake-area communities, as our [Steiner Ranch guide](/blog/steiner-ranch-lake-austin-family-living) explains.
+
+The point is not fear. It is that embers, not walls of flame, are what usually reach a house. That is why the fixes below focus on roofs, vents and the first few feet around the home.
+
+## How do I check the wildfire risk of a specific Austin address?
+
+Use three free tools. Each answers a different question.
+
+:::compare-table
+Tool | Who runs it | What it tells you | Best for
+[ATXWildfireHub.com](https://wildfire-austin.hub.arcgis.com/) risk score | Austin Fire Wildfire Division | A risk score based on proximity to wildland, structure separation, topography and fuels | Any Austin address
+[2024 WUI Code Interactive Map](https://www.austintexas.gov/fire/wildland-urban-interface-code) | Austin Fire | Whether the property is in a WUI proximity zone | Buying to build, add on or re-roof
+[Texas Wildfire Risk Explorer (TxWRAP)](https://texaswildfirerisk.com/) | Texas A&M Forest Service | Potential fire intensity within a quarter mile of a point | Addresses outside the city, like the Hill Country
+:::
+
+The risk score factors come from [Austin Fire's Wildfire Division](https://www.austintexas.gov/development-services/building-connections/free-wildfire-preparedness-resources-austin-fires). The quarter-mile detail comes from the [TxWRAP user manual](https://timmons-branding.s3.amazonaws.com/Texas/manuals/Basic+Viewer+User+Manual.pdf).
+
+One caution. The CWPP says its community field assessments capture average conditions and are not a parcel-level view of hazard. A neighborhood rating is a starting point, not a verdict on one lot.
+
+### What is a Structure Ignition Zone Evaluation?
+
+It is a free, confidential walk-around by Austin Fire Wildfire Mitigation Specialists. They assess how vulnerable a home is to embers, direct flame and radiant heat, per [Austin Fire's Wildfire Division](https://www.austintexas.gov/development-services/building-connections/free-wildfire-preparedness-resources-austin-fires). Owners and property managers can request one through ATXWildfireHub.
+
+## What are Austin's WUI code zones?
+
+Austin's Wildland-Urban Interface code sorts structures by distance from wildland. Requirements get stricter as you get closer, per [Austin Fire](https://www.austintexas.gov/fire/wildland-urban-interface-code).
+
+:::compare-table
+Zone | Distance from wildland | What it means for new work
+Zone A | 50 feet or closer | Strictest hardening, including ignition-resistant materials and no soffit vents
+Zone B | More than 50 feet, up to 150 feet | Strict hardening; decks and pergolas within 30 feet of the house must be ignition resistant
+Zone C | More than 150 feet, up to 1.5 miles from 750+ acres of wildland, or up to 0.5 miles from 40+ acres | Lighter rules; decks and similar structures within 10 feet must be ignition resistant
+:::
+
+The City's map shows Zones A and B together. Austin Fire says to confirm A versus B by measuring on site.
+
+### Which WUI rules apply in every zone?
+
+Austin Fire lists these basics for all zones:
+
+- **Ember Ignition Zone:** a five-foot noncombustible zone around structures.
+- **Roof replacement:** replacing 50% or more of a roof requires full replacement.
+- **Vents:** ember-resistant mesh with 1/8-inch openings or WUI-approved vents.
+- **Fences:** ignition-resistant or approved materials within 10 feet of the building.
+- **Inspections:** ignition-resistant construction needs two WUI inspections.
+
+### Do I have to upgrade an existing home?
+
+Generally, no. Austin Fire says the 2024 code applies to new construction and development with permit applications on or after July 10, 2025. Existing buildings do not need to change unless a code official finds a serious hazard.
+
+That changes when you pull a permit. If you are buying a 1990s Westlake Hills home to re-roof, add a guest house or rebuild a deck, plan for WUI rules in the budget and the timeline. Our [cost to build a house in Austin guide](/blog/cost-to-build-a-house-austin) covers how WUI review affects permitting.
+
+## Which wildfire rules apply in Westlake, Barton Creek and the Hill Country?
+
+Austin's WUI code covers properties in the City of Austin's full purpose and limited purpose areas. It does not apply to properties fully in the extraterritorial jurisdiction (ETJ), per [Austin Fire](https://www.austintexas.gov/fire/wildland-urban-interface-code). Outside the city, other agencies set the rules.
+
+:::compare-table
+Where the home sits | Who sets wildfire construction rules | What to know
+City of Austin, full or limited purpose (for example Tarrytown, 78703) | Austin Fire Department | 2024 WUI code for new work since July 10, 2025
+Unincorporated ESD No. 9 area (Westlake Fire Department, 78746) | Travis County ESD No. 9 | Designated WUI areas enforce the IWUIC, excluding West Lake Hills, Rollingwood and Austin limited purpose areas, per [ESD 9](https://www.westlakefd.org/wp-content/uploads/2026/03/ESD-9-Wildland-Urban-Interface-WUI-Construction-Requirements.pdf)
+Other unincorporated Travis County | Travis County Fire Marshal | 2021 International Fire Code for construction and substantial improvements on or after January 1, 2026, per [Travis County Code Chapter 201](https://www.traviscountytx.gov/images/commissioners_court/Doc/county-code/subtitle11/chap201.pdf)
+City of West Lake Hills or Rollingwood | Each city | Confirm current code with the city before you permit
+Hays County, including Dripping Springs | Local city, county or ESD | Use TxWRAP for risk, and confirm code with the permitting office
+:::
+
+If you are comparing the two small cities, our [Rollingwood vs. West Lake Hills guide](/blog/rollingwood-vs-westlake-hills) covers the bigger picture.
+
+### What did the state say about West Lake Hills?
+
+A Texas A&M Forest Service specialist assessed West Lake Hills on April 14, 2023, for the city's Firewise USA effort. The [written assessment](https://www.westlakehills.org/DocumentCenter/View/3952/West-Lake-Hills-RA-2023-Final) is one of the most useful local reads I know.
+
+- **Where the risk is highest:** along the city's boundary with the Wild Basin Preserve.
+- **Access:** many driveways were too steep or narrow for large fire trucks, and one-way in and out roads could jam during an evacuation.
+- **Vegetation:** closed canopy oak and juniper woodland is the main habitat.
+- **Roofs:** most observed roofs were fire-resistant metal, composite shingle or clay tile, but many sat under mature canopy.
+- **Upkeep:** live oaks drop leaves in spring and deciduous trees in fall, so clean gutters and eaves at least twice a year.
+
+The assessment also noted the city was evaluating parts of the international WUI code. Ask the city what it has adopted since.
+
+For the rest of the neighborhood picture, including Eanes ISD schools, see our [West Lake Hills community guide](/communities/westlake-hills) and our look at the [Eanes ISD premium](/blog/eanes-isd-premium).
+
+## What should I check before buying a home near a greenbelt?
+
+Treat wildfire like flood: a due diligence item you handle in the option period. Here is my order of operations.
+
+1. **Pull the risk score** on ATXWildfireHub, or TxWRAP outside the city.
+2. **Check the WUI map** if you plan to re-roof, add on or build.
+3. **Walk the first 5 feet.** Look for wood mulch, shrubs or firewood against the house.
+4. **Ask your inspector** about the roof covering, vents, eaves and debris in gutters and valleys.
+5. **Read the seller's disclosure.** The [TREC Seller's Disclosure Notice](https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf) asks about "Previous Fires." It does not ask about wildfire risk zones.
+6. **Quote insurance early.** Start with our [Austin homeowners insurance guide for luxury homes](/blog/austin-luxury-homeowners-insurance-guide).
+7. **Drive the exits.** The CWPP asks residents to identify more than one evacuation route.
+
+These steps slot into the broader process in our [guide to buying a luxury home in Austin](/blog/how-to-buy-luxury-home-austin).
+
+None of this should scare you off a canyon lot. Greenbelt homes are some of the most coveted in Austin, as our [guide to Austin greenbelts and trails](/blog/austin-hiking-trails-greenbelts-parks) shows. It is about knowing the upkeep that comes with the view.
+
+### Does wildfire risk affect flooding later?
+
+It can. The CWPP's watershed analysis found five high-priority subwatersheds for flooding, debris flow and sedimentation that can follow a wildfire for years. If a lot sits below steep, wooded slopes, ask about both hazards.
+
+## How do I lower wildfire risk on a home I already own?
+
+Start with the home ignition zone, the area within about 100 feet of the house. The [CWPP executive summary](https://austin.widen.net/view/pdf/fbgstxh5tr) breaks it into three parts.
+
+:::compare-table
+Zone | Distance from the home | What to do
+Immediate, "ember resistant" | 0 to 5 feet | Remove combustibles; keep roofs, gutters, decks and vents clear; use rock, gravel or concrete
+Intermediate, "lean, clean, green" | 5 to 30 feet | Remove dead plants; keep landscaping healthy and well spaced
+Extended, "reduced fuel" | 30 to 100+ feet | Thin dense vegetation; remove ladder fuels; add spacing
+:::
+
+The plan also names ember-resistant vents, enclosed eaves, Class A roofing and ignition-resistant materials as hardening measures.
+
+Austin Fire's Wildfire Division publishes a Low-Cost Retrofit List and a Fire-Smart Landscaping tip sheet. The City's [Wildfire Hub](https://wildfire-austin.hub.arcgis.com/) also notes that Austin Resource Recovery offers weekly yard trimmings collection and scheduled large brush collection.
+
+### Should I do this before I sell?
+
+Yes, if you back to open space. A clean first 5 feet, clear gutters and a documented roof show well in photos and in inspections. Keep receipts and permits for any hardening work so buyers can see it.
+
+## How much does WUI compliance add to a new build?
+
+There is no official City figure. The Austin Board of REALTORS® cites third-party estimates of up to $40,000 in added costs for a typical Zone C home and $100,000 or more for Zone A and B homes, in its [2026 WUI one-pager](https://assets.ctfassets.net/pu0snv8rn9fa/6mOkXxf4ZX7yK6w2N9pQJ6/0a88f3cc2e963727568ece39d6090c4b/2026_ADV_WUI_One-Pager.pdf).
+
+Treat those as rough planning ranges, not quotes. Your architect and builder should price the actual zone, materials and site. If you are buying land, our [Hill Country land buying guide](/blog/buying-land-texas-hill-country) covers the rest of the checklist.
+
+## Frequently asked questions
+
+:::faq
+
+Q: Is Austin at high risk for wildfires?
+A: Parts of it are. Austin Fire says more than half of the city falls in a WUI code zone, and the 2026 CWPP says roughly half of Travis County residents live in the wildland-urban interface. Risk is highest where continuous vegetation meets development. Check each address on ATXWildfireHub.
+
+Q: Do Austin's WUI rules apply to my existing house?
+A: Generally not. The 2024 WUI code applies to new construction and development with permit applications on or after July 10, 2025. Existing buildings do not need to change unless a code official finds a serious hazard. A permitted re-roof, addition or new deck can bring parts of the code into play.
+
+Q: What is the Ember Ignition Zone in Austin?
+A: It is a five-foot noncombustible zone around structures, required under Austin's WUI code. The CWPP gives the same advice to all homeowners: keep the first 5 feet free of combustibles, and use materials like rock, gravel or concrete next to the house.
+
+Q: Does a Texas seller have to disclose wildfire risk?
+A: The TREC Seller's Disclosure Notice asks whether the seller knows of previous fires on the property. It does not ask about wildfire risk zones. Buyers should run their own checks, including a risk score, the WUI map and an inspection of the roof and vents.
+
+Q: Which Austin neighborhoods have had wildfires?
+A: Two 2011 fires stand out. The Pinnacle Fire near Oak Hill destroyed 10 homes, per Texas A&M Forest Service. The Steiner Ranch Fire destroyed 23 homes, per KUT. The 2023 state assessment of West Lake Hills placed its highest risk along the Wild Basin Preserve boundary.
+
+Q: How do I get a free wildfire evaluation in Austin?
+A: Request a Structure Ignition Zone Evaluation through ATXWildfireHub.com. Austin Fire Wildfire Mitigation Specialists walk the outside of the home and assess its vulnerability to embers, flames and radiant heat. Austin Fire describes the service as free and confidential.
+
+:::
+
+## Sources
+
+- [Austin Fire Department: Wildland-Urban Interface Code](https://www.austintexas.gov/fire/wildland-urban-interface-code)
+- [City of Austin/Travis County CWPP Executive Summary, 2026](https://austin.widen.net/view/pdf/fbgstxh5tr)
+- [Austin Emergency Management: Emergency Plans (CWPP hub and full plan)](https://www.austintexas.gov/emergency-management/emergency-plans)
+- [City of Austin: Recommendation for Council Action, Item 11, October 22, 2026](https://services.austintexas.gov/edims/document.cfm?id=483507)
+- [Austin City Council meeting archive, October 22, 2026](https://austincouncil.app/archives/meeting/20261022-reg/)
+- [Austin Development Services: Free Wildfire Preparedness Resources from Austin Fire's Wildfire Division](https://www.austintexas.gov/development-services/building-connections/free-wildfire-preparedness-resources-austin-fires)
+- [Austin Wildfire Hub](https://wildfire-austin.hub.arcgis.com/)
+- [Texas A&M Forest Service: 2011 Texas Wildfires case study](https://ticc.tamu.edu/FireInformation/Case%20Studies/2011%20Wildfires/2011%20Texas%20Wildfires.pdf)
+- [KUT: Steiner Ranch Fire 80 Percent Contained, September 8, 2011](https://www.kut.org/texas/2011-09-08/steiner-ranch-fire-80-percent-contained)
+- [Four Points News: Lessons learned from September 2011 wildfires in Steiner](https://www.fourpointsnews.com/2021/09/03/a-decade-later-lessons-learned-from-sept-2011-wildfires-in-steiner/)
+- [Texas Department of Insurance: Do you know your home's wildfire risk?](https://www.tdi.texas.gov/blog/do-you-know-your-homes-wildfire-risk.html)
+- [Texas A&M Forest Service: Texas Wildfire Risk Assessment Portal](https://texaswildfirerisk.com/) and [Basic Viewer manual](https://timmons-branding.s3.amazonaws.com/Texas/manuals/Basic+Viewer+User+Manual.pdf)
+- [City of West Lake Hills: Firewise USA community assessment, 2023](https://www.westlakehills.org/DocumentCenter/View/3952/West-Lake-Hills-RA-2023-Final)
+- [Travis County ESD No. 9: WUI construction requirements notice](https://www.westlakefd.org/wp-content/uploads/2026/03/ESD-9-Wildland-Urban-Interface-WUI-Construction-Requirements.pdf)
+- [Travis County Code Chapter 201: Fire Code](https://www.traviscountytx.gov/images/commissioners_court/Doc/county-code/subtitle11/chap201.pdf)
+- [TREC Seller's Disclosure Notice, Form 55-1](https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf)
+- [Austin Board of REALTORS®: 2026 WUI one-pager](https://assets.ctfassets.net/pu0snv8rn9fa/6mOkXxf4ZX7yK6w2N9pQJ6/0a88f3cc2e963727568ece39d6090c4b/2026_ADV_WUI_One-Pager.pdf)
+
+## Weighing a wooded lot in West Austin?
+
+I am not a fire official or an insurance agent, and nothing here replaces their advice. What I can do is help you look at a house the way a fire inspector and an underwriter will, before you are under contract. If you are considering Westlake Hills, Barton Creek, Rob Roy, Steiner Ranch or a Hill Country property, [reach out for a private consult](/contact).
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI**, is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. He advises buyers, sellers and investors on luxury homes, land and investment property across Austin and the Texas Hill Country, and is licensed in Texas and Tennessee. [More about Taylor](/about).
+
+Echelon Property Group | Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746
+
+:::cta
+heading: Request a private consult
+button: Discuss your property
+href: /contact
+:::`,
+  },
   {
     id: "austin-luxury-homeowners-insurance-guide",
     title: "Austin Homeowners Insurance for Luxury Homes: What to Know in 2026",

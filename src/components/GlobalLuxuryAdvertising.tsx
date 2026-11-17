@@ -214,7 +214,7 @@ const GlobalLuxuryAdvertising = () => {
   }, [cards.visible]);
 
   const globalReachRef = useRef<HTMLParagraphElement>(null);
-  const globalReachCount = 80;
+  const globalReachCount = 100;
 
   return (
     <div className="overflow-hidden">
@@ -408,7 +408,7 @@ const GlobalLuxuryAdvertising = () => {
                   GLOBAL REACH
                 </p>
                 <p className="flex items-baseline gap-2.5 text-foreground" ref={globalReachRef}>
-                  <span aria-label="80+ International Distribution Channels" className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>{globalReachCount}+</span>
+                  <span aria-label="100+ International Distribution Channels" className="text-4xl md:text-5xl font-display font-normal" style={{ letterSpacing: "0.02em" }}>{globalReachCount}+</span>
                   <span className="text-[11px] tracking-[0.1em] uppercase text-muted-foreground">International Distribution Channels</span>
                 </p>
               </div>

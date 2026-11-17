@@ -162,7 +162,7 @@ export default function WhyEngelVolkers() {
             </div>
           </div>
         </section>
-        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
+        <section className="container mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-10 md:pb-14">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>The World of Engel &amp; Völkers</p>
             <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
@@ -178,7 +178,7 @@ export default function WhyEngelVolkers() {
           <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
         </section>
 
-        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
+        <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-32">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>Sales Approach</p>
             <h2 className={`${h2} mt-5`}>Strategy, not spectacle.</h2>

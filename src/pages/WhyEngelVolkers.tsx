@@ -162,6 +162,21 @@ export default function WhyEngelVolkers() {
             </div>
           </div>
         </section>
+        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
+          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
+            <p className={label}>The World of Engel &amp; Völkers</p>
+            <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
+            {specialties.map((item) => <div key={item.title}>
+              <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={900} height={675} loading="lazy" decoding="async" />
+              <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
+              <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
+              <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
+            </div>)}
+          </div>
+          <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
+        </section>
 
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
@@ -185,21 +200,6 @@ export default function WhyEngelVolkers() {
             </div>
           </div>
           <img src={officeInterior.url} alt="Engel & Völkers office with GG Magazine covers and advisor workspaces" className="w-full aspect-video object-cover mt-14 md:mt-20" width={1800} height={1013} loading="lazy" decoding="async" />
-        </section>
-        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
-          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
-            <p className={label}>The World of Engel &amp; Völkers</p>
-            <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
-            {specialties.map((item) => <div key={item.title}>
-              <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={900} height={675} loading="lazy" decoding="async" />
-              <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
-              <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
-              <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
-            </div>)}
-          </div>
-          <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
         </section>
 
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32 text-center">

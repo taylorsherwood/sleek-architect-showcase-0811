@@ -20,6 +20,7 @@ import privateOfficePhoto from "@/assets/ev-private-office-historic-residence.we
 import privateResidencesPhoto from "@/assets/ev-private-residences-issue33.webp.asset.json";
 import officeInterior from "@/assets/ev-office-interior.webp.asset.json";
 import brandFilm from "@/assets/ev-brand-film.mp4.asset.json";
+import "./WhyEngelVolkers.css";
 
 const label = "text-[0.68rem] md:text-xs tracking-[0.24em] uppercase text-muted-foreground";
 const h2 = "font-sans font-light text-[2rem] md:text-[2.75rem] lg:text-5xl leading-[1.1] tracking-[-0.01em]";
@@ -71,7 +72,7 @@ export default function WhyEngelVolkers() {
         { name: "Why Engel & Völkers", url: "https://www.echelonpropertygroup.com/why-engel-volkers" },
       ])} />
       <Navigation />
-      <main>
+      <main className="ev-brokerage-content">
         <section className="relative h-[92svh] min-h-[700px] w-full overflow-hidden bg-primary">
           {showVideo ? (
             <video src={heroVideo.url} poster={heroPoster.url} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />

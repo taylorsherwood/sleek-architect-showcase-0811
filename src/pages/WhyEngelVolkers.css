@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Engel Voelkers Head";
+  src: url("/__l5e/assets-v1/d60cfd55-54a2-4082-9714-6d6265793575/EngelVoelkersHead_Rg.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Engel Voelkers Head";
+  src: url("/__l5e/assets-v1/774e6946-5faa-41b9-8525-f7a096f36fef/EngelVoelkersHead_Bd.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Engel Voelkers Text";
+  src: url("/__l5e/assets-v1/f052c71f-dd88-45c6-a344-3c4d0135dc3f/EngelVoelkersText_Lt.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Engel Voelkers Text";
+  src: url("/__l5e/assets-v1/0144bb8d-8373-4f7e-b5e9-281660db5aee/EngelVoelkersText_Rg.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Engel Voelkers Text";
+  src: url("/__l5e/assets-v1/0721bb57-bc88-4bde-b111-fc12c6d7180e/EngelVoelkersText_Bd.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.ev-brokerage-content,
+.ev-brokerage-content p,
+.ev-brokerage-content li,
+.ev-brokerage-content .font-sans {
+  font-family: "Engel Voelkers Text", "Jost", sans-serif;
+}
+
+.ev-brokerage-content h1.font-sans,
+.ev-brokerage-content h2.font-sans,
+.ev-brokerage-content h3.font-sans {
+  font-family: "Engel Voelkers Head", "Jost", sans-serif;
+  font-weight: 400;
+}

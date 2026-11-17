@@ -178,7 +178,7 @@ export default function WhyEngelVolkers() {
           <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
         </section>
 
-        <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-32">
+        <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-10 md:pb-14">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>Sales Approach</p>
             <h2 className={`${h2} mt-5`}>Strategy, not spectacle.</h2>
@@ -202,7 +202,7 @@ export default function WhyEngelVolkers() {
           <img src={officeInterior.url} alt="Engel & Völkers office with GG Magazine covers and advisor workspaces" className="w-full aspect-video object-cover mt-14 md:mt-20" width={1800} height={1013} loading="lazy" decoding="async" />
         </section>
 
-        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32 text-center">
+        <section className="container mx-auto px-6 md:px-10 pt-10 md:pt-14 pb-20 md:pb-32 text-center">
           <p className={label}>Echelon Property Group</p>
           <h2 className={`${h2} mt-5`}>Global perspective.<br />Austin local.</h2>
           <p className="text-base md:text-lg font-light leading-[1.75] text-muted-foreground mt-6 max-w-xl mx-auto">Tell us about your property and your priorities. We will help you consider the right next move.</p>

@@ -22,8 +22,6 @@ const allInsightLinks: InsightLink[] = [
   { to: "/private-opportunities", label: "Private real estate opportunities in Austin", topics: ["off-market", "private", "investor", "luxury"] },
   { to: "/sell", label: "Sell your Austin home, comprehensive seller guide", topics: ["sell", "marketing", "luxury", "homes"] },
   { to: "/buy", label: "Buy a home in Austin, complete buyer guide", topics: ["buy", "luxury", "homes", "neighborhoods"] },
-  { to: "/sell", label: "Sell your Austin home with strategic marketing", topics: ["sell", "marketing", "luxury"] },
-  { to: "/buy", label: "Buy luxury homes in Austin Texas", topics: ["buy", "luxury", "homes"] },
   { to: "/land", label: "Austin land and development opportunities", topics: ["land", "investment", "development"] },
   { to: "/communities", label: "Explore Austin's luxury neighborhoods", topics: ["communities", "neighborhoods", "luxury"] },
   { to: "/best-neighborhoods-in-austin-texas", label: "Best neighborhoods in Austin Texas (2026 guide)", topics: ["neighborhoods", "relocation", "guide", "communities"] },

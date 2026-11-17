@@ -238,6 +238,14 @@ Every year I read the global research our brand publishes, then ask one question
 - **The U.S. is a domestic, rate-sensitive market.** U.S. advisors reported the heaviest interest-rate effect of any market (net -1.05) and a 33% preservation share, per the [report](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=60).
 - **Texas has structural advantages.** The Texas Constitution prohibits a [personal income tax](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=CN&Value=8.24-a) and, since 2025, [state estate and inheritance taxes](https://lrl.texas.gov/legis/billsearch/amendmentdetails.cfm?amendmentID=727&billNumberDetail=2&billSuffixDetail=&billtypeDetail=HJR&legSession=89-0).
 
+:::cta
+eyebrow: Private Office research
+heading: Read the full Private Office Market Report 2026/27
+subheading: Explore the global findings, country profiles, and research behind this Austin perspective.
+button: Read the full report
+href: https://tinyurl.com/ycywf55b
+:::
+
 ## What is the Engel & Völkers Private Office Market Report 2026/27?
 
 The Private Office Market Report is Engel & Völkers' annual study of the top tier of the global luxury market. The 2026/27 edition was produced with Henley & Partners, the residence and citizenship planning firm, per [Engel & Völkers](https://www.engelvoelkers.com/private-office/en/market-report).
@@ -253,14 +261,6 @@ Countries covered | 17 | [Report, p. 24](https://precision-medias-group.papertur
 Survey window | May to July 2026 | [Report, p. 24](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=24)
 U.S. advisors in the panel | 80 of 185 | [Report, p. 59](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=59)
 Research partner | Henley & Partners | [Engel & Völkers](https://www.engelvoelkers.com/private-office/en/market-report)
-:::
-
-:::cta
-eyebrow: Private Office research
-heading: Read the full Private Office Market Report 2026/27
-subheading: Explore the global findings, country profiles, and research behind this Austin perspective.
-button: Read the full report
-href: https://tinyurl.com/ycywf55b
 :::
 
 ## Why do luxury buyers say "lifestyle" but act on wealth preservation?

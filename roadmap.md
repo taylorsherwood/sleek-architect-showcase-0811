@@ -1,4 +1,6 @@
 # About navigation and brokerage page
+- [x] Preserve the existing layout and style above and through Brand Identity; add supplied photography/video below it and verified Yachting, Private Office, and Private Residences content. Desktop/phone photos and playback verified with local media because the sandbox CDN proxy returns HTML.
+- [x] Leave the entire Marketing Reach / Beyond a listing section unchanged; confirmed byte-identical to the original.
 - [x] Add the supplied advisor photo and a concise track-record and brokerage-choice section; verify desktop and phone presentation using the uploaded image because local CDN delivery is unavailable.
 - [x] Reduce the centered brokerage logo size.
 - [x] Make the supplied brokerage lockup background transparent and retain its centered placement.

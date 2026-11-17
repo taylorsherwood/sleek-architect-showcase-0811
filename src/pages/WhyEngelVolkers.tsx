@@ -13,6 +13,12 @@ import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
 import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";
 import villaWhite from "@/assets/ev-villa-white.png.asset.json";
 import advisorPortrait from "@/assets/taylor-engel-volkers-austin.webp.asset.json";
+import shopFront from "@/assets/ev-shop-front.webp.asset.json";
+import vineyard from "@/assets/ev-vineyard-advisory.webp.asset.json";
+import yachting from "@/assets/ev-yachting-shop.webp.asset.json";
+import shopEntrance from "@/assets/ev-shop-entrance.webp.asset.json";
+import officeInterior from "@/assets/ev-office-interior.webp.asset.json";
+import brandFilm from "@/assets/ev-brand-film.mp4.asset.json";
 
 const label = "text-[0.68rem] md:text-xs tracking-[0.24em] uppercase text-muted-foreground";
 const h2 = "font-sans font-light text-[2rem] md:text-[2.75rem] lg:text-5xl leading-[1.1] tracking-[-0.01em]";
@@ -30,6 +36,12 @@ const reach = [
   { title: "Print & Editorial", text: "GG Magazine, the brand's Global Guide, brings architecture, design, and lifestyle into an editorial setting. For Echelon Property Group, that perspective informs photography, print materials, and a coherent property story; editorial placement is not guaranteed." },
   { title: "Local Presence", text: "Austin relationships, property tours, advisor outreach, and on-the-ground marketing give the broader network a local point of connection." },
   { title: "Development Expertise", text: "Established in 2019, Engel & Völkers Development Services serves builders, developers, and investors. The brokerage describes a division spanning five continents and representing more than 500 projects, from townhome communities to mixed-use high-rises." },
+];
+
+const specialties = [
+  { title: "Engel & Völkers Yachting", image: yachting.url, alt: "Engel & Völkers Yachting shop overlooking a marina", text: "The brand’s world extends beyond the shoreline. Engel & Völkers Yachting connects buyers and sellers with dedicated yacht advisors, bringing specialist knowledge to yacht ownership and life on the water.", href: "https://www.evyachtsales.com/", link: "Explore Yachting" },
+  { title: "Private Office", image: shopEntrance.url, alt: "A welcoming Engel & Völkers reception and property gallery", text: "A specialist global network for exceptional residential assets. Private Office brings together bespoke advisory, a privacy-first approach, and distinctive off-market opportunities, with dedicated advisors attending to each client’s individual priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
+  { title: "Private Residences", image: vineyard.url, alt: "Engel & Völkers advisor and clients beside a sold sign at a vineyard property", text: "Private Residences is Engel & Völkers’ property publication, curating remarkable homes across the Americas. Architecture, setting, and lifestyle shape the collection, giving readers a considered view of properties beyond their own market.", href: "https://www.evrealestate.com/en/blog/private-residences-or-explore-all-that-issue-27-has-to-offer", link: "Explore the publication" },
 ];
 
 const approach = [
@@ -101,6 +113,10 @@ export default function WhyEngelVolkers() {
           </div>
         </section>
 
+        <div className="container mx-auto px-6 md:px-10 pb-20 md:pb-32">
+          <video src={brandFilm.url} poster={shopFront.url} controls playsInline preload="none" aria-label="Engel & Völkers brand film" className="w-full aspect-video object-cover bg-background" />
+        </div>
+
         <section className="bg-secondary">
           <div className="grid lg:grid-cols-2">
             <img src={editorial.url} alt="GG Magazine covers and editorial presentation" className="w-full h-full min-h-[420px] aspect-[4/3] lg:aspect-auto object-cover" width={1200} height={1500} loading="lazy" />
@@ -127,6 +143,7 @@ export default function WhyEngelVolkers() {
             <p className={label}>Sales Approach</p>
             <h2 className={`${h2} mt-5`}>Strategy, not spectacle.</h2>
           </div>
+          <img src={vineyard.url} alt="Engel & Völkers advisor greeting clients beside a sold sign at a vineyard home" className="w-full aspect-video object-cover mb-14 md:mb-20" width={1800} height={1013} loading="lazy" decoding="async" />
           <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
             {approach.map((item, index) => <div key={item.title} className="pt-8 border-t border-ev-red">
               <p className="text-xs font-semibold tracking-[0.2em] text-ev-red mb-6">0{index + 1}</p>
@@ -142,6 +159,7 @@ export default function WhyEngelVolkers() {
               <div className="pt-4"><a href="https://www.evrealestate.com/en/company/about-us" target="_blank" rel="noopener noreferrer" className={textLink}>Explore the brokerage’s story<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a></div>
             </div>
           </div>
+          <img src={officeInterior.url} alt="Engel & Völkers office with GG Magazine covers and advisor workspaces" className="w-full aspect-video object-cover mt-14 md:mt-20" width={1800} height={1013} loading="lazy" decoding="async" />
         </section>
         <EvWaveBand />
 
@@ -165,6 +183,22 @@ export default function WhyEngelVolkers() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
+          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
+            <p className={label}>The World of Engel &amp; Völkers</p>
+            <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
+            {specialties.map((item) => <div key={item.title}>
+              <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={900} height={675} loading="lazy" decoding="async" />
+              <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
+              <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
+              <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
+            </div>)}
+          </div>
+          <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>
         </section>
 
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32 text-center">

@@ -210,7 +210,7 @@ export default function WhyEngelVolkers() {
           <Button asChild className="mt-10 rounded-none h-12 px-10 bg-primary text-primary-foreground text-xs tracking-[0.2em] uppercase font-normal hover:bg-gold hover:text-primary"><Link to="/contact">Start a conversation<ArrowUpRight strokeWidth={1} /></Link></Button>
         </section>
       </main>
-      <Footer />
+      <Footer showNewsletter={false} />
     </div>
   );
 }

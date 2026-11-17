@@ -16,7 +16,7 @@ import advisorPortrait from "@/assets/taylor-engel-volkers-austin.webp.asset.jso
 import shopFront from "@/assets/ev-shop-front.webp.asset.json";
 import vineyard from "@/assets/ev-vineyard-advisory.webp.asset.json";
 import yachting from "@/assets/ev-yachting-shop.webp.asset.json";
-import privateOfficePhoto from "@/assets/ev-private-office-waterfront.webp.asset.json";
+import privateOfficePhoto from "@/assets/ev-private-office-historic-residence.webp.asset.json";
 import privateResidencesPhoto from "@/assets/ev-private-residences-issue33.webp.asset.json";
 import officeInterior from "@/assets/ev-office-interior.webp.asset.json";
 import brandFilm from "@/assets/ev-brand-film.mp4.asset.json";
@@ -41,7 +41,7 @@ const reach = [
 
 const specialties = [
   { title: "Engel & Völkers Yachting", image: yachting.url, alt: "Engel & Völkers Yachting shop overlooking a marina", text: "The brand’s world extends beyond the shoreline. Engel & Völkers Yachting connects buyers and sellers with dedicated yacht advisors, bringing specialist knowledge to yacht ownership and life on the water.", href: "https://www.evyachtsales.com/", link: "Explore Yachting" },
-  { title: "Private Office", image: privateOfficePhoto.url, alt: "Waterfront estate with landscaped gardens overlooking a yacht on the sea", text: "A specialist global network for exceptional residential assets. Private Office brings together bespoke advisory, a privacy-first approach, and distinctive off-market opportunities, with dedicated advisors attending to each client’s individual priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
+  { title: "Private Office", image: privateOfficePhoto.url, alt: "Historic stone residence with ornate gables along a tree-lined street", text: "A specialist global network for exceptional residential assets. Private Office brings together bespoke advisory, a privacy-first approach, and distinctive off-market opportunities, with dedicated advisors attending to each client’s individual priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
   { title: "Private Residences", image: privateResidencesPhoto.url, alt: "Engel & Völkers Private Residences Issue 33 magazine cover and open property spread", text: "Private Residences is Engel & Völkers’ property publication, curating remarkable homes across the Americas. Architecture, setting, and lifestyle shape the collection, giving readers a considered view of properties beyond their own market.", href: "https://www.evrealestate.com/en/blog/private-residences-or-explore-all-that-issue-27-has-to-offer", link: "Explore the publication" },
 ];
 

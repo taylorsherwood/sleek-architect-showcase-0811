@@ -72,7 +72,7 @@ export default function WhyEngelVolkers() {
       ])} />
       <Navigation />
       <main>
-        <section className="relative h-[85svh] min-h-[640px] w-full overflow-hidden bg-primary">
+        <section className="relative h-[85svh] min-h-[640px] md:h-auto md:aspect-video md:min-h-[560px] w-full overflow-hidden bg-primary">
           {showVideo ? (
             <video src={heroVideo.url} poster={heroPoster.url} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
           ) : (
@@ -139,6 +139,8 @@ export default function WhyEngelVolkers() {
           <video src={brandFilm.url} poster={shopFront.url} autoPlay muted loop controls playsInline preload="metadata" onCanPlay={(event) => { void event.currentTarget.play().catch(() => {}); }} aria-label="Engel & Völkers brand film" className="block w-full aspect-video object-cover bg-background" />
         </div>
 
+        <EvWaveBand />
+
         <section className="bg-secondary">
           <div className="container mx-auto px-6 md:px-14 lg:px-20 py-16 md:py-24">
             <div className="grid lg:grid-cols-12 gap-x-8 gap-y-12 lg:gap-y-16 items-start">
@@ -184,9 +186,6 @@ export default function WhyEngelVolkers() {
           </div>
           <img src={officeInterior.url} alt="Engel & Völkers office with GG Magazine covers and advisor workspaces" className="w-full aspect-video object-cover mt-14 md:mt-20" width={1800} height={1013} loading="lazy" decoding="async" />
         </section>
-        <EvWaveBand />
-
-
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>The World of Engel &amp; Völkers</p>

@@ -72,7 +72,7 @@ export default function WhyEngelVolkers() {
       ])} />
       <Navigation />
       <main>
-        <section className="relative h-[85svh] min-h-[640px] w-full overflow-hidden bg-primary">
+        <section className="relative h-[92svh] min-h-[700px] w-full overflow-hidden bg-primary">
           {showVideo ? (
             <video src={heroVideo.url} poster={heroPoster.url} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
           ) : (

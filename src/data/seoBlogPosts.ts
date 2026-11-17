@@ -1317,6 +1317,9 @@ Most of the move-up purchases we close above $2 million never carried a bridge l
 
 We'll run the five-path table on your actual numbers, including the December 1 departing-residence math, before you talk to a lender. [Talk to Taylor](/contact) or call [512.661.3843](tel:+15126613843).
 
+
+Carrying two homes means two premiums and two tax bills. Our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) and [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) help you plan both.
+
 ## Frequently asked questions
 
 :::faq
@@ -1857,7 +1860,10 @@ A: The city as a whole is slightly seller-leaning at 4.93 months of inventory, b
 
 Q: How much under asking do Austin homes sell for?
 A: Citywide, homes closed 3.05 percent under final list price and 3.92 percent under original list price in the past twelve months, a combined discount of about 7 percent from the first ask. In 78703 and 78704 the combined discount is about 9 percent; in Circle C (78739) homes closed at 98.6 percent of asking.
-:::`,
+:::
+
+Prices set the starting point; appraisals have to support them. See our [guide to the new appraisal report](/blog/new-appraisal-report-2026-austin), and if your value rose, our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide).
+`,
   },
   {
     id: "best-time-to-sell-a-house-austin",
@@ -2226,6 +2232,9 @@ subheading: We run your ZIP code's current listing-to-contract ratio, not the th
 button: Request a home value and timing analysis
 href: /home-value-austin
 :::
+
+
+Timing also intersects with appraisal rules. Read our [guide to the new appraisal report](/blog/new-appraisal-report-2026-austin) before you list.
 
 ## Frequently asked questions
 
@@ -4930,6 +4939,9 @@ A: Four usual suspects: your assessed value rose (the 10 percent cap limits the 
 
 Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers, TREC #734520. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, the overwhelming majority of his volume has come through private opportunities and off market transactions. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com.
 
+
+An exemption lowers the taxable value. A protest can lower the value itself. Our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) covers that process.
+
 :::cta-anchor
 :::
 `,
@@ -5508,6 +5520,9 @@ The decision framework Echelon Property Group actually uses with clients:
 
 Either way, the first conversation is not with a builder. It is with someone who can show you what your target product actually trades for, on and off the MLS, before you commit seven figures to finding out.
 
+
+Budget insurance and wildfire code early. See our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) and our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes).
+
 :::cta-anchor
 :::
 
@@ -5994,7 +6009,10 @@ A: Pull the address on the county appraisal district website and read the taxing
 
 - [Texas homestead exemption 2026: the new $140,000 rules](/blog/texas-homestead-exemption-2026)
 
-Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.`,
+Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group, an Austin based luxury and investment real estate practice brokered by Engel & Völkers. Over 11 plus years and more than $155 million in career sales across 200 plus transactions in Travis, Williamson, and Hays counties, Taylor has underwritten district taxes on everything from entry level rentals to off market luxury estates. He holds the CLHMS (Guild), GRI, and ABR designations. Reach him at 512.661.3843 or taylor@echelonpropertygroup.com. This article is general information, not legal or tax advice.
+
+Your appraised value still drives most of the bill. Our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) shows how to challenge it, and our [Austin homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) covers the other big carrying cost.
+`,
   },
 
   {
@@ -7957,6 +7975,9 @@ Q: What is the 30% cost-burden rule?
 A: HUD defines a household as cost-burdened when housing consumes more than 30% of gross income. In Central Texas, every additional $100 per month in carrying costs pushes about 9,800 owner households, 1.7% of all homeowners, past that threshold.
 :::
 
+
+If you list soon, our [guide to the new appraisal report](/blog/new-appraisal-report-2026-austin) explains what the new UAD 3.6 report records and how to prepare.
+
 :::cta-anchor
 :::
     `,
@@ -8339,6 +8360,9 @@ None of this replaces professional advice. It ensures you walk into your CPA's o
 ## Will Congress eliminate this tax?
 
 Maybe eventually, not yet. As of mid-2026 there are several live bills in Washington aimed at this exact issue, including proposals to remove the exclusion caps entirely for primary residences and a bipartisan bill to double the caps and index them to inflation. The White House has publicly flirted with the idea. But none of it has passed, and the exclusion amounts today are the same ones set in 1997. Plan your sale on current law. If Congress acts, it will be a windfall, not a plan.
+
+
+While you hold the home, appraised value sets your annual tax. Our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) explains how to protest it.
 
 ## Frequently asked questions
 
@@ -15461,7 +15485,10 @@ Property taxes are a factor in affordability calculations, but Austin's strong a
 ### Is it worth protesting property taxes in Austin?
 Yes. Successful protests can reduce assessed values by 5-15% or more, resulting in meaningful annual savings. For luxury properties valued above $2 million, even modest percentage reductions translate to thousands of dollars in savings.
 
-When it comes time to sell, the other half of the tax picture is the [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).`,
+When it comes time to sell, the other half of the tax picture is the [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).
+
+If your appraisal looks high, our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) walks through evidence, deadlines and hearings step by step.
+`,
     author: "Taylor Sherwood",
     date: "2025-02-10",
     readTime: "13 min read",

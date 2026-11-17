@@ -2827,6 +2827,9 @@ A: In 2025, the average Travis County homestead exemption saved $3,663. On highe
 When you eventually sell, the residency history behind your exemption also drives the [capital gains tax when selling a house in Texas](/blog/capital-gains-tax-home-sale-texas).
 
 *Sources: Texas Comptroller of Public Accounts (comptroller.texas.gov); Travis Central Appraisal District (traviscad.org); Travis County FY2026 Taxpayer Impact Statement (traviscountytx.gov).*
+
+
+Pair your exemption with a protest when the value is off. Our [Travis County property tax protest guide](/blog/travis-county-property-tax-protest-guide) explains how.
 `
   },
 

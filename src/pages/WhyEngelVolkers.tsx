@@ -168,7 +168,7 @@ export default function WhyEngelVolkers() {
             <p className={label}>Sales Approach</p>
             <h2 className={`${h2} mt-5`}>Strategy, not spectacle.</h2>
           </div>
-          <img src={vineyard.url} alt="Engel & Völkers advisor greeting clients beside a sold sign at a vineyard home" className="w-full aspect-video object-cover mb-14 md:mb-20" width={1800} height={1013} loading="lazy" decoding="async" />
+          <img src={vineyard.url} alt="Engel & Völkers advisor greeting clients beside a sold sign at a vineyard home" className="w-full max-w-3xl mx-auto aspect-video object-cover mb-14 md:mb-20" width={1800} height={1013} loading="lazy" decoding="async" />
           <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
             {approach.map((item, index) => <div key={item.title} className="pt-8 border-t border-ev-red">
               <p className="text-xs font-semibold tracking-[0.2em] text-ev-red mb-6">0{index + 1}</p>

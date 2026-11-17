@@ -139,6 +139,28 @@ export default function WhyEngelVolkers() {
           <video src={brandFilm.url} poster={shopFront.url} autoPlay muted loop controls playsInline preload="metadata" onCanPlay={(event) => { void event.currentTarget.play().catch(() => {}); }} aria-label="Engel & Völkers brand film" className="block w-full aspect-video object-cover bg-background" />
         </div>
 
+        <section className="bg-secondary">
+          <div className="container mx-auto px-6 md:px-14 lg:px-20 py-16 md:py-24">
+            <div className="grid lg:grid-cols-12 gap-x-8 gap-y-12 lg:gap-y-16 items-start">
+              <div className="order-2 lg:order-1 lg:col-span-7 lg:pr-6">
+                <p className={label}>Our Perspective</p>
+                <h2 className={`${h2} mt-5 mb-8 max-w-xl`}>The right home for our clients.</h2>
+                <p className="text-lg font-light leading-[1.7] max-w-2xl">With more than a decade in Austin real estate, over $155 million in career sales, and 200+ transactions closed, Taylor Sherwood brings experience across residential, commercial, land, and investment properties. That breadth informs how Echelon Property Group evaluates opportunities, positions properties, and negotiates for its clients.</p>
+              </div>
+              <div className="order-1 lg:order-2 lg:col-span-5 lg:col-start-8">
+                <img src={advisorPortrait.url} alt="Taylor Sherwood outside an Engel & Völkers shop" className="w-full aspect-[4/3] object-cover" width={1152} height={864} loading="lazy" />
+              </div>
+              <div className="order-3 lg:col-span-12 grid md:grid-cols-2 gap-8 md:gap-12">
+                <p className={body}>We chose Engel &amp; Völkers because its approach complements our own: thoughtful presentation, personal advisory, and relationships that extend beyond a single market. Its international referral network, property marketing resources, and editorial perspective give our team more ways to connect the right people with the right properties.</p>
+                <div>
+                  <p className={body}>For our clients, the purpose is straightforward. Keep the direct attention and Austin knowledge of our team, supported by the reach and resources of an established global brokerage. The affiliation strengthens our work without changing who is accountable to you.</p>
+                  <p className="text-xs tracking-[0.18em] uppercase text-muted-foreground mt-8">Taylor Sherwood <span className="text-gold mx-2">/</span> Founder, Echelon Property Group</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <p className={label}>Sales Approach</p>
@@ -164,27 +186,6 @@ export default function WhyEngelVolkers() {
         </section>
         <EvWaveBand />
 
-        <section className="bg-secondary">
-          <div className="container mx-auto px-6 md:px-14 lg:px-20 py-16 md:py-24">
-            <div className="grid lg:grid-cols-12 gap-x-8 gap-y-12 lg:gap-y-16 items-start">
-              <div className="order-2 lg:order-1 lg:col-span-7 lg:pr-6">
-                <p className={label}>Our Perspective</p>
-                <h2 className={`${h2} mt-5 mb-8 max-w-xl`}>The right home for our clients.</h2>
-                <p className="text-lg font-light leading-[1.7] max-w-2xl">With more than a decade in Austin real estate, over $155 million in career sales, and 200+ transactions closed, Taylor Sherwood brings experience across residential, commercial, land, and investment properties. That breadth informs how Echelon Property Group evaluates opportunities, positions properties, and negotiates for its clients.</p>
-              </div>
-              <div className="order-1 lg:order-2 lg:col-span-5 lg:col-start-8">
-                <img src={advisorPortrait.url} alt="Taylor Sherwood outside an Engel & Völkers shop" className="w-full aspect-[4/3] object-cover" width={1152} height={864} loading="lazy" />
-              </div>
-              <div className="order-3 lg:col-span-12 grid md:grid-cols-2 gap-8 md:gap-12">
-                <p className={body}>We chose Engel &amp; Völkers because its approach complements our own: thoughtful presentation, personal advisory, and relationships that extend beyond a single market. Its international referral network, property marketing resources, and editorial perspective give our team more ways to connect the right people with the right properties.</p>
-                <div>
-                  <p className={body}>For our clients, the purpose is straightforward. Keep the direct attention and Austin knowledge of our team, supported by the reach and resources of an established global brokerage. The affiliation strengthens our work without changing who is accountable to you.</p>
-                  <p className="text-xs tracking-[0.18em] uppercase text-muted-foreground mt-8">Taylor Sherwood <span className="text-gold mx-2">/</span> Founder, Echelon Property Group</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">

@@ -203,11 +203,216 @@ const blogBuyBeforeYouSell = blogBuyBeforeYouSellAsset.url;
 
 import blogAppraisalHero from "@/assets/blog/new-appraisal-report-2026-austin-hero.webp.asset.json";
 
+import blogBuildOrBuy from "@/assets/blog/build-or-buy-austin-custom-home.webp.asset.json";
 import blogWildfireHero from "@/assets/blog/austin-wildfire-risk-hero.webp.asset.json";
 import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-preservation.webp.asset.json";
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "build-or-buy-a-house-austin",
+    title: "Build or Buy a House in Austin: An Honest Guide for Luxury Buyers",
+    metaTitle: "Build or Buy a House in Austin? 2026 Guide | Echelon Property Group",
+    excerpt: "Should you build or buy a house in Austin? Compare cost, timeline and risk, plus SOS, tree, septic and permit rules and a lot due diligence checklist.",
+    author: "Taylor Sherwood",
+    date: "2026-11-19",
+    dateModified: "2026-11-19",
+    readTime: "14 min read",
+    category: "BUYER STRATEGY",
+    keywords: "build or buy a house in Austin, is it cheaper to build or buy a house in Texas, how long does it take to build a house in Austin, buying a lot to build a house in Austin, building a home in Westlake Hills, buying a lot in Lake Travis, Austin teardown lot, lot due diligence checklist Austin, building a custom home in Austin",
+    aboutPlaces: ["Austin, Texas", "West Lake Hills, Texas", "Lake Travis, Texas", "Travis County, Texas"],
+    image: blogBuildOrBuy.url,
+    heroImage: blogBuildOrBuy.url,
+    imageAlt: "Custom home under construction with timber roof framing and crews on site",
+    relatedPostIds: ["cost-to-build-a-house-austin", "buying-land-texas-hill-country", "new-construction-austin-what-wins", "austin-wildfire-risk-luxury-homes"],
+    content: `**Short answer:** Whether to build or buy a house in Austin comes down to time, certainty and the lot. A contractor-built custom home averaged 11.7 months from permit to completion nationally in 2025, per [NAHB's analysis of Census data](https://eyeonhousing.org/2026/09/single-family-home-construction-time-declines-in-2025/), before lot search and design. Buying wins on speed and certainty. Building wins when the lot is right and the design truly matters.
+
+
+I get this question from buyers almost every week. Many of them have toured a dozen homes in Westlake Hills, Barton Creek or Tarrytown and still feel they are compromising. A custom build sounds like the answer. Sometimes it is. This guide is the framework I walk clients through so the decision is made with real numbers and real rules, not a rendering.
+
+## Key takeaways
+
+- **Building takes longer than most expect.** Contractor-built homes averaged 11.7 months from permit to completion in 2025, and homes over 6,000 square feet averaged 16.3 months, per [NAHB and Census data](https://eyeonhousing.org/2026/09/single-family-home-construction-time-declines-in-2025/).
+- **Construction is the biggest line.** Construction was 64.4% of the average new home's price in [NAHB's 2024 survey](https://www.nahb.org/-/media/NAHB/news-and-economics/docs/housing-economics-plus/special-studies/2025/special-study-cost-of-constructing-a-home-2024-january-2025.pdf), and the finished lot was 13.7%. Those are national averages, not Austin luxury figures.
+- **Water rules can cap your footprint.** The SOS Ordinance limits impervious cover to 15% of net site area in the Barton Springs recharge zone, per a [City of Austin staff report](https://services.austintexas.gov/edims/document.cfm?id=440975), though many older platted single-family lots are exempt.
+- **Big trees are regulated.** In Austin, trees 19 inches in diameter and up need a permit to remove, and heritage species at 24 inches and up need a variance, per the [City Arborist](https://www.austintexas.gov/development-services/city-arborist).
+- **Septic needs land.** Travis County requires at least one acre per home served by septic, even with public water, under [County Code Chapter 448](https://www.traviscountytx.gov/images/commissioners_court/Doc/county-code/subtitle19/Ch448_Rules_On-Site_Sewage_Facilities.pdf).
+- **Jurisdiction decides the rulebook.** City of Austin, its ETJ, Travis County and independent cities like West Lake Hills, Rollingwood, Lakeway and Bee Cave each run their own permitting.
+
+:::cta
+eyebrow: Private site review
+heading: Weighing a lot against a finished home?
+subheading: Walk the site with me before you commit. I will pull the restrictions and help pressure-test the numbers.
+button: Start a private conversation
+href: /contact
+:::
+
+## Should you build or buy a house in Austin?
+
+Buy if you need to move soon, want a known price, or love an existing home's setting. Build if you have found a lot you cannot replicate, have a clear design brief that no existing home meets, and can carry a long, uncertain schedule and budget without strain. Most of my clients land on buying.
+
+That is not a sales preference. A finished home in an established luxury neighborhood comes with a known lot, mature trees, settled drainage and a price you can appraise today. A build trades all of that for control.
+
+### Build vs buy in Austin: how do they compare?
+
+:::compare-table
+Factor | Buy an existing home | Build on a lot | Source or basis
+Cost certainty | High: price known at contract | Lower: bids, change orders and site surprises | NAHB cost breakdown; qualitative
+Timeline | Weeks, set by the closing date in your contract | Lot search and design, then about 11.7 months permit to completion on average | [NAHB / Census](https://eyeonhousing.org/2026/09/single-family-home-construction-time-declines-in-2025/)
+Customization | Limited to renovation | Full, within code, HOA and deed limits | Qualitative
+Site risk | Visible and inspectable | Rock, slope, trees, water rules, utilities | City, TCEQ and County rules below
+Financing | Standard purchase mortgage | Lot loan, then construction loan with draws, then permanent loan | Qualitative; confirm with your lender
+Carrying cost | Starts at closing, with a home to live in | Land taxes, insurance and interest before move-in | Qualitative
+:::
+
+## How long does it take to build a house in Austin?
+
+Plan on the lot search, design and engineering, permitting, and then construction. Nationally, contractor-built homes averaged 11.7 months from permit to completion in 2025, and homes of 4,000 to 4,999 square feet averaged 10.7 months, per [NAHB's Census analysis](https://eyeonhousing.org/2026/09/single-family-home-construction-time-declines-in-2025/). Design and approvals come before that clock starts.
+
+### What does permitting look like in Austin and nearby cities?
+
+The City of Austin's Development Services Department targets 10 business days per review cycle for new construction and 7 business days for each update, effective July 1, 2026, per [DSD Residential Plan Review](https://www.austintexas.gov/development-services/residential-plan-review). Those times are per cycle. A custom home often needs more than one round of comments.
+
+Other cities set their own pace. West Lake Hills says the first round of comments can take up to four weeks after an application is complete, then repeats until every comment is resolved, per the [City of West Lake Hills](https://www.westlakehills.gov/95/Building-Development). In unincorporated Travis County, new homes need a County development permit, and builder projects require at least three third-party inspections, per [Travis County TNR](https://www.traviscountytx.gov/tnr/development-services/apply-for-a-permit/single-family-home-manufactured-home-permit).
+
+## What does it cost to build a custom home in Austin?
+
+The total is land plus design and engineering, site work, hard construction costs, soft costs, contingency, carrying costs and financing. I do not quote a single Austin per-square-foot figure here because luxury builds vary too widely by site and finish. For context, NAHB's 2024 national average construction cost was about $162 per square foot, per its [cost survey](https://www.nahb.org/-/media/NAHB/news-and-economics/docs/housing-economics-plus/special-studies/2025/special-study-cost-of-constructing-a-home-2024-january-2025.pdf).
+
+That national home averaged 2,647 square feet, so treat it as a floor for comparison, not an Austin estimate. Our deeper [cost to build a house in Austin](/blog/cost-to-build-a-house-austin) article walks through local pricing tiers.
+
+### What goes into the full cost of a build?
+
+1. **Land.** The lot price, closing costs and any demolition on a teardown.
+2. **Design and engineering.** Architect, structural and civil engineer, surveyor and, on hillsides, a geotechnical engineer.
+3. **Site work.** Clearing, excavation, rock removal, retaining walls, driveway and utility runs. In NAHB's survey, foundations and excavation alone were 10.5% of construction cost.
+4. **Hard costs.** The house itself: framing, systems, finishes.
+5. **Soft costs.** Permits, fees, insurance, utility connections and professional fees.
+6. **Contingency.** A reserve for change orders and site surprises. Agree on it with your builder and lender in writing.
+7. **Carrying costs and financing.** Property taxes and insurance on the lot, plus interest on construction draws until you move in.
+
+Construction loans usually fund in draws as work is inspected, and many convert to a permanent mortgage. Terms vary widely, so talk with a lender before you write a lot offer.
+
+## What Austin site factors change the math?
+
+Austin's west side sits on Hill Country limestone, steep slopes and the Edwards Aquifer. Those conditions drive excavation cost, how much of a lot you can cover, where you can build and which agencies review your plans. Two lots at the same price can support very different houses.
+
+### How do the SOS Ordinance and Edwards Aquifer rules affect a lot?
+
+In the Barton Springs Zone, the SOS Ordinance caps impervious cover at 15% of net site area in the recharge zone, 20% in the Barton Creek contributing zone and 25% elsewhere in the contributing zone, per a [City of Austin staff report](https://services.austintexas.gov/edims/document.cfm?id=440975). A single-family lot that existed on November 1, 1991 is generally exempt from those caps, per the [codified ordinance](https://services.austintexas.gov/edims/document.cfm?id=56558). Where the ordinance applies, no home may be built in the critical water quality zone, which runs at least 400 feet from the centerline of Barton Creek's main channel.
+
+The state layers on top. TCEQ's Edwards Aquifer rules generally do not require an individual plan for a single-family home if the lot is over five acres, impervious cover stays at or under 20%, or the home is in a community with an approved plan, per [TCEQ](https://www.tceq.texas.gov/permitting/eapp/edwards-aquifer-private-residences).
+
+### What about slopes, trees and floodplains?
+
+In many Austin watersheds, city code bars a building on slopes steeper than 25% and limits driveways on slopes over 15%, per a [Watershed Protection presentation](https://services.austintexas.gov/edims/document.cfm?id=366467). Protected and heritage trees can fix where the house goes, per the [City Arborist](https://www.austintexas.gov/development-services/city-arborist).
+
+Austin now regulates floodplain development using the larger FEMA 500-year floodplain while Atlas 14 maps are updated, per [Watershed Protection](https://www.austintexas.gov/watershed-protection/programs/floodplain-management). Where building is allowed, foundation slabs must sit at least two feet above the 100-year floodplain, per the city's [floodplain regulations](https://www.austintexas.gov/watershed-protection/floodplain-regulations).
+
+### City, ETJ or county: who permits a home in western Travis County?
+
+It depends on the address. Inside Austin, DSD reviews. In the ETJ and unincorporated areas, Travis County issues development permits and some city rules can still apply. Lost Creek, for example, left Austin's city limits on September 9, 2024 and moved into the ETJ, per the [City of Austin](https://www.austintexas.gov/technology/annexation-disannexation-address-ranges) and a [notice to residents](https://www.westlakefd.org/wp-content/uploads/2024/08/LCHB_3053_ResidentLetter.pdf).
+
+State law since September 1, 2023 also lets owners petition out of Austin's ETJ under SB 2038, per the [City of Austin](https://www.austintexas.gov/services/petition-extraterritorial-jurisdiction-etj-release). West Lake Hills, Rollingwood, Lakeway and Bee Cave are separate cities with their own codes.
+
+### Which utility, septic and fire rules apply?
+
+Confirm water, wastewater and electric providers before you buy. Where there is no sewer, Travis County requires at least one acre per home on septic, per [Chapter 448](https://www.traviscountytx.gov/images/commissioners_court/Doc/county-code/subtitle19/Ch448_Rules_On-Site_Sewage_Facilities.pdf). Near Lake Travis, LCRA permits septic within 2,000 feet of the lake and inside Lakeway's city limits, per [LCRA](https://www.lcra.org/water/permits-contracts/on-site-sewage/), and its [Highland Lakes Watershed Ordinance](https://www.lcra.org/water/permits-contracts/watershed-management-ordinance/) can require a development permit above 10,000 square feet of impervious cover or one acre of disturbance.
+
+Some emergency services districts require fire sprinklers. Travis County ESD 9, the Westlake Fire Department, requires them in all new residences in its unincorporated area, per its [permit notice](https://www.westlakefd.org/wp-content/uploads/2026/03/ESD-9-Residential-Fire-Sprinkler-Requirement.pdf). Wooded lots should also be checked for [wildfire risk](/blog/austin-wildfire-risk-luxury-homes).
+
+### Do HOA, ACC and deed restrictions matter?
+
+Yes. Many Barton Creek, Lake Travis and Westlake area subdivisions have an architectural control committee and recorded restrictions on setbacks, height, materials and minimum size. Read them before your option period ends, and confirm review timelines with the ACC.
+
+## When does buying win, and when does building win?
+
+Buying usually wins when you need certainty, a known budget or a near-term move. Building usually wins when the lot is irreplaceable, your program is unusual, and you have the time, liquidity and appetite to manage a long project. Neither path is guaranteed to cost less.
+
+**Buying tends to win when:**
+1. You need to move in on a predictable date.
+2. You value mature landscaping and established streets.
+3. You want financing and appraisal to be simple.
+
+**Building tends to win when:**
+1. You found a view, water or acreage lot that rarely trades.
+2. Your needs, such as a guest house, studio or accessibility, are not met by the existing homes for sale.
+3. You can absorb cost overruns without stress.
+
+### Is a teardown a good middle path?
+
+A teardown can be. In established areas like Tarrytown or Westlake Hills, an older home may sit on a lot with existing utilities and a known location. But demolition still needs permits, trees and impervious cover rules still apply, and in Austin a replacement home in a floodplain must meet elevation rules. Price the lot, not the house.
+
+## What should you check before buying a lot in Austin?
+
+Use your option period to answer whether your house can be built, for what cost, and on what timeline. If you cannot answer those three questions, extend the option period or walk away. Our [guide to buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country) covers rural tracts in more depth.
+
+### Pre-purchase lot due diligence checklist
+
+1. **Survey** with boundaries, easements, topography and a tree survey.
+2. **Geotechnical report** on rock, soils and foundation design.
+3. **Title commitment and restrictions:** plat notes, deed restrictions, HOA and ACC rules, setbacks.
+4. **Jurisdiction check:** city, ETJ or county, plus ESD and LCRA.
+5. **Environmental screen:** recharge or contributing zone, SOS status, critical water quality zone, floodplain.
+6. **Utility confirmation:** water, sewer or septic feasibility, electric, and connection costs in writing.
+7. **Professional review** by a civil engineer or land-use attorney on buildable area and impervious cover.
+8. **Builder and architect input** on a rough budget for your program on this site.
+9. **An option period long enough** to finish the steps above.
+
+:::faq
+Q: Is it cheaper to build or buy a house in Austin?
+A: Not reliably. Building adds land, site work, design, permits, carrying costs and financing on top of construction, which was 64.4% of the average new home's price nationally in NAHB's 2024 survey. Austin hillside lots can add rock and slope costs. Compare a real bid on a specific lot against comparable sales.
+
+Q: How long does it take to build a custom home in Austin?
+A: Expect design, approvals and construction to stack. Nationally, contractor-built homes averaged 11.7 months from permit to completion in 2025, and homes over 6,000 square feet averaged 16.3 months, per NAHB's analysis of Census data. Lot search and design come before that, and Austin permit reviews run in cycles.
+
+Q: Can I build on a lot in the Barton Springs Zone?
+A: Often, yes, with limits. The SOS Ordinance caps impervious cover at 15% to 25% of net site area depending on the zone, but single-family lots that existed on November 1, 1991 are generally exempt. TCEQ Edwards Aquifer rules and critical water quality zones still apply. Have an engineer confirm before you close.
+
+Q: Do I need a permit to remove a tree on my Austin lot?
+A: Inside Austin city limits, trees 19 inches in diameter or larger measured 4.5 feet above ground are protected and need a permit. Heritage species such as oaks and pecans at 24 inches or larger need a variance, and those 30 inches or larger go through a public process. Other cities have their own tree rules.
+
+Q: What is the minimum lot size for septic in Travis County?
+A: In Travis County's septic jurisdiction, the minimum is one acre for each home served by an on-site sewage facility, whether or not the lot has public water. Some older lots are exempt under state rules. Near Lake Travis and in Lakeway, LCRA handles septic permitting instead, so confirm the right agency first.
+
+Q: Who issues building permits in West Lake Hills, Rollingwood and Lakeway?
+A: Each is its own city with its own building code, tree rules and review process, so the City of Austin does not issue their permits. West Lake Hills says first comments can take up to four weeks. Unincorporated areas go through Travis County, and ESDs and LCRA may add reviews.
+
+Q: What should I check before buying a lot to build a house?
+A: Get a survey with topography and trees, a geotechnical report, title and deed restrictions, a jurisdiction and utility check, and an engineer's or land-use attorney's view on buildable area. Ask a builder for a rough budget. Set an option period long enough to finish all of it.
+:::
+
+## Sources
+
+1. National Association of Home Builders, *Cost of Constructing a Home 2024* (January 2025): https://www.nahb.org/-/media/NAHB/news-and-economics/docs/housing-economics-plus/special-studies/2025/special-study-cost-of-constructing-a-home-2024-january-2025.pdf
+2. NAHB Eye On Housing, "Single-Family Home Construction Time Declines in 2025" (Sept. 8, 2026), based on the Census Bureau Survey of Construction: https://eyeonhousing.org/2026/09/single-family-home-construction-time-declines-in-2025/
+3. U.S. Census Bureau, New Residential Construction, Length of Time: https://www.census.gov/construction/nrc/data/time.html
+4. City of Austin Development Services, Residential Plan Review (review times effective July 1, 2026): https://www.austintexas.gov/development-services/residential-plan-review
+5. City of Austin Development Services, City Arborist: https://www.austintexas.gov/development-services/city-arborist
+6. City of Austin, Staff Report on Barton Creek Interceptor, Resolution No. 20240530-116 (SOS impervious cover limits): https://services.austintexas.gov/edims/document.cfm?id=440975
+7. City of Austin, Ordinance No. 920903-D codifying the SOS Ordinance (existing lot exemption, critical water quality zone): https://services.austintexas.gov/edims/document.cfm?id=56558
+8. City of Austin Watershed Protection, Environmental Code and Common Variances (slope rules): https://services.austintexas.gov/edims/document.cfm?id=366467
+9. City of Austin Watershed Protection, Floodplain Management (Atlas 14): https://www.austintexas.gov/watershed-protection/programs/floodplain-management
+10. City of Austin Watershed Protection, Floodplain Regulations: https://www.austintexas.gov/watershed-protection/floodplain-regulations
+11. Texas Commission on Environmental Quality, Edwards Aquifer: Private Residences: https://www.tceq.texas.gov/permitting/eapp/edwards-aquifer-private-residences
+12. Travis County Code Chapter 448, Rules for On-Site Sewage Facilities: https://www.traviscountytx.gov/images/commissioners_court/Doc/county-code/subtitle19/Ch448_Rules_On-Site_Sewage_Facilities.pdf
+13. Travis County TNR, Single Family Home Permit: https://www.traviscountytx.gov/tnr/development-services/apply-for-a-permit/single-family-home-manufactured-home-permit
+14. City of West Lake Hills, Building and Development: https://www.westlakehills.gov/95/Building-Development
+15. City of Austin, Annexation and Disannexation Address Ranges (Lost Creek): https://www.austintexas.gov/technology/annexation-disannexation-address-ranges
+16. City of Austin, notice to Lost Creek Limited District residents on HB 3053 disannexation: https://www.westlakefd.org/wp-content/uploads/2024/08/LCHB_3053_ResidentLetter.pdf
+17. City of Austin, Petition for an ETJ Release (SB 2038): https://www.austintexas.gov/services/petition-extraterritorial-jurisdiction-etj-release
+18. LCRA, On-Site Sewage Facilities Program: https://www.lcra.org/water/permits-contracts/on-site-sewage/
+19. LCRA, Highland Lakes Watershed Ordinance: https://www.lcra.org/water/permits-contracts/watershed-management-ordinance/
+20. Travis County ESD No. 9 (Westlake Fire Department), Residential Fire Sprinkler Requirement: https://www.westlakefd.org/wp-content/uploads/2026/03/ESD-9-Residential-Fire-Sprinkler-Requirement.pdf
+
+## Thinking about building or buying in Austin?
+
+If you are weighing a lot against a finished home, I am happy to walk the site with you, pull the restrictions and help you pressure-test the numbers with your builder, engineer and lender. There is no pressure and no obligation. [Start a private conversation](/contact).
+
+**About the author:** Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI, is the founder of [Echelon Property Group](/about), brokered by Engel & Völkers Austin, licensed in Texas and Tennessee. Taylor is not an engineer, attorney or lender, and this article is general information, not legal, engineering or financial advice. Confirm site-specific rules with the agency that has jurisdiction.
+
+*Echelon Property Group brokered by Engel & Völkers Austin | 3700 Bee Caves Rd STE 102, Austin, TX 78746 | Equal Housing Opportunity*`,
+  },
   {
     id: "wealth-preservation-luxury-real-estate-austin",
     title: "Wealth Preservation and Austin Luxury Homes: What the Engel & Völkers Private Office Report 2026/27 Means for You",
@@ -5774,6 +5979,8 @@ Budget insurance and wildfire code early. See our [Austin homeowners insurance g
 
 Thinking about building, or weighing a build against the resale market? Taylor Sherwood and Echelon Property Group advise clients across Travis, Williamson, and Hays counties on lot acquisition, teardown sourcing, and build-versus-buy analysis, with particular depth in off-market land. Call 512.661.3843 or email taylor@echelonpropertygroup.com.
 
+Still deciding whether to build at all? My [build or buy a house in Austin guide](/blog/build-or-buy-a-house-austin) compares timeline, cost certainty and lot risk side by side.
+
 :::faq
 Q: How much does it cost to build a house in Austin in 2026?
 A: Hard construction costs run $160 to $225 per square foot for production homes, $225 to $325 for semi-custom, $325 to $500 for full custom, and $500 to $1,000 or more for luxury custom work. Construction is only 60 to 65 percent of total project cost; land, site work, design, permits, contingency, and carrying costs make up the rest.
@@ -7917,6 +8124,8 @@ Here is what eleven years and $155 million in closed volume have taught me about
 That Southeast Austin assemblage I mentioned did not exist as a listing. We created the deal parcel by parcel, seller by seller, through the broker network, then spent nine months in due diligence proving out water, zoning, and soils. That is the actual job. If you are serious about Hill Country acreage, whether it is a 10-acre homesite with a wildlife plan or a development-scale assemblage, the search should start before the inventory goes public.
 
 Echelon Property Group works land, luxury, and investment deals across Travis, Hays, and Williamson counties and into the Hill Country. If you want a feasibility-first approach to a specific tract, or access to what is trading quietly, reach out: [512.661.3843](tel:+15126613843) or [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com).
+
+If you are comparing a lot with a finished home, my [build or buy a house in Austin guide](/blog/build-or-buy-a-house-austin) includes a pre-purchase lot due diligence checklist.
 
 :::faq
 Q: How much is an acre of land in the Texas Hill Country in 2026?
@@ -17759,7 +17968,9 @@ When the luxury market tightens, the homes that continue to command attention us
 
 That last point is worth sitting with. In premium real estate, quality is not just visual. It is sensory and structural. It is how the home sits on the lot, how quiet it feels inside, how natural the light reads throughout the day, and whether the layout supports both entertaining and ordinary mornings without friction.
 
-A new luxury home should feel current on day one. The better ones still feel relevant years later. If you are evaluating this market seriously, the smartest move is to focus less on what is newly built and more on what is genuinely difficult to replace.`,
+A new luxury home should feel current on day one. The better ones still feel relevant years later. If you are evaluating this market seriously, the smartest move is to focus less on what is newly built and more on what is genuinely difficult to replace.For buyers weighing a fully custom build instead, see [build or buy a house in Austin](/blog/build-or-buy-a-house-austin) for permits, site rules and timelines.
+
+`,
     author: "Taylor Sherwood",
     date: "2026-05-03",
     readTime: "9 min read",

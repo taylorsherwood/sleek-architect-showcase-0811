@@ -7,7 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { createBreadcrumbSchema } from "@/components/SchemaMarkup";
 import EvWaveBand from "@/components/EvWaveBand";
 import { Button } from "@/components/ui/button";
-import brokerageLogo from "@/assets/brokerage-group-lockup-transparent.webp.asset.json";
+import brokerageLogo from "@/assets/brokerage-group-lockup-revised.webp.asset.json";
 import editorial from "@/assets/gg-magazine-editorial.webp.asset.json";
 import heroVideo from "@/assets/brokerage-identity.mp4.asset.json";
 import heroPoster from "@/assets/brokerage-identity-poster.webp.asset.json";
@@ -64,7 +64,7 @@ export default function WhyEngelVolkers() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white text-foreground">
       <SEOHead title="Why Engel & Völkers" description="Explore the Engel & Völkers brand, international marketing network, and considered sales approach behind Echelon Property Group's Austin real estate advisory." canonical="/why-engel-volkers" />
       <SchemaMarkup schema={createBreadcrumbSchema([
         { name: "Home", url: "https://www.echelonpropertygroup.com/" },
@@ -103,7 +103,7 @@ export default function WhyEngelVolkers() {
 
         <section className="container mx-auto px-6 md:px-10 py-20 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
-            <img src={brokerageLogo.url} alt="Engel & Völkers, Echelon Property Group" className="w-44 md:w-52 h-auto object-contain mx-auto" width={1320} height={580} loading="lazy" />
+            <img src={brokerageLogo.url} alt="Engel & Völkers, Echelon Property Group" className="w-44 md:w-52 h-auto object-contain mx-auto" width={1320} height={679} loading="lazy" />
             <p className={`${label} mt-14`}>Brand Identity</p>
             <h2 className={`${h2} mt-5`}>A recognizable standard.</h2>
             <p className="text-lg md:text-xl font-light leading-[1.7] mt-8">Founded in Hamburg in 1977, Engel &amp; Völkers grew from a European real estate business into an international network of local shops and advisors. Its first shop outside Germany opened in Mallorca in 1990, followed by U.S. franchising in 2013.</p>

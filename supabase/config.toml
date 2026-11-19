@@ -1,4 +1,7 @@
 project_id = "ouerzfsimnfqkrmtired"
 
-[functions.rates-affordability]
-verify_jwt = false
+[functions]
+  [functions.auth-email-hook]
+    verify_jwt = false
+  [functions.rates-affordability]
+    verify_jwt = false

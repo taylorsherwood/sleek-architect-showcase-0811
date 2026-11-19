@@ -1,3 +1,4 @@
+import { sendTemplateEmail } from '../_shared/transactional-email-templates/send-email.ts'
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
@@ -277,6 +278,32 @@ Deno.serve(async (req) => {
       fbp: fbp || undefined,
       fbc: fbc || undefined,
     });
+
+    // Owner email notification — never blocks the lead flow.
+    try {
+      const skip = new Set(["name","email","phone","message","source","page","page_url","time","timestamp","submittedAt","fields_summary","fields_json","webhookUrl","fbp","fbc","Name","Email","Phone","Message","Source","Page","Page_URL","Time","Timestamp"]);
+      const pretty = (k: string) => k.replace(/[_-]+/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, (c) => c.toUpperCase());
+      const seen = new Set<string>();
+      const details: Array<{ label: string; value: string }> = [];
+      const push = (k: string, v: unknown) => {
+        if (v === undefined || v === null || skip.has(k) || seen.has(k)) return;
+        const str = typeof v === "object" ? JSON.stringify(v) : String(v).trim();
+        if (!str || str.length > 1500) return;
+        seen.add(k);
+        details.push({ label: pretty(k), value: str });
+      };
+      for (const [k, v] of Object.entries(payload)) if (!k.startsWith("utm_")) push(k, v);
+      for (const [k, v] of Object.entries(extraForDb)) push(k, v);
+      for (const [k, v] of Object.entries(utmMerged)) if (k.startsWith("utm_")) push(k, v);
+      push("referrer", clean(body?.referrer));
+      push("submitted", payload.time || payload.timestamp || new Date().toISOString());
+      await sendTemplateEmail("new-lead-notification", "taylor@echelonpropertygroup.com", {
+        templateData: { name: payload.name, email: payload.email, phone: payload.phone, message: payload.message, source: payload.source, page: payload.page, details },
+        idempotencyKey: `new-lead-notification-${leadId}`,
+      });
+    } catch (e) {
+      console.error("[Lead email] notification failed", e instanceof Error ? e.message : e);
+    }
 
     const webhookUrl = clean(body?.webhookUrl);
     const ALLOWED_WEBHOOKS = new Set([

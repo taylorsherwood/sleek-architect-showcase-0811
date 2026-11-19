@@ -5,3 +5,5 @@ project_id = "ouerzfsimnfqkrmtired"
     verify_jwt = false
   [functions.rates-affordability]
     verify_jwt = false
+  [functions.preview-transactional-email]
+    verify_jwt = false

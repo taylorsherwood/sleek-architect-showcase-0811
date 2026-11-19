@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { chunkRetry } from "@/lib/chunkRetry";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import HomeOfficeListings from "@/components/HomeOfficeListings";
+import evVillaMark from "@/assets/ev-villa-rgb.svg.asset.json";
 import LandRanchHomeIntro from "@/components/LandRanchHomeIntro";
 import parallaxHillCountryAsset from "@/assets/parallax-hill-country.jpg.asset.json";
 import AdvisorSection from "@/components/HomeAdvisorSection";
@@ -62,6 +63,18 @@ const HomeBelowFold = () => (
     </Suspense>
 
     <FeaturedProperties />
+    <div className="flex justify-center bg-secondary pb-2 md:pb-4">
+      <img
+        src={evVillaMark.url}
+        alt="Engel & Völkers"
+        title="Brokered by Engel & Völkers Austin"
+        width={283}
+        height={118}
+        className="w-[150px] sm:w-[180px] md:w-[210px] h-auto object-contain"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
     <HomeOfficeListings />
     <div className="flex items-center justify-center py-8 md:py-12 bg-secondary" aria-hidden="true">
       <div className="flex items-center gap-4 max-w-[280px] w-full">

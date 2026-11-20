@@ -76,6 +76,8 @@ This incorporated city offers rolling terrain, mature live oaks, and panoramic h
 
 Homes range from elegant mid-century estates on generous lots to contemporary masterpieces featuring walls of glass, infinity-edge pools, and seamless indoor-outdoor living.
 
+For buyers planning a discreet purchase, our [Texas LLC or trust ownership guide](/blog/buy-house-in-llc-or-trust-texas) explains the public-record privacy limits and the homestead, financing and title questions to discuss before an offer.
+
 ### Schools & Exclusivity
 
 The community is anchored by the acclaimed Eanes Independent School District, consistently ranked among Texas's top districts. Limited land availability and strict zoning maintain the exclusivity and low density that residents treasure.

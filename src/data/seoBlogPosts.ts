@@ -1,3 +1,4 @@
+import blogTexasOwnershipKeys from "@/assets/blog/texas-home-ownership-keys.webp.asset.json";
 import { formatNeighborhoodMedian, neighborhoodPriceSummary, neighborhoodSourceNote } from "./neighborhoodStats";
 import heroLuxury from "@/assets/hero-luxury-austin.jpg";
 import blogTarrytownVsBrykerWoods from "@/assets/tarrytown-bryker-woods.avif";
@@ -209,6 +210,256 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "buy-house-in-llc-or-trust-texas",
+    title: "Should You Buy a House in an LLC or Trust in Texas? A Privacy Guide for Austin Luxury Buyers",
+    metaTitle: "Buying a House in an LLC or Trust in Texas: 2026 Guide | Echelon Property Group",
+    excerpt: "Should you buy a house in an LLC or trust in Texas? Compare privacy, homestead exemption, financing, title insurance and taxes before you close in Austin.",
+    author: "Taylor Sherwood",
+    date: "2026-11-20",
+    dateModified: "2026-11-20",
+    readTime: "15 min read",
+    category: "BUYER STRATEGY",
+    keywords: "buy a house in an LLC or trust in Texas, buying a house in an LLC in Texas, revocable living trust homestead exemption Texas, can an LLC get a homestead exemption in Texas, buy a home anonymously in Austin, land trust Texas privacy, due on sale clause LLC transfer, qualifying trust Texas Tax Code 11.13, Travis County property records privacy",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas", "West Lake Hills, Texas", "Lake Austin, Texas"],
+    imageAlt: "House keys, a fountain pen and ownership documents on a desk overlooking a wooded residential setting",
+    relatedPostIds: ["texas-non-disclosure-state", "texas-homestead-exemption-2026", "confidential-property-transactions", "wealth-preservation-luxury-real-estate-austin"],
+    image: blogTexasOwnershipKeys.url,
+    heroImage: blogTexasOwnershipKeys.url,
+    content: `**Short answer:** For a primary residence, a properly drafted revocable living trust is usually the better way to buy a house in an LLC or trust in Texas. A "qualifying trust" keeps your homestead exemption under [Texas Tax Code Section 11.13(j)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13), while an LLC is not an individual and loses it. LLCs fit investment and second homes better.
+
+Many of my clients in Westlake Hills, Barton Creek, Tarrytown and on Lake Austin ask the same question before they write an offer: whose name should go on the deed? Usually the goal is privacy. Sometimes it is liability or estate planning. This guide explains what each structure really hides in Travis County public records, and what it can cost you.
+
+**Not legal or tax advice.** I am a REALTOR®, not an attorney or CPA. Ownership structure has legal, tax and lending consequences. Talk to a Texas real estate attorney and a CPA before you choose, and ideally before you sign a contract.
+
+## Key takeaways
+
+- **Trusts can keep the homestead exemption. LLCs cannot.** Texas law requires a residence homestead to be owned by individuals "directly or through a beneficial interest in a qualifying trust," per [Tax Code Section 11.13(j)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13).
+
+- **The school homestead exemption is $140,000.** That is the mandatory school district exemption on a residence homestead, per the [Texas Comptroller](https://comptroller.texas.gov/taxes/property-tax/docs/96-1740.pdf), and an LLC-owned home gives it up.
+
+- **An LLC is not anonymous by itself.** Texas Form 205 asks for the name and address of each initial manager, or each member if there are no managers, per the [Texas Secretary of State](https://www.sos.texas.gov/corp/instructions/205.shtml).
+
+- **Trust transfers are protected from due-on-sale. LLC transfers are not.** Federal law bars lenders from calling a loan when you deed your home to an inter vivos trust where you remain a beneficiary and occupancy rights are not transferred, under [12 U.S.C. 1701j-3(d)(8)](https://uscode.house.gov/us/usc/119-142/t12/s1701j-3/). No such exception names LLCs.
+
+- **Most conventional loans require a person or a revocable trust.** Fannie Mae lends to natural persons, with exceptions for inter vivos revocable trusts and some land trusts, per its [Selling Guide B2-2-01](https://selling-guide.fanniemae.com/sel/b2-2-01/general-borrower-eligibility-requirements).
+
+- **Federal reporting is currently paused.** Domestic companies are exempt from beneficial ownership reporting under a [FinCEN final rule effective August 14, 2026](https://www.federalregister.gov/documents/2026/08/14/2026-16576/beneficial-ownership-information-reporting-requirement-revision), and the residential real estate reporting rule was [vacated on March 19, 2026](https://www.fincen.gov/rre-faqs).
+
+:::cta
+eyebrow: Private purchase planning
+heading: Talk through your ownership structure before you offer
+subheading: Coordinate your purchase with your attorney, CPA and lender before choosing the name on the contract.
+button: Request a private consultation
+href: /contact
+:::
+
+## Can you buy a house in an LLC or trust in Texas?
+
+Yes. Texas lets you take title in your own name, in a trust through its trustee, or in an LLC or other entity. The real question is what you give up. For a home you live in, the homestead exemption, financing and title insurance usually decide the answer before privacy does.
+
+Taking title in an entity is a legal decision, not a checkbox on the contract. The buyer named in the contract, the lender's approval and the title commitment all need to match the structure you choose.
+
+### How do an LLC, a living trust, a title-holding trust and your own name compare?
+
+:::compare-table
+Factor | Your own name | Revocable living trust | Title-holding (land) trust | LLC | Source or basis
+Name on the deed and TCAD record | Yours | Trustee, often you, "as Trustee of" the trust | Trustee, often a third party | The LLC | Deed and appraisal records
+Privacy | Lowest | Low if you are trustee; better with a neutral trust name | Moderate to high with an outside trustee | Moderate; manager or member names are on Form 205 | [Texas SOS Form 205](https://www.sos.texas.gov/corp/instructions/205.shtml)
+Homestead exemption | Yes | Yes, if it is a "qualifying trust" | Possibly, if the trust meets the 11.13(j) test | No | [Tax Code 11.13(j)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13)
+Conventional financing | Yes | Often, if Fannie Mae trust rules are met | Limited; negotiated basis only | Rare for a primary residence | [Fannie Mae B2-2-01](https://selling-guide.fanniemae.com/sel/b2-2-01/general-borrower-eligibility-requirements)
+Due-on-sale risk on a later transfer | Not applicable | Protected if you remain a beneficiary and occupancy rights do not change | Depends on terms; ask your attorney | Not protected by statute | [12 U.S.C. 1701j-3(d)](https://uscode.house.gov/us/usc/119-142/t12/s1701j-3/)
+Title insurance continuity after a later deed | Not applicable | Continues for an estate planning trust you created | Depends on structure | Continues only in wholly owned cases | [TDI Form T-1](https://tdi.texas.gov/title/documents/form_t-01.pdf)
+State entity tax and filings | None | None | None | Annual franchise tax report or information report | [Texas Comptroller](https://comptroller.texas.gov/taxes/franchise/)
+Probate avoidance | No, unless you add a transfer on death deed | Yes, when funded | Depends on trust terms | Membership interest still passes through your estate plan | Attorney review
+Setup cost | None | Attorney drafting fee | Attorney and trustee fees | Formation, registered agent and annual filing costs | Varies; get quotes
+:::
+
+## What does an LLC or trust actually hide in Travis County?
+
+An LLC or trust replaces your name on the deed and on the Travis Central Appraisal District (TCAD) record with the entity or trustee name. Your name can still surface through Secretary of State filings, the trustee's name, mortgage documents, homestead applications and anyone who links you to the address.
+
+Here is how each record works:
+
+- **Deed records.** The Travis County Clerk records the deed, and it shows the grantee's name. If you are trustee, your name usually appears as "Jane Doe, Trustee of the ___ Trust."
+
+- **Appraisal records.** TCAD lists the owner of record for every account. A homestead application, though, is filed by the person who lives there.
+
+- **Secretary of State.** A Texas LLC's certificate of formation lists the registered agent and the initial managers, or the members if there are no managers, per the [Form 205 instructions](https://www.sos.texas.gov/corp/instructions/205.shtml). Clients who want more distance often use a professional registered agent and a manager other than themselves. Ask your attorney how that should be set up.
+
+- **Franchise tax reports.** An LLC that owes no franchise tax still has to file a Public Information Report or an Ownership Information Report each year, per the [Texas Comptroller](https://comptroller.texas.gov/taxes/franchise/forms/2026-franchise.php).
+
+### Does Texas make my purchase price public?
+
+No. Texas is a non-disclosure state for sale prices. TCAD's own reappraisal plan says "Texas laws do not require mandatory disclosure of sale prices," per the [TCAD 2027 and 2028 Reappraisal Plan](https://traviscad.org/wp-content/uploads/2027-2028-Reappraisal-Plan_Adopted-20260903-1.pdf). That is true whatever name is on the deed.
+
+The district still gathers prices from deeds, voluntarily disclosed closing statements, questionnaires and market data vendors, per the same plan. I cover the details in [why Texas is a non-disclosure state](/blog/texas-non-disclosure-state).
+
+### Can certain owners hide their address from TCAD without an entity?
+
+Yes, for specific groups. Texas Tax Code Section 25.025 lets eligible people, including peace officers, certain judges and victims of family violence, sexual assault or stalking, restrict public access to their home address in appraisal records, per the [statute](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm#25.025). The request uses [Comptroller Form 50-284](https://comptroller.texas.gov/forms/50-284.pdf).
+
+That protection covers listed categories only. It is not a general privacy option for every buyer, so check eligibility with TCAD before relying on it.
+
+## Can you keep your homestead exemption if a trust owns your home?
+
+Yes, if the trust is a "qualifying trust." Texas Tax Code Section 11.13(j) says the trust documents must give the trustor or a beneficiary the right to live in the home rent free, and the deed to the trust must describe the property and be recorded in county real property records.
+
+Under the [statute](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13), the right to occupy can run for life, for the lesser of life or a term of years, or until the trust is revoked or terminated. A trustor or beneficiary who qualifies must occupy the home as a principal residence.
+
+The savings are real. Texas school districts must offer a [$140,000 residence homestead exemption](https://comptroller.texas.gov/taxes/property-tax/docs/96-1740.pdf), and other taxing units may add a local option of up to 20 percent. For the Travis County filing steps, see my [Travis County homestead exemption guide](/blog/texas-homestead-exemption-travis-county) and the [2026 Texas homestead exemption update](/blog/texas-homestead-exemption-2026).
+
+### Can an LLC get a homestead exemption in Texas?
+
+No. Texas defines a residence homestead as a structure "owned by one or more individuals, either directly or through a beneficial interest in a qualifying trust," per [Tax Code Section 11.13(j)(1)](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13). An LLC is a separate legal entity, not an individual, so an LLC-owned primary residence does not qualify for the general exemption.
+
+Losing homestead status also means losing the cap that limits a homestead's appraised value increase to 10 percent a year, under [Tax Code Section 23.23](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm#23.23). Confirm the dollar impact with your CPA using your expected taxable value.
+
+## Will a lender finance a house bought in an LLC?
+
+Rarely, for a primary residence. Conventional loans sold to Fannie Mae go to natural persons, with exceptions for inter vivos revocable trusts and some land trusts, per [Fannie Mae's Selling Guide](https://selling-guide.fanniemae.com/sel/b2-2-01/general-borrower-eligibility-requirements). LLC buyers generally need cash, a portfolio lender or an investor loan.
+
+Revocable trusts must meet [Fannie Mae's trust requirements](https://selling-guide.fanniemae.com/sel/b2-2-05/inter-vivos-revocable-trusts), including that the person who created the trust is a primary beneficiary. Ask your lender early, because trust documents go through underwriting and legal review.
+
+Investor loans such as DSCR products are designed for rental property, not for a home you live in. Do not misstate occupancy to get one.
+
+### Does deeding my home to an LLC or trust trigger the due-on-sale clause?
+
+A trust transfer usually does not. Federal law bars lenders from calling a loan on a home with fewer than five units when it moves into an inter vivos trust where the borrower is and remains a beneficiary and the transfer does not change occupancy rights, per [12 U.S.C. 1701j-3(d)(8)](https://uscode.house.gov/us/usc/119-142/t12/s1701j-3/). The statute lists no LLC exception.
+
+Some servicers allow more. Fannie Mae's servicing rules exempt a transfer to an LLC controlled or majority owned by the original borrower on loans it bought on or after June 1, 2016, per [Servicing Guide D1-4.1-02](https://servicing-guide.fanniemae.com/svc/d1-4.1-02/allowable-exemptions-due-type-transfer). Get written consent from your servicer before any deed.
+
+## How does title insurance work when an entity owns the home?
+
+Title insurance follows the insured named on the policy. The simplest path is to close in the final name, whether trustee or LLC, so the owner's policy names the right party from day one. Deeding the home later can leave the new owner outside coverage unless the transfer fits the policy's limited continuation rules.
+
+The Texas owner's policy, [TDI Form T-1](https://tdi.texas.gov/title/documents/form_t-01.pdf), continues coverage for a grantee who receives title without payment only in listed cases. Those include an entity wholly owned by the named insured, and a trustee or beneficiary of a trust the named insured created in writing for estate planning purposes.
+
+If you already own your home and want to move it into an LLC or trust, ask your title company before you record anything.
+
+## Does an LLC protect you from liability on your own home?
+
+Less than most buyers expect. An LLC is designed to separate business liabilities from personal ones. With a home you occupy, injuries or claims tied to your own conduct can still reach you personally, and a Texas homestead already has strong protection from most creditors under Texas law.
+
+Texas Property Code [Section 41.001](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm#41.001) exempts a homestead from seizure for most creditor claims, and [Section 41.002](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm#41.002) sets the protected urban homestead at up to 10 acres. Whether an entity-owned home keeps that protection is a question for your attorney. Umbrella insurance is often the simpler tool, so ask your insurance agent too.
+
+## Does a trust help with estate planning and probate?
+
+Yes, when it is drafted and funded correctly. A home titled in a revocable living trust can pass to beneficiaries under the trust's terms without the home going through probate, and you keep control while you are alive. Texas also offers a transfer on death deed as a simpler option.
+
+The [Texas Real Property Transfer on Death Act](https://statutes.capitol.texas.gov/Docs/ES/htm/ES.114.htm) in Estates Code Chapter 114 lets you name beneficiaries on a recorded deed. A transfer on death deed does nothing for privacy during your life, because the home stays in your name.
+
+Taxes matter here too. Talk with your CPA about basis and how ownership structure affects a future sale. My guide to [capital gains tax on a Texas home sale](/blog/capital-gains-tax-home-sale-texas) and my article on [wealth preservation through Austin real estate](/blog/wealth-preservation-luxury-real-estate-austin) cover the bigger picture.
+
+## What taxes and filings come with an LLC in Texas?
+
+A Texas LLC files a certificate of formation, keeps a registered agent and files an annual franchise tax report or information report each May 15. For reports due in 2026 and 2027, an entity with annualized total revenue at or below $2,650,000 owes no franchise tax, per the [Texas Comptroller](https://comptroller.texas.gov/taxes/franchise/).
+
+Even below that threshold, the LLC must still file a Public Information Report or Ownership Information Report, per the [Comptroller's 2026 forms page](https://comptroller.texas.gov/taxes/franchise/forms/2026-franchise.php). Missed filings can put the LLC out of good standing, so treat the entity like a small business.
+
+### Do I have to report the LLC or trust to the federal government?
+
+Not under current rules. FinCEN's final rule exempts domestic companies from beneficial ownership reporting, [effective August 14, 2026](https://www.federalregister.gov/documents/2026/08/14/2026-16576/beneficial-ownership-information-reporting-requirement-revision). The residential real estate reporting rule for non-financed transfers to entities and trusts was vacated on March 19, 2026, and FinCEN says no reports are required while that order stands, per its [FAQs](https://www.fincen.gov/rre-faqs).
+
+Both rules are still in litigation. Twenty states and the District of Columbia sued over the beneficial ownership rollback in October 2026, as reported by [Sidley Austin](https://whitecollarwatch.sidley.com/2026/11/03/state-attorneys-general-sue-to-challenge-fincens-beneficial-ownership-reporting-rule/), and FinCEN has appealed the real estate ruling. Recheck both before closing.
+
+## How do you buy an Austin home in an LLC or trust, step by step?
+
+Pick the structure with your attorney and CPA before you write an offer, then make every document match it. The contract buyer, the loan, the title commitment and the deed should all name the same party, which avoids a second transfer, extra cost and gaps in title coverage.
+
+1. **Define the goal.** Privacy, liability, estate planning or tax. Each points to a different structure.
+
+2. **Meet a Texas real estate attorney and a CPA.** Ask about homestead, franchise tax and how the structure fits your estate plan.
+
+3. **Form and document the entity or trust first.** Choose a neutral name and, for an LLC, a registered agent and manager setup that fits your privacy goal.
+
+4. **Talk to your lender.** Confirm in writing that your trust or entity is acceptable, or plan for cash.
+
+5. **Write the offer in the correct buyer name.** I coordinate this with your attorney so the TREC contract and any assignment language are right. My guide to [confidential property transactions](/blog/confidential-property-transactions) explains how I protect discretion through the process.
+
+6. **Review the title commitment.** Make sure the proposed insured on the owner's policy matches the grantee on the deed.
+
+7. **Close and record.** For a trust, make sure the recorded deed and trust terms meet Tax Code 11.13(j) if you want the homestead exemption.
+
+8. **File your homestead application.** File with TCAD if the home qualifies, and calendar annual LLC filings if you used one.
+
+Privacy also depends on where you buy. Gated enclaves and estate lots can help as much as paperwork, which I cover in [the best Austin enclaves for privacy](/blog/best-austin-enclaves-for-privacy). If you are selling later, see [privacy concerns when selling a high-value home](/blog/privacy-concerns-selling-high-value-home).
+
+:::faq
+
+Q: Is it better to buy a house in an LLC or a trust in Texas?
+A: For a home you live in, a revocable living trust is usually better. A qualifying trust can keep the Texas homestead exemption, fits conventional loan rules more often, and is protected from due-on-sale on transfer. An LLC loses the homestead exemption and is better suited to rental or second homes. Ask your attorney.
+
+Q: Can I buy a house anonymously in Texas?
+A: Not completely. An LLC or trust removes your name from the deed and appraisal record, but Texas LLC formation filings list managers or members, and trustee names often appear on deeds. A professional registered agent, an outside manager or trustee, and a neutral entity name increase privacy. A Texas attorney can structure this for you.
+
+Q: Can a revocable living trust get a homestead exemption in Texas?
+A: Yes, if it is a qualifying trust under Texas Tax Code Section 11.13(j). The trust must give the trustor or a beneficiary the right to live in the home rent free, the deed to the trust must be recorded, and a qualifying trustor or beneficiary must occupy the home as a principal residence.
+
+Q: Can an LLC claim a homestead exemption in Texas?
+A: No. Texas law defines a residence homestead as one owned by individuals directly or through a beneficial interest in a qualifying trust. An LLC is a separate legal entity, so a home it owns does not qualify for the general residence homestead exemption, including the $140,000 school district exemption.
+
+Q: Will moving my mortgaged home into an LLC trigger the due-on-sale clause?
+A: It can. Federal law protects a transfer into an inter vivos trust where the borrower remains a beneficiary, but it lists no exception for LLCs. Some loans owned by Fannie Mae allow transfers to a borrower-controlled LLC under servicing rules. Get written consent from your loan servicer before recording any deed.
+
+Q: Do I have to report an all-cash LLC purchase to FinCEN?
+A: Not right now. A federal court vacated FinCEN's residential real estate reporting rule on March 19, 2026, and FinCEN says reports are not required while that order stands. Domestic LLCs are also exempt from beneficial ownership reporting. Both issues are in litigation, so confirm the status with your title company before closing.
+
+Q: Does Texas publish what I paid for my home?
+A: No. Texas does not require mandatory disclosure of sale prices, according to the Travis Central Appraisal District. That holds whether you buy in your own name, a trust or an LLC. The appraisal district still estimates value from deeds, voluntary disclosures, questionnaires and market data vendors.
+
+:::
+
+## Sources
+
+- [Texas Tax Code Section 11.13, Residence Homestead](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.13)
+
+- [Texas Comptroller, Texas Property Tax Exemptions (96-1740)](https://comptroller.texas.gov/taxes/property-tax/docs/96-1740.pdf)
+
+- [Texas Tax Code Section 25.025, Confidentiality of Certain Home Address Information](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm#25.025)
+
+- [Texas Comptroller Form 50-284, Request for Confidentiality](https://comptroller.texas.gov/forms/50-284.pdf)
+
+- [Travis Central Appraisal District, Reappraisal Plan for Tax Years 2027 and 2028](https://traviscad.org/wp-content/uploads/2027-2028-Reappraisal-Plan_Adopted-20260903-1.pdf)
+
+- [Texas Secretary of State, Form 205 Instructions](https://www.sos.texas.gov/corp/instructions/205.shtml)
+
+- [Texas Comptroller, Franchise Tax](https://comptroller.texas.gov/taxes/franchise/)
+
+- [Texas Comptroller, 2026 Franchise Tax Report Forms](https://comptroller.texas.gov/taxes/franchise/forms/2026-franchise.php)
+
+- [12 U.S.C. 1701j-3, Preemption of Due-on-Sale Prohibitions](https://uscode.house.gov/us/usc/119-142/t12/s1701j-3/)
+
+- [Fannie Mae Selling Guide B2-2-01, General Borrower Eligibility](https://selling-guide.fanniemae.com/sel/b2-2-01/general-borrower-eligibility-requirements)
+
+- [Fannie Mae Selling Guide B2-2-05, Inter Vivos Revocable Trusts](https://selling-guide.fanniemae.com/sel/b2-2-05/inter-vivos-revocable-trusts)
+
+- [Fannie Mae Servicing Guide D1-4.1-02, Allowable Exemptions Due to the Type of Transfer](https://servicing-guide.fanniemae.com/svc/d1-4.1-02/allowable-exemptions-due-type-transfer)
+
+- [Texas Department of Insurance, Form T-1 Owner's Policy of Title Insurance](https://tdi.texas.gov/title/documents/form_t-01.pdf)
+
+- [Texas Tax Code Section 23.23, Limitation on Appraised Value of Residence Homestead](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm#23.23)
+
+- [Texas Property Code Chapter 41, Homestead](https://statutes.capitol.texas.gov/Docs/PR/htm/PR.41.htm)
+
+- [Texas Estates Code Chapter 114, Transfer on Death Deed](https://statutes.capitol.texas.gov/Docs/ES/htm/ES.114.htm)
+
+- [Federal Register, BOI Reporting Requirement Revision, August 14, 2026](https://www.federalregister.gov/documents/2026/08/14/2026-16576/beneficial-ownership-information-reporting-requirement-revision)
+
+- [FinCEN, Residential Real Estate FAQs](https://www.fincen.gov/rre-faqs)
+
+- [Sidley Austin, State Attorneys General Sue to Challenge FinCEN's BOI Rule](https://whitecollarwatch.sidley.com/2026/11/03/state-attorneys-general-sue-to-challenge-fincens-beneficial-ownership-reporting-rule/)
+
+## Talk through your ownership structure before you offer
+
+If you are planning a private purchase in Austin, I can coordinate with your attorney, CPA and lender so the contract, title and closing all line up. [Request a private consultation](/contact).
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI** is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. Taylor is licensed in Texas and Tennessee (TREC #734520-SA) and advises luxury buyers and sellers across Westlake Hills, Barton Creek, Tarrytown, Lake Austin and the Texas Hill Country. [More about Taylor](/about).
+
+Echelon Property Group, brokered by Engel & Völkers Austin (Turnquist Partners Realtors, Inc. dba Engel & Völkers Austin, TREC #440298-BB) | 3700 Bee Caves Rd STE 102, Austin, TX 78746 | [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) | (512) 661-3843`,
+  },
   {
     id: "build-or-buy-a-house-austin",
     title: "Build or Buy a House in Austin: An Honest Guide for Luxury Buyers",
@@ -433,6 +684,8 @@ If you are weighing a lot against a finished home, I am happy to walk the site w
     content: `**Short answer:** Luxury buyers still say they buy for lifestyle, but wealth preservation was the stronger motive in an average of 37% of transactions, according to the [Engel & Völkers Private Office Market Report 2026/27](https://precision-medias-group.paperturn-view.com/private-office-report-2026-27?pid=ODk8958971&v=61&p=31). For Austin, that means buyers should judge a home as a long-term family asset, and sellers should market to that motive.
 
 Every year I read the global research our brand publishes, then ask one question: what does it change for my clients here in Austin? This year's answer is bigger than usual. The report puts words to something I see in almost every high-end conversation. People talk about the view and the pool. Then they ask about taxes, privacy and who will own the house in 20 years.
+
+For the title-planning side of a family property purchase, our [Texas LLC vs. trust guide](/blog/buy-house-in-llc-or-trust-texas) compares privacy, homestead eligibility, lending and estate-planning considerations.
 
 ## Key takeaways
 
@@ -5194,6 +5447,8 @@ Both changes apply retroactively to tax year 2025, which means they are already 
 
 This guide runs the real numbers, using tax year 2025 adopted rates for every major Travis County entity, at $650,000 and at $2.5 million. It also covers the two-year refund window if you never filed, what turning 65 does to your bill, and a deadline almost nobody is talking about: the 20 percent appraisal cap protecting your investment properties expires December 31, 2026, and the Legislature does not reconvene until twelve days after it lapses.
 
+The name on the deed matters too. Our [guide to buying a house in an LLC or trust in Texas](/blog/buy-house-in-llc-or-trust-texas) explains the qualifying-trust requirements and why LLC ownership can forfeit homestead savings.
+
 ## The Exemption Ladder: $25,000 to $140,000 in Three and a Half Years
 
 Texas has raised the school homestead exemption three times since 2022. The pace is unlike anything in the state's property tax history.
@@ -6781,6 +7036,8 @@ From the moment a listing goes live, details about your asset, your lifestyle, a
 Austin's luxury market has attracted significant national attention over the past several years, driven by high-net-worth migration from California, New York, and other states. That visibility is good for property values. It is less good for seller privacy. Neighborhoods like [Barton Creek](/communities/barton-creek), [West Lake Hills](/communities/westlake-hills), [Rollingwood](/communities/rollingwood), [Rob Roy](/communities/rob-roy), and [Old Enfield](/communities/old-enfield) regularly see transactions where the seller's identity, security, and financial exposure are genuine concerns, not hypothetical ones.
 
 This article covers what actually becomes public when you list a high-value home, the specific risks that creates, and the strategies experienced sellers use to protect themselves throughout the transaction.
+
+Before transferring title for privacy, read our [Texas LLC vs. trust ownership guide](/blog/buy-house-in-llc-or-trust-texas). The structure can affect homestead eligibility, mortgage terms and title coverage.
 
 ## What the Public Listing Process Reveals
 
@@ -8598,6 +8855,8 @@ Taylor Sherwood is the founder and principal REALTOR at Echelon Property Group i
     heroImage: blogTexasNonDisclosure,
     imageAlt: "Aerial view of a large Texas luxury estate on acreage, where the sale price never becomes public record",
     content: `Texas is one of 12 non-disclosure states, which means the price a home sells for is never filed with the county and never becomes public record. When a property changes hands in Austin, the deed transfer is recorded, the new owner's name, the legal description, even the mortgage amount, but the actual price stays private, permanently. This one policy quietly shapes everything about how Austin homes are priced, taxed, marketed, and negotiated. It's why Zillow struggles here, why the Travis County appraisal district once froze an entire year of home values because it couldn't get sales data, and why the person holding real closed comps has a structural advantage in every negotiation. Here's the complete picture.
+
+Sale-price privacy does not hide the owner on the deed. Our [guide to buying a Texas home in an LLC or trust](/blog/buy-house-in-llc-or-trust-texas) compares ownership privacy with homestead, financing and title considerations.
 
 ## What "non-disclosure" means, and what it doesn't
 
@@ -14828,6 +15087,8 @@ A: Not while they're off-market. In non-disclosure states like Texas, even the f
     content: `Privacy in Austin is rarely about being far away. More often, it is about being precisely positioned, on the right street, behind the right topography, within the right pocket of a neighborhood that most buyers only understand at the zip-code level. For clients searching for the [best Austin enclaves for privacy](/austin-luxury-homes-for-sale), the real advantage comes from reading the micro-market correctly: lot orientation, access patterns, adjacency, tree cover, elevation, and how visible a property feels once you are actually living in it.
 
 That distinction matters because two homes with similar price points can offer completely different privacy profiles. One may sit in a well-known luxury neighborhood but feel exposed to passerby traffic, nearby construction, or tightly spaced sightlines. Another may trade at a premium because it solves for discretion in a way that is hard to replicate. In Austin's upper tier, privacy is not a cosmetic feature. It is part of the asset.
+
+A private setting and a private ownership record are different questions. Our [Texas LLC or trust guide for Austin buyers](/blog/buy-house-in-llc-or-trust-texas) explains what each structure reveals and how it affects homestead and financing.
 
 ## What privacy really means in Austin luxury real estate
 

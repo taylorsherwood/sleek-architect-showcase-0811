@@ -1,3 +1,7 @@
+# LLC or trust buyer guide
+- [x] Add supplied article and photo, comparison table, seven FAQs and consultation CTA; desktop and phone preview verified.
+- [x] Add contextual backlinks from all six suggested related posts and West Lake Hills; every inbound link verified, FAQ schema present and sitemap refreshed.
+
 # Private Office report article
 - [x] Add supplied article and image with full-report CTA and valid contextual internal links.
 - [x] Add six related-post backlinks and a brokerage-page backlink; verify article, image, tables, FAQs, report link and phone layout.

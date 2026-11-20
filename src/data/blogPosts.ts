@@ -8553,6 +8553,8 @@ This is not a loophole or niche workaround. It is an increasingly sophisticated 
 
 For buyers and sellers operating at the upper tiers of the market, confidentiality is no longer viewed as an added luxury. It is often treated as a core component of representation itself.
 
+Confidential marketing does not erase public ownership records. Our [guide to buying a home in an LLC or trust in Texas](/blog/buy-house-in-llc-or-trust-texas) explains the privacy limits and the homestead, lender and title questions to settle before an offer.
+
 ## What Is a Confidential Property Transaction?
 
 A confidential property transaction is an off-market or privately marketed real estate sale conducted outside traditional public listing channels such as the Multiple Listing Service (MLS).

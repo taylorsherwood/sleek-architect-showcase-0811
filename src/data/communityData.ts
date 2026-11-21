@@ -996,7 +996,9 @@ Developed around the acclaimed Spanish Oaks Golf Club, the community blends natu
 
 ### Privacy & Security
 
-The community features 24-hour guard-gated security, offering a level of privacy rarely found this close to Austin.`,
+The community features 24-hour guard-gated security, offering a level of privacy rarely found this close to Austin.
+
+For schools, taxing units, club membership and recent pricing, read our full [guide to living in Spanish Oaks](/blog/living-in-spanish-oaks-austin).`,
     lifestyle: `### Peaceful Environment
 
 Residents enjoy quiet streets, scenic landscapes, and carefully maintained surroundings, all just minutes from Austin's energy.

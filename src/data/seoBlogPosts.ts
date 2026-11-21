@@ -1,3 +1,4 @@
+import blogSpanishOaksHero from "@/assets/blog/spanish-oaks-golf-course-pond.webp.asset.json";
 import blogTexasOwnershipKeys from "@/assets/blog/texas-home-ownership-keys.webp.asset.json";
 import { formatNeighborhoodMedian, neighborhoodPriceSummary, neighborhoodSourceNote } from "./neighborhoodStats";
 import heroLuxury from "@/assets/hero-luxury-austin.jpg";
@@ -210,6 +211,199 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "living-in-spanish-oaks-austin",
+    title: "Living in Spanish Oaks: A Luxury Buyer's Guide to Bee Cave's Gated Golf Community",
+    metaTitle: "Living in Spanish Oaks, Austin: 2026 Neighborhood Guide | Echelon Property Group",
+    excerpt: "Living in Spanish Oaks: 24/7 armed guard gates, a private golf club, Lake Travis ISD schools, taxes, lots and a $3.59M median. A Bee Cave buyer's guide.",
+    author: "Taylor Sherwood",
+    date: "2026-11-21",
+    dateModified: "2026-11-21",
+    readTime: "13 min read",
+    category: "NEIGHBORHOODS",
+    keywords: "living in Spanish Oaks, Spanish Oaks Austin, Spanish Oaks Bee Cave, Spanish Oaks Golf Club, Spanish Oaks homes, Spanish Oaks HOA, Spanish Oaks MUD tax, Spanish Oaks schools, gated golf community Austin, 78738 homes",
+    aboutPlaces: ["Spanish Oaks, Texas", "Bee Cave, Texas", "Travis County, Texas", "Lake Travis, Texas"],
+    imageAlt: "Golf green beside a still pond under a Hill Country sky near Bee Cave, Texas",
+    relatedPostIds: ["gated-communities-austin", "living-in-barton-creek-austin", "bee-cave-vs-lakeway-luxury-buyers", "best-neighborhoods-near-bee-cave"],
+    image: blogSpanishOaksHero.url,
+    heroImage: blogSpanishOaksHero.url,
+    content: `**Short answer:** Living in Spanish Oaks means a 24/7 armed guard-gated Hill Country golf community off Highway 71 in western Travis County, ZIP 78738, next to Bee Cave. Homes are zoned to [Lake Travis ISD](https://www.spanishoaks.com/location), the private club is built around a Bobby Weed course, and the median single-family sale was [$3,590,000 over the 12 months ending October 2026](https://alex-companies.com/market-data/tx-travis-austin-spanish-oaks-2026-11-14).
+
+
+
+Spanish Oaks comes up often with buyers who want gated privacy, golf and Lake Travis ISD schools. This guide covers what living in Spanish Oaks is actually like: the gates, the club, the schools, the taxes, the land and the numbers. Every figure links to its source.
+
+If you are still comparing gated options across the metro, start with my [guide to gated communities in Austin](/blog/gated-communities-austin). This page goes deep on one of them.
+
+## Key takeaways
+
+- **24/7 armed guard gates.** Both entrances have gatehouses staffed around the clock by armed security, and the [Spanish Oaks community site](https://www.spanishoaks.com/) confirms 24 hour staffing.
+- **Private golf since 2001.** The Bobby Weed designed course at Spanish Oaks Golf Club opened on October 26, 2001, per [The Golf Wire](https://thegolfwire.com/326057-2/).
+- **Lake Travis ISD.** Listings most often name Lake Pointe Elementary and Lake Travis High School, with middle school split between Lake Travis Middle and Bee Cave Middle, per [ALEX listing records](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/).
+- **Outside Bee Cave city limits.** The [City of Bee Cave](https://www.beecavetexas.gov/government/departments/planning_development/building/neighborhoods.php) lists Spanish Oaks under neighborhoods outside its city limits.
+- **About a $3.59 million median.** Fourteen single-family homes sold in the 12 months ending October 31, 2026, at a median of $671 per square foot, per [ALEX Intelligence](https://alex-companies.com/market-data/tx-travis-austin-spanish-oaks-2026-11-14).
+- **Lots near three quarters of an acre.** The typical recent sale sat on about 0.78 acres, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/).
+
+## Where is Spanish Oaks, and how do you get there?
+
+Spanish Oaks sits in western Travis County off Highway 71, bordering the City of Bee Cave in ZIP 78738. The developer cites [about 20 minutes to downtown Austin](https://www.spanishoaks.com/location) and a 20-mile drive to Austin-Bergstrom International Airport on Highway 71. Real drive times vary with traffic, so test the commute at rush hour before you commit.
+
+The community has two entrances off Highway 71, one on each side of Bee Cave Road, according to [Austin Real Estate Homes Blog](https://www.austinrealestatehomesblog.com/southwest-austin/spanish-oaks/). Another local guide puts downtown at [about 25 to 35 minutes](https://davidashbyatx.com/areas/spanish-oaks).
+
+### What is near Spanish Oaks for shopping, dining and healthcare?
+
+The Hill Country Galleria in Bee Cave is the daily hub. The [Spanish Oaks location page](https://www.spanishoaks.com/location) lists a Dillard’s, Whole Foods, a cinema and restaurants there, plus big box stores at The Shops at the Galleria.
+
+The same page notes the 100-bed Baylor Scott & White Medical Center with a 24/7 emergency department about five minutes away. The nearest grocery store to recent sales was an H-E-B about 0.7 miles away, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/). For the wider area, see my guide to the [best neighborhoods near Bee Cave](/blog/best-neighborhoods-near-bee-cave).
+
+## Is Spanish Oaks a gated community?
+
+Yes. Spanish Oaks is a fully gated community with armed guards on duty 24 hours a day, 7 days a week, at two gatehouses covering both entrances. The [Spanish Oaks community site](https://www.spanishoaks.com/) confirms the round the clock staffing. That puts it in the top tier of Austin gated living, alongside guard-gated sections of Barton Creek, rather than keypad-only communities.
+
+Staffed gates change daily life in small ways. Guests are announced and deliveries are managed. The developer also describes [The Hillside](https://www.spanishoaks.com/), one of its final releases, as carrying an additional level of gated privacy inside the main gates.
+
+If privacy is your top priority, compare this with the options in my post on the [best Austin enclaves for privacy](/blog/best-austin-enclaves-for-privacy).
+
+## What is Spanish Oaks Golf Club like?
+
+Spanish Oaks Golf Club is a private club at 13001 Spanish Oaks Club Drive with an 18-hole Bobby Weed course that opened in 2001, per [the club](https://www.spanishoaksgc.com/course-designer) and [The Golf Wire](https://thegolfwire.com/326057-2/). Golf Digest ranked it the No. 4 Best New Private Course in 2003, according to the club’s own awards list.
+
+The club leans traditional. Members play with well-trained caddies and without tee times, and the course is walkable, with most greens close to the next tee, per the [club’s golf](https://www.spanishoaksgc.com/Golf) and [membership](https://www.spanishoaksgc.com/Membership) pages. The clubhouse offers fine and casual dining, indoor and al fresco seating, private dining rooms and a bar.
+
+The course was routed with the homes up on the hillsides and the golf down in the valley. The club says the property is irrigated with [reclaimed water](https://www.spanishoaksgc.com/course-designer) and that trees were worked into the design or transplanted rather than removed.
+
+Bobby Weed Golf Design returned in 2016 to renovate every bunker and expand the practice areas, per [The Golf Wire](https://thegolfwire.com/326057-2/).
+
+### Do you have to join the golf club to live in Spanish Oaks?
+
+No. Owning a home and joining the club are separate. Membership at Spanish Oaks Golf Club is by invitation and contingent on application and approval, per the [club’s membership page](https://www.spanishoaksgc.com/Membership), so buying a home does not guarantee you a membership. The developer says [“most Spanish Oaks residents choose to become Club members”](https://www.spanishoaks.com/). Fees are not published, so if the club matters to you, contact the membership office before you write an offer.
+
+## What amenities come with living in Spanish Oaks?
+
+Beyond golf, the [community site](https://www.spanishoaks.com/) describes a private multi-level Pool Pavilion with lap lanes and a sandy shallow area, a Fish Camp, and miles of trails through woods and along creeks. Echelon’s [Spanish Oaks community page](/communities/spanish-oaks) notes the Fish Camp sits on Barton Creek.
+
+Listings back that up. Of 14 recent sales, listing agents tagged the community with a pool in 14, golf in 12, fishing in 11 and a clubhouse in 10, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/). The clubhouse offers indoor and patio dining, per the [location page](https://www.spanishoaks.com/location).
+
+## Which schools serve Spanish Oaks?
+
+Spanish Oaks is in Lake Travis ISD, a single high school district, so every address feeds Lake Travis High School, per [LTISD](https://www.ltisdschools.org/families/school-attendance-zones). Recent listings name Lake Pointe Elementary, with middle school split between Lake Travis Middle and Bee Cave Middle, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/).
+
+The sources do not fully agree on middle school. The [developer’s page](https://www.spanishoaks.com/location) says students are assigned to Lake Pointe Elementary, Lake Travis Middle School and Lake Travis High School. Of the recent listings ALEX reviewed, seven named Lake Travis Middle and seven named Bee Cave Middle.
+
+That split is the reason I confirm the campus for every specific address with the [LTISD attendance zone maps](https://www.ltisdschools.org/families/school-attendance-zones) or the district office at (512) 533-6020. Zones change as the district grows.
+
+## What are property taxes and HOA dues in Spanish Oaks?
+
+Taxes in Spanish Oaks depend on the parcel. The median combined rate on recent sales was 1.7906% before exemptions under 2026 adopted rates, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/). Because the [City of Bee Cave](https://www.beecavetexas.gov/government/departments/planning_development/building/neighborhoods.php) lists Spanish Oaks outside city limits, the Bee Cave city rate should not appear on core parcels.
+
+Spanish Oaks is not MUD-free, despite how it is often marketed. A Spanish Oaks parcel record on the [Travis Central Appraisal District](https://traviscad.org/) site lists West Travis County MUD No. 6 among its taxing units, alongside Travis County, Lake Travis ISD, Travis County ESD No. 6, the Travis County Healthcare District and Travis County BCCP. The appraisal district itself is also listed but levies no tax. Pull the parcel for any home you are considering and confirm its units before you budget.
+
+My guide to [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin) explains what to look for. The HOA is managed through CCNG, per the [City of Bee Cave HOA list](https://www.beecavetexas.gov/government/departments/planning_development/building/neighborhoods.php). Typical recent dues were $532 a month, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/).
+
+## What do homes and lots look like in Spanish Oaks?
+
+Spanish Oaks homes are custom. The developer reports [more than 350 completed residences](https://www.spanishoaks.com/) ranging from 2,500 to more than 10,000 square feet, with influences from the Pacific Coast, the Hill Country and the Mediterranean. Recent sales typically sat on about 0.78 acres, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/).
+
+Most recent lots fell between 0.35 and 1.52 acres. The typical sale was built in 2012, and 80% had a private pool, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/). Another MLS based guide puts the typical home at about [5,350 square feet](https://davidashbyatx.com/areas/spanish-oaks).
+
+Homesites still come up through the developer, including in The Hillside. If you are weighing a lot against a finished home, my [build versus buy guide for Austin](/blog/build-or-buy-a-house-austin) walks through the tradeoffs.
+
+## How much do homes cost in Spanish Oaks?
+
+The median single-family sale in Spanish Oaks was $3,590,000 net of seller concessions for the 12 months ending October 31, 2026, across 14 sales, per [ALEX Intelligence](https://alex-companies.com/market-data/tx-travis-austin-spanish-oaks-2026-11-14) using Unlock MLS data. The median was $671 per square foot, with 55 median days on market.
+
+Homes sold at a median 94.6% of original list price over that period, per the same [ALEX report](https://alex-companies.com/market-data/tx-travis-austin-spanish-oaks-2026-11-14). A separate MLS based guide shows the annual median rising from $3.25 million in 2024 to $3.39 million in 2025 and $3.55 million in 2026 through November 11, per [David Ashby](https://davidashbyatx.com/areas/spanish-oaks).
+
+Treat these as directional. With only 13 to 14 sales a year, one estate can move the median. Texas is also a non-disclosure state, so the real comps come from MLS records, not county deeds. I pull a fresh comp set for every client.
+
+## How does Spanish Oaks compare with Barton Creek, Rob Roy, Rough Hollow and Westlake Hills?
+
+Spanish Oaks is closest to Barton Creek on price and gated golf living, but with Lake Travis ISD schools instead of Eanes ISD or Austin ISD. Rob Roy and Westlake Hills trade golf for proximity to downtown, and Rough Hollow in Lakeway trades acreage for Lake Travis marina access at a lower price point.
+
+:::compare-table
+Community | Gated | Golf or club | School district | Typical lot | Median sale, 12 mo. to Oct 2026 | Tax and HOA notes | Source
+Spanish Oaks | Yes, 24/7 armed guards at two gatehouses | Private Spanish Oaks Golf Club | Lake Travis ISD | About 0.78 acres | $3,590,000 (14 sales) | Outside Bee Cave city limits; West Travis County MUD No. 6; median combined rate 1.7906%; HOA about $532 a month | [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/), [Spanish Oaks](https://www.spanishoaks.com/), [Bee Cave](https://www.beecavetexas.gov/government/departments/planning_development/building/neighborhoods.php)
+Barton Creek | Yes, 24/7 security | Four championship courses | Eanes ISD in many sections; Austin ISD in others | About 1.03 acres | $3,500,000 (13 sales) | HOA about $207 a month in the MLS sample | [ALEX](https://alex-companies.com/real-estate/neighborhoods/barton-creek/), [Echelon](/blog/living-in-barton-creek-austin)
+Rob Roy | Yes, controlled access | Not a golf club community | Eanes ISD | Multi-acre estate lots | Not in the same dataset; ask for a comp set | Verify taxing units by parcel | [Echelon](/blog/rob-roy-austin-gated-luxury)
+Rough Hollow (Lakeway) | Some enclaves only | Rough Hollow Yacht Club and Marina on Lake Travis | Lake Travis ISD | About 0.32 acres | $880,000 | Median combined rate 2.1145% | [ALEX](https://alex-companies.com/real-estate/neighborhoods/rough-hollow-lakeway/), [Rough Hollow Club](https://www.roughhollowclub.com/)
+Westlake Hills | No, open neighborhood; some estates gated individually | Not a club community | Eanes ISD | Varies by street | Not in the same dataset; ask for a comp set | City of West Lake Hills rate applies inside city limits | [Echelon](/blog/gated-communities-austin), [Echelon](/blog/living-in-barton-creek-austin)
+:::
+
+Medians are small samples and are not like for like. For the Bee Cave and Lakeway decision specifically, see [Bee Cave vs Lakeway for luxury buyers](/blog/bee-cave-vs-lakeway-luxury-buyers).
+
+## How close is Spanish Oaks to Lake Travis?
+
+Spanish Oaks is not a waterfront community, but Lake Travis is a short drive away, as [OTL Golf Magazine](https://otlgolf.com/spanish-oaks-golf-club-born-at-the-right-time/) describes. Echelon’s [Spanish Oaks community page](/communities/spanish-oaks) lists Lake Travis boating and marinas among nearby destinations, along with the Hill Country Galleria and Barton Creek Resort.
+
+Buyers who want a dock at home should look at true waterfront instead. My guide to [buying Lake Travis waterfront property](/blog/buying-lake-travis-waterfront-property) covers that path.
+
+## What should you know about wildfire and terrain in Spanish Oaks?
+
+Spanish Oaks shares the wooded canyons and slopes that define the western Travis County Hill Country, and those same features carry wildfire risk. Roughly half of Travis County residents live in the wildland urban interface, per the county’s 2026 Community Wildfire Protection Plan as summarized in my [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes).
+
+Check the specific address on the [Texas A&M Forest Service Texas Wildfire Risk Explorer](https://texaswildfirerisk.com/). Price homeowners insurance early, inspect the roof, vents and the first five feet around the house, and ask which building code applies to the lot.
+
+Flood risk is low but not zero. One of 14 recent sales sat inside a FEMA 1% annual chance flood hazard area, per [ALEX](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/). Ask for an elevation certificate on any home near a creek.
+
+## Is Spanish Oaks right for you?
+
+Spanish Oaks fits buyers who want 24/7 armed guard gates, a private golf club at the center of the community, custom homes on roughly three quarters of an acre and Lake Travis ISD schools, at a median near $3.59 million. It fits less well if you need a short daily drive downtown or a private dock.
+
+Walk the community at different times of day and drive the commute before deciding. The right section and lot matter more than the name.
+
+## Frequently asked questions
+
+:::faq
+
+Q: Is Spanish Oaks in Austin or Bee Cave?
+A: Spanish Oaks has a Bee Cave mailing area in ZIP 78738 and is often marketed as Austin, but the City of Bee Cave lists it among neighborhoods outside its city limits. The community sits in western Travis County off Highway 71. Confirm the exact jurisdiction for any parcel with the Travis Central Appraisal District.
+
+Q: Is Spanish Oaks a gated community?
+A: Yes. Spanish Oaks is fully gated, with armed guards on duty 24 hours a day, 7 days a week, at two gatehouses covering both entrances. Some newer sections, such as The Hillside, add another gated layer inside the main gates, according to the developer.
+
+Q: What school district is Spanish Oaks in?
+A: Spanish Oaks is in Lake Travis ISD, and every address feeds Lake Travis High School. Recent listings most often name Lake Pointe Elementary, while middle school listings are split between Lake Travis Middle and Bee Cave Middle. Confirm the assigned campuses for a specific address with the district’s attendance zone maps before you buy.
+
+Q: How much does a home in Spanish Oaks cost?
+A: The median single-family home in Spanish Oaks sold for $3,590,000 net of seller concessions in the 12 months ending October 31, 2026, across 14 sales, according to ALEX Intelligence using Unlock MLS data. The median was $671 per square foot. With so few sales, one estate can move the median noticeably.
+
+Q: Does Spanish Oaks have a MUD tax?
+A: Yes. Spanish Oaks parcels fall within West Travis County MUD No. 6, alongside Travis County, Lake Travis ISD, Travis County ESD No. 6, the Travis County Healthcare District and Travis County BCCP. The median combined tax rate on recent sales was 1.7906% before exemptions. Confirm each parcel’s taxing units on the Travis Central Appraisal District site.
+
+Q: Do you have to be a member of Spanish Oaks Golf Club?
+A: No. Buying a home and joining the club are separate. Membership at Spanish Oaks Golf Club is by invitation and contingent on application and approval, so owning a home does not guarantee it. The developer says most residents choose to join. Fees are not published, so contact the club’s membership office before you write an offer.
+
+Q: How far is Spanish Oaks from downtown Austin?
+A: The Spanish Oaks developer cites about 20 minutes to downtown Austin, and one local MLS based guide puts the drive at about 25 to 35 minutes. Highway 71 and Southwest Parkway are the main routes. Austin-Bergstrom International Airport is about a 20-mile drive on Highway 71, according to the developer.
+:::
+
+## Sources
+
+- [Spanish Oaks community site](https://www.spanishoaks.com/) and [location page](https://www.spanishoaks.com/location) (developer; gatehouses, amenities, homes, schools, drive times)
+- [Spanish Oaks Golf Club, Course Designer](https://www.spanishoaksgc.com/course-designer)
+- [Spanish Oaks Golf Club, Membership](https://www.spanishoaksgc.com/Membership) and [Golf](https://www.spanishoaksgc.com/Golf) (club; invitation-only membership, caddies, no member tee times, dining)
+- [The Golf Wire, Bobby Weed Golf Design Renovates Spanish Oaks Golf Club (Sept. 1, 2016)](https://thegolfwire.com/326057-2/)
+- [OTL Golf Magazine, Spanish Oaks Golf Club: Born at the right time](https://otlgolf.com/spanish-oaks-golf-club-born-at-the-right-time/)
+- [City of Bee Cave, Neighborhoods and HOA contacts](https://www.beecavetexas.gov/government/departments/planning_development/building/neighborhoods.php)
+- [Lake Travis ISD, School Attendance Zones](https://www.ltisdschools.org/families/school-attendance-zones)
+- [Travis Central Appraisal District](https://traviscad.org/)
+- [ALEX Intelligence, Spanish Oaks market report, rolling 12 months ending Oct. 31, 2026 (Unlock MLS)](https://alex-companies.com/market-data/tx-travis-austin-spanish-oaks-2026-11-14)
+- [ALEX Real Estate, Spanish Oaks neighborhood records (updated Nov. 19, 2026)](https://alex-companies.com/real-estate/neighborhoods/spanish-oaks/)
+- [ALEX Real Estate, Barton Creek](https://alex-companies.com/real-estate/neighborhoods/barton-creek/) and [Rough Hollow Lakeway](https://alex-companies.com/real-estate/neighborhoods/rough-hollow-lakeway/)
+- [David Ashby, Spanish Oaks area data through Nov. 11, 2026 (Unlock MLS)](https://davidashbyatx.com/areas/spanish-oaks)
+- [Austin Real Estate Homes Blog, Spanish Oaks](https://www.austinrealestatehomesblog.com/southwest-austin/spanish-oaks/)
+- [Rough Hollow Yacht Club and Marina](https://www.roughhollowclub.com/)
+- [Texas A&M Forest Service, Texas Wildfire Risk Explorer](https://texaswildfirerisk.com/)
+
+:::cta
+eyebrow: Private advisory
+heading: Thinking about Spanish Oaks?
+subheading: I can pull a current comp set, confirm schools and taxing units for a specific address, and show you homes and homesites, including ones that trade privately.
+button: Request a private consultation
+href: /contact
+:::
+`,
+  },
   {
     id: "buy-house-in-llc-or-trust-texas",
     title: "Should You Buy a House in an LLC or Trust in Texas? A Privacy Guide for Austin Luxury Buyers",
@@ -935,6 +1129,9 @@ The trees, canyons and greenbelt views that make West Austin special are the sam
 - **Remodels can trigger it.** Replace 50% or more of a roof in a WUI area, and the code requires a full replacement.
 - **Small fires can still take homes.** The 2011 Pinnacle Fire burned about 100 acres and destroyed 10 homes, per [Texas A&M Forest Service](https://ticc.tamu.edu/FireInformation/Case%20Studies/2011%20Wildfires/2011%20Texas%20Wildfires.pdf).
 - **The checks are free.** ATXWildfireHub risk scores, the WUI map and a confidential Austin Fire home evaluation cost nothing.
+
+
+Buyers looking at wooded Hill Country golf communities can see how these checks apply in our [guide to living in Spanish Oaks](/blog/living-in-spanish-oaks-austin).
 
 ## How high is wildfire risk in Austin?
 
@@ -6531,6 +6728,9 @@ MUD tax rates in Texas typically run from about $0.25 to $1.50 per $100 of asses
 
 Two structural points matter for buyers. First, a MUD tax has no fixed end date. It continues as long as the district has debt to service and operations to fund, though the rate typically steps down as bonds retire. Second, a MUD can outlive its construction purpose. If a city ever annexes the district, residents generally trade the MUD tax for the city tax. Austin rarely annexes anymore, so districts on the fringe tend to persist and mature in place.
 
+
+Spanish Oaks is a useful example of a community often marketed as MUD-free that is not. Our [Spanish Oaks guide](/blog/living-in-spanish-oaks-austin) walks through its taxing units.
+
 ## What a PID Actually Is
 
 A Public Improvement District is a different instrument. A city or county creates it under Chapter 372 of the Texas Local Government Code, and instead of an ad valorem tax, the PID levies a fixed assessment against each lot. The total cost of the improvements is divided among the lots based on benefit, the schedule is locked, and when you close on a home in a residential PID you receive a printed schedule showing your annual payment for the full assessment period, typically 20 to 40 years.
@@ -9738,6 +9938,9 @@ A note on current conditions. As of mid-2026, Austin's gated submarkets are not 
 **Electronically gated communities.** Keypad or transponder entry without staff. This is the most common arrangement. Communities like Costa Bella, Belvedere, and The Ridge at Alta Vista operate this way. You get controlled access and reduced through-traffic without the cost structure of a 24-hour gatehouse.
 
 **Gated estates within open neighborhoods.** In Westlake Hills, Tarrytown, and Old Enfield, the neighborhood is open but individual properties are walled and gated. For many of my clients this is the preferred configuration: total control of your own perimeter, no HOA gate politics, and addresses in [Eanes ISD](/communities/westlake-hills) or central Austin. Our piece on [Austin's best enclaves for privacy](/blog/best-austin-enclaves-for-privacy) covers this approach in depth.
+
+
+For a full look at one guard-gated option, read our [guide to living in Spanish Oaks](/blog/living-in-spanish-oaks-austin), covering its gatehouses, golf club, Lake Travis ISD schools and current pricing.
 
 ## BARTON CREEK: Austin's Deepest Bench of Gated Enclaves
 
@@ -17022,6 +17225,9 @@ Barton Creek has long occupied a singular position in Austin's luxury real estat
 
 Daily life in Barton Creek revolves around the Barton Creek Country Club, which provides access to courses designed by Tom Fazio, Ben Crenshaw, and Arnold Palmer. Beyond golf, members enjoy tennis facilities, a full-service spa, multiple dining venues, and a resort-style pool complex. The social infrastructure creates a genuine community atmosphere that extends well beyond the fairways.
 
+
+Comparing gated golf communities west of the city? Our [Spanish Oaks neighborhood guide](/blog/living-in-spanish-oaks-austin) covers the Bee Cave alternative with Lake Travis ISD schools.
+
 ## Housing Stock and Pricing
 
  The community features Spanish Colonial estates, Mediterranean villas, and contemporary builds that leverage the dramatic Hill Country topography. Properties on golf course fairways and those backing the [Barton Creek Greenbelt](/communities/barton-creek) command the highest premiums. With the community approaching build-out, remaining homesites are increasingly rare and valuable.
@@ -17072,6 +17278,9 @@ Barton Creek's greenbelt edges are part of its appeal. Before you buy, read our 
 ## Location and Commute
 
 Bee Cave sits approximately 15 miles west of downtown Austin along Highway 71, offering a 20-30 minute commute to central Austin during typical traffic conditions. Lakeway extends further west along the southern shores of Lake Travis, adding 5-10 minutes to the commute in exchange for direct waterfront access. Buyers who prioritize a shorter drive to downtown tend to favor Bee Cave, while those seeking lake lifestyle accept the additional distance.
+
+
+Weighing Bee Cave's best known gated enclave? See our [guide to living in Spanish Oaks](/blog/living-in-spanish-oaks-austin) for gates, club membership, taxes and lot sizes.
 
 ## Lifestyle and Amenities
 
@@ -17153,6 +17362,9 @@ Buyers who want something clean, low friction, and move-in ready without overthi
 :::watch-out
 Newer master-planned pockets can feel interchangeable, which softens long-term differentiation on resale.
 :::
+
+
+For a deeper look at the area's guard-gated golf community, read our [guide to living in Spanish Oaks](/blog/living-in-spanish-oaks-austin).
 
 ## Lakeway
 
@@ -17361,6 +17573,9 @@ Rob Roy is organized into several distinct sections, each offering a unique char
 **Rob Roy on the Creek**, Properties along the Barton Creek corridor, offering a more secluded, nature-immersed experience with creek frontage, mature tree canopy, and proximity to the Barton Creek Greenbelt.
 
 **Rob Roy on the Lake**, The most exclusive section, with select properties offering Lake Austin waterfront access. These trophy estates combine Rob Roy's gated privacy with the lake lifestyle that defines Austin's ultra-luxury tier.
+
+
+If golf and Lake Travis ISD matter more than proximity to downtown, compare Rob Roy with our [Spanish Oaks neighborhood guide](/blog/living-in-spanish-oaks-austin).
 
 ## Architecture and Homes
 

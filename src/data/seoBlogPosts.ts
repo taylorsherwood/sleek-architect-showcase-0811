@@ -316,6 +316,9 @@ Homes sold at a median 94.6% of original list price over that period, per the sa
 
 Treat these as directional. With only 13 to 14 sales a year, one estate can move the median. Texas is also a non-disclosure state, so the real comps come from MLS records, not county deeds. I pull a fresh comp set for every client.
 
+:::intel-gauge-spanish-oaks
+:::
+
 ## How does Spanish Oaks compare with Barton Creek, Rob Roy, Rough Hollow and Westlake Hills?
 
 Spanish Oaks is closest to Barton Creek on price and gated golf living, but with Lake Travis ISD schools instead of Eanes ISD or Austin ISD. Rob Roy and Westlake Hills trade golf for proximity to downtown, and Rough Hollow in Lakeway trades acreage for Lake Travis marina access at a lower price point.

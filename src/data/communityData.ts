@@ -1345,6 +1345,8 @@ Because of limited waterfront inventory, many buyers prioritize lot quality and 
     image: clarksvilleImg,
     overview: `Clarksville is one of Austin's oldest and most culturally significant neighborhoods, located just west of downtown between MoPac and Lamar Boulevard. Founded in the 1870s as a freedmen's community, Clarksville has evolved into one of the city's most desirable residential areas while maintaining its historic character and walkable village atmosphere.
 
+For the historic district boundaries, remodel review, schools, taxes and daily life on West Lynn, read our [guide to living in Clarksville](/blog/living-in-clarksville-austin).
+
 ### Architectural Character
 
 The neighborhood features a charming mix of restored Victorian cottages, Craftsman bungalows, and contemporary new construction. West Lynn Street serves as the neighborhood's commercial spine, lined with beloved local restaurants, coffee shops, and boutiques that create a true neighborhood village feel.

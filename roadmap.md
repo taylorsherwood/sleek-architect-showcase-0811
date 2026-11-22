@@ -1,3 +1,7 @@
+# Clarksville neighborhood guide
+- [x] Add supplied article and photo with comparison table, seven FAQs, sources and consultation CTA.
+- [x] Add seven contextual backlinks from related posts and the Clarksville community page; desktop and phone preview, image, FAQ schema and all backlinks verified.
+
 # LLC or trust buyer guide
 - [x] Add supplied article and photo, comparison table, seven FAQs and consultation CTA; desktop and phone preview verified.
 - [x] Add contextual backlinks from all six suggested related posts and West Lake Hills; every inbound link verified, FAQ schema present and sitemap refreshed.

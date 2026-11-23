@@ -216,7 +216,7 @@ export const seoBlogPosts: BlogPost[] = [
     id: "living-in-clarksville-austin",
     title: "Living in Clarksville, Austin: A Luxury Buyer's Guide to Austin's Historic Freedmen's Neighborhood",
     metaTitle: "Living in Clarksville, Austin: 2026 Neighborhood Guide | Echelon Property Group",
-    excerpt: "Living in Clarksville, Austin: history, historic district rules, Austin ISD schools, 2026 taxes, walkability and a $1.35M median. A 78703 buyer's guide.",
+    excerpt: "Living in Clarksville, Austin: history, historic district rules, Austin ISD schools, 2026 taxes and walkability. A 78703 buyer's guide.",
     author: "Taylor Sherwood",
     date: "2026-11-22",
     dateModified: "2026-11-22",
@@ -228,7 +228,7 @@ export const seoBlogPosts: BlogPost[] = [
     relatedPostIds: ["what-makes-pemberton-heights-desirable", "tarrytown-vs-bryker-woods", "build-or-buy-a-house-austin", "downtown-austin-condos-2026"],
     image: blogClarksvilleHero.url,
     heroImage: blogClarksvilleHero.url,
-    content: `**Short answer:** Living in Clarksville, Austin means a small, walkable historic neighborhood in ZIP 78703, just west of downtown between MoPac and Lamar. Founded in 1871 by a freedman, Charles Clark, it is one of Austin's oldest neighborhoods. The median home sold for [about $1.35 million over the last 12 months](https://davidashbyatx.com/areas/clarksville), per Unlock MLS data.
+    content: `**Short answer:** Living in Clarksville, Austin means a small, walkable historic neighborhood in ZIP 78703, just west of downtown between MoPac and Lamar. Founded in 1871 by a freedman, Charles Clark, it is one of Austin's oldest neighborhoods. For current Clarksville pricing, days on market, and recent sales, contact Echelon Property Group for a private market report.
 
 Clarksville comes up with buyers who want to walk to dinner, live minutes from downtown and own a house with real history. This guide covers what living in Clarksville is actually like: the history, the boundaries, the historic rules, schools, taxes and current prices. Every figure links to its source.
 
@@ -242,9 +242,9 @@ If you are still comparing central neighborhoods, Echelon Property Group's [Clar
 
 - **Not a local historic district.** Clarksville does not appear among Austin's [eight local historic districts](https://www.austintexas.gov/planning/historic-preservation/historic-designation/historic-districts), so design review on new homes there has been advisory.
 
-- **About a $1.35 million median.** Clarksville homes sold at a median of $729 per square foot and 20 days on market over the last 12 months, per [David Ashby using Unlock MLS data](https://davidashbyatx.com/areas/clarksville).
+- **Private market report.** For current Clarksville pricing, days on market, and recent sales, contact Echelon Property Group for a private market report.
 
-- **2.121064% combined tax rate.** A City of Austin and Austin ISD address carries five 2026 taxing units totaling $2.121064 per $100 of taxable value, per [Gray Adkins](https://grayandair.com/austin/property-tax) citing the county rate table.
+- **2.121064% combined tax rate.** A City of Austin and Austin ISD address carries five 2026 taxing units totaling $2.121064 per $100 of taxable value, per the Travis County rate table.
 
 - **Walk Score 82 on West Lynn.** The address of Jeffrey's, 1204 West Lynn Street, scores 82 for walking and 88 for biking, per [Walk Score](https://www.walkscore.com/score/1204-w-lynn-st-austin-tx-78703).
 
@@ -254,7 +254,7 @@ Clarksville sits in ZIP 78703 just west of downtown Austin, inside the larger Ol
 
 The name is often stretched. Many people equate all of Old West Austin with Clarksville, the [CCDC notes](https://www.clarksvillecdc.org/realtors-developers), and it asks agents not to market homes outside the historic boundaries as Clarksville. I respect that line, and I tell buyers which side of it a house sits on.
 
-Broader market definitions run from MoPac east to Lamar and from West 6th Street to West 15th Street, the area used by [one MLS based analysis](https://davidashbyatx.com/areas/clarksville). Figures in this guide that use that wider area say so.
+Broader market definitions run from MoPac east to Lamar and from West 6th Street to West 15th Street.
 
 ## What is the history of Clarksville?
 
@@ -292,7 +292,7 @@ Groceries are close. [Fresh Plus Grocery](https://freshplusaustin.com/) has a st
 
 One landmark is gone. Nau's Enfield Drug, the 1951 soda fountain at 1115 West Lynn, [closed in March 2023](https://austin.eater.com/2023/3/7/23629237/naus-enfield-drug-closed-austin-pharmacy-diner-clarksville-restaurant-sale) after its lease was not renewed. A 2025 city filing describes a planned [mixed use redevelopment](https://services.austintexas.gov/edims/document.cfm?id=443518) of that building that preserves the Daniel Johnston mural.
 
-For parks, Pease Park and the Lady Bird Lake trail are minutes away, per [David Ashby's area guide](https://davidashbyatx.com/areas/clarksville). The same guide notes that Sixth and Lamar and downtown are minutes away.
+For parks, Pease Park and the Lady Bird Lake trail are minutes away, as are Sixth and Lamar and downtown.
 
 ## How walkable is Clarksville?
 
@@ -302,7 +302,7 @@ Those are address scores, not a neighborhood average, so check the exact house. 
 
 ## Which schools serve Clarksville?
 
-Clarksville is in Austin ISD. Homes are generally zoned to Mathews Elementary, O. Henry Middle and Austin High, per [David Ashby's MLS based guide](https://davidashbyatx.com/areas/clarksville). Austin ISD's 2025 consolidation documents confirm that [Mathews feeds 100% into O. Henry](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/MathewsES_AISD-Draft-Consol-DWBoundaries-10.3.2025-ada.pdf). Zoning is set address by address, so verify each home with the district.
+Clarksville is in Austin ISD. Homes are generally zoned to Mathews Elementary, O. Henry Middle and Austin High. Austin ISD's 2025 consolidation documents confirm that [Mathews feeds 100% into O. Henry](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/MathewsES_AISD-Draft-Consol-DWBoundaries-10.3.2025-ada.pdf). Zoning is set address by address, so verify each home with the district.
 
 Those documents also show O. Henry Middle [feeds 100% into Austin High](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/O.HenryMS-AISD-Draft-Consol-DW-Boundaries-10.3.2025-ada.pdf). Neither Mathews nor O. Henry was on the [list of schools closed](https://www.austinisd.org/consolidate) under the plan trustees approved.
 
@@ -310,25 +310,19 @@ Two changes took effect for 2026 to 2027. Mathews absorbed students from Bryker 
 
 ## What are property taxes in Clarksville?
 
-A Clarksville home inside the City of Austin and Austin ISD, with no MUD or PID, is taxed by five units with a combined 2026 rate of $2.121064 per $100 of taxable value, per [Gray Adkins](https://grayandair.com/austin/property-tax), citing the Travis County rate table. Exemptions lower taxable value and differ by unit.
+A Clarksville home inside the City of Austin and Austin ISD, with no MUD or PID, is taxed by five units with a combined 2026 rate of $2.121064 per $100 of taxable value, per the Travis County rate table. Exemptions lower taxable value and differ by unit.
 
 The five 2026 adopted rates are Austin ISD at $0.918400, the [City of Austin](https://www.austintexas.gov/budget-excellence/tax-rates) at $0.579948, Travis County at $0.386210, Central Health at $0.132863 and Austin Community College at $0.103643, per [Community Impact](https://communityimpact.com/central-austin/government/where-austin-property-taxes-go-this-year/).
 
-My calculation, not a quote: at the $1.35 million median, that rate works out to about $28,634 a year before any exemptions. Your bill depends on the appraised value and your exemptions. My guides to [Austin property taxes](/blog/austin-property-taxes-explained) and the [Travis County homestead exemption](/blog/texas-homestead-exemption-travis-county) explain both. Always pull the parcel on the [Travis Central Appraisal District](https://traviscad.org/) site.
+My calculation, not a quote: on a $1 million taxable value, that rate works out to about $21,211 a year before any exemptions. Your bill depends on the appraised value and your exemptions. My guides to [Austin property taxes](/blog/austin-property-taxes-explained) and the [Travis County homestead exemption](/blog/texas-homestead-exemption-travis-county) explain both. Always pull the parcel on the [Travis Central Appraisal District](https://traviscad.org/) site.
 
 ## What do homes and lots look like in Clarksville?
 
-Clarksville homes are mostly small historic cottages and bungalows on small lots, with a growing number of high-end new builds. The typical house is about 2,200 square feet on about a seventh of an acre, per [David Ashby's analysis](https://davidashbyatx.com/areas/clarksville) of 64 sales over three years.
-
-Half of those sales were homes built before 1940. They sold at a median of $722 per square foot, the highest of any age group, while homes built since 2015 sold at a median of $2.49 million, per the [same analysis](https://davidashbyatx.com/areas/clarksville). The National Register listing names Late Victorian and Bungalow/Craftsman as the district's architectural styles, per the [Texas Historical Commission](https://atlas.thc.texas.gov/Details/2076002070).
-
-Lot size changes outcomes. Homes on lots under 0.12 acre closed at 86.5% of original list price, while lots of 0.15 acre or more closed at 90.0% and sold faster, per [David Ashby](https://davidashbyatx.com/areas/clarksville). The top sales were new or nearly new homes on West 11th Street and Waterston Avenue, from $3.5 million to $6.1 million.
+Clarksville homes are mostly small historic cottages and bungalows on small lots, with a growing number of high-end new builds. The typical house is about 2,200 square feet on about a seventh of an acre.
 
 ## How much do homes cost in Clarksville?
 
-The median Clarksville single-family sale was about $1.35 million over the 12 months through November 11, 2026, at $729 per square foot and 20 typical days on market, per [David Ashby using Unlock MLS data](https://davidashbyatx.com/areas/clarksville). Homes closed at 93.4% of original list price. The three-year median was about $1.50 million.
-
-The market sped up. In 2024 the median Clarksville home took 110 days and closed at 87.8% of original list; in 2026 through November 11, the median was 19 days at 94.2%, per the [same source](https://davidashbyatx.com/areas/clarksville). Annual medians ran $1.39 million in 2024, $1.59 million in 2025 and $1.35 million in 2026 so far.
+For current Clarksville pricing, days on market, and recent sales, contact Echelon Property Group for a private market report.
 
 Treat these as directional. That dataset covers 64 sales in Clarksville and adjoining Old West Austin streets, a wider area than the historic district. Texas is also a [non-disclosure state](/blog/texas-non-disclosure-state), so real comps come from MLS records. I pull a fresh comp set for every client.
 
@@ -338,10 +332,10 @@ Clarksville trades space for walkability. Tarrytown and Pemberton Heights offer 
 
 :::compare-table
 Neighborhood | Median sale | Price per sq ft | Typical home and lot | Elementary, middle, high | Historic status | Source
-Clarksville (with adjoining Old West Austin streets) | $1.35M, 12 mo. to Nov. 11, 2026 | $729 | About 2,200 sq ft on about 1/7 acre | Mathews, O. Henry, Austin High | Clarksville National Register district (1976) | [David Ashby](https://davidashbyatx.com/areas/clarksville), [THC](https://atlas.thc.texas.gov/Details/2076002070)
-Tarrytown | $1.90M, 12 mo. to Nov. 11, 2026 | $630 | About 3,070 sq ft on 0.22 acre | Casis, O. Henry, Austin High (most homes) | Not stated in source | [David Ashby](https://davidashbyatx.com/areas/tarrytown)
-Pemberton Heights | $2.20M, 3 yrs. to Nov. 2026 | $728 | About 3,415 sq ft on 0.24 acre | Casis, O. Henry, Austin High (generally) | Old West Austin National Register district | [David Ashby](https://davidashbyatx.com/areas/pemberton-heights-old-enfield)
-Old Enfield | $1.23M, 3 yrs. to Nov. 2026 | $636 | About 2,100 sq ft on about 1/6 acre | Casis or Mathews, O. Henry, Austin High | Old West Austin National Register district | [David Ashby](https://davidashbyatx.com/areas/pemberton-heights-old-enfield)
+Clarksville (with adjoining Old West Austin streets) | Private report on request | Private report on request | Small historic lots | Mathews, O. Henry, Austin High | Clarksville National Register district (1976) | [THC](https://atlas.thc.texas.gov/Details/2076002070)
+Tarrytown | Private report on request | Private report on request | Private report on request | Casis, O. Henry, Austin High (most homes) | Not covered in this guide | Echelon Property Group
+Pemberton Heights | Private report on request | Private report on request | Private report on request | Casis, O. Henry, Austin High (generally) | Old West Austin National Register district | Echelon Property Group
+Old Enfield | Private report on request | Private report on request | Private report on request | Casis or Mathews, O. Henry, Austin High | Old West Austin National Register district | Echelon Property Group
 Bouldin Creek | Not in the same dataset; ask for a comp set | Not in dataset | Not in dataset | Verify with Austin ISD | Not covered in this guide | [Walk Score](https://www.walkscore.com/TX/Austin) (neighborhood Walk Score 82)
 :::
 
@@ -349,7 +343,7 @@ Periods and areas differ, so the medians are not like for like. For more on the 
 
 ## Is Clarksville right for you?
 
-Clarksville fits buyers who want to walk to dinner, live minutes from downtown and own a home with real history, at a median near $1.35 million. It fits less well if you want a large lot, a big new house without design scrutiny or a quiet cul de sac far from city activity.
+Clarksville fits buyers who want to walk to dinner, live minutes from downtown and own a home with real history. It fits less well if you want a large lot, a big new house without design scrutiny or a quiet cul de sac far from city activity.
 
 Walk West Lynn on a weekday evening and a Saturday morning before deciding. If you are also weighing a lock and leave condo, compare this guide with my [downtown Austin condo guide](/blog/downtown-austin-condos-2026).
 
@@ -367,7 +361,7 @@ Q: Can you tear down a house in Clarksville?
 A: Often, but not quickly. Demolishing a contributing home in the Clarksville National Register district goes through city historic review, and the Historic Landmark Commission can postpone a case for up to 180 days. City staff have described the commission's role on new designs there as advisory. The neighborhood association actively opposes demolishing contributing homes.
 
 Q: How much does a home in Clarksville cost?
-A: The median single-family home in Clarksville and adjoining Old West Austin streets sold for about $1.35 million over the 12 months through November 11, 2026, at $729 per square foot, according to David Ashby using Unlock MLS data. The three-year median was about $1.50 million. New homes since 2015 sold at a median of $2.49 million.
+A: For current Clarksville pricing, days on market, and recent sales, contact Echelon Property Group for a private market report.
 
 Q: What schools serve Clarksville?
 A: Clarksville is in Austin ISD, and homes are generally zoned to Mathews Elementary, O. Henry Middle School and Austin High School. Mathews feeds fully into O. Henry, which feeds fully into Austin High. Starting in 2026 to 2027, Mathews no longer offers sixth grade. Confirm the zoned campuses for any address with Austin ISD.
@@ -406,11 +400,9 @@ A: Yes. Walk Score rates 1204 West Lynn Street, home of Jeffrey's, at 82 for wal
 
 - [Community Impact, Where Austin property taxes go this year (Oct. 2026)](https://communityimpact.com/central-austin/government/where-austin-property-taxes-go-this-year/)
 
-- [Gray Adkins, Austin property tax guide (updated Nov. 17, 2026)](https://grayandair.com/austin/property-tax)
 
 - [Travis Central Appraisal District](https://traviscad.org/)
 
-- [David Ashby, Clarksville area data through Nov. 11, 2026 (Unlock MLS)](https://davidashbyatx.com/areas/clarksville), [Tarrytown](https://davidashbyatx.com/areas/tarrytown) and [Pemberton Heights and Old Enfield](https://davidashbyatx.com/areas/pemberton-heights-old-enfield)
 
 - [Walk Score, 1204 West Lynn Street](https://www.walkscore.com/score/1204-w-lynn-st-austin-tx-78703), [1110 West 10th Street](https://www.walkscore.com/score/1110-w-10th-st-austin-tx-78703) and [Austin neighborhoods](https://www.walkscore.com/TX/Austin)
 

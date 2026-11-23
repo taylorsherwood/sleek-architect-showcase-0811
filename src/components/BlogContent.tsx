@@ -201,7 +201,7 @@ const renderMarkdownBody = (body: string): string => {
 };
 
 interface Block {
-  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "before-after" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-spanish-oaks" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator" | "zip-table" | "carry-calculator";
+  type: "markdown" | "glance" | "compare-table" | "callout" | "best-for" | "watch-out" | "micro-cta" | "cta" | "cta-anchor" | "faq" | "stat-block" | "before-after" | "intel-pulse" | "intel-gauge" | "intel-gauge-austin-metro" | "intel-gauge-lake-austin" | "intel-gauge-lake-travis" | "intel-gauge-austin-15m" | "intel-gauge-tarrytown" | "intel-gauge-westlake" | "intel-gauge-coa-sfr-2m" | "intel-gauge-westlake-rollingwood" | "intel-gauge-lakeway-bee-cave" | "intel-gauge-spanish-oaks" | "intel-gauge-clarksville" | "intel-gauge-cedar-park-leander" | "intel-gauge-round-rock" | "intel-gauge-dripping-springs" | "intel-gauge-kyle-buda" | "intel-gauge-pflugerville-hutto" | "intel-gauge-georgetown" | "intel-gauge-gated-austin" | "intel-rates" | "intel-luxury-snapshot" | "mortgage-calculator" | "zip-table" | "carry-calculator";
   body: string;
 }
 
@@ -220,7 +220,7 @@ const parseBlocks = (content: string): Block[] => {
 
   while (i < lines.length) {
     const line = lines[i];
-    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta-anchor|cta|faq|stat-block|before-after|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-spanish-oaks|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-gauge-gated-austin|intel-rates|intel-luxury-snapshot|mortgage-calculator|zip-table|carry-calculator)\s*$/);
+    const fenceMatch = line.match(/^:::(glance|compare-table|callout|best-for|watch-out|micro-cta|cta-anchor|cta|faq|stat-block|before-after|intel-pulse|intel-gauge|intel-gauge-austin-metro|intel-gauge-lake-austin|intel-gauge-lake-travis|intel-gauge-austin-15m|intel-gauge-tarrytown|intel-gauge-westlake|intel-gauge-coa-sfr-2m|intel-gauge-westlake-rollingwood|intel-gauge-lakeway-bee-cave|intel-gauge-spanish-oaks|intel-gauge-clarksville|intel-gauge-cedar-park-leander|intel-gauge-round-rock|intel-gauge-dripping-springs|intel-gauge-kyle-buda|intel-gauge-pflugerville-hutto|intel-gauge-georgetown|intel-gauge-gated-austin|intel-rates|intel-luxury-snapshot|mortgage-calculator|zip-table|carry-calculator)\s*$/);
     if (fenceMatch) {
       flushMd();
       const type = fenceMatch[1] as Block["type"];
@@ -956,6 +956,18 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
                   marketName="Bee Cave"
                   fallbackMarketName="Austin Metro"
                   eyebrow={"SPANISH OAKS · BEE CAVE MARKET · BUYER / SELLER BALANCE IN REAL TIME"}
+                />
+              </IntelInsert>
+            );
+          case "intel-gauge-clarksville":
+            return (
+              <IntelInsert key={idx} tight>
+                <MarketBalanceGauge
+                  communityName="Clarksville · Central Austin Market"
+                  slug="clarksville"
+                  marketName="Central Austin"
+                  fallbackMarketName="Austin Metro"
+                  eyebrow={"CLARKSVILLE · CENTRAL AUSTIN MARKET · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );

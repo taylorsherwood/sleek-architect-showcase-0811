@@ -324,6 +324,9 @@ Clarksville homes are mostly small historic cottages and bungalows on small lots
 
 For current Clarksville pricing, days on market, and recent sales, contact Echelon Property Group for a private market report.
 
+:::intel-gauge-clarksville
+:::
+
 Treat these as directional. That dataset covers 64 sales in Clarksville and adjoining Old West Austin streets, a wider area than the historic district. Texas is also a [non-disclosure state](/blog/texas-non-disclosure-state), so real comps come from MLS records. I pull a fresh comp set for every client.
 
 ## How does Clarksville compare with Tarrytown, Pemberton Heights, Old Enfield and Bouldin Creek?

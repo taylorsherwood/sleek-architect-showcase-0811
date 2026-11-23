@@ -68,6 +68,8 @@ export const communityPages: CommunityData[] = [
     heroImage: westlakeHillsHeroImg,
     overview: `West Lake Hills is one of Austin's most sought-after luxury communities. Situated on scenic bluffs west of downtown, it overlooks the Hill Country and Lake Austin.
 
+For city boundaries, lot and tree rules, Eanes ISD campuses and 2026 tax rates, read our [guide to living in West Lake Hills](/blog/living-in-westlake-hills-austin).
+
 ### Location & Setting
 
 This incorporated city offers rolling terrain, mature live oaks, and panoramic hilltop views. The retreat-like atmosphere is just minutes from downtown Austin's energy and culture.

@@ -1,3 +1,4 @@
+import blogWestlakeHillsHero from "@/assets/blog/westlake-hills-hillside-home.webp.asset.json";
 import blogClarksvilleHero from "@/assets/blog/clarksville-home.webp.asset.json";
 import blogSpanishOaksHero from "@/assets/blog/spanish-oaks-golf-course-pond.webp.asset.json";
 import blogTexasOwnershipKeys from "@/assets/blog/texas-home-ownership-keys.webp.asset.json";
@@ -212,6 +213,214 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "living-in-westlake-hills-austin",
+    title: "Living in West Lake Hills, Austin: A Luxury Buyer's Guide to Westlake's Hill Country City",
+    metaTitle: "Living in West Lake Hills, Austin: 2026 Westlake Guide | Echelon Property Group",
+    excerpt: "Living in West Lake Hills, TX: city vs Westlake, 1 acre lot and tree rules, Eanes ISD schools, 2026 taxes and a $2.4M median. A 78746 buyer's guide.",
+    author: "Taylor Sherwood",
+    date: "2026-11-23",
+    dateModified: "2026-11-23",
+    readTime: "14 min read",
+    category: "NEIGHBORHOODS",
+    keywords: "living in West Lake Hills, West Lake Hills TX, Westlake Hills Austin, West Lake Hills homes, Eanes ISD, 78746 neighborhoods, West Lake Hills property taxes",
+    aboutPlaces: ["West Lake Hills, Texas", "Austin, Texas", "Travis County, Texas"],
+    imageAlt: "Stone and glass home on a wooded hillside lot in West Lake Hills, Texas",
+    relatedPostIds: ["rollingwood-vs-westlake-hills", "78746-luxury-homes-guide-for-smart-buyers", "eanes-isd-premium", "rob-roy-austin-gated-luxury"],
+    image: blogWestlakeHillsHero.url,
+    heroImage: blogWestlakeHillsHero.url,
+    content: `**Short answer:** Living in West Lake Hills means owning in a [small, separately incorporated city](https://www.westlakehills.gov/117/History-of-West-Lake-Hills) in the Hill Country about six miles west of downtown Austin, in ZIP 78746 and Eanes ISD. Homes there sold at a median of about $2.40 million over the 12 months ending October 31, 2026, per Unlock MLS data.
+
+West Lake Hills comes up with almost every buyer who asks me about "Westlake." This guide covers the city versus the ZIP code, history, lot and tree rules, schools, taxes and current prices, with every figure sourced.
+
+If you want to see what is available now, Echelon Property Group's [West Lake Hills community page](/communities/westlake-hills) has current listings. This page goes deeper on daily life and what you can build.
+
+## Key takeaways
+
+- **Its own city since 1953.** West Lake Hills was incorporated as a village on September 9, 1953, and today covers 2,560 acres with about 1,000 homes, per the [City of West Lake Hills](https://www.westlakehills.gov/117/History-of-West-Lake-Hills).
+- **One acre minimum lots.** The R-1 and R-2 residential districts require at least one acre, and lots of half an acre or more are capped at 25% impervious cover, per the [city code](https://ecode360.com/40398917).
+- **About a $2.40 million median.** City homes sold at a median of $2,397,250, $749 per square foot and 42.5 days on market over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid).
+- **1.597269% combined 2026 tax rate.** A city address in Eanes ISD and ESD No. 9 carries five units totaling $1.597269 per $100, per the [Travis County Tax Office rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls). Austin city addresses in Eanes ISD pay $2.028064.
+- **Eanes ISD rated A.** The Texas Education Agency gave Eanes ISD an overall A, with a score of 94, in its [2026 ratings](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909&lev=D&prgopt=reports%2Facct%2Fsummary.sas). Westlake High School scored 95.
+- **3,444 residents.** The 2020 census counted 3,444 people in the city, which has about 40 miles of public streets and 200 businesses, per the [city](https://www.westlakehills.gov/117/History-of-West-Lake-Hills).
+
+## Is West Lake Hills the same as Westlake?
+
+No. West Lake Hills is an incorporated city of about four square miles with its own council, zoning and police, per the [City of West Lake Hills](https://www.westlakehills.gov/117/History-of-West-Lake-Hills). "Westlake" is a broader local name for the 78746 area and Eanes ISD, which covers 31.2 square miles including parts of Austin and the cities of Rollingwood and West Lake Hills, per the [Eanes ISD new family guide](https://resources.finalsite.net/images/v1758565071/eanesisdnet/ohbjpidxgirc6glvtpvk/GuideforNewFamilies.pdf).
+
+That difference shows up on the tax bill, because the city line depends on which city, if any, a parcel sits in. The ZIP is also far bigger than the city: 78746 recorded 323 residential sales over the 12 months ending October 31, 2026, against 44 inside West Lake Hills, per Agent Intel (Unlock MLS via MLS Grid).
+
+To confirm a specific address, the city points buyers to the [City of Austin jurisdictions map](https://www.westlakehills.gov/FAQ.aspx?QID=85). A home inside the city reads "West Lake Hills Full Purpose." Homes in the city's extraterritorial jurisdiction still fall under its subdivision and sign ordinances, the [same FAQ](https://www.westlakehills.gov/FAQ.aspx?QID=85) says.
+
+:::compare-table
+Where the 78746 home sits | Who sets zoning | 2026 city rate per $100 | Combined 2026 rate per $100 | Source
+City of West Lake Hills (Eanes ISD, ESD No. 9) | City of West Lake Hills | $0.174896 | $1.597269 | [Travis County Tax Office](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls)
+City of Rollingwood (Eanes ISD, ESD No. 9) | City of Rollingwood | $0.196327 | $1.618700 | [Travis County Tax Office](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls)
+City of Austin (Eanes ISD) | City of Austin | $0.579948 | $2.028064, including ACC (my sum) | [Travis County Tax Office](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls), [ACC](https://www.austincc.edu/about-acc/acc-district-service-area/)
+Unincorporated Travis County (Eanes ISD, ESD No. 9) | Travis County, plus city subdivision rules in the ETJ | None | $1.422373 (my sum; confirm the parcel's units) | [Travis County Tax Office](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls)
+:::
+
+## What is the history of West Lake Hills?
+
+West Lake Hills grew out of land sold by Emmett Shelton, who founded the city, per [KUT](https://www.kut.org/austin/2017-09-21/why-arent-west-lake-hills-sunset-valley-and-rollingwood-part-of-austin). After World War II, Shelton pushed for a low water bridge by Tom Miller Dam, built in 1948 to connect Lake Austin Boulevard with Red Bud Trail, per a [city history report](https://texashistory.unt.edu/ark:/67531/metapth1065538/m1/7/) on the Portal to Texas History.
+
+Shelton then sold land, usually asking $1,500 for 2.5 acres, and bulldozed roads along old horse trails. Early owners dug their own wells and each house had its own septic tank, the [same report](https://texashistory.unt.edu/ark:/67531/metapth1065538/m1/7/) notes.
+
+In 1953, Shelton and his neighbors incorporated as a village after a 73 to 0 vote, on a map he drew by hand, according to the [report](https://texashistory.unt.edu/ark:/67531/metapth1065538/m1/7/). State law then required at least 200 residents and no more than 1,280 acres, and Shelton's stepson described drawing the boundary house by house, [KUT reported](https://www.kut.org/austin/2017-09-21/why-arent-west-lake-hills-sunset-valley-and-rollingwood-part-of-austin).
+
+Incorporation is why Austin could not absorb the city later. A city can annex only unincorporated land, a City of Austin planner told [KUT](https://www.kut.org/austin/2017-09-21/why-arent-west-lake-hills-sunset-valley-and-rollingwood-part-of-austin). The population grew from 714 in 1960 to 3,116 in 2000, per the [Handbook of Texas](https://www.tshaonline.org/handbook/entries/west-lake-hills-tx).
+
+## What can you build in West Lake Hills?
+
+West Lake Hills is built for large, wooded lots. The R-1 and R-2 districts require one acre with at least 150 feet of width and depth, and R-3 requires two acres, per the city's [schedule of regulations](https://ecode360.com/40398917). On lots of half an acre or more, the street setback is 50 feet, sides are 25 feet and the rear is 30 feet.
+
+Impervious cover is the rule that shapes most designs. Single-family lots of half an acre or more are capped at 25% of lot area, per the [city FAQ](https://www.westlakehills.gov/FAQ.aspx?QID=85). Smaller lots can earn more coverage only if they connect to city wastewater, per the [code](https://ecode360.com/40398917).
+
+Trees are protected. No tree or vegetation may be removed without a permit outside of routine yard care, per the city's [tree and vegetation page](https://www.westlakehills.gov/266/Tree-Vegetation-Removal). Under the city's [tree removal requirements](https://www.westlakehills.gov/DocumentCenter/View/52/Tree-Removal-Requirements?bidId=), trees from 6 to under 14 inches need a permit and replacement, and removing a tree of 14 inches or more requires a City Council variance.
+
+Plan time for review: first comments can take up to four weeks after an application is complete, per the city's [Building and Development page](https://www.westlakehills.gov/95/Building-Development).
+
+### Do recorded plats and deed restrictions add rules?
+
+They can. When a recorded plat shows a dimension that differs from the city code, the more restrictive provision applies, per the city's [dimensional regulations](https://ecode360.com/40398917). Private deed restrictions and any HOA rules sit on top of city code, so I read Schedule B of the title commitment on every purchase.
+
+## What city services come with a West Lake Hills address?
+
+West Lake Hills runs its own police department and opened a new $22.7 million City Hall at 4010 Bee Caves Road in September 2025, [Community Impact reported](https://communityimpact.com/lake-travis-westlake/government/west-lake-hills-celebrates-grand-opening-of-new-city-hall/).
+
+Fire and water come from separate districts. Fire service comes from Travis County ESD No. 9, the Westlake Fire Department, per the city's [wildfire page](https://www.westlakehills.gov/125/Fire-Safety-and-Wildfire-Preparedness), and water from Travis County Water District 10, per the [city FAQ](https://www.westlakehills.gov/FAQ.aspx?QID=85).
+
+The city bills its own [wastewater service](https://www.westlakehills.gov/98), but septic is still part of the picture: city staff handle septic inspections, per the [same FAQ](https://www.westlakehills.gov/FAQ.aspx?QID=85). Ask which system a house uses before you buy.
+
+Wildfire planning is part of life here. The city has taken part in Firewise since December 30, 2008, and updated its fire evacuation route plan in 2022, per its [wildfire preparedness page](https://www.westlakehills.gov/125/Fire-Safety-and-Wildfire-Preparedness). My [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) covers what to check before you buy.
+
+## What is near West Lake Hills for dining and nature?
+
+Bee Cave Road keeps adding restaurants, including [Taqueria de Diez](https://communityimpact.com/lake-travis-westlake/dining/taqueria-de-diez-now-open-in-west-lake-hills/), which opened at 3736 Bee Cave Road in spring 2026.
+
+Wild Basin Wilderness Preserve protects 227 acres of Hill Country habitat that is home to the federally endangered golden-cheeked warbler, per [St. Edward's University](https://www.stedwards.edu/academics/centers-institutes-arts/wild-basin/about). The preserve sits at 805 North Capital of Texas Highway with almost three miles of trails, and weekend visits need a [reservation](https://www.stedwards.edu/academics/centers-institutes-arts/wild-basin/visit).
+
+The city sits on the west side of Lake Austin, per the [Handbook of Texas](https://www.tshaonline.org/handbook/entries/west-lake-hills-tx). For waterfront homes nearby, see Echelon Property Group's [Lake Austin page](/communities/lake-austin).
+
+## Which schools serve West Lake Hills?
+
+West Lake Hills is in Eanes ISD, per the [Handbook of Texas](https://www.tshaonline.org/handbook/entries/west-lake-hills-tx). The Texas Education Agency rated the district an overall A with a score of 94 in its [2026 accountability ratings](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909&lev=D&prgopt=reports%2Facct%2Fsummary.sas), updated September 2026.
+
+:::compare-table
+Eanes ISD campus | Grades | 2026 TEA overall rating | Feeds to | Source
+Eanes Elementary | K to 5 | A (90) | Hill Country MS, Westlake HS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909101&lev=C&prgopt=reports%2Facct%2Fsummary.sas), [campus](https://ee.eanesisd.net/school)
+Cedar Creek Elementary | K to 5 | B (88) | Hill Country MS, Westlake HS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909102&lev=C&prgopt=reports%2Facct%2Fsummary.sas), [campus](https://cce.eanesisd.net/school)
+Bridge Point, Forest Trail and Barton Creek Elementary | K to 5 | A (91 each) | Verify by address | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909106&lev=C&prgopt=reports%2Facct%2Fsummary.sas)
+Hill Country Middle School | 6 to 8 | A (95) | Westlake HS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909041&lev=C&prgopt=reports%2Facct%2Fsummary.sas)
+West Ridge Middle School | 6 to 8 | A (96) | Westlake HS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909042&lev=C&prgopt=reports%2Facct%2Fsummary.sas)
+Westlake High School | 9 to 12 | A (95) |  | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909001&lev=C&prgopt=reports%2Facct%2Fsummary.sas)
+:::
+
+Eanes Elementary, at 4101 Bee Cave Road, calls itself the longest continuously used school campus in Texas, on a site in use for about 130 years, per its [campus page](https://ee.eanesisd.net/school). West Ridge Middle serves the district's western half, per [its own page](https://wrms.eanesisd.net/school).
+
+Zones changed recently. Trustees closed Valley View Elementary and moved its students to Barton Creek Elementary for 2025 to 2026, per a [February 2025 board resolution](https://eanesisd.community.diligentoneplatform.com/document/0a0d313c-92c9-406f-8024-8b2f151f34a3/). Confirm any address with the district's [SchoolSearch map](https://www.eanesisd.net/district/maps). My [Austin ISD vs Eanes ISD comparison](/blog/austin-isd-vs-eanes-isd) and [Eanes ISD premium analysis](/blog/eanes-isd-premium) go deeper.
+
+## What are property taxes in West Lake Hills?
+
+A West Lake Hills home pays five taxing units with a combined 2026 rate of $1.597269 per $100 of taxable value, per the [Travis County Tax Office rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls). The units are Eanes ISD at $0.8254, Travis County at $0.38621, Central Health at $0.132863, the city at $0.174896 and ESD No. 9 at $0.0779.
+
+There is no Austin Community College line. ACC's taxing district includes only the portions of Eanes ISD inside the City of Austin, per [Austin Community College](https://www.austincc.edu/about-acc/acc-district-service-area/). The city adopted its no new revenue rate, down from $0.176783, and the average appraised residence is nearly $2.49 million, [Community Impact reported](https://communityimpact.com/lake-travis-westlake/government/west-lake-hills-approves-fy-2026-27-budget-tax-rate/).
+
+My calculation, not a quote: at the $2,397,250 median, the combined rate works out to about $38,290 a year before exemptions. The same value on the City of Austin side of Eanes ISD would run about $48,618. My guides to [Austin property taxes](/blog/austin-property-taxes-explained) and the [2026 homestead exemption](/blog/texas-homestead-exemption-2026) explain the rest. Always pull the parcel on the [Travis Central Appraisal District](https://traviscad.org/) site.
+
+## How much do homes cost in West Lake Hills?
+
+:::intel-gauge-westlake
+:::
+
+West Lake Hills recorded 44 residential sales from November 1, 2025 to October 31, 2026, at a $2,397,250 median, $749 per square foot and 42.5 median days on market, per Agent Intel (Unlock MLS via MLS Grid), pulled November 23, 2026. The median price was down 2.63% from the prior 12 months.
+
+Homes are selling faster than a year ago. Median days on market fell from 67 for the 12 months ending October 2025 to 42.5, and months of inventory eased from 6.27 to 5.23, per the same Agent Intel data. The average sale was $3,191,401, well above the median, because a few very large sales pull it up.
+
+The latest quarter is tighter. From August through October 2026, 15 homes sold at a $2,139,200 median and 38 median days, with 11 active listings and about 3.05 months of inventory, per Agent Intel. Samples this small swing, so treat them as direction.
+
+The wider ZIP is cheaper per foot. ZIP 78746 recorded 323 residential sales at a $1,862,000 median and $562 per square foot over the same 12 months, up 7.94%, with 5.04 months of inventory, per Agent Intel. Agent Intel's residential category can include condos and townhomes.
+
+Texas does not require sale prices to be disclosed publicly, so I pull a fresh MLS comp set for every client.
+
+## How does West Lake Hills compare with nearby Westlake neighborhoods and central Austin?
+
+West Lake Hills sells at a higher price per foot than the rest of 78746. The table uses Agent Intel's MLS market definitions, which may not match neighborhood names as locals use them.
+
+:::compare-table
+Market (Agent Intel) | Sales | Median | $/sq ft | Days | Supply
+City of West Lake Hills | 44 | $2.40M | $749 | 42.5 | 5.23
+Westlake (MLS neighborhood) | 87 | $2.43M | $561 | 71.5 | 6.77
+Lost Creek (MLS neighborhood) | 52 | $1.40M | $499 | 46 | 5.15
+Barton Creek (MLS neighborhood) | 65 | $1.36M | $519 | 29 | 4.11
+ZIP 78746 overall | 323 | $1.86M | $562 | 49.5 | 5.04
+ZIP 78703 (central Austin, Austin ISD) | 224 | $1.32M | $600 | 55.5 | 6.40
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales, medians and months of supply for the 12 months ending October 31, 2026, pulled November 23, 2026. Agent Intel did not return MLS data for Rollingwood, Rob Roy, Davenport Ranch or Tarrytown as separate markets, so they are not in the table.
+
+For those comparisons, read [Rollingwood vs West Lake Hills](/blog/rollingwood-vs-westlake-hills), [Tarrytown vs Westlake](/blog/tarrytown-vs-westlake-austin) and my [Rob Roy guide](/blog/rob-roy-austin-gated-luxury). Echelon Property Group's [Rollingwood](/communities/rollingwood), [Rob Roy](/communities/rob-roy) and [Davenport Ranch](/communities/davenport-ranch) pages list current homes.
+
+## Is West Lake Hills right for you?
+
+West Lake Hills fits buyers who want an acre or more, mature trees, Eanes ISD and a small city government, about six miles from downtown, at a median near $2.40 million. It fits less well if you want to walk to dinner, build quickly or clear trees freely.
+
+Drive Bee Cave Road at rush hour and walk a few streets off Westlake Drive before deciding. For the bigger 78746 picture, read my [78746 luxury homes guide](/blog/78746-luxury-homes-guide-for-smart-buyers).
+
+## Frequently asked questions
+
+:::faq
+
+Q: Is West Lake Hills part of Austin?
+A: No. West Lake Hills is a separate city, incorporated on September 9, 1953, with its own council, zoning and police department. It shares ZIP code 78746 and an Austin mailing address with nearby areas, which causes confusion. Check any address on the City of Austin jurisdictions map, which labels city homes "West Lake Hills Full Purpose."
+
+Q: What is the difference between West Lake Hills and Westlake?
+A: West Lake Hills is the incorporated city, about four square miles with 3,444 residents in the 2020 census. "Westlake" usually means the wider 78746 area, which also includes Rollingwood, parts of the City of Austin and unincorporated Travis County. Zoning, tax rates and services change depending on which side of those lines a home sits.
+
+Q: How much does a home in West Lake Hills cost?
+A: Homes in the City of West Lake Hills sold at a median of $2,397,250 over the 12 months ending October 31, 2026, on 44 residential sales at $749 per square foot, according to Agent Intel using Unlock MLS data. Across all of ZIP 78746, the residential median was $1,862,000 on 323 sales.
+
+Q: What are property taxes in West Lake Hills?
+A: A West Lake Hills home in Eanes ISD pays a combined 2026 rate of $1.597269 per $100 of taxable value: Eanes ISD, the city, Travis County, Central Health and Travis County ESD No. 9. There is no Austin Community College tax. City of Austin homes in Eanes ISD pay $2.028064. Confirm each parcel with the Travis Central Appraisal District.
+
+Q: What schools serve West Lake Hills?
+A: West Lake Hills is in Eanes ISD, which the Texas Education Agency rated an overall A, with a score of 94, in 2026. Eanes and Cedar Creek elementary schools feed Hill Country Middle School and Westlake High School, which scored 95. Zones are set by address and changed in 2025, so confirm every home on the district's SchoolSearch map.
+
+Q: What is the minimum lot size in West Lake Hills?
+A: The R-1 and R-2 residential districts in West Lake Hills require a minimum lot of one acre, at least 150 feet wide and deep, and R-3 requires two acres. Lots of half an acre or more are capped at 25% impervious cover. Older lots below the minimum can exist, so check the zoning and plat for each property.
+
+Q: Can you cut down trees in West Lake Hills?
+A: Only with a permit in most cases. The city requires a permit for nearly all tree and vegetation removal beyond routine yard care. Trees from 6 to under 14 inches in diameter can be removed with a permit and replacement planting, while removing a tree of 14 inches or more requires a variance from the City Council.
+
+:::
+
+## Sources
+
+- [City of West Lake Hills, History of West Lake Hills](https://www.westlakehills.gov/117/History-of-West-Lake-Hills), [Frequently Asked Questions](https://www.westlakehills.gov/FAQ.aspx?QID=85), [Building and Development](https://www.westlakehills.gov/95/Building-Development), [Wastewater](https://www.westlakehills.gov/98) and [Fire Safety and Wildfire Preparedness](https://www.westlakehills.gov/125/Fire-Safety-and-Wildfire-Preparedness)
+- [City of West Lake Hills, Code of Ordinances, Division 8: Dimensional Regulations](https://ecode360.com/40398917)
+- [City of West Lake Hills, Tree and Vegetation Removal](https://www.westlakehills.gov/266/Tree-Vegetation-Removal) and [Tree Removal Requirements (PDF)](https://www.westlakehills.gov/DocumentCenter/View/52/Tree-Removal-Requirements?bidId=)
+- [Texas State Historical Association, Handbook of Texas, West Lake Hills, TX](https://www.tshaonline.org/handbook/entries/west-lake-hills-tx)
+- [Portal to Texas History, Report about the City of West Lake Hills, page 7](https://texashistory.unt.edu/ark:/67531/metapth1065538/m1/7/)
+- [KUT, Why aren't West Lake Hills, Sunset Valley and Rollingwood part of Austin? (Sept. 2017)](https://www.kut.org/austin/2017-09-21/why-arent-west-lake-hills-sunset-valley-and-rollingwood-part-of-austin)
+- [Travis County Tax Office, 2026 tax rate list (XLS)](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls)
+- [Community Impact, West Lake Hills approves FY 2026-27 budget and tax rate (Sept. 2026)](https://communityimpact.com/lake-travis-westlake/government/west-lake-hills-approves-fy-2026-27-budget-tax-rate/) and [West Lake Hills celebrates grand opening of new City Hall (Sept. 2025)](https://communityimpact.com/lake-travis-westlake/government/west-lake-hills-celebrates-grand-opening-of-new-city-hall/)
+- [Texas Education Agency, 2026 Accountability Rating Overall Summary, Eanes ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909&lev=D&prgopt=reports%2Facct%2Fsummary.sas) and campus summaries linked in the school table
+- [Eanes ISD, Eanes Elementary](https://ee.eanesisd.net/school), [Cedar Creek Elementary](https://cce.eanesisd.net/school), [West Ridge Middle School](https://wrms.eanesisd.net/school), [Boundary Map and SchoolSearch](https://www.eanesisd.net/district/maps) and [Valley View rezoning resolution (Feb. 11, 2025)](https://eanesisd.community.diligentoneplatform.com/document/0a0d313c-92c9-406f-8024-8b2f151f34a3/)
+- Agent Intel market statistics (Unlock MLS via MLS Grid), Residential, for the City of West Lake Hills, ZIP 78746, ZIP 78703 and the Westlake, Lost Creek and Barton Creek MLS neighborhoods, 12 months ending Oct. 31, 2026 (plus 3 months for West Lake Hills), pulled Nov. 23, 2026 through Echelon Property Group's Agent Intel account
+- [Community Impact, Taqueria de Diez now open in West Lake Hills (July 2026)](https://communityimpact.com/lake-travis-westlake/dining/taqueria-de-diez-now-open-in-west-lake-hills/)
+- [St. Edward's University, About Wild Basin](https://www.stedwards.edu/academics/centers-institutes-arts/wild-basin/about) and [Visiting the Preserve](https://www.stedwards.edu/academics/centers-institutes-arts/wild-basin/visit)
+- [Austin Community College, ACC District and Service Area](https://www.austincc.edu/about-acc/acc-district-service-area/)
+- [Eanes ISD, Guide for New and Prospective Families](https://resources.finalsite.net/images/v1758565071/eanesisdnet/ohbjpidxgirc6glvtpvk/GuideforNewFamilies.pdf)
+- [Travis Central Appraisal District](https://traviscad.org/)
+
+:::cta
+eyebrow: Private advisory
+heading: Thinking about West Lake Hills?
+subheading: I can confirm whether a home is inside the city, pull a current comp set, check its zoned schools, lot rules and tax units, and show you homes in and around West Lake Hills, including ones that trade privately.
+button: Request a private consultation
+href: /contact
+:::`,
+  },
   {
     id: "living-in-clarksville-austin",
     title: "Living in Clarksville, Austin: A Luxury Buyer's Guide to Austin's Historic Freedmen's Neighborhood",
@@ -1549,6 +1758,8 @@ I am not a fire official or an insurance agent, and nothing here replaces their 
 **Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI**, is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. He advises buyers, sellers and investors on luxury homes, land and investment property across Austin and the Texas Hill Country, and is licensed in Texas and Tennessee. [More about Taylor](/about).
 
 Echelon Property Group | Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746
+
+West Lake Hills has its own Firewise history and evacuation plan; our [West Lake Hills living guide](/blog/living-in-westlake-hills-austin) covers it alongside tree and lot rules.
 
 :::cta
 heading: Request a private consult
@@ -4936,7 +5147,9 @@ A: Use the property search on the Eanes ISD boundary map page and confirm both t
 :::
 
 Much of the district sits in oak and juniper canyon country. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) explains what Westlake buyers should check on a wooded lot.
-`,
+
+
+For daily life, tax units and campus ratings inside the city, see our [guide to living in West Lake Hills](/blog/living-in-westlake-hills-austin).`,
   },
   {
     id: "cost-segregation-austin",
@@ -17181,7 +17394,9 @@ ${neighborhoodPriceSummary("westlake-hills")}
 Rollingwood is approximately 5 minutes from downtown Austin, making it one of the closest luxury neighborhoods to the city center.
 
 ### Are Rollingwood and West Lake Hills in the same school district?
-Yes. Both neighborhoods are served by the Eanes Independent School District, consistently ranked among the best public school districts in Texas.`,
+Yes. Both neighborhoods are served by the Eanes Independent School District, consistently ranked among the best public school districts in Texas.
+
+For a deeper look at the city itself, including lot minimums, tree permits and Eanes ISD zoning, read our [guide to living in West Lake Hills](/blog/living-in-westlake-hills-austin).`,
     author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "6 min read",
@@ -17829,7 +18044,9 @@ Yes. Rob Roy and its sub-communities are gated with controlled access, providing
 Rob Roy offers the combination of gated privacy, panoramic views, and estate-scale lots that no other Austin community matches. While [Barton Creek](/communities/barton-creek) offers country club amenities and [West Lake Hills](/communities/westlake-hills) offers community-wide prestige, Rob Roy delivers maximum seclusion and architectural grandeur.
 
 Large wooded lots deserve wildfire due diligence. Our [Austin wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) walks through risk scores, WUI rules and home hardening.
-`,
+
+
+For the neighboring incorporated city, read our [guide to living in West Lake Hills](/blog/living-in-westlake-hills-austin).`,
     author: "Taylor Sherwood",
     date: "2026-04-03",
     readTime: "7 min read",

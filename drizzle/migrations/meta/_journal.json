@@ -15,6 +15,13 @@
       "when": 1795536377478,
       "tag": "0001_harden_admin_roles",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795536582649,
+      "tag": "0002_community_report_grants",
+      "breakpoints": true
     }
   ]
 }

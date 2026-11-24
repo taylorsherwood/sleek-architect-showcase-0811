@@ -18,8 +18,11 @@ export interface TemplateEntry {
  *   import { template as welcomeTemplate } from './welcome.tsx'
  *   // then add to TEMPLATES: 'welcome': welcomeTemplate
  */
+import { template as communityReportAccess } from './community-report-access.tsx'
+
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'new-lead-notification': newLeadNotification,
+  'community-report-access': communityReportAccess,
   // Add templates here as they are created, e.g.:
   // 'welcome': welcomeTemplate,
 }

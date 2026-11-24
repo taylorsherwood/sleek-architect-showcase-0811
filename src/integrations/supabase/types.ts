@@ -179,6 +179,36 @@ export type Database = {
         }
         Relationships: []
       }
+      community_report_grants: {
+        Row: {
+          community_slug: string
+          created_at: string
+          email: string
+          expires_at: string
+          id: string
+          last_accessed_at: string | null
+          token_hash: string
+        }
+        Insert: {
+          community_slug: string
+          created_at?: string
+          email: string
+          expires_at?: string
+          id?: string
+          last_accessed_at?: string | null
+          token_hash: string
+        }
+        Update: {
+          community_slug?: string
+          created_at?: string
+          email?: string
+          expires_at?: string
+          id?: string
+          last_accessed_at?: string | null
+          token_hash?: string
+        }
+        Relationships: []
+      }
       leads: {
         Row: {
           created_at: string

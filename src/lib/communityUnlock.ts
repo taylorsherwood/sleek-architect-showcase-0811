@@ -63,6 +63,59 @@ export interface UnlockSubmission {
  * columns), the gated data only ever reaches the browser through this
  * server-verified path.
  */
+export async function requestReportEmail(
+  slug: string,
+  submission: UnlockSubmission,
+): Promise<boolean> {
+  try {
+    const utm = getUtmParams();
+    const { data, error } = await supabase.functions.invoke("get-community-report", {
+      body: {
+        slug,
+        email: submission.email,
+        first_name: submission.first_name,
+        last_name: submission.last_name,
+        phone: submission.phone,
+        community_name: submission.community_name,
+        interest: submission.interest ?? "",
+        ...utm,
+        referrer: typeof document !== "undefined" ? document.referrer || "" : "",
+        page_url: typeof window !== "undefined" ? window.location.href : "",
+        source_tag: `Community Report - ${submission.community_name}`,
+      },
+    });
+    return !error && data?.emailed === true;
+  } catch {
+    return false;
+  }
+}
+
+/** Reads ?report_token= from the URL and, if valid, unlocks the report. */
+export async function redeemReportTokenFromUrl(slug: string): Promise<CommunityRecord | null> {
+  if (typeof window === "undefined") return null;
+  const url = new URL(window.location.href);
+  const token = url.searchParams.get("report_token");
+  if (!token) return null;
+  url.searchParams.delete("report_token");
+  window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+  try {
+    const { data, error } = await supabase.functions.invoke("get-community-report", {
+      body: { slug, token },
+    });
+    if (error || !data?.community) return null;
+    const community = data.community as CommunityRecord;
+    try {
+      localStorage.setItem(DATA_PREFIX + slug, JSON.stringify({ expires: Date.now() + TTL_MS, community }));
+      clearLegacyUnlockFlag(slug);
+    } catch { /* ignore */ }
+    window.dispatchEvent(new CustomEvent("echelon:community-unlocked", { detail: { slug, community } }));
+    return community;
+  } catch {
+    return null;
+  }
+}
+
+/** @deprecated report is now delivered by email; kept for compatibility. */
 export async function fetchUnlockedReport(
   slug: string,
   submission: UnlockSubmission,

@@ -1,7 +1,7 @@
-import { useState, FormEvent } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { formatPhoneNumber, getPhoneDigits, submitLeadToZapier } from "@/lib/formUtils";
 import SmsConsent from "@/components/SmsConsent";
-import { fetchUnlockedReport, getUtmParams } from "@/lib/communityUnlock";
+import { requestReportEmail, redeemReportTokenFromUrl, getUtmParams } from "@/lib/communityUnlock";
 
 interface CommunityGateProps {
   slug: string;
@@ -27,6 +27,17 @@ const CommunityGate = ({
   const [interest, setInterest] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [emailed, setEmailed] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (!new URLSearchParams(window.location.search).get("report_token")) return;
+    redeemReportTokenFromUrl(slug).then((community) => {
+      if (community) onUnlock();
+      else setError("This briefing link has expired. Request a fresh one below.");
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -61,7 +72,7 @@ const CommunityGate = ({
 
     // 2. Server-verify the lead and fetch the gated payload. The full
     //    report data only reaches the browser after this call succeeds.
-    const community = await fetchUnlockedReport(slug, {
+    const ok = await requestReportEmail(slug, {
       first_name: firstName.trim(),
       last_name: lastName.trim(),
       email: email.trim(),
@@ -71,12 +82,12 @@ const CommunityGate = ({
     });
     setSubmitting(false);
 
-    if (!community) {
-      setError("We couldn't verify access. Please try again in a moment.");
+    if (!ok) {
+      setError("We couldn't send your briefing. Please try again in a moment.");
       return;
     }
 
-    onUnlock();
+    setEmailed(true);
   };
 
   return (
@@ -92,6 +103,14 @@ const CommunityGate = ({
           </p>
         </div>
 
+        {emailed ? (
+          <div className="text-center" role="status">
+            <p className="text-lg md:text-xl font-display leading-relaxed">Your briefing is on its way.</p>
+            <p className="text-sm opacity-75 mt-4 leading-relaxed">
+              We sent a private link to {email.trim()}. Open it to read the full {communityName} report.
+            </p>
+          </div>
+        ) : (
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
           <div className="grid sm:grid-cols-2 gap-4">
             <input
@@ -150,11 +169,11 @@ const CommunityGate = ({
             disabled={submitting}
             className="w-full text-minimal bg-gold text-foreground hover:bg-background hover:text-foreground px-10 py-4 mt-2 tracking-[0.15em] transition-colors duration-300 disabled:opacity-50"
           >
-            {submitting ? "OPENING ACCESS…" : "OPEN THE BRIEFING"}
+            {submitting ? "SENDING…" : "EMAIL ME THE BRIEFING"}
           </button>
 
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 pt-4 text-[11px] tracking-[0.18em] opacity-60 uppercase">
-            <span>Instant access</span>
+            <span>Delivered by email</span>
             <span className="text-gold/60">•</span>
             <span>Direct line, no list</span>
             <span className="text-gold/60">•</span>
@@ -167,6 +186,7 @@ const CommunityGate = ({
             </p>
           )}
         </form>
+        )}
       </div>
     </section>
   );

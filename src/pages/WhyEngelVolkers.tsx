@@ -19,6 +19,8 @@ import yachting from "@/assets/ev-yachting-shop.webp.asset.json";
 import privateOfficePhoto from "@/assets/ev-private-office-historic-residence.webp.asset.json";
 import privateResidencesPhoto from "@/assets/ev-private-residences-issue33.webp.asset.json";
 import officeInterior from "@/assets/ev-office-interior.webp.asset.json";
+import developmentServices from "@/assets/ev-development-services.webp.asset.json";
+import commercialWordmark from "@/assets/ev-commercial-wordmark.webp.asset.json";
 import brandFilm from "@/assets/ev-brand-film.mp4.asset.json";
 import "./WhyEngelVolkers.css";
 
@@ -40,10 +42,23 @@ const reach = [
   { title: "Development Expertise", text: "Established in 2019, Engel & Völkers Development Services serves builders, developers, and investors. The brokerage describes a division spanning five continents and representing more than 500 projects, from townhome communities to mixed-use high-rises." },
 ];
 
-const specialties = [
+type Specialty = {
+  title: string;
+  image: string;
+  alt: string;
+  text: string;
+  href: string;
+  link: string;
+  tile?: boolean;
+  span?: string;
+};
+
+const specialties: Specialty[] = [
   { title: "Engel & Völkers Yachting", image: yachting.url, alt: "Engel & Völkers Yachting shop overlooking a marina", text: "The brand’s world extends beyond the shoreline. Engel & Völkers Yachting connects buyers and sellers with dedicated yacht advisors, bringing specialist knowledge to yacht ownership and life on the water.", href: "https://www.evrealestate.com/en/explore/yachting", link: "Explore Yachting" },
   { title: "Private Office", image: privateOfficePhoto.url, alt: "Historic stone residence with ornate gables along a tree-lined street", text: "A specialist global network for exceptional residential assets. Private Office brings together bespoke advisory, a privacy-first approach, and distinctive off-market opportunities, with dedicated advisors attending to each client’s individual priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
   { title: "Private Residences", image: privateResidencesPhoto.url, alt: "Engel & Völkers Private Residences Issue 33 magazine cover and open property spread", text: "Private Residences is Engel & Völkers’ property publication, curating remarkable homes across the Americas. Architecture, setting, and lifestyle shape the collection, giving readers a considered view of properties beyond their own market.", href: "https://www.evrealestate.com/en/private-residences", link: "Explore the publication" },
+  { title: "Engel & Völkers Commercial", image: commercialWordmark.url, alt: "Engel & Völkers Commercial wordmark", text: "In portfolio and individual transactions, Engel & Völkers Commercial combines investment expertise with local competence and global connections. Advisors work from community shop locations, which supports the perspective needed to judge the current and future value of a commercial asset.", href: "https://www.evrealestate.com/en/commercial", link: "Explore Commercial", tile: true, span: "md:col-start-2" },
+  { title: "Engel & Völkers Development Services", image: developmentServices.url, alt: "High-rise towers under construction with tower cranes above a waterfront district", text: "Established in 2019, Engel & Völkers Development Services works with builders, developers, and investors on positioning, marketing, and sales. The division represents projects across five continents, from townhome communities to mixed-use high-rises.", href: "https://www.evrealestate.com/en/explore/development-services", link: "Explore Development Services", span: "md:col-start-4" },
 ];
 
 const approach = [
@@ -168,9 +183,13 @@ export default function WhyEngelVolkers() {
             <p className={label}>The World of Engel &amp; Völkers</p>
             <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
-            {specialties.map((item) => <div key={item.title}>
-              <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={900} height={675} loading="lazy" decoding="async" />
+          <div className="grid md:grid-cols-6 gap-12 md:gap-10 lg:gap-16">
+            {specialties.map((item) => <div key={item.title} className={`md:col-span-2 ${item.span ?? ""}`}>
+              {item.tile ? (
+                <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-contain bg-white border border-foreground/10 p-10 md:p-14 mb-8" width={1200} height={900} loading="lazy" decoding="async" />
+              ) : (
+                <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={1200} height={900} loading="lazy" decoding="async" />
+              )}
               <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
               <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
               <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>

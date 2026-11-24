@@ -329,7 +329,9 @@ Tarrytown encompasses several distinct areas:
 
 ### Boundaries
 
-The neighborhood spans from MoPac to the east, Lake Austin to the west, Enfield Road to the south, and 35th Street to the north.`,
+The neighborhood spans from MoPac to the east, Lake Austin to the west, Enfield Road to the south, and 35th Street to the north.
+
+For parks, Casis Elementary, 2026 taxes, HOME lot rules and current prices, read our [guide to living in Tarrytown](/blog/living-in-tarrytown-austin).`,
     lifestyle: `### Walkability
 
 Residents walk or bike to Deep Eddy Pool, Casis Elementary, local coffee shops, and boutique retailers along Exposition Boulevard.

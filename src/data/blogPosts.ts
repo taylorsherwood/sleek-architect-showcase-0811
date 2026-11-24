@@ -634,6 +634,9 @@ If you are navigating this decision while also evaluating specific properties, t
 
 Echelon Property Group works with buyers across both districts and can help you map your priorities against real inventory, current tax data, and neighborhood-level market conditions. When you are ready to move from research to action, [learn more about our advisory services](/about) and [connect with our team](/contact) for an informed conversation about your position in the Austin market. You can also explore live inventory across [Austin luxury homes](/luxury-homes-austin) and our [featured community pages](/communities).
 
+
+For a closer look at one Austin ISD neighborhood, see my [Tarrytown living guide](/blog/living-in-tarrytown-austin), which covers Casis, O. Henry and Austin High.
+
 :::faq
 Q: Is Eanes ISD better than Austin ISD?
 A: Eanes ISD posts consistently higher district-wide TEA accountability ratings and benefits from a smaller footprint and strong community investment. Austin ISD is much larger and more variable at the campus level, with some campuses (including LASA) that rival or exceed Eanes outcomes. The right answer is campus-specific, not district-wide.
@@ -2662,6 +2665,9 @@ Many buyers tour both and feel the difference immediately. They are both the top
 Tarrytown and Westlake are the twin peaks of Austin luxury, and choosing between them is a question of priorities, not prestige. Tarrytown offers central, characterful living at a premium per square foot. Westlake offers space, views, and the best schools in Texas, at a higher absolute price. Neither is the wrong answer. The wrong move is choosing without understanding the real trade-offs, especially since many of the best homes in both areas trade quietly, before they ever reach the open market.
 
 At Echelon Property Group, we work both areas closely, including off-market opportunities you will not find on a public search. If you are weighing Tarrytown against Westlake, the smartest first step is [a conversation before you tour](/contact), so your search is built around how you actually want to live.
+
+
+For more on the Tarrytown side, my [Tarrytown living guide](/blog/living-in-tarrytown-austin) covers parks, schools, 2026 taxes and HOME lot rules.
 
 :::faq
 Q: Is Tarrytown or Westlake more expensive?

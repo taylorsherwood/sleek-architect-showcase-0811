@@ -1,3 +1,4 @@
+import blogTarrytownHero from "@/assets/blog/tarrytown-shopping-center.webp.asset.json";
 import blogWestlakeHillsHero from "@/assets/blog/westlake-hills-hillside-home.webp.asset.json";
 import blogClarksvilleHero from "@/assets/blog/clarksville-home.webp.asset.json";
 import blogSpanishOaksHero from "@/assets/blog/spanish-oaks-golf-course-pond.webp.asset.json";
@@ -213,6 +214,253 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "living-in-tarrytown-austin",
+    title: "Living in Tarrytown, Austin: A Luxury Buyer's Guide to West Austin's Lakeside Neighborhood",
+    metaTitle: "Living in Tarrytown, Austin: 2026 Neighborhood Guide | Echelon Property Group",
+    excerpt: "Living in Tarrytown, Austin: parks, Casis and Austin ISD schools, Exposition shops, 2026 taxes, HOME lot rules and a $1.68M median in 78703.",
+    author: "Taylor Sherwood",
+    date: "2026-11-24",
+    dateModified: "2026-11-24",
+    readTime: "14 min read",
+    category: "NEIGHBORHOODS",
+    keywords: "living in Tarrytown, Tarrytown Austin, Tarrytown Austin homes, Casis Elementary homes, 78703 neighborhoods, Exposition Boulevard, Tarrytown property taxes",
+    aboutPlaces: ["Tarrytown, Austin, Texas", "Austin, Texas", "Travis County, Texas"],
+    imageAlt: "Brick storefronts and a shaded patio with diners at the Tarrytown Shopping Center in Austin",
+    relatedPostIds: ["tarrytown-vs-bryker-woods", "tarrytown-vs-westlake-austin", "living-in-clarksville-austin", "what-makes-pemberton-heights-desirable"],
+    image: blogTarrytownHero.url,
+    heroImage: blogTarrytownHero.url,
+    content: `**Short answer:** Living in Tarrytown means owning in a central West Austin neighborhood in ZIP 78703, set between MoPac and Lake Austin, with tree-lined streets, Austin ISD schools and city parks along the water. Tarrytown homes sold at a median of $1,677,500 over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026.
+
+Tarrytown is one of the first names buyers mention when they want central Austin with room to breathe. This guide covers boundaries, history, parks, shops, schools, taxes, building rules and prices, with every figure sourced.
+
+For homes available now, see Echelon Property Group's [Tarrytown community page](/communities/tarrytown). This page goes deeper on daily life and what you are buying.
+
+## Key takeaways
+
+- **About a $1.68 million median.** Tarrytown recorded 94 residential sales at a $1,677,500 median and $592 per square foot over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026.
+- **Opened in 1934.** The first Tarrytown addition officially opened on November 4, 1934, on former Pease family land, according to the [West Austin Neighborhood Group](https://www.westaustinng.com/evolution-of-west-austin-subdivisions/).
+- **Casis Elementary rated A (94).** The Texas Education Agency gave Casis Elementary an overall A with a score of 94 in its [2026 ratings](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas). Austin High scored an A (92).
+- **2.121064% combined 2026 tax rate.** A City of Austin and Austin ISD address carries five taxing units totaling $2.121064 per $100, per the [Travis County Tax Office rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls) (my sum of the published rates).
+- **Lakeside parks.** Lions Municipal Golf Course covers 155.62 acres, Mayfield Park 23.331 acres and Reed Neighborhood Park 6.369 acres, per the City of Austin [park directory](https://www.austintexas.gov/parks/locations/park-directory).
+- **Up to three units on many lots.** Austin's HOME rules allow up to three housing units on SF-1, SF-2 and SF-3 lots, per [City of Austin Development Services](https://www.austintexas.gov/development-services/home-amendments).
+
+## Where is Tarrytown in Austin?
+
+Tarrytown sits west of MoPac in central West Austin. The City of Austin's neighborhood plan describes Tarrytown's edge as Lake Austin, Lady Bird Lake and 35th Street, and uses MoPac as the eastern line of the West Austin Neighborhood Group planning area, which covers Tarrytown and Deep Eddy, per the [Central West Austin Neighborhood Plan](https://services.austintexas.gov/edims/document.cfm?id=142615).
+
+East of MoPac is a different planning area. The Windsor Road planning area covers Bryker Woods and Pemberton Heights, per the [West Austin Neighborhood Group summary](https://www.westaustinng.com/neighborhood-plan/) of the plan the City Council adopted on September 23, 2010.
+
+Exposition Boulevard is the main north to south street, while Windsor Road and Enfield Road are the main east to west routes, per the [city plan](https://services.austintexas.gov/edims/document.cfm?id=142615).
+
+The plan places Tarrytown's neighborhood center near Exposition and Windsor, home to the Tarrytown Shopping Center, Howson Library, the Episcopal Church of the Good Shepherd and Austin Fire Station No. 10.
+
+## What is the history of Tarrytown?
+
+Tarrytown grew out of land held by the family of Texas governor Elisha M. Pease. In 1916, Pease's daughter Julia and grandsons Niles and Murray Graham formed the Enfield Realty and Home Building Company to subdivide the property, according to a history published by the [West Austin Neighborhood Group](https://www.westaustinng.com/evolution-of-west-austin-subdivisions/).
+
+The Tarrytown addition officially opened on November 4, 1934, followed by Tarrytown No. 2 in April 1935 and later additions, the [same history](https://www.westaustinng.com/evolution-of-west-austin-subdivisions/) records. The neighborhood was named for Tarrytown, New York, a favorite family retreat, [Texas Monthly reported](https://www.texasmonthly.com/articles/the-terror-of-tarrytown/).
+
+The Tarrytown Shopping Center on Exposition Boulevard just north of Windsor Road was built in 1939 and was one of the first shopping centers of its kind in Texas, according to [Texas Monthly](https://www.texasmonthly.com/articles/the-terror-of-tarrytown/).
+
+## What parks and outdoor spaces are in Tarrytown?
+
+Public green space is one of Tarrytown's strengths, with city parks, a historic golf course and lake access inside or beside the neighborhood.
+
+:::compare-table
+Park or place | Address | Acres | What it offers
+Lions Municipal Golf Course (Muny) | 2901 Enfield Rd. | 155.62 | Public golf and a civil rights landmark
+Mayfield Park and Preserve | West 35th St. | 23.331 | Historic cottage, gardens, ponds and peacocks
+Laguna Gloria | 3809 W. 35th St. | 14 | Art museum grounds and sculpture park
+Eilers (Deep Eddy) Neighborhood Park | 401 Deep Eddy Ave. | 8.2789 | Deep Eddy Pool
+Reed Neighborhood Park | 2614 Pecos St. | 6.369 | Free pool, playscape, lawn and creek
+Walsh Boat Landing | 1600 Scenic Dr. | 6.1466 | Boat ramp on Lake Austin
+Tarrytown Neighborhood Park | 2106 Tower Dr. | 2.2502 | Small neighborhood park
+Red Bud Isle (across the river) | 3401 Red Bud Trl. | 17.5028 | Off-leash dog area
+:::
+
+Source: [City of Austin park directory](https://www.austintexas.gov/parks/locations/park-directory) for addresses and acreage; Laguna Gloria from [The Contemporary Austin](https://thecontemporaryaustin.org/about/).
+
+### What makes Muny important?
+
+Lions Municipal Golf Course opened in 1924 on University of Texas land, and the city has operated it since taking over the lease in the 1930s, per the [City of Austin](https://www.austintexas.gov/communications/news/city-austin-and-ut-close-agreement-preserve-muny). In 1950, Muny became the first public golf course in the South to integrate, and it is listed on the National Register of Historic Places, the city says.
+
+Muny's future is in the news right now. Under a proposed deal, UT would convey the golf course to the city, while UT keeps nearly 200 acres of the surrounding Brackenridge tract, [KUT reported](https://www.kut.org/austin/2026-11-18/austin-city-council-muny-golf-course-tx-development) on November 18, 2026. The City Council is set to decide on December 3, and the UT System Board of Regents must also agree, KUT said.
+
+### What is Deep Eddy Pool?
+
+Deep Eddy Pool is the oldest swimming pool in Texas, according to [Austin Parks and Recreation](https://www.austintexas.gov/parks/locations/deep-eddy-pool). A.J. Eilers Sr. built the concrete pool after buying the land around the swimming hole in 1915, and the water is pumped from on-site wells, the city says.
+
+### Where are Mayfield Park and Laguna Gloria?
+
+Mayfield Park's cottage was bought with 23 acres in 1909 by Allison Mayfield, and his daughter Mary Frances Gutsch willed the property to the City of Austin as a public park in 1971, per [Austin Parks and Recreation](https://www.austintexas.gov/parks/locations/mayfield-park). The flock of peacocks dates to birds given to the family in 1937, the city notes.
+
+Next door, Laguna Gloria is a 14-acre art and nature site run by The Contemporary Austin, with the Driscoll Villa, a sculpture park and an art school, per [The Contemporary Austin](https://thecontemporaryaustin.org/about/). Clara Driscoll donated her 1916 lakeside estate in 1943.
+
+### How do you get on the water from Tarrytown?
+
+Walsh Boat Landing is a city operated concrete boat ramp on Lake Austin, with a $10 launch fee, per [Austin Parks and Recreation](https://www.austintexas.gov/parks/locations/walsh-boat-landing). Downstream, Red Bud Isle offers shoreline access near Tom Miller Dam, per the city's [Lady Bird Lake page](https://www.austintexas.gov/parks/locations/lady-bird-lake), and it is one of the city's designated [off-leash dog areas](https://www.austintexas.gov/parks/programs/dog-parks-leash-areas).
+
+Check the city's algae advisories before letting a dog swim. For waterfront homes, see my [Lake Austin living guide](/blog/living-on-lake-austin) and Echelon Property Group's [Lake Austin page](/communities/lake-austin).
+
+### What is Reed Park like?
+
+Reed Park was given to the city in 1953 by Mrs. Fagan Dickson, and it holds the 1871 Taylor Lime Kiln, a playscape completed in 2022 and a creek, per the volunteer [Friends of Reed Park](https://www.reed-park.org/about). Reed Pool, at the same address, is a free outdoor city pool that is closed for winter until summer 2027 schedules are posted, per [Austin Parks and Recreation](https://www.austintexas.gov/parks/locations/reed-pool).
+
+## Where do you shop and eat in Tarrytown?
+
+Daily errands center on Exposition Boulevard. Casis Village at 2727 Exposition Boulevard holds a Randalls grocery store near Exposition and Westover Road, per [Randalls](https://local.randalls.com/tx/austin/2727-exposition-blvd.html).
+
+The same center includes [Tarrytown Pharmacy](https://www.tarrytownpharmacy.com/), in business since 1941, [Food Food](https://www.foodfoodaustin.com/), a neighborhood kitchen serving rotating specials since 1993, and [Zed's Ice Cream](https://www.zedsicecream.com) in Suite 128. Each business lists its 2727 Exposition Boulevard address on its own site.
+
+Mozart's Coffee Roasters sits on Lake Austin at 3825 Lake Austin Boulevard. Since 1993, Mozart's has paired small batch roasted coffee and pastries with waterfront views and live music, according to [Mozart's](https://mozartscoffee.com/pages/our-coffee-story).
+
+The [Howson Branch](https://library.austintexas.gov/howson-branch) of the Austin Public Library is at 2500 Exposition Boulevard.
+
+## Which schools serve Tarrytown?
+
+Tarrytown is in Austin ISD. Many Tarrytown addresses are zoned to Casis Elementary, O. Henry Middle School and Austin High School, but zoning is set address by address, so confirm every home with the district's [school finder](https://www.austinisd.org/school-finder).
+
+:::compare-table
+Austin ISD campus | Grades | 2026 TEA overall rating | Feeds to | Source
+Casis Elementary | Early education to 5 | A (94) | O. Henry MS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas), [Austin ISD](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/School%20Boundary%20Change%20Maps-Combined-Eng.pdf)
+O. Henry Middle School | 6 to 8 | B (86) | Austin HS | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas), [Austin ISD](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/O.HenryMS-AISD-Draft-Consol-DW-Boundaries-10.3.2025-ada.pdf)
+Austin High School | 9 to 12 | A (92) |  | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas)
+Bryker Woods Elementary (nearby, east of MoPac) | Pre-K to 5 | B (89) | Verify by address | [TEA](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas)
+:::
+
+Casis Elementary, at 2710 Exposition Boulevard, enrolled 642 students in 2025 to 2026, and TEA rated it A in student achievement (93), school progress (95) and closing the gaps (91), per the [TEA campus listing](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas). Austin ISD as a whole rated B (81).
+
+TEA's 2026 listing shows O. Henry Middle School with a B (86) and a targeted support (TSI) label, and Austin High with an A (92), per the [same listing](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas). O. Henry feeds 100% into Austin High, per [Austin ISD](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/O.HenryMS-AISD-Draft-Consol-DW-Boundaries-10.3.2025-ada.pdf).
+
+### Are Austin ISD boundaries changing near Tarrytown?
+
+Possibly. In November 2025 the board voted to close eight elementary schools, but boundary changes and three proposed closures, including Bryker Woods Elementary, were paused, and Bryker Woods remains open, per Austin ISD's [2026 boundary engagement report](https://www.austinisd.org/sites/default/files/dept/consolidation/docs/2026%20Boundary%20Kickoff%20Engagement%20Report.pdf). The district has resumed boundary planning, so check zoning again before closing.
+
+### What private schools are near Tarrytown?
+
+St. Andrew's Episcopal School's Lower and Middle School campus is at 1112 West 31st Street, east of MoPac, and its Upper School is at 5901 Southwest Parkway, per [St. Andrew's](https://www.sasaustin.org/academics/lower-school). My [Austin ISD vs Eanes ISD comparison](/blog/austin-isd-vs-eanes-isd) covers the public school choice in more depth.
+
+## What are property taxes in Tarrytown?
+
+A Tarrytown home inside the City of Austin and Austin ISD, with no special district, pays five taxing units with a combined 2026 rate of $2.121064 per $100 of taxable value, per the [Travis County Tax Office rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls). The combined figure is my sum of the published rates.
+
+:::compare-table
+2026 taxing unit | Rate per $100
+Austin ISD | $0.9184
+City of Austin | $0.579948
+Travis County | $0.38621
+Central Health | $0.132863
+Austin Community College | $0.103643
+**Combined (my sum)** | **$2.121064**
+:::
+
+Source: [Travis County Tax Office 2026 rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls). ACC taxes property in Austin ISD, per [ACC](https://www.austincc.edu/about-acc/acc-district-service-area/).
+
+My calculation, not a quote: at the $1,677,500 Tarrytown median, the combined rate works out to about $35,581 a year before exemptions. Exemptions, caps and appraised value change the real bill, so pull the parcel on the [Travis Central Appraisal District](https://traviscad.org/) site. My guides to [Austin property taxes](/blog/austin-property-taxes-explained) and the [2026 homestead exemption](/blog/texas-homestead-exemption-2026) explain the rest.
+
+## What can you build on a Tarrytown lot?
+
+Since February 5, 2024, the city has accepted applications for up to three housing units, including tiny homes, on SF-1, SF-2 and SF-3 zoned property, per [City of Austin Development Services](https://www.austintexas.gov/development-services/home-amendments).
+
+HOME Phase 2 allows one home on a lot of at least 1,800 square feet, below the standard 5,750 square foot minimum, though splitting a larger lot still requires a subdivision application, the [city says](https://www.austintexas.gov/development-services/home-amendments). The City Council passed Phase 2 on a 9 to 2 vote in May 2024, [Community Impact reported](https://communityimpact.com/south-central-austin/government/austin-cuts-minimum-residential-lot-size-by-more-than-two-thirds-under-home-phase-2/).
+
+For two-unit and three-unit uses, maximum impervious cover is 45%, per the [same city page](https://www.austintexas.gov/development-services/home-amendments). Deed restrictions, heritage trees, flood maps and historic status can be stricter than HOME, so I check each before a client buys to build.
+
+## How much do homes cost in Tarrytown?
+
+:::intel-gauge-tarrytown
+:::
+
+Tarrytown recorded 94 residential sales from November 1, 2025 to October 31, 2026, at a $1,677,500 median, $592 per square foot and 60 median days on market, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026. Agent Intel shows the median down 4.14% from the prior 12 months.
+
+A year earlier, for the 12 months ending October 31, 2025, Tarrytown recorded 98 sales at a $1,750,000 median, $656 per square foot and 65 median days, per the same Agent Intel data. Months of inventory eased from 5.68 to 5.33.
+
+The latest quarter shows buyers with room to negotiate. From August through October 2026, 26 homes sold at a $1,655,000 median and 75 median days, with 40 active listings and about 4.66 months of inventory, per Agent Intel. Homes sold for 5.76% below list price on average in that quarter. Samples this small swing, so treat them as direction.
+
+Agent Intel's residential category can include condos and townhomes, and its Tarrytown boundary is an MLS definition, not a legal one. I pull a fresh comp set for every client.
+
+## How does Tarrytown compare with nearby neighborhoods?
+
+Tarrytown's median sits above ZIP 78703 overall and below the Westlake markets. The table uses Agent Intel's MLS market definitions, which may not match how locals draw each neighborhood.
+
+:::compare-table
+Market (Agent Intel) | Sales | Median | $/sq ft | Median days | Supply (months)
+Tarrytown | 94 | $1.68M | $592 | 60 | 5.33
+Windsor Road | 29 | $1.72M | $685 | 35 | 7.34
+Old West Austin | 53 | $1.09M | $591 | 52.5 | 7.45
+Clarksville | 52 | $1.06M | $592 | 50 | 7.46
+ZIP 78703 overall | 224 | $1.32M | $600 | 55.5 | 6.40
+City of West Lake Hills | 44 | $2.40M | $749 | 42.5 | 5.23
+Westlake (MLS neighborhood) | 87 | $2.43M | $561 | 71.5 | 6.77
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales, medians and months of supply for the 12 months ending October 31, 2026, pulled November 24, 2026. Agent Intel's Old West Austin and Clarksville areas return nearly identical figures and likely overlap. Agent Intel did not return Pemberton Heights or Bryker Woods as separate markets, so they are not in the table.
+
+For those neighborhoods, read [Tarrytown vs Bryker Woods](/blog/tarrytown-vs-bryker-woods) and [what makes Pemberton Heights desirable](/blog/what-makes-pemberton-heights-desirable), or see Echelon Property Group's [Pemberton Heights](/communities/pemberton-heights) and [Bryker Woods](/communities/bryker-woods) pages. My [Clarksville guide](/blog/living-in-clarksville-austin) covers the neighborhood just southeast.
+
+If you are weighing Austin ISD against Eanes ISD, compare [Tarrytown vs Westlake](/blog/tarrytown-vs-westlake-austin) and my [West Lake Hills guide](/blog/living-in-westlake-hills-austin). For the full ZIP picture, see [Austin home prices by ZIP code](/blog/austin-home-prices-by-zip-code).
+
+## Is Tarrytown right for you?
+
+Tarrytown fits buyers who want central Austin, mature trees, lake and park access and Austin ISD schools, at a median near $1.68 million. It fits less well if you want new suburban amenities, a gated community or a large acreage lot.
+
+## Frequently asked questions
+
+:::faq
+
+Q: Where is Tarrytown in Austin?
+A: Tarrytown is in central West Austin, in ZIP 78703, west of MoPac. The City of Austin's neighborhood plan describes its edges as Lake Austin, Lady Bird Lake and 35th Street, with MoPac as the eastern line of its planning area. Exposition Boulevard, Windsor Road and Enfield Road are its main streets. Confirm each address with the city.
+
+Q: How much does a home in Tarrytown cost?
+A: Tarrytown homes sold at a median of $1,677,500 over the 12 months ending October 31, 2026, on 94 residential sales at $592 per square foot, according to Agent Intel using Unlock MLS data. The median was down 4.14% from the prior year. Across all of ZIP 78703, the residential median was $1,317,500 on 224 sales.
+
+Q: What schools serve Tarrytown?
+A: Tarrytown is in Austin ISD. Many homes are zoned to Casis Elementary, which TEA rated an A with a score of 94 in 2026, then O. Henry Middle School, rated B (86), and Austin High School, rated A (92). Austin ISD is reviewing boundaries, so confirm every address with the district's school finder before you buy.
+
+Q: What are property taxes in Tarrytown?
+A: A Tarrytown home inside the City of Austin and Austin ISD pays a combined 2026 rate of $2.121064 per $100 of taxable value across five units: Austin ISD, the City of Austin, Travis County, Central Health and Austin Community College. Exemptions reduce taxable value. Confirm each parcel's taxing units with the Travis Central Appraisal District.
+
+Q: What parks are in Tarrytown?
+A: Tarrytown includes or borders Lions Municipal Golf Course, Mayfield Park and Preserve, Laguna Gloria, Reed Neighborhood Park with its free pool, Tarrytown Neighborhood Park, Walsh Boat Landing on Lake Austin and Eilers Park, home of Deep Eddy Pool, the oldest swimming pool in Texas. Red Bud Isle, an off-leash dog area, is just across the river.
+
+Q: Where can you shop and eat in Tarrytown?
+A: Casis Village at 2727 Exposition Boulevard has a Randalls grocery store, Tarrytown Pharmacy, open since 1941, Food Food and Zed's Ice Cream. The Tarrytown Shopping Center near Exposition and Windsor dates to 1939. Mozart's Coffee Roasters, on Lake Austin at 3825 Lake Austin Boulevard, has served coffee there since 1993.
+
+Q: Can you build more than one home on a Tarrytown lot?
+A: Often, yes. Austin's HOME rules allow up to three housing units on SF-1, SF-2 and SF-3 zoned lots, and Phase 2 allows one home on a lot as small as 1,800 square feet after any required subdivision. Deed restrictions, trees, flood maps and historic status can limit a project, so check each lot first.
+
+:::
+
+## Sources
+
+- Agent Intel market statistics (Unlock MLS via MLS Grid), Residential, for the Tarrytown, Windsor Road, Old West Austin, Clarksville and Westlake MLS neighborhoods, ZIP 78703 and the City of West Lake Hills, 12 months ending Oct. 31, 2026 (plus 3 months and the prior year for Tarrytown), pulled Nov. 24, 2026 through Echelon Property Group's Agent Intel account
+- [City of Austin, The Central West Austin Neighborhood Plan (Sept. 2010)](https://services.austintexas.gov/edims/document.cfm?id=142615)
+- [West Austin Neighborhood Group, Neighborhood Plan](https://www.westaustinng.com/neighborhood-plan/) and [Evolution of West Austin Subdivisions (July 2015)](https://www.westaustinng.com/evolution-of-west-austin-subdivisions/)
+- [Texas Monthly, The Terror of Tarrytown (Sept. 2007)](https://www.texasmonthly.com/articles/the-terror-of-tarrytown/)
+- [Austin Parks and Recreation, Park Directory](https://www.austintexas.gov/parks/locations/park-directory), [Deep Eddy Pool](https://www.austintexas.gov/parks/locations/deep-eddy-pool), [Mayfield Park](https://www.austintexas.gov/parks/locations/mayfield-park), [Reed Pool](https://www.austintexas.gov/parks/locations/reed-pool), [Walsh Boat Landing](https://www.austintexas.gov/parks/locations/walsh-boat-landing), [Lady Bird Lake](https://www.austintexas.gov/parks/locations/lady-bird-lake) and [Dog Parks: Off-Leash Areas](https://www.austintexas.gov/parks/programs/dog-parks-leash-areas)
+- [City of Austin, City of Austin and UT Close to Agreement to Preserve Muny (Oct. 14, 2026)](https://www.austintexas.gov/communications/news/city-austin-and-ut-close-agreement-preserve-muny)
+- [KUT, Austin City Council considers future of Muny golf course (Nov. 18, 2026)](https://www.kut.org/austin/2026-11-18/austin-city-council-muny-golf-course-tx-development)
+- [The Contemporary Austin, About](https://thecontemporaryaustin.org/about/)
+- [Friends of Reed Park, About](https://www.reed-park.org/about)
+- [Austin Public Library, Howson Branch](https://library.austintexas.gov/howson-branch)
+- [Randalls, 2727 Exposition Blvd](https://local.randalls.com/tx/austin/2727-exposition-blvd.html), [Tarrytown Pharmacy](https://www.tarrytownpharmacy.com/), [Food Food](https://www.foodfoodaustin.com/), [Zed's Ice Cream](https://www.zedsicecream.com) and [Mozart's Coffee Roasters, Our Coffee Story](https://mozartscoffee.com/pages/our-coffee-story)
+- [Texas Education Agency, 2026 A-F Accountability Campus Listing, Austin ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas)
+- [Austin ISD, School Finder](https://www.austinisd.org/school-finder), [2026 to 2027 School Boundary Change Maps](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/School%20Boundary%20Change%20Maps-Combined-Eng.pdf), [O. Henry MS feeder document](https://www.austinisd.org/sites/default/files/dept/school-improvement/docs/consolidations/O.HenryMS-AISD-Draft-Consol-DW-Boundaries-10.3.2025-ada.pdf) and [2026 Boundary Kickoff Engagement Report](https://www.austinisd.org/sites/default/files/dept/consolidation/docs/2026%20Boundary%20Kickoff%20Engagement%20Report.pdf)
+- [St. Andrew's Episcopal School, Lower School](https://www.sasaustin.org/academics/lower-school)
+- [Travis County Tax Office, 2026 tax rate list (XLS)](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls), [City of Austin, Tax Rates](https://www.austintexas.gov/budget-excellence/tax-rates) and [Austin Community College, District and Service Area](https://www.austincc.edu/about-acc/acc-district-service-area/)
+- [Travis Central Appraisal District](https://traviscad.org/)
+- [City of Austin Development Services, HOME Amendments](https://www.austintexas.gov/development-services/home-amendments)
+- [Community Impact, Austin cuts minimum residential lot size by more than two-thirds under HOME Phase 2 (May 2024)](https://communityimpact.com/south-central-austin/government/austin-cuts-minimum-residential-lot-size-by-more-than-two-thirds-under-home-phase-2/)
+
+:::cta
+eyebrow: Private advisory
+heading: Thinking about Tarrytown?
+subheading: I can confirm a home's zoned schools, tax units and lot rules, pull a current comp set and show you homes in and around Tarrytown, including ones that trade privately.
+button: Request a private consultation
+href: /contact
+:::`,
+  },
   {
     id: "living-in-westlake-hills-austin",
     title: "Living in West Lake Hills, Austin: A Luxury Buyer's Guide to Westlake's Hill Country City",
@@ -558,6 +806,9 @@ Periods and areas differ, so the medians are not like for like. For more on the 
 Clarksville fits buyers who want to walk to dinner, live minutes from downtown and own a home with real history. It fits less well if you want a large lot, a big new house without design scrutiny or a quiet cul de sac far from city activity.
 
 Walk West Lynn on a weekday evening and a Saturday morning before deciding. If you are also weighing a lock and leave condo, compare this guide with my [downtown Austin condo guide](/blog/downtown-austin-condos-2026).
+
+
+Just northwest, my [Tarrytown living guide](/blog/living-in-tarrytown-austin) covers Casis Elementary, Lake Austin parks and the Exposition Boulevard shops.
 
 ## Frequently asked questions
 
@@ -17520,7 +17771,10 @@ Bryker Woods homes typically range from $700,000 to over $2.5 million, with upda
 Tarrytown is approximately 5-10 minutes from downtown Austin, making it one of the most convenient luxury neighborhoods in the city.
 
 ### Is 78703 a good zip code to buy in Austin?
-78703 is widely considered one of the most desirable zip codes in Austin, encompassing both Tarrytown and Bryker Woods with strong schools, walkability, and consistent appreciation.`,
+78703 is widely considered one of the most desirable zip codes in Austin, encompassing both Tarrytown and Bryker Woods with strong schools, walkability, and consistent appreciation.
+
+For a full picture of daily life west of MoPac, including parks, Casis Elementary, taxes and current prices, read my [Tarrytown living guide](/blog/living-in-tarrytown-austin).
+`,
     author: "Taylor Sherwood",
     date: "2026-04-04",
     readTime: "6 min read",
@@ -17942,7 +18196,10 @@ Yes. Pemberton Heights offers walk-to-downtown convenience, proximity to Lady Bi
 
 ### What school district is Pemberton Heights in?
 
-Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby.`,
+Pemberton Heights is served by Austin ISD, with homes typically zoned to Mathews Elementary, O. Henry Middle School, and Austin High School. Several prestigious private schools are also nearby.
+
+If you are also considering the neighborhood west of MoPac, see my [Tarrytown living guide](/blog/living-in-tarrytown-austin).
+`,
     author: "Taylor Sherwood",
     date: "2026-04-06",
     readTime: "6 min read",
@@ -19342,6 +19599,9 @@ If Lake Austin is the goal, the conversation starts before the search does. [Con
 :::
 
 ## Frequently Asked Questions
+
+
+For an inland option near the water, my [Tarrytown living guide](/blog/living-in-tarrytown-austin) covers Walsh Boat Landing, Mayfield Park and Laguna Gloria.
 
 :::faq
 Q: Why is Lake Austin so expensive?

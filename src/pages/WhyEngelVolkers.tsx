@@ -184,7 +184,7 @@ export default function WhyEngelVolkers() {
             <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
           </div>
           <div className="grid md:grid-cols-6 gap-12 md:gap-10 lg:gap-16">
-            {specialties.map((item) => <div key={item.title} className={`md:col-span-2 ${item.span ?? ""}`}>
+            {specialties.map((item) => <div key={item.title} className={`md:col-span-2 flex flex-col ${item.span ?? ""}`}>
               {item.tile ? (
                 <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-contain bg-white border border-foreground/10 p-10 md:p-14 mb-8" width={1200} height={900} loading="lazy" decoding="async" />
               ) : (
@@ -192,7 +192,7 @@ export default function WhyEngelVolkers() {
               )}
               <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
               <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
-              <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
+              <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-auto pt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
             </div>)}
           </div>
           <p className="mt-12 text-xs leading-relaxed text-muted-foreground">Specialist services are provided by the respective Engel &amp; Völkers divisions. Private Office is a distinct designation, not a representation of Echelon Property Group’s advisor status. Publication placement is not guaranteed.</p>

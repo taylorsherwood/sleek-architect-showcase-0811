@@ -8,8 +8,14 @@ import Navigation from "@/components/Navigation";
 // URLs (`//evil.com`) and absolute URLs — critical for the OAuth consent flow.
 const safeNext = (raw: string | null): string | null => {
   if (!raw) return null;
-  if (!raw.startsWith("/") || raw.startsWith("//")) return null;
-  return raw;
+  if (!raw.startsWith("/") || raw.startsWith("//") || /[\\\s]/.test(raw)) return null;
+  try {
+    const url = new URL(raw, window.location.origin);
+    if (url.origin !== window.location.origin) return null;
+    return url.pathname + url.search + url.hash;
+  } catch {
+    return null;
+  }
 };
 
 const AdminLogin = () => {

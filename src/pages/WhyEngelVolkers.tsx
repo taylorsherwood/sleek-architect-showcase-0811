@@ -148,7 +148,13 @@ export default function WhyEngelVolkers() {
               </div>
             ))}
           </div></div>
-          <p className="container mx-auto px-6 md:px-10 pb-12 text-xs text-muted-foreground/80">Network and development figures reported by Engel &amp; Völkers, reviewed November 16, 2026.</p>
+          <p className="container mx-auto px-6 md:px-10 pb-12 text-xs text-muted-foreground/80">Network and development figures reported by Engel &amp; Völkers, reviewed November 16, 2026.
+
+
+
+
+
+</p>
         </section>
 
         <div className="container mx-auto px-6 md:px-10 pb-20 md:pb-32">

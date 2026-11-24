@@ -19,8 +19,8 @@ import yachting from "@/assets/ev-yachting-shop.webp.asset.json";
 import privateOfficePhoto from "@/assets/ev-private-office-historic-residence.webp.asset.json";
 import privateResidencesPhoto from "@/assets/ev-private-residences-issue33.webp.asset.json";
 import officeInterior from "@/assets/ev-office-interior.webp.asset.json";
-import developmentServices from "@/assets/ev-development-services.webp.asset.json";
-import commercialWordmark from "@/assets/ev-commercial-wordmark.webp.asset.json";
+import developmentServices from "@/assets/ev-development-cranes.webp.asset.json";
+import commercialOffice from "@/assets/ev-commercial-office.webp.asset.json";
 import hillCountryRanch from "@/assets/hill-country-ranch.webp.asset.json";
 import brandFilm from "@/assets/ev-brand-film.mp4.asset.json";
 import "./WhyEngelVolkers.css";
@@ -50,17 +50,15 @@ type Specialty = {
   text: string;
   href: string;
   link: string;
-  tile?: boolean;
-  span?: string;
 };
 
 const specialties: Specialty[] = [
-  { title: "Engel & Völkers Yachting", image: yachting.url, alt: "Engel & Völkers Yachting shop overlooking a marina", text: "The brand’s world extends beyond the shoreline. Engel & Völkers Yachting connects buyers and sellers with dedicated yacht advisors, bringing specialist knowledge to yacht ownership and life on the water.", href: "https://www.evrealestate.com/en/explore/yachting", link: "Explore Yachting" },
-  { title: "Private Office", image: privateOfficePhoto.url, alt: "Historic stone residence with ornate gables along a tree-lined street", text: "A specialist global network for exceptional residential assets. Private Office brings together bespoke advisory, a privacy-first approach, and distinctive off-market opportunities, with dedicated advisors attending to each client’s individual priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
-  { title: "Private Residences", image: privateResidencesPhoto.url, alt: "Engel & Völkers Private Residences Issue 33 magazine cover and open property spread", text: "Private Residences is Engel & Völkers’ property publication, curating remarkable homes across the Americas. Architecture, setting, and lifestyle shape the collection, giving readers a considered view of properties beyond their own market.", href: "https://www.evrealestate.com/en/private-residences", link: "Explore the publication" },
-  { title: "Engel & Völkers Commercial", image: commercialWordmark.url, alt: "Engel & Völkers Commercial wordmark", text: "In portfolio and individual transactions, Engel & Völkers Commercial combines investment expertise with local competence and global connections. Advisors work from community shop locations, which supports the perspective needed to judge the current and future value of a commercial asset.", href: "https://www.evrealestate.com/en/commercial", link: "Explore Commercial", tile: true },
-  { title: "Engel & Völkers Development Services", image: developmentServices.url, alt: "High-rise towers under construction with tower cranes above a waterfront district", text: "Established in 2019, Engel & Völkers Development Services works with builders, developers, and investors on positioning, marketing, and sales. The division represents projects across five continents, from townhome communities to mixed-use high-rises.", href: "https://www.evrealestate.com/en/explore/development-services", link: "Explore Development Services" },
-  { title: "Engel & Völkers Land and Ranch", image: hillCountryRanch.url, alt: "Horses grazing in a Hill Country pasture at sunset", text: "Ranch and land decisions turn on acreage, water, fences, and access. The Land and Ranch division works with owners and buyers of working ranches, recreational acreage, and Hill Country homesites, pairing local land knowledge with a global network of buyers.", href: "https://www.evrealestate.com/en/lifestyle-properties/ranch", link: "Explore Land and Ranch" },
+  { title: "Engel & Völkers Yachting", image: yachting.url, alt: "Engel & Völkers Yachting shop overlooking a marina", text: "The brand’s world extends past the shoreline. Engel & Völkers Yachting connects buyers and sellers with dedicated advisors for ownership, berthing, and life on the water.", href: "https://www.evrealestate.com/en/explore/yachting", link: "Explore Yachting" },
+  { title: "Private Office", image: privateOfficePhoto.url, alt: "Historic stone residence with ornate gables along a tree-lined street", text: "A specialist network for exceptional homes. Private Office brings bespoke advisory, a privacy-first approach, and off-market opportunities, with advisors for each client’s priorities.", href: "https://www.engelvoelkers.com/private-office/en", link: "Discover Private Office" },
+  { title: "Private Residences", image: privateResidencesPhoto.url, alt: "Engel & Völkers Private Residences Issue 33 magazine cover and open property spread", text: "Private Residences is Engel & Völkers’ publication, curating remarkable homes across the Americas. Architecture, setting, and lifestyle all shape each considered selection.", href: "https://www.evrealestate.com/en/private-residences", link: "Explore the publication" },
+  { title: "Engel & Völkers Commercial", image: commercialOffice.url, alt: "Modern commercial building with metal cladding and a glass corner, behind a tree-lined drive", text: "Engel & Völkers Commercial combines investment expertise with local competence and global connections. Advisors work from community shops in the markets they know well.", href: "https://www.evrealestate.com/en/commercial", link: "Explore Commercial" },
+  { title: "Engel & Völkers Development Services", image: developmentServices.url, alt: "Tower cranes rising above high-rises under construction against a pale sky", text: "Established in 2019, Engel & Völkers Development Services works with builders, developers, and investors on positioning, marketing, and sales across five continents and their markets.", href: "https://www.evrealestate.com/en/explore/development-services", link: "Explore Development Services" },
+  { title: "Engel & Völkers Land and Ranch", image: hillCountryRanch.url, alt: "Horses grazing in a Hill Country pasture at sunset", text: "Ranch and land decisions turn on acreage, water, fences, and access. The division works with owners and buyers of working ranches and Hill Country homesites across Texas.", href: "https://www.evrealestate.com/en/lifestyle-properties/ranch", link: "Explore Land and Ranch" },
 ];
 
 const approach = [
@@ -186,14 +184,10 @@ export default function WhyEngelVolkers() {
             <h2 className={`${h2} mt-5`}>Beyond the address.</h2>
           </div>
           <div className="grid md:grid-cols-6 gap-12 md:gap-10 lg:gap-16">
-            {specialties.map((item) => <div key={item.title} className={`md:col-span-2 flex flex-col ${item.span ?? ""}`}>
-              {item.tile ? (
-                <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-contain bg-white border border-foreground/10 p-10 md:p-14 mb-8" width={1200} height={900} loading="lazy" decoding="async" />
-              ) : (
-                <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={1200} height={900} loading="lazy" decoding="async" />
-              )}
-              <h3 className="font-sans text-xl md:text-[1.4rem] font-normal leading-snug mb-4">{item.title}</h3>
-              <p className="text-[0.95rem] text-muted-foreground leading-[1.75]">{item.text}</p>
+            {specialties.map((item) => <div key={item.title} className="md:col-span-2 flex flex-col">
+              <img src={item.image} alt={item.alt} className="w-full aspect-[4/3] object-cover mb-8" width={1200} height={900} loading="lazy" decoding="async" />
+              <h3 className="font-sans text-xl md:text-[1.15rem] lg:text-[1.4rem] font-normal leading-snug mb-3">{item.title}</h3>
+              <p className="text-[0.95rem] text-muted-foreground leading-[1.75] md:min-h-[11.6rem] lg:min-h-0">{item.text}</p>
               <a href={item.href} target="_blank" rel="noopener noreferrer" className={`${textLink} mt-auto pt-7 tracking-normal`}>{item.link}<ArrowUpRight className="h-4 w-4 shrink-0" strokeWidth={1} /></a>
             </div>)}
           </div>

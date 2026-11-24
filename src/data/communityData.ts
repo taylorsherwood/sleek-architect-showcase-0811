@@ -2782,7 +2782,7 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
 
 ### Lake Travis Living
 
-Lakeway's defining feature is its extraordinary relationship with Lake Travis, a 63-mile-long reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. The Lakeway Marina and Rough Hollow Marina provide full-service boat storage, fuel, and launch facilities, while neighborhoods like The Hills of Lakeway, Rough Hollow, and Flintrock Falls offer waterfront or water-view homesites. Buyers seeking additional [Lake Travis waterfront properties](/communities/lake-travis) will find complementary options along the northern shores.
+Lakeway's defining feature is its extraordinary relationship with Lake Travis, a 63-mile-long reservoir nestled into the Texas Hill Country. Residents enjoy direct lake access through private boat docks, community marinas, lakefront parks, and miles of shoreline. The Lakeway Marina and Rough Hollow Marina provide full-service boat storage, fuel, and launch facilities, while neighborhoods like The Hills of Lakeway, Rough Hollow, and Flintrock Falls offer waterfront or water-view homesites. Buyers seeking additional [Lake Travis waterfront properties](/communities/lake-travis) will find complementary options along the northern shores. For The Hills, a separate gated village next door, read our [guide to living in The Hills](/blog/living-in-the-hills-lakeway).
 
 ### Planned Community Heritage
 

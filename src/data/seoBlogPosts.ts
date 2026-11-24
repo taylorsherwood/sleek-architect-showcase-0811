@@ -1,3 +1,4 @@
+import blogTheHillsHero from "@/assets/blog/the-hills-lakeway-golf-aerial.webp.asset.json";
 import blogTarrytownHero from "@/assets/blog/tarrytown-shopping-center.webp.asset.json";
 import blogWestlakeHillsHero from "@/assets/blog/westlake-hills-hillside-home.webp.asset.json";
 import blogClarksvilleHero from "@/assets/blog/clarksville-home.webp.asset.json";
@@ -214,6 +215,249 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "living-in-the-hills-lakeway",
+    title: "Living in The Hills, TX: A Luxury Buyer's Guide to the Gated Golf Village Beside Lakeway",
+    metaTitle: "Living in The Hills, TX (Lakeway): 2026 Guide | Echelon Property Group",
+    excerpt: "Living in The Hills, TX near Lakeway: Nicklaus golf, a gated POA, Lake Travis ISD ratings, 2026 tax rates and an $886,550 median home sale price.",
+    author: "Taylor Sherwood",
+    date: "2026-11-24",
+    dateModified: "2026-11-24",
+    readTime: "14 min read",
+    category: "NEIGHBORHOODS",
+    keywords: "living in The Hills, The Hills TX, The Hills of Lakeway, Village of The Hills, The Hills Country Club, 78738 homes, Lake Travis ISD, The Hills property taxes",
+    aboutPlaces: ["The Hills, Texas", "Lakeway, Texas", "Travis County, Texas"],
+    imageAlt: "Golf green and bunker beside a limestone creek with waterfalls in The Hills, TX near Lakeway",
+    relatedPostIds: ["living-in-spanish-oaks-austin", "guide-to-lakeway-waterfront-golf-living", "bee-cave-vs-lakeway-luxury-buyers", "buying-lake-travis-waterfront-property"],
+    image: blogTheHillsHero.url,
+    heroImage: blogTheHillsHero.url,
+    content: `**Short answer:** Living in The Hills means owning in a small, gated, incorporated village beside Lakeway, west of RM 620 near Lake Travis, built around The Hills Country Club and its Jack Nicklaus golf. Homes sold at a $886,550 median over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026.
+
+Many buyers know it as The Hills of Lakeway. Legally, it is its own municipality, with its own council, tax rate and gates. This guide covers where the city line falls, history, golf, parks, shopping, schools, taxes, the property owners association and prices, with every figure sourced.
+
+For the wider area, see Echelon Property Group's [Lakeway community page](/communities/lakeway) and [Lake Travis page](/communities/lake-travis).
+
+## Key takeaways
+
+- **Its own village, not Lakeway.** The Hills incorporated in May 1997 as a Type B general law municipality after a 490 to 15 vote, per the [village history](https://www.thehillstx.gov/2168/Village-History).
+- **About an $887,000 median.** Agent Intel recorded 61 residential sales at a $886,550 median and $289 per square foot for the 12 months ending October 31, 2026, pulled November 24, 2026.
+- **72 holes of club golf.** The Hills Country Club lists four courses, including the 1981 Jack Nicklaus Signature Course and Flintrock Falls, per the [club](https://www.invitedclubs.com/clubs/the-hills-country-club/club-life/traditions-community/) and [Nicklaus Design](https://nicklausdesign.com/course/thehills/).
+- **Lake Travis ISD, rated A.** TEA rated the district an A (91) in its [2026 ratings](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227913&lev=D&prgopt=reports%2Facct%2Fca.sas). Lakeway Elementary scored an A (92).
+- **About 1.96% in 2026 taxes with the MUD.** Six units total $1.957922 per $100, per the [Travis County Tax Office](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls) (my sum).
+- **Private, gated roads.** The Hills of Lakeway Property Owners Association runs the gates, owns the private roads and controls architecture, per the [village](https://www.thehillstx.gov/2177/Property-Owners-Association).
+
+## Where is The Hills, and how is it different from Lakeway?
+
+The Hills sits west of FM 620, about 16 miles west-northwest of downtown Austin, and is a gated master-planned community centered on Hurst Creek and The Hills Country Club, per the [Handbook of Texas](https://www.tshaonline.org/handbook/entries/hills-tx-HJT15). Its population was 2,613 in 2020.
+
+Three jurisdictions meet here, and they are easy to confuse:
+
+- **The Village of The Hills.** An incorporated municipality with its own mayor, council and tax rate. The village's own website still uses "Village of The Hills," and the Handbook notes that highway maps label it "The Village of The Hills." Many locals and listings say "City of The Hills." The village asks that mail use "The Hills, TX 78738."
+- **The City of Lakeway.** A separate city next door. Some homes on streets with Hills names, such as parts of Flintrock Trace, show a Lakeway city label in district records.
+- **Lakeway's ETJ.** Unincorporated land outside both cities where Lakeway has extraterritorial jurisdiction. These homes pay no city tax but get county services.
+
+The postal city does not decide which city taxes you. Look up each property's taxing units on the [Travis Central Appraisal District](https://traviscad.org/) site before you write an offer.
+
+## What is the history of The Hills?
+
+The club came first. The Hills Country Club traces its start to the 1964 opening of the Live Oak Course, followed by the Yaupon Course, the World of Tennis complex in 1973, the Jack Nicklaus Signature Course in the 1980s and Flintrock Falls in 2002, per [the club's history](https://www.invitedclubs.com/clubs/the-hills-country-club/club-life/traditions-community/). Nicklaus Design lists the Signature Course opening in 1981.
+
+The village came later. The area sat in Austin's extraterritorial jurisdiction until a November 1996 contract moved it to Lakeway, with Lakeway agreeing to an incorporation election, per the [village history](https://www.thehillstx.gov/2168/Village-History). Residents voted 490 to 15 in February 1997, the village incorporated in May 1997, and the first mayor and five aldermen were elected that August.
+
+The property owners association and the Hurst Creek Municipal Utility District could not be folded into the new village. The village history explains that a city could not own private roads or run gate security, so the association kept those jobs and architectural control. The MUD also serves customers outside the village. The village notes it has one business: The Hills Country Club.
+
+## How is The Hills governed?
+
+The village has a mayor and five councilmembers elected at large to two-year terms on the November uniform election date, per the [Mayor and City Council page](https://www.thehillstx.gov/2144/Mayor-and-City-Council). The council meets on the second Tuesday at 9 a.m. at 102 Trophy Drive.
+
+Public safety is contracted. The village pays Travis County for a deputy constable on duty 40 hours a week at random hours. Otherwise, the Travis County Sheriff's Office responds, and Lakeway police may respond if needed, per the [law enforcement page](https://www.thehillstx.gov/2152/Law-Enforcement).
+
+Fire service comes from Lake Travis Fire Rescue, Travis County ESD No. 6. Its Station 602 at 1211 Lohmans Crossing serves the City of Lakeway and The Hills of Lakeway, per [LTFR](https://www.ltfr.org/fire-stations/), and the district reports an ISO Class 2 rating in The Hills, per its [ISO page](https://www.ltfr.org/iso-information/). Ask your insurance agent how that applies to your policy; my [homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide) and [wildfire risk guide](/blog/austin-wildfire-risk-luxury-homes) cover the basics.
+
+## What golf and club life does The Hills offer?
+
+The Hills Country Club lists 72 holes: an 18-hole Jack Nicklaus design, an 18-hole Nicklaus co-design by Jack Nicklaus and Jack Nicklaus II, and the Live Oak and Yaupon courses, plus a three-hole practice facility, per [Nicklaus Design](https://nicklausdesign.com/course/thehills/).
+
+- **The Signature Course.** The club calls it a Jack Nicklaus Signature design with elevated greens and demanding approaches, per its [course page](https://www.invitedclubs.com/clubs/the-hills-country-club/golf/signature-course/).
+- **Flintrock Falls.** Designed by Jack Nicklaus and Jack Nicklaus II, it plays 7,051 yards at par 72 with a 74.8 rating and 145 slope from the back tees, per the club's [Flintrock Falls page](https://www.invitedclubs.com/clubs/the-hills-country-club/golf/flintrock-falls-course/).
+- **Live Oak and Yaupon.** The club's two original courses, starting with Live Oak in 1964.
+
+The [membership page](https://www.invitedclubs.com/clubs/the-hills-country-club/membership/) lists 13 outdoor tennis courts and two climate-controlled indoor courts, plus pickleball, fitness, aquatics and member dining. Golf memberships cover all four courses. Social memberships cover lifestyle amenities without full golf privileges. Membership is sold by the club, separate from the POA, so buying a home does not by itself make you a member. Ask the seller about any club tie on a specific lot.
+
+## What parks and outdoor spaces are near The Hills?
+
+The village's own green space is private. The POA lists park, walking trail and greenbelt maintenance among its duties, and the village offers park reservations through its [website](https://www.thehillstx.gov/). The larger public parks are in Lakeway.
+
+### Lakeway City Park
+
+City Park is waterfront parkland the City of Lakeway acquired in 1992, at 502 Hurst Creek Road, reachable by water from Hurst Creek Cove on Lake Travis, per the [city](https://www.lakeway-tx.gov/126/City-Park/). It has nearly two miles of trails and a covered pavilion with grills that can be reserved.
+
+### Hamilton Greenbelt and Hurst Creek Preserve
+
+The Hamilton Greenbelt opened in April 1990 after a donation from Jack and Myrtle Hamilton, per the [City of Lakeway](https://www.lakeway-tx.gov/127/Hamilton-Greenbelts). With the Smith Greenbelt and Hurst Creek Preserve, it offers several miles of developed and primitive trails along Hurst and Yaupon creeks. Main trailheads are off Lohmans Crossing at Cross Creek and off Palos Verdes Drive.
+
+### Lake Travis
+
+The Hills is organized around Hurst Creek and the club rather than the shoreline, so confirm water frontage parcel by parcel. Lakeway Marina at 103 A Lakeway Drive rents party barges, pontoons, runabouts and jet skis, per the [marina](https://www.lakewaymarina.com/contact/). For buying on the water, read my [Lake Travis waterfront guide](/blog/buying-lake-travis-waterfront-property) and [Lake Austin vs Lake Travis](/blog/lake-austin-vs-lake-travis).
+
+### Hamilton Pool Preserve
+
+Travis County's [Hamilton Pool Preserve](https://parks.traviscountytx.gov/parks/hamilton-pool-preserve), west of Bee Cave, covers 232 acres. Reservations are required every day, and swimming is never guaranteed.
+
+## Where do you shop and eat near The Hills?
+
+Daily errands happen in Lakeway and Bee Cave, since the village itself has no retail.
+
+- **Hill Country Galleria.** The open-air center at 12700 Hill Country Boulevard in Bee Cave lists Dillard's, Barnes & Noble, Whole Foods Market, lululemon and the Cinemark 14, per its [directory](https://www.hillcountrygalleria.com/directory). Restaurants include Chisos Grill, Tadashi Sushi and The League Kitchen & Tavern.
+- **Lakeway Resort and Spa.** At 101 Lakeway Drive, the resort runs Sixty Three Restaurant and Bar, the Sunset Pool Bar and The Spa at Lakeway, per its [fact sheet](https://www.lakewayresortandspa.com/fact-sheet).
+- **The club.** Member dining at The Hills Country Club is reserved for members and their guests, per the [club](https://www.invitedclubs.com/clubs/the-hills-country-club/membership/).
+
+For a broader look at the area, read [Bee Cave vs Lakeway](/blog/bee-cave-vs-lakeway-luxury-buyers) and see Echelon Property Group's [Bee Cave page](/communities/bee-cave).
+
+## Which schools serve The Hills?
+
+The Hills is in Lake Travis ISD. The district's street directory, a June 2023 file posted on its [attendance zones page](https://www.ltisdschools.org/families/school-attendance-zones), lists most street ranges labeled "The Hills" in the Lakeway Elementary and Hudson Bend Middle zones. A smaller set of ranges is zoned to Bee Cave Elementary and Bee Cave Middle, and part of Trophy Drive to Serene Hills Elementary and Lake Travis Middle. Lake Travis High School is the district's only high school.
+
+:::compare-table
+School (Lake Travis ISD) | Grades | 2026 TEA rating
+Lakeway Elementary | K to 5 | A (92)
+Bee Cave Elementary | K to 5 | A (93)
+Serene Hills Elementary | EE to 5 | A (93)
+Hudson Bend Middle | 6 to 8 | A (90)
+Bee Cave Middle | 6 to 8 | A (94)
+Lake Travis Middle | 6 to 8 | A (93)
+Lake Travis High | 9 to 12 | A (91)
+Lake Travis ISD overall |  | A (91)
+:::
+
+Source: [Texas Education Agency 2026 accountability ratings](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227913&lev=D&prgopt=reports%2Facct%2Fca.sas) and the LTISD street directory.
+
+### Are boundaries changing?
+
+Likely. LTISD is building Highland Lakes High School, and a February 2026 [district update](https://www.ltisdschools.org/view-all-news/news-details/~board/ltisd-news/post/update-on-highland-lakes-high-school) says county permitting delays shifted the timeline and that attendance rezoning is still ahead. Confirm every address with the district.
+
+### What private schools are nearby?
+
+The Magnolia School at 3500 Ranch Road 620 South serves preschool through 8th grade, per its [website](https://www.themagnoliaschoolatx.com/). Bluebonnet Montessori School of Lakeway at 15099 Debba Drive enrolls children ages 3 to 12, per its [FAQ](https://www.bluebonnetmontessori.com/faq).
+
+## What are property taxes in The Hills?
+
+A home inside the village and the Hurst Creek MUD carries six taxing units for 2026, per the [Travis County Tax Office rate list](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls).
+
+:::compare-table
+Taxing unit | 2026 rate per $100
+Lake Travis ISD | $1.032900
+Travis County | $0.386210
+Hurst Creek MUD | $0.220500
+Travis Central Health | $0.132863
+Travis County ESD No. 6 | $0.093639
+Village of The Hills | $0.091810
+Total (my sum) | $1.957922
+:::
+
+Without the MUD line, the five units total $1.737422 (my sum). Lake Travis ISD is in Austin Community College's service area, not its taxing district, so there is no ACC line, per [ACC](https://www.austincc.edu/about-acc/acc-district-service-area/).
+
+For scale, here is my calculation at the Agent Intel median price, before exemptions and assuming taxable value equals the sale price: $886,550 × 1.957922% is about $17,358 a year, or about $15,403 without the MUD. For comparison, the City of Lakeway's 2026 rate is $0.170076 per $100, per the same list.
+
+Exemptions lower the bill. See my guides to the [Travis County homestead exemption](/blog/texas-homestead-exemption-travis-county), [MUD and PID taxes](/blog/mud-pid-taxes-austin) and [protesting your appraisal](/blog/travis-county-property-tax-protest-guide).
+
+## How do the POA and HOA rules work?
+
+The Hills of Lakeway Property Owners Association is managed by CCMC from 102 Trophy Drive, per the [village's POA page](https://www.thehillstx.gov/2177/Property-Owners-Association). It handles:
+
+- Security and the gates, including Lohman's Gate at 1 Wingreen Loop, staffed 24 hours a day, and the Club Estates Parkway contractor gate, open 7 a.m. to 7 p.m.
+- The private roads it owns, landscaping, parks and greenbelts.
+- Construction approval and deed restrictions.
+
+The Hurst Creek MUD provides water, wastewater and drainage. The POA's posted [governing documents](https://engage.goenumerate.com/s/thehillspoa/dyndocuments.php?group=1373) include the Amended Master Declaration of June 30, 2004, an eighth amendment in 2023, bylaws amended in 2018 and an Architecture Rule Book revised February 28, 2023. Read them, and the resale certificate for current assessments, before you plan a remodel.
+
+## How much do homes cost in The Hills?
+
+Agent Intel's City of The Hills market recorded 61 residential sales from November 1, 2025 to October 31, 2026, at a $886,550 median, a $973,903 average, $289 per square foot and 37 median days on market, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026. Homes sold 2.99% below list on average, and the median was down 3.11% from the prior 12 months.
+
+A year earlier, for the 12 months ending October 31, 2025, the market recorded 53 sales at a $915,000 median and $301 per square foot.
+
+From August through October 2026, 15 homes sold at an $875,000 median and $307 per square foot, with 17 active listings and about 2.7 months of supply, per Agent Intel. Samples this small swing, so treat them as direction.
+
+The median looks modest next to the club setting. Agent Intel's residential category can include condos and townhomes, which pulls the median down, so price detached homes on golf or view lots with a custom comp set.
+
+The live reading below tracks the neighboring Lakeway and Bee Cave market, since Agent Intel does not publish a live feed for The Hills on its own.
+
+:::intel-gauge-lakeway-bee-cave
+:::
+
+## How does The Hills compare with nearby markets?
+
+:::compare-table
+Market (Agent Intel) | Sales | Median | $/sq ft | Median days | Supply (months)
+City of The Hills | 61 | $886,550 | $289 | 37 | 4.18
+City of Lakeway | 291 | $720,000 | $281 | 52.5 | 5.38
+City of Bee Cave | 28 | $817,500 | $256 | 24.5 | 3.82
+Hamilton Pool (MLS area) | 256 | $775,000 | $260 | 51 | 4.32
+ZIP 78738 | 683 | $880,000 | $281 | 44 | 4.01
+ZIP 78734 | 388 | $650,000 | $277 | 59 | 7.96
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales for the 12 months ending October 31, 2026, pulled November 24, 2026. Agent Intel did not return Rough Hollow or Spanish Oaks as separate markets, so they are not in the table.
+
+For a gated golf community closer to Bee Cave, read my [Spanish Oaks guide](/blog/living-in-spanish-oaks-austin) and see Echelon Property Group's [Spanish Oaks page](/communities/spanish-oaks). For the lake side of Lakeway, read the [Lakeway waterfront and golf guide](/blog/guide-to-lakeway-waterfront-golf-living).
+
+## Is The Hills right for you?
+
+The Hills suits buyers who want staffed gates, private roads, an on-site club with Nicklaus golf and Lake Travis ISD schools, at a median near $887,000. It suits less well if you want walkable retail, a private dock on every street or a home with no POA rules.
+
+## Frequently asked questions
+
+:::faq
+
+Q: Is The Hills part of Lakeway?
+A: No. The Hills is a separate incorporated municipality next to the City of Lakeway. It incorporated in May 1997 as a Type B general law village, with its own mayor, five councilmembers and tax rate. Its official name in use is the Village of The Hills, though many people call it the City of The Hills.
+
+Q: How much does a home in The Hills cost?
+A: Homes in the City of The Hills sold at a median of $886,550 over the 12 months ending October 31, 2026, on 61 residential sales at $289 per square foot, according to Agent Intel using Unlock MLS data. The average sale was $973,903. Because condos and townhomes count, detached golf homes usually price differently, so compare closely matched sales.
+
+Q: What schools serve The Hills?
+A: The Hills is in Lake Travis ISD. The district street directory places most addresses in the Lakeway Elementary and Hudson Bend Middle zones, with some in Bee Cave Elementary and Bee Cave Middle. All go to Lake Travis High School. TEA rated Lakeway Elementary A (92), Hudson Bend Middle A (90) and Lake Travis High A (91) in 2026.
+
+Q: What are property taxes in The Hills?
+A: A home inside the village and the Hurst Creek MUD carries a combined 2026 rate of $1.957922 per $100 across six units: Lake Travis ISD, Travis County, Hurst Creek MUD, Central Health, ESD No. 6 and the village. Without the MUD, the total is $1.737422. Exemptions reduce taxable value, so confirm each parcel's units with the appraisal district.
+
+Q: Do you have to join The Hills Country Club?
+A: Club membership is sold by The Hills Country Club, separate from the property owners association that every owner belongs to. The club offers golf memberships covering all four courses and social memberships without full golf privileges. Ask whether any specific lot carries a club requirement, and read the POA's governing documents before you buy.
+
+Q: What golf courses are in The Hills?
+A: The Hills Country Club lists 72 holes: the Jack Nicklaus Signature Course, opened in 1981, Flintrock Falls, a 7,051-yard par 72 by Jack Nicklaus and Jack Nicklaus II that opened in 2002, and the original Live Oak and Yaupon courses. The club also lists a three-hole practice facility, tennis and pickleball.
+
+Q: What parks and shopping are near The Hills?
+A: Lakeway City Park on Hurst Creek Road has nearly two miles of trails, and the Hamilton Greenbelt and Hurst Creek Preserve add several more miles. Lakeway Marina rents boats on Lake Travis. For shopping, the Hill Country Galleria in Bee Cave has Whole Foods Market, Dillard's and restaurants such as Chisos Grill and Tadashi Sushi.
+:::
+
+## Sources
+
+- [Village of The Hills, Village History](https://www.thehillstx.gov/2168/Village-History), [Mayor and City Council](https://www.thehillstx.gov/2144/Mayor-and-City-Council), [Law Enforcement](https://www.thehillstx.gov/2152/Law-Enforcement) and [Property Owners Association](https://www.thehillstx.gov/2177/Property-Owners-Association)
+- [The Hills of Lakeway POA, governing documents](https://engage.goenumerate.com/s/thehillspoa/dyndocuments.php?group=1373)
+- [Texas State Historical Association, Handbook of Texas: Hills, TX](https://www.tshaonline.org/handbook/entries/hills-tx-HJT15)
+- [The Hills Country Club, Our Story](https://www.invitedclubs.com/clubs/the-hills-country-club/club-life/traditions-community/), [Signature Course](https://www.invitedclubs.com/clubs/the-hills-country-club/golf/signature-course/), [Flintrock Falls](https://www.invitedclubs.com/clubs/the-hills-country-club/golf/flintrock-falls-course/) and [Membership](https://www.invitedclubs.com/clubs/the-hills-country-club/membership/)
+- [Nicklaus Design, The Hills Country Club](https://nicklausdesign.com/course/thehills/)
+- [Lake Travis Fire Rescue, Fire Stations](https://www.ltfr.org/fire-stations/) and [ISO Information](https://www.ltfr.org/iso-information/)
+- [City of Lakeway, City Park](https://www.lakeway-tx.gov/126/City-Park/) and [Hamilton Greenbelts](https://www.lakeway-tx.gov/127/Hamilton-Greenbelts)
+- [Travis County Parks, Hamilton Pool Preserve](https://parks.traviscountytx.gov/parks/hamilton-pool-preserve)
+- [Lakeway Marina](https://www.lakewaymarina.com/contact/), [Hill Country Galleria directory](https://www.hillcountrygalleria.com/directory) and [Lakeway Resort and Spa fact sheet](https://www.lakewayresortandspa.com/fact-sheet)
+- [Texas Education Agency, 2026 accountability ratings, Lake Travis ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227913&lev=D&prgopt=reports%2Facct%2Fca.sas)
+- [Lake Travis ISD, School Attendance Zones and street directory](https://www.ltisdschools.org/families/school-attendance-zones) and [Update on Highland Lakes High School (February 23, 2026)](https://www.ltisdschools.org/view-all-news/news-details/~board/ltisd-news/post/update-on-highland-lakes-high-school)
+- [The Magnolia School](https://www.themagnoliaschoolatx.com/) and [Bluebonnet Montessori School of Lakeway](https://www.bluebonnetmontessori.com/faq)
+- [Travis County Tax Office, 2026 tax rate list (XLS)](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls) and [Austin Community College, District and Service Area](https://www.austincc.edu/about-acc/acc-district-service-area/)
+- [Travis Central Appraisal District](https://traviscad.org/)
+- Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026
+
+:::cta
+eyebrow: Private advisory
+heading: Thinking about The Hills?
+subheading: I can confirm a home's city limits, zoned schools, tax units and POA rules, pull a current comp set and show you homes in The Hills and around Lakeway, including ones that trade privately.
+button: Request a private consultation
+href: /contact
+:::`,
+  },
   {
     id: "living-in-tarrytown-austin",
     title: "Living in Tarrytown, Austin: A Luxury Buyer's Guide to West Austin's Lakeside Neighborhood",
@@ -949,6 +1193,8 @@ Bobby Weed Golf Design returned in 2016 to renovate every bunker and expand the 
 ### Do you have to join the golf club to live in Spanish Oaks?
 
 No. Owning a home and joining the club are separate. Membership at Spanish Oaks Golf Club is by invitation and contingent on application and approval, per the [club’s membership page](https://www.spanishoaksgc.com/Membership), so buying a home does not guarantee you a membership. The developer says [“most Spanish Oaks residents choose to become Club members”](https://www.spanishoaks.com/). Fees are not published, so if the club matters to you, contact the membership office before you write an offer.
+
+For another gated golf community near Lake Travis, my [guide to living in The Hills](/blog/living-in-the-hills-lakeway) covers the Nicklaus courses, gates and POA rules beside Lakeway.
 
 ## What amenities come with living in Spanish Oaks?
 
@@ -17982,6 +18228,8 @@ Bee Cave's defining feature is the Hill Country Galleria, an upscale outdoor sho
 
 Lakeway offers a resort-oriented lifestyle centered on Lake Travis. Championship golf at Flintrock Falls, full-service marinas, and waterfront dining create an experience more akin to a vacation destination than a suburb. For buyers drawn to boating, swimming, and lakeside recreation, Lakeway is the clear choice.
 
+Between the two sits The Hills, a separate gated village with its own tax rate; my [guide to living in The Hills](/blog/living-in-the-hills-lakeway) explains how it differs from Lakeway.
+
 ## Schools
 
 Both communities are served by the Lake Travis Independent School District, including the well-regarded Lake Travis High School. This shared school zoning means school quality is not a differentiating factor between the two communities.
@@ -18222,6 +18470,8 @@ Lakeway's defining feature is its extraordinary relationship with [Lake Travis](
 ## Golf and Recreation
 
 Championship golf is central to Lakeway's identity. Flintrock Falls Golf Club and the Lakeway Resort & Spa courses provide resort-caliber play in a Hill Country setting. Beyond golf, residents enjoy pools, fitness facilities, tennis courts, miles of trails, and proximity to the lake's recreational opportunities, kayaking, paddleboarding, swimming, and sunset cruises.
+
+For a gated, incorporated village beside Lakeway with its own Nicklaus golf club, read my [guide to living in The Hills](/blog/living-in-the-hills-lakeway).
 
 ## Schools and Families
 

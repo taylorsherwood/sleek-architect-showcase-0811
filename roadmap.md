@@ -77,4 +77,4 @@
 - [x] Add Commercial, Development Services, and Land and Ranch cards so the section shows six divisions in two even rows; links and layout verified at desktop, preview, and phone widths.
 - [x] Use the supplied building photo on the Commercial card and the supplied development photo on the Development Services card.
 - [x] Make all six card images the same size and the cards visually uniform; blurbs rewritten to equal length, Engel & Völkers titles kept with matching title space, verified at desktop, preview, tablet, and phone widths.
-- [ ] Reduce the space between each specialist card title and its blurb; verify at preview, desktop, tablet, and phone widths.
+- [x] Reduce the space between each specialist card title and its blurb; verified at preview, desktop, tablet, and phone widths.

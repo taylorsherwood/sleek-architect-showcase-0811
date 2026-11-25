@@ -248,6 +248,9 @@ I refresh this guide every quarter. The next update is planned for February 2027
 - **Mortgage rates remain the swing factor.** Freddie Mac's 30-year average was 7.28% for the week of November 19, 2026, up from 6.26% a year earlier, per [FRED](https://fred.stlouisfed.org/series/MORTGAGE30US).
 - **Texas A&M's benchmark.** The [Texas A&M Real Estate Center](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf) treats a six to 6.5 month supply as a balanced market.
 
+:::intel-gauge-austin-metro
+:::
+
 ## How competitive is the Austin housing market right now?
 
 The Austin market is competitive where pricing is accurate and negotiable where it is not. The table compares the City of Austin, Travis County and the five-county Austin metro for the 12 months ending October 31, 2026.

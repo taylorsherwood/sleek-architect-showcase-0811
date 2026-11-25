@@ -837,9 +837,9 @@ const BlogContent = ({ content, afterGlance, category, articleId }: BlogContentP
             return (
               <IntelInsert key={idx} tight>
                 <MarketBalanceGauge
-                  communityName="Greater Austin · All Price Points · All Property Types"
+                  communityName={articleId === "austin-housing-market-competitive" ? "Greater Austin · Residential · All Price Points" : "Greater Austin · All Price Points · All Property Types"}
                   marketName="Austin Metro"
-                  eyebrow={"\n\nGREATER AUSTIN · ALL PRICE POINTS · ALL PROPERTY TYPES · BUYER / SELLER BALANCE IN REAL TIME"}
+                  eyebrow={articleId === "austin-housing-market-competitive" ? "\n\nGREATER AUSTIN · RESIDENTIAL · ALL PRICE POINTS · BUYER / SELLER BALANCE IN REAL TIME" : "\n\nGREATER AUSTIN · ALL PRICE POINTS · ALL PROPERTY TYPES · BUYER / SELLER BALANCE IN REAL TIME"}
                 />
               </IntelInsert>
             );

@@ -18,6 +18,7 @@ const CinematicVideoSection = lazy(() => import("@/components/CinematicVideoSect
 const Footer = lazy(() => import("@/components/Footer"));
 import LandCrossLinks from "@/components/LandCrossLinks";
 import MarketBalanceGauge from "@/components/market-intel/MarketBalanceGauge";
+import evVillaMark from "@/assets/ev-villa-rgb.svg.asset.json";
 
 import {
   CheckCircle,
@@ -961,8 +962,21 @@ const Sell = () => {
         </div>
       </section>
 
+      <div className="flex justify-center bg-secondary pt-16 md:pt-24 pb-2 md:pb-4">
+        <img
+          src={evVillaMark.url}
+          alt="Engel & Völkers"
+          title="Brokered by Engel & Völkers Austin"
+          width={283}
+          height={118}
+          className="w-[150px] sm:w-[180px] md:w-[210px] h-auto object-contain"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
       <Suspense fallback={<div className="min-h-[320px]" />}>
-        <OfficeListings topSpacing="pt-20 md:pt-28" />
+        <OfficeListings topSpacing="pt-8 md:pt-12" />
       </Suspense>
 
       {/* ── Expert Insight ── */}

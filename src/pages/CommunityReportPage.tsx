@@ -49,7 +49,11 @@ const CommunityReportPage = () => {
       .maybeSingle()
       .then(({ data }) => {
         const teaser = data ? toCommunityRecord(data) : null;
-        const cached = getCachedUnlock(slug);
+        // Only trust a saved report while the community is still published.
+        const cached = teaser ? getCachedUnlock(slug) : null;
+        if (!teaser) {
+          try { localStorage.removeItem(`echelon_community_unlock_v2_${slug}`); } catch { /* ignore */ }
+        }
         setCommunity(cached || teaser);
         setUnlockedState(!!cached);
         setLoading(false);

@@ -12,7 +12,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import { sendTemplateEmail } from "../_shared/transactional-email-templates/send-email.ts";
 
-const ALLOWED_HOSTS = /^(www\.)?echelonpropertygroup\.com$|\.lovable\.app$|^localhost$/;
+const ALLOWED_HOSTS = /^(www\.)?echelonpropertygroup\.com$/;
 const DEFAULT_ORIGIN = "https://www.echelonpropertygroup.com";
 
 async function sha256(v: string) {
@@ -24,7 +24,8 @@ function buildLink(pageUrl: string, slug: string, token: string) {
   let url: URL;
   try {
     url = new URL(pageUrl);
-    if (!ALLOWED_HOSTS.test(url.hostname)) throw new Error();
+    if (url.protocol !== "https:" || !ALLOWED_HOSTS.test(url.hostname)) throw new Error();
+    url = new URL(url.pathname, DEFAULT_ORIGIN);
   } catch {
     url = new URL(`/communities/${slug}`, DEFAULT_ORIGIN);
   }

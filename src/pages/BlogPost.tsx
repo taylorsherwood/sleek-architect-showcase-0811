@@ -76,13 +76,20 @@ const BlogPost = () => {
   }
 
   const postUrl = `https://www.echelonpropertygroup.com/blog/${post.id}`;
+  const hasEditorialUpdate = ["austin-housing-market-update-june-2026", "how-long-to-sell-house-austin", "how-to-buy-home-austin-buyers-market-2026"].includes(post.id);
+  if (hasEditorialUpdate) {
+    faqs = faqs.map(({ question, answer }) => ({
+      question: question.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*/g, ""),
+      answer: answer.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*/g, ""),
+    }));
+  }
 
   // Skip BlogPosting schema for off-topic posts
   const skipBlogPosting = ["sustainable-architecture-future", "minimalism-modern-living", "urban-planning-community-spaces"].includes(post.id);
 
   const schemas: Record<string, unknown>[] = [
     organizationSchema,
-    createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl),
+    { ...createArticleSchema(post.title, post.excerpt, post.date, post.author, post.image, postUrl), ...(hasEditorialUpdate ? { dateModified: post.dateModified } : {}) },
     ...(skipBlogPosting ? [] : [createBlogPostingSchema({ title: post.title, description: post.excerpt, datePublished: post.date, author: post.author, image: post.image, url: postUrl, dateModified: post.dateModified, keywords: post.keywords, section: post.category, aboutPlaces: post.aboutPlaces })]),
     createBreadcrumbSchema([
       { name: "Home", url: "https://www.echelonpropertygroup.com/" },
@@ -172,7 +179,7 @@ const BlogPost = () => {
                     <span className="bg-secondary px-3 py-1 text-foreground">{post.category}</span>
                     <span>Published {post.date}</span>
                     <span>•</span>
-                    <span>Last updated <time dateTime={post.date}>{post.date}</time></span>
+                    <span>{hasEditorialUpdate ? "Updated " : "Last updated "}<time dateTime={hasEditorialUpdate ? post.dateModified : post.date}>{hasEditorialUpdate ? "November 25, 2026" : post.date}</time></span>
                     <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>

@@ -1,3 +1,4 @@
+import blogAustinCompetitiveHero from "@/assets/blog/austin-housing-market-competitive.webp.asset.json";
 import blogTheHillsHero from "@/assets/blog/the-hills-lakeway-golf-aerial.webp.asset.json";
 import blogTarrytownHero from "@/assets/blog/tarrytown-shopping-center.webp.asset.json";
 import blogWestlakeHillsHero from "@/assets/blog/westlake-hills-hillside-home.webp.asset.json";
@@ -215,6 +216,245 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-housing-market-competitive",
+    title: "How Competitive Is the Austin Housing Market Right Now? A Luxury Buyer and Seller Guide for Late 2026",
+    metaTitle: "How Competitive Is the Austin Housing Market? 2026 Data | Echelon Property Group",
+    excerpt: "How competitive is the Austin housing market? Nov 2026 Agent Intel data on days to sell, discounts, inventory and luxury homes, with buyer and seller tips.",
+    author: "Taylor Sherwood",
+    date: "2026-11-25",
+    dateModified: "2026-11-25",
+    readTime: "14 min read",
+    category: "MARKET INTELLIGENCE",
+    keywords: "how competitive is the Austin housing market, how competitive is Austin, Austin market trends, how long does it take to sell a house in Austin, Austin luxury housing market, Austin inventory November 2026",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas", "West Lake Hills, Texas", "Lakeway, Texas"],
+    imageAlt: "Covered stone patio and swimming pool overlooking a lake and wooded hills",
+    relatedPostIds: ["how-long-to-sell-house-austin", "austin-housing-market-forecast-2027", "how-to-buy-home-austin-buyers-market-2026", "living-in-westlake-hills-austin"],
+    image: blogAustinCompetitiveHero.url,
+    heroImage: blogAustinCompetitiveHero.url,
+    content: `**Short answer:** Austin is moderately competitive. In the City of Austin, homes sold in a median of 43 days and closed an average of 3.06% below list over the 12 months ending October 31, 2026, with 4.94 months of inventory versus a [six to 6.5 month balanced benchmark](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf), per Agent Intel (Unlock MLS via MLS Grid), pulled November 25, 2026.
+
+Searches for "how competitive is Austin," "how long does it take to sell a house in Austin" and "Austin market trends" all point to one question: who has the negotiating power right now? This guide answers it with current Unlock MLS data, then breaks it out for buyers and sellers in the luxury tiers I work in every day.
+
+Every figure comes from Agent Intel, which reads Unlock MLS data through MLS Grid, from a named public source, or from my own labeled calculation. Where a metric was not available, I left it out.
+
+I refresh this guide every quarter. The next update is planned for February 2027.
+
+## Key takeaways
+- **Competitive for well-priced homes, negotiable on average.** The City of Austin recorded 10,720 residential sales at a $570,000 median, 43 median days on market and a 3.06% average discount to list price for the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 25, 2026.
+- **Prices are flat to slightly lower.** The City of Austin median is down 0.87% from the prior 12 months. Travis County is down 2.16% and the five-county Austin metro is down 2.56%, per Agent Intel.
+- **Luxury moves at a similar pace with larger discounts.** Metro-wide $1M+ homes had a $1,370,500 median, 41 median days and a 4.12% average discount to list, per Agent Intel.
+- **Homes are selling faster than a year ago.** City median days on market fell from 47 to 43, and months of inventory from 5.40 to 4.94, per Agent Intel.
+- **Mortgage rates remain the swing factor.** Freddie Mac's 30-year average was 7.28% for the week of November 19, 2026, up from 6.26% a year earlier, per [FRED](https://fred.stlouisfed.org/series/MORTGAGE30US).
+- **Texas A&M's benchmark.** The [Texas A&M Real Estate Center](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf) treats a six to 6.5 month supply as a balanced market.
+
+## How competitive is the Austin housing market right now?
+
+The Austin market is competitive where pricing is accurate and negotiable where it is not. The table compares the City of Austin, Travis County and the five-county Austin metro for the 12 months ending October 31, 2026.
+
+:::compare-table
+Market (Agent Intel) | Closed sales | Median price | Median $/sq ft | Median days on market | Average vs list price | Months of inventory
+City of Austin | 10,720 | $570,000 | $294 | 43 | 3.06% below | 4.94
+Travis County | 14,135 | $499,000 | $260 | 50 | 2.96% below | 5.29
+Austin metro (5 counties) | 31,289 | $423,850 | $208 | 56 | 2.74% below | 5.08
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales, 12 months ending October 31, 2026, pulled November 25, 2026. The metro covers Bastrop, Caldwell, Hays, Travis and Williamson counties.
+
+Compared with the 12 months ending October 31, 2025, the same Agent Intel data shows:
+- **More closings.** City sales rose 5.6% (10,150 to 10,720), Travis County sales rose 6.3% (13,300 to 14,135) and metro sales rose 4.0% (30,085 to 31,289).
+- **Slightly lower prices.** The City median moved from $575,000 to $570,000. Travis County moved from $510,000 to $499,000, and the metro from $435,000 to $423,850.
+- **Smaller discounts.** The City's average discount to list narrowed from 3.23% to 3.06%.
+- **Fewer homes waiting.** Active City listings were 4,476, down 4.9% from 4,705.
+
+Agent Intel's original-versus-asking measure for the City was 3.86% below. I read that as asking prices ending below where listings started (my interpretation of Agent Intel's metric).
+
+## Is Austin a buyer's market or a seller's market?
+
+Austin sits in between. The data points in two directions, so I would not call it either.
+
+**What favors sellers.** The [Texas A&M Real Estate Center](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf) describes a six to 6.5 month supply as balanced, with local equilibrium usually between five and seven months. The City of Austin's 4.94 months and the metro's 5.08 months sit at or below the low end of that range, per Agent Intel. Agent Intel's calculation may differ slightly from the Center's method.
+
+**What favors buyers.** Homes still closed an average of 3.06% below list price, medians slipped, and metro median days on market rose from 54 to 56.
+
+**My read (analysis, not data):** inventory is tight enough that well-prepared homes draw attention, while price behavior shows buyers keep negotiating. Negotiating power depends on the specific home, price band and location more than on a headline label.
+
+## How long does it take to sell a house in Austin?
+
+The median City of Austin home spent 43 days on the market over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 25, 2026. Travis County's median was 50 days and the metro's was 56.
+
+Days on market changes with the season. Agent Intel's rolling three-month City medians moved like this:
+
+:::compare-table
+Three months ending | Median days on market | Closed sales | Median price
+June 30, 2026 | 26 | 3,366 | $587,570
+July 31, 2026 | 28 | 3,379 | $590,000
+August 31, 2026 | 34 | 3,121 | $579,500
+September 30, 2026 | 41 | 2,799 | $570,000
+October 31, 2026 | 48 | 2,464 | $564,250
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), City of Austin residential sales, rolling three-month windows, pulled November 25, 2026.
+
+Median days on market for the three months ending October 31, 2025 was 61, so this fall is moving faster than last fall. Closed sales in the latest quarter were 7.1% lower than a year earlier (2,464 versus 2,652, my calculation from Agent Intel counts).
+
+**Days on market is not days to close.** In my calculation from the 520 City of Austin sales at $2M or more (below), the median time from contract to closing was 28 days. Add that to the listing period when you plan around proceeds or a move.
+
+For tactics, read my deeper guide on [how long it takes to sell a house in Austin](/blog/how-long-to-sell-house-austin) and my take on the [best time to sell](/blog/best-time-to-sell-a-house-austin).
+
+## What are the Austin market trends to watch?
+
+Five trends stand out in the November 2026 data.
+- **Volume is up over 12 months, down in the latest quarter.** Trailing 12-month City sales rose 5.6%, but the August to October quarter lagged last year's by 7.1%.
+- **Price is stable to softer.** The City's rolling 12-month median stayed in a band of $565,000 to $575,000 across the last 13 monthly readings, per Agent Intel.
+- **Months of inventory is easing down.** The City's rolling 12-month figure moved from 5.40 months (October 2025) to 4.94 months (October 2026), per Agent Intel.
+- **Rates moved up.** The Freddie Mac 30-year average ranged from 5.98% (February 26, 2026) to 7.40% (October 8, 2026) since October 2025 and stood at 7.28% on November 19, per [FRED](https://fred.stlouisfed.org/series/MORTGAGE30US).
+- **Luxury medians are holding up.** Metro $1M+ homes recorded a 1.43% higher median than a year earlier, per Agent Intel, while the all-price metro median fell 2.56%.
+
+I explain how rates affect Austin pricing in my guide to [Austin mortgage rate impact](/blog/austin-mortgage-rate-impact) and how supply is measured in [Austin inventory levels explained](/blog/austin-inventory-levels-explained). For a forward view, see my [2027 housing market forecast](/blog/austin-housing-market-forecast-2027).
+
+## How competitive is the Austin luxury housing market?
+
+Luxury homes in Austin sit in the balanced range on the Texas A&M benchmark, with larger discounts than the overall market (analysis). Agent Intel tracks a Luxury (over $1M) segment across the five-county Austin metro.
+
+:::compare-table
+Metro $1M+ segment (Agent Intel) | 12 months ending Oct. 31, 2026 | 12 months ending Oct. 31, 2025
+Closed sales | 2,932 | 2,696
+Median price | $1,370,500 | $1,351,146
+Median $/sq ft | $438 | $438
+Median days on market | 41 | 56
+Average vs list price | 4.12% below | 4.67% below
+Months of inventory | 6.57 | 7.40
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales at $1,000,000 and above, Austin metro, pulled November 25, 2026.
+
+For the three months ending October 31, 2026, the $1M+ segment had 701 sales, a $1,385,000 median, 49 median days and 6.07 months of inventory. A year earlier it had 720 sales, a $1,327,500 median, 72 median days and 6.63 months, per Agent Intel.
+
+### What about homes at $2M and above in the City of Austin?
+
+I counted closed City of Austin sales by price tier in Agent Intel's Unlock MLS records for November 1, 2025 to October 31, 2026, then calculated the rest from the individual sale records. These are my calculations, not Agent Intel summary statistics.
+
+:::compare-table
+City of Austin tier | Closed sales (12 months) | Prior 12 months | Change
+$1M and above | 2,033 | 1,901 | up 6.9%
+$2M and above | 520 | 459 | up 13.3%
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid) listing records, pulled November 25, 2026. Tier counts use close price. About 19.0% of City sales closed at $1M or more.
+
+For the 520 sales at $2M and above (my calculation):
+- **Median close price:** $2,670,000, or $657 per square foot.
+- **Median days on market:** 70.5, with a quarter of homes selling in 23 days or fewer and a quarter taking 151.5 days or more.
+- **Sold below list:** 89.4% closed below the list price in the record, and the median close was 95.0% of list. 10.6% closed at or above list.
+- **Contract to close:** a median of 28 days.
+- **Supply:** Agent Intel showed 298 active City listings at $2M and above on November 25. Against 520 sales in 12 months, that is roughly 6.9 months of supply (my estimate).
+
+Condominiums made up 29 of the 520 sales. Agent Intel's record shows cumulative days on market, which can include earlier listing periods for relisted homes.
+
+## How do luxury neighborhoods compare?
+
+Neighborhood results vary widely, and small samples swing. Use this table as direction, not as a forecast.
+
+:::compare-table
+Market (Agent Intel) | Sales | Median price | $/sq ft | Median days | Average vs list | Months of inventory | Median vs prior year
+Barton Creek (MLS area) | 65 | $1,360,000 | $519 | 29 | 4.48% below | 4.11 | down 2.78%
+Tarrytown | 94 | $1,677,500 | $592 | 60 | 5.39% below | 5.33 | down 4.14%
+Lake Austin (MLS area) | 53 | $1,055,558 | $442 | 31 | 3.78% below | 5.02 | down 4.04%
+City of West Lake Hills | 44 | $2,397,250 | $749 | 42.5 | 6.82% below | 5.23 | down 2.63%
+ZIP 78746 | 323 | $1,862,000 | $562 | 49.5 | 5.04% below | 5.04 | up 7.94%
+City of Lakeway | 291 | $720,000 | $281 | 52.5 | 3.13% below | 5.37 | down 4.26%
+City of The Hills | 61 | $886,550 | $289 | 37 | 2.99% below | 4.18 | down 3.11%
+City of Bee Cave | 28 | $817,500 | $256 | 24.5 | 3.73% below | 3.82 | down 3.82%
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales, 12 months ending October 31, 2026, pulled November 25, 2026. Agent Intel did not return Spanish Oaks, Rollingwood or Pemberton Heights as separate markets, so they are not in the table. Neighborhood boundaries are MLS definitions and may not match how locals draw them.
+
+Three observations (analysis):
+- **The widest discounts show up in the priciest, thinnest segments.** West Lake Hills, Tarrytown and ZIP 78746 all averaged 5% or more below list.
+- **Faster markets are not always the strongest on price.** Barton Creek's 29 median days came with a 4.48% discount and a 2.78% lower median.
+- **ZIP 78746 stands out.** It was the only market in the table with a higher median than a year earlier (up 7.94%), on 323 sales.
+
+Read more in my neighborhood guides for [Tarrytown](/blog/living-in-tarrytown-austin), [West Lake Hills](/blog/living-in-westlake-hills-austin), [Barton Creek](/blog/living-in-barton-creek-austin), [The Hills](/blog/living-in-the-hills-lakeway) and [Spanish Oaks](/blog/living-in-spanish-oaks-austin), or see Echelon Property Group's [Westlake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek) and [Lakeway](/communities/lakeway) pages.
+
+## What does this mean for luxury buyers?
+
+Buyers have more room to negotiate on price at the luxury tier than in the overall market, but the best-priced homes still draw attention. Here is how I read it (analysis):
+- **Start from the discount data.** Metro $1M+ homes averaged 4.12% below list, and the City's $2M+ sales had a median close of 95.0% of list. Those are market averages, not a promise on any single home.
+- **Check days on market against price history.** A home that has sat for 70 or more days, the median for City $2M+ sales, may have more room than a new listing, but verify whether it was relisted.
+- **Compare tiers and neighborhoods, not the city.** A Tarrytown home and a Lakeway home sit in different supply conditions, as the table above shows.
+- **Plan for rate sensitivity.** With the 30-year average at 7.28%, financing terms can matter as much as price. Ask your lender about options before you write an offer.
+- **Do not skip diligence.** A discount is not a reason to waive inspections or title review.
+
+My guides on [how to buy a luxury home in Austin](/blog/how-to-buy-luxury-home-austin) and [off-market homes](/blog/off-market-homes-austin) go deeper on process and access.
+
+## What does this mean for luxury sellers?
+
+Sellers face a wide range of outcomes, and pricing is the biggest lever you control. Here is how I read the luxury data (analysis):
+- **Price against recent closings, not asking prices.** City $2M+ homes closed at a median of 95.0% of list. Agent Intel's metro $1M+ discount was 4.12%.
+- **Expect a wide timeline.** A quarter of City $2M+ sales took 151.5 days or longer. A quarter sold in 23 days or fewer. Plan for either end.
+- **Expect seasonality.** Median metro $1M+ days on market were 41 over 12 months but 49 over the latest three months, so seasonality matters.
+- **Be ready to adjust.** Agent Intel's City original-versus-asking measure was 3.86% below, which I read as asking prices often ending below the original.
+- **Plan the closing timeline.** Contract to closing took a median of 28 days in my $2M+ calculation.
+
+My [luxury pricing guide](/blog/how-to-price-a-luxury-home-in-austin) and [selling strategies](/blog/selling-luxury-home-austin-strategies) cover preparation and positioning, and [Echelon Property Group's home value page](/home-value-austin) can start a comp review. No one can guarantee a price or timeline, and results depend on the home, its condition and the buyers who see it.
+
+## How should you read these numbers?
+
+Four points keep the data honest:
+- **Medians describe the middle, not your home.** A median is the midpoint of all sales, so it can move with the mix of homes sold.
+- **Residential includes condos.** Agent Intel's Residential category is not limited to detached homes.
+- **Small samples swing.** Markets with fewer than about 100 sales, including most neighborhoods above, can change a lot from one quarter to the next.
+- **Agent Intel metrics are defined by Agent Intel.** Its months of inventory and discount figures may differ from other published methods. I omitted metrics whose definitions I could not confirm.
+
+For a current comp set on a specific address, [request a private consultation](/contact). My [Austin luxury market report](/austin-luxury-market-report) tracks the tier as it changes.
+
+:::faq
+
+Q: How competitive is the Austin housing market right now?
+A: Austin is moderately competitive. In the City of Austin, homes sold in a median of 43 days over the 12 months ending October 31, 2026, closed an average of 3.06% below list price and showed 4.94 months of inventory, according to Agent Intel using Unlock MLS data. Well-priced homes draw interest, while buyers still negotiate.
+
+Q: How long does it take to sell a house in Austin?
+A: The median City of Austin home spent 43 days on the market over the 12 months ending October 31, 2026, per Agent Intel using Unlock MLS data. Travis County's median was 50 days. Days on market ends at contract, so closing adds more time. Seasonality matters: the latest three-month median was 48 days.
+
+Q: Is Austin a buyer's market or a seller's market?
+A: Neither clearly. City of Austin inventory of 4.94 months sits below the six to 6.5 months Texas A&M's Real Estate Center calls balanced, which favors sellers. Yet homes closed 3.06% below list and the median fell 0.87%, which favors buyers. Negotiating power varies by price band, neighborhood and the individual home.
+
+Q: Are Austin home prices going down?
+A: Slightly. Agent Intel shows the City of Austin median at $570,000 for the 12 months ending October 31, 2026, down 0.87% from $575,000. Travis County fell 2.16% and the five-county metro fell 2.56%. Metro homes over $1M recorded a median 1.43% higher than a year earlier.
+
+Q: How competitive is the Austin luxury housing market?
+A: The luxury tier is more negotiable than the overall market. Metro homes over $1M had a $1,370,500 median, 41 median days and a 4.12% average discount to list, with 6.57 months of inventory, per Agent Intel using Unlock MLS data. Results differ by neighborhood, and small samples can shift quickly.
+
+Q: Can buyers negotiate below list price in Austin?
+A: Often, but not always. Across the City of Austin, homes closed an average of 3.06% below list price in the 12 months ending October 31, 2026, per Agent Intel. Over $1M, the metro average was 4.12% below. Those are averages, so each home's pricing, condition and timing decide what is possible.
+
+Q: How should sellers price a home in Austin right now?
+A: Price against recent closed sales of similar homes, not other asking prices. Agent Intel shows City homes closing an average of 3.06% below list, and luxury discounts run larger. Pricing near the market from the start can reduce the need for later cuts. No one can guarantee a price or timeline.
+
+:::
+
+## Sources
+- Agent Intel (Unlock MLS via MLS Grid), residential market statistics and listing records for the City of Austin, Travis County, the Austin metro, the metro Luxury (over $1M) segment, ZIP 78746 and named neighborhoods and cities, pulled November 25, 2026
+- [Federal Reserve Bank of St. Louis (FRED), 30-Year Fixed Rate Mortgage Average in the United States, Freddie Mac](https://fred.stlouisfed.org/series/MORTGAGE30US)
+- [Texas A&M Real Estate Center, Balancing Act: What Is a "Normal" Market? (Tierra Grande reprint, April 2009)](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf)
+
+## Thinking about buying or selling in Austin?
+
+I can pull a current comp set for your address or target neighborhood, explain what the numbers above mean for your price band and show you homes in and around Austin, including ones that trade privately. [Request a private consultation](/contact).
+
+:::cta
+heading: A current read on your Austin market
+button: Request a Private Consultation
+href: /contact
+:::
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI** is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. Taylor is licensed in Texas and Tennessee (TREC #734520-SA) and advises luxury buyers and sellers across Austin, West Lake Hills, Rollingwood, Barton Creek, Lake Austin, Lakeway and the Texas Hill Country. [More about Taylor](/about).
+
+Echelon Property Group brokered by Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746 | Broker: Turnquist Partners Realtors, Inc. dba Engel & Völkers Austin, TREC #440298-BB | [taylor@echelonpropertygroup.com](mailto:taylor@echelonpropertygroup.com) | (512) 661-3843`,
+  },
   {
     id: "living-in-the-hills-lakeway",
     title: "Living in The Hills, TX: A Luxury Buyer's Guide to the Gated Golf Village Beside Lakeway",
@@ -4555,7 +4795,9 @@ A: A reservation is required every day of the week and is currently available th
     image: blogAustinHousingForecast2027,
     heroImage: blogAustinHousingForecast2027,
     imageAlt: "New homes at framing stage with ZIP System sheathing and a CAT skid steer on site",
-    content: `A year ago this week, Fannie Mae told the country that mortgage rates would end 2026 at 5.9 percent. Freddie Mac's survey printed 6.95 percent on September 17, 2026, the daily trackers are above 7 percent, and on September 16 the Federal Reserve raised its policy rate for the first time since 2023. If you built a 2026 plan around the consensus forecast, you were off by a full point in the wrong direction.
+    content: `For the November 2026 figures on pricing, days on market and negotiation by price tier, read our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
+
+A year ago this week, Fannie Mae told the country that mortgage rates would end 2026 at 5.9 percent. Freddie Mac's survey printed 6.95 percent on September 17, 2026, the daily trackers are above 7 percent, and on September 16 the Federal Reserve raised its policy rate for the first time since 2023. If you built a 2026 plan around the consensus forecast, you were off by a full point in the wrong direction.
 
 For a separate view of what motivates high-end buyers, our [Private Office Report 2026/27 analysis for Austin](/blog/wealth-preservation-luxury-real-estate-austin) examines wealth preservation, family decision-making, and global advisor observations.
 
@@ -10390,7 +10632,9 @@ A: Practically, yes. A significant share of the best inventory in these markets 
     heroImage: blogAustinHousingJune2026,
     imageAlt: "Aerial view of the Austin, Texas downtown skyline at sunset with Lady Bird Lake reflecting the city",
     imageCaption: "June 2026 Austin: the metro median rose 1.1% year over year to $450,000 as inventory tightened and pendings jumped double digits.",
-    content: `**The short answer:** Austin's housing correction is losing its grip. In June 2026, the median sales price across the five-county Austin, Round Rock, San Marcos MSA rose 1.1% year over year to $450,000, while active listings fell 14.8%, pending sales jumped 13.2%, and months of inventory dropped a full month to 4.4. One month doesn't make a boom, but after three years in which every trailing-12-month price comparison came in negative, the direction of travel has changed.
+    content: `For the November 2026 figures on pricing, days on market and negotiation by price tier, read our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
+
+**The short answer:** Austin's housing correction is losing its grip. In June 2026, the median sales price across the five-county Austin, Round Rock, San Marcos MSA rose 1.1% year over year to $450,000, while active listings fell 14.8%, pending sales jumped 13.2%, and months of inventory dropped a full month to 4.4. One month doesn't make a boom, but after three years in which every trailing-12-month price comparison came in negative, the direction of travel has changed.
 
 ## Key takeaways
 
@@ -10628,7 +10872,9 @@ Taylor Sherwood is the founder of Echelon Property Group, an Austin luxury and i
     heroImage: blogHowLongToSellHouseAustin,
     imageAlt: "Modern Austin estate home at dusk with stone facade and landscaped entry",
     imageCaption: "A well-priced Austin home goes under contract in 3 to 5 weeks. The averages hide the real story.",
-    content: `In mid-2026, a well-priced Austin home typically goes under contract in 3 to 5 weeks and closes 30 to 45 days after that, a total of roughly 60 to 80 days from listing to keys. But the averages hide the real story: correctly priced homes are selling in under a month, while overpriced listings sit 90+ days and increasingly don't sell at all. Roughly 4 in 10 Austin listings now expire or withdraw without closing.
+    content: `For the November 2026 figures on pricing, days on market and negotiation by price tier, read our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
+
+In mid-2026, a well-priced Austin home typically goes under contract in 3 to 5 weeks and closes 30 to 45 days after that, a total of roughly 60 to 80 days from listing to keys. But the averages hide the real story: correctly priced homes are selling in under a month, while overpriced listings sit 90+ days and increasingly don't sell at all. Roughly 4 in 10 Austin listings now expire or withdraw without closing.
 
 That's the short answer. The longer answer is more useful, because "days on market" is one of the most manipulated, misunderstood, and inconsistently measured statistics in residential real estate, and if you're planning a sale, the difference between the marketing number and the real number can cost you months and six figures.
 
@@ -11542,7 +11788,9 @@ Working with advisors who understand both the regulatory landscape and the local
     heroImage: blogBuyerMarketAustin2026,
     imageAlt: "An Austin homebuyer's planning desk with an 8-strategy checklist notebook, tablet showing a buyer's market chart, Texas mug, and house keys, with a stone Hill Country home and For Sale sign in the background",
     imageCaption: "Mid-2026 Austin: more inventory, longer days on market, and motivated sellers, but a 6.5% rate environment that rewards disciplined, well-structured offers.",
-    content: `Austin's real estate market has shifted in buyers' favor, with 5.3 months of inventory, homes closing 3-4% under list price, and sellers under genuine pressure, but navigating [how to buy a home in Austin](/austin-luxury-homes-for-sale) in a buyer's market still requires strategy given mortgage rates hovering near 6.5% and an uncertain Fed outlook. These eight tactics help buyers capitalize on current leverage while managing financing realities in mid-2026.
+    content: `For the November 2026 figures on pricing, days on market and negotiation by price tier, read our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
+
+Austin's real estate market has shifted in buyers' favor, with 5.3 months of inventory, homes closing 3-4% under list price, and sellers under genuine pressure, but navigating [how to buy a home in Austin](/austin-luxury-homes-for-sale) in a buyer's market still requires strategy given mortgage rates hovering near 6.5% and an uncertain Fed outlook. These eight tactics help buyers capitalize on current leverage while managing financing realities in mid-2026.
 
 Austin has shifted. For the first time in years, buyers are holding real leverage, and the [market data](/austin-luxury-market-report) makes that case clearly. Inventory sits at approximately 5.3 months. Median days on market have stretched to 48, up from 44 a year ago. Roughly 10,700 listings are actively discounting. Homes are closing 3 to 4 percent under list price. And the listing success rate is near 60 percent, meaning roughly 4 in 10 listings expire or withdraw without ever finding a buyer.
 

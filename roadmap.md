@@ -1,4 +1,5 @@
 # Clarksville neighborhood guide
+- [x] Add Austin housing market competitiveness article, supplied image, seven internal backlinks and sitemap; desktop and phone image, five tables, seven FAQs, schema and blog-index navigation verified.
 - [x] Add supplied article and photo with comparison table, seven FAQs, sources and consultation CTA.
 - [x] Add seven contextual backlinks from related posts and the Clarksville community page; desktop and phone preview, image, FAQ schema and all backlinks verified.
 

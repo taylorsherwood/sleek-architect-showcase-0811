@@ -70,6 +70,8 @@ export const communityPages: CommunityData[] = [
 
 For city boundaries, lot and tree rules, Eanes ISD campuses and 2026 tax rates, read our [guide to living in West Lake Hills](/blog/living-in-westlake-hills-austin).
 
+For the November 2026 comparison of West Lake Hills pricing, selling time and negotiation with other Austin markets, read our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
+
 ### Location & Setting
 
 This incorporated city offers rolling terrain, mature live oaks, and panoramic hilltop views. The retreat-like atmosphere is just minutes from downtown Austin's energy and culture.
@@ -199,6 +201,8 @@ The area's strict development standards ensure that quality investments are prot
     image: bartonCreekCommunityImg,
     heroImage: bartonCreekHeroImg,
     overview: `Barton Creek is Austin's premier master-planned luxury community. Spanning thousands of acres along the scenic Barton Creek corridor, this gated community rivals the most exclusive neighborhoods in the country.
+
+Our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive) compares Barton Creek's November 2026 market reading with other Austin neighborhoods, including selling time, pricing and discounts.
 
 ### World-Class Amenities
 
@@ -2779,6 +2783,8 @@ Davenport Ranch has appreciated consistently over multiple decades, supported by
     priceRange: formatNeighborhoodMedian("lakeway"),
     image: lakewayImg,
     overview: `Lakeway is a premier Hill Country community located along the southern shores of Lake Travis, approximately 25 minutes west of downtown Austin. Spanning roughly 11 square miles, this incorporated city offers a resort-caliber lifestyle with Lake Travis waterfront access, championship golf courses, and nationally recognized schools within the Lake Travis Independent School District. For buyers considering a [move to the Austin metro](/moving-to-austin-texas), Lakeway consistently ranks among the most desirable landing spots.
+
+For Lakeway's November 2026 prices, selling times and inventory alongside other Austin markets, see our [Austin housing market competitiveness guide](/blog/austin-housing-market-competitive).
 
 ### Lake Travis Living
 

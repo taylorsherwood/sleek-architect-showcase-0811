@@ -282,10 +282,9 @@ I walk through the mechanics in [Austin property taxes explained](/blog/austin-p
 The National Weather Service classifies Austin as a humid subtropical climate: long, hot summers, short, mild winters, and warm spring and fall transitions. The official climate site is Camp Mabry, near MoPac and West 35th Street, about 3.4 miles northwest of downtown. Average yearly rainfall there is 36.25 inches. May, October and June are the wetter months. July and August tend to be drier.
 
 :::figure
-src: /__l5e/assets-v1/f29b77ba-9df4-40ea-8d6e-c77d2313a110/austin-life-rId55.webp
-alt: Barton Springs Pool in Zilker Park, a spring-fed pool open for year-round swimming
-caption: Barton Springs Pool in Zilker Park. Photo: Todd Dwyer, Wikimedia Commons, CC BY-SA 2.0.
-license: https://creativecommons.org/licenses/by-sa/2.0/
+src: /__l5e/assets-v1/90d75632-1dbf-4460-bd32-af6acdac242d/barton-springs-swimmers.webp
+alt: Swimmers and sunbathers on a hot afternoon at Barton Springs Pool in Zilker Park
+caption: Barton Springs Pool in Zilker Park on a summer afternoon.
 :::
 
 Summer is the season most newcomers underestimate. Normal highs reach 90°F by May 26 and remain above 90 until September 23. Temperatures peak in the first half of August, with normal highs in the upper 90s and lows in the mid-70s. Heat indices can rise above 110°F when Gulf moisture is in place. The record high is 112°F, set on September 5, 2000 and again on August 28, 2011.

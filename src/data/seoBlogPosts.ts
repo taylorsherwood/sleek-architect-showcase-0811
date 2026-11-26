@@ -301,7 +301,106 @@ If commute time is a deciding factor, map the peak drive from the addresses you 
 
 Austin’s official slogan, adopted by City Council in 1991, is Live Music Capital of the World. That is a civic brand, not a ranking I am independently scoring, but live music is a regular part of the calendar: clubs, outdoor stages and large festivals. Food is the other daily draw, from long-running barbecue and Tex-Mex rooms to a dense restaurant and food-trailer scene.
 
-Outdoor life is what makes the heat worth managing. [Zilker](/communities/zilker-austin) Park covers 358 acres and is home to Barton Springs Pool, a three-acre, spring-fed pool with an average water temperature of 68 to 70°F, open for year-round swimming, according to the City of Austin. Lady Bird Lake, along the south edge of downtown, is ringed by the Ann and Roy Butler Hike-and-Bike Trail, a 10-mile loop that includes the Boardwalk. West of the city, [Lake Travis](/communities/lake-travis) is the larger Highland Lakes reservoir for boating and lake houses, with [Lake Austin](/communities/lake-austin) closer in. Spring and fall are the prime patio and trail months. Summer often shifts outdoor time to early mornings, late evenings and the water.
+
+Daily life here is easier to feel than to summarize on a spreadsheet. The rest of the year belongs to trails, water, food and a surprising amount of art for a city this size. The sections below are the parts people ask me about after the housing conversation ends.
+
+## What are the fun things to do in Austin?
+
+### Festivals that still take over the city
+
+South by Southwest, or SXSW, was founded in Austin in 1987 and still takes over downtown each March with conferences and festivals in music, film, television, technology, comedy and education, according to SXSW. The next edition is set for March 15 to 21, 2027, with SXSW EDU running March 13 to 16. It is crowded, it is useful if you work in those industries, and even if you never buy a badge you will feel it on the streets and in the clubs.
+
+:::figure
+src: /__l5e/assets-v1/11e18f24-bca8-45ac-939d-bb00afee95de/austin-life-rId36.webp
+alt: Downtown Austin during SXSW, with the city skyline along Lady Bird Lake
+caption: Downtown Austin during SXSW. Photo: Nan Palmero, Wikimedia Commons, CC BY 2.0.
+license: https://creativecommons.org/licenses/by/2.0/
+:::
+Each October, the Austin City Limits Music Festival fills [Zilker](/communities/zilker-austin) Park for two weekends. The City of Austin marked the 25th festival in 2026, held October 2 to 4 and October 9 to 11. It is a large, ticketed event in the city’s best-known park, which means traffic, temporary closures and a very full weekend if you live nearby. It is also one of the clearest reminders that the “live music” slogan is not just marketing.
+
+:::figure
+src: /__l5e/assets-v1/fc21a5b8-326a-4685-a697-80ad9da55cfb/austin-life-rId40.webp
+alt: A stage and crowd at the Austin City Limits Music Festival in Zilker Park
+caption: Austin City Limits Music Festival at Zilker Park, 2009. Photo: Steve Hopson, stevehopson.com, Wikimedia Commons, CC BY 3.0.
+license: https://creativecommons.org/licenses/by/3.0/
+:::
+### The Congress Avenue bats
+
+One of the best free shows in town is not a festival at all. The Ann W. Richards Congress Avenue Bridge, which the City of Austin owns, hosts a maternity colony of Mexican free-tailed bats that Texas Parks and Wildlife Department calls the largest urban bat colony in the world, estimated at 1.5 million bats. Bat Conservation International describes it as the largest urban bat colony in North America and notes that the bats typically roost at the bridge from March through late September. TPWD lists boat viewing from March through October. Females raise an estimated 750,000 pups at the bridge each year, per TPWD.
+
+On a warm evening the colony pours out at dusk in long columns over Lady Bird Lake. You can watch from the bridge itself or from the shoreline nearby. Emergence times change with the season and the weather, and the bats keep their own schedule, as BCI is careful to say. I tell people to go once in late summer, when the flights are often at their largest, and to treat it as a wildlife watch, not a guaranteed clock.
+
+:::figure
+src: /__l5e/assets-v1/b0e5db0f-214b-4bd7-8c58-9af78d2f58b2/austin-life-rId46.webp
+alt: Mexican free-tailed bats emerging from the Ann W. Richards Congress Avenue Bridge over Lady Bird Lake at dusk
+caption: Mexican free-tailed bats leaving the Congress Avenue Bridge at dusk. Photo: Aleksandr Zykov, Wikimedia Commons, CC BY-SA 2.0.
+license: https://creativecommons.org/licenses/by-sa/2.0/
+:::
+### Hiking, biking, swimming and run clubs
+
+Outdoor life is what makes the heat worth managing. [Zilker](/communities/zilker-austin) Park covers 358 acres and is home to Barton Springs Pool, a three-acre, spring-fed pool with an average water temperature of 68 to 70°F, open for year-round swimming, according to the City of Austin. Lady Bird Lake, along the south edge of downtown, is ringed by the Ann and Roy Butler Hike-and-Bike Trail, a 10-mile loop that includes the Boardwalk. West of the city, [Lake Travis](/communities/lake-travis) is the larger Highland Lakes reservoir for boating and lake houses, with [Lake Austin](/communities/lake-austin) closer in. Spring and fall are the prime patio and trail months. Summer often shifts outdoor time to early mornings, late evenings and the water. That trail is the city’s everyday outdoor room: pre-dawn laps, lunch walks, evening bikes.
+
+:::figure
+src: /__l5e/assets-v1/a9bc99a9-a727-42f7-911b-a9281ce55a6a/austin-life-rId51.webp
+alt: The Austin skyline across Lady Bird Lake, along the city’s hike-and-bike trail
+caption: The Austin skyline from Lady Bird Lake, along the trail corridor. Photo: WikiTryHardDieHard, Wikimedia Commons, CC BY-SA 3.0.
+license: https://creativecommons.org/licenses/by-sa/3.0/
+:::
+:::figure
+src: /__l5e/assets-v1/f29b77ba-9df4-40ea-8d6e-c77d2313a110/austin-life-rId55.webp
+alt: Barton Springs Pool in Zilker Park, a spring-fed pool open for year-round swimming
+caption: Barton Springs Pool in Zilker Park. Photo: Todd Dwyer, Wikimedia Commons, CC BY-SA 2.0.
+license: https://creativecommons.org/licenses/by-sa/2.0/
+:::
+The trail network goes well beyond the lake. The City’s trail directory lists the Barton Creek Greenbelt Trail at 12.68 miles, with a main 7.5-mile stretch and trailheads from Zilker into the southwest hills, including swimming holes when the creek is running. The Violet Crown Trail, a City of Austin and Hill Country Conservancy project, begins at the Barton Creek Greenbelt entrance at Zilker Park and is planned to extend 30 miles south into Hays County. The Mile Zero Trailhead at Zilker is open. In north Austin, Walnut Creek Metropolitan Park has a listed 5.32-mile main trail plus additional shared-use paths in the park.
+
+:::figure
+src: /__l5e/assets-v1/a34dec27-299c-4569-a47d-f6af1f80852f/austin-life-rId58.webp
+alt: A rocky, wooded stretch of the Barton Creek Greenbelt in southwest Austin
+caption: Barton Creek Greenbelt. Photo: LoneStarMike, Wikimedia Commons, CC BY-SA 3.0.
+license: https://creativecommons.org/licenses/by-sa/3.0/
+:::
+If you like to run with other people, you will not have to look hard. Austin Runners Club, a local nonprofit, lists weekly public group runs across the city, including along the Ann and Roy Butler Trail. November Project Austin hosts free early-morning workouts, with recent meeting spots at Waterloo Park and near Butler District Park. I am not publishing start times here, because they change. Check each group’s own page before you go.
+
+### Art and museums
+
+Austin is not only stages and trails. The Blanton Museum of Art, at The University of Texas at Austin, is the city’s major university art museum. The Bullock Texas State History Museum sits on the Capitol mall and tells the state’s story. The LBJ Presidential Library, also on the UT campus, is the presidential library for Lyndon B. Johnson. The Contemporary Austin has two sites: the Jones Center downtown and Laguna Gloria, a historic estate and art venue on the south shore of Lake Austin. Near Zilker, the Umlauf Sculpture Garden and Museum sits among live oaks. Mexic-Arte Museum, on Congress Avenue downtown, focuses on Mexican and Mexican-American art. Public murals turn up around downtown, South Congress and east Austin; they change, so treat any list as a snapshot.
+
+:::figure
+src: /__l5e/assets-v1/3723cf18-5199-4647-90ad-9a5ba1c65e5a/austin-life-rId62.webp
+alt: The plaza and entrance at the Blanton Museum of Art at The University of Texas at Austin
+caption: The Blanton Museum of Art at The University of Texas at Austin. Photo: Steven Saylor, Wikimedia Commons, CC BY-SA 4.0.
+license: https://creativecommons.org/licenses/by-sa/4.0/
+:::
+## Where do locals eat and shop?
+
+The food conversation usually starts with barbecue, and for good reason. Franklin Barbecue, at 900 East 11th Street, is still a destination room, open Tuesday through Sunday from 11 a.m. until the meat sells out, per its official site. The MICHELIN Guide Texas 2026 selection, announced October 8, 2026, lists seven one-star restaurants in Austin: Barley Swine, Craft Omakase, Fabrik, Hestia, InterStellar BBQ, Kappo Kappo and LeRoy and Lewis Barbecue. Fabrik, a vegan restaurant, and Kappo Kappo were new one-star honors in that selection. InterStellar BBQ and LeRoy and Lewis show how far the city’s barbecue has traveled; the others cover contemporary, American, Japanese and chef-counter dining. I am not ranking them. Reservations, hours and menus change, so confirm on the restaurant’s site or the Guide before you go.
+
+Breakfast tacos and Tex-Mex are everyday food, not a special occasion. Veracruz All Natural, a local restaurant group, lists several Austin-area locations, including East Austin, South Austin, Tarrytown, Rainey Street and a counter at the Line Hotel downtown. Food trailers remain a real part of the landscape, especially along South Congress and in east and south clusters, though individual trailers open, move and close faster than a guide can track. Check the trailer’s own page the day you go.
+
+:::figure
+src: /__l5e/assets-v1/1a01de61-2fc5-4409-bcbf-379917c13f46/austin-life-rId68.webp
+alt: Storefronts and signs along South Congress Avenue, a well-known Austin shopping and dining street
+caption: South Congress Avenue. Photo: formulanone, Wikimedia Commons, CC BY-SA 2.0.
+license: https://creativecommons.org/licenses/by-sa/2.0/
+:::
+Shopping is similarly spread out, not centered on one downtown mall. South Congress Avenue is the street most people picture: boots, gifts, small shops and food in the blocks south of the bridge. Allens Boots, at 1522 South Congress Avenue, is a long-running western wear shop with an official storefront there. The 2nd Street District, just west of the downtown core, is a walkable cluster of boutiques and restaurants. South Lamar and Burnet Road are more everyday corridors for local shops and restaurants. The Domain is the large open-air center in north Austin. Waterloo Records, a local shop since 1982, is now at 1105 North Lamar Boulevard, Suite 110, and remains one of the city’s better-known music stores.
+
+For groceries with a Saturday ritual, Sustainable Food Center has long run a farmers market downtown at Republic Square, 422 Guadalupe Street, on Saturdays from 9 a.m. to 1 p.m., plus a Saturday market in Sunset Valley at 3200 Jones Road. In late November 2026, SFC announced that the November 28 downtown market would be the last at that location, with vendors consolidating at Sunset Valley beginning December 5. Confirm the current location on the SFC site before you go.
+
+## How dog-friendly is Austin?
+
+Austin is an easy city to have a dog in, as long as you follow the leash rules. Austin City Code requires dogs to be on a leash in public areas unless you are in a designated off-leash area. Austin Parks and Recreation’s Dog Off-Leash Area Map, dated February 2026, lists 30 designated areas. Among the larger or better-known sites are Red Bud Isle (13 acres, 3401 Red Bud Trail), Auditorium Shores (3 acres, 1100 West Riverside Drive), the Great Lawn at Zilker Metropolitan Park (46 acres, 2100 Barton Springs Road), Barking Springs at Zilker (1 acre, 2105 Andrew Zilker Road) and Riverside Shores (2 acres, 1016 Edgecliff Terrace), which sits next to the Norwood Estate site. Walnut Creek Metropolitan Park has a large 185-acre off-leash area in north Austin, and Emma Long Metropolitan Park, Mary Moore Searight Metropolitan Park and Circle C Metropolitan Park are also on the official map. Parks are generally open 5 a.m. to 10 p.m. unless posted otherwise, and events can limit access. Always follow the posted signs.
+
+APR’s rules are straightforward: leash your dog on the way to and from an off-leash area, keep the dog within sight and sound control, clean up waste, keep dogs in heat out of off-leash areas, and remove aggressive dogs immediately. Rabies vaccination is required by state law. The hike-and-bike trail itself is not an off-leash area. A separate, now-ended pilot at Little Zilker Neighborhood Park should not be confused with the designated Zilker Metropolitan Park sites still on the 2026 map.
+
+:::figure
+src: /__l5e/assets-v1/69fbf251-35cd-42f1-a513-bd899900951f/austin-life-rId72.webp
+alt: Auditorium Shores on Lady Bird Lake, where the City of Austin maintains a designated off-leash area
+caption: Auditorium Shores on Lady Bird Lake, home to a designated off-leash area. Photo: Jenn Deering Davis, edited by CMBJ, Wikimedia Commons, CC BY 2.0.
+license: https://creativecommons.org/licenses/by/2.0/
+:::
+Red Bud Isle and the Auditorium Shores shoreline are popular places for dogs to swim, but the City warns that harmful algae in Lady Bird Lake can sicken or kill dogs, especially in summer and fall. Check current advisories at the City’s algae page before a lake swim. Many restaurants and breweries advertise dog-friendly patios; policies change, so ask before you sit down. One official example: Franklin Barbecue states that friendly dogs are allowed on its patio.
 
 ## How do public schools work in the Austin area?
 
@@ -368,6 +467,18 @@ A: Start with how you want to live. For hills and Eanes ISD, look at West Lake H
 
 Q: What are the biggest drawbacks of living in Austin?
 A: The three I hear most often are the summer heat, the property tax bill and peak-hour traffic. Housing is also expensive relative to the metro and to much of Texas, even after a modest decline in the city median. School ratings and tax rates vary by address, so check the campus and the tax units.
+
+Q: When can you see the Austin bats?
+A: The Mexican free-tailed bats at the Ann W. Richards Congress Avenue Bridge are generally in town from March through October, per TPWD. BCI says they typically roost there from March through late September. The best viewing is usually at dusk from the bridge or the nearby shoreline. Emergence times vary, so check a current source the day you go.
+
+Q: Does Austin have Michelin-starred restaurants?
+A: Yes. The MICHELIN Guide Texas 2026 selection, announced October 8, 2026, lists seven one-star restaurants in Austin: Barley Swine, Craft Omakase, Fabrik, Hestia, InterStellar BBQ, Kappo Kappo and LeRoy and Lewis Barbecue. Fabrik and Kappo Kappo were new one-star honors in that selection. Reservations and hours change, so confirm on each restaurant’s site or the Guide.
+
+Q: Where do locals eat and shop in Austin?
+A: For barbecue, start with Franklin Barbecue and the Michelin-starred InterStellar BBQ and LeRoy and Lewis Barbecue. Breakfast tacos are everyday food; Veracruz All Natural is a local group with several Austin locations. Shop South Congress, South Lamar, the 2nd Street District, Burnet Road and The Domain, plus Waterloo Records on North Lamar. Confirm hours before you go.
+
+Q: How dog-friendly is Austin?
+A: Austin City Code requires a leash in public except in designated off-leash areas. The City’s February 2026 map includes Red Bud Isle, Auditorium Shores, the Great Lawn and Barking Springs at Zilker, and Riverside Shores. Many patios welcome dogs; Franklin Barbecue allows friendly dogs on its patio. Check posted signs and algae advisories before a Lady Bird Lake swim.
 :::
 
 ## Sources
@@ -380,8 +491,19 @@ A: The three I hear most often are the summer heat, the property tax bill and pe
 - [Travis Central Appraisal District](https://traviscad.org/)
 - [National Weather Service, Austin Climate Summary (Camp Mabry)](https://www.weather.gov/media/ewx/climate/ClimateSummary-ewx-Austin.pdf)
 - [Texas Education Agency, 2026 accountability ratings, Austin ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas), [Eanes ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909&lev=D&prgopt=reports%2Facct%2Fca.sas) and [Lake Travis ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227913&lev=D&prgopt=reports%2Facct%2Fca.sas)
-- [City of Austin Parks and Recreation, About Barton Springs Pool](https://www.austintexas.gov/parks/locations/about-barton-springs-pool) and [Ann and Roy Butler Hike-and-Bike Trail at Lady Bird Lake](https://www.austintexas.gov/parks/locations/ann-and-roy-butler-hike-and-bike-trail-and-boardwalk-lady-bird-lake)
+- [City of Austin Parks and Recreation, About Barton Springs Pool](https://www.austintexas.gov/parks/locations/about-barton-springs-pool), [Ann and Roy Butler Hike-and-Bike Trail at Lady Bird Lake](https://www.austintexas.gov/parks/locations/ann-and-roy-butler-hike-and-bike-trail-and-boardwalk-lady-bird-lake), [Barton Creek Greenbelt](https://www.austintexas.gov/parks/locations/barton-creek-greenbelt), [Trail Directory](https://www.austintexas.gov/parks/locations/trail-directory) and [Violet Crown Trail](https://www.austintexas.gov/parks/projects/violet-crown-trail)
 - [City of Austin, City of Austin Promotes ‘Live Music Capital of the World’ on International Stage](https://www.austintexas.gov/communications/news/city-austin-promotes-live-music-capital-world-international-stage)
+- [Texas Parks and Wildlife Department, Congress Avenue Bridge bat-watching site](https://tpwd.texas.gov/huntwild/wild/species/bats/bat-watching-sites/congress-avenue-bridge.phtml)
+- [Bat Conservation International, Bat City](https://www.batcon.org/bat-city/)
+- [SXSW, About SXSW](https://sxsw.com/about/) and [SXSW 2027 dates announcement (PDF)](https://www.sxsw.com/wp-content/uploads/sites/2/2026/10/SXSW-Announces-2027-Dates.pdf)
+- [Austin City Limits Music Festival](https://www.aclfestival.com/) and [City of Austin, Fall Festival Season Returns to Austin, September 30, 2026](https://www.austintexas.gov/emergency-management/news/fall-festival-season-returns-austin)
+- [MICHELIN Guide, Every MICHELIN-Starred Restaurant in Texas for 2026](https://guide.michelin.com/us/en/article/michelin-guide-ceremony/every-michelin-starred-restaurant-in-texas-for-2026) and [Austin one-star restaurant list](https://guide.michelin.com/us/en/texas/austin_2958315/restaurants/1-star-michelin)
+- [Austin Runners Club, Run Groups](https://austinrunners.org/run-groups/) and [November Project Austin](https://november-project.com/austin-tx/)
+- [Blanton Museum of Art](https://blantonmuseum.org/), [Bullock Texas State History Museum](https://www.thestoryoftexas.com/), [LBJ Presidential Library](https://www.lbjlibrary.org/), [The Contemporary Austin](https://thecontemporaryaustin.org/), [Umlauf Sculpture Garden and Museum](https://www.umlaufsculpture.org/) and [Mexic-Arte Museum](https://mexic-artemuseum.org/)
+- [Franklin Barbecue](https://franklinbbq.com/), [Veracruz All Natural, Locations](https://www.veracruzallnatural.com/locations), [Allens Boots](https://www.allensboots.com/), [Waterloo Records](https://waterloorecords.com/) and [2nd Street District](https://www.2ndstreetdistrict.com/)
+- [Sustainable Food Center, The Farmers Market is Your One-Stop Shop this Small Business Saturday](https://sustainablefoodcenter.org/the-farmers-market-is-your-one-stop-shop-this-small-business-saturday/) (downtown market consolidation announcement) and [SFC Farmers’ Market Downtown](https://sustainablefoodcenter.org/events-calendar/sfc-farmers-market-downtown/2026-11-28/)
+- [Austin Parks and Recreation, Dog Parks: Off-Leash Areas](https://www.austintexas.gov/parks/programs/dog-parks-leash-areas) and Dog Off-Leash Area Map (DOLAS), February 2026, [PDF](https://austin.widen.net/s/skvmtsprpv/off-leash-area-map-2026_02)
+- [City of Austin, harmful algae information](https://www.austintexas.gov/algae)
 - Texas A&M Real Estate Center, months-of-inventory benchmark (about six to 6.5 months as a balanced market)
 
 ## Thinking about a move to Austin?

@@ -464,7 +464,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                 className="font-display font-semibold mb-2"
                 style={{ fontSize: "1.2rem", color: "hsl(233 50% 9%)" }}
               >
-                You're All Set!
+                Request Received
               </h3>
               <p className="font-sans mb-1" style={{ fontSize: "14px", color: "hsl(233 50% 9% / 0.6)" }}>
                 {format(selectedSlot.date, "EEEE, MMMM d, yyyy")}
@@ -473,7 +473,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
                 {selectedSlot.time} · 15 min Phone Call
               </p>
               <p className="font-sans" style={{ fontSize: "13px", color: "hsl(233 50% 9% / 0.4)", maxWidth: "280px" }}>
-                Taylor will call you at the scheduled time. A confirmation will be sent to <strong style={{ color: "hsl(233 50% 9% / 0.6)" }}>{formData.email}</strong>.
+                Taylor will confirm your time shortly. The calendar invitation will be sent to <strong style={{ color: "hsl(233 50% 9% / 0.6)" }}>{formData.email}</strong>.
               </p>
               <button
                 onClick={handleClose}

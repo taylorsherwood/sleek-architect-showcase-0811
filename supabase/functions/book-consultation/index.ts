@@ -1,4 +1,4 @@
-// Books a 15-min consultation:
+// Booking requests are held for Taylor's approval. On approval (admin only):
 //   1. Creates a Google Calendar event on Taylor's primary calendar with the
 //      visitor as an attendee (Google sends the calendar invite automatically).
 //   2. Sends a branded confirmation email from Taylor's Gmail to the visitor.
@@ -134,68 +134,28 @@ function rateLimited(ip: string): boolean {
   return false;
 }
 
-Deno.serve(async (req) => {
-  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
-  if (req.method !== "POST") return json({ ok: false, error: "Method not allowed" }, 405);
+import { createClient } from "npm:@supabase/supabase-js@2";
 
-  // Rate-limit by client IP before doing any work
-  const ip =
-    req.headers.get("cf-connecting-ip") ||
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    "unknown";
-  if (rateLimited(ip)) {
-    return json({ ok: false, error: "Too many booking attempts. Please try again later." }, 429);
-  }
+type Req = { name: string; email: string; phone: string; start_at: string; duration_minutes: number; display_date: string | null; display_time: string | null };
 
-  const lovableKey = Deno.env.get("LOVABLE_API_KEY");
-  const calendarKey = Deno.env.get("GOOGLE_CALENDAR_API_KEY");
-  const gmailKey = Deno.env.get("GOOGLE_MAIL_API_KEY");
+async function sendGmail(lovableKey: string, gmailKey: string, raw: string) {
+  const res = await fetch(`${GMAIL_GATEWAY}/users/me/messages/send`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${lovableKey}`, "X-Connection-Api-Key": gmailKey, "Content-Type": "application/json" },
+    body: JSON.stringify({ raw }),
+  });
+  if (!res.ok) console.error("[book-consultation] gmail failed:", res.status, await res.text());
+  return res.ok;
+}
 
-  if (!lovableKey) return json({ ok: false, error: "LOVABLE_API_KEY missing" }, 500);
-  if (!calendarKey) return json({ ok: false, error: "GOOGLE_CALENDAR_API_KEY missing" }, 500);
-  if (!gmailKey) return json({ ok: false, error: "GOOGLE_MAIL_API_KEY missing" }, 500);
-
-  let payload: BookingRequest;
-  try {
-    payload = await req.json();
-  } catch {
-    return json({ ok: false, error: "Invalid JSON" }, 400);
-  }
-
-  const name = (payload.name || "").trim().slice(0, 200);
-  const email = (payload.email || "").trim().slice(0, 255);
-  const phone = (payload.phone || "").trim().slice(0, 30);
-  const startISO = (payload.startISO || "").trim();
-  const duration = Number(payload.durationMinutes) || 15;
-
-  if (!name || !email || !phone || !startISO) {
-    return json({ ok: false, error: "Missing required fields" }, 400);
-  }
-  if (name.length < 2) {
-    return json({ ok: false, error: "Invalid name" }, 400);
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return json({ ok: false, error: "Invalid email" }, 400);
-  }
-  if (phone.replace(/\D/g, "").length < 7) {
-    return json({ ok: false, error: "Invalid phone" }, 400);
-  }
-  const startDate = new Date(startISO);
-  if (Number.isNaN(startDate.getTime())) {
-    return json({ ok: false, error: "Invalid startISO" }, 400);
-  }
-  // Reject bookings in the past or absurdly far in the future
-  const now = Date.now();
-  const startMs = startDate.getTime();
-  if (startMs < now - 5 * 60 * 1000 || startMs > now + 180 * 24 * 60 * 60 * 1000) {
-    return json({ ok: false, error: "Invalid booking time" }, 400);
-  }
-  const endDate = new Date(startMs + duration * 60 * 1000);
-
-  const displayDate = payload.displayDate || startDate.toLocaleDateString("en-US", {
+async function bookApproved(r: Req, lovableKey: string, calendarKey: string, gmailKey: string) {
+  const name = r.name, email = r.email, phone = r.phone;
+  const startDate = new Date(r.start_at);
+  const endDate = new Date(startDate.getTime() + r.duration_minutes * 60 * 1000);
+  const displayDate = r.display_date || startDate.toLocaleDateString("en-US", {
     weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "America/Chicago",
   });
-  const displayTime = payload.displayTime || startDate.toLocaleTimeString("en-US", {
+  const displayTime = r.display_time || startDate.toLocaleTimeString("en-US", {
     hour: "numeric", minute: "2-digit", timeZone: "America/Chicago",
   });
 
@@ -205,7 +165,7 @@ Deno.serve(async (req) => {
     description:
       `15-minute introductory phone call.\n\n` +
       `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n` +
-      (payload.notes ? `\nNotes: ${payload.notes}\n` : "") +
+      
       `\nTaylor will call ${phone} at the scheduled time.`,
     start: { dateTime: startDate.toISOString(), timeZone: "America/Chicago" },
     end: { dateTime: endDate.toISOString(), timeZone: "America/Chicago" },
@@ -349,12 +309,77 @@ Deno.serve(async (req) => {
     console.error("[book-consultation] gmail exception:", emailError);
   }
 
-  const calendarBooked = !!eventId;
-  return json({
-    ok: calendarBooked || emailSent,
-    eventId,
-    eventLink,
-    calendarBooked,
-    emailSent,
+  return { eventId, emailSent };
+}
+
+Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
+  if (req.method !== "POST") return json({ ok: false, error: "Method not allowed" }, 405);
+
+  const lovableKey = Deno.env.get("LOVABLE_API_KEY");
+  const calendarKey = Deno.env.get("GOOGLE_CALENDAR_API_KEY");
+  const gmailKey = Deno.env.get("GOOGLE_MAIL_API_KEY");
+  if (!lovableKey || !calendarKey || !gmailKey) return json({ ok: false, error: "Service unavailable" }, 500);
+
+  const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
+
+  let payload: Record<string, unknown>;
+  try { payload = await req.json(); } catch { return json({ ok: false, error: "Invalid JSON" }, 400); }
+
+  // ── Admin decision: approve or decline a pending request ────────────────
+  if (payload.action === "approve" || payload.action === "decline") {
+    const token = (req.headers.get("Authorization") || "").replace(/^Bearer\s+/i, "");
+    const { data: u } = await admin.auth.getUser(token);
+    if (!u?.user) return json({ ok: false, error: "Unauthorized" }, 401);
+    const { data: isAdmin } = await admin.rpc("has_role", { _user_id: u.user.id, _role: "admin" });
+    if (!isAdmin) return json({ ok: false, error: "Forbidden" }, 403);
+    const id = String(payload.id || "");
+    if (!/^[0-9a-f-]{36}$/i.test(id)) return json({ ok: false, error: "Invalid id" }, 400);
+    const { data: r } = await admin.from("booking_requests").select("*").eq("id", id).eq("status", "pending").maybeSingle();
+    if (!r) return json({ ok: false, error: "Request not found or already decided" }, 404);
+    if (payload.action === "decline") {
+      await admin.from("booking_requests").update({ status: "declined", decided_at: new Date().toISOString() }).eq("id", id);
+      return json({ ok: true, status: "declined" });
+    }
+    const { eventId, emailSent } = await bookApproved(r as Req, lovableKey, calendarKey, gmailKey);
+    if (!eventId) return json({ ok: false, error: "Calendar booking failed" }, 502);
+    await admin.from("booking_requests").update({ status: "approved", event_id: eventId, decided_at: new Date().toISOString() }).eq("id", id);
+    return json({ ok: true, status: "approved", emailSent });
+  }
+
+  // ── Public request: store as pending, notify Taylor only ────────────────
+  const ip = req.headers.get("cf-connecting-ip") || req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (rateLimited(ip)) return json({ ok: false, error: "Too many booking attempts. Please try again later." }, 429);
+
+  const name = String(payload.name || "").trim().slice(0, 200);
+  const email = String(payload.email || "").trim().slice(0, 255);
+  const phone = String(payload.phone || "").trim().slice(0, 30);
+  const startDate = new Date(String(payload.startISO || ""));
+  const duration = 15;
+  if (name.length < 2) return json({ ok: false, error: "Invalid name" }, 400);
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return json({ ok: false, error: "Invalid email" }, 400);
+  if (phone.replace(/\D/g, "").length < 7) return json({ ok: false, error: "Invalid phone" }, 400);
+  const startMs = startDate.getTime();
+  const now = Date.now();
+  if (Number.isNaN(startMs) || startMs < now - 5 * 60 * 1000 || startMs > now + 180 * 24 * 60 * 60 * 1000) {
+    return json({ ok: false, error: "Invalid booking time" }, 400);
+  }
+  const display_date = String(payload.displayDate || "").slice(0, 80) || null;
+  const display_time = String(payload.displayTime || "").slice(0, 20) || null;
+
+  const { error } = await admin.from("booking_requests").insert({
+    name, email, phone, start_at: startDate.toISOString(), duration_minutes: duration, display_date, display_time,
   });
+  if (error) { console.error("[book-consultation] insert failed:", error.message); return json({ ok: false, error: "Could not save request" }, 500); }
+
+  const text = [
+    `New call request (awaiting your approval)`, ``,
+    `Name: ${name}`, `Email: ${email}`, `Phone: ${phone}`,
+    `When: ${display_date ?? startDate.toISOString()} ${display_time ?? ""} CT`, ``,
+    `Approve or decline at https://www.echelonpropertygroup.com/admin`,
+  ].join("\r\n");
+  const html = `<p>New call request awaiting your approval.</p><p>Name: ${escapeHtml(name)}<br/>Email: ${escapeHtml(email)}<br/>Phone: ${escapeHtml(phone)}<br/>When: ${escapeHtml(display_date ?? "")} ${escapeHtml(display_time ?? "")} CT</p><p><a href="https://www.echelonpropertygroup.com/admin">Approve or decline</a></p>`;
+  await sendGmail(lovableKey, gmailKey, buildRawEmail({ to: HOST_EMAIL, toName: HOST_NAME, subject: `Call request: ${name}`, html, text }));
+
+  return json({ ok: true, status: "pending" });
 });

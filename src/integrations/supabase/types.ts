@@ -14,6 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
+      booking_requests: {
+        Row: {
+          created_at: string
+          decided_at: string | null
+          display_date: string | null
+          display_time: string | null
+          duration_minutes: number
+          email: string
+          event_id: string | null
+          id: string
+          name: string
+          phone: string
+          start_at: string
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          decided_at?: string | null
+          display_date?: string | null
+          display_time?: string | null
+          duration_minutes?: number
+          email: string
+          event_id?: string | null
+          id?: string
+          name: string
+          phone: string
+          start_at: string
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          decided_at?: string | null
+          display_date?: string | null
+          display_time?: string | null
+          duration_minutes?: number
+          email?: string
+          event_id?: string | null
+          id?: string
+          name?: string
+          phone?: string
+          start_at?: string
+          status?: string
+        }
+        Relationships: []
+      }
       communities: {
         Row: {
           canonical_url: string | null

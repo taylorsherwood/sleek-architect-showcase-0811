@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import Navigation from "@/components/Navigation";
+import BookingRequestsPanel from "@/components/admin/BookingRequestsPanel";
 
 interface CommunityRow {
   id: string;
@@ -184,6 +185,8 @@ const AdminDashboard = () => {
               </section>
             </div>
           )}
+
+          {!loadingData && <BookingRequestsPanel />}
 
           {/* All Site Leads, every form submission site-wide */}
           {!loadingData && (

@@ -281,6 +281,13 @@ I walk through the mechanics in [Austin property taxes explained](/blog/austin-p
 
 The National Weather Service classifies Austin as a humid subtropical climate: long, hot summers, short, mild winters, and warm spring and fall transitions. The official climate site is Camp Mabry, near MoPac and West 35th Street, about 3.4 miles northwest of downtown. Average yearly rainfall there is 36.25 inches. May, October and June are the wetter months. July and August tend to be drier.
 
+:::figure
+src: /__l5e/assets-v1/f29b77ba-9df4-40ea-8d6e-c77d2313a110/austin-life-rId55.webp
+alt: Barton Springs Pool in Zilker Park, a spring-fed pool open for year-round swimming
+caption: Barton Springs Pool in Zilker Park. Photo: Todd Dwyer, Wikimedia Commons, CC BY-SA 2.0.
+license: https://creativecommons.org/licenses/by-sa/2.0/
+:::
+
 Summer is the season most newcomers underestimate. Normal highs reach 90°F by May 26 and remain above 90 until September 23. Temperatures peak in the first half of August, with normal highs in the upper 90s and lows in the mid-70s. Heat indices can rise above 110°F when Gulf moisture is in place. The record high is 112°F, set on September 5, 2000 and again on August 28, 2011.
 
 Winter is usually mild. January is the coldest month, with normal highs in the low 60s and normal lows in the low 40s. Sub-freezing temperatures occur on about 12 days a year at Camp Mabry, versus about 33 days at Austin-Bergstrom International Airport, Significant snow is rare. The most recent notable snowstorm was February 14 to 15, 2021, when 6.4 inches fell at both Camp Mabry and Bergstrom.
@@ -301,6 +308,13 @@ If commute time is a deciding factor, map the peak drive from the addresses you 
 
 Austin’s official slogan, adopted by City Council in 1991, is Live Music Capital of the World. That is a civic brand, not a ranking I am independently scoring, but live music is a regular part of the calendar: clubs, outdoor stages and large festivals. Food is the other daily draw, from long-running barbecue and Tex-Mex rooms to a dense restaurant and food-trailer scene.
 
+:::figure
+src: /__l5e/assets-v1/a9bc99a9-a727-42f7-911b-a9281ce55a6a/austin-life-rId51.webp
+alt: The Austin skyline across Lady Bird Lake, along the city’s hike-and-bike trail
+caption: The Austin skyline from Lady Bird Lake, along the trail corridor. Photo: WikiTryHardDieHard, Wikimedia Commons, CC BY-SA 3.0.
+license: https://creativecommons.org/licenses/by-sa/3.0/
+:::
+
 
 Daily life here is easier to feel than to summarize on a spreadsheet. The rest of the year belongs to trails, water, food and a surprising amount of art for a city this size. The sections below are the parts people ask me about after the housing conversation ends.
 
@@ -311,10 +325,9 @@ Daily life here is easier to feel than to summarize on a spreadsheet. The rest o
 South by Southwest, or SXSW, was founded in Austin in 1987 and still takes over downtown each March with conferences and festivals in music, film, television, technology, comedy and education, according to SXSW. The next edition is set for March 15 to 21, 2027, with SXSW EDU running March 13 to 16. It is crowded, it is useful if you work in those industries, and even if you never buy a badge you will feel it on the streets and in the clubs.
 
 :::figure
-src: /__l5e/assets-v1/11e18f24-bca8-45ac-939d-bb00afee95de/austin-life-rId36.webp
-alt: Downtown Austin during SXSW, with the city skyline along Lady Bird Lake
-caption: Downtown Austin during SXSW. Photo: Nan Palmero, Wikimedia Commons, CC BY 2.0.
-license: https://creativecommons.org/licenses/by/2.0/
+src: /__l5e/assets-v1/8bc49652-c303-4d1c-bc44-505766a2f3d7/sxsw-downtown-austin.webp
+alt: Crowds downtown during SXSW in Austin
+caption: Downtown Austin during SXSW.
 :::
 Each October, the Austin City Limits Music Festival fills [Zilker](/communities/zilker-austin) Park for two weekends. The City of Austin marked the 25th festival in 2026, held October 2 to 4 and October 9 to 11. It is a large, ticketed event in the city’s best-known park, which means traffic, temporary closures and a very full weekend if you live nearby. It is also one of the clearest reminders that the “live music” slogan is not just marketing.
 
@@ -340,18 +353,6 @@ license: https://creativecommons.org/licenses/by-sa/2.0/
 
 Outdoor life is what makes the heat worth managing. [Zilker](/communities/zilker-austin) Park covers 358 acres and is home to Barton Springs Pool, a three-acre, spring-fed pool with an average water temperature of 68 to 70°F, open for year-round swimming, according to the City of Austin. Lady Bird Lake, along the south edge of downtown, is ringed by the Ann and Roy Butler Hike-and-Bike Trail, a 10-mile loop that includes the Boardwalk. West of the city, [Lake Travis](/communities/lake-travis) is the larger Highland Lakes reservoir for boating and lake houses, with [Lake Austin](/communities/lake-austin) closer in. Spring and fall are the prime patio and trail months. Summer often shifts outdoor time to early mornings, late evenings and the water. That trail is the city’s everyday outdoor room: pre-dawn laps, lunch walks, evening bikes.
 
-:::figure
-src: /__l5e/assets-v1/a9bc99a9-a727-42f7-911b-a9281ce55a6a/austin-life-rId51.webp
-alt: The Austin skyline across Lady Bird Lake, along the city’s hike-and-bike trail
-caption: The Austin skyline from Lady Bird Lake, along the trail corridor. Photo: WikiTryHardDieHard, Wikimedia Commons, CC BY-SA 3.0.
-license: https://creativecommons.org/licenses/by-sa/3.0/
-:::
-:::figure
-src: /__l5e/assets-v1/f29b77ba-9df4-40ea-8d6e-c77d2313a110/austin-life-rId55.webp
-alt: Barton Springs Pool in Zilker Park, a spring-fed pool open for year-round swimming
-caption: Barton Springs Pool in Zilker Park. Photo: Todd Dwyer, Wikimedia Commons, CC BY-SA 2.0.
-license: https://creativecommons.org/licenses/by-sa/2.0/
-:::
 The trail network goes well beyond the lake. The City’s trail directory lists the Barton Creek Greenbelt Trail at 12.68 miles, with a main 7.5-mile stretch and trailheads from Zilker into the southwest hills, including swimming holes when the creek is running. The Violet Crown Trail, a City of Austin and Hill Country Conservancy project, begins at the Barton Creek Greenbelt entrance at Zilker Park and is planned to extend 30 miles south into Hays County. The Mile Zero Trailhead at Zilker is open. In north Austin, Walnut Creek Metropolitan Park has a listed 5.32-mile main trail plus additional shared-use paths in the park.
 
 :::figure
@@ -379,10 +380,9 @@ The food conversation usually starts with barbecue, and for good reason. Frankli
 Breakfast tacos and Tex-Mex are everyday food, not a special occasion. Veracruz All Natural, a local restaurant group, lists several Austin-area locations, including East Austin, South Austin, Tarrytown, Rainey Street and a counter at the Line Hotel downtown. Food trailers remain a real part of the landscape, especially along South Congress and in east and south clusters, though individual trailers open, move and close faster than a guide can track. Check the trailer’s own page the day you go.
 
 :::figure
-src: /__l5e/assets-v1/1a01de61-2fc5-4409-bcbf-379917c13f46/austin-life-rId68.webp
-alt: Storefronts and signs along South Congress Avenue, a well-known Austin shopping and dining street
-caption: South Congress Avenue. Photo: formulanone, Wikimedia Commons, CC BY-SA 2.0.
-license: https://creativecommons.org/licenses/by-sa/2.0/
+src: /__l5e/assets-v1/2dc798aa-a4e5-4bab-a949-b78b356e734a/music-lane-south-congress.webp
+alt: Music Lane shops and courtyard on South Congress Avenue
+caption: Music Lane on South Congress Avenue.
 :::
 Shopping is similarly spread out, not centered on one downtown mall. South Congress Avenue is the street most people picture: boots, gifts, small shops and food in the blocks south of the bridge. Allens Boots, at 1522 South Congress Avenue, is a long-running western wear shop with an official storefront there. The 2nd Street District, just west of the downtown core, is a walkable cluster of boutiques and restaurants. South Lamar and Burnet Road are more everyday corridors for local shops and restaurants. The Domain is the large open-air center in north Austin. Waterloo Records, a local shop since 1982, is now at 1105 North Lamar Boulevard, Suite 110, and remains one of the city’s better-known music stores.
 

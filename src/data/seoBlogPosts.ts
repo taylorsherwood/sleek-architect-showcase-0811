@@ -1,3 +1,4 @@
+import blogLivingInAustinHero from "@/assets/blog/austin-skyline-auditorium-shores.webp.asset.json";
 import blogAustinCompetitiveHero from "@/assets/blog/austin-housing-market-competitive.webp.asset.json";
 import blogTheHillsHero from "@/assets/blog/the-hills-lakeway-golf-aerial.webp.asset.json";
 import blogTarrytownHero from "@/assets/blog/tarrytown-shopping-center.webp.asset.json";
@@ -217,6 +218,189 @@ import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-
 
 export const seoBlogPosts: BlogPost[] = [
   {
+    id: "living-in-austin-tx",
+    title: "Living in Austin, TX: What It's Really Like in 2026",
+    metaTitle: "Living in Austin, TX: 2026 Guide | Echelon Property Group",
+    excerpt: "Living in Austin, TX in 2026: a $570,000 city median, no state income tax, 2026 property tax rates, weather, jobs, commutes, schools and neighborhoods.",
+    author: "Taylor Sherwood",
+    date: "2026-11-26",
+    dateModified: "2026-11-26",
+    readTime: "13 min read",
+    category: "RELOCATION",
+    keywords: "living in Austin TX, what is it like to live in Austin, pros and cons of living in Austin, cost of living Austin, Austin property taxes, Austin weather, moving to Austin 2026",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas"],
+    imageAlt: "Downtown Austin skyline at dusk seen from the lawn at Auditorium Shores, with people picnicking on the grass",
+    relatedPostIds: ["moving-to-austin-texas-complete-relocation-guide", "austin-housing-market-competitive", "austin-property-taxes-explained", "living-in-westlake-hills-austin"],
+    image: blogLivingInAustinHero.url,
+    heroImage: blogLivingInAustinHero.url,
+    content: `**Short answer:** Living in Austin, TX in 2026 means a city of just over one million people, no state personal income tax, long hot summers and a housing market that has cooled but is still expensive. City of Austin homes sold at a $570,000 median over the 12 months ending October 31, 2026, versus $423,850 across the metro.
+
+## Key takeaways
+
+- City of Austin residential homes sold at a $570,000 median, or $294 per square foot, over the 12 months ending October 31, 2026. The five-county metro median was $423,850, or $208 per square foot. Agent Intel (Unlock MLS via MLS Grid), pulled November 26, 2026.
+- Texas has no state personal income tax and no state property tax. Local property tax is the tradeoff. A common City of Austin plus Austin ISD stack totaled $2.121064 per $100 in 2026 (my sum of five Travis County Tax Office rates), before exemptions.
+- NWS classifies Austin as humid subtropical. Camp Mabry, the official climate site, averages 36.25 inches of rain a year. Normal highs reach 90°F by May 26 and stay there through September 23.
+- Austin-area unemployment was 3.7% in September 2026, unchanged from a year earlier, and nonfarm payrolls were 1,416,600, up 1.1%, per BLS (preliminary, not seasonally adjusted).
+- The Census Bureau’s 2020 to 2024 ACS mean travel time to work in the city was 23.7 minutes. That average does not capture peak congestion on I-35 and MoPac.
+- TEA’s 2026 district ratings include Austin ISD at B (81), Eanes ISD at A (94) and Lake Travis ISD at A (91). Campus ratings vary, so check the zoned school for a specific address.
+
+:::intel-gauge-austin-metro
+:::
+
+This guide covers daily life, not a moving checklist. For logistics, start with the [complete relocation guide](/blog/moving-to-austin-texas-complete-relocation-guide) and the [plan, research and settle guide](/blog/austin-relocation-guide-plan-research-settle). Coming from California? See [moving to Austin from California](/blog/moving-to-austin-texas-from-california). Echelon Property Group also keeps a [Moving to Austin](/moving-to-austin-texas) resource page.
+
+## What does it cost to live in Austin right now?
+
+Housing is usually the line item that surprises relocators. Over the 12 months ending October 31, 2026, City of Austin residential sales had a median price of $570,000 and $294 per square foot, on 10,721 sales, according to Agent Intel (Unlock MLS via MLS Grid), pulled November 26, 2026. Sales took a median of 43 days and closed about 3.06% below list, with 4.94 months of inventory and appreciation down 0.87%.
+
+The five-county metro (Bastrop, Caldwell, Hays, Travis and Williamson) is cheaper and slower: a $423,850 median, $208 per square foot, 56 median days and 5.08 months of inventory on 31,291 sales. Neither market looks like the bidding-war years. Texas A&M Real Estate Center has treated about six to 6.5 months of inventory as a balanced market, so supply in this window still leans a bit tight. For days on market, discounts and luxury tiers, read [how competitive the Austin housing market is right now](/blog/austin-housing-market-competitive).
+
+Census QuickFacts lists a city median household income of $93,658 (in 2024 dollars, 2020 to 2024 ACS). BLS reported average weekly wages of $1,957 in the Austin area in the first quarter of 2026, versus $1,654 nationwide. A $570,000 city median still requires careful budgeting once property tax, insurance and any HOA dues are added.
+
+:::compare-table
+Market (12 months ending Oct. 31, 2026) | Sales | Median price | $ per sq ft | Median days | Months of inventory | vs. list | Appreciation
+City of Austin | 10,721 | $570,000 | $294 | 43 | 4.94 | 3.06% below | Down 0.87%
+Austin metro (5 counties) | 31,291 | $423,850 | $208 | 56 | 5.08 | 2.74% below | Down 2.56%
+:::
+
+Source: Agent Intel (Unlock MLS via MLS Grid), residential sales, pulled November 26, 2026.
+
+Close-in and west-side addresses in [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), [Rollingwood](/communities/rollingwood) and along [Lake Austin](/communities/lake-austin) often trade well above the city median. See [best luxury neighborhoods in Austin](/best-luxury-neighborhoods-austin) and the [luxury home buying guide for relocating executives](/blog/austin-luxury-home-buying-guide-relocating-executives-2026).
+
+## How do Texas taxes work if you move here?
+
+Texas does not have a state personal income tax. The official Texas.gov taxes page is direct on this point, though businesses may still owe other state taxes depending on structure and activity.
+
+The tradeoff is property tax, and it is local, not state. Texas.gov states that Texas has no state property tax, and that local governments set rates and collect taxes for schools, streets, police, fire and other services. For a typical City of Austin address in Austin ISD, five 2026 units on the Travis County Tax Office rate list add up to $2.121064 per $100 of taxable value (my sum): City of Austin $0.579948, Austin ISD $0.9184, Travis County $0.38621, Travis Central Health $0.132863 and Austin Community College $0.103643.
+
+If taxable value equaled the city’s $570,000 median sale price, that stack would be about $12,090 before exemptions (my calculation: $570,000 times 0.02121064). Taxable value is not the same as sale price. A homestead exemption and other exemptions reduce the taxable amount, and some parcels sit in different cities, school districts or municipal utility districts. Eanes ISD’s 2026 rate was $0.8254 and Lake Travis ISD’s was $1.0329, so the combined bill changes when you cross a district line. The base state sales tax rate is 6.25%. Local taxing authorities can add up to 2%, for a combined maximum of 8.25%, per Texas.gov.
+
+I walk through the mechanics in [Austin property taxes explained](/blog/austin-property-taxes-explained). For lowering taxable value, see the [2026 Texas homestead exemption](/blog/texas-homestead-exemption-2026) and the [Travis County homestead exemption](/blog/texas-homestead-exemption-travis-county) guides.
+
+## What is the weather actually like?
+
+The National Weather Service classifies Austin as a humid subtropical climate: long, hot summers, short, mild winters, and warm spring and fall transitions. The official climate site is Camp Mabry, near MoPac and West 35th Street, about 3.4 miles northwest of downtown. Average yearly rainfall there is 36.25 inches. May, October and June are the wetter months. July and August tend to be drier.
+
+Summer is the season most newcomers underestimate. Normal highs reach 90°F by May 26 and remain above 90 until September 23. Temperatures peak in the first half of August, with normal highs in the upper 90s and lows in the mid-70s. Heat indices can rise above 110°F when Gulf moisture is in place. The record high is 112°F, set on September 5, 2000 and again on August 28, 2011.
+
+Winter is usually mild. January is the coldest month, with normal highs in the low 60s and normal lows in the low 40s. Sub-freezing temperatures occur on about 12 days a year at Camp Mabry, versus about 33 days at Austin-Bergstrom International Airport, Significant snow is rare. The most recent notable snowstorm was February 14 to 15, 2021, when 6.4 inches fell at both Camp Mabry and Bergstrom.
+
+## How is the job market and the economy?
+
+Austin is still a growing labor market. The U.S. Census Bureau estimates the city’s population at 1,002,632 as of July 1, 2025, up 4.6% from the April 1, 2020 estimates base of 958,151. In the 2020 to 2024 ACS, 59.6% of residents age 25 and older held a bachelor’s degree or higher, and 75.1% of people age 16 and older were in the civilian labor force.
+
+The U.S. Bureau of Labor Statistics Austin Area Economic Summary, updated November 3, 2026, puts the Austin-area unemployment rate at 3.7% in September 2026, the same as September 2025 (preliminary, not seasonally adjusted). Travis County was 3.6%. Nonfarm payroll employment in the Austin area was 1,416,600 in September 2026, up 15,100 jobs, or 1.1%, from September 2025. Professional and business services was the largest private supersector in the table, at 291,200 jobs, up 2.8%. Average weekly wages in the first quarter of 2026 were $1,957 in the area, compared with $1,654 in the United States.
+
+## How bad is traffic, and what is a typical commute?
+
+The Census Bureau’s 2020 to 2024 ACS reports a mean travel time to work of 23.7 minutes for Austin city workers age 16 and older. That citywide average is shorter than many people expect for a metro this size. It is also not what a drive on I-35 or MoPac feels like at 8 a.m. or 5:30 p.m. The ACS figure blends short in-town trips with longer suburban drives and does not describe peak congestion, which varies by hour, direction and day.
+
+If commute time is a deciding factor, map the peak drive from the addresses you are considering, at the hours you would travel. Living in [Downtown](/communities/downtown), [Clarksville](/communities/clarksville), [Zilker](/communities/zilker-austin) or [Tarrytown](/communities/tarrytown) usually means a shorter trip to the core than a home in [Lakeway](/communities/lakeway) or along [Lake Travis](/communities/lake-travis). The west-side tradeoff is space, hills and lake access.
+
+## What is daily life and culture like?
+
+Austin’s official slogan, adopted by City Council in 1991, is Live Music Capital of the World. That is a civic brand, not a ranking I am independently scoring, but live music is a regular part of the calendar: clubs, outdoor stages and large festivals. Food is the other daily draw, from long-running barbecue and Tex-Mex rooms to a dense restaurant and food-trailer scene.
+
+Outdoor life is what makes the heat worth managing. [Zilker](/communities/zilker-austin) Park covers 358 acres and is home to Barton Springs Pool, a three-acre, spring-fed pool with an average water temperature of 68 to 70°F, open for year-round swimming, according to the City of Austin. Lady Bird Lake, along the south edge of downtown, is ringed by the Ann and Roy Butler Hike-and-Bike Trail, a 10-mile loop that includes the Boardwalk. West of the city, [Lake Travis](/communities/lake-travis) is the larger Highland Lakes reservoir for boating and lake houses, with [Lake Austin](/communities/lake-austin) closer in. Spring and fall are the prime patio and trail months. Summer often shifts outdoor time to early mornings, late evenings and the water.
+
+## How do public schools work in the Austin area?
+
+School zoning is local, and it changes the property tax bill as well as the campus. The Texas Education Agency’s 2026 A-F ratings are a useful starting point at the district level, but they are not a substitute for checking the zoned campus for a specific address.
+
+In 2026, TEA rated Austin ISD (district 227901) a B, with a score of 81, on about 69,000 students. Eanes ISD (227909), which serves [West Lake Hills](/communities/westlake-hills), [Rollingwood](/communities/rollingwood) and parts of west Austin, was an A, with a score of 94, on 7,524 students. Lake Travis ISD (227913), which serves much of the Lake Travis, Lakeway, Bee Cave and [The Hills](/blog/living-in-the-hills-lakeway) area, was an A, with a score of 91, on 10,748 students. For a side-by-side of the two west-central districts, see [Austin ISD vs. Eanes ISD](/blog/austin-isd-vs-eanes-isd).
+
+Campus scores inside a district can differ a great deal, especially in a large system like Austin ISD. Confirm the attendance zone with the district, then read the TEA campus rating. Private and charter options exist as well.
+
+## Which luxury neighborhoods should I look at first?
+
+“Austin” is many housing markets. The city median of $570,000 is a useful anchor, not a description of the west-side and close-in luxury inventory I spend the most time in.
+
+- [West Lake Hills](/communities/westlake-hills) is a separately incorporated city in the hills west of MoPac, in Eanes ISD. Read the [West Lake Hills living guide](/blog/living-in-westlake-hills-austin).
+- [Rollingwood](/communities/rollingwood) is a small incorporated city between MoPac and West Lake Hills, also in Eanes ISD, with a short run to downtown.
+- [Barton Creek](/communities/barton-creek) sits southwest of the core, known for golf and hill-country lots. See the [Barton Creek living guide](/blog/living-in-barton-creek-austin).
+- [Tarrytown](/communities/tarrytown) is close-in, west of downtown, near Lady Bird Lake. See the [Tarrytown living guide](/blog/living-in-tarrytown-austin). Adjacent [Pemberton Heights](/communities/pemberton-heights) is another established close-in pocket.
+- [Clarksville](/communities/clarksville) and [Zilker](/communities/zilker-austin) sit closer in, with easier access to the trail, Barton Springs and downtown. See the [Clarksville living guide](/blog/living-in-clarksville-austin).
+- [Downtown](/communities/downtown) is mostly condominium living, with the trail, venues and offices at the doorstep.
+- [Lake Austin](/communities/lake-austin) is the in-town waterfront, with a smaller pool of homes and a premium for usable water.
+- West of the city, [Bee Cave](/communities/bee-cave), [Lakeway](/communities/lakeway), [Lake Travis](/communities/lake-travis) and [Spanish Oaks](/communities/spanish-oaks) trade Hill Country lots and lake access for a longer drive to the core. See the [Spanish Oaks living guide](/blog/living-in-spanish-oaks-austin) and the [guide to The Hills](/blog/living-in-the-hills-lakeway).
+
+For a broader map of this tier, start with [best luxury neighborhoods in Austin](/best-luxury-neighborhoods-austin).
+
+## What are the main pros and cons of living in Austin?
+
+These are the tradeoffs I hear most often.
+
+**What works well**
+
+- No state personal income tax, which can matter at higher incomes, especially with weekly wages above the national average and a still-expanding job market.
+- A milder winter than most of the country, plus outdoor access to Barton Springs, the Lady Bird Lake trail, Zilker Park, Lake Austin and Lake Travis.
+- A genuine live-music and food culture, plus a dense calendar of events.
+- More housing choice than the peak years, with city inventory near five months and sale prices a few percent below list.
+- Several west-side and close-in neighborhoods, so you can choose hills, water, a short downtown drive or a planned community.
+
+**What is harder**
+
+- Summer heat is long and intense. Normal highs sit at or above 90°F from late May through late September, and triple-digit stretches happen most years.
+- Property tax is the real tax bill. A combined 2026 City of Austin plus Austin ISD stack of $2.121064 per $100 is substantial on a mid- or high-value home, even after exemptions.
+- The $570,000 city median, and much higher prices in the luxury neighborhoods above, still require a strong budget once insurance, utilities and any HOA dues are included.
+- Peak traffic on I-35 and MoPac is a daily frustration for many commuters, even if the Census mean commute is 23.7 minutes.
+- School quality is not uniform. District ratings are a start, but you have to check the campus and the tax rate that comes with it.
+
+:::faq
+
+Q: How much do homes cost in Austin right now?
+A: City of Austin residential homes sold at a $570,000 median, or $294 per square foot, over the 12 months ending October 31, 2026, on 10,721 sales. The five-county metro median was $423,850, or $208 per square foot, per Agent Intel (Unlock MLS via MLS Grid), pulled November 26, 2026. West-side and waterfront homes often sell well above that city median.
+
+Q: Does Texas have a state income tax?
+A: No. Texas has no state personal income tax or state property tax, according to Texas.gov. Local governments set and collect property taxes. A typical City of Austin and Austin ISD combined 2026 rate was $2.121064 per $100 (my sum of five published rates), before exemptions. State sales tax is 6.25%, plus local amounts up to 8.25%.
+
+Q: What is the weather like in Austin year round?
+A: Austin has a humid subtropical climate, per the National Weather Service. Summers are long and hot, with normal highs at or above 90°F from May 26 through September 23. Winters are mild, with January highs in the low 60s and about 12 freeze days a year at Camp Mabry. Average yearly rainfall is 36.25 inches. Snow is rare.
+
+Q: Is Austin’s job market still growing?
+A: Yes, though more slowly than in the surge years. BLS reported Austin-area nonfarm payrolls of 1,416,600 in September 2026, up 1.1% from a year earlier, and a 3.7% unemployment rate, unchanged from September 2025 (preliminary, not seasonally adjusted). First-quarter 2026 weekly wages were $1,957, above the U.S. figure of $1,654. The city’s July 1, 2025 population estimate is 1,002,632.
+
+Q: How bad is traffic in Austin?
+A: It depends on the clock and the corridor. The Census 2020 to 2024 ACS mean travel time to work in Austin city is 23.7 minutes, a citywide average. Peak traffic on I-35 and MoPac can still be slow, and a home west of RM 620 usually means a longer trip downtown. Map the drive at your actual hours.
+
+Q: Which Austin neighborhoods should I consider first?
+A: Start with how you want to live. For hills and Eanes ISD, look at West Lake Hills and Rollingwood. For close-in areas, look at Tarrytown, Pemberton Heights, Clarksville, Zilker and downtown. For golf and Hill Country lots, look at Barton Creek and Spanish Oaks. For water, compare Lake Austin with Lake Travis, Lakeway and Bee Cave.
+
+Q: What are the biggest drawbacks of living in Austin?
+A: The three I hear most often are the summer heat, the property tax bill and peak-hour traffic. Housing is also expensive relative to the metro and to much of Texas, even after a modest decline in the city median. School ratings and tax rates vary by address, so check the campus and the tax units.
+:::
+
+## Sources
+
+- Agent Intel (Unlock MLS via MLS Grid), City of Austin and Austin metro residential market statistics, 12 months ending October 31, 2026, pulled November 26, 2026
+- [U.S. Census Bureau, QuickFacts: Austin city, Texas](https://www.census.gov/quickfacts/fact/table/austincitytexas/PST045225) (population estimate July 1, 2025, V2025; median household income, educational attainment, labor force and mean travel time, 2020 to 2024 ACS)
+- [U.S. Bureau of Labor Statistics, Austin Area Economic Summary](https://www.bls.gov/regions/southwest/summary/blssummary_austin.pdf), updated November 3, 2026 (unemployment, nonfarm payrolls, industry employment and first-quarter 2026 weekly wages)
+- [Texas.gov, Taxes](https://www.texas.gov/business-taxes/taxes) (no state personal income tax, no state property tax, sales tax rates)
+- [Travis County Tax Office, 2026 tax rate list (XLS)](https://www.traviscountytx.gov/images/tax_assessor/truth_in_taxation/qryJurisRateWeb2026.xls)
+- [Travis Central Appraisal District](https://traviscad.org/)
+- [National Weather Service, Austin Climate Summary (Camp Mabry)](https://www.weather.gov/media/ewx/climate/ClimateSummary-ewx-Austin.pdf)
+- [Texas Education Agency, 2026 accountability ratings, Austin ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227901&lev=D&prgopt=reports%2Facct%2Fca.sas), [Eanes ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227909&lev=D&prgopt=reports%2Facct%2Fca.sas) and [Lake Travis ISD](https://rptsvr1.tea.texas.gov/cgi/sas/broker?_debug=0&_program=perfrept.perfmast.sas&_service=marykay&ccyy=2026&id=227913&lev=D&prgopt=reports%2Facct%2Fca.sas)
+- [City of Austin Parks and Recreation, About Barton Springs Pool](https://www.austintexas.gov/parks/locations/about-barton-springs-pool) and [Ann and Roy Butler Hike-and-Bike Trail at Lady Bird Lake](https://www.austintexas.gov/parks/locations/ann-and-roy-butler-hike-and-bike-trail-and-boardwalk-lady-bird-lake)
+- [City of Austin, City of Austin Promotes ‘Live Music Capital of the World’ on International Stage](https://www.austintexas.gov/communications/news/city-austin-promotes-live-music-capital-world-international-stage)
+- Texas A&M Real Estate Center, months-of-inventory benchmark (about six to 6.5 months as a balanced market)
+
+## Thinking about a move to Austin?
+
+I can help you compare tax units, zoned schools and current inventory in West Lake Hills, Barton Creek, Tarrytown, Rollingwood, Lakeway, Bee Cave and along Lake Austin and Lake Travis, including homes that trade privately. [Request a private consultation](/contact).
+
+:::cta
+heading: Plan your move to Austin
+button: Request a Private Consultation
+href: /contact
+:::
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI** is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. Taylor is licensed in Texas and Tennessee (TREC \#734520-SA) and advises luxury buyers and sellers across Austin, West Lake Hills, Rollingwood, Barton Creek, Tarrytown, Lakeway, Lake Austin and the Texas Hill Country. [More about Taylor](/about).
+
+Echelon Property Group brokered by Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746 | Broker: Turnquist Partners Realtors, Inc. dba Engel & Völkers Austin, TREC \#440298-BB | <taylor@echelonpropertygroup.com> | (512) 661-3843`,
+  },
+  {
     id: "austin-housing-market-competitive",
     title: "How Competitive Is the Austin Housing Market Right Now? A Luxury Buyer and Seller Guide for Late 2026",
     metaTitle: "How Competitive Is the Austin Housing Market? 2026 Data | Echelon Property Group",
@@ -233,6 +417,8 @@ export const seoBlogPosts: BlogPost[] = [
     image: blogAustinCompetitiveHero.url,
     heroImage: blogAustinCompetitiveHero.url,
     content: `**Short answer:** Austin is moderately competitive. In the City of Austin, homes sold in a median of 43 days and closed an average of 3.06% below list over the 12 months ending October 31, 2026, with 4.94 months of inventory versus a [six to 6.5 month balanced benchmark](https://trerc.tamu.edu/wp-content/uploads/files/PDFs/Articles/1897.pdf), per Agent Intel (Unlock MLS via MLS Grid), pulled November 25, 2026.
+
+For taxes, weather, jobs and daily life beyond the numbers, read my guide to [living in Austin, TX](/blog/living-in-austin-tx).
 
 Searches for "how competitive is Austin," "how long does it take to sell a house in Austin" and "Austin market trends" all point to one question: who has the negotiating power right now? This guide answers it with current Unlock MLS data, then breaks it out for buyers and sellers in the luxury tiers I work in every day.
 
@@ -719,6 +905,8 @@ href: /contact
     heroImage: blogTarrytownHero.url,
     content: `**Short answer:** Living in Tarrytown means owning in a central West Austin neighborhood in ZIP 78703, set between MoPac and Lake Austin, with tree-lined streets, Austin ISD schools and city parks along the water. Tarrytown homes sold at a median of $1,677,500 over the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 24, 2026.
 
+For the citywide picture on taxes, weather and commutes, see my guide to [living in Austin, TX](/blog/living-in-austin-tx).
+
 Tarrytown is one of the first names buyers mention when they want central Austin with room to breathe. This guide covers boundaries, history, parks, shops, schools, taxes, building rules and prices, with every figure sourced.
 
 For homes available now, see Echelon Property Group's [Tarrytown community page](/communities/tarrytown). This page goes deeper on daily life and what you are buying.
@@ -965,6 +1153,8 @@ href: /contact
     image: blogWestlakeHillsHero.url,
     heroImage: blogWestlakeHillsHero.url,
     content: `**Short answer:** Living in West Lake Hills means owning in a [small, separately incorporated city](https://www.westlakehills.gov/117/History-of-West-Lake-Hills) in the Hill Country about six miles west of downtown Austin, in ZIP 78746 and Eanes ISD. Homes there sold at a median of about $2.40 million over the 12 months ending October 31, 2026, per Unlock MLS data.
+
+New to the area? My guide to [living in Austin, TX](/blog/living-in-austin-tx) covers citywide taxes, climate, commutes and schools.
 
 West Lake Hills comes up with almost every buyer who asks me about "Westlake." This guide covers the city versus the ZIP code, history, lot and tree rules, schools, taxes and current prices, with every figure sourced.
 
@@ -17491,6 +17681,8 @@ West Lake Hills, Barton Creek, Tarrytown, and Lake Austin waterfront communities
     excerpt: "A comprehensive guide to understanding property taxes in Austin, Texas. Learn about tax rates, exemptions, protests, and how property taxes affect luxury real estate.",
     content: `## Understanding Property Taxes in Austin Texas
 
+For how property tax fits into the overall cost of daily life here, read my guide to [living in Austin, TX](/blog/living-in-austin-tx).
+
 Property taxes are one of the most important financial considerations for homeowners and real estate investors in Austin, Texas. While Texas's absence of a state income tax is a major draw for relocating buyers, the state's reliance on property taxes to fund local services means that property tax rates in Austin are among the higher in the nation. Understanding how property taxes work, what exemptions are available, and how to manage your tax liability is essential for making informed real estate decisions.
 
 For a central Austin example with five taxing units and a worked annual estimate before exemptions, see the tax section in our [Clarksville neighborhood guide](/blog/living-in-clarksville-austin).
@@ -17960,6 +18152,8 @@ Off-market deals are accessed through established relationships with local speci
     metaTitle: "Moving to Austin Texas Guide | Echelon Property Group",
     excerpt: "A complete guide to relocating to Austin, Texas. Explore neighborhoods, cost of living, lifestyle, and real estate opportunities for new residents.",
     content: `Austin has become one of the most desirable cities in the United States for professionals, entrepreneurs, and families seeking opportunity, culture, and a high quality of life. With its thriving technology sector, vibrant music scene, and diverse neighborhoods, Austin continues to attract thousands of new residents each year.
+
+Before the logistics, get a feel for daily life in my guide to [living in Austin, TX](/blog/living-in-austin-tx).
 
 Whether you are relocating from California, New York, or another part of Texas, understanding the housing market and the lifestyle Austin offers is essential before making the move.
 

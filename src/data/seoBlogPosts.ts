@@ -1,3 +1,4 @@
+import blogHomeInspectionHero from "@/assets/blog/austin-home-inspection-option-period.webp.asset.json";
 import blogLivingInAustinHero from "@/assets/blog/austin-skyline-auditorium-shores.webp.asset.json";
 import blogAustinCompetitiveHero from "@/assets/blog/austin-housing-market-competitive.webp.asset.json";
 import blogTheHillsHero from "@/assets/blog/the-hills-lakeway-golf-aerial.webp.asset.json";
@@ -217,6 +218,406 @@ import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "austin-home-inspection-checklist",
+    title: "Austin Home Inspection Checklist for the Option Period",
+    metaTitle: "Austin Home Inspection Checklist | Echelon Property Group",
+    excerpt: "An Austin home inspection checklist for the Texas option period: TREC Paragraph 5 rules, day counting, local add-on inspections, repair amendments and when to walk away.",
+    author: "Taylor Sherwood",
+    date: "2026-11-27",
+    dateModified: "2026-11-27",
+    readTime: "16 min read",
+    category: "BUYING",
+    keywords: "Austin home inspection checklist, Texas option period, option fee Texas, TREC inspection, home inspection Austin, sewer scope Austin, foundation inspection Austin, TREC amendment repairs",
+    aboutPlaces: ["Austin, Texas", "Travis County, Texas"],
+    imageAlt: "Home inspector in a hard hat reviewing a building inspection report with a buyer outside a two-story home",
+    relatedPostIds: ["how-to-buy-home-austin-buyers-market-2026", "how-to-buy-a-luxury-home-in-austin", "austin-luxury-homeowners-insurance-guide", "new-appraisal-report-2026-austin"],
+    image: blogHomeInspectionHero.url,
+    heroImage: blogHomeInspectionHero.url,
+    content: `The Texas option period is a negotiated window in [Paragraph 5 of the TREC One to Four Family Residential Contract (Resale)](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale). If you timely pay the option fee, you may terminate for any reason by 5:00 p.m. on the last day. Use that time to inspect, order Austin add-ons, and decide whether to amend or walk away.
+
+This article is general information for buyers, not legal advice, not an inspection, and not a substitute for a licensed Texas attorney, a [TREC-licensed inspector](https://www.trec.texas.gov/license-type/real-estate-inspector), or other licensed specialists. Confirm current forms at [trec.texas.gov](https://www.trec.texas.gov/agency-information/contracts).
+
+## Key takeaways
+
+- Under Paragraph 5 of the current TREC One to Four Family Residential Contract (Resale) ([Form 20-19](https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19.pdf), effective July 1, 2026), the buyer must deliver the earnest money and option fee to the escrow agent within 3 days after the Effective Date. Time is of the essence for that paragraph.
+- If you give timely notice of termination, the option fee is not refunded and the earnest money is refunded to you. Notices must be given by 5:00 p.m. (local time where the property is located) on the last day of the option period.
+- TREC-licensed inspectors must use the [Property Inspection Report, Form REI 7-6](https://www.trec.texas.gov/forms/inspection-report-form) (effective February 1, 2022) and follow the [TREC Standards of Practice](https://www.trec.texas.gov/online-sops).
+- Repair requests and option-period extensions are typically written on the current [Amendment to Contract, Form 39-11](https://www.trec.texas.gov/forms/amendment) (effective July 1, 2026). A “Deficient” item on the report does not, by itself, require the seller to make a repair.
+- The current TREC [Seller’s Disclosure Notice is Form 55-1](https://www.trec.texas.gov/forms/sellers-disclosure-notice) (effective May 28, 2026). It implements [Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008). If the contract is entered without the required notice, the purchaser may terminate for any reason within seven days after receiving it.
+
+## What is the Texas option period and option fee?
+
+The option period is the blank in Paragraph 5B of the [TREC One to Four Family Residential Contract (Resale)](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale). The parties negotiate how many days the buyer has, and they write that number in the contract. There is no statutory default length.
+
+[TREC’s consumer FAQ](https://www.trec.texas.gov/public/frequently-asked-questions) is direct: the termination option is a negotiable contract term. You do not have to pay an option fee in order to buy a house. If you do pay the agreed option fee, you have the unrestricted right to terminate for any reason if you give written notice during the option period. TREC also notes that a buyer can use the option period to inspect the property and negotiate an amendment for repairs.
+
+That is why this window matters in an Austin purchase. It is the practical time to complete a general inspection, order local add-ons, read the report, get specialist opinions, and decide whether to proceed, amend, or walk away. The same diligence belongs in a standard purchase and in a [luxury home purchase](/blog/how-to-buy-a-luxury-home-in-austin). For the broader buying process, start with [how to buy a home in Austin](/blog/how-to-buy-home-austin-buyers-market-2026).
+
+### What does Paragraph 5 actually require?
+
+The current contract is [TREC Form 20-19](https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19.pdf), effective July 1, 2026. Paragraph 5 is titled “Earnest Money and Termination Option.” Here is what the promulgated form provides, in plain language:
+
+- Within 3 days after the Effective Date, the buyer must deliver the earnest money and the option fee to the named escrow agent. The two amounts may be paid separately or combined.
+- If the last day to deliver the earnest money, the option fee, or any additional earnest money falls on a Saturday, Sunday, or a Legal Holiday as defined in the contract, delivery is extended to the end of the next day that is not a Saturday, Sunday, or Legal Holiday. That extension applies to delivery of those funds, not to the 5:00 p.m. termination deadline.
+- Money the escrow agent receives under Paragraph 5 is applied first to the option fee, then to the earnest money, then to any additional earnest money.
+- The buyer authorizes the escrow agent to release the option fee to the seller at any time. If the sale closes, the option fee is credited to the sales price.
+- For nominal consideration and the buyer’s agreement to pay the option fee on time, the seller grants the buyer the unrestricted right to terminate by giving notice within the agreed number of days after the Effective Date (the Option Period). Notices under that paragraph must be given by 5:00 p.m. local time where the property is located, by the date specified.
+- If the buyer terminates on time, the option fee is not refunded, and the earnest money is refunded to the buyer.
+- If the buyer fails to deliver the earnest money on time, the seller may terminate or exercise other remedies under the contract, by giving notice before the buyer delivers the earnest money.
+- If no dollar amount is stated as the option fee, or the buyer fails to deliver the option fee within the time required, the buyer does not have the unrestricted right to terminate under Paragraph 5.
+- Time is of the essence for Paragraph 5, and strict compliance with the time for performance is required.
+
+The option fee amount is also negotiated. I will not invent a “typical” fee or a “typical” number of days, because TREC does not publish those figures. What I will tell a client is this: the fee and the length have to be enough to get the option right, and the length has to be long enough to inspect, follow up, and decide before 5:00 p.m. on the last day.
+
+This form is for resale of a one-to-four-family home. It is not for condominium transactions, new homes sold by a builder, or farm and ranch properties, which use other TREC forms.
+
+## How are option period days counted?
+
+[TREC’s official answer](https://www.trec.texas.gov/how-are-days-counted-trec-contract) is: starting with the effective (final execution) date of the contract, the first day of the period starts the next day. Each day is counted as a calendar day.
+
+A simple illustration of that counting rule, not a substitute for your contract: if the Effective Date is a Wednesday and the option period is 7 days, day 1 is Thursday and the option period ends at 5:00 p.m. the following Wednesday, local time where the property is located. Weekends count. Confirm the exact deadline on your executed contract.
+
+Because the deadline is a clock time, not “sometime that day,” we plan backward from 5:00 p.m. If you need more time for a structural engineer, a sewer scope, or a septic company, ask for an extension in writing before the deadline, using [Amendment Form 39-11](https://www.trec.texas.gov/forms/amendment). Do not assume you have extra days until that amendment is fully executed.
+
+## Who can inspect a home in Texas?
+
+Texas Occupations Code [Chapter 1102](https://statutes.capitol.texas.gov/docs/OC/htm/OC.1102.htm) requires real estate inspectors to hold a license issued by the Texas Real Estate Commission. TREC licenses apprentice inspectors, real estate inspectors, and professional inspectors, and it publishes the [Standards of Practice](https://www.trec.texas.gov/online-sops) that govern a residential real estate inspection.
+
+Before you hire anyone, look the inspector up in TREC’s [License Holder Search](https://www.trec.texas.gov/license-search). Confirm that the license is active. National associations such as ASHI or InterNACHI can reflect professional membership, but they do not replace TREC licensing or the Texas Standards of Practice.
+
+A TREC inspector must use the [Property Inspection Report, Form REI 7-6](https://www.trec.texas.gov/sites/default/files/pdf-forms/REI%207-6_fillable.pdf). I verified that REI 7-6 remains the current standard form, effective February 1, 2022, on TREC’s [contracts and forms list](https://www.trec.texas.gov/agency-information/contracts) and on the [inspection report form page](https://www.trec.texas.gov/forms/inspection-report-form).
+
+The form itself is worth reading. TREC describes a real estate inspection as a visual survey of a structure and a basic performance evaluation of the systems and components of a building. It is a snapshot of general condition on the inspection date. It is not a technically exhaustive inspection, not a code-compliance inspection, and not a warranty or a statement that the home is insurable.
+
+The inspector must mark each item as Inspected, Not Inspected, Not Present, or Deficient, and must explain the findings. An item is Deficient if a condition adversely and materially affects the performance of a system or component, or if it constitutes a hazard to life, limb, or property, as specified by the Standards of Practice. The inspector is not required to prioritize one deficiency over another, move furniture, or inspect optional systems unless the inspector agrees to do so.
+
+The report also tells the client that items marked Deficient do not obligate any party to make repairs. If you need a further evaluation or a cost estimate, it is your responsibility to obtain that from a qualified professional, and TREC recommends doing so before any contractual time limit, such as the option period, expires.
+
+## What does a standard TREC inspection cover?
+
+The required scope is in [22 Texas Administrative Code sections 535.227 through 535.233](https://www.trec.texas.gov/online-sops). In general, for a substantially complete one-to-four-family residence, the inspector inspects systems and components that are present, visible, and accessible, and operates installed equipment and appliances in at least one normal mode when the Standards require it.
+
+Required areas typically include:
+
+- Foundation and grading and drainage
+- Roof covering, roof structure, and attic
+- Walls, ceilings, floors, doors, windows, and stairways
+- Fireplaces and chimneys
+- Attached porches, decks, and related structures
+- Heating, ventilation, and air conditioning
+- Plumbing
+- Electrical systems
+- Built-in appliances listed in the Standards
+
+[Section 535.228(a)](https://www.trec.texas.gov/online-sops) is especially important in Central Texas: when a TREC-licensed inspector is hired to inspect the foundation, the inspector must render a written opinion on the performance of that foundation.
+
+[Section 535.233](https://www.trec.texas.gov/online-sops) lists optional systems. The inspector is not required to inspect them unless the inspector agrees to do so. Optional systems include landscape irrigation, swimming pools, spas and hot tubs, outbuildings, private water wells, and private sewage facilities (septic systems). A sewer-line camera inspection is also outside the basic visual plumbing survey. If the property has those systems, schedule the add-ons on purpose. Do not assume they are in the general fee.
+
+## What Austin-specific inspections should you add?
+
+A standard TREC report is the base layer, not the whole picture. In the Austin area I routinely talk through these add-ons during the option period. Which ones you need depends on the property, not on a single citywide checklist.
+
+### Foundation and expansive clay soils
+
+Central Texas includes soils with high shrink-swell potential, especially in the Blackland Prairie east of the Balcones Escarpment. The [USDA official series description for Houston Black](https://soilseries.sc.egov.usda.gov/OSD_Docs/H/HOUSTON_BLACK.html), a well-known Vertisol in that prairie, describes very high shrink-swell behavior. Sites west of the Balcones Escarpment, including much of the Hill Country, often involve different geology, including limestone. Neither map tells you how one foundation is performing.
+
+Use the TREC inspector’s written foundation-performance opinion as your first read, then look at drainage, gutter discharge, grading, and any signs of movement. If the report raises a concern, bring in a structural engineer or another qualified specialist while you still have option time. The [USDA NRCS Web Soil Survey](https://websoilsurvey.nrcs.usda.gov/app/) can provide background on mapped soils. It is not a substitute for an on-site inspection or a geotechnical or engineering opinion.
+
+### Sewer scope
+
+A sewer scope is a camera inspection of the sewer line from the house toward the main or the septic tank. It is not part of a standard visual TREC inspection. I treat it as a high-value add-on on many resale homes, especially older properties in close-in areas such as [Tarrytown](/communities/tarrytown), where buried lines may be original and are easy to miss from the surface. If the general inspector flags slow drains, prior backups, or older plumbing, do not wait to schedule the camera work.
+
+### Termite and wood-destroying insect (WDI) inspection
+
+A WDI inspection is separate from the TREC home inspection. In Texas, the official report is the [Texas Official Wood Destroying Insect Report, Form SPCS/T-5](https://texasagriculture.gov/Portals/0/forms/PEST/Structural/T5_wdi_instructions.pdf), overseen by the Texas Department of Agriculture Structural Pest Control Service. The inspection must be performed by a licensee authorized in the appropriate category, working under a licensed structural pest control business. Confirm licensing through the [TDA Structural Pest Control Service](https://texasagriculture.gov/Regulatory-Programs/Pesticides/Structural-Pest-Control-Service/Licensing). Many lenders also ask for a current official WDI report, so order it early in the option window.
+
+### Pool, spa, and irrigation
+
+Pools, spas, hot tubs, and landscape irrigation are optional under [TREC’s Standards of Practice](https://www.trec.texas.gov/online-sops). If the property has them, hire an inspector who agrees to inspect those systems, or use a qualified pool or irrigation specialist. Look at equipment, safety barriers, leaks, and condition, and compare what you see with the seller’s disclosure. These systems are common on homes in [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and around [Lake Travis](/communities/lake-travis).
+
+### Septic systems and private wells
+
+Many acreage and Hill Country properties, including homes around [Dripping Springs](/communities/dripping-springs) and other [Texas Hill Country estates](/communities/texas-hill-country-estates), use an on-site sewage facility (OSSF), commonly called a septic system, and some use a private well. Both are optional TREC items unless the inspector agrees to inspect them.
+
+The [Texas Commission on Environmental Quality](https://www.tceq.texas.gov/assistance/water/fyiossfs.html) regulates OSSFs and explains that almost all systems need a permit for construction, installation, repair, or alteration, and that paid work must be performed by a licensed installer (or, in limited cases, by the homeowner on the homeowner’s own single-family residence). In most areas a local “authorized agent” issues permits and inspects installations. During the option period, I want a qualified septic professional to evaluate the system, and I want to review permits and any maintenance records with the local authorizing authority. For land and acreage due diligence more broadly, see [buying land in the Texas Hill Country](/blog/buying-land-texas-hill-country).
+
+A private well should be inspected by a qualified well professional, and water quality should be tested. Do not rely on a visual house inspection alone for well or septic performance.
+
+### Roof and hail
+
+The TREC inspector will evaluate the roof covering and related components that are visible and accessible, and will report deficiencies under the Standards of Practice. That visual review is not the same as an insurance underwriting inspection. In Central Texas, roof condition and prior storm damage can affect whether a policy is available and on what terms. Use the option period to share roof findings with your insurance agent and to read [TDI Home insurance](https://www.tdi.texas.gov/consumer/home-insurance.html) alongside our [Austin luxury homeowners insurance guide](/blog/austin-luxury-homeowners-insurance-guide). If the roof is a concern, a licensed roofer can provide a second look before the option expires.
+
+### HVAC in Austin heat
+
+Austin summers put real load on cooling equipment. The standard inspection includes heating and air conditioning that is present and operable under the Standards, but it is still a basic performance evaluation, not a load calculation or a guarantee of future performance. Ask the inspector to operate the system and to note any limitations, such as weather or a system that could not be fully tested. If the report flags the equipment, bring in an HVAC technician for a deeper evaluation while you still have time to amend or terminate.
+
+### Older plumbing materials
+
+In older homes, ask the inspector to identify visible water-supply materials and to flag anything that needs a specialist. Galvanized steel and polybutylene are examples of older materials that a visual survey may note, but a licensed plumber is the right person to evaluate extent, condition, and options. Do not treat a checked box on the report as a complete plumbing study.
+
+### Oak wilt and trees
+
+Mature oaks are part of the value and the risk on many Austin and Hill Country lots. [Texas A&M Forest Service](https://tfsweb.tamu.edu/trees/tree-health/diseases/texas-oak-wilt/) and the [Texas Oak Wilt Partnership](https://texasoakwilt.org/) document oak wilt as a serious disease of oaks in Texas, including live oaks and red oaks in Central Texas. A home inspector is not an arborist. If the lot is heavily wooded, or you see dieback, staining, or a history of tree loss, schedule a qualified arborist during the option period.
+
+### Floodplain check
+
+Do not skip the maps. For properties in Austin, use the City’s [FloodPro viewer](https://maps.austintexas.gov/FloodPro/) and the City’s [floodplain maps and storm drain service page](https://www.austintexas.gov/services/view-floodplain-maps-and-storm-drain-infrastructure). FloodPro can show floodplain information, elevation certificates, and FEMA map-change research. The City states that the product is for informational purposes and may not be suitable for legal, engineering, or surveying purposes.
+
+Also look up the address in the [FEMA Flood Map Service Center](https://msc.fema.gov/portal/home). A flood designation can affect insurance and future resale. Use the option period to ask your insurer and, if you have a lender, the lender what the maps mean for coverage. This is review work you can start the same day the contract becomes effective.
+
+### HOA and POA documents
+
+If the property has mandatory membership in a property owners association, the current TREC form is the [Addendum for Property Subject to Mandatory Membership in a Property Owners Association, Form 36-11](https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association) (effective July 1, 2026). TREC’s description is that the addendum is used when membership is required and it allows the buyer to elect to receive, or not receive, information about the association. It is not for use with condominiums.
+
+During the option period, read the restrictions, the resale certificate, fees, special assessments, and architectural or use rules, and compare them with how you plan to use the property. Association documents matter in many [gated communities in Austin](/blog/gated-communities-austin) and in planned developments. Physical inspection and document review are different tasks. You need both.
+
+## What is a printable room-by-room home inspection checklist?
+
+Use this as a working list during the option period. It does not replace a TREC report, and it is not an inspection. Print it, take it to the property, and use it to track what the inspector covered, what you want to ask, and which specialists you still need. Check items only after you have actually reviewed them.
+
+### Before inspection day
+
+- Confirm the option-period end date and the 5:00 p.m. local-time deadline on the executed contract
+- Confirm that the option fee and earnest money were delivered within the Paragraph 5 deadline
+- Verify the inspector’s license on TREC’s [License Holder Search](https://www.trec.texas.gov/license-search)
+- Make sure utilities are on and the property is accessible
+- Read the seller’s disclosure and any prior repair invoices before you walk the home
+- Schedule add-ons (sewer scope, WDI, pool, septic, well, arborist, engineer) with enough time to receive results
+- Ask how the inspector will report optional systems, and get that in writing
+
+### Exterior, site, and foundation
+
+- Grading, drainage, and where downspouts discharge
+- Standing water, erosion, or soil pulled away from the slab or piers
+- Visible foundation cracks, rotation, or separation, and the inspector’s written performance opinion
+- Exterior walls, veneer, windows, doors, and flashing
+- Walks, drive, fences, retaining walls, and attached porches or decks
+- Evidence of wood-destroying insects at the perimeter
+
+### Roof and attic
+
+- Roof covering, flashings, penetrations, and visible prior repairs
+- Gutters, soffits, and fascia
+- Attic structure, ventilation, and insulation (where accessible and safe)
+- Signs of leaks, staining, or daylight through the roof deck
+
+### Electrical
+
+- Panel condition, labeling, and visible wiring concerns
+- Outlets, GFCI/AFCI protection where the inspector reports it, switches, and fixtures
+- Smoke and carbon monoxide alarms, as reported
+
+### HVAC
+
+- Operation of heat and cool in at least one normal mode, if the system can be tested
+- Age and condition of equipment, as reported, and any testing limitations
+- Thermostats, filtration, and visible duct issues
+- Follow-up by an HVAC technician if the report is flagged
+
+### Plumbing and water heaters
+
+- Visible supply and drain performance, water pressure, and leaks
+- Water heater type, condition, and safety items, as reported
+- Visible supply-line materials (ask about galvanized or polybutylene if the home is older)
+- Sewer scope results, if ordered
+- Septic or well reports, if the property is not on city services
+
+### Kitchen
+
+- Sinks, disposal, dishwasher, range/oven, microwave, and other built-in appliances included in the inspection
+- Signs of leaks under sinks and around the dishwasher
+- Ventilation and lighting
+
+### Bathrooms and laundry
+
+- Toilets, tubs, showers, sinks, and visible leaks or soft flooring
+- Ventilation
+- Washer connections, dryer venting, and drain performance
+
+### Interior rooms
+
+- Walls, ceilings, floors, doors, and windows in each room
+- Stairways, handrails, and guardrails
+- Fireplace and chimney, if present
+- Stains, patches, or uneven floors that may relate to water or foundation movement
+
+### Garage and optional structures
+
+- Vehicle door, opener, and safety reverse, if present
+- Fire separation and electrical items, as reported
+- Outbuildings, guest quarters, or casitas (these are optional unless the inspector agrees to inspect them)
+
+### Grounds, trees, pool, and documents
+
+- Irrigation performance, if inspected
+- Pool or spa equipment, barrier, and leaks, if inspected
+- Tree condition and any oak wilt follow-up
+- FloodPro and FEMA map printouts for the address
+- HOA or POA resale certificate, restrictions, and fees
+- Insurance questions raised by roof, flood, or prior-claim information
+
+Bring the written TREC report, any specialist reports, and this list to your repair discussion. If a box is still blank as the deadline approaches, that is a signal to extend, terminate, or accept a known gap, not to hope it resolves after closing.
+
+## How should you use the option window timeline?
+
+There is no official “typical” option length. The right plan is to work backward from the 5:00 p.m. deadline on your contract. The table below is a planning guide, not a change to your legal deadlines.
+
+:::compare-table
+When | What to complete | Why it matters | Source
+Effective Date (day 0) | Confirm the Effective Date, option length, 5:00 p.m. deadline, escrow delivery instructions, and whether the seller’s disclosure is already in hand | Day counting starts the next calendar day; disclosure timing has its own statutory rule | [TREC day-counting FAQ](https://www.trec.texas.gov/how-are-days-counted-trec-contract); [Property Code 5.008(f)](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008)
+Within 3 days after the Effective Date | Deliver the option fee and earnest money to the escrow agent (weekend and Legal Holiday rule applies to this delivery) | Missing the option fee costs you the unrestricted termination right | [TREC Form 20-19, Paragraph 5](https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19.pdf)
+Immediately after going under contract | Book the TREC inspector, WDI inspection, sewer scope, and any pool, septic, well, or arborist work; start FloodPro and FEMA map checks; request HOA documents if applicable | Specialist calendars, not the contract, often set how tight the window feels | [REI 7-6 client notes](https://www.trec.texas.gov/sites/default/files/pdf-forms/REI%207-6_fillable.pdf); [City of Austin FloodPro](https://maps.austintexas.gov/FloodPro/)
+After the general report arrives | Re-read every Deficient item; compare the report with the seller’s disclosure; order follow-up evaluations and written estimates | TREC places further evaluations on the client, and recommends completing them before time limits expire | [REI 7-6](https://www.trec.texas.gov/sites/default/files/pdf-forms/REI%207-6_fillable.pdf)
+Before the last day | Negotiate any amendment, or decide to proceed as-is | An unsigned request is not an amendment | [TREC Form 39-11](https://www.trec.texas.gov/forms/amendment)
+By 5:00 p.m. local time on the last option day | Either you have a fully executed amendment, you have given timely notice of termination, or you are proceeding without the unrestricted termination right | Time is of the essence under Paragraph 5 | [TREC Form 20-19, Paragraph 5](https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19.pdf)
+:::
+
+If the agreed window is short, book inspections the same day the contract is executed. If a specialist cannot finish in time, use Form 39-11 to request an extension rather than letting the clock run out.
+
+The inspection is also separate from the appraisal. Lenders and appraisers are doing different work, including under the newer appraisal reporting rules discussed in our [2026 appraisal report guide](/blog/new-appraisal-report-2026-austin). Do not treat a clear appraisal as a substitute for a TREC inspection.
+
+## What does a home inspection cost in Austin?
+
+I am not citing a dollar range. TREC does not publish a fee schedule for inspections, and I will not invent a local average.
+
+What you can expect is a separate fee for the general TREC inspection, then additional fees for add-ons such as a sewer scope, WDI report, pool or spa inspection, septic evaluation, well inspection and water testing, an arborist visit, or an engineer’s opinion. Size, age, access, location, and the number of systems all affect the quote. Ask each professional for a written scope and price before you schedule, and keep enough option time to act on what they find.
+
+## How do you negotiate repairs after the inspection?
+
+Start with the report, not with a punch list of cosmetics. I ask buyers to group items into safety and health, structure and water, major systems, and smaller maintenance items. Then we get estimates for the issues that would actually change the decision to buy.
+
+The current form for changing an already executed contract is the [Amendment to Contract, TREC No. 39-11](https://www.trec.texas.gov/sites/default/files/pdf-forms/39-11.pdf), effective July 1, 2026 (it replaces Form 39-10). Among other things, the form can:
+
+- Change the sales price
+- Require the seller, at the seller’s expense, to complete listed repairs and treatments (box 2), subject to Paragraph 7 of the contract on completion, documentation, and warranties
+- Change the closing date or certain closing-cost amounts
+- Document an additional option fee and extend the unrestricted right to terminate
+- Record that the buyer waives the unrestricted right to terminate
+- Make other written modifications
+
+Nothing is agreed until the amendment is fully executed. A seller is not required to accept your request. You can also credit money instead of making repairs, or you can decide the residual risk is acceptable. If the parties cannot agree and you still have a valid option, you may terminate and receive the earnest money back, while the option fee stays with the seller.
+
+TREC’s amendment form itself says to consult an attorney before signing, and that real estate brokers and sales agents are prohibited from practicing law. For a complex repair dispute, I want a Texas real estate attorney involved.
+
+Unresolved condition issues are also a common reason listings stall later. That is one reason sellers should not treat a buyer’s inspection as an ambush. See [why some Austin houses do not sell](/blog/why-didnt-my-house-sell-austin) and [the cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin).
+
+## What does the seller’s disclosure actually tell you?
+
+[Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008) generally requires a seller of residential real property comprising not more than one dwelling unit to give the purchaser a written notice in the statutory form, or a substantially similar notice that contains at least the statutory items.
+
+The current TREC version of that notice is [Form 55-1](https://www.trec.texas.gov/forms/sellers-disclosure-notice), effective May 28, 2026. TREC prepared it in accordance with section 5.008(b). Older TREC editions were issued as Form OP-H, so you may still hear that name. Use the current form, not the historical label.
+
+The statutory notice is a disclosure of the seller’s knowledge of the condition of the property as of the date the seller signs it. It is not a substitute for inspections or warranties, and it is not a warranty of any kind by the seller or the seller’s agents. Under section 5.008(d), the seller completes it to the best of the seller’s belief and knowledge. If the seller does not know an item, the seller may indicate that, and is in compliance by doing so.
+
+Under section 5.008(f), the notice shall be delivered on or before the effective date of an executory contract binding the purchaser to purchase the property. If a contract is entered without the seller providing the required notice, the purchaser may terminate the contract for any reason within seven days after receiving the notice. That seven-day right is separate from the negotiated option period, and you should have a Texas attorney explain how the two interact in your transaction.
+
+Section 5.008(e) lists transfers that are exempt, including certain court-ordered and foreclosure transfers, some fiduciary transfers, certain transfers between co-owners or close relatives, transfers to or from a governmental entity, and a new residence that has not previously been occupied for residential purposes. An exemption from the notice is not an exemption from good judgment. I still want a TREC inspection.
+
+Read the disclosure next to the inspection report. Look for what the seller already knew about foundation work, roof repairs, water damage, termites, drainage, flooding, septic or well systems, and items that are not working. If the two documents do not line up, ask questions in writing and follow up with specialists before the option expires.
+
+## When should you walk away during the option period?
+
+If you timely paid the option fee and you are still inside the option period, you do not need the seller’s permission to terminate, and you do not need a “good enough” repair reason. The right is unrestricted under Paragraph 5, provided you give timely notice.
+
+I still want that decision to be informed. Situations that often lead a buyer to terminate include:
+
+- Foundation, structural, or drainage findings you are not willing to own after a specialist review
+- Sewer, septic, or well problems that change the cost or the practicality of the property
+- Roof, flood, or insurance issues you cannot resolve on terms you accept
+- A gap between the seller’s disclosure and the inspection that leaves too much uncertainty
+- A repair negotiation that fails, so the property no longer fits your plan or your budget
+
+Give the termination notice in the form and by the method your contract requires, and do it before 5:00 p.m. local time on the last day. If you terminate on time, the option fee is not refunded and the earnest money is refunded to you.
+
+Walking away can be the right call. So can amending the contract. The purpose of the option period is to let you choose with better information than you had on day one.
+
+## What changes on a luxury home inspection?
+
+A luxury property still needs the same TREC foundation: a licensed inspector, Form REI 7-6, and a clear option-period calendar. The difference is usually complexity. Homes in [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), [Lake Travis](/communities/lake-travis), and other high-value areas may include a pool, extensive irrigation, guest quarters, outdoor kitchens, multiple HVAC systems, specialty finishes, a well or septic system, and a large tree canopy. Several of those items are optional under the Standards of Practice unless you put them in the inspection agreement.
+
+Budget more calendar time, not just more inspectors. An engineer, pool specialist, septic company, well tester, and arborist may each need a visit after the general report. That is a strong reason to negotiate an option window long enough to finish the work, especially on [how to buy a luxury home in Austin](/blog/how-to-buy-a-luxury-home-in-austin). Insurance underwriting can also be tighter on high-value roofs, older plumbing, or flood exposure, so start that conversation during the option period, not after you have waived your termination right.
+
+## Which TREC forms should you have in front of you?
+
+:::compare-table
+Form | Current ID and effective date | What it is for | Official page
+One to Four Family Residential Contract (Resale) | 20-19, effective July 1, 2026 | Paragraph 5 option fee, earnest money, and termination option | [TREC contract page](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale)
+Property Inspection Report | REI 7-6, effective February 1, 2022 | Required TREC inspection report | [TREC inspection report page](https://www.trec.texas.gov/forms/inspection-report-form)
+Amendment to Contract | 39-11, effective July 1, 2026 | Repair agreements, price changes, option extension or waiver | [TREC amendment page](https://www.trec.texas.gov/forms/amendment)
+Seller’s Disclosure Notice | 55-1, effective May 28, 2026 (historically issued as OP-H) | Statutory property-condition disclosure under Property Code 5.008 | [TREC disclosure page](https://www.trec.texas.gov/forms/sellers-disclosure-notice)
+Addendum for Property Subject to Mandatory Membership in a Property Owners Association | 36-11, effective July 1, 2026 | HOA/POA information election (not for condominiums) | [TREC POA addendum page](https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association)
+:::
+
+Forms change. If TREC later replaces any of these, use the current official version.
+
+## Frequently asked questions
+
+:::faq
+
+Q: How long is the option period in Texas?
+A: The option period is the number of days written in Paragraph 5 of the TREC One to Four Family Residential Contract (Resale). It is negotiated, not set by statute. TREC counts the first day as the day after the effective date, and each day is a calendar day. Notice is due by 5:00 p.m. local time on the last day.
+
+Q: Is the option fee refundable in Texas?
+A: If you terminate within the option period, the option fee is not refunded. The earnest money is refunded to you. If you close, the option fee is credited to the sales price. If no option fee amount is stated, or you do not deliver it on time, you lose the unrestricted right to terminate under Paragraph 5.
+
+Q: Do I have to get a home inspection in Texas?
+A: No Texas statute requires a buyer to obtain a home inspection, and the termination option itself is also negotiable. A TREC-licensed inspection is still the practical way to evaluate the property during the option period. TREC notes that buyers can use that window to inspect the property and negotiate an amendment for repairs.
+
+Q: Is a TREC inspection the same as a sewer scope or termite report?
+A: No. The TREC Property Inspection Report (REI 7-6) covers required Standards of Practice items that are present, visible, and accessible. A sewer-line camera inspection is a separate specialty. A wood-destroying insect report is also separate and uses the Texas Department of Agriculture official WDI form (SPCS/T-5), completed by a properly licensed pest-control licensee.
+
+Q: Can I extend the option period after I am under contract?
+A: Yes, but only if the seller agrees in writing. The current TREC Amendment to Contract (Form 39-11) can document an additional option fee and an extension of the unrestricted right to terminate. Do not assume you have more time until that amendment is fully executed. Time is of the essence under Paragraph 5.
+
+Q: Does the seller have to fix everything on the inspection report?
+A: No. Items marked Deficient on a TREC report do not, by themselves, obligate any party to make repairs. TREC’s report form states that clearly. Repair requests are negotiated, usually on the Amendment to Contract, or you may terminate during the option period if you timely paid the option fee.
+
+Q: What if I never received the seller’s disclosure notice?
+A: Texas Property Code section 5.008 generally requires the seller to deliver the notice on or before the effective date of the contract. If the contract is entered without that notice, the purchaser may terminate for any reason within seven days after receiving it. Some transfers are exempt. The notice is not a substitute for an inspection.
+
+Q: Should I still inspect a new or luxury home in Austin?
+A: Yes. A TREC inspection is a visual survey of condition, not a warranty and not a code certification. New residences that have never been occupied can be exempt from the statutory seller’s disclosure, which is one more reason to inspect. Luxury homes often need optional add-ons such as pool, septic, well, and outbuilding inspections.
+:::
+
+## Sources
+
+- [TREC, One to Four Family Residential Contract (Resale)](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale) and [Form 20-19 (PDF)](https://www.trec.texas.gov/sites/default/files/pdf-forms/20-19.pdf), effective July 1, 2026 (Paragraph 5, Earnest Money and Termination Option)
+- [TREC, How are days counted in a TREC contract?](https://www.trec.texas.gov/how-are-days-counted-trec-contract) and [TREC Frequently Asked Questions](https://www.trec.texas.gov/public/frequently-asked-questions) (option period is negotiable; buyer may inspect and negotiate an amendment)
+- [TREC, Contracts and forms list](https://www.trec.texas.gov/agency-information/contracts)
+- [TREC, Real Estate Inspector](https://www.trec.texas.gov/license-type/real-estate-inspector), [License Holder Search](https://www.trec.texas.gov/license-search), and [Texas Occupations Code Chapter 1102](https://statutes.capitol.texas.gov/docs/OC/htm/OC.1102.htm)
+- [TREC, Standards of Practice (online, effective February 1, 2022)](https://www.trec.texas.gov/online-sops), 22 TAC 535.227 to 535.233, including optional systems in 535.233 and foundation performance in 535.228
+- [TREC, Property Inspection Report (REI 7-6)](https://www.trec.texas.gov/forms/inspection-report-form) and [fillable REI 7-6 (PDF)](https://www.trec.texas.gov/sites/default/files/pdf-forms/REI%207-6_fillable.pdf), effective February 1, 2022
+- [TREC, Amendment to Contract](https://www.trec.texas.gov/forms/amendment) and [Form 39-11 (PDF)](https://www.trec.texas.gov/sites/default/files/pdf-forms/39-11.pdf), effective July 1, 2026
+- [TREC, Seller’s Disclosure Notice (Form 55-1)](https://www.trec.texas.gov/forms/sellers-disclosure-notice) and [Form 55-1 (PDF)](https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf), effective May 28, 2026
+- [Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008)
+- [TREC, Addendum for Property Subject to Mandatory Membership in a Property Owners Association (Form 36-11)](https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association), effective July 1, 2026
+- [City of Austin, View floodplain maps and storm drain infrastructure](https://www.austintexas.gov/services/view-floodplain-maps-and-storm-drain-infrastructure) and [FloodPro](https://maps.austintexas.gov/FloodPro/)
+- [FEMA Flood Map Service Center](https://msc.fema.gov/portal/home)
+- [USDA NRCS Web Soil Survey](https://websoilsurvey.nrcs.usda.gov/app/) and [USDA official series description, Houston Black](https://soilseries.sc.egov.usda.gov/OSD_Docs/H/HOUSTON_BLACK.html)
+- [Texas A&M Forest Service, Texas oak wilt](https://tfsweb.tamu.edu/trees/tree-health/diseases/texas-oak-wilt/) and [Texas Oak Wilt Partnership](https://texasoakwilt.org/)
+- [Texas Department of Agriculture, Structural Pest Control Service licensing](https://texasagriculture.gov/Regulatory-Programs/Pesticides/Structural-Pest-Control-Service/Licensing) and [Instructions for the Texas Official Wood Destroying Insect Report (SPCS/T-5)](https://texasagriculture.gov/Portals/0/forms/PEST/Structural/T5_wdi_instructions.pdf)
+- [TCEQ, Basics for Septic Systems (OSSF)](https://www.tceq.texas.gov/assistance/water/fyiossfs.html) and [OSSF general information](https://www.tceq.texas.gov/permitting/ossf/ossfgeneral.html)
+- [Texas Department of Insurance, Home insurance](https://www.tdi.texas.gov/consumer/home-insurance.html)
+
+## Thinking about an Austin home inspection or option period?
+
+If you are writing an offer, or you are already under contract and need a clear inspection plan, I can help you map the option deadline, the right add-ons for the property, and a repair or termination strategy. [Request a private consultation](/contact).
+
+:::cta
+heading: Planning an Austin inspection or option period?
+button: Request a Private Consultation
+href: /contact
+:::
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI** is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. Taylor is licensed in Texas and Tennessee (TREC \\#734520-SA) and advises luxury buyers and sellers across Austin, West Lake Hills, Rollingwood, Barton Creek, Tarrytown, Lakeway, Lake Austin and the Texas Hill Country. [More about Taylor](/about).
+
+Echelon Property Group, brokered by Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746 \\| Broker: Turnquist Partners Realtors, Inc. dba Engel & Völkers Austin, TREC \\#440298-BB \\| <taylor@echelonpropertygroup.com> \\| (512) 661-3843
+
+This article is for general information only. It is not legal advice, not a property inspection, and not a substitute for advice from a licensed Texas attorney, a TREC-licensed inspector, or other licensed specialists. Contract forms, statutes, and local rules can change. Confirm the current official text before you rely on it.`,
+  },
   {
     id: "living-in-austin-tx",
     title: "Living in Austin, TX: What It's Really Like in 2026",
@@ -2849,6 +3250,9 @@ If you own in West Lake Hills, Tarrytown, Barton Creek or on Lake Austin, Novemb
 - **Nonrenewal rules tightened:** 60 days' notice, and written reasons since January 1, 2026.
 - **The backstop has a ceiling:** the Texas FAIR Plan caps dwelling coverage at $1,000,000.
 
+
+Roof, hail and floodplain findings often surface during the option period. See the [Austin home inspection checklist](/blog/austin-home-inspection-checklist).
+
 ## How much is homeowners insurance in Austin in 2026?
 
 The latest full-year county data is 2025. It shows premiums climbing faster than the insured value of the homes.
@@ -3059,6 +3463,9 @@ What does not change matters just as much. The valuation method is the same: the
 
 Why do the GSEs want this? Cleaner data. Standardized fields feed Fannie Mae's Collateral Underwriter and Freddie Mac's Loan Collateral Advisor, the automated review tools that flag appraisals for a second look. More structured data in means fewer narrative ambiguities and, in theory, fewer revision requests. For Austin sellers it also means the house is being described to a database as much as to a person, and databases do not infer what they are not told.
 
+
+
+Inspection findings can shape the same negotiation. See the [Austin home inspection checklist for the option period](/blog/austin-home-inspection-checklist).
 
 ## The rollout timeline
 
@@ -12148,6 +12555,9 @@ Identifying overpriced listings requires careful comparable analysis. High-end p
 
 Let the data do the negotiating. When you present an offer supported by recent closed comparables, it is harder for a seller to dismiss. Your [buyer's agent](/blog/how-to-choose-luxury-real-estate-advisor-austin) should be able to walk the listing agent through the logic, not just submit a number. Sellers respond differently when they see that the offer reflects the market rather than an arbitrary lowball.
 
+
+Before your option period starts, read the [Austin home inspection checklist for the option period](/blog/austin-home-inspection-checklist).
+
 ## 2. Ask for Seller-Paid Rate Buydowns. They Often Beat a Price Cut.
 
 ### The Challenge It Solves
@@ -20102,6 +20512,9 @@ Listings with a price cut | More than 10,500 in 12 months | Price reductions are
 :::
 
 At the luxury tier the dynamics sharpen. High-end inventory sits longer than the citywide median, appraisal-proof cash competes with financed offers, and the gap between asking and closing prices widens on homes that were priced on 2022 memories. Every number in that table is leverage if you know how to use it.
+
+
+For inspection timing and local add-ons, see the [Austin home inspection checklist for the option period](/blog/austin-home-inspection-checklist).
 
 ## Step 1: Get access to inventory you cannot see online
 

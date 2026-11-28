@@ -217,7 +217,260 @@ import blogWildfireHero from "@/assets/blog/austin-wildfire-risk-hero.webp.asset
 import blogPrivateOfficeReport from "@/assets/blog/private-office-report-wealth-preservation.webp.asset.json";
 import blogInsuranceHero from "@/assets/blog/austin-luxury-homeowners-insurance-hero.webp.asset.json";
 
+import blogPrepareSaleHero from "@/assets/blog/austin-preparing-home-for-sale.webp.asset.json";
+
 export const seoBlogPosts: BlogPost[] = [
+  {
+    id: "how-to-prepare-house-for-sale-austin",
+    title: "How to Prepare Your House for Sale in Austin in 2026",
+    metaTitle: "Prepare Your House for Sale in Austin | Echelon Property Group",
+    excerpt: "An eight-week Austin pre-listing checklist covering pricing, inspections, repairs, seller disclosures, surveys, staging, photography, and showing preparation.",
+    author: "Taylor Sherwood",
+    date: "2026-11-28",
+    dateModified: "2026-11-28",
+    readTime: "20 min read",
+    category: "SELLER STRATEGY",
+    keywords: "how to prepare house for sale Austin, Austin pre-listing checklist, preparing house for sale Austin, seller disclosure Texas, pre-listing inspection Austin, Austin home sale timeline",
+    aboutPlaces: ["Austin, Texas", "West Lake Hills, Texas", "Travis County, Texas"],
+    imageAlt: "Homeowners arranging living room cushions and packing personal belongings before listing their house for sale",
+    relatedPostIds: ["austin-home-inspection-checklist", "best-time-to-sell-a-house-austin", "cost-to-sell-a-house-austin", "luxury-home-staging-cost-austin", "how-to-sell-a-luxury-home-in-austin"],
+    image: blogPrepareSaleHero.url,
+    heroImage: blogPrepareSaleHero.url,
+    content: `Preparing your house for sale in Austin means pricing to the current market, finishing repairs and documents, and launching with a clean presentation. City of Austin median days on market were 43 and the sales-to-list ratio was -3.06% for the 12 months ending October 31, 2026, per Agent Intel (Unlock MLS via MLS Grid), pulled November 28, 2026.
+
+This article is a pre-listing checklist and timeline, not legal, tax, or inspection advice, and not a substitute for a licensed Texas attorney, a tax professional, or a [TREC-licensed inspector](https://www.trec.texas.gov/license-type/real-estate-inspector). Confirm current forms at [trec.texas.gov](https://www.trec.texas.gov/agency-information/contracts).
+
+## Key takeaways
+
+- For the 12 months ending October 31, 2026, Agent Intel (Unlock MLS via MLS Grid), pulled November 28, 2026, shows a City of Austin median sale price of $570,000, median days on market of 43, a sales-to-list ratio of -3.06%, and 9,689 price reductions alongside 10,721 sales.
+- In the Austin metro (Bastrop, Caldwell, Hays, Travis, and Williamson Counties) over the same period, median days on market were 56, the sales-to-list ratio was -2.74%, and Agent Intel counted 29,454 price reductions and 31,293 sales.
+- Metro luxury homes priced at $1,000,000 and above had 6.56 months of inventory and a 55.5% success rate in that same 12-month window, so pricing and presentation matter even more at the high end.
+- Complete the current TREC [Seller's Disclosure Notice, Form 55-1](https://www.trec.texas.gov/forms/sellers-disclosure-notice) (effective May 28, 2026) in line with [Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008), and gather survey, HOA, permit, and district notices before you go live.
+- Texas A&M Forest Service advises avoiding oak pruning from February through June to help prevent oak wilt. Plan tree work outside that window, and paint any oak wound immediately.
+
+This guide is the pre-listing plan. For timing, seller costs, staging budgets, and marketing execution, use the existing posts linked below rather than repeating them here.
+
+## Why does pre-listing prep matter in today's Austin market?
+
+Austin is not a market where you can price high, skip repairs, and expect a quick, clean sale. Buyers have time to compare, inspect, and negotiate.
+
+Agent Intel (Unlock MLS via MLS Grid), City of Austin residential sales, 12 months ending October 31, 2026, pulled November 28, 2026, shows:
+
+- Median sale price: $570,000
+- Median days on market: 43 (average: 78.8)
+- Sales-to-list ratio: -3.06% (sold prices ran below asking prices)
+- Original-to-list ratio: -3.86%
+- Price reductions: 9,689
+- Sales: 10,721
+- New listings: 17,619
+- Months of inventory: 4.94
+- Success rate: 60.9%
+
+The broader Austin metro tells a similar story, with a longer median market time of 56 days and a sales-to-list ratio of -2.74%. Agent Intel counted 29,454 metro price reductions in the same 12 months, against 31,293 sales.
+
+Those figures are market context, not a promise about your address. They do explain why I want a house priced correctly, documented cleanly, and presented well on day one. Listings that launch sloppy often end up in a price cut, which is a pattern we also see when we unpack [why some Austin houses do not sell](/blog/why-didnt-my-house-sell-austin) and [why a luxury home sits](/blog/luxury-home-not-selling-austin).
+
+For seasonal timing, use [the best time to sell a house in Austin](/blog/best-time-to-sell-a-house-austin). For commissions, closing costs, and other seller expenses, use [the cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin). This post stays on the work you do before the listing goes live.
+
+## When should you start preparing, and what does an 8-week timeline look like?
+
+There is no official countdown in the TREC contract. Eight weeks is a planning window that fits a pre-listing inspection, specialist follow-up, document gathering, and photography. A foundation repair, a permit close-out, or a full luxury staging plan can take longer. If you need to list sooner, we compress the same work and are honest about what will not be finished.
+
+The table below is a planning guide, not a legal deadline.
+
+:::compare-table
+When | Focus | What to finish | Why it belongs here
+8 to 7 weeks out | Plan and inspect | Interview your listing advisor, review current comps and the Agent Intel context, book a pre-listing inspection, start the seller's disclosure, and pull permits, HOA docs, the survey, and warranties | The inspection and the document search set the repair list and the disclosure
+6 to 5 weeks out | Repairs and systems | Complete safety, water, and major-system work; service HVAC; address roof, pool, or foundation items a specialist flagged | Buyers will inspect these anyway; finishing them now protects your launch price
+4 to 3 weeks out | House and yard | Paint, clean, declutter, and handle landscaping and curb appeal (schedule oak work outside February through June) | This is the visible work that photographs well
+2 weeks out | Stage and shoot | Stage or edit furniture, finish a punch list, complete Form 55-1 and survey affidavits, and schedule photos, video, and any drone work | Marketing should show the house after the work is done
+1 week out | Showing plan | Set showing rules, pet and security plans, lockbox access, and a daily reset checklist; confirm utilities stay on | Launch day should feel calm, not improvised
+Launch day | Go live | Listing is live, first showings are scheduled, and the document file is ready for offer review | A complete file helps you respond while interest is highest
+:::
+
+If you are targeting a particular season, work backward from that launch date and from the advice in the [best-time-to-sell guide](/blog/best-time-to-sell-a-house-austin).
+
+## How should you price the house before you list?
+
+Pricing is part of preparation, not a last-minute guess. I start with comparable sold, pending, and active listings for your property type and location, then I check the current market measures above. In a market where city sales have been coming in below list and thousands of listings have taken a reduction, the first number on the flyer has to be defensible.
+
+I do not recommend a "test the market" list price as a prep strategy. If the house is overpriced, you spend your first weeks training buyers to wait for a cut. If it is priced to the evidence, you give the photos, staging, and showing plan a fair chance to work.
+
+Luxury listings need the same discipline, with more inventory in the mix. For Austin metro homes at $1,000,000 and above, Agent Intel (Unlock MLS via MLS Grid), 12 months ending October 31, 2026, pulled November 28, 2026, shows 6.56 months of inventory, a 55.5% success rate, and a sales-to-list ratio of -4.12%. That is a thinner success rate than the overall city market, and it is one reason I want the prep, the price, and the launch to agree. The process for a high-value property is in [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+
+## Should you get a pre-listing inspection?
+
+I usually recommend one, especially if the house is older, has a pool, sits on a slab in clay soil, or has a history of repairs you want documented. A pre-listing inspection is a chance to see the property the way a buyer will see it, then decide what to fix, what to disclose, and what to price around, before the option period starts.
+
+In Texas, a licensed inspector must use the [TREC Property Inspection Report, Form REI 7-6](https://www.trec.texas.gov/forms/inspection-report-form) (effective February 1, 2022) and follow the [Standards of Practice](https://www.trec.texas.gov/online-sops). The report is a visual survey and a basic performance evaluation, not a warranty and not a code certification. Items marked Deficient do not, by themselves, obligate you to make repairs, but they will almost certainly appear again when the buyer inspects.
+
+For the buyer's-side process, option period, and Austin add-ons (foundation, sewer scope, WDI, septic, well, and floodplain checks), use our [Austin home inspection checklist for the option period](/blog/austin-home-inspection-checklist). This post does not repeat that guide. The seller's job is to get ahead of it: hire a TREC-licensed inspector, verify the license in TREC's [License Holder Search](https://www.trec.texas.gov/license-search), and leave time for specialist follow-up before photography.
+
+## What documents should you gather before you list?
+
+A complete file makes the first offer week smoother. Start this the same week you book the inspection.
+
+### Seller's Disclosure Notice
+
+The current TREC notice is [Form 55-1](https://www.trec.texas.gov/forms/sellers-disclosure-notice), effective May 28, 2026. TREC prepared it in accordance with [Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008). Older editions were issued as Form OP-H, so you may still hear that name. Use the current form.
+
+The notice is a disclosure of the seller's knowledge of the property's condition as of the date you sign it. It is not a warranty and not a substitute for inspections. Complete it to the best of your belief and knowledge. If you do not know an item, the statute allows you to say so.
+
+Under section 5.008(f), the notice shall be delivered on or before the effective date of a contract binding the purchaser. If a contract is entered without the required notice, the purchaser may terminate for any reason within seven days after receiving it. Some transfers are exempt under section 5.008(e). Have a Texas attorney explain how that interacts with your sale. I want the form drafted early, then updated if repairs or new facts appear before you sign it.
+
+### Survey and T-47 or T-47.1
+
+The current [TREC One to Four Family Residential Contract (Resale), Form 20-19](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale) (effective July 1, 2026) lets the seller, in Paragraph 6C, furnish an existing survey plus a Residential Real Property Affidavit or Declaration promulgated by the Texas Department of Insurance (the [T-47 Affidavit](https://www.tdi.texas.gov/title/documents/formT-47.pdf) or the [T-47.1 Declaration](https://tdi.texas.gov/title/documents/form-t-47-1.pdf)). If the existing survey and the affidavit or declaration are not furnished on time, or are not accepted by the title company or the buyer's lender, a new survey may be required, and the contract allocates that expense.
+
+Locate the most recent survey now. Walk it against what actually exists on the ground (fences, pools, additions). Talk with your title company about whether the T-47, the T-47.1, or a new survey is the better path. I am not a title attorney, and the right choice depends on the survey's age, later improvements, and lender requirements.
+
+### HOA and POA documents
+
+If the property has mandatory membership in a property owners association, the current TREC form is the [Addendum for Property Subject to Mandatory Membership in a Property Owners Association, Form 36-11](https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association) (effective July 1, 2026). It is not for condominiums. Request the resale certificate, restrictions, fees, and any special assessments early. Association rules also affect staging, parking, and photography access in many [gated Austin communities](/blog/gated-communities-austin).
+
+### Permits and improvement records
+
+For properties in the City of Austin, search the official [Austin Build + Connect (AB+C) Public Search](https://www.austintexas.gov/development-services/austin-build-connect-abc). Registration is not required for public search. Look up additions, remodels, pools, and electrical or plumbing permits, and note any open or expired items. The City also explains how to [request records](https://www.austintexas.gov/development-services/records-and-research) that are not online. Unpermitted work is a common inspection and title issue. It is better to find it in week eight than in the option period.
+
+### Warranties, utilities, and district notices
+
+Gather appliance and HVAC warranties, roof documents, pool service records, and a recent utility bill pattern if you have it. If the property is in a municipal utility district or similar district, [Texas Water Code section 49.452](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=WA&Value=49.452) generally requires a prescribed written notice to the purchaser before a binding contract is executed. If the property is in a public improvement district, [Texas Property Code section 5.014](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.014) generally requires a PID assessment notice before a binding contract. For how those districts affect the tax bill, see [MUD and PID taxes in Austin](/blog/mud-pid-taxes-austin). Get the current official notices from the district or your title company, and do not improvise the statutory language.
+
+## Which repairs are worth doing, and which should you skip?
+
+I will not invent return-on-investment percentages. There is no official TREC or government scorecard that says a kitchen remodel "pays for itself" at a set rate in Austin.
+
+What I will do is prioritize work that a buyer's inspector is likely to flag, that affects safety or water, or that keeps the house from looking unfinished in photos:
+
+- Active leaks, moisture, and drainage problems
+- HVAC that does not heat or cool properly
+- Roof issues that will show up in an inspection or an insurance review
+- Safety items, including smoke and carbon monoxide alarms as required, and obvious electrical or railing hazards
+- Incomplete or unpermitted projects
+- Foundation or structural items that a specialist says should be addressed, or that you should price and disclose with documentation
+
+I am slower to recommend cosmetic remodels that you will not finish before launch, highly personal upgrades, or large design projects that mainly reflect your taste. A fresh, neutral paint job and a deep clean often help more than a rushed renovation. If a repair is major, get written estimates and decide whether to complete the work, credit money, or adjust the list price. Your listing agreement and any later TREC amendment should be handled with the right form and, when the issue is complex, with a Texas attorney.
+
+Sellers sometimes skip this work and then meet it anyway during the buyer's option period, which is how a listing loses momentum. That pattern is part of the story in [why some houses do not sell](/blog/why-didnt-my-house-sell-austin).
+
+## What Austin-specific prep should you plan?
+
+### Foundation and drainage
+
+Central Texas includes expansive clay soils, especially east of the Balcones Escarpment, and different geology to the west, including much of the Hill Country. Have the inspector render the required written opinion on foundation performance, and look at grading, gutters, and drainage. If the report raises a concern, bring in a structural engineer while you still have pre-listing time. The [USDA NRCS Web Soil Survey](https://websoilsurvey.nrcs.usda.gov/app/) is background, not an engineering report.
+
+### HVAC service before summer
+
+Austin heat is hard on cooling equipment. If you plan a late-spring or summer launch, have the system serviced early and keep the filter and thermostat ready for showings. A buyer will run the air during the inspection. A system that cannot keep up becomes a negotiation point immediately.
+
+### Landscaping and WaterWise yards
+
+Curb appeal still matters, but the right yard in Austin is often a healthy, water-wise landscape, not a thirsty lawn that is hard to maintain through showings. [Austin Water](https://www.austintexas.gov/water/water-wise-landscaping-rebate-faqs) defines a WaterWise landscape as one that reduces or eliminates the need for extra watering, using mulch, compost, efficient irrigation, and native or adapted plants.
+
+Austin Water also offers a [WaterWise Landscape rebate](https://www.austintexas.gov/water/programs/rebates-tools-programs) of up to $3,000 to convert turf to a native plant bed, plus other outdoor rebates. Those programs have rules: work started before Austin Water approval does not qualify, and plant installation is limited to spring and fall windows, not summer. A rebate conversion is usually a longer-lead project, not an 8-week punch-list item. If the yard is already in good condition, focus on pruning (except oaks in the restricted season), mulch, irrigation adjustments, and a clean edge for photos. Customers of some neighboring providers, including the City of West Lake Hills and the City of Rollingwood, may also be eligible for certain Austin Water programs. Confirm eligibility on the official page.
+
+### Roofs and pools
+
+Have a roofer look at any leak, missing shingles, or aging covering the inspector flags, and share roof condition with your insurance agent before you list. Service the pool, repair obvious equipment issues, and make sure safety barriers are in place. Pools are optional under the TREC Standards of Practice unless the inspector agrees to inspect them, but a buyer's inspector or a pool specialist will still be part of many option periods.
+
+### Oak wilt and pruning season
+
+If the lot has oaks, do not treat tree work as casual curb appeal. [Texas A&M Forest Service](https://tfsweb.tamu.edu/prevent-the-spread-of-oak-wilt-in-texas/) advises avoiding pruning or wounding oak trees from February through June, when sap beetles that can spread oak wilt are especially active, and says that all oak wounds should be painted immediately, no matter the season. The [Texas Oak Wilt Partnership pruning guidelines](https://texasoakwilt.org/resources/oak-wilt-studies/pruning-guidelines-for-prevention) state the window as February 1 through June 30, with exceptions mainly for safety, storm damage, and required clearance, and they note that late fall is generally the best time to prune.
+
+If you plan to list in spring, finish cosmetic oak work before February 1 or wait until after June 30. If a hazardous limb must come down during the restricted season, use a qualified arborist and paint the wound at once.
+
+## How should you declutter, stage, and photograph the house?
+
+Decluttering and depersonalizing are not about erasing your life. They are about letting a buyer see rooms, storage, and light. Pack extra furniture, personal collections, and closet overflow. Store or offload what you will not use during the listing. A house that is easier to walk through is easier to photograph and easier to show.
+
+Staging can be as simple as editing what you already have, or as involved as a full furniture plan. I am not repeating staging costs or room-by-room budgets here. Those belong in the [luxury home staging cost guide for Austin](/blog/luxury-home-staging-cost-austin). Finish staging before the camera arrives.
+
+Photography, video, and drone work should happen only after the repairs, cleaning, and yard work are done. Twilight photos and a simple walkthrough video help many listings. Drone images can help with acreage, hill-country, and lake-area properties, including homes around [Lake Travis](/communities/lake-travis) and [Dripping Springs](/communities/dripping-springs), when airspace and local rules allow. The marketing plan itself is covered in [how to market luxury properties in Austin](/blog/how-to-market-luxury-properties-austin).
+
+## How do you handle showings, pets, and security?
+
+Set the showing plan before launch day. Keep utilities on. Set the HVAC to a comfortable level. Open blinds, turn on lights, and follow a short daily reset list: beds, counters, floors, and yard. If you still live in the house, give yourself a realistic departure window so showings do not feel rushed.
+
+Pets should be out of the way, and pet odors should be handled before photography, not on the morning of the first tour. Litter boxes, bowls, and crates in the middle of a kitchen or bath will show up in photos and in comments.
+
+Security deserves extra attention on higher-value homes in areas such as [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), and [Rollingwood](/communities/rollingwood). Remove or lock jewelry, cash, firearms, medications, and spare keys. Store mail and personal documents. Review what a lockbox or showing service will share, and decide whether some showings should be by appointment with your agent present. For privacy-sensitive sales, discuss a quieter launch as part of [how to sell a luxury home in Austin](/blog/how-to-sell-a-luxury-home-in-austin).
+
+## What should sellers know about property taxes and the homestead exemption?
+
+Keep this general, and confirm the details for your tax year with [Travis Central Appraisal District](https://traviscad.org/) or your county appraisal district, and with a tax professional. I am not a tax advisor.
+
+Look up the current appraisal, exemptions, and taxing units on the CAD record before you price the house. A residence homestead exemption can be a material part of the tax bill, and buyers will ask about it. In Texas, residence homestead exemptions are governed by [Tax Code section 11.13](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=TX&Value=11.13). After closing, a buyer who qualifies typically applies for their own exemption, including through Travis CAD's [homestead exemption information](https://traviscad.org/homesteadexemptions).
+
+Property taxes are usually prorated between seller and buyer at closing under the sales contract. Do not assume the exemption you have today automatically explains next year's bill for the buyer. For a fuller tax and exemption walkthrough, use [Austin property taxes explained](/blog/austin-property-taxes-explained) and the [2026 Texas homestead exemption guide](/blog/texas-homestead-exemption-2026). This checklist only asks you to pull the record, understand what is in place now, and be ready for the question.
+
+## What changes when you are preparing a luxury home?
+
+The calendar is the same idea, with more systems and a higher bar for presentation. Homes in [West Lake Hills](/communities/westlake-hills), [Barton Creek](/communities/barton-creek), [Tarrytown](/communities/tarrytown), and around [Lake Travis](/communities/lake-travis) may need a pool specialist, an arborist, irrigation work, guest-house or casita prep, and a longer staging and photography plan. Metro luxury inventory is thicker than the overall city market, and the success rate in the Agent Intel luxury segment was 55.5% over the 12 months ending October 31, 2026, so a weak launch is expensive.
+
+Give yourself more than eight weeks if the house needs major work, and use the dedicated guides for [selling](/blog/how-to-sell-a-luxury-home-in-austin), [marketing](/blog/how-to-market-luxury-properties-austin), and [staging cost](/blog/luxury-home-staging-cost-austin) rather than inventing a separate process here. Security, showing qualification, and document quality should be part of the prep, not an afterthought in week one.
+
+:::faq
+Q: How far in advance should I prepare my Austin house for sale?
+A: An 8-week pre-listing window is a practical planning guide for an inspection, repairs, documents, and photography. It is not a legal deadline. Foundation work, permit close-outs, or a full luxury staging plan can take longer. If you must list sooner, compress the same checklist and be honest about what will still be unfinished on launch day.
+
+Q: Do I need a pre-listing inspection in Texas?
+A: No statute requires a seller to obtain a pre-listing inspection. It is still one of the most useful prep steps I recommend, because a TREC-licensed inspector using Form REI 7-6 will show you what a buyer is likely to find later. Use the report to decide what to repair, disclose, or price around before the listing goes live.
+
+Q: What is the Texas Seller's Disclosure Notice?
+A: The current TREC Seller's Disclosure Notice is Form 55-1, effective May 28, 2026, prepared under Texas Property Code section 5.008. It discloses the seller's knowledge of the property's condition. It is not a warranty or an inspection. The statute generally requires delivery on or before the contract's effective date, with a seven-day termination right if the notice arrives late.
+
+Q: Should I fix everything before I list my house?
+A: No. Prioritize safety, water, major systems, incomplete projects, and items a buyer's inspector is likely to flag. I do not cite fabricated return-on-investment figures for cosmetic remodels. If a repair is major, get written estimates and decide whether to complete the work, adjust the price, or disclose it with documentation.
+
+Q: When can I prune oaks in Austin before I list?
+A: Texas A&M Forest Service advises avoiding oak pruning or wounding from February through June to help prevent oak wilt, and says to paint every oak wound immediately. Texas Oak Wilt guidelines state the window as February 1 through June 30, with limited safety exceptions, and they note that late fall is generally the best time to prune.
+
+Q: Do I need a new survey or a T-47 when I sell?
+A: Not always. The current TREC resale contract allows a seller to furnish an existing survey plus a TDI T-47 Affidavit or T-47.1 Declaration. If those items are late or are not accepted by the title company or lender, a new survey may be required. Locate the survey early and ask your title company which path fits the property.
+
+Q: How does the homestead exemption work when I sell in Travis County?
+A: Keep this general and confirm it with Travis Central Appraisal District and a tax professional. Review the exemptions on the current CAD record before you list. Residence homestead exemptions are governed by Texas Tax Code section 11.13. Taxes are usually prorated at closing, and a qualifying buyer typically applies for their own exemption after the purchase.
+
+Q: Is staging required to sell a house in Austin?
+A: No. Staging is a presentation choice, not a legal requirement. In a market where city sales have been coming in below list, a clean, well-photographed house helps buyers see the property clearly. Costs and scope vary, so use the Austin staging cost guide for that analysis rather than a single rule of thumb.
+:::
+
+## Sources
+
+- Agent Intel (Unlock MLS via MLS Grid), City of Austin residential market statistics and Austin metro residential market statistics (Bastrop, Caldwell, Hays, Travis, and Williamson Counties), 12 months ending October 31, 2026, pulled November 28, 2026; metro luxury segment is residential sales of $1,000,000 and above
+- [TREC, Seller's Disclosure Notice (Form 55-1)](https://www.trec.texas.gov/forms/sellers-disclosure-notice) and [Form 55-1 (PDF)](https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf), effective May 28, 2026
+- [Texas Property Code section 5.008](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.008) and [section 5.014](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=PR&Value=5.014)
+- [TREC, Property Inspection Report (REI 7-6)](https://www.trec.texas.gov/forms/inspection-report-form), [Standards of Practice](https://www.trec.texas.gov/online-sops), and [License Holder Search](https://www.trec.texas.gov/license-search)
+- [TREC, One to Four Family Residential Contract (Resale), Form 20-19](https://www.trec.texas.gov/forms/one-four-family-residential-contract-resale), effective July 1, 2026 (Paragraph 6C, survey and T-47 or T-47.1)
+- [TDI, T-47 Residential Real Property Affidavit (PDF)](https://www.tdi.texas.gov/title/documents/formT-47.pdf) and [T-47.1 Declaration (PDF)](https://tdi.texas.gov/title/documents/form-t-47-1.pdf)
+- [TREC, Addendum for Property Subject to Mandatory Membership in a Property Owners Association (Form 36-11)](https://www.trec.texas.gov/forms/addendum-property-subject-mandatory-membership-property-owners-association), effective July 1, 2026
+- [City of Austin, Austin Build + Connect (AB+C)](https://www.austintexas.gov/development-services/austin-build-connect-abc) and [Records and Research](https://www.austintexas.gov/development-services/records-and-research)
+- [Texas Water Code section 49.452](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=WA&Value=49.452)
+- [Austin Water, Rebates, Tools and Programs](https://www.austintexas.gov/water/programs/rebates-tools-programs) and [WaterWise Landscaping Rebate Guide](https://www.austintexas.gov/water/water-wise-landscaping-rebate-faqs)
+- [Texas A&M Forest Service, Prevent the spread of oak wilt in Texas](https://tfsweb.tamu.edu/prevent-the-spread-of-oak-wilt-in-texas/) and [Texas Oak Wilt Partnership, Pruning Guidelines for Prevention](https://texasoakwilt.org/resources/oak-wilt-studies/pruning-guidelines-for-prevention)
+- [USDA NRCS Web Soil Survey](https://websoilsurvey.nrcs.usda.gov/app/)
+- [Texas Tax Code section 11.13](https://statutes.capitol.texas.gov/GetStatute.aspx?Code=TX&Value=11.13)
+- [Travis Central Appraisal District](https://traviscad.org/) and [homestead exemption information](https://traviscad.org/homesteadexemptions)
+
+## Thinking about selling your Austin house?
+
+I can help you build a pre-listing plan, set a defensible price, and coordinate the inspection, documents, and launch timeline for your property, including homes in West Lake Hills, Barton Creek, Tarrytown, Rollingwood, Lakeway, and along Lake Austin and Lake Travis. 
+
+:::cta
+heading: Thinking about selling your Austin house?
+button: Request a Private Consultation
+href: /contact
+:::
+
+## About the author
+
+**Taylor Sherwood, REALTOR®, CLHMS, ABR, GRI** is the founder of Echelon Property Group, brokered by Engel & Völkers Austin. Taylor is licensed in Texas and Tennessee (TREC #734520-SA) and advises luxury buyers and sellers across Austin, West Lake Hills, Rollingwood, Barton Creek, Tarrytown, Lakeway, Lake Austin and the Texas Hill Country. [More about Taylor](/about).
+
+Echelon Property Group brokered by Engel & Völkers Austin, 3700 Bee Caves Rd STE 102, Austin, TX 78746 | Broker: Turnquist Partners Realtors, Inc. dba Engel & Völkers Austin, TREC #440298-BB | <taylor@echelonpropertygroup.com> | (512) 661-3843
+
+This article is for general information only. It is not legal, tax, or inspection advice, and not a substitute for advice from a licensed Texas attorney, a tax professional, a TREC-licensed inspector, or other licensed specialists. Forms, statutes, rebate rules, and local procedures can change. Confirm the current official text before you rely on it.`,
+  },
+
   {
     id: "austin-home-inspection-checklist",
     title: "Austin Home Inspection Checklist for the Option Period",
@@ -500,7 +753,7 @@ Nothing is agreed until the amendment is fully executed. A seller is not require
 
 TREC’s amendment form itself says to consult an attorney before signing, and that real estate brokers and sales agents are prohibited from practicing law. For a complex repair dispute, I want a Texas real estate attorney involved.
 
-Unresolved condition issues are also a common reason listings stall later. That is one reason sellers should not treat a buyer’s inspection as an ambush. See [why some Austin houses do not sell](/blog/why-didnt-my-house-sell-austin) and [the cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin).
+Unresolved condition issues are also a common reason listings stall later. Sellers can get ahead of these findings with our [Austin pre-listing checklist and preparation timeline](/blog/how-to-prepare-house-for-sale-austin). That is one reason sellers should not treat a buyer’s inspection as an ambush. See [why some Austin houses do not sell](/blog/why-didnt-my-house-sell-austin) and [the cost to sell a house in Austin](/blog/cost-to-sell-a-house-austin).
 
 ## What does the seller’s disclosure actually tell you?
 
@@ -4692,7 +4945,7 @@ Every October, that kind of week produces the same phone call. A seller looks at
 
 The usual answer is folklore. "Spring is the selling season." It is repeated by people who have never looked at a single month of contract data, and it is only half right. So we pulled 36 consecutive months of Unlock MLS data (October 2023 through September 2026) for the city of Austin and for the two ZIP codes that define the luxury core, 78746 (Westlake, Rollingwood, Rob Roy, Davenport Ranch) and 78703 (Tarrytown, Pemberton Heights, Old Enfield, Clarksville), and counted what actually happens in each month: how many sellers show up, how many buyers sign, how long it takes, how much comes off the price, and how many listings quit.
 
-The short version: buyers barely take the winter off. Sellers do. That gap, not the weather, is what should decide your listing date.
+The short version: buyers barely take the winter off. Sellers do. That gap, not the weather, is what should decide your listing date. Work backward from that date with our [Austin pre-listing checklist and eight-week preparation timeline](/blog/how-to-prepare-house-for-sale-austin).
 
 ## What we measured, and why "pending" is the number that matters
 
@@ -9965,7 +10218,7 @@ The right answer is property-specific, and it starts with an honest read of your
     imageAlt: "Luxury Austin home exterior at dusk representing the full cost of selling a house in Austin in 2026",
     content: `Most sellers can quote their list price to the dollar and their net proceeds not at all. The gap between those two numbers is the fee stack: commissions, title premiums, escrow charges, prorations, prep costs, and the quiet expense of every extra week the house sits on the market. In Austin in 2026, that stack has changed more in two years than it did in the previous twenty. The NAR settlement rewrote how commissions work, the Texas Department of Insurance cut title insurance rates statewide in March, and average marketing times have stretched long enough that carrying costs are now a real line item instead of a rounding error.
 
-This guide walks the entire stack, line by line, with current numbers, and finishes with a complete worked example on a $1.5 million Austin sale so you can see exactly where the money goes.
+This guide walks the entire stack, line by line, with current numbers, and finishes with a complete worked example on a $1.5 million Austin sale so you can see exactly where the money goes. For the inspection, repair, and document work behind your preparation budget, use our [guide to preparing your Austin house for sale](/blog/how-to-prepare-house-for-sale-austin).
 
 :::callout
 Quick answer: Selling a house in Austin in 2026 typically costs 4.5 to 7 percent of the sale price in direct transaction costs, depending mostly on how you structure agent compensation. On a $1.5 million home, that is roughly $67,800 to $105,300, made up of the listing fee, any buyer-agent concession, a state-regulated owner's title policy of $7,256, escrow and document charges of about $1,100 to $1,700, and a prorated property tax credit to the buyer. Pre-listing prep, staging, and carrying costs while the home markets come on top of that. Texas charges no real estate transfer tax and no state income tax on the sale.
@@ -11499,7 +11752,7 @@ The expensive part is the chase. A home that starts high and cuts every three we
 
 At 5.1 months of inventory, every buyer tours your home with four or five alternatives open in another tab. With 30 year mortgage rates holding in the mid 6% range, a buyer of a median priced Austin home is signing up for a payment near $3,000 a month before taxes and insurance. At that cost, buyers are not imagining potential. They are subtracting for every flaw they can see.
 
-Dated photography, deferred maintenance, dark rooms, and clutter did not stop sales in 2021. They stop them now. If the listing photos were taken on a phone, if the first image was not the best image, or if the home showed as lived in rather than staged to sell, the market priced that in for you, usually at a multiple of what fixing it would have cost.
+Dated photography, deferred maintenance, dark rooms, and clutter did not stop sales in 2021. They stop them now. Our [Austin pre-listing preparation checklist](/blog/how-to-prepare-house-for-sale-austin) covers the repairs, documents, and showing plan to finish before relaunching. If the listing photos were taken on a phone, if the first image was not the best image, or if the home showed as lived in rather than staged to sell, the market priced that in for you, usually at a multiple of what fixing it would have cost.
 
 ### 3. Concessions were treated as an insult instead of a tool
 
@@ -20670,7 +20923,7 @@ In Austin's luxury segment, most stagers quote an all-in monthly rate that bundl
 
 **Extensions: another month at the quoted rate.** Luxury properties sell on longer timelines than entry-level homes because the buyer pool is smaller. Contracts typically run 30 to 60 day initial terms with month-to-month extensions after, and a 90 day total engagement is normal. Budget the full expected marketing timeline from the start, not just the first month.
 
-**Pre-staging preparation.** Minor repairs, paint touch-ups, and decluttering that a stager recommends before furniture arrives are not part of the staging contract, but they are part of the same preparation investment and should be budgeted together.
+**Pre-staging preparation.** Minor repairs, paint touch-ups, and decluttering that a stager recommends before furniture arrives are not part of the staging contract, but they are part of the same preparation investment and should be budgeted together. Use our [Austin home preparation checklist](/blog/how-to-prepare-house-for-sale-austin) to sequence the inspection, repairs, documents, and photography.
 
 ## What Moves the Price Up or Down
 

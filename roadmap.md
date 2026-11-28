@@ -80,3 +80,7 @@
 - [x] Use the supplied building photo on the Commercial card and the supplied development photo on the Development Services card.
 - [x] Make all six card images the same size and the cards visually uniform; blurbs rewritten to equal length, Engel & Völkers titles kept with matching title space, verified at desktop, preview, tablet, and phone widths.
 - [x] Reduce the space between each specialist card title and its blurb; verified at preview, desktop, tablet, and phone widths.
+
+# Austin pre-listing guide
+- [x] Add supplied article and image, eight FAQs, timeline table, consultation CTA, five contextual backlinks, and sitemap entry.
+- [x] Verify desktop and phone article, image, links, metadata, and FAQ schema.
